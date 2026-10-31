@@ -26,7 +26,8 @@
     { "detail": "How long he stayed inside the fish.", "how_the_app_handles_it": "Not mentioned." },
     { "detail": "The meaning of 'the darknesses' (plural).", "how_the_app_handles_it": "The app only points out that the word is plural. Explanations from tafsir need a cited source and review first." },
     { "detail": "The location of the shore and the name of his people's town.", "how_the_app_handles_it": "Not named. Traditions that name a town are not used." },
-    { "detail": "What Yunus looked like.", "how_the_app_handles_it": "Yunus is never depicted, in any form." }
+    { "detail": "What Yunus looked like.", "how_the_app_handles_it": "Yunus is never depicted, in any form." },
+    { "detail": "In the 3D book on the web: the ship's shape, sail and cargo, the look of the fish, the seabed, the hills and dunes of the shore, the leaf shape of the vine, and the reading room with its rehal.", "how_the_app_handles_it": "Artistic staging with no people shown at any point; hotspot text says what the Quran does and does not describe. The Quran text on the 3D pages is the verified text, drawn unchanged." }
   ],
   "supplementary_sources": [
     {
@@ -34,7 +35,7 @@
       "story_id": "yunus",
       "source_type": "editorial",
       "source_reference": "Editorial note: artistic setting",
-      "supporting_claim": "Time of day, sky, weather and sea state are artistic choices; the hotspot text says that the Quran does not describe them.",
+      "supporting_claim": "Time of day, sky, weather, sea state and every object in the 3D scenes (ship, fish, shore, vine, room) are artistic choices; the hotspot text says that the Quran does not describe them.",
       "reviewer_status": "unreviewed"
     },
     {
@@ -52,6 +53,11 @@
       "date": "2026-10-31",
       "author": "Claude (AI drafting assistant)",
       "summary": "First draft of scenes, explanations, hotspots and this record for the prototype. Not reviewed by a scholar or Islamic educator."
+    },
+    {
+      "date": "2026-10-31",
+      "author": "Claude (AI drafting assistant)",
+      "summary": "Added notes for the 3D web staging. Story text unchanged. Not reviewed by a scholar or Islamic educator."
     }
   ]
 }

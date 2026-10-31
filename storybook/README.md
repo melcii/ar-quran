@@ -8,6 +8,40 @@ is never changed, generated or paraphrased: the app only frames it.
 
 This is a prototype. The sample story has **not** been reviewed by a scholar yet, and the app says so on screen.
 
+## The 3D book (web)
+
+On the web the app opens in a quiet reading room. The Quran rests open on a carved rehal; the child opens it, chooses
+the passage of the Yunus story, and the camera leans into the page as the story world grows out of it. Five 3D scenes
+follow (the sea at dawn, the laden ship, the great fish in the deep, the darkness, the open shore with the gourd vine).
+At the end the world shrinks back into the page and the verses open in a reading panel.
+
+How it is built:
+
+- **Three.js with React Three Fiber**, inside the same Expo app (`src/three/`). `Experience.web.tsx` is the web home;
+  `Experience.tsx` is the native stand-in, which opens the 2D Explore screen.
+- **All 3D assets are made in code**: the room, rehal, book, sea shader, ship, fish, shore and vine. There are no model
+  files, so nothing has an unclear licence, but the look is stylised rather than photoreal.
+- **The pages show the verified text.** `textures.ts` draws the stored Arabic of 37:139-148 and 21:87-88 onto canvas
+  pages in the Amiri Quran font, unchanged. They are passage pages, not a copy of a printed mushaf layout, and the app
+  says so. Scripture is never animated into other things: the world grows beside the page, not out of the letters.
+- **One camera rig** (`Director.tsx`) moves between shots, grows and shrinks the world, blends the light and fog for
+  each scene, and adds the child's drag-to-look and pinch or scroll to move closer.
+- **Sound** (`sound.ts`) is generated with Web Audio: a room tone, sea swell, wind, underwater hush, page turns and a
+  soft transition sweep. There is no music. Recitation only ever plays from a recording.
+- **Settings**: quiet mode and the speaker button, separate ambience and effects volume, reduce motion (short, direct
+  camera moves), and "play the opening again" are on the Parents screen. The opening plays once; after that the app
+  opens at the book, with a button to continue the last story.
+
+Limits, honestly:
+
+- **Web only for now.** Phones and tablets running the native app get the 2D app. Running the 3D book natively needs
+  `expo-gl` with `@react-three/fiber/native` and testing on devices; it has not been done.
+- **Performance** has been checked only in a software-rendered test browser. Real phones need checking; the scene keeps
+  geometry light and caps the pixel ratio at 1.75.
+- **The pages show passages, not whole mushaf pages.** Reading beyond the story's verses opens the full surah reader.
+- **Page turning is simple**: the cover and two blank leaves turn with a gentle bend. It is not a physical paper
+  simulation.
+
 ## Run it
 
 Requires Node 22 or newer.
@@ -28,7 +62,9 @@ Other checks: `npm run typecheck`.
 
 | Area | Status |
 |---|---|
-| Home: welcome scene, Explore a Story, story of the day, continue where you left off, collections, browse by prophet / theme / surah, recently explored, optional daily verse | Done |
+| 3D book on the web: reading room, rehal, opening the Quran, choosing the passage, page-to-world transition, 5 explorable 3D scenes with tappable objects, return into the book, reading panel with "continue reading" | Done (web only) |
+| Sound in the 3D book: generated ambience and effects, quiet mode, separate volumes. No music | Done |
+| Explore (2D home): welcome scene, Explore a Story, story of the day, continue where you left off, collections, browse by prophet / theme / surah, recently explored, optional daily verse | Done |
 | Stories library: search, browse by prophet, theme, surah, length and age; candidate topics shown as "being researched" | Done |
 | Sample story, Yunus: intro screen and 7 scenes (5 illustrated scenes, the original verses, reflection) | Done, **unreviewed draft** |
 | Interactive objects: 9 hotspots across 4 scenes, each with an animation and a sourced explanation | Done |
@@ -60,6 +96,9 @@ Other checks: `npm run typecheck`.
 - **More stories.** Only Yunus exists. Other topics are listed as "being researched".
 - **Interface languages and more translations.** English only for now.
 - **Store builds.** Not set up. Use EAS (`npx eas-cli build`) when ready; the bundle id is `org.erguvan.quranstorybook`.
+- **3D on phones and tablets.** The native app shows the 2D experience; see "The 3D book (web)" above.
+- **Real paper sounds and recorded ambience.** The sounds are generated stand-ins; recorded, licensed sounds would be
+  better.
 - No backend, database or account system exists, and none is needed for this prototype.
 
 ## Project structure
@@ -82,10 +121,11 @@ storybook/
     import-quran.mjs        builds content/quran from pinned npm packages
     validate-content.mjs    checks the dataset and every story
   src/
-    app/                    screens (Expo Router): tabs, story intro and player, surah reader
+    app/                    screens (Expo Router): 3D home, tabs, story intro and player, surah reader
     components/             UI, scripture panel, illustration and hotspots, parental gate
     content/                types (the content model), Quran access, story registry
     illustrations/          original scene paintings (react-native-svg)
+    three/                  the 3D book: room and rehal, story world, camera rig, sound, page textures
     state/                  bookmarks / progress / settings, recitation player, narration
     brand.ts, theme.ts
 ```

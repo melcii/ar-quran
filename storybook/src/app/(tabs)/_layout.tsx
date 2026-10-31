@@ -20,7 +20,7 @@ export default function TabsLayout() {
         sceneStyle: { backgroundColor: colors.paper },
       }}
     >
-      <Tabs.Screen name="index" options={tab('Home', 'home')} />
+      <Tabs.Screen name="explore" options={tab('Explore', 'home')} />
       <Tabs.Screen name="stories" options={tab('Stories', 'stories')} />
       <Tabs.Screen name="quran" options={tab('Quran', 'quran')} />
       <Tabs.Screen name="journey" options={tab('My Journey', 'journey')} />

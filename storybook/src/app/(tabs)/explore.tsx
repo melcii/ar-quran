@@ -1,5 +1,5 @@
 import { router } from 'expo-router';
-import { ScrollView, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
+import { Platform, ScrollView, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 import { AyahView } from '@/components/Ayah';
 import { Illustration } from '@/components/Illustration';
 import { PlannedCard, StoryCard } from '@/components/StoryCard';
@@ -45,6 +45,16 @@ export default function Home() {
             onPress={() => router.push(featured ? `/story/${featured.slug}` : '/stories')}
             style={{ alignSelf: 'flex-start', marginTop: 12 }}
           />
+          {Platform.OS === 'web' && (
+            <Button
+              kind="secondary"
+              small
+              label="Open the 3D book"
+              icon="quran"
+              onPress={() => router.push('/')}
+              style={{ alignSelf: 'flex-start', marginTop: 8 }}
+            />
+          )}
         </View>
       </View>
 

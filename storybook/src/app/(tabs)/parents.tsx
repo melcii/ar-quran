@@ -201,7 +201,7 @@ export default function Parents() {
           onChange={(v) => set({ recitationRate: v })}
         />
         <Choice
-          label="Volume"
+          label="Recitation volume"
           value={s.volume}
           options={[
             { v: 0.4, label: 'Quiet' },
@@ -218,11 +218,57 @@ export default function Parents() {
         />
         <Toggle
           label="Reduce motion"
-          hint={app.systemReducedMotion ? 'Reduce Motion is also on in the device settings.' : 'Stops ambient animation in the pictures.'}
+          hint={
+            app.systemReducedMotion
+              ? 'Reduce Motion is also on in the device settings.'
+              : 'Stops ambient animation and shortens the camera moves in the 3D book.'
+          }
           value={s.reducedMotion}
           onChange={(v) => set({ reducedMotion: v })}
         />
         <Toggle label="Daily verse on the home screen" value={s.dailyReflection} onChange={(v) => set({ dailyReflection: v })} />
+      </Card>
+
+      <Heading>Sounds in the 3D book</Heading>
+      <Card>
+        <Body style={styles.small}>
+          The room, sea and wind sounds and the page turns are generated in the browser. There is no music, and recitation is
+          never generated: it only plays from a recording when you press play.
+        </Body>
+        <Toggle
+          label="Quiet mode"
+          hint="Turns off ambience and effects. Recitation and narration still play when you ask for them."
+          value={s.quietMode}
+          onChange={(v) => set({ quietMode: v })}
+        />
+        <Choice
+          label="Ambience (room, sea, wind)"
+          value={s.ambienceVolume}
+          options={[
+            { v: 0, label: 'Off' },
+            { v: 0.3, label: 'Soft' },
+            { v: 0.6, label: 'Medium' },
+            { v: 1, label: 'Full' },
+          ]}
+          onChange={(v) => set({ ambienceVolume: v })}
+        />
+        <Choice
+          label="Effects (page turns, transitions)"
+          value={s.effectsVolume}
+          options={[
+            { v: 0, label: 'Off' },
+            { v: 0.4, label: 'Soft' },
+            { v: 0.7, label: 'Medium' },
+            { v: 1, label: 'Full' },
+          ]}
+          onChange={(v) => set({ effectsVolume: v })}
+        />
+        <Toggle
+          label="Play the opening again"
+          hint="The room and the camera approach play once, then the app opens straight at the book."
+          value={!s.introSeen}
+          onChange={(v) => set({ introSeen: !v })}
+        />
       </Card>
 
       <Heading>Downloads</Heading>

@@ -20,6 +20,14 @@ export type Settings = {
   volume: number;
   recordProgress: boolean;
   dailyReflection: boolean;
+  /** Sea, wind and room sounds in the 3D world. */
+  ambienceVolume: number;
+  /** Page turns and transitions. */
+  effectsVolume: number;
+  /** Silences ambience and effects; narration and recitation stay under their own controls. */
+  quietMode: boolean;
+  /** After the first visit the opening sequence is shortened. */
+  introSeen: boolean;
 };
 
 type Persisted = {
@@ -46,6 +54,10 @@ const defaults: Persisted = {
     volume: 1,
     recordProgress: true,
     dailyReflection: true,
+    ambienceVolume: 0.6,
+    effectsVolume: 0.7,
+    quietMode: false,
+    introSeen: false,
   },
 };
 
