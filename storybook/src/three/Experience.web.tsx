@@ -55,6 +55,13 @@ function Bridge({ onReady }: { onReady: (s: { now: () => number; pose: () => Sho
 
 export default function Experience() {
   const app = useAppState();
+  // Wait for saved settings, so a returning child skips the opening.
+  if (!app.ready) return <View style={styles.root} />;
+  return <Book />;
+}
+
+function Book() {
+  const app = useAppState();
   const { width, height } = useWindowDimensions();
   const story = getStory(STORY_SLUG)!;
   const storyScenes = story.scenes.filter((s) => s.kind === 'scene');

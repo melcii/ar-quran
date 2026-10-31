@@ -6,7 +6,8 @@ import { Nunito_700Bold } from '@expo-google-fonts/nunito/700Bold';
 import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
-import { ActivityIndicator, View } from 'react-native';
+import { useEffect } from 'react';
+import { ActivityIndicator, Platform, View } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { RecitationBar } from '@/components/RecitationBar';
 import { AppStateProvider } from '@/state/AppState';
@@ -14,7 +15,7 @@ import { RecitationProvider } from '@/state/Recitation';
 import { colors } from '@/theme';
 
 export default function RootLayout() {
-  const [loaded] = useFonts({
+  const [loaded, fontError] = useFonts({
     Fraunces_600SemiBold,
     Fraunces_400Regular_Italic,
     Nunito_400Regular,
@@ -22,7 +23,15 @@ export default function RootLayout() {
     AmiriQuran_400Regular,
   });
 
-  if (!loaded) {
+  // On the web, remove the plain loading message that the page shows before the app starts.
+  useEffect(() => {
+    if (Platform.OS !== 'web' || typeof document === 'undefined') return;
+    (window as any).__booted = true;
+    document.getElementById('boot')?.remove();
+  }, []);
+
+  // If a font cannot load, carry on with the fallback fonts rather than wait forever.
+  if (!loaded && !fontError) {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center', backgroundColor: colors.paper }}>
         <ActivityIndicator color={colors.terracotta} />
