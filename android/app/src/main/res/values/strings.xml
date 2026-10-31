@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AR Quran</string>
+    <string name="tagline">Stories from the Quran in colorful 3D</string>
+    <string name="scan">Scan a QR code</string>
+    <string name="browse">Browse the stories</string>
+    <string name="scan_prompt">Point the camera at a QR code in the Quran</string>
+    <string name="not_ar_quran_code">This QR code is not an AR Quran story.</string>
+</resources>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AR Quran</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="home">
+  <main>
+    <h1>AR Quran</h1>
+    <p>Stories from the Quran in colorful 3D. Scan a QR code on a page, or pick a story below.</p>
+    <ul id="scene-list" class="scene-list"></ul>
+  </main>
+  <script>
+    fetch('scenes.json')
+      .then((res) => res.json())
+      .then((scenes) => {
+        const list = document.getElementById('scene-list');
+        for (const scene of scenes) {
+          const item = document.createElement('li');
+          item.innerHTML = `<a href="scene.html?id=${scene.id}"><strong></strong><span></span></a>`;
+          item.querySelector('strong').textContent = scene.title;
+          item.querySelector('span').textContent = scene.surah;
+          list.appendChild(item);
+        }
+      });
+  </script>
+</body>
+</html>

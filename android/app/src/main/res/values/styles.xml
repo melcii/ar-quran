@@ -1,0 +1,12 @@
+<resources>
+    <color name="sky">#9FD8FF</color>
+    <color name="sun">#FFCF4D</color>
+    <color name="ink">#4A2F8A</color>
+
+    <style name="AppTheme" parent="@android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:colorPrimary">@color/ink</item>
+        <item name="android:colorAccent">@color/sun</item>
+        <item name="android:statusBarColor">@color/sky</item>
+        <item name="android:windowBackground">@color/sky</item>
+    </style>
+</resources>
