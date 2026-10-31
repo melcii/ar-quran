@@ -1,0 +1,19 @@
+{
+  "default": "alafasy-everyayah",
+  "recitations": [
+    {
+      "id": "alafasy-everyayah",
+      "reciter": "Mishary Rashid Alafasy",
+      "reading": "Hafs an Asim",
+      "host": "EveryAyah.com",
+      "urlTemplate": "https://everyayah.com/data/Alafasy_128kbps/{surah3}{ayah3}.mp3",
+      "streaming": true,
+      "verification": "Human recitation streamed per ayah from EveryAyah. Not yet checked ayah by ayah by a reviewer for this app.",
+      "licenceStatus": "EveryAyah states no licence. Usage rights must be confirmed with the rights holder before release, or the files replaced with licensed audio."
+    }
+  ],
+  "narration": {
+    "recorded": false,
+    "note": "No human narration has been recorded yet. Until it is, explanations can be read aloud by the device's own text-to-speech voice, which is never used for Quran text."
+  }
+}

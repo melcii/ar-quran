@@ -1,0 +1,151 @@
+# Quran Storybook
+
+An interactive, illustrated companion to the stories of the Quran for children aged 5 to 12. Children explore painted
+scenes, tap objects to discover what the verses say, and open the original ayahs at any moment. The Quran text itself
+is never changed, generated or paraphrased: the app only frames it.
+
+"Quran Storybook" is a working title. The name and taglines live in `src/brand.ts` and `app.json`.
+
+This is a prototype. The sample story has **not** been reviewed by a scholar yet, and the app says so on screen.
+
+## Run it
+
+Requires Node 22 or newer.
+
+```sh
+cd storybook
+npm install
+npm run validate     # check the Quran dataset and stories
+npx expo start       # then press i (iOS simulator), a (Android) or w (web)
+```
+
+On a phone, install **Expo Go** and scan the QR code that `npx expo start` prints. For a static web build:
+`npm run export:web` writes `dist/`, which any static host can serve (with fallback to `index.html`).
+
+Other checks: `npm run typecheck`.
+
+## What is in the MVP
+
+| Area | Status |
+|---|---|
+| Home: welcome scene, Explore a Story, story of the day, continue where you left off, collections, browse by prophet / theme / surah, recently explored, optional daily verse | Done |
+| Stories library: search, browse by prophet, theme, surah, length and age; candidate topics shown as "being researched" | Done |
+| Sample story, Yunus: intro screen and 7 scenes (5 illustrated scenes, the original verses, reflection) | Done, **unreviewed draft** |
+| Interactive objects: 9 hotspots across 4 scenes, each with an animation and a sourced explanation | Done |
+| Quran reader: all 114 surahs, KFGQPC Hafs Arabic, Saheeh International translation, ayah numbers, basmalah, search by name or `37:142`, text size, translation toggle, distraction-free mode, links to stories | Done |
+| Recitation: play, pause, replay, previous / next ayah, play a passage or a whole surah, speed, volume, "unavailable" state | Done (streams Mishary Alafasy from EveryAyah; licence to confirm) |
+| Explanation narration: listen / stop with the device voice, with the full text on screen as the caption | Done (no human recording yet) |
+| Bookmarks and progress: per-ayah and per-passage bookmarks, scenes seen, stories finished, recently read | Done, stored on the device only |
+| My Journey: progress, saved verses, recently read. No points, streaks or rankings | Done |
+| Parents & Learning, behind a grown-up check: review status, sources, stated vs not stated details, reviewers, revision history, attribution, reading and listening settings, reduced motion, privacy and progress controls, report a concern | Done |
+| Optional activity: put the events in the order of the verses, with gentle feedback | Done |
+| Content validation: checksums, 114 / 6,236 counts, comparison against independent copies, reference checks, quote checks, review gate | Done (`npm run validate`, also in CI) |
+
+## Not done yet, and what needs configuring
+
+- **Scholarly review.** No story is approved. A qualified scholar or Islamic educator must review `content/stories/yunus/`
+  (explanations, hotspots, pictures and the editorial record) before release. The validator blocks `published` without
+  a named approving reviewer.
+- **Recitation licence.** Audio streams from EveryAyah, which states no licence. Confirm rights with the reciter or host,
+  or replace the URL template in `content/audio/recitations.json` with licensed audio. Offline download of recitations
+  is not built and waits on this.
+- **Translation licence.** Saheeh International is copyrighted. QuranEnc permits verbatim republication with credit;
+  get written permission from the publisher before a commercial release.
+- **Human narration.** No narration has been recorded. Add files and set `audio_asset` on each scene; the device voice
+  is a stand-in.
+- **Artwork.** The illustrations are original vector paintings made in code. A professional illustrator could replace
+  them; keep the same keys so stories don't change.
+- **Privacy policy and consent.** The app collects no personal data, but a full privacy policy and any consent flow
+  required by law (COPPA, GDPR-K) must be written and reviewed before store release.
+- **More stories.** Only Yunus exists. Other topics are listed as "being researched".
+- **Interface languages and more translations.** English only for now.
+- **Store builds.** Not set up. Use EAS (`npx eas-cli build`) when ready; the bundle id is `org.erguvan.quranstorybook`.
+- No backend, database or account system exists, and none is needed for this prototype.
+
+## Project structure
+
+```
+storybook/
+  app.json                  Expo config (name, icons, bundle ids)
+  content/
+    quran/                  Read-only Quran dataset (generated, never edited by hand)
+      arabic-hafs.json        114 arrays of ayah strings, KFGQPC Hafs Uthmani with waqf marks
+      translation-en-saheeh.json
+      surahs.json             names, meanings, ayah counts
+      manifest.json           sources, licences, checksums
+    stories/<id>/
+      story.json            the story, its scenes and interactive objects
+      editorial.json        the editorial record for review
+    library.json            categories and candidate topics
+    audio/recitations.json  recitation source and licence status
+  scripts/
+    import-quran.mjs        builds content/quran from pinned npm packages
+    validate-content.mjs    checks the dataset and every story
+  src/
+    app/                    screens (Expo Router): tabs, story intro and player, surah reader
+    components/             UI, scripture panel, illustration and hotspots, parental gate
+    content/                types (the content model), Quran access, story registry
+    illustrations/          original scene paintings (react-native-svg)
+    state/                  bookmarks / progress / settings, recitation player, narration
+    brand.ts, theme.ts
+```
+
+## Where the Quran text comes from
+
+Tanzil.net and api.quran.com could not be reached from the build environment, so the text is imported from npm
+packages that redistribute published texts, pinned to exact versions in `package.json`:
+
+- **Arabic:** the King Fahd Glorious Quran Printing Complex (KFGQPC) *Uthmanic Hafs v3.0* text, from
+  `@quran.ws/text` (which records the SHA-256 of the KFGQPC release it was built from). It is rendered with its waqf
+  marks exactly as the package produces it.
+- **Cross-check:** every ayah's letters are compared with an independent copy of the KFGQPC text from QuranEnc
+  (`quran-json`). All 6,236 match. Ayah counts are compared with `quran-meta`.
+- **Translation:** Saheeh International, from `quran-db`, compared verse by verse with the QuranEnc copy in
+  `quran-json` (which strips punctuation at the ends; otherwise all verses match).
+- **Font:** Amiri Quran (SIL OFL), which covers every character in the text. The KFGQPC font is not bundled because
+  its licence does not allow redistribution without permission.
+
+`npm run import:quran` regenerates the files and refuses to write anything if a check fails. The files are frozen at
+runtime, so app code cannot change them.
+
+To switch to a direct Tanzil or Quran.com download later, change `scripts/import-quran.mjs` to read that source and
+keep the cross-checks; the rest of the app doesn't change.
+
+## Content model
+
+Defined in `src/content/types.ts`:
+
+- **Story**: id, slug, title, description, figure, recommended_age, estimated_duration_minutes, cover_art,
+  category_ids, quran_references, publication_status, editorial_review_status, learning_objectives, scenes,
+  reflection, activity.
+- **StoryScene**: id, story_id, scene_number, kind (`scene`, `verses`, `reflect`), title, illustration_asset,
+  illustration_alt, educational_narration, audio_asset, linked_ayah_references, featured_ayah_references,
+  interactive_elements, source_notes.
+- **InteractiveElement**: id, scene_id, object_name, position (fractions of the painting), animation_asset,
+  explanatory_text, supporting_source (an ayah reference or a source id).
+- **QuranVerse**: surah_number, surah_name, ayah_number, arabic_text, translation_text, translation_source,
+  text_source, text_version. Built at runtime from the read-only dataset.
+- **EditorialRecord**: story_id, title, quran_references, translation_id, children_explanation_summary,
+  stated_in_quran, not_specified_or_inferred, supplementary_sources (SourceReference), reviewers, revision_history.
+- **SourceReference**: id, story_id, source_type, source_reference, supporting_claim, reviewer_status.
+- Bookmarks and progress are stored separately, on the device (`src/state/AppState.tsx`).
+
+Stories refer to the Quran only by reference, such as `"37:139-148"`. Story files may not contain Arabic script; the
+validator rejects them if they do, so scripture can only ever come from the dataset.
+
+## Adding a reviewed story
+
+1. Create `content/stories/<id>/story.json` and `editorial.json`, following `yunus/` as the example. Start with
+   `"publication_status": "prototype"` and `"editorial_review_status": "draft"`.
+2. Write the editorial record first: the Quran references, what the verses state, what they don't, and any other
+   source used (tafsir, hadith, history), each with its source.
+3. Write scenes and hotspots only from what the record supports. When quoting the translation inside an explanation,
+   use the form `'exact words' (37:140)`; the validator checks the words really appear in that ayah.
+4. Add new paintings to `src/illustrations/` and register their keys in `src/illustrations/index.tsx`, with source and
+   licence. Never depict Allah or a prophet in any form.
+5. Register the story in `src/content/stories.ts` and run `npm run validate`.
+6. A qualified reviewer reviews the record and the screens. Add them to `reviewers` with their decision and date, add a
+   line to `revision_history`, and set `editorial_review_status` to `approved`. Only then set
+   `publication_status` to `published`.
+
+Reviewers and parents can report a concern from the Parents area; it opens an issue in this repository.

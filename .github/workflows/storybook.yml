@@ -1,0 +1,28 @@
+name: Quran Storybook checks
+
+on:
+  pull_request:
+    paths: ["storybook/**", ".github/workflows/storybook.yml"]
+  push:
+    branches: [main]
+    paths: ["storybook/**", ".github/workflows/storybook.yml"]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: storybook
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: storybook/package-lock.json
+      - run: npm ci
+      - name: Validate Quran dataset and stories
+        run: npm run validate
+      - run: npm run typecheck
+      - name: Build web
+        run: npx expo export --platform web
