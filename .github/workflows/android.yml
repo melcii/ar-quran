@@ -1,0 +1,53 @@
+name: Android APK
+
+on:
+  push:
+    paths:
+      - 'android/**'
+      - 'web/**'
+      - '.github/workflows/android.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: android-apk
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - uses: gradle/actions/setup-gradle@v4
+
+      - name: Build the APK
+        working-directory: android
+        run: ./gradlew assembleDebug --no-daemon
+
+      - run: cp android/app/build/outputs/apk/debug/app-debug.apk ar-quran-demo.apk
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ar-quran-demo-apk
+          path: ar-quran-demo.apk
+
+      # Keeps one "Demo APK" release with the newest build, so the phone download link never changes:
+      # https://github.com/<owner>/<repo>/releases/download/demo-apk/ar-quran-demo.apk
+      - name: Publish to the Demo APK release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete demo-apk --cleanup-tag --yes || true
+          gh release create demo-apk ar-quran-demo.apk \
+            --prerelease \
+            --target "$GITHUB_SHA" \
+            --title "Demo APK" \
+            --notes "Latest test build from the \`${GITHUB_REF_NAME}\` branch (commit ${GITHUB_SHA::7}). Download ar-quran-demo.apk on your Android phone and open it to install."

@@ -1,0 +1,141 @@
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  font-family: "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+  color: #2b2340;
+}
+
+/* Home page */
+
+.home {
+  background: linear-gradient(#bfe7ff, #fff6dc);
+  min-height: 100%;
+}
+
+.home main {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+.scene-list {
+  list-style: none;
+  padding: 0;
+}
+
+.scene-list a {
+  display: block;
+  margin: 12px 0;
+  padding: 16px 20px;
+  border-radius: 18px;
+  background: #fff;
+  color: inherit;
+  text-decoration: none;
+  box-shadow: 0 4px 0 #f2b84b;
+}
+
+.scene-list strong { display: block; font-size: 1.2em; }
+.scene-list span { color: #7a6f8f; }
+
+/* Scene viewer */
+
+.viewer {
+  overflow: hidden;
+  background: #5f7fa8;
+  touch-action: none;
+}
+
+#stage {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.title-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 14px 18px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+  pointer-events: none;
+}
+
+.title-bar h1 { margin: 0; font-size: 1.4em; }
+.title-bar p { margin: 2px 0 0; opacity: 0.9; }
+
+.story-card {
+  position: fixed;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 14px 18px 10px;
+  border-radius: 22px;
+  background: rgba(255, 252, 240, 0.94);
+  box-shadow: 0 6px 0 rgba(242, 184, 75, 0.9), 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.story-card h2 { margin: 0 0 6px; font-size: 1.25em; color: #4a2f8a; }
+.story-card p { margin: 0 0 8px; line-height: 1.4; }
+
+.story-ref {
+  font-size: 0.85em;
+  font-weight: bold;
+  color: #c27a00;
+  letter-spacing: 0.03em;
+}
+
+.story-note {
+  font-size: 0.8em;
+  color: #7a6f8f;
+}
+
+.story-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 6px 0 8px;
+}
+
+.story-nav button {
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background: #ffcf4d;
+  color: #4a2f8a;
+  font-size: 1.2em;
+  box-shadow: 0 3px 0 #d99a17;
+}
+
+.story-nav button:disabled { opacity: 0.35; }
+
+.dots { display: flex; gap: 8px; }
+
+.dots span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #e6dcc6;
+}
+
+.dots span.active { background: #4a2f8a; }
+
+.error {
+  position: fixed;
+  top: 40%;
+  left: 20px;
+  right: 20px;
+  padding: 16px;
+  border-radius: 16px;
+  background: #fff;
+  text-align: center;
+}

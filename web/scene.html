@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>AR Quran</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "./vendor/three/three.module.js",
+        "three/addons/": "./vendor/three/addons/"
+      }
+    }
+  </script>
+</head>
+<body class="viewer">
+  <canvas id="stage"></canvas>
+
+  <header class="title-bar">
+    <h1 id="scene-title">Loading…</h1>
+    <p id="scene-subtitle"></p>
+  </header>
+
+  <section class="story-card" id="story-card" hidden>
+    <p class="story-ref" id="story-ref"></p>
+    <h2 id="story-title"></h2>
+    <p id="story-text"></p>
+    <nav class="story-nav">
+      <button id="prev" aria-label="Previous">◀</button>
+      <div class="dots" id="dots"></div>
+      <button id="next" aria-label="Next">▶</button>
+    </nav>
+    <p class="story-note" id="story-note"></p>
+  </section>
+
+  <p class="error" id="error" hidden></p>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
