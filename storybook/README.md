@@ -25,7 +25,7 @@ On the web the whole app is one 3D world (`src/world/`). There are three places,
 - **A world for every surah.** Each surah has a walkable landscape (`SurahWorld.tsx`) built from one of 19 symbolic
   settings: sea, cave, light, dunes, wind, night, stars, moon, storm, dawn, orchard and others, with the default a quiet
   garden. The choice for each surah, the reason and the ayahs it draws on are in `content/worlds/surah-worlds.json`;
-  95 surahs use the garden, which takes nothing from the surah. Lanterns along the path hold the surah's passages in
+  87 surahs use the garden, which takes nothing from the surah. Lanterns along the path hold the surah's passages in
   order (up to 12, all ayahs covered); opening one shows the verified Arabic and translation and can open the book at
   that ayah. Doorways lead back to the library, on to the next surah, and, in Yunus, Al-Anbiya and As-Saffat, to the
   Yunus story (`/yunus`, the earlier cinematic story). The "about this place" note marks every setting as an artistic
