@@ -418,7 +418,7 @@ function Book() {
         </View>
       )}
 
-      <TopBar phase={phase} onLibrary={() => router.push('/explore')} onParents={() => router.push('/parents')} />
+      <TopBar phase={phase} onLibrary={() => router.push('/')} onParents={() => router.push('/parents')} />
     </View>
   );
 }
@@ -430,7 +430,7 @@ function TopBar({ phase, onLibrary, onParents }: { phase: Phase; onLibrary: () =
   return (
     <View style={styles.topBar} pointerEvents="box-none">
       <View style={styles.topPill}>
-        <IconButton icon="home" label="Library of stories and screens" onPress={onLibrary} color="#f3e3c2" size={40} />
+        <IconButton icon="home" label="Back to the reading room and library" onPress={onLibrary} color="#f3e3c2" size={40} />
       </View>
       <Row style={{ gap: 6 }}>
         <View style={styles.topPill}>

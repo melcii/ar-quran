@@ -11,6 +11,18 @@ export type Bookmark = { surah: number; from: number; to: number; addedAt: numbe
 export type RecentStory = { slug: string; scene: number; at: number };
 export type RecentReading = { surah: number; ayah: number; at: number };
 
+/** Progress through one surah in the 3D world. */
+export type SurahProgress = {
+  /** Highest ayah number shown on an open page. */
+  furthestAyah: number;
+  /** Where the reader last left the book. */
+  lastAyah: number;
+  /** Passage lanterns found in the surah's world, by index. */
+  passagesFound: number[];
+  visitedWorld: boolean;
+  at: number;
+};
+
 export type Settings = {
   arabicSize: number;
   showTranslation: boolean;
@@ -28,6 +40,11 @@ export type Settings = {
   quietMode: boolean;
   /** After the first visit the opening sequence is shortened. */
   introSeen: boolean;
+  /** Size of the Arabic on the 3D pages. */
+  pageTextSize: 'small' | 'medium' | 'large';
+  /** 3D quality. 'auto' starts from the device and steps down if frames drop. */
+  quality: 'auto' | 'low' | 'medium' | 'high';
+  narrationVolume: number;
 };
 
 type Persisted = {
@@ -36,6 +53,7 @@ type Persisted = {
   completedStories: Record<string, number>;
   recentStories: RecentStory[];
   recentReading: RecentReading[];
+  surahProgress: Record<string, SurahProgress>;
   settings: Settings;
 };
 
@@ -45,6 +63,7 @@ const defaults: Persisted = {
   completedStories: {},
   recentStories: [],
   recentReading: [],
+  surahProgress: {},
   settings: {
     arabicSize: 30,
     showTranslation: true,
@@ -58,6 +77,9 @@ const defaults: Persisted = {
     effectsVolume: 0.7,
     quietMode: false,
     introSeen: false,
+    pageTextSize: 'medium',
+    quality: 'auto',
+    narrationVolume: 1,
   },
 };
 
@@ -70,8 +92,11 @@ type AppState = Persisted & {
   markScene: (slug: string, scene: number, sceneCount: number) => void;
   noteReading: (surah: number, ayah: number) => void;
   updateSettings: (patch: Partial<Settings>) => void;
+  updateSurahProgress: (surah: number, patch: (p: SurahProgress) => Partial<SurahProgress>) => void;
   clearProgress: () => void;
 };
+
+export const emptySurahProgress: SurahProgress = { furthestAyah: 0, lastAyah: 1, passagesFound: [], visitedWorld: false, at: 0 };
 
 const Ctx = createContext<AppState | null>(null);
 
@@ -85,7 +110,7 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
       .then((raw) => {
         if (raw) {
           const saved = JSON.parse(raw) as Partial<Persisted>;
-          setData({ ...defaults, ...saved, settings: { ...defaults.settings, ...saved.settings } });
+          setData({ ...defaults, ...saved, surahProgress: saved.surahProgress ?? {}, settings: { ...defaults.settings, ...saved.settings } });
         }
       })
       .catch(() => {})
@@ -147,6 +172,14 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
     setData((d) => ({ ...d, settings: { ...d.settings, ...patch } }));
   }, []);
 
+  const updateSurahProgress = useCallback((surah: number, patch: (p: SurahProgress) => Partial<SurahProgress>) => {
+    setData((d) => {
+      if (!d.settings.recordProgress) return d;
+      const cur = d.surahProgress[surah] ?? emptySurahProgress;
+      return { ...d, surahProgress: { ...d.surahProgress, [surah]: { ...cur, ...patch(cur), at: Date.now() } } };
+    });
+  }, []);
+
   const clearProgress = useCallback(() => {
     setData((d) => ({ ...defaults, settings: d.settings }));
   }, []);
@@ -162,9 +195,10 @@ export function AppStateProvider({ children }: { children: ReactNode }) {
       markScene,
       noteReading,
       updateSettings,
+      updateSurahProgress,
       clearProgress,
     }),
-    [data, ready, systemReducedMotion, isBookmarked, toggleBookmark, markScene, noteReading, updateSettings, clearProgress],
+    [data, ready, systemReducedMotion, isBookmarked, toggleBookmark, markScene, noteReading, updateSettings, updateSurahProgress, clearProgress],
   );
 
   return <Ctx.Provider value={value}>{children}</Ctx.Provider>;

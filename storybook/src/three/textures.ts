@@ -7,14 +7,14 @@ import type { AyahRef } from '@/content/types';
 import { fonts } from '@/theme';
 import { seeded } from '@/illustrations/paint';
 
-function canvas(w: number, h: number) {
+export function canvas(w: number, h: number) {
   const c = document.createElement('canvas');
   c.width = w;
   c.height = h;
   return [c, c.getContext('2d')!] as const;
 }
 
-function toTexture(c: HTMLCanvasElement, repeat = 1, color = true) {
+export function toTexture(c: HTMLCanvasElement, repeat = 1, color = true) {
   const t = new THREE.CanvasTexture(c);
   t.wrapS = t.wrapT = THREE.RepeatWrapping;
   t.repeat.set(repeat, repeat);
@@ -25,7 +25,7 @@ function toTexture(c: HTMLCanvasElement, repeat = 1, color = true) {
 }
 
 /** Soft value noise, for grain and mottling. */
-function noiseField(ctx: CanvasRenderingContext2D, w: number, h: number, seed: number, alpha: number, scale: number, dark = '0,0,0', light = '255,255,255') {
+export function noiseField(ctx: CanvasRenderingContext2D, w: number, h: number, seed: number, alpha: number, scale: number, dark = '0,0,0', light = '255,255,255') {
   const rnd = seeded(seed);
   for (let i = 0; i < (w * h) / (scale * scale) / 2; i++) {
     const x = rnd() * w;

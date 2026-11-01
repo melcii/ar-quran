@@ -3,7 +3,7 @@
 // narration (device voice) and the Quran recitation (human reciter, streamed)
 // are controlled separately and never pass through here.
 
-export type Ambience = 'room' | 'sea' | 'underwater' | 'dark' | 'shore' | 'none';
+export type Ambience = 'room' | 'sea' | 'underwater' | 'dark' | 'shore' | 'wind' | 'night' | 'hall' | 'none';
 
 type Preset = { cutoff: number; gain: number; swell: number; swellRate: number; wind: number };
 
@@ -14,6 +14,9 @@ const presets: Record<Ambience, Preset> = {
   underwater: { cutoff: 220, gain: 0.2, swell: 0.35, swellRate: 0.07, wind: 0 },
   dark: { cutoff: 120, gain: 0.12, swell: 0.2, swellRate: 0.04, wind: 0 },
   shore: { cutoff: 900, gain: 0.13, swell: 0.85, swellRate: 0.09, wind: 0.04 },
+  wind: { cutoff: 520, gain: 0.05, swell: 0.4, swellRate: 0.05, wind: 0.07 },
+  night: { cutoff: 260, gain: 0.035, swell: 0.15, swellRate: 0.03, wind: 0.02 },
+  hall: { cutoff: 220, gain: 0.04, swell: 0.08, swellRate: 0.04, wind: 0 },
 };
 
 class SoundEngine {

@@ -183,6 +183,30 @@ library.planned.forEach((p) =>
   p.primary_surahs.forEach((n) => (n >= 1 && n <= 114) || fail(`library planned ${p.id}: bad surah ${n}`)),
 );
 
+// ---- Surah worlds ---------------------------------------------------------
+// One symbolic setting per surah. Every reference must point at real ayahs,
+// the setting must exist in src/world/settings.ts, story doorways must lead to
+// a real story, and nothing may claim scholarly approval without a reviewer.
+const worlds = readJson(join(root, "content", "worlds", "surah-worlds.json")).worlds;
+const settingsSource = readFileSync(join(root, "src", "world", "settings.ts"), "utf8");
+const settingNames = new Set([...settingsSource.match(/export type SettingName =([^;]+);/)[1].matchAll(/'([a-z-]+)'/g)].map((m) => m[1]));
+if (worlds.length !== 114) fail(`surah-worlds.json: ${worlds.length} entries, expected 114`);
+worlds.forEach((w, i) => {
+  const ctx = `surah-worlds.json surah ${w.surah}`;
+  if (w.surah !== i + 1) fail(`surah-worlds.json: entry ${i} is surah ${w.surah}, expected ${i + 1}`);
+  if (!settingNames.has(w.setting)) fail(`${ctx}: unknown setting "${w.setting}"`);
+  if (!w.basis || w.basis.length < 20) fail(`${ctx}: needs a basis explaining the setting`);
+  if (ARABIC_SCRIPT.test(JSON.stringify(w))) fail(`${ctx}: contains Arabic script`);
+  w.references.forEach((r) => {
+    const p = parseRef(r);
+    if (!p) fail(`${ctx}: bad reference "${r}"`);
+    else if (p.surah !== w.surah) fail(`${ctx}: reference ${r} is from another surah`);
+  });
+  if (w.setting !== "garden" && w.setting !== "opening" && !w.references.length) fail(`${ctx}: a named setting must cite the ayahs it draws on`);
+  if (w.story && !storyIds.includes(w.story)) fail(`${ctx}: story doorway "${w.story}" has no story`);
+  if (w.review_status !== "unreviewed" && !w.reviewer) fail(`${ctx}: marked ${w.review_status} without a named reviewer`);
+});
+
 if (errors.length) {
   console.error(errors.join("\n"));
   console.error(`\n${errors.length} problem(s) found.`);
@@ -190,3 +214,4 @@ if (errors.length) {
 }
 console.log(`Quran dataset OK: 114 surahs, ${total} ayahs, checksums match.`);
 console.log(`Stories OK: ${storyIds.join(", ")}.`);
+console.log(`Surah worlds OK: 114 settings; ${worlds.filter((w) => w.review_status === "unreviewed").length} still await scholarly review.`);

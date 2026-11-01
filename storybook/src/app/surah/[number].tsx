@@ -8,7 +8,7 @@ import { Button, ContentLabel, IconButton, Row } from '@/components/ui';
 import { getSurah, getVerse, quranSources } from '@/content/quran';
 import { stories, storiesForAyah } from '@/content/stories';
 import { useAppState } from '@/state/AppState';
-import { useRecitation } from '@/state/Recitation';
+import { recitationEnabled, useRecitation } from '@/state/Recitation';
 import { colors, fonts } from '@/theme';
 
 export default function SurahReader() {
@@ -112,7 +112,9 @@ export default function SurahReader() {
             label={settings.showTranslation ? 'Translation on' : 'Translation off'}
             onPress={() => updateSettings({ showTranslation: !settings.showTranslation })}
           />
-          <Button small kind="secondary" icon="play" label="Listen from the start" onPress={() => rec.play(n, 1, surah.ayahCount)} />
+          {recitationEnabled && (
+            <Button small kind="secondary" icon="play" label="Listen from the start" onPress={() => rec.play(n, 1, surah.ayahCount)} />
+          )}
         </Row>
       )}
       <FlatList

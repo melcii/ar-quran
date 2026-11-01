@@ -8,6 +8,7 @@
       "host": "EveryAyah.com",
       "urlTemplate": "https://everyayah.com/data/Alafasy_128kbps/{surah3}{ayah3}.mp3",
       "streaming": true,
+      "licensed": false,
       "verification": "Human recitation streamed per ayah from EveryAyah. Not yet checked ayah by ayah by a reviewer for this app.",
       "licenceStatus": "EveryAyah states no licence. Usage rights must be confirmed with the rights holder before release, or the files replaced with licensed audio."
     }

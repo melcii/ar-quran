@@ -8,6 +8,9 @@ import { useAppState } from './AppState';
 
 export const recitation = recitations.recitations.find((r) => r.id === recitations.default)!;
 
+/** Recitation plays only from a source whose licence has been confirmed. */
+export const recitationEnabled = recitation.licensed === true;
+
 const pad3 = (n: number) => String(n).padStart(3, '0');
 export const ayahAudioUrl = (surah: number, ayah: number) =>
   recitation.urlTemplate.replace('{surah3}', pad3(surah)).replace('{ayah3}', pad3(ayah));

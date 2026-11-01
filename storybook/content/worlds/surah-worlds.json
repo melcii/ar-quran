@@ -1,0 +1,863 @@
+{
+ "note": "Settings for the walkable world of each surah. They are symbolic, artistic choices, not depictions of events, and none shows a prophet or represents Allah. Each needs scholarly review before release.",
+ "worlds": [
+  {
+   "surah": 1,
+   "setting": "opening",
+   "basis": "A calm, open garden at first light to begin reading. Al-Fatihah has no story; nothing in the scene is taken from it.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 2,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 3,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 4,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 5,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 6,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 7,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 8,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 9,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 10,
+   "setting": "sea",
+   "basis": "The surah is named after Yunus, peace be upon him, whose people are mentioned in 10:98. A calm sea, with a doorway to the Yunus story world. He is never shown.",
+   "references": [
+    "10:98"
+   ],
+   "story": "yunus",
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 11,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 12,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 13,
+   "setting": "storm",
+   "basis": "The surah's name means \"The Thunder\" (13:13). Clouds and distant thunder only.",
+   "references": [
+    "13:13"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 14,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 15,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 16,
+   "setting": "meadow",
+   "basis": "The surah's name means \"The Bee\"; 16:68-69 mention the bee, mountains, trees and fruits.",
+   "references": [
+    "16:68-69"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 17,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 18,
+   "setting": "cave",
+   "basis": "The surah's name means \"The Cave\" (18:10). A rocky valley with a cave mouth, and no people. The surah's accounts are not acted out.",
+   "references": [
+    "18:10"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 19,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 20,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 21,
+   "setting": "sea",
+   "basis": "Al-Anbiya mentions Yunus, peace be upon him (21:87-88). A calm sea, with a doorway to the Yunus story world. He is never shown.",
+   "references": [
+    "21:87-88"
+   ],
+   "story": "yunus",
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 22,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 23,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 24,
+   "setting": "light",
+   "basis": "The surah's name, \"The Light\", comes from 24:35. A courtyard of lamps and reflections at dusk. It does not picture the parable of 24:35 and does not represent Allah.",
+   "references": [
+    "24:35"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 25,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 26,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 27,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 28,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 29,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 30,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 31,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 32,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 33,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 34,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 35,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 36,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 37,
+   "setting": "sea",
+   "basis": "As-Saffat tells of Yunus, peace be upon him (37:139-148). A calm sea, with a doorway to the Yunus story world. He is never shown.",
+   "references": [
+    "37:139-148"
+   ],
+   "story": "yunus",
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 38,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 39,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 40,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 41,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 42,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 43,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 44,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 45,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 46,
+   "setting": "dunes",
+   "basis": "The surah's name means \"The Wind-Curved Sandhills\", the region named in 46:21. Dunes under a wide sky; no people are shown.",
+   "references": [
+    "46:21"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 47,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 48,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 49,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 50,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 51,
+   "setting": "wind",
+   "basis": "The surah opens with an oath by the winds that scatter dust (51:1). Wind over open land.",
+   "references": [
+    "51:1"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 52,
+   "setting": "mountain",
+   "basis": "The surah's name means \"The Mount\" (52:1). Mountains at morning.",
+   "references": [
+    "52:1"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 53,
+   "setting": "stars",
+   "basis": "The surah's name means \"The Star\" (53:1). A clear night sky.",
+   "references": [
+    "53:1"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 54,
+   "setting": "moon",
+   "basis": "The surah's name means \"The Moon\" (54:1). A moonlit night. The event in 54:1 is not shown.",
+   "references": [
+    "54:1"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 55,
+   "setting": "creation",
+   "basis": "Ar-Rahman names signs of creation: the sun and moon (55:5), fruit and palm trees (55:11), two seas meeting (55:19-20), and gardens with flowing springs (55:46-50). The scene gathers these as a symbolic landscape, not a picture of Paradise.",
+   "references": [
+    "55:5",
+    "55:11",
+    "55:19-20",
+    "55:46-50"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 56,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 57,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 58,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 59,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 60,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 61,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 62,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 63,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 64,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 65,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 66,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 67,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 68,
+   "setting": "sea",
+   "basis": "Al-Qalam mentions \"the companion of the fish\" (68:48). A calm sea. He is never shown.",
+   "references": [
+    "68:48"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 69,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 70,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 71,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 72,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 73,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 74,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 75,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 76,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 77,
+   "setting": "wind",
+   "basis": "The surah opens with oaths by the winds sent forth and the winds that spread (77:1, 77:3). Wind over open land.",
+   "references": [
+    "77:1",
+    "77:3"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 78,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 79,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 80,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 81,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 82,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 83,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 84,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 85,
+   "setting": "stars",
+   "basis": "The surah's name means \"The Mansions of the Stars\" (85:1). A clear night sky.",
+   "references": [
+    "85:1"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 86,
+   "setting": "stars",
+   "basis": "The surah's name means \"The Nightcomer\" (86:1-3), described as the piercing star. A clear night sky.",
+   "references": [
+    "86:1-3"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 87,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 88,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 89,
+   "setting": "dawn",
+   "basis": "The surah opens \"By the dawn\" (89:1). The world at daybreak.",
+   "references": [
+    "89:1"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 90,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 91,
+   "setting": "sun",
+   "basis": "The surah opens \"By the sun and its brightness\" (91:1). A bright, open day.",
+   "references": [
+    "91:1"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 92,
+   "setting": "night",
+   "basis": "The surah opens \"By the night when it covers\" (92:1). A quiet night.",
+   "references": [
+    "92:1"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 93,
+   "setting": "morning",
+   "basis": "The surah opens \"By the morning brightness\" (93:1). Late morning light.",
+   "references": [
+    "93:1"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 94,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 95,
+   "setting": "orchard",
+   "basis": "The surah opens \"By the fig and the olive\" (95:1). An orchard of fig and olive trees.",
+   "references": [
+    "95:1"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 96,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 97,
+   "setting": "night",
+   "basis": "The surah's name means \"The Decree\" and it speaks of a night that is peace until the emergence of dawn (97:1, 97:5). A calm night sky.",
+   "references": [
+    "97:1",
+    "97:5"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 98,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 99,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 100,
+   "setting": "dunes",
+   "basis": "The surah opens with an oath by \"the racers, panting\" (100:1). Open desert at dawn. No riders or animals are shown.",
+   "references": [
+    "100:1"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 101,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 102,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 103,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 104,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 105,
+   "setting": "desert-dusk",
+   "basis": "The surah's name means \"The Elephant\" (105:1). An empty desert valley at dusk. The events of the surah are not acted out.",
+   "references": [
+    "105:1"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 106,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 107,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 108,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 109,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 110,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 111,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 112,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 113,
+   "setting": "dawn",
+   "basis": "The surah speaks of \"the Lord of daybreak\" (113:1). The world at daybreak.",
+   "references": [
+    "113:1"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 114,
+   "setting": "garden",
+   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
+   "references": [],
+   "review_status": "unreviewed"
+  }
+ ]
+}
