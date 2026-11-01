@@ -8,39 +8,51 @@ is never changed, generated or paraphrased: the app only frames it.
 
 This is a prototype. The sample story has **not** been reviewed by a scholar yet, and the app says so on screen.
 
-## The 3D book (web)
+## The 3D world of the whole Quran (web)
 
-On the web the app opens in a quiet reading room. The Quran rests open on a carved rehal; the child opens it, chooses
-the passage of the Yunus story, and the camera leans into the page as the story world grows out of it. Five 3D scenes
-follow (the sea at dawn, the laden ship, the great fish in the deep, the darkness, the open shore with the gourd vine).
-At the end the world shrinks back into the page and the verses open in a reading panel.
+On the web the whole app is one 3D world (`src/world/`). There are three places, joined by doorways and a short fade:
 
-How it is built:
+- **The reading room.** The Quran rests on a rehal. Any of the 114 surahs can be opened and read page by page. The
+  pages are laid out from the verified Arabic (`pages.ts`): words are split only at the spaces already in the text,
+  each ayah ends with its number, and the first page of a surah carries its name and the basmalah (none for At-Tawbah,
+  and for Al-Fatihah it is ayah 1). Pages turn as a bending leaf with both faces drawn (`Book.tsx`, `useReader.ts`).
+  There is ayah jump, previous and next surah, three Arabic sizes, bookmarks, and the Saheeh International
+  translation of the ayahs on the open spread in a side panel labelled as a translation. The camera frames the pages
+  in the part of the screen the controls leave free, so nothing is drawn over the Arabic. Arrow keys turn pages (left
+  is the next page, as in an Arabic book). These are the app's own pages, not a copy of a printed mushaf layout.
+- **The library.** A domed hall with all 114 surahs on the shelves in order (`Library.tsx`). Search by number or name,
+  take a book down to see its details and progress, then read it or walk its world.
+- **A world for every surah.** Each surah has a walkable landscape (`SurahWorld.tsx`) built from one of 19 symbolic
+  settings: sea, cave, light, dunes, wind, night, stars, moon, storm, dawn, orchard and others, with the default a quiet
+  garden. The choice for each surah, the reason and the ayahs it draws on are in `content/worlds/surah-worlds.json`;
+  95 surahs use the garden, which takes nothing from the surah. Lanterns along the path hold the surah's passages in
+  order (up to 12, all ayahs covered); opening one shows the verified Arabic and translation and can open the book at
+  that ayah. Doorways lead back to the library, on to the next surah, and, in Yunus, Al-Anbiya and As-Saffat, to the
+  Yunus story (`/yunus`, the earlier cinematic story). The "about this place" note marks every setting as an artistic
+  choice, not a scene of events and not reviewed yet.
 
-- **Three.js with React Three Fiber**, inside the same Expo app (`src/three/`). `Experience.web.tsx` is the web home;
-  `Experience.tsx` is the native stand-in, which opens the 2D Explore screen.
-- **All 3D assets are made in code**: the room, rehal, book, sea shader, ship, fish, shore and vine. There are no model
-  files, so nothing has an unclear licence, but the look is stylised rather than photoreal.
-- **The pages show the verified text.** `textures.ts` draws the stored Arabic of 37:139-148 and 21:87-88 onto canvas
-  pages in the Amiri Quran font, unchanged. They are passage pages, not a copy of a printed mushaf layout, and the app
-  says so. Scripture is never animated into other things: the world grows beside the page, not out of the letters.
-- **One camera rig** (`Director.tsx`) moves between shots, grows and shrinks the world, blends the light and fog for
-  each scene, and adds the child's drag-to-look and pinch or scroll to move closer.
-- **Sound** (`sound.ts`) is generated with Web Audio: a room tone, sea swell, wind, underwater hush, page turns and a
-  soft transition sweep. There is no music. Recitation only ever plays from a recording.
-- **Settings**: quiet mode and the speaker button, separate ambience and effects volume, reduce motion (short, direct
-  camera moves), and "play the opening again" are on the Parents screen. The opening plays once; after that the app
-  opens at the book, with a button to continue the last story.
+Graphics: physical sky, CC0 HDRI image lighting from Poly Haven (bundled through `@pmndrs/assets`), shadows, a water
+shader with waves, fresnel and sun glint, noise terrain, instanced palms, trees, olives, rocks, swaying grass tufts and
+flowers, fireflies, dust, sand and rain, fog per setting, and on medium and high quality bloom, vignette and ACES tone
+mapping. Quality is low, medium or high, or auto, which starts from the device and steps down if frames drop.
+
+Rules the worlds follow: no prophet or person is shown, nothing represents Allah, no event is staged as if it
+happened there, and the scripture is only ever the stored text. The journal lists bookmarks and progress (surahs
+opened, worlds visited, lanterns found); settings cover ambience and effects volume, quiet mode, reduced motion,
+quality, Arabic size and the translation panel. There is no background music, and recitation is off until a licensed
+recording is added (`content/audio/recitations.json`, `licensed: false`).
 
 Limits, honestly:
 
-- **Web only for now.** Phones and tablets running the native app get the 2D app. Running the 3D book natively needs
-  `expo-gl` with `@react-three/fiber/native` and testing on devices; it has not been done.
-- **Performance** has been checked only in a software-rendered test browser. Real phones need checking; the scene keeps
-  geometry light and caps the pixel ratio at 1.75.
-- **The pages show passages, not whole mushaf pages.** Reading beyond the story's verses opens the full surah reader.
-- **Page turning is simple**: the cover and two blank leaves turn with a gentle bend. It is not a physical paper
-  simulation.
+- **Web only for now.** The native app still opens the 2D screens (`WorldApp.tsx`). The same scene should run on
+  phones through `expo-gl` and `@react-three/fiber/native`, but that has not been built or tested on a device.
+- **Tested only in a software-rendered browser** (headless Chromium with SwiftShader), at desktop and phone sizes.
+  Frame rates on real phones and GPUs are unmeasured.
+- **The worlds are symbolic, not story scenes.** Only Yunus has a story world. Dedicated, reviewed experiences for
+  surahs such as Al-Fil, Yusuf and Al-Kahf are not built.
+- **No Arabic vocabulary yet.** It needs a verified word-by-word source; nothing is generated by the app.
+- **Nothing has had scholarly review**: not the worlds, not the story, not the explanations.
+- All 3D shapes are made in code. The look is stylised, not photoreal.
 
 ## Run it
 
@@ -96,7 +108,8 @@ Other checks: `npm run typecheck`.
 - **More stories.** Only Yunus exists. Other topics are listed as "being researched".
 - **Interface languages and more translations.** English only for now.
 - **Store builds.** Not set up. Use EAS (`npx eas-cli build`) when ready; the bundle id is `org.erguvan.quranstorybook`.
-- **3D on phones and tablets.** The native app shows the 2D experience; see "The 3D book (web)" above.
+- **3D on phones and tablets.** The native app shows the 2D experience; see "The 3D world of the whole Quran" above.
+- **Scholarly review of the surah worlds.** Every entry in `content/worlds/surah-worlds.json` is `unreviewed`.
 - **Real paper sounds and recorded ambience.** The sounds are generated stand-ins; recorded, licensed sounds would be
   better.
 - No backend, database or account system exists, and none is needed for this prototype.
