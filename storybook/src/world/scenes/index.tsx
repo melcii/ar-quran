@@ -12,14 +12,23 @@ import { AsrScene } from './Asr';
 import { FilScene } from './Fil';
 import { IkhlasScene } from './Ikhlas';
 import { KahfScene } from './Kahf';
+import { NamlScene } from './Naml';
 import { YusufScene } from './Yusuf';
 
 export type Stop = { p: Passage; pos: THREE.Vector3 };
-export type SceneProps = { land: Land; stops: Stop[]; quality: Quality };
+export type SceneProps = {
+  land: Land;
+  stops: Stop[];
+  quality: Quality;
+  /** Finish one of the design's activities, by its name (for "find" activities played in the scene). */
+  complete: (activity: string) => void;
+  hint: (text: string) => void;
+};
 
 export const SCENES: Record<number, ComponentType<SceneProps>> = {
   12: YusufScene,
   18: KahfScene,
+  27: NamlScene,
   103: AsrScene,
   105: FilScene,
   112: IkhlasScene,

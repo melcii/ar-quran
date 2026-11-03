@@ -53,6 +53,7 @@ export function SurahWorld({
   onNear,
   onPortal,
   onHint,
+  onSceneActivity,
 }: {
   surah: number;
   quality: Quality;
@@ -63,6 +64,7 @@ export function SurahWorld({
   onNear: (p: Passage | null) => void;
   onPortal: (where: 'library' | 'next' | 'story' | 'book') => void;
   onHint: (text: string) => void;
+  onSceneActivity?: (name: string) => void;
 }) {
   const info = worldFor(surah);
   const preset = PRESETS[info.setting];
@@ -152,7 +154,7 @@ export function SurahWorld({
       <Grass spots={spots.flowers} flowers />
       <Particles kind={preset.particles} count={Math.round((preset.particles === 'rain' ? 2400 : 500) * quality.vegetation)} />
       {preset.lamps && <Lamps land={land} />}
-      {Scene && <Scene land={land} stops={stops} quality={quality} />}
+      {Scene && <Scene land={land} stops={stops} quality={quality} complete={(n) => onSceneActivity?.(n)} hint={onHint} />}
 
       {stops.map(({ p, pos }) => (
         <Lantern key={p.index} position={pos} found={found.includes(p.index)} onClick={tapLantern(p, pos)} />
@@ -356,11 +358,20 @@ function Walker({
     const up = (e: KeyboardEvent) => keys.current.delete(e.key.toLowerCase());
     window.addEventListener('keydown', dn);
     window.addEventListener('keyup', up);
+    // Test hook: stand a few steps in front of a stop, facing it. Software-rendered
+    // test browsers walk far too slowly to reach later places by key presses.
+    (globalThis as { __goToStop?: (i: number) => void }).__goToStop = (i: number) => {
+      const st = stops[i];
+      if (!st) return;
+      pos.current.set(st.pos.x, 0, st.pos.z + 5);
+      look.yaw = 0;
+      look.pitch = -0.1;
+    };
     return () => {
       window.removeEventListener('keydown', dn);
       window.removeEventListener('keyup', up);
     };
-  }, [land, look]);
+  }, [land, look, stops]);
   useFrame((_, dt) => {
     const k = keys.current;
     let fx = move.current.x;

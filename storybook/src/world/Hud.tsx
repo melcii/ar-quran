@@ -407,7 +407,9 @@ export function WorldHud({
                       <Text style={s.basisText}>{a.description}</Text>
                       <Row wrap style={{ gap: 6 }}>
                         {ref && <Button small kind="secondary" icon="book" label={`Read ${formatRef(a.reference)}`} onPress={() => onReadRef(ref.surah, ref.from)} />}
-                        {a.kind !== 'card' ? (
+                        {a.kind === 'find' ? (
+                          <Text style={s.small}>{done ? 'Found in this world.' : 'Look for it in this world and tap it.'}</Text>
+                        ) : a.kind !== 'card' ? (
                           <Button small icon="play" label={done ? 'Play again' : 'Play'} accessibilityLabel={`Play: ${a.name}`} onPress={() => (setGame(i), setAbout(false))} />
                         ) : (
                           !done && <Button small kind="secondary" label="I did this" accessibilityLabel={`Mark done: ${a.name}`} onPress={() => onActivity(i)} />

@@ -96,21 +96,31 @@
  ],
  "activities": [
   {
-   "name": "Walk with care",
-   "reference": "27:18",
-   "description": "Cross the valley without stepping on any ant paths (adaptation).",
+   "name": "Find the hoopoe",
+   "reference": "27:20-22",
+   "kind": "find",
+   "description": "One branch on the birds' tree is empty. Follow the road and find the hoopoe, then read 27:20-22.",
    "label": "artistic educational adaptation, not an event in the Quran"
   },
   {
-   "name": "Find the hoopoe",
-   "reference": "27:20-22",
-   "description": "Search the birds and follow the hoopoe's trail to Sheba (adaptation).",
+   "name": "Match each place to its ayah",
+   "reference": "27:18-88",
+   "kind": "match",
+   "description": "Match each place in the valley to the ayah it comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Walk with care",
+   "reference": "27:18",
+   "kind": "card",
+   "description": "Cross the valley of the ants without stepping on their trails, and talk about caring for small creatures.",
    "label": "artistic educational adaptation, not an event in the Quran"
   },
   {
    "name": "Gratitude prayer",
    "reference": "27:19",
-   "description": "Read 27:19 at the valley's end to light it.",
+   "kind": "card",
+   "description": "Read 27:19 at the valley's end and talk about thanking Allah.",
    "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
@@ -159,13 +169,16 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: its own valley (ant hills with ants, a tree of birds with an empty branch, a hoopoe to find, a far city, a glass floor over water, drifting mountains), a find-it activity in the scene and a matching game",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Naml.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and tapping the hoopoe"
  },
  "quran_references": [
   "27:7-14",
   "27:17-19",
   "27:18",
+  "27:18-88",
   "27:19",
   "27:20",
   "27:20-22",

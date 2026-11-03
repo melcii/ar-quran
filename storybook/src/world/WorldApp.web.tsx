@@ -21,6 +21,7 @@ import { Library, useDragLook, yawOfSurah } from './Library';
 import { QUALITY, guessTier, lowerTier, type QualityTier } from './quality';
 import { Sanctuary } from './Sanctuary';
 import { PRESETS, worldFor, type SettingName } from './settings';
+import { designFor } from '@/content/designs';
 import { SurahWorld, passagesOf, type Move, type Passage } from './SurahWorld';
 import { useReader } from './useReader';
 
@@ -250,6 +251,16 @@ function World() {
     },
     [app, surah],
   );
+  const sceneActivity = useCallback(
+    (name: string) => {
+      const i = designFor(surah)?.activities.findIndex((a) => a.name === name) ?? -1;
+      if (i < 0) return;
+      app.updateSurahProgress(surah, (cur) => ({
+        activitiesDone: (cur.activitiesDone ?? []).includes(i) ? cur.activitiesDone : [...(cur.activitiesDone ?? []), i].sort((a, b) => a - b),
+      }));
+    },
+    [app, surah],
+  );
   const portal = useCallback(
     (where: 'library' | 'next' | 'story' | 'book') => {
       if (where === 'library') toLibrary(surah);
@@ -340,6 +351,7 @@ function World() {
               onNear={setNear}
               onPortal={portal}
               onHint={setHint}
+              onSceneActivity={sceneActivity}
             />
           </>
         )}
