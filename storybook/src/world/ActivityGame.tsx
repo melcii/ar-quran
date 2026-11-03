@@ -1,8 +1,9 @@
 // Playable activities from a surah's design record. They are reading games
 // built only from the verified text and the design's places: they never add
 // words to the Quran or act out its events, and each is labelled an
-// adaptation. Kinds: "order" (put a run of ayahs in order) and "match" (match
-// each place of the world to the ayah it comes from).
+// adaptation. Kinds: "order" (put a run of ayahs in order), "match" (match
+// each place of the world to the ayah it comes from) and "journey" (put the
+// world's places in the order the surah tells them).
 import { useMemo, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Button, ContentLabel, IconButton, Row } from '@/components/ui';
@@ -50,6 +51,7 @@ export function ActivityGame({
       <Text style={s.small}>{activity.description}</Text>
       {activity.kind === 'order' && <OrderGame design={design} activity={activity} onDone={onDone} />}
       {activity.kind === 'match' && <MatchGame design={design} onDone={onDone} />}
+      {activity.kind === 'journey' && <JourneyGame design={design} onDone={onDone} />}
     </View>
   );
 }
@@ -85,6 +87,53 @@ function OrderGame({ design, activity, onDone }: { design: WorldDesignSummary; a
               <VerseCard key={a} surah={design.surah} ayah={a} hideNumber state={wrong === a ? 'wrong' : 'open'} onPress={() => tap(a)} />
             ))}
         </View>
+      )}
+    </ScrollView>
+  );
+}
+
+function JourneyGame({ design, onDone }: { design: WorldDesignSummary; onDone: () => void }) {
+  const ordered = useMemo(
+    () => [...design.areas].map((a) => ({ ...a, at: parseRef(a.reference)?.from ?? 0 })).sort((x, y) => x.at - y.at),
+    [design.areas],
+  );
+  const cards = useMemo(() => shuffled(ordered, design.surah * 13 + 5), [ordered, design.surah]);
+  const [placed, setPlaced] = useState<string[]>([]);
+  const [wrong, setWrong] = useState<string | null>(null);
+  const done = placed.length === ordered.length;
+  const tap = (name: string) => {
+    if (ordered[placed.length]?.name === name) {
+      const now = [...placed, name];
+      setPlaced(now);
+      setWrong(null);
+      if (now.length === ordered.length) onDone();
+    } else setWrong(name);
+  };
+  return (
+    <ScrollView style={{ flexShrink: 1 }} contentContainerStyle={{ gap: 8 }}>
+      <Text style={s.prompt}>{done ? 'The whole journey, in order. Well done!' : `Which place comes ${placed.length ? 'next' : 'first'} in the surah?`}</Text>
+      {ordered
+        .filter((a) => placed.includes(a.name))
+        .map((a, i) => (
+          <View key={a.name} style={[s.card, s.cardPlaced]}>
+            <Text style={s.prompt}>
+              {i + 1}. {a.name}
+            </Text>
+            <Text style={s.translation}>{getVerse(design.surah, a.at)?.translation_text}</Text>
+            <Text style={s.cardMeta}>{formatRef(a.reference)} · Saheeh International</Text>
+          </View>
+        ))}
+      {wrong && <Text style={s.nudge}>Not yet. Think about what happens first in the story.</Text>}
+      {!done && (
+        <Row wrap style={{ gap: 6 }}>
+          {cards
+            .filter((a) => !placed.includes(a.name))
+            .map((a) => (
+              <Pressable key={a.name} accessibilityRole="button" onPress={() => tap(a.name)} style={[s.chip, wrong === a.name && s.chipPicked]}>
+                <Text style={s.chipText}>{a.name}</Text>
+              </Pressable>
+            ))}
+        </Row>
       )}
     </ScrollView>
   );

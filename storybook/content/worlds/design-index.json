@@ -705,21 +705,21 @@
    ],
    "activities": [
     {
+     "name": "Retell the journey",
+     "reference": "12:4-100",
+     "description": "Put the seven places of Yusuf's story in the order the surah tells them, from the dream to the reunion.",
+     "kind": "journey"
+    },
+    {
+     "name": "Match each place to its ayah",
+     "reference": "12:4-100",
+     "description": "Match each place on the road to the ayah it comes from.",
+     "kind": "match"
+    },
+    {
      "name": "Store the harvest",
      "reference": "12:47-49",
      "description": "Over seven years of plenty, store grain in its spikes; then share it through seven hard years.",
-     "kind": "card"
-    },
-    {
-     "name": "Read the dreams",
-     "reference": "12:43",
-     "description": "Match the king's dream images to their meaning as 12:47-49 explains.",
-     "kind": "card"
-    },
-    {
-     "name": "Follow the stars",
-     "reference": "12:4",
-     "description": "Find the eleven stars, the sun and the moon in the night sky.",
      "kind": "card"
     }
    ],
@@ -734,8 +734,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own road of seven places (stars, well, caravan, prison, granaries, shirt, hall) and two playable games",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Yusuf.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the journey game"
    },
    "review": "unreviewed"
   },

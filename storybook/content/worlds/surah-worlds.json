@@ -83,9 +83,17 @@
   },
   {
    "surah": 12,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "desert-dusk",
+   "basis": "One road through Yusuf's story in the surah's order: eleven stars with the sun and the moon (12:4), a well (12:15), a caravan's camels and bucket (12:19), a prison courtyard (12:36), granaries (12:47), a shirt (12:93) and an empty hall (12:100). No person is shown.",
+   "references": [
+    "12:4",
+    "12:15",
+    "12:19",
+    "12:36",
+    "12:47",
+    "12:93",
+    "12:100"
+   ],
    "review_status": "unreviewed"
   },
   {
