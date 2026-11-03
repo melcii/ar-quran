@@ -266,6 +266,9 @@ designFiles.forEach((f, i) => {
     const p = parseRef(a.reference);
     if (!p || p.surah !== d.surah) fail(`${ctx}: activity "${a.name}" has a bad reference`);
     if (!/adaptation/.test(a.label)) fail(`${ctx}: activity "${a.name}" is not labelled an adaptation`);
+    if (a.kind && !["card", "order", "match"].includes(a.kind)) fail(`${ctx}: activity "${a.name}" has unknown kind ${a.kind}`);
+    if (a.kind === "order" && p && (p.to - p.from < 1 || p.to - p.from > 9)) fail(`${ctx}: order activity "${a.name}" needs 2 to 10 ayahs`);
+    if (a.kind === "match" && d.areas.length < 2) fail(`${ctx}: match activity "${a.name}" needs at least two areas`);
   });
   d.quran_references.forEach((r) => parseRef(r) || fail(`${ctx}: bad reference "${r}"`));
   const built = d.status.playable_environment && !HONEST.playable_environment.test(d.status.playable_environment);

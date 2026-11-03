@@ -33,12 +33,14 @@
     {
      "name": "Seven-step walk",
      "reference": "1:1-7",
-     "description": "Each of the seven ayahs is a stepping stone; reading it lights the next stone."
+     "description": "Each of the seven ayahs is a stepping stone; reading it lights the next stone.",
+     "kind": "card"
     },
     {
      "name": "Asking for help",
      "reference": "1:5",
-     "description": "A lantern the child lights by reading 1:5, linking worship and asking Allah for help."
+     "description": "A lantern the child lights by reading 1:5, linking worship and asking Allah for help.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -94,17 +96,20 @@
     {
      "name": "Plant the seed of charity",
      "reference": "2:261",
-     "description": "Plant one seed and watch it grow into seven spikes with many grains, then read 2:261."
+     "description": "Plant one seed and watch it grow into seven spikes with many grains, then read 2:261.",
+     "kind": "card"
     },
     {
      "name": "Find the names",
      "reference": "2:31",
-     "description": "Discover named objects around the glade, learning that knowledge is a gift from Allah."
+     "description": "Discover named objects around the glade, learning that knowledge is a gift from Allah.",
+     "kind": "card"
     },
     {
      "name": "Lay the foundations",
      "reference": "2:127",
-     "description": "Set foundation stones in place while 2:127 is shown; the people are not shown."
+     "description": "Set foundation stones in place while 2:127 is shown; the people are not shown.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -155,12 +160,14 @@
     {
      "name": "Hold the rope together",
      "reference": "3:103",
-     "description": "Gather scattered rope pieces and tie them to the pillars; the courtyard steadies when it is whole."
+     "description": "Gather scattered rope pieces and tie them to the pillars; the courtyard steadies when it is whole.",
+     "kind": "card"
     },
     {
      "name": "Watch night turn to day",
      "reference": "3:190-191",
-     "description": "Speed the sky from night to day and read the ayahs about reflection."
+     "description": "Speed the sky from night to day and read the ayahs about reflection.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -211,12 +218,14 @@
     {
      "name": "Return the trusts",
      "reference": "4:58",
-     "description": "Find objects left in the wrong place and return each to its owner's house."
+     "description": "Find objects left in the wrong place and return each to its owner's house.",
+     "kind": "card"
     },
     {
      "name": "Keep the scales level",
      "reference": "4:135",
-     "description": "Choose fair options so the scales stay balanced, then read 4:135."
+     "description": "Choose fair options so the scales stay balanced, then read 4:135.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -267,12 +276,14 @@
     {
      "name": "Help each other",
      "reference": "5:2",
-     "description": "Carry loads together with helper characters (not real people from the Quran) to learn cooperation in goodness."
+     "description": "Carry loads together with helper characters (not real people from the Quran) to learn cooperation in goodness.",
+     "kind": "card"
     },
     {
      "name": "Keep the promise",
      "reference": "5:1",
-     "description": "Make a promise at the start of the world and keep it by finishing a task."
+     "description": "Make a promise at the start of the world and keep it by finishing a task.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -328,12 +339,14 @@
     {
      "name": "What sets and what stays",
      "reference": "6:76-79",
-     "description": "Watch star, moon and sun each set, and reflect, as the ayahs say, on turning to the Creator."
+     "description": "Watch star, moon and sun each set, and reflect, as the ayahs say, on turning to the Creator.",
+     "kind": "card"
     },
     {
      "name": "Split the seed",
      "reference": "6:95",
-     "description": "Tap seeds to see them split and sprout."
+     "description": "Tap seeds to see them split and sprout.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -394,12 +407,14 @@
     {
      "name": "Fair weights",
      "reference": "7:85",
-     "description": "Weigh goods fairly in the market so every customer gets full measure."
+     "description": "Weigh goods fairly in the market so every customer gets full measure.",
+     "kind": "card"
     },
     {
      "name": "Walk the ridge",
      "reference": "7:59-93",
-     "description": "Visit each people's area in order and hear the message they were given."
+     "description": "Visit each people's area in order and hear the message they were given.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -445,12 +460,14 @@
     {
      "name": "Walk on firm ground",
      "reference": "8:11",
-     "description": "Cross soft sand that becomes firm after the rain."
+     "description": "Cross soft sand that becomes firm after the rain.",
+     "kind": "card"
     },
     {
      "name": "Don't quarrel",
      "reference": "8:46",
-     "description": "Solve a teamwork puzzle that only works when every piece cooperates."
+     "description": "Solve a teamwork puzzle that only works when every piece cooperates.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -496,12 +513,14 @@
     {
      "name": "Lanterns of return",
      "reference": "9:104",
-     "description": "Light lanterns along the road home while reading about repentance."
+     "description": "Light lanterns along the road home while reading about repentance.",
+     "kind": "card"
     },
     {
      "name": "Firm foundations",
      "reference": "9:109",
-     "description": "Compare a building on firm ground with one on a crumbling bank."
+     "description": "Compare a building on firm ground with one on a crumbling bank.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -552,12 +571,14 @@
     {
      "name": "Count the months",
      "reference": "10:5",
-     "description": "Set the moon through its phases to see how time is counted."
+     "description": "Set the moon through its phases to see how time is counted.",
+     "kind": "card"
     },
     {
      "name": "Calm the sail",
      "reference": "10:22",
-     "description": "Hold the ship steady through a storm while reading 10:22."
+     "description": "Hold the ship steady through a storm while reading 10:22.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -613,12 +634,14 @@
     {
      "name": "Build the ark",
      "reference": "11:37",
-     "description": "Place timbers on the ark's frame; the narrator notes this is an adaptation."
+     "description": "Place timbers on the ark's frame; the narrator notes this is an adaptation.",
+     "kind": "card"
     },
     {
      "name": "Fair measure",
      "reference": "11:85",
-     "description": "Balance a market scale so everyone receives full measure."
+     "description": "Balance a market scale so everyone receives full measure.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -684,17 +707,20 @@
     {
      "name": "Store the harvest",
      "reference": "12:47-49",
-     "description": "Over seven years of plenty, store grain in its spikes; then share it through seven hard years."
+     "description": "Over seven years of plenty, store grain in its spikes; then share it through seven hard years.",
+     "kind": "card"
     },
     {
      "name": "Read the dreams",
      "reference": "12:43",
-     "description": "Match the king's dream images to their meaning as 12:47-49 explains."
+     "description": "Match the king's dream images to their meaning as 12:47-49 explains.",
+     "kind": "card"
     },
     {
      "name": "Follow the stars",
      "reference": "12:4",
-     "description": "Find the eleven stars, the sun and the moon in the night sky."
+     "description": "Find the eleven stars, the sun and the moon in the night sky.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -750,12 +776,14 @@
     {
      "name": "Water and foam",
      "reference": "13:17",
-     "description": "Let floodwater settle: foam floats away, useful water stays."
+     "description": "Let floodwater settle: foam floats away, useful water stays.",
+     "kind": "card"
     },
     {
      "name": "One water, many fruits",
      "reference": "13:4",
-     "description": "Water neighbouring plots and see different fruits grow."
+     "description": "Water neighbouring plots and see different fruits grow.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -806,12 +834,14 @@
     {
      "name": "Good words grow",
      "reference": "14:24-25",
-     "description": "Choose kind words; each one makes the good tree grow."
+     "description": "Choose kind words; each one makes the good tree grow.",
+     "kind": "card"
     },
     {
      "name": "Thankful stones",
      "reference": "14:7",
-     "description": "Place a stone for each blessing you thank Allah for."
+     "description": "Place a stone for each blessing you thank Allah for.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -862,12 +892,14 @@
     {
      "name": "Carry the pollen",
      "reference": "15:22",
-     "description": "Guide the wind to carry pollen between flowers."
+     "description": "Guide the wind to carry pollen between flowers.",
+     "kind": "card"
     },
     {
      "name": "Find the constellations",
      "reference": "15:16",
-     "description": "Trace constellations in the sky."
+     "description": "Trace constellations in the sky.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -923,12 +955,14 @@
     {
      "name": "Follow the bee",
      "reference": "16:68-69",
-     "description": "Follow a bee from flower to flower back to its hive."
+     "description": "Follow a bee from flower to flower back to its hive.",
+     "kind": "card"
     },
     {
      "name": "Count the blessings",
      "reference": "16:18",
-     "description": "Collect blessings around the valley and learn they cannot all be counted."
+     "description": "Collect blessings around the valley and learn they cannot all be counted.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -979,12 +1013,14 @@
     {
      "name": "Words for parents",
      "reference": "17:23-24",
-     "description": "Choose gentle words to say to parents."
+     "description": "Choose gentle words to say to parents.",
+     "kind": "card"
     },
     {
      "name": "Honest measure",
      "reference": "17:35",
-     "description": "Measure fairly in the market."
+     "description": "Measure fairly in the market.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -1050,17 +1086,20 @@
     {
      "name": "Follow the sun",
      "reference": "18:17",
-     "description": "Track the sun past the cave mouth from morning to evening."
+     "description": "Track the sun past the cave mouth from morning to evening.",
+     "kind": "card"
     },
     {
      "name": "Why did it happen?",
      "reference": "18:79-82",
-     "description": "At the ship and the wall, match each event with the reason 18:79-82 gives."
+     "description": "At the ship and the wall, match each event with the reason 18:79-82 gives.",
+     "kind": "card"
     },
     {
      "name": "Build the barrier",
      "reference": "18:96",
-     "description": "Stack iron blocks and pour copper to close the pass (adaptation)."
+     "description": "Stack iron blocks and pour copper to close the pass (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -1116,12 +1155,14 @@
     {
      "name": "Gentle words",
      "reference": "19:42-47",
-     "description": "Choose the gentle way Ibrahim spoke to his father, read from the ayahs."
+     "description": "Choose the gentle way Ibrahim spoke to his father, read from the ayahs.",
+     "kind": "card"
     },
     {
      "name": "The palm and the stream",
      "reference": "19:24-26",
-     "description": "Find the stream and the dates (an adaptation; Maryam is not shown or played)."
+     "description": "Find the stream and the dates (an adaptation; Maryam is not shown or played).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -1177,17 +1218,20 @@
     {
      "name": "Follow the firelight",
      "reference": "20:10",
-     "description": "Walk through the dark valley guided only by the fire, reading 20:10 at its edge."
+     "description": "Walk through the dark valley guided only by the fire, reading 20:10 at its edge.",
+     "kind": "card"
     },
     {
      "name": "Gentle words",
      "reference": "20:44",
-     "description": "Choose the gentle way to speak in short scenarios, then read 20:44."
+     "description": "Choose the gentle way to speak in short scenarios, then read 20:44.",
+     "kind": "card"
     },
     {
      "name": "The staff and the rope",
      "reference": "20:66-69",
-     "description": "A sorting game separating illusion from truth; nothing is shown of Musa (adaptation)."
+     "description": "A sorting game separating illusion from truth; nothing is shown of Musa (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -1243,17 +1287,20 @@
     {
      "name": "The orbits",
      "reference": "21:33",
-     "description": "Set the sun and the moon swimming in their orbits on a sky dial."
+     "description": "Set the sun and the moon swimming in their orbits on a sky dial.",
+     "kind": "card"
     },
     {
      "name": "Prophet timeline",
      "reference": "21:48-91",
-     "description": "Place each room's object in the order the surah mentions it."
+     "description": "Place each room's object in the order the surah mentions it.",
+     "kind": "card"
     },
     {
      "name": "Words of Yunus",
      "reference": "21:87",
-     "description": "Read 21:87 aloud to brighten the darkened room (the prophet is not shown)."
+     "description": "Read 21:87 aloud to brighten the darkened room (the prophet is not shown).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -1304,12 +1351,14 @@
     {
      "name": "Rain on the hills",
      "reference": "22:63",
-     "description": "Bring clouds over dry fields and watch them turn green, then read 22:63."
+     "description": "Bring clouds over dry fields and watch them turn green, then read 22:63.",
+     "kind": "card"
     },
     {
      "name": "Pack for the journey",
      "reference": "22:27-28",
-     "description": "A gentle sorting game about what a traveller needs and why sincerity matters (adaptation)."
+     "description": "A gentle sorting game about what a traveller needs and why sincerity matters (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -1370,12 +1419,14 @@
     {
      "name": "Qualities ladder",
      "reference": "23:1-11",
-     "description": "Light each terrace by matching it to its ayah."
+     "description": "Light each terrace by matching it to its ayah.",
+     "kind": "card"
     },
     {
      "name": "Fill the reservoir",
      "reference": "23:18",
-     "description": "Guide rain in measured amounts to fill the reservoir without flooding (adaptation)."
+     "description": "Guide rain in measured amounts to fill the reservoir without flooding (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -1436,17 +1487,20 @@
     {
      "name": "Knock and greet",
      "reference": "24:27-28",
-     "description": "Practise asking permission at each door before entering."
+     "description": "Practise asking permission at each door before entering.",
+     "kind": "card"
     },
     {
      "name": "Stop the rumour",
      "reference": "24:15-16",
-     "description": "A rumour passes from lantern to lantern; choose to stop it (adaptation)."
+     "description": "A rumour passes from lantern to lantern; choose to stop it (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Layers of light",
      "reference": "24:35",
-     "description": "Assemble lamp, glass and niche in order as the ayah describes."
+     "description": "Assemble lamp, glass and niche in order as the ayah describes.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -1502,17 +1556,20 @@
     {
      "name": "Shadow clock",
      "reference": "25:45-46",
-     "description": "Move the sun and watch shadows lengthen and shrink."
+     "description": "Move the sun and watch shadows lengthen and shrink.",
+     "kind": "card"
     },
     {
      "name": "Answer with peace",
      "reference": "25:63",
-     "description": "Respond calmly to harsh words in short scenarios (adaptation)."
+     "description": "Respond calmly to harsh words in short scenarios (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Taste the two seas",
      "reference": "25:53",
-     "description": "Sort which water is fresh and which salty along the barrier."
+     "description": "Sort which water is fresh and which salty along the barrier.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -1563,12 +1620,14 @@
     {
      "name": "Full measure",
      "reference": "26:181-183",
-     "description": "Weigh goods fairly at the Madyan market (adaptation)."
+     "description": "Weigh goods fairly at the Madyan market (adaptation).",
+     "kind": "card"
     },
     {
      "name": "The refrain",
      "reference": "26:8-9",
-     "description": "Each shore ends with 26:8-9 read in Arabic; collect each refrain to light the coast road."
+     "description": "Each shore ends with 26:8-9 read in Arabic; collect each refrain to light the coast road.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -1624,17 +1683,20 @@
     {
      "name": "Walk with care",
      "reference": "27:18",
-     "description": "Cross the valley without stepping on any ant paths (adaptation)."
+     "description": "Cross the valley without stepping on any ant paths (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Find the hoopoe",
      "reference": "27:20-22",
-     "description": "Search the birds and follow the hoopoe's trail to Sheba (adaptation)."
+     "description": "Search the birds and follow the hoopoe's trail to Sheba (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Gratitude prayer",
      "reference": "27:19",
-     "description": "Read 27:19 at the valley's end to light it."
+     "description": "Read 27:19 at the valley's end to light it.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -1690,12 +1752,14 @@
     {
      "name": "Water the flock",
      "reference": "28:23-24",
-     "description": "Help the waiting flocks drink, then rest in the shade and read 28:24 (adaptation)."
+     "description": "Help the waiting flocks drink, then rest in the shade and read 28:24 (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Keys too heavy",
      "reference": "28:76",
-     "description": "Try to lift Qarun's keys; learn why boasting about wealth is wrong (adaptation)."
+     "description": "Try to lift Qarun's keys; learn why boasting about wealth is wrong (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -1741,12 +1805,14 @@
     {
      "name": "Test the homes",
      "reference": "29:41",
-     "description": "Push gently on the web and the stone house to see which stands (adaptation)."
+     "description": "Push gently on the web and the stone house to see which stands (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Observe creation",
      "reference": "29:20",
-     "description": "Travel the road and collect sights of how things begin and grow."
+     "description": "Travel the road and collect sights of how things begin and grow.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -1797,12 +1863,14 @@
     {
      "name": "Hello in many languages",
      "reference": "30:22",
-     "description": "Greet stall keepers in different languages and notice each is a sign (adaptation)."
+     "description": "Greet stall keepers in different languages and notice each is a sign (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Wind and rain",
      "reference": "30:48-50",
-     "description": "Guide winds to stir clouds, then watch rain revive the land."
+     "description": "Guide winds to stir clouds, then watch rain revive the land.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -1848,12 +1916,14 @@
     {
      "name": "Advice path",
      "reference": "31:13-19",
-     "description": "Walk each path and match the advice to its ayah."
+     "description": "Walk each path and match the advice to its ayah.",
+     "kind": "card"
     },
     {
      "name": "Lower your voice",
      "reference": "31:19",
-     "description": "Practise a calm voice level in a playful sound game (adaptation)."
+     "description": "Practise a calm voice level in a playful sound game (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -1899,12 +1969,14 @@
     {
      "name": "Gifts of hearing, sight and heart",
      "reference": "32:9",
-     "description": "Find three gifts named in 32:9 around the village (adaptation)."
+     "description": "Find three gifts named in 32:9 around the village (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Water the plain",
      "reference": "32:27",
-     "description": "Lead water to barren land and watch crops grow."
+     "description": "Lead water to barren land and watch crops grow.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -1945,12 +2017,14 @@
     {
      "name": "Qualities wall",
      "reference": "33:35",
-     "description": "Place the qualities of 33:35 as stones in a wall."
+     "description": "Place the qualities of 33:35 as stones in a wall.",
+     "kind": "card"
     },
     {
      "name": "Remember often",
      "reference": "33:41-42",
-     "description": "Light lamps morning and evening by reading the ayah."
+     "description": "Light lamps morning and evening by reading the ayah.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -2006,12 +2080,14 @@
     {
      "name": "Work in gratitude",
      "reference": "34:13",
-     "description": "Fill the great bowls while reading 34:13 (adaptation)."
+     "description": "Fill the great bowls while reading 34:13 (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Before and after",
      "reference": "34:15-16",
-     "description": "Compare the gardens before and after and talk about gratitude."
+     "description": "Compare the gardens before and after and talk about gratitude.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -2057,12 +2133,14 @@
     {
      "name": "Colour hunt",
      "reference": "35:27-28",
-     "description": "Collect colours from fruits, rocks and animals."
+     "description": "Collect colours from fruits, rocks and animals.",
+     "kind": "card"
     },
     {
      "name": "Pearl diving",
      "reference": "35:12",
-     "description": "Find ornaments in the sea (adaptation)."
+     "description": "Find ornaments in the sea (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -2118,17 +2196,20 @@
     {
      "name": "Moon phases",
      "reference": "36:39",
-     "description": "Set the moon's phases in order."
+     "description": "Set the moon's phases in order.",
+     "kind": "card"
     },
     {
      "name": "Orbits",
      "reference": "36:40",
-     "description": "Keep the sun and moon in their own orbits so neither overtakes."
+     "description": "Keep the sun and moon in their own orbits so neither overtakes.",
+     "kind": "card"
     },
     {
      "name": "Pairs",
      "reference": "36:36",
-     "description": "Match pairs found in the garden (adaptation)."
+     "description": "Match pairs found in the garden (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -2174,12 +2255,14 @@
     {
      "name": "Grow the vine",
      "reference": "37:146",
-     "description": "Help a gourd vine grow by the shore (adaptation, no person shown)."
+     "description": "Help a gourd vine grow by the shore (adaptation, no person shown).",
+     "kind": "card"
     },
     {
      "name": "Star map",
      "reference": "37:6",
-     "description": "Light the stars that adorn the nearest heaven."
+     "description": "Light the stars that adorn the nearest heaven.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -2225,12 +2308,14 @@
     {
      "name": "Fair judgement",
      "reference": "38:26",
-     "description": "Decide fairly in simple disputes (adaptation)."
+     "description": "Decide fairly in simple disputes (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Echo game",
      "reference": "38:18-19",
-     "description": "Echo phrases of glorification across the hills."
+     "description": "Echo phrases of glorification across the hills.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -2276,12 +2361,14 @@
     {
      "name": "Water cycle",
      "reference": "39:21",
-     "description": "Follow rain into springs and crops."
+     "description": "Follow rain into springs and crops.",
+     "kind": "card"
     },
     {
      "name": "Never despair",
      "reference": "39:53",
-     "description": "Light a lantern of hope by reading 39:53."
+     "description": "Light a lantern of hope by reading 39:53.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -2322,12 +2409,14 @@
     {
      "name": "Courage words",
      "reference": "40:28",
-     "description": "Choose words of truth in difficult moments (adaptation)."
+     "description": "Choose words of truth in difficult moments (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Pride tower",
      "reference": "40:36-37",
-     "description": "Watch the tower fall short and talk about pride."
+     "description": "Watch the tower fall short and talk about pride.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -2373,12 +2462,14 @@
     {
      "name": "Clear the sky",
      "reference": "41:11-12",
-     "description": "Watch smoke settle into seven layers and lamps of stars (adaptation)."
+     "description": "Watch smoke settle into seven layers and lamps of stars (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Rain and growth",
      "reference": "41:39",
-     "description": "Bring rain to the stilled earth."
+     "description": "Bring rain to the stilled earth.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -2424,12 +2515,14 @@
     {
      "name": "Decide together",
      "reference": "42:38",
-     "description": "Make group choices by asking each character's opinion (adaptation)."
+     "description": "Make group choices by asking each character's opinion (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Wind and sail",
      "reference": "42:32-33",
-     "description": "Raise and lower the wind and watch the ships."
+     "description": "Raise and lower the wind and watch the ships.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -2475,12 +2568,14 @@
     {
      "name": "Travel prayer",
      "reference": "43:13",
-     "description": "Read the travelling words of 43:13 before riding (adaptation)."
+     "description": "Read the travelling words of 43:13 before riding (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Gold or guidance",
      "reference": "43:33-35",
-     "description": "Choose between gold rooms and guidance; learn what lasts (adaptation)."
+     "description": "Choose between gold rooms and guidance; learn what lasts (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -2526,12 +2621,14 @@
     {
      "name": "What stays",
      "reference": "44:25-28",
-     "description": "Find what was left behind and talk about what really lasts (adaptation)."
+     "description": "Find what was left behind and talk about what really lasts (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Night of the Quran",
      "reference": "44:3",
-     "description": "Light the night sky by reading 44:3."
+     "description": "Light the night sky by reading 44:3.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -2572,12 +2669,14 @@
     {
      "name": "Think about it",
      "reference": "45:13",
-     "description": "Find things in the scene that serve people and say thanks (adaptation)."
+     "description": "Find things in the scene that serve people and say thanks (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Winds",
      "reference": "45:5",
-     "description": "Change the winds and notice them as a sign."
+     "description": "Change the winds and notice them as a sign.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -2623,12 +2722,14 @@
     {
      "name": "Kindness to parents",
      "reference": "46:15",
-     "description": "Help with small tasks at home in a mini-game (adaptation)."
+     "description": "Help with small tasks at home in a mini-game (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Listen quietly",
      "reference": "46:29",
-     "description": "Sit still while a recitation-free ayah card is read."
+     "description": "Sit still while a recitation-free ayah card is read.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -2664,12 +2765,14 @@
     {
      "name": "Read the description",
      "reference": "47:15",
-     "description": "Read 47:15 and match each stream label; no picture of Paradise is claimed."
+     "description": "Read 47:15 and match each stream label; no picture of Paradise is claimed.",
+     "kind": "card"
     },
     {
      "name": "Good deeds",
      "reference": "47:7",
-     "description": "Choose helping actions in short scenarios (adaptation)."
+     "description": "Choose helping actions in short scenarios (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -2710,12 +2813,14 @@
     {
      "name": "Grow the shoot",
      "reference": "48:29",
-     "description": "Help a shoot become strong (adaptation)."
+     "description": "Help a shoot become strong (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Tranquillity",
      "reference": "48:4",
-     "description": "A breathing game for calm."
+     "description": "A breathing game for calm.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -2771,22 +2876,26 @@
     {
      "name": "Check the news",
      "reference": "49:6",
-     "description": "Verify messages before passing them on (adaptation)."
+     "description": "Verify messages before passing them on (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Mend the bridge",
      "reference": "49:9-10",
-     "description": "Help two quarters make peace."
+     "description": "Help two quarters make peace.",
+     "kind": "card"
     },
     {
      "name": "Kind names",
      "reference": "49:11",
-     "description": "Replace hurtful nicknames with kind ones."
+     "description": "Replace hurtful nicknames with kind ones.",
+     "kind": "card"
     },
     {
      "name": "Know one another",
      "reference": "49:13",
-     "description": "Learn greetings from different stalls."
+     "description": "Learn greetings from different stalls.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -2837,12 +2946,14 @@
     {
      "name": "Find a rift",
      "reference": "50:6",
-     "description": "Search the sky for any crack and discover none (adaptation)."
+     "description": "Search the sky for any crack and discover none (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Harvest",
      "reference": "50:9-11",
-     "description": "Grow and harvest grain."
+     "description": "Grow and harvest grain.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -2893,12 +3004,14 @@
     {
      "name": "Pairs",
      "reference": "51:49",
-     "description": "Find pairs in nature (adaptation)."
+     "description": "Find pairs in nature (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Signs in yourselves",
      "reference": "51:20-21",
-     "description": "Notice signs in the earth and in our own bodies."
+     "description": "Notice signs in the earth and in our own bodies.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -2944,12 +3057,14 @@
     {
      "name": "Oaths path",
      "reference": "52:1-6",
-     "description": "Visit each oath in order."
+     "description": "Visit each oath in order.",
+     "kind": "card"
     },
     {
      "name": "Glorify at night",
      "reference": "52:48-49",
-     "description": "Glorify at night and as the stars set (adaptation)."
+     "description": "Glorify at night and as the stars set (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -2995,12 +3110,14 @@
     {
      "name": "Find Sirius",
      "reference": "53:49",
-     "description": "Find Sirius in the night sky."
+     "description": "Find Sirius in the night sky.",
+     "kind": "card"
     },
     {
      "name": "Own deeds",
      "reference": "53:38-39",
-     "description": "Fill your own basket with good deeds (adaptation)."
+     "description": "Fill your own basket with good deeds (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -3056,12 +3173,14 @@
     {
      "name": "Easy to remember",
      "reference": "54:17",
-     "description": "Memorise 54:17 by repeating it (adaptation)."
+     "description": "Memorise 54:17 by repeating it (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Planks and nails",
      "reference": "54:13",
-     "description": "Build the vessel from planks and nails."
+     "description": "Build the vessel from planks and nails.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -3137,22 +3256,26 @@
     {
      "name": "Keep the balance",
      "reference": "55:7-9",
-     "description": "Keep a scale level by weighing fairly (adaptation)."
+     "description": "Keep a scale level by weighing fairly (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Favour collection",
      "reference": "55:13",
-     "description": "At each place, name the favour and read the refrain 55:13."
+     "description": "At each place, name the favour and read the refrain 55:13.",
+     "kind": "card"
     },
     {
      "name": "Two sunrises",
      "reference": "55:17",
-     "description": "Watch the sun rise at two points across the seasons."
+     "description": "Watch the sun rise at two points across the seasons.",
+     "kind": "card"
     },
     {
      "name": "Pearl and coral",
      "reference": "55:22",
-     "description": "Find pearls and coral in both seas."
+     "description": "Find pearls and coral in both seas.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -3198,12 +3321,14 @@
     {
      "name": "Who grows it?",
      "reference": "56:63-64",
-     "description": "Plant seeds and read 56:64 as they sprout (adaptation)."
+     "description": "Plant seeds and read 56:64 as they sprout (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Fresh water",
      "reference": "56:68-70",
-     "description": "Draw water and thank Allah."
+     "description": "Draw water and thank Allah.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -3249,12 +3374,14 @@
     {
      "name": "Lend a good loan",
      "reference": "57:11",
-     "description": "Give from what you have and watch it grow (adaptation)."
+     "description": "Give from what you have and watch it grow (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Seasons",
      "reference": "57:20",
-     "description": "Watch a field through its life."
+     "description": "Watch a field through its life.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -3290,12 +3417,14 @@
     {
      "name": "Make space",
      "reference": "58:11",
-     "description": "Shift cushions to make room for newcomers (adaptation)."
+     "description": "Shift cushions to make room for newcomers (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Allah hears",
      "reference": "58:1",
-     "description": "Read 58:1 and discuss how Allah hears every request."
+     "description": "Read 58:1 and discuss how Allah hears every request.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -3336,12 +3465,14 @@
     {
      "name": "Names",
      "reference": "59:22-24",
-     "description": "Collect each name and its meaning."
+     "description": "Collect each name and its meaning.",
+     "kind": "card"
     },
     {
      "name": "Prefer others",
      "reference": "59:9",
-     "description": "Share with others before yourself (adaptation)."
+     "description": "Share with others before yourself (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -3382,12 +3513,14 @@
     {
      "name": "Fair trade",
      "reference": "60:8",
-     "description": "Trade fairly across the bridge (adaptation)."
+     "description": "Trade fairly across the bridge (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Example of Ibrahim",
      "reference": "60:4",
-     "description": "Read 60:4 about Ibrahim's example."
+     "description": "Read 60:4 about Ibrahim's example.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -3422,12 +3555,14 @@
     {
      "name": "Build together",
      "reference": "61:4",
-     "description": "Fit stones together in a wall (adaptation)."
+     "description": "Fit stones together in a wall (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Say and do",
      "reference": "61:2-3",
-     "description": "Match promises to actions."
+     "description": "Match promises to actions.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -3467,12 +3602,14 @@
     {
      "name": "Close the stall",
      "reference": "62:9",
-     "description": "Pause trade when the call comes (adaptation)."
+     "description": "Pause trade when the call comes (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Seek bounty",
      "reference": "62:10",
-     "description": "Return to work and remember Allah."
+     "description": "Return to work and remember Allah.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -3507,7 +3644,8 @@
     {
      "name": "Share now",
      "reference": "63:10",
-     "description": "Share provisions before the season ends (adaptation)."
+     "description": "Share provisions before the season ends (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -3542,7 +3680,8 @@
     {
      "name": "Do your best",
      "reference": "64:16",
-     "description": "Complete tasks as well as you can (adaptation)."
+     "description": "Complete tasks as well as you can (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -3576,7 +3715,8 @@
     {
      "name": "Find the spring",
      "reference": "65:2-3",
-     "description": "Discover springs when you rely on Allah (adaptation)."
+     "description": "Discover springs when you rely on Allah (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -3615,7 +3755,8 @@
     {
      "name": "Sincere repentance",
      "reference": "66:8",
-     "description": "Light lamps by reading 66:8 (adaptation)."
+     "description": "Light lamps by reading 66:8 (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -3670,17 +3811,20 @@
     {
      "name": "Find a flaw",
      "reference": "67:3-4",
-     "description": "Look twice at the sky; find none."
+     "description": "Look twice at the sky; find none.",
+     "kind": "card"
     },
     {
      "name": "Bird watch",
      "reference": "67:19",
-     "description": "Watch birds spread and fold wings."
+     "description": "Watch birds spread and fold wings.",
+     "kind": "card"
     },
     {
      "name": "Walk the slopes",
      "reference": "67:15",
-     "description": "Walk the slopes and gather provision."
+     "description": "Walk the slopes and gather provision.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -3726,12 +3870,14 @@
     {
      "name": "Share the harvest",
      "reference": "68:17-24",
-     "description": "Choose to share the harvest (adaptation)."
+     "description": "Choose to share the harvest (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Writing",
      "reference": "68:1",
-     "description": "Trace letters with a pen."
+     "description": "Trace letters with a pen.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -3771,7 +3917,8 @@
     {
      "name": "Read your book",
      "reference": "69:19",
-     "description": "Reflect on good deeds (adaptation)."
+     "description": "Reflect on good deeds (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -3806,7 +3953,8 @@
     {
      "name": "Steady prayer",
      "reference": "70:23",
-     "description": "Keep a lamp lit by returning to it each time (adaptation)."
+     "description": "Keep a lamp lit by returning to it each time (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -3856,12 +4004,14 @@
     {
      "name": "Ask forgiveness",
      "reference": "71:10-12",
-     "description": "Read 71:10 and watch rain return to gardens (adaptation)."
+     "description": "Read 71:10 and watch rain return to gardens (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Sun and moon",
      "reference": "71:16",
-     "description": "Tell the burning lamp from the reflected light."
+     "description": "Tell the burning lamp from the reflected light.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -3901,7 +4051,8 @@
     {
      "name": "Shooting stars",
      "reference": "72:8",
-     "description": "Count shooting stars (adaptation)."
+     "description": "Count shooting stars (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -3941,12 +4092,14 @@
     {
      "name": "Divide the night",
      "reference": "73:2-4",
-     "description": "Set the night dial to half, a third (adaptation)."
+     "description": "Set the night dial to half, a third (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Slow reading",
      "reference": "73:4",
-     "description": "Read slowly and clearly."
+     "description": "Read slowly and clearly.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -3986,7 +4139,8 @@
     {
      "name": "Morning routine",
      "reference": "74:3-7",
-     "description": "Glorify, wash and be patient in a morning mini-game (adaptation)."
+     "description": "Glorify, wash and be patient in a morning mini-game (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -4020,12 +4174,14 @@
     {
      "name": "Fingerprint",
      "reference": "75:4",
-     "description": "Compare unique fingerprint patterns (adaptation)."
+     "description": "Compare unique fingerprint patterns (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Do not rush",
      "reference": "75:16-18",
-     "description": "Recite slowly."
+     "description": "Recite slowly.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -4060,7 +4216,8 @@
     {
      "name": "Share the meal",
      "reference": "76:8-9",
-     "description": "Pack food for different neighbours (adaptation)."
+     "description": "Pack food for different neighbours (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -4105,7 +4262,8 @@
     {
      "name": "Wind and water",
      "reference": "77:27",
-     "description": "Find sweet water among the mountains (adaptation)."
+     "description": "Find sweet water among the mountains (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -4159,12 +4317,14 @@
     {
      "name": "Sign checklist",
      "reference": "78:6-16",
-     "description": "Collect each sign as the ayahs list it."
+     "description": "Collect each sign as the ayahs list it.",
+     "kind": "card"
     },
     {
      "name": "Pitch the tent",
      "reference": "78:7",
-     "description": "Stake a tent like mountains hold the earth (adaptation)."
+     "description": "Stake a tent like mountains hold the earth (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -4208,7 +4368,8 @@
     {
      "name": "Day and night",
      "reference": "79:29",
-     "description": "Darken the night and bring out the brightness (adaptation)."
+     "description": "Darken the night and bring out the brightness (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -4257,12 +4418,14 @@
     {
      "name": "From seed to plate",
      "reference": "80:24-32",
-     "description": "Follow food's journey (adaptation)."
+     "description": "Follow food's journey (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Welcome everyone",
      "reference": "80:1-10",
-     "description": "Welcome every visitor equally."
+     "description": "Welcome every visitor equally.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -4297,7 +4460,8 @@
     {
      "name": "Read the signs",
      "reference": "81:1-14",
-     "description": "Read each ayah; nothing is pictured."
+     "description": "Read each ayah; nothing is pictured.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -4332,7 +4496,8 @@
     {
      "name": "Read",
      "reference": "82:6-8",
-     "description": "Reflect on 82:6-8 (adaptation)."
+     "description": "Reflect on 82:6-8 (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -4366,7 +4531,8 @@
     {
      "name": "Fair weight",
      "reference": "83:1-3",
-     "description": "Weigh fairly for every customer (adaptation)."
+     "description": "Weigh fairly for every customer (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -4405,7 +4571,8 @@
     {
      "name": "Moon phases",
      "reference": "84:18",
-     "description": "Watch the moon grow full (adaptation)."
+     "description": "Watch the moon grow full (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -4444,7 +4611,8 @@
     {
      "name": "Find the great stars",
      "reference": "85:1",
-     "description": "Find bright star groups (adaptation)."
+     "description": "Find bright star groups (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -4488,12 +4656,14 @@
     {
      "name": "Find the star",
      "reference": "86:1-3",
-     "description": "Find the piercing star."
+     "description": "Find the piercing star.",
+     "kind": "card"
     },
     {
      "name": "Rain cycle",
      "reference": "86:11-12",
-     "description": "Watch rain return and sprouts appear."
+     "description": "Watch rain return and sprouts appear.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -4532,12 +4702,14 @@
     {
      "name": "Grow and fade",
      "reference": "87:4-5",
-     "description": "Watch the pasture through its life."
+     "description": "Watch the pasture through its life.",
+     "kind": "card"
     },
     {
      "name": "Glorify",
      "reference": "87:1",
-     "description": "Read 87:1."
+     "description": "Read 87:1.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -4586,7 +4758,8 @@
     {
      "name": "Look and think",
      "reference": "88:17-20",
-     "description": "Observe each station and answer a question (adaptation)."
+     "description": "Observe each station and answer a question (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -4630,7 +4803,8 @@
     {
      "name": "Care for the orphan",
      "reference": "89:17-18",
-     "description": "Share food with orphans and the poor (adaptation)."
+     "description": "Share food with orphans and the poor (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -4670,7 +4844,8 @@
     {
      "name": "Climb the pass",
      "reference": "90:13-16",
-     "description": "Climb by doing acts of kindness (adaptation)."
+     "description": "Climb by doing acts of kindness (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -4714,7 +4889,8 @@
     {
      "name": "Purify the soul",
      "reference": "91:9",
-     "description": "Choose kind actions (adaptation)."
+     "description": "Choose kind actions (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -4753,7 +4929,8 @@
     {
      "name": "Give",
      "reference": "92:5-7",
-     "description": "Give and find the path easier (adaptation)."
+     "description": "Give and find the path easier (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -4792,12 +4969,14 @@
     {
      "name": "Kind door",
      "reference": "93:9-10",
-     "description": "Welcome those who ask (adaptation)."
+     "description": "Welcome those who ask (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Count blessings",
      "reference": "93:11",
-     "description": "Talk about blessings."
+     "description": "Talk about blessings.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -4831,7 +5010,8 @@
     {
      "name": "Hard then easy",
      "reference": "94:5-6",
-     "description": "Climb hard sections and find easy ones (adaptation)."
+     "description": "Climb hard sections and find easy ones (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -4880,12 +5060,14 @@
     {
      "name": "Four oaths",
      "reference": "95:1-3",
-     "description": "Visit each place and read its oath (adaptation)."
+     "description": "Visit each place and read its oath (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Best stature",
      "reference": "95:4",
-     "description": "Reflect on how we were made in the best form."
+     "description": "Reflect on how we were made in the best form.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -4925,12 +5107,14 @@
     {
      "name": "Learn a letter",
      "reference": "96:4-5",
-     "description": "Trace Arabic letters with a pen (adaptation)."
+     "description": "Trace Arabic letters with a pen (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Prostrate and draw near",
      "reference": "96:19",
-     "description": "Read 96:19."
+     "description": "Read 96:19.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -4970,12 +5154,14 @@
     {
      "name": "Count the months",
      "reference": "97:3",
-     "description": "See a thousand months as lights (adaptation)."
+     "description": "See a thousand months as lights (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Night prayer",
      "reference": "97:1-5",
-     "description": "Light a lamp for each ayah."
+     "description": "Light a lamp for each ayah.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -5010,7 +5196,8 @@
     {
      "name": "Sincerity",
      "reference": "98:5",
-     "description": "Choose actions done only for Allah (adaptation)."
+     "description": "Choose actions done only for Allah (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -5044,7 +5231,8 @@
     {
      "name": "Small deeds",
      "reference": "99:7-8",
-     "description": "Collect tiny good deeds that glow (adaptation)."
+     "description": "Collect tiny good deeds that glow (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -5088,7 +5276,8 @@
     {
      "name": "Gratitude",
      "reference": "100:6",
-     "description": "Thank for blessings (adaptation)."
+     "description": "Thank for blessings (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -5127,7 +5316,8 @@
     {
      "name": "Heavy scales",
      "reference": "101:6-7",
-     "description": "Add good deeds to the scale (adaptation)."
+     "description": "Add good deeds to the scale (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -5161,7 +5351,8 @@
     {
      "name": "Enough",
      "reference": "102:1-8",
-     "description": "Choose what matters (adaptation)."
+     "description": "Choose what matters (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -5205,12 +5396,14 @@
     {
      "name": "Before the sand runs out",
      "reference": "103:1-3",
-     "description": "Collect four keys before the hourglass empties (adaptation)."
+     "description": "Collect four keys before the hourglass empties (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Advise a friend",
      "reference": "103:3",
-     "description": "Help another character with truth and patience."
+     "description": "Help another character with truth and patience.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -5245,7 +5438,8 @@
     {
      "name": "Kind words",
      "reference": "104:1",
-     "description": "Replace mocking with kind words (adaptation)."
+     "description": "Replace mocking with kind words (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -5292,14 +5486,16 @@
    ],
    "activities": [
     {
-     "name": "Count the flocks",
-     "reference": "105:3",
-     "description": "Count birds in flocks (adaptation)."
+     "name": "Put the ayahs in order",
+     "reference": "105:1-5",
+     "description": "Arrange the surah's five ayahs in the order they come. The cards show the verified Arabic and translation; this is a reading game.",
+     "kind": "order"
     },
     {
-     "name": "Plans fail",
-     "reference": "105:2",
-     "description": "Watch a plan fail and read 105:2."
+     "name": "Match each place to its ayah",
+     "reference": "105:1-5",
+     "description": "Match the four places of this world to the ayah each one comes from.",
+     "kind": "match"
     }
    ],
    "objectives": [
@@ -5312,8 +5508,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own desert scene (elephant and tracks, flocks over the hills, clay stones, a field of eaten straw) and two playable activities",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Fil.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene, place cards and both activities"
    },
    "review": "unreviewed"
   },
@@ -5344,12 +5542,14 @@
     {
      "name": "Plan the journey",
      "reference": "106:2",
-     "description": "Lead a caravan safely (adaptation)."
+     "description": "Lead a caravan safely (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Gratitude",
      "reference": "106:4",
-     "description": "Thank for food and safety."
+     "description": "Thank for food and safety.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -5388,12 +5588,14 @@
     {
      "name": "Lend a hand",
      "reference": "107:7",
-     "description": "Lend small items (adaptation)."
+     "description": "Lend small items (adaptation).",
+     "kind": "card"
     },
     {
      "name": "Feed the poor",
      "reference": "107:3",
-     "description": "Encourage feeding."
+     "description": "Encourage feeding.",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -5427,7 +5629,8 @@
     {
      "name": "Pray",
      "reference": "108:2",
-     "description": "Light a lamp for prayer (adaptation)."
+     "description": "Light a lamp for prayer (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -5461,7 +5664,8 @@
     {
      "name": "Choose your path",
      "reference": "109:6",
-     "description": "Walk your own path (adaptation)."
+     "description": "Walk your own path (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -5495,7 +5699,8 @@
     {
      "name": "Praise",
      "reference": "110:3",
-     "description": "Read 110:3 (adaptation)."
+     "description": "Read 110:3 (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -5534,7 +5739,8 @@
     {
      "name": "What helps",
      "reference": "111:2",
-     "description": "Discuss what truly helps (adaptation)."
+     "description": "Discuss what truly helps (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -5578,12 +5784,14 @@
     {
      "name": "Read the four",
      "reference": "112:1-4",
-     "description": "Light each ayah's calligraphy in turn."
+     "description": "Light each ayah's calligraphy in turn.",
+     "kind": "card"
     },
     {
      "name": "Nothing compares",
      "reference": "112:4",
-     "description": "Learn why nothing in creation can be compared to Allah (adaptation)."
+     "description": "Learn why nothing in creation can be compared to Allah (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -5623,7 +5831,8 @@
     {
      "name": "Refuge",
      "reference": "113:1-5",
-     "description": "Read the surah as dawn breaks (adaptation)."
+     "description": "Read the surah as dawn breaks (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [
@@ -5657,7 +5866,8 @@
     {
      "name": "Refuge",
      "reference": "114:1-6",
-     "description": "Read the surah (adaptation)."
+     "description": "Read the surah (adaptation).",
+     "kind": "card"
     }
    ],
    "objectives": [

@@ -62,15 +62,17 @@
  ],
  "activities": [
   {
-   "name": "Count the flocks",
-   "reference": "105:3",
-   "description": "Count birds in flocks (adaptation).",
+   "name": "Put the ayahs in order",
+   "reference": "105:1-5",
+   "kind": "order",
+   "description": "Arrange the surah's five ayahs in the order they come. The cards show the verified Arabic and translation; this is a reading game.",
    "label": "artistic educational adaptation, not an event in the Quran"
   },
   {
-   "name": "Plans fail",
-   "reference": "105:2",
-   "description": "Watch a plan fail and read 105:2.",
+   "name": "Match each place to its ayah",
+   "reference": "105:1-5",
+   "kind": "match",
+   "description": "Match the four places of this world to the ayah each one comes from.",
    "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
@@ -102,18 +104,22 @@
   }
  ],
  "required_assets": [
-  "Road",
-  "Elephant",
-  "Bird flocks",
-  "Straw field"
+  "Desert dusk terrain (shared)",
+  "Elephant built from primitives",
+  "Footprint decals",
+  "Instanced bird flocks",
+  "Clay stones",
+  "Flattened straw field"
  ],
  "status": {
   "quran_text": "verified (KFGQPC Hafs, checksummed)",
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: its own desert scene (elephant and tracks, flocks over the hills, clay stones, a field of eaten straw) and two playable activities",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Fil.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene, place cards and both activities"
  },
  "quran_references": [
   "105:1",

@@ -21,7 +21,7 @@ export function buildDesignIndex() {
       concept: d.environment_concept,
       summary: d.summary_for_children,
       areas: d.areas.map((a) => ({ name: a.name, reference: a.reference, description: a.description })),
-      activities: d.activities.map((a) => ({ name: a.name, reference: a.reference, description: a.description })),
+      activities: d.activities.map((a) => ({ name: a.name, reference: a.reference, description: a.description, kind: a.kind ?? "card" })),
       objectives: d.learning_objectives,
       narration: d.narration_plan,
       status: d.status,

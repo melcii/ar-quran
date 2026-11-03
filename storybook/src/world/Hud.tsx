@@ -13,6 +13,7 @@ import { emptySurahProgress, useAppState, type Settings } from '@/state/AppState
 import { sound } from '@/three/sound';
 import { colors, fonts, radius } from '@/theme';
 import { worldFor } from './settings';
+import { ActivityGame } from './ActivityGame';
 import { passagesOf, type Move, type Passage as PassageT } from './SurahWorld';
 
 const glass = 'rgba(24, 18, 12, 0.6)';
@@ -358,6 +359,7 @@ export function WorldHud({
   const world = worldFor(surah);
   const design = designFor(surah);
   const [reflection, setReflection] = useState(false);
+  const [game, setGame] = useState<number | null>(null);
   const allFound = passages.length > 0 && found.length >= passages.length;
   const theme = catalogFor(surah);
   const stories = useMemo(() => outlinesForSurah(surah), [surah]);
@@ -388,7 +390,9 @@ export function WorldHud({
                 <Text style={s.sheetHeading}>{design.world_title}</Text>
                 <Text style={s.basisText}>{design.concept}</Text>
                 <Text style={s.small}>
-                  Its own 3D world is not built yet: a shared setting stands in, and each lantern marks one of its planned places at the ayah it comes from.
+                  {/^not built/.test(design.status.playable_environment)
+                    ? 'Its own 3D world is not built yet: a shared setting stands in, and each lantern marks one of its planned places at the ayah it comes from.'
+                    : 'Its own scenery is built (a first version). Each lantern marks one of its places at the ayah it comes from.'}
                 </Text>
                 <ContentLabel kind="activity" extra="artistic adaptations" />
                 {design.activities.map((a, i) => {
@@ -403,12 +407,18 @@ export function WorldHud({
                       <Text style={s.basisText}>{a.description}</Text>
                       <Row wrap style={{ gap: 6 }}>
                         {ref && <Button small kind="secondary" icon="book" label={`Read ${formatRef(a.reference)}`} onPress={() => onReadRef(ref.surah, ref.from)} />}
-                        {!done && <Button small kind="secondary" label="I did this" accessibilityLabel={`Mark done: ${a.name}`} onPress={() => onActivity(i)} />}
+                        {a.kind !== 'card' ? (
+                          <Button small icon="play" label={done ? 'Play again' : 'Play'} accessibilityLabel={`Play: ${a.name}`} onPress={() => (setGame(i), setAbout(false))} />
+                        ) : (
+                          !done && <Button small kind="secondary" label="I did this" accessibilityLabel={`Mark done: ${a.name}`} onPress={() => onActivity(i)} />
+                        )}
                       </Row>
                     </View>
                   );
                 })}
-                <Text style={s.small}>These are activity cards for now. Their playable versions are not built yet.</Text>
+                {design.activities.some((a) => a.kind === 'card') && (
+                  <Text style={s.small}>Activities without a Play button are cards for now; their playable versions are not built yet.</Text>
+                )}
               </View>
             )}
             <ContentLabel kind="art" extra="a symbolic setting, not a scene of events" />
@@ -458,7 +468,17 @@ export function WorldHud({
         </View>
       )}
 
-      {!open && !story && !reflection && <Joystick move={move} />}
+      {!open && !story && !reflection && game == null && <Joystick move={move} />}
+
+      {game != null && design && !open && (
+        <ActivityGame
+          design={design}
+          activity={design.activities[game]}
+          style={[s.passage, portrait ? s.passagePortrait : s.passageLandscape]}
+          onDone={() => onActivity(game)}
+          onClose={() => setGame(null)}
+        />
+      )}
 
       {reflection && design && !open && (
         <View style={[s.passage, portrait ? s.passagePortrait : s.passageLandscape]} accessibilityLabel="Closing reflection">

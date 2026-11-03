@@ -788,9 +788,12 @@
   {
    "surah": 105,
    "setting": "desert-dusk",
-   "basis": "The surah's name means \"The Elephant\" (105:1). An empty desert valley at dusk. The events of the surah are not acted out.",
+   "basis": "A desert valley at dusk holding what the surah names: an elephant and its tracks (105:1), flocks of birds over the hills (105:3), small stones of baked clay (105:4) and a field of eaten straw (105:5). No army or person is shown, and nothing is acted out.",
    "references": [
-    "105:1"
+    "105:1",
+    "105:3",
+    "105:4",
+    "105:5"
    ],
    "review_status": "unreviewed"
   },

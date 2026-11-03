@@ -11,7 +11,7 @@ export type WorldDesignSummary = {
   summary: string;
   areas: { name: string; reference: string; description: string }[];
   /** Artistic educational adaptations, never events in the Quran. */
-  activities: { name: string; reference: string; description: string }[];
+  activities: { name: string; reference: string; description: string; kind: 'card' | 'order' | 'match' }[];
   objectives: string[];
   narration: string;
   status: Record<string, string>;

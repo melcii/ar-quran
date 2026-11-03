@@ -10,6 +10,7 @@ import { Ground, Grass, Moon, Palms, Particles, Rocks, Sky, Trees, Water, scatte
 import type { Quality } from './quality';
 import { PRESETS, worldFor } from './settings';
 import { makeLand, type Land } from './terrain';
+import { SCENES } from './scenes';
 
 /** One stop on the world's path. When the surah has a design record, each stop
  * is one of its designed areas, tied to an ayah; otherwise the surah is split
@@ -120,6 +121,7 @@ export function SurahWorld({
   };
 
   const sunPos = sun.clone().multiplyScalar(80);
+  const Scene = SCENES[surah];
   return (
     <group>
       <Sky preset={preset} />
@@ -150,6 +152,7 @@ export function SurahWorld({
       <Grass spots={spots.flowers} flowers />
       <Particles kind={preset.particles} count={Math.round((preset.particles === 'rain' ? 2400 : 500) * quality.vegetation)} />
       {preset.lamps && <Lamps land={land} />}
+      {Scene && <Scene land={land} stops={stops} quality={quality} />}
 
       {stops.map(({ p, pos }) => (
         <Lantern key={p.index} position={pos} found={found.includes(p.index)} onClick={tapLantern(p, pos)} />
