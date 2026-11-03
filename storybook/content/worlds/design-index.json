@@ -1086,21 +1086,21 @@
    ],
    "activities": [
     {
-     "name": "Follow the sun",
-     "reference": "18:17",
-     "description": "Track the sun past the cave mouth from morning to evening.",
-     "kind": "card"
+     "name": "Retell the four journeys",
+     "reference": "18:10-96",
+     "description": "Put the places of the four journeys in the order the surah tells them: the cave, the gardens, the meeting of the seas, and the barrier.",
+     "kind": "journey"
+    },
+    {
+     "name": "Match each place to its ayah",
+     "reference": "18:10-96",
+     "description": "Match each place in the valley to the ayah it comes from.",
+     "kind": "match"
     },
     {
      "name": "Why did it happen?",
      "reference": "18:79-82",
-     "description": "At the ship and the wall, match each event with the reason 18:79-82 gives.",
-     "kind": "card"
-    },
-    {
-     "name": "Build the barrier",
-     "reference": "18:96",
-     "description": "Stack iron blocks and pour copper to close the pass (adaptation).",
+     "description": "At the ship and the wall, read the reasons given in 18:79-82 and talk about patience in learning.",
      "kind": "card"
     }
    ],
@@ -1115,8 +1115,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own valley of four journeys (cave with sliding sunlight, two gardens and a river, two waters meeting, a holed ship, a mended wall, an iron and copper barrier) and two playable games",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Kahf.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the journey game"
    },
    "review": "unreviewed"
   },

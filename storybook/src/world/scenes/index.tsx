@@ -11,6 +11,7 @@ import type { Passage } from '../SurahWorld';
 import { AsrScene } from './Asr';
 import { FilScene } from './Fil';
 import { IkhlasScene } from './Ikhlas';
+import { KahfScene } from './Kahf';
 import { YusufScene } from './Yusuf';
 
 export type Stop = { p: Passage; pos: THREE.Vector3 };
@@ -18,6 +19,7 @@ export type SceneProps = { land: Land; stops: Stop[]; quality: Quality };
 
 export const SCENES: Record<number, ComponentType<SceneProps>> = {
   12: YusufScene,
+  18: KahfScene,
   103: AsrScene,
   105: FilScene,
   112: IkhlasScene,
