@@ -83,7 +83,7 @@ function ElevenStars({ at, toward }: { at: V; toward: V }) {
   );
 }
 
-function Well({ position }: { position: [number, number, number] }) {
+export function Well({ position }: { position: [number, number, number] }) {
   const mat = useMemo(stone, []);
   const wood = useMemo(() => new THREE.MeshStandardMaterial({ color: '#6b4a2e', roughness: 0.8 }), []);
   return (
@@ -115,7 +115,7 @@ function Well({ position }: { position: [number, number, number] }) {
 }
 
 /** Resting camels with packs and a water bucket on a rope, by the road. */
-function Caravan({ land, at }: { land: Land; at: V }) {
+export function Caravan({ land, at }: { land: Land; at: V }) {
   const hide = useMemo(() => new THREE.MeshStandardMaterial({ color: '#b98a55', roughness: 0.95 }), []);
   const pack = useMemo(() => new THREE.MeshStandardMaterial({ color: '#7a3a2a', roughness: 0.9 }), []);
   const camels = [

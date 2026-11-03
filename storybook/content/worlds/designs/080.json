@@ -16,8 +16,8 @@
  "narrative_passages": [],
  "summary_for_children": "'Abasa reminds us to care for everyone who seeks guidance and asks us to look at our food: water, earth, grain, grapes, olives and fruit.",
  "world_title": "Look at Your Food",
- "environment_concept": "A farm where the journey of food is followed: torrents of water, split earth, grain, grapes, olives, palms and fruit.",
- "architecture_and_scenery": "Farm terraces with olives, palms, grapes and grain.",
+ "environment_concept": "A walk that follows food from the start: a torrent of water pouring down rocks (80:25), earth split open by sprouts (80:26), rows of grain and grapevines on a trellis (80:27-28), olive and palm trees (80:29), and fruit trees over grass (80:31). The event of 80:1-10 and the Day of 80:33-42 are not pictured. No person is shown.",
+ "architecture_and_scenery": "A rocky waterfall and stream, cracked earth with sprouts, grain rows and a vine trellis, olive and palm trees, fruit trees.",
  "palette": {
   "colors": [
    "#6f8f4a",
@@ -32,38 +32,53 @@
    "name": "Torrents",
    "reference": "80:25",
    "anchor_phrase": "torrents",
-   "description": "Water pouring."
+   "description": "Water pouring down a rocky fall into a stream."
   },
   {
    "name": "Split Earth",
    "reference": "80:26",
    "anchor_phrase": "splitting",
-   "description": "Sprouts breaking through."
+   "description": "Earth cracked open by sprouts."
+  },
+  {
+   "name": "Grain and Grapes",
+   "reference": "80:28",
+   "anchor_phrase": "grapes",
+   "description": "Rows of grain and grapevines on a wooden trellis."
   },
   {
    "name": "Olives and Palms",
    "reference": "80:29",
    "anchor_phrase": "olive and palm trees",
-   "description": "Olive and palm trees."
+   "description": "Olive trees heavy with fruit, beside the palms."
   },
   {
    "name": "Fruit and Grass",
    "reference": "80:31",
    "anchor_phrase": "fruit and grass",
-   "description": "Fruit trees and pasture."
+   "description": "Fruit trees over soft grass."
   }
  ],
  "activities": [
   {
-   "name": "From seed to plate",
+   "name": "Read the food ayahs",
    "reference": "80:24-32",
-   "description": "Follow food's journey (adaptation).",
+   "kind": "order",
+   "description": "Put ayahs 24 to 32 of 'Abasa in order.",
    "label": "artistic educational adaptation, not an event in the Quran"
   },
   {
-   "name": "Welcome everyone",
-   "reference": "80:1-10",
-   "description": "Welcome every visitor equally.",
+   "name": "Match each place to its ayah",
+   "reference": "80:25-31",
+   "kind": "match",
+   "description": "Match the water, the sprouts, the vines, the olives and the fruit to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Follow your food",
+   "reference": "80:24",
+   "kind": "journey",
+   "description": "Put the places in the order the surah gives them, from water to fruit.",
    "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
@@ -84,6 +99,11 @@
    "element": "Split Earth"
   },
   {
+   "reference": "80:28",
+   "anchor_phrase": "grapes",
+   "element": "Grain and Grapes"
+  },
+  {
    "reference": "80:29",
    "anchor_phrase": "olive and palm trees",
    "element": "Olives and Palms"
@@ -95,21 +115,30 @@
   }
  ],
  "required_assets": [
-  "Farm terraces"
+  "Orchard terrain (shared)",
+  "Waterfall",
+  "Cracked earth and sprouts",
+  "Grain and vines",
+  "Olive trees",
+  "Fruit trees"
  ],
  "status": {
   "quran_text": "verified (KFGQPC Hafs, checksummed)",
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: its own scene (a torrent, split earth, grain and vines, olive trees and fruit trees) and three playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Abasa.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
  },
  "quran_references": [
-  "80:1-10",
+  "80:24",
   "80:24-32",
   "80:25",
+  "80:25-31",
   "80:26",
+  "80:28",
   "80:29",
   "80:31"
  ],

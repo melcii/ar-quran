@@ -17,8 +17,8 @@
  "narrative_passages": [],
  "summary_for_children": "Al-Layl means The Night. It says people's efforts differ, and those who give and are mindful of Allah will find ease.",
  "world_title": "Night Covers, Day Appears",
- "environment_concept": "A day-night world showing how efforts differ.",
- "architecture_and_scenery": "Valley with day and night halves.",
+ "environment_concept": "A courtyard split in two: one half tiled in deep blue with lanterns and night flowers for \"the night when it covers\" (92:1), the other in warm gold with sunflowers for \"the day when it appears\" (92:2). Beside it, a table set out for giving (92:5, 92:18). No person is shown. The Fire and the next life are not pictured.",
+ "architecture_and_scenery": "A two-coloured tiled courtyard with lanterns on one side and sunflowers on the other, a giving table.",
  "palette": {
   "colors": [
    "#1c2541",
@@ -29,23 +29,44 @@
  },
  "areas": [
   {
-   "name": "Night",
+   "name": "Night Half",
    "reference": "92:1",
    "anchor_phrase": "night",
-   "description": "Night covering."
+   "description": "Deep blue tiles, lanterns and night flowers."
   },
   {
-   "name": "Day",
+   "name": "Day Half",
    "reference": "92:2",
    "anchor_phrase": "day",
-   "description": "Day appearing."
+   "description": "Warm golden tiles and tall sunflowers."
+  },
+  {
+   "name": "The Giving Table",
+   "reference": "92:5",
+   "anchor_phrase": "gives",
+   "description": "A table set with bread and fruit to give away."
   }
  ],
  "activities": [
   {
-   "name": "Give",
-   "reference": "92:5-7",
-   "description": "Give and find the path easier (adaptation).",
+   "name": "Read the first seven",
+   "reference": "92:1-7",
+   "kind": "order",
+   "description": "Put the first seven ayahs of Al-Layl in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "92:1-5",
+   "kind": "match",
+   "description": "Match the two halves and the table to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Give without wanting thanks",
+   "reference": "92:19",
+   "kind": "card",
+   "description": "Talk about giving only for Allah, not to be paid back.",
    "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
@@ -57,29 +78,42 @@
   {
    "reference": "92:1",
    "anchor_phrase": "night",
-   "element": "Night"
+   "element": "Night Half"
   },
   {
    "reference": "92:2",
    "anchor_phrase": "day",
-   "element": "Day"
+   "element": "Day Half"
+  },
+  {
+   "reference": "92:5",
+   "anchor_phrase": "gives",
+   "element": "The Giving Table"
   }
  ],
  "required_assets": [
-  "Valley"
+  "Night terrain (shared)",
+  "Two-half courtyard",
+  "Sunflowers",
+  "Giving table"
  ],
  "status": {
   "quran_text": "verified (KFGQPC Hafs, checksummed)",
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: its own scene (a night-and-day courtyard and a giving table) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Layl.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
  },
  "quran_references": [
   "92:1",
+  "92:1-5",
+  "92:1-7",
   "92:2",
-  "92:5-7"
+  "92:5",
+  "92:19"
  ],
  "scholarly_review": {
   "status": "unreviewed",

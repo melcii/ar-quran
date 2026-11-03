@@ -22,8 +22,8 @@
  ],
  "summary_for_children": "Al-Buruj tells of believers who stayed firm in faith when people of the trench harmed them.",
  "world_title": "Sky of Great Stars and the Trench",
- "environment_concept": "A sky of great stars above a trench; the believers' story is told only in words.",
- "architecture_and_scenery": "Starry sky, an empty trench.",
+ "environment_concept": "A night of great bright stars (85:1). Further on, an old, empty trench overgrown with grass, long after the events of 85:4-8: no fire and no people are shown. Last, a reading stand with a closed, covered book for the honoured Quran (85:21). The Preserved Slate (85:22) is not pictured.",
+ "architecture_and_scenery": "Bright large stars, an overgrown empty trench, a reading stand with a covered book.",
  "palette": {
   "colors": [
    "#0f1a33",
@@ -37,20 +37,41 @@
    "name": "Great Stars",
    "reference": "85:1",
    "anchor_phrase": "great stars",
-   "description": "Sky of great stars."
+   "description": "Large bright stars low over the path."
   },
   {
    "name": "The Trench",
    "reference": "85:4",
    "anchor_phrase": "trench",
-   "description": "An empty trench."
+   "description": "An old empty trench, overgrown with grass. No fire and no people are shown."
+  },
+  {
+   "name": "The Honoured Quran",
+   "reference": "85:21",
+   "anchor_phrase": "honored Qur'an",
+   "description": "A reading stand with a closed, covered book."
   }
  ],
  "activities": [
   {
-   "name": "Find the great stars",
-   "reference": "85:1",
-   "description": "Find bright star groups (adaptation).",
+   "name": "Read the last eight",
+   "reference": "85:15-22",
+   "kind": "order",
+   "description": "Put the last eight ayahs of Al-Buruj in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "85:1-21",
+   "kind": "match",
+   "description": "Match the stars, the trench and the reading stand to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Standing firm",
+   "reference": "85:8",
+   "kind": "card",
+   "description": "Talk about staying true to what you believe, even when it is hard.",
    "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
@@ -68,24 +89,36 @@
    "reference": "85:4",
    "anchor_phrase": "trench",
    "element": "The Trench"
+  },
+  {
+   "reference": "85:21",
+   "anchor_phrase": "honored Qur'an",
+   "element": "The Honoured Quran"
   }
  ],
  "required_assets": [
-  "Night sky",
-  "Trench"
+  "Starry terrain (shared)",
+  "Great stars",
+  "Overgrown trench",
+  "Reading stand"
  ],
  "status": {
   "quran_text": "verified (KFGQPC Hafs, checksummed)",
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: its own scene (great stars, an old empty trench and a reading stand) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Buruj.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
  },
  "quran_references": [
   "85:1",
+  "85:1-21",
   "85:4",
-  "85:4-9"
+  "85:8",
+  "85:15-22",
+  "85:21"
  ],
  "scholarly_review": {
   "status": "unreviewed",

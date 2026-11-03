@@ -16,8 +16,8 @@
  "narrative_passages": [],
  "summary_for_children": "Al-Inshiqaq speaks of the sky splitting in words, and swears by the twilight, the night and the full moon.",
  "world_title": "Twilight and the Full Moon",
- "environment_concept": "A world of twilight glow, enveloping night and a full moon, by which the surah swears.",
- "architecture_and_scenery": "Evening horizon, night, full moon.",
+ "environment_concept": "Evening: a band of twilight glow lingers on the horizon (84:16) as night gathers (84:17), and a large full moon rises (84:18). A row of eight stone discs shows the moon's phases, state after state (84:19). The splitting of the sky and the Day (84:1-15) are not pictured. No person is shown.",
+ "architecture_and_scenery": "A low twilight glow on the horizon, a large rising full moon, a row of carved moon-phase stones, a bench.",
  "palette": {
   "colors": [
    "#e07a3a",
@@ -32,20 +32,41 @@
    "name": "Twilight Glow",
    "reference": "84:16",
    "anchor_phrase": "twilight",
-   "description": "Glow at sunset."
+   "description": "A warm band of light lingering on the horizon."
   },
   {
    "name": "Full Moon",
    "reference": "84:18",
    "anchor_phrase": "full",
-   "description": "The moon becoming full."
+   "description": "A large full moon rising."
+  },
+  {
+   "name": "State After State",
+   "reference": "84:19",
+   "anchor_phrase": "state after state",
+   "description": "A row of stones carved with the moon's phases, one after another."
   }
  ],
  "activities": [
   {
-   "name": "Moon phases",
-   "reference": "84:18",
-   "description": "Watch the moon grow full (adaptation).",
+   "name": "Read the oaths",
+   "reference": "84:16-19",
+   "kind": "order",
+   "description": "Put ayahs 16 to 19 of Al-Inshiqaq in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "84:16-19",
+   "kind": "match",
+   "description": "Match the glow, the moon and the phase stones to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Growing step by step",
+   "reference": "84:19",
+   "kind": "card",
+   "description": "Talk about how you change and grow, stage by stage.",
    "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
@@ -63,23 +84,34 @@
    "reference": "84:18",
    "anchor_phrase": "full",
    "element": "Full Moon"
+  },
+  {
+   "reference": "84:19",
+   "anchor_phrase": "state after state",
+   "element": "State After State"
   }
  ],
  "required_assets": [
-  "Horizon",
-  "Night sky"
+  "Night terrain (shared)",
+  "Twilight glow",
+  "Full moon",
+  "Moon-phase stones"
  ],
  "status": {
   "quran_text": "verified (KFGQPC Hafs, checksummed)",
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: its own scene (a twilight glow, a large full moon and a row of moon-phase stones) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Inshiqaq.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
  },
  "quran_references": [
   "84:16",
-  "84:18"
+  "84:16-19",
+  "84:18",
+  "84:19"
  ],
  "scholarly_review": {
   "status": "unreviewed",

@@ -16,8 +16,8 @@
  "narrative_passages": [],
  "summary_for_children": "Al-Kafirun teaches clarity in worship: for you is your religion and for me is mine.",
  "world_title": "Two Separate Paths",
- "environment_concept": "Two paths side by side, each respected.",
- "architecture_and_scenery": "Two paths.",
+ "environment_concept": "A meadow path divides into two paths that run side by side to the horizon and never cross. Paired standing stones mark the repeated ayahs. No people are shown.",
+ "architecture_and_scenery": "Forking path with a low wall between its two branches, four pairs of standing stones.",
  "palette": {
   "colors": [
    "#c9a46a",
@@ -28,17 +28,38 @@
  },
  "areas": [
   {
+   "name": "The Paired Stones",
+   "reference": "109:2",
+   "anchor_phrase": "worship",
+   "description": "Four pairs of standing stones for the four ayahs that answer each other (109:2-5)."
+  },
+  {
    "name": "Two Paths",
    "reference": "109:6",
    "anchor_phrase": "religion",
-   "description": "Two separate paths."
+   "description": "Two paths that run side by side and never cross."
   }
  ],
  "activities": [
   {
-   "name": "Choose your path",
+   "name": "Read the six",
+   "reference": "109:1-6",
+   "kind": "order",
+   "description": "Put the six ayahs of Al-Kafirun in order. Look closely: ayahs 2 to 5 are alike.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "109:1-6",
+   "kind": "match",
+   "description": "Match the stones and the two paths to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Clear and kind",
    "reference": "109:6",
-   "description": "Walk your own path (adaptation).",
+   "kind": "card",
+   "description": "Talk about being clear about your faith while staying kind to others.",
    "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
@@ -48,23 +69,34 @@
  ],
  "ayah_environment_connections": [
   {
+   "reference": "109:2",
+   "anchor_phrase": "worship",
+   "element": "The Paired Stones"
+  },
+  {
    "reference": "109:6",
    "anchor_phrase": "religion",
    "element": "Two Paths"
   }
  ],
  "required_assets": [
-  "Paths"
+  "Meadow terrain (shared)",
+  "Forking path and dividing wall",
+  "Paired standing stones"
  ],
  "status": {
   "quran_text": "verified (KFGQPC Hafs, checksummed)",
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: its own scene (paired stones and two separate paths) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Kafirun.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
  },
  "quran_references": [
+  "109:1-6",
+  "109:2",
   "109:6"
  ],
  "scholarly_review": {

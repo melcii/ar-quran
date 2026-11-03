@@ -23,8 +23,8 @@
  ],
  "summary_for_children": "Al-Fajr means The Dawn. It recalls 'Ad, Thamud and Pharaoh who oppressed, and teaches caring for orphans and the poor.",
  "world_title": "The Dawn and the Pillars of Iram",
- "environment_concept": "A dawn over ten nights, and ruins of Iram's lofty pillars, Thamud's carved rocks and Pharaoh's stakes.",
- "architecture_and_scenery": "Dawn sky, pillared ruins, rock carvings.",
+ "environment_concept": "A dawn lookout (89:1). Further on, the weathered ruins of very tall pillars for Iram, who had lofty pillars (89:7), and a valley where doorways are carved into the rock for Thamud (89:9). Both are artistic stand-ins, empty and quiet, not the real places. No person is shown; the punishment of 89:13 and the Day of 89:21-26 are not pictured.",
+ "architecture_and_scenery": "A lookout with seats, tall broken pillars on a platform, a rock valley with carved doorways.",
  "palette": {
   "colors": [
    "#f0c080",
@@ -36,29 +36,44 @@
  },
  "areas": [
   {
-   "name": "Dawn",
+   "name": "Dawn Lookout",
    "reference": "89:1",
    "anchor_phrase": "dawn",
-   "description": "The dawn."
+   "description": "A lookout with low seats facing the dawn."
   },
   {
    "name": "Lofty Pillars",
    "reference": "89:7",
    "anchor_phrase": "lofty pillars",
-   "description": "Ruined pillars."
+   "description": "Weathered ruins of very tall pillars, an artistic stand-in for Iram."
   },
   {
    "name": "Carved Rocks",
    "reference": "89:9",
    "anchor_phrase": "carved out the rocks",
-   "description": "Rocks carved in the valley."
+   "description": "Doorways carved into a rock valley, empty and quiet."
   }
  ],
  "activities": [
   {
-   "name": "Care for the orphan",
-   "reference": "89:17-18",
-   "description": "Share food with orphans and the poor (adaptation).",
+   "name": "Read the first five",
+   "reference": "89:1-5",
+   "kind": "order",
+   "description": "Put the first five ayahs of Al-Fajr in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "89:1-9",
+   "kind": "match",
+   "description": "Match the lookout, the pillars and the carved rocks to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "The reassured soul",
+   "reference": "89:27",
+   "kind": "card",
+   "description": "Talk about what makes a heart calm and content.",
    "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
@@ -71,7 +86,7 @@
   {
    "reference": "89:1",
    "anchor_phrase": "dawn",
-   "element": "Dawn"
+   "element": "Dawn Lookout"
   },
   {
    "reference": "89:7",
@@ -85,24 +100,28 @@
   }
  ],
  "required_assets": [
-  "Dawn",
-  "Ruins",
-  "Rock valley"
+  "Dawn terrain (shared)",
+  "Lookout",
+  "Tall pillar ruins",
+  "Carved rock valley"
  ],
  "status": {
   "quran_text": "verified (KFGQPC Hafs, checksummed)",
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: its own scene (a dawn lookout, tall pillar ruins and a valley of carved doorways) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Fajr.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
  },
  "quran_references": [
   "89:1",
-  "89:6-14",
+  "89:1-5",
+  "89:1-9",
   "89:7",
   "89:9",
-  "89:17-18"
+  "89:27"
  ],
  "scholarly_review": {
   "status": "unreviewed",

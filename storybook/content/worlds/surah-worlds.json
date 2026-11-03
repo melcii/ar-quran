@@ -608,196 +608,274 @@
   },
   {
    "surah": 78,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "meadow",
+   "basis": "Signs of 78:6-16: the earth as a resting place, mountains as stakes, the night as clothing, the burning lamp of the sun, rain and entwined gardens. The Day (78:17-40) is not pictured. No person is shown.",
+   "references": [
+    "78:10",
+    "78:13",
+    "78:16",
+    "78:6",
+    "78:7"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 79,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "mountain",
+   "basis": "Creation signs of 79:27-32: the raised sky, water and pasture brought out of the earth, and mountains set firmly. The story of 79:15-26 and the Day (79:34-46) are not pictured. No person is shown.",
+   "references": [
+    "79:28",
+    "79:31",
+    "79:32"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 80,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "orchard",
+   "basis": "\"Let mankind look at his food\" (80:24): a torrent of water (80:25), earth split by sprouts (80:26), grain and vines (80:27-28), olive and palm trees (80:29) and fruit and grass (80:31). The event of 80:1-10 and the Day (80:33-42) are not pictured. No person is shown.",
+   "references": [
+    "80:25",
+    "80:26",
+    "80:28",
+    "80:29",
+    "80:31"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 81,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "night",
+   "basis": "The surah's oaths of 81:15-18: stars that run their courses and disappear, the night closing in and the dawn as it breathes, shown as stars setting over a still pool, a dark grove and a dawn glow with a breeze. The events of 81:1-14 are not pictured. No person is shown.",
+   "references": [
+    "81:15",
+    "81:17",
+    "81:18"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 82,
    "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "basis": "A garden of well-proportioned, balanced natural forms, a spiral shell, a symmetrical leaf and a balanced stone arch (82:7), and a table of gifts for the Generous (82:6). The events of 82:1-4 are not pictured. No person is shown.",
+   "references": [
+    "82:6",
+    "82:7"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 83,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "morning",
+   "basis": "A market stall with honest scales and a grain measure (83:1-3), where a measure can be filled to the brim. No person is shown; the Day, the registers and the next life (83:4-36) are not pictured.",
+   "references": [
+    "83:2",
+    "83:3"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 84,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "night",
+   "basis": "The surah's oaths of 84:16-19: the twilight glow, the night, the full moon and \"state after state\", shown as a glowing horizon, a large full moon and a row of moon-phase stones. The events of 84:1-15 are not pictured. No person is shown.",
+   "references": [
+    "84:16",
+    "84:18",
+    "84:19"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 85,
    "setting": "stars",
-   "basis": "The surah's name means \"The Mansions of the Stars\" (85:1). A clear night sky.",
+   "basis": "A sky of great stars (85:1), an old empty trench long after the story, with no fire and no people (85:4), and a reading stand for the honoured Quran (85:21). The suffering of the story is not pictured.",
    "references": [
-    "85:1"
+    "85:1",
+    "85:21",
+    "85:4"
    ],
    "review_status": "unreviewed"
   },
   {
    "surah": 86,
    "setting": "stars",
-   "basis": "The surah's name means \"The Nightcomer\" (86:1-3), described as the piercing star. A clear night sky.",
+   "basis": "A piercing bright star (86:3), a cloud that returns rain (86:11) and earth cracking open with sprouts (86:12). No person is shown, and the Day of 86:9 is not pictured.",
    "references": [
-    "86:1-3"
+    "86:11",
+    "86:12",
+    "86:3"
    ],
    "review_status": "unreviewed"
   },
   {
    "surah": 87,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "meadow",
+   "basis": "A pasture that grows green and then turns to dark stubble (87:4-5), shown as a field that slowly changes. The Fire (87:12) is not pictured. No person is shown.",
+   "references": [
+    "87:4",
+    "87:5"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 88,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "dunes",
+   "basis": "Four things the surah asks us to look at: camels (88:17), the raised sky (88:18), mountains (88:19) and the spread-out earth (88:20). The scenes of the Day and of the Garden (88:1-16) are not pictured. No person is shown.",
+   "references": [
+    "88:17",
+    "88:18",
+    "88:19",
+    "88:20"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 89,
    "setting": "dawn",
-   "basis": "The surah opens \"By the dawn\" (89:1). The world at daybreak.",
+   "basis": "A dawn lookout (89:1), ruins of tall pillars for Iram (89:7) and a valley of rock with carved doorways for Thamud (89:9). They are artistic stand-ins, not the real places. No person is shown and the punishment (89:13) is not pictured.",
    "references": [
-    "89:1"
+    "89:1",
+    "89:7",
+    "89:9"
    ],
    "review_status": "unreviewed"
   },
   {
    "surah": 90,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "mountain",
+   "basis": "A fork with two ways (90:10), one an easy path and one a steep, narrow rocky pass (90:11), and at the top of the pass a table for feeding on a day of hunger (90:14). No person is shown.",
+   "references": [
+    "90:10",
+    "90:11",
+    "90:14"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 91,
    "setting": "sun",
-   "basis": "The surah opens \"By the sun and its brightness\" (91:1). A bright, open day.",
+   "basis": "A sundial (91:1) and a still pool where the moon is seen after the sun (91:2), a well with an empty trough (91:13), and cliffs with carved doorways for Thamud (91:11). No person or animal from the story is shown, and the destruction (91:14) is not pictured.",
    "references": [
-    "91:1"
+    "91:1",
+    "91:11",
+    "91:13",
+    "91:2"
    ],
    "review_status": "unreviewed"
   },
   {
    "surah": 92,
    "setting": "night",
-   "basis": "The surah opens \"By the night when it covers\" (92:1). A quiet night.",
+   "basis": "A courtyard in two halves, one of night with lanterns (92:1) and one of day with sunflowers (92:2), and a giving table for the one who gives (92:5, 92:18). No person is shown. The Fire and the next life are not pictured.",
    "references": [
-    "92:1"
+    "92:1",
+    "92:2",
+    "92:5"
    ],
    "review_status": "unreviewed"
   },
   {
    "surah": 93,
    "setting": "morning",
-   "basis": "The surah opens \"By the morning brightness\" (93:1). Late morning light.",
+   "basis": "A bright morning meadow (93:1), a shaded grove where the night's darkness lingers (93:2), and a home with a door open to the orphan and the one who asks (93:9-10). No person is shown.",
    "references": [
-    "93:1"
+    "93:1",
+    "93:10",
+    "93:2"
    ],
    "review_status": "unreviewed"
   },
   {
    "surah": 94,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "meadow",
+   "basis": "A steep, stony stretch of path that opens onto an easy meadow path, for \"with hardship will be ease\" (94:5-6), with a heavy pack set down by the way as a picture of a burden removed (94:2). An artistic picture; no person is shown.",
+   "references": [
+    "94:2",
+    "94:5"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 95,
    "setting": "orchard",
-   "basis": "The surah opens \"By the fig and the olive\" (95:1). An orchard of fig and olive trees.",
+   "basis": "A fig orchard and an olive grove (95:1), a far mountain standing for Mount Sinai (95:2) and a distant walled city for the secure city (95:3). The mountain and city are simple stand-ins, not their real shapes. No person is shown.",
    "references": [
-    "95:1"
+    "95:1",
+    "95:2",
+    "95:3"
    ],
    "review_status": "unreviewed"
   },
   {
    "surah": 96,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "mountain",
+   "basis": "A high rocky hill with a small cave, following the hadith that the first revelation came in a cave on a mountain (the surah itself does not describe the place), a writing desk with a reed pen and ink (96:4), and a prayer terrace (96:19). No person is shown.",
+   "references": [
+    "96:1",
+    "96:19",
+    "96:4"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 97,
    "setting": "night",
-   "basis": "The surah's name means \"The Decree\" and it speaks of a night that is peace until the emergence of dawn (97:1, 97:5). A calm night sky.",
+   "basis": "A long wall of a thousand small lamps for \"better than a thousand months\" (97:3), and a hill where the sky brightens at the emergence of dawn (97:5). The angels and the Spirit (97:4) are not pictured.",
    "references": [
-    "97:1",
+    "97:3",
     "97:5"
    ],
    "review_status": "unreviewed"
   },
   {
    "surah": 98,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "morning",
+   "basis": "A reading stand with a closed, covered book for the purified scriptures (98:2-3) and a clear spring for sincerity (98:5). No person is shown; the Fire and the gardens of 98:6-8 are not pictured.",
+   "references": [
+    "98:2",
+    "98:5"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 99,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "morning",
+   "basis": "Dust motes in a shaft of sunlight and a garden of tiny seedlings, pictures of how small an atom's weight is (99:7-8). The earthquake and the Day are not pictured.",
+   "references": [
+    "99:7",
+    "99:8"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 100,
    "setting": "dunes",
-   "basis": "The surah opens with an oath by \"the racers, panting\" (100:1). Open desert at dawn. No riders or animals are shown.",
+   "basis": "Riderless horses racing over dunes at dawn (100:1, 100:3), sparks where hooves strike stone (100:2) and clouds of dust (100:4). No riders or people are shown.",
    "references": [
-    "100:1"
+    "100:1",
+    "100:2",
+    "100:4"
    ],
    "review_status": "unreviewed"
   },
   {
    "surah": 101,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "night",
+   "basis": "The surah's two comparisons, shown as ordinary things of this world: moths scattered around lamps at night (101:4) and fluffed wool (101:5). The Day itself, the scales and the Fire are not pictured.",
+   "references": [
+    "101:4",
+    "101:5"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 102,
    "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "basis": "Towers of stacked crates and jars competing in height, a picture of competition in worldly increase (102:1), and a quiet walled graveyard with plain stones (102:2). The Day of Judgement and the Fire are not pictured.",
+   "references": [
+    "102:1",
+    "102:2"
+   ],
    "review_status": "unreviewed"
   },
   {
@@ -813,9 +891,12 @@
   },
   {
    "surah": 104,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "desert-dusk",
+   "basis": "A dusty counting room with a table of coins and a ledger, wealth collected and counted (104:2), which cannot make anyone live forever (104:3). The Day of Judgement and the Fire are not pictured.",
+   "references": [
+    "104:2",
+    "104:3"
+   ],
    "review_status": "unreviewed"
   },
   {
@@ -832,44 +913,65 @@
   },
   {
    "surah": 106,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "dunes",
+   "basis": "Two resting caravans, one for winter and one for summer (106:2), a distant house in a valley (106:3), and food and water given (106:4). No people are shown.",
+   "references": [
+    "106:2",
+    "106:3",
+    "106:4"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 107,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "morning",
+   "basis": "A small street with a home whose door is open to orphans (107:2), a table for feeding the poor (107:3) and a shelf of small things to lend (107:7). No people are shown.",
+   "references": [
+    "107:2",
+    "107:3",
+    "107:7"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 108,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "orchard",
+   "basis": "An orchard heavy with fruit as a sign of good things given (108:1) and a quiet prayer terrace (108:2). Al-Kawthar itself is not pictured.",
+   "references": [
+    "108:1",
+    "108:2"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 109,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "meadow",
+   "basis": "One path that divides into two separate paths that never cross (109:6), with paired stones for the repeated ayahs (109:2-5). An artistic picture; no people are shown.",
+   "references": [
+    "109:2",
+    "109:6"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 110,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "sun",
+   "basis": "Many roads meeting at an open gate, a picture of people entering in multitudes (110:2), and a quiet terrace for praise and asking forgiveness (110:3). No people are shown.",
+   "references": [
+    "110:1",
+    "110:2",
+    "110:3"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 111,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "desert-dusk",
+   "basis": "An abandoned heap of wealth (111:2) and a bundle of firewood with a twisted fibre rope (111:4-5) beside a dusk road. No person is shown and the Fire (111:3) is not pictured.",
+   "references": [
+    "111:2",
+    "111:4"
+   ],
    "review_status": "unreviewed"
   },
   {
@@ -886,17 +988,21 @@
   {
    "surah": 113,
    "setting": "dawn",
-   "basis": "The surah speaks of \"the Lord of daybreak\" (113:1). The world at daybreak.",
+   "basis": "A ridge facing the first light of daybreak (113:1) and a hollow where darkness settles (113:3), lit by lanterns. An artistic setting; nothing unseen is pictured.",
    "references": [
-    "113:1"
+    "113:1",
+    "113:3"
    ],
    "review_status": "unreviewed"
   },
   {
    "surah": 114,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "wind",
+   "basis": "A windy lane of tall reeds that whisper, leading to a lit stone shelter: an artistic picture of seeking refuge (114:1) from the whisperer (114:4). Nothing unseen is pictured.",
+   "references": [
+    "114:1",
+    "114:4"
+   ],
    "review_status": "unreviewed"
   }
  ]

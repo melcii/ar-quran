@@ -17,8 +17,8 @@
  "narrative_passages": [],
  "summary_for_children": "At-Tin means The Fig. It swears by the fig, the olive, Mount Sinai and the safe city, and says Allah created people in the best form, and those who believe and do good have an endless reward.",
  "world_title": "Fig, Olive and the Secure City",
- "environment_concept": "Four places named in the oaths: a fig orchard, an olive grove, Mount Sinai and a secure city, ending with the reminder that people were created in the best stature.",
- "architecture_and_scenery": "Fig orchard, olive terraces, a granite mountain, a peaceful walled city.",
+ "environment_concept": "The path runs between a fig orchard and an olive grove (95:1). Far off stands a tall mountain for Mount Sinai (95:2) and a small walled city in a valley for the secure city (95:3). Both are simple stand-ins seen from far away, not their real shapes. No person is shown.",
+ "architecture_and_scenery": "Fig trees with broad leaves and purple fruit, silver-green olive trees, a far mountain, a far walled city.",
  "palette": {
   "colors": [
    "#6f4a6a",
@@ -34,38 +34,47 @@
    "name": "Fig Orchard",
    "reference": "95:1",
    "anchor_phrase": "fig",
-   "description": "Fig trees heavy with fruit."
+   "description": "Fig trees with broad leaves and ripe purple figs."
   },
   {
    "name": "Olive Grove",
    "reference": "95:1",
    "anchor_phrase": "olive",
-   "description": "Olive terraces."
+   "description": "Silver-green olive trees heavy with small olives."
   },
   {
    "name": "Mount Sinai",
    "reference": "95:2",
    "anchor_phrase": "Mount Sinai",
-   "description": "A granite mountain."
+   "description": "A tall mountain on the horizon, a simple stand-in, not its real shape."
   },
   {
    "name": "Secure City",
    "reference": "95:3",
    "anchor_phrase": "secure city",
-   "description": "A peaceful city."
+   "description": "A small walled city far off in a valley, shown simply."
   }
  ],
  "activities": [
   {
-   "name": "Four oaths",
-   "reference": "95:1-3",
-   "description": "Visit each place and read its oath (adaptation).",
+   "name": "Read the eight",
+   "reference": "95:1-8",
+   "kind": "order",
+   "description": "Put the eight ayahs of At-Tin in order.",
    "label": "artistic educational adaptation, not an event in the Quran"
   },
   {
-   "name": "Best stature",
+   "name": "Match each place to its ayah",
+   "reference": "95:1-3",
+   "kind": "match",
+   "description": "Match the figs, the olives, the mountain and the city to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "The best of stature",
    "reference": "95:4",
-   "description": "Reflect on how we were made in the best form.",
+   "kind": "card",
+   "description": "Talk about the good shape Allah made us in and how to use it well.",
    "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
@@ -97,22 +106,26 @@
   }
  ],
  "required_assets": [
-  "Fig orchard",
-  "Olive grove",
-  "Mountain",
-  "City"
+  "Orchard terrain (shared)",
+  "Fig trees",
+  "Olive trees",
+  "Far mountain",
+  "Far walled city"
  ],
  "status": {
   "quran_text": "verified (KFGQPC Hafs, checksummed)",
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: its own scene (fig and olive trees, a far mountain and a far walled city) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Tin.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
  },
  "quran_references": [
   "95:1",
   "95:1-3",
+  "95:1-8",
   "95:2",
   "95:3",
   "95:4"

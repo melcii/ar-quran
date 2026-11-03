@@ -23,8 +23,8 @@
  ],
  "summary_for_children": "An-Nazi'at tells of Musa called in the valley of Tuwa and sent to Pharaoh, and shows how Allah raised the sky and spread the earth.",
  "world_title": "The Valley of Tuwa Called Again",
- "environment_concept": "A sacred valley and a sky raised and proportioned, with pastures and water drawn from the earth.",
- "architecture_and_scenery": "Valley, high sky, pastures and springs.",
+ "environment_concept": "A high open place under a wide raised sky (79:28), a spring bubbling out of the ground into a green pasture (79:31), and mountains set firmly around the valley (79:32). The story of Musa and Pharaoh (79:15-26) is told only in the reading, not shown, and the Day of 79:34-46 is not pictured. No person is shown.",
+ "architecture_and_scenery": "A sky platform, a spring and pasture, firm mountains around the valley.",
  "palette": {
   "colors": [
    "#3f6d8f",
@@ -39,26 +39,41 @@
    "name": "Raised Ceiling",
    "reference": "79:28",
    "anchor_phrase": "ceiling",
-   "description": "A high sky."
+   "description": "A high platform under the wide raised sky."
   },
   {
    "name": "Water and Pasture",
    "reference": "79:31",
    "anchor_phrase": "pasture",
-   "description": "Pastures with springs."
+   "description": "A spring bubbling out of the earth into green pasture."
   },
   {
    "name": "Firm Mountains",
    "reference": "79:32",
    "anchor_phrase": "mountains",
-   "description": "Mountains."
+   "description": "Mountains set firmly around the valley."
   }
  ],
  "activities": [
   {
-   "name": "Day and night",
-   "reference": "79:29",
-   "description": "Darken the night and bring out the brightness (adaptation).",
+   "name": "Read the creation ayahs",
+   "reference": "79:27-33",
+   "kind": "order",
+   "description": "Put ayahs 27 to 33 of An-Nazi'at in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "79:28-32",
+   "kind": "match",
+   "description": "Match the sky, the spring and the mountains to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Provision for you",
+   "reference": "79:33",
+   "kind": "card",
+   "description": "Talk about the water and food the earth gives us and our animals.",
    "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
@@ -84,24 +99,28 @@
   }
  ],
  "required_assets": [
-  "Valley",
-  "Sky",
-  "Pastures"
+  "Mountain terrain (shared)",
+  "Sky platform",
+  "Spring and pasture",
+  "Mountain peaks"
  ],
  "status": {
   "quran_text": "verified (KFGQPC Hafs, checksummed)",
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: its own scene (a sky platform, a spring with pasture and firm mountains) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Naziat.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
  },
  "quran_references": [
-  "79:15-26",
+  "79:27-33",
   "79:28",
-  "79:29",
+  "79:28-32",
   "79:31",
-  "79:32"
+  "79:32",
+  "79:33"
  ],
  "scholarly_review": {
   "status": "unreviewed",

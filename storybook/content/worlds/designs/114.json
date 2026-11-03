@@ -16,8 +16,8 @@
  "narrative_passages": [],
  "summary_for_children": "An-Nas teaches seeking refuge in the Lord of mankind from the whisperer.",
  "world_title": "Lord of Mankind",
- "environment_concept": "A peaceful town where whispers fade when Allah's protection is sought.",
- "architecture_and_scenery": "A quiet town.",
+ "environment_concept": "A lane of tall reeds that rustle and whisper in the wind, leading to a small lit stone shelter. The whisper is only the sound of reeds; no whisperer, jinn or person is shown.",
+ "architecture_and_scenery": "Reed lane, a stone shelter with a lamp, a bench to sit and read.",
  "palette": {
   "colors": [
    "#efe6d2",
@@ -28,17 +28,38 @@
  },
  "areas": [
   {
+   "name": "The Refuge Shelter",
+   "reference": "114:1",
+   "anchor_phrase": "refuge",
+   "description": "A small stone shelter with a warm lamp where 114:1 is read."
+  },
+  {
    "name": "Whisper Lane",
    "reference": "114:4",
    "anchor_phrase": "whisperer",
-   "description": "Whispers fading."
+   "description": "A lane of tall reeds that rustle in the wind. Only reeds are shown; the whisperer is not pictured."
   }
  ],
  "activities": [
   {
-   "name": "Refuge",
+   "name": "Read the six",
    "reference": "114:1-6",
-   "description": "Read the surah (adaptation).",
+   "kind": "order",
+   "description": "Put the six ayahs of An-Nas in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "114:1-6",
+   "kind": "match",
+   "description": "Match the shelter and the reed lane to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Words of refuge",
+   "reference": "114:1",
+   "kind": "card",
+   "description": "Talk about saying these words when you feel afraid or unsure.",
    "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
@@ -48,23 +69,33 @@
  ],
  "ayah_environment_connections": [
   {
+   "reference": "114:1",
+   "anchor_phrase": "refuge",
+   "element": "The Refuge Shelter"
+  },
+  {
    "reference": "114:4",
    "anchor_phrase": "whisperer",
    "element": "Whisper Lane"
   }
  ],
  "required_assets": [
-  "Town"
+  "Wind-swept terrain (shared)",
+  "Instanced reeds",
+  "Stone shelter with lamp"
  ],
  "status": {
   "quran_text": "verified (KFGQPC Hafs, checksummed)",
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: its own scene (a whispering reed lane and a lit refuge shelter) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Nas.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
  },
  "quran_references": [
+  "114:1",
   "114:1-6",
   "114:4"
  ],

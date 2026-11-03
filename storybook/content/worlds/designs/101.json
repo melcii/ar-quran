@@ -15,8 +15,8 @@
  "narrative_passages": [],
  "summary_for_children": "Al-Qari'ah describes the Day in words: people like scattered moths and mountains like fluffed wool. Heavy good deeds bring a pleasing life.",
  "world_title": "Like Moths, Like Wool",
- "environment_concept": "A symbolic world of the surah's two images: scattered moths and fluffed wool, shown as soft abstraction only.",
- "architecture_and_scenery": "Abstract field of moths in light, and wool-like clouds.",
+ "environment_concept": "A night path where moths flutter and scatter around lamps (101:4), and a field of hills with heaps of fluffed wool beside them (101:5). These are only the Quran's comparisons, shown as everyday things: the Day of 101:1-3, the scales and the Fire are not pictured. No person is shown.",
+ "architecture_and_scenery": "Lamp posts with fluttering moths, heaps of fluffed wool at the foot of round hills.",
  "palette": {
   "colors": [
    "#efe6d2",
@@ -27,23 +27,38 @@
  },
  "areas": [
   {
-   "name": "Moths",
+   "name": "Scattered Moths",
    "reference": "101:4",
    "anchor_phrase": "moths",
-   "description": "Moths in lamp light."
+   "description": "Moths fluttering and scattering around lamps: the Quran's comparison, shown as an ordinary night scene."
   },
   {
-   "name": "Wool",
+   "name": "Fluffed Wool",
    "reference": "101:5",
    "anchor_phrase": "wool",
-   "description": "Fluffed wool."
+   "description": "Soft heaps of fluffed wool: the Quran's comparison for the mountains, shown as ordinary wool."
   }
  ],
  "activities": [
   {
-   "name": "Heavy scales",
-   "reference": "101:6-7",
-   "description": "Add good deeds to the scale (adaptation).",
+   "name": "Read the first six",
+   "reference": "101:1-6",
+   "kind": "order",
+   "description": "Put the first six ayahs of Al-Qari'ah in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "101:4-5",
+   "kind": "match",
+   "description": "Match the moths and the wool to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Heavy with good",
+   "reference": "101:6",
+   "kind": "card",
+   "description": "Talk about small good deeds that add up.",
    "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
@@ -55,29 +70,35 @@
   {
    "reference": "101:4",
    "anchor_phrase": "moths",
-   "element": "Moths"
+   "element": "Scattered Moths"
   },
   {
    "reference": "101:5",
    "anchor_phrase": "wool",
-   "element": "Wool"
+   "element": "Fluffed Wool"
   }
  ],
  "required_assets": [
-  "Lamp field"
+  "Night terrain (shared)",
+  "Moth particles",
+  "Fluffed wool heaps"
  ],
  "status": {
   "quran_text": "verified (KFGQPC Hafs, checksummed)",
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: its own scene (moths around night lamps and heaps of fluffed wool) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Qariah.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
  },
  "quran_references": [
+  "101:1-6",
   "101:4",
+  "101:4-5",
   "101:5",
-  "101:6-7"
+  "101:6"
  ],
  "scholarly_review": {
   "status": "unreviewed",

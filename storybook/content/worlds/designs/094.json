@@ -16,8 +16,8 @@
  "narrative_passages": [],
  "summary_for_children": "Ash-Sharh means The Expansion. It promises twice that with hardship comes ease.",
  "world_title": "With Hardship, Ease",
- "environment_concept": "A climb where each hard step reveals an easy one.",
- "architecture_and_scenery": "Hillside path.",
+ "environment_concept": "The path climbs a steep, stony stretch, then opens onto an easy, level meadow path (94:5-6). A heavy pack lies set down beside the way, a picture of a burden removed (94:2). Stones block part of the path and can be cleared. No person is shown.",
+ "architecture_and_scenery": "A stony climb with boulders, a level meadow path, a heavy pack resting on a stone.",
  "palette": {
   "colors": [
    "#c9a46a",
@@ -28,17 +28,38 @@
  },
  "areas": [
   {
-   "name": "Path of Ease",
+   "name": "The Burden Set Down",
+   "reference": "94:2",
+   "anchor_phrase": "burden",
+   "description": "A heavy pack set down beside the path: a picture of a burden removed."
+  },
+  {
+   "name": "Hardship and Ease",
    "reference": "94:5",
    "anchor_phrase": "ease",
-   "description": "A path that eases."
+   "description": "A steep stony climb that opens onto an easy meadow path."
   }
  ],
  "activities": [
   {
-   "name": "Hard then easy",
-   "reference": "94:5-6",
-   "description": "Climb hard sections and find easy ones (adaptation).",
+   "name": "Read the eight",
+   "reference": "94:1-8",
+   "kind": "order",
+   "description": "Put the eight ayahs of Ash-Sharh in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "94:2-5",
+   "kind": "match",
+   "description": "Match the pack and the climb to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Clear the path",
+   "reference": "94:5",
+   "kind": "find",
+   "description": "Tap the three stones blocking the path to roll them aside.",
    "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
@@ -48,25 +69,36 @@
  ],
  "ayah_environment_connections": [
   {
+   "reference": "94:2",
+   "anchor_phrase": "burden",
+   "element": "The Burden Set Down"
+  },
+  {
    "reference": "94:5",
    "anchor_phrase": "ease",
-   "element": "Path of Ease"
+   "element": "Hardship and Ease"
   }
  ],
  "required_assets": [
-  "Hill path"
+  "Meadow terrain (shared)",
+  "Boulders and stony path",
+  "Heavy pack"
  ],
  "status": {
   "quran_text": "verified (KFGQPC Hafs, checksummed)",
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: its own scene (a stony climb opening onto an easy path, a burden set down, stones to clear), two playable games and one activity played in the scene",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Sharh.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
  },
  "quran_references": [
-  "94:5",
-  "94:5-6"
+  "94:1-8",
+  "94:2",
+  "94:2-5",
+  "94:5"
  ],
  "scholarly_review": {
   "status": "unreviewed",

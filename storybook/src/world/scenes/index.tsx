@@ -8,7 +8,41 @@ import type * as THREE from 'three';
 import type { Quality } from '../quality';
 import type { Land } from '../terrain';
 import type { Passage } from '../SurahWorld';
+import { AdiyatScene } from './Adiyat';
+import { AbasaScene } from './Abasa';
+import { AlaScene } from './Ala';
+import { InfitarScene } from './Infitar';
+import { InshiqaqScene } from './Inshiqaq';
+import { MutaffifinScene } from './Mutaffifin';
+import { NabaScene } from './Naba';
+import { NaziatScene } from './Naziat';
+import { TakwirScene } from './Takwir';
+import { AlaqScene } from './Alaq';
+import { BaladScene } from './Balad';
+import { BurujScene } from './Buruj';
+import { FajrScene } from './Fajr';
+import { GhashiyahScene } from './Ghashiyah';
+import { LaylScene } from './Layl';
+import { ShamsScene } from './Shams';
+import { TariqScene } from './Tariq';
 import { AsrScene } from './Asr';
+import { BayyinahScene } from './Bayyinah';
+import { DuhaScene } from './Duha';
+import { QadrScene } from './Qadr';
+import { SharhScene } from './Sharh';
+import { TinScene } from './Tin';
+import { HumazahScene } from './Humazah';
+import { QariahScene } from './Qariah';
+import { TakathurScene } from './Takathur';
+import { ZalzalahScene } from './Zalzalah';
+import { FalaqScene } from './Falaq';
+import { KafirunScene } from './Kafirun';
+import { KawtharScene } from './Kawthar';
+import { MasadScene } from './Masad';
+import { MaunScene } from './Maun';
+import { NasScene } from './Nas';
+import { NasrScene } from './Nasr';
+import { QurayshScene } from './Quraysh';
 import { FilScene } from './Fil';
 import { IkhlasScene } from './Ikhlas';
 import { KahfScene } from './Kahf';
@@ -33,9 +67,43 @@ export const SCENES: Record<number, ComponentType<SceneProps>> = {
   27: NamlScene,
   49: HujuratScene,
   55: RahmanScene,
+  78: NabaScene,
+  79: NaziatScene,
+  80: AbasaScene,
+  81: TakwirScene,
+  82: InfitarScene,
+  83: MutaffifinScene,
+  84: InshiqaqScene,
+  85: BurujScene,
+  86: TariqScene,
+  87: AlaScene,
+  88: GhashiyahScene,
+  89: FajrScene,
+  90: BaladScene,
+  91: ShamsScene,
+  92: LaylScene,
+  93: DuhaScene,
+  94: SharhScene,
+  95: TinScene,
+  96: AlaqScene,
+  97: QadrScene,
+  98: BayyinahScene,
+  99: ZalzalahScene,
+  100: AdiyatScene,
+  101: QariahScene,
+  102: TakathurScene,
   103: AsrScene,
+  104: HumazahScene,
   105: FilScene,
+  106: QurayshScene,
+  107: MaunScene,
+  108: KawtharScene,
+  109: KafirunScene,
+  110: NasrScene,
+  111: MasadScene,
   112: IkhlasScene,
+  113: FalaqScene,
+  114: NasScene,
 };
 
 /** The stop for a designed area, by its name in the design record. */

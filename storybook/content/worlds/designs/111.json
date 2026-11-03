@@ -16,8 +16,8 @@
  "narrative_passages": [],
  "summary_for_children": "Al-Masad tells of Abu Lahab and his wife, who opposed the Prophet (peace be upon him), and that wealth did not help them.",
  "world_title": "Wealth Will Not Avail",
- "environment_concept": "A path of thorns and firewood showing that wealth and status do not save from wrongdoing.",
- "architecture_and_scenery": "A thorny path, a bundle of firewood.",
+ "environment_concept": "A dusk road past an abandoned heap of chests and coins that does no good to anyone, and a bundle of firewood tied with a twisted rope. No person is shown, and the Fire of 111:3 is not pictured.",
+ "architecture_and_scenery": "Dusty chests and scattered coins, a firewood bundle with a rope of twisted fibre.",
  "palette": {
   "colors": [
    "#8c5a3a",
@@ -28,23 +28,38 @@
  },
  "areas": [
   {
-   "name": "Firewood",
-   "reference": "111:4",
-   "anchor_phrase": "firewood",
-   "description": "A bundle of firewood."
-  },
-  {
-   "name": "Wealth",
+   "name": "Wealth That Will Not Avail",
    "reference": "111:2",
    "anchor_phrase": "wealth",
-   "description": "Coins that cannot help."
+   "description": "An abandoned heap of chests and coins half sunk in sand: wealth that did not help its owner."
+  },
+  {
+   "name": "Firewood and Rope",
+   "reference": "111:4",
+   "anchor_phrase": "firewood",
+   "description": "A bundle of firewood tied with a rope of twisted fibre (111:4-5). No person is shown."
   }
  ],
  "activities": [
   {
-   "name": "What helps",
+   "name": "Read the five",
+   "reference": "111:1-5",
+   "kind": "order",
+   "description": "Put the five ayahs of Al-Masad in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "111:1-5",
+   "kind": "match",
+   "description": "Match the heap of wealth and the firewood to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "What really helps",
    "reference": "111:2",
-   "description": "Discuss what truly helps (adaptation).",
+   "kind": "card",
+   "description": "Talk about why money alone cannot save anyone, and what does help.",
    "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
@@ -54,28 +69,33 @@
  ],
  "ayah_environment_connections": [
   {
-   "reference": "111:4",
-   "anchor_phrase": "firewood",
-   "element": "Firewood"
-  },
-  {
    "reference": "111:2",
    "anchor_phrase": "wealth",
-   "element": "Wealth"
+   "element": "Wealth That Will Not Avail"
+  },
+  {
+   "reference": "111:4",
+   "anchor_phrase": "firewood",
+   "element": "Firewood and Rope"
   }
  ],
  "required_assets": [
-  "Path"
+  "Desert dusk terrain (shared)",
+  "Chests and coins",
+  "Firewood bundle and rope"
  ],
  "status": {
   "quran_text": "verified (KFGQPC Hafs, checksummed)",
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: its own scene (an abandoned heap of wealth, a firewood bundle with a twisted rope) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Masad.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
  },
  "quran_references": [
+  "111:1-5",
   "111:2",
   "111:4"
  ],

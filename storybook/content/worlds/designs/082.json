@@ -16,8 +16,8 @@
  "narrative_passages": [],
  "summary_for_children": "Al-Infitar describes the end of the world in words and reminds us Allah created us in a beautiful form.",
  "world_title": "The Sky Breaks Apart in Words",
- "environment_concept": "A symbolic world of written ayahs and a reminder that Allah fashioned us in proportion.",
- "architecture_and_scenery": "A calm garden with ayah stones.",
+ "environment_concept": "A garden of forms that are well made and balanced: a great spiral shell, a symmetrical leaf in stone and an arch balanced on its own stones (82:7). Beside it, a table of fruit and water, gifts that remind us that our Lord is the Generous (82:6). The breaking sky and scattered stars of 82:1-4 are not pictured. No person is shown.",
+ "architecture_and_scenery": "A spiral-shell sculpture, a stone leaf, a dry-stone arch, a table of fruit and water.",
  "palette": {
   "colors": [
    "#efe6d2",
@@ -28,17 +28,38 @@
  },
  "areas": [
   {
+   "name": "The Generous",
+   "reference": "82:6",
+   "anchor_phrase": "Generous",
+   "description": "A table of fruit and water: gifts to be thankful for."
+  },
+  {
    "name": "Proportioned Form",
    "reference": "82:7",
    "anchor_phrase": "proportioned",
-   "description": "Ayah stone about creation."
+   "description": "A spiral shell, a symmetrical leaf and a balanced arch: well-made, balanced forms."
   }
  ],
  "activities": [
   {
-   "name": "Read",
+   "name": "Read ayahs 6 to 8",
    "reference": "82:6-8",
-   "description": "Reflect on 82:6-8 (adaptation).",
+   "kind": "order",
+   "description": "Put ayahs 6 to 8 of Al-Infitar in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "82:6-7",
+   "kind": "match",
+   "description": "Match the gift table and the balanced forms to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Thank the Generous",
+   "reference": "82:6",
+   "kind": "card",
+   "description": "Talk about the good things you have been given and who gave them.",
    "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
@@ -48,23 +69,36 @@
  ],
  "ayah_environment_connections": [
   {
+   "reference": "82:6",
+   "anchor_phrase": "Generous",
+   "element": "The Generous"
+  },
+  {
    "reference": "82:7",
    "anchor_phrase": "proportioned",
    "element": "Proportioned Form"
   }
  ],
  "required_assets": [
-  "Garden"
+  "Garden terrain (shared)",
+  "Spiral shell",
+  "Stone leaf",
+  "Balanced arch",
+  "Gift table"
  ],
  "status": {
   "quran_text": "verified (KFGQPC Hafs, checksummed)",
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: its own scene (a spiral shell, a stone leaf, a balanced arch and a gift table) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Infitar.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
  },
  "quran_references": [
+  "82:6",
+  "82:6-7",
   "82:6-8",
   "82:7"
  ],

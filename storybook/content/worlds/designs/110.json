@@ -16,8 +16,8 @@
  "narrative_passages": [],
  "summary_for_children": "An-Nasr says when Allah's help comes and people enter Islam in crowds, praise Allah and ask forgiveness.",
  "world_title": "Multitudes Arriving",
- "environment_concept": "Roads full of people arriving, shown as moving lights.",
- "architecture_and_scenery": "Roads converging on a city.",
+ "environment_concept": "Many paths from every direction meet at an open gate, marked with lanterns that come on one by one. Beyond it is a quiet terrace for praise. No people are shown: the paths stand for the multitudes.",
+ "architecture_and_scenery": "Converging stone paths with lanterns, an open gateway, a terrace with a low wall.",
  "palette": {
   "colors": [
    "#f0d890",
@@ -28,17 +28,44 @@
  },
  "areas": [
   {
+   "name": "The Open Gate",
+   "reference": "110:1",
+   "anchor_phrase": "victory",
+   "description": "An open gateway at the end of the road, for reading 110:1."
+  },
+  {
    "name": "Converging Roads",
    "reference": "110:2",
    "anchor_phrase": "multitudes",
-   "description": "Lights on roads."
+   "description": "Many roads meeting from every direction, lit by lanterns. No people are shown."
+  },
+  {
+   "name": "Terrace of Praise",
+   "reference": "110:3",
+   "anchor_phrase": "praise",
+   "description": "A quiet terrace to stop at and read 110:3."
   }
  ],
  "activities": [
   {
-   "name": "Praise",
+   "name": "Read the three",
+   "reference": "110:1-3",
+   "kind": "order",
+   "description": "Put the three ayahs of An-Nasr in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "110:1-3",
+   "kind": "match",
+   "description": "Match the gate, the roads and the terrace to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Thank and ask forgiveness",
    "reference": "110:3",
-   "description": "Read 110:3 (adaptation).",
+   "kind": "card",
+   "description": "Talk about saying thank you to Allah and asking forgiveness when something good happens.",
    "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
@@ -48,23 +75,40 @@
  ],
  "ayah_environment_connections": [
   {
+   "reference": "110:1",
+   "anchor_phrase": "victory",
+   "element": "The Open Gate"
+  },
+  {
    "reference": "110:2",
    "anchor_phrase": "multitudes",
    "element": "Converging Roads"
+  },
+  {
+   "reference": "110:3",
+   "anchor_phrase": "praise",
+   "element": "Terrace of Praise"
   }
  ],
  "required_assets": [
-  "Roads"
+  "Sunlit terrain (shared)",
+  "Converging paths and lanterns",
+  "Open gateway",
+  "Terrace"
  ],
  "status": {
   "quran_text": "verified (KFGQPC Hafs, checksummed)",
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: its own scene (converging lantern roads, an open gate and a terrace) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Nasr.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
  },
  "quran_references": [
+  "110:1",
+  "110:1-3",
   "110:2",
   "110:3"
  ],

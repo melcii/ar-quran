@@ -17,8 +17,8 @@
  "narrative_passages": [],
  "summary_for_children": "Al-Balad means The City. It says Allah showed us two ways and the steep pass is freeing a slave and feeding the hungry and orphans.",
  "world_title": "The Steep Pass",
- "environment_concept": "A mountain path with two ways and a steep pass climbed by freeing, feeding and caring.",
- "architecture_and_scenery": "Two paths, a steep pass.",
+ "environment_concept": "The path forks into two ways (90:10): an easy path that wanders off, and a steep, narrow pass between rocks (90:11). At the top of the pass waits a table set for feeding on a day of hunger (90:14). No person is shown, and the fire of 90:20 is not pictured.",
+ "architecture_and_scenery": "A forked path, a narrow rocky pass with steps, a table with bread at the top.",
  "palette": {
   "colors": [
    "#8c5a3a",
@@ -32,20 +32,41 @@
    "name": "Two Ways",
    "reference": "90:10",
    "anchor_phrase": "two ways",
-   "description": "Paths splitting."
+   "description": "The path forks: one way easy, one way steep."
   },
   {
-   "name": "Steep Pass",
+   "name": "The Difficult Pass",
    "reference": "90:11",
    "anchor_phrase": "difficult pass",
-   "description": "A steep climb."
+   "description": "A narrow pass between tall rocks, with rough steps."
+  },
+  {
+   "name": "Feeding in Hunger",
+   "reference": "90:14",
+   "anchor_phrase": "feeding",
+   "description": "A table at the top of the pass with bread and water."
   }
  ],
  "activities": [
   {
+   "name": "Read the pass",
+   "reference": "90:10-17",
+   "kind": "order",
+   "description": "Put ayahs 10 to 17 of Al-Balad in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "90:10-14",
+   "kind": "match",
+   "description": "Match the fork, the pass and the table to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
    "name": "Climb the pass",
-   "reference": "90:13-16",
-   "description": "Climb by doing acts of kindness (adaptation).",
+   "reference": "90:13",
+   "kind": "card",
+   "description": "Talk about the good deeds the surah calls the difficult pass: freeing, feeding, caring for orphans and the poor.",
    "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
@@ -62,24 +83,37 @@
   {
    "reference": "90:11",
    "anchor_phrase": "difficult pass",
-   "element": "Steep Pass"
+   "element": "The Difficult Pass"
+  },
+  {
+   "reference": "90:14",
+   "anchor_phrase": "feeding",
+   "element": "Feeding in Hunger"
   }
  ],
  "required_assets": [
-  "Mountain path"
+  "Mountain terrain (shared)",
+  "Forked path",
+  "Rocky pass",
+  "Bread table"
  ],
  "status": {
   "quran_text": "verified (KFGQPC Hafs, checksummed)",
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: its own scene (a fork into two ways, a narrow rocky pass and a table for feeding) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Balad.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
  },
  "quran_references": [
   "90:10",
+  "90:10-14",
+  "90:10-17",
   "90:11",
-  "90:13-16"
+  "90:13",
+  "90:14"
  ],
  "scholarly_review": {
   "status": "unreviewed",

@@ -17,8 +17,8 @@
  "narrative_passages": [],
  "summary_for_children": "Al-A'la means The Most High. It tells us to glorify Allah who created, proportioned and guided, who brings out pasture and turns it dark.",
  "world_title": "Pasture to Stubble",
- "environment_concept": "A pasture that grows green and turns to dark stubble, showing creation, proportion and guidance.",
- "architecture_and_scenery": "Meadows through seasons.",
+ "environment_concept": "A wide field beside the path: one part fresh green pasture (87:4), and further on the same grass dried to dark stubble (87:5). The field slowly turns from green to dark and grows again, a picture of how short the life of this world is. The Fire of 87:12 is not pictured. No person is shown.",
+ "architecture_and_scenery": "A grass field that changes colour over time, dry stubble rows.",
  "palette": {
   "colors": [
    "#6f8f4a",
@@ -32,26 +32,35 @@
    "name": "Pasture",
    "reference": "87:4",
    "anchor_phrase": "pasture",
-   "description": "Green pasture."
+   "description": "Fresh green grass growing thick."
   },
   {
    "name": "Black Stubble",
    "reference": "87:5",
    "anchor_phrase": "stubble",
-   "description": "Pasture turned dark."
+   "description": "The same grass dried to dark stubble."
   }
  ],
  "activities": [
   {
-   "name": "Grow and fade",
-   "reference": "87:4-5",
-   "description": "Watch the pasture through its life.",
+   "name": "Read the first five",
+   "reference": "87:1-5",
+   "kind": "order",
+   "description": "Put the first five ayahs of Al-A'la in order.",
    "label": "artistic educational adaptation, not an event in the Quran"
   },
   {
-   "name": "Glorify",
-   "reference": "87:1",
-   "description": "Read 87:1.",
+   "name": "Match each place to its ayah",
+   "reference": "87:4-5",
+   "kind": "match",
+   "description": "Match the pasture and the stubble to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "What lasts",
+   "reference": "87:17",
+   "kind": "card",
+   "description": "Talk about which good things last longer than toys and treats.",
    "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
@@ -72,21 +81,26 @@
   }
  ],
  "required_assets": [
-  "Meadows"
+  "Meadow terrain (shared)",
+  "Changing pasture field",
+  "Stubble rows"
  ],
  "status": {
   "quran_text": "verified (KFGQPC Hafs, checksummed)",
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: its own scene (a field that grows green and dries to dark stubble) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Ala.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
  },
  "quran_references": [
-  "87:1",
+  "87:1-5",
   "87:4",
   "87:4-5",
-  "87:5"
+  "87:5",
+  "87:17"
  ],
  "scholarly_review": {
   "status": "unreviewed",

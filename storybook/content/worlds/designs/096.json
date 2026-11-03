@@ -17,8 +17,8 @@
  "narrative_passages": [],
  "summary_for_children": "Al-'Alaq means The Clinging Substance. Its first ayahs were the first revelation: Recite in the name of your Lord who created, who taught by the pen.",
  "world_title": "Recite! The Pen and the Clinging Substance",
- "environment_concept": "A quiet mountain cave mouth at night with a single line of light, then a scriptorium where the pen teaches; the first revelation is only told, never shown.",
- "architecture_and_scenery": "A rocky hill with a cave entrance, a writing room with pens and tablets.",
+ "environment_concept": "A rocky hill rises over the path with a small cave high on its side. The surah does not describe this place; the cave follows the hadith of the first revelation and is labelled as such. Below, a writing desk holds a reed pen, ink and blank paper (96:4), and a quiet terrace invites prostration (96:19). No person is shown.",
+ "architecture_and_scenery": "A steep hill with a cave mouth, a writing desk with reed pen, inkwell and paper, a prayer terrace.",
  "palette": {
   "colors": [
    "#1c2541",
@@ -33,26 +33,41 @@
    "name": "Hill of Revelation",
    "reference": "96:1",
    "anchor_phrase": "Recite",
-   "description": "A hill with a cave mouth, empty."
+   "description": "A high hill with a small cave. The surah does not describe the place; the cave follows the hadith of the first revelation."
   },
   {
    "name": "The Pen",
    "reference": "96:4",
    "anchor_phrase": "pen",
-   "description": "A writing room with pens."
+   "description": "A writing desk with a reed pen, an inkwell and blank paper."
+  },
+  {
+   "name": "Draw Near",
+   "reference": "96:19",
+   "anchor_phrase": "prostrate",
+   "description": "A clean, quiet terrace for prayer."
   }
  ],
  "activities": [
   {
-   "name": "Learn a letter",
-   "reference": "96:4-5",
-   "description": "Trace Arabic letters with a pen (adaptation).",
+   "name": "Read the first five",
+   "reference": "96:1-5",
+   "kind": "order",
+   "description": "Put the first five ayahs of Al-'Alaq in order.",
    "label": "artistic educational adaptation, not an event in the Quran"
   },
   {
-   "name": "Prostrate and draw near",
-   "reference": "96:19",
-   "description": "Read 96:19.",
+   "name": "Match each place to its ayah",
+   "reference": "96:1-19",
+   "kind": "match",
+   "description": "Match the hill, the pen and the terrace to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Learn something new",
+   "reference": "96:5",
+   "kind": "card",
+   "description": "Talk about something you did not know until you learned it.",
    "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
@@ -71,24 +86,35 @@
    "reference": "96:4",
    "anchor_phrase": "pen",
    "element": "The Pen"
+  },
+  {
+   "reference": "96:19",
+   "anchor_phrase": "prostrate",
+   "element": "Draw Near"
   }
  ],
  "required_assets": [
-  "Hill",
-  "Writing room"
+  "Mountain terrain (shared)",
+  "Hill with a cave",
+  "Writing desk, reed pen and ink",
+  "Prayer terrace"
  ],
  "status": {
   "quran_text": "verified (KFGQPC Hafs, checksummed)",
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: its own scene (a hill with a cave, a writing desk with a reed pen and a prayer terrace) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Alaq.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
  },
  "quran_references": [
   "96:1",
+  "96:1-5",
+  "96:1-19",
   "96:4",
-  "96:4-5",
+  "96:5",
   "96:19"
  ],
  "scholarly_review": {

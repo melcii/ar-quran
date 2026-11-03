@@ -16,8 +16,8 @@
  "narrative_passages": [],
  "summary_for_children": "Al-Bayyinah means The Clear Evidence. It says people were commanded to worship Allah sincerely, pray and give charity.",
  "world_title": "The Clear Evidence",
- "environment_concept": "A world of clear water and clean pages, showing sincere worship.",
- "architecture_and_scenery": "A clear spring and an open book of pure pages.",
+ "environment_concept": "A calm morning court with a reading stand holding a closed, covered book, for the purified scriptures and correct writings of 98:2-3, and a clear spring beside a prayer terrace for 98:5. No person is shown, and the Fire and the gardens of the next life (98:6-8) are not pictured.",
+ "architecture_and_scenery": "A wooden reading stand under a small canopy, a clear spring in a stone basin, a prayer terrace.",
  "palette": {
   "colors": [
    "#e8f0f8",
@@ -28,17 +28,44 @@
  },
  "areas": [
   {
-   "name": "Sincere Spring",
+   "name": "Purified Pages",
+   "reference": "98:2",
+   "anchor_phrase": "purified scriptures",
+   "description": "A reading stand with a closed, covered book. Its words are not shown."
+  },
+  {
+   "name": "Spring of Sincerity",
    "reference": "98:5",
    "anchor_phrase": "sincere",
-   "description": "A clear spring."
+   "description": "A clear spring in a stone basin, so clear you can see the bottom."
+  },
+  {
+   "name": "Prayer and Zakah",
+   "reference": "98:5",
+   "anchor_phrase": "zakah",
+   "description": "A quiet terrace for prayer with a box for giving beside it."
   }
  ],
  "activities": [
   {
-   "name": "Sincerity",
+   "name": "Read the first five",
+   "reference": "98:1-5",
+   "kind": "order",
+   "description": "Put the first five ayahs of Al-Bayyinah in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "98:2-5",
+   "kind": "match",
+   "description": "Match the book, the spring and the terrace to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Sincere means for Allah",
    "reference": "98:5",
-   "description": "Choose actions done only for Allah (adaptation).",
+   "kind": "card",
+   "description": "Talk about doing good for Allah, not to be seen by others.",
    "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
@@ -48,23 +75,41 @@
  ],
  "ayah_environment_connections": [
   {
+   "reference": "98:2",
+   "anchor_phrase": "purified scriptures",
+   "element": "Purified Pages"
+  },
+  {
    "reference": "98:5",
    "anchor_phrase": "sincere",
-   "element": "Sincere Spring"
+   "element": "Spring of Sincerity"
+  },
+  {
+   "reference": "98:5",
+   "anchor_phrase": "zakah",
+   "element": "Prayer and Zakah"
   }
  ],
  "required_assets": [
-  "Spring"
+  "Morning terrain (shared)",
+  "Reading stand and covered book",
+  "Spring basin",
+  "Prayer terrace"
  ],
  "status": {
   "quran_text": "verified (KFGQPC Hafs, checksummed)",
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: its own scene (a reading stand with a covered book, a clear spring and a prayer terrace) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Bayyinah.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
  },
  "quran_references": [
+  "98:1-5",
+  "98:2",
+  "98:2-5",
   "98:5"
  ],
  "scholarly_review": {

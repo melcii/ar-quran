@@ -17,8 +17,8 @@
  "narrative_passages": [],
  "summary_for_children": "Al-Qadr tells that the Quran was sent down on the Night of Decree, better than a thousand months, a night of peace until dawn.",
  "world_title": "Night Until the Dawn",
- "environment_concept": "A peaceful night sky that stays calm until dawn emerges, better than a thousand months; nothing unseen is pictured.",
- "architecture_and_scenery": "A quiet rooftop under stars, a thousand-month calendar wall.",
+ "environment_concept": "A still night. A long low wall holds a thousand tiny lamps, one for each month, for 97:3. Beyond it, a quiet hill faces the east, where the sky slowly brightens toward dawn (97:5). The angels and the Spirit of 97:4 are not pictured; no person is shown.",
+ "architecture_and_scenery": "A long wall with a thousand small lamp niches, a hilltop with low seats facing east.",
  "palette": {
   "colors": [
    "#0f1a33",
@@ -33,26 +33,35 @@
    "name": "Thousand Months Wall",
    "reference": "97:3",
    "anchor_phrase": "thousand months",
-   "description": "A wall of a thousand small lights."
+   "description": "A long wall holding a thousand tiny lamps, one for each month."
   },
   {
    "name": "Peace Until Dawn",
    "reference": "97:5",
    "anchor_phrase": "emergence of dawn",
-   "description": "A calm night ending at dawn."
+   "description": "A hilltop facing east where the sky slowly brightens."
   }
  ],
  "activities": [
   {
-   "name": "Count the months",
-   "reference": "97:3",
-   "description": "See a thousand months as lights (adaptation).",
+   "name": "Read the five",
+   "reference": "97:1-5",
+   "kind": "order",
+   "description": "Put the five ayahs of Al-Qadr in order.",
    "label": "artistic educational adaptation, not an event in the Quran"
   },
   {
-   "name": "Night prayer",
-   "reference": "97:1-5",
-   "description": "Light a lamp for each ayah.",
+   "name": "Match each place to its ayah",
+   "reference": "97:3-5",
+   "kind": "match",
+   "description": "Match the wall and the hilltop to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "A night worth more",
+   "reference": "97:3",
+   "kind": "card",
+   "description": "Talk about how a good deed on this night is worth more than a thousand months.",
    "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
@@ -74,20 +83,24 @@
   }
  ],
  "required_assets": [
-  "Rooftop",
-  "Night sky"
+  "Night terrain (shared)",
+  "Wall of a thousand lamps",
+  "Dawn glow on the horizon"
  ],
  "status": {
   "quran_text": "verified (KFGQPC Hafs, checksummed)",
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: its own scene (a wall of a thousand lamps and a hilltop facing the dawn) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Qadr.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
  },
  "quran_references": [
   "97:1-5",
   "97:3",
+  "97:3-5",
   "97:5"
  ],
  "scholarly_review": {

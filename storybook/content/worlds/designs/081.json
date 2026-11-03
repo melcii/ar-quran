@@ -16,8 +16,8 @@
  "narrative_passages": [],
  "summary_for_children": "At-Takwir describes great changes of the Last Day in words, and swears by the dawn as it breathes.",
  "world_title": "When the Sun Is Wrapped",
- "environment_concept": "A symbolic sequence of the surah's signs read as text over a calm sky; nothing of the end is pictured.",
- "architecture_and_scenery": "Calm sky with text overlay; dawn breathing.",
+ "environment_concept": "Late night. Stars run low and slip below the horizon, mirrored in a still pool (81:15-16); a dark grove holds the night as it closes in (81:17); and at the end of the path a dawn glow rises while a soft breeze moves the grass, the dawn as it breathes (81:18). The events of 81:1-14 are not pictured. No person is shown.",
+ "architecture_and_scenery": "A still star pool, a dark grove, a dawn glow with swaying grasses.",
  "palette": {
   "colors": [
    "#1c2541",
@@ -28,17 +28,44 @@
  },
  "areas": [
   {
+   "name": "Retreating Stars",
+   "reference": "81:15",
+   "anchor_phrase": "retreating stars",
+   "description": "Stars slipping below the horizon, mirrored in a still pool."
+  },
+  {
+   "name": "Night Closing In",
+   "reference": "81:17",
+   "anchor_phrase": "night",
+   "description": "A dark grove where the night gathers."
+  },
+  {
    "name": "Dawn Breathing",
    "reference": "81:18",
    "anchor_phrase": "dawn",
-   "description": "A soft dawn."
+   "description": "A dawn glow on the horizon and grass moving in a soft breeze."
   }
  ],
  "activities": [
   {
-   "name": "Read the signs",
-   "reference": "81:1-14",
-   "description": "Read each ayah; nothing is pictured.",
+   "name": "Read the oaths",
+   "reference": "81:15-21",
+   "kind": "order",
+   "description": "Put ayahs 15 to 21 of At-Takwir in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "81:15-18",
+   "kind": "match",
+   "description": "Match the pool, the grove and the dawn to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Where are you going?",
+   "reference": "81:26",
+   "kind": "card",
+   "description": "Talk about choosing a good path each day.",
    "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
@@ -49,25 +76,45 @@
  ],
  "ayah_environment_connections": [
   {
+   "reference": "81:15",
+   "anchor_phrase": "retreating stars",
+   "element": "Retreating Stars"
+  },
+  {
+   "reference": "81:17",
+   "anchor_phrase": "night",
+   "element": "Night Closing In"
+  },
+  {
    "reference": "81:18",
    "anchor_phrase": "dawn",
    "element": "Dawn Breathing"
   }
  ],
  "required_assets": [
-  "Dawn sky"
+  "Night terrain (shared)",
+  "Setting stars",
+  "Star pool",
+  "Dark grove",
+  "Dawn glow"
  ],
  "status": {
   "quran_text": "verified (KFGQPC Hafs, checksummed)",
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: its own scene (setting stars over a still pool, a dark grove and a breathing dawn) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Takwir.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
  },
  "quran_references": [
-  "81:1-14",
-  "81:18"
+  "81:15",
+  "81:15-18",
+  "81:15-21",
+  "81:17",
+  "81:18",
+  "81:26"
  ],
  "scholarly_review": {
   "status": "unreviewed",

@@ -16,8 +16,8 @@
  "narrative_passages": [],
  "summary_for_children": "Al-Falaq teaches seeking refuge in the Lord of daybreak from evil, darkness and envy.",
  "world_title": "Lord of Daybreak",
- "environment_concept": "A dawn world where darkness lifts and protection is sought.",
- "architecture_and_scenery": "Night village turning to daybreak.",
+ "environment_concept": "A ridge facing the eastern horizon as daybreak comes, and a low hollow below it where the evening shadow settles. Lanterns light the hollow. No person, magic or envier is shown.",
+ "architecture_and_scenery": "Ridge-top lookout with low stone seats, a shaded hollow with lanterns.",
  "palette": {
   "colors": [
    "#1c2541",
@@ -28,23 +28,38 @@
  },
  "areas": [
   {
-   "name": "Daybreak",
+   "name": "Daybreak Ridge",
    "reference": "113:1",
    "anchor_phrase": "daybreak",
-   "description": "Dawn breaking."
+   "description": "A ridge where the sun is rising over the horizon, for reading 113:1."
   },
   {
    "name": "Settling Darkness",
    "reference": "113:3",
    "anchor_phrase": "darkness",
-   "description": "Night settling."
+   "description": "A hollow where shadow gathers, lit by small lanterns you can light."
   }
  ],
  "activities": [
   {
-   "name": "Refuge",
+   "name": "Read the five",
    "reference": "113:1-5",
-   "description": "Read the surah as dawn breaks (adaptation).",
+   "kind": "order",
+   "description": "Put the five ayahs of Al-Falaq in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "113:1-5",
+   "kind": "match",
+   "description": "Match the ridge and the hollow to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Light the hollow",
+   "reference": "113:3",
+   "kind": "find",
+   "description": "Tap the three lanterns in the hollow to light them.",
    "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
@@ -56,7 +71,7 @@
   {
    "reference": "113:1",
    "anchor_phrase": "daybreak",
-   "element": "Daybreak"
+   "element": "Daybreak Ridge"
   },
   {
    "reference": "113:3",
@@ -65,15 +80,19 @@
   }
  ],
  "required_assets": [
-  "Village"
+  "Dawn terrain (shared)",
+  "Rising sun disc and glow",
+  "Shaded hollow with lanterns"
  ],
  "status": {
   "quran_text": "verified (KFGQPC Hafs, checksummed)",
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: its own scene (a daybreak ridge and a shaded hollow with lanterns to light), two playable games and one activity played in the scene",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Falaq.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
  },
  "quran_references": [
   "113:1",

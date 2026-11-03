@@ -16,8 +16,8 @@
  "narrative_passages": [],
  "summary_for_children": "Az-Zalzalah says that whoever does even an atom's weight of good will see it, and whoever does an atom's weight of bad will see it.",
  "world_title": "An Atom's Weight",
- "environment_concept": "A symbolic world of tiny particles where each good deed is seen, without depicting the earthquake.",
- "architecture_and_scenery": "A microscope-like garden where tiny grains glow.",
+ "environment_concept": "A morning garden where tiny specks of dust drift in shafts of sunlight and rows of very small seedlings grow. They show how small an atom's weight is (99:7-8): even the smallest good is seen. The earthquake of 99:1 and the Day are not pictured. No person is shown.",
+ "architecture_and_scenery": "Garden rows of seedlings, a gap in the trees where sunbeams fall.",
  "palette": {
   "colors": [
    "#efe6d2",
@@ -28,17 +28,38 @@
  },
  "areas": [
   {
-   "name": "Atom Garden",
+   "name": "Seeds of Good",
    "reference": "99:7",
+   "anchor_phrase": "atom's weight of good",
+   "description": "Rows of tiny seedlings: even the smallest good is seen."
+  },
+  {
+   "name": "Specks in the Sunlight",
+   "reference": "99:8",
    "anchor_phrase": "atom's weight",
-   "description": "Tiny glowing grains."
+   "description": "Tiny specks of dust drifting in shafts of sunlight."
   }
  ],
  "activities": [
   {
-   "name": "Small deeds",
+   "name": "Read the eight",
+   "reference": "99:1-8",
+   "kind": "order",
+   "description": "Put the eight ayahs of Az-Zalzalah in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
    "reference": "99:7-8",
-   "description": "Collect tiny good deeds that glow (adaptation).",
+   "kind": "match",
+   "description": "Match the seedlings and the sunbeams to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Plant the seedlings",
+   "reference": "99:7",
+   "kind": "find",
+   "description": "Tap the three empty pots to plant a seedling in each.",
    "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
@@ -49,24 +70,35 @@
  "ayah_environment_connections": [
   {
    "reference": "99:7",
+   "anchor_phrase": "atom's weight of good",
+   "element": "Seeds of Good"
+  },
+  {
+   "reference": "99:8",
    "anchor_phrase": "atom's weight",
-   "element": "Atom Garden"
+   "element": "Specks in the Sunlight"
   }
  ],
  "required_assets": [
-  "Garden"
+  "Morning terrain (shared)",
+  "Sunbeams with dust motes",
+  "Seedling rows"
  ],
  "status": {
   "quran_text": "verified (KFGQPC Hafs, checksummed)",
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: its own scene (seedling rows and dust motes in sunbeams), two playable games and one activity played in the scene",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Zalzalah.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
  },
  "quran_references": [
+  "99:1-8",
   "99:7",
-  "99:7-8"
+  "99:7-8",
+  "99:8"
  ],
  "scholarly_review": {
   "status": "unreviewed",

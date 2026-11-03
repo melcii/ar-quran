@@ -17,8 +17,8 @@
  "narrative_passages": [],
  "summary_for_children": "Ad-Duha means The Morning Brightness. It comforted the Prophet (peace be upon him), reminding him of Allah's care, and teaches kindness to orphans and those who ask.",
  "world_title": "The Morning Brightness",
- "environment_concept": "A sunrise world of comfort: morning light, reassurance, and caring for orphans and those who ask.",
- "architecture_and_scenery": "Sunny hills, a home with an open door.",
+ "environment_concept": "Bright morning light fills a meadow (93:1), while a thick grove nearby keeps the shade of the night (93:2). Further on, a home stands with its door open, a bench and a water jug outside, for kindness to the orphan and the one who asks (93:9-10). No person is shown.",
+ "architecture_and_scenery": "Sunlit meadow with flowers, a dense shaded grove, a home with an open door, bench and jug.",
  "palette": {
   "colors": [
    "#f6d58a",
@@ -32,26 +32,41 @@
    "name": "Morning Brightness",
    "reference": "93:1",
    "anchor_phrase": "morning brightness",
-   "description": "Sunrise."
+   "description": "A sunlit meadow full of flowers."
+  },
+  {
+   "name": "Night's Shade",
+   "reference": "93:2",
+   "anchor_phrase": "darkness",
+   "description": "A thick grove where the shade of night still lingers."
   },
   {
    "name": "Open Door",
    "reference": "93:10",
    "anchor_phrase": "petitioner",
-   "description": "A door open to those who ask."
+   "description": "A home with its door open, a bench and a jug of water outside."
   }
  ],
  "activities": [
   {
-   "name": "Kind door",
-   "reference": "93:9-10",
-   "description": "Welcome those who ask (adaptation).",
+   "name": "Read the first eight",
+   "reference": "93:1-8",
+   "kind": "order",
+   "description": "Put the first eight ayahs of Ad-Duha in order.",
    "label": "artistic educational adaptation, not an event in the Quran"
   },
   {
-   "name": "Count blessings",
+   "name": "Match each place to its ayah",
+   "reference": "93:1-10",
+   "kind": "match",
+   "description": "Match the meadow, the grove and the door to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Tell of the favour",
    "reference": "93:11",
-   "description": "Talk about blessings.",
+   "kind": "card",
+   "description": "Talk about good things in your life and how to thank Allah for them.",
    "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
@@ -66,26 +81,36 @@
    "element": "Morning Brightness"
   },
   {
+   "reference": "93:2",
+   "anchor_phrase": "darkness",
+   "element": "Night's Shade"
+  },
+  {
    "reference": "93:10",
    "anchor_phrase": "petitioner",
    "element": "Open Door"
   }
  ],
  "required_assets": [
-  "Hills",
-  "Home"
+  "Morning terrain (shared)",
+  "Shaded grove",
+  "Home with open door, bench and jug"
  ],
  "status": {
   "quran_text": "verified (KFGQPC Hafs, checksummed)",
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: its own scene (a sunlit meadow, a shaded grove and a home with an open door) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Duha.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
  },
  "quran_references": [
   "93:1",
-  "93:9-10",
+  "93:1-8",
+  "93:1-10",
+  "93:2",
   "93:10",
   "93:11"
  ],

@@ -16,8 +16,8 @@
  "narrative_passages": [],
  "summary_for_children": "At-Tariq means The Night Comer, the piercing star. It reminds us every soul is watched over and swears by the sky that returns rain and the earth that cracks open.",
  "world_title": "The Piercing Star",
- "environment_concept": "A night sky with a piercing star, sky returning rain, and earth cracking open with plants.",
- "architecture_and_scenery": "Night sky, rainy plain, sprouting earth.",
+ "environment_concept": "A clear night with one star brighter than the rest, its light sharp and piercing (86:3). Further on, a small cloud keeps returning rain onto a patch of ground (86:11), where the earth cracks open and sprouts push through (86:12). No person is shown.",
+ "architecture_and_scenery": "A bright star with rays, a rain cloud with falling drops, cracked earth with sprouts.",
  "palette": {
   "colors": [
    "#0f1a33",
@@ -32,32 +32,41 @@
    "name": "Piercing Star",
    "reference": "86:3",
    "anchor_phrase": "piercing star",
-   "description": "A brilliant star."
+   "description": "One very bright star with sharp rays."
   },
   {
    "name": "Returning Rain",
    "reference": "86:11",
    "anchor_phrase": "returns",
-   "description": "Rain returning."
+   "description": "A small cloud that keeps returning rain."
   },
   {
    "name": "Cracking Earth",
    "reference": "86:12",
    "anchor_phrase": "cracks open",
-   "description": "Earth cracking with sprouts."
+   "description": "Ground cracking open as sprouts push through."
   }
  ],
  "activities": [
   {
-   "name": "Find the star",
-   "reference": "86:1-3",
-   "description": "Find the piercing star.",
+   "name": "Read the first four",
+   "reference": "86:1-4",
+   "kind": "order",
+   "description": "Put the first four ayahs of At-Tariq in order.",
    "label": "artistic educational adaptation, not an event in the Quran"
   },
   {
-   "name": "Rain cycle",
-   "reference": "86:11-12",
-   "description": "Watch rain return and sprouts appear.",
+   "name": "Match each place to its ayah",
+   "reference": "86:3-12",
+   "kind": "match",
+   "description": "Match the star, the rain and the cracked earth to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "A protector over every soul",
+   "reference": "86:4",
+   "kind": "card",
+   "description": "Talk about how Allah knows and looks after every person.",
    "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
@@ -83,22 +92,27 @@
   }
  ],
  "required_assets": [
-  "Night sky",
-  "Plain"
+  "Starry terrain (shared)",
+  "Bright star",
+  "Rain cloud and drops",
+  "Cracked earth and sprouts"
  ],
  "status": {
   "quran_text": "verified (KFGQPC Hafs, checksummed)",
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: its own scene (a piercing star, returning rain and earth cracking with sprouts) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Tariq.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
  },
  "quran_references": [
-  "86:1-3",
+  "86:1-4",
   "86:3",
+  "86:3-12",
+  "86:4",
   "86:11",
-  "86:11-12",
   "86:12"
  ],
  "scholarly_review": {

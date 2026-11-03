@@ -4300,47 +4300,53 @@
    "surah": 78,
    "world_title": "The Earth as a Resting Place",
    "content_type": "nature-and-creation",
-   "concept": "A walk through the signs listed in the surah: the earth a resting place, mountains like stakes, sleep, night as clothing, a burning lamp and rain bringing gardens.",
+   "concept": "A walk through the signs of 78:6-16: a soft meadow with a resting bench (78:6), mountains standing like stakes (78:7), a starry canopy that covers like clothing (78:10), a bright sun disc like a burning lamp (78:13), and gardens of vines grown thickly together (78:16). The Day of 78:17-40 is not pictured. No person is shown.",
    "summary": "An-Naba' means The Great News. It asks people to look at signs: the earth, mountains, sleep, night and day, the sun, rain and gardens.",
    "areas": [
     {
      "name": "Resting Place",
      "reference": "78:6",
-     "description": "A wide flat land."
+     "description": "A soft meadow with a bench to rest on."
     },
     {
      "name": "Mountains as Stakes",
      "reference": "78:7",
-     "description": "Mountains like tent pegs."
+     "description": "Tall, narrow peaks standing like stakes."
     },
     {
      "name": "Night as Clothing",
      "reference": "78:10",
-     "description": "Night wrapping the camp."
+     "description": "A dark starry canopy that covers like clothing."
     },
     {
      "name": "Burning Lamp",
      "reference": "78:13",
-     "description": "The sun."
+     "description": "A bright sun disc shining like a lamp."
     },
     {
      "name": "Gardens of Entwined Growth",
      "reference": "78:16",
-     "description": "Thick gardens."
+     "description": "Arbours where vines grow thickly together."
     }
    ],
    "activities": [
     {
-     "name": "Sign checklist",
-     "reference": "78:6-16",
-     "description": "Collect each sign as the ayahs list it.",
-     "kind": "card"
+     "name": "Read the signs",
+     "reference": "78:6-15",
+     "description": "Put ayahs 6 to 15 of An-Naba' in order.",
+     "kind": "order"
     },
     {
-     "name": "Pitch the tent",
-     "reference": "78:7",
-     "description": "Stake a tent like mountains hold the earth (adaptation).",
-     "kind": "card"
+     "name": "Match each place to its ayah",
+     "reference": "78:6-16",
+     "description": "Match the meadow, the peaks, the canopy, the sun and the arbours to the ayah each comes from.",
+     "kind": "match"
+    },
+    {
+     "name": "Walk the signs",
+     "reference": "78:6-16",
+     "description": "Put the places in the order the surah gives them.",
+     "kind": "journey"
     }
    ],
    "objectives": [
@@ -4352,8 +4358,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (a meadow bench, stake-like peaks, a starry canopy, a sun disc and vine arbours) and three playable games",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Naba.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   },
@@ -4361,30 +4369,42 @@
    "surah": 79,
    "world_title": "The Valley of Tuwa Called Again",
    "content_type": "narrative",
-   "concept": "A sacred valley and a sky raised and proportioned, with pastures and water drawn from the earth.",
+   "concept": "A high open place under a wide raised sky (79:28), a spring bubbling out of the ground into a green pasture (79:31), and mountains set firmly around the valley (79:32). The story of Musa and Pharaoh (79:15-26) is told only in the reading, not shown, and the Day of 79:34-46 is not pictured. No person is shown.",
    "summary": "An-Nazi'at tells of Musa called in the valley of Tuwa and sent to Pharaoh, and shows how Allah raised the sky and spread the earth.",
    "areas": [
     {
      "name": "Raised Ceiling",
      "reference": "79:28",
-     "description": "A high sky."
+     "description": "A high platform under the wide raised sky."
     },
     {
      "name": "Water and Pasture",
      "reference": "79:31",
-     "description": "Pastures with springs."
+     "description": "A spring bubbling out of the earth into green pasture."
     },
     {
      "name": "Firm Mountains",
      "reference": "79:32",
-     "description": "Mountains."
+     "description": "Mountains set firmly around the valley."
     }
    ],
    "activities": [
     {
-     "name": "Day and night",
-     "reference": "79:29",
-     "description": "Darken the night and bring out the brightness (adaptation).",
+     "name": "Read the creation ayahs",
+     "reference": "79:27-33",
+     "description": "Put ayahs 27 to 33 of An-Nazi'at in order.",
+     "kind": "order"
+    },
+    {
+     "name": "Match each place to its ayah",
+     "reference": "79:28-32",
+     "description": "Match the sky, the spring and the mountains to the ayah each comes from.",
+     "kind": "match"
+    },
+    {
+     "name": "Provision for you",
+     "reference": "79:33",
+     "description": "Talk about the water and food the earth gives us and our animals.",
      "kind": "card"
     }
    ],
@@ -4397,8 +4417,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (a sky platform, a spring with pasture and firm mountains) and two playable games",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Naziat.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   },
@@ -4406,42 +4428,53 @@
    "surah": 80,
    "world_title": "Look at Your Food",
    "content_type": "nature-and-creation",
-   "concept": "A farm where the journey of food is followed: torrents of water, split earth, grain, grapes, olives, palms and fruit.",
+   "concept": "A walk that follows food from the start: a torrent of water pouring down rocks (80:25), earth split open by sprouts (80:26), rows of grain and grapevines on a trellis (80:27-28), olive and palm trees (80:29), and fruit trees over grass (80:31). The event of 80:1-10 and the Day of 80:33-42 are not pictured. No person is shown.",
    "summary": "'Abasa reminds us to care for everyone who seeks guidance and asks us to look at our food: water, earth, grain, grapes, olives and fruit.",
    "areas": [
     {
      "name": "Torrents",
      "reference": "80:25",
-     "description": "Water pouring."
+     "description": "Water pouring down a rocky fall into a stream."
     },
     {
      "name": "Split Earth",
      "reference": "80:26",
-     "description": "Sprouts breaking through."
+     "description": "Earth cracked open by sprouts."
+    },
+    {
+     "name": "Grain and Grapes",
+     "reference": "80:28",
+     "description": "Rows of grain and grapevines on a wooden trellis."
     },
     {
      "name": "Olives and Palms",
      "reference": "80:29",
-     "description": "Olive and palm trees."
+     "description": "Olive trees heavy with fruit, beside the palms."
     },
     {
      "name": "Fruit and Grass",
      "reference": "80:31",
-     "description": "Fruit trees and pasture."
+     "description": "Fruit trees over soft grass."
     }
    ],
    "activities": [
     {
-     "name": "From seed to plate",
+     "name": "Read the food ayahs",
      "reference": "80:24-32",
-     "description": "Follow food's journey (adaptation).",
-     "kind": "card"
+     "description": "Put ayahs 24 to 32 of 'Abasa in order.",
+     "kind": "order"
     },
     {
-     "name": "Welcome everyone",
-     "reference": "80:1-10",
-     "description": "Welcome every visitor equally.",
-     "kind": "card"
+     "name": "Match each place to its ayah",
+     "reference": "80:25-31",
+     "description": "Match the water, the sprouts, the vines, the olives and the fruit to the ayah each comes from.",
+     "kind": "match"
+    },
+    {
+     "name": "Follow your food",
+     "reference": "80:24",
+     "description": "Put the places in the order the surah gives them, from water to fruit.",
+     "kind": "journey"
     }
    ],
    "objectives": [
@@ -4454,8 +4487,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (a torrent, split earth, grain and vines, olive trees and fruit trees) and three playable games",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Abasa.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   },
@@ -4463,20 +4498,42 @@
    "surah": 81,
    "world_title": "When the Sun Is Wrapped",
    "content_type": "hereafter (symbolic only)",
-   "concept": "A symbolic sequence of the surah's signs read as text over a calm sky; nothing of the end is pictured.",
+   "concept": "Late night. Stars run low and slip below the horizon, mirrored in a still pool (81:15-16); a dark grove holds the night as it closes in (81:17); and at the end of the path a dawn glow rises while a soft breeze moves the grass, the dawn as it breathes (81:18). The events of 81:1-14 are not pictured. No person is shown.",
    "summary": "At-Takwir describes great changes of the Last Day in words, and swears by the dawn as it breathes.",
    "areas": [
     {
+     "name": "Retreating Stars",
+     "reference": "81:15",
+     "description": "Stars slipping below the horizon, mirrored in a still pool."
+    },
+    {
+     "name": "Night Closing In",
+     "reference": "81:17",
+     "description": "A dark grove where the night gathers."
+    },
+    {
      "name": "Dawn Breathing",
      "reference": "81:18",
-     "description": "A soft dawn."
+     "description": "A dawn glow on the horizon and grass moving in a soft breeze."
     }
    ],
    "activities": [
     {
-     "name": "Read the signs",
-     "reference": "81:1-14",
-     "description": "Read each ayah; nothing is pictured.",
+     "name": "Read the oaths",
+     "reference": "81:15-21",
+     "description": "Put ayahs 15 to 21 of At-Takwir in order.",
+     "kind": "order"
+    },
+    {
+     "name": "Match each place to its ayah",
+     "reference": "81:15-18",
+     "description": "Match the pool, the grove and the dawn to the ayah each comes from.",
+     "kind": "match"
+    },
+    {
+     "name": "Where are you going?",
+     "reference": "81:26",
+     "description": "Talk about choosing a good path each day.",
      "kind": "card"
     }
    ],
@@ -4490,8 +4547,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (setting stars over a still pool, a dark grove and a breathing dawn) and two playable games",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Takwir.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   },
@@ -4499,20 +4558,37 @@
    "surah": 82,
    "world_title": "The Sky Breaks Apart in Words",
    "content_type": "hereafter (symbolic only)",
-   "concept": "A symbolic world of written ayahs and a reminder that Allah fashioned us in proportion.",
+   "concept": "A garden of forms that are well made and balanced: a great spiral shell, a symmetrical leaf in stone and an arch balanced on its own stones (82:7). Beside it, a table of fruit and water, gifts that remind us that our Lord is the Generous (82:6). The breaking sky and scattered stars of 82:1-4 are not pictured. No person is shown.",
    "summary": "Al-Infitar describes the end of the world in words and reminds us Allah created us in a beautiful form.",
    "areas": [
     {
+     "name": "The Generous",
+     "reference": "82:6",
+     "description": "A table of fruit and water: gifts to be thankful for."
+    },
+    {
      "name": "Proportioned Form",
      "reference": "82:7",
-     "description": "Ayah stone about creation."
+     "description": "A spiral shell, a symmetrical leaf and a balanced arch: well-made, balanced forms."
     }
    ],
    "activities": [
     {
-     "name": "Read",
+     "name": "Read ayahs 6 to 8",
      "reference": "82:6-8",
-     "description": "Reflect on 82:6-8 (adaptation).",
+     "description": "Put ayahs 6 to 8 of Al-Infitar in order.",
+     "kind": "order"
+    },
+    {
+     "name": "Match each place to its ayah",
+     "reference": "82:6-7",
+     "description": "Match the gift table and the balanced forms to the ayah each comes from.",
+     "kind": "match"
+    },
+    {
+     "name": "Thank the Generous",
+     "reference": "82:6",
+     "description": "Talk about the good things you have been given and who gave them.",
      "kind": "card"
     }
    ],
@@ -4525,8 +4601,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (a spiral shell, a stone leaf, a balanced arch and a gift table) and two playable games",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Infitar.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   },
@@ -4534,21 +4612,38 @@
    "surah": 83,
    "world_title": "Market of Fair Measure",
    "content_type": "moral-and-spiritual",
-   "concept": "A bustling market where scales must be fair.",
+   "concept": "A morning market stall: a pair of honest scales with brass weights (83:3), and sacks of grain beside an empty wooden measure that can be filled right to the brim (83:2). No person is shown, and the Day, the registers and the next life of 83:4-36 are not pictured.",
    "summary": "Al-Mutaffifin means Those Who Give Less. It warns traders who cheat on weight and measure.",
    "areas": [
     {
-     "name": "Scales",
-     "reference": "83:1",
-     "description": "Market scales."
+     "name": "Honest Scales",
+     "reference": "83:3",
+     "description": "A pair of scales with brass weights, level and true."
+    },
+    {
+     "name": "Full Measure",
+     "reference": "83:2",
+     "description": "Sacks of grain beside a wooden measure to fill to the brim."
     }
    ],
    "activities": [
     {
-     "name": "Fair weight",
+     "name": "Read the first three",
      "reference": "83:1-3",
-     "description": "Weigh fairly for every customer (adaptation).",
-     "kind": "card"
+     "description": "Put the first three ayahs of Al-Mutaffifin in order.",
+     "kind": "order"
+    },
+    {
+     "name": "Match each place to its ayah",
+     "reference": "83:2-3",
+     "description": "Match the scales and the measure to the ayah each comes from.",
+     "kind": "match"
+    },
+    {
+     "name": "Fill the measure",
+     "reference": "83:3",
+     "description": "Tap the grain sack three times to fill the measure right to the brim.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -4560,8 +4655,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (a market stall with honest scales and a measure to fill), two playable games and one activity played in the scene",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Mutaffifin.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   },
@@ -4569,25 +4666,42 @@
    "surah": 84,
    "world_title": "Twilight and the Full Moon",
    "content_type": "hereafter (symbolic only)",
-   "concept": "A world of twilight glow, enveloping night and a full moon, by which the surah swears.",
+   "concept": "Evening: a band of twilight glow lingers on the horizon (84:16) as night gathers (84:17), and a large full moon rises (84:18). A row of eight stone discs shows the moon's phases, state after state (84:19). The splitting of the sky and the Day (84:1-15) are not pictured. No person is shown.",
    "summary": "Al-Inshiqaq speaks of the sky splitting in words, and swears by the twilight, the night and the full moon.",
    "areas": [
     {
      "name": "Twilight Glow",
      "reference": "84:16",
-     "description": "Glow at sunset."
+     "description": "A warm band of light lingering on the horizon."
     },
     {
      "name": "Full Moon",
      "reference": "84:18",
-     "description": "The moon becoming full."
+     "description": "A large full moon rising."
+    },
+    {
+     "name": "State After State",
+     "reference": "84:19",
+     "description": "A row of stones carved with the moon's phases, one after another."
     }
    ],
    "activities": [
     {
-     "name": "Moon phases",
-     "reference": "84:18",
-     "description": "Watch the moon grow full (adaptation).",
+     "name": "Read the oaths",
+     "reference": "84:16-19",
+     "description": "Put ayahs 16 to 19 of Al-Inshiqaq in order.",
+     "kind": "order"
+    },
+    {
+     "name": "Match each place to its ayah",
+     "reference": "84:16-19",
+     "description": "Match the glow, the moon and the phase stones to the ayah each comes from.",
+     "kind": "match"
+    },
+    {
+     "name": "Growing step by step",
+     "reference": "84:19",
+     "description": "Talk about how you change and grow, stage by stage.",
      "kind": "card"
     }
    ],
@@ -4600,8 +4714,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (a twilight glow, a large full moon and a row of moon-phase stones) and two playable games",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Inshiqaq.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   },
@@ -4609,25 +4725,42 @@
    "surah": 85,
    "world_title": "Sky of Great Stars and the Trench",
    "content_type": "narrative",
-   "concept": "A sky of great stars above a trench; the believers' story is told only in words.",
+   "concept": "A night of great bright stars (85:1). Further on, an old, empty trench overgrown with grass, long after the events of 85:4-8: no fire and no people are shown. Last, a reading stand with a closed, covered book for the honoured Quran (85:21). The Preserved Slate (85:22) is not pictured.",
    "summary": "Al-Buruj tells of believers who stayed firm in faith when people of the trench harmed them.",
    "areas": [
     {
      "name": "Great Stars",
      "reference": "85:1",
-     "description": "Sky of great stars."
+     "description": "Large bright stars low over the path."
     },
     {
      "name": "The Trench",
      "reference": "85:4",
-     "description": "An empty trench."
+     "description": "An old empty trench, overgrown with grass. No fire and no people are shown."
+    },
+    {
+     "name": "The Honoured Quran",
+     "reference": "85:21",
+     "description": "A reading stand with a closed, covered book."
     }
    ],
    "activities": [
     {
-     "name": "Find the great stars",
-     "reference": "85:1",
-     "description": "Find bright star groups (adaptation).",
+     "name": "Read the last eight",
+     "reference": "85:15-22",
+     "description": "Put the last eight ayahs of Al-Buruj in order.",
+     "kind": "order"
+    },
+    {
+     "name": "Match each place to its ayah",
+     "reference": "85:1-21",
+     "description": "Match the stars, the trench and the reading stand to the ayah each comes from.",
+     "kind": "match"
+    },
+    {
+     "name": "Standing firm",
+     "reference": "85:8",
+     "description": "Talk about staying true to what you believe, even when it is hard.",
      "kind": "card"
     }
    ],
@@ -4640,8 +4773,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (great stars, an old empty trench and a reading stand) and two playable games",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Buruj.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   },
@@ -4649,36 +4784,42 @@
    "surah": 86,
    "world_title": "The Piercing Star",
    "content_type": "nature-and-creation",
-   "concept": "A night sky with a piercing star, sky returning rain, and earth cracking open with plants.",
+   "concept": "A clear night with one star brighter than the rest, its light sharp and piercing (86:3). Further on, a small cloud keeps returning rain onto a patch of ground (86:11), where the earth cracks open and sprouts push through (86:12). No person is shown.",
    "summary": "At-Tariq means The Night Comer, the piercing star. It reminds us every soul is watched over and swears by the sky that returns rain and the earth that cracks open.",
    "areas": [
     {
      "name": "Piercing Star",
      "reference": "86:3",
-     "description": "A brilliant star."
+     "description": "One very bright star with sharp rays."
     },
     {
      "name": "Returning Rain",
      "reference": "86:11",
-     "description": "Rain returning."
+     "description": "A small cloud that keeps returning rain."
     },
     {
      "name": "Cracking Earth",
      "reference": "86:12",
-     "description": "Earth cracking with sprouts."
+     "description": "Ground cracking open as sprouts push through."
     }
    ],
    "activities": [
     {
-     "name": "Find the star",
-     "reference": "86:1-3",
-     "description": "Find the piercing star.",
-     "kind": "card"
+     "name": "Read the first four",
+     "reference": "86:1-4",
+     "description": "Put the first four ayahs of At-Tariq in order.",
+     "kind": "order"
     },
     {
-     "name": "Rain cycle",
-     "reference": "86:11-12",
-     "description": "Watch rain return and sprouts appear.",
+     "name": "Match each place to its ayah",
+     "reference": "86:3-12",
+     "description": "Match the star, the rain and the cracked earth to the ayah each comes from.",
+     "kind": "match"
+    },
+    {
+     "name": "A protector over every soul",
+     "reference": "86:4",
+     "description": "Talk about how Allah knows and looks after every person.",
      "kind": "card"
     }
    ],
@@ -4691,8 +4832,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (a piercing star, returning rain and earth cracking with sprouts) and two playable games",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Tariq.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   },
@@ -4700,31 +4843,37 @@
    "surah": 87,
    "world_title": "Pasture to Stubble",
    "content_type": "nature-and-creation",
-   "concept": "A pasture that grows green and turns to dark stubble, showing creation, proportion and guidance.",
+   "concept": "A wide field beside the path: one part fresh green pasture (87:4), and further on the same grass dried to dark stubble (87:5). The field slowly turns from green to dark and grows again, a picture of how short the life of this world is. The Fire of 87:12 is not pictured. No person is shown.",
    "summary": "Al-A'la means The Most High. It tells us to glorify Allah who created, proportioned and guided, who brings out pasture and turns it dark.",
    "areas": [
     {
      "name": "Pasture",
      "reference": "87:4",
-     "description": "Green pasture."
+     "description": "Fresh green grass growing thick."
     },
     {
      "name": "Black Stubble",
      "reference": "87:5",
-     "description": "Pasture turned dark."
+     "description": "The same grass dried to dark stubble."
     }
    ],
    "activities": [
     {
-     "name": "Grow and fade",
-     "reference": "87:4-5",
-     "description": "Watch the pasture through its life.",
-     "kind": "card"
+     "name": "Read the first five",
+     "reference": "87:1-5",
+     "description": "Put the first five ayahs of Al-A'la in order.",
+     "kind": "order"
     },
     {
-     "name": "Glorify",
-     "reference": "87:1",
-     "description": "Read 87:1.",
+     "name": "Match each place to its ayah",
+     "reference": "87:4-5",
+     "description": "Match the pasture and the stubble to the ayah each comes from.",
+     "kind": "match"
+    },
+    {
+     "name": "What lasts",
+     "reference": "87:17",
+     "description": "Talk about which good things last longer than toys and treats.",
      "kind": "card"
     }
    ],
@@ -4737,8 +4886,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (a field that grows green and dries to dark stubble) and two playable games",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Ala.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   },
@@ -4746,35 +4897,47 @@
    "surah": 88,
    "world_title": "Camels, Sky, Mountains, Earth",
    "content_type": "nature-and-creation",
-   "concept": "Four stations from 88:17-20: camels, raised sky, erected mountains and spread earth.",
+   "concept": "A walk past the four things 88:17-20 asks us to look at: resting camels, a high open lookout for the raised sky, tall mountains standing up from the plain, and a wide flat plain spread out to the horizon. The Day and the Garden described in 88:1-16 are not pictured. No person is shown.",
    "summary": "Al-Ghashiyah asks us to look at the camel, the sky, the mountains and the earth and think how they were created.",
    "areas": [
     {
      "name": "Camels",
      "reference": "88:17",
-     "description": "A caravan of camels."
+     "description": "A group of resting camels to look at closely."
     },
     {
      "name": "Raised Sky",
      "reference": "88:18",
-     "description": "The sky."
+     "description": "A high platform for looking up at the sky."
     },
     {
      "name": "Erected Mountains",
      "reference": "88:19",
-     "description": "Mountains."
+     "description": "Tall mountains standing up from the plain."
     },
     {
      "name": "Spread Earth",
      "reference": "88:20",
-     "description": "A flat earth."
+     "description": "A wide plain spread out to the horizon."
     }
    ],
    "activities": [
     {
-     "name": "Look and think",
+     "name": "Read the four signs",
      "reference": "88:17-20",
-     "description": "Observe each station and answer a question (adaptation).",
+     "description": "Put ayahs 17 to 20 of Al-Ghashiyah in order.",
+     "kind": "order"
+    },
+    {
+     "name": "Match each place to its ayah",
+     "reference": "88:17-20",
+     "description": "Match the camels, the sky, the mountains and the plain to the ayah each comes from.",
+     "kind": "match"
+    },
+    {
+     "name": "Look and think",
+     "reference": "88:17",
+     "description": "Talk about something in nature that makes you think of how it was made.",
      "kind": "card"
     }
    ],
@@ -4787,8 +4950,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (camels, a sky platform, tall mountains and a wide plain) and two playable games",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Ghashiyah.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   },
@@ -4796,30 +4961,42 @@
    "surah": 89,
    "world_title": "The Dawn and the Pillars of Iram",
    "content_type": "narrative",
-   "concept": "A dawn over ten nights, and ruins of Iram's lofty pillars, Thamud's carved rocks and Pharaoh's stakes.",
+   "concept": "A dawn lookout (89:1). Further on, the weathered ruins of very tall pillars for Iram, who had lofty pillars (89:7), and a valley where doorways are carved into the rock for Thamud (89:9). Both are artistic stand-ins, empty and quiet, not the real places. No person is shown; the punishment of 89:13 and the Day of 89:21-26 are not pictured.",
    "summary": "Al-Fajr means The Dawn. It recalls 'Ad, Thamud and Pharaoh who oppressed, and teaches caring for orphans and the poor.",
    "areas": [
     {
-     "name": "Dawn",
+     "name": "Dawn Lookout",
      "reference": "89:1",
-     "description": "The dawn."
+     "description": "A lookout with low seats facing the dawn."
     },
     {
      "name": "Lofty Pillars",
      "reference": "89:7",
-     "description": "Ruined pillars."
+     "description": "Weathered ruins of very tall pillars, an artistic stand-in for Iram."
     },
     {
      "name": "Carved Rocks",
      "reference": "89:9",
-     "description": "Rocks carved in the valley."
+     "description": "Doorways carved into a rock valley, empty and quiet."
     }
    ],
    "activities": [
     {
-     "name": "Care for the orphan",
-     "reference": "89:17-18",
-     "description": "Share food with orphans and the poor (adaptation).",
+     "name": "Read the first five",
+     "reference": "89:1-5",
+     "description": "Put the first five ayahs of Al-Fajr in order.",
+     "kind": "order"
+    },
+    {
+     "name": "Match each place to its ayah",
+     "reference": "89:1-9",
+     "description": "Match the lookout, the pillars and the carved rocks to the ayah each comes from.",
+     "kind": "match"
+    },
+    {
+     "name": "The reassured soul",
+     "reference": "89:27",
+     "description": "Talk about what makes a heart calm and content.",
      "kind": "card"
     }
    ],
@@ -4833,8 +5010,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (a dawn lookout, tall pillar ruins and a valley of carved doorways) and two playable games",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Fajr.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   },
@@ -4842,25 +5021,42 @@
    "surah": 90,
    "world_title": "The Steep Pass",
    "content_type": "moral-and-spiritual",
-   "concept": "A mountain path with two ways and a steep pass climbed by freeing, feeding and caring.",
+   "concept": "The path forks into two ways (90:10): an easy path that wanders off, and a steep, narrow pass between rocks (90:11). At the top of the pass waits a table set for feeding on a day of hunger (90:14). No person is shown, and the fire of 90:20 is not pictured.",
    "summary": "Al-Balad means The City. It says Allah showed us two ways and the steep pass is freeing a slave and feeding the hungry and orphans.",
    "areas": [
     {
      "name": "Two Ways",
      "reference": "90:10",
-     "description": "Paths splitting."
+     "description": "The path forks: one way easy, one way steep."
     },
     {
-     "name": "Steep Pass",
+     "name": "The Difficult Pass",
      "reference": "90:11",
-     "description": "A steep climb."
+     "description": "A narrow pass between tall rocks, with rough steps."
+    },
+    {
+     "name": "Feeding in Hunger",
+     "reference": "90:14",
+     "description": "A table at the top of the pass with bread and water."
     }
    ],
    "activities": [
     {
+     "name": "Read the pass",
+     "reference": "90:10-17",
+     "description": "Put ayahs 10 to 17 of Al-Balad in order.",
+     "kind": "order"
+    },
+    {
+     "name": "Match each place to its ayah",
+     "reference": "90:10-14",
+     "description": "Match the fork, the pass and the table to the ayah each comes from.",
+     "kind": "match"
+    },
+    {
      "name": "Climb the pass",
-     "reference": "90:13-16",
-     "description": "Climb by doing acts of kindness (adaptation).",
+     "reference": "90:13",
+     "description": "Talk about the good deeds the surah calls the difficult pass: freeing, feeding, caring for orphans and the poor.",
      "kind": "card"
     }
    ],
@@ -4873,8 +5069,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (a fork into two ways, a narrow rocky pass and a table for feeding) and two playable games",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Balad.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   },
@@ -4882,30 +5080,47 @@
    "surah": 91,
    "world_title": "Sun and Its Brightness",
    "content_type": "moral-and-spiritual",
-   "concept": "A day cycle over a valley: sun, moon, day, night, sky, earth, soul, ending at Thamud's well where the she-camel drank.",
+   "concept": "A sundial in a bright square (91:1) and a still round pool beside it, where the moon is seen when it follows the sun (91:2). Further on, an old stone well with an empty drinking trough (91:13) below cliffs with carved doorways, for Thamud (91:11). No person and no she-camel are shown, and the destruction of 91:14 is not pictured.",
    "summary": "Ash-Shams means The Sun. It swears by the sun, moon, day, night and the soul, and says success is in purifying the soul. It recalls the she-camel of Thamud.",
    "areas": [
     {
-     "name": "Sun",
+     "name": "The Sundial",
      "reference": "91:1",
-     "description": "Bright sun."
+     "description": "A sundial whose shadow moves with the sun."
     },
     {
-     "name": "Moon Following",
+     "name": "Moon Pool",
      "reference": "91:2",
-     "description": "The moon following."
+     "description": "A still pool for watching the moon when it follows the sun."
     },
     {
      "name": "The Well",
      "reference": "91:13",
-     "description": "A well."
+     "description": "An old well with an empty drinking trough. No animal is shown."
+    },
+    {
+     "name": "Carved Cliffs",
+     "reference": "91:11",
+     "description": "Sandstone cliffs with doorways carved into them, empty and quiet."
     }
    ],
    "activities": [
     {
-     "name": "Purify the soul",
+     "name": "Read the first ten",
+     "reference": "91:1-10",
+     "description": "Put the first ten ayahs of Ash-Shams in order.",
+     "kind": "order"
+    },
+    {
+     "name": "Match each place to its ayah",
+     "reference": "91:1-13",
+     "description": "Match the sundial, the pool, the well and the cliffs to the ayah each comes from.",
+     "kind": "match"
+    },
+    {
+     "name": "Keep your heart clean",
      "reference": "91:9",
-     "description": "Choose kind actions (adaptation).",
+     "description": "Talk about what makes a heart pure and what spoils it.",
      "kind": "card"
     }
    ],
@@ -4918,8 +5133,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (a moving-shadow sundial, a moon pool, a well and carved cliffs) and two playable games",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Shams.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   },
@@ -4927,25 +5144,42 @@
    "surah": 92,
    "world_title": "Night Covers, Day Appears",
    "content_type": "moral-and-spiritual",
-   "concept": "A day-night world showing how efforts differ.",
+   "concept": "A courtyard split in two: one half tiled in deep blue with lanterns and night flowers for \"the night when it covers\" (92:1), the other in warm gold with sunflowers for \"the day when it appears\" (92:2). Beside it, a table set out for giving (92:5, 92:18). No person is shown. The Fire and the next life are not pictured.",
    "summary": "Al-Layl means The Night. It says people's efforts differ, and those who give and are mindful of Allah will find ease.",
    "areas": [
     {
-     "name": "Night",
+     "name": "Night Half",
      "reference": "92:1",
-     "description": "Night covering."
+     "description": "Deep blue tiles, lanterns and night flowers."
     },
     {
-     "name": "Day",
+     "name": "Day Half",
      "reference": "92:2",
-     "description": "Day appearing."
+     "description": "Warm golden tiles and tall sunflowers."
+    },
+    {
+     "name": "The Giving Table",
+     "reference": "92:5",
+     "description": "A table set with bread and fruit to give away."
     }
    ],
    "activities": [
     {
-     "name": "Give",
-     "reference": "92:5-7",
-     "description": "Give and find the path easier (adaptation).",
+     "name": "Read the first seven",
+     "reference": "92:1-7",
+     "description": "Put the first seven ayahs of Al-Layl in order.",
+     "kind": "order"
+    },
+    {
+     "name": "Match each place to its ayah",
+     "reference": "92:1-5",
+     "description": "Match the two halves and the table to the ayah each comes from.",
+     "kind": "match"
+    },
+    {
+     "name": "Give without wanting thanks",
+     "reference": "92:19",
+     "description": "Talk about giving only for Allah, not to be paid back.",
      "kind": "card"
     }
    ],
@@ -4958,8 +5192,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (a night-and-day courtyard and a giving table) and two playable games",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Layl.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   },
@@ -4967,31 +5203,42 @@
    "surah": 93,
    "world_title": "The Morning Brightness",
    "content_type": "moral-and-spiritual",
-   "concept": "A sunrise world of comfort: morning light, reassurance, and caring for orphans and those who ask.",
+   "concept": "Bright morning light fills a meadow (93:1), while a thick grove nearby keeps the shade of the night (93:2). Further on, a home stands with its door open, a bench and a water jug outside, for kindness to the orphan and the one who asks (93:9-10). No person is shown.",
    "summary": "Ad-Duha means The Morning Brightness. It comforted the Prophet (peace be upon him), reminding him of Allah's care, and teaches kindness to orphans and those who ask.",
    "areas": [
     {
      "name": "Morning Brightness",
      "reference": "93:1",
-     "description": "Sunrise."
+     "description": "A sunlit meadow full of flowers."
+    },
+    {
+     "name": "Night's Shade",
+     "reference": "93:2",
+     "description": "A thick grove where the shade of night still lingers."
     },
     {
      "name": "Open Door",
      "reference": "93:10",
-     "description": "A door open to those who ask."
+     "description": "A home with its door open, a bench and a jug of water outside."
     }
    ],
    "activities": [
     {
-     "name": "Kind door",
-     "reference": "93:9-10",
-     "description": "Welcome those who ask (adaptation).",
-     "kind": "card"
+     "name": "Read the first eight",
+     "reference": "93:1-8",
+     "description": "Put the first eight ayahs of Ad-Duha in order.",
+     "kind": "order"
     },
     {
-     "name": "Count blessings",
+     "name": "Match each place to its ayah",
+     "reference": "93:1-10",
+     "description": "Match the meadow, the grove and the door to the ayah each comes from.",
+     "kind": "match"
+    },
+    {
+     "name": "Tell of the favour",
      "reference": "93:11",
-     "description": "Talk about blessings.",
+     "description": "Talk about good things in your life and how to thank Allah for them.",
      "kind": "card"
     }
    ],
@@ -5004,8 +5251,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (a sunlit meadow, a shaded grove and a home with an open door) and two playable games",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Duha.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   },
@@ -5013,21 +5262,38 @@
    "surah": 94,
    "world_title": "With Hardship, Ease",
    "content_type": "moral-and-spiritual",
-   "concept": "A climb where each hard step reveals an easy one.",
+   "concept": "The path climbs a steep, stony stretch, then opens onto an easy, level meadow path (94:5-6). A heavy pack lies set down beside the way, a picture of a burden removed (94:2). Stones block part of the path and can be cleared. No person is shown.",
    "summary": "Ash-Sharh means The Expansion. It promises twice that with hardship comes ease.",
    "areas": [
     {
-     "name": "Path of Ease",
+     "name": "The Burden Set Down",
+     "reference": "94:2",
+     "description": "A heavy pack set down beside the path: a picture of a burden removed."
+    },
+    {
+     "name": "Hardship and Ease",
      "reference": "94:5",
-     "description": "A path that eases."
+     "description": "A steep stony climb that opens onto an easy meadow path."
     }
    ],
    "activities": [
     {
-     "name": "Hard then easy",
-     "reference": "94:5-6",
-     "description": "Climb hard sections and find easy ones (adaptation).",
-     "kind": "card"
+     "name": "Read the eight",
+     "reference": "94:1-8",
+     "description": "Put the eight ayahs of Ash-Sharh in order.",
+     "kind": "order"
+    },
+    {
+     "name": "Match each place to its ayah",
+     "reference": "94:2-5",
+     "description": "Match the pack and the climb to the ayah each comes from.",
+     "kind": "match"
+    },
+    {
+     "name": "Clear the path",
+     "reference": "94:5",
+     "description": "Tap the three stones blocking the path to roll them aside.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -5039,8 +5305,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (a stony climb opening onto an easy path, a burden set down, stones to clear), two playable games and one activity played in the scene",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Sharh.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   },
@@ -5048,41 +5316,47 @@
    "surah": 95,
    "world_title": "Fig, Olive and the Secure City",
    "content_type": "nature-and-creation",
-   "concept": "Four places named in the oaths: a fig orchard, an olive grove, Mount Sinai and a secure city, ending with the reminder that people were created in the best stature.",
+   "concept": "The path runs between a fig orchard and an olive grove (95:1). Far off stands a tall mountain for Mount Sinai (95:2) and a small walled city in a valley for the secure city (95:3). Both are simple stand-ins seen from far away, not their real shapes. No person is shown.",
    "summary": "At-Tin means The Fig. It swears by the fig, the olive, Mount Sinai and the safe city, and says Allah created people in the best form, and those who believe and do good have an endless reward.",
    "areas": [
     {
      "name": "Fig Orchard",
      "reference": "95:1",
-     "description": "Fig trees heavy with fruit."
+     "description": "Fig trees with broad leaves and ripe purple figs."
     },
     {
      "name": "Olive Grove",
      "reference": "95:1",
-     "description": "Olive terraces."
+     "description": "Silver-green olive trees heavy with small olives."
     },
     {
      "name": "Mount Sinai",
      "reference": "95:2",
-     "description": "A granite mountain."
+     "description": "A tall mountain on the horizon, a simple stand-in, not its real shape."
     },
     {
      "name": "Secure City",
      "reference": "95:3",
-     "description": "A peaceful city."
+     "description": "A small walled city far off in a valley, shown simply."
     }
    ],
    "activities": [
     {
-     "name": "Four oaths",
-     "reference": "95:1-3",
-     "description": "Visit each place and read its oath (adaptation).",
-     "kind": "card"
+     "name": "Read the eight",
+     "reference": "95:1-8",
+     "description": "Put the eight ayahs of At-Tin in order.",
+     "kind": "order"
     },
     {
-     "name": "Best stature",
+     "name": "Match each place to its ayah",
+     "reference": "95:1-3",
+     "description": "Match the figs, the olives, the mountain and the city to the ayah each comes from.",
+     "kind": "match"
+    },
+    {
+     "name": "The best of stature",
      "reference": "95:4",
-     "description": "Reflect on how we were made in the best form.",
+     "description": "Talk about the good shape Allah made us in and how to use it well.",
      "kind": "card"
     }
    ],
@@ -5096,8 +5370,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (fig and olive trees, a far mountain and a far walled city) and two playable games",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Tin.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   },
@@ -5105,31 +5381,42 @@
    "surah": 96,
    "world_title": "Recite! The Pen and the Clinging Substance",
    "content_type": "moral-and-spiritual",
-   "concept": "A quiet mountain cave mouth at night with a single line of light, then a scriptorium where the pen teaches; the first revelation is only told, never shown.",
+   "concept": "A rocky hill rises over the path with a small cave high on its side. The surah does not describe this place; the cave follows the hadith of the first revelation and is labelled as such. Below, a writing desk holds a reed pen, ink and blank paper (96:4), and a quiet terrace invites prostration (96:19). No person is shown.",
    "summary": "Al-'Alaq means The Clinging Substance. Its first ayahs were the first revelation: Recite in the name of your Lord who created, who taught by the pen.",
    "areas": [
     {
      "name": "Hill of Revelation",
      "reference": "96:1",
-     "description": "A hill with a cave mouth, empty."
+     "description": "A high hill with a small cave. The surah does not describe the place; the cave follows the hadith of the first revelation."
     },
     {
      "name": "The Pen",
      "reference": "96:4",
-     "description": "A writing room with pens."
+     "description": "A writing desk with a reed pen, an inkwell and blank paper."
+    },
+    {
+     "name": "Draw Near",
+     "reference": "96:19",
+     "description": "A clean, quiet terrace for prayer."
     }
    ],
    "activities": [
     {
-     "name": "Learn a letter",
-     "reference": "96:4-5",
-     "description": "Trace Arabic letters with a pen (adaptation).",
-     "kind": "card"
+     "name": "Read the first five",
+     "reference": "96:1-5",
+     "description": "Put the first five ayahs of Al-'Alaq in order.",
+     "kind": "order"
     },
     {
-     "name": "Prostrate and draw near",
-     "reference": "96:19",
-     "description": "Read 96:19.",
+     "name": "Match each place to its ayah",
+     "reference": "96:1-19",
+     "description": "Match the hill, the pen and the terrace to the ayah each comes from.",
+     "kind": "match"
+    },
+    {
+     "name": "Learn something new",
+     "reference": "96:5",
+     "description": "Talk about something you did not know until you learned it.",
      "kind": "card"
     }
    ],
@@ -5143,8 +5430,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (a hill with a cave, a writing desk with a reed pen and a prayer terrace) and two playable games",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Alaq.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   },
@@ -5152,31 +5441,37 @@
    "surah": 97,
    "world_title": "Night Until the Dawn",
    "content_type": "moral-and-spiritual",
-   "concept": "A peaceful night sky that stays calm until dawn emerges, better than a thousand months; nothing unseen is pictured.",
+   "concept": "A still night. A long low wall holds a thousand tiny lamps, one for each month, for 97:3. Beyond it, a quiet hill faces the east, where the sky slowly brightens toward dawn (97:5). The angels and the Spirit of 97:4 are not pictured; no person is shown.",
    "summary": "Al-Qadr tells that the Quran was sent down on the Night of Decree, better than a thousand months, a night of peace until dawn.",
    "areas": [
     {
      "name": "Thousand Months Wall",
      "reference": "97:3",
-     "description": "A wall of a thousand small lights."
+     "description": "A long wall holding a thousand tiny lamps, one for each month."
     },
     {
      "name": "Peace Until Dawn",
      "reference": "97:5",
-     "description": "A calm night ending at dawn."
+     "description": "A hilltop facing east where the sky slowly brightens."
     }
    ],
    "activities": [
     {
-     "name": "Count the months",
-     "reference": "97:3",
-     "description": "See a thousand months as lights (adaptation).",
-     "kind": "card"
+     "name": "Read the five",
+     "reference": "97:1-5",
+     "description": "Put the five ayahs of Al-Qadr in order.",
+     "kind": "order"
     },
     {
-     "name": "Night prayer",
-     "reference": "97:1-5",
-     "description": "Light a lamp for each ayah.",
+     "name": "Match each place to its ayah",
+     "reference": "97:3-5",
+     "description": "Match the wall and the hilltop to the ayah each comes from.",
+     "kind": "match"
+    },
+    {
+     "name": "A night worth more",
+     "reference": "97:3",
+     "description": "Talk about how a good deed on this night is worth more than a thousand months.",
      "kind": "card"
     }
    ],
@@ -5190,8 +5485,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (a wall of a thousand lamps and a hilltop facing the dawn) and two playable games",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Qadr.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   },
@@ -5199,20 +5496,42 @@
    "surah": 98,
    "world_title": "The Clear Evidence",
    "content_type": "moral-and-spiritual",
-   "concept": "A world of clear water and clean pages, showing sincere worship.",
+   "concept": "A calm morning court with a reading stand holding a closed, covered book, for the purified scriptures and correct writings of 98:2-3, and a clear spring beside a prayer terrace for 98:5. No person is shown, and the Fire and the gardens of the next life (98:6-8) are not pictured.",
    "summary": "Al-Bayyinah means The Clear Evidence. It says people were commanded to worship Allah sincerely, pray and give charity.",
    "areas": [
     {
-     "name": "Sincere Spring",
+     "name": "Purified Pages",
+     "reference": "98:2",
+     "description": "A reading stand with a closed, covered book. Its words are not shown."
+    },
+    {
+     "name": "Spring of Sincerity",
      "reference": "98:5",
-     "description": "A clear spring."
+     "description": "A clear spring in a stone basin, so clear you can see the bottom."
+    },
+    {
+     "name": "Prayer and Zakah",
+     "reference": "98:5",
+     "description": "A quiet terrace for prayer with a box for giving beside it."
     }
    ],
    "activities": [
     {
-     "name": "Sincerity",
+     "name": "Read the first five",
+     "reference": "98:1-5",
+     "description": "Put the first five ayahs of Al-Bayyinah in order.",
+     "kind": "order"
+    },
+    {
+     "name": "Match each place to its ayah",
+     "reference": "98:2-5",
+     "description": "Match the book, the spring and the terrace to the ayah each comes from.",
+     "kind": "match"
+    },
+    {
+     "name": "Sincere means for Allah",
      "reference": "98:5",
-     "description": "Choose actions done only for Allah (adaptation).",
+     "description": "Talk about doing good for Allah, not to be seen by others.",
      "kind": "card"
     }
    ],
@@ -5225,8 +5544,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (a reading stand with a covered book, a clear spring and a prayer terrace) and two playable games",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Bayyinah.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   },
@@ -5234,21 +5555,38 @@
    "surah": 99,
    "world_title": "An Atom's Weight",
    "content_type": "hereafter (symbolic only)",
-   "concept": "A symbolic world of tiny particles where each good deed is seen, without depicting the earthquake.",
+   "concept": "A morning garden where tiny specks of dust drift in shafts of sunlight and rows of very small seedlings grow. They show how small an atom's weight is (99:7-8): even the smallest good is seen. The earthquake of 99:1 and the Day are not pictured. No person is shown.",
    "summary": "Az-Zalzalah says that whoever does even an atom's weight of good will see it, and whoever does an atom's weight of bad will see it.",
    "areas": [
     {
-     "name": "Atom Garden",
+     "name": "Seeds of Good",
      "reference": "99:7",
-     "description": "Tiny glowing grains."
+     "description": "Rows of tiny seedlings: even the smallest good is seen."
+    },
+    {
+     "name": "Specks in the Sunlight",
+     "reference": "99:8",
+     "description": "Tiny specks of dust drifting in shafts of sunlight."
     }
    ],
    "activities": [
     {
-     "name": "Small deeds",
+     "name": "Read the eight",
+     "reference": "99:1-8",
+     "description": "Put the eight ayahs of Az-Zalzalah in order.",
+     "kind": "order"
+    },
+    {
+     "name": "Match each place to its ayah",
      "reference": "99:7-8",
-     "description": "Collect tiny good deeds that glow (adaptation).",
-     "kind": "card"
+     "description": "Match the seedlings and the sunbeams to the ayah each comes from.",
+     "kind": "match"
+    },
+    {
+     "name": "Plant the seedlings",
+     "reference": "99:7",
+     "description": "Tap the three empty pots to plant a seedling in each.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -5260,8 +5598,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (seedling rows and dust motes in sunbeams), two playable games and one activity played in the scene",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Zalzalah.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   },
@@ -5269,30 +5609,42 @@
    "surah": 100,
    "world_title": "Racers at Dawn",
    "content_type": "nature-and-creation",
-   "concept": "Horses racing at dawn, sparks from hooves, dust clouds, used as an oath about gratitude.",
+   "concept": "At dawn, a line of horses gallops across the dunes, panting (100:1, 100:3); sparks fly where their hooves strike the stones (100:2) and clouds of dust rise behind them (100:4). The horses carry no riders; no person is shown.",
    "summary": "Al-'Adiyat means The Racers. It swears by racing horses and says people are often ungrateful.",
    "areas": [
     {
-     "name": "Racers",
+     "name": "The Racers",
      "reference": "100:1",
-     "description": "Horses racing."
+     "description": "Horses galloping over the dunes at dawn, panting."
     },
     {
-     "name": "Sparks",
+     "name": "Sparks on Stone",
      "reference": "100:2",
-     "description": "Sparks from hooves."
+     "description": "A rocky stretch where sparks fly from striking hooves."
     },
     {
-     "name": "Dust",
+     "name": "Clouds of Dust",
      "reference": "100:4",
-     "description": "Clouds of dust."
+     "description": "Dust rising in clouds behind the horses."
     }
    ],
    "activities": [
     {
-     "name": "Gratitude",
+     "name": "Read the first five",
+     "reference": "100:1-5",
+     "description": "Put the first five ayahs of Al-'Adiyat in order.",
+     "kind": "order"
+    },
+    {
+     "name": "Match each place to its ayah",
+     "reference": "100:1-4",
+     "description": "Match the racers, the sparks and the dust to the ayah each comes from.",
+     "kind": "match"
+    },
+    {
+     "name": "A thankful heart",
      "reference": "100:6",
-     "description": "Thank for blessings (adaptation).",
+     "description": "Talk about noticing what you have been given and saying thank you.",
      "kind": "card"
     }
    ],
@@ -5305,8 +5657,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (riderless horses racing at dawn, sparks on stone and dust clouds) and two playable games",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Adiyat.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   },
@@ -5314,25 +5668,37 @@
    "surah": 101,
    "world_title": "Like Moths, Like Wool",
    "content_type": "hereafter (symbolic only)",
-   "concept": "A symbolic world of the surah's two images: scattered moths and fluffed wool, shown as soft abstraction only.",
+   "concept": "A night path where moths flutter and scatter around lamps (101:4), and a field of hills with heaps of fluffed wool beside them (101:5). These are only the Quran's comparisons, shown as everyday things: the Day of 101:1-3, the scales and the Fire are not pictured. No person is shown.",
    "summary": "Al-Qari'ah describes the Day in words: people like scattered moths and mountains like fluffed wool. Heavy good deeds bring a pleasing life.",
    "areas": [
     {
-     "name": "Moths",
+     "name": "Scattered Moths",
      "reference": "101:4",
-     "description": "Moths in lamp light."
+     "description": "Moths fluttering and scattering around lamps: the Quran's comparison, shown as an ordinary night scene."
     },
     {
-     "name": "Wool",
+     "name": "Fluffed Wool",
      "reference": "101:5",
-     "description": "Fluffed wool."
+     "description": "Soft heaps of fluffed wool: the Quran's comparison for the mountains, shown as ordinary wool."
     }
    ],
    "activities": [
     {
-     "name": "Heavy scales",
-     "reference": "101:6-7",
-     "description": "Add good deeds to the scale (adaptation).",
+     "name": "Read the first six",
+     "reference": "101:1-6",
+     "description": "Put the first six ayahs of Al-Qari'ah in order.",
+     "kind": "order"
+    },
+    {
+     "name": "Match each place to its ayah",
+     "reference": "101:4-5",
+     "description": "Match the moths and the wool to the ayah each comes from.",
+     "kind": "match"
+    },
+    {
+     "name": "Heavy with good",
+     "reference": "101:6",
+     "description": "Talk about small good deeds that add up.",
      "kind": "card"
     }
    ],
@@ -5345,8 +5711,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (moths around night lamps and heaps of fluffed wool) and two playable games",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Qariah.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   },
@@ -5354,20 +5722,37 @@
    "surah": 102,
    "world_title": "Counting That Distracts",
    "content_type": "moral-and-spiritual",
-   "concept": "A world where piling things up distracts from what matters.",
+   "concept": "Towers of crates, jars and boxes stacked higher and higher beside the path, each trying to outgrow the last (102:1). Further on, a quiet walled graveyard with plain, unmarked stones (102:2). No person is shown. The Day of Judgement and the Fire are not pictured.",
    "summary": "At-Takathur warns that competing for more distracts people until they reach the graves.",
    "areas": [
     {
-     "name": "Piles",
+     "name": "Towers of More",
      "reference": "102:1",
-     "description": "Piles of possessions."
+     "description": "Towers of crates and jars, each stacked higher than the one before."
+    },
+    {
+     "name": "The Quiet Graveyard",
+     "reference": "102:2",
+     "description": "A walled graveyard with plain stones. A calm place to remember that this life ends."
     }
    ],
    "activities": [
     {
-     "name": "Enough",
+     "name": "Read the eight",
      "reference": "102:1-8",
-     "description": "Choose what matters (adaptation).",
+     "description": "Put the eight ayahs of At-Takathur in order.",
+     "kind": "order"
+    },
+    {
+     "name": "Match each place to its ayah",
+     "reference": "102:1-2",
+     "description": "Match the towers and the graveyard to the ayah each comes from.",
+     "kind": "match"
+    },
+    {
+     "name": "Enough is a blessing",
+     "reference": "102:8",
+     "description": "Talk about enjoying what you have and being thankful for it.",
      "kind": "card"
     }
    ],
@@ -5380,8 +5765,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (towers of stacked crates and a quiet walled graveyard) and two playable games",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Takathur.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   },
@@ -5449,20 +5836,37 @@
    "surah": 104,
    "world_title": "The Counting House",
    "content_type": "moral-and-spiritual",
-   "concept": "A counting house where wealth is counted, and a lesson about mocking.",
+   "concept": "An empty counting room at dusk: a table heaped with coins, an open ledger and an abacus, and locked chests along the wall. No person is shown. The Day of Judgement and the Fire are not pictured.",
    "summary": "Al-Humazah warns those who mock and backbite and who collect and count wealth thinking it will last.",
    "areas": [
     {
      "name": "Counting Table",
      "reference": "104:2",
-     "description": "Coins being counted."
+     "description": "A table heaped with coins, an open ledger and an abacus, all left behind."
+    },
+    {
+     "name": "Locked Chests",
+     "reference": "104:3",
+     "description": "A row of locked chests. Wealth kept in them cannot make anyone live forever."
     }
    ],
    "activities": [
     {
+     "name": "Read the nine",
+     "reference": "104:1-9",
+     "description": "Put the nine ayahs of Al-Humazah in order.",
+     "kind": "order"
+    },
+    {
+     "name": "Match each place to its ayah",
+     "reference": "104:1-3",
+     "description": "Match the counting table and the chests to the ayah each comes from.",
+     "kind": "match"
+    },
+    {
      "name": "Kind words",
      "reference": "104:1",
-     "description": "Replace mocking with kind words (adaptation).",
+     "description": "Talk about why mocking and making fun of people hurts, and what to say instead.",
      "kind": "card"
     }
    ],
@@ -5475,8 +5879,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (a counting room with coins, a ledger and locked chests) and two playable games",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Humazah.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   },
@@ -5543,36 +5949,47 @@
    "surah": 106,
    "world_title": "Caravans of Winter and Summer",
    "content_type": "moral-and-spiritual",
-   "concept": "Two caravan routes, winter and summer, and the House whose Lord fed and protected the Quraysh.",
+   "concept": "A desert road with two resting caravans of camels and loads, one with winter wraps and one with summer shades (106:2). A well and baskets of food stand by the road (106:4). The House of 106:3 is seen far off in a valley, simply, without detail. No people are shown.",
    "summary": "Quraysh reminds the people of Quraysh of their safe caravan journeys in winter and summer, and calls them to worship the Lord of the House who fed them and kept them safe.",
    "areas": [
     {
      "name": "Winter Caravan",
      "reference": "106:2",
-     "description": "A winter route."
+     "description": "A resting caravan with heavy wraps on its loads."
     },
     {
      "name": "Summer Caravan",
      "reference": "106:2",
-     "description": "A summer route."
+     "description": "A resting caravan with light shades on its loads."
     },
     {
      "name": "Lord of this House",
      "reference": "106:3",
-     "description": "The House in a quiet city."
+     "description": "A view to a far valley where the House stands, shown simply and from far away."
+    },
+    {
+     "name": "Fed and Safe",
+     "reference": "106:4",
+     "description": "A well and baskets of food by the road."
     }
    ],
    "activities": [
     {
-     "name": "Plan the journey",
-     "reference": "106:2",
-     "description": "Lead a caravan safely (adaptation).",
-     "kind": "card"
+     "name": "Read the four",
+     "reference": "106:1-4",
+     "description": "Put the four ayahs of Quraysh in order.",
+     "kind": "order"
+    },
+    {
+     "name": "Match each place to its ayah",
+     "reference": "106:1-4",
+     "description": "Match the caravans, the view and the well to the ayah each comes from.",
+     "kind": "match"
     },
     {
      "name": "Gratitude",
      "reference": "106:4",
-     "description": "Thank for food and safety.",
+     "description": "Talk about the food and safety you have and who to thank for them.",
      "kind": "card"
     }
    ],
@@ -5585,8 +6002,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (winter and summer caravans, a well and a far view of the House) and two playable games",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Quraysh.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   },
@@ -5594,32 +6013,43 @@
    "surah": 107,
    "world_title": "Small Kindnesses",
    "content_type": "moral-and-spiritual",
-   "concept": "A neighbourhood where kindness to orphans, feeding the poor and lending small things matter.",
+   "concept": "A small morning street: a home with an open door and a bench (107:2), a table with bread and water (107:3) and a shelf of small things to lend, like a bucket and a pot (107:7). No people are shown.",
    "summary": "Al-Ma'un means Small Kindnesses. It warns against pushing away orphans, not feeding the poor, praying to show off and refusing small help.",
    "areas": [
     {
-     "name": "Orphan's Door",
+     "name": "The Open Door",
      "reference": "107:2",
-     "description": "A door where an orphan is welcomed."
+     "description": "A home with its door open and a bench outside: the opposite of driving the orphan away."
+    },
+    {
+     "name": "The Bread Table",
+     "reference": "107:3",
+     "description": "A table set with bread and water, ready to share."
     },
     {
      "name": "Lending Shelf",
      "reference": "107:7",
-     "description": "Tools to lend."
+     "description": "A shelf of small things to lend: a bucket, a pot, a rope."
     }
    ],
    "activities": [
     {
-     "name": "Lend a hand",
-     "reference": "107:7",
-     "description": "Lend small items (adaptation).",
-     "kind": "card"
+     "name": "Read the seven",
+     "reference": "107:1-7",
+     "description": "Put the seven ayahs of Al-Ma'un in order.",
+     "kind": "order"
     },
     {
-     "name": "Feed the poor",
+     "name": "Match each place to its ayah",
+     "reference": "107:1-7",
+     "description": "Match the door, the table and the shelf to the ayah each comes from.",
+     "kind": "match"
+    },
+    {
+     "name": "Set the table",
      "reference": "107:3",
-     "description": "Encourage feeding.",
-     "kind": "card"
+     "description": "Carry the three loaves from the basket to the table by tapping them.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -5631,8 +6061,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (an open door, a bread table and a lending shelf) with two playable games and one activity played in the scene",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Maun.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   },
@@ -5640,20 +6072,37 @@
    "surah": 108,
    "world_title": "Abundance",
    "content_type": "moral-and-spiritual",
-   "concept": "A world of abundance: rivers, plenty and gratitude through prayer.",
+   "concept": "An orchard with full baskets, a sign of good things given. It is not a picture of al-Kawthar, which is not shown. A small clean terrace for prayer stands at its edge. No person is shown.",
    "summary": "Al-Kawthar tells the Prophet (peace be upon him) he has been given abundance and to pray and sacrifice to Allah alone.",
    "areas": [
     {
-     "name": "Abundance",
+     "name": "Orchard of Plenty",
      "reference": "108:1",
-     "description": "A valley of plenty; what al-Kawthar is, is only read."
+     "description": "An orchard of full baskets: a sign of good things given, not a picture of al-Kawthar."
+    },
+    {
+     "name": "Prayer Terrace",
+     "reference": "108:2",
+     "description": "A clean, quiet stone terrace at the orchard's edge."
     }
    ],
    "activities": [
     {
-     "name": "Pray",
-     "reference": "108:2",
-     "description": "Light a lamp for prayer (adaptation).",
+     "name": "Read the three",
+     "reference": "108:1-3",
+     "description": "Put the three ayahs of Al-Kawthar in order.",
+     "kind": "order"
+    },
+    {
+     "name": "Match each place to its ayah",
+     "reference": "108:1-3",
+     "description": "Match the orchard and the terrace to the ayah each comes from.",
+     "kind": "match"
+    },
+    {
+     "name": "Count your blessings",
+     "reference": "108:1",
+     "description": "Name good things you have been given, and how to say thank you.",
      "kind": "card"
     }
    ],
@@ -5666,8 +6115,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (an orchard with full baskets and a prayer terrace) and two playable games",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Kawthar.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   },
@@ -5675,20 +6126,37 @@
    "surah": 109,
    "world_title": "Two Separate Paths",
    "content_type": "moral-and-spiritual",
-   "concept": "Two paths side by side, each respected.",
+   "concept": "A meadow path divides into two paths that run side by side to the horizon and never cross. Paired standing stones mark the repeated ayahs. No people are shown.",
    "summary": "Al-Kafirun teaches clarity in worship: for you is your religion and for me is mine.",
    "areas": [
     {
+     "name": "The Paired Stones",
+     "reference": "109:2",
+     "description": "Four pairs of standing stones for the four ayahs that answer each other (109:2-5)."
+    },
+    {
      "name": "Two Paths",
      "reference": "109:6",
-     "description": "Two separate paths."
+     "description": "Two paths that run side by side and never cross."
     }
    ],
    "activities": [
     {
-     "name": "Choose your path",
+     "name": "Read the six",
+     "reference": "109:1-6",
+     "description": "Put the six ayahs of Al-Kafirun in order. Look closely: ayahs 2 to 5 are alike.",
+     "kind": "order"
+    },
+    {
+     "name": "Match each place to its ayah",
+     "reference": "109:1-6",
+     "description": "Match the stones and the two paths to the ayah each comes from.",
+     "kind": "match"
+    },
+    {
+     "name": "Clear and kind",
      "reference": "109:6",
-     "description": "Walk your own path (adaptation).",
+     "description": "Talk about being clear about your faith while staying kind to others.",
      "kind": "card"
     }
    ],
@@ -5701,8 +6169,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (paired stones and two separate paths) and two playable games",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Kafirun.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   },
@@ -5710,20 +6180,42 @@
    "surah": 110,
    "world_title": "Multitudes Arriving",
    "content_type": "moral-and-spiritual",
-   "concept": "Roads full of people arriving, shown as moving lights.",
+   "concept": "Many paths from every direction meet at an open gate, marked with lanterns that come on one by one. Beyond it is a quiet terrace for praise. No people are shown: the paths stand for the multitudes.",
    "summary": "An-Nasr says when Allah's help comes and people enter Islam in crowds, praise Allah and ask forgiveness.",
    "areas": [
     {
+     "name": "The Open Gate",
+     "reference": "110:1",
+     "description": "An open gateway at the end of the road, for reading 110:1."
+    },
+    {
      "name": "Converging Roads",
      "reference": "110:2",
-     "description": "Lights on roads."
+     "description": "Many roads meeting from every direction, lit by lanterns. No people are shown."
+    },
+    {
+     "name": "Terrace of Praise",
+     "reference": "110:3",
+     "description": "A quiet terrace to stop at and read 110:3."
     }
    ],
    "activities": [
     {
-     "name": "Praise",
+     "name": "Read the three",
+     "reference": "110:1-3",
+     "description": "Put the three ayahs of An-Nasr in order.",
+     "kind": "order"
+    },
+    {
+     "name": "Match each place to its ayah",
+     "reference": "110:1-3",
+     "description": "Match the gate, the roads and the terrace to the ayah each comes from.",
+     "kind": "match"
+    },
+    {
+     "name": "Thank and ask forgiveness",
      "reference": "110:3",
-     "description": "Read 110:3 (adaptation).",
+     "description": "Talk about saying thank you to Allah and asking forgiveness when something good happens.",
      "kind": "card"
     }
    ],
@@ -5736,8 +6228,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (converging lantern roads, an open gate and a terrace) and two playable games",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Nasr.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   },
@@ -5745,25 +6239,37 @@
    "surah": 111,
    "world_title": "Wealth Will Not Avail",
    "content_type": "moral-and-spiritual",
-   "concept": "A path of thorns and firewood showing that wealth and status do not save from wrongdoing.",
+   "concept": "A dusk road past an abandoned heap of chests and coins that does no good to anyone, and a bundle of firewood tied with a twisted rope. No person is shown, and the Fire of 111:3 is not pictured.",
    "summary": "Al-Masad tells of Abu Lahab and his wife, who opposed the Prophet (peace be upon him), and that wealth did not help them.",
    "areas": [
     {
-     "name": "Firewood",
-     "reference": "111:4",
-     "description": "A bundle of firewood."
+     "name": "Wealth That Will Not Avail",
+     "reference": "111:2",
+     "description": "An abandoned heap of chests and coins half sunk in sand: wealth that did not help its owner."
     },
     {
-     "name": "Wealth",
-     "reference": "111:2",
-     "description": "Coins that cannot help."
+     "name": "Firewood and Rope",
+     "reference": "111:4",
+     "description": "A bundle of firewood tied with a rope of twisted fibre (111:4-5). No person is shown."
     }
    ],
    "activities": [
     {
-     "name": "What helps",
+     "name": "Read the five",
+     "reference": "111:1-5",
+     "description": "Put the five ayahs of Al-Masad in order.",
+     "kind": "order"
+    },
+    {
+     "name": "Match each place to its ayah",
+     "reference": "111:1-5",
+     "description": "Match the heap of wealth and the firewood to the ayah each comes from.",
+     "kind": "match"
+    },
+    {
+     "name": "What really helps",
      "reference": "111:2",
-     "description": "Discuss what truly helps (adaptation).",
+     "description": "Talk about why money alone cannot save anyone, and what does help.",
      "kind": "card"
     }
    ],
@@ -5776,8 +6282,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (an abandoned heap of wealth, a firewood bundle with a twisted rope) and two playable games",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Masad.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   },
@@ -5845,26 +6353,38 @@
    "surah": 113,
    "world_title": "Lord of Daybreak",
    "content_type": "moral-and-spiritual",
-   "concept": "A dawn world where darkness lifts and protection is sought.",
+   "concept": "A ridge facing the eastern horizon as daybreak comes, and a low hollow below it where the evening shadow settles. Lanterns light the hollow. No person, magic or envier is shown.",
    "summary": "Al-Falaq teaches seeking refuge in the Lord of daybreak from evil, darkness and envy.",
    "areas": [
     {
-     "name": "Daybreak",
+     "name": "Daybreak Ridge",
      "reference": "113:1",
-     "description": "Dawn breaking."
+     "description": "A ridge where the sun is rising over the horizon, for reading 113:1."
     },
     {
      "name": "Settling Darkness",
      "reference": "113:3",
-     "description": "Night settling."
+     "description": "A hollow where shadow gathers, lit by small lanterns you can light."
     }
    ],
    "activities": [
     {
-     "name": "Refuge",
+     "name": "Read the five",
      "reference": "113:1-5",
-     "description": "Read the surah as dawn breaks (adaptation).",
-     "kind": "card"
+     "description": "Put the five ayahs of Al-Falaq in order.",
+     "kind": "order"
+    },
+    {
+     "name": "Match each place to its ayah",
+     "reference": "113:1-5",
+     "description": "Match the ridge and the hollow to the ayah each comes from.",
+     "kind": "match"
+    },
+    {
+     "name": "Light the hollow",
+     "reference": "113:3",
+     "description": "Tap the three lanterns in the hollow to light them.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -5876,8 +6396,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (a daybreak ridge and a shaded hollow with lanterns to light), two playable games and one activity played in the scene",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Falaq.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   },
@@ -5885,20 +6407,37 @@
    "surah": 114,
    "world_title": "Lord of Mankind",
    "content_type": "moral-and-spiritual",
-   "concept": "A peaceful town where whispers fade when Allah's protection is sought.",
+   "concept": "A lane of tall reeds that rustle and whisper in the wind, leading to a small lit stone shelter. The whisper is only the sound of reeds; no whisperer, jinn or person is shown.",
    "summary": "An-Nas teaches seeking refuge in the Lord of mankind from the whisperer.",
    "areas": [
     {
+     "name": "The Refuge Shelter",
+     "reference": "114:1",
+     "description": "A small stone shelter with a warm lamp where 114:1 is read."
+    },
+    {
      "name": "Whisper Lane",
      "reference": "114:4",
-     "description": "Whispers fading."
+     "description": "A lane of tall reeds that rustle in the wind. Only reeds are shown; the whisperer is not pictured."
     }
    ],
    "activities": [
     {
-     "name": "Refuge",
+     "name": "Read the six",
      "reference": "114:1-6",
-     "description": "Read the surah (adaptation).",
+     "description": "Put the six ayahs of An-Nas in order.",
+     "kind": "order"
+    },
+    {
+     "name": "Match each place to its ayah",
+     "reference": "114:1-6",
+     "description": "Match the shelter and the reed lane to the ayah each comes from.",
+     "kind": "match"
+    },
+    {
+     "name": "Words of refuge",
+     "reference": "114:1",
+     "description": "Talk about saying these words when you feel afraid or unsure.",
      "kind": "card"
     }
    ],
@@ -5911,8 +6450,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (a whispering reed lane and a lit refuge shelter) and two playable games",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Nas.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the games"
    },
    "review": "unreviewed"
   }

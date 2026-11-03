@@ -16,8 +16,8 @@
  "narrative_passages": [],
  "summary_for_children": "Al-'Adiyat means The Racers. It swears by racing horses and says people are often ungrateful.",
  "world_title": "Racers at Dawn",
- "environment_concept": "Horses racing at dawn, sparks from hooves, dust clouds, used as an oath about gratitude.",
- "architecture_and_scenery": "Rocky plain at dawn.",
+ "environment_concept": "At dawn, a line of horses gallops across the dunes, panting (100:1, 100:3); sparks fly where their hooves strike the stones (100:2) and clouds of dust rise behind them (100:4). The horses carry no riders; no person is shown.",
+ "architecture_and_scenery": "Open dunes with a rocky stretch, galloping horses on a loop, spark and dust particles.",
  "palette": {
   "colors": [
    "#f0c080",
@@ -28,29 +28,44 @@
  },
  "areas": [
   {
-   "name": "Racers",
+   "name": "The Racers",
    "reference": "100:1",
    "anchor_phrase": "racers",
-   "description": "Horses racing."
+   "description": "Horses galloping over the dunes at dawn, panting."
   },
   {
-   "name": "Sparks",
+   "name": "Sparks on Stone",
    "reference": "100:2",
    "anchor_phrase": "sparks",
-   "description": "Sparks from hooves."
+   "description": "A rocky stretch where sparks fly from striking hooves."
   },
   {
-   "name": "Dust",
+   "name": "Clouds of Dust",
    "reference": "100:4",
    "anchor_phrase": "dust",
-   "description": "Clouds of dust."
+   "description": "Dust rising in clouds behind the horses."
   }
  ],
  "activities": [
   {
-   "name": "Gratitude",
+   "name": "Read the first five",
+   "reference": "100:1-5",
+   "kind": "order",
+   "description": "Put the first five ayahs of Al-'Adiyat in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "100:1-4",
+   "kind": "match",
+   "description": "Match the racers, the sparks and the dust to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "A thankful heart",
    "reference": "100:6",
-   "description": "Thank for blessings (adaptation).",
+   "kind": "card",
+   "description": "Talk about noticing what you have been given and saying thank you.",
    "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
@@ -62,32 +77,39 @@
   {
    "reference": "100:1",
    "anchor_phrase": "racers",
-   "element": "Racers"
+   "element": "The Racers"
   },
   {
    "reference": "100:2",
    "anchor_phrase": "sparks",
-   "element": "Sparks"
+   "element": "Sparks on Stone"
   },
   {
    "reference": "100:4",
    "anchor_phrase": "dust",
-   "element": "Dust"
+   "element": "Clouds of Dust"
   }
  ],
  "required_assets": [
-  "Plain"
+  "Dune terrain (shared)",
+  "Horses (primitive)",
+  "Spark and dust particles",
+  "Rocky ground"
  ],
  "status": {
   "quran_text": "verified (KFGQPC Hafs, checksummed)",
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: its own scene (riderless horses racing at dawn, sparks on stone and dust clouds) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Adiyat.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
  },
  "quran_references": [
   "100:1",
+  "100:1-4",
+  "100:1-5",
   "100:2",
   "100:4",
   "100:6"
