@@ -1,0 +1,77 @@
+{
+ "surah": 110,
+ "name": {
+  "transliterated": "An-Naṣr",
+  "meaning": "The Divine Support"
+ },
+ "ayah_count": 3,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Victory from Allah",
+  "Praise and forgiveness"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "An-Nasr says when Allah's help comes and people enter Islam in crowds, praise Allah and ask forgiveness.",
+ "world_title": "Multitudes Arriving",
+ "environment_concept": "Roads full of people arriving, shown as moving lights.",
+ "architecture_and_scenery": "Roads converging on a city.",
+ "palette": {
+  "colors": [
+   "#f0d890",
+   "#6f8f4a"
+  ],
+  "lighting": "Bright",
+  "atmosphere": "Joyful"
+ },
+ "areas": [
+  {
+   "name": "Converging Roads",
+   "reference": "110:2",
+   "anchor_phrase": "multitudes",
+   "description": "Lights on roads."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Praise",
+   "reference": "110:3",
+   "description": "Read 110:3 (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "No person shown.",
+ "learning_objectives": [
+  "Explain 110:3"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "110:2",
+   "anchor_phrase": "multitudes",
+   "element": "Converging Roads"
+  }
+ ],
+ "required_assets": [
+  "Roads"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "110:2",
+  "110:3"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

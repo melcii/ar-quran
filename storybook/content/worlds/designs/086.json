@@ -1,0 +1,110 @@
+{
+ "surah": 86,
+ "name": {
+  "transliterated": "Aṭ-Ṭāriq",
+  "meaning": "The Nightcommer"
+ },
+ "ayah_count": 17,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "Every soul has a guardian",
+  "The Quran is decisive"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "At-Tariq means The Night Comer, the piercing star. It reminds us every soul is watched over and swears by the sky that returns rain and the earth that cracks open.",
+ "world_title": "The Piercing Star",
+ "environment_concept": "A night sky with a piercing star, sky returning rain, and earth cracking open with plants.",
+ "architecture_and_scenery": "Night sky, rainy plain, sprouting earth.",
+ "palette": {
+  "colors": [
+   "#0f1a33",
+   "#f0f0ff",
+   "#6f8f4a"
+  ],
+  "lighting": "Night, piercing star",
+  "atmosphere": "Rain"
+ },
+ "areas": [
+  {
+   "name": "Piercing Star",
+   "reference": "86:3",
+   "anchor_phrase": "piercing star",
+   "description": "A brilliant star."
+  },
+  {
+   "name": "Returning Rain",
+   "reference": "86:11",
+   "anchor_phrase": "returns",
+   "description": "Rain returning."
+  },
+  {
+   "name": "Cracking Earth",
+   "reference": "86:12",
+   "anchor_phrase": "cracks open",
+   "description": "Earth cracking with sprouts."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Find the star",
+   "reference": "86:1-3",
+   "description": "Find the piercing star.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Rain cycle",
+   "reference": "86:11-12",
+   "description": "Watch rain return and sprouts appear.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration calm.",
+ "learning_objectives": [
+  "Explain 86:11-12"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "86:3",
+   "anchor_phrase": "piercing star",
+   "element": "Piercing Star"
+  },
+  {
+   "reference": "86:11",
+   "anchor_phrase": "returns",
+   "element": "Returning Rain"
+  },
+  {
+   "reference": "86:12",
+   "anchor_phrase": "cracks open",
+   "element": "Cracking Earth"
+  }
+ ],
+ "required_assets": [
+  "Night sky",
+  "Plain"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "86:1-3",
+  "86:3",
+  "86:11",
+  "86:11-12",
+  "86:12"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

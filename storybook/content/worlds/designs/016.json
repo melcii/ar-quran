@@ -1,0 +1,142 @@
+{
+ "surah": 16,
+ "name": {
+  "transliterated": "An-Naḥl",
+  "meaning": "The Bee"
+ },
+ "ayah_count": 128,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "Blessings of Allah",
+  "Bees and honey",
+  "Signs in creation",
+  "Gratitude"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "An-Nahl is the surah of the bee. It shows Allah's blessings in bees, honey, milk, rain, the sea, birds and animals, and asks us to be grateful.",
+ "world_title": "The Bee Garden",
+ "environment_concept": "A valley of blossoms where bees build homes in mountains and trees, honey of many colours flows, and every creature is a sign.",
+ "architecture_and_scenery": "Flower meadows, cliffs and trees with hives, a stream, grazing animals, birds in the sky, and a coast.",
+ "palette": {
+  "colors": [
+   "#f2c14e",
+   "#6a994e",
+   "#a7c957",
+   "#386641"
+  ],
+  "lighting": "Bright spring sun",
+  "atmosphere": "Warm, buzzing, floral"
+ },
+ "areas": [
+  {
+   "name": "Hive Cliffs",
+   "reference": "16:68",
+   "anchor_phrase": "bee",
+   "description": "Bees making homes in mountains and trees."
+  },
+  {
+   "name": "Honey Spring",
+   "reference": "16:69",
+   "anchor_phrase": "varying in colors",
+   "description": "Honey of different colours in the combs."
+  },
+  {
+   "name": "Pasture of Milk",
+   "reference": "16:66",
+   "anchor_phrase": "milk",
+   "description": "Animals grazing in a pasture."
+  },
+  {
+   "name": "Coast of Ornaments",
+   "reference": "16:14",
+   "anchor_phrase": "ornaments",
+   "description": "A coast with shells and pearls."
+  },
+  {
+   "name": "Sky of Birds",
+   "reference": "16:79",
+   "anchor_phrase": "birds",
+   "description": "Birds held in the sky."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Follow the bee",
+   "reference": "16:68-69",
+   "description": "Follow a bee from flower to flower back to its hive.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Count the blessings",
+   "reference": "16:18",
+   "description": "Collect blessings around the valley and learn they cannot all be counted.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "The narrator reads each ayah when a blessing is found.",
+ "learning_objectives": [
+  "Describe what the Quran says about bees",
+  "Name blessings in An-Nahl",
+  "Practise gratitude"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "16:68",
+   "anchor_phrase": "bee",
+   "element": "Hive Cliffs"
+  },
+  {
+   "reference": "16:69",
+   "anchor_phrase": "varying in colors",
+   "element": "Honey Spring"
+  },
+  {
+   "reference": "16:66",
+   "anchor_phrase": "milk",
+   "element": "Pasture of Milk"
+  },
+  {
+   "reference": "16:14",
+   "anchor_phrase": "ornaments",
+   "element": "Coast of Ornaments"
+  },
+  {
+   "reference": "16:79",
+   "anchor_phrase": "birds",
+   "element": "Sky of Birds"
+  }
+ ],
+ "required_assets": [
+  "Flower meadow",
+  "Hives in cliffs and trees",
+  "Bee swarm animation",
+  "Pasture animals",
+  "Coast"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "16:14",
+  "16:18",
+  "16:66",
+  "16:68",
+  "16:68-69",
+  "16:69",
+  "16:79"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

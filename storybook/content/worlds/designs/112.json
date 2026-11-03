@@ -1,0 +1,110 @@
+{
+ "surah": 112,
+ "name": {
+  "transliterated": "Al-Ikhlāṣ",
+  "meaning": "The Sincerity"
+ },
+ "ayah_count": 4,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Oneness of Allah",
+  "Allah has no equal"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Ikhlas says Allah is One, the Eternal Refuge, He neither has children nor was born, and nothing is like Him.",
+ "world_title": "The One",
+ "environment_concept": "A world of pure geometry and light: no image, figure or symbol of Allah, only the four ayahs written in calligraphy across an open sky, and a single path of reflection.",
+ "architecture_and_scenery": "Open sky, calligraphic lettering, a single unbroken circle path.",
+ "palette": {
+  "colors": [
+   "#f6efe0",
+   "#2f4b6f",
+   "#c9a46a"
+  ],
+  "lighting": "Even, shadowless light",
+  "atmosphere": "Silence"
+ },
+ "areas": [
+  {
+   "name": "Path of One",
+   "reference": "112:1",
+   "anchor_phrase": "One",
+   "description": "A single circle path."
+  },
+  {
+   "name": "Eternal Refuge",
+   "reference": "112:2",
+   "anchor_phrase": "Eternal Refuge",
+   "description": "A sheltered resting place."
+  },
+  {
+   "name": "Nothing Like Him",
+   "reference": "112:4",
+   "anchor_phrase": "equivalent",
+   "description": "Empty open sky; nothing depicts Allah."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Read the four",
+   "reference": "112:1-4",
+   "description": "Light each ayah's calligraphy in turn.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Nothing compares",
+   "reference": "112:4",
+   "description": "Learn why nothing in creation can be compared to Allah (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration explains each ayah plainly; Allah is never depicted.",
+ "learning_objectives": [
+  "Explain tawhid",
+  "Recite 112"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "112:1",
+   "anchor_phrase": "One",
+   "element": "Path of One"
+  },
+  {
+   "reference": "112:2",
+   "anchor_phrase": "Eternal Refuge",
+   "element": "Eternal Refuge"
+  },
+  {
+   "reference": "112:4",
+   "anchor_phrase": "equivalent",
+   "element": "Nothing Like Him"
+  }
+ ],
+ "required_assets": [
+  "Calligraphy",
+  "Circle path"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "112:1",
+  "112:1-4",
+  "112:2",
+  "112:4"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

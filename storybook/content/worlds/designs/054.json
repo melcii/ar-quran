@@ -1,0 +1,158 @@
+{
+ "surah": 54,
+ "name": {
+  "transliterated": "Al-Qamar",
+  "meaning": "The Moon"
+ },
+ "ayah_count": 55,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "The Hour is near",
+  "The Quran is easy to remember",
+  "Warnings ignored"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Nuh and the flood",
+   "reference": "54:9-17",
+   "anchor_phrase": "planks and nails"
+  },
+  {
+   "title": "'Ad and the wind",
+   "reference": "54:18-22",
+   "anchor_phrase": "screaming wind"
+  },
+  {
+   "title": "Thamud and the she-camel",
+   "reference": "54:23-32",
+   "anchor_phrase": "she-camel"
+  }
+ ],
+ "summary_for_children": "Al-Qamar means The Moon. It tells of the moon splitting and of Nuh, 'Ad, Thamud, Lut and Pharaoh, and repeats that Allah made the Quran easy to remember.",
+ "world_title": "Moon Split and the Easy Reminder",
+ "environment_concept": "A sky with a moon split in two, then stories of peoples: rain gates opening for Nuh, a screaming wind for 'Ad, a she-camel for Thamud, each followed by 'We made the Quran easy to remember'.",
+ "architecture_and_scenery": "Night sky, a flood plain with a vessel of planks and nails, uprooted palms, a rocky valley with a she-camel's trail.",
+ "palette": {
+  "colors": [
+   "#1c2541",
+   "#3f6d8f",
+   "#8c5a3a",
+   "#c9b090"
+  ],
+  "lighting": "Night with a pale moon, storm light",
+  "atmosphere": "Rain, wind"
+ },
+ "areas": [
+  {
+   "name": "Split Moon",
+   "reference": "54:1",
+   "anchor_phrase": "moon has split",
+   "description": "A moon in two halves."
+  },
+  {
+   "name": "Gates of Rain",
+   "reference": "54:11",
+   "anchor_phrase": "gates of the heaven",
+   "description": "Pouring rain."
+  },
+  {
+   "name": "Springs Bursting",
+   "reference": "54:12",
+   "anchor_phrase": "burst with springs",
+   "description": "Earth bursting with springs."
+  },
+  {
+   "name": "Vessel of Planks",
+   "reference": "54:13",
+   "anchor_phrase": "planks and nails",
+   "description": "A vessel of planks and nails."
+  },
+  {
+   "name": "Uprooted Palms",
+   "reference": "54:20",
+   "anchor_phrase": "palm trees uprooted",
+   "description": "Palms uprooted by wind."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Easy to remember",
+   "reference": "54:17",
+   "description": "Memorise 54:17 by repeating it (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Planks and nails",
+   "reference": "54:13",
+   "description": "Build the vessel from planks and nails.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration repeats the refrain from the surah.",
+ "learning_objectives": [
+  "Explain the refrain 54:17",
+  "Retell three peoples",
+  "Explain the moon sign"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "54:1",
+   "anchor_phrase": "moon has split",
+   "element": "Split Moon"
+  },
+  {
+   "reference": "54:11",
+   "anchor_phrase": "gates of the heaven",
+   "element": "Gates of Rain"
+  },
+  {
+   "reference": "54:12",
+   "anchor_phrase": "burst with springs",
+   "element": "Springs Bursting"
+  },
+  {
+   "reference": "54:13",
+   "anchor_phrase": "planks and nails",
+   "element": "Vessel of Planks"
+  },
+  {
+   "reference": "54:20",
+   "anchor_phrase": "palm trees uprooted",
+   "element": "Uprooted Palms"
+  }
+ ],
+ "required_assets": [
+  "Night sky",
+  "Flood plain",
+  "Vessel",
+  "Windy valley"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "54:1",
+  "54:9-17",
+  "54:11",
+  "54:12",
+  "54:13",
+  "54:17",
+  "54:18-22",
+  "54:20",
+  "54:23-32"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

@@ -1,0 +1,117 @@
+{
+ "surah": 56,
+ "name": {
+  "transliterated": "Al-Wāqi‘ah",
+  "meaning": "The Inevitable"
+ },
+ "ayah_count": 96,
+ "content_type": {
+  "primary": "hereafter (symbolic only)",
+  "secondary": []
+ },
+ "themes": [
+  "The inevitable Event",
+  "Three groups of people",
+  "Allah provides",
+  "Gratitude"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Waqi'ah means The Inevitable Event. It speaks of a day that will surely come, and asks us to look at the seeds we plant, the water we drink and the fire we light, all from Allah.",
+ "world_title": "Seed, Water and Fire",
+ "environment_concept": "A symbolic world about the three questions the surah asks: who grows the seed, who sends down the water, who made the tree of fire. The Event itself is never pictured.",
+ "architecture_and_scenery": "A farmer's field, a cloud-fed well and a fire with its tree; a quiet horizon for what is unseen.",
+ "palette": {
+  "colors": [
+   "#7a9a5a",
+   "#3f6d8f",
+   "#e07a3a",
+   "#efe6d2"
+  ],
+  "lighting": "Morning field light, then evening fire glow",
+  "atmosphere": "Calm"
+ },
+ "areas": [
+  {
+   "name": "Field of Seeds",
+   "reference": "56:63",
+   "anchor_phrase": "sow",
+   "description": "A field where seeds are planted."
+  },
+  {
+   "name": "Water from the Clouds",
+   "reference": "56:69",
+   "anchor_phrase": "clouds",
+   "description": "Water falling from clouds into a well."
+  },
+  {
+   "name": "Tree of Fire",
+   "reference": "56:72",
+   "anchor_phrase": "tree",
+   "description": "A tree and a fire for travellers."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Who grows it?",
+   "reference": "56:63-64",
+   "description": "Plant seeds and read 56:64 as they sprout (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Fresh water",
+   "reference": "56:68-70",
+   "description": "Draw water and thank Allah.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "The Event is spoken of only in ayahs; nothing unseen is shown.",
+ "learning_objectives": [
+  "Explain the three questions",
+  "Explain gratitude",
+  "Explain that the Event is unseen"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "56:63",
+   "anchor_phrase": "sow",
+   "element": "Field of Seeds"
+  },
+  {
+   "reference": "56:69",
+   "anchor_phrase": "clouds",
+   "element": "Water from the Clouds"
+  },
+  {
+   "reference": "56:72",
+   "anchor_phrase": "tree",
+   "element": "Tree of Fire"
+  }
+ ],
+ "required_assets": [
+  "Field",
+  "Well",
+  "Fire",
+  "Horizon"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "56:63",
+  "56:63-64",
+  "56:68-70",
+  "56:69",
+  "56:72"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

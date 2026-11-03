@@ -1,0 +1,111 @@
+{
+ "surah": 91,
+ "name": {
+  "transliterated": "Ash-Shams",
+  "meaning": "The Sun"
+ },
+ "ayah_count": 15,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Purifying the soul",
+  "Oaths",
+  "Thamud's lesson"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Thamud and the she-camel",
+   "reference": "91:11-15",
+   "anchor_phrase": "she-camel"
+  }
+ ],
+ "summary_for_children": "Ash-Shams means The Sun. It swears by the sun, moon, day, night and the soul, and says success is in purifying the soul. It recalls the she-camel of Thamud.",
+ "world_title": "Sun and Its Brightness",
+ "environment_concept": "A day cycle over a valley: sun, moon, day, night, sky, earth, soul, ending at Thamud's well where the she-camel drank.",
+ "architecture_and_scenery": "Valley under moving sun and moon, a well.",
+ "palette": {
+  "colors": [
+   "#f2c97a",
+   "#1c2541",
+   "#8c5a3a"
+  ],
+  "lighting": "Day and night",
+  "atmosphere": "Calm"
+ },
+ "areas": [
+  {
+   "name": "Sun",
+   "reference": "91:1",
+   "anchor_phrase": "sun",
+   "description": "Bright sun."
+  },
+  {
+   "name": "Moon Following",
+   "reference": "91:2",
+   "anchor_phrase": "moon",
+   "description": "The moon following."
+  },
+  {
+   "name": "The Well",
+   "reference": "91:13",
+   "anchor_phrase": "drink",
+   "description": "A well."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Purify the soul",
+   "reference": "91:9",
+   "description": "Choose kind actions (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Salih not shown.",
+ "learning_objectives": [
+  "Explain 91:9-10"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "91:1",
+   "anchor_phrase": "sun",
+   "element": "Sun"
+  },
+  {
+   "reference": "91:2",
+   "anchor_phrase": "moon",
+   "element": "Moon Following"
+  },
+  {
+   "reference": "91:13",
+   "anchor_phrase": "drink",
+   "element": "The Well"
+  }
+ ],
+ "required_assets": [
+  "Valley",
+  "Well"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "91:1",
+  "91:2",
+  "91:9",
+  "91:11-15",
+  "91:13"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

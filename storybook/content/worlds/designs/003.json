@@ -1,0 +1,147 @@
+{
+ "surah": 3,
+ "name": {
+  "transliterated": "Āl-‘Imrān",
+  "meaning": "Family of Imran"
+ },
+ "ayah_count": 200,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "Steadfast faith",
+  "The family of Imran and Maryam",
+  "Unity",
+  "Reflection on creation"
+ ],
+ "narrative_passages": [
+  {
+   "title": "The wife of Imran's vow",
+   "reference": "3:35-37",
+   "anchor_phrase": "wife of 'Imran"
+  },
+  {
+   "title": "Zakariyya's prayer",
+   "reference": "3:38-41",
+   "anchor_phrase": "Zechariah"
+  },
+  {
+   "title": "The angels' news to Maryam",
+   "reference": "3:42-47",
+   "anchor_phrase": "Mary"
+  }
+ ],
+ "summary_for_children": "Ali 'Imran tells of the family of Imran, of Maryam and the provision she found, and of Zakariyya's prayer. It asks believers to hold together and to reflect on the night and the day.",
+ "world_title": "The Sanctuary of the Family of Imran",
+ "environment_concept": "A quiet sanctuary of prayer and provision, opening onto a night sky where the alternation of night and day is a sign.",
+ "architecture_and_scenery": "Stone prayer chamber, cloistered courtyard, olive garden, and a rooftop open to the sky.",
+ "palette": {
+  "colors": [
+   "#e8d9b5",
+   "#8a6f4a",
+   "#4a5d7a",
+   "#c9a95c"
+  ],
+  "lighting": "Lamp-lit interiors, then twilight blue",
+  "atmosphere": "Still, incense-free, soft evening air"
+ },
+ "areas": [
+  {
+   "name": "The Prayer Chamber",
+   "reference": "3:37",
+   "anchor_phrase": "prayer chamber",
+   "description": "A small chamber where fruit appears in a lit niche; no person is shown."
+  },
+  {
+   "name": "Courtyard of the Rope",
+   "reference": "3:103",
+   "anchor_phrase": "rope",
+   "description": "A courtyard where a single rope binds many pillars together."
+  },
+  {
+   "name": "Rooftop of Night and Day",
+   "reference": "3:190",
+   "anchor_phrase": "alternation of the night and the day",
+   "description": "A rooftop where time-lapse sky shows night and day turning."
+  },
+  {
+   "name": "Gate to Bakkah",
+   "reference": "3:96",
+   "anchor_phrase": "Makkah",
+   "description": "A distant gateway marked only by its ayah."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Hold the rope together",
+   "reference": "3:103",
+   "description": "Gather scattered rope pieces and tie them to the pillars; the courtyard steadies when it is whole.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Watch night turn to day",
+   "reference": "3:190-191",
+   "description": "Speed the sky from night to day and read the ayahs about reflection.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "The narrator tells the family's account in short scenes heard, not seen, and reads 3:190-191 on the rooftop.",
+ "learning_objectives": [
+  "Retell Maryam's provision in the prayer chamber",
+  "Explain holding firmly to the rope of Allah",
+  "Practise reflecting on night and day"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "3:37",
+   "anchor_phrase": "prayer chamber",
+   "element": "The Prayer Chamber"
+  },
+  {
+   "reference": "3:103",
+   "anchor_phrase": "rope",
+   "element": "Courtyard of the Rope"
+  },
+  {
+   "reference": "3:190",
+   "anchor_phrase": "alternation of the night and the day",
+   "element": "Rooftop of Night and Day"
+  },
+  {
+   "reference": "3:96",
+   "anchor_phrase": "Makkah",
+   "element": "Gate to Bakkah"
+  }
+ ],
+ "required_assets": [
+  "Prayer chamber with niche",
+  "Cloister courtyard",
+  "Rope and pillars",
+  "Rooftop sky"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "3:35-37",
+  "3:37",
+  "3:38-41",
+  "3:42-47",
+  "3:96",
+  "3:103",
+  "3:190",
+  "3:190-191"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

@@ -1,0 +1,130 @@
+{
+ "surah": 38,
+ "name": {
+  "transliterated": "Ṣād",
+  "meaning": "The Letter \"Saad\""
+ },
+ "ayah_count": 88,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "Turning back to Allah",
+  "Justice",
+  "Patience in hardship",
+  "Pride of Iblis"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Dawud's judgement",
+   "reference": "38:21-26",
+   "anchor_phrase": "judge"
+  },
+  {
+   "title": "Ayyub's patience",
+   "reference": "38:41-44",
+   "anchor_phrase": "Job"
+  }
+ ],
+ "summary_for_children": "Surah Sad tells of Dawud and his justice, Sulayman, and Ayyub's patience, and how Iblis refused out of pride.",
+ "world_title": "Mountains That Repeat Praise",
+ "environment_concept": "A kingdom of Dawud's mountains and birds, Sulayman's horses, and Ayyub's cooling spring.",
+ "architecture_and_scenery": "Hills echoing at sunrise and afternoon, a stable yard, a court of judgement, and a spring in rocky ground.",
+ "palette": {
+  "colors": [
+   "#e6cfa0",
+   "#7a8f68",
+   "#3f6d8f",
+   "#c08a4a"
+  ],
+  "lighting": "Sunrise and afternoon light",
+  "atmosphere": "Echo of praise, birds"
+ },
+ "areas": [
+  {
+   "name": "Hills of Praise",
+   "reference": "38:18",
+   "anchor_phrase": "mountains",
+   "description": "Hills that echo at sunrise."
+  },
+  {
+   "name": "Assembled Birds",
+   "reference": "38:19",
+   "anchor_phrase": "birds",
+   "description": "Birds gathering."
+  },
+  {
+   "name": "Cool Spring",
+   "reference": "38:42",
+   "anchor_phrase": "cool bath",
+   "description": "A spring where the ground is struck."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Fair judgement",
+   "reference": "38:26",
+   "description": "Decide fairly in simple disputes (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Echo game",
+   "reference": "38:18-19",
+   "description": "Echo phrases of glorification across the hills.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration keeps prophets unseen and highlights patience and justice.",
+ "learning_objectives": [
+  "Explain justice in Dawud's story",
+  "Explain Ayyub's patience",
+  "Explain why pride is wrong"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "38:18",
+   "anchor_phrase": "mountains",
+   "element": "Hills of Praise"
+  },
+  {
+   "reference": "38:19",
+   "anchor_phrase": "birds",
+   "element": "Assembled Birds"
+  },
+  {
+   "reference": "38:42",
+   "anchor_phrase": "cool bath",
+   "element": "Cool Spring"
+  }
+ ],
+ "required_assets": [
+  "Hills",
+  "Birds",
+  "Court",
+  "Spring"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "38:18",
+  "38:18-19",
+  "38:19",
+  "38:21-26",
+  "38:26",
+  "38:41-44",
+  "38:42"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

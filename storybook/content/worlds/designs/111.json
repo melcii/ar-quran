@@ -1,0 +1,88 @@
+{
+ "surah": 111,
+ "name": {
+  "transliterated": "Al-Masad",
+  "meaning": "The Palm Fiber"
+ },
+ "ayah_count": 5,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Opposing truth brings loss",
+  "Wealth does not save"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Masad tells of Abu Lahab and his wife, who opposed the Prophet (peace be upon him), and that wealth did not help them.",
+ "world_title": "Wealth Will Not Avail",
+ "environment_concept": "A path of thorns and firewood showing that wealth and status do not save from wrongdoing.",
+ "architecture_and_scenery": "A thorny path, a bundle of firewood.",
+ "palette": {
+  "colors": [
+   "#8c5a3a",
+   "#5a5a6a"
+  ],
+  "lighting": "Dim",
+  "atmosphere": "Still"
+ },
+ "areas": [
+  {
+   "name": "Firewood",
+   "reference": "111:4",
+   "anchor_phrase": "firewood",
+   "description": "A bundle of firewood."
+  },
+  {
+   "name": "Wealth",
+   "reference": "111:2",
+   "anchor_phrase": "wealth",
+   "description": "Coins that cannot help."
+  }
+ ],
+ "activities": [
+  {
+   "name": "What helps",
+   "reference": "111:2",
+   "description": "Discuss what truly helps (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "No person shown; the Fire is not shown.",
+ "learning_objectives": [
+  "Explain 111:2"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "111:4",
+   "anchor_phrase": "firewood",
+   "element": "Firewood"
+  },
+  {
+   "reference": "111:2",
+   "anchor_phrase": "wealth",
+   "element": "Wealth"
+  }
+ ],
+ "required_assets": [
+  "Path"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "111:2",
+  "111:4"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

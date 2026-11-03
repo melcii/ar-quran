@@ -1,0 +1,159 @@
+{
+ "surah": 34,
+ "name": {
+  "transliterated": "Saba’",
+  "meaning": "Sheba"
+ },
+ "ayah_count": 54,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "Gratitude for blessings",
+  "Ingratitude and its result",
+  "Craft as a gift from Allah"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Dawud and the iron",
+   "reference": "34:10-11",
+   "anchor_phrase": "iron"
+  },
+  {
+   "title": "Sulayman and the copper",
+   "reference": "34:12-14",
+   "anchor_phrase": "copper"
+  },
+  {
+   "title": "The two gardens of Saba",
+   "reference": "34:15-17",
+   "anchor_phrase": "two fields of gardens"
+  }
+ ],
+ "summary_for_children": "Surah Saba tells of Dawud, for whom iron was made soft, and Sulayman, for whom a spring of copper flowed. Then it tells of the people of Saba who had two beautiful gardens but turned away, and lost them in a flood.",
+ "world_title": "Gardens of Saba and the Copper Spring",
+ "environment_concept": "Two kingdoms of the surah: Dawud's mountains and soft iron, Sulayman's copper spring and reservoirs, and the two gardens of Saba lost when the dam burst.",
+ "architecture_and_scenery": "Mountains echoing praise, a forge, a flowing copper spring, great bowls like reservoirs, and the fertile valley of Saba behind a dam.",
+ "palette": {
+  "colors": [
+   "#b87333",
+   "#6f8f4a",
+   "#3d6e8f",
+   "#e9dcc0"
+  ],
+  "lighting": "Warm forge light and green valley sun",
+  "atmosphere": "Echoes in the mountains, water over the dam"
+ },
+ "areas": [
+  {
+   "name": "Mountains of Praise",
+   "reference": "34:10",
+   "anchor_phrase": "mountains",
+   "description": "Hills that echo as if repeating praise."
+  },
+  {
+   "name": "Copper Spring",
+   "reference": "34:12",
+   "anchor_phrase": "copper",
+   "description": "A glowing spring of liquid copper."
+  },
+  {
+   "name": "Great Bowls",
+   "reference": "34:13",
+   "anchor_phrase": "reservoirs",
+   "description": "Bowls like reservoirs and fixed kettles."
+  },
+  {
+   "name": "Gardens of Saba",
+   "reference": "34:15",
+   "anchor_phrase": "two fields of gardens",
+   "description": "Gardens on either side of a valley."
+  },
+  {
+   "name": "Flood of the Dam",
+   "reference": "34:16",
+   "anchor_phrase": "flood of the dam",
+   "description": "The dam breaking and gardens changing to bitter fruit."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Work in gratitude",
+   "reference": "34:13",
+   "description": "Fill the great bowls while reading 34:13 (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Before and after",
+   "reference": "34:15-16",
+   "description": "Compare the gardens before and after and talk about gratitude.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration keeps prophets unseen and draws the gratitude lesson from the ayahs.",
+ "learning_objectives": [
+  "Retell the people of Saba",
+  "Explain gratitude for blessings",
+  "Name the gifts of Dawud and Sulayman"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "34:10",
+   "anchor_phrase": "mountains",
+   "element": "Mountains of Praise"
+  },
+  {
+   "reference": "34:12",
+   "anchor_phrase": "copper",
+   "element": "Copper Spring"
+  },
+  {
+   "reference": "34:13",
+   "anchor_phrase": "reservoirs",
+   "element": "Great Bowls"
+  },
+  {
+   "reference": "34:15",
+   "anchor_phrase": "two fields of gardens",
+   "element": "Gardens of Saba"
+  },
+  {
+   "reference": "34:16",
+   "anchor_phrase": "flood of the dam",
+   "element": "Flood of the Dam"
+  }
+ ],
+ "required_assets": [
+  "Mountains",
+  "Forge",
+  "Copper spring",
+  "Valley with dam",
+  "Gardens"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "34:10",
+  "34:10-11",
+  "34:12",
+  "34:12-14",
+  "34:13",
+  "34:15",
+  "34:15-16",
+  "34:15-17",
+  "34:16"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

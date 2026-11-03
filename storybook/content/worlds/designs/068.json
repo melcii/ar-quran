@@ -1,0 +1,118 @@
+{
+ "surah": 68,
+ "name": {
+  "transliterated": "Al-Qalam",
+  "meaning": "The Pen"
+ },
+ "ayah_count": 52,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "Good character",
+  "Generosity",
+  "Patience"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Owners of the garden",
+   "reference": "68:17-33",
+   "anchor_phrase": "companions of the garden"
+  }
+ ],
+ "summary_for_children": "Al-Qalam means The Pen. It praises the Prophet's (peace be upon him) great character and tells of garden owners who planned to keep everything from the poor and lost their garden.",
+ "world_title": "The Pen and the Burnt Garden",
+ "environment_concept": "A writing desk with a pen, and a garden whose owners swore to harvest without giving to the poor, and found it ruined.",
+ "architecture_and_scenery": "A desk with pen and ink, a garden at dawn, a ruined garden.",
+ "palette": {
+  "colors": [
+   "#2a2a2a",
+   "#6f8f4a",
+   "#8c5a3a"
+  ],
+  "lighting": "Dawn light",
+  "atmosphere": "Quiet"
+ },
+ "areas": [
+  {
+   "name": "Pen",
+   "reference": "68:1",
+   "anchor_phrase": "pen",
+   "description": "A pen and inkwell."
+  },
+  {
+   "name": "Garden at Dawn",
+   "reference": "68:17",
+   "anchor_phrase": "garden",
+   "description": "A garden ready to harvest."
+  },
+  {
+   "name": "Ruined Garden",
+   "reference": "68:20",
+   "anchor_phrase": "reaped",
+   "description": "A garden that looks reaped."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Share the harvest",
+   "reference": "68:17-24",
+   "description": "Choose to share the harvest (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Writing",
+   "reference": "68:1",
+   "description": "Trace letters with a pen.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "No people shown.",
+ "learning_objectives": [
+  "Retell the garden owners",
+  "Explain generosity"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "68:1",
+   "anchor_phrase": "pen",
+   "element": "Pen"
+  },
+  {
+   "reference": "68:17",
+   "anchor_phrase": "garden",
+   "element": "Garden at Dawn"
+  },
+  {
+   "reference": "68:20",
+   "anchor_phrase": "reaped",
+   "element": "Ruined Garden"
+  }
+ ],
+ "required_assets": [
+  "Desk",
+  "Garden"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "68:1",
+  "68:17",
+  "68:17-24",
+  "68:17-33",
+  "68:20"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

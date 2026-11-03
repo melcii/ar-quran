@@ -1,0 +1,155 @@
+{
+ "surah": 36,
+ "name": {
+  "transliterated": "Yā-Sīn",
+  "meaning": "Ya Sin"
+ },
+ "ayah_count": 83,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "Signs in creation",
+  "Resurrection",
+  "Messengers",
+  "Gratitude"
+ ],
+ "narrative_passages": [
+  {
+   "title": "The town and the man who came running",
+   "reference": "36:13-27",
+   "anchor_phrase": "running"
+  }
+ ],
+ "summary_for_children": "Ya-Sin is called the heart of the Quran. It tells of a town that rejected messengers and a man who came running to support them. It shows signs: dead earth made alive, the night, the sun and moon, and ships at sea.",
+ "world_title": "The Orbiting Night",
+ "environment_concept": "A town and its surroundings under a clockwork sky: dead earth made alive, springs, the moon through its phases, and a laden ship on the sea.",
+ "architecture_and_scenery": "A town with a messenger's road, palm and vine gardens, springs, a shoreline with a laden ship, and a huge night sky.",
+ "palette": {
+  "colors": [
+   "#0f1a33",
+   "#e6d38a",
+   "#6a8f4a",
+   "#3f6d8f"
+  ],
+  "lighting": "Dusk to night to dawn cycle; moon phases",
+  "atmosphere": "Calm night, gentle sea"
+ },
+ "areas": [
+  {
+   "name": "Dead Earth Alive",
+   "reference": "36:33",
+   "anchor_phrase": "dead earth",
+   "description": "Dry land that bursts with grain."
+  },
+  {
+   "name": "Gardens and Springs",
+   "reference": "36:34",
+   "anchor_phrase": "springs",
+   "description": "Palms, vines and springs."
+  },
+  {
+   "name": "Phases of the Moon",
+   "reference": "36:39",
+   "anchor_phrase": "phases",
+   "description": "The moon passing through its phases."
+  },
+  {
+   "name": "Laden Ship",
+   "reference": "36:41",
+   "anchor_phrase": "laden ship",
+   "description": "A ship carrying cargo over calm water."
+  },
+  {
+   "name": "Green Tree Fire",
+   "reference": "36:80",
+   "anchor_phrase": "green tree",
+   "description": "A green tree from which fire is kindled."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Moon phases",
+   "reference": "36:39",
+   "description": "Set the moon's phases in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Orbits",
+   "reference": "36:40",
+   "description": "Keep the sun and moon in their own orbits so neither overtakes.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Pairs",
+   "reference": "36:36",
+   "description": "Match pairs found in the garden (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration follows the signs; the man who came running and the messengers are not shown.",
+ "learning_objectives": [
+  "Name signs in Ya-Sin",
+  "Explain the moon's phases",
+  "Explain resurrection as a sign"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "36:33",
+   "anchor_phrase": "dead earth",
+   "element": "Dead Earth Alive"
+  },
+  {
+   "reference": "36:34",
+   "anchor_phrase": "springs",
+   "element": "Gardens and Springs"
+  },
+  {
+   "reference": "36:39",
+   "anchor_phrase": "phases",
+   "element": "Phases of the Moon"
+  },
+  {
+   "reference": "36:41",
+   "anchor_phrase": "laden ship",
+   "element": "Laden Ship"
+  },
+  {
+   "reference": "36:80",
+   "anchor_phrase": "green tree",
+   "element": "Green Tree Fire"
+  }
+ ],
+ "required_assets": [
+  "Town",
+  "Gardens and springs",
+  "Night sky",
+  "Ship",
+  "Green tree"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "36:13-27",
+  "36:33",
+  "36:34",
+  "36:36",
+  "36:39",
+  "36:40",
+  "36:41",
+  "36:80"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

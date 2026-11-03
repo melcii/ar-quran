@@ -1,0 +1,185 @@
+{
+ "surah": 27,
+ "name": {
+  "transliterated": "An-Naml",
+  "meaning": "The Ant"
+ },
+ "ayah_count": 93,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "Gratitude for blessings",
+  "Respect for small creatures",
+  "Seeking knowledge",
+  "Turning from false worship to Allah"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Musa and the fire",
+   "reference": "27:7-14",
+   "anchor_phrase": "fire"
+  },
+  {
+   "title": "The valley of the ants",
+   "reference": "27:17-19",
+   "anchor_phrase": "valley of the ants"
+  },
+  {
+   "title": "The hoopoe's news",
+   "reference": "27:20-28",
+   "anchor_phrase": "hoopoe"
+  },
+  {
+   "title": "The throne",
+   "reference": "27:38-42",
+   "anchor_phrase": "throne"
+  },
+  {
+   "title": "The glass palace",
+   "reference": "27:44",
+   "anchor_phrase": "palace"
+  },
+  {
+   "title": "Salih and the plotters",
+   "reference": "27:45-53",
+   "anchor_phrase": "Thamud"
+  }
+ ],
+ "summary_for_children": "An-Naml means The Ants. It tells of Sulayman, who heard an ant warn the others, of a hoopoe that brought news of the Queen of Sheba, and how she came to believe in Allah. It also tells briefly of Musa, Salih and Lut.",
+ "world_title": "Valley of the Ants and the Glass Palace",
+ "environment_concept": "A journey with Sulayman's story told from the land around it: the valley of the ants, the hoopoe's flight to Sheba, a throne that appears in a blink, and a palace whose floor looks like water.",
+ "architecture_and_scenery": "A sunny valley with ant hills, cedar and stone, a kingdom of Sheba with sun-worshipping courtyards, and a palace floored with smooth glass over water.",
+ "palette": {
+  "colors": [
+   "#d8b878",
+   "#6b8f4a",
+   "#2f6f8f",
+   "#f4e6c4",
+   "#b0773d"
+  ],
+  "lighting": "Warm golden valley light, then the cool reflective glow of the glass palace",
+  "atmosphere": "Busy valley sounds of insects and birds; a hushed palace"
+ },
+ "areas": [
+  {
+   "name": "Valley of the Ants",
+   "reference": "27:18",
+   "anchor_phrase": "valley of the ants",
+   "description": "Ant hills and tiny paths; the player walks carefully so as not to harm them."
+  },
+  {
+   "name": "The Hoopoe's Perch",
+   "reference": "27:20",
+   "anchor_phrase": "hoopoe",
+   "description": "An empty perch among the birds where the hoopoe should be."
+  },
+  {
+   "name": "Road to Sheba",
+   "reference": "27:22",
+   "anchor_phrase": "Sheba",
+   "description": "A long road to a southern kingdom."
+  },
+  {
+   "name": "The Glass Floor",
+   "reference": "27:44",
+   "anchor_phrase": "smooth with glass",
+   "description": "A palace floor of glass over water."
+  },
+  {
+   "name": "Moving Mountains",
+   "reference": "27:88",
+   "anchor_phrase": "passing of clouds",
+   "description": "Distant mountains drifting like clouds: symbolic, at the world's edge."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Walk with care",
+   "reference": "27:18",
+   "description": "Cross the valley without stepping on any ant paths (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Find the hoopoe",
+   "reference": "27:20-22",
+   "description": "Search the birds and follow the hoopoe's trail to Sheba (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Gratitude prayer",
+   "reference": "27:19",
+   "description": "Read 27:19 at the valley's end to light it.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration tells each scene from the ayahs. Sulayman, the Queen and all people are never shown or voiced; animals act only as the ayahs say.",
+ "learning_objectives": [
+  "Retell the ant and the hoopoe",
+  "Explain gratitude in 27:19",
+  "Explain that the Queen turned to Allah"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "27:18",
+   "anchor_phrase": "valley of the ants",
+   "element": "Valley of the Ants"
+  },
+  {
+   "reference": "27:20",
+   "anchor_phrase": "hoopoe",
+   "element": "The Hoopoe's Perch"
+  },
+  {
+   "reference": "27:22",
+   "anchor_phrase": "Sheba",
+   "element": "Road to Sheba"
+  },
+  {
+   "reference": "27:44",
+   "anchor_phrase": "smooth with glass",
+   "element": "The Glass Floor"
+  },
+  {
+   "reference": "27:88",
+   "anchor_phrase": "passing of clouds",
+   "element": "Moving Mountains"
+  }
+ ],
+ "required_assets": [
+  "Valley with ant hills",
+  "Birds and empty perch",
+  "Southern kingdom",
+  "Glass palace floor",
+  "Cloud-like mountains"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "27:7-14",
+  "27:17-19",
+  "27:18",
+  "27:19",
+  "27:20",
+  "27:20-22",
+  "27:20-28",
+  "27:22",
+  "27:38-42",
+  "27:44",
+  "27:45-53",
+  "27:88"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

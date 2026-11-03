@@ -1,0 +1,177 @@
+{
+ "surah": 11,
+ "name": {
+  "transliterated": "Hūd",
+  "meaning": "Hud"
+ },
+ "ayah_count": 123,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "Patience in calling to Allah",
+  "Nuh and the ark",
+  "Messengers to many peoples",
+  "Fair measure"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Nuh and the ark",
+   "reference": "11:25-49",
+   "anchor_phrase": "Noah"
+  },
+  {
+   "title": "Hud and 'Aad",
+   "reference": "11:50-60",
+   "anchor_phrase": "Aad"
+  },
+  {
+   "title": "Salih and Thamud",
+   "reference": "11:61-68",
+   "anchor_phrase": "Thamud"
+  },
+  {
+   "title": "Ibrahim's guests",
+   "reference": "11:69-76",
+   "anchor_phrase": "roasted calf"
+  },
+  {
+   "title": "Lut",
+   "reference": "11:77-83",
+   "anchor_phrase": "Lot"
+  },
+  {
+   "title": "Shu'ayb and Madyan",
+   "reference": "11:84-95",
+   "anchor_phrase": "Madyan"
+  }
+ ],
+ "summary_for_children": "Surah Hud tells how Nuh built the ark and was carried safely, and how Hud, Salih, Ibrahim, Lut and Shu'ayb called their peoples.",
+ "world_title": "The Ark Coast",
+ "environment_concept": "A shipyard where the ark is built, a flood with waves like mountains, and the green slopes of al-Judiyy where the ark comes to rest.",
+ "architecture_and_scenery": "Timber shipyard, rising flood plain, high waves, a mountain slope, and a tent where guests are welcomed.",
+ "palette": {
+  "colors": [
+   "#5b4a38",
+   "#3a5a78",
+   "#9fb7c8",
+   "#6a8a4a"
+  ],
+  "lighting": "Grey storm light to clear sun",
+  "atmosphere": "Rain, wind, rising water, then clean air"
+ },
+ "areas": [
+  {
+   "name": "Shipyard",
+   "reference": "11:37",
+   "anchor_phrase": "construct the ship",
+   "description": "Timbers, tools and the ark's frame."
+  },
+  {
+   "name": "Rising Waters",
+   "reference": "11:40",
+   "anchor_phrase": "oven",
+   "description": "Water wells up across the plain."
+  },
+  {
+   "name": "Waves like Mountains",
+   "reference": "11:42",
+   "anchor_phrase": "waves like mountains",
+   "description": "Huge waves seen from the deck."
+  },
+  {
+   "name": "Slopes of al-Judiyy",
+   "reference": "11:44",
+   "anchor_phrase": "Judiyy",
+   "description": "A green mountainside where the ark rests."
+  },
+  {
+   "name": "Tent of Guests",
+   "reference": "11:69",
+   "anchor_phrase": "roasted calf",
+   "description": "A welcoming tent; no one is shown."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Build the ark",
+   "reference": "11:37",
+   "description": "Place timbers on the ark's frame; the narrator notes this is an adaptation.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Fair measure",
+   "reference": "11:85",
+   "description": "Balance a market scale so everyone receives full measure.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "The narrator follows the Quran's order of events and labels added detail as explanation.",
+ "learning_objectives": [
+  "Retell the ark account",
+  "Explain patience in hard times",
+  "Name the messengers in Surah Hud"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "11:37",
+   "anchor_phrase": "construct the ship",
+   "element": "Shipyard"
+  },
+  {
+   "reference": "11:40",
+   "anchor_phrase": "oven",
+   "element": "Rising Waters"
+  },
+  {
+   "reference": "11:42",
+   "anchor_phrase": "waves like mountains",
+   "element": "Waves like Mountains"
+  },
+  {
+   "reference": "11:44",
+   "anchor_phrase": "Judiyy",
+   "element": "Slopes of al-Judiyy"
+  },
+  {
+   "reference": "11:69",
+   "anchor_phrase": "roasted calf",
+   "element": "Tent of Guests"
+  }
+ ],
+ "required_assets": [
+  "Shipyard and ark",
+  "Flood water system",
+  "Mountain slope",
+  "Tent"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "11:25-49",
+  "11:37",
+  "11:40",
+  "11:42",
+  "11:44",
+  "11:50-60",
+  "11:61-68",
+  "11:69",
+  "11:69-76",
+  "11:77-83",
+  "11:84-95",
+  "11:85"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

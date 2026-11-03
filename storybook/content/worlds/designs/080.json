@@ -1,0 +1,122 @@
+{
+ "surah": 80,
+ "name": {
+  "transliterated": "‘Abasa",
+  "meaning": "He Frowned"
+ },
+ "ayah_count": 42,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "Humility and caring for every person",
+  "Food as a sign"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "'Abasa reminds us to care for everyone who seeks guidance and asks us to look at our food: water, earth, grain, grapes, olives and fruit.",
+ "world_title": "Look at Your Food",
+ "environment_concept": "A farm where the journey of food is followed: torrents of water, split earth, grain, grapes, olives, palms and fruit.",
+ "architecture_and_scenery": "Farm terraces with olives, palms, grapes and grain.",
+ "palette": {
+  "colors": [
+   "#6f8f4a",
+   "#c9a46a",
+   "#7a3a5a"
+  ],
+  "lighting": "Bright farm day",
+  "atmosphere": "Rain then sun"
+ },
+ "areas": [
+  {
+   "name": "Torrents",
+   "reference": "80:25",
+   "anchor_phrase": "torrents",
+   "description": "Water pouring."
+  },
+  {
+   "name": "Split Earth",
+   "reference": "80:26",
+   "anchor_phrase": "splitting",
+   "description": "Sprouts breaking through."
+  },
+  {
+   "name": "Olives and Palms",
+   "reference": "80:29",
+   "anchor_phrase": "olive and palm trees",
+   "description": "Olive and palm trees."
+  },
+  {
+   "name": "Fruit and Grass",
+   "reference": "80:31",
+   "anchor_phrase": "fruit and grass",
+   "description": "Fruit trees and pasture."
+  }
+ ],
+ "activities": [
+  {
+   "name": "From seed to plate",
+   "reference": "80:24-32",
+   "description": "Follow food's journey (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Welcome everyone",
+   "reference": "80:1-10",
+   "description": "Welcome every visitor equally.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "No person shown.",
+ "learning_objectives": [
+  "Explain 80:24-32",
+  "Explain caring for everyone"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "80:25",
+   "anchor_phrase": "torrents",
+   "element": "Torrents"
+  },
+  {
+   "reference": "80:26",
+   "anchor_phrase": "splitting",
+   "element": "Split Earth"
+  },
+  {
+   "reference": "80:29",
+   "anchor_phrase": "olive and palm trees",
+   "element": "Olives and Palms"
+  },
+  {
+   "reference": "80:31",
+   "anchor_phrase": "fruit and grass",
+   "element": "Fruit and Grass"
+  }
+ ],
+ "required_assets": [
+  "Farm terraces"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "80:1-10",
+  "80:24-32",
+  "80:25",
+  "80:26",
+  "80:29",
+  "80:31"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

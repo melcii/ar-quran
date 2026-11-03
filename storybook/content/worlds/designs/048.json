@@ -1,0 +1,108 @@
+{
+ "surah": 48,
+ "name": {
+  "transliterated": "Al-Fatḥ",
+  "meaning": "The Victory"
+ },
+ "ayah_count": 29,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Victory from Allah",
+  "Tranquillity",
+  "Loyalty"
+ ],
+ "narrative_passages": [
+  {
+   "title": "The pledge under the tree",
+   "reference": "48:18",
+   "anchor_phrase": "under the tree"
+  }
+ ],
+ "summary_for_children": "Al-Fath means The Victory. It speaks of the believers' pledge under a tree, of tranquillity Allah sent to their hearts, and compares them to a seed that grows strong.",
+ "world_title": "The Tree of the Pledge",
+ "environment_concept": "A plain with a single tree where a pledge was made, and a field of seedlings growing strong.",
+ "architecture_and_scenery": "Open plain, a single tree, a field of crops whose shoots grow stronger.",
+ "palette": {
+  "colors": [
+   "#7a9a5a",
+   "#e8d8a8",
+   "#5a6b4a",
+   "#3f6d8f"
+  ],
+  "lighting": "Calm sunrise",
+  "atmosphere": "Tranquil"
+ },
+ "areas": [
+  {
+   "name": "The Tree",
+   "reference": "48:18",
+   "anchor_phrase": "under the tree",
+   "description": "A single tree on a plain; no one shown."
+  },
+  {
+   "name": "Growing Shoot",
+   "reference": "48:29",
+   "anchor_phrase": "plant which produces its offshoots",
+   "description": "A shoot growing strong on its stalk."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Grow the shoot",
+   "reference": "48:29",
+   "description": "Help a shoot become strong (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Tranquillity",
+   "reference": "48:4",
+   "description": "A breathing game for calm.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "No companions shown; narration from ayahs.",
+ "learning_objectives": [
+  "Explain tranquillity",
+  "Explain the plant example",
+  "Retell the pledge"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "48:18",
+   "anchor_phrase": "under the tree",
+   "element": "The Tree"
+  },
+  {
+   "reference": "48:29",
+   "anchor_phrase": "plant which produces its offshoots",
+   "element": "Growing Shoot"
+  }
+ ],
+ "required_assets": [
+  "Plain",
+  "Tree",
+  "Crop field"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "48:4",
+  "48:18",
+  "48:29"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

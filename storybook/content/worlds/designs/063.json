@@ -1,0 +1,79 @@
+{
+ "surah": 63,
+ "name": {
+  "transliterated": "Al-Munāfiqūn",
+  "meaning": "The Hypocrites"
+ },
+ "ayah_count": 11,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Honesty",
+  "Spending before it is too late"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Munafiqun means The Hypocrites. It warns against saying one thing and meaning another, and tells us to spend from what we have before it is too late.",
+ "world_title": "Before the Term Ends",
+ "environment_concept": "A harvest world where provision is shared before the season ends.",
+ "architecture_and_scenery": "Orchards, baskets, a timeline of seasons.",
+ "palette": {
+  "colors": [
+   "#c9a46a",
+   "#6f8f4a",
+   "#efe6d2"
+  ],
+  "lighting": "Autumn light",
+  "atmosphere": "Calm"
+ },
+ "areas": [
+  {
+   "name": "Harvest Baskets",
+   "reference": "63:10",
+   "anchor_phrase": "spend",
+   "description": "Baskets to share."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Share now",
+   "reference": "63:10",
+   "description": "Share provisions before the season ends (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration gentle.",
+ "learning_objectives": [
+  "Explain honesty",
+  "Explain 63:10"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "63:10",
+   "anchor_phrase": "spend",
+   "element": "Harvest Baskets"
+  }
+ ],
+ "required_assets": [
+  "Orchard",
+  "Baskets"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "63:10"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

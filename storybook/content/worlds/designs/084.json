@@ -1,0 +1,90 @@
+{
+ "surah": 84,
+ "name": {
+  "transliterated": "Al-Inshiqāq",
+  "meaning": "The Sundering"
+ },
+ "ayah_count": 25,
+ "content_type": {
+  "primary": "hereafter (symbolic only)",
+  "secondary": []
+ },
+ "themes": [
+  "Stages of life",
+  "Accountability"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Inshiqaq speaks of the sky splitting in words, and swears by the twilight, the night and the full moon.",
+ "world_title": "Twilight and the Full Moon",
+ "environment_concept": "A world of twilight glow, enveloping night and a full moon, by which the surah swears.",
+ "architecture_and_scenery": "Evening horizon, night, full moon.",
+ "palette": {
+  "colors": [
+   "#e07a3a",
+   "#1c2541",
+   "#f0e6c0"
+  ],
+  "lighting": "Twilight to full moon",
+  "atmosphere": "Still"
+ },
+ "areas": [
+  {
+   "name": "Twilight Glow",
+   "reference": "84:16",
+   "anchor_phrase": "twilight",
+   "description": "Glow at sunset."
+  },
+  {
+   "name": "Full Moon",
+   "reference": "84:18",
+   "anchor_phrase": "full",
+   "description": "The moon becoming full."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Moon phases",
+   "reference": "84:18",
+   "description": "Watch the moon grow full (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "The Day is not shown.",
+ "learning_objectives": [
+  "Explain the oaths"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "84:16",
+   "anchor_phrase": "twilight",
+   "element": "Twilight Glow"
+  },
+  {
+   "reference": "84:18",
+   "anchor_phrase": "full",
+   "element": "Full Moon"
+  }
+ ],
+ "required_assets": [
+  "Horizon",
+  "Night sky"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "84:16",
+  "84:18"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

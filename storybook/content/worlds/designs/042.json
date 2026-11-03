@@ -1,0 +1,115 @@
+{
+ "surah": 42,
+ "name": {
+  "transliterated": "Ash-Shūra",
+  "meaning": "The Consultation"
+ },
+ "ayah_count": 53,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Consultation",
+  "Patience and gratitude",
+  "Forgiveness",
+  "Signs in creation"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Ash-Shura means Consultation. It praises believers who decide their affairs by consulting each other, and shows signs like ships on the sea that move only by the wind Allah sends.",
+ "world_title": "Ships Like Mountains",
+ "environment_concept": "A harbour where great ships rest when the wind stops and sail when it blows, with a council house where matters are decided by consultation.",
+ "architecture_and_scenery": "Large harbour, a calm sea that can turn still, a simple council house with a circle of seats.",
+ "palette": {
+  "colors": [
+   "#2f5d7c",
+   "#e9dcc0",
+   "#7a8f68",
+   "#c08a4a"
+  ],
+  "lighting": "Shifting sea light",
+  "atmosphere": "Wind that rises and falls"
+ },
+ "areas": [
+  {
+   "name": "Harbour of Mountain Ships",
+   "reference": "42:32",
+   "anchor_phrase": "ships in the sea",
+   "description": "Huge ships like mountains."
+  },
+  {
+   "name": "Stilled Wind",
+   "reference": "42:33",
+   "anchor_phrase": "still the wind",
+   "description": "When the wind stops, the ships rest motionless."
+  },
+  {
+   "name": "Council Circle",
+   "reference": "42:38",
+   "anchor_phrase": "consultation",
+   "description": "A circle of seats for deciding together."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Decide together",
+   "reference": "42:38",
+   "description": "Make group choices by asking each character's opinion (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Wind and sail",
+   "reference": "42:32-33",
+   "description": "Raise and lower the wind and watch the ships.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration ties consultation and patience to daily life.",
+ "learning_objectives": [
+  "Explain shura",
+  "Explain patience and gratitude in 42:33",
+  "Describe the ship sign"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "42:32",
+   "anchor_phrase": "ships in the sea",
+   "element": "Harbour of Mountain Ships"
+  },
+  {
+   "reference": "42:33",
+   "anchor_phrase": "still the wind",
+   "element": "Stilled Wind"
+  },
+  {
+   "reference": "42:38",
+   "anchor_phrase": "consultation",
+   "element": "Council Circle"
+  }
+ ],
+ "required_assets": [
+  "Harbour",
+  "Ships",
+  "Council circle"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "42:32",
+  "42:32-33",
+  "42:33",
+  "42:38"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

@@ -1,0 +1,138 @@
+{
+ "surah": 13,
+ "name": {
+  "transliterated": "Ar-Ra‘d",
+  "meaning": "The Thunder"
+ },
+ "ayah_count": 43,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "Signs in creation",
+  "Truth and falsehood",
+  "Hearts at rest in remembrance"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Ar-Ra'd shows rivers, gardens, lightning and thunder as signs of Allah, and compares truth to water that stays and falsehood to foam that goes away.",
+ "world_title": "The Valley of Thunder",
+ "environment_concept": "A mountain valley of rivers, gardens side by side, lightning and thunder, and a flood that leaves foam behind.",
+ "architecture_and_scenery": "River valley between mountains, terraced neighbouring plots, palm groves, storm clouds.",
+ "palette": {
+  "colors": [
+   "#3b4652",
+   "#6b7f5a",
+   "#c9d2d9",
+   "#e6c86e"
+  ],
+  "lighting": "Storm light with lightning flashes",
+  "atmosphere": "Thunder, rain, then fresh air"
+ },
+ "areas": [
+  {
+   "name": "Rivers between Mountains",
+   "reference": "13:3",
+   "anchor_phrase": "rivers",
+   "description": "Rivers running from the mountains."
+  },
+  {
+   "name": "Neighbouring Plots",
+   "reference": "13:4",
+   "anchor_phrase": "neighboring plots",
+   "description": "Plots side by side growing different fruits from one water."
+  },
+  {
+   "name": "Lightning Ridge",
+   "reference": "13:12",
+   "anchor_phrase": "heavy clouds",
+   "description": "Lightning flashes across the ridge."
+  },
+  {
+   "name": "Thunder Hall",
+   "reference": "13:13",
+   "anchor_phrase": "thunder",
+   "description": "A great rock hall where thunder echoes."
+  },
+  {
+   "name": "Foam Pool",
+   "reference": "13:17",
+   "anchor_phrase": "foam",
+   "description": "A pool where foam drifts away and water remains."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Water and foam",
+   "reference": "13:17",
+   "description": "Let floodwater settle: foam floats away, useful water stays.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "One water, many fruits",
+   "reference": "13:4",
+   "description": "Water neighbouring plots and see different fruits grow.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "The narrator reads each sign's ayah when it appears.",
+ "learning_objectives": [
+  "Explain the example of water and foam",
+  "Name signs in the weather",
+  "Read 13:28"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "13:3",
+   "anchor_phrase": "rivers",
+   "element": "Rivers between Mountains"
+  },
+  {
+   "reference": "13:4",
+   "anchor_phrase": "neighboring plots",
+   "element": "Neighbouring Plots"
+  },
+  {
+   "reference": "13:12",
+   "anchor_phrase": "heavy clouds",
+   "element": "Lightning Ridge"
+  },
+  {
+   "reference": "13:13",
+   "anchor_phrase": "thunder",
+   "element": "Thunder Hall"
+  },
+  {
+   "reference": "13:17",
+   "anchor_phrase": "foam",
+   "element": "Foam Pool"
+  }
+ ],
+ "required_assets": [
+  "Mountain valley",
+  "Storm system with lightning",
+  "Terraced plots",
+  "Flood pool with foam"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "13:3",
+  "13:4",
+  "13:12",
+  "13:13",
+  "13:17"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

@@ -1,0 +1,114 @@
+{
+ "surah": 103,
+ "name": {
+  "transliterated": "Al-‘Aṣr",
+  "meaning": "The Declining Day"
+ },
+ "ayah_count": 3,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Value of time",
+  "Faith",
+  "Good deeds",
+  "Truth and patience"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-'Asr means Time. It says all people are in loss except those who believe, do good, and remind each other of truth and patience.",
+ "world_title": "The Hourglass of Time",
+ "environment_concept": "A world built inside the flow of time: sand pouring from a vast hourglass across a dune landscape, and four keys that save from loss: faith, good deeds, advising truth and advising patience.",
+ "architecture_and_scenery": "A huge hourglass on a dune plain, a sundial, four gates.",
+ "palette": {
+  "colors": [
+   "#d9b46a",
+   "#8c6b4a",
+   "#3f6d8f",
+   "#efe6d2"
+  ],
+  "lighting": "Late afternoon sun ('Asr)",
+  "atmosphere": "Sand falling"
+ },
+ "areas": [
+  {
+   "name": "Hourglass Plain",
+   "reference": "103:1",
+   "anchor_phrase": "time",
+   "description": "Sand flowing from a great hourglass."
+  },
+  {
+   "name": "Plain of Loss",
+   "reference": "103:2",
+   "anchor_phrase": "loss",
+   "description": "Footprints fading in the sand."
+  },
+  {
+   "name": "Four Gates",
+   "reference": "103:3",
+   "anchor_phrase": "patience",
+   "description": "Gates of faith, deeds, truth and patience."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Before the sand runs out",
+   "reference": "103:1-3",
+   "description": "Collect four keys before the hourglass empties (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Advise a friend",
+   "reference": "103:3",
+   "description": "Help another character with truth and patience.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration explains each key.",
+ "learning_objectives": [
+  "Explain the four qualities",
+  "Explain why time matters"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "103:1",
+   "anchor_phrase": "time",
+   "element": "Hourglass Plain"
+  },
+  {
+   "reference": "103:2",
+   "anchor_phrase": "loss",
+   "element": "Plain of Loss"
+  },
+  {
+   "reference": "103:3",
+   "anchor_phrase": "patience",
+   "element": "Four Gates"
+  }
+ ],
+ "required_assets": [
+  "Hourglass",
+  "Dunes",
+  "Four gates"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "103:1",
+  "103:1-3",
+  "103:2",
+  "103:3"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

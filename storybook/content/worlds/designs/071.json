@@ -1,0 +1,133 @@
+{
+ "surah": 71,
+ "name": {
+  "transliterated": "Nūḥ",
+  "meaning": "Noah"
+ },
+ "ayah_count": 28,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "Patience in calling to good",
+  "Seeking forgiveness",
+  "Signs in creation"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Nuh calls his people",
+   "reference": "71:5-20",
+   "anchor_phrase": "night and day"
+  }
+ ],
+ "summary_for_children": "Surah Nuh tells how Nuh called his people for a very long time, by day and by night, telling them to ask Allah's forgiveness so He would send rain, gardens and rivers.",
+ "world_title": "Nuh's Call by Night and Day",
+ "environment_concept": "A village where a call goes out by night and day, in public and in private, offering showers of rain, gardens and rivers to those who seek forgiveness; the idols' names stand as empty stones.",
+ "architecture_and_scenery": "A village square, private courtyards, rain clouds over gardens and rivers, and a row of nameless standing stones.",
+ "palette": {
+  "colors": [
+   "#3f6d8f",
+   "#7a9a5a",
+   "#c9b090",
+   "#1c2541"
+  ],
+  "lighting": "Day and night alternating",
+  "atmosphere": "Rain showers"
+ },
+ "areas": [
+  {
+   "name": "Showers of Forgiveness",
+   "reference": "71:11",
+   "anchor_phrase": "showers",
+   "description": "Rain over gardens and rivers."
+  },
+  {
+   "name": "Gardens and Rivers",
+   "reference": "71:12",
+   "anchor_phrase": "gardens",
+   "description": "Gardens and rivers."
+  },
+  {
+   "name": "Seven Heavens and Lamp",
+   "reference": "71:16",
+   "anchor_phrase": "burning lamp",
+   "description": "A sun like a lamp and a reflecting moon."
+  },
+  {
+   "name": "Roads of the Expanse",
+   "reference": "71:20",
+   "anchor_phrase": "roads",
+   "description": "Roads over a wide land."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Ask forgiveness",
+   "reference": "71:10-12",
+   "description": "Read 71:10 and watch rain return to gardens (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Sun and moon",
+   "reference": "71:16",
+   "description": "Tell the burning lamp from the reflected light.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Nuh is not shown or voiced.",
+ "learning_objectives": [
+  "Explain seeking forgiveness",
+  "Explain the sun and moon in 71:16"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "71:11",
+   "anchor_phrase": "showers",
+   "element": "Showers of Forgiveness"
+  },
+  {
+   "reference": "71:12",
+   "anchor_phrase": "gardens",
+   "element": "Gardens and Rivers"
+  },
+  {
+   "reference": "71:16",
+   "anchor_phrase": "burning lamp",
+   "element": "Seven Heavens and Lamp"
+  },
+  {
+   "reference": "71:20",
+   "anchor_phrase": "roads",
+   "element": "Roads of the Expanse"
+  }
+ ],
+ "required_assets": [
+  "Village",
+  "Rain gardens",
+  "Sky",
+  "Roads"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "71:5-20",
+  "71:10-12",
+  "71:11",
+  "71:12",
+  "71:16",
+  "71:20"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

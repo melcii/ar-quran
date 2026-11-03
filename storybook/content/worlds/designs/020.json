@@ -1,0 +1,181 @@
+{
+ "surah": 20,
+ "name": {
+  "transliterated": "Ṭā-Hā",
+  "meaning": "Ta-Ha"
+ },
+ "ayah_count": 135,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "Musa's calling",
+  "Trust in Allah while afraid",
+  "Speaking gently to tyrants",
+  "Turning away from idols",
+  "Remembrance"
+ ],
+ "narrative_passages": [
+  {
+   "title": "The fire and the call",
+   "reference": "20:9-24",
+   "anchor_phrase": "fire"
+  },
+  {
+   "title": "The chest on the river",
+   "reference": "20:37-40",
+   "anchor_phrase": "chest"
+  },
+  {
+   "title": "Gentle words to Pharaoh",
+   "reference": "20:43-48",
+   "anchor_phrase": "gentle"
+  },
+  {
+   "title": "The dry path in the sea",
+   "reference": "20:77-79",
+   "anchor_phrase": "dry path"
+  },
+  {
+   "title": "The calf",
+   "reference": "20:85-97",
+   "anchor_phrase": "calf"
+  }
+ ],
+ "summary_for_children": "Surah Ta-Ha tells how Musa saw a fire in the night and was called by Allah, how as a baby he was placed in a chest on the river, how he and Harun went to Pharaoh with gentle words, and how Allah saved the believers through the sea.",
+ "world_title": "Fire in the Valley of Tuwa",
+ "environment_concept": "A night journey toward a distant fire that becomes the start of Musa's mission: a sacred valley, a river with a floating chest, the palace road, a dry path through the sea and a lonely desert where a calf is melted away.",
+ "architecture_and_scenery": "Dark desert valley with a single far-off fire, a reedy riverbank, a sandstone palace forecourt, a parted sea floor of wet sand, and a camp beneath bare hills.",
+ "palette": {
+  "colors": [
+   "#141a2e",
+   "#e0a050",
+   "#3f6d7a",
+   "#d8c39a",
+   "#8c5a3a"
+  ],
+  "lighting": "One warm firelight against a blue night, then hard desert sun",
+  "atmosphere": "Cold night wind, river reeds, sea spray"
+ },
+ "areas": [
+  {
+   "name": "The Distant Fire",
+   "reference": "20:10",
+   "anchor_phrase": "fire",
+   "description": "A single fire glowing far across the dark valley; the walk toward it begins the world."
+  },
+  {
+   "name": "Valley of Tuwa",
+   "reference": "20:12",
+   "anchor_phrase": "sacred valley",
+   "description": "A hushed valley floor: the player leaves their own sandals at the edge (adaptation)."
+  },
+  {
+   "name": "The River and the Chest",
+   "reference": "20:39",
+   "anchor_phrase": "chest",
+   "description": "A wooden chest drifting along reeds to the bank; no person is shown."
+  },
+  {
+   "name": "Dry Path Through the Sea",
+   "reference": "20:77",
+   "anchor_phrase": "dry path",
+   "description": "Walls of water either side of a dry seabed path."
+  },
+  {
+   "name": "Camp of the Calf",
+   "reference": "20:88",
+   "anchor_phrase": "calf",
+   "description": "An empty camp where a golden calf statue stands, later shown melted and scattered."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Follow the firelight",
+   "reference": "20:10",
+   "description": "Walk through the dark valley guided only by the fire, reading 20:10 at its edge.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Gentle words",
+   "reference": "20:44",
+   "description": "Choose the gentle way to speak in short scenarios, then read 20:44.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "The staff and the rope",
+   "reference": "20:66-69",
+   "description": "A sorting game separating illusion from truth; nothing is shown of Musa (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration walks in the Quran's order from the fire to the calf. Musa, Harun and Pharaoh are never shown or voiced; their words are read only as ayahs.",
+ "learning_objectives": [
+  "Retell how Musa was called",
+  "Explain why gentle speech matters",
+  "Explain why the calf was wrong to worship"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "20:10",
+   "anchor_phrase": "fire",
+   "element": "The Distant Fire"
+  },
+  {
+   "reference": "20:12",
+   "anchor_phrase": "sacred valley",
+   "element": "Valley of Tuwa"
+  },
+  {
+   "reference": "20:39",
+   "anchor_phrase": "chest",
+   "element": "The River and the Chest"
+  },
+  {
+   "reference": "20:77",
+   "anchor_phrase": "dry path",
+   "element": "Dry Path Through the Sea"
+  },
+  {
+   "reference": "20:88",
+   "anchor_phrase": "calf",
+   "element": "Camp of the Calf"
+  }
+ ],
+ "required_assets": [
+  "Night desert valley",
+  "Distant fire",
+  "River reeds and chest",
+  "Parted-sea path",
+  "Empty camp and calf statue"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "20:9-24",
+  "20:10",
+  "20:12",
+  "20:37-40",
+  "20:39",
+  "20:43-48",
+  "20:44",
+  "20:66-69",
+  "20:77",
+  "20:77-79",
+  "20:85-97",
+  "20:88"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

@@ -1,0 +1,114 @@
+{
+ "surah": 41,
+ "name": {
+  "transliterated": "Fuṣṣilat",
+  "meaning": "Explained in Detail"
+ },
+ "ayah_count": 54,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "The Quran explained in detail",
+  "Creation of heaven and earth",
+  "Signs in the horizons and in ourselves",
+  "Steadfastness"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Fussilat means Explained in Detail. It speaks of how Allah formed the heavens from smoke and the earth, and shows how still earth comes alive with rain.",
+ "world_title": "Smoke Becoming Sky",
+ "environment_concept": "A world that begins as swirling smoke and settles into heaven and earth, then a still, dusty earth that quivers and grows when rain falls.",
+ "architecture_and_scenery": "Swirling haze resolving into layered sky, a flat stilled plain, and sprouting hills.",
+ "palette": {
+  "colors": [
+   "#9aa3ad",
+   "#d8c39a",
+   "#5a8b4a",
+   "#2f4b6f"
+  ],
+  "lighting": "Hazy diffuse light clearing to blue",
+  "atmosphere": "Smoke-like mist, then rain"
+ },
+ "areas": [
+  {
+   "name": "Heaven as Smoke",
+   "reference": "41:11",
+   "anchor_phrase": "smoke",
+   "description": "A sky of drifting smoke that clears into layers."
+  },
+  {
+   "name": "Stilled Earth",
+   "reference": "41:39",
+   "anchor_phrase": "earth stilled",
+   "description": "A dry still plain."
+  },
+  {
+   "name": "Quivering Growth",
+   "reference": "41:39",
+   "anchor_phrase": "quivers and grows",
+   "description": "The plain stirs and sprouts when rain falls."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Clear the sky",
+   "reference": "41:11-12",
+   "description": "Watch smoke settle into seven layers and lamps of stars (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Rain and growth",
+   "reference": "41:39",
+   "description": "Bring rain to the stilled earth.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration stays with the ayahs and invites reflection on signs in the horizons (41:53).",
+ "learning_objectives": [
+  "Describe the smoke image",
+  "Explain rain as a sign of life",
+  "Explain steadfastness"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "41:11",
+   "anchor_phrase": "smoke",
+   "element": "Heaven as Smoke"
+  },
+  {
+   "reference": "41:39",
+   "anchor_phrase": "earth stilled",
+   "element": "Stilled Earth"
+  },
+  {
+   "reference": "41:39",
+   "anchor_phrase": "quivers and grows",
+   "element": "Quivering Growth"
+  }
+ ],
+ "required_assets": [
+  "Smoke sky",
+  "Plain",
+  "Sprouting hills"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "41:11",
+  "41:11-12",
+  "41:39"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

@@ -1,0 +1,127 @@
+{
+ "surah": 37,
+ "name": {
+  "transliterated": "Aṣ-Ṣāffāt",
+  "meaning": "Those who set the Ranks"
+ },
+ "ayah_count": 182,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "Oneness of Allah",
+  "Submission and obedience",
+  "Rescue of the prophets"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Ibrahim's trial",
+   "reference": "37:99-111",
+   "anchor_phrase": "sacrifice"
+  },
+  {
+   "title": "Yunus and the fish",
+   "reference": "37:139-148",
+   "anchor_phrase": "fish"
+  }
+ ],
+ "summary_for_children": "As-Saffat means Those Lined Up in Ranks. It tells of Nuh, Ibrahim's trial with his son, Musa and Harun, Ilyas, Lut and Yunus, and how Allah saved them.",
+ "world_title": "Ranks Beneath the Stars",
+ "environment_concept": "A sky adorned with stars above a land of prophets' stories: Nuh's survivors, Ibrahim's trial, the shore where Yunus was cast with a gourd vine.",
+ "architecture_and_scenery": "Starry dome, an ark on hills, a quiet hilltop recalling Ibrahim's trial through landscape only, a shore with a gourd vine.",
+ "palette": {
+  "colors": [
+   "#0e1630",
+   "#f0d890",
+   "#5a7a4a",
+   "#3f6d8f"
+  ],
+  "lighting": "Starlight and silver dawn",
+  "atmosphere": "Silent night, waves at dawn"
+ },
+ "areas": [
+  {
+   "name": "Adorned Sky",
+   "reference": "37:6",
+   "anchor_phrase": "adornment of stars",
+   "description": "A dome of stars."
+  },
+  {
+   "name": "Open Shore",
+   "reference": "37:145",
+   "anchor_phrase": "open shore",
+   "description": "An open shore at dawn."
+  },
+  {
+   "name": "Gourd Vine",
+   "reference": "37:146",
+   "anchor_phrase": "gourd vine",
+   "description": "A gourd vine growing over a shady spot."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Grow the vine",
+   "reference": "37:146",
+   "description": "Help a gourd vine grow by the shore (adaptation, no person shown).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Star map",
+   "reference": "37:6",
+   "description": "Light the stars that adorn the nearest heaven.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration keeps to the ayahs; no prophet or son is shown. The trial is told only with words from the ayahs.",
+ "learning_objectives": [
+  "Explain submission in Ibrahim's story",
+  "Retell Yunus briefly",
+  "Name prophets mentioned"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "37:6",
+   "anchor_phrase": "adornment of stars",
+   "element": "Adorned Sky"
+  },
+  {
+   "reference": "37:145",
+   "anchor_phrase": "open shore",
+   "element": "Open Shore"
+  },
+  {
+   "reference": "37:146",
+   "anchor_phrase": "gourd vine",
+   "element": "Gourd Vine"
+  }
+ ],
+ "required_assets": [
+  "Starry sky",
+  "Shore",
+  "Gourd vine",
+  "Hills"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "37:6",
+  "37:99-111",
+  "37:139-148",
+  "37:145",
+  "37:146"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

@@ -1,0 +1,114 @@
+{
+ "surah": 40,
+ "name": {
+  "transliterated": "Ghāfir",
+  "meaning": "The Forgiver"
+ },
+ "ayah_count": 85,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "Allah forgives",
+  "Speaking truth with courage",
+  "Pride brings ruin"
+ ],
+ "narrative_passages": [
+  {
+   "title": "The believing man",
+   "reference": "40:28-45",
+   "anchor_phrase": "believing man"
+  },
+  {
+   "title": "Pharaoh's tower",
+   "reference": "40:36-37",
+   "anchor_phrase": "tower"
+  }
+ ],
+ "summary_for_children": "Ghafir means The Forgiver. It tells of a believing man in Pharaoh's family who bravely defended Musa, and of Pharaoh ordering a tower to reach the heavens out of pride.",
+ "world_title": "The Tower and the Believing Man",
+ "environment_concept": "A city of Pharaoh where a tower was ordered built, and a believing man speaks for truth, set against a sky of forgiveness.",
+ "architecture_and_scenery": "Monumental city with a half-built brick tower, palace halls and a simple house of the believing man.",
+ "palette": {
+  "colors": [
+   "#d8b878",
+   "#7a5a3a",
+   "#3f6d8f",
+   "#f0e2c0"
+  ],
+  "lighting": "Hard sun on brick",
+  "atmosphere": "Dust, busy builders"
+ },
+ "areas": [
+  {
+   "name": "Unfinished Tower",
+   "reference": "40:36",
+   "anchor_phrase": "tower",
+   "description": "A brick tower that can never reach the heavens."
+  },
+  {
+   "name": "House of the Believer",
+   "reference": "40:28",
+   "anchor_phrase": "believing man",
+   "description": "A simple house; no one shown."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Courage words",
+   "reference": "40:28",
+   "description": "Choose words of truth in difficult moments (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Pride tower",
+   "reference": "40:36-37",
+   "description": "Watch the tower fall short and talk about pride.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration only uses ayahs for speech; no person is shown.",
+ "learning_objectives": [
+  "Retell the believing man",
+  "Explain pride",
+  "Explain Allah's forgiveness"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "40:36",
+   "anchor_phrase": "tower",
+   "element": "Unfinished Tower"
+  },
+  {
+   "reference": "40:28",
+   "anchor_phrase": "believing man",
+   "element": "House of the Believer"
+  }
+ ],
+ "required_assets": [
+  "City",
+  "Brick tower",
+  "Simple house"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "40:28",
+  "40:28-45",
+  "40:36",
+  "40:36-37"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

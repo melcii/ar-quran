@@ -1,0 +1,95 @@
+{
+ "surah": 58,
+ "name": {
+  "transliterated": "Al-Mujādilah",
+  "meaning": "The Pleading Woman"
+ },
+ "ayah_count": 22,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Allah hears",
+  "Making room in gatherings",
+  "Secret talk",
+  "Knowledge raises people"
+ ],
+ "narrative_passages": [
+  {
+   "title": "The woman's complaint",
+   "reference": "58:1-4",
+   "anchor_phrase": "complaint"
+  }
+ ],
+ "summary_for_children": "Al-Mujadila means The Pleading Woman. It begins with Allah hearing a woman who complained to Him, and teaches making room for others in gatherings and seeking knowledge.",
+ "world_title": "The Assembly That Makes Room",
+ "environment_concept": "A meeting hall where a woman's complaint was heard, and where people make space for each other.",
+ "architecture_and_scenery": "A simple hall with mats, room that expands when people make space.",
+ "palette": {
+  "colors": [
+   "#e8dcc0",
+   "#7a8f68",
+   "#c9a46a"
+  ],
+  "lighting": "Warm interior",
+  "atmosphere": "Calm"
+ },
+ "areas": [
+  {
+   "name": "The Hall",
+   "reference": "58:11",
+   "anchor_phrase": "make space",
+   "description": "A hall that expands as space is made."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Make space",
+   "reference": "58:11",
+   "description": "Shift cushions to make room for newcomers (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Allah hears",
+   "reference": "58:1",
+   "description": "Read 58:1 and discuss how Allah hears every request.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "No person shown.",
+ "learning_objectives": [
+  "Explain 58:1",
+  "Explain making room",
+  "Explain the value of knowledge"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "58:11",
+   "anchor_phrase": "make space",
+   "element": "The Hall"
+  }
+ ],
+ "required_assets": [
+  "Hall"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "58:1",
+  "58:1-4",
+  "58:11"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

@@ -1,0 +1,166 @@
+{
+ "surah": 19,
+ "name": {
+  "transliterated": "Maryam",
+  "meaning": "Mary"
+ },
+ "ayah_count": 98,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "Mercy",
+  "Zakariyya's prayer",
+  "Maryam and Isa",
+  "Ibrahim and his father",
+  "Prophets"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Zakariyya and Yahya",
+   "reference": "19:2-15",
+   "anchor_phrase": "Zechariah"
+  },
+  {
+   "title": "Maryam and Isa",
+   "reference": "19:16-36",
+   "anchor_phrase": "Mary"
+  },
+  {
+   "title": "Ibrahim and his father",
+   "reference": "19:41-50",
+   "anchor_phrase": "Abraham"
+  },
+  {
+   "title": "Musa at the mount",
+   "reference": "19:51-53",
+   "anchor_phrase": "mount"
+  }
+ ],
+ "summary_for_children": "Surah Maryam tells of Zakariyya's prayer for a child, of Maryam and the birth of Isa, of Ibrahim speaking gently to his father, and of other prophets.",
+ "world_title": "The Palm and the Spring",
+ "environment_concept": "A sanctuary of prayer, a distant place with a palm tree and a stream, and a mount where Musa was called.",
+ "architecture_and_scenery": "Prayer chamber, lonely valley with one tall palm and a stream, family home, and a mountain slope.",
+ "palette": {
+  "colors": [
+   "#e8dcc0",
+   "#6a8f4a",
+   "#3d6e8f",
+   "#c9a46a"
+  ],
+  "lighting": "Soft morning light",
+  "atmosphere": "Quiet, birdsong by the stream"
+ },
+ "areas": [
+  {
+   "name": "Prayer Chamber",
+   "reference": "19:11",
+   "anchor_phrase": "prayer chamber",
+   "description": "A quiet chamber; no one shown."
+  },
+  {
+   "name": "The Palm Tree",
+   "reference": "19:23",
+   "anchor_phrase": "palm tree",
+   "description": "A tall palm in a remote place."
+  },
+  {
+   "name": "The Stream",
+   "reference": "19:24",
+   "anchor_phrase": "stream",
+   "description": "A stream below the palm."
+  },
+  {
+   "name": "Ripe Dates",
+   "reference": "19:25",
+   "anchor_phrase": "fresh dates",
+   "description": "Dates falling from the palm."
+  },
+  {
+   "name": "The Mount",
+   "reference": "19:52",
+   "anchor_phrase": "mount",
+   "description": "A mountain slope where Musa was called."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Gentle words",
+   "reference": "19:42-47",
+   "description": "Choose the gentle way Ibrahim spoke to his father, read from the ayahs.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "The palm and the stream",
+   "reference": "19:24-26",
+   "description": "Find the stream and the dates (an adaptation; Maryam is not shown or played).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration is quiet and reverent; Maryam, Isa and all prophets are never shown or voiced.",
+ "learning_objectives": [
+  "Retell Maryam's account from the ayahs",
+  "Explain gentle speech to parents",
+  "Name prophets mentioned"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "19:11",
+   "anchor_phrase": "prayer chamber",
+   "element": "Prayer Chamber"
+  },
+  {
+   "reference": "19:23",
+   "anchor_phrase": "palm tree",
+   "element": "The Palm Tree"
+  },
+  {
+   "reference": "19:24",
+   "anchor_phrase": "stream",
+   "element": "The Stream"
+  },
+  {
+   "reference": "19:25",
+   "anchor_phrase": "fresh dates",
+   "element": "Ripe Dates"
+  },
+  {
+   "reference": "19:52",
+   "anchor_phrase": "mount",
+   "element": "The Mount"
+  }
+ ],
+ "required_assets": [
+  "Prayer chamber",
+  "Palm tree and stream",
+  "Mountain slope"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "19:2-15",
+  "19:11",
+  "19:16-36",
+  "19:23",
+  "19:24",
+  "19:24-26",
+  "19:25",
+  "19:41-50",
+  "19:42-47",
+  "19:51-53",
+  "19:52"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

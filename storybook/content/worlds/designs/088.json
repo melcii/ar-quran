@@ -1,0 +1,116 @@
+{
+ "surah": 88,
+ "name": {
+  "transliterated": "Al-Ghāshiyah",
+  "meaning": "The Overwhelming"
+ },
+ "ayah_count": 26,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "Reflection on creation",
+  "Reminder"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Ghashiyah asks us to look at the camel, the sky, the mountains and the earth and think how they were created.",
+ "world_title": "Camels, Sky, Mountains, Earth",
+ "environment_concept": "Four stations from 88:17-20: camels, raised sky, erected mountains and spread earth.",
+ "architecture_and_scenery": "Desert with camels, open sky, mountains, wide plain.",
+ "palette": {
+  "colors": [
+   "#d9b46a",
+   "#3a6fb0",
+   "#8c5a3a"
+  ],
+  "lighting": "Desert daylight",
+  "atmosphere": "Dry wind"
+ },
+ "areas": [
+  {
+   "name": "Camels",
+   "reference": "88:17",
+   "anchor_phrase": "camels",
+   "description": "A caravan of camels."
+  },
+  {
+   "name": "Raised Sky",
+   "reference": "88:18",
+   "anchor_phrase": "raised",
+   "description": "The sky."
+  },
+  {
+   "name": "Erected Mountains",
+   "reference": "88:19",
+   "anchor_phrase": "mountains",
+   "description": "Mountains."
+  },
+  {
+   "name": "Spread Earth",
+   "reference": "88:20",
+   "anchor_phrase": "spread out",
+   "description": "A flat earth."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Look and think",
+   "reference": "88:17-20",
+   "description": "Observe each station and answer a question (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration calm.",
+ "learning_objectives": [
+  "Explain 88:17-20"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "88:17",
+   "anchor_phrase": "camels",
+   "element": "Camels"
+  },
+  {
+   "reference": "88:18",
+   "anchor_phrase": "raised",
+   "element": "Raised Sky"
+  },
+  {
+   "reference": "88:19",
+   "anchor_phrase": "mountains",
+   "element": "Erected Mountains"
+  },
+  {
+   "reference": "88:20",
+   "anchor_phrase": "spread out",
+   "element": "Spread Earth"
+  }
+ ],
+ "required_assets": [
+  "Desert",
+  "Mountains",
+  "Plain"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "88:17",
+  "88:17-20",
+  "88:18",
+  "88:19",
+  "88:20"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

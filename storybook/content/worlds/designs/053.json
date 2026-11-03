@@ -1,0 +1,114 @@
+{
+ "surah": 53,
+ "name": {
+  "transliterated": "An-Najm",
+  "meaning": "The Star"
+ },
+ "ayah_count": 62,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "Revelation",
+  "Idols are only names",
+  "Each person carries their own deeds",
+  "Allah gives life and death"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "An-Najm means The Star. It begins by swearing by a star and teaches that the Prophet (peace be upon him) speaks only revelation, that each person is responsible for their own deeds, and that Allah is the Lord of Sirius.",
+ "world_title": "The Descending Star",
+ "environment_concept": "A night sky with a setting star, then a land where laughter and tears, life and death, and the star Sirius are all named as from Allah.",
+ "architecture_and_scenery": "Dark desert sky, a bright star setting, Sirius rising.",
+ "palette": {
+  "colors": [
+   "#0f1a33",
+   "#e6d38a",
+   "#8a9aaa",
+   "#c9b090"
+  ],
+  "lighting": "Starlight",
+  "atmosphere": "Quiet desert night"
+ },
+ "areas": [
+  {
+   "name": "Descending Star",
+   "reference": "53:1",
+   "anchor_phrase": "star",
+   "description": "A star setting."
+  },
+  {
+   "name": "Laughter and Tears",
+   "reference": "53:43",
+   "anchor_phrase": "laugh and weep",
+   "description": "A valley of sudden sunshine and soft rain, standing for joy and tears; no faces are shown."
+  },
+  {
+   "name": "Sirius",
+   "reference": "53:49",
+   "anchor_phrase": "Sirius",
+   "description": "The bright star Sirius."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Find Sirius",
+   "reference": "53:49",
+   "description": "Find Sirius in the night sky.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Own deeds",
+   "reference": "53:38-39",
+   "description": "Fill your own basket with good deeds (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration reverent; the Prophet's (peace be upon him) experience is not depicted.",
+ "learning_objectives": [
+  "Explain 53:39",
+  "Find Sirius",
+  "Explain revelation"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "53:1",
+   "anchor_phrase": "star",
+   "element": "Descending Star"
+  },
+  {
+   "reference": "53:43",
+   "anchor_phrase": "laugh and weep",
+   "element": "Laughter and Tears"
+  },
+  {
+   "reference": "53:49",
+   "anchor_phrase": "Sirius",
+   "element": "Sirius"
+  }
+ ],
+ "required_assets": [
+  "Night sky",
+  "Desert"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "53:1",
+  "53:38-39",
+  "53:43",
+  "53:49"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

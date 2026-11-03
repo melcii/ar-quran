@@ -1,0 +1,136 @@
+{
+ "surah": 51,
+ "name": {
+  "transliterated": "Adh-Dhāriyāt",
+  "meaning": "The Winnowing Winds"
+ },
+ "ayah_count": 60,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "Oaths by creation",
+  "Provision",
+  "Ibrahim's guests",
+  "Creation in pairs"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Ibrahim's honoured guests",
+   "reference": "51:24-30",
+   "anchor_phrase": "guests"
+  }
+ ],
+ "summary_for_children": "Adh-Dhariyat means The Scattering Winds. It swears by winds, clouds and ships, tells of Ibrahim's guests, and reminds us everything is created in pairs.",
+ "world_title": "Winds, Clouds and Ships",
+ "environment_concept": "A world of the surah's opening oaths: scattering winds, clouds carrying water, ships sailing easily, then a wide expanding heaven over an earth spread like a carpet.",
+ "architecture_and_scenery": "Dust-swept plains, heavy rain clouds, a smooth sea, and an expanding starry sky.",
+ "palette": {
+  "colors": [
+   "#c9b090",
+   "#5a7a9a",
+   "#2f6f8f",
+   "#0f1a33"
+  ],
+  "lighting": "Dust light, rain grey, night",
+  "atmosphere": "Wind and rain"
+ },
+ "areas": [
+  {
+   "name": "Scattering Winds",
+   "reference": "51:1",
+   "anchor_phrase": "scattering",
+   "description": "Winds scattering dust."
+  },
+  {
+   "name": "Laden Clouds",
+   "reference": "51:2",
+   "anchor_phrase": "carrying a load",
+   "description": "Clouds heavy with water."
+  },
+  {
+   "name": "Easy Ships",
+   "reference": "51:3",
+   "anchor_phrase": "sailing with ease",
+   "description": "Ships sailing smoothly."
+  },
+  {
+   "name": "Expanding Heaven",
+   "reference": "51:47",
+   "anchor_phrase": "expander",
+   "description": "A sky that seems to widen."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Pairs",
+   "reference": "51:49",
+   "description": "Find pairs in nature (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Signs in yourselves",
+   "reference": "51:20-21",
+   "description": "Notice signs in the earth and in our own bodies.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration walks the oaths in order; the guests and Ibrahim are not shown.",
+ "learning_objectives": [
+  "Explain the opening oaths",
+  "Explain pairs in creation",
+  "Explain provision comes from Allah"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "51:1",
+   "anchor_phrase": "scattering",
+   "element": "Scattering Winds"
+  },
+  {
+   "reference": "51:2",
+   "anchor_phrase": "carrying a load",
+   "element": "Laden Clouds"
+  },
+  {
+   "reference": "51:3",
+   "anchor_phrase": "sailing with ease",
+   "element": "Easy Ships"
+  },
+  {
+   "reference": "51:47",
+   "anchor_phrase": "expander",
+   "element": "Expanding Heaven"
+  }
+ ],
+ "required_assets": [
+  "Plains",
+  "Clouds",
+  "Sea",
+  "Night sky"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "51:1",
+  "51:2",
+  "51:3",
+  "51:20-21",
+  "51:24-30",
+  "51:47",
+  "51:49"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

@@ -1,0 +1,92 @@
+{
+ "surah": 74,
+ "name": {
+  "transliterated": "Al-Muddaththir",
+  "meaning": "The Cloaked One"
+ },
+ "ayah_count": 56,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Calling to good",
+  "Glorifying Allah",
+  "Purity",
+  "Patience"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Muddaththir tells the Prophet (peace be upon him) to arise and warn, glorify his Lord, purify his clothes and be patient.",
+ "world_title": "Arise and Warn",
+ "environment_concept": "A morning that begins with rising, glorifying and purifying clothing.",
+ "architecture_and_scenery": "A home at dawn with a washing place.",
+ "palette": {
+  "colors": [
+   "#f0d890",
+   "#efe6d2"
+  ],
+  "lighting": "Dawn",
+  "atmosphere": "Fresh"
+ },
+ "areas": [
+  {
+   "name": "Dawn Rising",
+   "reference": "74:2",
+   "anchor_phrase": "Arise",
+   "description": "Sunrise over the home."
+  },
+  {
+   "name": "Purify Clothing",
+   "reference": "74:4",
+   "anchor_phrase": "clothing purify",
+   "description": "A washing place."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Morning routine",
+   "reference": "74:3-7",
+   "description": "Glorify, wash and be patient in a morning mini-game (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "The Prophet (peace be upon him) is never shown.",
+ "learning_objectives": [
+  "Explain 74:1-7"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "74:2",
+   "anchor_phrase": "Arise",
+   "element": "Dawn Rising"
+  },
+  {
+   "reference": "74:4",
+   "anchor_phrase": "clothing purify",
+   "element": "Purify Clothing"
+  }
+ ],
+ "required_assets": [
+  "Home",
+  "Washing place"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "74:2",
+  "74:3-7",
+  "74:4"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

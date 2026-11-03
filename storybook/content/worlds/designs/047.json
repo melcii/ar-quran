@@ -1,0 +1,89 @@
+{
+ "surah": 47,
+ "name": {
+  "transliterated": "Muḥammad",
+  "meaning": "Muhammad"
+ },
+ "ayah_count": 38,
+ "content_type": {
+  "primary": "hereafter (symbolic only)",
+  "secondary": []
+ },
+ "themes": [
+  "Faith and action",
+  "Sincerity",
+  "The reward described in the Quran"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Surah Muhammad speaks of believers and the Prophet Muhammad (peace be upon him), and describes rivers promised to the righteous. We only learn about them from the Quran.",
+ "world_title": "Four Rivers Described",
+ "environment_concept": "A symbolic world of the rivers named in the surah, shown only as four labelled light-streams so as not to claim a picture of Paradise.",
+ "architecture_and_scenery": "Abstract channels of light labelled by the ayah: water unaltered, milk, honey; a calm garden edge.",
+ "palette": {
+  "colors": [
+   "#e6f0f8",
+   "#f7f3e8",
+   "#d9a640",
+   "#8fbf7a"
+  ],
+  "lighting": "Soft diffused light",
+  "atmosphere": "Calm"
+ },
+ "areas": [
+  {
+   "name": "Rivers Described",
+   "reference": "47:15",
+   "anchor_phrase": "rivers of water unaltered",
+   "description": "Four abstract streams of light, each labelled with the ayah; symbolic only."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Read the description",
+   "reference": "47:15",
+   "description": "Read 47:15 and match each stream label; no picture of Paradise is claimed.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Good deeds",
+   "reference": "47:7",
+   "description": "Choose helping actions in short scenarios (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration explicitly says the unseen is known only through the Quran.",
+ "learning_objectives": [
+  "Explain that Paradise is unseen",
+  "Read 47:15",
+  "Explain helping Allah's cause by good deeds"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "47:15",
+   "anchor_phrase": "rivers of water unaltered",
+   "element": "Rivers Described"
+  }
+ ],
+ "required_assets": [
+  "Light streams",
+  "Garden edge"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "47:7",
+  "47:15"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

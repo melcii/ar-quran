@@ -1,0 +1,145 @@
+{
+ "surah": 67,
+ "name": {
+  "transliterated": "Al-Mulk",
+  "meaning": "The Sovereignty"
+ },
+ "ayah_count": 30,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "Allah's dominion",
+  "No flaw in creation",
+  "Birds held up by Allah",
+  "Gratitude"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Mulk means The Dominion. It invites us to look at the sky again and again and find no flaw, to see the birds held up by Allah, and to walk the earth He made easy for us.",
+ "world_title": "Seven Skies and the Outspread Wings",
+ "environment_concept": "A layered sky with no flaw, birds gliding with wings outspread, and a tame earth with slopes to walk.",
+ "architecture_and_scenery": "Seven layered skies, wide slopes, flocks of birds.",
+ "palette": {
+  "colors": [
+   "#2f4b8f",
+   "#f0d890",
+   "#7a9a5a",
+   "#efe6d2"
+  ],
+  "lighting": "Clear sky with stars at dusk",
+  "atmosphere": "Wind"
+ },
+ "areas": [
+  {
+   "name": "Seven Layers",
+   "reference": "67:3",
+   "anchor_phrase": "seven heavens",
+   "description": "Layered sky."
+  },
+  {
+   "name": "Look Again",
+   "reference": "67:4",
+   "anchor_phrase": "return your vision",
+   "description": "A sky to examine."
+  },
+  {
+   "name": "Stars",
+   "reference": "67:5",
+   "anchor_phrase": "stars",
+   "description": "The nearest sky adorned with stars."
+  },
+  {
+   "name": "Tame Earth",
+   "reference": "67:15",
+   "anchor_phrase": "tame",
+   "description": "Slopes to walk."
+  },
+  {
+   "name": "Outspread Wings",
+   "reference": "67:19",
+   "anchor_phrase": "wings outspread",
+   "description": "Birds gliding."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Find a flaw",
+   "reference": "67:3-4",
+   "description": "Look twice at the sky; find none.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Bird watch",
+   "reference": "67:19",
+   "description": "Watch birds spread and fold wings.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Walk the slopes",
+   "reference": "67:15",
+   "description": "Walk the slopes and gather provision.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration invites observation.",
+ "learning_objectives": [
+  "Explain 67:3-4",
+  "Explain the birds sign",
+  "Explain gratitude"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "67:3",
+   "anchor_phrase": "seven heavens",
+   "element": "Seven Layers"
+  },
+  {
+   "reference": "67:4",
+   "anchor_phrase": "return your vision",
+   "element": "Look Again"
+  },
+  {
+   "reference": "67:5",
+   "anchor_phrase": "stars",
+   "element": "Stars"
+  },
+  {
+   "reference": "67:15",
+   "anchor_phrase": "tame",
+   "element": "Tame Earth"
+  },
+  {
+   "reference": "67:19",
+   "anchor_phrase": "wings outspread",
+   "element": "Outspread Wings"
+  }
+ ],
+ "required_assets": [
+  "Sky layers",
+  "Slopes",
+  "Birds"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "67:3",
+  "67:3-4",
+  "67:4",
+  "67:5",
+  "67:15",
+  "67:19"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

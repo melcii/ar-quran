@@ -1,0 +1,136 @@
+{
+ "surah": 22,
+ "name": {
+  "transliterated": "Al-Ḥajj",
+  "meaning": "The Pilgrimage"
+ },
+ "ayah_count": 78,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "The Hajj",
+  "Sincerity in worship",
+  "Signs of resurrection in the earth",
+  "Gratitude"
+ ],
+ "narrative_passages": [
+  {
+   "title": "The site of the House",
+   "reference": "22:26-29",
+   "anchor_phrase": "site of the House"
+  }
+ ],
+ "summary_for_children": "Surah Al-Hajj speaks of the pilgrimage that Ibrahim proclaimed, of the House, of how rain brings dead land to life, and of worship done sincerely for Allah.",
+ "world_title": "The Plain of Pilgrims",
+ "environment_concept": "A vast plain with roads arriving from every distant pass toward a simple House, framed by fields that turn green after rain.",
+ "architecture_and_scenery": "Mountain passes feeding into a wide plain, plain stone foundations, sacrificial pastures shown only as grazing camels, and rain-fed fields.",
+ "palette": {
+  "colors": [
+   "#e6d2a8",
+   "#9b6b3d",
+   "#5a8b4a",
+   "#f7f2e6"
+  ],
+  "lighting": "Bright sun over pale stone, rain bursts turning hills green",
+  "atmosphere": "Dry heat, then the scent of rain"
+ },
+ "areas": [
+  {
+   "name": "Roads from Every Pass",
+   "reference": "22:27",
+   "anchor_phrase": "distant pass",
+   "description": "Winding roads from far mountain passes; travellers are suggested by footprints and camel tracks only."
+  },
+  {
+   "name": "Foundations of the House",
+   "reference": "22:26",
+   "anchor_phrase": "site of the House",
+   "description": "Simple foundations, quiet and plain."
+  },
+  {
+   "name": "Greening Fields",
+   "reference": "22:63",
+   "anchor_phrase": "earth becomes green",
+   "description": "Dry fields that turn green as rain falls."
+  },
+  {
+   "name": "Stages of Growth",
+   "reference": "22:5",
+   "anchor_phrase": "barren",
+   "description": "A barren slope that stirs and swells with plants."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Rain on the hills",
+   "reference": "22:63",
+   "description": "Bring clouds over dry fields and watch them turn green, then read 22:63.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Pack for the journey",
+   "reference": "22:27-28",
+   "description": "A gentle sorting game about what a traveller needs and why sincerity matters (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration explains Hajj simply and links rain-revived land to Allah's power to give life.",
+ "learning_objectives": [
+  "Know what Hajj is",
+  "Explain who first proclaimed Hajj in the surah",
+  "Connect rain and new life"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "22:27",
+   "anchor_phrase": "distant pass",
+   "element": "Roads from Every Pass"
+  },
+  {
+   "reference": "22:26",
+   "anchor_phrase": "site of the House",
+   "element": "Foundations of the House"
+  },
+  {
+   "reference": "22:63",
+   "anchor_phrase": "earth becomes green",
+   "element": "Greening Fields"
+  },
+  {
+   "reference": "22:5",
+   "anchor_phrase": "barren",
+   "element": "Stages of Growth"
+  }
+ ],
+ "required_assets": [
+  "Mountain passes",
+  "Wide plain",
+  "House foundations",
+  "Rain clouds",
+  "Greening terrain"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "22:5",
+  "22:26",
+  "22:26-29",
+  "22:27",
+  "22:27-28",
+  "22:63"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

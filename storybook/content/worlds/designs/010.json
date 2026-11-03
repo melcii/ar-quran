@@ -1,0 +1,139 @@
+{
+ "surah": 10,
+ "name": {
+  "transliterated": "Yūnus",
+  "meaning": "Jonah"
+ },
+ "ayah_count": 109,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "Signs in creation",
+  "Trust in Allah at sea",
+  "The people of Yunus",
+  "Truth and falsehood"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Musa and Pharaoh at the sea",
+   "reference": "10:75-92",
+   "anchor_phrase": "across the sea"
+  },
+  {
+   "title": "The people of Yunus",
+   "reference": "10:98",
+   "anchor_phrase": "Jonah"
+  }
+ ],
+ "summary_for_children": "Surah Yunus shows signs in the sun and moon, tells how people call on Allah at sea, and remembers the people of Yunus who believed.",
+ "world_title": "The Sea of Turning Back",
+ "environment_concept": "A coast where the moon's phases count time, a ship meets a storm, and a whole people turn back to Allah.",
+ "architecture_and_scenery": "Seaside cliffs, a harbour, a ship on open water, a garden above the shore, and a night sky for moon phases.",
+ "palette": {
+  "colors": [
+   "#2c4a6b",
+   "#7fa7c9",
+   "#e8d8b0",
+   "#3f6b4a"
+  ],
+  "lighting": "Moonlight and stormy daylight",
+  "atmosphere": "Sea spray, storm wind then calm"
+ },
+ "areas": [
+  {
+   "name": "Moon Phase Terrace",
+   "reference": "10:5",
+   "anchor_phrase": "phases",
+   "description": "A terrace marking the moon's phases."
+  },
+  {
+   "name": "Storm at Sea",
+   "reference": "10:22",
+   "anchor_phrase": "ship",
+   "description": "A ship in a storm that grows calm."
+  },
+  {
+   "name": "Garden of Rain",
+   "reference": "10:24",
+   "anchor_phrase": "plants of the earth",
+   "description": "Rain makes the garden bloom, then fade."
+  },
+  {
+   "name": "Doorway of Yunus",
+   "reference": "10:98",
+   "anchor_phrase": "Jonah",
+   "description": "A doorway to the Yunus story world."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Count the months",
+   "reference": "10:5",
+   "description": "Set the moon through its phases to see how time is counted.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Calm the sail",
+   "reference": "10:22",
+   "description": "Hold the ship steady through a storm while reading 10:22.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "The narrator keeps the sea scenes as setting, and the doorway leads to the Yunus story.",
+ "learning_objectives": [
+  "Explain moon phases as a sign",
+  "Retell 10:22 in their own words",
+  "Know that the people of Yunus believed"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "10:5",
+   "anchor_phrase": "phases",
+   "element": "Moon Phase Terrace"
+  },
+  {
+   "reference": "10:22",
+   "anchor_phrase": "ship",
+   "element": "Storm at Sea"
+  },
+  {
+   "reference": "10:24",
+   "anchor_phrase": "plants of the earth",
+   "element": "Garden of Rain"
+  },
+  {
+   "reference": "10:98",
+   "anchor_phrase": "Jonah",
+   "element": "Doorway of Yunus"
+  }
+ ],
+ "required_assets": [
+  "Sea and ship",
+  "Storm weather",
+  "Moon phase sky",
+  "Rain garden"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "10:5",
+  "10:22",
+  "10:24",
+  "10:75-92",
+  "10:98"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

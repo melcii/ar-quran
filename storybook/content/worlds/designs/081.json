@@ -1,0 +1,78 @@
+{
+ "surah": 81,
+ "name": {
+  "transliterated": "At-Takwīr",
+  "meaning": "The Overthrowing"
+ },
+ "ayah_count": 29,
+ "content_type": {
+  "primary": "hereafter (symbolic only)",
+  "secondary": []
+ },
+ "themes": [
+  "Signs of the Day",
+  "The Quran is a reminder"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "At-Takwir describes great changes of the Last Day in words, and swears by the dawn as it breathes.",
+ "world_title": "When the Sun Is Wrapped",
+ "environment_concept": "A symbolic sequence of the surah's signs read as text over a calm sky; nothing of the end is pictured.",
+ "architecture_and_scenery": "Calm sky with text overlay; dawn breathing.",
+ "palette": {
+  "colors": [
+   "#1c2541",
+   "#f0d890"
+  ],
+  "lighting": "Night then dawn breathing",
+  "atmosphere": "Still"
+ },
+ "areas": [
+  {
+   "name": "Dawn Breathing",
+   "reference": "81:18",
+   "anchor_phrase": "dawn",
+   "description": "A soft dawn."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Read the signs",
+   "reference": "81:1-14",
+   "description": "Read each ayah; nothing is pictured.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration says these are described only in the Quran.",
+ "learning_objectives": [
+  "Explain that the Day is described in the Quran",
+  "Explain 81:18"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "81:18",
+   "anchor_phrase": "dawn",
+   "element": "Dawn Breathing"
+  }
+ ],
+ "required_assets": [
+  "Dawn sky"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "81:1-14",
+  "81:18"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

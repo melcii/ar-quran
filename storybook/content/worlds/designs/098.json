@@ -1,0 +1,76 @@
+{
+ "surah": 98,
+ "name": {
+  "transliterated": "Al-Bayyinah",
+  "meaning": "The Clear Proof"
+ },
+ "ayah_count": 8,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Sincere worship",
+  "Prayer and charity"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Bayyinah means The Clear Evidence. It says people were commanded to worship Allah sincerely, pray and give charity.",
+ "world_title": "The Clear Evidence",
+ "environment_concept": "A world of clear water and clean pages, showing sincere worship.",
+ "architecture_and_scenery": "A clear spring and an open book of pure pages.",
+ "palette": {
+  "colors": [
+   "#e8f0f8",
+   "#3f6d8f"
+  ],
+  "lighting": "Clear light",
+  "atmosphere": "Calm"
+ },
+ "areas": [
+  {
+   "name": "Sincere Spring",
+   "reference": "98:5",
+   "anchor_phrase": "sincere",
+   "description": "A clear spring."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Sincerity",
+   "reference": "98:5",
+   "description": "Choose actions done only for Allah (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration calm.",
+ "learning_objectives": [
+  "Explain 98:5"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "98:5",
+   "anchor_phrase": "sincere",
+   "element": "Sincere Spring"
+  }
+ ],
+ "required_assets": [
+  "Spring"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "98:5"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

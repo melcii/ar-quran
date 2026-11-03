@@ -1,0 +1,159 @@
+{
+ "surah": 24,
+ "name": {
+  "transliterated": "An-Nūr",
+  "meaning": "The Light"
+ },
+ "ayah_count": 64,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Light of guidance",
+  "Modesty and privacy",
+  "Asking permission",
+  "Honesty and avoiding slander"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Surah An-Nur teaches good manners in the home and in society: asking permission before entering, modesty, and not spreading rumours. It describes Allah's light with the beautiful example of a lamp in a niche.",
+ "world_title": "The Niche of Light",
+ "environment_concept": "A house of quiet rooms and courtyards lit by a single great lamp in a niche, with a mirage desert and a dark sea beyond its walls as contrasts.",
+ "architecture_and_scenery": "Courtyard house with closed doors that open only after greeting, a central niche with a glass lamp, an olive grove, a shimmering mirage plain and a stormy night sea.",
+ "palette": {
+  "colors": [
+   "#fff1c9",
+   "#d7a640",
+   "#2b3b55",
+   "#e6dcc5"
+  ],
+  "lighting": "One radiant lamp, warm interior glow; outside, harsh mirage light and deep sea darkness",
+  "atmosphere": "Still indoors; heat haze and thunder outside"
+ },
+ "areas": [
+  {
+   "name": "Doors of Permission",
+   "reference": "24:27",
+   "anchor_phrase": "ascertain welcome",
+   "description": "Doors that open only after the player greets and asks."
+  },
+  {
+   "name": "The Lamp in the Niche",
+   "reference": "24:35",
+   "anchor_phrase": "niche",
+   "description": "A glass lamp like a bright star in a wall niche."
+  },
+  {
+   "name": "Blessed Olive Grove",
+   "reference": "24:35",
+   "anchor_phrase": "olive tree",
+   "description": "An olive grove neither of the east nor the west."
+  },
+  {
+   "name": "Mirage Plain",
+   "reference": "24:39",
+   "anchor_phrase": "mirage",
+   "description": "A desert where water appears but is not there."
+  },
+  {
+   "name": "Sea of Darknesses",
+   "reference": "24:40",
+   "anchor_phrase": "waves, upon which are waves",
+   "description": "Waves upon waves under clouds."
+  },
+  {
+   "name": "Birds with Spread Wings",
+   "reference": "24:41",
+   "anchor_phrase": "wings spread",
+   "description": "Birds gliding over the courtyard."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Knock and greet",
+   "reference": "24:27-28",
+   "description": "Practise asking permission at each door before entering.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Stop the rumour",
+   "reference": "24:15-16",
+   "description": "A rumour passes from lantern to lantern; choose to stop it (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Layers of light",
+   "reference": "24:35",
+   "description": "Assemble lamp, glass and niche in order as the ayah describes.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration is gentle and practical, linking each room to a manner from the surah.",
+ "learning_objectives": [
+  "Explain asking permission",
+  "Explain why rumours hurt",
+  "Describe the parable of light"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "24:27",
+   "anchor_phrase": "ascertain welcome",
+   "element": "Doors of Permission"
+  },
+  {
+   "reference": "24:35",
+   "anchor_phrase": "niche",
+   "element": "The Lamp in the Niche"
+  },
+  {
+   "reference": "24:35",
+   "anchor_phrase": "olive tree",
+   "element": "Blessed Olive Grove"
+  },
+  {
+   "reference": "24:39",
+   "anchor_phrase": "mirage",
+   "element": "Mirage Plain"
+  },
+  {
+   "reference": "24:40",
+   "anchor_phrase": "waves, upon which are waves",
+   "element": "Sea of Darknesses"
+  },
+  {
+   "reference": "24:41",
+   "anchor_phrase": "wings spread",
+   "element": "Birds with Spread Wings"
+  }
+ ],
+ "required_assets": [
+  "Courtyard house",
+  "Niche lamp",
+  "Olive grove",
+  "Mirage desert",
+  "Night sea"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "24:15-16",
+  "24:27",
+  "24:27-28",
+  "24:35",
+  "24:39",
+  "24:40",
+  "24:41"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

@@ -1,0 +1,147 @@
+{
+ "surah": 6,
+ "name": {
+  "transliterated": "Al-An‘ām",
+  "meaning": "The Cattle"
+ },
+ "ayah_count": 165,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "Oneness of Allah",
+  "Signs in creation",
+  "Ibrahim's reasoning",
+  "Guidance"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Ibrahim and the star, moon and sun",
+   "reference": "6:74-83",
+   "anchor_phrase": "Abraham"
+  }
+ ],
+ "summary_for_children": "Al-An'am shows the signs of Allah in the sky and the earth. It tells how Ibrahim looked at a star, the moon and the sun and saw that they all set.",
+ "world_title": "The Night of Signs",
+ "environment_concept": "An open desert night where star, moon and sun rise and set, and a valley where seeds split open into green.",
+ "architecture_and_scenery": "Wide desert plain, rocky ridge for watching the sky, a green valley with date palms and grain.",
+ "palette": {
+  "colors": [
+   "#0f1a33",
+   "#3b4d7a",
+   "#e7c27a",
+   "#5e8a4a"
+  ],
+  "lighting": "Starlight to moonlight to sunrise",
+  "atmosphere": "Clear cold night warming to dawn"
+ },
+ "areas": [
+  {
+   "name": "Ridge of the Star",
+   "reference": "6:76",
+   "anchor_phrase": "star",
+   "description": "A ridge to watch a bright star set."
+  },
+  {
+   "name": "Moon Rise Plain",
+   "reference": "6:77",
+   "anchor_phrase": "moon rising",
+   "description": "The moon rises and then sets."
+  },
+  {
+   "name": "Sunrise Overlook",
+   "reference": "6:78",
+   "anchor_phrase": "sun rising",
+   "description": "The sun rises; the narrator reads 6:79."
+  },
+  {
+   "name": "Valley of Seeds",
+   "reference": "6:95",
+   "anchor_phrase": "grain and date seeds",
+   "description": "Seeds split and sprout in a green valley."
+  },
+  {
+   "name": "Palm Clusters",
+   "reference": "6:99",
+   "anchor_phrase": "palm trees",
+   "description": "Date palms with low-hanging clusters."
+  }
+ ],
+ "activities": [
+  {
+   "name": "What sets and what stays",
+   "reference": "6:76-79",
+   "description": "Watch star, moon and sun each set, and reflect, as the ayahs say, on turning to the Creator.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Split the seed",
+   "reference": "6:95",
+   "description": "Tap seeds to see them split and sprout.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "The narrator follows the ayahs closely for Ibrahim's reasoning, without showing him, and labels any explanation.",
+ "learning_objectives": [
+  "Explain why things that set are not worthy of worship",
+  "Name signs of Allah in plants",
+  "Read 6:79"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "6:76",
+   "anchor_phrase": "star",
+   "element": "Ridge of the Star"
+  },
+  {
+   "reference": "6:77",
+   "anchor_phrase": "moon rising",
+   "element": "Moon Rise Plain"
+  },
+  {
+   "reference": "6:78",
+   "anchor_phrase": "sun rising",
+   "element": "Sunrise Overlook"
+  },
+  {
+   "reference": "6:95",
+   "anchor_phrase": "grain and date seeds",
+   "element": "Valley of Seeds"
+  },
+  {
+   "reference": "6:99",
+   "anchor_phrase": "palm trees",
+   "element": "Palm Clusters"
+  }
+ ],
+ "required_assets": [
+  "Desert night sky with sun and moon cycle",
+  "Ridge rocks",
+  "Sprouting seed animation",
+  "Date palms"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "6:74-83",
+  "6:76",
+  "6:76-79",
+  "6:77",
+  "6:78",
+  "6:95",
+  "6:99"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

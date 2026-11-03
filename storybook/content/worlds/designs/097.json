@@ -1,0 +1,99 @@
+{
+ "surah": 97,
+ "name": {
+  "transliterated": "Al-Qadr",
+  "meaning": "The Power"
+ },
+ "ayah_count": 5,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Night of Decree",
+  "Peace",
+  "Value of worship"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Qadr tells that the Quran was sent down on the Night of Decree, better than a thousand months, a night of peace until dawn.",
+ "world_title": "Night Until the Dawn",
+ "environment_concept": "A peaceful night sky that stays calm until dawn emerges, better than a thousand months; nothing unseen is pictured.",
+ "architecture_and_scenery": "A quiet rooftop under stars, a thousand-month calendar wall.",
+ "palette": {
+  "colors": [
+   "#0f1a33",
+   "#e6d38a",
+   "#f0c080"
+  ],
+  "lighting": "Calm starlight until dawn",
+  "atmosphere": "Peace"
+ },
+ "areas": [
+  {
+   "name": "Thousand Months Wall",
+   "reference": "97:3",
+   "anchor_phrase": "thousand months",
+   "description": "A wall of a thousand small lights."
+  },
+  {
+   "name": "Peace Until Dawn",
+   "reference": "97:5",
+   "anchor_phrase": "emergence of dawn",
+   "description": "A calm night ending at dawn."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Count the months",
+   "reference": "97:3",
+   "description": "See a thousand months as lights (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Night prayer",
+   "reference": "97:1-5",
+   "description": "Light a lamp for each ayah.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Angels and the Spirit are not shown.",
+ "learning_objectives": [
+  "Explain Laylat al-Qadr",
+  "Explain 97:3"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "97:3",
+   "anchor_phrase": "thousand months",
+   "element": "Thousand Months Wall"
+  },
+  {
+   "reference": "97:5",
+   "anchor_phrase": "emergence of dawn",
+   "element": "Peace Until Dawn"
+  }
+ ],
+ "required_assets": [
+  "Rooftop",
+  "Night sky"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "97:1-5",
+  "97:3",
+  "97:5"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

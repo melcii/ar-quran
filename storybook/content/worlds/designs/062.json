@@ -1,0 +1,97 @@
+{
+ "surah": 62,
+ "name": {
+  "transliterated": "Al-Jumu‘ah",
+  "meaning": "The Congregation, Friday"
+ },
+ "ayah_count": 11,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Friday prayer",
+  "Balance of work and worship"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Jumu'ah means Friday. It tells us to leave trade and go to the prayer when called on Friday, then go out and seek Allah's bounty.",
+ "world_title": "Friday Market and Prayer",
+ "environment_concept": "A market town where trade pauses for Friday prayer and resumes after.",
+ "architecture_and_scenery": "Market stalls, a call to prayer, and a mosque courtyard.",
+ "palette": {
+  "colors": [
+   "#e9c98f",
+   "#6f8f4a",
+   "#3f6d8f"
+  ],
+  "lighting": "Midday light",
+  "atmosphere": "Busy market then quiet"
+ },
+ "areas": [
+  {
+   "name": "Market",
+   "reference": "62:9",
+   "anchor_phrase": "leave trade",
+   "description": "Busy stalls that close for prayer."
+  },
+  {
+   "name": "After Prayer",
+   "reference": "62:10",
+   "anchor_phrase": "disperse within the land",
+   "description": "Streets reopening after prayer."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Close the stall",
+   "reference": "62:9",
+   "description": "Pause trade when the call comes (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Seek bounty",
+   "reference": "62:10",
+   "description": "Return to work and remember Allah.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration explains Friday simply.",
+ "learning_objectives": [
+  "Explain Friday prayer",
+  "Explain balance"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "62:9",
+   "anchor_phrase": "leave trade",
+   "element": "Market"
+  },
+  {
+   "reference": "62:10",
+   "anchor_phrase": "disperse within the land",
+   "element": "After Prayer"
+  }
+ ],
+ "required_assets": [
+  "Market",
+  "Courtyard"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "62:9",
+  "62:10"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

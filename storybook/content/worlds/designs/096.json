@@ -1,0 +1,100 @@
+{
+ "surah": 96,
+ "name": {
+  "transliterated": "Al-‘Alaq",
+  "meaning": "The Clot"
+ },
+ "ayah_count": 19,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Reading and knowledge",
+  "Creation",
+  "Prostration and nearness"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-'Alaq means The Clinging Substance. Its first ayahs were the first revelation: Recite in the name of your Lord who created, who taught by the pen.",
+ "world_title": "Recite! The Pen and the Clinging Substance",
+ "environment_concept": "A quiet mountain cave mouth at night with a single line of light, then a scriptorium where the pen teaches; the first revelation is only told, never shown.",
+ "architecture_and_scenery": "A rocky hill with a cave entrance, a writing room with pens and tablets.",
+ "palette": {
+  "colors": [
+   "#1c2541",
+   "#e6d38a",
+   "#8c6b4a"
+  ],
+  "lighting": "Night then lamp light",
+  "atmosphere": "Silent"
+ },
+ "areas": [
+  {
+   "name": "Hill of Revelation",
+   "reference": "96:1",
+   "anchor_phrase": "Recite",
+   "description": "A hill with a cave mouth, empty."
+  },
+  {
+   "name": "The Pen",
+   "reference": "96:4",
+   "anchor_phrase": "pen",
+   "description": "A writing room with pens."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Learn a letter",
+   "reference": "96:4-5",
+   "description": "Trace Arabic letters with a pen (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Prostrate and draw near",
+   "reference": "96:19",
+   "description": "Read 96:19.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "The Prophet (peace be upon him) and the angel are never shown or voiced.",
+ "learning_objectives": [
+  "Explain the first revelation",
+  "Explain the value of learning"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "96:1",
+   "anchor_phrase": "Recite",
+   "element": "Hill of Revelation"
+  },
+  {
+   "reference": "96:4",
+   "anchor_phrase": "pen",
+   "element": "The Pen"
+  }
+ ],
+ "required_assets": [
+  "Hill",
+  "Writing room"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "96:1",
+  "96:4",
+  "96:4-5",
+  "96:19"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

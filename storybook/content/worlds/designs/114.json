@@ -1,0 +1,77 @@
+{
+ "surah": 114,
+ "name": {
+  "transliterated": "An-Nās",
+  "meaning": "Mankind"
+ },
+ "ayah_count": 6,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Seeking refuge",
+  "Whispers"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "An-Nas teaches seeking refuge in the Lord of mankind from the whisperer.",
+ "world_title": "Lord of Mankind",
+ "environment_concept": "A peaceful town where whispers fade when Allah's protection is sought.",
+ "architecture_and_scenery": "A quiet town.",
+ "palette": {
+  "colors": [
+   "#efe6d2",
+   "#3f6d8f"
+  ],
+  "lighting": "Calm",
+  "atmosphere": "Quiet"
+ },
+ "areas": [
+  {
+   "name": "Whisper Lane",
+   "reference": "114:4",
+   "anchor_phrase": "whisperer",
+   "description": "Whispers fading."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Refuge",
+   "reference": "114:1-6",
+   "description": "Read the surah (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Nothing unseen shown.",
+ "learning_objectives": [
+  "Explain 114"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "114:4",
+   "anchor_phrase": "whisperer",
+   "element": "Whisper Lane"
+  }
+ ],
+ "required_assets": [
+  "Town"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "114:1-6",
+  "114:4"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

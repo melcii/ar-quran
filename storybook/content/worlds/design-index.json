@@ -1,0 +1,3783 @@
+{
+ "note": "Generated from content/worlds/designs by scripts/design-index.mjs. Do not edit.",
+ "designs": [
+  {
+   "surah": 1,
+   "world_title": "The Opening Path",
+   "content_type": "moral-and-spiritual",
+   "concept": "A single path that opens the whole Quran: from a gate of praise, through a garden of mercy, to a fork where one road runs straight and clear.",
+   "areas": [
+    {
+     "name": "Gate of Praise",
+     "reference": "1:2"
+    },
+    {
+     "name": "Garden of Mercy",
+     "reference": "1:3"
+    },
+    {
+     "name": "Horizon of Recompense",
+     "reference": "1:4"
+    },
+    {
+     "name": "Fork of the Straight Path",
+     "reference": "1:6"
+    }
+   ],
+   "activities": [
+    "Seven-step walk",
+    "Asking for help"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 2,
+   "world_title": "The Valley of Guidance",
+   "content_type": "narrative",
+   "concept": "A great valley holding many of the surah's stories as separate glades, joined by a river and crowned by a wide open sky.",
+   "areas": [
+    {
+     "name": "Garden of Names",
+     "reference": "2:31"
+    },
+    {
+     "name": "Meadow of the Cow",
+     "reference": "2:67"
+    },
+    {
+     "name": "Foundations of the House",
+     "reference": "2:127"
+    },
+    {
+     "name": "River Crossing",
+     "reference": "2:249"
+    },
+    {
+     "name": "Field of Seven Spikes",
+     "reference": "2:261"
+    }
+   ],
+   "activities": [
+    "Plant the seed of charity",
+    "Find the names",
+    "Lay the foundations"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 3,
+   "world_title": "The Sanctuary of the Family of Imran",
+   "content_type": "narrative",
+   "concept": "A quiet sanctuary of prayer and provision, opening onto a night sky where the alternation of night and day is a sign.",
+   "areas": [
+    {
+     "name": "The Prayer Chamber",
+     "reference": "3:37"
+    },
+    {
+     "name": "Courtyard of the Rope",
+     "reference": "3:103"
+    },
+    {
+     "name": "Rooftop of Night and Day",
+     "reference": "3:190"
+    },
+    {
+     "name": "Gate to Bakkah",
+     "reference": "3:96"
+    }
+   ],
+   "activities": [
+    "Hold the rope together",
+    "Watch night turn to day"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 4,
+   "world_title": "The Village of Trusts and Justice",
+   "content_type": "moral-and-spiritual",
+   "concept": "A village where every house holds something entrusted, and a central square where scales stay level.",
+   "areas": [
+    {
+     "name": "Square of One Soul",
+     "reference": "4:1"
+    },
+    {
+     "name": "House of Trusts",
+     "reference": "4:58"
+    },
+    {
+     "name": "Neighbours' Lane",
+     "reference": "4:36"
+    },
+    {
+     "name": "Scales of Justice",
+     "reference": "4:135"
+    }
+   ],
+   "activities": [
+    "Return the trusts",
+    "Keep the scales level"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 5,
+   "world_title": "The Hall of the Spread Table",
+   "content_type": "narrative",
+   "concept": "A hall of promises kept and a quiet grove where a crow teaches a lesson, joined by a long table of light.",
+   "areas": [
+    {
+     "name": "Hall of Contracts",
+     "reference": "5:1"
+    },
+    {
+     "name": "Grove of the Crow",
+     "reference": "5:31"
+    },
+    {
+     "name": "Lantern of One Life",
+     "reference": "5:32"
+    },
+    {
+     "name": "Arch of the Table",
+     "reference": "5:114"
+    }
+   ],
+   "activities": [
+    "Help each other",
+    "Keep the promise"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 6,
+   "world_title": "The Night of Signs",
+   "content_type": "nature-and-creation",
+   "concept": "An open desert night where star, moon and sun rise and set, and a valley where seeds split open into green.",
+   "areas": [
+    {
+     "name": "Ridge of the Star",
+     "reference": "6:76"
+    },
+    {
+     "name": "Moon Rise Plain",
+     "reference": "6:77"
+    },
+    {
+     "name": "Sunrise Overlook",
+     "reference": "6:78"
+    },
+    {
+     "name": "Valley of Seeds",
+     "reference": "6:95"
+    },
+    {
+     "name": "Palm Clusters",
+     "reference": "6:99"
+    }
+   ],
+   "activities": [
+    "What sets and what stays",
+    "Split the seed"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 7,
+   "world_title": "The Heights of the Peoples",
+   "content_type": "narrative",
+   "concept": "A long ridge path past the homes of earlier peoples, each a different landscape: a garden, a ship's hill, wind plains, carved cliffs, a market and a seashore.",
+   "areas": [
+    {
+     "name": "Garden of the Tree",
+     "reference": "7:19"
+    },
+    {
+     "name": "Hill of the Ship",
+     "reference": "7:64"
+    },
+    {
+     "name": "Plains of 'Aad",
+     "reference": "7:65"
+    },
+    {
+     "name": "Carved Cliffs",
+     "reference": "7:74"
+    },
+    {
+     "name": "Market of Madyan",
+     "reference": "7:85"
+    },
+    {
+     "name": "Seashore",
+     "reference": "7:138"
+    }
+   ],
+   "activities": [
+    "Fair weights",
+    "Walk the ridge"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 8,
+   "world_title": "The Field of Steady Hearts",
+   "content_type": "moral-and-spiritual",
+   "concept": "A wide field under a rain that steadies the ground, teaching unity, trust in Allah and the wish for peace.",
+   "areas": [
+    {
+     "name": "Field of Rain",
+     "reference": "8:11"
+    },
+    {
+     "name": "Circle of Hearts",
+     "reference": "8:2"
+    },
+    {
+     "name": "Hill of Peace",
+     "reference": "8:61"
+    }
+   ],
+   "activities": [
+    "Walk on firm ground",
+    "Don't quarrel"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 9,
+   "world_title": "The Road of Return",
+   "content_type": "moral-and-spiritual",
+   "concept": "A desert road leading back home, past a quiet cave of two and a mosque founded on righteousness.",
+   "areas": [
+    {
+     "name": "Cave of Two",
+     "reference": "9:40"
+    },
+    {
+     "name": "Mosque of Righteousness",
+     "reference": "9:108"
+    },
+    {
+     "name": "Circle of Learning",
+     "reference": "9:122"
+    }
+   ],
+   "activities": [
+    "Lanterns of return",
+    "Firm foundations"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 10,
+   "world_title": "The Sea of Turning Back",
+   "content_type": "narrative",
+   "concept": "A coast where the moon's phases count time, a ship meets a storm, and a whole people turn back to Allah.",
+   "areas": [
+    {
+     "name": "Moon Phase Terrace",
+     "reference": "10:5"
+    },
+    {
+     "name": "Storm at Sea",
+     "reference": "10:22"
+    },
+    {
+     "name": "Garden of Rain",
+     "reference": "10:24"
+    },
+    {
+     "name": "Doorway of Yunus",
+     "reference": "10:98"
+    }
+   ],
+   "activities": [
+    "Count the months",
+    "Calm the sail"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 11,
+   "world_title": "The Ark Coast",
+   "content_type": "narrative",
+   "concept": "A shipyard where the ark is built, a flood with waves like mountains, and the green slopes of al-Judiyy where the ark comes to rest.",
+   "areas": [
+    {
+     "name": "Shipyard",
+     "reference": "11:37"
+    },
+    {
+     "name": "Rising Waters",
+     "reference": "11:40"
+    },
+    {
+     "name": "Waves like Mountains",
+     "reference": "11:42"
+    },
+    {
+     "name": "Slopes of al-Judiyy",
+     "reference": "11:44"
+    },
+    {
+     "name": "Tent of Guests",
+     "reference": "11:69"
+    }
+   ],
+   "activities": [
+    "Build the ark",
+    "Fair measure"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 12,
+   "world_title": "Yusuf's Journey: From the Well to the Storehouses",
+   "content_type": "narrative",
+   "concept": "Seven connected places follow the surah in order: the night of eleven stars, the well, the caravan road, a house in Egypt, the prison, the storehouses and the reunion hall.",
+   "areas": [
+    {
+     "name": "Night of Eleven Stars",
+     "reference": "12:4"
+    },
+    {
+     "name": "The Well",
+     "reference": "12:15"
+    },
+    {
+     "name": "Caravan Road",
+     "reference": "12:19"
+    },
+    {
+     "name": "The Prison",
+     "reference": "12:36"
+    },
+    {
+     "name": "The Storehouses",
+     "reference": "12:47"
+    },
+    {
+     "name": "The Shirt",
+     "reference": "12:93"
+    },
+    {
+     "name": "Hall of Reunion",
+     "reference": "12:100"
+    }
+   ],
+   "activities": [
+    "Store the harvest",
+    "Read the dreams",
+    "Follow the stars"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 13,
+   "world_title": "The Valley of Thunder",
+   "content_type": "nature-and-creation",
+   "concept": "A mountain valley of rivers, gardens side by side, lightning and thunder, and a flood that leaves foam behind.",
+   "areas": [
+    {
+     "name": "Rivers between Mountains",
+     "reference": "13:3"
+    },
+    {
+     "name": "Neighbouring Plots",
+     "reference": "13:4"
+    },
+    {
+     "name": "Lightning Ridge",
+     "reference": "13:12"
+    },
+    {
+     "name": "Thunder Hall",
+     "reference": "13:13"
+    },
+    {
+     "name": "Foam Pool",
+     "reference": "13:17"
+    }
+   ],
+   "activities": [
+    "Water and foam",
+    "One water, many fruits"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 14,
+   "world_title": "The Valley of the Good Tree",
+   "content_type": "nature-and-creation",
+   "concept": "A valley where a good tree's roots are firm and its branches reach the sky, beside an uncultivated valley near a sacred House.",
+   "areas": [
+    {
+     "name": "The Good Tree",
+     "reference": "14:24"
+    },
+    {
+     "name": "Uprooted Tree",
+     "reference": "14:26"
+    },
+    {
+     "name": "Uncultivated Valley",
+     "reference": "14:37"
+    },
+    {
+     "name": "River of Ships",
+     "reference": "14:32"
+    }
+   ],
+   "activities": [
+    "Good words grow",
+    "Thankful stones"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 15,
+   "world_title": "The Rocky Tract",
+   "content_type": "nature-and-creation",
+   "concept": "Cliffs carved into homes under a sky of constellations, mountains set firm, and winds that carry pollen.",
+   "areas": [
+    {
+     "name": "Sky of Constellations",
+     "reference": "15:16"
+    },
+    {
+     "name": "Firm Mountains",
+     "reference": "15:19"
+    },
+    {
+     "name": "Fertilizing Winds",
+     "reference": "15:22"
+    },
+    {
+     "name": "Carved Homes",
+     "reference": "15:82"
+    }
+   ],
+   "activities": [
+    "Carry the pollen",
+    "Find the constellations"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 16,
+   "world_title": "The Bee Garden",
+   "content_type": "nature-and-creation",
+   "concept": "A valley of blossoms where bees build homes in mountains and trees, honey of many colours flows, and every creature is a sign.",
+   "areas": [
+    {
+     "name": "Hive Cliffs",
+     "reference": "16:68"
+    },
+    {
+     "name": "Honey Spring",
+     "reference": "16:69"
+    },
+    {
+     "name": "Pasture of Milk",
+     "reference": "16:66"
+    },
+    {
+     "name": "Coast of Ornaments",
+     "reference": "16:14"
+    },
+    {
+     "name": "Sky of Birds",
+     "reference": "16:79"
+    }
+   ],
+   "activities": [
+    "Follow the bee",
+    "Count the blessings"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 17,
+   "world_title": "The Night of Light and Guidance",
+   "content_type": "moral-and-spiritual",
+   "concept": "A night journey of lamps from one sacred mosque to another, then a land where the night and day are signs and parents are honoured.",
+   "areas": [
+    {
+     "name": "Path of Lamps",
+     "reference": "17:1"
+    },
+    {
+     "name": "Two Signs",
+     "reference": "17:12"
+    },
+    {
+     "name": "Courtyard of Parents",
+     "reference": "17:23"
+    },
+    {
+     "name": "Full Measure Market",
+     "reference": "17:35"
+    }
+   ],
+   "activities": [
+    "Words for parents",
+    "Honest measure"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 18,
+   "world_title": "Four Journeys of Al-Kahf",
+   "content_type": "narrative",
+   "concept": "Four connected adventures: the cave of the young believers, the two gardens, the meeting of the two seas, and the iron barrier.",
+   "areas": [
+    {
+     "name": "The Cave",
+     "reference": "18:10"
+    },
+    {
+     "name": "The Sliding Sun",
+     "reference": "18:17"
+    },
+    {
+     "name": "The Two Gardens",
+     "reference": "18:32"
+    },
+    {
+     "name": "Junction of the Two Seas",
+     "reference": "18:60"
+    },
+    {
+     "name": "The Ship",
+     "reference": "18:71"
+    },
+    {
+     "name": "The Wall",
+     "reference": "18:77"
+    },
+    {
+     "name": "The Iron Barrier",
+     "reference": "18:96"
+    }
+   ],
+   "activities": [
+    "Follow the sun",
+    "Why did it happen?",
+    "Build the barrier"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 19,
+   "world_title": "The Palm and the Spring",
+   "content_type": "narrative",
+   "concept": "A sanctuary of prayer, a distant place with a palm tree and a stream, and a mount where Musa was called.",
+   "areas": [
+    {
+     "name": "Prayer Chamber",
+     "reference": "19:11"
+    },
+    {
+     "name": "The Palm Tree",
+     "reference": "19:23"
+    },
+    {
+     "name": "The Stream",
+     "reference": "19:24"
+    },
+    {
+     "name": "Ripe Dates",
+     "reference": "19:25"
+    },
+    {
+     "name": "The Mount",
+     "reference": "19:52"
+    }
+   ],
+   "activities": [
+    "Gentle words",
+    "The palm and the stream"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 20,
+   "world_title": "Fire in the Valley of Tuwa",
+   "content_type": "narrative",
+   "concept": "A night journey toward a distant fire that becomes the start of Musa's mission: a sacred valley, a river with a floating chest, the palace road, a dry path through the sea and a lonely desert where a calf is melted away.",
+   "areas": [
+    {
+     "name": "The Distant Fire",
+     "reference": "20:10"
+    },
+    {
+     "name": "Valley of Tuwa",
+     "reference": "20:12"
+    },
+    {
+     "name": "The River and the Chest",
+     "reference": "20:39"
+    },
+    {
+     "name": "Dry Path Through the Sea",
+     "reference": "20:77"
+    },
+    {
+     "name": "Camp of the Calf",
+     "reference": "20:88"
+    }
+   ],
+   "activities": [
+    "Follow the firelight",
+    "Gentle words",
+    "The staff and the rope"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 21,
+   "world_title": "The Hall of the Prophets",
+   "content_type": "narrative",
+   "concept": "A long gallery of open-air rooms, one for each prophet named in the surah, opening onto a sky where the sun and moon swim in their orbits.",
+   "areas": [
+    {
+     "name": "Joined Heavens and Earth",
+     "reference": "21:30"
+    },
+    {
+     "name": "Room of the Cool Fire",
+     "reference": "21:69"
+    },
+    {
+     "name": "Room of Mountains and Birds",
+     "reference": "21:79"
+    },
+    {
+     "name": "Room of the Wind",
+     "reference": "21:81"
+    },
+    {
+     "name": "Room of the Darknesses",
+     "reference": "21:87"
+    }
+   ],
+   "activities": [
+    "The orbits",
+    "Prophet timeline",
+    "Words of Yunus"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 22,
+   "world_title": "The Plain of Pilgrims",
+   "content_type": "nature-and-creation",
+   "concept": "A vast plain with roads arriving from every distant pass toward a simple House, framed by fields that turn green after rain.",
+   "areas": [
+    {
+     "name": "Roads from Every Pass",
+     "reference": "22:27"
+    },
+    {
+     "name": "Foundations of the House",
+     "reference": "22:26"
+    },
+    {
+     "name": "Greening Fields",
+     "reference": "22:63"
+    },
+    {
+     "name": "Stages of Growth",
+     "reference": "22:5"
+    }
+   ],
+   "activities": [
+    "Rain on the hills",
+    "Pack for the journey"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 23,
+   "world_title": "Garden of the Successful Believers",
+   "content_type": "moral-and-spiritual",
+   "concept": "A cultivated estate where each terrace is a quality of the believers in the opening ayahs, fed by rain sent in measure and an olive tree from Sinai.",
+   "areas": [
+    {
+     "name": "Terrace of Humble Prayer",
+     "reference": "23:2"
+    },
+    {
+     "name": "Terrace of Turning from Idle Talk",
+     "reference": "23:3"
+    },
+    {
+     "name": "Measured Rain Reservoir",
+     "reference": "23:18"
+    },
+    {
+     "name": "Palms and Vines",
+     "reference": "23:19"
+    },
+    {
+     "name": "Olive Tree of Sinai",
+     "reference": "23:20"
+    },
+    {
+     "name": "Shipyard",
+     "reference": "23:27"
+    }
+   ],
+   "activities": [
+    "Qualities ladder",
+    "Fill the reservoir"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 24,
+   "world_title": "The Niche of Light",
+   "content_type": "moral-and-spiritual",
+   "concept": "A house of quiet rooms and courtyards lit by a single great lamp in a niche, with a mirage desert and a dark sea beyond its walls as contrasts.",
+   "areas": [
+    {
+     "name": "Doors of Permission",
+     "reference": "24:27"
+    },
+    {
+     "name": "The Lamp in the Niche",
+     "reference": "24:35"
+    },
+    {
+     "name": "Blessed Olive Grove",
+     "reference": "24:35"
+    },
+    {
+     "name": "Mirage Plain",
+     "reference": "24:39"
+    },
+    {
+     "name": "Sea of Darknesses",
+     "reference": "24:40"
+    },
+    {
+     "name": "Birds with Spread Wings",
+     "reference": "24:41"
+    }
+   ],
+   "activities": [
+    "Knock and greet",
+    "Stop the rumour",
+    "Layers of light"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 25,
+   "world_title": "Walk of the Servants of the Merciful",
+   "content_type": "moral-and-spiritual",
+   "concept": "A land of shade and sun, two seas with a barrier between them, and a final path where the Servants of the Most Merciful walk gently.",
+   "areas": [
+    {
+     "name": "Field of Shadows",
+     "reference": "25:45"
+    },
+    {
+     "name": "Winds of Good Tidings",
+     "reference": "25:48"
+    },
+    {
+     "name": "Two Seas and a Barrier",
+     "reference": "25:53"
+    },
+    {
+     "name": "Sky Lamp",
+     "reference": "25:61"
+    },
+    {
+     "name": "Path of Gentle Walking",
+     "reference": "25:63"
+    }
+   ],
+   "activities": [
+    "Shadow clock",
+    "Answer with peace",
+    "Taste the two seas"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 26,
+   "world_title": "Seven Shores of the Messengers",
+   "content_type": "narrative",
+   "concept": "A coastline of seven settlements, one for each messenger's people in the surah, each ending with the same refrain about Allah's might and mercy.",
+   "areas": [
+    {
+     "name": "Towering Waves",
+     "reference": "26:63"
+    },
+    {
+     "name": "Earth of Noble Kinds",
+     "reference": "26:7"
+    },
+    {
+     "name": "Homes in the Mountains",
+     "reference": "26:149"
+    },
+    {
+     "name": "Thicket of Madyan",
+     "reference": "26:176"
+    }
+   ],
+   "activities": [
+    "Full measure",
+    "The refrain"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 27,
+   "world_title": "Valley of the Ants and the Glass Palace",
+   "content_type": "narrative",
+   "concept": "A journey with Sulayman's story told from the land around it: the valley of the ants, the hoopoe's flight to Sheba, a throne that appears in a blink, and a palace whose floor looks like water.",
+   "areas": [
+    {
+     "name": "Valley of the Ants",
+     "reference": "27:18"
+    },
+    {
+     "name": "The Hoopoe's Perch",
+     "reference": "27:20"
+    },
+    {
+     "name": "Road to Sheba",
+     "reference": "27:22"
+    },
+    {
+     "name": "The Glass Floor",
+     "reference": "27:44"
+    },
+    {
+     "name": "Moving Mountains",
+     "reference": "27:88"
+    }
+   ],
+   "activities": [
+    "Walk with care",
+    "Find the hoopoe",
+    "Gratitude prayer"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 28,
+   "world_title": "From the River to Madyan",
+   "content_type": "narrative",
+   "concept": "Musa's story in the order the surah gives: a river where a baby is placed, a palace, a flight to Madyan, a well, a fire on the mount, and the end of Qarun's treasure.",
+   "areas": [
+    {
+     "name": "The River",
+     "reference": "28:7"
+    },
+    {
+     "name": "Well of Madyan",
+     "reference": "28:23"
+    },
+    {
+     "name": "The Shade",
+     "reference": "28:24"
+    },
+    {
+     "name": "Fire on the Mount",
+     "reference": "28:29"
+    },
+    {
+     "name": "Swallowed Treasure House",
+     "reference": "28:81"
+    }
+   ],
+   "activities": [
+    "Water the flock",
+    "Keys too heavy"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 29,
+   "world_title": "The House of the Spider",
+   "content_type": "moral-and-spiritual",
+   "concept": "A hillside of fragile and firm homes: a great spider's web glistening at dawn beside strong stone houses, an ark on the hill and roads to travel and observe creation.",
+   "areas": [
+    {
+     "name": "The Spider's Web",
+     "reference": "29:41"
+    },
+    {
+     "name": "Road of Reflection",
+     "reference": "29:20"
+    },
+    {
+     "name": "Ark on the Ridge",
+     "reference": "29:15"
+    }
+   ],
+   "activities": [
+    "Test the homes",
+    "Observe creation"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 30,
+   "world_title": "The Winds and the Colours of People",
+   "content_type": "nature-and-creation",
+   "concept": "An open world of signs: winds that carry ships, clouds spread into rain, a market of many languages and colours, and dead earth brought back to life.",
+   "areas": [
+    {
+     "name": "Market of Languages",
+     "reference": "30:22"
+    },
+    {
+     "name": "Harbour of Winds",
+     "reference": "30:46"
+    },
+    {
+     "name": "Spreading Clouds",
+     "reference": "30:48"
+    },
+    {
+     "name": "Earth Revived",
+     "reference": "30:50"
+    }
+   ],
+   "activities": [
+    "Hello in many languages",
+    "Wind and rain"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 31,
+   "world_title": "Luqman's Garden of Advice",
+   "content_type": "moral-and-spiritual",
+   "concept": "A quiet family garden where each path holds one piece of Luqman's advice to his son, under trees and beside a sea of ink.",
+   "areas": [
+    {
+     "name": "The Rock and the Mustard Seed",
+     "reference": "31:16"
+    },
+    {
+     "name": "Path of Moderate Pace",
+     "reference": "31:19"
+    },
+    {
+     "name": "Sea of Ink",
+     "reference": "31:27"
+    }
+   ],
+   "activities": [
+    "Advice path",
+    "Lower your voice"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 32,
+   "world_title": "Night Rising and the Dry Land",
+   "content_type": "moral-and-spiritual",
+   "concept": "A night village where some rise to pray, then a barren land where water arrives and crops grow.",
+   "areas": [
+    {
+     "name": "Clay Bank",
+     "reference": "32:7"
+    },
+    {
+     "name": "Night Prayer Village",
+     "reference": "32:16"
+    },
+    {
+     "name": "Barren Land",
+     "reference": "32:27"
+    }
+   ],
+   "activities": [
+    "Gifts of hearing, sight and heart",
+    "Water the plain"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 33,
+   "world_title": "The Trench and the Excellent Example",
+   "content_type": "moral-and-spiritual",
+   "concept": "A town on a plain where a trench was dug and a wind scattered the armies, with houses of the community and lessons of character.",
+   "areas": [
+    {
+     "name": "The Windy Plain",
+     "reference": "33:9"
+    },
+    {
+     "name": "Mountains of the Trust",
+     "reference": "33:72"
+    }
+   ],
+   "activities": [
+    "Qualities wall",
+    "Remember often"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 34,
+   "world_title": "Gardens of Saba and the Copper Spring",
+   "content_type": "narrative",
+   "concept": "Two kingdoms of the surah: Dawud's mountains and soft iron, Sulayman's copper spring and reservoirs, and the two gardens of Saba lost when the dam burst.",
+   "areas": [
+    {
+     "name": "Mountains of Praise",
+     "reference": "34:10"
+    },
+    {
+     "name": "Copper Spring",
+     "reference": "34:12"
+    },
+    {
+     "name": "Great Bowls",
+     "reference": "34:13"
+    },
+    {
+     "name": "Gardens of Saba",
+     "reference": "34:15"
+    },
+    {
+     "name": "Flood of the Dam",
+     "reference": "34:16"
+    }
+   ],
+   "activities": [
+    "Work in gratitude",
+    "Before and after"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 35,
+   "world_title": "The Originator's Colours",
+   "content_type": "nature-and-creation",
+   "concept": "A land of colour: fruits of many colours, white and red mountain streaks, black rock, and two seas giving food and ornaments.",
+   "areas": [
+    {
+     "name": "Streaked Mountains",
+     "reference": "35:27"
+    },
+    {
+     "name": "Orchards of Many Colours",
+     "reference": "35:27"
+    },
+    {
+     "name": "Two Seas",
+     "reference": "35:12"
+    }
+   ],
+   "activities": [
+    "Colour hunt",
+    "Pearl diving"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 36,
+   "world_title": "The Orbiting Night",
+   "content_type": "nature-and-creation",
+   "concept": "A town and its surroundings under a clockwork sky: dead earth made alive, springs, the moon through its phases, and a laden ship on the sea.",
+   "areas": [
+    {
+     "name": "Dead Earth Alive",
+     "reference": "36:33"
+    },
+    {
+     "name": "Gardens and Springs",
+     "reference": "36:34"
+    },
+    {
+     "name": "Phases of the Moon",
+     "reference": "36:39"
+    },
+    {
+     "name": "Laden Ship",
+     "reference": "36:41"
+    },
+    {
+     "name": "Green Tree Fire",
+     "reference": "36:80"
+    }
+   ],
+   "activities": [
+    "Moon phases",
+    "Orbits",
+    "Pairs"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 37,
+   "world_title": "Ranks Beneath the Stars",
+   "content_type": "narrative",
+   "concept": "A sky adorned with stars above a land of prophets' stories: Nuh's survivors, Ibrahim's trial, the shore where Yunus was cast with a gourd vine.",
+   "areas": [
+    {
+     "name": "Adorned Sky",
+     "reference": "37:6"
+    },
+    {
+     "name": "Open Shore",
+     "reference": "37:145"
+    },
+    {
+     "name": "Gourd Vine",
+     "reference": "37:146"
+    }
+   ],
+   "activities": [
+    "Grow the vine",
+    "Star map"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 38,
+   "world_title": "Mountains That Repeat Praise",
+   "content_type": "narrative",
+   "concept": "A kingdom of Dawud's mountains and birds, Sulayman's horses, and Ayyub's cooling spring.",
+   "areas": [
+    {
+     "name": "Hills of Praise",
+     "reference": "38:18"
+    },
+    {
+     "name": "Assembled Birds",
+     "reference": "38:19"
+    },
+    {
+     "name": "Cool Spring",
+     "reference": "38:42"
+    }
+   ],
+   "activities": [
+    "Fair judgement",
+    "Echo game"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 39,
+   "world_title": "Groups at the Gates",
+   "content_type": "hereafter (symbolic only)",
+   "concept": "A symbolic world of rain, springs and fading crops, ending at two distant gates seen only as light, never as Paradise or Hell.",
+   "areas": [
+    {
+     "name": "Rain to Springs",
+     "reference": "39:21"
+    },
+    {
+     "name": "Fading Crops",
+     "reference": "39:21"
+    },
+    {
+     "name": "Gates of Light",
+     "reference": "39:73"
+    }
+   ],
+   "activities": [
+    "Water cycle",
+    "Never despair"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 40,
+   "world_title": "The Tower and the Believing Man",
+   "content_type": "narrative",
+   "concept": "A city of Pharaoh where a tower was ordered built, and a believing man speaks for truth, set against a sky of forgiveness.",
+   "areas": [
+    {
+     "name": "Unfinished Tower",
+     "reference": "40:36"
+    },
+    {
+     "name": "House of the Believer",
+     "reference": "40:28"
+    }
+   ],
+   "activities": [
+    "Courage words",
+    "Pride tower"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 41,
+   "world_title": "Smoke Becoming Sky",
+   "content_type": "nature-and-creation",
+   "concept": "A world that begins as swirling smoke and settles into heaven and earth, then a still, dusty earth that quivers and grows when rain falls.",
+   "areas": [
+    {
+     "name": "Heaven as Smoke",
+     "reference": "41:11"
+    },
+    {
+     "name": "Stilled Earth",
+     "reference": "41:39"
+    },
+    {
+     "name": "Quivering Growth",
+     "reference": "41:39"
+    }
+   ],
+   "activities": [
+    "Clear the sky",
+    "Rain and growth"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 42,
+   "world_title": "Ships Like Mountains",
+   "content_type": "moral-and-spiritual",
+   "concept": "A harbour where great ships rest when the wind stops and sail when it blows, with a council house where matters are decided by consultation.",
+   "areas": [
+    {
+     "name": "Harbour of Mountain Ships",
+     "reference": "42:32"
+    },
+    {
+     "name": "Stilled Wind",
+     "reference": "42:33"
+    },
+    {
+     "name": "Council Circle",
+     "reference": "42:38"
+    }
+   ],
+   "activities": [
+    "Decide together",
+    "Wind and sail"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 43,
+   "world_title": "Roads Across the Bed of Earth",
+   "content_type": "moral-and-spiritual",
+   "concept": "A wide earth laid out like a bed with roads for guidance, rain in measure, and animals and ships for riding, set against a palace of gold ornament that cannot buy truth.",
+   "areas": [
+    {
+     "name": "Roads of Guidance",
+     "reference": "43:10"
+    },
+    {
+     "name": "Rain in Measure",
+     "reference": "43:11"
+    },
+    {
+     "name": "Ships and Mounts",
+     "reference": "43:12"
+    }
+   ],
+   "activities": [
+    "Travel prayer",
+    "Gold or guidance"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 44,
+   "world_title": "The Still Sea and Abandoned Gardens",
+   "content_type": "narrative",
+   "concept": "A blessed night of revelation, a smoke-filled sky, and Pharaoh's abandoned gardens, springs and estates beside a still sea.",
+   "areas": [
+    {
+     "name": "Blessed Night",
+     "reference": "44:3"
+    },
+    {
+     "name": "The Still Sea",
+     "reference": "44:24"
+    },
+    {
+     "name": "Left-behind Gardens",
+     "reference": "44:25"
+    }
+   ],
+   "activities": [
+    "What stays",
+    "Night of the Quran"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 45,
+   "world_title": "Subjected Sea and Sky",
+   "content_type": "nature-and-creation",
+   "concept": "A coastal world where the sea carries ships and everything in heaven and earth is set to serve people, with a kneeling crowd shown only as a symbolic horizon.",
+   "areas": [
+    {
+     "name": "Sea of Ships",
+     "reference": "45:12"
+    },
+    {
+     "name": "Everything Subjected",
+     "reference": "45:13"
+    }
+   ],
+   "activities": [
+    "Think about it",
+    "Winds"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 46,
+   "world_title": "The Sand Dunes of Al-Ahqaf",
+   "content_type": "narrative",
+   "concept": "Winding dunes where the people of 'Ad saw a cloud and thought it was rain, and a quiet valley where a group of jinn listened to the Quran, shown only as stillness.",
+   "areas": [
+    {
+     "name": "Dunes of Al-Ahqaf",
+     "reference": "46:21"
+    },
+    {
+     "name": "The Approaching Cloud",
+     "reference": "46:24"
+    },
+    {
+     "name": "Listening Valley",
+     "reference": "46:29"
+    }
+   ],
+   "activities": [
+    "Kindness to parents",
+    "Listen quietly"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 47,
+   "world_title": "Four Rivers Described",
+   "content_type": "hereafter (symbolic only)",
+   "concept": "A symbolic world of the rivers named in the surah, shown only as four labelled light-streams so as not to claim a picture of Paradise.",
+   "areas": [
+    {
+     "name": "Rivers Described",
+     "reference": "47:15"
+    }
+   ],
+   "activities": [
+    "Read the description",
+    "Good deeds"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 48,
+   "world_title": "The Tree of the Pledge",
+   "content_type": "moral-and-spiritual",
+   "concept": "A plain with a single tree where a pledge was made, and a field of seedlings growing strong.",
+   "areas": [
+    {
+     "name": "The Tree",
+     "reference": "48:18"
+    },
+    {
+     "name": "Growing Shoot",
+     "reference": "48:29"
+    }
+   ],
+   "activities": [
+    "Grow the shoot",
+    "Tranquillity"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 49,
+   "world_title": "The Village of Good Manners",
+   "content_type": "moral-and-spiritual",
+   "concept": "A friendly village where each street teaches a manner from the surah: checking news, making peace, no mocking, no nicknames, no spying, no backbiting, and a market square where peoples and tribes meet to know one another.",
+   "areas": [
+    {
+     "name": "Messenger's Gate",
+     "reference": "49:6"
+    },
+    {
+     "name": "Peace Bridge",
+     "reference": "49:10"
+    },
+    {
+     "name": "Mockery-free Street",
+     "reference": "49:11"
+    },
+    {
+     "name": "Hidden-whispers Lane",
+     "reference": "49:12"
+    },
+    {
+     "name": "Market of Nations",
+     "reference": "49:13"
+    }
+   ],
+   "activities": [
+    "Check the news",
+    "Mend the bridge",
+    "Kind names",
+    "Know one another"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 50,
+   "world_title": "The Sky Without Rifts",
+   "content_type": "nature-and-creation",
+   "concept": "A sky so whole it has no rifts above an earth spread out with mountains, blessed rain and tall palms with layered fruit.",
+   "areas": [
+    {
+     "name": "Sky Without Rifts",
+     "reference": "50:6"
+    },
+    {
+     "name": "Mountains and Beautiful Kinds",
+     "reference": "50:7"
+    },
+    {
+     "name": "Blessed Rain",
+     "reference": "50:9"
+    },
+    {
+     "name": "Lofty Palms",
+     "reference": "50:10"
+    }
+   ],
+   "activities": [
+    "Find a rift",
+    "Harvest"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 51,
+   "world_title": "Winds, Clouds and Ships",
+   "content_type": "nature-and-creation",
+   "concept": "A world of the surah's opening oaths: scattering winds, clouds carrying water, ships sailing easily, then a wide expanding heaven over an earth spread like a carpet.",
+   "areas": [
+    {
+     "name": "Scattering Winds",
+     "reference": "51:1"
+    },
+    {
+     "name": "Laden Clouds",
+     "reference": "51:2"
+    },
+    {
+     "name": "Easy Ships",
+     "reference": "51:3"
+    },
+    {
+     "name": "Expanding Heaven",
+     "reference": "51:47"
+    }
+   ],
+   "activities": [
+    "Pairs",
+    "Signs in yourselves"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 52,
+   "world_title": "The Mount and the Raised Heaven",
+   "content_type": "moral-and-spiritual",
+   "concept": "A world built from the surah's oaths: a mount, an inscribed book on spread parchment, a frequented house, a raised heaven and a filled sea.",
+   "areas": [
+    {
+     "name": "The Mount",
+     "reference": "52:1"
+    },
+    {
+     "name": "Parchment Spread Open",
+     "reference": "52:3"
+    },
+    {
+     "name": "Raised Heaven",
+     "reference": "52:5"
+    }
+   ],
+   "activities": [
+    "Oaths path",
+    "Glorify at night"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 53,
+   "world_title": "The Descending Star",
+   "content_type": "nature-and-creation",
+   "concept": "A night sky with a setting star, then a land where laughter and tears, life and death, and the star Sirius are all named as from Allah.",
+   "areas": [
+    {
+     "name": "Descending Star",
+     "reference": "53:1"
+    },
+    {
+     "name": "Laughter and Tears",
+     "reference": "53:43"
+    },
+    {
+     "name": "Sirius",
+     "reference": "53:49"
+    }
+   ],
+   "activities": [
+    "Find Sirius",
+    "Own deeds"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 54,
+   "world_title": "Moon Split and the Easy Reminder",
+   "content_type": "narrative",
+   "concept": "A sky with a moon split in two, then stories of peoples: rain gates opening for Nuh, a screaming wind for 'Ad, a she-camel for Thamud, each followed by 'We made the Quran easy to remember'.",
+   "areas": [
+    {
+     "name": "Split Moon",
+     "reference": "54:1"
+    },
+    {
+     "name": "Gates of Rain",
+     "reference": "54:11"
+    },
+    {
+     "name": "Springs Bursting",
+     "reference": "54:12"
+    },
+    {
+     "name": "Vessel of Planks",
+     "reference": "54:13"
+    },
+    {
+     "name": "Uprooted Palms",
+     "reference": "54:20"
+    }
+   ],
+   "activities": [
+    "Easy to remember",
+    "Planks and nails"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 55,
+   "world_title": "The Garden of Favours",
+   "content_type": "nature-and-creation",
+   "concept": "A world built as a series of balanced gardens and shores, each closing with the surah's refrain 'So which of the favours of your Lord would you deny?', from the sun and moon in precise calculation to the two seas meeting with pearls and coral.",
+   "areas": [
+    {
+     "name": "Orbit of Sun and Moon",
+     "reference": "55:5"
+    },
+    {
+     "name": "Stars and Trees",
+     "reference": "55:6"
+    },
+    {
+     "name": "The Balance",
+     "reference": "55:7"
+    },
+    {
+     "name": "Fruit and Palms",
+     "reference": "55:11"
+    },
+    {
+     "name": "Grain and Fragrance",
+     "reference": "55:12"
+    },
+    {
+     "name": "Pottery Clay Bank",
+     "reference": "55:14"
+    },
+    {
+     "name": "Two Seas",
+     "reference": "55:19"
+    },
+    {
+     "name": "Pearl and Coral",
+     "reference": "55:22"
+    },
+    {
+     "name": "Ships like Mountains",
+     "reference": "55:24"
+    }
+   ],
+   "activities": [
+    "Keep the balance",
+    "Favour collection",
+    "Two sunrises",
+    "Pearl and coral"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 56,
+   "world_title": "Seed, Water and Fire",
+   "content_type": "hereafter (symbolic only)",
+   "concept": "A symbolic world about the three questions the surah asks: who grows the seed, who sends down the water, who made the tree of fire. The Event itself is never pictured.",
+   "areas": [
+    {
+     "name": "Field of Seeds",
+     "reference": "56:63"
+    },
+    {
+     "name": "Water from the Clouds",
+     "reference": "56:69"
+    },
+    {
+     "name": "Tree of Fire",
+     "reference": "56:72"
+    }
+   ],
+   "activities": [
+    "Who grows it?",
+    "Fresh water"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 57,
+   "world_title": "Iron and the Passing Rain-Plants",
+   "content_type": "moral-and-spiritual",
+   "concept": "A land where rain makes plants grow green and then yellow and dry, and a forge where iron is shaped, showing the passing world and real strength.",
+   "areas": [
+    {
+     "name": "Passing Field",
+     "reference": "57:20"
+    },
+    {
+     "name": "The Forge",
+     "reference": "57:25"
+    },
+    {
+     "name": "Revived Earth",
+     "reference": "57:17"
+    }
+   ],
+   "activities": [
+    "Lend a good loan",
+    "Seasons"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 58,
+   "world_title": "The Assembly That Makes Room",
+   "content_type": "moral-and-spiritual",
+   "concept": "A meeting hall where a woman's complaint was heard, and where people make space for each other.",
+   "areas": [
+    {
+     "name": "The Hall",
+     "reference": "58:11"
+    }
+   ],
+   "activities": [
+    "Make space",
+    "Allah hears"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 59,
+   "world_title": "The Humbled Mountain",
+   "content_type": "moral-and-spiritual",
+   "concept": "A great mountain that would be humbled if the Quran were sent upon it, and a sky inscribed with the beautiful names of Allah as text.",
+   "areas": [
+    {
+     "name": "Humbled Mountain",
+     "reference": "59:21"
+    },
+    {
+     "name": "Names of Allah",
+     "reference": "59:23"
+    }
+   ],
+   "activities": [
+    "Names",
+    "Prefer others"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 60,
+   "world_title": "Bridges of Fairness",
+   "content_type": "moral-and-spiritual",
+   "concept": "A border land where bridges stand between communities, teaching justice and kindness to those who do not fight us.",
+   "areas": [
+    {
+     "name": "Bridge of Kindness",
+     "reference": "60:8"
+    },
+    {
+     "name": "Hope of Affection",
+     "reference": "60:7"
+    }
+   ],
+   "activities": [
+    "Fair trade",
+    "Example of Ibrahim"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 61,
+   "world_title": "Ranks Like a Structure",
+   "content_type": "moral-and-spiritual",
+   "concept": "A wall of stones fitting together tightly, standing for believers united in rows.",
+   "areas": [
+    {
+     "name": "Firm Structure",
+     "reference": "61:4"
+    }
+   ],
+   "activities": [
+    "Build together",
+    "Say and do"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 62,
+   "world_title": "Friday Market and Prayer",
+   "content_type": "moral-and-spiritual",
+   "concept": "A market town where trade pauses for Friday prayer and resumes after.",
+   "areas": [
+    {
+     "name": "Market",
+     "reference": "62:9"
+    },
+    {
+     "name": "After Prayer",
+     "reference": "62:10"
+    }
+   ],
+   "activities": [
+    "Close the stall",
+    "Seek bounty"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 63,
+   "world_title": "Before the Term Ends",
+   "content_type": "moral-and-spiritual",
+   "concept": "A harvest world where provision is shared before the season ends.",
+   "areas": [
+    {
+     "name": "Harvest Baskets",
+     "reference": "63:10"
+    }
+   ],
+   "activities": [
+    "Share now"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 64,
+   "world_title": "The Mutual Exchange",
+   "content_type": "moral-and-spiritual",
+   "concept": "A garden where giving and patience are traded for real gain.",
+   "areas": [
+    {
+     "name": "Path of Effort",
+     "reference": "64:16"
+    }
+   ],
+   "activities": [
+    "Do your best"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 65,
+   "world_title": "Provision From Where You Do Not Expect",
+   "content_type": "moral-and-spiritual",
+   "concept": "A world of unexpected springs appearing for those who rely on Allah.",
+   "areas": [
+    {
+     "name": "Unexpected Spring",
+     "reference": "65:3"
+    }
+   ],
+   "activities": [
+    "Find the spring"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 66,
+   "world_title": "Two Examples of Faith",
+   "content_type": "moral-and-spiritual",
+   "concept": "A palace and a quiet sanctuary representing two women praised for faith, with no person shown.",
+   "areas": [
+    {
+     "name": "Palace Room",
+     "reference": "66:11"
+    },
+    {
+     "name": "Sanctuary",
+     "reference": "66:12"
+    }
+   ],
+   "activities": [
+    "Sincere repentance"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 67,
+   "world_title": "Seven Skies and the Outspread Wings",
+   "content_type": "nature-and-creation",
+   "concept": "A layered sky with no flaw, birds gliding with wings outspread, and a tame earth with slopes to walk.",
+   "areas": [
+    {
+     "name": "Seven Layers",
+     "reference": "67:3"
+    },
+    {
+     "name": "Look Again",
+     "reference": "67:4"
+    },
+    {
+     "name": "Stars",
+     "reference": "67:5"
+    },
+    {
+     "name": "Tame Earth",
+     "reference": "67:15"
+    },
+    {
+     "name": "Outspread Wings",
+     "reference": "67:19"
+    }
+   ],
+   "activities": [
+    "Find a flaw",
+    "Bird watch",
+    "Walk the slopes"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 68,
+   "world_title": "The Pen and the Burnt Garden",
+   "content_type": "narrative",
+   "concept": "A writing desk with a pen, and a garden whose owners swore to harvest without giving to the poor, and found it ruined.",
+   "areas": [
+    {
+     "name": "Pen",
+     "reference": "68:1"
+    },
+    {
+     "name": "Garden at Dawn",
+     "reference": "68:17"
+    },
+    {
+     "name": "Ruined Garden",
+     "reference": "68:20"
+    }
+   ],
+   "activities": [
+    "Share the harvest",
+    "Writing"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 69,
+   "world_title": "Hollow Palm Trunks",
+   "content_type": "hereafter (symbolic only)",
+   "concept": "A desert of fallen palm trunks after a violent wind, with the Reality spoken of only as text.",
+   "areas": [
+    {
+     "name": "Windy Valley",
+     "reference": "69:6"
+    },
+    {
+     "name": "Hollow Trunks",
+     "reference": "69:7"
+    }
+   ],
+   "activities": [
+    "Read your book"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 70,
+   "world_title": "Ways of Ascent",
+   "content_type": "hereafter (symbolic only)",
+   "concept": "A symbolic world of stairways of light rising to the sky, never showing angels.",
+   "areas": [
+    {
+     "name": "Stairways",
+     "reference": "70:3"
+    }
+   ],
+   "activities": [
+    "Steady prayer"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 71,
+   "world_title": "Nuh's Call by Night and Day",
+   "content_type": "narrative",
+   "concept": "A village where a call goes out by night and day, in public and in private, offering showers of rain, gardens and rivers to those who seek forgiveness; the idols' names stand as empty stones.",
+   "areas": [
+    {
+     "name": "Showers of Forgiveness",
+     "reference": "71:11"
+    },
+    {
+     "name": "Gardens and Rivers",
+     "reference": "71:12"
+    },
+    {
+     "name": "Seven Heavens and Lamp",
+     "reference": "71:16"
+    },
+    {
+     "name": "Roads of the Expanse",
+     "reference": "71:20"
+    }
+   ],
+   "activities": [
+    "Ask forgiveness",
+    "Sun and moon"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 72,
+   "world_title": "An Amazing Recitation Heard",
+   "content_type": "moral-and-spiritual",
+   "concept": "A night desert where an amazing Quran is heard by a group the eye cannot see; the world shows only stillness and a sky guarded with flames.",
+   "areas": [
+    {
+     "name": "Listening Night",
+     "reference": "72:1"
+    },
+    {
+     "name": "Guarded Sky",
+     "reference": "72:8"
+    }
+   ],
+   "activities": [
+    "Shooting stars"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 73,
+   "world_title": "The Night Vigil",
+   "content_type": "moral-and-spiritual",
+   "concept": "A night house where the hours are measured, half, a third, two thirds, for standing in prayer and measured recitation.",
+   "areas": [
+    {
+     "name": "Night Dial",
+     "reference": "73:3"
+    },
+    {
+     "name": "Measured Recitation",
+     "reference": "73:4"
+    }
+   ],
+   "activities": [
+    "Divide the night",
+    "Slow reading"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 74,
+   "world_title": "Arise and Warn",
+   "content_type": "moral-and-spiritual",
+   "concept": "A morning that begins with rising, glorifying and purifying clothing.",
+   "areas": [
+    {
+     "name": "Dawn Rising",
+     "reference": "74:2"
+    },
+    {
+     "name": "Purify Clothing",
+     "reference": "74:4"
+    }
+   ],
+   "activities": [
+    "Morning routine"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 75,
+   "world_title": "Fingertips Restored",
+   "content_type": "hereafter (symbolic only)",
+   "concept": "A symbolic world about how Allah can restore even fingertips, never depicting the Resurrection.",
+   "areas": [
+    {
+     "name": "Fingertips",
+     "reference": "75:4"
+    }
+   ],
+   "activities": [
+    "Fingerprint",
+    "Do not rush"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 76,
+   "world_title": "Feeding for Allah's Sake",
+   "content_type": "moral-and-spiritual",
+   "concept": "A home where food is given to the needy, the orphan and the captive, asking nothing in return; the promised reward is only read, not shown.",
+   "areas": [
+    {
+     "name": "The Doorway",
+     "reference": "76:8"
+    }
+   ],
+   "activities": [
+    "Share the meal"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 77,
+   "world_title": "Winds in Gusts",
+   "content_type": "nature-and-creation",
+   "concept": "A world of winds sent in gusts, and an earth that holds the living and the dead, with tall mountains and sweet water.",
+   "areas": [
+    {
+     "name": "Gusts",
+     "reference": "77:1"
+    },
+    {
+     "name": "Earth a Container",
+     "reference": "77:25"
+    },
+    {
+     "name": "Mountains and Sweet Water",
+     "reference": "77:27"
+    }
+   ],
+   "activities": [
+    "Wind and water"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 78,
+   "world_title": "The Earth as a Resting Place",
+   "content_type": "nature-and-creation",
+   "concept": "A walk through the signs listed in the surah: the earth a resting place, mountains like stakes, sleep, night as clothing, a burning lamp and rain bringing gardens.",
+   "areas": [
+    {
+     "name": "Resting Place",
+     "reference": "78:6"
+    },
+    {
+     "name": "Mountains as Stakes",
+     "reference": "78:7"
+    },
+    {
+     "name": "Night as Clothing",
+     "reference": "78:10"
+    },
+    {
+     "name": "Burning Lamp",
+     "reference": "78:13"
+    },
+    {
+     "name": "Gardens of Entwined Growth",
+     "reference": "78:16"
+    }
+   ],
+   "activities": [
+    "Sign checklist",
+    "Pitch the tent"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 79,
+   "world_title": "The Valley of Tuwa Called Again",
+   "content_type": "narrative",
+   "concept": "A sacred valley and a sky raised and proportioned, with pastures and water drawn from the earth.",
+   "areas": [
+    {
+     "name": "Raised Ceiling",
+     "reference": "79:28"
+    },
+    {
+     "name": "Water and Pasture",
+     "reference": "79:31"
+    },
+    {
+     "name": "Firm Mountains",
+     "reference": "79:32"
+    }
+   ],
+   "activities": [
+    "Day and night"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 80,
+   "world_title": "Look at Your Food",
+   "content_type": "nature-and-creation",
+   "concept": "A farm where the journey of food is followed: torrents of water, split earth, grain, grapes, olives, palms and fruit.",
+   "areas": [
+    {
+     "name": "Torrents",
+     "reference": "80:25"
+    },
+    {
+     "name": "Split Earth",
+     "reference": "80:26"
+    },
+    {
+     "name": "Olives and Palms",
+     "reference": "80:29"
+    },
+    {
+     "name": "Fruit and Grass",
+     "reference": "80:31"
+    }
+   ],
+   "activities": [
+    "From seed to plate",
+    "Welcome everyone"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 81,
+   "world_title": "When the Sun Is Wrapped",
+   "content_type": "hereafter (symbolic only)",
+   "concept": "A symbolic sequence of the surah's signs read as text over a calm sky; nothing of the end is pictured.",
+   "areas": [
+    {
+     "name": "Dawn Breathing",
+     "reference": "81:18"
+    }
+   ],
+   "activities": [
+    "Read the signs"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 82,
+   "world_title": "The Sky Breaks Apart in Words",
+   "content_type": "hereafter (symbolic only)",
+   "concept": "A symbolic world of written ayahs and a reminder that Allah fashioned us in proportion.",
+   "areas": [
+    {
+     "name": "Proportioned Form",
+     "reference": "82:7"
+    }
+   ],
+   "activities": [
+    "Read"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 83,
+   "world_title": "Market of Fair Measure",
+   "content_type": "moral-and-spiritual",
+   "concept": "A bustling market where scales must be fair.",
+   "areas": [
+    {
+     "name": "Scales",
+     "reference": "83:1"
+    }
+   ],
+   "activities": [
+    "Fair weight"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 84,
+   "world_title": "Twilight and the Full Moon",
+   "content_type": "hereafter (symbolic only)",
+   "concept": "A world of twilight glow, enveloping night and a full moon, by which the surah swears.",
+   "areas": [
+    {
+     "name": "Twilight Glow",
+     "reference": "84:16"
+    },
+    {
+     "name": "Full Moon",
+     "reference": "84:18"
+    }
+   ],
+   "activities": [
+    "Moon phases"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 85,
+   "world_title": "Sky of Great Stars and the Trench",
+   "content_type": "narrative",
+   "concept": "A sky of great stars above a trench; the believers' story is told only in words.",
+   "areas": [
+    {
+     "name": "Great Stars",
+     "reference": "85:1"
+    },
+    {
+     "name": "The Trench",
+     "reference": "85:4"
+    }
+   ],
+   "activities": [
+    "Find the great stars"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 86,
+   "world_title": "The Piercing Star",
+   "content_type": "nature-and-creation",
+   "concept": "A night sky with a piercing star, sky returning rain, and earth cracking open with plants.",
+   "areas": [
+    {
+     "name": "Piercing Star",
+     "reference": "86:3"
+    },
+    {
+     "name": "Returning Rain",
+     "reference": "86:11"
+    },
+    {
+     "name": "Cracking Earth",
+     "reference": "86:12"
+    }
+   ],
+   "activities": [
+    "Find the star",
+    "Rain cycle"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 87,
+   "world_title": "Pasture to Stubble",
+   "content_type": "nature-and-creation",
+   "concept": "A pasture that grows green and turns to dark stubble, showing creation, proportion and guidance.",
+   "areas": [
+    {
+     "name": "Pasture",
+     "reference": "87:4"
+    },
+    {
+     "name": "Black Stubble",
+     "reference": "87:5"
+    }
+   ],
+   "activities": [
+    "Grow and fade",
+    "Glorify"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 88,
+   "world_title": "Camels, Sky, Mountains, Earth",
+   "content_type": "nature-and-creation",
+   "concept": "Four stations from 88:17-20: camels, raised sky, erected mountains and spread earth.",
+   "areas": [
+    {
+     "name": "Camels",
+     "reference": "88:17"
+    },
+    {
+     "name": "Raised Sky",
+     "reference": "88:18"
+    },
+    {
+     "name": "Erected Mountains",
+     "reference": "88:19"
+    },
+    {
+     "name": "Spread Earth",
+     "reference": "88:20"
+    }
+   ],
+   "activities": [
+    "Look and think"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 89,
+   "world_title": "The Dawn and the Pillars of Iram",
+   "content_type": "narrative",
+   "concept": "A dawn over ten nights, and ruins of Iram's lofty pillars, Thamud's carved rocks and Pharaoh's stakes.",
+   "areas": [
+    {
+     "name": "Dawn",
+     "reference": "89:1"
+    },
+    {
+     "name": "Lofty Pillars",
+     "reference": "89:7"
+    },
+    {
+     "name": "Carved Rocks",
+     "reference": "89:9"
+    }
+   ],
+   "activities": [
+    "Care for the orphan"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 90,
+   "world_title": "The Steep Pass",
+   "content_type": "moral-and-spiritual",
+   "concept": "A mountain path with two ways and a steep pass climbed by freeing, feeding and caring.",
+   "areas": [
+    {
+     "name": "Two Ways",
+     "reference": "90:10"
+    },
+    {
+     "name": "Steep Pass",
+     "reference": "90:11"
+    }
+   ],
+   "activities": [
+    "Climb the pass"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 91,
+   "world_title": "Sun and Its Brightness",
+   "content_type": "moral-and-spiritual",
+   "concept": "A day cycle over a valley: sun, moon, day, night, sky, earth, soul, ending at Thamud's well where the she-camel drank.",
+   "areas": [
+    {
+     "name": "Sun",
+     "reference": "91:1"
+    },
+    {
+     "name": "Moon Following",
+     "reference": "91:2"
+    },
+    {
+     "name": "The Well",
+     "reference": "91:13"
+    }
+   ],
+   "activities": [
+    "Purify the soul"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 92,
+   "world_title": "Night Covers, Day Appears",
+   "content_type": "moral-and-spiritual",
+   "concept": "A day-night world showing how efforts differ.",
+   "areas": [
+    {
+     "name": "Night",
+     "reference": "92:1"
+    },
+    {
+     "name": "Day",
+     "reference": "92:2"
+    }
+   ],
+   "activities": [
+    "Give"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 93,
+   "world_title": "The Morning Brightness",
+   "content_type": "moral-and-spiritual",
+   "concept": "A sunrise world of comfort: morning light, reassurance, and caring for orphans and those who ask.",
+   "areas": [
+    {
+     "name": "Morning Brightness",
+     "reference": "93:1"
+    },
+    {
+     "name": "Open Door",
+     "reference": "93:10"
+    }
+   ],
+   "activities": [
+    "Kind door",
+    "Count blessings"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 94,
+   "world_title": "With Hardship, Ease",
+   "content_type": "moral-and-spiritual",
+   "concept": "A climb where each hard step reveals an easy one.",
+   "areas": [
+    {
+     "name": "Path of Ease",
+     "reference": "94:5"
+    }
+   ],
+   "activities": [
+    "Hard then easy"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 95,
+   "world_title": "Fig, Olive and the Secure City",
+   "content_type": "nature-and-creation",
+   "concept": "Four places named in the oaths: a fig orchard, an olive grove, Mount Sinai and a secure city, ending with the reminder that people were created in the best stature.",
+   "areas": [
+    {
+     "name": "Fig Orchard",
+     "reference": "95:1"
+    },
+    {
+     "name": "Olive Grove",
+     "reference": "95:1"
+    },
+    {
+     "name": "Mount Sinai",
+     "reference": "95:2"
+    },
+    {
+     "name": "Secure City",
+     "reference": "95:3"
+    }
+   ],
+   "activities": [
+    "Four oaths",
+    "Best stature"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 96,
+   "world_title": "Recite! The Pen and the Clinging Substance",
+   "content_type": "moral-and-spiritual",
+   "concept": "A quiet mountain cave mouth at night with a single line of light, then a scriptorium where the pen teaches; the first revelation is only told, never shown.",
+   "areas": [
+    {
+     "name": "Hill of Revelation",
+     "reference": "96:1"
+    },
+    {
+     "name": "The Pen",
+     "reference": "96:4"
+    }
+   ],
+   "activities": [
+    "Learn a letter",
+    "Prostrate and draw near"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 97,
+   "world_title": "Night Until the Dawn",
+   "content_type": "moral-and-spiritual",
+   "concept": "A peaceful night sky that stays calm until dawn emerges, better than a thousand months; nothing unseen is pictured.",
+   "areas": [
+    {
+     "name": "Thousand Months Wall",
+     "reference": "97:3"
+    },
+    {
+     "name": "Peace Until Dawn",
+     "reference": "97:5"
+    }
+   ],
+   "activities": [
+    "Count the months",
+    "Night prayer"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 98,
+   "world_title": "The Clear Evidence",
+   "content_type": "moral-and-spiritual",
+   "concept": "A world of clear water and clean pages, showing sincere worship.",
+   "areas": [
+    {
+     "name": "Sincere Spring",
+     "reference": "98:5"
+    }
+   ],
+   "activities": [
+    "Sincerity"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 99,
+   "world_title": "An Atom's Weight",
+   "content_type": "hereafter (symbolic only)",
+   "concept": "A symbolic world of tiny particles where each good deed is seen, without depicting the earthquake.",
+   "areas": [
+    {
+     "name": "Atom Garden",
+     "reference": "99:7"
+    }
+   ],
+   "activities": [
+    "Small deeds"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 100,
+   "world_title": "Racers at Dawn",
+   "content_type": "nature-and-creation",
+   "concept": "Horses racing at dawn, sparks from hooves, dust clouds, used as an oath about gratitude.",
+   "areas": [
+    {
+     "name": "Racers",
+     "reference": "100:1"
+    },
+    {
+     "name": "Sparks",
+     "reference": "100:2"
+    },
+    {
+     "name": "Dust",
+     "reference": "100:4"
+    }
+   ],
+   "activities": [
+    "Gratitude"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 101,
+   "world_title": "Like Moths, Like Wool",
+   "content_type": "hereafter (symbolic only)",
+   "concept": "A symbolic world of the surah's two images: scattered moths and fluffed wool, shown as soft abstraction only.",
+   "areas": [
+    {
+     "name": "Moths",
+     "reference": "101:4"
+    },
+    {
+     "name": "Wool",
+     "reference": "101:5"
+    }
+   ],
+   "activities": [
+    "Heavy scales"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 102,
+   "world_title": "Counting That Distracts",
+   "content_type": "moral-and-spiritual",
+   "concept": "A world where piling things up distracts from what matters.",
+   "areas": [
+    {
+     "name": "Piles",
+     "reference": "102:1"
+    }
+   ],
+   "activities": [
+    "Enough"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 103,
+   "world_title": "The Hourglass of Time",
+   "content_type": "moral-and-spiritual",
+   "concept": "A world built inside the flow of time: sand pouring from a vast hourglass across a dune landscape, and four keys that save from loss: faith, good deeds, advising truth and advising patience.",
+   "areas": [
+    {
+     "name": "Hourglass Plain",
+     "reference": "103:1"
+    },
+    {
+     "name": "Plain of Loss",
+     "reference": "103:2"
+    },
+    {
+     "name": "Four Gates",
+     "reference": "103:3"
+    }
+   ],
+   "activities": [
+    "Before the sand runs out",
+    "Advise a friend"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 104,
+   "world_title": "The Counting House",
+   "content_type": "moral-and-spiritual",
+   "concept": "A counting house where wealth is counted, and a lesson about mocking.",
+   "areas": [
+    {
+     "name": "Counting Table",
+     "reference": "104:2"
+    }
+   ],
+   "activities": [
+    "Kind words"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 105,
+   "world_title": "The Year of the Elephant",
+   "content_type": "narrative",
+   "concept": "A dusty road to Makkah where a great army with an elephant comes, birds in flocks gather over the hills, and the army becomes like eaten straw; the House stands untouched.",
+   "areas": [
+    {
+     "name": "The Army Road",
+     "reference": "105:1"
+    },
+    {
+     "name": "Flocks of Birds",
+     "reference": "105:3"
+    },
+    {
+     "name": "Stones of Clay",
+     "reference": "105:4"
+    },
+    {
+     "name": "Eaten Straw",
+     "reference": "105:5"
+    }
+   ],
+   "activities": [
+    "Count the flocks",
+    "Plans fail"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 106,
+   "world_title": "Caravans of Winter and Summer",
+   "content_type": "moral-and-spiritual",
+   "concept": "Two caravan routes, winter and summer, and the House whose Lord fed and protected the Quraysh.",
+   "areas": [
+    {
+     "name": "Winter Caravan",
+     "reference": "106:2"
+    },
+    {
+     "name": "Summer Caravan",
+     "reference": "106:2"
+    },
+    {
+     "name": "Lord of this House",
+     "reference": "106:3"
+    }
+   ],
+   "activities": [
+    "Plan the journey",
+    "Gratitude"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 107,
+   "world_title": "Small Kindnesses",
+   "content_type": "moral-and-spiritual",
+   "concept": "A neighbourhood where kindness to orphans, feeding the poor and lending small things matter.",
+   "areas": [
+    {
+     "name": "Orphan's Door",
+     "reference": "107:2"
+    },
+    {
+     "name": "Lending Shelf",
+     "reference": "107:7"
+    }
+   ],
+   "activities": [
+    "Lend a hand",
+    "Feed the poor"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 108,
+   "world_title": "Abundance",
+   "content_type": "moral-and-spiritual",
+   "concept": "A world of abundance: rivers, plenty and gratitude through prayer.",
+   "areas": [
+    {
+     "name": "Abundance",
+     "reference": "108:1"
+    }
+   ],
+   "activities": [
+    "Pray"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 109,
+   "world_title": "Two Separate Paths",
+   "content_type": "moral-and-spiritual",
+   "concept": "Two paths side by side, each respected.",
+   "areas": [
+    {
+     "name": "Two Paths",
+     "reference": "109:6"
+    }
+   ],
+   "activities": [
+    "Choose your path"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 110,
+   "world_title": "Multitudes Arriving",
+   "content_type": "moral-and-spiritual",
+   "concept": "Roads full of people arriving, shown as moving lights.",
+   "areas": [
+    {
+     "name": "Converging Roads",
+     "reference": "110:2"
+    }
+   ],
+   "activities": [
+    "Praise"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 111,
+   "world_title": "Wealth Will Not Avail",
+   "content_type": "moral-and-spiritual",
+   "concept": "A path of thorns and firewood showing that wealth and status do not save from wrongdoing.",
+   "areas": [
+    {
+     "name": "Firewood",
+     "reference": "111:4"
+    },
+    {
+     "name": "Wealth",
+     "reference": "111:2"
+    }
+   ],
+   "activities": [
+    "What helps"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 112,
+   "world_title": "The One",
+   "content_type": "moral-and-spiritual",
+   "concept": "A world of pure geometry and light: no image, figure or symbol of Allah, only the four ayahs written in calligraphy across an open sky, and a single path of reflection.",
+   "areas": [
+    {
+     "name": "Path of One",
+     "reference": "112:1"
+    },
+    {
+     "name": "Eternal Refuge",
+     "reference": "112:2"
+    },
+    {
+     "name": "Nothing Like Him",
+     "reference": "112:4"
+    }
+   ],
+   "activities": [
+    "Read the four",
+    "Nothing compares"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 113,
+   "world_title": "Lord of Daybreak",
+   "content_type": "moral-and-spiritual",
+   "concept": "A dawn world where darkness lifts and protection is sought.",
+   "areas": [
+    {
+     "name": "Daybreak",
+     "reference": "113:1"
+    },
+    {
+     "name": "Settling Darkness",
+     "reference": "113:3"
+    }
+   ],
+   "activities": [
+    "Refuge"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  },
+  {
+   "surah": 114,
+   "world_title": "Lord of Mankind",
+   "content_type": "moral-and-spiritual",
+   "concept": "A peaceful town where whispers fade when Allah's protection is sought.",
+   "areas": [
+    {
+     "name": "Whisper Lane",
+     "reference": "114:4"
+    }
+   ],
+   "activities": [
+    "Refuge"
+   ],
+   "status": {
+    "quran_text": "verified (KFGQPC Hafs, checksummed)",
+    "translation": "Saheeh International, attributed",
+    "educational_content": "draft, unreviewed",
+    "world_design": "designed, unreviewed",
+    "playable_environment": "not built: a shared symbolic setting stands in",
+    "testing": "not tested"
+   },
+   "review": "unreviewed"
+  }
+ ]
+}

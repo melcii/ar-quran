@@ -1,0 +1,205 @@
+{
+ "surah": 55,
+ "name": {
+  "transliterated": "Ar-Raḥmān",
+  "meaning": "The Beneficent"
+ },
+ "ayah_count": 78,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "Allah's favours",
+  "Balance and justice",
+  "Creation in pairs",
+  "Gratitude"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Ar-Rahman means The Most Merciful. It lists Allah's gifts: teaching the Quran, the sun and moon, the balance, fruits and grain, two seas with pearls and coral, and asks again and again which of His favours we would deny.",
+ "world_title": "The Garden of Favours",
+ "environment_concept": "A world built as a series of balanced gardens and shores, each closing with the surah's refrain 'So which of the favours of your Lord would you deny?', from the sun and moon in precise calculation to the two seas meeting with pearls and coral.",
+ "architecture_and_scenery": "A sun-and-moon orrery over meadows, a great balance scale at the centre, palm and grain terraces with fragrant plants, a pottery-clay riverbank, and a coast where two seas meet with a barrier, ships with high sails on the horizon.",
+ "palette": {
+  "colors": [
+   "#2f6f8f",
+   "#7da35a",
+   "#f2c97a",
+   "#e86a5a",
+   "#f6efe0"
+  ],
+  "lighting": "Bright, balanced daylight shifting between two sunrises and two sunsets",
+  "atmosphere": "Fresh, fragrant air; sea breeze"
+ },
+ "areas": [
+  {
+   "name": "Orbit of Sun and Moon",
+   "reference": "55:5",
+   "anchor_phrase": "precise calculation",
+   "description": "Sun and moon moving on exact paths."
+  },
+  {
+   "name": "Stars and Trees",
+   "reference": "55:6",
+   "anchor_phrase": "stars and trees",
+   "description": "Trees and stars bowing in the evening light."
+  },
+  {
+   "name": "The Balance",
+   "reference": "55:7",
+   "anchor_phrase": "balance",
+   "description": "A great scale at the world's centre."
+  },
+  {
+   "name": "Fruit and Palms",
+   "reference": "55:11",
+   "anchor_phrase": "palm trees having sheaths",
+   "description": "Palms and fruit trees."
+  },
+  {
+   "name": "Grain and Fragrance",
+   "reference": "55:12",
+   "anchor_phrase": "scented plants",
+   "description": "Grain fields and fragrant plants."
+  },
+  {
+   "name": "Pottery Clay Bank",
+   "reference": "55:14",
+   "anchor_phrase": "pottery",
+   "description": "A clay riverbank."
+  },
+  {
+   "name": "Two Seas",
+   "reference": "55:19",
+   "anchor_phrase": "two seas",
+   "description": "Two seas meeting with a barrier."
+  },
+  {
+   "name": "Pearl and Coral",
+   "reference": "55:22",
+   "anchor_phrase": "pearl and coral",
+   "description": "Pearls and coral under the waves."
+  },
+  {
+   "name": "Ships like Mountains",
+   "reference": "55:24",
+   "anchor_phrase": "ships",
+   "description": "Tall-sailed ships."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Keep the balance",
+   "reference": "55:7-9",
+   "description": "Keep a scale level by weighing fairly (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Favour collection",
+   "reference": "55:13",
+   "description": "At each place, name the favour and read the refrain 55:13.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Two sunrises",
+   "reference": "55:17",
+   "description": "Watch the sun rise at two points across the seasons.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Pearl and coral",
+   "reference": "55:22",
+   "description": "Find pearls and coral in both seas.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration is gentle and rhythmic: each area ends with the refrain read in Arabic and meaning.",
+ "learning_objectives": [
+  "Name favours of Allah",
+  "Explain the balance",
+  "Explain the refrain"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "55:5",
+   "anchor_phrase": "precise calculation",
+   "element": "Orbit of Sun and Moon"
+  },
+  {
+   "reference": "55:6",
+   "anchor_phrase": "stars and trees",
+   "element": "Stars and Trees"
+  },
+  {
+   "reference": "55:7",
+   "anchor_phrase": "balance",
+   "element": "The Balance"
+  },
+  {
+   "reference": "55:11",
+   "anchor_phrase": "palm trees having sheaths",
+   "element": "Fruit and Palms"
+  },
+  {
+   "reference": "55:12",
+   "anchor_phrase": "scented plants",
+   "element": "Grain and Fragrance"
+  },
+  {
+   "reference": "55:14",
+   "anchor_phrase": "pottery",
+   "element": "Pottery Clay Bank"
+  },
+  {
+   "reference": "55:19",
+   "anchor_phrase": "two seas",
+   "element": "Two Seas"
+  },
+  {
+   "reference": "55:22",
+   "anchor_phrase": "pearl and coral",
+   "element": "Pearl and Coral"
+  },
+  {
+   "reference": "55:24",
+   "anchor_phrase": "ships",
+   "element": "Ships like Mountains"
+  }
+ ],
+ "required_assets": [
+  "Orrery sky",
+  "Balance scale",
+  "Gardens",
+  "Clay bank",
+  "Two-seas coast",
+  "Ships"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "55:5",
+  "55:6",
+  "55:7",
+  "55:7-9",
+  "55:11",
+  "55:12",
+  "55:13",
+  "55:14",
+  "55:17",
+  "55:19",
+  "55:22",
+  "55:24"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

@@ -1,0 +1,90 @@
+{
+ "surah": 90,
+ "name": {
+  "transliterated": "Al-Balad",
+  "meaning": "The City"
+ },
+ "ayah_count": 20,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Two ways",
+  "Kindness",
+  "Patience and mercy"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Balad means The City. It says Allah showed us two ways and the steep pass is freeing a slave and feeding the hungry and orphans.",
+ "world_title": "The Steep Pass",
+ "environment_concept": "A mountain path with two ways and a steep pass climbed by freeing, feeding and caring.",
+ "architecture_and_scenery": "Two paths, a steep pass.",
+ "palette": {
+  "colors": [
+   "#8c5a3a",
+   "#6f8f4a"
+  ],
+  "lighting": "Clear",
+  "atmosphere": "Wind"
+ },
+ "areas": [
+  {
+   "name": "Two Ways",
+   "reference": "90:10",
+   "anchor_phrase": "two ways",
+   "description": "Paths splitting."
+  },
+  {
+   "name": "Steep Pass",
+   "reference": "90:11",
+   "anchor_phrase": "difficult pass",
+   "description": "A steep climb."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Climb the pass",
+   "reference": "90:13-16",
+   "description": "Climb by doing acts of kindness (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration calm.",
+ "learning_objectives": [
+  "Explain the steep pass"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "90:10",
+   "anchor_phrase": "two ways",
+   "element": "Two Ways"
+  },
+  {
+   "reference": "90:11",
+   "anchor_phrase": "difficult pass",
+   "element": "Steep Pass"
+  }
+ ],
+ "required_assets": [
+  "Mountain path"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "90:10",
+  "90:11",
+  "90:13-16"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

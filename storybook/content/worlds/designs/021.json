@@ -1,0 +1,178 @@
+{
+ "surah": 21,
+ "name": {
+  "transliterated": "Al-Anbiyā’",
+  "meaning": "The Prophets"
+ },
+ "ayah_count": 112,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "The prophets brought one message",
+  "Creation as a sign",
+  "Patience and prayer in trial"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Ibrahim and the idols",
+   "reference": "21:51-70",
+   "anchor_phrase": "idols"
+  },
+  {
+   "title": "Dawud and Sulayman",
+   "reference": "21:78-82",
+   "anchor_phrase": "Solomon"
+  },
+  {
+   "title": "Ayyub's patience",
+   "reference": "21:83-84",
+   "anchor_phrase": "adversity"
+  },
+  {
+   "title": "Yunus in the darknesses",
+   "reference": "21:87-88",
+   "anchor_phrase": "darknesses"
+  },
+  {
+   "title": "Zakariyya's prayer",
+   "reference": "21:89-90",
+   "anchor_phrase": "Zechariah"
+  }
+ ],
+ "summary_for_children": "Al-Anbiya means The Prophets. It reminds us that the heavens and the earth were made by Allah, and tells briefly of many prophets: Ibrahim and the fire, Dawud and Sulayman, Ayyub, Yunus, Zakariyya and others, who all called to worship Allah alone.",
+ "world_title": "The Hall of the Prophets",
+ "environment_concept": "A long gallery of open-air rooms, one for each prophet named in the surah, opening onto a sky where the sun and moon swim in their orbits.",
+ "architecture_and_scenery": "Colonnade of plain stone rooms, each with a single symbolic object: a cooled fire pit, mountains and birds, a wind-driven sail, a whale-dark sea.",
+ "palette": {
+  "colors": [
+   "#e9dfc8",
+   "#b8743a",
+   "#2c4e6a",
+   "#7a8f68"
+  ],
+  "lighting": "Shifting daylight with a slow-orbiting sun and moon above the gallery",
+  "atmosphere": "Calm and spacious, quiet echo"
+ },
+ "areas": [
+  {
+   "name": "Joined Heavens and Earth",
+   "reference": "21:30",
+   "anchor_phrase": "joined entity",
+   "description": "A dome where sky and land slowly part and water appears."
+  },
+  {
+   "name": "Room of the Cool Fire",
+   "reference": "21:69",
+   "anchor_phrase": "coolness and safety",
+   "description": "A fire pit glowing cool blue; no person is shown."
+  },
+  {
+   "name": "Room of Mountains and Birds",
+   "reference": "21:79",
+   "anchor_phrase": "mountains",
+   "description": "Hills and birds that seem to join in glorifying Allah."
+  },
+  {
+   "name": "Room of the Wind",
+   "reference": "21:81",
+   "anchor_phrase": "wind",
+   "description": "A sail filled by a strong steady wind."
+  },
+  {
+   "name": "Room of the Darknesses",
+   "reference": "21:87",
+   "anchor_phrase": "darknesses",
+   "description": "Layered darkness of night, sea and the deep, with one ayah lit."
+  }
+ ],
+ "activities": [
+  {
+   "name": "The orbits",
+   "reference": "21:33",
+   "description": "Set the sun and the moon swimming in their orbits on a sky dial.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Prophet timeline",
+   "reference": "21:48-91",
+   "description": "Place each room's object in the order the surah mentions it.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Words of Yunus",
+   "reference": "21:87",
+   "description": "Read 21:87 aloud to brighten the darkened room (the prophet is not shown).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Each room opens with its ayahs; the narrator explains, never speaking as a prophet.",
+ "learning_objectives": [
+  "Name the prophets mentioned",
+  "Explain the shared message of all prophets",
+  "Connect creation to faith"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "21:30",
+   "anchor_phrase": "joined entity",
+   "element": "Joined Heavens and Earth"
+  },
+  {
+   "reference": "21:69",
+   "anchor_phrase": "coolness and safety",
+   "element": "Room of the Cool Fire"
+  },
+  {
+   "reference": "21:79",
+   "anchor_phrase": "mountains",
+   "element": "Room of Mountains and Birds"
+  },
+  {
+   "reference": "21:81",
+   "anchor_phrase": "wind",
+   "element": "Room of the Wind"
+  },
+  {
+   "reference": "21:87",
+   "anchor_phrase": "darknesses",
+   "element": "Room of the Darknesses"
+  }
+ ],
+ "required_assets": [
+  "Stone gallery",
+  "Cool fire pit",
+  "Mountains and birds",
+  "Sail and wind",
+  "Night sea"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "21:30",
+  "21:33",
+  "21:48-91",
+  "21:51-70",
+  "21:69",
+  "21:78-82",
+  "21:79",
+  "21:81",
+  "21:83-84",
+  "21:87",
+  "21:87-88",
+  "21:89-90"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

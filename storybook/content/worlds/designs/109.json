@@ -1,0 +1,76 @@
+{
+ "surah": 109,
+ "name": {
+  "transliterated": "Al-Kāfirūn",
+  "meaning": "The Disbelievers"
+ },
+ "ayah_count": 6,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Clear faith",
+  "Respect"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Kafirun teaches clarity in worship: for you is your religion and for me is mine.",
+ "world_title": "Two Separate Paths",
+ "environment_concept": "Two paths side by side, each respected.",
+ "architecture_and_scenery": "Two paths.",
+ "palette": {
+  "colors": [
+   "#c9a46a",
+   "#3f6d8f"
+  ],
+  "lighting": "Calm",
+  "atmosphere": "Calm"
+ },
+ "areas": [
+  {
+   "name": "Two Paths",
+   "reference": "109:6",
+   "anchor_phrase": "religion",
+   "description": "Two separate paths."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Choose your path",
+   "reference": "109:6",
+   "description": "Walk your own path (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration calm.",
+ "learning_objectives": [
+  "Explain 109:6"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "109:6",
+   "anchor_phrase": "religion",
+   "element": "Two Paths"
+  }
+ ],
+ "required_assets": [
+  "Paths"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "109:6"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

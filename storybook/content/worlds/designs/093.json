@@ -1,0 +1,98 @@
+{
+ "surah": 93,
+ "name": {
+  "transliterated": "Aḍ-Ḍuḥā",
+  "meaning": "The Morning Hours"
+ },
+ "ayah_count": 11,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Comfort",
+  "Caring for orphans",
+  "Gratitude"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Ad-Duha means The Morning Brightness. It comforted the Prophet (peace be upon him), reminding him of Allah's care, and teaches kindness to orphans and those who ask.",
+ "world_title": "The Morning Brightness",
+ "environment_concept": "A sunrise world of comfort: morning light, reassurance, and caring for orphans and those who ask.",
+ "architecture_and_scenery": "Sunny hills, a home with an open door.",
+ "palette": {
+  "colors": [
+   "#f6d58a",
+   "#7a9a5a"
+  ],
+  "lighting": "Morning brightness",
+  "atmosphere": "Warm"
+ },
+ "areas": [
+  {
+   "name": "Morning Brightness",
+   "reference": "93:1",
+   "anchor_phrase": "morning brightness",
+   "description": "Sunrise."
+  },
+  {
+   "name": "Open Door",
+   "reference": "93:10",
+   "anchor_phrase": "petitioner",
+   "description": "A door open to those who ask."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Kind door",
+   "reference": "93:9-10",
+   "description": "Welcome those who ask (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Count blessings",
+   "reference": "93:11",
+   "description": "Talk about blessings.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "The Prophet (peace be upon him) not shown.",
+ "learning_objectives": [
+  "Explain 93:9-11"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "93:1",
+   "anchor_phrase": "morning brightness",
+   "element": "Morning Brightness"
+  },
+  {
+   "reference": "93:10",
+   "anchor_phrase": "petitioner",
+   "element": "Open Door"
+  }
+ ],
+ "required_assets": [
+  "Hills",
+  "Home"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "93:1",
+  "93:9-10",
+  "93:10",
+  "93:11"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

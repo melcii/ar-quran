@@ -47,6 +47,7 @@
     "web": "expo start --web",
     "import:quran": "node scripts/import-quran.mjs",
     "validate": "node scripts/validate-content.mjs",
+    "designs:index": "node scripts/design-index.mjs",
     "typecheck": "tsc --noEmit",
     "export:web": "expo export --platform web"
   },

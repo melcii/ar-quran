@@ -1,0 +1,89 @@
+{
+ "surah": 113,
+ "name": {
+  "transliterated": "Al-Falaq",
+  "meaning": "The Daybreak"
+ },
+ "ayah_count": 5,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Seeking protection",
+  "Envy"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Falaq teaches seeking refuge in the Lord of daybreak from evil, darkness and envy.",
+ "world_title": "Lord of Daybreak",
+ "environment_concept": "A dawn world where darkness lifts and protection is sought.",
+ "architecture_and_scenery": "Night village turning to daybreak.",
+ "palette": {
+  "colors": [
+   "#1c2541",
+   "#f0c080"
+  ],
+  "lighting": "Night to dawn",
+  "atmosphere": "Calm"
+ },
+ "areas": [
+  {
+   "name": "Daybreak",
+   "reference": "113:1",
+   "anchor_phrase": "daybreak",
+   "description": "Dawn breaking."
+  },
+  {
+   "name": "Settling Darkness",
+   "reference": "113:3",
+   "anchor_phrase": "darkness",
+   "description": "Night settling."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Refuge",
+   "reference": "113:1-5",
+   "description": "Read the surah as dawn breaks (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "No evil shown.",
+ "learning_objectives": [
+  "Explain seeking refuge"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "113:1",
+   "anchor_phrase": "daybreak",
+   "element": "Daybreak"
+  },
+  {
+   "reference": "113:3",
+   "anchor_phrase": "darkness",
+   "element": "Settling Darkness"
+  }
+ ],
+ "required_assets": [
+  "Village"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "113:1",
+  "113:1-5",
+  "113:3"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

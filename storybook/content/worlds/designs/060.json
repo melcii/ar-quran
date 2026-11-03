@@ -1,0 +1,100 @@
+{
+ "surah": 60,
+ "name": {
+  "transliterated": "Al-Mumtaḥanah",
+  "meaning": "She that is to be examined"
+ },
+ "ayah_count": 13,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Loyalty to faith",
+  "Justice to all",
+  "Ibrahim as an example"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Mumtahanah means She Who Is Examined. It points to Ibrahim as an example and teaches being just and kind to people who are not hostile.",
+ "world_title": "Bridges of Fairness",
+ "environment_concept": "A border land where bridges stand between communities, teaching justice and kindness to those who do not fight us.",
+ "architecture_and_scenery": "Two villages separated by a river, bridges rebuilt for fair dealing.",
+ "palette": {
+  "colors": [
+   "#6f8f4a",
+   "#c9a46a",
+   "#3f6d8f"
+  ],
+  "lighting": "Even daylight",
+  "atmosphere": "Calm river"
+ },
+ "areas": [
+  {
+   "name": "Bridge of Kindness",
+   "reference": "60:8",
+   "anchor_phrase": "righteous",
+   "description": "A bridge for fair dealings."
+  },
+  {
+   "name": "Hope of Affection",
+   "reference": "60:7",
+   "anchor_phrase": "affection",
+   "description": "A garden where enemies may become friends."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Fair trade",
+   "reference": "60:8",
+   "description": "Trade fairly across the bridge (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Example of Ibrahim",
+   "reference": "60:4",
+   "description": "Read 60:4 about Ibrahim's example.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "No person shown.",
+ "learning_objectives": [
+  "Explain 60:8",
+  "Explain Ibrahim as an example"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "60:8",
+   "anchor_phrase": "righteous",
+   "element": "Bridge of Kindness"
+  },
+  {
+   "reference": "60:7",
+   "anchor_phrase": "affection",
+   "element": "Hope of Affection"
+  }
+ ],
+ "required_assets": [
+  "River",
+  "Two villages",
+  "Bridges"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "60:4",
+  "60:7",
+  "60:8"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

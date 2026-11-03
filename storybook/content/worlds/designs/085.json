@@ -1,0 +1,96 @@
+{
+ "surah": 85,
+ "name": {
+  "transliterated": "Al-Burūj",
+  "meaning": "The Mansions of the Stars"
+ },
+ "ayah_count": 22,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "Steadfastness in faith",
+  "Allah sees all"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Companions of the trench",
+   "reference": "85:4-9",
+   "anchor_phrase": "trench"
+  }
+ ],
+ "summary_for_children": "Al-Buruj tells of believers who stayed firm in faith when people of the trench harmed them.",
+ "world_title": "Sky of Great Stars and the Trench",
+ "environment_concept": "A sky of great stars above a trench; the believers' story is told only in words.",
+ "architecture_and_scenery": "Starry sky, an empty trench.",
+ "palette": {
+  "colors": [
+   "#0f1a33",
+   "#c05030"
+  ],
+  "lighting": "Starlight",
+  "atmosphere": "Silent"
+ },
+ "areas": [
+  {
+   "name": "Great Stars",
+   "reference": "85:1",
+   "anchor_phrase": "great stars",
+   "description": "Sky of great stars."
+  },
+  {
+   "name": "The Trench",
+   "reference": "85:4",
+   "anchor_phrase": "trench",
+   "description": "An empty trench."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Find the great stars",
+   "reference": "85:1",
+   "description": "Find bright star groups (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "No people shown.",
+ "learning_objectives": [
+  "Explain steadfastness"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "85:1",
+   "anchor_phrase": "great stars",
+   "element": "Great Stars"
+  },
+  {
+   "reference": "85:4",
+   "anchor_phrase": "trench",
+   "element": "The Trench"
+  }
+ ],
+ "required_assets": [
+  "Night sky",
+  "Trench"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "85:1",
+  "85:4",
+  "85:4-9"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

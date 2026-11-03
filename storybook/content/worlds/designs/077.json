@@ -1,0 +1,103 @@
+{
+ "surah": 77,
+ "name": {
+  "transliterated": "Al-Mursalāt",
+  "meaning": "The Emissaries"
+ },
+ "ayah_count": 50,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "Signs in creation",
+  "Warning"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Mursalat means Those Sent Forth. It swears by the winds and shows the earth holding all, firm mountains and sweet water.",
+ "world_title": "Winds in Gusts",
+ "environment_concept": "A world of winds sent in gusts, and an earth that holds the living and the dead, with tall mountains and sweet water.",
+ "architecture_and_scenery": "Windswept hills, mountains and fresh springs.",
+ "palette": {
+  "colors": [
+   "#8a9aaa",
+   "#6f8f4a",
+   "#3f6d8f"
+  ],
+  "lighting": "Windy grey",
+  "atmosphere": "Gusts"
+ },
+ "areas": [
+  {
+   "name": "Gusts",
+   "reference": "77:1",
+   "anchor_phrase": "gusts",
+   "description": "Winds blowing in gusts."
+  },
+  {
+   "name": "Earth a Container",
+   "reference": "77:25",
+   "anchor_phrase": "container",
+   "description": "An earth that holds."
+  },
+  {
+   "name": "Mountains and Sweet Water",
+   "reference": "77:27",
+   "anchor_phrase": "sweet water",
+   "description": "Mountains and springs."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Wind and water",
+   "reference": "77:27",
+   "description": "Find sweet water among the mountains (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration calm.",
+ "learning_objectives": [
+  "Explain 77:25-27"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "77:1",
+   "anchor_phrase": "gusts",
+   "element": "Gusts"
+  },
+  {
+   "reference": "77:25",
+   "anchor_phrase": "container",
+   "element": "Earth a Container"
+  },
+  {
+   "reference": "77:27",
+   "anchor_phrase": "sweet water",
+   "element": "Mountains and Sweet Water"
+  }
+ ],
+ "required_assets": [
+  "Hills",
+  "Mountains",
+  "Springs"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "77:1",
+  "77:25",
+  "77:27"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

@@ -1,0 +1,117 @@
+{
+ "surah": 52,
+ "name": {
+  "transliterated": "Aṭ-Ṭūr",
+  "meaning": "The Mount"
+ },
+ "ayah_count": 49,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Oaths",
+  "Truth of the message",
+  "Patience of the Prophet (peace be upon him)",
+  "Glorifying Allah"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "At-Tur means The Mount. It swears by the mount, a written book and the raised heaven, and tells the Prophet (peace be upon him) to be patient and glorify Allah.",
+ "world_title": "The Mount and the Raised Heaven",
+ "environment_concept": "A world built from the surah's oaths: a mount, an inscribed book on spread parchment, a frequented house, a raised heaven and a filled sea.",
+ "architecture_and_scenery": "A lone mountain, an open scroll on a stone, a distant house, a high sky and a glowing sea.",
+ "palette": {
+  "colors": [
+   "#7a5a3a",
+   "#e8dcc0",
+   "#2f4b6f",
+   "#c05030"
+  ],
+  "lighting": "High clear light",
+  "atmosphere": "Quiet, wind on the mount"
+ },
+ "areas": [
+  {
+   "name": "The Mount",
+   "reference": "52:1",
+   "anchor_phrase": "mount",
+   "description": "A lone mountain."
+  },
+  {
+   "name": "Parchment Spread Open",
+   "reference": "52:3",
+   "anchor_phrase": "parchment",
+   "description": "An open scroll on a stone; text is the ayah itself."
+  },
+  {
+   "name": "Raised Heaven",
+   "reference": "52:5",
+   "anchor_phrase": "raised high",
+   "description": "A high sky."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Oaths path",
+   "reference": "52:1-6",
+   "description": "Visit each oath in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Glorify at night",
+   "reference": "52:48-49",
+   "description": "Glorify at night and as the stars set (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration keeps the unseen as words only.",
+ "learning_objectives": [
+  "Name the oaths",
+  "Explain patience",
+  "Explain glorification"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "52:1",
+   "anchor_phrase": "mount",
+   "element": "The Mount"
+  },
+  {
+   "reference": "52:3",
+   "anchor_phrase": "parchment",
+   "element": "Parchment Spread Open"
+  },
+  {
+   "reference": "52:5",
+   "anchor_phrase": "raised high",
+   "element": "Raised Heaven"
+  }
+ ],
+ "required_assets": [
+  "Mountain",
+  "Scroll",
+  "Sky",
+  "Sea"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "52:1",
+  "52:1-6",
+  "52:3",
+  "52:5",
+  "52:48-49"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

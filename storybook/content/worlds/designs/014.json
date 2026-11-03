@@ -1,0 +1,135 @@
+{
+ "surah": 14,
+ "name": {
+  "transliterated": "Ibrāhīm",
+  "meaning": "Abraham"
+ },
+ "ayah_count": 52,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "Good and bad words",
+  "Gratitude",
+  "Ibrahim's prayers",
+  "Blessings subjected to us"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Ibrahim's prayer in the valley",
+   "reference": "14:35-41",
+   "anchor_phrase": "Abraham"
+  }
+ ],
+ "summary_for_children": "Surah Ibrahim compares a good word to a good tree, and teaches that gratitude brings more blessings. It records Ibrahim's prayer for his family in a dry valley.",
+ "world_title": "The Valley of the Good Tree",
+ "environment_concept": "A valley where a good tree's roots are firm and its branches reach the sky, beside an uncultivated valley near a sacred House.",
+ "architecture_and_scenery": "A great tree on a hill, a dry valley with a well, rivers and ships below, sun and moon overhead.",
+ "palette": {
+  "colors": [
+   "#6e8b3d",
+   "#c7a46b",
+   "#3b5f7f",
+   "#efe2c6"
+  ],
+  "lighting": "Bright day with a clear sunset",
+  "atmosphere": "Dry heat in the valley, cool by the rivers"
+ },
+ "areas": [
+  {
+   "name": "The Good Tree",
+   "reference": "14:24",
+   "anchor_phrase": "good tree",
+   "description": "A tree with deep roots and high branches."
+  },
+  {
+   "name": "Uprooted Tree",
+   "reference": "14:26",
+   "anchor_phrase": "uprooted",
+   "description": "A dead tree lying loose on the ground."
+  },
+  {
+   "name": "Uncultivated Valley",
+   "reference": "14:37",
+   "anchor_phrase": "uncultivated valley",
+   "description": "A dry valley near the sacred House."
+  },
+  {
+   "name": "River of Ships",
+   "reference": "14:32",
+   "anchor_phrase": "ships",
+   "description": "A river with sailing boats."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Good words grow",
+   "reference": "14:24-25",
+   "description": "Choose kind words; each one makes the good tree grow.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Thankful stones",
+   "reference": "14:7",
+   "description": "Place a stone for each blessing you thank Allah for.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "The narrator explains the parable carefully and reads Ibrahim's prayer from the Quran's text.",
+ "learning_objectives": [
+  "Explain the good tree parable",
+  "Link gratitude and blessings",
+  "Know Ibrahim prayed for his family"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "14:24",
+   "anchor_phrase": "good tree",
+   "element": "The Good Tree"
+  },
+  {
+   "reference": "14:26",
+   "anchor_phrase": "uprooted",
+   "element": "Uprooted Tree"
+  },
+  {
+   "reference": "14:37",
+   "anchor_phrase": "uncultivated valley",
+   "element": "Uncultivated Valley"
+  },
+  {
+   "reference": "14:32",
+   "anchor_phrase": "ships",
+   "element": "River of Ships"
+  }
+ ],
+ "required_assets": [
+  "Great tree with growth stages",
+  "Dry valley",
+  "River and boats"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "14:7",
+  "14:24",
+  "14:24-25",
+  "14:26",
+  "14:32",
+  "14:35-41",
+  "14:37"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

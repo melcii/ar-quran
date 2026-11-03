@@ -1,0 +1,115 @@
+{
+ "surah": 39,
+ "name": {
+  "transliterated": "Az-Zumar",
+  "meaning": "The Troops"
+ },
+ "ayah_count": 75,
+ "content_type": {
+  "primary": "hereafter (symbolic only)",
+  "secondary": []
+ },
+ "themes": [
+  "Sincere worship",
+  "Allah's mercy and forgiveness",
+  "Accountability",
+  "Do not despair"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Az-Zumar means The Groups. It calls us to worship Allah sincerely, reminds us of His mercy and that we should never despair of it, and speaks of people going in groups to their final place.",
+ "world_title": "Groups at the Gates",
+ "environment_concept": "A symbolic world of rain, springs and fading crops, ending at two distant gates seen only as light, never as Paradise or Hell.",
+ "architecture_and_scenery": "Rainy valley, springs running through rock, crops turning yellow, and a horizon with abstract gates of light.",
+ "palette": {
+  "colors": [
+   "#7a8f5a",
+   "#c9b36a",
+   "#e8e1d1",
+   "#5a6b8a"
+  ],
+  "lighting": "Rain light then soft golden haze",
+  "atmosphere": "Rain, then stillness"
+ },
+ "areas": [
+  {
+   "name": "Rain to Springs",
+   "reference": "39:21",
+   "anchor_phrase": "springs",
+   "description": "Rain flowing underground into springs."
+  },
+  {
+   "name": "Fading Crops",
+   "reference": "39:21",
+   "anchor_phrase": "yellow",
+   "description": "Crops that grow, turn yellow and dry: life is short."
+  },
+  {
+   "name": "Gates of Light",
+   "reference": "39:73",
+   "anchor_phrase": "gates",
+   "description": "Abstract gates of light on the horizon; symbolic only, not a picture of Paradise."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Water cycle",
+   "reference": "39:21",
+   "description": "Follow rain into springs and crops.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Never despair",
+   "reference": "39:53",
+   "description": "Light a lantern of hope by reading 39:53.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration stresses mercy and hope; the unseen is spoken of only through ayahs.",
+ "learning_objectives": [
+  "Explain 39:53",
+  "Describe the crop cycle",
+  "Explain sincere worship"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "39:21",
+   "anchor_phrase": "springs",
+   "element": "Rain to Springs"
+  },
+  {
+   "reference": "39:21",
+   "anchor_phrase": "yellow",
+   "element": "Fading Crops"
+  },
+  {
+   "reference": "39:73",
+   "anchor_phrase": "gates",
+   "element": "Gates of Light"
+  }
+ ],
+ "required_assets": [
+  "Rain valley",
+  "Springs",
+  "Crops",
+  "Abstract light gates"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "39:21",
+  "39:53",
+  "39:73"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

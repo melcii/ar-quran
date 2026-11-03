@@ -1,0 +1,137 @@
+{
+ "surah": 78,
+ "name": {
+  "transliterated": "An-Naba’",
+  "meaning": "The Tidings"
+ },
+ "ayah_count": 40,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "Signs of Allah",
+  "Rest and work",
+  "The Great News"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "An-Naba' means The Great News. It asks people to look at signs: the earth, mountains, sleep, night and day, the sun, rain and gardens.",
+ "world_title": "The Earth as a Resting Place",
+ "environment_concept": "A walk through the signs listed in the surah: the earth a resting place, mountains like stakes, sleep, night as clothing, a burning lamp and rain bringing gardens.",
+ "architecture_and_scenery": "Flat plains with tent-peg mountains, a night camp, a bright sun, rain clouds, gardens.",
+ "palette": {
+  "colors": [
+   "#c9b090",
+   "#5a5a6a",
+   "#f0d890",
+   "#6f8f4a"
+  ],
+  "lighting": "Full day-night cycle",
+  "atmosphere": "Calm, rain"
+ },
+ "areas": [
+  {
+   "name": "Resting Place",
+   "reference": "78:6",
+   "anchor_phrase": "resting place",
+   "description": "A wide flat land."
+  },
+  {
+   "name": "Mountains as Stakes",
+   "reference": "78:7",
+   "anchor_phrase": "stakes",
+   "description": "Mountains like tent pegs."
+  },
+  {
+   "name": "Night as Clothing",
+   "reference": "78:10",
+   "anchor_phrase": "clothing",
+   "description": "Night wrapping the camp."
+  },
+  {
+   "name": "Burning Lamp",
+   "reference": "78:13",
+   "anchor_phrase": "burning lamp",
+   "description": "The sun."
+  },
+  {
+   "name": "Gardens of Entwined Growth",
+   "reference": "78:16",
+   "anchor_phrase": "entwined",
+   "description": "Thick gardens."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Sign checklist",
+   "reference": "78:6-16",
+   "description": "Collect each sign as the ayahs list it.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Pitch the tent",
+   "reference": "78:7",
+   "description": "Stake a tent like mountains hold the earth (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration repeats the questions of the surah.",
+ "learning_objectives": [
+  "List signs in 78:6-16"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "78:6",
+   "anchor_phrase": "resting place",
+   "element": "Resting Place"
+  },
+  {
+   "reference": "78:7",
+   "anchor_phrase": "stakes",
+   "element": "Mountains as Stakes"
+  },
+  {
+   "reference": "78:10",
+   "anchor_phrase": "clothing",
+   "element": "Night as Clothing"
+  },
+  {
+   "reference": "78:13",
+   "anchor_phrase": "burning lamp",
+   "element": "Burning Lamp"
+  },
+  {
+   "reference": "78:16",
+   "anchor_phrase": "entwined",
+   "element": "Gardens of Entwined Growth"
+  }
+ ],
+ "required_assets": [
+  "Plains",
+  "Mountains",
+  "Night camp",
+  "Gardens"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "78:6",
+  "78:6-16",
+  "78:7",
+  "78:10",
+  "78:13",
+  "78:16"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

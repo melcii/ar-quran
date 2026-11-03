@@ -1,0 +1,108 @@
+{
+ "surah": 106,
+ "name": {
+  "transliterated": "Quraish",
+  "meaning": "Quraysh"
+ },
+ "ayah_count": 4,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Gratitude for safety and food",
+  "Worship"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Quraysh reminds the people of Quraysh of their safe caravan journeys in winter and summer, and calls them to worship the Lord of the House who fed them and kept them safe.",
+ "world_title": "Caravans of Winter and Summer",
+ "environment_concept": "Two caravan routes, winter and summer, and the House whose Lord fed and protected the Quraysh.",
+ "architecture_and_scenery": "Caravan roads north and south, a city with the House.",
+ "palette": {
+  "colors": [
+   "#d9b46a",
+   "#8a9aaa",
+   "#6f8f4a"
+  ],
+  "lighting": "Winter grey, summer gold",
+  "atmosphere": "Seasonal"
+ },
+ "areas": [
+  {
+   "name": "Winter Caravan",
+   "reference": "106:2",
+   "anchor_phrase": "winter",
+   "description": "A winter route."
+  },
+  {
+   "name": "Summer Caravan",
+   "reference": "106:2",
+   "anchor_phrase": "summer",
+   "description": "A summer route."
+  },
+  {
+   "name": "Lord of this House",
+   "reference": "106:3",
+   "anchor_phrase": "House",
+   "description": "The House in a quiet city."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Plan the journey",
+   "reference": "106:2",
+   "description": "Lead a caravan safely (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Gratitude",
+   "reference": "106:4",
+   "description": "Thank for food and safety.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration calm.",
+ "learning_objectives": [
+  "Explain 106:3-4"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "106:2",
+   "anchor_phrase": "winter",
+   "element": "Winter Caravan"
+  },
+  {
+   "reference": "106:2",
+   "anchor_phrase": "summer",
+   "element": "Summer Caravan"
+  },
+  {
+   "reference": "106:3",
+   "anchor_phrase": "House",
+   "element": "Lord of this House"
+  }
+ ],
+ "required_assets": [
+  "Routes",
+  "City"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "106:2",
+  "106:3",
+  "106:4"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

@@ -1,0 +1,101 @@
+{
+ "surah": 100,
+ "name": {
+  "transliterated": "Al-‘Ādiyāt",
+  "meaning": "The Courser"
+ },
+ "ayah_count": 11,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "Gratitude",
+  "Love of wealth"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-'Adiyat means The Racers. It swears by racing horses and says people are often ungrateful.",
+ "world_title": "Racers at Dawn",
+ "environment_concept": "Horses racing at dawn, sparks from hooves, dust clouds, used as an oath about gratitude.",
+ "architecture_and_scenery": "Rocky plain at dawn.",
+ "palette": {
+  "colors": [
+   "#f0c080",
+   "#8c6b4a"
+  ],
+  "lighting": "Dawn",
+  "atmosphere": "Dust"
+ },
+ "areas": [
+  {
+   "name": "Racers",
+   "reference": "100:1",
+   "anchor_phrase": "racers",
+   "description": "Horses racing."
+  },
+  {
+   "name": "Sparks",
+   "reference": "100:2",
+   "anchor_phrase": "sparks",
+   "description": "Sparks from hooves."
+  },
+  {
+   "name": "Dust",
+   "reference": "100:4",
+   "anchor_phrase": "dust",
+   "description": "Clouds of dust."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Gratitude",
+   "reference": "100:6",
+   "description": "Thank for blessings (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration calm.",
+ "learning_objectives": [
+  "Explain 100:6"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "100:1",
+   "anchor_phrase": "racers",
+   "element": "Racers"
+  },
+  {
+   "reference": "100:2",
+   "anchor_phrase": "sparks",
+   "element": "Sparks"
+  },
+  {
+   "reference": "100:4",
+   "anchor_phrase": "dust",
+   "element": "Dust"
+  }
+ ],
+ "required_assets": [
+  "Plain"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "100:1",
+  "100:2",
+  "100:4",
+  "100:6"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

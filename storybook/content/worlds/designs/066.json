@@ -1,0 +1,92 @@
+{
+ "surah": 66,
+ "name": {
+  "transliterated": "At-Taḥrīm",
+  "meaning": "The Prohibition"
+ },
+ "ayah_count": 12,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Protecting family",
+  "Repentance",
+  "Examples of faith"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "At-Tahrim tells believers to protect their families with good deeds and gives two examples of faith: the wife of Pharaoh and Maryam.",
+ "world_title": "Two Examples of Faith",
+ "environment_concept": "A palace and a quiet sanctuary representing two women praised for faith, with no person shown.",
+ "architecture_and_scenery": "A palace interior and a modest sanctuary.",
+ "palette": {
+  "colors": [
+   "#d4b66a",
+   "#efe6d2"
+  ],
+  "lighting": "Interior light",
+  "atmosphere": "Quiet"
+ },
+ "areas": [
+  {
+   "name": "Palace Room",
+   "reference": "66:11",
+   "anchor_phrase": "wife of Pharaoh",
+   "description": "A room in Pharaoh's palace; no one shown."
+  },
+  {
+   "name": "Sanctuary",
+   "reference": "66:12",
+   "anchor_phrase": "Mary",
+   "description": "A quiet sanctuary."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Sincere repentance",
+   "reference": "66:8",
+   "description": "Light lamps by reading 66:8 (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "No person shown.",
+ "learning_objectives": [
+  "Explain repentance",
+  "Name two examples of faith"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "66:11",
+   "anchor_phrase": "wife of Pharaoh",
+   "element": "Palace Room"
+  },
+  {
+   "reference": "66:12",
+   "anchor_phrase": "Mary",
+   "element": "Sanctuary"
+  }
+ ],
+ "required_assets": [
+  "Palace",
+  "Sanctuary"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "66:8",
+  "66:11",
+  "66:12"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

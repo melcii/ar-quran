@@ -1,0 +1,85 @@
+{
+ "surah": 75,
+ "name": {
+  "transliterated": "Al-Qiyāmah",
+  "meaning": "The Resurrection"
+ },
+ "ayah_count": 40,
+ "content_type": {
+  "primary": "hereafter (symbolic only)",
+  "secondary": []
+ },
+ "themes": [
+  "Resurrection",
+  "The self-reproaching soul",
+  "Not rushing the Quran"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Qiyamah means The Resurrection. It says Allah can restore even our fingertips and teaches not to hurry when reciting.",
+ "world_title": "Fingertips Restored",
+ "environment_concept": "A symbolic world about how Allah can restore even fingertips, never depicting the Resurrection.",
+ "architecture_and_scenery": "Abstract sculpture of a hand made of light (no person), and a gentle path.",
+ "palette": {
+  "colors": [
+   "#efe6d2",
+   "#c9a46a"
+  ],
+  "lighting": "Soft light",
+  "atmosphere": "Calm"
+ },
+ "areas": [
+  {
+   "name": "Fingertips",
+   "reference": "75:4",
+   "anchor_phrase": "fingertips",
+   "description": "A fingerprint pattern in light."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Fingerprint",
+   "reference": "75:4",
+   "description": "Compare unique fingerprint patterns (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Do not rush",
+   "reference": "75:16-18",
+   "description": "Recite slowly.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "The Day is not shown.",
+ "learning_objectives": [
+  "Explain 75:4",
+  "Explain 75:16-19"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "75:4",
+   "anchor_phrase": "fingertips",
+   "element": "Fingertips"
+  }
+ ],
+ "required_assets": [
+  "Light sculpture"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "75:4",
+  "75:16-18"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

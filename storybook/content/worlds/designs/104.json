@@ -1,0 +1,77 @@
+{
+ "surah": 104,
+ "name": {
+  "transliterated": "Al-Humazah",
+  "meaning": "The Traducer"
+ },
+ "ayah_count": 9,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Mocking is wrong",
+  "Wealth does not last"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Humazah warns those who mock and backbite and who collect and count wealth thinking it will last.",
+ "world_title": "The Counting House",
+ "environment_concept": "A counting house where wealth is counted, and a lesson about mocking.",
+ "architecture_and_scenery": "Counting desks with coins.",
+ "palette": {
+  "colors": [
+   "#c9a46a",
+   "#5a5a6a"
+  ],
+  "lighting": "Dim light",
+  "atmosphere": "Still"
+ },
+ "areas": [
+  {
+   "name": "Counting Table",
+   "reference": "104:2",
+   "anchor_phrase": "counts",
+   "description": "Coins being counted."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Kind words",
+   "reference": "104:1",
+   "description": "Replace mocking with kind words (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Punishment not shown.",
+ "learning_objectives": [
+  "Explain 104:1-3"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "104:2",
+   "anchor_phrase": "counts",
+   "element": "Counting Table"
+  }
+ ],
+ "required_assets": [
+  "Counting house"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "104:1",
+  "104:2"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

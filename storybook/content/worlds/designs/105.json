@@ -1,0 +1,132 @@
+{
+ "surah": 105,
+ "name": {
+  "transliterated": "Al-Fīl",
+  "meaning": "The Elephant"
+ },
+ "ayah_count": 5,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "Allah protects His House",
+  "Plans against Allah fail"
+ ],
+ "narrative_passages": [
+  {
+   "title": "The companions of the elephant",
+   "reference": "105:1-5",
+   "anchor_phrase": "elephant"
+  }
+ ],
+ "summary_for_children": "Al-Fil means The Elephant. It tells how Allah protected the House when an army with an elephant came, sending flocks of birds with stones of baked clay.",
+ "world_title": "The Year of the Elephant",
+ "environment_concept": "A dusty road to Makkah where a great army with an elephant comes, birds in flocks gather over the hills, and the army becomes like eaten straw; the House stands untouched.",
+ "architecture_and_scenery": "Desert road, an elephant, hills, a sky of birds, a field of straw.",
+ "palette": {
+  "colors": [
+   "#d9b46a",
+   "#8c6b4a",
+   "#3f6d8f",
+   "#f0e2c0"
+  ],
+  "lighting": "Hot sun, then a sky darkened by flocks",
+  "atmosphere": "Dust, wings"
+ },
+ "areas": [
+  {
+   "name": "The Army Road",
+   "reference": "105:1",
+   "anchor_phrase": "companions of the elephant",
+   "description": "A road with an elephant's tracks."
+  },
+  {
+   "name": "Flocks of Birds",
+   "reference": "105:3",
+   "anchor_phrase": "birds in flocks",
+   "description": "Flocks over the hills."
+  },
+  {
+   "name": "Stones of Clay",
+   "reference": "105:4",
+   "anchor_phrase": "stones of hard clay",
+   "description": "Small clay stones on the ground."
+  },
+  {
+   "name": "Eaten Straw",
+   "reference": "105:5",
+   "anchor_phrase": "eaten straw",
+   "description": "A field of eaten straw."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Count the flocks",
+   "reference": "105:3",
+   "description": "Count birds in flocks (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Plans fail",
+   "reference": "105:2",
+   "description": "Watch a plan fail and read 105:2.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Leader names and details come from tafsir, not the surah, and are marked as such. No person is shown and no violence is depicted.",
+ "learning_objectives": [
+  "Retell the surah",
+  "Explain Allah's protection"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "105:1",
+   "anchor_phrase": "companions of the elephant",
+   "element": "The Army Road"
+  },
+  {
+   "reference": "105:3",
+   "anchor_phrase": "birds in flocks",
+   "element": "Flocks of Birds"
+  },
+  {
+   "reference": "105:4",
+   "anchor_phrase": "stones of hard clay",
+   "element": "Stones of Clay"
+  },
+  {
+   "reference": "105:5",
+   "anchor_phrase": "eaten straw",
+   "element": "Eaten Straw"
+  }
+ ],
+ "required_assets": [
+  "Road",
+  "Elephant",
+  "Bird flocks",
+  "Straw field"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "105:1",
+  "105:1-5",
+  "105:2",
+  "105:3",
+  "105:4",
+  "105:5"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

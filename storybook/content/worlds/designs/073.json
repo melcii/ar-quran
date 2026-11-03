@@ -1,0 +1,98 @@
+{
+ "surah": 73,
+ "name": {
+  "transliterated": "Al-Muzzammil",
+  "meaning": "The Enshrouded One"
+ },
+ "ayah_count": 20,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Night prayer",
+  "Measured recitation",
+  "Devotion"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Muzzammil calls to stand at night in prayer and to recite the Quran slowly and beautifully.",
+ "world_title": "The Night Vigil",
+ "environment_concept": "A night house where the hours are measured, half, a third, two thirds, for standing in prayer and measured recitation.",
+ "architecture_and_scenery": "A house with a night window and a sky dial showing parts of the night.",
+ "palette": {
+  "colors": [
+   "#1c2541",
+   "#e2c88a"
+  ],
+  "lighting": "Moonlight",
+  "atmosphere": "Still"
+ },
+ "areas": [
+  {
+   "name": "Night Dial",
+   "reference": "73:3",
+   "anchor_phrase": "Half of it",
+   "description": "A dial of night hours."
+  },
+  {
+   "name": "Measured Recitation",
+   "reference": "73:4",
+   "anchor_phrase": "measured recitation",
+   "description": "A lectern where an ayah card is read slowly."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Divide the night",
+   "reference": "73:2-4",
+   "description": "Set the night dial to half, a third (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Slow reading",
+   "reference": "73:4",
+   "description": "Read slowly and clearly.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "The Prophet (peace be upon him) is never shown.",
+ "learning_objectives": [
+  "Explain measured recitation",
+  "Explain night prayer"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "73:3",
+   "anchor_phrase": "Half of it",
+   "element": "Night Dial"
+  },
+  {
+   "reference": "73:4",
+   "anchor_phrase": "measured recitation",
+   "element": "Measured Recitation"
+  }
+ ],
+ "required_assets": [
+  "Night house",
+  "Dial"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "73:2-4",
+  "73:3",
+  "73:4"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

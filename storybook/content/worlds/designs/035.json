@@ -1,0 +1,115 @@
+{
+ "surah": 35,
+ "name": {
+  "transliterated": "Fāṭir",
+  "meaning": "Originator"
+ },
+ "ayah_count": 45,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "Allah the Originator",
+  "Colours in creation",
+  "Knowledge leads to awe",
+  "Two seas"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Fatir means The Originator. It praises Allah who created the heavens and the earth and shows signs in colours: fruits, mountains, people and animals of every colour, and fresh and salty seas.",
+ "world_title": "The Originator's Colours",
+ "environment_concept": "A land of colour: fruits of many colours, white and red mountain streaks, black rock, and two seas giving food and ornaments.",
+ "architecture_and_scenery": "Striped mountains, orchards, pearl beaches, and a sky streaked with wings of light suggested only by colour, never angels.",
+ "palette": {
+  "colors": [
+   "#ffffff",
+   "#c0392b",
+   "#222222",
+   "#3f8f5f",
+   "#2f6f8f"
+  ],
+  "lighting": "Bright clear daylight to show colour",
+  "atmosphere": "Fresh breeze, surf"
+ },
+ "areas": [
+  {
+   "name": "Streaked Mountains",
+   "reference": "35:27",
+   "anchor_phrase": "white and red",
+   "description": "Mountains with white, red and black streaks."
+  },
+  {
+   "name": "Orchards of Many Colours",
+   "reference": "35:27",
+   "anchor_phrase": "fruits of varying colors",
+   "description": "Fruit trees in many colours."
+  },
+  {
+   "name": "Two Seas",
+   "reference": "35:12",
+   "anchor_phrase": "two bodies of water",
+   "description": "Fresh and salt seas with pearls and fish."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Colour hunt",
+   "reference": "35:27-28",
+   "description": "Collect colours from fruits, rocks and animals.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Pearl diving",
+   "reference": "35:12",
+   "description": "Find ornaments in the sea (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration celebrates colour and links knowledge with awe of Allah (35:28).",
+ "learning_objectives": [
+  "Explain colour as a sign",
+  "Explain 35:28",
+  "Describe the two seas"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "35:27",
+   "anchor_phrase": "white and red",
+   "element": "Streaked Mountains"
+  },
+  {
+   "reference": "35:27",
+   "anchor_phrase": "fruits of varying colors",
+   "element": "Orchards of Many Colours"
+  },
+  {
+   "reference": "35:12",
+   "anchor_phrase": "two bodies of water",
+   "element": "Two Seas"
+  }
+ ],
+ "required_assets": [
+  "Striped mountains",
+  "Orchards",
+  "Coastline"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "35:12",
+  "35:27",
+  "35:27-28"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

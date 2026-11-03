@@ -1,0 +1,97 @@
+{
+ "surah": 87,
+ "name": {
+  "transliterated": "Al-A‘lā",
+  "meaning": "The Most High"
+ },
+ "ayah_count": 19,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "Glorifying Allah",
+  "Creation and guidance",
+  "Purification"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-A'la means The Most High. It tells us to glorify Allah who created, proportioned and guided, who brings out pasture and turns it dark.",
+ "world_title": "Pasture to Stubble",
+ "environment_concept": "A pasture that grows green and turns to dark stubble, showing creation, proportion and guidance.",
+ "architecture_and_scenery": "Meadows through seasons.",
+ "palette": {
+  "colors": [
+   "#6f8f4a",
+   "#3a3a2a"
+  ],
+  "lighting": "Seasonal light",
+  "atmosphere": "Breeze"
+ },
+ "areas": [
+  {
+   "name": "Pasture",
+   "reference": "87:4",
+   "anchor_phrase": "pasture",
+   "description": "Green pasture."
+  },
+  {
+   "name": "Black Stubble",
+   "reference": "87:5",
+   "anchor_phrase": "stubble",
+   "description": "Pasture turned dark."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Grow and fade",
+   "reference": "87:4-5",
+   "description": "Watch the pasture through its life.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Glorify",
+   "reference": "87:1",
+   "description": "Read 87:1.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration calm.",
+ "learning_objectives": [
+  "Explain 87:2-5"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "87:4",
+   "anchor_phrase": "pasture",
+   "element": "Pasture"
+  },
+  {
+   "reference": "87:5",
+   "anchor_phrase": "stubble",
+   "element": "Black Stubble"
+  }
+ ],
+ "required_assets": [
+  "Meadows"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "87:1",
+  "87:4",
+  "87:4-5",
+  "87:5"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

@@ -1,0 +1,135 @@
+{
+ "surah": 30,
+ "name": {
+  "transliterated": "Ar-Rūm",
+  "meaning": "The Romans"
+ },
+ "ayah_count": 60,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "Signs of Allah in creation",
+  "Diversity of languages and colours",
+  "Allah's promise comes true",
+  "The natural disposition"
+ ],
+ "narrative_passages": [
+  {
+   "title": "The promise about the Romans",
+   "reference": "30:2-4",
+   "anchor_phrase": "Byzantines"
+  }
+ ],
+ "summary_for_children": "Ar-Rum means The Romans. It begins with a promise that came true and points to signs of Allah: our different languages and colours, the winds, rain, and how dead earth comes back to life.",
+ "world_title": "The Winds and the Colours of People",
+ "environment_concept": "An open world of signs: winds that carry ships, clouds spread into rain, a market of many languages and colours, and dead earth brought back to life.",
+ "architecture_and_scenery": "A port town with ships, a hillside market with many voices, rain-swept hills, and a distant land of an old empire's ruins.",
+ "palette": {
+  "colors": [
+   "#5d8fb0",
+   "#d9b46a",
+   "#7da35a",
+   "#f1e9d8"
+  ],
+  "lighting": "Shifting cloud shadows and sudden sunlight after rain",
+  "atmosphere": "Wind, rain, many voices"
+ },
+ "areas": [
+  {
+   "name": "Market of Languages",
+   "reference": "30:22",
+   "anchor_phrase": "diversity of your languages",
+   "description": "A market where greetings come in many languages."
+  },
+  {
+   "name": "Harbour of Winds",
+   "reference": "30:46",
+   "anchor_phrase": "ships",
+   "description": "Ships setting out on good winds."
+  },
+  {
+   "name": "Spreading Clouds",
+   "reference": "30:48",
+   "anchor_phrase": "stir the clouds",
+   "description": "Clouds spread and break into rain."
+  },
+  {
+   "name": "Earth Revived",
+   "reference": "30:50",
+   "anchor_phrase": "gives life to the earth",
+   "description": "Bare land returning to green."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Hello in many languages",
+   "reference": "30:22",
+   "description": "Greet stall keepers in different languages and notice each is a sign (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Wind and rain",
+   "reference": "30:48-50",
+   "description": "Guide winds to stir clouds, then watch rain revive the land.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration names each sign as 'and of His signs', as the surah does.",
+ "learning_objectives": [
+  "Explain why diversity is a sign",
+  "Describe the rain cycle in 30:48",
+  "Name two signs from the surah"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "30:22",
+   "anchor_phrase": "diversity of your languages",
+   "element": "Market of Languages"
+  },
+  {
+   "reference": "30:46",
+   "anchor_phrase": "ships",
+   "element": "Harbour of Winds"
+  },
+  {
+   "reference": "30:48",
+   "anchor_phrase": "stir the clouds",
+   "element": "Spreading Clouds"
+  },
+  {
+   "reference": "30:50",
+   "anchor_phrase": "gives life to the earth",
+   "element": "Earth Revived"
+  }
+ ],
+ "required_assets": [
+  "Port and ships",
+  "Market",
+  "Rain clouds",
+  "Reviving landscape"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "30:2-4",
+  "30:22",
+  "30:46",
+  "30:48",
+  "30:48-50",
+  "30:50"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

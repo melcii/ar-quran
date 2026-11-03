@@ -1,0 +1,121 @@
+{
+ "surah": 46,
+ "name": {
+  "transliterated": "Al-Aḥqāf",
+  "meaning": "The Wind-Curved Sandhills"
+ },
+ "ayah_count": 35,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "Kindness to parents",
+  "Warnings of messengers",
+  "Listening to the Quran"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Hud warns 'Ad",
+   "reference": "46:21-25",
+   "anchor_phrase": "al-Ahqaf"
+  }
+ ],
+ "summary_for_children": "Al-Ahqaf means The Wind-Curved Sandhills. It tells of Hud warning 'Ad in the dunes, and teaches kindness to parents. It mentions jinn who listened to the Quran.",
+ "world_title": "The Sand Dunes of Al-Ahqaf",
+ "environment_concept": "Winding dunes where the people of 'Ad saw a cloud and thought it was rain, and a quiet valley where a group of jinn listened to the Quran, shown only as stillness.",
+ "architecture_and_scenery": "Curved sand dunes, empty dwellings, an approaching dark cloud, and a quiet night valley.",
+ "palette": {
+  "colors": [
+   "#d9b46a",
+   "#8c5a3a",
+   "#4a4a5a",
+   "#f0e2c0"
+  ],
+  "lighting": "Hot dune light, then storm darkness",
+  "atmosphere": "Sand wind"
+ },
+ "areas": [
+  {
+   "name": "Dunes of Al-Ahqaf",
+   "reference": "46:21",
+   "anchor_phrase": "al-Ahqaf",
+   "description": "Wind-curved dunes."
+  },
+  {
+   "name": "The Approaching Cloud",
+   "reference": "46:24",
+   "anchor_phrase": "cloud approaching",
+   "description": "A cloud approaching the valleys."
+  },
+  {
+   "name": "Listening Valley",
+   "reference": "46:29",
+   "anchor_phrase": "Listen quietly",
+   "description": "A quiet night valley; nothing unseen is shown."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Kindness to parents",
+   "reference": "46:15",
+   "description": "Help with small tasks at home in a mini-game (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Listen quietly",
+   "reference": "46:29",
+   "description": "Sit still while a recitation-free ayah card is read.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration keeps Hud and the jinn unseen.",
+ "learning_objectives": [
+  "Retell Hud and 'Ad",
+  "Explain 46:15",
+  "Explain listening to the Quran"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "46:21",
+   "anchor_phrase": "al-Ahqaf",
+   "element": "Dunes of Al-Ahqaf"
+  },
+  {
+   "reference": "46:24",
+   "anchor_phrase": "cloud approaching",
+   "element": "The Approaching Cloud"
+  },
+  {
+   "reference": "46:29",
+   "anchor_phrase": "Listen quietly",
+   "element": "Listening Valley"
+  }
+ ],
+ "required_assets": [
+  "Dunes",
+  "Storm cloud",
+  "Night valley"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "46:15",
+  "46:21",
+  "46:21-25",
+  "46:24",
+  "46:29"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

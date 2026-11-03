@@ -1,0 +1,77 @@
+{
+ "surah": 83,
+ "name": {
+  "transliterated": "Al-Muṭaffifīn",
+  "meaning": "The Defrauding"
+ },
+ "ayah_count": 36,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Honesty in trade",
+  "Accountability"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Mutaffifin means Those Who Give Less. It warns traders who cheat on weight and measure.",
+ "world_title": "Market of Fair Measure",
+ "environment_concept": "A bustling market where scales must be fair.",
+ "architecture_and_scenery": "Market stalls with scales.",
+ "palette": {
+  "colors": [
+   "#c9a46a",
+   "#6f8f4a"
+  ],
+  "lighting": "Midday",
+  "atmosphere": "Lively"
+ },
+ "areas": [
+  {
+   "name": "Scales",
+   "reference": "83:1",
+   "anchor_phrase": "give less",
+   "description": "Market scales."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Fair weight",
+   "reference": "83:1-3",
+   "description": "Weigh fairly for every customer (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "No person shown.",
+ "learning_objectives": [
+  "Explain fair measure"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "83:1",
+   "anchor_phrase": "give less",
+   "element": "Scales"
+  }
+ ],
+ "required_assets": [
+  "Market"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "83:1",
+  "83:1-3"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

@@ -1,0 +1,77 @@
+{
+ "surah": 102,
+ "name": {
+  "transliterated": "At-Takāthur",
+  "meaning": "The Rivalry in world increase"
+ },
+ "ayah_count": 8,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Competition for more",
+  "Blessings will be asked about"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "At-Takathur warns that competing for more distracts people until they reach the graves.",
+ "world_title": "Counting That Distracts",
+ "environment_concept": "A world where piling things up distracts from what matters.",
+ "architecture_and_scenery": "Piles of things.",
+ "palette": {
+  "colors": [
+   "#c9a46a",
+   "#5a5a6a"
+  ],
+  "lighting": "Plain",
+  "atmosphere": "Still"
+ },
+ "areas": [
+  {
+   "name": "Piles",
+   "reference": "102:1",
+   "anchor_phrase": "Competition",
+   "description": "Piles of possessions."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Enough",
+   "reference": "102:1-8",
+   "description": "Choose what matters (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration calm.",
+ "learning_objectives": [
+  "Explain 102:1-8"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "102:1",
+   "anchor_phrase": "Competition",
+   "element": "Piles"
+  }
+ ],
+ "required_assets": [
+  "Room"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "102:1",
+  "102:1-8"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

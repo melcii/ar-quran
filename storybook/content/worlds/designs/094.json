@@ -1,0 +1,77 @@
+{
+ "surah": 94,
+ "name": {
+  "transliterated": "Ash-Sharḥ",
+  "meaning": "The Relief"
+ },
+ "ayah_count": 8,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Ease after hardship",
+  "Turning to Allah"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Ash-Sharh means The Expansion. It promises twice that with hardship comes ease.",
+ "world_title": "With Hardship, Ease",
+ "environment_concept": "A climb where each hard step reveals an easy one.",
+ "architecture_and_scenery": "Hillside path.",
+ "palette": {
+  "colors": [
+   "#c9a46a",
+   "#6f8f4a"
+  ],
+  "lighting": "Morning",
+  "atmosphere": "Calm"
+ },
+ "areas": [
+  {
+   "name": "Path of Ease",
+   "reference": "94:5",
+   "anchor_phrase": "ease",
+   "description": "A path that eases."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Hard then easy",
+   "reference": "94:5-6",
+   "description": "Climb hard sections and find easy ones (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration gentle.",
+ "learning_objectives": [
+  "Explain 94:5-6"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "94:5",
+   "anchor_phrase": "ease",
+   "element": "Path of Ease"
+  }
+ ],
+ "required_assets": [
+  "Hill path"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "94:5",
+  "94:5-6"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

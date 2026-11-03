@@ -1,0 +1,219 @@
+{
+ "surah": 12,
+ "name": {
+  "transliterated": "Yūsuf",
+  "meaning": "Joseph"
+ },
+ "ayah_count": 111,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "Patience",
+  "Trust in Allah's plan",
+  "Honesty",
+  "Forgiveness",
+  "Planning in times of plenty"
+ ],
+ "narrative_passages": [
+  {
+   "title": "The dream",
+   "reference": "12:4-6",
+   "anchor_phrase": "eleven stars"
+  },
+  {
+   "title": "The well",
+   "reference": "12:8-18",
+   "anchor_phrase": "well"
+  },
+  {
+   "title": "The caravan",
+   "reference": "12:19-22",
+   "anchor_phrase": "company of travelers"
+  },
+  {
+   "title": "The prison and the dreams",
+   "reference": "12:36-42",
+   "anchor_phrase": "prison"
+  },
+  {
+   "title": "The king's dream",
+   "reference": "12:43-49",
+   "anchor_phrase": "seven fat cows"
+  },
+  {
+   "title": "The brothers come to Egypt",
+   "reference": "12:58-93",
+   "anchor_phrase": "brothers"
+  },
+  {
+   "title": "The reunion",
+   "reference": "12:94-101",
+   "anchor_phrase": "raised his parents"
+  }
+ ],
+ "summary_for_children": "Surah Yusuf tells one complete story: Yusuf's dream, his brothers' jealousy, the well, his patience in Egypt and in prison, the storehouses, and his forgiveness when his family is reunited.",
+ "world_title": "Yusuf's Journey: From the Well to the Storehouses",
+ "environment_concept": "Seven connected places follow the surah in order: the night of eleven stars, the well, the caravan road, a house in Egypt, the prison, the storehouses and the reunion hall.",
+ "architecture_and_scenery": "Canaanite hills at night, a stone well, a desert caravan road, an Egyptian house with gardens, a prison courtyard, granaries along the Nile, and a palace hall.",
+ "palette": {
+  "colors": [
+   "#1b2440",
+   "#d9b46a",
+   "#c58a4a",
+   "#6f8a5a",
+   "#f0e2c0"
+  ],
+  "lighting": "Starlight, desert sun, cool interiors, warm palace lamps",
+  "atmosphere": "Night breeze, dusty road, Nile humidity"
+ },
+ "areas": [
+  {
+   "name": "Night of Eleven Stars",
+   "reference": "12:4",
+   "anchor_phrase": "eleven stars",
+   "description": "A hilltop under eleven bright stars, the sun and the moon."
+  },
+  {
+   "name": "The Well",
+   "reference": "12:15",
+   "anchor_phrase": "well",
+   "description": "A deep stone well in the wilderness."
+  },
+  {
+   "name": "Caravan Road",
+   "reference": "12:19",
+   "anchor_phrase": "company of travelers",
+   "description": "A desert road with a passing caravan's tracks."
+  },
+  {
+   "name": "The Prison",
+   "reference": "12:36",
+   "anchor_phrase": "prison",
+   "description": "A prison courtyard where dreams are explained."
+  },
+  {
+   "name": "The Storehouses",
+   "reference": "12:47",
+   "anchor_phrase": "spikes",
+   "description": "Granaries where grain is stored in its spikes."
+  },
+  {
+   "name": "The Shirt",
+   "reference": "12:93",
+   "anchor_phrase": "shirt",
+   "description": "A shirt carried home as a sign."
+  },
+  {
+   "name": "Hall of Reunion",
+   "reference": "12:100",
+   "anchor_phrase": "raised his parents",
+   "description": "A palace hall at the end of the journey; no one is shown."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Store the harvest",
+   "reference": "12:47-49",
+   "description": "Over seven years of plenty, store grain in its spikes; then share it through seven hard years.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Read the dreams",
+   "reference": "12:43",
+   "description": "Match the king's dream images to their meaning as 12:47-49 explains.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Follow the stars",
+   "reference": "12:4",
+   "description": "Find the eleven stars, the sun and the moon in the night sky.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration moves place by place in the Quran's order. Yusuf, his family and all others are never shown or voiced.",
+ "learning_objectives": [
+  "Retell Yusuf's story in order",
+  "Explain how planning helped during hardship",
+  "Talk about forgiveness"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "12:4",
+   "anchor_phrase": "eleven stars",
+   "element": "Night of Eleven Stars"
+  },
+  {
+   "reference": "12:15",
+   "anchor_phrase": "well",
+   "element": "The Well"
+  },
+  {
+   "reference": "12:19",
+   "anchor_phrase": "company of travelers",
+   "element": "Caravan Road"
+  },
+  {
+   "reference": "12:36",
+   "anchor_phrase": "prison",
+   "element": "The Prison"
+  },
+  {
+   "reference": "12:47",
+   "anchor_phrase": "spikes",
+   "element": "The Storehouses"
+  },
+  {
+   "reference": "12:93",
+   "anchor_phrase": "shirt",
+   "element": "The Shirt"
+  },
+  {
+   "reference": "12:100",
+   "anchor_phrase": "raised his parents",
+   "element": "Hall of Reunion"
+  }
+ ],
+ "required_assets": [
+  "Night hilltop and starfield",
+  "Stone well",
+  "Caravan road",
+  "Egyptian house",
+  "Prison courtyard",
+  "Granaries",
+  "Palace hall"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "12:4",
+  "12:4-6",
+  "12:8-18",
+  "12:15",
+  "12:19",
+  "12:19-22",
+  "12:36",
+  "12:36-42",
+  "12:43",
+  "12:43-49",
+  "12:47",
+  "12:47-49",
+  "12:58-93",
+  "12:93",
+  "12:94-101",
+  "12:100"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

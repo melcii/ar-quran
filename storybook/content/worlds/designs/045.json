@@ -1,0 +1,102 @@
+{
+ "surah": 45,
+ "name": {
+  "transliterated": "Al-Jāthiyah",
+  "meaning": "The Crouching"
+ },
+ "ayah_count": 37,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "Allah subjected creation to people",
+  "Signs for those who think",
+  "Accountability"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Jathiyah means The Kneeling. It shows how Allah made the sea and everything in the heavens and earth useful for people, as signs for those who think.",
+ "world_title": "Subjected Sea and Sky",
+ "environment_concept": "A coastal world where the sea carries ships and everything in heaven and earth is set to serve people, with a kneeling crowd shown only as a symbolic horizon.",
+ "architecture_and_scenery": "Busy sea lanes, fishing boats, a sky with orderly winds and an endless shore.",
+ "palette": {
+  "colors": [
+   "#2f6f8f",
+   "#e9dcc0",
+   "#5a7a4a",
+   "#c9a46a"
+  ],
+  "lighting": "Bright sea light",
+  "atmosphere": "Breezy"
+ },
+ "areas": [
+  {
+   "name": "Sea of Ships",
+   "reference": "45:12",
+   "anchor_phrase": "ships",
+   "description": "Ships sailing by Allah's command."
+  },
+  {
+   "name": "Everything Subjected",
+   "reference": "45:13",
+   "anchor_phrase": "heavens and whatever is on the earth",
+   "description": "A wide view of sky and land."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Think about it",
+   "reference": "45:13",
+   "description": "Find things in the scene that serve people and say thanks (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Winds",
+   "reference": "45:5",
+   "description": "Change the winds and notice them as a sign.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration repeats the surah's call to think.",
+ "learning_objectives": [
+  "Explain 45:13",
+  "List signs in 45:3-5",
+  "Explain gratitude"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "45:12",
+   "anchor_phrase": "ships",
+   "element": "Sea of Ships"
+  },
+  {
+   "reference": "45:13",
+   "anchor_phrase": "heavens and whatever is on the earth",
+   "element": "Everything Subjected"
+  }
+ ],
+ "required_assets": [
+  "Sea lanes",
+  "Shore",
+  "Sky"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "45:5",
+  "45:12",
+  "45:13"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

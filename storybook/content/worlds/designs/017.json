@@ -1,0 +1,140 @@
+{
+ "surah": 17,
+ "name": {
+  "transliterated": "Al-Isrā’",
+  "meaning": "The Night Journey"
+ },
+ "ayah_count": 111,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "The night journey",
+  "Kindness to parents",
+  "Honesty in measure",
+  "Everything glorifies Allah"
+ ],
+ "narrative_passages": [
+  {
+   "title": "The night journey",
+   "reference": "17:1",
+   "anchor_phrase": "Aqsa"
+  },
+  {
+   "title": "Iblis refuses",
+   "reference": "17:61-65",
+   "anchor_phrase": "Iblees"
+  }
+ ],
+ "summary_for_children": "Al-Isra begins with the night journey to al-Masjid al-Aqsa and gives guidance: honour parents, be honest, and know that everything glorifies Allah.",
+ "world_title": "The Night of Light and Guidance",
+ "environment_concept": "A night journey of lamps from one sacred mosque to another, then a land where the night and day are signs and parents are honoured.",
+ "architecture_and_scenery": "A path of lamps across a moonlit land, a domed mosque far off, a family courtyard, a market.",
+ "palette": {
+  "colors": [
+   "#101a33",
+   "#c9a95c",
+   "#3a4f7a",
+   "#e9e2cf"
+  ],
+  "lighting": "Moonlight and lamplight",
+  "atmosphere": "Quiet, cool night"
+ },
+ "areas": [
+  {
+   "name": "Path of Lamps",
+   "reference": "17:1",
+   "anchor_phrase": "by night",
+   "description": "A path of lamps through the night; nothing of the journey is depicted."
+  },
+  {
+   "name": "Two Signs",
+   "reference": "17:12",
+   "anchor_phrase": "two signs",
+   "description": "Night and day shown as two signs."
+  },
+  {
+   "name": "Courtyard of Parents",
+   "reference": "17:23",
+   "anchor_phrase": "parents",
+   "description": "A family courtyard; no people shown."
+  },
+  {
+   "name": "Full Measure Market",
+   "reference": "17:35",
+   "anchor_phrase": "full measure",
+   "description": "A market with honest scales."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Words for parents",
+   "reference": "17:23-24",
+   "description": "Choose gentle words to say to parents.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Honest measure",
+   "reference": "17:35",
+   "description": "Measure fairly in the market.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "The narrator reads 17:1 and explains only what the Quran states about the journey.",
+ "learning_objectives": [
+  "Retell what 17:1 says",
+  "Know how to speak to parents",
+  "Explain honesty in trade"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "17:1",
+   "anchor_phrase": "by night",
+   "element": "Path of Lamps"
+  },
+  {
+   "reference": "17:12",
+   "anchor_phrase": "two signs",
+   "element": "Two Signs"
+  },
+  {
+   "reference": "17:23",
+   "anchor_phrase": "parents",
+   "element": "Courtyard of Parents"
+  },
+  {
+   "reference": "17:35",
+   "anchor_phrase": "full measure",
+   "element": "Full Measure Market"
+  }
+ ],
+ "required_assets": [
+  "Lamp path",
+  "Distant mosque silhouette",
+  "Family courtyard",
+  "Market scales"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "17:1",
+  "17:12",
+  "17:23",
+  "17:23-24",
+  "17:35",
+  "17:61-65"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

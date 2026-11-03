@@ -1,0 +1,87 @@
+{
+ "surah": 61,
+ "name": {
+  "transliterated": "Aṣ-Ṣaff",
+  "meaning": "The Ranks"
+ },
+ "ayah_count": 14,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Doing what you say",
+  "Unity",
+  "Supporting Allah's cause"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "As-Saff means The Ranks. It tells us to do what we say, praises believers united like a solid structure, and mentions Isa's disciples as supporters of Allah.",
+ "world_title": "Ranks Like a Structure",
+ "environment_concept": "A wall of stones fitting together tightly, standing for believers united in rows.",
+ "architecture_and_scenery": "Stone wall building site, a field.",
+ "palette": {
+  "colors": [
+   "#c9a46a",
+   "#7a8f68",
+   "#3f6d8f"
+  ],
+  "lighting": "Bright day",
+  "atmosphere": "Calm"
+ },
+ "areas": [
+  {
+   "name": "Firm Structure",
+   "reference": "61:4",
+   "anchor_phrase": "single structure",
+   "description": "A wall of tightly joined stones."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Build together",
+   "reference": "61:4",
+   "description": "Fit stones together in a wall (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Say and do",
+   "reference": "61:2-3",
+   "description": "Match promises to actions.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "No prophet shown.",
+ "learning_objectives": [
+  "Explain 61:2-3",
+  "Explain unity"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "61:4",
+   "anchor_phrase": "single structure",
+   "element": "Firm Structure"
+  }
+ ],
+ "required_assets": [
+  "Wall",
+  "Field"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "61:2-3",
+  "61:4"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

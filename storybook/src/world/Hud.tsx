@@ -7,6 +7,7 @@ import { PanResponder, Pressable, ScrollView, StyleSheet, Text, TextInput, View 
 import { Passage } from '@/components/Ayah';
 import { Button, Chip, ContentLabel, IconButton, Row } from '@/components/ui';
 import { catalogFor, outlinesForSurah, type StoryOutline } from '@/content/outlines';
+import { designFor, stagesFor } from '@/content/designs';
 import { formatRef, getSurah, getVerse, parseRef, searchQuran, surahs } from '@/content/quran';
 import { emptySurahProgress, useAppState, type Settings } from '@/state/AppState';
 import { sound } from '@/three/sound';
@@ -260,6 +261,7 @@ export function LibraryHud({ selected, portrait, onSelect, onRead, onWorld }: { 
             {prog.furthestAyah ? `Read up to ayah ${prog.furthestAyah}` : 'Not opened yet'}
             {prog.visitedWorld ? ` · ${prog.passagesFound.length} lanterns found in its world` : ''}
           </Text>
+          {designFor(info.number) && <DesignStatus surah={info.number} />}
           {catalogFor(info.number) && (
             <Text style={s.plaqueSub}>
               <Text style={{ fontFamily: fonts.bodyBold }}>Themes (draft): </Text>
@@ -283,6 +285,35 @@ export function LibraryHud({ selected, portrait, onSelect, onRead, onWorld }: { 
         </View>
       )}
     </>
+  );
+}
+
+const STAGE_MARK = { done: '✓', draft: '◐', todo: '○' } as const;
+
+/** The surah's planned world and an honest view of how far it has got. */
+function DesignStatus({ surah }: { surah: number }) {
+  const d = designFor(surah)!;
+  const stages = stagesFor(d);
+  const built = stages[3].state === 'done';
+  return (
+    <View style={{ gap: 4 }}>
+      <Text style={s.plaqueSub}>
+        <Text style={{ fontFamily: fonts.bodyBold }}>Planned world (design draft): </Text>
+        {d.world_title}
+      </Text>
+      <Row wrap style={{ gap: 6 }}>
+        {stages.map((st) => (
+          <Text
+            key={st.label}
+            accessibilityLabel={`${st.label}: ${st.detail}`}
+            style={[s.stage, st.state === 'done' ? s.stageDone : st.state === 'draft' ? s.stageDraft : null]}
+          >
+            {STAGE_MARK[st.state]} {st.label}
+          </Text>
+        ))}
+      </Row>
+      {!built && <Text style={s.plaqueNote}>Its own world is not built yet. Walking it opens a shared setting for now.</Text>}
+    </View>
   );
 }
 
@@ -628,6 +659,10 @@ const s = StyleSheet.create({
   plaqueArabic: { fontFamily: fonts.quran, fontSize: 28, color: colors.ink, lineHeight: 46 },
   plaqueTitle: { fontFamily: fonts.display, fontSize: 20, color: colors.ink },
   plaqueSub: { fontFamily: fonts.body, fontSize: 13, color: colors.inkSoft },
+  plaqueNote: { fontFamily: fonts.body, fontSize: 12, fontStyle: 'italic', color: colors.inkSoft },
+  stage: { fontFamily: fonts.body, fontSize: 11, color: colors.inkSoft, borderWidth: 1, borderColor: 'rgba(0,0,0,0.15)', borderRadius: 10, paddingHorizontal: 7, paddingVertical: 2 },
+  stageDone: { color: '#1f6b3a', borderColor: '#1f6b3a', fontFamily: fonts.bodyBold },
+  stageDraft: { color: '#8a5a12', borderColor: '#c9a46a' },
   storyText: { fontFamily: fonts.body, fontSize: 17, lineHeight: 26, color: colors.ink },
   plaqueProg: { fontFamily: fonts.bodyBold, fontSize: 13, color: colors.skyDeep },
   basis: { gap: 4, backgroundColor: '#f3ead6', borderRadius: radius.sm, padding: 8 },

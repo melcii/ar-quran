@@ -1,0 +1,88 @@
+{
+ "surah": 101,
+ "name": {
+  "transliterated": "Al-Qāri‘ah",
+  "meaning": "The Calamity"
+ },
+ "ayah_count": 11,
+ "content_type": {
+  "primary": "hereafter (symbolic only)",
+  "secondary": []
+ },
+ "themes": [
+  "Weighing of deeds"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Qari'ah describes the Day in words: people like scattered moths and mountains like fluffed wool. Heavy good deeds bring a pleasing life.",
+ "world_title": "Like Moths, Like Wool",
+ "environment_concept": "A symbolic world of the surah's two images: scattered moths and fluffed wool, shown as soft abstraction only.",
+ "architecture_and_scenery": "Abstract field of moths in light, and wool-like clouds.",
+ "palette": {
+  "colors": [
+   "#efe6d2",
+   "#c9b090"
+  ],
+  "lighting": "Soft",
+  "atmosphere": "Calm"
+ },
+ "areas": [
+  {
+   "name": "Moths",
+   "reference": "101:4",
+   "anchor_phrase": "moths",
+   "description": "Moths in lamp light."
+  },
+  {
+   "name": "Wool",
+   "reference": "101:5",
+   "anchor_phrase": "wool",
+   "description": "Fluffed wool."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Heavy scales",
+   "reference": "101:6-7",
+   "description": "Add good deeds to the scale (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Nothing of the Day shown.",
+ "learning_objectives": [
+  "Explain 101:6-9"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "101:4",
+   "anchor_phrase": "moths",
+   "element": "Moths"
+  },
+  {
+   "reference": "101:5",
+   "anchor_phrase": "wool",
+   "element": "Wool"
+  }
+ ],
+ "required_assets": [
+  "Lamp field"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "101:4",
+  "101:5",
+  "101:6-7"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

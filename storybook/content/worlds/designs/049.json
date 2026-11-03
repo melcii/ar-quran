@@ -1,0 +1,153 @@
+{
+ "surah": 49,
+ "name": {
+  "transliterated": "Al-Ḥujurāt",
+  "meaning": "The Rooms"
+ },
+ "ayah_count": 18,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Manners with the Prophet (peace be upon him)",
+  "Checking news",
+  "Making peace",
+  "Respecting others",
+  "Equality of people"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Hujurat means The Rooms. It teaches good manners: check news before believing it, make peace between people, don't make fun of others or call them bad names, don't spy or speak badly behind their backs, and know that the best person is the most God-conscious.",
+ "world_title": "The Village of Good Manners",
+ "environment_concept": "A friendly village where each street teaches a manner from the surah: checking news, making peace, no mocking, no nicknames, no spying, no backbiting, and a market square where peoples and tribes meet to know one another.",
+ "architecture_and_scenery": "Courtyard homes with low walls, a peace bridge between two quarters, a market square with stalls from many lands.",
+ "palette": {
+  "colors": [
+   "#e9c98f",
+   "#7a9a5a",
+   "#3f6d8f",
+   "#f6efe0",
+   "#c47a3a"
+  ],
+  "lighting": "Warm late afternoon",
+  "atmosphere": "Lively but gentle village sounds"
+ },
+ "areas": [
+  {
+   "name": "Messenger's Gate",
+   "reference": "49:6",
+   "anchor_phrase": "investigate",
+   "description": "A gate where news must be checked before entering."
+  },
+  {
+   "name": "Peace Bridge",
+   "reference": "49:10",
+   "anchor_phrase": "make settlement",
+   "description": "A bridge rebuilt between two quarters."
+  },
+  {
+   "name": "Mockery-free Street",
+   "reference": "49:11",
+   "anchor_phrase": "ridicule",
+   "description": "A street where mocking is replaced with respect."
+  },
+  {
+   "name": "Hidden-whispers Lane",
+   "reference": "49:12",
+   "anchor_phrase": "backbite",
+   "description": "A lane where whispers fade."
+  },
+  {
+   "name": "Market of Nations",
+   "reference": "49:13",
+   "anchor_phrase": "peoples and tribes",
+   "description": "A market where people from everywhere meet."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Check the news",
+   "reference": "49:6",
+   "description": "Verify messages before passing them on (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Mend the bridge",
+   "reference": "49:9-10",
+   "description": "Help two quarters make peace.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Kind names",
+   "reference": "49:11",
+   "description": "Replace hurtful nicknames with kind ones.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Know one another",
+   "reference": "49:13",
+   "description": "Learn greetings from different stalls.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration guides through each street, citing the ayah for each manner.",
+ "learning_objectives": [
+  "Explain checking news",
+  "Explain making peace",
+  "Explain 49:13"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "49:6",
+   "anchor_phrase": "investigate",
+   "element": "Messenger's Gate"
+  },
+  {
+   "reference": "49:10",
+   "anchor_phrase": "make settlement",
+   "element": "Peace Bridge"
+  },
+  {
+   "reference": "49:11",
+   "anchor_phrase": "ridicule",
+   "element": "Mockery-free Street"
+  },
+  {
+   "reference": "49:12",
+   "anchor_phrase": "backbite",
+   "element": "Hidden-whispers Lane"
+  },
+  {
+   "reference": "49:13",
+   "anchor_phrase": "peoples and tribes",
+   "element": "Market of Nations"
+  }
+ ],
+ "required_assets": [
+  "Village streets",
+  "Bridge",
+  "Market"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "49:6",
+  "49:9-10",
+  "49:10",
+  "49:11",
+  "49:12",
+  "49:13"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

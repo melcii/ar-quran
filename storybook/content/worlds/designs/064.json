@@ -1,0 +1,77 @@
+{
+ "surah": 64,
+ "name": {
+  "transliterated": "At-Taghābun",
+  "meaning": "The Mutual Disillusion"
+ },
+ "ayah_count": 18,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Trust in Allah",
+  "Spending",
+  "Doing our best"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "At-Taghabun teaches us to trust Allah, fear Him as much as we can, listen, obey and spend for good.",
+ "world_title": "The Mutual Exchange",
+ "environment_concept": "A garden where giving and patience are traded for real gain.",
+ "architecture_and_scenery": "Garden paths with offering stations.",
+ "palette": {
+  "colors": [
+   "#7a9a5a",
+   "#d4b66a"
+  ],
+  "lighting": "Afternoon",
+  "atmosphere": "Calm"
+ },
+ "areas": [
+  {
+   "name": "Path of Effort",
+   "reference": "64:16",
+   "anchor_phrase": "as much as you are able",
+   "description": "A path where effort counts."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Do your best",
+   "reference": "64:16",
+   "description": "Complete tasks as well as you can (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration gentle.",
+ "learning_objectives": [
+  "Explain 64:16"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "64:16",
+   "anchor_phrase": "as much as you are able",
+   "element": "Path of Effort"
+  }
+ ],
+ "required_assets": [
+  "Garden paths"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "64:16"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

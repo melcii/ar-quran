@@ -1,0 +1,90 @@
+{
+ "surah": 92,
+ "name": {
+  "transliterated": "Al-Lail",
+  "meaning": "The Night"
+ },
+ "ayah_count": 21,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Different efforts",
+  "Giving",
+  "Ease"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Layl means The Night. It says people's efforts differ, and those who give and are mindful of Allah will find ease.",
+ "world_title": "Night Covers, Day Appears",
+ "environment_concept": "A day-night world showing how efforts differ.",
+ "architecture_and_scenery": "Valley with day and night halves.",
+ "palette": {
+  "colors": [
+   "#1c2541",
+   "#f2c97a"
+  ],
+  "lighting": "Day/night",
+  "atmosphere": "Calm"
+ },
+ "areas": [
+  {
+   "name": "Night",
+   "reference": "92:1",
+   "anchor_phrase": "night",
+   "description": "Night covering."
+  },
+  {
+   "name": "Day",
+   "reference": "92:2",
+   "anchor_phrase": "day",
+   "description": "Day appearing."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Give",
+   "reference": "92:5-7",
+   "description": "Give and find the path easier (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration calm.",
+ "learning_objectives": [
+  "Explain 92:5-7"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "92:1",
+   "anchor_phrase": "night",
+   "element": "Night"
+  },
+  {
+   "reference": "92:2",
+   "anchor_phrase": "day",
+   "element": "Day"
+  }
+ ],
+ "required_assets": [
+  "Valley"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "92:1",
+  "92:2",
+  "92:5-7"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

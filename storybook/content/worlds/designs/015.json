@@ -1,0 +1,145 @@
+{
+ "surah": 15,
+ "name": {
+  "transliterated": "Al-Ḥijr",
+  "meaning": "The Rocky Tract"
+ },
+ "ayah_count": 99,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "Protection of the Quran",
+  "Signs in the sky and earth",
+  "Iblis's pride",
+  "Earlier peoples"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Iblis refuses",
+   "reference": "15:28-44",
+   "anchor_phrase": "Iblees"
+  },
+  {
+   "title": "Ibrahim's guests",
+   "reference": "15:51-60",
+   "anchor_phrase": "guests"
+  },
+  {
+   "title": "The people of al-Hijr",
+   "reference": "15:80-84",
+   "anchor_phrase": "Thamud"
+  }
+ ],
+ "summary_for_children": "Al-Hijr says Allah protects the Quran, shows the stars, mountains and winds as signs, and tells of the people of al-Hijr who carved homes in the mountains.",
+ "world_title": "The Rocky Tract",
+ "environment_concept": "Cliffs carved into homes under a sky of constellations, mountains set firm, and winds that carry pollen.",
+ "architecture_and_scenery": "Sandstone cliffs with carved facades, high mountains, a starry sky, and green slopes.",
+ "palette": {
+  "colors": [
+   "#b0704a",
+   "#e3c39a",
+   "#1d2a4a",
+   "#7a8f5a"
+  ],
+  "lighting": "Warm rock in sun, deep blue night",
+  "atmosphere": "Dry wind, still nights"
+ },
+ "areas": [
+  {
+   "name": "Sky of Constellations",
+   "reference": "15:16",
+   "anchor_phrase": "great stars",
+   "description": "A night sky with bright constellations."
+  },
+  {
+   "name": "Firm Mountains",
+   "reference": "15:19",
+   "anchor_phrase": "firmly set mountains",
+   "description": "Mountains anchoring the land."
+  },
+  {
+   "name": "Fertilizing Winds",
+   "reference": "15:22",
+   "anchor_phrase": "fertilizing winds",
+   "description": "Winds that carry pollen to plants."
+  },
+  {
+   "name": "Carved Homes",
+   "reference": "15:82",
+   "anchor_phrase": "carve",
+   "description": "Homes carved in the cliffs, empty."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Carry the pollen",
+   "reference": "15:22",
+   "description": "Guide the wind to carry pollen between flowers.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Find the constellations",
+   "reference": "15:16",
+   "description": "Trace constellations in the sky.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "The narrator explains the peoples' story as explanation and reads 15:9 at the start.",
+ "learning_objectives": [
+  "Know Allah protects the Quran",
+  "Explain how wind helps plants",
+  "Learn about the people of al-Hijr"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "15:16",
+   "anchor_phrase": "great stars",
+   "element": "Sky of Constellations"
+  },
+  {
+   "reference": "15:19",
+   "anchor_phrase": "firmly set mountains",
+   "element": "Firm Mountains"
+  },
+  {
+   "reference": "15:22",
+   "anchor_phrase": "fertilizing winds",
+   "element": "Fertilizing Winds"
+  },
+  {
+   "reference": "15:82",
+   "anchor_phrase": "carve",
+   "element": "Carved Homes"
+  }
+ ],
+ "required_assets": [
+  "Carved cliffs",
+  "Starfield with constellations",
+  "Wind and pollen particles"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "15:16",
+  "15:19",
+  "15:22",
+  "15:28-44",
+  "15:51-60",
+  "15:80-84",
+  "15:82"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

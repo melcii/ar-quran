@@ -1,0 +1,103 @@
+{
+ "surah": 59,
+ "name": {
+  "transliterated": "Al-Ḥashr",
+  "meaning": "The Exile"
+ },
+ "ayah_count": 24,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Awe of the Quran",
+  "Names of Allah",
+  "Brotherhood and generosity"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Hashr means The Gathering. It speaks of generosity among believers, and ends with the beautiful names of Allah and the image of a mountain humbled by the Quran.",
+ "world_title": "The Humbled Mountain",
+ "environment_concept": "A great mountain that would be humbled if the Quran were sent upon it, and a sky inscribed with the beautiful names of Allah as text.",
+ "architecture_and_scenery": "A towering mountain with cracks of light, a valley of palm trees, and a calm sky where the names appear as calligraphic text only.",
+ "palette": {
+  "colors": [
+   "#6b5a4a",
+   "#d4b66a",
+   "#2f4b6f",
+   "#efe6d2"
+  ],
+  "lighting": "Golden light on the mountain",
+  "atmosphere": "Silent"
+ },
+ "areas": [
+  {
+   "name": "Humbled Mountain",
+   "reference": "59:21",
+   "anchor_phrase": "mountain",
+   "description": "A mountain cracking with light."
+  },
+  {
+   "name": "Names of Allah",
+   "reference": "59:23",
+   "anchor_phrase": "Sovereign",
+   "description": "The names written as text in the sky."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Names",
+   "reference": "59:22-24",
+   "description": "Collect each name and its meaning.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Prefer others",
+   "reference": "59:9",
+   "description": "Share with others before yourself (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Allah is never depicted; names appear only as written words.",
+ "learning_objectives": [
+  "Name some of the names in 59:22-24",
+  "Explain 59:21",
+  "Explain generosity"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "59:21",
+   "anchor_phrase": "mountain",
+   "element": "Humbled Mountain"
+  },
+  {
+   "reference": "59:23",
+   "anchor_phrase": "Sovereign",
+   "element": "Names of Allah"
+  }
+ ],
+ "required_assets": [
+  "Mountain",
+  "Sky",
+  "Valley"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "59:9",
+  "59:21",
+  "59:22-24",
+  "59:23"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

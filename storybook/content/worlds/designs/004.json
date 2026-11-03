@@ -1,0 +1,127 @@
+{
+ "surah": 4,
+ "name": {
+  "transliterated": "An-Nisā’",
+  "meaning": "The Women"
+ },
+ "ayah_count": 176,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Justice",
+  "Caring for orphans and family",
+  "Returning trusts",
+  "Kindness to neighbours"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "An-Nisa teaches fairness to everyone, kindness to family, orphans and neighbours, and returning what we are trusted with.",
+ "world_title": "The Village of Trusts and Justice",
+ "environment_concept": "A village where every house holds something entrusted, and a central square where scales stay level.",
+ "architecture_and_scenery": "Whitewashed village houses, a well, a market square with large balance scales, family courtyards.",
+ "palette": {
+  "colors": [
+   "#f1ece0",
+   "#b5895a",
+   "#5c7c6b",
+   "#2e3a4a"
+  ],
+  "lighting": "Even daylight, no harsh shadows",
+  "atmosphere": "Warm, peaceful village air"
+ },
+ "areas": [
+  {
+   "name": "Square of One Soul",
+   "reference": "4:1",
+   "anchor_phrase": "one soul",
+   "description": "A square with a single fountain from which many channels flow."
+  },
+  {
+   "name": "House of Trusts",
+   "reference": "4:58",
+   "anchor_phrase": "trusts",
+   "description": "Houses each waiting for something they lent to come back."
+  },
+  {
+   "name": "Neighbours' Lane",
+   "reference": "4:36",
+   "anchor_phrase": "neighbor",
+   "description": "A lane where children help neighbours near and far."
+  },
+  {
+   "name": "Scales of Justice",
+   "reference": "4:135",
+   "anchor_phrase": "justice",
+   "description": "Great balance scales that tip when something unfair is placed."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Return the trusts",
+   "reference": "4:58",
+   "description": "Find objects left in the wrong place and return each to its owner's house.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Keep the scales level",
+   "reference": "4:135",
+   "description": "Choose fair options so the scales stay balanced, then read 4:135.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "The narrator explains each value with everyday examples, clearly as explanation, then reads the ayah.",
+ "learning_objectives": [
+  "Explain what a trust is",
+  "Name people the Quran asks us to be kind to",
+  "Understand standing for justice"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "4:1",
+   "anchor_phrase": "one soul",
+   "element": "Square of One Soul"
+  },
+  {
+   "reference": "4:58",
+   "anchor_phrase": "trusts",
+   "element": "House of Trusts"
+  },
+  {
+   "reference": "4:36",
+   "anchor_phrase": "neighbor",
+   "element": "Neighbours' Lane"
+  },
+  {
+   "reference": "4:135",
+   "anchor_phrase": "justice",
+   "element": "Scales of Justice"
+  }
+ ],
+ "required_assets": [
+  "Village houses",
+  "Market scales",
+  "Well and channels",
+  "Lane props"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "4:1",
+  "4:36",
+  "4:58",
+  "4:135"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

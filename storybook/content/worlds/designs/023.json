@@ -1,0 +1,159 @@
+{
+ "surah": 23,
+ "name": {
+  "transliterated": "Al-Mu’minūn",
+  "meaning": "The Believers"
+ },
+ "ayah_count": 118,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Qualities of believers",
+  "Creation of the human being",
+  "Rain in measure",
+  "Prophets rejected"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Nuh builds the ship",
+   "reference": "23:23-30",
+   "anchor_phrase": "ship"
+  }
+ ],
+ "summary_for_children": "Al-Mu'minun begins by describing successful believers: humble in prayer, avoiding idle talk, giving charity and keeping promises. It reminds us how Allah created us and sends rain in just measure.",
+ "world_title": "Garden of the Successful Believers",
+ "environment_concept": "A cultivated estate where each terrace is a quality of the believers in the opening ayahs, fed by rain sent in measure and an olive tree from Sinai.",
+ "architecture_and_scenery": "Terraced garden with palm and vine rows, a single great olive tree on a slope, a reservoir, and a ship-building yard at its lower edge.",
+ "palette": {
+  "colors": [
+   "#6f8f4a",
+   "#c9b36a",
+   "#3d6e8f",
+   "#efe7d3"
+  ],
+  "lighting": "Soft clear afternoon",
+  "atmosphere": "Calm, the sound of water held in reservoirs"
+ },
+ "areas": [
+  {
+   "name": "Terrace of Humble Prayer",
+   "reference": "23:2",
+   "anchor_phrase": "humbly submissive",
+   "description": "A quiet terrace for stillness."
+  },
+  {
+   "name": "Terrace of Turning from Idle Talk",
+   "reference": "23:3",
+   "anchor_phrase": "ill speech",
+   "description": "A path where noisy chatter fades as the player walks on."
+  },
+  {
+   "name": "Measured Rain Reservoir",
+   "reference": "23:18",
+   "anchor_phrase": "measured amount",
+   "description": "Rain gathered and held in the earth."
+  },
+  {
+   "name": "Palms and Vines",
+   "reference": "23:19",
+   "anchor_phrase": "palm trees and grapevines",
+   "description": "Rows of palms and grapevines."
+  },
+  {
+   "name": "Olive Tree of Sinai",
+   "reference": "23:20",
+   "anchor_phrase": "Mount Sinai",
+   "description": "A great olive tree on a slope."
+  },
+  {
+   "name": "Shipyard",
+   "reference": "23:27",
+   "anchor_phrase": "Construct the ship",
+   "description": "An empty shipyard with timbers."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Qualities ladder",
+   "reference": "23:1-11",
+   "description": "Light each terrace by matching it to its ayah.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Fill the reservoir",
+   "reference": "23:18",
+   "description": "Guide rain in measured amounts to fill the reservoir without flooding (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration links each terrace to a quality and asks the child about their own day.",
+ "learning_objectives": [
+  "List the qualities of believers in 23:1-11",
+  "Explain rain in measure",
+  "Connect gratitude to creation"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "23:2",
+   "anchor_phrase": "humbly submissive",
+   "element": "Terrace of Humble Prayer"
+  },
+  {
+   "reference": "23:3",
+   "anchor_phrase": "ill speech",
+   "element": "Terrace of Turning from Idle Talk"
+  },
+  {
+   "reference": "23:18",
+   "anchor_phrase": "measured amount",
+   "element": "Measured Rain Reservoir"
+  },
+  {
+   "reference": "23:19",
+   "anchor_phrase": "palm trees and grapevines",
+   "element": "Palms and Vines"
+  },
+  {
+   "reference": "23:20",
+   "anchor_phrase": "Mount Sinai",
+   "element": "Olive Tree of Sinai"
+  },
+  {
+   "reference": "23:27",
+   "anchor_phrase": "Construct the ship",
+   "element": "Shipyard"
+  }
+ ],
+ "required_assets": [
+  "Terraced garden",
+  "Olive tree",
+  "Reservoir",
+  "Shipyard"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "23:1-11",
+  "23:2",
+  "23:3",
+  "23:18",
+  "23:19",
+  "23:20",
+  "23:23-30",
+  "23:27"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

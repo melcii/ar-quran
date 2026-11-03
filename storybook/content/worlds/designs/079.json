@@ -1,0 +1,112 @@
+{
+ "surah": 79,
+ "name": {
+  "transliterated": "An-Nāzi‘āt",
+  "meaning": "Those who drag forth"
+ },
+ "ayah_count": 46,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "Musa and Pharaoh",
+  "Creation",
+  "Fear of standing before Allah"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Musa sent to Pharaoh",
+   "reference": "79:15-26",
+   "anchor_phrase": "Tuwa"
+  }
+ ],
+ "summary_for_children": "An-Nazi'at tells of Musa called in the valley of Tuwa and sent to Pharaoh, and shows how Allah raised the sky and spread the earth.",
+ "world_title": "The Valley of Tuwa Called Again",
+ "environment_concept": "A sacred valley and a sky raised and proportioned, with pastures and water drawn from the earth.",
+ "architecture_and_scenery": "Valley, high sky, pastures and springs.",
+ "palette": {
+  "colors": [
+   "#3f6d8f",
+   "#6f8f4a",
+   "#c9b090"
+  ],
+  "lighting": "Night darkened then brightness",
+  "atmosphere": "Calm"
+ },
+ "areas": [
+  {
+   "name": "Raised Ceiling",
+   "reference": "79:28",
+   "anchor_phrase": "ceiling",
+   "description": "A high sky."
+  },
+  {
+   "name": "Water and Pasture",
+   "reference": "79:31",
+   "anchor_phrase": "pasture",
+   "description": "Pastures with springs."
+  },
+  {
+   "name": "Firm Mountains",
+   "reference": "79:32",
+   "anchor_phrase": "mountains",
+   "description": "Mountains."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Day and night",
+   "reference": "79:29",
+   "description": "Darken the night and bring out the brightness (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Prophets not shown.",
+ "learning_objectives": [
+  "Explain 79:27-33"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "79:28",
+   "anchor_phrase": "ceiling",
+   "element": "Raised Ceiling"
+  },
+  {
+   "reference": "79:31",
+   "anchor_phrase": "pasture",
+   "element": "Water and Pasture"
+  },
+  {
+   "reference": "79:32",
+   "anchor_phrase": "mountains",
+   "element": "Firm Mountains"
+  }
+ ],
+ "required_assets": [
+  "Valley",
+  "Sky",
+  "Pastures"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "79:15-26",
+  "79:28",
+  "79:29",
+  "79:31",
+  "79:32"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

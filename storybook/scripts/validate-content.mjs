@@ -236,6 +236,50 @@ catalog.forEach((c, i) => {
   if (ARABIC_SCRIPT.test(JSON.stringify(c))) fail(`surah-catalog.json surah ${c.surah}: contains Arabic script`);
 });
 
+// Design records: one per surah, every anchor phrase found in its ayah's translation.
+const designsDir = join(root, "content", "worlds", "designs");
+const designFiles = readdirSync(designsDir).filter((f) => f.endsWith(".json")).sort();
+if (designFiles.length !== 114) fail(`worlds/designs: ${designFiles.length} records, expected 114`);
+const designTitles = new Set();
+const FIELDS = ["surah", "name", "ayah_count", "content_type", "themes", "narrative_passages", "summary_for_children", "world_title", "environment_concept", "architecture_and_scenery", "palette", "areas", "activities", "narration_plan", "learning_objectives", "ayah_environment_connections", "required_assets", "status", "quran_references", "scholarly_review"];
+const HONEST = { playable_environment: /^not built/, testing: /^not tested/ };
+let designsBuilt = 0;
+let unreviewedDesigns = 0;
+designFiles.forEach((f, i) => {
+  const d = readJson(join(designsDir, f));
+  const ctx = `worlds/designs/${f}`;
+  if (d.surah !== i + 1) return fail(`${ctx}: is surah ${d.surah}, expected ${i + 1}`);
+  FIELDS.forEach((k) => d[k] == null && fail(`${ctx}: missing ${k}`));
+  if (d.ayah_count !== surahs[i].ayahCount) fail(`${ctx}: ayah_count ${d.ayah_count}, dataset says ${surahs[i].ayahCount}`);
+  if (designTitles.has(d.world_title)) fail(`${ctx}: world title "${d.world_title}" is not unique`);
+  designTitles.add(d.world_title);
+  if (ARABIC_SCRIPT.test(JSON.stringify(d))) fail(`${ctx}: contains Arabic script`);
+  if (!d.areas.length || !d.activities.length) fail(`${ctx}: needs at least one area and one activity`);
+  const anchored = [...d.narrative_passages, ...d.areas, ...d.ayah_environment_connections];
+  anchored.forEach((a) => {
+    const p = parseRef(a.reference);
+    if (!p) return fail(`${ctx}: bad reference "${a.reference}"`);
+    if (p.surah !== d.surah) fail(`${ctx}: ${a.reference} is from another surah`);
+    else if (!plain(translationOf(p)).includes(plain(a.anchor_phrase))) fail(`${ctx}: "${a.anchor_phrase}" is not in ${a.reference}`);
+  });
+  d.activities.forEach((a) => {
+    const p = parseRef(a.reference);
+    if (!p || p.surah !== d.surah) fail(`${ctx}: activity "${a.name}" has a bad reference`);
+    if (!/adaptation/.test(a.label)) fail(`${ctx}: activity "${a.name}" is not labelled an adaptation`);
+  });
+  d.quran_references.forEach((r) => parseRef(r) || fail(`${ctx}: bad reference "${r}"`));
+  const built = d.status.playable_environment && !HONEST.playable_environment.test(d.status.playable_environment);
+  if (built) designsBuilt++;
+  if (built && !d.status.built_in) fail(`${ctx}: claims a playable world without naming the code that builds it (status.built_in)`);
+  if (!HONEST.testing.test(d.status.testing) && !d.status.tested_by) fail(`${ctx}: claims testing without saying how (status.tested_by)`);
+  if (d.scholarly_review.status === "unreviewed") unreviewedDesigns++;
+  if (d.scholarly_review.status !== "unreviewed" && !d.scholarly_review.reviewer) fail(`${ctx}: marked ${d.scholarly_review.status} without a named reviewer`);
+});
+
+const { buildDesignIndex } = await import("./design-index.mjs");
+if (readFileSync(join(root, "content", "worlds", "design-index.json"), "utf8") !== buildDesignIndex())
+  fail("content/worlds/design-index.json is out of date: run npm run designs:index");
+
 if (errors.length) {
   console.error(errors.join("\n"));
   console.error(`\n${errors.length} problem(s) found.`);
@@ -245,3 +289,4 @@ console.log(`Quran dataset OK: 114 surahs, ${total} ayahs, checksums match.`);
 console.log(`Stories OK: ${storyIds.join(", ")}.`);
 console.log(`Story outlines OK: ${outlines.length} drafts, all references real; catalog covers 114 surahs.`);
 console.log(`Surah worlds OK: 114 settings; ${worlds.filter((w) => w.review_status === "unreviewed").length} still await scholarly review.`);
+console.log(`World designs OK: 114 records, every anchor found in its ayah; ${designsBuilt} built as playable worlds; ${unreviewedDesigns} await scholarly review.`);

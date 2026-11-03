@@ -1,0 +1,92 @@
+{
+ "surah": 72,
+ "name": {
+  "transliterated": "Al-Jinn",
+  "meaning": "The Jinn"
+ },
+ "ayah_count": 28,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "The Quran guides",
+  "Unseen beings exist but are not shown",
+  "Worship only Allah"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Jinn tells that a group of jinn heard the Quran, found it amazing and believed. The jinn are never shown.",
+ "world_title": "An Amazing Recitation Heard",
+ "environment_concept": "A night desert where an amazing Quran is heard by a group the eye cannot see; the world shows only stillness and a sky guarded with flames.",
+ "architecture_and_scenery": "Night desert, sky with shooting stars.",
+ "palette": {
+  "colors": [
+   "#0f1a33",
+   "#e6d38a",
+   "#c9b090"
+  ],
+  "lighting": "Starlight and shooting stars",
+  "atmosphere": "Silent"
+ },
+ "areas": [
+  {
+   "name": "Listening Night",
+   "reference": "72:1",
+   "anchor_phrase": "amazing Qur'an",
+   "description": "A still desert under stars."
+  },
+  {
+   "name": "Guarded Sky",
+   "reference": "72:8",
+   "anchor_phrase": "burning flames",
+   "description": "Shooting stars across the sky."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Shooting stars",
+   "reference": "72:8",
+   "description": "Count shooting stars (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Jinn are unseen; nothing shows them.",
+ "learning_objectives": [
+  "Explain that jinn are unseen",
+  "Explain 72:1-2"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "72:1",
+   "anchor_phrase": "amazing Qur'an",
+   "element": "Listening Night"
+  },
+  {
+   "reference": "72:8",
+   "anchor_phrase": "burning flames",
+   "element": "Guarded Sky"
+  }
+ ],
+ "required_assets": [
+  "Desert",
+  "Night sky"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "72:1",
+  "72:8"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

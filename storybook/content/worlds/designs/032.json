@@ -1,0 +1,115 @@
+{
+ "surah": 32,
+ "name": {
+  "transliterated": "As-Sajdah",
+  "meaning": "The Prostration"
+ },
+ "ayah_count": 30,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Creation of the human",
+  "Prayer at night",
+  "Signs of life after barrenness",
+  "Humility before Allah"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "As-Sajdah means The Prostration. It reminds us that Allah created people from clay and gave us hearing, sight and hearts. It praises those who rise at night to pray and shows how water brings crops to barren land.",
+ "world_title": "Night Rising and the Dry Land",
+ "environment_concept": "A night village where some rise to pray, then a barren land where water arrives and crops grow.",
+ "architecture_and_scenery": "Quiet clay houses under stars, a lamp-lit prayer space, and a dry plain with a river channel.",
+ "palette": {
+  "colors": [
+   "#1c2541",
+   "#e2c88a",
+   "#6f8f4a",
+   "#c9b090"
+  ],
+  "lighting": "Moonlight and small lamps, then dawn over a plain",
+  "atmosphere": "Still night, then flowing water"
+ },
+ "areas": [
+  {
+   "name": "Clay Bank",
+   "reference": "32:7",
+   "anchor_phrase": "clay",
+   "description": "A riverbank of clay recalling the beginning of human creation."
+  },
+  {
+   "name": "Night Prayer Village",
+   "reference": "32:16",
+   "anchor_phrase": "arise from",
+   "description": "Lamps glowing in a quiet village at night."
+  },
+  {
+   "name": "Barren Land",
+   "reference": "32:27",
+   "anchor_phrase": "barren land",
+   "description": "Dry land receiving water and crops."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Gifts of hearing, sight and heart",
+   "reference": "32:9",
+   "description": "Find three gifts named in 32:9 around the village (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Water the plain",
+   "reference": "32:27",
+   "description": "Lead water to barren land and watch crops grow.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration is calm and night-toned, ending at dawn.",
+ "learning_objectives": [
+  "Name the gifts in 32:9",
+  "Explain night prayer",
+  "Explain the barren-land sign"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "32:7",
+   "anchor_phrase": "clay",
+   "element": "Clay Bank"
+  },
+  {
+   "reference": "32:16",
+   "anchor_phrase": "arise from",
+   "element": "Night Prayer Village"
+  },
+  {
+   "reference": "32:27",
+   "anchor_phrase": "barren land",
+   "element": "Barren Land"
+  }
+ ],
+ "required_assets": [
+  "Clay bank",
+  "Night village",
+  "Dry plain and channel"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "32:7",
+  "32:9",
+  "32:16",
+  "32:27"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}

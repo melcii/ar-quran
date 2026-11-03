@@ -1,0 +1,114 @@
+{
+ "surah": 57,
+ "name": {
+  "transliterated": "Al-Ḥadīd",
+  "meaning": "The Iron"
+ },
+ "ayah_count": 29,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Spending in Allah's way",
+  "The world is temporary",
+  "Iron and justice"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Hadid means Iron. It reminds us that this life is short like plants that grow and then dry, encourages spending for good, and mentions iron with its strength and benefits.",
+ "world_title": "Iron and the Passing Rain-Plants",
+ "environment_concept": "A land where rain makes plants grow green and then yellow and dry, and a forge where iron is shaped, showing the passing world and real strength.",
+ "architecture_and_scenery": "Green fields that fade, a forge with iron, and a scale of justice.",
+ "palette": {
+  "colors": [
+   "#6f8f4a",
+   "#d9c48f",
+   "#5a5a6a",
+   "#c08a4a"
+  ],
+  "lighting": "Seasonal light",
+  "atmosphere": "Rain and forge sounds"
+ },
+ "areas": [
+  {
+   "name": "Passing Field",
+   "reference": "57:20",
+   "anchor_phrase": "yellow",
+   "description": "Plants grow and turn yellow."
+  },
+  {
+   "name": "The Forge",
+   "reference": "57:25",
+   "anchor_phrase": "iron",
+   "description": "A forge with iron."
+  },
+  {
+   "name": "Revived Earth",
+   "reference": "57:17",
+   "anchor_phrase": "gives life to the earth",
+   "description": "Earth returning to life."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Lend a good loan",
+   "reference": "57:11",
+   "description": "Give from what you have and watch it grow (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Seasons",
+   "reference": "57:20",
+   "description": "Watch a field through its life.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration focuses on generosity and justice.",
+ "learning_objectives": [
+  "Explain 57:20",
+  "Explain spending for good",
+  "Explain the balance and iron"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "57:20",
+   "anchor_phrase": "yellow",
+   "element": "Passing Field"
+  },
+  {
+   "reference": "57:25",
+   "anchor_phrase": "iron",
+   "element": "The Forge"
+  },
+  {
+   "reference": "57:17",
+   "anchor_phrase": "gives life to the earth",
+   "element": "Revived Earth"
+  }
+ ],
+ "required_assets": [
+  "Fields",
+  "Forge",
+  "Scale"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "not built: a shared symbolic setting stands in",
+  "testing": "not tested"
+ },
+ "quran_references": [
+  "57:11",
+  "57:17",
+  "57:20",
+  "57:25"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+}
