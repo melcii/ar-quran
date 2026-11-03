@@ -416,6 +416,7 @@ function World() {
           onOpen={lanternOpened}
           onClose={() => setOpenPassage(null)}
           onRead={(a) => read(surah, a, true)}
+          onReadRef={(n, a) => read(n, a, true)}
         />
       )}
 

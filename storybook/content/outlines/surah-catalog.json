@@ -1,0 +1,576 @@
+{
+ "note": "Theme summaries and environment ideas for every surah, supplied by the project team as a navigation catalog. They are planning notes, not complete stories and not tafsir, and are unreviewed. Environment ideas are design suggestions; the settings actually built are in content/worlds/surah-worlds.json.",
+ "source": "Supplied by Erguvan Art & Academy in the project thread, 2026-11-03.",
+ "surahs": [
+  {
+   "surah": 1,
+   "themes": "Prayer for guidance",
+   "environment_idea": "Peaceful garden and a pathway"
+  },
+  {
+   "surah": 2,
+   "themes": "Adam, Musa, Bani Israel, and guidance",
+   "environment_idea": "Multiple interconnected worlds"
+  },
+  {
+   "surah": 3,
+   "themes": "Maryam, Isa, and steadfast faith",
+   "environment_idea": "Ancient sanctuary and gardens"
+  },
+  {
+   "surah": 4,
+   "themes": "Justice, families, and responsibilities",
+   "environment_idea": "Community village"
+  },
+  {
+   "surah": 5,
+   "themes": "Covenants, justice, and Isa's followers",
+   "environment_idea": "Ancient settlement and shared table"
+  },
+  {
+   "surah": 6,
+   "themes": "Creation, faith, and Ibrahim's arguments",
+   "environment_idea": "Starry desert and nature"
+  },
+  {
+   "surah": 7,
+   "themes": "Adam, Nuh, Hud, Salih, Lut, Shu'ayb, Musa",
+   "environment_idea": "Ancient civilization worlds"
+  },
+  {
+   "surah": 8,
+   "themes": "Badr and collective responsibility",
+   "environment_idea": "Historical landscape and reflection"
+  },
+  {
+   "surah": 9,
+   "themes": "Repentance, commitments, and community",
+   "environment_idea": "Desert route and settlement"
+  },
+  {
+   "surah": 10,
+   "themes": "Faith, signs, and Yunus's people",
+   "environment_idea": "Ocean and gardens"
+  },
+  {
+   "surah": 11,
+   "themes": "Stories of Nuh, Hud, Salih, Ibrahim, Lut, Shu'ayb",
+   "environment_idea": "Ancient valleys and cities"
+  },
+  {
+   "surah": 12,
+   "themes": "The complete story of Yusuf",
+   "environment_idea": "Well, Egypt, storehouses"
+  },
+  {
+   "surah": 13,
+   "themes": "Thunder, creation, and truth",
+   "environment_idea": "Storm-filled mountain valley"
+  },
+  {
+   "surah": 14,
+   "themes": "Prophets, gratitude, and Ibrahim's prayers",
+   "environment_idea": "Desert sanctuary"
+  },
+  {
+   "surah": 15,
+   "themes": "Adam, Ibrahim's guests, and earlier communities",
+   "environment_idea": "Stone-carved landscapes"
+  },
+  {
+   "surah": 16,
+   "themes": "Blessings and signs in nature",
+   "environment_idea": "Honeybee garden"
+  },
+  {
+   "surah": 17,
+   "themes": "Night Journey, ethics, and guidance",
+   "environment_idea": "Night-sky reflection world"
+  },
+  {
+   "surah": 18,
+   "themes": "Cave companions, two gardens, Musa, Dhul-Qarnayn",
+   "environment_idea": "Four adventure environments"
+  },
+  {
+   "surah": 19,
+   "themes": "Zakariyya, Maryam, Isa, Ibrahim",
+   "environment_idea": "Sanctuary and palm oasis"
+  },
+  {
+   "surah": 20,
+   "themes": "Musa, Pharaoh, and Adam",
+   "environment_idea": "Desert, mountain, and river"
+  },
+  {
+   "surah": 21,
+   "themes": "Accounts of many prophets",
+   "environment_idea": "Connected historical worlds"
+  },
+  {
+   "surah": 22,
+   "themes": "Pilgrimage, worship, and resurrection",
+   "environment_idea": "Sacred pilgrimage landscape"
+  },
+  {
+   "surah": 23,
+   "themes": "Character, creation, and earlier messengers",
+   "environment_idea": "Garden of virtues"
+  },
+  {
+   "surah": 24,
+   "themes": "Purity, family ethics, and the parable of light",
+   "environment_idea": "Architecture of light"
+  },
+  {
+   "surah": 25,
+   "themes": "Truth, creation, and servants of the Merciful",
+   "environment_idea": "Coastal reflection world"
+  },
+  {
+   "surah": 26,
+   "themes": "Many prophets and their communities",
+   "environment_idea": "Multiple ancient settlements"
+  },
+  {
+   "surah": 27,
+   "themes": "Sulayman, the ants, the hoopoe, and the queen",
+   "environment_idea": "Ant valley and palace"
+  },
+  {
+   "surah": 28,
+   "themes": "Musa's early life and Qarun",
+   "environment_idea": "Nile and ancient Egypt"
+  },
+  {
+   "surah": 29,
+   "themes": "Faith, testing, and the spider-house comparison",
+   "environment_idea": "Desert web and mountain"
+  },
+  {
+   "surah": 30,
+   "themes": "History, creation, and signs",
+   "environment_idea": "Ancient city and natural landscapes"
+  },
+  {
+   "surah": 31,
+   "themes": "Advice from Luqman to his son",
+   "environment_idea": "Wisdom garden"
+  },
+  {
+   "surah": 32,
+   "themes": "Creation, faith, and reflection",
+   "environment_idea": "Celestial landscape"
+  },
+  {
+   "surah": 33,
+   "themes": "Community trials and prophetic guidance",
+   "environment_idea": "Historical city environment"
+  },
+  {
+   "surah": 34,
+   "themes": "Sulayman, Saba, and gratitude",
+   "environment_idea": "Ancient city and orchards"
+  },
+  {
+   "surah": 35,
+   "themes": "Creation, angels, and divine blessings",
+   "environment_idea": "Mountain and sky world"
+  },
+  {
+   "surah": 36,
+   "themes": "The messengers to a town and signs of creation",
+   "environment_idea": "Ancient town and gardens"
+  },
+  {
+   "surah": 37,
+   "themes": "Nuh, Ibrahim, Musa, Harun, Ilyas, Lut, Yunus",
+   "environment_idea": "Interconnected story worlds"
+  },
+  {
+   "surah": 38,
+   "themes": "Dawud, Sulayman, Ayyub, and Adam",
+   "environment_idea": "Kingdom and mountain sanctuary"
+  },
+  {
+   "surah": 39,
+   "themes": "Worship, mercy, and repentance",
+   "environment_idea": "Light-filled pathways"
+  },
+  {
+   "surah": 40,
+   "themes": "Believer from Pharaoh's family and divine mercy",
+   "environment_idea": "Ancient Egypt"
+  },
+  {
+   "surah": 41,
+   "themes": "Revelation and signs in creation",
+   "environment_idea": "Stars, mountains, and horizons"
+  },
+  {
+   "surah": 42,
+   "themes": "Revelation, justice, and consultation",
+   "environment_idea": "Community gathering landscape"
+  },
+  {
+   "surah": 43,
+   "themes": "Worldly wealth, Musa, and Isa",
+   "environment_idea": "Ornate historical city"
+  },
+  {
+   "surah": 44,
+   "themes": "Warnings, Pharaoh's people, and accountability",
+   "environment_idea": "Atmospheric desert"
+  },
+  {
+   "surah": 45,
+   "themes": "Signs in creation and judgment",
+   "environment_idea": "Open reflective landscape"
+  },
+  {
+   "surah": 46,
+   "themes": "Hud, his people, and faith",
+   "environment_idea": "Wind-shaped sand dunes"
+  },
+  {
+   "surah": 47,
+   "themes": "Faith, struggle, and responsibility",
+   "environment_idea": "Historical reflective landscape"
+  },
+  {
+   "surah": 48,
+   "themes": "The treaty and victory",
+   "environment_idea": "Peaceful desert route"
+  },
+  {
+   "surah": 49,
+   "themes": "Respect, manners, and community",
+   "environment_idea": "Village of kindness"
+  },
+  {
+   "surah": 50,
+   "themes": "Creation, resurrection, and accountability",
+   "environment_idea": "Mountains and stars"
+  },
+  {
+   "surah": 51,
+   "themes": "Ibrahim's guests and earlier peoples",
+   "environment_idea": "Wind-swept valley"
+  },
+  {
+   "surah": 52,
+   "themes": "Warnings, reward, and faith",
+   "environment_idea": "Majestic mountain"
+  },
+  {
+   "surah": 53,
+   "themes": "Revelation, accountability, and signs",
+   "environment_idea": "Star-filled sky"
+  },
+  {
+   "surah": 54,
+   "themes": "Warnings and accounts of earlier peoples",
+   "environment_idea": "Moonlit historical landscape"
+  },
+  {
+   "surah": 55,
+   "themes": "Blessings and creation",
+   "environment_idea": "Lush rivers and gardens"
+  },
+  {
+   "surah": 56,
+   "themes": "Resurrection and human groups",
+   "environment_idea": "Symbolic horizon"
+  },
+  {
+   "surah": 57,
+   "themes": "Faith, generosity, and balance",
+   "environment_idea": "Metal and light landscape"
+  },
+  {
+   "surah": 58,
+   "themes": "Justice and respectful community life",
+   "environment_idea": "Historical courtyard"
+  },
+  {
+   "surah": 59,
+   "themes": "Historical events and divine names",
+   "environment_idea": "Ancient settlement"
+  },
+  {
+   "surah": 60,
+   "themes": "Faith, relationships, and justice",
+   "environment_idea": "Pathways between communities"
+  },
+  {
+   "surah": 61,
+   "themes": "Sincerity and commitment",
+   "environment_idea": "Orderly pathways"
+  },
+  {
+   "surah": 62,
+   "themes": "Friday prayer and learning",
+   "environment_idea": "Community courtyard"
+  },
+  {
+   "surah": 63,
+   "themes": "Sincerity and honesty",
+   "environment_idea": "Garden of choices"
+  },
+  {
+   "surah": 64,
+   "themes": "Accountability, family, and generosity",
+   "environment_idea": "Balance landscape"
+  },
+  {
+   "surah": 65,
+   "themes": "Family responsibilities and fairness",
+   "environment_idea": "Calm home and courtyard"
+  },
+  {
+   "surah": 66,
+   "themes": "Household responsibilities and examples of faith",
+   "environment_idea": "Historical household setting"
+  },
+  {
+   "surah": 67,
+   "themes": "Creation, sky, and responsibility",
+   "environment_idea": "Night-sky world"
+  },
+  {
+   "surah": 68,
+   "themes": "Character and the owners of the garden",
+   "environment_idea": "Orchard"
+  },
+  {
+   "surah": 69,
+   "themes": "Judgment and earlier communities",
+   "environment_idea": "Symbolic landscape"
+  },
+  {
+   "surah": 70,
+   "themes": "Patience and accountability",
+   "environment_idea": "Skyward paths"
+  },
+  {
+   "surah": 71,
+   "themes": "Nuh's message and prayers",
+   "environment_idea": "Ancient community and ark"
+  },
+  {
+   "surah": 72,
+   "themes": "Jinn hearing the Quran",
+   "environment_idea": "Night desert with unseen listeners represented only symbolically"
+  },
+  {
+   "surah": 73,
+   "themes": "Night prayer and reflection",
+   "environment_idea": "Quiet starlit room"
+  },
+  {
+   "surah": 74,
+   "themes": "Call to warn and personal responsibility",
+   "environment_idea": "Dawn landscape"
+  },
+  {
+   "surah": 75,
+   "themes": "Resurrection and reflection",
+   "environment_idea": "Changing horizons"
+  },
+  {
+   "surah": 76,
+   "themes": "Human creation, generosity, and reward",
+   "environment_idea": "Garden of gratitude"
+  },
+  {
+   "surah": 77,
+   "themes": "Warnings and the Day of Judgment",
+   "environment_idea": "Wind and clouds"
+  },
+  {
+   "surah": 78,
+   "themes": "Resurrection and creation",
+   "environment_idea": "Mountain and sky"
+  },
+  {
+   "surah": 79,
+   "themes": "Musa and Pharaoh; resurrection",
+   "environment_idea": "Desert and historical valley"
+  },
+  {
+   "surah": 80,
+   "themes": "Respect and the value of sincere seekers",
+   "environment_idea": "Garden of equality"
+  },
+  {
+   "surah": 81,
+   "themes": "Cosmic transformation",
+   "environment_idea": "Symbolic changing sky"
+  },
+  {
+   "surah": 82,
+   "themes": "Accountability and creation",
+   "environment_idea": "Sky and sea"
+  },
+  {
+   "surah": 83,
+   "themes": "Honesty in measurement",
+   "environment_idea": "Historical marketplace"
+  },
+  {
+   "surah": 84,
+   "themes": "Return to Allah and accountability",
+   "environment_idea": "Changing sky"
+  },
+  {
+   "surah": 85,
+   "themes": "People of the trench and steadfast faith",
+   "environment_idea": "Starry historical landscape"
+  },
+  {
+   "surah": 86,
+   "themes": "Creation and the piercing star",
+   "environment_idea": "Night observatory"
+  },
+  {
+   "surah": 87,
+   "themes": "Creation and remembering Allah",
+   "environment_idea": "Mountain meadow"
+  },
+  {
+   "surah": 88,
+   "themes": "Hereafter and signs in creation",
+   "environment_idea": "Desert and mountains"
+  },
+  {
+   "surah": 89,
+   "themes": "Earlier peoples and the human soul",
+   "environment_idea": "Sunrise desert"
+  },
+  {
+   "surah": 90,
+   "themes": "Human struggle, mercy, and generosity",
+   "environment_idea": "Ancient city pathway"
+  },
+  {
+   "surah": 91,
+   "themes": "The soul and Thamud",
+   "environment_idea": "Bright rocky valley"
+  },
+  {
+   "surah": 92,
+   "themes": "Generosity and choices",
+   "environment_idea": "Night-and-day landscape"
+  },
+  {
+   "surah": 93,
+   "themes": "Comfort and care for vulnerable people",
+   "environment_idea": "Golden morning garden"
+  },
+  {
+   "surah": 94,
+   "themes": "Hope and relief after hardship",
+   "environment_idea": "Mountain path opening"
+  },
+  {
+   "surah": 95,
+   "themes": "Human dignity and accountability",
+   "environment_idea": "Fig and olive orchard"
+  },
+  {
+   "surah": 96,
+   "themes": "Learning, revelation, and humility",
+   "environment_idea": "Cave and learning environment"
+  },
+  {
+   "surah": 97,
+   "themes": "The blessed night",
+   "environment_idea": "Peaceful night sky"
+  },
+  {
+   "surah": 98,
+   "themes": "Clear guidance and sincere worship",
+   "environment_idea": "Illuminated pathways"
+  },
+  {
+   "surah": 99,
+   "themes": "Accountability for every deed",
+   "environment_idea": "Symbolic trembling landscape"
+  },
+  {
+   "surah": 100,
+   "themes": "Human ingratitude and accountability",
+   "environment_idea": "Desert horse-track world"
+  },
+  {
+   "surah": 101,
+   "themes": "Resurrection and weighing of deeds",
+   "environment_idea": "Symbolic balance world"
+  },
+  {
+   "surah": 102,
+   "themes": "Distraction by worldly accumulation",
+   "environment_idea": "Marketplace and reflection"
+  },
+  {
+   "surah": 103,
+   "themes": "Faith, truth, and patience",
+   "environment_idea": "Sundial garden"
+  },
+  {
+   "surah": 104,
+   "themes": "Kind speech and the danger of greed",
+   "environment_idea": "Community kindness world"
+  },
+  {
+   "surah": 105,
+   "themes": "The elephant army",
+   "environment_idea": "Desert and birds"
+  },
+  {
+   "surah": 106,
+   "themes": "Safety, trade, and gratitude",
+   "environment_idea": "Trade caravan routes"
+  },
+  {
+   "surah": 107,
+   "themes": "Prayer, generosity, and care",
+   "environment_idea": "Village of helpfulness"
+  },
+  {
+   "surah": 108,
+   "themes": "Gratitude, worship, and Allah's gift",
+   "environment_idea": "Flowing water garden"
+  },
+  {
+   "surah": 109,
+   "themes": "Faith and worship",
+   "environment_idea": "Peaceful separate paths"
+  },
+  {
+   "surah": 110,
+   "themes": "Victory, gratitude, and seeking forgiveness",
+   "environment_idea": "Sunlit city landscape"
+  },
+  {
+   "surah": 111,
+   "themes": "Abu Lahab and opposition to the message",
+   "environment_idea": "Historical symbolic landscape"
+  },
+  {
+   "surah": 112,
+   "themes": "Allah's oneness",
+   "environment_idea": "Abstract light and geometry"
+  },
+  {
+   "surah": 113,
+   "themes": "Seeking Allah's protection",
+   "environment_idea": "Dawn forest"
+  },
+  {
+   "surah": 114,
+   "themes": "Seeking refuge from whispering evil",
+   "environment_idea": "Peaceful protective garden"
+  }
+ ]
+}

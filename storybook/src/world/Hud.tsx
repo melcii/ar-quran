@@ -6,7 +6,8 @@ import { useMemo, useRef, useState, type MutableRefObject, type ReactNode } from
 import { PanResponder, Pressable, ScrollView, StyleSheet, Text, TextInput, View } from 'react-native';
 import { Passage } from '@/components/Ayah';
 import { Button, Chip, ContentLabel, IconButton, Row } from '@/components/ui';
-import { getSurah, getVerse, searchQuran, surahs } from '@/content/quran';
+import { catalogFor, outlinesForSurah, type StoryOutline } from '@/content/outlines';
+import { formatRef, getSurah, getVerse, parseRef, searchQuran, surahs } from '@/content/quran';
 import { emptySurahProgress, useAppState, type Settings } from '@/state/AppState';
 import { sound } from '@/three/sound';
 import { colors, fonts, radius } from '@/theme';
@@ -259,6 +260,18 @@ export function LibraryHud({ selected, portrait, onSelect, onRead, onWorld }: { 
             {prog.furthestAyah ? `Read up to ayah ${prog.furthestAyah}` : 'Not opened yet'}
             {prog.visitedWorld ? ` · ${prog.passagesFound.length} lanterns found in its world` : ''}
           </Text>
+          {catalogFor(info.number) && (
+            <Text style={s.plaqueSub}>
+              <Text style={{ fontFamily: fonts.bodyBold }}>Themes (draft): </Text>
+              {catalogFor(info.number)!.themes}
+            </Text>
+          )}
+          {outlinesForSurah(info.number).length > 0 && (
+            <Text style={s.plaqueSub}>
+              <Text style={{ fontFamily: fonts.bodyBold }}>Stories in its world: </Text>
+              {outlinesForSurah(info.number).map((o) => o.title).join(' · ')}
+            </Text>
+          )}
           <View style={s.basis}>
             <ContentLabel kind="art" extra="its world" />
             <Text style={s.basisText}>{world.basis}</Text>
@@ -287,6 +300,7 @@ export function WorldHud({
   onOpen,
   onClose,
   onRead,
+  onReadRef,
 }: {
   surah: number;
   passages: PassageT[];
@@ -299,10 +313,14 @@ export function WorldHud({
   onOpen: (p: PassageT) => void;
   onClose: () => void;
   onRead: (ayah: number) => void;
+  onReadRef: (surah: number, ayah: number) => void;
 }) {
   const info = getSurah(surah)!;
   const world = worldFor(surah);
+  const theme = catalogFor(surah);
+  const stories = useMemo(() => outlinesForSurah(surah), [surah]);
   const [about, setAbout] = useState(false);
+  const [story, setStory] = useState<StoryOutline | null>(null);
   return (
     <>
       <View style={[s.worldTitle, portrait && { top: 64 }]} pointerEvents="box-none">
@@ -318,11 +336,24 @@ export function WorldHud({
           <View style={s.about}>
             <ContentLabel kind="art" extra="a symbolic setting, not a scene of events" />
             <Text style={s.basisText}>{world.basis}</Text>
+            {theme && (
+              <View style={{ gap: 4 }}>
+                <ContentLabel kind="explanation" extra="themes of this surah · draft summary" />
+                <Text style={s.basisText}>{theme.themes}</Text>
+              </View>
+            )}
             <Text style={s.small}>
               Each lantern holds the next passage of the surah, in order. The landscape is an artistic setting chosen by the app; it is not part of
               the Quran and has not yet been reviewed by scholars.
             </Text>
           </View>
+        )}
+        {stories.length > 0 && !open && !story && (
+          <Row wrap style={{ gap: 6, justifyContent: 'center' }}>
+            {stories.map((st) => (
+              <Button key={st.id} small kind="secondary" icon="stories" label={st.title} accessibilityLabel={`Read the story: ${st.title}`} onPress={() => setStory(st)} />
+            ))}
+          </Row>
         )}
       </View>
 
@@ -342,7 +373,9 @@ export function WorldHud({
         </View>
       )}
 
-      {!open && <Joystick move={move} />}
+      {!open && !story && <Joystick move={move} />}
+
+      {story && !open && <StoryCard story={story} portrait={portrait} onClose={() => setStory(null)} onReadRef={onReadRef} />}
 
       {open && (
         <View style={[s.passage, portrait ? s.passagePortrait : s.passageLandscape]}>
@@ -368,6 +401,50 @@ export function WorldHud({
         </View>
       )}
     </>
+  );
+}
+
+/** A story outline: the storyteller's narration, clearly labelled, with the
+ * featured ayahs shown from the verified dataset and links into the book. */
+function StoryCard({ story, portrait, onClose, onReadRef }: { story: StoryOutline; portrait: boolean; onClose: () => void; onReadRef: (surah: number, ayah: number) => void }) {
+  return (
+    <View style={[s.passage, portrait ? s.passagePortrait : s.passageLandscape]} accessibilityLabel={`Story: ${story.title}`}>
+      <Row style={{ justifyContent: 'space-between', alignItems: 'flex-start' }}>
+        <View style={{ flexShrink: 1 }}>
+          <Text style={s.passageTitle}>{story.title}</Text>
+          <ContentLabel kind="explanation" extra="story narration, not the Quran" />
+        </View>
+        <IconButton icon="close" label="Close the story" onPress={onClose} size={36} />
+      </Row>
+      <ScrollView style={{ flexShrink: 1 }} contentContainerStyle={{ gap: 10 }}>
+        {story.narration.map((para, i) => (
+          <Text key={i} style={s.storyText}>
+            {para}
+          </Text>
+        ))}
+        {story.featured_ayahs.length > 0 && (
+          <View style={{ gap: 6 }}>
+            <Text style={s.sheetHeading}>In the Quran</Text>
+            <Passage refs={story.featured_ayahs} showHeader={false} />
+          </View>
+        )}
+        <View style={s.basis}>
+          <ContentLabel kind="activity" extra="what we can learn" />
+          <Text style={s.basisText}>{story.lessons}</Text>
+        </View>
+        <Text style={s.sheetHeading}>Read the whole account</Text>
+        <Row wrap style={{ gap: 6 }}>
+          {story.quran_references.map((r) => {
+            const p = parseRef(r);
+            return p ? <Button key={r} small kind="secondary" icon="book" label={formatRef(r)} accessibilityLabel={`Open ${formatRef(r)} in the book`} onPress={() => onReadRef(p.surah, p.from)} /> : null;
+          })}
+        </Row>
+        <Text style={s.small}>
+          This is a draft retelling for children. It has not yet been reviewed by a scholar. The Quran's own words are only the passages shown from
+          the Quran above and in the book.
+        </Text>
+      </ScrollView>
+    </View>
   );
 }
 
@@ -551,6 +628,7 @@ const s = StyleSheet.create({
   plaqueArabic: { fontFamily: fonts.quran, fontSize: 28, color: colors.ink, lineHeight: 46 },
   plaqueTitle: { fontFamily: fonts.display, fontSize: 20, color: colors.ink },
   plaqueSub: { fontFamily: fonts.body, fontSize: 13, color: colors.inkSoft },
+  storyText: { fontFamily: fonts.body, fontSize: 17, lineHeight: 26, color: colors.ink },
   plaqueProg: { fontFamily: fonts.bodyBold, fontSize: 13, color: colors.skyDeep },
   basis: { gap: 4, backgroundColor: '#f3ead6', borderRadius: radius.sm, padding: 8 },
   basisText: { fontFamily: fonts.body, fontSize: 13, lineHeight: 19, color: colors.inkSoft },

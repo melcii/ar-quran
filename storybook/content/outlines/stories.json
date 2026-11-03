@@ -1,0 +1,295 @@
+{
+ "note": "Draft story outlines supplied by the project team for children aged 5-12. Narration is the storyteller's own words, not the Quran or a translation. Quran text is shown only from content/quran by reference. None of this is reviewed yet; every outline needs review against reliable tafsir before release.",
+ "source": "Supplied by Erguvan Art & Academy in the project thread, 2026-11-03. Image links in the original were not used.",
+ "stories": [
+  {
+   "id": "adam",
+   "title": "Prophet Adam: The First Human",
+   "figure": "Adam",
+   "quran_references": [
+    "2:30-39",
+    "7:11-27",
+    "20:115-123"
+   ],
+   "featured_ayahs": [],
+   "narration": [
+    "A long, long time ago, Allah created Adam, the first human being.",
+    "Allah gave Adam something very special: knowledge. He taught Adam the names of things and gave him the ability to learn and understand.",
+    "Allah commanded the angels to bow to Adam. They obeyed, but Iblis refused. He was proud and believed he was better than Adam.",
+    "Adam and his wife lived in a beautiful garden. Allah allowed them to enjoy its blessings, but instructed them not to approach a particular tree.",
+    "Iblis whispered to them and persuaded them to disobey.",
+    "When Adam and his wife realized their mistake, they turned to Allah and asked for forgiveness.",
+    "Allah accepted Adam's repentance and gave humanity guidance for life on Earth.",
+    "The story reminds us that human beings make mistakes, but we can always turn back to Allah with sincere repentance."
+   ],
+   "lessons": "Humility, responsibility, asking forgiveness, and following good guidance.",
+   "gameplay_idea": "Explore a beautiful garden, discover objects representing the knowledge Adam was taught, and follow a guided journey about choices, consequences, and forgiveness.",
+   "review_status": "unreviewed",
+   "review_notes": []
+  },
+  {
+   "id": "nuh",
+   "title": "Prophet Nuh: The Great Ark",
+   "figure": "Nuh",
+   "quran_references": [
+    "11:25-49",
+    "71:1-28",
+    "23:23-30"
+   ],
+   "featured_ayahs": [],
+   "narration": [
+    "Many years after Adam, people began forgetting Allah's guidance.",
+    "Allah sent Prophet Nuh to remind them to worship Him alone and live good lives.",
+    "Nuh spoke to his people for a very long time. He encouraged them to seek forgiveness, but many refused to listen.",
+    "Allah instructed Nuh to build a great ark.",
+    "Imagine how strange it must have seemed to see such a large wooden ship being built!",
+    "Some people laughed at Nuh, but he continued following Allah's command.",
+    "When the appointed time arrived, water began to rise. Allah commanded Nuh to bring aboard the believers and pairs of creatures.",
+    "Rain fell, and the waters rose into enormous waves.",
+    "The ark sailed safely through the flood by Allah's protection.",
+    "Eventually, the waters receded, and the ark came to rest.",
+    "A new chapter of life began for those who were saved."
+   ],
+   "lessons": "Patience, perseverance, trust in Allah, and courage when others disagree.",
+   "gameplay_idea": "Explore the ark, discover animal habitats, learn about its construction, and experience changing weather and rising waters from safe observation areas.",
+   "review_status": "unreviewed",
+   "review_notes": [
+    "\"Imagine how strange it must have seemed\" is the storyteller's own invitation, not a detail from the Quran. A reviewer should confirm it reads as narration.",
+    "\"Rain fell\" draws on 54:11, which is not in this outline's references; add it or reword."
+   ]
+  },
+  {
+   "id": "ibrahim",
+   "title": "Prophet Ibrahim: Searching for Truth",
+   "figure": "Ibrahim",
+   "quran_references": [
+    "6:74-83",
+    "19:41-50",
+    "21:51-70"
+   ],
+   "featured_ayahs": [],
+   "narration": [
+    "Prophet Ibrahim grew up among people who worshipped idols.",
+    "He wanted his people to understand that Allah alone deserves worship.",
+    "The Quran tells us how Ibrahim spoke about the stars, the moon, and the sun, showing that things which appear and disappear cannot be the Lord of everything.",
+    "Ibrahim also questioned his father and his people about the idols they worshipped.",
+    "One day, he broke their idols, leaving the largest one standing.",
+    "When his people questioned him, he challenged them to consider whether their idols could really speak or help anyone.",
+    "The people became angry.",
+    "They decided to throw Ibrahim into a great fire.",
+    "But Allah commanded the fire to be cool and safe for Ibrahim.",
+    "And Ibrahim was saved!"
+   ],
+   "lessons": "Faith, courage, thoughtful questioning, and standing up for what is right.",
+   "gameplay_idea": "Explore an ancient town, investigate objects representing natural wonders, and discover the difference between things that are created and the Creator. The fire scene can be conveyed through light, sound, and an empty environment without depicting Ibrahim.",
+   "review_status": "unreviewed",
+   "review_notes": [
+    "How to present the stars, moon and sun passage (6:76-78) to children should follow a reviewed tafsir: scholars differ on whether Ibrahim was reasoning with his people or reflecting himself."
+   ]
+  },
+  {
+   "id": "yusuf",
+   "title": "Prophet Yusuf: The Beautiful Dream",
+   "figure": "Yusuf",
+   "quran_references": [
+    "12:4-101"
+   ],
+   "featured_ayahs": [
+    "12:4"
+   ],
+   "narration": [
+    "Young Yusuf once had an extraordinary dream.",
+    "He saw eleven stars, the sun, and the moon bowing before him.",
+    "He told his father, Prophet Ya'qub, about the dream.",
+    "His father understood that the dream was important and advised Yusuf not to tell his brothers about it.",
+    "But Yusuf's brothers were already jealous of him.",
+    "One day, they took Yusuf away and left him in a deep well.",
+    "Later, travelers found Yusuf and took him to Egypt, where he was sold.",
+    "Yusuf faced many difficult experiences, including being placed in prison even though he had done nothing wrong.",
+    "Yet Allah gave Yusuf wisdom and the ability to interpret dreams.",
+    "Years later, Yusuf was given an important responsibility over Egypt's storehouses.",
+    "When his brothers returned to Egypt needing food, Yusuf eventually revealed who he was.",
+    "Instead of seeking revenge, he forgave them.",
+    "His family was reunited, and the meaning of his childhood dream became clear."
+   ],
+   "lessons": "Patience, kindness, forgiveness, hope, and trust in Allah.",
+   "gameplay_idea": "Journey through the well, caravan route, palace, prison, grain storehouses, and reunion environment. Children explore each stage and unlock the next part of the story.",
+   "review_status": "unreviewed",
+   "review_notes": [
+    "The episode of 12:23-34 is left out of this children's version; a reviewer should confirm that is the right choice for the age group."
+   ]
+  },
+  {
+   "id": "musa-river",
+   "title": "Prophet Musa: The Baby in the River",
+   "figure": "Musa",
+   "quran_references": [
+    "28:3-13",
+    "20:37-40"
+   ],
+   "featured_ayahs": [
+    "28:7"
+   ],
+   "narration": [
+    "Long ago, a powerful ruler called Pharaoh treated the Children of Israel cruelly.",
+    "During this time, a baby named Musa was born.",
+    "Allah inspired Musa's mother to place her baby in a small chest and set it upon the river when she feared for his safety.",
+    "Imagine how much trust she needed!",
+    "The chest traveled along the water until it reached Pharaoh's household.",
+    "Musa's sister watched from a distance.",
+    "By Allah's plan, the baby refused other nursing women, and his sister guided the family to Musa's own mother.",
+    "Musa was returned to his mother, just as Allah had promised.",
+    "The baby who had been placed upon the river would one day become a great prophet."
+   ],
+   "lessons": "Trust in Allah, love, courage, and hope during difficult times.",
+   "gameplay_idea": "Follow the chest's journey along the Nile, explore the reeds and riverbank, and discover how the events connect. The baby and other people remain off-screen.",
+   "review_status": "unreviewed",
+   "review_notes": [
+    "\"The Nile\" and \"reeds\" are not named in these ayahs; the Quran says \"the river\" (al-yamm). Keep them as setting, labelled as artistic."
+   ]
+  },
+  {
+   "id": "yunus",
+   "title": "Prophet Yunus: The Great Fish",
+   "figure": "Yunus",
+   "quran_references": [
+    "37:139-148",
+    "21:87-88",
+    "68:48-50"
+   ],
+   "featured_ayahs": [
+    "21:87"
+   ],
+   "narration": [
+    "Prophet Yunus was sent to guide his people.",
+    "But when they did not listen, he left them in anger.",
+    "Yunus boarded a crowded ship.",
+    "During the journey, lots were drawn, and Yunus was among those selected. He was cast into the sea.",
+    "Then, an enormous fish swallowed him.",
+    "Inside the darkness, Yunus turned to Allah and prayed. His prayer is in the Quran at 21:87; read it there, in Arabic and in translation.",
+    "Allah answered his prayer and rescued him.",
+    "The fish cast Yunus onto the shore, and Allah caused a plant to grow over him.",
+    "Yunus's story reminds us that we should never lose hope in Allah's mercy."
+   ],
+   "lessons": "Repentance, patience, humility, and hope.",
+   "gameplay_idea": "Explore a ship in changing weather, an underwater environment, and a peaceful shore. Discover the meaning of Yunus's supplication through guided interaction.",
+   "review_status": "unreviewed",
+   "review_notes": [
+    "The draft quoted the supplication in its own wording. The app shows the verified Arabic and the Saheeh International translation of 21:87 instead, so the prayer is never paraphrased.",
+    "The full reviewed-format Yunus story already exists in content/stories/yunus; this outline is the short version."
+   ]
+  },
+  {
+   "id": "maryam",
+   "title": "Maryam: A Special Gift",
+   "figure": "Maryam",
+   "quran_references": [
+    "19:16-36",
+    "3:35-47"
+   ],
+   "featured_ayahs": [
+    "19:30"
+   ],
+   "narration": [
+    "Maryam was a devoted servant of Allah.",
+    "She spent time worshipping Him and was cared for by Prophet Zakariyya.",
+    "Allah provided for her in remarkable ways.",
+    "One day, an angel came to Maryam with extraordinary news.",
+    "She would have a son, even though she had no husband.",
+    "Maryam was surprised, but Allah's command would come to pass.",
+    "Later, as the time of birth approached, Maryam went to a distant place.",
+    "She rested beside a palm tree, where Allah provided comfort, water, and food.",
+    "Her baby was Isa, who would become one of Allah's great prophets.",
+    "When Maryam returned to her people, some questioned her.",
+    "By Allah's permission, the infant Isa spoke and declared himself a servant of Allah."
+   ],
+   "lessons": "Faith, trust, devotion, and Allah's power.",
+   "gameplay_idea": "Explore Maryam's peaceful place of worship, discover the palm tree and spring, and listen to the story through narration.",
+   "review_status": "unreviewed",
+   "review_notes": [
+    "Maryam is not shown, in keeping with the app's rule that no people appear in the worlds."
+   ]
+  },
+  {
+   "id": "sulayman-ants",
+   "title": "Prophet Sulayman: The Ants",
+   "figure": "Sulayman",
+   "quran_references": [
+    "27:15-19"
+   ],
+   "featured_ayahs": [
+    "27:18",
+    "27:19"
+   ],
+   "narration": [
+    "Prophet Sulayman was blessed by Allah with remarkable abilities.",
+    "Allah taught him to understand the communication of birds and gave him a great kingdom.",
+    "One day, Sulayman and his army approached a valley filled with ants.",
+    "One little ant warned the others to return to their homes so that Sulayman's army would not crush them without realizing it.",
+    "Sulayman understood the ant's words.",
+    "He smiled and thanked Allah for the blessings he had received.",
+    "He prayed that Allah would help him remain grateful and do good deeds.",
+    "Even a tiny ant could teach a powerful king something important!"
+   ],
+   "lessons": "Gratitude, compassion, humility, and caring for small creatures.",
+   "gameplay_idea": "Explore the valley from the perspective of an ant, discover the colony, and help guide ants safely toward their homes as a lesson-inspired activity.",
+   "review_status": "unreviewed",
+   "review_notes": []
+  },
+  {
+   "id": "cave",
+   "title": "The People of the Cave",
+   "figure": "Companions of the Cave",
+   "quran_references": [
+    "18:9-26"
+   ],
+   "featured_ayahs": [
+    "18:10"
+   ],
+   "narration": [
+    "Long ago, a group of young believers lived among people who did not share their faith.",
+    "They wanted to worship Allah and remain true to their beliefs.",
+    "To protect their faith, they sought refuge in a cave.",
+    "They prayed to Allah for mercy and guidance.",
+    "Allah caused them to sleep for many years.",
+    "When they finally awoke, they wondered how long they had been asleep.",
+    "They believed they had rested for only a short time.",
+    "But the world outside had changed!",
+    "Their remarkable experience became a sign of Allah's power."
+   ],
+   "lessons": "Faith, courage, friendship, and trusting Allah.",
+   "gameplay_idea": "Explore an ancient mountain, discover the cave, observe changes in the surrounding world, and learn about the passage of time.",
+   "review_status": "unreviewed",
+   "review_notes": [
+    "The Quran leaves their number open (18:22); the app should not show or state a number. The young people are not prophets but are still not shown."
+   ]
+  },
+  {
+   "id": "elephant",
+   "title": "The Elephant Army",
+   "figure": "Companions of the Elephant",
+   "quran_references": [
+    "105:1-5"
+   ],
+   "featured_ayahs": [
+    "105:1"
+   ],
+   "narration": [
+    "Long before Prophet Muhammad's mission began, an army came with elephants.",
+    "They intended to attack the Kaaba, the sacred House in Makkah.",
+    "The army seemed powerful.",
+    "But Allah protected His sacred House.",
+    "The Quran tells us that Allah sent birds in groups against the army.",
+    "The birds struck them with stones of baked clay.",
+    "The army's plan failed.",
+    "The story reminds us that even the greatest worldly power cannot defeat Allah's will."
+   ],
+   "lessons": "Humility and the limits of worldly power.",
+   "gameplay_idea": "Explore the historic landscape, observe distant elephant tracks and incoming birds, and discover the story through guided narration without presenting speculative details as fact.",
+   "review_status": "unreviewed",
+   "review_notes": [
+    "The timing (before the Prophet's mission) and the Kaaba as the army's target come from history and tafsir, not from the words of Al-Fil. They need a cited tafsir source and an \"explanation\" label before release."
+   ]
+  }
+ ]
+}

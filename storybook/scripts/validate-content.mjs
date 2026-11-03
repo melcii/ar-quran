@@ -207,6 +207,35 @@ worlds.forEach((w, i) => {
   if (w.review_status !== "unreviewed" && !w.reviewer) fail(`${ctx}: marked ${w.review_status} without a named reviewer`);
 });
 
+// ---- Story outlines and the surah catalog --------------------------------
+// Draft narration from the project team. References must be real, featured
+// ayahs must fall inside the outline's references, no Arabic script may appear
+// (scripture comes from the dataset), and nothing may claim review without a reviewer.
+const outlines = readJson(join(root, "content", "outlines", "stories.json")).stories;
+const outlineIds = new Set();
+outlines.forEach((o) => {
+  const ctx = `outline ${o.id}`;
+  if (outlineIds.has(o.id)) fail(`${ctx}: duplicate id`);
+  outlineIds.add(o.id);
+  if (!o.title || !o.narration?.length || !o.lessons) fail(`${ctx}: needs a title, narration and lessons`);
+  if (ARABIC_SCRIPT.test(JSON.stringify(o))) fail(`${ctx}: contains Arabic script`);
+  const refs = o.quran_references.map((r) => parseRef(r) ?? (fail(`${ctx}: bad reference "${r}"`), null)).filter(Boolean);
+  if (!refs.length) fail(`${ctx}: needs at least one Quran reference`);
+  o.featured_ayahs.forEach((r) => {
+    const p = parseRef(r);
+    if (!p) fail(`${ctx}: bad featured ayah "${r}"`);
+    else if (!within(p, refs)) fail(`${ctx}: featured ${r} is outside its references`);
+  });
+  if (o.review_status !== "unreviewed" && !o.reviewer) fail(`${ctx}: marked ${o.review_status} without a named reviewer`);
+});
+const catalog = readJson(join(root, "content", "outlines", "surah-catalog.json")).surahs;
+if (catalog.length !== 114) fail(`surah-catalog.json: ${catalog.length} entries, expected 114`);
+catalog.forEach((c, i) => {
+  if (c.surah !== i + 1) fail(`surah-catalog.json: entry ${i} is surah ${c.surah}`);
+  if (!c.themes || !c.environment_idea) fail(`surah-catalog.json surah ${c.surah}: missing themes or environment idea`);
+  if (ARABIC_SCRIPT.test(JSON.stringify(c))) fail(`surah-catalog.json surah ${c.surah}: contains Arabic script`);
+});
+
 if (errors.length) {
   console.error(errors.join("\n"));
   console.error(`\n${errors.length} problem(s) found.`);
@@ -214,4 +243,5 @@ if (errors.length) {
 }
 console.log(`Quran dataset OK: 114 surahs, ${total} ayahs, checksums match.`);
 console.log(`Stories OK: ${storyIds.join(", ")}.`);
+console.log(`Story outlines OK: ${outlines.length} drafts, all references real; catalog covers 114 surahs.`);
 console.log(`Surah worlds OK: 114 settings; ${worlds.filter((w) => w.review_status === "unreviewed").length} still await scholarly review.`);
