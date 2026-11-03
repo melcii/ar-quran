@@ -1,19 +1,36 @@
 // The walkable world of one surah. A path winds through a symbolic landscape;
-// lanterns along it each hold the next passage of the surah, in order. A
+// lanterns along it mark the surah's designed areas (or its passages), in order. A
 // doorway at the start leads back to the library, one at the end leads on.
 import { useFrame, useThree, type ThreeEvent } from '@react-three/fiber';
 import { useEffect, useMemo, useRef, type MutableRefObject } from 'react';
 import * as THREE from 'three';
-import { getSurah } from '@/content/quran';
+import { designFor } from '@/content/designs';
+import { getSurah, parseRef } from '@/content/quran';
 import { Ground, Grass, Moon, Palms, Particles, Rocks, Sky, Trees, Water, scatter, sunVector } from './Nature';
 import type { Quality } from './quality';
 import { PRESETS, worldFor } from './settings';
 import { makeLand, type Land } from './terrain';
 
-export type Passage = { index: number; from: number; to: number };
+/** One stop on the world's path. When the surah has a design record, each stop
+ * is one of its designed areas, tied to an ayah; otherwise the surah is split
+ * into up to twelve passages in order. */
+export type Passage = {
+  index: number;
+  from: number;
+  to: number;
+  /** The designed area this stop stands for (artistic setting, not scripture). */
+  area?: { name: string; description: string; design: number };
+};
 
-/** The surah split into up to twelve passages of consecutive ayahs, in order. */
 export function passagesOf(surah: number): Passage[] {
+  const design = designFor(surah);
+  if (design?.areas.length) {
+    return design.areas
+      .map((a, design) => ({ a, design, ref: parseRef(a.reference) }))
+      .filter((x) => x.ref && x.ref.surah === surah)
+      .sort((x, y) => x.ref!.from - y.ref!.from || x.design - y.design)
+      .map((x, index) => ({ index, from: x.ref!.from, to: x.ref!.to, area: { name: x.a.name, description: x.a.description, design: x.design } }));
+  }
   const count = getSurah(surah)?.ayahCount ?? 0;
   const stops = Math.min(count, 12);
   return Array.from({ length: stops }, (_, k) => ({

@@ -8,8 +8,12 @@ export type WorldDesignSummary = {
   world_title: string;
   content_type: string;
   concept: string;
-  areas: { name: string; reference: string }[];
-  activities: string[];
+  summary: string;
+  areas: { name: string; reference: string; description: string }[];
+  /** Artistic educational adaptations, never events in the Quran. */
+  activities: { name: string; reference: string; description: string }[];
+  objectives: string[];
+  narration: string;
   status: Record<string, string>;
   review: string;
 };

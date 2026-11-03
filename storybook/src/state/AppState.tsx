@@ -19,6 +19,12 @@ export type SurahProgress = {
   lastAyah: number;
   /** Passage lanterns found in the surah's world, by index. */
   passagesFound: number[];
+  /** Areas of the surah's designed world visited, by index into its design. */
+  areasFound?: number[];
+  /** Activities finished in the surah's world, by index into its design. */
+  activitiesDone?: number[];
+  /** The closing reflection has been opened. */
+  reflected?: boolean;
   visitedWorld: boolean;
   at: number;
 };

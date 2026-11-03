@@ -19,8 +19,11 @@ export function buildDesignIndex() {
       world_title: d.world_title,
       content_type: d.content_type.primary,
       concept: d.environment_concept,
-      areas: d.areas.map((a) => ({ name: a.name, reference: a.reference })),
-      activities: d.activities.map((a) => a.name),
+      summary: d.summary_for_children,
+      areas: d.areas.map((a) => ({ name: a.name, reference: a.reference, description: a.description })),
+      activities: d.activities.map((a) => ({ name: a.name, reference: a.reference, description: a.description })),
+      objectives: d.learning_objectives,
+      narration: d.narration_plan,
       status: d.status,
       review: d.scholarly_review.status,
     }));

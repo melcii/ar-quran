@@ -6,28 +6,47 @@
    "world_title": "The Opening Path",
    "content_type": "moral-and-spiritual",
    "concept": "A single path that opens the whole Quran: from a gate of praise, through a garden of mercy, to a fork where one road runs straight and clear.",
+   "summary": "Al-Fatihah is the prayer we say in every salah. We praise Allah, remember His mercy, and ask Him to guide us on the straight path.",
    "areas": [
     {
      "name": "Gate of Praise",
-     "reference": "1:2"
+     "reference": "1:2",
+     "description": "An arch where the walk begins; reading 1:2 lights the gateway."
     },
     {
      "name": "Garden of Mercy",
-     "reference": "1:3"
+     "reference": "1:3",
+     "description": "A walled garden whose fountain flows when 1:3 is read."
     },
     {
      "name": "Horizon of Recompense",
-     "reference": "1:4"
+     "reference": "1:4",
+     "description": "A distant, quiet horizon line: symbolic only, nothing of the unseen is shown."
     },
     {
      "name": "Fork of the Straight Path",
-     "reference": "1:6"
+     "reference": "1:6",
+     "description": "Where the path divides; the straight road is lit, the others fade."
     }
    ],
    "activities": [
-    "Seven-step walk",
-    "Asking for help"
+    {
+     "name": "Seven-step walk",
+     "reference": "1:1-7",
+     "description": "Each of the seven ayahs is a stepping stone; reading it lights the next stone."
+    },
+    {
+     "name": "Asking for help",
+     "reference": "1:5",
+     "description": "A lantern the child lights by reading 1:5, linking worship and asking Allah for help."
+    }
    ],
+   "objectives": [
+    "Know Al-Fatihah has seven ayahs",
+    "Explain what we ask for in 1:6",
+    "Connect the surah to daily prayer"
+   ],
+   "narration": "A gentle narrator explains each ayah's meaning at its stone, then pauses so the child can read the Arabic.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -43,33 +62,57 @@
    "world_title": "The Valley of Guidance",
    "content_type": "narrative",
    "concept": "A great valley holding many of the surah's stories as separate glades, joined by a river and crowned by a wide open sky.",
+   "summary": "Al-Baqarah is the longest surah. It shows how Allah guides people, tells of Adam, of the Children of Israel and the cow, of Ibrahim building the House, and teaches about charity, patience and good character.",
    "areas": [
     {
      "name": "Garden of Names",
-     "reference": "2:31"
+     "reference": "2:31",
+     "description": "Objects around the glade reveal their names when found."
     },
     {
      "name": "Meadow of the Cow",
-     "reference": "2:67"
+     "reference": "2:67",
+     "description": "A pasture recalling the account; the people are never shown."
     },
     {
      "name": "Foundations of the House",
-     "reference": "2:127"
+     "reference": "2:127",
+     "description": "Great foundation stones by a quiet valley."
     },
     {
      "name": "River Crossing",
-     "reference": "2:249"
+     "reference": "2:249",
+     "description": "A river whose ayah is read before crossing; a lesson on patience."
     },
     {
      "name": "Field of Seven Spikes",
-     "reference": "2:261"
+     "reference": "2:261",
+     "description": "A field where one seed grows into seven spikes of grain."
     }
    ],
    "activities": [
-    "Plant the seed of charity",
-    "Find the names",
-    "Lay the foundations"
+    {
+     "name": "Plant the seed of charity",
+     "reference": "2:261",
+     "description": "Plant one seed and watch it grow into seven spikes with many grains, then read 2:261."
+    },
+    {
+     "name": "Find the names",
+     "reference": "2:31",
+     "description": "Discover named objects around the glade, learning that knowledge is a gift from Allah."
+    },
+    {
+     "name": "Lay the foundations",
+     "reference": "2:127",
+     "description": "Set foundation stones in place while 2:127 is shown; the people are not shown."
+    }
    ],
+   "objectives": [
+    "Name the main stories in Al-Baqarah",
+    "Explain the seed example of charity",
+    "Understand that knowledge comes from Allah"
+   ],
+   "narration": "The narrator guides from glade to glade, separating what the Quran states from explanation, and reads each glade's ayah.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -85,28 +128,47 @@
    "world_title": "The Sanctuary of the Family of Imran",
    "content_type": "narrative",
    "concept": "A quiet sanctuary of prayer and provision, opening onto a night sky where the alternation of night and day is a sign.",
+   "summary": "Ali 'Imran tells of the family of Imran, of Maryam and the provision she found, and of Zakariyya's prayer. It asks believers to hold together and to reflect on the night and the day.",
    "areas": [
     {
      "name": "The Prayer Chamber",
-     "reference": "3:37"
+     "reference": "3:37",
+     "description": "A small chamber where fruit appears in a lit niche; no person is shown."
     },
     {
      "name": "Courtyard of the Rope",
-     "reference": "3:103"
+     "reference": "3:103",
+     "description": "A courtyard where a single rope binds many pillars together."
     },
     {
      "name": "Rooftop of Night and Day",
-     "reference": "3:190"
+     "reference": "3:190",
+     "description": "A rooftop where time-lapse sky shows night and day turning."
     },
     {
      "name": "Gate to Bakkah",
-     "reference": "3:96"
+     "reference": "3:96",
+     "description": "A distant gateway marked only by its ayah."
     }
    ],
    "activities": [
-    "Hold the rope together",
-    "Watch night turn to day"
+    {
+     "name": "Hold the rope together",
+     "reference": "3:103",
+     "description": "Gather scattered rope pieces and tie them to the pillars; the courtyard steadies when it is whole."
+    },
+    {
+     "name": "Watch night turn to day",
+     "reference": "3:190-191",
+     "description": "Speed the sky from night to day and read the ayahs about reflection."
+    }
    ],
+   "objectives": [
+    "Retell Maryam's provision in the prayer chamber",
+    "Explain holding firmly to the rope of Allah",
+    "Practise reflecting on night and day"
+   ],
+   "narration": "The narrator tells the family's account in short scenes heard, not seen, and reads 3:190-191 on the rooftop.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -122,28 +184,47 @@
    "world_title": "The Village of Trusts and Justice",
    "content_type": "moral-and-spiritual",
    "concept": "A village where every house holds something entrusted, and a central square where scales stay level.",
+   "summary": "An-Nisa teaches fairness to everyone, kindness to family, orphans and neighbours, and returning what we are trusted with.",
    "areas": [
     {
      "name": "Square of One Soul",
-     "reference": "4:1"
+     "reference": "4:1",
+     "description": "A square with a single fountain from which many channels flow."
     },
     {
      "name": "House of Trusts",
-     "reference": "4:58"
+     "reference": "4:58",
+     "description": "Houses each waiting for something they lent to come back."
     },
     {
      "name": "Neighbours' Lane",
-     "reference": "4:36"
+     "reference": "4:36",
+     "description": "A lane where children help neighbours near and far."
     },
     {
      "name": "Scales of Justice",
-     "reference": "4:135"
+     "reference": "4:135",
+     "description": "Great balance scales that tip when something unfair is placed."
     }
    ],
    "activities": [
-    "Return the trusts",
-    "Keep the scales level"
+    {
+     "name": "Return the trusts",
+     "reference": "4:58",
+     "description": "Find objects left in the wrong place and return each to its owner's house."
+    },
+    {
+     "name": "Keep the scales level",
+     "reference": "4:135",
+     "description": "Choose fair options so the scales stay balanced, then read 4:135."
+    }
    ],
+   "objectives": [
+    "Explain what a trust is",
+    "Name people the Quran asks us to be kind to",
+    "Understand standing for justice"
+   ],
+   "narration": "The narrator explains each value with everyday examples, clearly as explanation, then reads the ayah.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -159,28 +240,47 @@
    "world_title": "The Hall of the Spread Table",
    "content_type": "narrative",
    "concept": "A hall of promises kept and a quiet grove where a crow teaches a lesson, joined by a long table of light.",
+   "summary": "Al-Ma'idah asks us to keep our promises, to help each other in goodness, and to be fair. It tells of Adam's two sons and of the table asked for by the disciples of Isa.",
    "areas": [
     {
      "name": "Hall of Contracts",
-     "reference": "5:1"
+     "reference": "5:1",
+     "description": "A hall where promises are written on pillars."
     },
     {
      "name": "Grove of the Crow",
-     "reference": "5:31"
+     "reference": "5:31",
+     "description": "A grove where a crow scratches the ground; read 5:31."
     },
     {
      "name": "Lantern of One Life",
-     "reference": "5:32"
+     "reference": "5:32",
+     "description": "A single lantern that lights a whole hall."
     },
     {
      "name": "Arch of the Table",
-     "reference": "5:114"
+     "reference": "5:114",
+     "description": "A long table under an arch, shown empty and lit; no people."
     }
    ],
    "activities": [
-    "Help each other",
-    "Keep the promise"
+    {
+     "name": "Help each other",
+     "reference": "5:2",
+     "description": "Carry loads together with helper characters (not real people from the Quran) to learn cooperation in goodness."
+    },
+    {
+     "name": "Keep the promise",
+     "reference": "5:1",
+     "description": "Make a promise at the start of the world and keep it by finishing a task."
+    }
    ],
+   "objectives": [
+    "Explain why keeping promises matters",
+    "Retell the lesson of the crow",
+    "Understand that saving one life is precious"
+   ],
+   "narration": "The narrator distinguishes the Quran's account of the two sons from explanation and keeps the tone gentle.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -196,32 +296,52 @@
    "world_title": "The Night of Signs",
    "content_type": "nature-and-creation",
    "concept": "An open desert night where star, moon and sun rise and set, and a valley where seeds split open into green.",
+   "summary": "Al-An'am shows the signs of Allah in the sky and the earth. It tells how Ibrahim looked at a star, the moon and the sun and saw that they all set.",
    "areas": [
     {
      "name": "Ridge of the Star",
-     "reference": "6:76"
+     "reference": "6:76",
+     "description": "A ridge to watch a bright star set."
     },
     {
      "name": "Moon Rise Plain",
-     "reference": "6:77"
+     "reference": "6:77",
+     "description": "The moon rises and then sets."
     },
     {
      "name": "Sunrise Overlook",
-     "reference": "6:78"
+     "reference": "6:78",
+     "description": "The sun rises; the narrator reads 6:79."
     },
     {
      "name": "Valley of Seeds",
-     "reference": "6:95"
+     "reference": "6:95",
+     "description": "Seeds split and sprout in a green valley."
     },
     {
      "name": "Palm Clusters",
-     "reference": "6:99"
+     "reference": "6:99",
+     "description": "Date palms with low-hanging clusters."
     }
    ],
    "activities": [
-    "What sets and what stays",
-    "Split the seed"
+    {
+     "name": "What sets and what stays",
+     "reference": "6:76-79",
+     "description": "Watch star, moon and sun each set, and reflect, as the ayahs say, on turning to the Creator."
+    },
+    {
+     "name": "Split the seed",
+     "reference": "6:95",
+     "description": "Tap seeds to see them split and sprout."
+    }
    ],
+   "objectives": [
+    "Explain why things that set are not worthy of worship",
+    "Name signs of Allah in plants",
+    "Read 6:79"
+   ],
+   "narration": "The narrator follows the ayahs closely for Ibrahim's reasoning, without showing him, and labels any explanation.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -237,36 +357,57 @@
    "world_title": "The Heights of the Peoples",
    "content_type": "narrative",
    "concept": "A long ridge path past the homes of earlier peoples, each a different landscape: a garden, a ship's hill, wind plains, carved cliffs, a market and a seashore.",
+   "summary": "Al-A'raf tells of Adam and Iblis and of messengers sent to their peoples: Nuh, Hud, Salih, Lut, Shu'ayb and Musa. Each people was called to worship Allah alone.",
    "areas": [
     {
      "name": "Garden of the Tree",
-     "reference": "7:19"
+     "reference": "7:19",
+     "description": "A garden terrace with one tree not to approach."
     },
     {
      "name": "Hill of the Ship",
-     "reference": "7:64"
+     "reference": "7:64",
+     "description": "Timbers resting on a hill, recalling Nuh's ship."
     },
     {
      "name": "Plains of 'Aad",
-     "reference": "7:65"
+     "reference": "7:65",
+     "description": "Wide windy plains."
     },
     {
      "name": "Carved Cliffs",
-     "reference": "7:74"
+     "reference": "7:74",
+     "description": "Homes carved into cliffs."
     },
     {
      "name": "Market of Madyan",
-     "reference": "7:85"
+     "reference": "7:85",
+     "description": "A market where weights must be fair."
     },
     {
      "name": "Seashore",
-     "reference": "7:138"
+     "reference": "7:138",
+     "description": "A calm shore where the sea was crossed."
     }
    ],
    "activities": [
-    "Fair weights",
-    "Walk the ridge"
+    {
+     "name": "Fair weights",
+     "reference": "7:85",
+     "description": "Weigh goods fairly in the market so every customer gets full measure."
+    },
+    {
+     "name": "Walk the ridge",
+     "reference": "7:59-93",
+     "description": "Visit each people's area in order and hear the message they were given."
+    }
    ],
+   "objectives": [
+    "Name the messengers in Al-A'raf",
+    "Explain fair measure",
+    "Understand Iblis's pride"
+   ],
+   "narration": "Each area opens with the Quran's own words for that messenger's call, then a short explanation.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -282,24 +423,42 @@
    "world_title": "The Field of Steady Hearts",
    "content_type": "moral-and-spiritual",
    "concept": "A wide field under a rain that steadies the ground, teaching unity, trust in Allah and the wish for peace.",
+   "summary": "Al-Anfal speaks to believers about trust in Allah, staying united, not quarrelling, and choosing peace when it is offered.",
    "areas": [
     {
      "name": "Field of Rain",
-     "reference": "8:11"
+     "reference": "8:11",
+     "description": "Rain falls and the sand firms under the child's feet."
     },
     {
      "name": "Circle of Hearts",
-     "reference": "8:2"
+     "reference": "8:2",
+     "description": "A circle of stones that glows when 8:2 is read."
     },
     {
      "name": "Hill of Peace",
-     "reference": "8:61"
+     "reference": "8:61",
+     "description": "A hill where a white banner of peace lifts in the breeze."
     }
    ],
    "activities": [
-    "Walk on firm ground",
-    "Don't quarrel"
+    {
+     "name": "Walk on firm ground",
+     "reference": "8:11",
+     "description": "Cross soft sand that becomes firm after the rain."
+    },
+    {
+     "name": "Don't quarrel",
+     "reference": "8:46",
+     "description": "Solve a teamwork puzzle that only works when every piece cooperates."
+    }
    ],
+   "objectives": [
+    "Explain why unity matters",
+    "Know that Allah's help comes with patience",
+    "Value peace"
+   ],
+   "narration": "History is told as explanation, clearly labelled; no fighting is shown.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -315,24 +474,42 @@
    "world_title": "The Road of Return",
    "content_type": "moral-and-spiritual",
    "concept": "A desert road leading back home, past a quiet cave of two and a mosque founded on righteousness.",
+   "summary": "At-Tawbah is about turning back to Allah, keeping our word, and being sincere. It mentions the cave where the Prophet and his companion sheltered.",
    "areas": [
     {
      "name": "Cave of Two",
-     "reference": "9:40"
+     "reference": "9:40",
+     "description": "A small cave in the hills, empty and still."
     },
     {
      "name": "Mosque of Righteousness",
-     "reference": "9:108"
+     "reference": "9:108",
+     "description": "A simple mosque on firm foundations."
     },
     {
      "name": "Circle of Learning",
-     "reference": "9:122"
+     "reference": "9:122",
+     "description": "Stones in a circle where knowledge is shared."
     }
    ],
    "activities": [
-    "Lanterns of return",
-    "Firm foundations"
+    {
+     "name": "Lanterns of return",
+     "reference": "9:104",
+     "description": "Light lanterns along the road home while reading about repentance."
+    },
+    {
+     "name": "Firm foundations",
+     "reference": "9:109",
+     "description": "Compare a building on firm ground with one on a crumbling bank."
+    }
    ],
+   "objectives": [
+    "Explain what repentance means",
+    "Compare firm and weak foundations",
+    "Value learning"
+   ],
+   "narration": "The narrator explains the history carefully as explanation, and no person is shown in the cave.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -348,28 +525,47 @@
    "world_title": "The Sea of Turning Back",
    "content_type": "narrative",
    "concept": "A coast where the moon's phases count time, a ship meets a storm, and a whole people turn back to Allah.",
+   "summary": "Surah Yunus shows signs in the sun and moon, tells how people call on Allah at sea, and remembers the people of Yunus who believed.",
    "areas": [
     {
      "name": "Moon Phase Terrace",
-     "reference": "10:5"
+     "reference": "10:5",
+     "description": "A terrace marking the moon's phases."
     },
     {
      "name": "Storm at Sea",
-     "reference": "10:22"
+     "reference": "10:22",
+     "description": "A ship in a storm that grows calm."
     },
     {
      "name": "Garden of Rain",
-     "reference": "10:24"
+     "reference": "10:24",
+     "description": "Rain makes the garden bloom, then fade."
     },
     {
      "name": "Doorway of Yunus",
-     "reference": "10:98"
+     "reference": "10:98",
+     "description": "A doorway to the Yunus story world."
     }
    ],
    "activities": [
-    "Count the months",
-    "Calm the sail"
+    {
+     "name": "Count the months",
+     "reference": "10:5",
+     "description": "Set the moon through its phases to see how time is counted."
+    },
+    {
+     "name": "Calm the sail",
+     "reference": "10:22",
+     "description": "Hold the ship steady through a storm while reading 10:22."
+    }
    ],
+   "objectives": [
+    "Explain moon phases as a sign",
+    "Retell 10:22 in their own words",
+    "Know that the people of Yunus believed"
+   ],
+   "narration": "The narrator keeps the sea scenes as setting, and the doorway leads to the Yunus story.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -385,32 +581,52 @@
    "world_title": "The Ark Coast",
    "content_type": "narrative",
    "concept": "A shipyard where the ark is built, a flood with waves like mountains, and the green slopes of al-Judiyy where the ark comes to rest.",
+   "summary": "Surah Hud tells how Nuh built the ark and was carried safely, and how Hud, Salih, Ibrahim, Lut and Shu'ayb called their peoples.",
    "areas": [
     {
      "name": "Shipyard",
-     "reference": "11:37"
+     "reference": "11:37",
+     "description": "Timbers, tools and the ark's frame."
     },
     {
      "name": "Rising Waters",
-     "reference": "11:40"
+     "reference": "11:40",
+     "description": "Water wells up across the plain."
     },
     {
      "name": "Waves like Mountains",
-     "reference": "11:42"
+     "reference": "11:42",
+     "description": "Huge waves seen from the deck."
     },
     {
      "name": "Slopes of al-Judiyy",
-     "reference": "11:44"
+     "reference": "11:44",
+     "description": "A green mountainside where the ark rests."
     },
     {
      "name": "Tent of Guests",
-     "reference": "11:69"
+     "reference": "11:69",
+     "description": "A welcoming tent; no one is shown."
     }
    ],
    "activities": [
-    "Build the ark",
-    "Fair measure"
+    {
+     "name": "Build the ark",
+     "reference": "11:37",
+     "description": "Place timbers on the ark's frame; the narrator notes this is an adaptation."
+    },
+    {
+     "name": "Fair measure",
+     "reference": "11:85",
+     "description": "Balance a market scale so everyone receives full measure."
+    }
    ],
+   "objectives": [
+    "Retell the ark account",
+    "Explain patience in hard times",
+    "Name the messengers in Surah Hud"
+   ],
+   "narration": "The narrator follows the Quran's order of events and labels added detail as explanation.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -426,41 +642,67 @@
    "world_title": "Yusuf's Journey: From the Well to the Storehouses",
    "content_type": "narrative",
    "concept": "Seven connected places follow the surah in order: the night of eleven stars, the well, the caravan road, a house in Egypt, the prison, the storehouses and the reunion hall.",
+   "summary": "Surah Yusuf tells one complete story: Yusuf's dream, his brothers' jealousy, the well, his patience in Egypt and in prison, the storehouses, and his forgiveness when his family is reunited.",
    "areas": [
     {
      "name": "Night of Eleven Stars",
-     "reference": "12:4"
+     "reference": "12:4",
+     "description": "A hilltop under eleven bright stars, the sun and the moon."
     },
     {
      "name": "The Well",
-     "reference": "12:15"
+     "reference": "12:15",
+     "description": "A deep stone well in the wilderness."
     },
     {
      "name": "Caravan Road",
-     "reference": "12:19"
+     "reference": "12:19",
+     "description": "A desert road with a passing caravan's tracks."
     },
     {
      "name": "The Prison",
-     "reference": "12:36"
+     "reference": "12:36",
+     "description": "A prison courtyard where dreams are explained."
     },
     {
      "name": "The Storehouses",
-     "reference": "12:47"
+     "reference": "12:47",
+     "description": "Granaries where grain is stored in its spikes."
     },
     {
      "name": "The Shirt",
-     "reference": "12:93"
+     "reference": "12:93",
+     "description": "A shirt carried home as a sign."
     },
     {
      "name": "Hall of Reunion",
-     "reference": "12:100"
+     "reference": "12:100",
+     "description": "A palace hall at the end of the journey; no one is shown."
     }
    ],
    "activities": [
-    "Store the harvest",
-    "Read the dreams",
-    "Follow the stars"
+    {
+     "name": "Store the harvest",
+     "reference": "12:47-49",
+     "description": "Over seven years of plenty, store grain in its spikes; then share it through seven hard years."
+    },
+    {
+     "name": "Read the dreams",
+     "reference": "12:43",
+     "description": "Match the king's dream images to their meaning as 12:47-49 explains."
+    },
+    {
+     "name": "Follow the stars",
+     "reference": "12:4",
+     "description": "Find the eleven stars, the sun and the moon in the night sky."
+    }
    ],
+   "objectives": [
+    "Retell Yusuf's story in order",
+    "Explain how planning helped during hardship",
+    "Talk about forgiveness"
+   ],
+   "narration": "Narration moves place by place in the Quran's order. Yusuf, his family and all others are never shown or voiced.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -476,32 +718,52 @@
    "world_title": "The Valley of Thunder",
    "content_type": "nature-and-creation",
    "concept": "A mountain valley of rivers, gardens side by side, lightning and thunder, and a flood that leaves foam behind.",
+   "summary": "Ar-Ra'd shows rivers, gardens, lightning and thunder as signs of Allah, and compares truth to water that stays and falsehood to foam that goes away.",
    "areas": [
     {
      "name": "Rivers between Mountains",
-     "reference": "13:3"
+     "reference": "13:3",
+     "description": "Rivers running from the mountains."
     },
     {
      "name": "Neighbouring Plots",
-     "reference": "13:4"
+     "reference": "13:4",
+     "description": "Plots side by side growing different fruits from one water."
     },
     {
      "name": "Lightning Ridge",
-     "reference": "13:12"
+     "reference": "13:12",
+     "description": "Lightning flashes across the ridge."
     },
     {
      "name": "Thunder Hall",
-     "reference": "13:13"
+     "reference": "13:13",
+     "description": "A great rock hall where thunder echoes."
     },
     {
      "name": "Foam Pool",
-     "reference": "13:17"
+     "reference": "13:17",
+     "description": "A pool where foam drifts away and water remains."
     }
    ],
    "activities": [
-    "Water and foam",
-    "One water, many fruits"
+    {
+     "name": "Water and foam",
+     "reference": "13:17",
+     "description": "Let floodwater settle: foam floats away, useful water stays."
+    },
+    {
+     "name": "One water, many fruits",
+     "reference": "13:4",
+     "description": "Water neighbouring plots and see different fruits grow."
+    }
    ],
+   "objectives": [
+    "Explain the example of water and foam",
+    "Name signs in the weather",
+    "Read 13:28"
+   ],
+   "narration": "The narrator reads each sign's ayah when it appears.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -517,28 +779,47 @@
    "world_title": "The Valley of the Good Tree",
    "content_type": "nature-and-creation",
    "concept": "A valley where a good tree's roots are firm and its branches reach the sky, beside an uncultivated valley near a sacred House.",
+   "summary": "Surah Ibrahim compares a good word to a good tree, and teaches that gratitude brings more blessings. It records Ibrahim's prayer for his family in a dry valley.",
    "areas": [
     {
      "name": "The Good Tree",
-     "reference": "14:24"
+     "reference": "14:24",
+     "description": "A tree with deep roots and high branches."
     },
     {
      "name": "Uprooted Tree",
-     "reference": "14:26"
+     "reference": "14:26",
+     "description": "A dead tree lying loose on the ground."
     },
     {
      "name": "Uncultivated Valley",
-     "reference": "14:37"
+     "reference": "14:37",
+     "description": "A dry valley near the sacred House."
     },
     {
      "name": "River of Ships",
-     "reference": "14:32"
+     "reference": "14:32",
+     "description": "A river with sailing boats."
     }
    ],
    "activities": [
-    "Good words grow",
-    "Thankful stones"
+    {
+     "name": "Good words grow",
+     "reference": "14:24-25",
+     "description": "Choose kind words; each one makes the good tree grow."
+    },
+    {
+     "name": "Thankful stones",
+     "reference": "14:7",
+     "description": "Place a stone for each blessing you thank Allah for."
+    }
    ],
+   "objectives": [
+    "Explain the good tree parable",
+    "Link gratitude and blessings",
+    "Know Ibrahim prayed for his family"
+   ],
+   "narration": "The narrator explains the parable carefully and reads Ibrahim's prayer from the Quran's text.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -554,28 +835,47 @@
    "world_title": "The Rocky Tract",
    "content_type": "nature-and-creation",
    "concept": "Cliffs carved into homes under a sky of constellations, mountains set firm, and winds that carry pollen.",
+   "summary": "Al-Hijr says Allah protects the Quran, shows the stars, mountains and winds as signs, and tells of the people of al-Hijr who carved homes in the mountains.",
    "areas": [
     {
      "name": "Sky of Constellations",
-     "reference": "15:16"
+     "reference": "15:16",
+     "description": "A night sky with bright constellations."
     },
     {
      "name": "Firm Mountains",
-     "reference": "15:19"
+     "reference": "15:19",
+     "description": "Mountains anchoring the land."
     },
     {
      "name": "Fertilizing Winds",
-     "reference": "15:22"
+     "reference": "15:22",
+     "description": "Winds that carry pollen to plants."
     },
     {
      "name": "Carved Homes",
-     "reference": "15:82"
+     "reference": "15:82",
+     "description": "Homes carved in the cliffs, empty."
     }
    ],
    "activities": [
-    "Carry the pollen",
-    "Find the constellations"
+    {
+     "name": "Carry the pollen",
+     "reference": "15:22",
+     "description": "Guide the wind to carry pollen between flowers."
+    },
+    {
+     "name": "Find the constellations",
+     "reference": "15:16",
+     "description": "Trace constellations in the sky."
+    }
    ],
+   "objectives": [
+    "Know Allah protects the Quran",
+    "Explain how wind helps plants",
+    "Learn about the people of al-Hijr"
+   ],
+   "narration": "The narrator explains the peoples' story as explanation and reads 15:9 at the start.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -591,32 +891,52 @@
    "world_title": "The Bee Garden",
    "content_type": "nature-and-creation",
    "concept": "A valley of blossoms where bees build homes in mountains and trees, honey of many colours flows, and every creature is a sign.",
+   "summary": "An-Nahl is the surah of the bee. It shows Allah's blessings in bees, honey, milk, rain, the sea, birds and animals, and asks us to be grateful.",
    "areas": [
     {
      "name": "Hive Cliffs",
-     "reference": "16:68"
+     "reference": "16:68",
+     "description": "Bees making homes in mountains and trees."
     },
     {
      "name": "Honey Spring",
-     "reference": "16:69"
+     "reference": "16:69",
+     "description": "Honey of different colours in the combs."
     },
     {
      "name": "Pasture of Milk",
-     "reference": "16:66"
+     "reference": "16:66",
+     "description": "Animals grazing in a pasture."
     },
     {
      "name": "Coast of Ornaments",
-     "reference": "16:14"
+     "reference": "16:14",
+     "description": "A coast with shells and pearls."
     },
     {
      "name": "Sky of Birds",
-     "reference": "16:79"
+     "reference": "16:79",
+     "description": "Birds held in the sky."
     }
    ],
    "activities": [
-    "Follow the bee",
-    "Count the blessings"
+    {
+     "name": "Follow the bee",
+     "reference": "16:68-69",
+     "description": "Follow a bee from flower to flower back to its hive."
+    },
+    {
+     "name": "Count the blessings",
+     "reference": "16:18",
+     "description": "Collect blessings around the valley and learn they cannot all be counted."
+    }
    ],
+   "objectives": [
+    "Describe what the Quran says about bees",
+    "Name blessings in An-Nahl",
+    "Practise gratitude"
+   ],
+   "narration": "The narrator reads each ayah when a blessing is found.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -632,28 +952,47 @@
    "world_title": "The Night of Light and Guidance",
    "content_type": "moral-and-spiritual",
    "concept": "A night journey of lamps from one sacred mosque to another, then a land where the night and day are signs and parents are honoured.",
+   "summary": "Al-Isra begins with the night journey to al-Masjid al-Aqsa and gives guidance: honour parents, be honest, and know that everything glorifies Allah.",
    "areas": [
     {
      "name": "Path of Lamps",
-     "reference": "17:1"
+     "reference": "17:1",
+     "description": "A path of lamps through the night; nothing of the journey is depicted."
     },
     {
      "name": "Two Signs",
-     "reference": "17:12"
+     "reference": "17:12",
+     "description": "Night and day shown as two signs."
     },
     {
      "name": "Courtyard of Parents",
-     "reference": "17:23"
+     "reference": "17:23",
+     "description": "A family courtyard; no people shown."
     },
     {
      "name": "Full Measure Market",
-     "reference": "17:35"
+     "reference": "17:35",
+     "description": "A market with honest scales."
     }
    ],
    "activities": [
-    "Words for parents",
-    "Honest measure"
+    {
+     "name": "Words for parents",
+     "reference": "17:23-24",
+     "description": "Choose gentle words to say to parents."
+    },
+    {
+     "name": "Honest measure",
+     "reference": "17:35",
+     "description": "Measure fairly in the market."
+    }
    ],
+   "objectives": [
+    "Retell what 17:1 says",
+    "Know how to speak to parents",
+    "Explain honesty in trade"
+   ],
+   "narration": "The narrator reads 17:1 and explains only what the Quran states about the journey.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -669,41 +1008,67 @@
    "world_title": "Four Journeys of Al-Kahf",
    "content_type": "narrative",
    "concept": "Four connected adventures: the cave of the young believers, the two gardens, the meeting of the two seas, and the iron barrier.",
+   "summary": "Al-Kahf has four stories: young believers who slept in a cave, a man proud of his two gardens, Musa's journey to learn from a knowing servant of Allah, and Dhul-Qarnayn who built a barrier.",
    "areas": [
     {
      "name": "The Cave",
-     "reference": "18:10"
+     "reference": "18:10",
+     "description": "A mountain cave; the youths are never shown and no number is stated."
     },
     {
      "name": "The Sliding Sun",
-     "reference": "18:17"
+     "reference": "18:17",
+     "description": "Sunlight passing by the cave's mouth."
     },
     {
      "name": "The Two Gardens",
-     "reference": "18:32"
+     "reference": "18:32",
+     "description": "Two walled gardens with a river between."
     },
     {
      "name": "Junction of the Two Seas",
-     "reference": "18:60"
+     "reference": "18:60",
+     "description": "Where two seas meet."
     },
     {
      "name": "The Ship",
-     "reference": "18:71"
+     "reference": "18:71",
+     "description": "A small ship with a hole in its side."
     },
     {
      "name": "The Wall",
-     "reference": "18:77"
+     "reference": "18:77",
+     "description": "A wall about to fall, set straight."
     },
     {
      "name": "The Iron Barrier",
-     "reference": "18:96"
+     "reference": "18:96",
+     "description": "A mountain pass filled with iron and copper."
     }
    ],
    "activities": [
-    "Follow the sun",
-    "Why did it happen?",
-    "Build the barrier"
+    {
+     "name": "Follow the sun",
+     "reference": "18:17",
+     "description": "Track the sun past the cave mouth from morning to evening."
+    },
+    {
+     "name": "Why did it happen?",
+     "reference": "18:79-82",
+     "description": "At the ship and the wall, match each event with the reason 18:79-82 gives."
+    },
+    {
+     "name": "Build the barrier",
+     "reference": "18:96",
+     "description": "Stack iron blocks and pour copper to close the pass (adaptation)."
+    }
    ],
+   "objectives": [
+    "Retell the four stories",
+    "Explain patience in learning",
+    "Explain humility about wealth"
+   ],
+   "narration": "Each journey opens with its ayahs, then gentle explanation. Musa, the knowing servant and Dhul-Qarnayn are never shown.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -719,32 +1084,52 @@
    "world_title": "The Palm and the Spring",
    "content_type": "narrative",
    "concept": "A sanctuary of prayer, a distant place with a palm tree and a stream, and a mount where Musa was called.",
+   "summary": "Surah Maryam tells of Zakariyya's prayer for a child, of Maryam and the birth of Isa, of Ibrahim speaking gently to his father, and of other prophets.",
    "areas": [
     {
      "name": "Prayer Chamber",
-     "reference": "19:11"
+     "reference": "19:11",
+     "description": "A quiet chamber; no one shown."
     },
     {
      "name": "The Palm Tree",
-     "reference": "19:23"
+     "reference": "19:23",
+     "description": "A tall palm in a remote place."
     },
     {
      "name": "The Stream",
-     "reference": "19:24"
+     "reference": "19:24",
+     "description": "A stream below the palm."
     },
     {
      "name": "Ripe Dates",
-     "reference": "19:25"
+     "reference": "19:25",
+     "description": "Dates falling from the palm."
     },
     {
      "name": "The Mount",
-     "reference": "19:52"
+     "reference": "19:52",
+     "description": "A mountain slope where Musa was called."
     }
    ],
    "activities": [
-    "Gentle words",
-    "The palm and the stream"
+    {
+     "name": "Gentle words",
+     "reference": "19:42-47",
+     "description": "Choose the gentle way Ibrahim spoke to his father, read from the ayahs."
+    },
+    {
+     "name": "The palm and the stream",
+     "reference": "19:24-26",
+     "description": "Find the stream and the dates (an adaptation; Maryam is not shown or played)."
+    }
    ],
+   "objectives": [
+    "Retell Maryam's account from the ayahs",
+    "Explain gentle speech to parents",
+    "Name prophets mentioned"
+   ],
+   "narration": "Narration is quiet and reverent; Maryam, Isa and all prophets are never shown or voiced.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -760,33 +1145,57 @@
    "world_title": "Fire in the Valley of Tuwa",
    "content_type": "narrative",
    "concept": "A night journey toward a distant fire that becomes the start of Musa's mission: a sacred valley, a river with a floating chest, the palace road, a dry path through the sea and a lonely desert where a calf is melted away.",
+   "summary": "Surah Ta-Ha tells how Musa saw a fire in the night and was called by Allah, how as a baby he was placed in a chest on the river, how he and Harun went to Pharaoh with gentle words, and how Allah saved the believers through the sea.",
    "areas": [
     {
      "name": "The Distant Fire",
-     "reference": "20:10"
+     "reference": "20:10",
+     "description": "A single fire glowing far across the dark valley; the walk toward it begins the world."
     },
     {
      "name": "Valley of Tuwa",
-     "reference": "20:12"
+     "reference": "20:12",
+     "description": "A hushed valley floor: the player leaves their own sandals at the edge (adaptation)."
     },
     {
      "name": "The River and the Chest",
-     "reference": "20:39"
+     "reference": "20:39",
+     "description": "A wooden chest drifting along reeds to the bank; no person is shown."
     },
     {
      "name": "Dry Path Through the Sea",
-     "reference": "20:77"
+     "reference": "20:77",
+     "description": "Walls of water either side of a dry seabed path."
     },
     {
      "name": "Camp of the Calf",
-     "reference": "20:88"
+     "reference": "20:88",
+     "description": "An empty camp where a golden calf statue stands, later shown melted and scattered."
     }
    ],
    "activities": [
-    "Follow the firelight",
-    "Gentle words",
-    "The staff and the rope"
+    {
+     "name": "Follow the firelight",
+     "reference": "20:10",
+     "description": "Walk through the dark valley guided only by the fire, reading 20:10 at its edge."
+    },
+    {
+     "name": "Gentle words",
+     "reference": "20:44",
+     "description": "Choose the gentle way to speak in short scenarios, then read 20:44."
+    },
+    {
+     "name": "The staff and the rope",
+     "reference": "20:66-69",
+     "description": "A sorting game separating illusion from truth; nothing is shown of Musa (adaptation)."
+    }
    ],
+   "objectives": [
+    "Retell how Musa was called",
+    "Explain why gentle speech matters",
+    "Explain why the calf was wrong to worship"
+   ],
+   "narration": "Narration walks in the Quran's order from the fire to the calf. Musa, Harun and Pharaoh are never shown or voiced; their words are read only as ayahs.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -802,33 +1211,57 @@
    "world_title": "The Hall of the Prophets",
    "content_type": "narrative",
    "concept": "A long gallery of open-air rooms, one for each prophet named in the surah, opening onto a sky where the sun and moon swim in their orbits.",
+   "summary": "Al-Anbiya means The Prophets. It reminds us that the heavens and the earth were made by Allah, and tells briefly of many prophets: Ibrahim and the fire, Dawud and Sulayman, Ayyub, Yunus, Zakariyya and others, who all called to worship Allah alone.",
    "areas": [
     {
      "name": "Joined Heavens and Earth",
-     "reference": "21:30"
+     "reference": "21:30",
+     "description": "A dome where sky and land slowly part and water appears."
     },
     {
      "name": "Room of the Cool Fire",
-     "reference": "21:69"
+     "reference": "21:69",
+     "description": "A fire pit glowing cool blue; no person is shown."
     },
     {
      "name": "Room of Mountains and Birds",
-     "reference": "21:79"
+     "reference": "21:79",
+     "description": "Hills and birds that seem to join in glorifying Allah."
     },
     {
      "name": "Room of the Wind",
-     "reference": "21:81"
+     "reference": "21:81",
+     "description": "A sail filled by a strong steady wind."
     },
     {
      "name": "Room of the Darknesses",
-     "reference": "21:87"
+     "reference": "21:87",
+     "description": "Layered darkness of night, sea and the deep, with one ayah lit."
     }
    ],
    "activities": [
-    "The orbits",
-    "Prophet timeline",
-    "Words of Yunus"
+    {
+     "name": "The orbits",
+     "reference": "21:33",
+     "description": "Set the sun and the moon swimming in their orbits on a sky dial."
+    },
+    {
+     "name": "Prophet timeline",
+     "reference": "21:48-91",
+     "description": "Place each room's object in the order the surah mentions it."
+    },
+    {
+     "name": "Words of Yunus",
+     "reference": "21:87",
+     "description": "Read 21:87 aloud to brighten the darkened room (the prophet is not shown)."
+    }
    ],
+   "objectives": [
+    "Name the prophets mentioned",
+    "Explain the shared message of all prophets",
+    "Connect creation to faith"
+   ],
+   "narration": "Each room opens with its ayahs; the narrator explains, never speaking as a prophet.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -844,28 +1277,47 @@
    "world_title": "The Plain of Pilgrims",
    "content_type": "nature-and-creation",
    "concept": "A vast plain with roads arriving from every distant pass toward a simple House, framed by fields that turn green after rain.",
+   "summary": "Surah Al-Hajj speaks of the pilgrimage that Ibrahim proclaimed, of the House, of how rain brings dead land to life, and of worship done sincerely for Allah.",
    "areas": [
     {
      "name": "Roads from Every Pass",
-     "reference": "22:27"
+     "reference": "22:27",
+     "description": "Winding roads from far mountain passes; travellers are suggested by footprints and camel tracks only."
     },
     {
      "name": "Foundations of the House",
-     "reference": "22:26"
+     "reference": "22:26",
+     "description": "Simple foundations, quiet and plain."
     },
     {
      "name": "Greening Fields",
-     "reference": "22:63"
+     "reference": "22:63",
+     "description": "Dry fields that turn green as rain falls."
     },
     {
      "name": "Stages of Growth",
-     "reference": "22:5"
+     "reference": "22:5",
+     "description": "A barren slope that stirs and swells with plants."
     }
    ],
    "activities": [
-    "Rain on the hills",
-    "Pack for the journey"
+    {
+     "name": "Rain on the hills",
+     "reference": "22:63",
+     "description": "Bring clouds over dry fields and watch them turn green, then read 22:63."
+    },
+    {
+     "name": "Pack for the journey",
+     "reference": "22:27-28",
+     "description": "A gentle sorting game about what a traveller needs and why sincerity matters (adaptation)."
+    }
    ],
+   "objectives": [
+    "Know what Hajj is",
+    "Explain who first proclaimed Hajj in the surah",
+    "Connect rain and new life"
+   ],
+   "narration": "Narration explains Hajj simply and links rain-revived land to Allah's power to give life.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -881,36 +1333,57 @@
    "world_title": "Garden of the Successful Believers",
    "content_type": "moral-and-spiritual",
    "concept": "A cultivated estate where each terrace is a quality of the believers in the opening ayahs, fed by rain sent in measure and an olive tree from Sinai.",
+   "summary": "Al-Mu'minun begins by describing successful believers: humble in prayer, avoiding idle talk, giving charity and keeping promises. It reminds us how Allah created us and sends rain in just measure.",
    "areas": [
     {
      "name": "Terrace of Humble Prayer",
-     "reference": "23:2"
+     "reference": "23:2",
+     "description": "A quiet terrace for stillness."
     },
     {
      "name": "Terrace of Turning from Idle Talk",
-     "reference": "23:3"
+     "reference": "23:3",
+     "description": "A path where noisy chatter fades as the player walks on."
     },
     {
      "name": "Measured Rain Reservoir",
-     "reference": "23:18"
+     "reference": "23:18",
+     "description": "Rain gathered and held in the earth."
     },
     {
      "name": "Palms and Vines",
-     "reference": "23:19"
+     "reference": "23:19",
+     "description": "Rows of palms and grapevines."
     },
     {
      "name": "Olive Tree of Sinai",
-     "reference": "23:20"
+     "reference": "23:20",
+     "description": "A great olive tree on a slope."
     },
     {
      "name": "Shipyard",
-     "reference": "23:27"
+     "reference": "23:27",
+     "description": "An empty shipyard with timbers."
     }
    ],
    "activities": [
-    "Qualities ladder",
-    "Fill the reservoir"
+    {
+     "name": "Qualities ladder",
+     "reference": "23:1-11",
+     "description": "Light each terrace by matching it to its ayah."
+    },
+    {
+     "name": "Fill the reservoir",
+     "reference": "23:18",
+     "description": "Guide rain in measured amounts to fill the reservoir without flooding (adaptation)."
+    }
    ],
+   "objectives": [
+    "List the qualities of believers in 23:1-11",
+    "Explain rain in measure",
+    "Connect gratitude to creation"
+   ],
+   "narration": "Narration links each terrace to a quality and asks the child about their own day.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -926,37 +1399,62 @@
    "world_title": "The Niche of Light",
    "content_type": "moral-and-spiritual",
    "concept": "A house of quiet rooms and courtyards lit by a single great lamp in a niche, with a mirage desert and a dark sea beyond its walls as contrasts.",
+   "summary": "Surah An-Nur teaches good manners in the home and in society: asking permission before entering, modesty, and not spreading rumours. It describes Allah's light with the beautiful example of a lamp in a niche.",
    "areas": [
     {
      "name": "Doors of Permission",
-     "reference": "24:27"
+     "reference": "24:27",
+     "description": "Doors that open only after the player greets and asks."
     },
     {
      "name": "The Lamp in the Niche",
-     "reference": "24:35"
+     "reference": "24:35",
+     "description": "A glass lamp like a bright star in a wall niche."
     },
     {
      "name": "Blessed Olive Grove",
-     "reference": "24:35"
+     "reference": "24:35",
+     "description": "An olive grove neither of the east nor the west."
     },
     {
      "name": "Mirage Plain",
-     "reference": "24:39"
+     "reference": "24:39",
+     "description": "A desert where water appears but is not there."
     },
     {
      "name": "Sea of Darknesses",
-     "reference": "24:40"
+     "reference": "24:40",
+     "description": "Waves upon waves under clouds."
     },
     {
      "name": "Birds with Spread Wings",
-     "reference": "24:41"
+     "reference": "24:41",
+     "description": "Birds gliding over the courtyard."
     }
    ],
    "activities": [
-    "Knock and greet",
-    "Stop the rumour",
-    "Layers of light"
+    {
+     "name": "Knock and greet",
+     "reference": "24:27-28",
+     "description": "Practise asking permission at each door before entering."
+    },
+    {
+     "name": "Stop the rumour",
+     "reference": "24:15-16",
+     "description": "A rumour passes from lantern to lantern; choose to stop it (adaptation)."
+    },
+    {
+     "name": "Layers of light",
+     "reference": "24:35",
+     "description": "Assemble lamp, glass and niche in order as the ayah describes."
+    }
    ],
+   "objectives": [
+    "Explain asking permission",
+    "Explain why rumours hurt",
+    "Describe the parable of light"
+   ],
+   "narration": "Narration is gentle and practical, linking each room to a manner from the surah.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -972,33 +1470,57 @@
    "world_title": "Walk of the Servants of the Merciful",
    "content_type": "moral-and-spiritual",
    "concept": "A land of shade and sun, two seas with a barrier between them, and a final path where the Servants of the Most Merciful walk gently.",
+   "summary": "Al-Furqan means the Criterion between right and wrong. It shows signs in nature like shadows and two seas, and ends by describing the servants of the Most Merciful, who walk humbly and answer harshness with peace.",
    "areas": [
     {
      "name": "Field of Shadows",
-     "reference": "25:45"
+     "reference": "25:45",
+     "description": "A sundial field where shadows move with the sun."
     },
     {
      "name": "Winds of Good Tidings",
-     "reference": "25:48"
+     "reference": "25:48",
+     "description": "Winds pushing clouds that bring pure water."
     },
     {
      "name": "Two Seas and a Barrier",
-     "reference": "25:53"
+     "reference": "25:53",
+     "description": "Fresh and salt water side by side with a visible barrier."
     },
     {
      "name": "Sky Lamp",
-     "reference": "25:61"
+     "reference": "25:61",
+     "description": "Great stars, a burning lamp and a luminous moon."
     },
     {
      "name": "Path of Gentle Walking",
-     "reference": "25:63"
+     "reference": "25:63",
+     "description": "A garden path for humble walking."
     }
    ],
    "activities": [
-    "Shadow clock",
-    "Answer with peace",
-    "Taste the two seas"
+    {
+     "name": "Shadow clock",
+     "reference": "25:45-46",
+     "description": "Move the sun and watch shadows lengthen and shrink."
+    },
+    {
+     "name": "Answer with peace",
+     "reference": "25:63",
+     "description": "Respond calmly to harsh words in short scenarios (adaptation)."
+    },
+    {
+     "name": "Taste the two seas",
+     "reference": "25:53",
+     "description": "Sort which water is fresh and which salty along the barrier."
+    }
    ],
+   "objectives": [
+    "Explain what Furqan means",
+    "List qualities in 25:63-74",
+    "Describe two signs in nature"
+   ],
+   "narration": "Narration names each sign and finishes with the qualities of the servants of the Most Merciful.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -1014,28 +1536,47 @@
    "world_title": "Seven Shores of the Messengers",
    "content_type": "narrative",
    "concept": "A coastline of seven settlements, one for each messenger's people in the surah, each ending with the same refrain about Allah's might and mercy.",
+   "summary": "Ash-Shu'ara tells of Musa and Pharaoh, Ibrahim and his people, Nuh, Hud, Salih, Lut and Shu'ayb. Each called people to worship Allah, and each story ends by reminding us that Allah is Exalted in Might, the Merciful.",
    "areas": [
     {
      "name": "Towering Waves",
-     "reference": "26:63"
+     "reference": "26:63",
+     "description": "Sea walls like mountains either side of a path."
     },
     {
      "name": "Earth of Noble Kinds",
-     "reference": "26:7"
+     "reference": "26:7",
+     "description": "A meadow of many plant kinds at the coast road's start."
     },
     {
      "name": "Homes in the Mountains",
-     "reference": "26:149"
+     "reference": "26:149",
+     "description": "Rock-cut homes of Thamud, empty and silent."
     },
     {
      "name": "Thicket of Madyan",
-     "reference": "26:176"
+     "reference": "26:176",
+     "description": "A dense thicket by a marketplace with scales."
     }
    ],
    "activities": [
-    "Full measure",
-    "The refrain"
+    {
+     "name": "Full measure",
+     "reference": "26:181-183",
+     "description": "Weigh goods fairly at the Madyan market (adaptation)."
+    },
+    {
+     "name": "The refrain",
+     "reference": "26:8-9",
+     "description": "Each shore ends with 26:8-9 read in Arabic; collect each refrain to light the coast road."
+    }
    ],
+   "objectives": [
+    "Name the seven messengers",
+    "Explain honest measuring",
+    "Notice the surah's refrain"
+   ],
+   "narration": "Narration repeats the surah's own structure: each shore, its ayahs, then the refrain. No messenger or person is shown or voiced.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -1051,33 +1592,57 @@
    "world_title": "Valley of the Ants and the Glass Palace",
    "content_type": "narrative",
    "concept": "A journey with Sulayman's story told from the land around it: the valley of the ants, the hoopoe's flight to Sheba, a throne that appears in a blink, and a palace whose floor looks like water.",
+   "summary": "An-Naml means The Ants. It tells of Sulayman, who heard an ant warn the others, of a hoopoe that brought news of the Queen of Sheba, and how she came to believe in Allah. It also tells briefly of Musa, Salih and Lut.",
    "areas": [
     {
      "name": "Valley of the Ants",
-     "reference": "27:18"
+     "reference": "27:18",
+     "description": "Ant hills and tiny paths; the player walks carefully so as not to harm them."
     },
     {
      "name": "The Hoopoe's Perch",
-     "reference": "27:20"
+     "reference": "27:20",
+     "description": "An empty perch among the birds where the hoopoe should be."
     },
     {
      "name": "Road to Sheba",
-     "reference": "27:22"
+     "reference": "27:22",
+     "description": "A long road to a southern kingdom."
     },
     {
      "name": "The Glass Floor",
-     "reference": "27:44"
+     "reference": "27:44",
+     "description": "A palace floor of glass over water."
     },
     {
      "name": "Moving Mountains",
-     "reference": "27:88"
+     "reference": "27:88",
+     "description": "Distant mountains drifting like clouds: symbolic, at the world's edge."
     }
    ],
    "activities": [
-    "Walk with care",
-    "Find the hoopoe",
-    "Gratitude prayer"
+    {
+     "name": "Walk with care",
+     "reference": "27:18",
+     "description": "Cross the valley without stepping on any ant paths (adaptation)."
+    },
+    {
+     "name": "Find the hoopoe",
+     "reference": "27:20-22",
+     "description": "Search the birds and follow the hoopoe's trail to Sheba (adaptation)."
+    },
+    {
+     "name": "Gratitude prayer",
+     "reference": "27:19",
+     "description": "Read 27:19 at the valley's end to light it."
+    }
    ],
+   "objectives": [
+    "Retell the ant and the hoopoe",
+    "Explain gratitude in 27:19",
+    "Explain that the Queen turned to Allah"
+   ],
+   "narration": "Narration tells each scene from the ayahs. Sulayman, the Queen and all people are never shown or voiced; animals act only as the ayahs say.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -1093,32 +1658,52 @@
    "world_title": "From the River to Madyan",
    "content_type": "narrative",
    "concept": "Musa's story in the order the surah gives: a river where a baby is placed, a palace, a flight to Madyan, a well, a fire on the mount, and the end of Qarun's treasure.",
+   "summary": "Al-Qasas means The Stories. It tells how Musa's mother placed him in the river trusting Allah, how he grew up, helped two women at the well of Madyan, and was later called at the mount. It ends with Qarun, whose great wealth could not save him.",
    "areas": [
     {
      "name": "The River",
-     "reference": "28:7"
+     "reference": "28:7",
+     "description": "Reeds and calm water."
     },
     {
      "name": "Well of Madyan",
-     "reference": "28:23"
+     "reference": "28:23",
+     "description": "A well with flocks waiting their turn."
     },
     {
      "name": "The Shade",
-     "reference": "28:24"
+     "reference": "28:24",
+     "description": "A tree's shade after a long journey."
     },
     {
      "name": "Fire on the Mount",
-     "reference": "28:29"
+     "reference": "28:29",
+     "description": "A fire seen from the road at night."
     },
     {
      "name": "Swallowed Treasure House",
-     "reference": "28:81"
+     "reference": "28:81",
+     "description": "A house of treasure sinking into the ground."
     }
    ],
    "activities": [
-    "Water the flock",
-    "Keys too heavy"
+    {
+     "name": "Water the flock",
+     "reference": "28:23-24",
+     "description": "Help the waiting flocks drink, then rest in the shade and read 28:24 (adaptation)."
+    },
+    {
+     "name": "Keys too heavy",
+     "reference": "28:76",
+     "description": "Try to lift Qarun's keys; learn why boasting about wealth is wrong (adaptation)."
+    }
    ],
+   "objectives": [
+    "Retell Musa's story in order",
+    "Explain trusting Allah's promise",
+    "Explain why Qarun's wealth did not help"
+   ],
+   "narration": "Narration keeps to the ayahs; Musa, his mother, the women at the well and Qarun are never shown or voiced.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -1134,24 +1719,42 @@
    "world_title": "The House of the Spider",
    "content_type": "moral-and-spiritual",
    "concept": "A hillside of fragile and firm homes: a great spider's web glistening at dawn beside strong stone houses, an ark on the hill and roads to travel and observe creation.",
+   "summary": "Al-'Ankabut means The Spider. It teaches that faith is tested, and that relying on anything besides Allah is like the spider's home, the weakest of homes. It mentions Nuh, Ibrahim, Lut and others.",
    "areas": [
     {
      "name": "The Spider's Web",
-     "reference": "29:41"
+     "reference": "29:41",
+     "description": "A huge, beautiful but fragile web."
     },
     {
      "name": "Road of Reflection",
-     "reference": "29:20"
+     "reference": "29:20",
+     "description": "A road through many landscapes."
     },
     {
      "name": "Ark on the Ridge",
-     "reference": "29:15"
+     "reference": "29:15",
+     "description": "An ark resting on a ridge as a sign."
     }
    ],
    "activities": [
-    "Test the homes",
-    "Observe creation"
+    {
+     "name": "Test the homes",
+     "reference": "29:41",
+     "description": "Push gently on the web and the stone house to see which stands (adaptation)."
+    },
+    {
+     "name": "Observe creation",
+     "reference": "29:20",
+     "description": "Travel the road and collect sights of how things begin and grow."
+    }
    ],
+   "objectives": [
+    "Explain the spider example",
+    "Explain that faith is tested",
+    "Name prophets mentioned"
+   ],
+   "narration": "Narration uses the spider's example to talk about what truly protects us.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -1167,28 +1770,47 @@
    "world_title": "The Winds and the Colours of People",
    "content_type": "nature-and-creation",
    "concept": "An open world of signs: winds that carry ships, clouds spread into rain, a market of many languages and colours, and dead earth brought back to life.",
+   "summary": "Ar-Rum means The Romans. It begins with a promise that came true and points to signs of Allah: our different languages and colours, the winds, rain, and how dead earth comes back to life.",
    "areas": [
     {
      "name": "Market of Languages",
-     "reference": "30:22"
+     "reference": "30:22",
+     "description": "A market where greetings come in many languages."
     },
     {
      "name": "Harbour of Winds",
-     "reference": "30:46"
+     "reference": "30:46",
+     "description": "Ships setting out on good winds."
     },
     {
      "name": "Spreading Clouds",
-     "reference": "30:48"
+     "reference": "30:48",
+     "description": "Clouds spread and break into rain."
     },
     {
      "name": "Earth Revived",
-     "reference": "30:50"
+     "reference": "30:50",
+     "description": "Bare land returning to green."
     }
    ],
    "activities": [
-    "Hello in many languages",
-    "Wind and rain"
+    {
+     "name": "Hello in many languages",
+     "reference": "30:22",
+     "description": "Greet stall keepers in different languages and notice each is a sign (adaptation)."
+    },
+    {
+     "name": "Wind and rain",
+     "reference": "30:48-50",
+     "description": "Guide winds to stir clouds, then watch rain revive the land."
+    }
    ],
+   "objectives": [
+    "Explain why diversity is a sign",
+    "Describe the rain cycle in 30:48",
+    "Name two signs from the surah"
+   ],
+   "narration": "Narration names each sign as 'and of His signs', as the surah does.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -1204,24 +1826,42 @@
    "world_title": "Luqman's Garden of Advice",
    "content_type": "moral-and-spiritual",
    "concept": "A quiet family garden where each path holds one piece of Luqman's advice to his son, under trees and beside a sea of ink.",
+   "summary": "Surah Luqman tells of a wise man, Luqman, who gave his son advice: never worship anything besides Allah, be grateful to parents, pray, be patient, don't be proud, walk gently and lower your voice.",
    "areas": [
     {
      "name": "The Rock and the Mustard Seed",
-     "reference": "31:16"
+     "reference": "31:16",
+     "description": "A large rock with a tiny seed nearby."
     },
     {
      "name": "Path of Moderate Pace",
-     "reference": "31:19"
+     "reference": "31:19",
+     "description": "A path for walking gently."
     },
     {
      "name": "Sea of Ink",
-     "reference": "31:27"
+     "reference": "31:27",
+     "description": "A shore where trees become pens and the sea ink."
     }
    ],
    "activities": [
-    "Advice path",
-    "Lower your voice"
+    {
+     "name": "Advice path",
+     "reference": "31:13-19",
+     "description": "Walk each path and match the advice to its ayah."
+    },
+    {
+     "name": "Lower your voice",
+     "reference": "31:19",
+     "description": "Practise a calm voice level in a playful sound game (adaptation)."
+    }
    ],
+   "objectives": [
+    "List Luqman's pieces of advice",
+    "Explain kindness to parents",
+    "Explain humility"
+   ],
+   "narration": "Narration explains each piece of advice; Luqman and his son are not shown or voiced, only the ayahs are read.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -1237,24 +1877,42 @@
    "world_title": "Night Rising and the Dry Land",
    "content_type": "moral-and-spiritual",
    "concept": "A night village where some rise to pray, then a barren land where water arrives and crops grow.",
+   "summary": "As-Sajdah means The Prostration. It reminds us that Allah created people from clay and gave us hearing, sight and hearts. It praises those who rise at night to pray and shows how water brings crops to barren land.",
    "areas": [
     {
      "name": "Clay Bank",
-     "reference": "32:7"
+     "reference": "32:7",
+     "description": "A riverbank of clay recalling the beginning of human creation."
     },
     {
      "name": "Night Prayer Village",
-     "reference": "32:16"
+     "reference": "32:16",
+     "description": "Lamps glowing in a quiet village at night."
     },
     {
      "name": "Barren Land",
-     "reference": "32:27"
+     "reference": "32:27",
+     "description": "Dry land receiving water and crops."
     }
    ],
    "activities": [
-    "Gifts of hearing, sight and heart",
-    "Water the plain"
+    {
+     "name": "Gifts of hearing, sight and heart",
+     "reference": "32:9",
+     "description": "Find three gifts named in 32:9 around the village (adaptation)."
+    },
+    {
+     "name": "Water the plain",
+     "reference": "32:27",
+     "description": "Lead water to barren land and watch crops grow."
+    }
    ],
+   "objectives": [
+    "Name the gifts in 32:9",
+    "Explain night prayer",
+    "Explain the barren-land sign"
+   ],
+   "narration": "Narration is calm and night-toned, ending at dawn.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -1270,20 +1928,37 @@
    "world_title": "The Trench and the Excellent Example",
    "content_type": "moral-and-spiritual",
    "concept": "A town on a plain where a trench was dug and a wind scattered the armies, with houses of the community and lessons of character.",
+   "summary": "Al-Ahzab means The Confederates. It recalls how armies gathered against the believers and Allah sent a wind against them. It says the Prophet Muhammad (peace be upon him) is the best example and describes qualities of believing men and women.",
    "areas": [
     {
      "name": "The Windy Plain",
-     "reference": "33:9"
+     "reference": "33:9",
+     "description": "Wind sweeping through empty tents; no one is shown."
     },
     {
      "name": "Mountains of the Trust",
-     "reference": "33:72"
+     "reference": "33:72",
+     "description": "Mountains that declined to bear the trust: symbolic."
     }
    ],
    "activities": [
-    "Qualities wall",
-    "Remember often"
+    {
+     "name": "Qualities wall",
+     "reference": "33:35",
+     "description": "Place the qualities of 33:35 as stones in a wall."
+    },
+    {
+     "name": "Remember often",
+     "reference": "33:41-42",
+     "description": "Light lamps morning and evening by reading the ayah."
+    }
    ],
+   "objectives": [
+    "Explain why the Prophet (peace be upon him) is the best example",
+    "List qualities in 33:35",
+    "Explain the trust"
+   ],
+   "narration": "Narration focuses on character and steadfastness; the Prophet (peace be upon him) and his companions are never shown or voiced.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -1299,32 +1974,52 @@
    "world_title": "Gardens of Saba and the Copper Spring",
    "content_type": "narrative",
    "concept": "Two kingdoms of the surah: Dawud's mountains and soft iron, Sulayman's copper spring and reservoirs, and the two gardens of Saba lost when the dam burst.",
+   "summary": "Surah Saba tells of Dawud, for whom iron was made soft, and Sulayman, for whom a spring of copper flowed. Then it tells of the people of Saba who had two beautiful gardens but turned away, and lost them in a flood.",
    "areas": [
     {
      "name": "Mountains of Praise",
-     "reference": "34:10"
+     "reference": "34:10",
+     "description": "Hills that echo as if repeating praise."
     },
     {
      "name": "Copper Spring",
-     "reference": "34:12"
+     "reference": "34:12",
+     "description": "A glowing spring of liquid copper."
     },
     {
      "name": "Great Bowls",
-     "reference": "34:13"
+     "reference": "34:13",
+     "description": "Bowls like reservoirs and fixed kettles."
     },
     {
      "name": "Gardens of Saba",
-     "reference": "34:15"
+     "reference": "34:15",
+     "description": "Gardens on either side of a valley."
     },
     {
      "name": "Flood of the Dam",
-     "reference": "34:16"
+     "reference": "34:16",
+     "description": "The dam breaking and gardens changing to bitter fruit."
     }
    ],
    "activities": [
-    "Work in gratitude",
-    "Before and after"
+    {
+     "name": "Work in gratitude",
+     "reference": "34:13",
+     "description": "Fill the great bowls while reading 34:13 (adaptation)."
+    },
+    {
+     "name": "Before and after",
+     "reference": "34:15-16",
+     "description": "Compare the gardens before and after and talk about gratitude."
+    }
    ],
+   "objectives": [
+    "Retell the people of Saba",
+    "Explain gratitude for blessings",
+    "Name the gifts of Dawud and Sulayman"
+   ],
+   "narration": "Narration keeps prophets unseen and draws the gratitude lesson from the ayahs.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -1340,24 +2035,42 @@
    "world_title": "The Originator's Colours",
    "content_type": "nature-and-creation",
    "concept": "A land of colour: fruits of many colours, white and red mountain streaks, black rock, and two seas giving food and ornaments.",
+   "summary": "Fatir means The Originator. It praises Allah who created the heavens and the earth and shows signs in colours: fruits, mountains, people and animals of every colour, and fresh and salty seas.",
    "areas": [
     {
      "name": "Streaked Mountains",
-     "reference": "35:27"
+     "reference": "35:27",
+     "description": "Mountains with white, red and black streaks."
     },
     {
      "name": "Orchards of Many Colours",
-     "reference": "35:27"
+     "reference": "35:27",
+     "description": "Fruit trees in many colours."
     },
     {
      "name": "Two Seas",
-     "reference": "35:12"
+     "reference": "35:12",
+     "description": "Fresh and salt seas with pearls and fish."
     }
    ],
    "activities": [
-    "Colour hunt",
-    "Pearl diving"
+    {
+     "name": "Colour hunt",
+     "reference": "35:27-28",
+     "description": "Collect colours from fruits, rocks and animals."
+    },
+    {
+     "name": "Pearl diving",
+     "reference": "35:12",
+     "description": "Find ornaments in the sea (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain colour as a sign",
+    "Explain 35:28",
+    "Describe the two seas"
+   ],
+   "narration": "Narration celebrates colour and links knowledge with awe of Allah (35:28).",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -1373,33 +2086,57 @@
    "world_title": "The Orbiting Night",
    "content_type": "nature-and-creation",
    "concept": "A town and its surroundings under a clockwork sky: dead earth made alive, springs, the moon through its phases, and a laden ship on the sea.",
+   "summary": "Ya-Sin is called the heart of the Quran. It tells of a town that rejected messengers and a man who came running to support them. It shows signs: dead earth made alive, the night, the sun and moon, and ships at sea.",
    "areas": [
     {
      "name": "Dead Earth Alive",
-     "reference": "36:33"
+     "reference": "36:33",
+     "description": "Dry land that bursts with grain."
     },
     {
      "name": "Gardens and Springs",
-     "reference": "36:34"
+     "reference": "36:34",
+     "description": "Palms, vines and springs."
     },
     {
      "name": "Phases of the Moon",
-     "reference": "36:39"
+     "reference": "36:39",
+     "description": "The moon passing through its phases."
     },
     {
      "name": "Laden Ship",
-     "reference": "36:41"
+     "reference": "36:41",
+     "description": "A ship carrying cargo over calm water."
     },
     {
      "name": "Green Tree Fire",
-     "reference": "36:80"
+     "reference": "36:80",
+     "description": "A green tree from which fire is kindled."
     }
    ],
    "activities": [
-    "Moon phases",
-    "Orbits",
-    "Pairs"
+    {
+     "name": "Moon phases",
+     "reference": "36:39",
+     "description": "Set the moon's phases in order."
+    },
+    {
+     "name": "Orbits",
+     "reference": "36:40",
+     "description": "Keep the sun and moon in their own orbits so neither overtakes."
+    },
+    {
+     "name": "Pairs",
+     "reference": "36:36",
+     "description": "Match pairs found in the garden (adaptation)."
+    }
    ],
+   "objectives": [
+    "Name signs in Ya-Sin",
+    "Explain the moon's phases",
+    "Explain resurrection as a sign"
+   ],
+   "narration": "Narration follows the signs; the man who came running and the messengers are not shown.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -1415,24 +2152,42 @@
    "world_title": "Ranks Beneath the Stars",
    "content_type": "narrative",
    "concept": "A sky adorned with stars above a land of prophets' stories: Nuh's survivors, Ibrahim's trial, the shore where Yunus was cast with a gourd vine.",
+   "summary": "As-Saffat means Those Lined Up in Ranks. It tells of Nuh, Ibrahim's trial with his son, Musa and Harun, Ilyas, Lut and Yunus, and how Allah saved them.",
    "areas": [
     {
      "name": "Adorned Sky",
-     "reference": "37:6"
+     "reference": "37:6",
+     "description": "A dome of stars."
     },
     {
      "name": "Open Shore",
-     "reference": "37:145"
+     "reference": "37:145",
+     "description": "An open shore at dawn."
     },
     {
      "name": "Gourd Vine",
-     "reference": "37:146"
+     "reference": "37:146",
+     "description": "A gourd vine growing over a shady spot."
     }
    ],
    "activities": [
-    "Grow the vine",
-    "Star map"
+    {
+     "name": "Grow the vine",
+     "reference": "37:146",
+     "description": "Help a gourd vine grow by the shore (adaptation, no person shown)."
+    },
+    {
+     "name": "Star map",
+     "reference": "37:6",
+     "description": "Light the stars that adorn the nearest heaven."
+    }
    ],
+   "objectives": [
+    "Explain submission in Ibrahim's story",
+    "Retell Yunus briefly",
+    "Name prophets mentioned"
+   ],
+   "narration": "Narration keeps to the ayahs; no prophet or son is shown. The trial is told only with words from the ayahs.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -1448,24 +2203,42 @@
    "world_title": "Mountains That Repeat Praise",
    "content_type": "narrative",
    "concept": "A kingdom of Dawud's mountains and birds, Sulayman's horses, and Ayyub's cooling spring.",
+   "summary": "Surah Sad tells of Dawud and his justice, Sulayman, and Ayyub's patience, and how Iblis refused out of pride.",
    "areas": [
     {
      "name": "Hills of Praise",
-     "reference": "38:18"
+     "reference": "38:18",
+     "description": "Hills that echo at sunrise."
     },
     {
      "name": "Assembled Birds",
-     "reference": "38:19"
+     "reference": "38:19",
+     "description": "Birds gathering."
     },
     {
      "name": "Cool Spring",
-     "reference": "38:42"
+     "reference": "38:42",
+     "description": "A spring where the ground is struck."
     }
    ],
    "activities": [
-    "Fair judgement",
-    "Echo game"
+    {
+     "name": "Fair judgement",
+     "reference": "38:26",
+     "description": "Decide fairly in simple disputes (adaptation)."
+    },
+    {
+     "name": "Echo game",
+     "reference": "38:18-19",
+     "description": "Echo phrases of glorification across the hills."
+    }
    ],
+   "objectives": [
+    "Explain justice in Dawud's story",
+    "Explain Ayyub's patience",
+    "Explain why pride is wrong"
+   ],
+   "narration": "Narration keeps prophets unseen and highlights patience and justice.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -1481,24 +2254,42 @@
    "world_title": "Groups at the Gates",
    "content_type": "hereafter (symbolic only)",
    "concept": "A symbolic world of rain, springs and fading crops, ending at two distant gates seen only as light, never as Paradise or Hell.",
+   "summary": "Az-Zumar means The Groups. It calls us to worship Allah sincerely, reminds us of His mercy and that we should never despair of it, and speaks of people going in groups to their final place.",
    "areas": [
     {
      "name": "Rain to Springs",
-     "reference": "39:21"
+     "reference": "39:21",
+     "description": "Rain flowing underground into springs."
     },
     {
      "name": "Fading Crops",
-     "reference": "39:21"
+     "reference": "39:21",
+     "description": "Crops that grow, turn yellow and dry: life is short."
     },
     {
      "name": "Gates of Light",
-     "reference": "39:73"
+     "reference": "39:73",
+     "description": "Abstract gates of light on the horizon; symbolic only, not a picture of Paradise."
     }
    ],
    "activities": [
-    "Water cycle",
-    "Never despair"
+    {
+     "name": "Water cycle",
+     "reference": "39:21",
+     "description": "Follow rain into springs and crops."
+    },
+    {
+     "name": "Never despair",
+     "reference": "39:53",
+     "description": "Light a lantern of hope by reading 39:53."
+    }
    ],
+   "objectives": [
+    "Explain 39:53",
+    "Describe the crop cycle",
+    "Explain sincere worship"
+   ],
+   "narration": "Narration stresses mercy and hope; the unseen is spoken of only through ayahs.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -1514,20 +2305,37 @@
    "world_title": "The Tower and the Believing Man",
    "content_type": "narrative",
    "concept": "A city of Pharaoh where a tower was ordered built, and a believing man speaks for truth, set against a sky of forgiveness.",
+   "summary": "Ghafir means The Forgiver. It tells of a believing man in Pharaoh's family who bravely defended Musa, and of Pharaoh ordering a tower to reach the heavens out of pride.",
    "areas": [
     {
      "name": "Unfinished Tower",
-     "reference": "40:36"
+     "reference": "40:36",
+     "description": "A brick tower that can never reach the heavens."
     },
     {
      "name": "House of the Believer",
-     "reference": "40:28"
+     "reference": "40:28",
+     "description": "A simple house; no one shown."
     }
    ],
    "activities": [
-    "Courage words",
-    "Pride tower"
+    {
+     "name": "Courage words",
+     "reference": "40:28",
+     "description": "Choose words of truth in difficult moments (adaptation)."
+    },
+    {
+     "name": "Pride tower",
+     "reference": "40:36-37",
+     "description": "Watch the tower fall short and talk about pride."
+    }
    ],
+   "objectives": [
+    "Retell the believing man",
+    "Explain pride",
+    "Explain Allah's forgiveness"
+   ],
+   "narration": "Narration only uses ayahs for speech; no person is shown.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -1543,24 +2351,42 @@
    "world_title": "Smoke Becoming Sky",
    "content_type": "nature-and-creation",
    "concept": "A world that begins as swirling smoke and settles into heaven and earth, then a still, dusty earth that quivers and grows when rain falls.",
+   "summary": "Fussilat means Explained in Detail. It speaks of how Allah formed the heavens from smoke and the earth, and shows how still earth comes alive with rain.",
    "areas": [
     {
      "name": "Heaven as Smoke",
-     "reference": "41:11"
+     "reference": "41:11",
+     "description": "A sky of drifting smoke that clears into layers."
     },
     {
      "name": "Stilled Earth",
-     "reference": "41:39"
+     "reference": "41:39",
+     "description": "A dry still plain."
     },
     {
      "name": "Quivering Growth",
-     "reference": "41:39"
+     "reference": "41:39",
+     "description": "The plain stirs and sprouts when rain falls."
     }
    ],
    "activities": [
-    "Clear the sky",
-    "Rain and growth"
+    {
+     "name": "Clear the sky",
+     "reference": "41:11-12",
+     "description": "Watch smoke settle into seven layers and lamps of stars (adaptation)."
+    },
+    {
+     "name": "Rain and growth",
+     "reference": "41:39",
+     "description": "Bring rain to the stilled earth."
+    }
    ],
+   "objectives": [
+    "Describe the smoke image",
+    "Explain rain as a sign of life",
+    "Explain steadfastness"
+   ],
+   "narration": "Narration stays with the ayahs and invites reflection on signs in the horizons (41:53).",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -1576,24 +2402,42 @@
    "world_title": "Ships Like Mountains",
    "content_type": "moral-and-spiritual",
    "concept": "A harbour where great ships rest when the wind stops and sail when it blows, with a council house where matters are decided by consultation.",
+   "summary": "Ash-Shura means Consultation. It praises believers who decide their affairs by consulting each other, and shows signs like ships on the sea that move only by the wind Allah sends.",
    "areas": [
     {
      "name": "Harbour of Mountain Ships",
-     "reference": "42:32"
+     "reference": "42:32",
+     "description": "Huge ships like mountains."
     },
     {
      "name": "Stilled Wind",
-     "reference": "42:33"
+     "reference": "42:33",
+     "description": "When the wind stops, the ships rest motionless."
     },
     {
      "name": "Council Circle",
-     "reference": "42:38"
+     "reference": "42:38",
+     "description": "A circle of seats for deciding together."
     }
    ],
    "activities": [
-    "Decide together",
-    "Wind and sail"
+    {
+     "name": "Decide together",
+     "reference": "42:38",
+     "description": "Make group choices by asking each character's opinion (adaptation)."
+    },
+    {
+     "name": "Wind and sail",
+     "reference": "42:32-33",
+     "description": "Raise and lower the wind and watch the ships."
+    }
    ],
+   "objectives": [
+    "Explain shura",
+    "Explain patience and gratitude in 42:33",
+    "Describe the ship sign"
+   ],
+   "narration": "Narration ties consultation and patience to daily life.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -1609,24 +2453,42 @@
    "world_title": "Roads Across the Bed of Earth",
    "content_type": "moral-and-spiritual",
    "concept": "A wide earth laid out like a bed with roads for guidance, rain in measure, and animals and ships for riding, set against a palace of gold ornament that cannot buy truth.",
+   "summary": "Az-Zukhruf means Gold Ornaments. It reminds us that Allah made the earth a bed for us with roads, sends rain in measure, and gave us ships and animals to ride, and that gold and silver are small next to faith.",
    "areas": [
     {
      "name": "Roads of Guidance",
-     "reference": "43:10"
+     "reference": "43:10",
+     "description": "Roads across the earth."
     },
     {
      "name": "Rain in Measure",
-     "reference": "43:11"
+     "reference": "43:11",
+     "description": "Rain reviving a dead land."
     },
     {
      "name": "Ships and Mounts",
-     "reference": "43:12"
+     "reference": "43:12",
+     "description": "Ships and animals to ride."
     }
    ],
    "activities": [
-    "Travel prayer",
-    "Gold or guidance"
+    {
+     "name": "Travel prayer",
+     "reference": "43:13",
+     "description": "Read the travelling words of 43:13 before riding (adaptation)."
+    },
+    {
+     "name": "Gold or guidance",
+     "reference": "43:33-35",
+     "description": "Choose between gold rooms and guidance; learn what lasts (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain gratitude while travelling",
+    "Explain why ornaments are small",
+    "Describe 43:10-12"
+   ],
+   "narration": "Narration contrasts real guidance with ornaments.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -1642,24 +2504,42 @@
    "world_title": "The Still Sea and Abandoned Gardens",
    "content_type": "narrative",
    "concept": "A blessed night of revelation, a smoke-filled sky, and Pharaoh's abandoned gardens, springs and estates beside a still sea.",
+   "summary": "Ad-Dukhan means The Smoke. It says the Quran was sent down on a blessed night and tells how Pharaoh's people left behind gardens and springs when Allah saved the Children of Israel.",
    "areas": [
     {
      "name": "Blessed Night",
-     "reference": "44:3"
+     "reference": "44:3",
+     "description": "A calm night sky."
     },
     {
      "name": "The Still Sea",
-     "reference": "44:24"
+     "reference": "44:24",
+     "description": "A sea lying perfectly still."
     },
     {
      "name": "Left-behind Gardens",
-     "reference": "44:25"
+     "reference": "44:25",
+     "description": "Empty gardens and springs."
     }
    ],
    "activities": [
-    "What stays",
-    "Night of the Quran"
+    {
+     "name": "What stays",
+     "reference": "44:25-28",
+     "description": "Find what was left behind and talk about what really lasts (adaptation)."
+    },
+    {
+     "name": "Night of the Quran",
+     "reference": "44:3",
+     "description": "Light the night sky by reading 44:3."
+    }
    ],
+   "objectives": [
+    "Explain the blessed night",
+    "Retell the escape briefly",
+    "Explain what lasts"
+   ],
+   "narration": "No people shown; narration focuses on what lasts.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -1675,20 +2555,37 @@
    "world_title": "Subjected Sea and Sky",
    "content_type": "nature-and-creation",
    "concept": "A coastal world where the sea carries ships and everything in heaven and earth is set to serve people, with a kneeling crowd shown only as a symbolic horizon.",
+   "summary": "Al-Jathiyah means The Kneeling. It shows how Allah made the sea and everything in the heavens and earth useful for people, as signs for those who think.",
    "areas": [
     {
      "name": "Sea of Ships",
-     "reference": "45:12"
+     "reference": "45:12",
+     "description": "Ships sailing by Allah's command."
     },
     {
      "name": "Everything Subjected",
-     "reference": "45:13"
+     "reference": "45:13",
+     "description": "A wide view of sky and land."
     }
    ],
    "activities": [
-    "Think about it",
-    "Winds"
+    {
+     "name": "Think about it",
+     "reference": "45:13",
+     "description": "Find things in the scene that serve people and say thanks (adaptation)."
+    },
+    {
+     "name": "Winds",
+     "reference": "45:5",
+     "description": "Change the winds and notice them as a sign."
+    }
    ],
+   "objectives": [
+    "Explain 45:13",
+    "List signs in 45:3-5",
+    "Explain gratitude"
+   ],
+   "narration": "Narration repeats the surah's call to think.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -1704,24 +2601,42 @@
    "world_title": "The Sand Dunes of Al-Ahqaf",
    "content_type": "narrative",
    "concept": "Winding dunes where the people of 'Ad saw a cloud and thought it was rain, and a quiet valley where a group of jinn listened to the Quran, shown only as stillness.",
+   "summary": "Al-Ahqaf means The Wind-Curved Sandhills. It tells of Hud warning 'Ad in the dunes, and teaches kindness to parents. It mentions jinn who listened to the Quran.",
    "areas": [
     {
      "name": "Dunes of Al-Ahqaf",
-     "reference": "46:21"
+     "reference": "46:21",
+     "description": "Wind-curved dunes."
     },
     {
      "name": "The Approaching Cloud",
-     "reference": "46:24"
+     "reference": "46:24",
+     "description": "A cloud approaching the valleys."
     },
     {
      "name": "Listening Valley",
-     "reference": "46:29"
+     "reference": "46:29",
+     "description": "A quiet night valley; nothing unseen is shown."
     }
    ],
    "activities": [
-    "Kindness to parents",
-    "Listen quietly"
+    {
+     "name": "Kindness to parents",
+     "reference": "46:15",
+     "description": "Help with small tasks at home in a mini-game (adaptation)."
+    },
+    {
+     "name": "Listen quietly",
+     "reference": "46:29",
+     "description": "Sit still while a recitation-free ayah card is read."
+    }
    ],
+   "objectives": [
+    "Retell Hud and 'Ad",
+    "Explain 46:15",
+    "Explain listening to the Quran"
+   ],
+   "narration": "Narration keeps Hud and the jinn unseen.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -1737,16 +2652,32 @@
    "world_title": "Four Rivers Described",
    "content_type": "hereafter (symbolic only)",
    "concept": "A symbolic world of the rivers named in the surah, shown only as four labelled light-streams so as not to claim a picture of Paradise.",
+   "summary": "Surah Muhammad speaks of believers and the Prophet Muhammad (peace be upon him), and describes rivers promised to the righteous. We only learn about them from the Quran.",
    "areas": [
     {
      "name": "Rivers Described",
-     "reference": "47:15"
+     "reference": "47:15",
+     "description": "Four abstract streams of light, each labelled with the ayah; symbolic only."
     }
    ],
    "activities": [
-    "Read the description",
-    "Good deeds"
+    {
+     "name": "Read the description",
+     "reference": "47:15",
+     "description": "Read 47:15 and match each stream label; no picture of Paradise is claimed."
+    },
+    {
+     "name": "Good deeds",
+     "reference": "47:7",
+     "description": "Choose helping actions in short scenarios (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain that Paradise is unseen",
+    "Read 47:15",
+    "Explain helping Allah's cause by good deeds"
+   ],
+   "narration": "Narration explicitly says the unseen is known only through the Quran.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -1762,20 +2693,37 @@
    "world_title": "The Tree of the Pledge",
    "content_type": "moral-and-spiritual",
    "concept": "A plain with a single tree where a pledge was made, and a field of seedlings growing strong.",
+   "summary": "Al-Fath means The Victory. It speaks of the believers' pledge under a tree, of tranquillity Allah sent to their hearts, and compares them to a seed that grows strong.",
    "areas": [
     {
      "name": "The Tree",
-     "reference": "48:18"
+     "reference": "48:18",
+     "description": "A single tree on a plain; no one shown."
     },
     {
      "name": "Growing Shoot",
-     "reference": "48:29"
+     "reference": "48:29",
+     "description": "A shoot growing strong on its stalk."
     }
    ],
    "activities": [
-    "Grow the shoot",
-    "Tranquillity"
+    {
+     "name": "Grow the shoot",
+     "reference": "48:29",
+     "description": "Help a shoot become strong (adaptation)."
+    },
+    {
+     "name": "Tranquillity",
+     "reference": "48:4",
+     "description": "A breathing game for calm."
+    }
    ],
+   "objectives": [
+    "Explain tranquillity",
+    "Explain the plant example",
+    "Retell the pledge"
+   ],
+   "narration": "No companions shown; narration from ayahs.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -1791,34 +2739,62 @@
    "world_title": "The Village of Good Manners",
    "content_type": "moral-and-spiritual",
    "concept": "A friendly village where each street teaches a manner from the surah: checking news, making peace, no mocking, no nicknames, no spying, no backbiting, and a market square where peoples and tribes meet to know one another.",
+   "summary": "Al-Hujurat means The Rooms. It teaches good manners: check news before believing it, make peace between people, don't make fun of others or call them bad names, don't spy or speak badly behind their backs, and know that the best person is the most God-conscious.",
    "areas": [
     {
      "name": "Messenger's Gate",
-     "reference": "49:6"
+     "reference": "49:6",
+     "description": "A gate where news must be checked before entering."
     },
     {
      "name": "Peace Bridge",
-     "reference": "49:10"
+     "reference": "49:10",
+     "description": "A bridge rebuilt between two quarters."
     },
     {
      "name": "Mockery-free Street",
-     "reference": "49:11"
+     "reference": "49:11",
+     "description": "A street where mocking is replaced with respect."
     },
     {
      "name": "Hidden-whispers Lane",
-     "reference": "49:12"
+     "reference": "49:12",
+     "description": "A lane where whispers fade."
     },
     {
      "name": "Market of Nations",
-     "reference": "49:13"
+     "reference": "49:13",
+     "description": "A market where people from everywhere meet."
     }
    ],
    "activities": [
-    "Check the news",
-    "Mend the bridge",
-    "Kind names",
-    "Know one another"
+    {
+     "name": "Check the news",
+     "reference": "49:6",
+     "description": "Verify messages before passing them on (adaptation)."
+    },
+    {
+     "name": "Mend the bridge",
+     "reference": "49:9-10",
+     "description": "Help two quarters make peace."
+    },
+    {
+     "name": "Kind names",
+     "reference": "49:11",
+     "description": "Replace hurtful nicknames with kind ones."
+    },
+    {
+     "name": "Know one another",
+     "reference": "49:13",
+     "description": "Learn greetings from different stalls."
+    }
    ],
+   "objectives": [
+    "Explain checking news",
+    "Explain making peace",
+    "Explain 49:13"
+   ],
+   "narration": "Narration guides through each street, citing the ayah for each manner.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -1834,28 +2810,47 @@
    "world_title": "The Sky Without Rifts",
    "content_type": "nature-and-creation",
    "concept": "A sky so whole it has no rifts above an earth spread out with mountains, blessed rain and tall palms with layered fruit.",
+   "summary": "Surah Qaf points to the sky with no cracks, the earth with mountains and plants, and rain that brings life, as signs that Allah can bring people back to life.",
    "areas": [
     {
      "name": "Sky Without Rifts",
-     "reference": "50:6"
+     "reference": "50:6",
+     "description": "A perfect dome sky."
     },
     {
      "name": "Mountains and Beautiful Kinds",
-     "reference": "50:7"
+     "reference": "50:7",
+     "description": "Mountains and plants."
     },
     {
      "name": "Blessed Rain",
-     "reference": "50:9"
+     "reference": "50:9",
+     "description": "Rain over grain fields."
     },
     {
      "name": "Lofty Palms",
-     "reference": "50:10"
+     "reference": "50:10",
+     "description": "Palms with layered fruit."
     }
    ],
    "activities": [
-    "Find a rift",
-    "Harvest"
+    {
+     "name": "Find a rift",
+     "reference": "50:6",
+     "description": "Search the sky for any crack and discover none (adaptation)."
+    },
+    {
+     "name": "Harvest",
+     "reference": "50:9-11",
+     "description": "Grow and harvest grain."
+    }
    ],
+   "objectives": [
+    "Describe the signs in 50:6-11",
+    "Explain the resurrection lesson",
+    "Explain that Allah knows our thoughts"
+   ],
+   "narration": "Narration links revived land to resurrection (50:11).",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -1871,28 +2866,47 @@
    "world_title": "Winds, Clouds and Ships",
    "content_type": "nature-and-creation",
    "concept": "A world of the surah's opening oaths: scattering winds, clouds carrying water, ships sailing easily, then a wide expanding heaven over an earth spread like a carpet.",
+   "summary": "Adh-Dhariyat means The Scattering Winds. It swears by winds, clouds and ships, tells of Ibrahim's guests, and reminds us everything is created in pairs.",
    "areas": [
     {
      "name": "Scattering Winds",
-     "reference": "51:1"
+     "reference": "51:1",
+     "description": "Winds scattering dust."
     },
     {
      "name": "Laden Clouds",
-     "reference": "51:2"
+     "reference": "51:2",
+     "description": "Clouds heavy with water."
     },
     {
      "name": "Easy Ships",
-     "reference": "51:3"
+     "reference": "51:3",
+     "description": "Ships sailing smoothly."
     },
     {
      "name": "Expanding Heaven",
-     "reference": "51:47"
+     "reference": "51:47",
+     "description": "A sky that seems to widen."
     }
    ],
    "activities": [
-    "Pairs",
-    "Signs in yourselves"
+    {
+     "name": "Pairs",
+     "reference": "51:49",
+     "description": "Find pairs in nature (adaptation)."
+    },
+    {
+     "name": "Signs in yourselves",
+     "reference": "51:20-21",
+     "description": "Notice signs in the earth and in our own bodies."
+    }
    ],
+   "objectives": [
+    "Explain the opening oaths",
+    "Explain pairs in creation",
+    "Explain provision comes from Allah"
+   ],
+   "narration": "Narration walks the oaths in order; the guests and Ibrahim are not shown.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -1908,24 +2922,42 @@
    "world_title": "The Mount and the Raised Heaven",
    "content_type": "moral-and-spiritual",
    "concept": "A world built from the surah's oaths: a mount, an inscribed book on spread parchment, a frequented house, a raised heaven and a filled sea.",
+   "summary": "At-Tur means The Mount. It swears by the mount, a written book and the raised heaven, and tells the Prophet (peace be upon him) to be patient and glorify Allah.",
    "areas": [
     {
      "name": "The Mount",
-     "reference": "52:1"
+     "reference": "52:1",
+     "description": "A lone mountain."
     },
     {
      "name": "Parchment Spread Open",
-     "reference": "52:3"
+     "reference": "52:3",
+     "description": "An open scroll on a stone; text is the ayah itself."
     },
     {
      "name": "Raised Heaven",
-     "reference": "52:5"
+     "reference": "52:5",
+     "description": "A high sky."
     }
    ],
    "activities": [
-    "Oaths path",
-    "Glorify at night"
+    {
+     "name": "Oaths path",
+     "reference": "52:1-6",
+     "description": "Visit each oath in order."
+    },
+    {
+     "name": "Glorify at night",
+     "reference": "52:48-49",
+     "description": "Glorify at night and as the stars set (adaptation)."
+    }
    ],
+   "objectives": [
+    "Name the oaths",
+    "Explain patience",
+    "Explain glorification"
+   ],
+   "narration": "Narration keeps the unseen as words only.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -1941,24 +2973,42 @@
    "world_title": "The Descending Star",
    "content_type": "nature-and-creation",
    "concept": "A night sky with a setting star, then a land where laughter and tears, life and death, and the star Sirius are all named as from Allah.",
+   "summary": "An-Najm means The Star. It begins by swearing by a star and teaches that the Prophet (peace be upon him) speaks only revelation, that each person is responsible for their own deeds, and that Allah is the Lord of Sirius.",
    "areas": [
     {
      "name": "Descending Star",
-     "reference": "53:1"
+     "reference": "53:1",
+     "description": "A star setting."
     },
     {
      "name": "Laughter and Tears",
-     "reference": "53:43"
+     "reference": "53:43",
+     "description": "A valley of sudden sunshine and soft rain, standing for joy and tears; no faces are shown."
     },
     {
      "name": "Sirius",
-     "reference": "53:49"
+     "reference": "53:49",
+     "description": "The bright star Sirius."
     }
    ],
    "activities": [
-    "Find Sirius",
-    "Own deeds"
+    {
+     "name": "Find Sirius",
+     "reference": "53:49",
+     "description": "Find Sirius in the night sky."
+    },
+    {
+     "name": "Own deeds",
+     "reference": "53:38-39",
+     "description": "Fill your own basket with good deeds (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain 53:39",
+    "Find Sirius",
+    "Explain revelation"
+   ],
+   "narration": "Narration reverent; the Prophet's (peace be upon him) experience is not depicted.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -1974,32 +3024,52 @@
    "world_title": "Moon Split and the Easy Reminder",
    "content_type": "narrative",
    "concept": "A sky with a moon split in two, then stories of peoples: rain gates opening for Nuh, a screaming wind for 'Ad, a she-camel for Thamud, each followed by 'We made the Quran easy to remember'.",
+   "summary": "Al-Qamar means The Moon. It tells of the moon splitting and of Nuh, 'Ad, Thamud, Lut and Pharaoh, and repeats that Allah made the Quran easy to remember.",
    "areas": [
     {
      "name": "Split Moon",
-     "reference": "54:1"
+     "reference": "54:1",
+     "description": "A moon in two halves."
     },
     {
      "name": "Gates of Rain",
-     "reference": "54:11"
+     "reference": "54:11",
+     "description": "Pouring rain."
     },
     {
      "name": "Springs Bursting",
-     "reference": "54:12"
+     "reference": "54:12",
+     "description": "Earth bursting with springs."
     },
     {
      "name": "Vessel of Planks",
-     "reference": "54:13"
+     "reference": "54:13",
+     "description": "A vessel of planks and nails."
     },
     {
      "name": "Uprooted Palms",
-     "reference": "54:20"
+     "reference": "54:20",
+     "description": "Palms uprooted by wind."
     }
    ],
    "activities": [
-    "Easy to remember",
-    "Planks and nails"
+    {
+     "name": "Easy to remember",
+     "reference": "54:17",
+     "description": "Memorise 54:17 by repeating it (adaptation)."
+    },
+    {
+     "name": "Planks and nails",
+     "reference": "54:13",
+     "description": "Build the vessel from planks and nails."
+    }
    ],
+   "objectives": [
+    "Explain the refrain 54:17",
+    "Retell three peoples",
+    "Explain the moon sign"
+   ],
+   "narration": "Narration repeats the refrain from the surah.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -2015,50 +3085,82 @@
    "world_title": "The Garden of Favours",
    "content_type": "nature-and-creation",
    "concept": "A world built as a series of balanced gardens and shores, each closing with the surah's refrain 'So which of the favours of your Lord would you deny?', from the sun and moon in precise calculation to the two seas meeting with pearls and coral.",
+   "summary": "Ar-Rahman means The Most Merciful. It lists Allah's gifts: teaching the Quran, the sun and moon, the balance, fruits and grain, two seas with pearls and coral, and asks again and again which of His favours we would deny.",
    "areas": [
     {
      "name": "Orbit of Sun and Moon",
-     "reference": "55:5"
+     "reference": "55:5",
+     "description": "Sun and moon moving on exact paths."
     },
     {
      "name": "Stars and Trees",
-     "reference": "55:6"
+     "reference": "55:6",
+     "description": "Trees and stars bowing in the evening light."
     },
     {
      "name": "The Balance",
-     "reference": "55:7"
+     "reference": "55:7",
+     "description": "A great scale at the world's centre."
     },
     {
      "name": "Fruit and Palms",
-     "reference": "55:11"
+     "reference": "55:11",
+     "description": "Palms and fruit trees."
     },
     {
      "name": "Grain and Fragrance",
-     "reference": "55:12"
+     "reference": "55:12",
+     "description": "Grain fields and fragrant plants."
     },
     {
      "name": "Pottery Clay Bank",
-     "reference": "55:14"
+     "reference": "55:14",
+     "description": "A clay riverbank."
     },
     {
      "name": "Two Seas",
-     "reference": "55:19"
+     "reference": "55:19",
+     "description": "Two seas meeting with a barrier."
     },
     {
      "name": "Pearl and Coral",
-     "reference": "55:22"
+     "reference": "55:22",
+     "description": "Pearls and coral under the waves."
     },
     {
      "name": "Ships like Mountains",
-     "reference": "55:24"
+     "reference": "55:24",
+     "description": "Tall-sailed ships."
     }
    ],
    "activities": [
-    "Keep the balance",
-    "Favour collection",
-    "Two sunrises",
-    "Pearl and coral"
+    {
+     "name": "Keep the balance",
+     "reference": "55:7-9",
+     "description": "Keep a scale level by weighing fairly (adaptation)."
+    },
+    {
+     "name": "Favour collection",
+     "reference": "55:13",
+     "description": "At each place, name the favour and read the refrain 55:13."
+    },
+    {
+     "name": "Two sunrises",
+     "reference": "55:17",
+     "description": "Watch the sun rise at two points across the seasons."
+    },
+    {
+     "name": "Pearl and coral",
+     "reference": "55:22",
+     "description": "Find pearls and coral in both seas."
+    }
    ],
+   "objectives": [
+    "Name favours of Allah",
+    "Explain the balance",
+    "Explain the refrain"
+   ],
+   "narration": "Narration is gentle and rhythmic: each area ends with the refrain read in Arabic and meaning.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -2074,24 +3176,42 @@
    "world_title": "Seed, Water and Fire",
    "content_type": "hereafter (symbolic only)",
    "concept": "A symbolic world about the three questions the surah asks: who grows the seed, who sends down the water, who made the tree of fire. The Event itself is never pictured.",
+   "summary": "Al-Waqi'ah means The Inevitable Event. It speaks of a day that will surely come, and asks us to look at the seeds we plant, the water we drink and the fire we light, all from Allah.",
    "areas": [
     {
      "name": "Field of Seeds",
-     "reference": "56:63"
+     "reference": "56:63",
+     "description": "A field where seeds are planted."
     },
     {
      "name": "Water from the Clouds",
-     "reference": "56:69"
+     "reference": "56:69",
+     "description": "Water falling from clouds into a well."
     },
     {
      "name": "Tree of Fire",
-     "reference": "56:72"
+     "reference": "56:72",
+     "description": "A tree and a fire for travellers."
     }
    ],
    "activities": [
-    "Who grows it?",
-    "Fresh water"
+    {
+     "name": "Who grows it?",
+     "reference": "56:63-64",
+     "description": "Plant seeds and read 56:64 as they sprout (adaptation)."
+    },
+    {
+     "name": "Fresh water",
+     "reference": "56:68-70",
+     "description": "Draw water and thank Allah."
+    }
    ],
+   "objectives": [
+    "Explain the three questions",
+    "Explain gratitude",
+    "Explain that the Event is unseen"
+   ],
+   "narration": "The Event is spoken of only in ayahs; nothing unseen is shown.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -2107,24 +3227,42 @@
    "world_title": "Iron and the Passing Rain-Plants",
    "content_type": "moral-and-spiritual",
    "concept": "A land where rain makes plants grow green and then yellow and dry, and a forge where iron is shaped, showing the passing world and real strength.",
+   "summary": "Al-Hadid means Iron. It reminds us that this life is short like plants that grow and then dry, encourages spending for good, and mentions iron with its strength and benefits.",
    "areas": [
     {
      "name": "Passing Field",
-     "reference": "57:20"
+     "reference": "57:20",
+     "description": "Plants grow and turn yellow."
     },
     {
      "name": "The Forge",
-     "reference": "57:25"
+     "reference": "57:25",
+     "description": "A forge with iron."
     },
     {
      "name": "Revived Earth",
-     "reference": "57:17"
+     "reference": "57:17",
+     "description": "Earth returning to life."
     }
    ],
    "activities": [
-    "Lend a good loan",
-    "Seasons"
+    {
+     "name": "Lend a good loan",
+     "reference": "57:11",
+     "description": "Give from what you have and watch it grow (adaptation)."
+    },
+    {
+     "name": "Seasons",
+     "reference": "57:20",
+     "description": "Watch a field through its life."
+    }
    ],
+   "objectives": [
+    "Explain 57:20",
+    "Explain spending for good",
+    "Explain the balance and iron"
+   ],
+   "narration": "Narration focuses on generosity and justice.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -2140,16 +3278,32 @@
    "world_title": "The Assembly That Makes Room",
    "content_type": "moral-and-spiritual",
    "concept": "A meeting hall where a woman's complaint was heard, and where people make space for each other.",
+   "summary": "Al-Mujadila means The Pleading Woman. It begins with Allah hearing a woman who complained to Him, and teaches making room for others in gatherings and seeking knowledge.",
    "areas": [
     {
      "name": "The Hall",
-     "reference": "58:11"
+     "reference": "58:11",
+     "description": "A hall that expands as space is made."
     }
    ],
    "activities": [
-    "Make space",
-    "Allah hears"
+    {
+     "name": "Make space",
+     "reference": "58:11",
+     "description": "Shift cushions to make room for newcomers (adaptation)."
+    },
+    {
+     "name": "Allah hears",
+     "reference": "58:1",
+     "description": "Read 58:1 and discuss how Allah hears every request."
+    }
    ],
+   "objectives": [
+    "Explain 58:1",
+    "Explain making room",
+    "Explain the value of knowledge"
+   ],
+   "narration": "No person shown.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -2165,20 +3319,37 @@
    "world_title": "The Humbled Mountain",
    "content_type": "moral-and-spiritual",
    "concept": "A great mountain that would be humbled if the Quran were sent upon it, and a sky inscribed with the beautiful names of Allah as text.",
+   "summary": "Al-Hashr means The Gathering. It speaks of generosity among believers, and ends with the beautiful names of Allah and the image of a mountain humbled by the Quran.",
    "areas": [
     {
      "name": "Humbled Mountain",
-     "reference": "59:21"
+     "reference": "59:21",
+     "description": "A mountain cracking with light."
     },
     {
      "name": "Names of Allah",
-     "reference": "59:23"
+     "reference": "59:23",
+     "description": "The names written as text in the sky."
     }
    ],
    "activities": [
-    "Names",
-    "Prefer others"
+    {
+     "name": "Names",
+     "reference": "59:22-24",
+     "description": "Collect each name and its meaning."
+    },
+    {
+     "name": "Prefer others",
+     "reference": "59:9",
+     "description": "Share with others before yourself (adaptation)."
+    }
    ],
+   "objectives": [
+    "Name some of the names in 59:22-24",
+    "Explain 59:21",
+    "Explain generosity"
+   ],
+   "narration": "Allah is never depicted; names appear only as written words.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -2194,20 +3365,36 @@
    "world_title": "Bridges of Fairness",
    "content_type": "moral-and-spiritual",
    "concept": "A border land where bridges stand between communities, teaching justice and kindness to those who do not fight us.",
+   "summary": "Al-Mumtahanah means She Who Is Examined. It points to Ibrahim as an example and teaches being just and kind to people who are not hostile.",
    "areas": [
     {
      "name": "Bridge of Kindness",
-     "reference": "60:8"
+     "reference": "60:8",
+     "description": "A bridge for fair dealings."
     },
     {
      "name": "Hope of Affection",
-     "reference": "60:7"
+     "reference": "60:7",
+     "description": "A garden where enemies may become friends."
     }
    ],
    "activities": [
-    "Fair trade",
-    "Example of Ibrahim"
+    {
+     "name": "Fair trade",
+     "reference": "60:8",
+     "description": "Trade fairly across the bridge (adaptation)."
+    },
+    {
+     "name": "Example of Ibrahim",
+     "reference": "60:4",
+     "description": "Read 60:4 about Ibrahim's example."
+    }
    ],
+   "objectives": [
+    "Explain 60:8",
+    "Explain Ibrahim as an example"
+   ],
+   "narration": "No person shown.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -2223,16 +3410,31 @@
    "world_title": "Ranks Like a Structure",
    "content_type": "moral-and-spiritual",
    "concept": "A wall of stones fitting together tightly, standing for believers united in rows.",
+   "summary": "As-Saff means The Ranks. It tells us to do what we say, praises believers united like a solid structure, and mentions Isa's disciples as supporters of Allah.",
    "areas": [
     {
      "name": "Firm Structure",
-     "reference": "61:4"
+     "reference": "61:4",
+     "description": "A wall of tightly joined stones."
     }
    ],
    "activities": [
-    "Build together",
-    "Say and do"
+    {
+     "name": "Build together",
+     "reference": "61:4",
+     "description": "Fit stones together in a wall (adaptation)."
+    },
+    {
+     "name": "Say and do",
+     "reference": "61:2-3",
+     "description": "Match promises to actions."
+    }
    ],
+   "objectives": [
+    "Explain 61:2-3",
+    "Explain unity"
+   ],
+   "narration": "No prophet shown.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -2248,20 +3450,36 @@
    "world_title": "Friday Market and Prayer",
    "content_type": "moral-and-spiritual",
    "concept": "A market town where trade pauses for Friday prayer and resumes after.",
+   "summary": "Al-Jumu'ah means Friday. It tells us to leave trade and go to the prayer when called on Friday, then go out and seek Allah's bounty.",
    "areas": [
     {
      "name": "Market",
-     "reference": "62:9"
+     "reference": "62:9",
+     "description": "Busy stalls that close for prayer."
     },
     {
      "name": "After Prayer",
-     "reference": "62:10"
+     "reference": "62:10",
+     "description": "Streets reopening after prayer."
     }
    ],
    "activities": [
-    "Close the stall",
-    "Seek bounty"
+    {
+     "name": "Close the stall",
+     "reference": "62:9",
+     "description": "Pause trade when the call comes (adaptation)."
+    },
+    {
+     "name": "Seek bounty",
+     "reference": "62:10",
+     "description": "Return to work and remember Allah."
+    }
    ],
+   "objectives": [
+    "Explain Friday prayer",
+    "Explain balance"
+   ],
+   "narration": "Narration explains Friday simply.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -2277,15 +3495,26 @@
    "world_title": "Before the Term Ends",
    "content_type": "moral-and-spiritual",
    "concept": "A harvest world where provision is shared before the season ends.",
+   "summary": "Al-Munafiqun means The Hypocrites. It warns against saying one thing and meaning another, and tells us to spend from what we have before it is too late.",
    "areas": [
     {
      "name": "Harvest Baskets",
-     "reference": "63:10"
+     "reference": "63:10",
+     "description": "Baskets to share."
     }
    ],
    "activities": [
-    "Share now"
+    {
+     "name": "Share now",
+     "reference": "63:10",
+     "description": "Share provisions before the season ends (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain honesty",
+    "Explain 63:10"
+   ],
+   "narration": "Narration gentle.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -2301,15 +3530,25 @@
    "world_title": "The Mutual Exchange",
    "content_type": "moral-and-spiritual",
    "concept": "A garden where giving and patience are traded for real gain.",
+   "summary": "At-Taghabun teaches us to trust Allah, fear Him as much as we can, listen, obey and spend for good.",
    "areas": [
     {
      "name": "Path of Effort",
-     "reference": "64:16"
+     "reference": "64:16",
+     "description": "A path where effort counts."
     }
    ],
    "activities": [
-    "Do your best"
+    {
+     "name": "Do your best",
+     "reference": "64:16",
+     "description": "Complete tasks as well as you can (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain 64:16"
+   ],
+   "narration": "Narration gentle.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -2325,15 +3564,25 @@
    "world_title": "Provision From Where You Do Not Expect",
    "content_type": "moral-and-spiritual",
    "concept": "A world of unexpected springs appearing for those who rely on Allah.",
+   "summary": "At-Talaq gives rules for fairness in families and promises that Allah provides from where one does not expect.",
    "areas": [
     {
      "name": "Unexpected Spring",
-     "reference": "65:3"
+     "reference": "65:3",
+     "description": "A spring appearing in a dry place."
     }
    ],
    "activities": [
-    "Find the spring"
+    {
+     "name": "Find the spring",
+     "reference": "65:2-3",
+     "description": "Discover springs when you rely on Allah (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain reliance on Allah"
+   ],
+   "narration": "Family rules are not dramatised for children; narration focuses on 65:2-3.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -2349,19 +3598,31 @@
    "world_title": "Two Examples of Faith",
    "content_type": "moral-and-spiritual",
    "concept": "A palace and a quiet sanctuary representing two women praised for faith, with no person shown.",
+   "summary": "At-Tahrim tells believers to protect their families with good deeds and gives two examples of faith: the wife of Pharaoh and Maryam.",
    "areas": [
     {
      "name": "Palace Room",
-     "reference": "66:11"
+     "reference": "66:11",
+     "description": "A room in Pharaoh's palace; no one shown."
     },
     {
      "name": "Sanctuary",
-     "reference": "66:12"
+     "reference": "66:12",
+     "description": "A quiet sanctuary."
     }
    ],
    "activities": [
-    "Sincere repentance"
+    {
+     "name": "Sincere repentance",
+     "reference": "66:8",
+     "description": "Light lamps by reading 66:8 (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain repentance",
+    "Name two examples of faith"
+   ],
+   "narration": "No person shown.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -2377,33 +3638,57 @@
    "world_title": "Seven Skies and the Outspread Wings",
    "content_type": "nature-and-creation",
    "concept": "A layered sky with no flaw, birds gliding with wings outspread, and a tame earth with slopes to walk.",
+   "summary": "Al-Mulk means The Dominion. It invites us to look at the sky again and again and find no flaw, to see the birds held up by Allah, and to walk the earth He made easy for us.",
    "areas": [
     {
      "name": "Seven Layers",
-     "reference": "67:3"
+     "reference": "67:3",
+     "description": "Layered sky."
     },
     {
      "name": "Look Again",
-     "reference": "67:4"
+     "reference": "67:4",
+     "description": "A sky to examine."
     },
     {
      "name": "Stars",
-     "reference": "67:5"
+     "reference": "67:5",
+     "description": "The nearest sky adorned with stars."
     },
     {
      "name": "Tame Earth",
-     "reference": "67:15"
+     "reference": "67:15",
+     "description": "Slopes to walk."
     },
     {
      "name": "Outspread Wings",
-     "reference": "67:19"
+     "reference": "67:19",
+     "description": "Birds gliding."
     }
    ],
    "activities": [
-    "Find a flaw",
-    "Bird watch",
-    "Walk the slopes"
+    {
+     "name": "Find a flaw",
+     "reference": "67:3-4",
+     "description": "Look twice at the sky; find none."
+    },
+    {
+     "name": "Bird watch",
+     "reference": "67:19",
+     "description": "Watch birds spread and fold wings."
+    },
+    {
+     "name": "Walk the slopes",
+     "reference": "67:15",
+     "description": "Walk the slopes and gather provision."
+    }
    ],
+   "objectives": [
+    "Explain 67:3-4",
+    "Explain the birds sign",
+    "Explain gratitude"
+   ],
+   "narration": "Narration invites observation.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -2419,24 +3704,41 @@
    "world_title": "The Pen and the Burnt Garden",
    "content_type": "narrative",
    "concept": "A writing desk with a pen, and a garden whose owners swore to harvest without giving to the poor, and found it ruined.",
+   "summary": "Al-Qalam means The Pen. It praises the Prophet's (peace be upon him) great character and tells of garden owners who planned to keep everything from the poor and lost their garden.",
    "areas": [
     {
      "name": "Pen",
-     "reference": "68:1"
+     "reference": "68:1",
+     "description": "A pen and inkwell."
     },
     {
      "name": "Garden at Dawn",
-     "reference": "68:17"
+     "reference": "68:17",
+     "description": "A garden ready to harvest."
     },
     {
      "name": "Ruined Garden",
-     "reference": "68:20"
+     "reference": "68:20",
+     "description": "A garden that looks reaped."
     }
    ],
    "activities": [
-    "Share the harvest",
-    "Writing"
+    {
+     "name": "Share the harvest",
+     "reference": "68:17-24",
+     "description": "Choose to share the harvest (adaptation)."
+    },
+    {
+     "name": "Writing",
+     "reference": "68:1",
+     "description": "Trace letters with a pen."
+    }
    ],
+   "objectives": [
+    "Retell the garden owners",
+    "Explain generosity"
+   ],
+   "narration": "No people shown.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -2452,19 +3754,31 @@
    "world_title": "Hollow Palm Trunks",
    "content_type": "hereafter (symbolic only)",
    "concept": "A desert of fallen palm trunks after a violent wind, with the Reality spoken of only as text.",
+   "summary": "Al-Haqqah means The Reality. It recalls peoples who denied the truth, like 'Ad, and speaks of the Day of Judgement only in its own words.",
    "areas": [
     {
      "name": "Windy Valley",
-     "reference": "69:6"
+     "reference": "69:6",
+     "description": "Windswept valley."
     },
     {
      "name": "Hollow Trunks",
-     "reference": "69:7"
+     "reference": "69:7",
+     "description": "Fallen palm trunks."
     }
    ],
    "activities": [
-    "Read your book"
+    {
+     "name": "Read your book",
+     "reference": "69:19",
+     "description": "Reflect on good deeds (adaptation)."
+    }
    ],
+   "objectives": [
+    "Retell 'Ad",
+    "Explain accountability"
+   ],
+   "narration": "The Day is never depicted.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -2480,15 +3794,26 @@
    "world_title": "Ways of Ascent",
    "content_type": "hereafter (symbolic only)",
    "concept": "A symbolic world of stairways of light rising to the sky, never showing angels.",
+   "summary": "Al-Ma'arij means The Ascending Stairways. It speaks of patience and describes people who pray steadily and keep their trusts.",
    "areas": [
     {
      "name": "Stairways",
-     "reference": "70:3"
+     "reference": "70:3",
+     "description": "Abstract stairways of light; nothing unseen shown."
     }
    ],
    "activities": [
-    "Steady prayer"
+    {
+     "name": "Steady prayer",
+     "reference": "70:23",
+     "description": "Keep a lamp lit by returning to it each time (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain patience",
+    "List the qualities in 70:22-35"
+   ],
+   "narration": "Unseen is not shown.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -2504,28 +3829,46 @@
    "world_title": "Nuh's Call by Night and Day",
    "content_type": "narrative",
    "concept": "A village where a call goes out by night and day, in public and in private, offering showers of rain, gardens and rivers to those who seek forgiveness; the idols' names stand as empty stones.",
+   "summary": "Surah Nuh tells how Nuh called his people for a very long time, by day and by night, telling them to ask Allah's forgiveness so He would send rain, gardens and rivers.",
    "areas": [
     {
      "name": "Showers of Forgiveness",
-     "reference": "71:11"
+     "reference": "71:11",
+     "description": "Rain over gardens and rivers."
     },
     {
      "name": "Gardens and Rivers",
-     "reference": "71:12"
+     "reference": "71:12",
+     "description": "Gardens and rivers."
     },
     {
      "name": "Seven Heavens and Lamp",
-     "reference": "71:16"
+     "reference": "71:16",
+     "description": "A sun like a lamp and a reflecting moon."
     },
     {
      "name": "Roads of the Expanse",
-     "reference": "71:20"
+     "reference": "71:20",
+     "description": "Roads over a wide land."
     }
    ],
    "activities": [
-    "Ask forgiveness",
-    "Sun and moon"
+    {
+     "name": "Ask forgiveness",
+     "reference": "71:10-12",
+     "description": "Read 71:10 and watch rain return to gardens (adaptation)."
+    },
+    {
+     "name": "Sun and moon",
+     "reference": "71:16",
+     "description": "Tell the burning lamp from the reflected light."
+    }
    ],
+   "objectives": [
+    "Explain seeking forgiveness",
+    "Explain the sun and moon in 71:16"
+   ],
+   "narration": "Nuh is not shown or voiced.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -2541,19 +3884,31 @@
    "world_title": "An Amazing Recitation Heard",
    "content_type": "moral-and-spiritual",
    "concept": "A night desert where an amazing Quran is heard by a group the eye cannot see; the world shows only stillness and a sky guarded with flames.",
+   "summary": "Al-Jinn tells that a group of jinn heard the Quran, found it amazing and believed. The jinn are never shown.",
    "areas": [
     {
      "name": "Listening Night",
-     "reference": "72:1"
+     "reference": "72:1",
+     "description": "A still desert under stars."
     },
     {
      "name": "Guarded Sky",
-     "reference": "72:8"
+     "reference": "72:8",
+     "description": "Shooting stars across the sky."
     }
    ],
    "activities": [
-    "Shooting stars"
+    {
+     "name": "Shooting stars",
+     "reference": "72:8",
+     "description": "Count shooting stars (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain that jinn are unseen",
+    "Explain 72:1-2"
+   ],
+   "narration": "Jinn are unseen; nothing shows them.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -2569,20 +3924,36 @@
    "world_title": "The Night Vigil",
    "content_type": "moral-and-spiritual",
    "concept": "A night house where the hours are measured, half, a third, two thirds, for standing in prayer and measured recitation.",
+   "summary": "Al-Muzzammil calls to stand at night in prayer and to recite the Quran slowly and beautifully.",
    "areas": [
     {
      "name": "Night Dial",
-     "reference": "73:3"
+     "reference": "73:3",
+     "description": "A dial of night hours."
     },
     {
      "name": "Measured Recitation",
-     "reference": "73:4"
+     "reference": "73:4",
+     "description": "A lectern where an ayah card is read slowly."
     }
    ],
    "activities": [
-    "Divide the night",
-    "Slow reading"
+    {
+     "name": "Divide the night",
+     "reference": "73:2-4",
+     "description": "Set the night dial to half, a third (adaptation)."
+    },
+    {
+     "name": "Slow reading",
+     "reference": "73:4",
+     "description": "Read slowly and clearly."
+    }
    ],
+   "objectives": [
+    "Explain measured recitation",
+    "Explain night prayer"
+   ],
+   "narration": "The Prophet (peace be upon him) is never shown.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -2598,19 +3969,30 @@
    "world_title": "Arise and Warn",
    "content_type": "moral-and-spiritual",
    "concept": "A morning that begins with rising, glorifying and purifying clothing.",
+   "summary": "Al-Muddaththir tells the Prophet (peace be upon him) to arise and warn, glorify his Lord, purify his clothes and be patient.",
    "areas": [
     {
      "name": "Dawn Rising",
-     "reference": "74:2"
+     "reference": "74:2",
+     "description": "Sunrise over the home."
     },
     {
      "name": "Purify Clothing",
-     "reference": "74:4"
+     "reference": "74:4",
+     "description": "A washing place."
     }
    ],
    "activities": [
-    "Morning routine"
+    {
+     "name": "Morning routine",
+     "reference": "74:3-7",
+     "description": "Glorify, wash and be patient in a morning mini-game (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain 74:1-7"
+   ],
+   "narration": "The Prophet (peace be upon him) is never shown.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -2626,16 +4008,31 @@
    "world_title": "Fingertips Restored",
    "content_type": "hereafter (symbolic only)",
    "concept": "A symbolic world about how Allah can restore even fingertips, never depicting the Resurrection.",
+   "summary": "Al-Qiyamah means The Resurrection. It says Allah can restore even our fingertips and teaches not to hurry when reciting.",
    "areas": [
     {
      "name": "Fingertips",
-     "reference": "75:4"
+     "reference": "75:4",
+     "description": "A fingerprint pattern in light."
     }
    ],
    "activities": [
-    "Fingerprint",
-    "Do not rush"
+    {
+     "name": "Fingerprint",
+     "reference": "75:4",
+     "description": "Compare unique fingerprint patterns (adaptation)."
+    },
+    {
+     "name": "Do not rush",
+     "reference": "75:16-18",
+     "description": "Recite slowly."
+    }
    ],
+   "objectives": [
+    "Explain 75:4",
+    "Explain 75:16-19"
+   ],
+   "narration": "The Day is not shown.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -2651,15 +4048,26 @@
    "world_title": "Feeding for Allah's Sake",
    "content_type": "moral-and-spiritual",
    "concept": "A home where food is given to the needy, the orphan and the captive, asking nothing in return; the promised reward is only read, not shown.",
+   "summary": "Al-Insan means Man. It praises people who feed the needy, orphans and captives only for Allah, wanting no thanks.",
    "areas": [
     {
      "name": "The Doorway",
-     "reference": "76:8"
+     "reference": "76:8",
+     "description": "A doorway where food is shared."
     }
    ],
    "activities": [
-    "Share the meal"
+    {
+     "name": "Share the meal",
+     "reference": "76:8-9",
+     "description": "Pack food for different neighbours (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain 76:8-9",
+    "Explain sincerity"
+   ],
+   "narration": "Reward is described only in ayahs.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -2675,23 +4083,35 @@
    "world_title": "Winds in Gusts",
    "content_type": "nature-and-creation",
    "concept": "A world of winds sent in gusts, and an earth that holds the living and the dead, with tall mountains and sweet water.",
+   "summary": "Al-Mursalat means Those Sent Forth. It swears by the winds and shows the earth holding all, firm mountains and sweet water.",
    "areas": [
     {
      "name": "Gusts",
-     "reference": "77:1"
+     "reference": "77:1",
+     "description": "Winds blowing in gusts."
     },
     {
      "name": "Earth a Container",
-     "reference": "77:25"
+     "reference": "77:25",
+     "description": "An earth that holds."
     },
     {
      "name": "Mountains and Sweet Water",
-     "reference": "77:27"
+     "reference": "77:27",
+     "description": "Mountains and springs."
     }
    ],
    "activities": [
-    "Wind and water"
+    {
+     "name": "Wind and water",
+     "reference": "77:27",
+     "description": "Find sweet water among the mountains (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain 77:25-27"
+   ],
+   "narration": "Narration calm.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -2707,32 +4127,50 @@
    "world_title": "The Earth as a Resting Place",
    "content_type": "nature-and-creation",
    "concept": "A walk through the signs listed in the surah: the earth a resting place, mountains like stakes, sleep, night as clothing, a burning lamp and rain bringing gardens.",
+   "summary": "An-Naba' means The Great News. It asks people to look at signs: the earth, mountains, sleep, night and day, the sun, rain and gardens.",
    "areas": [
     {
      "name": "Resting Place",
-     "reference": "78:6"
+     "reference": "78:6",
+     "description": "A wide flat land."
     },
     {
      "name": "Mountains as Stakes",
-     "reference": "78:7"
+     "reference": "78:7",
+     "description": "Mountains like tent pegs."
     },
     {
      "name": "Night as Clothing",
-     "reference": "78:10"
+     "reference": "78:10",
+     "description": "Night wrapping the camp."
     },
     {
      "name": "Burning Lamp",
-     "reference": "78:13"
+     "reference": "78:13",
+     "description": "The sun."
     },
     {
      "name": "Gardens of Entwined Growth",
-     "reference": "78:16"
+     "reference": "78:16",
+     "description": "Thick gardens."
     }
    ],
    "activities": [
-    "Sign checklist",
-    "Pitch the tent"
+    {
+     "name": "Sign checklist",
+     "reference": "78:6-16",
+     "description": "Collect each sign as the ayahs list it."
+    },
+    {
+     "name": "Pitch the tent",
+     "reference": "78:7",
+     "description": "Stake a tent like mountains hold the earth (adaptation)."
+    }
    ],
+   "objectives": [
+    "List signs in 78:6-16"
+   ],
+   "narration": "Narration repeats the questions of the surah.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -2748,23 +4186,35 @@
    "world_title": "The Valley of Tuwa Called Again",
    "content_type": "narrative",
    "concept": "A sacred valley and a sky raised and proportioned, with pastures and water drawn from the earth.",
+   "summary": "An-Nazi'at tells of Musa called in the valley of Tuwa and sent to Pharaoh, and shows how Allah raised the sky and spread the earth.",
    "areas": [
     {
      "name": "Raised Ceiling",
-     "reference": "79:28"
+     "reference": "79:28",
+     "description": "A high sky."
     },
     {
      "name": "Water and Pasture",
-     "reference": "79:31"
+     "reference": "79:31",
+     "description": "Pastures with springs."
     },
     {
      "name": "Firm Mountains",
-     "reference": "79:32"
+     "reference": "79:32",
+     "description": "Mountains."
     }
    ],
    "activities": [
-    "Day and night"
+    {
+     "name": "Day and night",
+     "reference": "79:29",
+     "description": "Darken the night and bring out the brightness (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain 79:27-33"
+   ],
+   "narration": "Prophets not shown.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -2780,28 +4230,46 @@
    "world_title": "Look at Your Food",
    "content_type": "nature-and-creation",
    "concept": "A farm where the journey of food is followed: torrents of water, split earth, grain, grapes, olives, palms and fruit.",
+   "summary": "'Abasa reminds us to care for everyone who seeks guidance and asks us to look at our food: water, earth, grain, grapes, olives and fruit.",
    "areas": [
     {
      "name": "Torrents",
-     "reference": "80:25"
+     "reference": "80:25",
+     "description": "Water pouring."
     },
     {
      "name": "Split Earth",
-     "reference": "80:26"
+     "reference": "80:26",
+     "description": "Sprouts breaking through."
     },
     {
      "name": "Olives and Palms",
-     "reference": "80:29"
+     "reference": "80:29",
+     "description": "Olive and palm trees."
     },
     {
      "name": "Fruit and Grass",
-     "reference": "80:31"
+     "reference": "80:31",
+     "description": "Fruit trees and pasture."
     }
    ],
    "activities": [
-    "From seed to plate",
-    "Welcome everyone"
+    {
+     "name": "From seed to plate",
+     "reference": "80:24-32",
+     "description": "Follow food's journey (adaptation)."
+    },
+    {
+     "name": "Welcome everyone",
+     "reference": "80:1-10",
+     "description": "Welcome every visitor equally."
+    }
    ],
+   "objectives": [
+    "Explain 80:24-32",
+    "Explain caring for everyone"
+   ],
+   "narration": "No person shown.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -2817,15 +4285,26 @@
    "world_title": "When the Sun Is Wrapped",
    "content_type": "hereafter (symbolic only)",
    "concept": "A symbolic sequence of the surah's signs read as text over a calm sky; nothing of the end is pictured.",
+   "summary": "At-Takwir describes great changes of the Last Day in words, and swears by the dawn as it breathes.",
    "areas": [
     {
      "name": "Dawn Breathing",
-     "reference": "81:18"
+     "reference": "81:18",
+     "description": "A soft dawn."
     }
    ],
    "activities": [
-    "Read the signs"
+    {
+     "name": "Read the signs",
+     "reference": "81:1-14",
+     "description": "Read each ayah; nothing is pictured."
+    }
    ],
+   "objectives": [
+    "Explain that the Day is described in the Quran",
+    "Explain 81:18"
+   ],
+   "narration": "Narration says these are described only in the Quran.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -2841,15 +4320,25 @@
    "world_title": "The Sky Breaks Apart in Words",
    "content_type": "hereafter (symbolic only)",
    "concept": "A symbolic world of written ayahs and a reminder that Allah fashioned us in proportion.",
+   "summary": "Al-Infitar describes the end of the world in words and reminds us Allah created us in a beautiful form.",
    "areas": [
     {
      "name": "Proportioned Form",
-     "reference": "82:7"
+     "reference": "82:7",
+     "description": "Ayah stone about creation."
     }
    ],
    "activities": [
-    "Read"
+    {
+     "name": "Read",
+     "reference": "82:6-8",
+     "description": "Reflect on 82:6-8 (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain 82:6-8"
+   ],
+   "narration": "Nothing unseen shown.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -2865,15 +4354,25 @@
    "world_title": "Market of Fair Measure",
    "content_type": "moral-and-spiritual",
    "concept": "A bustling market where scales must be fair.",
+   "summary": "Al-Mutaffifin means Those Who Give Less. It warns traders who cheat on weight and measure.",
    "areas": [
     {
      "name": "Scales",
-     "reference": "83:1"
+     "reference": "83:1",
+     "description": "Market scales."
     }
    ],
    "activities": [
-    "Fair weight"
+    {
+     "name": "Fair weight",
+     "reference": "83:1-3",
+     "description": "Weigh fairly for every customer (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain fair measure"
+   ],
+   "narration": "No person shown.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -2889,19 +4388,30 @@
    "world_title": "Twilight and the Full Moon",
    "content_type": "hereafter (symbolic only)",
    "concept": "A world of twilight glow, enveloping night and a full moon, by which the surah swears.",
+   "summary": "Al-Inshiqaq speaks of the sky splitting in words, and swears by the twilight, the night and the full moon.",
    "areas": [
     {
      "name": "Twilight Glow",
-     "reference": "84:16"
+     "reference": "84:16",
+     "description": "Glow at sunset."
     },
     {
      "name": "Full Moon",
-     "reference": "84:18"
+     "reference": "84:18",
+     "description": "The moon becoming full."
     }
    ],
    "activities": [
-    "Moon phases"
+    {
+     "name": "Moon phases",
+     "reference": "84:18",
+     "description": "Watch the moon grow full (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain the oaths"
+   ],
+   "narration": "The Day is not shown.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -2917,19 +4427,30 @@
    "world_title": "Sky of Great Stars and the Trench",
    "content_type": "narrative",
    "concept": "A sky of great stars above a trench; the believers' story is told only in words.",
+   "summary": "Al-Buruj tells of believers who stayed firm in faith when people of the trench harmed them.",
    "areas": [
     {
      "name": "Great Stars",
-     "reference": "85:1"
+     "reference": "85:1",
+     "description": "Sky of great stars."
     },
     {
      "name": "The Trench",
-     "reference": "85:4"
+     "reference": "85:4",
+     "description": "An empty trench."
     }
    ],
    "activities": [
-    "Find the great stars"
+    {
+     "name": "Find the great stars",
+     "reference": "85:1",
+     "description": "Find bright star groups (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain steadfastness"
+   ],
+   "narration": "No people shown.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -2945,24 +4466,40 @@
    "world_title": "The Piercing Star",
    "content_type": "nature-and-creation",
    "concept": "A night sky with a piercing star, sky returning rain, and earth cracking open with plants.",
+   "summary": "At-Tariq means The Night Comer, the piercing star. It reminds us every soul is watched over and swears by the sky that returns rain and the earth that cracks open.",
    "areas": [
     {
      "name": "Piercing Star",
-     "reference": "86:3"
+     "reference": "86:3",
+     "description": "A brilliant star."
     },
     {
      "name": "Returning Rain",
-     "reference": "86:11"
+     "reference": "86:11",
+     "description": "Rain returning."
     },
     {
      "name": "Cracking Earth",
-     "reference": "86:12"
+     "reference": "86:12",
+     "description": "Earth cracking with sprouts."
     }
    ],
    "activities": [
-    "Find the star",
-    "Rain cycle"
+    {
+     "name": "Find the star",
+     "reference": "86:1-3",
+     "description": "Find the piercing star."
+    },
+    {
+     "name": "Rain cycle",
+     "reference": "86:11-12",
+     "description": "Watch rain return and sprouts appear."
+    }
    ],
+   "objectives": [
+    "Explain 86:11-12"
+   ],
+   "narration": "Narration calm.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -2978,20 +4515,35 @@
    "world_title": "Pasture to Stubble",
    "content_type": "nature-and-creation",
    "concept": "A pasture that grows green and turns to dark stubble, showing creation, proportion and guidance.",
+   "summary": "Al-A'la means The Most High. It tells us to glorify Allah who created, proportioned and guided, who brings out pasture and turns it dark.",
    "areas": [
     {
      "name": "Pasture",
-     "reference": "87:4"
+     "reference": "87:4",
+     "description": "Green pasture."
     },
     {
      "name": "Black Stubble",
-     "reference": "87:5"
+     "reference": "87:5",
+     "description": "Pasture turned dark."
     }
    ],
    "activities": [
-    "Grow and fade",
-    "Glorify"
+    {
+     "name": "Grow and fade",
+     "reference": "87:4-5",
+     "description": "Watch the pasture through its life."
+    },
+    {
+     "name": "Glorify",
+     "reference": "87:1",
+     "description": "Read 87:1."
+    }
    ],
+   "objectives": [
+    "Explain 87:2-5"
+   ],
+   "narration": "Narration calm.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -3007,27 +4559,40 @@
    "world_title": "Camels, Sky, Mountains, Earth",
    "content_type": "nature-and-creation",
    "concept": "Four stations from 88:17-20: camels, raised sky, erected mountains and spread earth.",
+   "summary": "Al-Ghashiyah asks us to look at the camel, the sky, the mountains and the earth and think how they were created.",
    "areas": [
     {
      "name": "Camels",
-     "reference": "88:17"
+     "reference": "88:17",
+     "description": "A caravan of camels."
     },
     {
      "name": "Raised Sky",
-     "reference": "88:18"
+     "reference": "88:18",
+     "description": "The sky."
     },
     {
      "name": "Erected Mountains",
-     "reference": "88:19"
+     "reference": "88:19",
+     "description": "Mountains."
     },
     {
      "name": "Spread Earth",
-     "reference": "88:20"
+     "reference": "88:20",
+     "description": "A flat earth."
     }
    ],
    "activities": [
-    "Look and think"
+    {
+     "name": "Look and think",
+     "reference": "88:17-20",
+     "description": "Observe each station and answer a question (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain 88:17-20"
+   ],
+   "narration": "Narration calm.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -3043,23 +4608,36 @@
    "world_title": "The Dawn and the Pillars of Iram",
    "content_type": "narrative",
    "concept": "A dawn over ten nights, and ruins of Iram's lofty pillars, Thamud's carved rocks and Pharaoh's stakes.",
+   "summary": "Al-Fajr means The Dawn. It recalls 'Ad, Thamud and Pharaoh who oppressed, and teaches caring for orphans and the poor.",
    "areas": [
     {
      "name": "Dawn",
-     "reference": "89:1"
+     "reference": "89:1",
+     "description": "The dawn."
     },
     {
      "name": "Lofty Pillars",
-     "reference": "89:7"
+     "reference": "89:7",
+     "description": "Ruined pillars."
     },
     {
      "name": "Carved Rocks",
-     "reference": "89:9"
+     "reference": "89:9",
+     "description": "Rocks carved in the valley."
     }
    ],
    "activities": [
-    "Care for the orphan"
+    {
+     "name": "Care for the orphan",
+     "reference": "89:17-18",
+     "description": "Share food with orphans and the poor (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain 89:17-20",
+    "Retell the nations"
+   ],
+   "narration": "No people shown.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -3075,19 +4653,30 @@
    "world_title": "The Steep Pass",
    "content_type": "moral-and-spiritual",
    "concept": "A mountain path with two ways and a steep pass climbed by freeing, feeding and caring.",
+   "summary": "Al-Balad means The City. It says Allah showed us two ways and the steep pass is freeing a slave and feeding the hungry and orphans.",
    "areas": [
     {
      "name": "Two Ways",
-     "reference": "90:10"
+     "reference": "90:10",
+     "description": "Paths splitting."
     },
     {
      "name": "Steep Pass",
-     "reference": "90:11"
+     "reference": "90:11",
+     "description": "A steep climb."
     }
    ],
    "activities": [
-    "Climb the pass"
+    {
+     "name": "Climb the pass",
+     "reference": "90:13-16",
+     "description": "Climb by doing acts of kindness (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain the steep pass"
+   ],
+   "narration": "Narration calm.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -3103,23 +4692,35 @@
    "world_title": "Sun and Its Brightness",
    "content_type": "moral-and-spiritual",
    "concept": "A day cycle over a valley: sun, moon, day, night, sky, earth, soul, ending at Thamud's well where the she-camel drank.",
+   "summary": "Ash-Shams means The Sun. It swears by the sun, moon, day, night and the soul, and says success is in purifying the soul. It recalls the she-camel of Thamud.",
    "areas": [
     {
      "name": "Sun",
-     "reference": "91:1"
+     "reference": "91:1",
+     "description": "Bright sun."
     },
     {
      "name": "Moon Following",
-     "reference": "91:2"
+     "reference": "91:2",
+     "description": "The moon following."
     },
     {
      "name": "The Well",
-     "reference": "91:13"
+     "reference": "91:13",
+     "description": "A well."
     }
    ],
    "activities": [
-    "Purify the soul"
+    {
+     "name": "Purify the soul",
+     "reference": "91:9",
+     "description": "Choose kind actions (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain 91:9-10"
+   ],
+   "narration": "Salih not shown.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -3135,19 +4736,30 @@
    "world_title": "Night Covers, Day Appears",
    "content_type": "moral-and-spiritual",
    "concept": "A day-night world showing how efforts differ.",
+   "summary": "Al-Layl means The Night. It says people's efforts differ, and those who give and are mindful of Allah will find ease.",
    "areas": [
     {
      "name": "Night",
-     "reference": "92:1"
+     "reference": "92:1",
+     "description": "Night covering."
     },
     {
      "name": "Day",
-     "reference": "92:2"
+     "reference": "92:2",
+     "description": "Day appearing."
     }
    ],
    "activities": [
-    "Give"
+    {
+     "name": "Give",
+     "reference": "92:5-7",
+     "description": "Give and find the path easier (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain 92:5-7"
+   ],
+   "narration": "Narration calm.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -3163,20 +4775,35 @@
    "world_title": "The Morning Brightness",
    "content_type": "moral-and-spiritual",
    "concept": "A sunrise world of comfort: morning light, reassurance, and caring for orphans and those who ask.",
+   "summary": "Ad-Duha means The Morning Brightness. It comforted the Prophet (peace be upon him), reminding him of Allah's care, and teaches kindness to orphans and those who ask.",
    "areas": [
     {
      "name": "Morning Brightness",
-     "reference": "93:1"
+     "reference": "93:1",
+     "description": "Sunrise."
     },
     {
      "name": "Open Door",
-     "reference": "93:10"
+     "reference": "93:10",
+     "description": "A door open to those who ask."
     }
    ],
    "activities": [
-    "Kind door",
-    "Count blessings"
+    {
+     "name": "Kind door",
+     "reference": "93:9-10",
+     "description": "Welcome those who ask (adaptation)."
+    },
+    {
+     "name": "Count blessings",
+     "reference": "93:11",
+     "description": "Talk about blessings."
+    }
    ],
+   "objectives": [
+    "Explain 93:9-11"
+   ],
+   "narration": "The Prophet (peace be upon him) not shown.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -3192,15 +4819,25 @@
    "world_title": "With Hardship, Ease",
    "content_type": "moral-and-spiritual",
    "concept": "A climb where each hard step reveals an easy one.",
+   "summary": "Ash-Sharh means The Expansion. It promises twice that with hardship comes ease.",
    "areas": [
     {
      "name": "Path of Ease",
-     "reference": "94:5"
+     "reference": "94:5",
+     "description": "A path that eases."
     }
    ],
    "activities": [
-    "Hard then easy"
+    {
+     "name": "Hard then easy",
+     "reference": "94:5-6",
+     "description": "Climb hard sections and find easy ones (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain 94:5-6"
+   ],
+   "narration": "Narration gentle.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -3216,28 +4853,46 @@
    "world_title": "Fig, Olive and the Secure City",
    "content_type": "nature-and-creation",
    "concept": "Four places named in the oaths: a fig orchard, an olive grove, Mount Sinai and a secure city, ending with the reminder that people were created in the best stature.",
+   "summary": "At-Tin means The Fig. It swears by the fig, the olive, Mount Sinai and the safe city, and says Allah created people in the best form, and those who believe and do good have an endless reward.",
    "areas": [
     {
      "name": "Fig Orchard",
-     "reference": "95:1"
+     "reference": "95:1",
+     "description": "Fig trees heavy with fruit."
     },
     {
      "name": "Olive Grove",
-     "reference": "95:1"
+     "reference": "95:1",
+     "description": "Olive terraces."
     },
     {
      "name": "Mount Sinai",
-     "reference": "95:2"
+     "reference": "95:2",
+     "description": "A granite mountain."
     },
     {
      "name": "Secure City",
-     "reference": "95:3"
+     "reference": "95:3",
+     "description": "A peaceful city."
     }
    ],
    "activities": [
-    "Four oaths",
-    "Best stature"
+    {
+     "name": "Four oaths",
+     "reference": "95:1-3",
+     "description": "Visit each place and read its oath (adaptation)."
+    },
+    {
+     "name": "Best stature",
+     "reference": "95:4",
+     "description": "Reflect on how we were made in the best form."
+    }
    ],
+   "objectives": [
+    "Name the four oaths",
+    "Explain 95:4-6"
+   ],
+   "narration": "Narration walks the oaths in order.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -3253,20 +4908,36 @@
    "world_title": "Recite! The Pen and the Clinging Substance",
    "content_type": "moral-and-spiritual",
    "concept": "A quiet mountain cave mouth at night with a single line of light, then a scriptorium where the pen teaches; the first revelation is only told, never shown.",
+   "summary": "Al-'Alaq means The Clinging Substance. Its first ayahs were the first revelation: Recite in the name of your Lord who created, who taught by the pen.",
    "areas": [
     {
      "name": "Hill of Revelation",
-     "reference": "96:1"
+     "reference": "96:1",
+     "description": "A hill with a cave mouth, empty."
     },
     {
      "name": "The Pen",
-     "reference": "96:4"
+     "reference": "96:4",
+     "description": "A writing room with pens."
     }
    ],
    "activities": [
-    "Learn a letter",
-    "Prostrate and draw near"
+    {
+     "name": "Learn a letter",
+     "reference": "96:4-5",
+     "description": "Trace Arabic letters with a pen (adaptation)."
+    },
+    {
+     "name": "Prostrate and draw near",
+     "reference": "96:19",
+     "description": "Read 96:19."
+    }
    ],
+   "objectives": [
+    "Explain the first revelation",
+    "Explain the value of learning"
+   ],
+   "narration": "The Prophet (peace be upon him) and the angel are never shown or voiced.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -3282,20 +4953,36 @@
    "world_title": "Night Until the Dawn",
    "content_type": "moral-and-spiritual",
    "concept": "A peaceful night sky that stays calm until dawn emerges, better than a thousand months; nothing unseen is pictured.",
+   "summary": "Al-Qadr tells that the Quran was sent down on the Night of Decree, better than a thousand months, a night of peace until dawn.",
    "areas": [
     {
      "name": "Thousand Months Wall",
-     "reference": "97:3"
+     "reference": "97:3",
+     "description": "A wall of a thousand small lights."
     },
     {
      "name": "Peace Until Dawn",
-     "reference": "97:5"
+     "reference": "97:5",
+     "description": "A calm night ending at dawn."
     }
    ],
    "activities": [
-    "Count the months",
-    "Night prayer"
+    {
+     "name": "Count the months",
+     "reference": "97:3",
+     "description": "See a thousand months as lights (adaptation)."
+    },
+    {
+     "name": "Night prayer",
+     "reference": "97:1-5",
+     "description": "Light a lamp for each ayah."
+    }
    ],
+   "objectives": [
+    "Explain Laylat al-Qadr",
+    "Explain 97:3"
+   ],
+   "narration": "Angels and the Spirit are not shown.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -3311,15 +4998,25 @@
    "world_title": "The Clear Evidence",
    "content_type": "moral-and-spiritual",
    "concept": "A world of clear water and clean pages, showing sincere worship.",
+   "summary": "Al-Bayyinah means The Clear Evidence. It says people were commanded to worship Allah sincerely, pray and give charity.",
    "areas": [
     {
      "name": "Sincere Spring",
-     "reference": "98:5"
+     "reference": "98:5",
+     "description": "A clear spring."
     }
    ],
    "activities": [
-    "Sincerity"
+    {
+     "name": "Sincerity",
+     "reference": "98:5",
+     "description": "Choose actions done only for Allah (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain 98:5"
+   ],
+   "narration": "Narration calm.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -3335,15 +5032,25 @@
    "world_title": "An Atom's Weight",
    "content_type": "hereafter (symbolic only)",
    "concept": "A symbolic world of tiny particles where each good deed is seen, without depicting the earthquake.",
+   "summary": "Az-Zalzalah says that whoever does even an atom's weight of good will see it, and whoever does an atom's weight of bad will see it.",
    "areas": [
     {
      "name": "Atom Garden",
-     "reference": "99:7"
+     "reference": "99:7",
+     "description": "Tiny glowing grains."
     }
    ],
    "activities": [
-    "Small deeds"
+    {
+     "name": "Small deeds",
+     "reference": "99:7-8",
+     "description": "Collect tiny good deeds that glow (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain 99:7-8"
+   ],
+   "narration": "The Day is not shown.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -3359,23 +5066,35 @@
    "world_title": "Racers at Dawn",
    "content_type": "nature-and-creation",
    "concept": "Horses racing at dawn, sparks from hooves, dust clouds, used as an oath about gratitude.",
+   "summary": "Al-'Adiyat means The Racers. It swears by racing horses and says people are often ungrateful.",
    "areas": [
     {
      "name": "Racers",
-     "reference": "100:1"
+     "reference": "100:1",
+     "description": "Horses racing."
     },
     {
      "name": "Sparks",
-     "reference": "100:2"
+     "reference": "100:2",
+     "description": "Sparks from hooves."
     },
     {
      "name": "Dust",
-     "reference": "100:4"
+     "reference": "100:4",
+     "description": "Clouds of dust."
     }
    ],
    "activities": [
-    "Gratitude"
+    {
+     "name": "Gratitude",
+     "reference": "100:6",
+     "description": "Thank for blessings (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain 100:6"
+   ],
+   "narration": "Narration calm.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -3391,19 +5110,30 @@
    "world_title": "Like Moths, Like Wool",
    "content_type": "hereafter (symbolic only)",
    "concept": "A symbolic world of the surah's two images: scattered moths and fluffed wool, shown as soft abstraction only.",
+   "summary": "Al-Qari'ah describes the Day in words: people like scattered moths and mountains like fluffed wool. Heavy good deeds bring a pleasing life.",
    "areas": [
     {
      "name": "Moths",
-     "reference": "101:4"
+     "reference": "101:4",
+     "description": "Moths in lamp light."
     },
     {
      "name": "Wool",
-     "reference": "101:5"
+     "reference": "101:5",
+     "description": "Fluffed wool."
     }
    ],
    "activities": [
-    "Heavy scales"
+    {
+     "name": "Heavy scales",
+     "reference": "101:6-7",
+     "description": "Add good deeds to the scale (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain 101:6-9"
+   ],
+   "narration": "Nothing of the Day shown.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -3419,15 +5149,25 @@
    "world_title": "Counting That Distracts",
    "content_type": "moral-and-spiritual",
    "concept": "A world where piling things up distracts from what matters.",
+   "summary": "At-Takathur warns that competing for more distracts people until they reach the graves.",
    "areas": [
     {
      "name": "Piles",
-     "reference": "102:1"
+     "reference": "102:1",
+     "description": "Piles of possessions."
     }
    ],
    "activities": [
-    "Enough"
+    {
+     "name": "Enough",
+     "reference": "102:1-8",
+     "description": "Choose what matters (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain 102:1-8"
+   ],
+   "narration": "Narration calm.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -3443,24 +5183,41 @@
    "world_title": "The Hourglass of Time",
    "content_type": "moral-and-spiritual",
    "concept": "A world built inside the flow of time: sand pouring from a vast hourglass across a dune landscape, and four keys that save from loss: faith, good deeds, advising truth and advising patience.",
+   "summary": "Al-'Asr means Time. It says all people are in loss except those who believe, do good, and remind each other of truth and patience.",
    "areas": [
     {
      "name": "Hourglass Plain",
-     "reference": "103:1"
+     "reference": "103:1",
+     "description": "Sand flowing from a great hourglass."
     },
     {
      "name": "Plain of Loss",
-     "reference": "103:2"
+     "reference": "103:2",
+     "description": "Footprints fading in the sand."
     },
     {
      "name": "Four Gates",
-     "reference": "103:3"
+     "reference": "103:3",
+     "description": "Gates of faith, deeds, truth and patience."
     }
    ],
    "activities": [
-    "Before the sand runs out",
-    "Advise a friend"
+    {
+     "name": "Before the sand runs out",
+     "reference": "103:1-3",
+     "description": "Collect four keys before the hourglass empties (adaptation)."
+    },
+    {
+     "name": "Advise a friend",
+     "reference": "103:3",
+     "description": "Help another character with truth and patience."
+    }
    ],
+   "objectives": [
+    "Explain the four qualities",
+    "Explain why time matters"
+   ],
+   "narration": "Narration explains each key.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -3476,15 +5233,25 @@
    "world_title": "The Counting House",
    "content_type": "moral-and-spiritual",
    "concept": "A counting house where wealth is counted, and a lesson about mocking.",
+   "summary": "Al-Humazah warns those who mock and backbite and who collect and count wealth thinking it will last.",
    "areas": [
     {
      "name": "Counting Table",
-     "reference": "104:2"
+     "reference": "104:2",
+     "description": "Coins being counted."
     }
    ],
    "activities": [
-    "Kind words"
+    {
+     "name": "Kind words",
+     "reference": "104:1",
+     "description": "Replace mocking with kind words (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain 104:1-3"
+   ],
+   "narration": "Punishment not shown.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -3500,28 +5267,46 @@
    "world_title": "The Year of the Elephant",
    "content_type": "narrative",
    "concept": "A dusty road to Makkah where a great army with an elephant comes, birds in flocks gather over the hills, and the army becomes like eaten straw; the House stands untouched.",
+   "summary": "Al-Fil means The Elephant. It tells how Allah protected the House when an army with an elephant came, sending flocks of birds with stones of baked clay.",
    "areas": [
     {
      "name": "The Army Road",
-     "reference": "105:1"
+     "reference": "105:1",
+     "description": "A road with an elephant's tracks."
     },
     {
      "name": "Flocks of Birds",
-     "reference": "105:3"
+     "reference": "105:3",
+     "description": "Flocks over the hills."
     },
     {
      "name": "Stones of Clay",
-     "reference": "105:4"
+     "reference": "105:4",
+     "description": "Small clay stones on the ground."
     },
     {
      "name": "Eaten Straw",
-     "reference": "105:5"
+     "reference": "105:5",
+     "description": "A field of eaten straw."
     }
    ],
    "activities": [
-    "Count the flocks",
-    "Plans fail"
+    {
+     "name": "Count the flocks",
+     "reference": "105:3",
+     "description": "Count birds in flocks (adaptation)."
+    },
+    {
+     "name": "Plans fail",
+     "reference": "105:2",
+     "description": "Watch a plan fail and read 105:2."
+    }
    ],
+   "objectives": [
+    "Retell the surah",
+    "Explain Allah's protection"
+   ],
+   "narration": "Leader names and details come from tafsir, not the surah, and are marked as such. No person is shown and no violence is depicted.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -3537,24 +5322,40 @@
    "world_title": "Caravans of Winter and Summer",
    "content_type": "moral-and-spiritual",
    "concept": "Two caravan routes, winter and summer, and the House whose Lord fed and protected the Quraysh.",
+   "summary": "Quraysh reminds the people of Quraysh of their safe caravan journeys in winter and summer, and calls them to worship the Lord of the House who fed them and kept them safe.",
    "areas": [
     {
      "name": "Winter Caravan",
-     "reference": "106:2"
+     "reference": "106:2",
+     "description": "A winter route."
     },
     {
      "name": "Summer Caravan",
-     "reference": "106:2"
+     "reference": "106:2",
+     "description": "A summer route."
     },
     {
      "name": "Lord of this House",
-     "reference": "106:3"
+     "reference": "106:3",
+     "description": "The House in a quiet city."
     }
    ],
    "activities": [
-    "Plan the journey",
-    "Gratitude"
+    {
+     "name": "Plan the journey",
+     "reference": "106:2",
+     "description": "Lead a caravan safely (adaptation)."
+    },
+    {
+     "name": "Gratitude",
+     "reference": "106:4",
+     "description": "Thank for food and safety."
+    }
    ],
+   "objectives": [
+    "Explain 106:3-4"
+   ],
+   "narration": "Narration calm.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -3570,20 +5371,35 @@
    "world_title": "Small Kindnesses",
    "content_type": "moral-and-spiritual",
    "concept": "A neighbourhood where kindness to orphans, feeding the poor and lending small things matter.",
+   "summary": "Al-Ma'un means Small Kindnesses. It warns against pushing away orphans, not feeding the poor, praying to show off and refusing small help.",
    "areas": [
     {
      "name": "Orphan's Door",
-     "reference": "107:2"
+     "reference": "107:2",
+     "description": "A door where an orphan is welcomed."
     },
     {
      "name": "Lending Shelf",
-     "reference": "107:7"
+     "reference": "107:7",
+     "description": "Tools to lend."
     }
    ],
    "activities": [
-    "Lend a hand",
-    "Feed the poor"
+    {
+     "name": "Lend a hand",
+     "reference": "107:7",
+     "description": "Lend small items (adaptation)."
+    },
+    {
+     "name": "Feed the poor",
+     "reference": "107:3",
+     "description": "Encourage feeding."
+    }
    ],
+   "objectives": [
+    "Explain 107:1-7"
+   ],
+   "narration": "Narration gentle.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -3599,15 +5415,25 @@
    "world_title": "Abundance",
    "content_type": "moral-and-spiritual",
    "concept": "A world of abundance: rivers, plenty and gratitude through prayer.",
+   "summary": "Al-Kawthar tells the Prophet (peace be upon him) he has been given abundance and to pray and sacrifice to Allah alone.",
    "areas": [
     {
      "name": "Abundance",
-     "reference": "108:1"
+     "reference": "108:1",
+     "description": "A valley of plenty; what al-Kawthar is, is only read."
     }
    ],
    "activities": [
-    "Pray"
+    {
+     "name": "Pray",
+     "reference": "108:2",
+     "description": "Light a lamp for prayer (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain 108:1-3"
+   ],
+   "narration": "Unseen not shown.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -3623,15 +5449,25 @@
    "world_title": "Two Separate Paths",
    "content_type": "moral-and-spiritual",
    "concept": "Two paths side by side, each respected.",
+   "summary": "Al-Kafirun teaches clarity in worship: for you is your religion and for me is mine.",
    "areas": [
     {
      "name": "Two Paths",
-     "reference": "109:6"
+     "reference": "109:6",
+     "description": "Two separate paths."
     }
    ],
    "activities": [
-    "Choose your path"
+    {
+     "name": "Choose your path",
+     "reference": "109:6",
+     "description": "Walk your own path (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain 109:6"
+   ],
+   "narration": "Narration calm.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -3647,15 +5483,25 @@
    "world_title": "Multitudes Arriving",
    "content_type": "moral-and-spiritual",
    "concept": "Roads full of people arriving, shown as moving lights.",
+   "summary": "An-Nasr says when Allah's help comes and people enter Islam in crowds, praise Allah and ask forgiveness.",
    "areas": [
     {
      "name": "Converging Roads",
-     "reference": "110:2"
+     "reference": "110:2",
+     "description": "Lights on roads."
     }
    ],
    "activities": [
-    "Praise"
+    {
+     "name": "Praise",
+     "reference": "110:3",
+     "description": "Read 110:3 (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain 110:3"
+   ],
+   "narration": "No person shown.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -3671,19 +5517,30 @@
    "world_title": "Wealth Will Not Avail",
    "content_type": "moral-and-spiritual",
    "concept": "A path of thorns and firewood showing that wealth and status do not save from wrongdoing.",
+   "summary": "Al-Masad tells of Abu Lahab and his wife, who opposed the Prophet (peace be upon him), and that wealth did not help them.",
    "areas": [
     {
      "name": "Firewood",
-     "reference": "111:4"
+     "reference": "111:4",
+     "description": "A bundle of firewood."
     },
     {
      "name": "Wealth",
-     "reference": "111:2"
+     "reference": "111:2",
+     "description": "Coins that cannot help."
     }
    ],
    "activities": [
-    "What helps"
+    {
+     "name": "What helps",
+     "reference": "111:2",
+     "description": "Discuss what truly helps (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain 111:2"
+   ],
+   "narration": "No person shown; the Fire is not shown.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -3699,24 +5556,41 @@
    "world_title": "The One",
    "content_type": "moral-and-spiritual",
    "concept": "A world of pure geometry and light: no image, figure or symbol of Allah, only the four ayahs written in calligraphy across an open sky, and a single path of reflection.",
+   "summary": "Al-Ikhlas says Allah is One, the Eternal Refuge, He neither has children nor was born, and nothing is like Him.",
    "areas": [
     {
      "name": "Path of One",
-     "reference": "112:1"
+     "reference": "112:1",
+     "description": "A single circle path."
     },
     {
      "name": "Eternal Refuge",
-     "reference": "112:2"
+     "reference": "112:2",
+     "description": "A sheltered resting place."
     },
     {
      "name": "Nothing Like Him",
-     "reference": "112:4"
+     "reference": "112:4",
+     "description": "Empty open sky; nothing depicts Allah."
     }
    ],
    "activities": [
-    "Read the four",
-    "Nothing compares"
+    {
+     "name": "Read the four",
+     "reference": "112:1-4",
+     "description": "Light each ayah's calligraphy in turn."
+    },
+    {
+     "name": "Nothing compares",
+     "reference": "112:4",
+     "description": "Learn why nothing in creation can be compared to Allah (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain tawhid",
+    "Recite 112"
+   ],
+   "narration": "Narration explains each ayah plainly; Allah is never depicted.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -3732,19 +5606,30 @@
    "world_title": "Lord of Daybreak",
    "content_type": "moral-and-spiritual",
    "concept": "A dawn world where darkness lifts and protection is sought.",
+   "summary": "Al-Falaq teaches seeking refuge in the Lord of daybreak from evil, darkness and envy.",
    "areas": [
     {
      "name": "Daybreak",
-     "reference": "113:1"
+     "reference": "113:1",
+     "description": "Dawn breaking."
     },
     {
      "name": "Settling Darkness",
-     "reference": "113:3"
+     "reference": "113:3",
+     "description": "Night settling."
     }
    ],
    "activities": [
-    "Refuge"
+    {
+     "name": "Refuge",
+     "reference": "113:1-5",
+     "description": "Read the surah as dawn breaks (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain seeking refuge"
+   ],
+   "narration": "No evil shown.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",
@@ -3760,15 +5645,25 @@
    "world_title": "Lord of Mankind",
    "content_type": "moral-and-spiritual",
    "concept": "A peaceful town where whispers fade when Allah's protection is sought.",
+   "summary": "An-Nas teaches seeking refuge in the Lord of mankind from the whisperer.",
    "areas": [
     {
      "name": "Whisper Lane",
-     "reference": "114:4"
+     "reference": "114:4",
+     "description": "Whispers fading."
     }
    ],
    "activities": [
-    "Refuge"
+    {
+     "name": "Refuge",
+     "reference": "114:1-6",
+     "description": "Read the surah (adaptation)."
+    }
    ],
+   "objectives": [
+    "Explain 114"
+   ],
+   "narration": "Nothing unseen shown.",
    "status": {
     "quran_text": "verified (KFGQPC Hafs, checksummed)",
     "translation": "Saheeh International, attributed",

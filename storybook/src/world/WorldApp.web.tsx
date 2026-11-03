@@ -240,11 +240,12 @@ function World() {
 
   const progress = app.surahProgress[surah] ?? emptySurahProgress;
   const passages = useMemo(() => passagesOf(surah), [surah]);
+  const areasFound = useMemo(() => (progress.areasFound ?? []).filter((i) => i < passages.length), [progress.areasFound, passages.length]);
   const lanternOpened = useCallback(
     (p: Passage) => {
       setOpenPassage(p);
       app.updateSurahProgress(surah, (cur) => ({
-        passagesFound: cur.passagesFound.includes(p.index) ? cur.passagesFound : [...cur.passagesFound, p.index].sort((a, b) => a - b),
+        areasFound: (cur.areasFound ?? []).includes(p.index) ? cur.areasFound : [...(cur.areasFound ?? []), p.index].sort((a, b) => a - b),
       }));
     },
     [app, surah],
@@ -332,7 +333,7 @@ function World() {
               key={surah}
               surah={surah}
               quality={quality}
-              found={progress.passagesFound}
+              found={areasFound}
               move={move}
               look={look}
               onLantern={lanternOpened}
@@ -407,7 +408,7 @@ function World() {
         <WorldHud
           surah={surah}
           passages={passages}
-          found={progress.passagesFound}
+          found={areasFound}
           near={near}
           open={openPassage}
           hint={hint}
@@ -417,6 +418,14 @@ function World() {
           onClose={() => setOpenPassage(null)}
           onRead={(a) => read(surah, a, true)}
           onReadRef={(n, a) => read(n, a, true)}
+          activitiesDone={progress.activitiesDone ?? []}
+          reflected={!!progress.reflected}
+          onActivity={(i) =>
+            app.updateSurahProgress(surah, (cur) => ({
+              activitiesDone: (cur.activitiesDone ?? []).includes(i) ? cur.activitiesDone : [...(cur.activitiesDone ?? []), i].sort((a, b) => a - b),
+            }))
+          }
+          onReflected={() => app.updateSurahProgress(surah, () => ({ reflected: true }))}
         />
       )}
 

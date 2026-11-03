@@ -13,7 +13,7 @@ import { emptySurahProgress, useAppState, type Settings } from '@/state/AppState
 import { sound } from '@/three/sound';
 import { colors, fonts, radius } from '@/theme';
 import { worldFor } from './settings';
-import type { Move, Passage as PassageT } from './SurahWorld';
+import { passagesOf, type Move, type Passage as PassageT } from './SurahWorld';
 
 const glass = 'rgba(24, 18, 12, 0.6)';
 const cream = '#f3e3c2';
@@ -259,7 +259,7 @@ export function LibraryHud({ selected, portrait, onSelect, onRead, onWorld }: { 
           </Row>
           <Text style={s.plaqueProg}>
             {prog.furthestAyah ? `Read up to ayah ${prog.furthestAyah}` : 'Not opened yet'}
-            {prog.visitedWorld ? ` · ${prog.passagesFound.length} lanterns found in its world` : ''}
+            {prog.visitedWorld ? ` · ${(prog.areasFound ?? []).length} places found in its world${prog.reflected ? ' · reflection done' : ''}` : ''}
           </Text>
           {designFor(info.number) && <DesignStatus surah={info.number} />}
           {catalogFor(info.number) && (
@@ -332,6 +332,10 @@ export function WorldHud({
   onClose,
   onRead,
   onReadRef,
+  activitiesDone,
+  reflected,
+  onActivity,
+  onReflected,
 }: {
   surah: number;
   passages: PassageT[];
@@ -345,9 +349,16 @@ export function WorldHud({
   onClose: () => void;
   onRead: (ayah: number) => void;
   onReadRef: (surah: number, ayah: number) => void;
+  activitiesDone: number[];
+  reflected: boolean;
+  onActivity: (index: number) => void;
+  onReflected: () => void;
 }) {
   const info = getSurah(surah)!;
   const world = worldFor(surah);
+  const design = designFor(surah);
+  const [reflection, setReflection] = useState(false);
+  const allFound = passages.length > 0 && found.length >= passages.length;
   const theme = catalogFor(surah);
   const stories = useMemo(() => outlinesForSurah(surah), [surah]);
   const [about, setAbout] = useState(false);
@@ -359,12 +370,47 @@ export function WorldHud({
           <Text style={s.titleLatin}>
             {info.number}. {info.nameTransliterated} · <Text style={s.inlineArabic}>{info.nameArabic}</Text>
           </Text>
+          {design && <Text style={s.titleSub}>{design.world_title} · design draft</Text>}
           <Text style={s.titleSub}>
-            {found.length} of {passages.length} lanterns found · tap for “about this place”
+            {design
+              ? `${found.length} of ${passages.length} places · ${activitiesDone.length} of ${design.activities.length} activities · tap for “about”`
+              : `${found.length} of ${passages.length} lanterns found · tap for “about this place”`}
           </Text>
         </Pressable>
+        {allFound && design && !open && !story && !about && (
+          <Button small icon="journey" label={reflected ? 'The closing reflection' : 'All places found: closing reflection'} onPress={() => setReflection(true)} />
+        )}
         {about && (
-          <View style={s.about}>
+          <ScrollView style={s.about} contentContainerStyle={{ gap: 8 }}>
+            {design && (
+              <View style={{ gap: 4 }}>
+                <ContentLabel kind="art" extra="planned world · design draft, unreviewed" />
+                <Text style={s.sheetHeading}>{design.world_title}</Text>
+                <Text style={s.basisText}>{design.concept}</Text>
+                <Text style={s.small}>
+                  Its own 3D world is not built yet: a shared setting stands in, and each lantern marks one of its planned places at the ayah it comes from.
+                </Text>
+                <ContentLabel kind="activity" extra="artistic adaptations" />
+                {design.activities.map((a, i) => {
+                  const ref = parseRef(a.reference);
+                  const done = activitiesDone.includes(i);
+                  return (
+                    <View key={a.name} style={s.activity}>
+                      <Text style={s.activityTitle}>
+                        {done ? '✓ ' : ''}
+                        {a.name} · {formatRef(a.reference)}
+                      </Text>
+                      <Text style={s.basisText}>{a.description}</Text>
+                      <Row wrap style={{ gap: 6 }}>
+                        {ref && <Button small kind="secondary" icon="book" label={`Read ${formatRef(a.reference)}`} onPress={() => onReadRef(ref.surah, ref.from)} />}
+                        {!done && <Button small kind="secondary" label="I did this" accessibilityLabel={`Mark done: ${a.name}`} onPress={() => onActivity(i)} />}
+                      </Row>
+                    </View>
+                  );
+                })}
+                <Text style={s.small}>These are activity cards for now. Their playable versions are not built yet.</Text>
+              </View>
+            )}
             <ContentLabel kind="art" extra="a symbolic setting, not a scene of events" />
             <Text style={s.basisText}>{world.basis}</Text>
             {theme && (
@@ -374,10 +420,12 @@ export function WorldHud({
               </View>
             )}
             <Text style={s.small}>
-              Each lantern holds the next passage of the surah, in order. The landscape is an artistic setting chosen by the app; it is not part of
-              the Quran and has not yet been reviewed by scholars.
+              {design
+                ? 'Each lantern stands for a planned place and opens the ayah it comes from, in the order of the surah.'
+                : 'Each lantern holds the next passage of the surah, in order.'}{' '}
+              The landscape is an artistic setting chosen by the app; it is not part of the Quran and has not yet been reviewed by scholars.
             </Text>
-          </View>
+          </ScrollView>
         )}
         {stories.length > 0 && !open && !story && (
           <Row wrap style={{ gap: 6, justifyContent: 'center' }}>
@@ -397,14 +445,43 @@ export function WorldHud({
       {near && !open && (
         <View style={s.nearBox} pointerEvents="box-none">
           <Button
-            label={found.includes(near.index) ? `Open again: ayahs ${near.from}–${near.to}` : `Open the lantern: ayahs ${near.from}–${near.to}`}
+            label={
+              near.area
+                ? `${found.includes(near.index) ? 'Visit again' : 'Visit'}: ${near.area.name} (${surah}:${near.from}${near.to > near.from ? `–${near.to}` : ''})`
+                : found.includes(near.index)
+                  ? `Open again: ayahs ${near.from}–${near.to}`
+                  : `Open the lantern: ayahs ${near.from}–${near.to}`
+            }
             icon="quran"
             onPress={() => onOpen(near)}
           />
         </View>
       )}
 
-      {!open && !story && <Joystick move={move} />}
+      {!open && !story && !reflection && <Joystick move={move} />}
+
+      {reflection && design && !open && (
+        <View style={[s.passage, portrait ? s.passagePortrait : s.passageLandscape]} accessibilityLabel="Closing reflection">
+          <Row style={{ justifyContent: 'space-between', alignItems: 'flex-start' }}>
+            <View style={{ flexShrink: 1 }}>
+              <Text style={s.passageTitle}>Closing reflection</Text>
+              <ContentLabel kind="explanation" extra="draft summary, not the Quran · unreviewed" />
+            </View>
+            <IconButton icon="close" label="Close the reflection" onPress={() => { setReflection(false); onReflected(); }} size={36} />
+          </Row>
+          <ScrollView style={{ flexShrink: 1 }} contentContainerStyle={{ gap: 10 }}>
+            <Text style={s.storyText}>{design.summary}</Text>
+            <Text style={s.sheetHeading}>Think about</Text>
+            {design.objectives.map((o) => (
+              <Text key={o} style={s.basisText}>• {o}</Text>
+            ))}
+          </ScrollView>
+          <Row wrap style={{ gap: 6 }}>
+            <Button small icon="book" label="Read the whole surah" onPress={() => { onReflected(); onRead(1); }} />
+            <Button small kind="secondary" label="Keep walking" onPress={() => { setReflection(false); onReflected(); }} />
+          </Row>
+        </View>
+      )}
 
       {story && !open && <StoryCard story={story} portrait={portrait} onClose={() => setStory(null)} onReadRef={onReadRef} />}
 
@@ -417,12 +494,18 @@ export function WorldHud({
                 {open.to > open.from ? `–${open.to}` : ''}
               </Text>
               <Text style={s.small}>
-                Lantern {open.index + 1} of {passages.length}
+                {open.area ? `Place ${open.index + 1} of ${passages.length}: ${open.area.name}` : `Lantern ${open.index + 1} of ${passages.length}`}
               </Text>
             </View>
             <IconButton icon="close" label="Close the passage" onPress={onClose} size={36} />
           </Row>
           <ScrollView style={{ flexShrink: 1 }} contentContainerStyle={{ gap: 10 }}>
+            {open.area && (
+              <View style={s.basis}>
+                <ContentLabel kind="art" extra="planned place · not a scene from the Quran" />
+                <Text style={s.basisText}>{open.area.description}</Text>
+              </View>
+            )}
             <Passage refs={[open.to > open.from ? `${surah}:${open.from}-${open.to}` : `${surah}:${open.from}`]} showHeader={false} />
           </ScrollView>
           <Row wrap style={{ gap: 6 }}>
@@ -523,12 +606,12 @@ export function JournalPanel({ onClose, onRead, onWorld }: { onClose: () => void
     .map(([n, p]) => ({ n: +n, p }))
     .sort((a, b) => b.p.at - a.p.at);
   const worlds = entries.filter((e) => e.p.visitedWorld).length;
-  const lanterns = entries.reduce((t, e) => t + e.p.passagesFound.length, 0);
+  const lanterns = entries.reduce((t, e) => t + (e.p.areasFound ?? []).length, 0);
   const opened = entries.filter((e) => e.p.furthestAyah > 0).length;
   return (
     <Sheet title="Journal" onClose={onClose}>
       <Text style={s.small}>
-        Surahs opened: {opened} of 114 · worlds visited: {worlds} of 114 · lanterns found: {lanterns}
+        Surahs opened: {opened} of 114 · worlds visited: {worlds} of 114 · places found: {lanterns}
       </Text>
       {!app.settings.recordProgress && <Text style={s.small}>Progress recording is off in the grown-ups settings.</Text>}
       <Text style={s.sheetHeading}>Bookmarks</Text>
@@ -546,7 +629,7 @@ export function JournalPanel({ onClose, onRead, onWorld }: { onClose: () => void
       {entries.length === 0 && <Text style={s.small}>Open any surah in the library to begin.</Text>}
       {entries.map(({ n, p }) => {
         const info = getSurah(n)!;
-        const total = Math.min(info.ayahCount, 12);
+        const total = passagesOf(n).length;
         return (
           <View key={n} style={s.row}>
             <View style={{ flexShrink: 1 }}>
@@ -555,7 +638,7 @@ export function JournalPanel({ onClose, onRead, onWorld }: { onClose: () => void
               </Text>
               <Text style={s.small}>
                 {p.furthestAyah ? `Read to ayah ${p.furthestAyah} of ${info.ayahCount}` : 'Not read yet'}
-                {p.visitedWorld ? ` · lanterns ${p.passagesFound.length} of ${total}` : ''}
+                {p.visitedWorld ? ` · places ${(p.areasFound ?? []).length} of ${total} · activities ${(p.activitiesDone ?? []).length}${p.reflected ? ' · reflected' : ''}` : ''}
               </Text>
             </View>
             <Row style={{ gap: 4 }}>
@@ -660,6 +743,8 @@ const s = StyleSheet.create({
   plaqueTitle: { fontFamily: fonts.display, fontSize: 20, color: colors.ink },
   plaqueSub: { fontFamily: fonts.body, fontSize: 13, color: colors.inkSoft },
   plaqueNote: { fontFamily: fonts.body, fontSize: 12, fontStyle: 'italic', color: colors.inkSoft },
+  activity: { gap: 4, paddingVertical: 6, borderTopWidth: 1, borderTopColor: 'rgba(0,0,0,0.08)' },
+  activityTitle: { fontFamily: fonts.bodyBold, fontSize: 13, color: colors.ink },
   stage: { fontFamily: fonts.body, fontSize: 11, color: colors.inkSoft, borderWidth: 1, borderColor: 'rgba(0,0,0,0.15)', borderRadius: 10, paddingHorizontal: 7, paddingVertical: 2 },
   stageDone: { color: '#1f6b3a', borderColor: '#1f6b3a', fontFamily: fonts.bodyBold },
   stageDraft: { color: '#8a5a12', borderColor: '#c9a46a' },
@@ -667,7 +752,7 @@ const s = StyleSheet.create({
   plaqueProg: { fontFamily: fonts.bodyBold, fontSize: 13, color: colors.skyDeep },
   basis: { gap: 4, backgroundColor: '#f3ead6', borderRadius: radius.sm, padding: 8 },
   basisText: { fontFamily: fonts.body, fontSize: 13, lineHeight: 19, color: colors.inkSoft },
-  about: { backgroundColor: 'rgba(250, 245, 233, 0.96)', borderRadius: radius.md, padding: 12, gap: 6, maxWidth: 440, marginHorizontal: 12 },
+  about: { backgroundColor: 'rgba(250, 245, 233, 0.96)', borderRadius: radius.md, padding: 12, maxWidth: 440, maxHeight: 440, marginHorizontal: 12 },
   hintBox: { position: 'absolute', top: '42%', left: 20, right: 20, alignItems: 'center' },
   nearBox: { position: 'absolute', bottom: 150, left: 16, right: 16, alignItems: 'center' },
   stickWrap: { position: 'absolute', left: 22, bottom: 22, alignItems: 'center', gap: 6 },
