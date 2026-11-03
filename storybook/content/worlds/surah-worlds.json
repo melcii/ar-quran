@@ -773,9 +773,13 @@
   },
   {
    "surah": 103,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "dunes",
+   "basis": "Open sand in late afternoon light, the time the surah is named for: a great hourglass (103:1), footprints fading across the plain (103:2) and four plain gates for the four qualities of 103:3.",
+   "references": [
+    "103:1",
+    "103:2",
+    "103:3"
+   ],
    "review_status": "unreviewed"
   },
   {
@@ -841,9 +845,13 @@
   },
   {
    "surah": 112,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "morning",
+   "basis": "A calm morning courtyard of geometric tiles, a shaded shelter and an open terrace where the four ayahs are read (112:1-4). Nothing is shown to stand for Allah.",
+   "references": [
+    "112:1",
+    "112:2",
+    "112:4"
+   ],
    "review_status": "unreviewed"
   },
   {

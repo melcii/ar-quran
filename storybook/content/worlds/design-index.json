@@ -5396,13 +5396,19 @@
     {
      "name": "Before the sand runs out",
      "reference": "103:1-3",
-     "description": "Collect four keys before the hourglass empties (adaptation).",
-     "kind": "card"
+     "description": "While the great hourglass pours, put the surah's three ayahs in order.",
+     "kind": "order"
+    },
+    {
+     "name": "Match each place to its ayah",
+     "reference": "103:1-3",
+     "description": "Match the hourglass, the plain of loss and the four gates to the ayah each comes from.",
+     "kind": "match"
     },
     {
      "name": "Advise a friend",
      "reference": "103:3",
-     "description": "Help another character with truth and patience.",
+     "description": "Help a friend with truth and patience, then talk about how it felt.",
      "kind": "card"
     }
    ],
@@ -5416,8 +5422,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (a pouring hourglass, fading footprints, four gates) and two playable games",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Asr.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and both games"
    },
    "review": "unreviewed"
   },
@@ -5761,36 +5769,42 @@
    "surah": 112,
    "world_title": "The One",
    "content_type": "moral-and-spiritual",
-   "concept": "A world of pure geometry and light: no image, figure or symbol of Allah, only the four ayahs written in calligraphy across an open sky, and a single path of reflection.",
+   "concept": "A quiet courtyard of geometric tiles, a shaded shelter and an open terrace facing an empty sky, where the four ayahs are read. No image, figure or symbol stands for Allah.",
    "summary": "Al-Ikhlas says Allah is One, the Eternal Refuge, He neither has children nor was born, and nothing is like Him.",
    "areas": [
     {
-     "name": "Path of One",
+     "name": "The Reading Courtyard",
      "reference": "112:1",
-     "description": "A single circle path."
+     "description": "A courtyard of geometric tiles where the first ayah is read."
     },
     {
      "name": "Eternal Refuge",
      "reference": "112:2",
-     "description": "A sheltered resting place."
+     "description": "A small shaded shelter to sit and rest in while reading 112:2."
     },
     {
      "name": "Nothing Like Him",
      "reference": "112:4",
-     "description": "Empty open sky; nothing depicts Allah."
+     "description": "An open terrace looking out at an empty sky. Nothing is shown to stand for Allah."
     }
    ],
    "activities": [
     {
      "name": "Read the four",
      "reference": "112:1-4",
-     "description": "Light each ayah's calligraphy in turn.",
-     "kind": "card"
+     "description": "Put the four ayahs of Al-Ikhlas in order.",
+     "kind": "order"
+    },
+    {
+     "name": "Match each place to its ayah",
+     "reference": "112:1-4",
+     "description": "Match the courtyard, the shelter and the terrace to the ayah each comes from.",
+     "kind": "match"
     },
     {
      "name": "Nothing compares",
      "reference": "112:4",
-     "description": "Learn why nothing in creation can be compared to Allah (adaptation).",
+     "description": "Talk about why nothing in creation can be compared to Allah.",
      "kind": "card"
     }
    ],
@@ -5804,8 +5818,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (tiled courtyard, shelter, open terrace) and two playable games",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Ikhlas.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and both games"
    },
    "review": "unreviewed"
   },
