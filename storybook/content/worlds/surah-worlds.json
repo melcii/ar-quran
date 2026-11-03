@@ -379,8 +379,14 @@
   {
    "surah": 49,
    "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "basis": "A village of courtyard homes for the manners the surah teaches: a gate for checking news (49:6), a bridge between two quarters (49:9-10), quiet streets (49:11-12) and a market where peoples meet (49:13). No person is shown.",
+   "references": [
+    "49:6",
+    "49:10",
+    "49:11",
+    "49:12",
+    "49:13"
+   ],
    "review_status": "unreviewed"
   },
   {
@@ -429,12 +435,15 @@
   {
    "surah": 55,
    "setting": "creation",
-   "basis": "Ar-Rahman names signs of creation: the sun and moon (55:5), fruit and palm trees (55:11), two seas meeting (55:19-20), and gardens with flowing springs (55:46-50). The scene gathers these as a symbolic landscape, not a picture of Paradise.",
+   "basis": "A shore of the favours the surah names: the sun and moon on their courses (55:5), the balance (55:7), grain and fragrant plants (55:12), clay (55:14), two seas with a barrier (55:19-20), pearl and coral (55:22) and ships like mountains (55:24).",
    "references": [
     "55:5",
-    "55:11",
+    "55:7",
+    "55:12",
+    "55:14",
     "55:19-20",
-    "55:46-50"
+    "55:22",
+    "55:24"
    ],
    "review_status": "unreviewed"
   },

@@ -91,25 +91,29 @@
   {
    "name": "Keep the balance",
    "reference": "55:7-9",
-   "description": "Keep a scale level by weighing fairly (adaptation).",
-   "label": "artistic educational adaptation, not an event in the Quran"
-  },
-  {
-   "name": "Favour collection",
-   "reference": "55:13",
-   "description": "At each place, name the favour and read the refrain 55:13.",
-   "label": "artistic educational adaptation, not an event in the Quran"
-  },
-  {
-   "name": "Two sunrises",
-   "reference": "55:17",
-   "description": "Watch the sun rise at two points across the seasons.",
+   "kind": "find",
+   "description": "At the great balance, tap the pans to add or take away weights until it hangs level, then read 55:9.",
    "label": "artistic educational adaptation, not an event in the Quran"
   },
   {
    "name": "Pearl and coral",
    "reference": "55:22",
-   "description": "Find pearls and coral in both seas.",
+   "kind": "find",
+   "description": "Find a pearl and a branch of coral in the shallows, from both waters.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "55:5-24",
+   "kind": "match",
+   "description": "Match each favour in this world to the ayah it comes from; each ends with the refrain of 55:13.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Two sunrises",
+   "reference": "55:17",
+   "kind": "card",
+   "description": "Talk about how the sun rises at different points through the year.",
    "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
@@ -167,23 +171,28 @@
   }
  ],
  "required_assets": [
-  "Orrery sky",
-  "Balance scale",
-  "Gardens",
-  "Clay bank",
-  "Two-seas coast",
-  "Ships"
+  "Shore terrain (shared)",
+  "Brass orrery",
+  "Interactive balance",
+  "Grain field",
+  "Clay pots",
+  "Two-water barrier",
+  "Pearls and coral",
+  "Sailing ships"
  ],
  "status": {
   "quran_text": "verified (KFGQPC Hafs, checksummed)",
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: its own shore (an orrery, a balance to level, grain and pots, two waters with a barrier, pearls and coral, tall-sailed ships), two find-it activities in the scene and a matching game",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Rahman.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the balance"
  },
  "quran_references": [
   "55:5",
+  "55:5-24",
   "55:6",
   "55:7",
   "55:7-9",

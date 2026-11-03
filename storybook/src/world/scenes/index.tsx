@@ -12,7 +12,9 @@ import { AsrScene } from './Asr';
 import { FilScene } from './Fil';
 import { IkhlasScene } from './Ikhlas';
 import { KahfScene } from './Kahf';
+import { HujuratScene } from './Hujurat';
 import { NamlScene } from './Naml';
+import { RahmanScene } from './Rahman';
 import { YusufScene } from './Yusuf';
 
 export type Stop = { p: Passage; pos: THREE.Vector3 };
@@ -29,6 +31,8 @@ export const SCENES: Record<number, ComponentType<SceneProps>> = {
   12: YusufScene,
   18: KahfScene,
   27: NamlScene,
+  49: HujuratScene,
+  55: RahmanScene,
   103: AsrScene,
   105: FilScene,
   112: IkhlasScene,

@@ -66,27 +66,31 @@
  ],
  "activities": [
   {
-   "name": "Check the news",
-   "reference": "49:6",
-   "description": "Verify messages before passing them on (adaptation).",
-   "label": "artistic educational adaptation, not an event in the Quran"
-  },
-  {
    "name": "Mend the bridge",
    "reference": "49:9-10",
-   "description": "Help two quarters make peace.",
+   "kind": "find",
+   "description": "The footbridge between the two quarters has planks missing. Tap each gap to mend it, then read 49:10.",
    "label": "artistic educational adaptation, not an event in the Quran"
   },
   {
-   "name": "Kind names",
-   "reference": "49:11",
-   "description": "Replace hurtful nicknames with kind ones.",
+   "name": "Match each place to its ayah",
+   "reference": "49:6-13",
+   "kind": "match",
+   "description": "Match each place in the village to the manner and ayah it comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Check the news",
+   "reference": "49:6",
+   "kind": "card",
+   "description": "Talk about checking a message before passing it on.",
    "label": "artistic educational adaptation, not an event in the Quran"
   },
   {
    "name": "Know one another",
    "reference": "49:13",
-   "description": "Learn greetings from different stalls.",
+   "kind": "card",
+   "description": "Learn a greeting from another language and talk about 49:13.",
    "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
@@ -124,20 +128,25 @@
   }
  ],
  "required_assets": [
-  "Village streets",
-  "Bridge",
-  "Market"
+  "Garden terrain (shared)",
+  "Village gate",
+  "Footbridge with missing planks",
+  "Courtyard homes",
+  "Market stalls"
  ],
  "status": {
   "quran_text": "verified (KFGQPC Hafs, checksummed)",
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: its own village (a gate, a footbridge to mend, courtyard homes, a market of many colours), a mend-the-bridge activity in the scene and a matching game",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Hujurat.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and mending the bridge"
  },
  "quran_references": [
   "49:6",
+  "49:6-13",
   "49:9-10",
   "49:10",
   "49:11",

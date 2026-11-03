@@ -2886,27 +2886,27 @@
    ],
    "activities": [
     {
-     "name": "Check the news",
-     "reference": "49:6",
-     "description": "Verify messages before passing them on (adaptation).",
-     "kind": "card"
-    },
-    {
      "name": "Mend the bridge",
      "reference": "49:9-10",
-     "description": "Help two quarters make peace.",
-     "kind": "card"
+     "description": "The footbridge between the two quarters has planks missing. Tap each gap to mend it, then read 49:10.",
+     "kind": "find"
     },
     {
-     "name": "Kind names",
-     "reference": "49:11",
-     "description": "Replace hurtful nicknames with kind ones.",
+     "name": "Match each place to its ayah",
+     "reference": "49:6-13",
+     "description": "Match each place in the village to the manner and ayah it comes from.",
+     "kind": "match"
+    },
+    {
+     "name": "Check the news",
+     "reference": "49:6",
+     "description": "Talk about checking a message before passing it on.",
      "kind": "card"
     },
     {
      "name": "Know one another",
      "reference": "49:13",
-     "description": "Learn greetings from different stalls.",
+     "description": "Learn a greeting from another language and talk about 49:13.",
      "kind": "card"
     }
    ],
@@ -2921,8 +2921,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own village (a gate, a footbridge to mend, courtyard homes, a market of many colours), a mend-the-bridge activity in the scene and a matching game",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Hujurat.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and mending the bridge"
    },
    "review": "unreviewed"
   },
@@ -3268,25 +3270,25 @@
     {
      "name": "Keep the balance",
      "reference": "55:7-9",
-     "description": "Keep a scale level by weighing fairly (adaptation).",
-     "kind": "card"
-    },
-    {
-     "name": "Favour collection",
-     "reference": "55:13",
-     "description": "At each place, name the favour and read the refrain 55:13.",
-     "kind": "card"
-    },
-    {
-     "name": "Two sunrises",
-     "reference": "55:17",
-     "description": "Watch the sun rise at two points across the seasons.",
-     "kind": "card"
+     "description": "At the great balance, tap the pans to add or take away weights until it hangs level, then read 55:9.",
+     "kind": "find"
     },
     {
      "name": "Pearl and coral",
      "reference": "55:22",
-     "description": "Find pearls and coral in both seas.",
+     "description": "Find a pearl and a branch of coral in the shallows, from both waters.",
+     "kind": "find"
+    },
+    {
+     "name": "Match each place to its ayah",
+     "reference": "55:5-24",
+     "description": "Match each favour in this world to the ayah it comes from; each ends with the refrain of 55:13.",
+     "kind": "match"
+    },
+    {
+     "name": "Two sunrises",
+     "reference": "55:17",
+     "description": "Talk about how the sun rises at different points through the year.",
      "kind": "card"
     }
    ],
@@ -3301,8 +3303,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own shore (an orrery, a balance to level, grain and pots, two waters with a barrier, pearls and coral, tall-sailed ships), two find-it activities in the scene and a matching game",
+    "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Rahman.tsx, src/world/ActivityGame.tsx",
+    "tested_by": "automated screenshots of the scene and the balance"
    },
    "review": "unreviewed"
   },
