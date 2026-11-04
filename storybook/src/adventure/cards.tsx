@@ -17,7 +17,11 @@ export type Card =
   | { kind: 'quiz'; task: Task & { kind: 'quiz' } }
   | { kind: 'book' }
   | { kind: 'finale' }
-  | { kind: 'about' };
+  | { kind: 'about' }
+  | { kind: 'choice'; task: Task & { kind: 'choice' } }
+  | { kind: 'share'; task: Task & { kind: 'share' } }
+  | { kind: 'weigh'; task: Task & { kind: 'weigh' } }
+  | { kind: 'vow'; task: Task & { kind: 'promise' } };
 
 export function verse([s, a]: Ref) {
   const v = getVerse(s, a);
@@ -354,8 +358,15 @@ function AboutCard({ world, width, portrait, onClose }: { world: WorldDef; width
   const add = (r: Reading | undefined) => r?.refs.forEach((x) => refs.add(x.join(':')));
   for (const t of world.tasks) {
     add(t.after);
-    if (t.kind === 'read') add(t.reading);
-    if (t.kind === 'points') t.points.forEach((p) => add(p.reading));
+    // Every reading anywhere in the activity (points, stops, phases, rounds...).
+    const walk = (o: unknown): void => {
+      if (!o || typeof o !== 'object') return;
+      if (Array.isArray(o)) return o.forEach(walk);
+      const r = o as Record<string, unknown>;
+      if (Array.isArray(r.refs) && typeof r.note === 'string') add(r as unknown as Reading);
+      for (const k of Object.keys(r)) if (k !== 'look') walk(r[k]);
+    };
+    walk(t);
     if (t.kind === 'quiz' && t.game.type !== 'sort') t.game.refs.forEach((x) => refs.add(x.join(':')));
   }
   refs.add(world.finale.ref.join(':'));
@@ -368,8 +379,14 @@ function AboutCard({ world, width, portrait, onClose }: { world: WorldDef; width
           claims about how any place or event looked.
         </Text>
         <ContentLabel kind="quran" extra="ayahs you can read in this world" />
-        <Text style={st.tileText}>{[...refs].sort((a, b) => +a.split(':')[1] - +b.split(':')[1]).join(' · ')}</Text>
+        <Text style={st.tileText}>{[...refs].sort((a, b) => +a.split(':')[0] - +b.split(':')[0] || +a.split(':')[1] - +b.split(':')[1]).join(' · ')}</Text>
         <Text style={st.small}>Plus the whole surah, in the book. Arabic: KFGQPC Uthmanic Hafs. Translation: Saheeh International. Nothing in the Arabic is generated or changed.</Text>
+        {!!world.play && (
+          <>
+            <ContentLabel kind="activity" extra="how this world plays" />
+            <Text style={st.tileText}>{world.play}</Text>
+          </>
+        )}
         <ContentLabel kind="activity" extra="what is adapted" />
         {world.tasks
           .filter((t) => t.adaptation)

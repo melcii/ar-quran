@@ -27,9 +27,11 @@ import { motion, player, pointer, weather, type Move } from '@/ark/shared';
 import { CardView, type Card } from './cards';
 import { Boat, StructureView, footprint } from './kit';
 import { Carried, Doorway, GuidedBoat, Pile, PointSpot, ReadingMarker, Slot, Wayfinder } from './props';
+import { Balance, FlowView, GoRing, HomeLamp, NeedSign, PlayerBoat, PromiseBoard, PromiseSpot, SkyDial, StandPlate, WatchRing, type FlowState } from './mech';
+import { ChoiceCard, ShareCard, VowCard, WeighCard } from './panels';
 import { CloudLayer, FarLand, Flock, FlowerField, GrassField, GroundMesh, Lighting, Moon, Motes, Mountains, RockField, Sky, StillWater, Trees, place, type SceneQuality } from './Scenery';
 import { makeTerrain, rng, type P2, type Terrain } from './terrain';
-import type { Task, WorldDef } from './types';
+import type { FlowTask, Reading, Task, WorldDef } from './types';
 import { WORLDS } from './worlds';
 
 /* ------------------------------- saving ------------------------------- */
@@ -67,7 +69,77 @@ type Game = {
   next: MutableRefObject<THREE.Vector3 | null>;
   /** Where the explorer has walked, so following animals take the same way (over bridges, round walls). */
   trail: { id: number; p: THREE.Vector3 }[];
+  /** The explorer's own boat (sailing worlds). */
+  boat: { on: boolean; yaw: number; speed: number };
+  /** Seconds stood still / watched, by key. */
+  hold: Record<string, number>;
+  /** Mountain gusts. */
+  gust: { t: number; warned: boolean };
+  /** Has the explorer walked away (for places you come back to). */
+  away: Record<string, boolean>;
+  /** When each live promise's candle burns out (game clock). */
+  vows: Record<string, number>;
+  clock: number;
+  flow: Record<string, FlowState>;
+  /** One-off hints already given. */
+  told: Record<string, number>;
+  /** A short live status line for the current activity (water left, candles, ...). */
+  status: string;
 };
+
+/** How many steps finish a task. */
+export function total(task: Task) {
+  switch (task.kind) {
+    case 'points':
+      return task.points.length;
+    case 'carry':
+      return task.loads.length;
+    case 'lead':
+      return task.n;
+    case 'guide':
+      return task.boats.length;
+    case 'observe':
+      return task.subjects.length;
+    case 'sky':
+      return task.phases.length;
+    case 'sail':
+      return task.stops.length + 1;
+    case 'choice':
+      return task.scenes.length;
+    case 'share':
+      return task.homes.length;
+    case 'promise':
+      return task.promises.length;
+    case 'sift':
+      return task.rounds.length;
+    case 'return':
+      return task.times;
+    default:
+      return 1;
+  }
+}
+
+/** Where the rain water goes with the gates as they are now, and the way it takes. */
+export function flowRoute(task: FlowTask, f: FlowState): { dest: string; pts: P2[] } {
+  const pts: P2[] = [task.source];
+  let node = task.first;
+  for (let i = 0; i < 12; i++) {
+    const g = task.gates.find((x) => x.id === node);
+    if (!g) break;
+    pts.push(g.at);
+    node = f.gates[g.id] === 'b' ? g.b : g.a;
+  }
+  const end = task.cisterns.find((c) => c.id === node)?.at ?? task.sand.find((c) => c.id === node)?.at;
+  if (end) pts.push(end);
+  return { dest: node, pts };
+}
+
+export const freshFlow = (task: FlowTask): FlowState => ({ running: false, water: task.rain, spill: 0, filled: {}, gates: Object.fromEntries(task.gates.map((g) => [g.id, 'a' as const])) });
+
+/** The reading that belongs to an activity itself (shown when it is finished). */
+export function ownReading(task: Task): Reading | undefined {
+  return 'reading' in task && task.kind !== 'read' ? (task as { reading?: Reading }).reading : undefined;
+}
 
 const v3 = ([x, z]: P2, t: Terrain, dy = 0) => new THREE.Vector3(x, t.floorY(x, z) + dy, z);
 
@@ -113,6 +185,24 @@ function makeAnimals(def: WorldDef, s: Save, t: Terrain): Ani[] {
     }
     if (task.kind === 'pick')
       task.choices.forEach((c, i) => out.push(mk(task.id, i, task.animal, v3(c.at, t), { look: c.look, scale: c.scale ?? 1, mate: 0 })));
+    if (task.kind === 'sift') {
+      const gone = s.prog[`${task.id}/x`] ?? [];
+      task.herd.forEach((c, i) => {
+        const away = gone.includes(i);
+        const at: P2 = away ? [task.away[0] + Math.cos(i * 2.4) * 3, task.away[1] + Math.sin(i * 2.4) * 3] : c.at;
+        const a = mk(task.id, i, task.animal, v3(at, t), { look: c.look, scale: c.scale ?? 1, mate: 0 });
+        out.push(a);
+      });
+    }
+    if (task.kind === 'observe')
+      task.subjects.forEach((sub, si) => {
+        if (!sub.animal) return;
+        for (let i = 0; i < (sub.n ?? 3); i++) {
+          const a = r() * 6.28;
+          const d = Math.sqrt(r()) * sub.r * 0.6;
+          out.push(mk(`obs-${task.id}-${si}`, i, sub.animal, v3([sub.at[0] + Math.cos(a) * d, sub.at[1] + Math.sin(a) * d], t), { scale: i === 0 && (sub.n ?? 3) > 2 ? 0.6 : 0.9 + r() * 0.2 }));
+        }
+      });
   }
   for (const [h, herd] of (def.herds ?? []).entries())
     for (let i = 0; i < herd.n; i++) {
@@ -145,6 +235,9 @@ type Api = {
   hint: (text: string) => void;
   open: (c: Card) => void;
   near: (u: { key: string; label: string } | null) => void;
+  say: (text: string) => void;
+  /** Add to a side list in the save (heard rounds, animals sent away, late promises) without finishing anything. */
+  note: (key: string, i: number) => void;
 };
 
 function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game: Game; move: MutableRefObject<Move>; api: MutableRefObject<Api> }) {
@@ -256,8 +349,145 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
                 api.current.hint('The boat follows the lights into the harbour.');
               } });
           break;
+        case 'stand':
+        case 'reach':
+          out.push({ key: `go:${task.id}`, pos: v3(task.at, t), label: task.label, reach: 0, run: () => undefined });
+          break;
+        case 'observe':
+          task.subjects.forEach((sub, i) => {
+            if (!prog.includes(i)) out.push({ key: `go:${task.id}:${i}`, pos: v3(sub.at, t), label: sub.label, reach: 0, run: () => undefined });
+          });
+          break;
+        case 'return':
+          if (prog.length === 0 || game.away[task.id]) out.push({ key: `go:${task.id}`, pos: v3(task.at, t), label: task.label, reach: 0, run: () => undefined });
+          break;
+        case 'sky': {
+          const ph = task.phases[prog.length];
+          if (ph)
+            out.push({ key: `sky:${task.id}`, pos: v3(task.at, t), label: `Turn the sky-dial: ${ph.label}`, reach: 3.2, run: () => {
+              nature.place();
+              api.current.progress(task.id, prog.length);
+              api.current.open({ kind: 'reading', reading: ph.reading });
+            } });
+          break;
+        }
+        case 'sail': {
+          const w = t.water ?? 0;
+          if (!game.boat.on)
+            out.push({ key: `board:${task.id}`, pos: v3(task.dock, t), label: 'Board your boat', reach: 3.4, run: () => {
+              game.boat.on = true;
+              game.boat.speed = 0;
+              game.boat.yaw = task.launchYaw ?? 0;
+              player.pos.set(task.launch[0], w + 0.3, task.launch[1]);
+              player.yaw = game.boat.yaw;
+              game.target = null;
+              game.cam.dist = Math.max(game.cam.dist, 12);
+              nature.place();
+              api.current.hint('You are sailing. Steer with the stick or the arrow keys; tap the sea to head there.');
+            } });
+          else {
+            const i = task.stops.findIndex((_, j) => !prog.includes(j));
+            if (i >= 0) out.push({ key: `go:${task.id}:${i}`, pos: new THREE.Vector3(task.stops[i].at[0], w, task.stops[i].at[1]), label: task.stops[i].label, reach: 0, run: () => undefined });
+            out.push({ key: `ashore:${task.id}`, pos: new THREE.Vector3(task.launch[0], w, task.launch[1]), label: 'Step ashore', reach: 7, run: () => {
+              game.boat.on = false;
+              game.boat.speed = 0;
+              const d = v3(task.dock, t);
+              player.pos.copy(d);
+              game.target = null;
+              game.cam.snap = true;
+              game.cam.look.copy(d);
+              if (task.stops.every((_, j) => (api.current.save().prog[task.id] ?? []).includes(j))) api.current.progress(task.id, task.stops.length);
+            } });
+          }
+          break;
+        }
+        case 'choice':
+          out.push({ key: `choice:${task.id}`, pos: v3(task.at, t), label: task.title, reach: 3.2, run: () => api.current.open({ kind: 'choice', task }) });
+          break;
+        case 'share':
+          out.push({ key: `share:${task.id}`, pos: v3(task.at, t), label: task.title, reach: 3.4, run: () => api.current.open({ kind: 'share', task }) });
+          break;
+        case 'weigh':
+          out.push({ key: `weigh:${task.id}`, pos: v3(task.at, t), label: task.title, reach: 3.2, run: () => api.current.open({ kind: 'weigh', task }) });
+          break;
+        case 'promise': {
+          const took = (s.prog[`${task.id}/a`] ?? []).length > 0;
+          if (!took) out.push({ key: `vows:${task.id}`, pos: v3(task.at, t), label: 'Read the promise board', reach: 3.4, run: () => api.current.open({ kind: 'vow', task }) });
+          else
+            task.promises.forEach((p, i) => {
+              if (prog.includes(i)) return;
+              out.push({ key: `vow:${task.id}:${i}`, pos: v3(p.at, t), label: p.verb, reach: 3, run: () => {
+                const late = game.clock > (game.vows[`${task.id}:${i}`] ?? 1e9);
+                if (late) api.current.note(`${task.id}/late`, i);
+                nature.place();
+                api.current.hint(late ? `${p.done} The candle had burned out first: kept late, but kept.` : `${p.done} Promise kept in time.`);
+                api.current.progress(task.id, i);
+              } });
+            });
+          break;
+        }
+        case 'flow': {
+          const f = (game.flow[task.id] ??= freshFlow(task));
+          out.push({ key: `rain:${task.id}`, pos: v3(task.source, t), label: f.running ? 'Close the sluice' : 'Open the sluice', reach: 3.6, run: () => {
+            f.running = !f.running;
+            nature.place();
+          } });
+          for (const g of task.gates) {
+            const to = (id: string) => task.cisterns.find((c) => c.id === id)?.label ?? (task.gates.some((x) => x.id === id) ? 'the next gate' : 'the sand');
+            const other = f.gates[g.id] === 'b' ? g.a : g.b;
+            out.push({ key: `gate:${task.id}:${g.id}`, pos: v3(g.at, t), label: `Turn the gate toward ${to(other)}`, reach: 2.8, run: () => {
+              f.gates[g.id] = f.gates[g.id] === 'b' ? 'a' : 'b';
+              nature.place();
+            } });
+          }
+          break;
+        }
+        case 'sift': {
+          const r = prog.length;
+          const heard = (s.prog[`${task.id}/h`] ?? []).includes(r);
+          const gone = s.prog[`${task.id}/x`] ?? [];
+          const mid = task.herd.reduce((a, c) => [a[0] + c.at[0] / task.herd.length, a[1] + c.at[1] / task.herd.length] as P2, [0, 0] as P2);
+          if (!heard && task.rounds[r])
+            out.push({ key: `ask:${task.id}`, pos: v3([mid[0] + 4, mid[1]], t), label: 'Hear the next answer', reach: 4.5, run: () => {
+              api.current.note(`${task.id}/h`, r);
+              api.current.open({ kind: 'reading', reading: task.rounds[r].reading });
+              api.current.hint(task.rounds[r].say);
+            } });
+          else
+            for (const a of game.animals)
+              if (a.task === task.id && !gone.includes(a.idx))
+                out.push({ key: `ani:${a.id}`, pos: a.pos, label: 'Send this one back to the pasture', reach: 3.2, run: () => {
+                  const R = task.rounds[r];
+                  if (task.herd[a.idx].traits.includes(R.keep)) {
+                    api.current.hint(R.wrong);
+                    return;
+                  }
+                  api.current.note(`${task.id}/x`, a.idx);
+                  a.home.set(task.away[0] + Math.cos(a.idx * 2.4) * 3, 0, task.away[1] + Math.sin(a.idx * 2.4) * 3);
+                  a.target = a.home.clone();
+                  a.timer = 0;
+                  nature.call(a.kind as never);
+                  const left = task.herd.filter((c, i) => !api.current.save().prog[`${task.id}/x`]?.includes(i) && !c.traits.includes(R.keep));
+                  if (!left.length) api.current.progress(task.id, r);
+                  else api.current.hint(`Sent back. ${left.length} more ${left.length === 1 ? 'does' : 'do'} not fit.`);
+                } });
+          break;
+        }
       }
     }
+    (def.warps ?? []).forEach((w, i) => {
+      if (w.show && !s.done.includes(w.show)) return;
+      out.push({ key: `warp:${i}`, pos: v3(w.at, t), label: w.label, reach: 3, run: () => {
+        player.pos.copy(v3(w.to, t));
+        player.yaw = w.toYaw ?? player.yaw;
+        game.cam.yaw = player.yaw + Math.PI;
+        game.cam.look.copy(player.pos);
+        game.cam.snap = true;
+        game.target = null;
+        game.trail.length = 0;
+        nature.place();
+      } });
+    });
     (def.links ?? []).forEach((l, i) => out.push({ key: `link:${i}`, pos: v3(l.at, t), label: l.label, reach: 3, run: () => router.push(l.href as never) }));
     return out;
   }
@@ -269,6 +499,10 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
     if (d > u.reach + 0.3) {
       if (key.startsWith('boat:')) {
         api.current.hint('Walk out to the end of a dock, then tap the boat.');
+        return;
+      }
+      if (game.boat.on && !key.startsWith('ashore:') && !key.startsWith('go:')) {
+        api.current.hint('Sail back to the dock and step ashore first.');
         return;
       }
       game.target = u.pos.clone();
@@ -308,7 +542,7 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
       const tx = game.target.x - player.pos.x;
       const tz = game.target.z - player.pos.z;
       const d = Math.hypot(tx, tz);
-      const want = game.pending ? (game.pending.startsWith('boat') ? 36 : 2.2) : 0.4;
+      const want = game.pending ? (game.pending.startsWith('boat') ? 36 : game.pending.startsWith('ashore') ? 6 : 2.2) : game.boat.on ? 3 : 0.4;
       if (d < want) {
         game.target = null;
         if (game.pending) {
@@ -321,34 +555,73 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
         dz = tz / d;
       }
     }
-    const mag = Math.hypot(dx, dz);
-    const want = mag > 0.05 ? (run ? 7 : 4.2) * Math.min(1, mag) : 0;
-    player.speed += (want - player.speed) * Math.min(1, dt * 8);
-    if (mag > 0.05) player.yaw = Math.atan2(dx, dz);
-    if (player.speed > 0.02) {
-      const step = player.speed * dt;
-      const fx = Math.sin(player.yaw) * step;
-      const fz = Math.cos(player.yaw) * step;
-      const { x, z } = player.pos;
-      if (t.canStep(x, z, x + fx, z + fz, 0.35)) player.pos.set(x + fx, player.pos.y, z + fz);
-      else if (t.canStep(x, z, x + fx, z, 0.35)) player.pos.x += fx;
-      else if (t.canStep(x, z, x, z + fz, 0.35)) player.pos.z += fz;
-      else if (game.target) {
-        game.target = null;
-        game.pending = null;
+    game.clock += dt;
+    if (game.boat.on) {
+      // Sailing: the boat turns toward where you steer and glides; it keeps to water deep enough to float.
+      const b = game.boat;
+      const mag = Math.hypot(dx, dz);
+      const wantSp = mag > 0.05 ? (run ? 11 : 7.5) * Math.min(1, mag) : 0;
+      b.speed += (wantSp - b.speed) * Math.min(1, dt * 1.4);
+      if (mag > 0.05) {
+        let dy = Math.atan2(dx, dz) - b.yaw;
+        dy = Math.atan2(Math.sin(dy), Math.cos(dy));
+        b.yaw += dy * Math.min(1, dt * 1.6);
       }
-      const before = player.phase;
-      player.phase += (step / 1.3) * Math.PI;
-      if (Math.floor(before / Math.PI) !== Math.floor(player.phase / Math.PI)) nature.step(t.floors.some((f) => typeof f.y !== 'number') && t.floorY(player.pos.x, player.pos.z) > t.y(player.pos.x, player.pos.z) + 0.2);
+      const W = t.water ?? 0;
+      const deep = (x: number, z: number) => t.y(x, z) < W - 0.35 && Math.hypot(x, z) < t.radius + 20;
+      const step = b.speed * dt;
+      const nx = player.pos.x + Math.sin(b.yaw) * step;
+      const nz = player.pos.z + Math.cos(b.yaw) * step;
+      // Ahead is clear: go. Otherwise glide along the shore, turning a little away from it.
+      let moved = false;
+      for (const off of [0, 0.5, -0.5, 1, -1]) {
+        const yy = b.yaw + off;
+        const mx = player.pos.x + Math.sin(yy) * step * (off ? 0.6 : 1);
+        const mz = player.pos.z + Math.cos(yy) * step * (off ? 0.6 : 1);
+        if (deep(mx + Math.sin(yy) * 1.6, mz + Math.cos(yy) * 1.6) && deep(mx, mz)) {
+          player.pos.set(mx, W + 0.3, mz);
+          if (off) b.yaw += off * Math.min(1, dt * 2);
+          moved = true;
+          break;
+        }
+      }
+      if (!moved) {
+        b.speed *= 0.2;
+        if (game.target) game.target = null;
+      }
+      player.pos.y = W + 0.3;
+      player.yaw = b.yaw;
+      player.speed = 0;
+    } else {
+      const mag = Math.hypot(dx, dz);
+      const want = mag > 0.05 ? (run ? 7 : 4.2) * Math.min(1, mag) : 0;
+      player.speed += (want - player.speed) * Math.min(1, dt * 8);
+      if (mag > 0.05) player.yaw = Math.atan2(dx, dz);
+      if (player.speed > 0.02) {
+        const step = player.speed * dt;
+        const fx = Math.sin(player.yaw) * step;
+        const fz = Math.cos(player.yaw) * step;
+        const { x, z } = player.pos;
+        if (t.canStep(x, z, x + fx, z + fz, 0.35)) player.pos.set(x + fx, player.pos.y, z + fz);
+        else if (t.canStep(x, z, x + fx, z, 0.35)) player.pos.x += fx;
+        else if (t.canStep(x, z, x, z + fz, 0.35)) player.pos.z += fz;
+        else if (game.target) {
+          game.target = null;
+          game.pending = null;
+        }
+        const before = player.phase;
+        player.phase += (step / 1.3) * Math.PI;
+        if (Math.floor(before / Math.PI) !== Math.floor(player.phase / Math.PI)) nature.step(t.floors.some((f) => typeof f.y !== 'number') && t.floorY(player.pos.x, player.pos.z) > t.y(player.pos.x, player.pos.z) + 0.2);
+      }
+      const lastT = game.trail[game.trail.length - 1];
+      if (!lastT || lastT.p.distanceTo(player.pos) > 0.8) {
+        game.trail.push({ id: (lastT?.id ?? 0) + 1, p: player.pos.clone() });
+        if (game.trail.length > 400) game.trail.shift();
+      }
+      const fy = t.floorY(player.pos.x, player.pos.z);
+      player.pos.y += (fy - player.pos.y) * Math.min(1, dt * 14);
+      if (Math.abs(fy - player.pos.y) > 1.5) player.pos.y = fy;
     }
-    const lastT = game.trail[game.trail.length - 1];
-    if (!lastT || lastT.p.distanceTo(player.pos) > 0.8) {
-      game.trail.push({ id: (lastT?.id ?? 0) + 1, p: player.pos.clone() });
-      if (game.trail.length > 400) game.trail.shift();
-    }
-    const fy = t.floorY(player.pos.x, player.pos.z);
-    player.pos.y += (fy - player.pos.y) * Math.min(1, dt * 14);
-    if (Math.abs(fy - player.pos.y) > 1.5) player.pos.y = fy;
     const pp = player.pos;
 
     /* ---------- animals ---------- */
@@ -446,6 +719,185 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
       }
     }
 
+    /* ---------- the newer kinds of play ---------- */
+    const still = player.speed < 0.3 && !game.boat.on;
+    const tell = (k: string, text: string, every = 6) => {
+      if (game.clock - (game.told[k] ?? -99) < every) return;
+      game.told[k] = game.clock;
+      api.current.hint(text);
+    };
+    let gusting = 0;
+    let stormy = 0;
+    let status = '';
+    for (const task of def.tasks) {
+      if (!ready(task, s.done)) continue;
+      const prog = s.prog[task.id] ?? [];
+      const dist = (p: P2) => Math.hypot(p[0] - pp.x, p[1] - pp.z);
+      if (task.kind === 'stand') {
+        const r = task.r ?? 1.3;
+        const on = dist(task.at) < r;
+        let facing = true;
+        if (task.face) {
+          let dy = Math.atan2(task.face[0] - pp.x, task.face[1] - pp.z) - player.yaw;
+          dy = Math.atan2(Math.sin(dy), Math.cos(dy));
+          facing = Math.abs(dy) < 0.7;
+        }
+        const h = game.hold[task.id] ?? 0;
+        game.hold[task.id] = on && still && facing ? h + dt : Math.max(0, h - dt * 2);
+        if (on && still && !facing) tell(`${task.id}f`, 'Turn to face it: take one small step toward it, then keep still.');
+        else if (on && !still) tell(`${task.id}s`, 'Stand still here for a moment.', 8);
+        if (game.hold[task.id] >= task.secs) {
+          api.current.finish(task.id);
+          if (task.reading) api.current.open({ kind: 'reading', reading: task.reading });
+        }
+      }
+      if (task.kind === 'reach') {
+        if (task.gust) {
+          // Find where on the mountain path the explorer is.
+          let best = 1e9;
+          let seg = -1;
+          for (let i = 0; i < task.gust.path.length - 1; i++) {
+            const [ax, az] = task.gust.path[i];
+            const [bx, bz] = task.gust.path[i + 1];
+            const ex = bx - ax;
+            const ez = bz - az;
+            const l2 = ex * ex + ez * ez || 1;
+            const u = Math.min(1, Math.max(0, ((pp.x - ax) * ex + (pp.z - az) * ez) / l2));
+            const d = Math.hypot(pp.x - ax - ex * u, pp.z - az - ez * u);
+            if (d < best) {
+              best = d;
+              seg = i;
+            }
+          }
+          if (seg >= 0 && best < task.gust.width) {
+            game.gust.t += dt;
+            const ph = game.gust.t % 8;
+            if (ph > 4 && ph < 5.2) {
+              if (!game.gust.warned) api.current.hint('The wind is rising. Stand still until it passes!');
+              game.gust.warned = true;
+              gusting = 0.15;
+            } else if (ph >= 5.2) {
+              gusting = 0.45;
+              if (player.speed > 0.6) {
+                const [ax, az] = task.gust.path[seg];
+                const [bx, bz] = task.gust.path[seg + 1];
+                const l = Math.hypot(bx - ax, bz - az) || 1;
+                const px = pp.x - ((bx - ax) / l) * 8.5 * dt;
+                const pz = pp.z - ((bz - az) / l) * 8.5 * dt;
+                if (t.canStep(pp.x, pp.z, px, pz, 0.35)) pp.set(px, pp.y, pz);
+                tell('gustback', 'The wind pushes you back down. Keep still while it blows, then climb on.', 5);
+              }
+            } else game.gust.warned = false;
+          }
+        }
+        if (dist(task.at) < (task.r ?? 2.5)) {
+          api.current.finish(task.id);
+          if (task.reading) api.current.open({ kind: 'reading', reading: task.reading });
+        }
+      }
+      if (task.kind === 'observe')
+        task.subjects.forEach((sub, i) => {
+          if (prog.includes(i)) return;
+          const key = `${task.id}:${i}`;
+          const d = dist(sub.at);
+          const close = d < sub.r + 2;
+          if (close && player.speed > 5) {
+            game.hold[key] = 0;
+            for (const a of game.animals)
+              if (a.task === `obs-${task.id}-${i}`) {
+                const ang = Math.atan2(a.pos.x - pp.x, a.pos.z - pp.z);
+                a.target = a.pos.clone().add(new THREE.Vector3(Math.sin(ang) * 4, 0, Math.cos(ang) * 4));
+                a.timer = 0;
+              }
+            tell(`${key}run`, 'Running startled them. Come close at a walk, then keep still and watch.');
+          } else if (close && still) {
+            game.hold[key] = (game.hold[key] ?? 0) + dt;
+            status = `Watching: ${sub.label} ${Math.min(100, Math.round(((game.hold[key] ?? 0) / task.secs) * 100))}%`;
+            if (game.hold[key] >= task.secs) {
+              api.current.progress(task.id, i);
+              api.current.say(sub.note);
+              if (sub.reading) api.current.open({ kind: 'reading', reading: sub.reading });
+            }
+          } else if (close) tell(`${key}walk`, 'Keep still and watch for a little while.', 10);
+        });
+      if (task.kind === 'return') {
+        const d = dist(task.at);
+        if (d > task.away) game.away[task.id] = true;
+        if (d < task.r && (prog.length === 0 || game.away[task.id]) && prog.length < task.times) {
+          game.away[task.id] = false;
+          const k = prog.length;
+          api.current.say(task.notes[k]);
+          api.current.progress(task.id, k);
+          if (k + 1 >= task.times && task.reading) api.current.open({ kind: 'reading', reading: task.reading });
+        } else if (d < task.r && prog.length > 0) tell(`${task.id}out`, 'Walk out through the courtyard gate, then come back in.', 12);
+      }
+      if (task.kind === 'sail' && game.boat.on) {
+        const i = task.stops.findIndex((_, j) => !prog.includes(j));
+        const stop = task.stops[i];
+        if (stop) {
+          if (stop.storm) stormy = Math.min(0.85, Math.max(0.2, 1 - dist(stop.at) / 90));
+          if (dist(stop.at) < (stop.r ?? 6)) {
+            api.current.progress(task.id, i);
+            if (stop.note) api.current.say(stop.note);
+            if (stop.reading) api.current.open({ kind: 'reading', reading: stop.reading });
+          }
+        } else status = 'Every place visited. Sail back to the dock and step ashore.';
+      }
+      if (task.kind === 'promise') {
+        const took = (s.prog[`${task.id}/a`] ?? []).length > 0;
+        if (took) {
+          const parts: string[] = [];
+          task.promises.forEach((p, i) => {
+            const k = `${task.id}:${i}`;
+            if (game.vows[k] == null) game.vows[k] = game.clock + p.secs;
+            if (prog.includes(i)) return;
+            const left = Math.max(0, Math.ceil(game.vows[k] - game.clock));
+            parts.push(left > 0 ? `${p.label} (${left}s)` : `${p.label} (candle out)`);
+          });
+          if (parts.length) status = `Promises: ${parts.join(' · ')}`;
+        }
+      }
+      if (task.kind === 'flow') {
+        const f = (game.flow[task.id] ??= freshFlow(task));
+        if (f.running) {
+          const take = Math.min(f.water, 0.3 * dt);
+          f.water -= take;
+          const { dest } = flowRoute(task, f);
+          const c = task.cisterns.find((x) => x.id === dest);
+          if (c) {
+            const room = Math.max(0, c.cap - (f.filled[c.id] ?? 0));
+            const add = Math.min(take, room);
+            f.filled[c.id] = (f.filled[c.id] ?? 0) + add;
+            f.spill += take - add;
+            if (room <= 0) tell(`${task.id}full`, `${c.label} is full and spilling over. Turn a gate!`, 4);
+          } else {
+            f.spill += take;
+            tell(`${task.id}sand`, 'The water is running into the sand. Turn a gate!', 4);
+          }
+          const full = task.cisterns.every((x) => (f.filled[x.id] ?? 0) >= x.cap - 0.02);
+          if (full && f.spill <= task.maxSpill) {
+            f.running = false;
+            api.current.finish(task.id);
+          } else if (f.spill > task.maxSpill || f.water <= 0) {
+            game.flow[task.id] = { ...freshFlow(task), gates: f.gates };
+            api.current.say(
+              f.spill > task.maxSpill
+                ? 'Too much water ran off onto the sand, and the cisterns could not all be filled. The spring fills again: plan which way each gate should point, then open the sluice once more.'
+                : 'The spring has run dry before every cistern was full. It fills again: try once more.',
+            );
+          }
+        }
+        const g = game.flow[task.id];
+        status = `Spring: ${Math.ceil(g.water)} left · ${task.cisterns.map((c) => `${c.label} ${Math.min(c.cap, Math.round((g.filled[c.id] ?? 0) * 10) / 10)}/${c.cap}`).join(' · ')} · spilled ${Math.round(g.spill * 10) / 10} of ${task.maxSpill} allowed`;
+      }
+      if (task.kind === 'sift') {
+        const r = prog.length;
+        if (task.rounds[r] && (s.prog[`${task.id}/h`] ?? []).includes(r)) status = task.rounds[r].say;
+      }
+    }
+    weather.storm += (Math.max(gusting, stormy) - weather.storm) * Math.min(1, dt * 0.8);
+    game.status = status;
+
     /* ---------- what is near, and where to go next ---------- */
     const list = uses();
     let near: Use | null = null;
@@ -462,8 +914,8 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
     const first = def.tasks.find((x) => ready(x, s.done));
     let nextPos: THREE.Vector3 | null = null;
     if (first) {
-      const mine = list.filter((u) => u.key.includes(`:${first.id}`) || (first.kind === 'lead' || first.kind === 'pick' ? u.key.startsWith(`ani:${first.id}-`) : false));
-      const pen = mine.find((u) => u.key.startsWith('pen:'));
+      const mine = list.filter((u) => u.key.includes(`:${first.id}`) || (first.kind === 'lead' || first.kind === 'pick' || first.kind === 'sift' ? u.key.startsWith(`ani:${first.id}-`) : false));
+      const pen = mine.find((u) => u.key.startsWith('pen:') || (game.boat.on && u.key.startsWith('go:')));
       const pool = pen ? [pen] : mine;
       let bd = 1e9;
       for (const u of pool) {
@@ -506,6 +958,7 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
       const side = Math.abs(rx * oz - rz * ox);
       if (side < o.r + 0.7) dist = Math.max(2.5, Math.min(dist, along - o.r - 0.6));
     }
+    if (game.boat.on) dist = Math.max(dist, 11);
     camDist.current += (dist - camDist.current) * Math.min(1, dt * (dist < camDist.current ? 10 : 2));
     if (snap) camDist.current = dist;
     const want3 = new THREE.Vector3(
@@ -518,7 +971,7 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
     camera.position.copy(cam.pos);
     camera.lookAt(cam.look);
 
-    nature.update({ river: t.water != null ? 30 : 99, storm: 0, rain: 0, inside: false, dt });
+    nature.update({ river: t.water != null ? (game.boat.on ? 0 : 30) : 99, storm: weather.storm, rain: 0, inside: false, dt });
   });
 
   return null;
@@ -630,6 +1083,87 @@ function Things({ def, t, data, game, carrying, act, isOn }: { def: WorldDef; t:
             return game.boats
               .filter((b) => b.task === task.id)
               .map((b) => <GuidedBoat key={`${task.id}-${b.idx}`} state={b} color={task.boats[b.idx].color} sail={task.boats[b.idx].sail} active={open(task) && !b.done && !b.moving} onTap={() => act(`boat:${task.id}:${b.idx}`)} />);
+          case 'stand':
+            return <StandPlate key={task.id} x={task.at[0]} z={task.at[1]} t={t} r={task.r ?? 1.3} style={task.style} k={() => Math.min(1, (game.hold[task.id] ?? 0) / task.secs)} done={done} active={open(task)} />;
+          case 'reach':
+            return <GoRing key={task.id} x={task.at[0]} z={task.at[1]} y={t.floorY(task.at[0], task.at[1])} r={task.r ?? 2.5} active={open(task)} />;
+          case 'return':
+            return <GoRing key={task.id} x={task.at[0]} z={task.at[1]} y={t.floorY(task.at[0], task.at[1])} r={task.r} active={open(task)} color="#ffe2b0" />;
+          case 'observe':
+            return task.subjects.map((sub, i) => (
+              <WatchRing key={`${task.id}-${i}`} x={sub.at[0]} z={sub.at[1]} t={t} r={sub.r + 2} k={() => Math.min(1, (game.hold[`${task.id}:${i}`] ?? 0) / task.secs)} done={done || prog.includes(i)} active={open(task) && !prog.includes(i)} />
+            ));
+          case 'sky':
+            return <SkyDial key={task.id} x={task.at[0]} z={task.at[1]} t={t} phase={done ? task.phases.length : prog.length} n={task.phases.length} active={open(task)} onTap={() => act(`sky:${task.id}`)} />;
+          case 'sail':
+            return (
+              <group key={task.id}>
+                <ReadingMarker kind="sign" x={task.dock[0]} z={task.dock[1]} t={t} done={done} active={open(task) && !game.boat.on} onTap={() => act(`board:${task.id}`)} />
+                {task.stops.map((st, i) => (
+                  <GoRing key={i} x={st.at[0]} z={st.at[1]} y={t.water ?? 0} r={st.r ?? 6} active={open(task) && !prog.includes(i) && task.stops.findIndex((_, j) => !prog.includes(j)) === i} color="#e6f6ff" />
+                ))}
+              </group>
+            );
+          case 'choice':
+          case 'share':
+          case 'weigh':
+            return task.kind === 'weigh' ? (
+              <Balance key={task.id} x={task.at[0]} z={task.at[1]} t={t} active={open(task)} onTap={() => act(`weigh:${task.id}`)} />
+            ) : (
+              <group key={task.id}>
+                <ReadingMarker kind={task.kind === 'choice' ? task.marker ?? 'sign' : 'tablet'} x={task.at[0]} z={task.at[1]} t={t} done={done} active={open(task)} onTap={() => act(`${task.kind}:${task.id}`)} />
+                {task.kind === 'share' &&
+                  task.homes.map((h, i) => (
+                    <group key={i}>
+                      <HomeLamp x={h.door[0]} z={h.door[1]} t={t} on={done || prog.includes(i)} />
+                      <NeedSign x={h.door[0] + 1.1} z={h.door[1] + 0.6} t={t} kind={['jar', 'hearth', 'cot', 'basket'][i % 4]} on={!(done || prog.includes(i))} />
+                    </group>
+                  ))}
+              </group>
+            );
+          case 'promise': {
+            const took = (data.prog[`${task.id}/a`] ?? []).length > 0;
+            return (
+              <group key={task.id}>
+                <PromiseBoard x={task.at[0]} z={task.at[1]} t={t} n={task.promises.length} kept={done ? task.promises.length : prog.length} active={open(task) && !took} onTap={() => act(`vows:${task.id}`)} />
+                {task.promises.map((p, i) => (
+                  <PromiseSpot
+                    key={i}
+                    x={p.at[0]}
+                    z={p.at[1]}
+                    t={t}
+                    live={took}
+                    kept={done || prog.includes(i)}
+                    left={() => {
+                      const due = game.vows[`${task.id}:${i}`];
+                      return due == null ? 1 : (due - game.clock) / p.secs;
+                    }}
+                    active={open(task) && took && !prog.includes(i)}
+                    onTap={() => act(`vow:${task.id}:${i}`)}
+                  />
+                ))}
+              </group>
+            );
+          }
+          case 'flow': {
+            const f = (game.flow[task.id] ??= freshFlow(task));
+            return (
+              <FlowView
+                key={task.id}
+                t={t}
+                task={task}
+                state={new Proxy({} as FlowState, { get: (_, k) => (game.flow[task.id] as never)[k] })}
+                route={() => flowRoute(task, game.flow[task.id] ?? f).pts}
+                active={open(task)}
+                onGate={(g) => act(`gate:${task.id}:${g}`)}
+                onSource={() => act(`rain:${task.id}`)}
+              />
+            );
+          }
+          case 'sift': {
+            const mid = task.herd.reduce((a, c) => [a[0] + c.at[0] / task.herd.length, a[1] + c.at[1] / task.herd.length] as P2, [0, 0] as P2);
+            return <ReadingMarker key={task.id} kind="sign" x={mid[0] + 4} z={mid[1]} t={t} done={done} active={open(task) && !(data.prog[`${task.id}/h`] ?? []).includes(prog.length)} onTap={() => act(`ask:${task.id}`)} />;
+          }
           default:
             return null;
         }
@@ -637,6 +1171,7 @@ function Things({ def, t, data, game, carrying, act, isOn }: { def: WorldDef; t:
       {(def.links ?? []).map((l, i) => (
         <Doorway key={i} x={l.at[0]} z={l.at[1]} t={t} onTap={() => act(`link:${i}`)} />
       ))}
+      {(def.warps ?? []).map((w, i) => (!w.show || data.done.includes(w.show) ? <Doorway key={`w${i}`} x={w.at[0]} z={w.at[1]} t={t} rot={w.rot ?? 0} onTap={() => act(`warp:${i}`)} /> : null))}
       {(def.extras?.boats ?? []).map((b, i) => (
         <group key={`b${i}`} position={[b.at[0], (t.water ?? 0) + 0.05, b.at[1]]} rotation-y={b.rot ?? 0}>
           <Boat color={b.color} sail={b.sail} />
@@ -761,7 +1296,16 @@ function World({ def }: { def: WorldDef }) {
     },
     [def.surah],
   );
-  const isOn = useCallback((id?: string) => !!id && saveRef.current.done.includes(id), []);
+  // "task" is on once done; "task#3" once three steps are done; "task@2" once step 2 is done.
+  const isOn = useCallback((id?: string) => {
+    if (!id) return false;
+    const sv = saveRef.current;
+    const m = id.match(/^(.+)([#@])(\d+)$/);
+    if (!m) return sv.done.includes(id);
+    if (sv.done.includes(m[1])) return true;
+    const p = sv.prog[m[1]] ?? [];
+    return m[2] === '#' ? p.length >= +m[3] : p.includes(+m[3]);
+  }, []);
 
   const t = useLand(def);
   const placed = useMemo(() => {
@@ -796,10 +1340,11 @@ function World({ def }: { def: WorldDef }) {
   const [carrying, setCarrying] = useState<{ task: string; idx: number } | null>(null);
   const [region, setRegion] = useState('');
   const [showList, setShowList] = useState(!portrait);
+  const [status, setStatus] = useState('');
 
   const game = useMemo<Game>(() => {
     const s = saveRef.current;
-    const p = s.pos ? new THREE.Vector3(...s.pos) : v3(def.start, t);
+    const p = s.pos && !t.isWater(s.pos[0], s.pos[2]) ? new THREE.Vector3(...s.pos) : v3(def.start, t);
     player.pos.copy(p);
     player.pos.y = t.floorY(p.x, p.z);
     player.yaw = def.startYaw ?? 0;
@@ -821,6 +1366,15 @@ function World({ def }: { def: WorldDef }) {
       timeScale: 1,
       next: { current: null },
       trail: [],
+      boat: { on: false, yaw: 0, speed: 0 },
+      hold: {},
+      gust: { t: 0, warned: false },
+      away: {},
+      vows: {},
+      clock: 0,
+      flow: {},
+      told: {},
+      status: '',
     };
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
   useOrbit(game);
@@ -831,8 +1385,9 @@ function World({ def }: { def: WorldDef }) {
 
   useEffect(() => {
     const id = setInterval(() => {
-      update((s) => ({ ...s, pos: [player.pos.x, player.pos.y, player.pos.z] }));
+      if (!game.boat.on) update((s) => ({ ...s, pos: [player.pos.x, player.pos.y, player.pos.z] }));
       setCarrying(game.carrying ? { ...game.carrying } : null);
+      setStatus(game.status);
       if (def.regions?.length) {
         let best = '';
         let bd = 1e9;
@@ -845,7 +1400,7 @@ function World({ def }: { def: WorldDef }) {
         }
         setRegion(best);
       }
-    }, 600);
+    }, 500);
     return () => clearInterval(id);
   }, [update, game, def]);
 
@@ -879,6 +1434,10 @@ function World({ def }: { def: WorldDef }) {
       const task = def.tasks.find((x) => x.id === id)!;
       update((s) => ({ ...s, done: [...s.done, id] }));
       if (task.outro) say(task.outro);
+      if (task.kind === 'choice' || task.kind === 'share' || task.kind === 'weigh' || task.kind === 'return') {
+        const r = ownReading(task);
+        if (r) setCards((c) => [...c, { kind: 'reading', reading: r }]);
+      }
       if (task.after) setCards((c) => [...c, { kind: 'reading', reading: task.after! }]);
       if (def.tasks.every((x) => saveRef.current.done.includes(x.id)) && !saveRef.current.finished) {
         update((s) => ({ ...s, finished: true }));
@@ -898,17 +1457,22 @@ function World({ def }: { def: WorldDef }) {
       const next = [...prog, i];
       update((s) => ({ ...s, prog: { ...s.prog, [id]: next } }));
       setCarrying(game.carrying ? { ...game.carrying } : null);
-      const total = task.kind === 'points' ? task.points.length : task.kind === 'carry' ? task.loads.length : task.kind === 'lead' ? task.n : task.kind === 'guide' ? task.boats.length : 1;
-      if (next.length >= total) finish(id);
-      else setHint(`${task.title}: ${next.length} of ${total}`);
+      const all = total(task);
+      if (next.length >= all) finish(id);
+      else if (task.kind !== 'choice' && task.kind !== 'share') setHint(`${task.title}: ${next.length} of ${all}`);
     },
     finish,
     hint: (text) => {
       setHint(text);
       setCarrying(game.carrying ? { ...game.carrying } : null);
     },
-    open: (c) => setCards((cs) => [...cs.filter((x) => x.kind !== 'reading' && x.kind !== 'quiz'), c]),
+    open: (c) => setCards((cs) => [...cs.filter((x) => x.kind === 'narration' || x.kind === 'finale'), c]),
     near: setNear,
+    say,
+    note: (key, i) => {
+      const cur = saveRef.current.prog[key] ?? [];
+      if (!cur.includes(i)) update((s) => ({ ...s, prog: { ...s.prog, [key]: [...cur, i] } }));
+    },
   };
 
   const act = (key: string) => {
@@ -940,13 +1504,47 @@ function World({ def }: { def: WorldDef }) {
       finish,
       progress: (id: string, i: number) => api.current.progress(id, i),
       cards: () => cards.map((c) => c.kind),
+      top: () => cards[0],
+      /** Answer the open decision panel as a careful child would (tests only). */
+      solve: () => {
+        const c = cards[0];
+        if (!c) return false;
+        if (c.kind === 'choice') {
+          setCards((cs) => cs.slice(1));
+          c.task.scenes.forEach((_, i) => api.current.progress(c.task.id, i));
+        } else if (c.kind === 'share') {
+          setCards((cs) => cs.slice(1));
+          c.task.homes.forEach((_, i) => api.current.progress(c.task.id, i));
+        } else if (c.kind === 'weigh') {
+          setCards((cs) => cs.slice(1));
+          finish(c.task.id);
+        } else if (c.kind === 'vow') {
+          setCards((cs) => cs.slice(1));
+          api.current.note(`${c.task.id}/a`, 1);
+        } else return false;
+        return true;
+      },
+      boat: game.boat,
+      flowRoute,
       close: () => setCards((c) => c.slice(1)),
       open: (kind: 'book' | 'about' | 'finale') => setCards((c) => [...c, { kind } as Card]),
     };
   });
 
   const top = cards[0];
-  const total = def.tasks.length;
+  const totalN = def.tasks.length;
+
+  // The sky follows the sky-dial (night, star, moon, sun); mist thickens and clears with the story.
+  const skyTask = def.tasks.find((x) => x.kind === 'sky') as Extract<Task, { kind: 'sky' }> | undefined;
+  const phaseN = skyTask ? (data.done.includes(skyTask.id) ? skyTask.phases.length : (data.prog[skyTask.id] ?? []).length) : 0;
+  const phaseLook = skyTask && phaseN > 0 ? skyTask.phases[phaseN - 1].look : undefined;
+  const mist = def.mist?.(data.done, data.prog) ?? 0;
+  const look = useMemo(() => {
+    const base = phaseLook ?? def.look;
+    if (!mist) return base;
+    const fog = new THREE.Color(base.fog).lerp(new THREE.Color('#9ea4ac'), mist);
+    return { ...base, fog: `#${fog.getHexString()}`, fogDensity: base.fogDensity + mist * 0.05, sunI: base.sunI * (1 - mist * 0.55), hemiI: base.hemiI * (1 - mist * 0.25), birds: mist < 0.3 && base.birds };
+  }, [phaseLook, mist, def.look]);
   const doneN = def.tasks.filter((x) => data.done.includes(x.id)).length;
   const objective = data.finished ? 'You finished every activity. Explore, or read the whole surah.' : current ? current.goal : 'Explore';
   const carriedLoad = carrying ? (def.tasks.find((x) => x.id === carrying.task) as Extract<Task, { kind: 'carry' }> | undefined)?.loads[carrying.idx] : undefined;
@@ -969,20 +1567,21 @@ function World({ def }: { def: WorldDef }) {
       >
         <SoftShapes />
         <PerformanceMonitor onDecline={() => set.quality === 'auto' && setAutoTier((x) => lowerTier(x))} />
-        <Sky look={def.look} />
-        {def.look.moon && <Moon look={def.look} />}
-        <Lighting q={q} look={def.look} />
+        <Sky look={look} />
+        {look.moon && <Moon look={look} />}
+        <Lighting q={q} look={look} />
         <Wind />
         <GroundMesh t={t} q={q} onTap={tapGround} />
         <GrassField t={t} veg={def.veg} q={q} />
         <FlowerField t={t} veg={def.veg} q={q} />
         <Trees t={t} placed={placed} q={q} />
         <RockField t={t} placed={placed} q={q} />
-        {t.water != null && <StillWater t={t} look={def.look} />}
+        {t.water != null && <StillWater t={t} look={look} />}
+        {t.water != null && <PlayerBoat boat={game.boat} water={t.water} />}
         <FarLand t={t} tint={def.far} />
         <Mountains color={def.mountains?.color} height={def.mountains?.height} seed={def.seed} />
-        {(def.look.clouds ?? 1) > 0 && <CloudLayer look={def.look} />}
-        {def.look.birds !== false && <Flock center={def.start} />}
+        {(look.clouds ?? 1) > 0 && <CloudLayer look={look} />}
+        {look.birds !== false && <Flock center={def.start} />}
         <Things def={def} t={t} data={data} game={game} carrying={carrying} act={act} isOn={isOn} />
         <Animals game={game} onTap={act} />
         <Carried item={carriedLoad?.item ?? null} color={carriedLoad?.color} />
@@ -1022,7 +1621,7 @@ function World({ def }: { def: WorldDef }) {
           <Text style={st.goal}>{objective}</Text>
           <Pressable onPress={() => setShowList((v) => !v)} accessibilityRole="button">
             <Text style={st.count}>
-              {doneN} of {total} activities {showList ? '▴' : '▾'}
+              {doneN} of {totalN} activities {showList ? '▴' : '▾'}
             </Text>
           </Pressable>
           {showList && (
@@ -1080,7 +1679,75 @@ function World({ def }: { def: WorldDef }) {
 
       {!top && <Joystick move={move} />}
 
-      {top && (
+      {!!status && !top && (
+        <View style={st.statusWrap} pointerEvents="none">
+          <Text style={st.status}>{status}</Text>
+        </View>
+      )}
+
+      {top && top.kind === 'choice' && (
+        <ChoiceCard
+          key={top.task.id}
+          task={top.task}
+          from={(data.prog[top.task.id] ?? []).length}
+          width={portrait ? '94%' : 600}
+          portrait={portrait}
+          onClose={() => setCards((c) => c.slice(1))}
+          onScene={(i) => {
+            api.current.progress(top.task.id, i);
+            if (i + 1 >= top.task.scenes.length) setCards((c) => c.filter((x) => x !== top));
+          }}
+          onWrong={() => {
+            setCards((c) => c.slice(1));
+            if (top.task.back) {
+              player.pos.copy(v3(top.task.back, t));
+              game.cam.look.copy(player.pos);
+              game.cam.snap = true;
+              setHint('You took a step back down the path. Walk up to the signpost again, and this time answer honestly.');
+            }
+          }}
+        />
+      )}
+      {top && top.kind === 'share' && (
+        <ShareCard
+          task={top.task}
+          width={portrait ? '96%' : 640}
+          portrait={portrait}
+          onClose={() => setCards((c) => c.slice(1))}
+          onSolved={() => {
+            setCards((c) => c.slice(1));
+            top.task.homes.forEach((_, i) => api.current.progress(top.task.id, i));
+          }}
+        />
+      )}
+      {top && top.kind === 'weigh' && (
+        <WeighCard
+          task={top.task}
+          width={portrait ? '94%' : 600}
+          portrait={portrait}
+          onClose={() => setCards((c) => c.slice(1))}
+          onSolved={() => {
+            setCards((c) => c.slice(1));
+            finish(top.task.id);
+          }}
+        />
+      )}
+      {top && top.kind === 'vow' && (
+        <VowCard
+          task={top.task}
+          width={portrait ? '94%' : 600}
+          portrait={portrait}
+          onClose={() => setCards((c) => c.slice(1))}
+          onAccept={() => {
+            setCards((c) => c.slice(1));
+            game.vows = {};
+            api.current.note(`${top.task.id}/a`, 1);
+            setHint('Your promises are made, and their candles are lit. Follow the light to the first one.');
+          }}
+        />
+      )}
+
+      {top && top.kind !== 'choice' && top.kind !== 'share' && top.kind !== 'weigh' && top.kind !== 'vow' && (
         <CardView
           card={top}
           world={def}
@@ -1161,6 +1828,8 @@ const st = StyleSheet.create({
   pair: { fontFamily: fonts.body, fontSize: 11, color: 'rgba(255,246,226,0.75)', ...glass, paddingHorizontal: 8, paddingVertical: 2, overflow: 'hidden' },
   pairDone: { color: '#fff6e2', backgroundColor: 'rgba(90,120,60,0.7)' },
   pairNow: { color: '#fff6e2', backgroundColor: 'rgba(170,120,50,0.8)' },
+  statusWrap: { position: 'absolute', left: 16, right: 16, bottom: 110, alignItems: 'center' },
+  status: { fontFamily: fonts.bodyBold, fontSize: 13, color: '#fff6e2', ...glass, borderRadius: 12, paddingHorizontal: 12, paddingVertical: 6, maxWidth: 620, textAlign: 'center', overflow: 'hidden' },
   hintWrap: { position: 'absolute', left: 16, right: 16, bottom: 150, alignItems: 'center' },
   hint: { fontFamily: fonts.body, fontSize: 15, color: '#fff6e2', ...glass, borderRadius: 14, paddingHorizontal: 16, paddingVertical: 10, maxWidth: 560, textAlign: 'center', overflow: 'hidden' },
   action: { position: 'absolute', right: 20, bottom: 42, flexDirection: 'row', alignItems: 'center', gap: 10, backgroundColor: 'rgba(255,240,205,0.95)', borderRadius: 999, paddingLeft: 20, paddingRight: 8, paddingVertical: 8, maxWidth: '70%' } as never,

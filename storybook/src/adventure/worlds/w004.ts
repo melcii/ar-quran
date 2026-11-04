@@ -1,6 +1,10 @@
-// Surah 4, An-Nisa: the Village of Trust and Fairness. A village around a
-// square with a well. Return lost things to their owners, share bread
-// fairly, sweep the square, and sort what is fair from what is not.
+// Surah 4, An-Nisa: the Village of Fairness. A living village around a
+// square with a well, on an autumn evening. The core play is deciding: share
+// the winter stores among six households that each need something different
+// (one needs nothing at all), and see the result in the village as lamps are
+// lit and chimneys smoke. Then keep belongings safe and return each to its
+// owner, and read about orphans and standing firm for justice. Fairness
+// here means giving each what they need, not giving everyone the same.
 import { curve, type P2 } from '../terrain';
 import type { WorldDef } from '../types';
 import { LOOKS, PAL, homes, rolling } from './common';
@@ -12,8 +16,9 @@ const { houses, doors } = homes(C, 21, 6, Math.PI / 6, ACC);
 
 export const W004: WorldDef = {
   surah: 4,
-  name: 'Village of Trust and Fairness',
-  theme: 'Give back what is owed, share fairly, stand for justice',
+  name: 'The Village of Fairness',
+  theme: 'Decide fairly, and see the village change',
+  play: 'A decision game: share limited stores among households with different needs, and watch the village show the result. Splitting everything evenly is not the fair answer here.',
   seed: 404,
   ground: {
     radius: 62,
@@ -68,9 +73,39 @@ export const W004: WorldDef = {
       },
     },
     {
+      id: 'winter',
+      kind: 'share',
+      requires: ['trusts'],
+      at: [9, 6],
+      title: 'Share the winter stores',
+      goal: 'At the store by the square, decide how to share the winter stores among the six homes',
+      intro: 'Winter is coming. The village store holds grain, blankets and firewood, just enough for everyone who needs them. Six homes are round the square, and each needs something different. Look at each home, then decide.',
+      prompt: 'Share the store so that every home has what it needs and nothing is left over. Look at what each home says. Try "Split it all evenly" first if you like, and see what happens.',
+      adaptation: 'The households, their needs and the store are written for this game. It is not a lesson in the inheritance shares of 4:11-12, which follow fixed rules of their own.',
+      goods: [
+        { id: 'grain', label: 'grain', n: 10 },
+        { id: 'blanket', label: 'blankets', n: 8 },
+        { id: 'wood', label: 'wood', n: 6 },
+      ],
+      homes: [
+        { label: 'Blue door', sign: 'A grandmother who lives alone. Her hearth is cold and her shawl is thin: 2 wood, 1 blanket, 1 grain.', needs: { grain: 1, blanket: 1, wood: 2 }, door: doors[0] },
+        { label: 'Green door', sign: 'A family with a new baby. The baby needs warmth most of all: 2 blankets, 2 grain, 1 wood.', needs: { grain: 2, blanket: 2, wood: 1 }, door: doors[1] },
+        { label: 'Red door', sign: 'A household that has taken in two children who lost their parents. The jar is empty: 3 grain, 2 blankets, 1 wood.', needs: { grain: 3, blanket: 2, wood: 1 }, door: doors[2] },
+        { label: 'Yellow door', sign: 'A family whose harvest was good this year. Their store is full and their woodpile high. They need nothing.', needs: {}, door: doors[3] },
+        { label: 'Purple door', sign: 'A traveller resting in the guest room, far from home: 1 grain, 1 blanket.', needs: { grain: 1, blanket: 1 }, door: doors[4] },
+        { label: 'Teal door', sign: 'A large family of six, with little this year: 3 grain, 2 blankets, 2 wood.', needs: { grain: 3, blanket: 2, wood: 2 }, door: doors[5] },
+      ],
+      outro: 'Lamps are lit in the homes that needed help, and smoke rises from their chimneys. The yellow-door family needed nothing, and that was fair too: fair did not mean the same for everyone.',
+      reading: {
+        title: 'Do good to parents, relatives, orphans, the needy, neighbours and travellers',
+        refs: [[4, 36]],
+        note: 'Allah tells us to do good to our parents, relatives, orphans, the needy, the near neighbour and the far neighbour, the companion at our side, and the traveller.',
+      },
+    },
+    {
       id: 'return',
       kind: 'carry',
-      requires: ['trusts'],
+      requires: ['winter'],
       title: 'Return what was lost',
       goal: 'Find four lost things and return each to the right house',
       intro: 'Four things have been left around the village. Each one belongs to a family in a house with a coloured door. Find them and give them back.',
@@ -97,63 +132,28 @@ export const W004: WorldDef = {
       },
     },
     {
-      id: 'share',
-      kind: 'carry',
+      id: 'justice',
+      kind: 'read',
       requires: ['orphans'],
-      title: 'Fair shares',
-      goal: 'Take one loaf from the bakery stall to every house',
-      adaptation: 'Sharing bread equally is a game idea about fairness.',
-      loads: doors.map((to, i) => ({ from: [9, 7] as P2, to, item: 'bread', label: 'loaf of bread', dest: `to the house with the ${NAMES[i]} door` })),
-      after: {
+      at: [0, -11],
+      marker: 'tablet',
+      title: 'Stand firm for justice',
+      goal: 'Read the stone by the bench',
+      reading: {
         title: 'Stand firm for justice',
         refs: [[4, 135]],
         note: 'Be fair and tell the truth, even if it is against yourself, your parents or your relatives, and whether a person is rich or poor.',
       },
     },
-    {
-      id: 'sweep',
-      kind: 'points',
-      requires: ['share'],
-      style: 'sweep',
-      verb: 'Sweep',
-      title: 'Care for the square',
-      goal: 'Sweep the fallen leaves from the square',
-      adaptation: 'Looking after shared places is a game idea.',
-      points: [[-6, -12], [7, -13], [-14, 2], [14, 4], [-4, 14], [5, 15]].map((at, i) => ({ at: at as P2, label: `leaf pile ${i + 1}` })),
-    },
-    {
-      id: 'fair',
-      kind: 'quiz',
-      requires: ['sweep'],
-      at: [-3, 6],
-      marker: 'scroll',
-      title: 'Fair or not fair?',
-      goal: 'At the lectern, sort what is fair from what is not',
-      prompt: 'Read each card and choose where it belongs.',
-      game: {
-        type: 'sort',
-        bins: ['Fair', 'Not fair'],
-        cards: [
-          { text: 'Giving back a ball you borrowed, in good shape.', bin: 0 },
-          { text: 'Keeping a coin you know your friend dropped.', bin: 1 },
-          { text: 'Cutting the bread so everyone gets the same.', bin: 0 },
-          { text: 'Telling the truth, even when it shows your own mistake.', bin: 0 },
-          { text: 'Swapping your broken toy for your cousin\'s new one when no one is looking.', bin: 1 },
-          { text: 'Deciding a game fairly, even though one player is your best friend.', bin: 0 },
-          { text: 'Saying something untrue so your team wins.', bin: 1 },
-        ],
-      },
-      adaptation: 'The cards are written for this game, drawing on 4:2, 4:58 and 4:135.',
-    },
   ],
   finale: {
     title: 'Trust and fairness',
     body: [
-      'You gave back what was lost, shared the bread equally and looked after the square. An-Nisa asks us to be people others can trust.',
+      'You shared the winter stores by need, and saw the lamps lit where help was needed. You gave back what was lost, and read about orphans and justice. An-Nisa asks us to be people others can trust.',
       'Being fair is not always easy, especially when it is about ourselves or the people we love. That is when it matters most.',
     ],
     ref: [4, 58],
     questions: ['Has someone ever trusted you with something? How did you look after it?', 'Why is it hard to be fair when it is about your own family?'],
   },
-  notes: ['Allah is never pictured, in any form.', 'No prophet is shown.', 'The villagers\' homes and belongings are game ideas, not a real place.'],
+  notes: ['Allah is never pictured, in any form.', 'No prophet is shown.', 'The villagers are not shown; their homes, needs and belongings are game ideas, not a real place.'],
 };

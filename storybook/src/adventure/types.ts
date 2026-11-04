@@ -80,7 +80,96 @@ export type QuizGame =
 
 export type QuizTask = TaskBase & { kind: 'quiz'; at: P2; marker?: Marker; game: QuizGame; prompt: string };
 
-export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask;
+/** Stand still on a spot for a while, optionally facing something (a niche, a window). */
+export type StandTask = TaskBase & { kind: 'stand'; at: P2; r?: number; secs: number; label: string; face?: P2; reading?: Reading; style?: 'plate' | 'rug' | 'none' };
+
+/** Walk to a place. With `gust`, wind blows down a mountain path in bursts: keep still while it blows, or be pushed back. */
+export type ReachTask = TaskBase & { kind: 'reach'; at: P2; r?: number; label: string; reading?: Reading; gust?: { path: P2[]; width: number } };
+
+/** Watch living things quietly: come close at a walk (running startles them) and stay still to fill a journal page. */
+export type ObserveTask = TaskBase & {
+  kind: 'observe';
+  secs: number;
+  subjects: { at: P2; r: number; label: string; note: string; reading?: Reading; animal?: Animal; n?: number }[];
+};
+
+/** Turn the sky through its phases at a sky-dial (night, star, moon, sun). Each phase changes the whole world's light. */
+export type SkyTask = TaskBase & { kind: 'sky'; at: P2; phases: { look: Look; label: string; reading: Reading }[] };
+
+/** Sail the explorer's own boat from a dock and visit places at sea. */
+export type SailTask = TaskBase & {
+  kind: 'sail';
+  dock: P2;
+  launch: P2;
+  launchYaw?: number;
+  stops: { at: P2; r?: number; label: string; reading?: Reading; storm?: boolean; note?: string }[];
+};
+
+/** Situations to answer. An excuse sends you back down the path to think again. */
+export type ChoiceTask = TaskBase & {
+  kind: 'choice';
+  at: P2;
+  marker?: Marker;
+  back?: P2;
+  scenes: { text: string; options: { text: string; ok: boolean; reply: string }[] }[];
+  /** Read when every scene is answered well. */
+  reading?: Reading;
+};
+
+/** Share the stores among households by what each one needs. */
+export type ShareTask = TaskBase & {
+  kind: 'share';
+  at: P2;
+  prompt: string;
+  goods: { id: string; label: string; n: number }[];
+  homes: { label: string; sign: string; needs: Record<string, number>; door: P2 }[];
+  reading?: Reading;
+};
+
+/** Make promises at a board; each one then has a candle, and you keep it at its place. */
+export type PromiseTask = TaskBase & {
+  kind: 'promise';
+  at: P2;
+  promises: { label: string; at: P2; verb: string; secs: number; done: string }[];
+};
+
+/** Weigh goods fairly at a balance; one weight in the box is not true. */
+export type WeighTask = TaskBase & {
+  kind: 'weigh';
+  at: P2;
+  weights: { label: string; mass: number; marked: number }[];
+  orders: { goods: string; want: number }[];
+  reading?: Reading;
+};
+
+/** Rain water flowing down channels: switch the gates so each cistern fills without spilling water onto the sand. */
+export type FlowTask = TaskBase & {
+  kind: 'flow';
+  source: P2;
+  /** Gates at junctions: each sends the water `a` or `b` (a junction id or a cistern id). */
+  gates: { id: string; at: P2; a: string; b: string }[];
+  cisterns: { id: string; at: P2; label: string; cap: number }[];
+  /** Where spilled water runs off. */
+  sand: { id: string; at: P2 }[];
+  first: string;
+  rain: number;
+  maxSpill: number;
+  channels: { from: P2; to: P2 }[];
+};
+
+/** Narrow down a herd by each description in turn, sending away the ones that do not fit. */
+export type SiftTask = TaskBase & {
+  kind: 'sift';
+  animal: Animal;
+  away: P2;
+  herd: { at: P2; look: NonNullable<import('@/ark/Beasts').Agent['look']>; scale?: number; traits: string[] }[];
+  rounds: { reading: Reading; keep: string; say: string; wrong: string }[];
+};
+
+/** Come into a place again and again; each time something has changed. */
+export type ReturnTask = TaskBase & { kind: 'return'; at: P2; r: number; away: number; times: number; label: string; notes: string[]; reading?: Reading };
+
+export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask | StandTask | ReachTask | ObserveTask | SkyTask | SailTask | ChoiceTask | ShareTask | PromiseTask | WeighTask | FlowTask | SiftTask | ReturnTask;
 
 export type Region = { id: string; name: string; at: P2 };
 
@@ -110,6 +199,12 @@ export type WorldDef = {
   notes: string[];
   /** A doorway to another part of the app (e.g. the Yunus story). */
   links?: { at: P2; label: string; href: string; note: string }[];
+  /** Doorways inside the world that carry you to another place in it (the atlas hall's story doors). */
+  warps?: { at: P2; to: P2; toYaw?: number; label: string; show?: string; rot?: number }[];
+  /** How thick the mist is (0..1) given what is done: worlds where the land closes in and opens again. */
+  mist?: (done: string[], prog: Record<string, number[]>) => number;
+  /** A one-line description of the world's core gameplay (shown in About). */
+  play?: string;
   /** Night skies, sea boats, motes over gardens. */
   extras?: { boats?: { at: P2; rot?: number; color?: string; sail?: string }[]; motes?: { at: P2; r: number; color?: string }[] };
   seed: number;

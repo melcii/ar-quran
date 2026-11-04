@@ -896,6 +896,7 @@ function Bench({ s }: { s: Structure }) {
 /** Render one structure in place. `isOn` answers whether a named activity is done. */
 export function StructureView({ s, t, isOn }: { s: Structure; t: Terrain; isOn: (id?: string) => boolean }) {
   if (s.show && !isOn(s.show)) return null;
+  if (s.hide && s.type !== 'gate' && s.type !== 'tower' && isOn(s.hide)) return null;
   const y = s.type === 'bridge' || s.type === 'dock' || s.type === 'boat' ? t.y(s.x, s.z) : s.y ?? t.y(s.x, s.z);
   const rot = s.type === 'wall' || s.type === 'fence' || s.type === 'bridge' || s.type === 'dock' || s.type === 'festoon' ? 0 : s.rot ?? 0;
   let body: React.ReactNode = null;

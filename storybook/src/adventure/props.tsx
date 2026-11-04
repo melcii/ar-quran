@@ -10,7 +10,7 @@ import { Boat, Item, M, type ItemKind } from './kit';
 import type { Marker } from './types';
 import type { Terrain } from './terrain';
 
-const tap = (fn?: () => void) => ({
+export const tap = (fn?: () => void) => ({
   onClick: (e: ThreeEvent<MouseEvent>) => {
     if (e.delta > 8 || !fn) return;
     e.stopPropagation();
@@ -110,7 +110,7 @@ function Lectern({ x, z, big }: { x: number; z: number; big?: boolean }) {
 }
 
 /** A soft ring on the ground around the thing to use next. */
-function Halo({ on }: { on: boolean }) {
+export function Halo({ on }: { on: boolean }) {
   const ref = useRef<THREE.Mesh>(null);
   useFrame((st) => {
     if (!ref.current) return;

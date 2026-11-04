@@ -1,12 +1,16 @@
-// Surah 7, Al-A'raf: the Path of Ancient Stories. Four regions around a
-// central height, opened one after another:
-//  1. Hall of Beginnings (7:11-27): readings, and a cloth activity about
-//     "the clothing of righteousness". Paradise, angels and Iblees are not shown.
-//  2. Shore and Cliffs (7:59-84): reading places for Nuh, Hud and Salih, and
-//     drawing water for travellers. The destroyed peoples are only read about:
-//     no ruins, no punishment is shown. A doorway leads to the Nuh's Ark slice.
-//  3. Market of Madyan (7:85-93): give full measure, and sort fair trade.
-//  4. Garden by the Sea (7:103-171): Musa's story in order, patience and mercy.
+// Surah 7, Al-A'raf: the Lost Civilizations. An episodic journey in four
+// chapters through red-rock country around a high hill, each chapter opening
+// the next:
+//  1. The broken columns (7:59-72): the stories of Nuh and Hud. Look closely
+//     at traces in the land; each trace says what the Quran tells and what is
+//     only this game's picture. A doorway leads to the Nuh's Ark adventure.
+//  2. The carved cliffs and the salt shore (7:73-84): Salih and Thamud, who
+//     carved homes from the mountains; then a quiet reading place for Lut.
+//  3. The market of Madyan (7:85-93): weigh goods at a balance, and notice the
+//     shaved weight (Shu'ayb's message of full measure and weight).
+//  4. The shore of Musa (7:103-156): traces of Musa's story in order, and mercy.
+// No prophet is shown; no destruction, flood or punishment is shown; the
+// ruins and cliffs are artistic, not models of real sites.
 import * as THREE from 'three';
 import { curve, type P2 } from '../terrain';
 import type { Structure } from '../kit';
@@ -37,8 +41,9 @@ const cliffs = (x: number, z: number) => {
 
 export const W007: WorldDef = {
   surah: 7,
-  name: 'Path of Ancient Stories',
-  theme: 'Beginnings, the shore and the cliffs, a fair market, a garden by the sea',
+  name: 'The Lost Civilizations',
+  theme: 'Four chapters of peoples before us, in red-rock country',
+  play: 'An episodic journey: four chapters, each a different land, where you investigate traces of past peoples (each one says what the Quran tells and what is only a picture) and, in Madyan, weigh fairly at a balance.',
   seed: 707,
   ground: {
     radius: 108,
@@ -56,7 +61,7 @@ export const W007: WorldDef = {
         { ...pt(at(180, -14, 20)), r: 10, h: 10 },
       ],
     }),
-    palette: PAL.coast,
+    palette: { lush: '#a89a5a', deep: '#86804a', warm: '#c89a64', path: '#e2c49a', sand: '#e8cc9c', rock: '#b07858' },
     paths: [RING],
     water: -3,
     shore: '#ecd8a8',
@@ -66,10 +71,11 @@ export const W007: WorldDef = {
       if (k > 0) c.lerp(SAND, k * 0.75);
     },
   },
-  look: LOOKS.sea,
+  look: { ...LOOKS.desert, hor: '#f6c8a0', fog: '#e8c8a8', sunColor: '#ffe0b8' },
   veg: {
     grass: 1,
-    lush: (x, z) => 1 - cliffs(x, z) * 0.85,
+    lush: (x, z) => 0.55 - cliffs(x, z) * 0.45,
+    dryGrass: true,
     flowers: ['#fff2d8', '#f4d060', '#f6c0d0'],
     trees: [
       { kind: 'blossom', area: { x: 0, z: 76, r: 26 }, count: 6 },
@@ -91,26 +97,28 @@ export const W007: WorldDef = {
   start: [0, 98],
   startYaw: Math.PI,
   regions: [
-    { id: 'hall', name: 'Hall of Beginnings', at: polar(R + 10, 90) },
-    { id: 'shore', name: 'Shore and Cliffs', at: polar(R + 10, 180) },
-    { id: 'market', name: 'Market of Madyan', at: polar(R + 10, 270) },
-    { id: 'garden', name: 'Garden by the Sea', at: polar(R + 10, 0) },
+    { id: 'hall', name: 'Chapter 1 · The broken columns', at: polar(R + 10, 90) },
+    { id: 'shore', name: 'Chapter 2 · The carved cliffs', at: polar(R + 10, 180) },
+    { id: 'market', name: 'Chapter 3 · The market of Madyan', at: polar(R + 10, 270) },
+    { id: 'garden', name: 'Chapter 4 · The shore of Musa', at: polar(R + 10, 0) },
   ],
   structures: [
     { type: 'arch', x: 0, z: 88, w: 4, h: 4.2 },
-    // 1. Hall of Beginnings
-    { type: 'terrace', ...pt(at(90, 2, 0)), w: 12, d: 10, h: 0.3 },
-    { type: 'columns', ...pt(at(90, 6, 0)), w: 11, n: 5, rot: Math.PI / 2 },
-    { type: 'stall', ...pt(at(90, 12, -12)), rot: 0.3, color: '#5f8a9a', accent: '#f2e2c0' },
-    { type: 'festoon', ...pt(at(90, -6, -8)), to: at(90, -6, 8), h: 3 },
-    ...passGate(135, R, 'a3'),
+    // 1. The broken columns
+    { type: 'terrace', ...pt(at(90, 2, 0)), w: 14, d: 10, h: 0.3, color: '#d8b894' },
+    { type: 'columns', ...pt(at(90, 6, 0)), w: 11, n: 5, rot: Math.PI / 2, color: '#d8b48a' },
+    { type: 'columns', ...pt(at(90, -2, -10)), w: 8, n: 3, rot: 0.4, color: '#c8a07a' },
+    { type: 'stones', ...pt(at(90, 12, -12)), n: 6 },
+    { type: 'stones', ...pt(at(90, -8, 14)), n: 5 },
+    ...passGate(135, R, 'a2'),
     // 2. Shore and Cliffs
-    { type: 'dock', ...pt(at(180, 14, 0)), to: at(180, 26, 0), w: 3 },
-    { type: 'cliff', ...pt(at(180, -14, 26)), rot: Math.PI / 2, w: 14, h: 9, n: 3 },
+    { type: 'cliff', ...pt(at(180, -14, 26)), rot: Math.PI / 2, w: 14, h: 9, n: 3, color: '#c88a62' },
+    { type: 'cliff', ...pt(at(180, -20, 12)), rot: Math.PI / 2 + 0.5, w: 10, h: 8, n: 2, color: '#b87a58' },
+    { type: 'stones', ...pt(at(180, 18, -8)), n: 5 },
     { type: 'well', ...pt(at(180, -4, -10)) },
     { type: 'tent', ...pt(at(180, -16, -6)), rot: 0.8 },
     { type: 'tent', ...pt(at(180, -10, 6)), rot: -0.4, color: '#7a5a3a' },
-    ...passGate(225, R, 'b4'),
+    ...passGate(225, R, 'b2'),
     // 3. Market of Madyan
     ...marketStalls.map(([p, c]) => ({ type: 'stall', x: p[0], z: p[1], rot: facing(p[0], p[1], MC[0], MC[1]).rot, color: c }) as Structure),
     { type: 'cart', ...pt(at(270, -12, 0)), rot: 0.2 },
@@ -126,168 +134,145 @@ export const W007: WorldDef = {
     { type: 'boat', ...pt(polar(100, 2)), rot: 1 },
   ],
   herds: [{ animal: 'camel', at: at(270, -14, -16), r: 5, n: 2 }, { animal: 'goat', at: at(180, -18, 14), r: 5, n: 3 }],
-  links: [{ at: at(180, 6, 10), label: 'Play Nuh\'s Ark', href: '/ark', note: 'The Nuh\'s Ark adventure from Surah Hud' }],
+  links: [{ at: at(90, -2, 6), label: 'Play Nuh\'s Ark', href: '/ark', note: 'The Nuh\'s Ark adventure from Surah Hud' }],
   extras: { boats: [{ at: polar(96, 176), rot: 0.5 }, { at: polar(104, 186), rot: 2, color: '#3f6f8a' }] },
   welcome:
     'Welcome to the Path of Ancient Stories. Surah Al-A\'raf, "The Heights", tells the stories of many messengers and their peoples. Its four lands lie around the high hill: walk them in order, and each gate opens when you have finished the land before it.',
   tasks: [
-    // 1. Hall of Beginnings
+    // Chapter 1. The broken columns: Nuh and Hud.
     {
       id: 'a1',
       kind: 'read',
       region: 'hall',
       at: at(90, 14, 6),
       marker: 'tablet',
-      title: 'Created and given form',
-      goal: 'Read the first stone in the Hall of Beginnings',
+      title: 'Nuh calls his people',
+      goal: 'Read the first stone of the journey',
+      intro: 'Chapter 1. Al-A\'raf tells of peoples who came before us, one after another, and how each answered the messenger sent to them. Read, then look closely at the traces in this land.',
       reading: {
-        title: 'We created you and gave you form',
-        refs: [[7, 11], [7, 12]],
-        note: 'Allah created people and gave them their form. Iblees refused to bow and said "I am better than him." Pride was his first mistake.',
+        title: 'Nuh called his people',
+        refs: [[7, 59], [7, 64]],
+        note: 'Nuh (Noah) called his people to worship Allah alone. They denied him, and Allah saved him and those with him in the ship. The doorway on this terrace leads to the Nuh\'s Ark adventure.',
       },
     },
     {
       id: 'a2',
-      kind: 'read',
+      kind: 'points',
       requires: ['a1'],
       region: 'hall',
-      at: at(90, 2, 4),
-      marker: 'scroll',
-      title: 'Our Lord, we have wronged ourselves',
-      goal: 'Read at the lectern among the columns',
-      reading: {
-        title: 'A prayer for forgiveness',
-        refs: [[7, 23]],
-        note: 'When Adam and his wife made a mistake, they did not blame anyone else. They said: "Our Lord, we have wronged ourselves, and if You do not forgive us and have mercy on us, we will be among the losers." Many children learn this prayer by heart.',
-      },
+      style: 'sign',
+      verb: 'Look closely',
+      title: 'Traces of \'Aad',
+      goal: 'Look closely at the three traces among the broken columns',
+      intro: 'After Nuh\'s people came \'Aad, and Allah sent them their brother Hud. Look closely at three traces here. Each one tells you what the Quran says, and what is only a picture.',
+      adaptation: 'The columns and stones are this game\'s picture of a people long gone, not a model of \'Aad or any real site.',
+      points: [
+        { at: at(90, 4, -6), label: 'the tall broken columns', reading: { title: 'Successors after Nuh', refs: [[7, 69]], note: 'From the Quran: Hud reminded \'Aad that Allah made them successors after the people of Nuh and increased them in stature. The tall columns here are only a picture of a strong people.' } },
+        { at: at(90, 12, -9), label: 'the fallen stones', reading: { title: 'Hud\'s message', refs: [[7, 65]], note: 'From the Quran: Hud told his people, "Worship Allah; you have no deity other than Him. Will you not fear Him?" The fallen stones are only a picture.' } },
+        { at: at(90, -8, 11), label: 'the empty terrace', reading: { title: 'What they answered', refs: [[7, 70], [7, 72]], note: 'From the Quran: they refused to leave what their fathers worshipped, and Allah saved Hud and those with him by mercy. Nothing of what happened to the others is shown.' } },
+      ],
+      outro: 'The gate to Chapter 2, the carved cliffs, is open. Follow the path west.',
     },
-    {
-      id: 'a3',
-      kind: 'carry',
-      requires: ['a2'],
-      region: 'hall',
-      title: 'The weaver\'s cloth',
-      goal: 'Carry four folded cloths from the weaver\'s stall to the table by the gate',
-      intro: 'Ayah 26 speaks of clothing as a gift: to cover us and to look beautiful. Then it says the best clothing is righteousness. Help the weaver carry the finished cloth.',
-      adaptation: 'The weaver\'s stall is a game idea about 7:26.',
-      loads: [0, 1, 2, 3].map((i) => ({ from: at(90, 12, -9), to: at(90, -8, -4 + i * 2.6), item: 'cloth', label: 'folded cloth', color: ['#b0503a', '#3f6f9a', '#c8a040', '#5f8a5a'][i], dest: 'to the cloth table by the gate' })),
-      after: {
-        title: 'The clothing of righteousness',
-        refs: [[7, 26]],
-        note: 'Allah gave people clothing to cover themselves and as adornment. But the clothing of righteousness, being good and mindful of Allah, is the best.',
-      },
-      outro: 'The gate to the Shore and Cliffs is open. Follow the path west.',
-    },
-    // 2. Shore and Cliffs
+    // Chapter 2. The carved cliffs and the salt shore: Salih, then Lut.
     {
       id: 'b1',
-      kind: 'read',
-      requires: ['a3'],
+      kind: 'points',
+      requires: ['a2'],
       region: 'shore',
-      at: at(180, 8, -4),
-      marker: 'tablet',
-      title: 'Nuh and his people',
-      goal: 'Read the stone by the shore',
-      reading: {
-        title: 'Nuh called his people',
-        refs: [[7, 59], [7, 64]],
-        note: 'Nuh (Noah) called his people to worship Allah alone. They rejected him, and Allah saved him and those with him in the ship. You can play the Nuh\'s Ark adventure through the doorway here.',
-      },
+      style: 'sign',
+      ordered: true,
+      verb: 'Look closely',
+      title: 'The carved cliffs',
+      goal: 'Look closely at the traces below the carved cliffs, in order',
+      intro: 'Chapter 2. To Thamud, Allah sent their brother Salih. Thamud carved homes from the mountains. Look closely at the traces here, in order.',
+      adaptation: 'The carved cliffs are this game\'s picture of homes cut into rock. They are not a model of a real site, and no ruins of punishment are shown. The she-camel in these ayahs is not shown.',
+      points: [
+        { at: at(180, -6, 16), label: 'the carved doorways', reading: { title: 'Homes carved from the mountains', refs: [[7, 73], [7, 74]], note: 'From the Quran: Salih called Thamud to worship Allah alone, and reminded them that they built palaces on the plains and carved homes from the mountains. The doorways here are only a picture.' } },
+        { at: at(180, -12, 4), label: 'the second cliff', reading: { title: 'The proud and the weak', refs: [[7, 75], [7, 76]], note: 'From the Quran: the arrogant chiefs mocked those who believed. The believers answered, "We believe in what he was sent with."' } },
+        { at: at(180, 6, 12), label: 'the quiet hollow', reading: { title: 'Salih turned away', refs: [[7, 79]], note: 'From the Quran: Salih turned away from them, saying he had conveyed his Lord\'s message and advised them sincerely, but they did not like sincere advisers. What happened to them is only read.' } },
+      ],
     },
     {
       id: 'b2',
       kind: 'read',
       requires: ['b1'],
       region: 'shore',
-      at: at(180, -6, 4),
+      at: at(180, 18, -4),
       marker: 'tablet',
-      title: 'Hud and the people of \'Aad',
-      goal: 'Read the stone between the tents',
+      title: 'Lut and his people',
+      goal: 'Read at the stone on the salt shore',
       reading: {
-        title: 'To \'Aad, their brother Hud',
-        refs: [[7, 65]],
-        note: 'Allah sent Hud to the people of \'Aad with the same message: worship Allah, you have no god but Him.',
+        title: 'And Lut, when he said to his people',
+        refs: [[7, 80], [7, 83]],
+        note: 'Allah sent Lut to his people, who did a shameful thing no people had done before. Allah saved Lut and his family, except his wife. This place is only for reading; the full account is in the book, to be read with an adult.',
       },
+      adaptation: 'A reading place only. Nothing of Lut\'s people or what happened to them is shown.',
+      outro: 'The gate to Chapter 3, the market of Madyan, is open. Follow the path north.',
     },
-    {
-      id: 'b3',
-      kind: 'read',
-      requires: ['b2'],
-      region: 'shore',
-      at: at(180, -12, 18),
-      marker: 'tablet',
-      title: 'Salih and the carved homes',
-      goal: 'Read the stone below the cliffs',
-      reading: {
-        title: 'To Thamud, their brother Salih',
-        refs: [[7, 73], [7, 74]],
-        note: 'Thamud carved homes from the mountains. Salih reminded them to remember Allah\'s favours and not to spread corruption on the earth. The she-camel in these ayahs is not shown.',
-      },
-      adaptation: 'The carved cliff is a game picture of homes cut into rock; it is not a model of a real site, and no ruins or punishment are shown.',
-    },
-    {
-      id: 'b4',
-      kind: 'carry',
-      requires: ['b3'],
-      region: 'shore',
-      title: 'Water for travellers',
-      goal: 'Carry water from the well to the three resting places',
-      adaptation: 'Drawing water for travellers is a peaceful game activity, not part of the stories.',
-      loads: [at(180, -16, -3), at(180, -12, 3.5), at(180, 2, 12)].map((to, i) => ({ from: at(180, -4, -7.5), to, item: 'water', label: 'water jar', dest: `to resting place ${i + 1}` })),
-      outro: 'The gate to the Market of Madyan is open. Follow the path north.',
-    },
-    // 3. Market of Madyan
+    // Chapter 3. The market of Madyan: Shu'ayb.
     {
       id: 'c1',
       kind: 'read',
-      requires: ['b4'],
+      requires: ['b2'],
       region: 'market',
       at: at(270, -16, 4),
       marker: 'tablet',
       title: 'Give full measure',
       goal: 'Read the stone at the market entrance',
+      intro: 'Chapter 3. To Madyan, Allah sent their brother Shu\'ayb. Madyan was a people of trade.',
       reading: {
         title: 'Shu\'ayb and the people of Madyan',
         refs: [[7, 85]],
-        note: 'Shu\'ayb told the people of Madyan to worship Allah alone, to give full measure and weight, and not to cheat people of what is theirs.',
+        note: 'Shu\'ayb told the people of Madyan to worship Allah alone, to give full measure and weight, not to cheat people of what is theirs, and not to cause corruption on the earth after it was set right.',
       },
     },
     {
       id: 'c2',
-      kind: 'carry',
+      kind: 'weigh',
       requires: ['c1'],
       region: 'market',
-      title: 'Full sacks',
-      goal: 'Carry a full sack of grain to each stall',
-      adaptation: 'Carrying full measures to the stalls is a game idea about 7:85.',
-      loads: marketStalls.map(([p, , name]) => ({ from: at(270, -12, 3), to: facing(p[0], p[1], MC[0], MC[1], 2).door, item: 'grain', label: 'full sack of grain', dest: `to the ${name} stall` })),
+      at: at(270, 2, -3),
+      title: 'Weigh it fairly',
+      goal: 'At the balance in the middle of the market, weigh out three orders fairly',
+      intro: 'At the balance, weigh out each order until the balance hangs level. The box of weights has one weight that has been shaved: its mark says more than it really weighs. Watch the balance, not just the marks.',
+      adaptation: 'A market game written for this app about 7:85. The weights and orders are invented for it.',
+      weights: [
+        { label: 'small weight', mass: 1, marked: 1 },
+        { label: 'small weight', mass: 1, marked: 1 },
+        { label: 'middle weight', mass: 2, marked: 2 },
+        { label: 'large weight', mass: 5, marked: 5 },
+        { label: 'large weight (worn)', mass: 4, marked: 5 },
+        { label: 'middle weight', mass: 3, marked: 3 },
+      ],
+      orders: [
+        { goods: 'barley', want: 3 },
+        { goods: 'dates', want: 5 },
+        { goods: 'wheat', want: 8 },
+      ],
+      outro: 'Three orders, each weighed fairly. Did you leave the worn weight in the box?',
+      reading: {
+        title: 'Do not sit on every road threatening people',
+        refs: [[7, 86], [7, 87]],
+        note: 'Shu\'ayb reminded them that they had been few and Allah increased them, and told them to look at how the corrupters ended. He told them to be patient until Allah judges between them.',
+      },
     },
     {
       id: 'c3',
-      kind: 'quiz',
+      kind: 'read',
       requires: ['c2'],
       region: 'market',
-      at: at(270, 4, -3),
-      marker: 'scroll',
-      title: 'Fair trade?',
-      goal: 'At the market lectern, sort fair trade from cheating',
-      prompt: 'Is each card fair, or is it cheating?',
-      game: {
-        type: 'sort',
-        bins: ['Fair', 'Cheating'],
-        cards: [
-          { text: 'Filling the measure right to the top.', bin: 0 },
-          { text: 'Pressing a thumb on the scale.', bin: 1 },
-          { text: 'Telling a buyer about the bruised fruit at the bottom.', bin: 0 },
-          { text: 'Hiding stones in a sack of grain to make it heavier.', bin: 1 },
-          { text: 'Charging the same price to a stranger as to a friend.', bin: 0 },
-          { text: 'Giving a little less because the buyer is a child.', bin: 1 },
-        ],
+      at: at(270, 10, 6),
+      marker: 'lantern',
+      title: 'Had they believed',
+      goal: 'Read at the lantern among the stalls',
+      reading: {
+        title: 'Blessings from the heaven and the earth',
+        refs: [[7, 96]],
+        note: 'If the people of those towns had believed and been mindful of Allah, Allah would have opened to them blessings from the heaven and the earth.',
       },
-      adaptation: 'Cards written for this game about 7:85.',
-      outro: 'The gate to the Garden by the Sea is open. Follow the path east.',
+      outro: 'The gate to Chapter 4, the shore of Musa, is open. Follow the path east.',
     },
-    // 4. Garden by the Sea
+    // Chapter 4. The shore of Musa.
     {
       id: 'd1',
       kind: 'read',
@@ -296,7 +281,8 @@ export const W007: WorldDef = {
       at: at(0, -12, -4),
       marker: 'tablet',
       title: 'Musa is sent',
-      goal: 'Read the stone at the garden gate',
+      goal: 'Read the stone at the shore',
+      intro: 'Chapter 4. After those peoples, Allah sent Musa to Pharaoh. Read, then follow the traces along the shore in order.',
       reading: {
         title: 'Musa and Pharaoh',
         refs: [[7, 103], [7, 104]],
@@ -305,38 +291,25 @@ export const W007: WorldDef = {
     },
     {
       id: 'd2',
-      kind: 'quiz',
+      kind: 'points',
       requires: ['d1'],
       region: 'garden',
-      at: at(0, 2, -3),
-      marker: 'scroll',
-      title: 'In the order of the surah',
-      goal: 'Put five ayahs about Musa in order',
-      prompt: 'These ayahs tell part of Musa\'s story. Put them in the order they come in the surah.',
-      game: { type: 'order', refs: [[7, 103], [7, 117], [7, 120], [7, 137], [7, 138]] },
-      adaptation: 'An ordering game with the verified text. Nothing of the events is shown.',
-    },
-    {
-      id: 'd3',
-      kind: 'points',
-      requires: ['d2'],
-      region: 'garden',
-      style: 'plant',
-      verb: 'Water',
-      title: 'Tend the garden by the sea',
-      goal: 'Water the five plants in the garden',
-      adaptation: 'Tending a garden is a game activity about patience (7:128).',
-      points: [at(0, -6, 8), at(0, -2, 12), at(0, 8, -8), at(0, 12, 4), at(0, 0, -12)].map((p, i) => ({ at: p, label: `plant ${i + 1}` })),
-      after: {
-        title: 'Seek help through Allah and be patient',
-        refs: [[7, 128]],
-        note: 'Musa told his people: "Seek help through Allah and be patient. The earth belongs to Allah... and the best outcome is for the righteous."',
-      },
+      style: 'sign',
+      ordered: true,
+      verb: 'Look closely',
+      title: 'Traces along the shore',
+      goal: 'Follow the traces along the shore, in the order of the surah',
+      adaptation: 'The shore and the traces are this game\'s places for reading. None of the events is shown.',
+      points: [
+        { at: at(0, -4, 8), label: 'the first trace', reading: { title: 'The magicians believed', refs: [[7, 117], [7, 120], [7, 121], [7, 122]], note: 'From the Quran: Pharaoh\'s magicians saw the truth and fell down in prostration, saying, "We believe in the Lord of the worlds, the Lord of Musa and Harun."' } },
+        { at: at(0, 6, 10), label: 'the second trace', reading: { title: 'Patience', refs: [[7, 128]], note: 'From the Quran: Musa told his people, "Seek help through Allah and be patient. The earth belongs to Allah, and the best outcome is for those who are mindful of Him."' } },
+        { at: at(0, 12, -8), label: 'the third trace', reading: { title: 'Across the sea', refs: [[7, 137], [7, 138]], note: 'From the Quran: Allah brought the Children of Israel across the sea. The crossing is only read; it is not shown.' } },
+      ],
     },
     {
       id: 'd4',
       kind: 'read',
-      requires: ['d3'],
+      requires: ['d2'],
       region: 'garden',
       at: at(0, 14, -4),
       marker: 'lantern',
@@ -352,17 +325,17 @@ export const W007: WorldDef = {
   finale: {
     title: 'Stories to remember',
     body: [
-      'You walked past the stories of many messengers: each called people to worship Allah alone and to be good and fair.',
-      'You prayed the prayer of Adam, carried water for travellers, gave full measure in the market, and tended a garden with patience.',
+      'You travelled through four chapters: the broken columns of \'Aad, the carved cliffs of Thamud and the salt shore, the market of Madyan, and the shore of Musa. Each messenger called his people to worship Allah alone and to be good and fair.',
+      'Some people listened and many did not. In the market you weighed fairly and left the worn weight in the box.',
     ],
-    ref: [7, 23],
-    questions: ['Which messenger\'s story would you like to read more about?', 'Why is "Our Lord, we have wronged ourselves" such a brave prayer?'],
+    ref: [7, 85],
+    questions: ['Which messenger\'s story would you like to read more about?', 'Why do you think so many people did not listen?'],
   },
   notes: [
     'Allah is never pictured, in any form.',
     'No prophet is shown: not Adam, Nuh, Hud, Salih, Lut, Shu\'ayb, Musa or Harun.',
     'Angels, Iblees, Paradise and the she-camel are not pictured.',
-    'The peoples who were destroyed are only read about. No ruins, flood or punishment is shown, and Lut\'s people are left to the book.',
-    'The cliffs, market and garden are game places, not real sites.',
+    'The peoples who were destroyed are only read about. No flood or punishment is shown. Lut\'s people are not shown, and their account is left to the book.',
+    'The broken columns, carved cliffs, market and shore are this game\'s pictures, not models of \'Aad, Thamud, Madyan or any real site.',
   ],
 };

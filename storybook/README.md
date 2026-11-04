@@ -112,37 +112,40 @@ assets, so they read as stylised toys more than the reference games' hand-sculpt
 
 The Ark slice's look and controls, turned into a shared engine (`src/adventure/`) with one world recipe per surah
 (`src/adventure/worlds/w001.ts` … `w010.ts`). Open the list at `/adventure`, or a world at `/adventure/1` … `/adventure/10`,
-or from the reading room's "Adventure worlds: surahs 1–10" button. Built from the "First 10 Surahs World Design Table".
+or from the reading room's "Adventure worlds: surahs 1–10" button. Built from "Quran Adventure: First 10 Unique
+Worlds" and its rule that every surah gets its own game: its own look, its own core mechanic, its own way of being
+explored. If two worlds could swap names without their play changing, one of them needs redesigning.
 
-| Surah | World | What you do |
+| Surah | World | Core play (what is unique to it) |
 | --- | --- | --- |
-| 1 Al-Fatihah | Garden of Guidance (short) | Light seven lanterns along one path, one per ayah; match each ayah to its translation; put the seven in order |
-| 2 Al-Baqarah | Four Lands of the Cow (4 regions) | Garden of Beginnings (2:30-39, a names game), Village of the Cow (2:67-73, read the questions in order, then find the cow that fits every description), Desert Sanctuary (2:124-129, lay a symbolic foundation), Community Orchard (2:261-274, plant seven rows, share baskets). Each gate opens when the land before it is done |
-| 3 Ali 'Imran | Garden of Steadfast Hearts | Read at the gate and the prayer chamber (3:35-37), water the garden, read by the pool (3:42-45), climb a mountain path of patience (3:139-148) |
-| 4 An-Nisa | Village of Trust and Fairness | Return lost things to the right houses (4:58), read about orphans (4:2-6), share bread equally (4:135), sweep the square, sort fair from unfair |
-| 5 Al-Ma'idah | Promises and Provision | Sort promises kept and broken (5:1), set a shared table, sort the market (5:8), read 5:27-31 in a quiet grove and 5:112-115 at the table |
-| 6 Al-An'am | Valley of Creation (dusk) | Lead the flock home, find signs (6:95-99), read 6:74-79 on the watching hill under the stars, plant olives and pomegranates |
-| 7 Al-A'raf | Path of Ancient Stories (4 regions) | Hall of Beginnings (7:11-26), Shore and Cliffs (7:59-74, water for travellers, doorway to the Ark), Market of Madyan (7:85, full measure, fair trade), Garden by the Sea (7:103-156, ayahs in order, patience) |
-| 8 Al-Anfal | Camp of Courage and Unity | Carry water (8:11), organise supplies, share fairly (8:1), mend tents, sort what unites (8:46), read 8:2-4 |
-| 9 At-Tawbah | Valley of Return | Give back borrowed things, repair the path, restore the garden, sort honest choices, read 9:102-104 and 9:117-119 |
-| 10 Yunus | Sea of Signs | Light the harbour (10:5-6), guide three boats in (10:22), cross bridges to islands for 10:71-73, 10:75-92 and 10:98, with doorways to the Ark and to the Yunus story |
+| 1 Al-Fatihah | The Seven Gates (short) | Architectural journey through seven stone chambers, one per ayah, each opened by a different small act: stand on the threshold, look out of three windows, open a dry spring, wait by a sundial, face the niche on a prayer rug, find the straight way through a hall of passages; then the whole surah on the open terrace |
+| 2 Al-Baqarah | The Great Story Atlas (hub + 4 lands) | An atlas hall with a floor map and story doors into four lands. The Village of the Cow is an investigation: hear each answer of 2:68-71 in order and send back the cows that do not fit until one is left. The Valley of the House is a walk round a low outline (nothing is built) |
+| 3 Ali 'Imran | The Sanctuary of Maryam | Returning and waiting: come back into the prayer chamber again and again and find something new each time (a picture of 3:37); a walled passage of ayahs in order; a mountain climbed by keeping still in the gusts (3:200) |
+| 4 An-Nisa | The Village of Fairness | Deciding: share the winter stores among six homes by need (one needs nothing; an even split is wrong), and see lamps and chimney smoke where help arrived; return belongings to their owners |
+| 5 Al-Ma'idah | The Table of Promises | Commitments: make four promises at a board and keep each before its candle burns down, planning a route round a white terrace town above the sea; a separate grove for 5:27-31; three lamps for 5:112-115 |
+| 6 Al-An'am | The Living World of Creation | Observation: turn a sky-dial from night to star, moonrise, sunrise and day (6:74-79, 6:96), then fill a field journal by watching herds and plants quietly; running startles the animals; nothing is handled |
+| 7 Al-A'raf | The Lost Civilizations (4 chapters) | Episodic journey through red-rock lands: investigate traces of 'Aad and Thamud (each says what the Quran tells and what is only a picture), a reading place for Lut, weigh fairly at Madyan's balance and spot the worn weight (7:85), traces of Musa's story |
+| 8 Al-Anfal | The Camp of Cooperation | Planning puzzle: route rain water (8:11) through channels and gates so all three cisterns fill and little runs into the sand; a wrong plan refills the spring for another try |
+| 9 At-Tawbah | The Journey of Return | Choices and reflection: everyday honesty situations at signposts, where an excuse walks you back down the path to think again; a gorge where the mist closes in and clears (9:118); a spring garden |
+| 10 Yunus | The Ocean of Signs | Sailing: board your own boat and steer it round the bay and out to sea to five places (10:5-6, 10:71-73, 10:75-92, 10:22-23 with a passing squall, 10:98). The account of Yunus and the fish is marked as being in 37:139-148 and 21:87-88 |
 
 - **Every world** has a "Read the whole surah" book with every ayah in verified Arabic (KFGQPC Hafs) and the Saheeh
-  International translation, an "About this world" card listing the ayahs used, what each activity adapts, and what is
-  never shown, and a closing reflection quoting a verified ayah. Quran text, translation, explanation and activity are
-  labelled apart on every card. Progress is saved per world in the browser.
-- **Activities** (one engine for all): read at a lantern, tablet or lectern; light, water, sweep or read a set of spots
-  (some in order); carry things from where they are to where they belong (items, sprouting seedlings, foundation
-  stones, path stones); lead animals home; pick the one animal that fits a description; guide boats along a channel;
-  and three panel games: match ayah to translation, put ayahs in order (both use only the verified text), and sort
-  cards written for the game. A soft column of light marks where to go next.
+  International translation, an "About this world" card (how the world plays, the ayahs used, what each activity
+  adapts, and what is never shown), and a closing reflection quoting a verified ayah. Quran text, translation,
+  explanation and activity are labelled apart on every card. Progress is saved per world in the browser.
+- **Engine activity kinds:** read; visit spots; carry; lead; pick; guide boats; panel quizzes; and, added for the
+  unique worlds: stand still (optionally facing something), reach a place (optionally against mountain gusts),
+  observe quietly, turn the sky, sail your own boat, answer situations, share by need, keep timed promises, weigh at a
+  balance, route water through gates, narrow down a herd, and come back to a place again and again. Worlds can also
+  have story doors that carry you elsewhere in the world, and mist that follows the story.
 - **Never shown:** Allah, any prophet, angels, Iblees, Paradise or anything of the unseen, battles, punishments of
-  past peoples, or the events the readings describe. Places are game places, not reconstructions; the Baqarah
-  foundation is symbolic and not a model of the Ka'bah.
+  past peoples, the three of 9:118, or the events the readings describe. Places are game places, not
+  reconstructions; the Baqarah outline is symbolic and not a model of the Ka'bah.
 
-Limits: drafts for scholarly review; checked in headless Chromium with software WebGL only (screenshots and an
-automatic check that every activity spot can be walked to); web only, phones fall back to the text screens; no
-recitation until a licensed source is configured; no music.
+Limits: drafts for scholarly review; checked in headless Chromium with software WebGL only (an automatic playthrough
+of every world, a check that every activity spot can be walked or sailed to, and real-input checks of sailing, the
+wind climb and the panels); web only, phones fall back to the text screens; no recitation until a licensed source
+is configured; no music.
 
 ## Run it
 
