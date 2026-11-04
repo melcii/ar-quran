@@ -116,34 +116,44 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Valley of Renewal",
+  "tier": "playable",
+  "visual_theme": "A field of six plots in a valley after rain, with springs at its edge and a seed bag by the path",
   "quran_references": [
    "39:9",
    "39:21",
-   "39:53–55"
+   "39:53"
   ],
   "primary_mechanic": {
-   "kind": "rain-to-harvest-cycle",
-   "engine": "not built yet",
-   "text": "Watch rain become springs, crops and colours, then turn yellow and dry (39:21); never lose hope (39:53) as a reading."
+   "kind": "harvest-timing",
+   "engine": "harvest",
+   "text": "Sow the field after the rain; the plots sprout one after another, turn green, then gold, then dry. Bring each plot in while it is gold. Too early it is green and soft; too late the stalks crumble (39:21) and the plot is sown again, a picture of starting again without despair (39:53). No points are given."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "those who know and those who do not (39:9)",
+   "do not despair of the mercy of Allah (39:53)"
+  ],
+  "narrative_structure": "The sign, the growing field, then the closing reading",
+  "world_assets": [
+   "six field plots",
+   "seed bag",
+   "stalks that change colour"
+  ],
+  "environment_behaviour": [
+   "rain falls before and just after sowing",
+   "each plot changes from bare to green to gold to dry"
+  ],
+  "learning_objective": "See the cycle of rain, crops and drying in 39:21 and learn that one can always begin again (39:53)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: sowed the field with the on-screen button; the plots sprout one after another)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: a green plot brought in too early was refused with a hint; each golden plot was brought in)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Plots brought in: 2 of 6 · golden now: 1\"; plots turn green, then golden, then dry)",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: plots [0,1,2,3,4,5], early/late [0])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"know\",\"field\",\"hope\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w039.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

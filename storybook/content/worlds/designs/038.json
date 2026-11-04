@@ -137,33 +137,45 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Chambers of Wisdom",
+  "tier": "playable",
+  "visual_theme": "A dry valley with reeds, ferns, bird pools, dark damp patches and white salt crusts in three parts of the valley",
   "quran_references": [
-   "38:17–48",
-   "38:71–85"
+   "38:29",
+   "38:41-42",
+   "38:43-44",
+   "38:26",
+   "38:27"
   ],
   "primary_mechanic": {
-   "kind": "wise-judgement-scale",
-   "engine": "not built yet",
-   "text": "Hear two sides of everyday disputes and weigh them fairly, as Dawud was told to judge with truth (38:26)."
+   "kind": "spring-signs",
+   "engine": "spring",
+   "text": "In three rounds, read the signs the board names (reeds, damp dark soil, birds coming to drink, ferns, no white salt crust) and dig only where every sign is present. A dry hole names the sign that was missing. Each spring found opens a reading: the spring given to Ayyub (peace be upon him) (38:41-44) and the call to judge with truth (38:26). The springs are a learning game, not a retelling of the event."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "a blessed Book to think about (38:29)",
+   "not without purpose (38:27)"
+  ],
+  "narrative_structure": "The sign, three rounds of reading the land, then the closing reading",
+  "world_assets": [
+   "reeds, ferns, damp soil, birds and salt crusts at several spots",
+   "dig spots that become small pools"
+  ],
+  "environment_behaviour": [
+   "a correct dig fills with water",
+   "a wrong dig leaves a dry hole"
+  ],
+  "learning_objective": "Practise careful looking and thinking (38:29) and learn about Ayyub's patience (38:41-44)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: dug at a spot in the valley with the on-screen button)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: a spot without reeds gave a dry hole and a hint; the spot with every sign gave water and the next round)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Round 1 of 3 · water is close where you find reeds and damp dark soil\")",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: rounds [0,1,2], dry [0])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"reflect\",\"water\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w038.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

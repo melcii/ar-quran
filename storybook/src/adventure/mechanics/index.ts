@@ -8,8 +8,10 @@ import { Doors } from './doors';
 import { Echo } from './echo';
 import { Granary } from './granary';
 import { Grow } from './grow';
+import { Harvest } from './harvest';
 import { Home } from './home';
 import { Mirror } from './mirror';
+import { Moon } from './moon';
 import { Order } from './order';
 import { Point } from './point';
 import { Pasture } from './pasture';
@@ -22,9 +24,11 @@ import { Shades } from './shades';
 import { Shadow } from './shadow';
 import { Shelter } from './shelter';
 import { Sluice } from './sluice';
+import { Spring } from './spring';
 import { Streets } from './streets';
 import { SunPath } from './sunpath';
 import { Valley } from './valley';
+import { Vine } from './vine';
 import { Voice } from './voice';
 
 export const MECHS: Partial<Record<Task['kind'], Mechanic<never>>> = {
@@ -52,6 +56,10 @@ export const MECHS: Partial<Record<Task['kind'], Mechanic<never>>> = {
   plumb: Plumb as Mechanic<never>,
   sluice: Sluice as Mechanic<never>,
   shades: Shades as Mechanic<never>,
+  moon: Moon as Mechanic<never>,
+  vine: Vine as Mechanic<never>,
+  spring: Spring as Mechanic<never>,
+  harvest: Harvest as Mechanic<never>,
 };
 
 /** The plug-in for a task, typed loosely so the engine can call it with any task. */

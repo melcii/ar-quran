@@ -157,33 +157,44 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Town and the Turning Sky",
+  "tier": "playable",
+  "visual_theme": "A quiet hilltop at night with a calendar board of seven hooks, a rack of painted moon discs, palms and olive trees, and a large moon in the sky",
   "quran_references": [
-   "36:13–32",
-   "36:33–44"
+   "36:33-35",
+   "36:39-40",
+   "36:37-38"
   ],
   "primary_mechanic": {
-   "kind": "star-orbits",
-   "engine": "not built yet",
-   "text": "Set the sun and moon on their courses in an orrery so they never overtake each other (36:37-40); the town story (36:13-27) is read."
+   "kind": "moon-phase-calendar",
+   "engine": "moon",
+   "text": "Each night look up at the moon, choose the painted disc with the same shape (thin or round, lit on the right or the left) and hang it on that night's hook. The nights pass and the sky moon changes, from a thin new crescent to full and back to a thin old crescent like an old date stalk (36:39). A disc that does not match goes back with a hint."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "the dead earth brought to life (36:33-35)",
+   "night and the sun (36:37-38)"
+  ],
+  "narrative_structure": "The sign of the earth, seven nights at the calendar, then the reading on night and the sun",
+  "world_assets": [
+   "calendar board with seven hooks",
+   "rack of seven painted moon discs",
+   "large phase-changing moon in the night sky"
+  ],
+  "environment_behaviour": [
+   "the sky moon changes phase after each correct night",
+   "hung discs stay on the board"
+  ],
+  "learning_objective": "Watch the moon's stages (36:39-40) and learn that each thing in the sky keeps its own orbit",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: took a disc from the rack and hung it on the night board with the on-screen buttons)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: a full-moon disc on night 1 went back with a hint; matching each night's moon moved the sky moon on to the next night)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Night 1 of 7: look up at the moon and hang the disc that matches\"; the sky moon changes phase each night)",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: nights [0,1,2,3,4,5,6], wrong [0])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"earth\",\"moon\",\"night\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w036.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

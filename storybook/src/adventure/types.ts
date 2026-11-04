@@ -432,7 +432,12 @@ export type PlumbTask = TaskBase & { kind: 'plumb'; wall: P2; rot: number; tilt0
 export type SluiceTask = TaskBase & { kind: 'sluice'; dam: P2; gardens: [P2, P2]; months: number; monthLen: number; cracks: number[]; reading?: Reading };
 export type ShadeItem = { label: string; color: string; light: number; at: P2 };
 export type ShadesTask = TaskBase & { kind: 'shades'; table: P2; rows: { name: string; shape: 'stone' | 'fruit' | 'wool'; items: ShadeItem[]; reading: Reading }[]; reading?: Reading };
-export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask | StandTask | ReachTask | ObserveTask | SkyTask | SailTask | ChoiceTask | ShareTask | PromiseTask | WeighTask | FlowTask | SiftTask | ReturnTask | GranaryTask | ValleyTask | GrowTask | PollenTask | RubbingTask | StreetsTask | SunPathTask | PointTask | BeaconTask | DoorsTask | OrderTask | HomeTask | MirrorTask | ShadowTask | EchoTask | AntsTask | RiverTask | ShelterTask | RainTask | VoiceTask | PastureTask | PlumbTask | SluiceTask | ShadesTask;
+export type MoonTask = TaskBase & { kind: 'moon'; rack: P2; board: P2; nights: number[]; reading?: Reading };
+export type VineTask = TaskBase & { kind: 'vine'; root: P2; frame: P2; bundle: P2; gap: number; speed: number; reading?: Reading };
+export type SpringSign = 'reeds' | 'damp' | 'birds' | 'ferns' | 'salt';
+export type SpringTask = TaskBase & { kind: 'spring'; board: P2; rounds: { need: SpringSign[]; spots: { at: P2; signs: SpringSign[] }[]; reading: Reading }[]; reading?: Reading };
+export type HarvestTask = TaskBase & { kind: 'harvest'; bag: P2; plots: P2[]; stage: number; stagger: number; reading?: Reading };
+export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask | StandTask | ReachTask | ObserveTask | SkyTask | SailTask | ChoiceTask | ShareTask | PromiseTask | WeighTask | FlowTask | SiftTask | ReturnTask | GranaryTask | ValleyTask | GrowTask | PollenTask | RubbingTask | StreetsTask | SunPathTask | PointTask | BeaconTask | DoorsTask | OrderTask | HomeTask | MirrorTask | ShadowTask | EchoTask | AntsTask | RiverTask | ShelterTask | RainTask | VoiceTask | PastureTask | PlumbTask | SluiceTask | ShadesTask | MoonTask | VineTask | SpringTask | HarvestTask;
 
 export type Region = { id: string; name: string; at: P2 };
 

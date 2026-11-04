@@ -128,32 +128,45 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Paths of Trust",
+  "tier": "playable",
+  "visual_theme": "A hot open beach with an empty shade frame over a resting mat, a bundle of stakes and a young gourd vine growing from the sand",
   "quran_references": [
-   "37:75–148"
+   "37:6",
+   "37:139-146",
+   "37:147-148",
+   "37:182"
   ],
   "primary_mechanic": {
-   "kind": "ship-of-yunus-shore",
-   "engine": "not built yet",
-   "text": "On a shore, grow a gourd vine for shade over the beach (37:145-146); Ibrahim's test (37:102-107) stays a reading only."
+   "kind": "vine-trellis",
+   "engine": "vine",
+   "text": "Carry stakes from the bundle and plant them in a line close enough for the gourd vine to climb from stake to stake until it covers the shade frame (37:145-146). A stake planted too far from the vine is out of its reach and the child is told how far it is. Yunus (peace be upon him) is never shown; the mat stays empty."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "stars adorning the sky (37:6)",
+   "sent to a hundred thousand or more (37:147-148)"
+  ],
+  "narrative_structure": "The stars, the vine, then the reading on being sent again; the closing line is 37:182",
+  "world_assets": [
+   "empty shade frame and mat",
+   "stake bundle",
+   "growing gourd vine with leaves"
+  ],
+  "environment_behaviour": [
+   "the vine grows along each stake within reach and onto the frame",
+   "the frame gives shade once covered"
+  ],
+  "learning_objective": "Learn about the mercy shown to Yunus on the shore (37:139-146) by helping a plant give shade",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: took a stake from the bundle and planted it with the on-screen buttons)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: a stake 6 steps from the root was refused; 6 stakes 2.5 steps apart let the vine climb to the frame)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"The vine needs something to climb\" then \"The vine is climbing · stakes reached: 2\"; the vine grows along the stakes)",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: vine done; too-far [0])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"ranks\",\"vine\",\"sent\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w037.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
