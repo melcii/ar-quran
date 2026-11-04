@@ -17,7 +17,7 @@
  "narrative_passages": [],
  "summary_for_children": "At-Taghabun teaches us to trust Allah, fear Him as much as we can, listen, obey and spend for good.",
  "world_title": "The Mutual Exchange",
- "environment_concept": "A garden where giving and patience are traded for real gain.",
+ "environment_concept": "A path of steps up a slope, where effort counts (64:16).",
  "architecture_and_scenery": "Garden paths with offering stations.",
  "palette": {
   "colors": [
@@ -39,8 +39,9 @@
   {
    "name": "Do your best",
    "reference": "64:16",
-   "description": "Complete tasks as well as you can (adaptation).",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Lay six numbered stones in order, one step at a time.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   }
  ],
  "narration_plan": "Narration gentle.",
@@ -62,8 +63,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (mountain, steps) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "64:16"

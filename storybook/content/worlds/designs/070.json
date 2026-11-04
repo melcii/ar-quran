@@ -17,7 +17,7 @@
  "narrative_passages": [],
  "summary_for_children": "Al-Ma'arij means The Ascending Stairways. It speaks of patience and describes people who pray steadily and keep their trusts.",
  "world_title": "Ways of Ascent",
- "environment_concept": "A symbolic world of stairways of light rising to the sky, never showing angels.",
+ "environment_concept": "Garden steps rising gently and a quiet place of steady prayer (70:23); nothing unseen is shown.",
  "architecture_and_scenery": "Light stairways, a patient garden.",
  "palette": {
   "colors": [
@@ -39,8 +39,9 @@
   {
    "name": "Steady prayer",
    "reference": "70:23",
-   "description": "Keep a lamp lit by returning to it each time (adaptation).",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Lay five numbered stones in order, steady and constant.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   }
  ],
  "narration_plan": "Unseen is not shown.",
@@ -64,8 +65,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (lamps, steps, stones) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "70:3",

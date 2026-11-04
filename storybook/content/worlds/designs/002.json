@@ -46,7 +46,7 @@
  ],
  "summary_for_children": "Al-Baqarah is the longest surah. It shows how Allah guides people, tells of Adam, of the Children of Israel and the cow, of Ibrahim building the House, and teaches about charity, patience and good character.",
  "world_title": "The Valley of Guidance",
- "environment_concept": "A great valley holding many of the surah's stories as separate glades, joined by a river and crowned by a wide open sky.",
+ "environment_concept": "A green valley of guidance: an orchard where hidden things are found by name (2:31), a meadow of cows (2:67), great foundation stones (2:127), a river to cross (2:249) and a field where one seed grows seven spikes (2:261).",
  "architecture_and_scenery": "Terraced valley with a garden of names, a pastoral meadow, stone foundations of an ancient house, a river crossing and fields of grain.",
  "palette": {
   "colors": [
@@ -94,20 +94,23 @@
   {
    "name": "Plant the seed of charity",
    "reference": "2:261",
-   "description": "Plant one seed and watch it grow into seven spikes with many grains, then read 2:261.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Plant three seeds; each one grows seven spikes of grain.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Find the names",
    "reference": "2:31",
-   "description": "Discover named objects around the glade, learning that knowledge is a gift from Allah.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Find five glowing things hidden in the orchard.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Lay the foundations",
    "reference": "2:127",
-   "description": "Set foundation stones in place while 2:127 is shown; the people are not shown.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry four great stones to the foundations.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   }
  ],
  "narration_plan": "The narrator guides from glade to glade, separating what the Quran states from explanation, and reads each glade's ayah.",
@@ -155,8 +158,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (foundations, grain, herd, orchard, river) with 3 hands-on activities in the scene",
+  "testing": "checked in headless Chromium with software WebGL at 960x600; not tested on phones or real GPUs",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "automated screenshots of the scene and the in-scene activities"
  },
  "quran_references": [
   "2:30-39",

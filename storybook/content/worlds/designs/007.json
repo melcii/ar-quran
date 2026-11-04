@@ -54,7 +54,7 @@
  ],
  "summary_for_children": "Al-A'raf tells of Adam and Iblis and of messengers sent to their peoples: Nuh, Hud, Salih, Lut, Shu'ayb and Musa. Each people was called to worship Allah alone.",
  "world_title": "The Heights of the Peoples",
- "environment_concept": "A long ridge path past the homes of earlier peoples, each a different landscape: a garden, a ship's hill, wind plains, carved cliffs, a market and a seashore.",
+ "environment_concept": "The heights: a garden with one tree (7:19), timbers of a ship on a hill (7:64), wide windy plains (7:65), homes carved in cliffs (7:74), a market where weights must be fair (7:85) and a calm shore (7:138).",
  "architecture_and_scenery": "Garden terrace, hill with a ship's timbers, windswept plain, cliff dwellings carved in rock, a market town, and a sea shore.",
  "palette": {
   "colors": [
@@ -108,8 +108,9 @@
   {
    "name": "Fair weights",
    "reference": "7:85",
-   "description": "Weigh goods fairly in the market so every customer gets full measure.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry the brass weights to the scale, giving full measure.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Walk the ridge",
@@ -169,8 +170,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (ark, carved, market, sea, tree, wind) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "7:11-25",

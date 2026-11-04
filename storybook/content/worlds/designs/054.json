@@ -33,7 +33,7 @@
  ],
  "summary_for_children": "Al-Qamar means The Moon. It tells of the moon splitting and of Nuh, 'Ad, Thamud, Lut and Pharaoh, and repeats that Allah made the Quran easy to remember.",
  "world_title": "Moon Split and the Easy Reminder",
- "environment_concept": "A sky with a moon split in two, then stories of peoples: rain gates opening for Nuh, a screaming wind for 'Ad, a she-camel for Thamud, each followed by 'We made the Quran easy to remember'.",
+ "environment_concept": "A full moon over the plain (54:1; the splitting itself is not pictured), pouring rain (54:11), springs bursting from the earth (54:12), a vessel of planks being built (54:13) and palms uprooted by the wind (54:20).",
  "architecture_and_scenery": "Night sky, a flood plain with a vessel of planks and nails, uprooted palms, a rocky valley with a she-camel's trail.",
  "palette": {
   "colors": [
@@ -87,8 +87,9 @@
   {
    "name": "Planks and nails",
    "reference": "54:13",
-   "description": "Build the vessel from planks and nails.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry four planks to the vessel being built.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   }
  ],
  "narration_plan": "Narration repeats the refrain from the surah.",
@@ -135,8 +136,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (ark, cloud, disc, fallen, spring) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "54:1",

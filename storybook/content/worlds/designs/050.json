@@ -18,7 +18,7 @@
  "narrative_passages": [],
  "summary_for_children": "Surah Qaf points to the sky with no cracks, the earth with mountains and plants, and rain that brings life, as signs that Allah can bring people back to life.",
  "world_title": "The Sky Without Rifts",
- "environment_concept": "A sky so whole it has no rifts above an earth spread out with mountains, blessed rain and tall palms with layered fruit.",
+ "environment_concept": "A sky without rifts (50:6), mountains and beautiful plants (50:7), blessed rain over grain (50:9) and lofty palms with layered fruit (50:10).",
  "architecture_and_scenery": "A seamless dome sky, wide plains, firm mountains, harvest fields, tall palm groves.",
  "palette": {
   "colors": [
@@ -66,8 +66,9 @@
   {
    "name": "Harvest",
    "reference": "50:9-11",
-   "description": "Grow and harvest grain.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Plant three seeds of grain; the rain makes them grow.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   }
  ],
  "narration_plan": "Narration links revived land to resurrection (50:11).",
@@ -109,8 +110,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (cloud, horizon, mountain, orchard, palms) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "50:6",

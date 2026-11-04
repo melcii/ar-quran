@@ -24,7 +24,7 @@
  ],
  "summary_for_children": "Al-Anfal speaks to believers about trust in Allah, staying united, not quarrelling, and choosing peace when it is offered.",
  "world_title": "The Field of Steady Hearts",
- "environment_concept": "A wide field under a rain that steadies the ground, teaching unity, trust in Allah and the wish for peace.",
+ "environment_concept": "A field where rain falls and the sand grows firm (8:11), a circle of stones that glows (8:2) and a green hill of peace (8:61).",
  "architecture_and_scenery": "Open plain with wells, low dunes, a camp of plain tents and a hill to look from. No battle is shown.",
  "palette": {
   "colors": [
@@ -60,8 +60,9 @@
   {
    "name": "Walk on firm ground",
    "reference": "8:11",
-   "description": "Cross soft sand that becomes firm after the rain.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry rain clouds over the dry sand; the ground turns firm and green.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Don't quarrel",
@@ -104,8 +105,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (mountain, stones) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "8:2",

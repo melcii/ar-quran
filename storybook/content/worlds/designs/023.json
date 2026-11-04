@@ -24,7 +24,7 @@
  ],
  "summary_for_children": "Al-Mu'minun begins by describing successful believers: humble in prayer, avoiding idle talk, giving charity and keeping promises. It reminds us how Allah created us and sends rain in just measure.",
  "world_title": "Garden of the Successful Believers",
- "environment_concept": "A cultivated estate where each terrace is a quality of the believers in the opening ayahs, fed by rain sent in measure and an olive tree from Sinai.",
+ "environment_concept": "Terraces of the successful believers: a quiet stepped terrace (23:2-3), rain held in great basins (23:18), palms and vines (23:19), a great olive tree (23:20) and an empty shipyard (23:27).",
  "architecture_and_scenery": "Terraced garden with palm and vine rows, a single great olive tree on a slope, a reservoir, and a ship-building yard at its lower edge.",
  "palette": {
   "colors": [
@@ -84,8 +84,9 @@
   {
    "name": "Fill the reservoir",
    "reference": "23:18",
-   "description": "Guide rain in measured amounts to fill the reservoir without flooding (adaptation).",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry four jars of rain water to the basins.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   }
  ],
  "narration_plan": "Narration links each terrace to a quality and asks the child about their own day.",
@@ -137,8 +138,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (ark, bowls, olives, palms, steps, stones, vine) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "23:1-11",

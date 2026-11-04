@@ -23,7 +23,7 @@
  ],
  "summary_for_children": "Al-Fath means The Victory. It speaks of the believers' pledge under a tree, of tranquillity Allah sent to their hearts, and compares them to a seed that grows strong.",
  "world_title": "The Tree of the Pledge",
- "environment_concept": "A plain with a single tree where a pledge was made, and a field of seedlings growing strong.",
+ "environment_concept": "A single tree on a plain, no one shown (48:18), and a shoot growing strong on its stalk (48:29).",
  "architecture_and_scenery": "Open plain, a single tree, a field of crops whose shoots grow stronger.",
  "palette": {
   "colors": [
@@ -53,8 +53,9 @@
   {
    "name": "Grow the shoot",
    "reference": "48:29",
-   "description": "Help a shoot become strong (adaptation).",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Plant three seeds; each sends out a shoot that grows strong.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Tranquillity",
@@ -91,8 +92,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (shoot, tree) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "48:4",

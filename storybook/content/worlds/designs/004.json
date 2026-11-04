@@ -18,7 +18,7 @@
  "narrative_passages": [],
  "summary_for_children": "An-Nisa teaches fairness to everyone, kindness to family, orphans and neighbours, and returning what we are trusted with.",
  "world_title": "The Village of Trusts and Justice",
- "environment_concept": "A village where every house holds something entrusted, and a central square where scales stay level.",
+ "environment_concept": "A village of trusts and justice: a square with one fountain from which channels run (4:1), houses waiting for what was lent to come back (4:58), a lane of neighbours (4:36) and tall scales (4:135).",
  "architecture_and_scenery": "Whitewashed village houses, a well, a market square with large balance scales, family courtyards.",
  "palette": {
   "colors": [
@@ -60,8 +60,9 @@
   {
    "name": "Return the trusts",
    "reference": "4:58",
-   "description": "Find objects left in the wrong place and return each to its owner's house.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry four chests back to the house they belong to.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Keep the scales level",
@@ -109,8 +110,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (scale, spring, village) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "4:1",

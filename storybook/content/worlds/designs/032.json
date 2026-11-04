@@ -18,7 +18,7 @@
  "narrative_passages": [],
  "summary_for_children": "As-Sajdah means The Prostration. It reminds us that Allah created people from clay and gave us hearing, sight and hearts. It praises those who rise at night to pray and shows how water brings crops to barren land.",
  "world_title": "Night Rising and the Dry Land",
- "environment_concept": "A night village where some rise to pray, then a barren land where water arrives and crops grow.",
+ "environment_concept": "A riverbank of clay (32:7), a village with lamps at night (32:16) and dry land receiving water (32:27).",
  "architecture_and_scenery": "Quiet clay houses under stars, a lamp-lit prayer space, and a dry plain with a river channel.",
  "palette": {
   "colors": [
@@ -60,8 +60,9 @@
   {
    "name": "Water the plain",
    "reference": "32:27",
-   "description": "Lead water to barren land and watch crops grow.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry rain clouds to the dry plain.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   }
  ],
  "narration_plan": "Narration is calm and night-toned, ending at dawn.",
@@ -97,8 +98,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (clay, village) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "32:7",

@@ -24,7 +24,7 @@
  ],
  "summary_for_children": "Surah Ibrahim compares a good word to a good tree, and teaches that gratitude brings more blessings. It records Ibrahim's prayer for his family in a dry valley.",
  "world_title": "The Valley of the Good Tree",
- "environment_concept": "A valley where a good tree's roots are firm and its branches reach the sky, beside an uncultivated valley near a sacred House.",
+ "environment_concept": "A good tree with deep roots and high branches (14:24), an uprooted tree lying loose (14:26), a dry valley (14:37) and a river with sailing boats (14:32).",
  "architecture_and_scenery": "A great tree on a hill, a dry valley with a well, rivers and ships below, sun and moon overhead.",
  "palette": {
   "colors": [
@@ -65,9 +65,10 @@
  "activities": [
   {
    "name": "Good words grow",
-   "reference": "14:24-25",
-   "description": "Choose kind words; each one makes the good tree grow.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "reference": "14:24",
+   "description": "Plant three saplings; each grows into a firm tree.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Thankful stones",
@@ -114,8 +115,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (fallen, mountain, ships, tree) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "14:7",

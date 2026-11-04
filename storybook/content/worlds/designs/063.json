@@ -16,7 +16,7 @@
  "narrative_passages": [],
  "summary_for_children": "Al-Munafiqun means The Hypocrites. It warns against saying one thing and meaning another, and tells us to spend from what we have before it is too late.",
  "world_title": "Before the Term Ends",
- "environment_concept": "A harvest world where provision is shared before the season ends.",
+ "environment_concept": "Baskets of harvest to share before the time runs out (63:10).",
  "architecture_and_scenery": "Orchards, baskets, a timeline of seasons.",
  "palette": {
   "colors": [
@@ -39,8 +39,9 @@
   {
    "name": "Share now",
    "reference": "63:10",
-   "description": "Share provisions before the season ends (adaptation).",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry four baskets to share now.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   }
  ],
  "narration_plan": "Narration gentle.",
@@ -64,8 +65,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (baskets, orchard, village) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "63:10"

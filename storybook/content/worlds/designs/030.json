@@ -24,7 +24,7 @@
  ],
  "summary_for_children": "Ar-Rum means The Romans. It begins with a promise that came true and points to signs of Allah: our different languages and colours, the winds, rain, and how dead earth comes back to life.",
  "world_title": "The Winds and the Colours of People",
- "environment_concept": "An open world of signs: winds that carry ships, clouds spread into rain, a market of many languages and colours, and dead earth brought back to life.",
+ "environment_concept": "A market of many languages (30:22), a harbour with ships on good winds (30:46), clouds that spread and break into rain (30:48) and bare land returning to green (30:50).",
  "architecture_and_scenery": "A port town with ships, a hillside market with many voices, rain-swept hills, and a distant land of an old empire's ruins.",
  "palette": {
   "colors": [
@@ -72,8 +72,9 @@
   {
    "name": "Wind and rain",
    "reference": "30:48-50",
-   "description": "Guide winds to stir clouds, then watch rain revive the land.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry rain clouds over the bare land; it turns green.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   }
  ],
  "narration_plan": "Narration names each sign as 'and of His signs', as the surah does.",
@@ -115,8 +116,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (cloud, market, ships) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "30:2-4",

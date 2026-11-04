@@ -24,7 +24,7 @@
  ],
  "summary_for_children": "Al-Mujadila means The Pleading Woman. It begins with Allah hearing a woman who complained to Him, and teaches making room for others in gatherings and seeking knowledge.",
  "world_title": "The Assembly That Makes Room",
- "environment_concept": "A meeting hall where a woman's complaint was heard, and where people make space for each other.",
+ "environment_concept": "An open hall where room is made for others (58:11), with seats in a circle and houses around.",
  "architecture_and_scenery": "A simple hall with mats, room that expands when people make space.",
  "palette": {
   "colors": [
@@ -47,8 +47,9 @@
   {
    "name": "Make space",
    "reference": "58:11",
-   "description": "Shift cushions to make room for newcomers (adaptation).",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry six cushions to make room in the circle.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Allah hears",
@@ -78,8 +79,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (council, hall, village) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "58:1",

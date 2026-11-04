@@ -23,7 +23,7 @@
  ],
  "summary_for_children": "Ad-Dukhan means The Smoke. It says the Quran was sent down on a blessed night and tells how Pharaoh's people left behind gardens and springs when Allah saved the Children of Israel.",
  "world_title": "The Still Sea and Abandoned Gardens",
- "environment_concept": "A blessed night of revelation, a smoke-filled sky, and Pharaoh's abandoned gardens, springs and estates beside a still sea.",
+ "environment_concept": "A calm blessed night (44:3), a sea lying still (44:24) and gardens and springs left behind (44:25).",
  "architecture_and_scenery": "Night sky, a stilled sea, gardens and springs left empty, noble dwellings and fields.",
  "palette": {
   "colors": [
@@ -67,6 +67,13 @@
    "reference": "44:3",
    "description": "Light the night sky by reading 44:3.",
    "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Gardens and springs",
+   "reference": "44:25",
+   "kind": "find",
+   "description": "Find four fruits still lying in the empty gardens.",
+   "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
  "narration_plan": "No people shown; narration focuses on what lasts.",
@@ -102,8 +109,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (constellation, disc, orchard, sea, spring) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "44:3",

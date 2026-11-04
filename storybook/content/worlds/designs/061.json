@@ -17,7 +17,7 @@
  "narrative_passages": [],
  "summary_for_children": "As-Saff means The Ranks. It tells us to do what we say, praises believers united like a solid structure, and mentions Isa's disciples as supporters of Allah.",
  "world_title": "Ranks Like a Structure",
- "environment_concept": "A wall of stones fitting together tightly, standing for believers united in rows.",
+ "environment_concept": "A wall of tightly joined stones (61:4).",
  "architecture_and_scenery": "Stone wall building site, a field.",
  "palette": {
   "colors": [
@@ -40,8 +40,9 @@
   {
    "name": "Build together",
    "reference": "61:4",
-   "description": "Fit stones together in a wall (adaptation).",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry six stones to build one firm wall.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Say and do",
@@ -71,8 +72,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (village, wall) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "61:2-3",

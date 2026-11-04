@@ -23,7 +23,7 @@
  ],
  "summary_for_children": "Al-Haqqah means The Reality. It recalls peoples who denied the truth, like 'Ad, and speaks of the Day of Judgement only in its own words.",
  "world_title": "Hollow Palm Trunks",
- "environment_concept": "A desert of fallen palm trunks after a violent wind, with the Reality spoken of only as text.",
+ "environment_concept": "A windswept valley (69:6) with hollow palm trunks lying fallen (69:7).",
  "architecture_and_scenery": "Fallen palms, wind-swept valley.",
  "palette": {
   "colors": [
@@ -53,6 +53,13 @@
    "reference": "69:19",
    "description": "Reflect on good deeds (adaptation).",
    "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Remember and listen",
+   "reference": "69:12",
+   "kind": "find",
+   "description": "Lay five numbered stones in order through the valley.",
+   "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
  "narration_plan": "The Day is never depicted.",
@@ -81,8 +88,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (fallen, mountain, wind) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "69:6",

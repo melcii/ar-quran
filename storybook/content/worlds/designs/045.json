@@ -17,7 +17,7 @@
  "narrative_passages": [],
  "summary_for_children": "Al-Jathiyah means The Kneeling. It shows how Allah made the sea and everything in the heavens and earth useful for people, as signs for those who think.",
  "world_title": "Subjected Sea and Sky",
- "environment_concept": "A coastal world where the sea carries ships and everything in heaven and earth is set to serve people, with a kneeling crowd shown only as a symbolic horizon.",
+ "environment_concept": "Ships sailing (45:12) and a wide view of sky and land, with birds and grazing animals (45:13).",
  "architecture_and_scenery": "Busy sea lanes, fishing boats, a sky with orderly winds and an endless shore.",
  "palette": {
   "colors": [
@@ -53,8 +53,9 @@
   {
    "name": "Winds",
    "reference": "45:5",
-   "description": "Change the winds and notice them as a sign.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry rain clouds to the dry land.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   }
  ],
  "narration_plan": "Narration repeats the surah's call to think.",
@@ -85,8 +86,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (birds, herd, horizon, ships) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "45:5",

@@ -18,7 +18,7 @@
  "narrative_passages": [],
  "summary_for_children": "Fatir means The Originator. It praises Allah who created the heavens and the earth and shows signs in colours: fruits, mountains, people and animals of every colour, and fresh and salty seas.",
  "world_title": "The Originator's Colours",
- "environment_concept": "A land of colour: fruits of many colours, white and red mountain streaks, black rock, and two seas giving food and ornaments.",
+ "environment_concept": "Mountains streaked white, red and black (35:27), orchards in many colours (35:27) and two seas, fresh and salt, with pearls (35:12).",
  "architecture_and_scenery": "Striped mountains, orchards, pearl beaches, and a sky streaked with wings of light suggested only by colour, never angels.",
  "palette": {
   "colors": [
@@ -55,14 +55,16 @@
   {
    "name": "Colour hunt",
    "reference": "35:27-28",
-   "description": "Collect colours from fruits, rocks and animals.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Find five fruits fallen in the orchard.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Pearl diving",
    "reference": "35:12",
-   "description": "Find ornaments in the sea (adaptation).",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Find four pearls by the two seas.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   }
  ],
  "narration_plan": "Narration celebrates colour and links knowledge with awe of Allah (35:28).",
@@ -98,8 +100,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (orchard, streaked, twoSeas) with 2 hands-on activities in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "35:12",

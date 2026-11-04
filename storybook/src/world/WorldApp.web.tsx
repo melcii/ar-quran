@@ -274,7 +274,8 @@ function World() {
 
   useEffect(() => {
     if (!hint) return;
-    const t = setTimeout(() => setHint(''), 3500);
+    // Long enough to read: a quoted ayah stays up longer than a short tip.
+    const t = setTimeout(() => setHint(''), Math.max(3500, hint.length * 70));
     return () => clearTimeout(t);
   }, [hint]);
 

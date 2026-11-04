@@ -18,7 +18,7 @@
  "narrative_passages": [],
  "summary_for_children": "An-Najm means The Star. It begins by swearing by a star and teaches that the Prophet (peace be upon him) speaks only revelation, that each person is responsible for their own deeds, and that Allah is the Lord of Sirius.",
  "world_title": "The Descending Star",
- "environment_concept": "A night sky with a setting star, then a land where laughter and tears, life and death, and the star Sirius are all named as from Allah.",
+ "environment_concept": "A star setting (53:1), a valley of sunshine and soft rain, standing for joy and tears (53:43; no faces) and the bright star Sirius (53:49).",
  "architecture_and_scenery": "Dark desert sky, a bright star setting, Sirius rising.",
  "palette": {
   "colors": [
@@ -54,8 +54,9 @@
   {
    "name": "Find Sirius",
    "reference": "53:49",
-   "description": "Find Sirius in the night sky.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Find the brightest star low over the hills.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Own deeds",
@@ -96,8 +97,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (cloud, constellation, mountain) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "53:1",

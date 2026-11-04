@@ -29,7 +29,7 @@
  ],
  "summary_for_children": "Surah Yunus shows signs in the sun and moon, tells how people call on Allah at sea, and remembers the people of Yunus who believed.",
  "world_title": "The Sea of Turning Back",
- "environment_concept": "A coast where the moon's phases count time, a ship meets a storm, and a whole people turn back to Allah.",
+ "environment_concept": "A terrace of the moon's phases for counting the months (10:5), a ship at sea (10:22), a garden in the rain (10:24) and a doorway to Yunus's story (10:98).",
  "architecture_and_scenery": "Seaside cliffs, a harbour, a ship on open water, a garden above the shore, and a night sky for moon phases.",
  "palette": {
   "colors": [
@@ -71,8 +71,9 @@
   {
    "name": "Count the months",
    "reference": "10:5",
-   "description": "Set the moon through its phases to see how time is counted.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Lay five numbered stones in order, counting as the moon does.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Calm the sail",
@@ -120,8 +121,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (arch, cloud, moons, orchard, ships) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "10:5",

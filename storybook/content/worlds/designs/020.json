@@ -45,7 +45,7 @@
  ],
  "summary_for_children": "Surah Ta-Ha tells how Musa saw a fire in the night and was called by Allah, how as a baby he was placed in a chest on the river, how he and Harun went to Pharaoh with gentle words, and how Allah saved the believers through the sea.",
  "world_title": "Fire in the Valley of Tuwa",
- "environment_concept": "A night journey toward a distant fire that becomes the start of Musa's mission: a sacred valley, a river with a floating chest, the palace road, a dry path through the sea and a lonely desert where a calf is melted away.",
+ "environment_concept": "A fire glowing far across a dark valley (20:10), a pair of sandals left at the valley's edge (20:12, an adaptation), a chest in the reeds (20:39), a dry path between walls of water (20:77) and an empty camp (20:88). Musa and every person are never shown; no idol is pictured.",
  "architecture_and_scenery": "Dark desert valley with a single far-off fire, a reedy riverbank, a sandstone palace forecourt, a parted sea floor of wet sand, and a camp beneath bare hills.",
  "palette": {
   "colors": [
@@ -94,8 +94,9 @@
   {
    "name": "Follow the firelight",
    "reference": "20:10",
-   "description": "Walk through the dark valley guided only by the fire, reading 20:10 at its edge.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Lay five numbered stepping stones toward the distant fire.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Gentle words",
@@ -155,8 +156,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (chest, fire, sandals, seaPath, tents) with 1 hands-on activity in the scene",
+  "testing": "checked in headless Chromium with software WebGL at 960x600; not tested on phones or real GPUs",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "automated screenshots of the scene and the in-scene activities"
  },
  "quran_references": [
   "20:9-24",

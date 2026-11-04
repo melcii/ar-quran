@@ -15,65 +15,112 @@
   },
   {
    "surah": 2,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "meadow",
+   "basis": "A green valley of guidance: an orchard where hidden things are found by name (2:31), a meadow of cows (2:67), great foundation stones (2:127), a river to cross (2:249) and a field where one seed grows seven spikes (2:261).",
+   "references": [
+    "2:31",
+    "2:67",
+    "2:127",
+    "2:249",
+    "2:261"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 3,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "morning",
+   "basis": "A sanctuary in morning light: a small chamber with fruit in a lit niche, no one shown (3:37), a courtyard of pillars bound by one rope (3:103), a rooftop where a sundial marks the turning of night and day (3:190) and a distant gateway (3:96).",
+   "references": [
+    "3:37",
+    "3:96",
+    "3:103",
+    "3:190"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 4,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "morning",
+   "basis": "A village of trusts and justice: a square with one fountain from which channels run (4:1), houses waiting for what was lent to come back (4:58), a lane of neighbours (4:36) and tall scales (4:135).",
+   "references": [
+    "4:1",
+    "4:36",
+    "4:58",
+    "4:135"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 5,
    "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "basis": "A hall of promises (5:1), an olive grove where a crow scratches the ground (5:31), one lantern that lights a whole hall (5:32) and a long table under an arch, spread and empty (5:114).",
+   "references": [
+    "5:1",
+    "5:2",
+    "5:31",
+    "5:32",
+    "5:114"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 6,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "dawn",
+   "basis": "A night of signs turning to dawn: a ridge where a bright star sets (6:76), a plain where the moon rises (6:77), an overlook at sunrise (6:78), a valley where seeds split and sprout (6:95) and date palms with low clusters (6:99).",
+   "references": [
+    "6:76",
+    "6:77",
+    "6:78",
+    "6:95",
+    "6:99"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 7,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "mountain",
+   "basis": "The heights: a garden with one tree (7:19), timbers of a ship on a hill (7:64), wide windy plains (7:65), homes carved in cliffs (7:74), a market where weights must be fair (7:85) and a calm shore (7:138).",
+   "references": [
+    "7:19",
+    "7:64",
+    "7:65",
+    "7:74",
+    "7:85",
+    "7:138"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 8,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "wind",
+   "basis": "A field where rain falls and the sand grows firm (8:11), a circle of stones that glows (8:2) and a green hill of peace (8:61).",
+   "references": [
+    "8:2",
+    "8:11",
+    "8:61"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 9,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "desert-dusk",
+   "basis": "A small empty cave in the hills (9:40), a simple mosque on firm foundations (9:108-109) and a circle of stones for learning (9:122).",
+   "references": [
+    "9:40",
+    "9:108",
+    "9:109",
+    "9:122"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 10,
    "setting": "sea",
-   "basis": "The surah is named after Yunus, peace be upon him, whose people are mentioned in 10:98. A calm sea, with a doorway to the Yunus story world. He is never shown.",
+   "basis": "A terrace of the moon's phases for counting the months (10:5), a ship at sea (10:22), a garden in the rain (10:24) and a doorway to Yunus's story (10:98).",
    "references": [
+    "10:5",
+    "10:22",
+    "10:24",
     "10:98"
    ],
    "story": "yunus",
@@ -110,24 +157,38 @@
   {
    "surah": 13,
    "setting": "storm",
-   "basis": "The surah's name means \"The Thunder\" (13:13). Clouds and distant thunder only.",
+   "basis": "The valley of thunder: rivers running between mountains (13:3), neighbouring plots growing different fruits from one water (13:4), a ridge and a rocky hall under thunder clouds (13:12-13) and a pool where foam drifts away (13:17).",
    "references": [
-    "13:13"
+    "13:3",
+    "13:4",
+    "13:12",
+    "13:13",
+    "13:17"
    ],
    "review_status": "unreviewed"
   },
   {
    "surah": 14,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "orchard",
+   "basis": "A good tree with deep roots and high branches (14:24), an uprooted tree lying loose (14:26), a dry valley (14:37) and a river with sailing boats (14:32).",
+   "references": [
+    "14:24",
+    "14:26",
+    "14:32",
+    "14:37"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 15,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "stars",
+   "basis": "A rocky tract under the stars: constellations (15:16), firm mountains (15:19), winds carrying pollen to flowers (15:22) and empty homes carved in the cliffs (15:82).",
+   "references": [
+    "15:16",
+    "15:19",
+    "15:22",
+    "15:82"
+   ],
    "review_status": "unreviewed"
   },
   {
@@ -145,9 +206,14 @@
   },
   {
    "surah": 17,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "light",
+   "basis": "A path of lamps through the night (17:1: nothing of the journey is depicted), two signs, the sun and the moon (17:12), a family courtyard (17:23) and a market with honest scales (17:35).",
+   "references": [
+    "17:1",
+    "17:12",
+    "17:23",
+    "17:35"
+   ],
    "review_status": "unreviewed"
   },
   {
@@ -167,63 +233,110 @@
   },
   {
    "surah": 19,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "dawn",
+   "basis": "A quiet chamber (19:11), a tall palm in a remote place (19:23) with a stream below it (19:24) and ripe dates (19:25), and a mountain slope (19:52). No one is shown.",
+   "references": [
+    "19:11",
+    "19:23",
+    "19:24-26",
+    "19:24",
+    "19:25",
+    "19:52"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 20,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "night",
+   "basis": "A fire glowing far across a dark valley (20:10), a pair of sandals left at the valley's edge (20:12, an adaptation), a chest in the reeds (20:39), a dry path between walls of water (20:77) and an empty camp (20:88). Musa and every person are never shown; no idol is pictured.",
+   "references": [
+    "20:10",
+    "20:12",
+    "20:39",
+    "20:77",
+    "20:88"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 21,
    "setting": "sea",
-   "basis": "Al-Anbiya mentions Yunus, peace be upon him (21:87-88). A calm sea, with a doorway to the Yunus story world. He is never shown.",
+   "basis": "Rooms of signs: a spring (21:30), an empty ring of stones where the fire was made cool (21:69; no fire or person is shown), mountains with birds (21:79), a sail full of wind (21:81) and a dark sea at night (21:87).",
    "references": [
-    "21:87-88"
+    "21:30",
+    "21:33",
+    "21:69",
+    "21:79",
+    "21:81",
+    "21:87"
    ],
    "story": "yunus",
    "review_status": "unreviewed"
   },
   {
    "surah": 22,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "dawn",
+   "basis": "Roads from far mountain passes with camels (22:27), simple foundations (22:26), dry fields that turn green as rain falls (22:63) and a slope where plants stir (22:5).",
+   "references": [
+    "22:5",
+    "22:26",
+    "22:27",
+    "22:27-28",
+    "22:63"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 23,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "orchard",
+   "basis": "Terraces of the successful believers: a quiet stepped terrace (23:2-3), rain held in great basins (23:18), palms and vines (23:19), a great olive tree (23:20) and an empty shipyard (23:27).",
+   "references": [
+    "23:2",
+    "23:3",
+    "23:18",
+    "23:19",
+    "23:20",
+    "23:27"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 24,
    "setting": "light",
-   "basis": "The surah's name, \"The Light\", comes from 24:35. A courtyard of lamps and reflections at dusk. It does not picture the parable of 24:35 and does not represent Allah.",
+   "basis": "Doors that open after greeting (24:27), a glass lamp in a niche like a bright star (24:35), a blessed olive grove (24:35), a mirage plain (24:39), a dark sea (24:40) and birds with spread wings (24:41).",
    "references": [
-    "24:35"
+    "24:27",
+    "24:35",
+    "24:39",
+    "24:40",
+    "24:41"
    ],
    "review_status": "unreviewed"
   },
   {
    "surah": 25,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "morning",
+   "basis": "A sundial field where shadows move with the sun (25:45), winds driving clouds (25:48), two waters side by side with a barrier (25:53), the sun and the moon (25:61) and a gentle path (25:63).",
+   "references": [
+    "25:45",
+    "25:48",
+    "25:53",
+    "25:61",
+    "25:63"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 26,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "sea",
+   "basis": "Seven shores: towering walls of water either side of a path (26:63), a meadow of many noble kinds (26:7), rock-cut homes, empty (26:149) and a thicket by a market with scales (26:176-183).",
+   "references": [
+    "26:7",
+    "26:63",
+    "26:149",
+    "26:176",
+    "26:181-183"
+   ],
    "review_status": "unreviewed"
   },
   {
@@ -241,154 +354,241 @@
   },
   {
    "surah": 28,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "desert-dusk",
+   "basis": "Reeds and calm water (28:7), the well of Madyan with flocks waiting (28:23), a tree's shade (28:24), a fire seen from the road (28:29) and a treasure house sinking into the ground (28:81).",
+   "references": [
+    "28:7",
+    "28:23-24",
+    "28:23",
+    "28:24",
+    "28:29",
+    "28:81"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 29,
    "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "basis": "A huge, fine spider's web (29:41), a road through many landscapes (29:20) and an ark resting on a ridge as a sign (29:15).",
+   "references": [
+    "29:15",
+    "29:20",
+    "29:41"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 30,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "creation",
+   "basis": "A market of many languages (30:22), a harbour with ships on good winds (30:46), clouds that spread and break into rain (30:48) and bare land returning to green (30:50).",
+   "references": [
+    "30:22",
+    "30:46",
+    "30:48",
+    "30:48-50",
+    "30:50"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 31,
    "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "basis": "A great rock with a tiny seed beside it (31:16), a path for walking gently (31:19) and a shore with trees and a pen (31:27).",
+   "references": [
+    "31:16",
+    "31:19",
+    "31:27"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 32,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "night",
+   "basis": "A riverbank of clay (32:7), a village with lamps at night (32:16) and dry land receiving water (32:27).",
+   "references": [
+    "32:7",
+    "32:16",
+    "32:27"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 33,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "wind",
+   "basis": "Wind sweeping through empty tents (33:9) and mountains that stand for the trust (33:72, symbolic).",
+   "references": [
+    "33:9",
+    "33:35",
+    "33:72"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 34,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "orchard",
+   "basis": "Hills that echo with praise and birds (34:10), a glowing spring of copper (34:12), great basins (34:13), gardens on both sides of a dam (34:15) and a broken one where the trees fell (34:16).",
+   "references": [
+    "34:10",
+    "34:12",
+    "34:13",
+    "34:15",
+    "34:16"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 35,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "morning",
+   "basis": "Mountains streaked white, red and black (35:27), orchards in many colours (35:27) and two seas, fresh and salt, with pearls (35:12).",
+   "references": [
+    "35:12",
+    "35:27",
+    "35:27-28"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 36,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "moon",
+   "basis": "Dead earth that bursts with grain (36:33), palms and springs (36:34), the moon's phases (36:39), a laden ship (36:41) and a green tree with a fire (36:80).",
+   "references": [
+    "36:33",
+    "36:34",
+    "36:36",
+    "36:39",
+    "36:41",
+    "36:80"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 37,
    "setting": "sea",
-   "basis": "As-Saffat tells of Yunus, peace be upon him (37:139-148). A calm sea, with a doorway to the Yunus story world. He is never shown.",
+   "basis": "A sky adorned with stars (37:6), an open shore (37:145) and a gourd vine over a shady spot (37:146).",
    "references": [
-    "37:139-148"
+    "37:6",
+    "37:145",
+    "37:146"
    ],
    "story": "yunus",
    "review_status": "unreviewed"
   },
   {
    "surah": 38,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "mountain",
+   "basis": "Hills that echo at sunrise (38:18), birds gathering (38:19) and a cool spring (38:42).",
+   "references": [
+    "38:18",
+    "38:19",
+    "38:42"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 39,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "wind",
+   "basis": "Rain running underground into springs (39:21), crops that grow, turn yellow and dry (39:21) and a soft light on the horizon (39:73; nothing of Paradise is pictured).",
+   "references": [
+    "39:21",
+    "39:73"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 40,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "desert-dusk",
+   "basis": "A brick tower that stops far short of the sky (40:36-37) and a simple house (40:28). No one is shown.",
+   "references": [
+    "40:28",
+    "40:36",
+    "40:79"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 41,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "wind",
+   "basis": "A sky of drifting mist (41:11), a still dry plain (41:39) that stirs and sprouts when rain falls (41:39).",
+   "references": [
+    "41:11",
+    "41:39"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 42,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "sea",
+   "basis": "A harbour of ships like mountains (42:32), ships lying still when the wind stops (42:33) and a circle of seats for deciding together (42:38).",
+   "references": [
+    "42:32",
+    "42:33",
+    "42:38"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 43,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "meadow",
+   "basis": "Roads across the earth (43:10), rain in measure reviving dead land (43:11), and ships and animals to ride (43:12).",
+   "references": [
+    "43:10",
+    "43:11",
+    "43:12"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 44,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "night",
+   "basis": "A calm blessed night (44:3), a sea lying still (44:24) and gardens and springs left behind (44:25).",
+   "references": [
+    "44:3",
+    "44:24",
+    "44:25"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 45,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "sea",
+   "basis": "Ships sailing (45:12) and a wide view of sky and land, with birds and grazing animals (45:13).",
+   "references": [
+    "45:5",
+    "45:12",
+    "45:13"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 46,
    "setting": "dunes",
-   "basis": "The surah's name means \"The Wind-Curved Sandhills\", the region named in 46:21. Dunes under a wide sky; no people are shown.",
+   "basis": "Wind-curved dunes (46:21), a cloud approaching the valleys (46:24) and a quiet night valley with standing stones (46:29; nothing unseen is shown).",
    "references": [
-    "46:21"
+    "46:15",
+    "46:21",
+    "46:24",
+    "46:29"
    ],
    "review_status": "unreviewed"
   },
   {
    "surah": 47,
    "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "basis": "A reading stand with the ayah that describes rivers (47:15; the rivers themselves are not pictured), a quiet garden and stepping stones for steady feet (47:7).",
+   "references": [
+    "47:7",
+    "47:15"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 48,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "meadow",
+   "basis": "A single tree on a plain, no one shown (48:18), and a shoot growing strong on its stalk (48:29).",
+   "references": [
+    "48:18",
+    "48:29"
+   ],
    "review_status": "unreviewed"
   },
   {
@@ -406,44 +606,63 @@
   },
   {
    "surah": 50,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "orchard",
+   "basis": "A sky without rifts (50:6), mountains and beautiful plants (50:7), blessed rain over grain (50:9) and lofty palms with layered fruit (50:10).",
+   "references": [
+    "50:6",
+    "50:7",
+    "50:9-11",
+    "50:9",
+    "50:10"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 51,
    "setting": "wind",
-   "basis": "The surah opens with an oath by the winds that scatter dust (51:1). Wind over open land.",
+   "basis": "Winds scattering dust (51:1), clouds heavy with water (51:2), ships sailing easily (51:3) and a wide sky (51:47).",
    "references": [
-    "51:1"
+    "51:1",
+    "51:2",
+    "51:3",
+    "51:47",
+    "51:49"
    ],
    "review_status": "unreviewed"
   },
   {
    "surah": 52,
    "setting": "mountain",
-   "basis": "The surah's name means \"The Mount\" (52:1). Mountains at morning.",
+   "basis": "A lone mountain (52:1), an open scroll on a stone (52:3) and a high sky (52:5).",
    "references": [
-    "52:1"
+    "52:1",
+    "52:1-6",
+    "52:3",
+    "52:5"
    ],
    "review_status": "unreviewed"
   },
   {
    "surah": 53,
    "setting": "stars",
-   "basis": "The surah's name means \"The Star\" (53:1). A clear night sky.",
+   "basis": "A star setting (53:1), a valley of sunshine and soft rain, standing for joy and tears (53:43; no faces) and the bright star Sirius (53:49).",
    "references": [
-    "53:1"
+    "53:1",
+    "53:43",
+    "53:49"
    ],
    "review_status": "unreviewed"
   },
   {
    "surah": 54,
    "setting": "moon",
-   "basis": "The surah's name means \"The Moon\" (54:1). A moonlit night. The event in 54:1 is not shown.",
+   "basis": "A full moon over the plain (54:1; the splitting itself is not pictured), pouring rain (54:11), springs bursting from the earth (54:12), a vessel of planks being built (54:13) and palms uprooted by the wind (54:20).",
    "references": [
-    "54:1"
+    "54:1",
+    "54:11",
+    "54:12",
+    "54:13",
+    "54:20"
    ],
    "review_status": "unreviewed"
   },
@@ -464,109 +683,159 @@
   },
   {
    "surah": 56,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "meadow",
+   "basis": "A field where seeds are planted (56:63), rain falling into a well (56:69) and a tree with a fire for travellers (56:72).",
+   "references": [
+    "56:63-64",
+    "56:63",
+    "56:68-70",
+    "56:69",
+    "56:72"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 57,
    "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "basis": "A field that grows and turns yellow (57:20), a forge with iron (57:25) and earth returning to life (57:17).",
+   "references": [
+    "57:17",
+    "57:20",
+    "57:25"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 58,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "morning",
+   "basis": "An open hall where room is made for others (58:11), with seats in a circle and houses around.",
+   "references": [
+    "58:11"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 59,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "mountain",
+   "basis": "A great mountain, humbled (59:21), and a reading stand with the ayahs of Allah's names (59:22-24; the names are read from the verified text, not drawn in the sky).",
+   "references": [
+    "59:9",
+    "59:21",
+    "59:23"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 60,
    "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "basis": "A bridge over a stream for fair dealings (60:8) and a garden of hope (60:7).",
+   "references": [
+    "60:7",
+    "60:8"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 61,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "morning",
+   "basis": "A wall of tightly joined stones (61:4).",
+   "references": [
+    "61:4"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 62,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "morning",
+   "basis": "Market stalls shut for the Friday prayer (62:9) and reopened afterwards (62:10).",
+   "references": [
+    "62:9",
+    "62:10"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 63,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "orchard",
+   "basis": "Baskets of harvest to share before the time runs out (63:10).",
+   "references": [
+    "63:10"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 64,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "mountain",
+   "basis": "A path of steps up a slope, where effort counts (64:16).",
+   "references": [
+    "64:16"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 65,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "dunes",
+   "basis": "A spring appearing in a dry place (65:3).",
+   "references": [
+    "65:2-3",
+    "65:3"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 66,
    "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "basis": "A palace room (66:11) and a quiet sanctuary with fruit in a lit niche (66:12). No one is shown.",
+   "references": [
+    "66:8",
+    "66:11",
+    "66:12"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 67,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "morning",
+   "basis": "A sky without flaw to look at again and again (67:3-4), slopes to walk (67:15) and birds with outspread wings (67:19).",
+   "references": [
+    "67:3",
+    "67:4",
+    "67:15",
+    "67:19"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 68,
    "setting": "sea",
-   "basis": "Al-Qalam mentions \"the companion of the fish\" (68:48). A calm sea. He is never shown.",
+   "basis": "A pen and inkwell (68:1), a garden ready to harvest at dawn (68:17) and a garden that looks reaped (68:20).",
    "references": [
-    "68:48"
+    "68:1",
+    "68:17-24",
+    "68:17",
+    "68:20"
    ],
    "review_status": "unreviewed"
   },
   {
    "surah": 69,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "wind",
+   "basis": "A windswept valley (69:6) with hollow palm trunks lying fallen (69:7).",
+   "references": [
+    "69:6",
+    "69:7",
+    "69:12"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 70,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "dawn",
+   "basis": "Garden steps rising gently and a quiet place of steady prayer (70:23); nothing unseen is shown.",
+   "references": [
+    "70:3",
+    "70:23"
+   ],
    "review_status": "unreviewed"
   },
   {
@@ -582,46 +851,63 @@
   },
   {
    "surah": 72,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "stars",
+   "basis": "A still desert under the stars (72:1) and shooting stars across the sky (72:8). Nothing unseen is shown.",
+   "references": [
+    "72:1",
+    "72:8"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 73,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "night",
+   "basis": "A dial of the night hours (73:2-4) and a reading stand for slow, measured recitation (73:4).",
+   "references": [
+    "73:2-4",
+    "73:3",
+    "73:4"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 74,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "dawn",
+   "basis": "Sunrise over a home (74:2) and a washing place with clean cloth (74:4).",
+   "references": [
+    "74:2",
+    "74:3-7",
+    "74:4"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 75,
    "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "basis": "A pattern of fingertip whorls in light on a stone (75:4).",
+   "references": [
+    "75:4"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 76,
-   "setting": "garden",
-   "basis": "No setting is taken from this surah. A quiet garden for reading and reflection.",
-   "references": [],
+   "setting": "morning",
+   "basis": "An open doorway where food is shared (76:8).",
+   "references": [
+    "76:8-9",
+    "76:8"
+   ],
    "review_status": "unreviewed"
   },
   {
    "surah": 77,
    "setting": "wind",
-   "basis": "The surah opens with oaths by the winds sent forth and the winds that spread (77:1, 77:3). Wind over open land.",
+   "basis": "Winds in gusts (77:1), the earth that holds (77:25) and mountains with sweet water (77:27).",
    "references": [
     "77:1",
-    "77:3"
+    "77:25",
+    "77:27"
    ],
    "review_status": "unreviewed"
   },

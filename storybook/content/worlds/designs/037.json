@@ -28,7 +28,7 @@
  ],
  "summary_for_children": "As-Saffat means Those Lined Up in Ranks. It tells of Nuh, Ibrahim's trial with his son, Musa and Harun, Ilyas, Lut and Yunus, and how Allah saved them.",
  "world_title": "Ranks Beneath the Stars",
- "environment_concept": "A sky adorned with stars above a land of prophets' stories: Nuh's survivors, Ibrahim's trial, the shore where Yunus was cast with a gourd vine.",
+ "environment_concept": "A sky adorned with stars (37:6), an open shore (37:145) and a gourd vine over a shady spot (37:146).",
  "architecture_and_scenery": "Starry dome, an ark on hills, a quiet hilltop recalling Ibrahim's trial through landscape only, a shore with a gourd vine.",
  "palette": {
   "colors": [
@@ -64,8 +64,9 @@
   {
    "name": "Grow the vine",
    "reference": "37:146",
-   "description": "Help a gourd vine grow by the shore (adaptation, no person shown).",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Plant three cuttings; a gourd vine grows over each.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Star map",
@@ -108,8 +109,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (constellation, sea) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "37:6",

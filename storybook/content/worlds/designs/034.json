@@ -33,7 +33,7 @@
  ],
  "summary_for_children": "Surah Saba tells of Dawud, for whom iron was made soft, and Sulayman, for whom a spring of copper flowed. Then it tells of the people of Saba who had two beautiful gardens but turned away, and lost them in a flood.",
  "world_title": "Gardens of Saba and the Copper Spring",
- "environment_concept": "Two kingdoms of the surah: Dawud's mountains and soft iron, Sulayman's copper spring and reservoirs, and the two gardens of Saba lost when the dam burst.",
+ "environment_concept": "Hills that echo with praise and birds (34:10), a glowing spring of copper (34:12), great basins (34:13), gardens on both sides of a dam (34:15) and a broken one where the trees fell (34:16).",
  "architecture_and_scenery": "Mountains echoing praise, a forge, a flowing copper spring, great bowls like reservoirs, and the fertile valley of Saba behind a dam.",
  "palette": {
   "colors": [
@@ -81,8 +81,9 @@
   {
    "name": "Work in gratitude",
    "reference": "34:13",
-   "description": "Fill the great bowls while reading 34:13 (adaptation).",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry four jars to fill the great basins.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Before and after",
@@ -136,8 +137,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (birds, bowls, copper, dam, fallen, mountain) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "34:10",

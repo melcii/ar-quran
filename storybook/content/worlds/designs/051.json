@@ -24,7 +24,7 @@
  ],
  "summary_for_children": "Adh-Dhariyat means The Scattering Winds. It swears by winds, clouds and ships, tells of Ibrahim's guests, and reminds us everything is created in pairs.",
  "world_title": "Winds, Clouds and Ships",
- "environment_concept": "A world of the surah's opening oaths: scattering winds, clouds carrying water, ships sailing easily, then a wide expanding heaven over an earth spread like a carpet.",
+ "environment_concept": "Winds scattering dust (51:1), clouds heavy with water (51:2), ships sailing easily (51:3) and a wide sky (51:47).",
  "architecture_and_scenery": "Dust-swept plains, heavy rain clouds, a smooth sea, and an expanding starry sky.",
  "palette": {
   "colors": [
@@ -66,8 +66,9 @@
   {
    "name": "Pairs",
    "reference": "51:49",
-   "description": "Find pairs in nature (adaptation).",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Bring the animals to their pens in pairs.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Signs in yourselves",
@@ -115,8 +116,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (cloud, horizon, ships, wind) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "51:1",

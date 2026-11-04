@@ -18,7 +18,7 @@
  "narrative_passages": [],
  "summary_for_children": "Ash-Shura means Consultation. It praises believers who decide their affairs by consulting each other, and shows signs like ships on the sea that move only by the wind Allah sends.",
  "world_title": "Ships Like Mountains",
- "environment_concept": "A harbour where great ships rest when the wind stops and sail when it blows, with a council house where matters are decided by consultation.",
+ "environment_concept": "A harbour of ships like mountains (42:32), ships lying still when the wind stops (42:33) and a circle of seats for deciding together (42:38).",
  "architecture_and_scenery": "Large harbour, a calm sea that can turn still, a simple council house with a circle of seats.",
  "palette": {
   "colors": [
@@ -54,8 +54,9 @@
   {
    "name": "Decide together",
    "reference": "42:38",
-   "description": "Make group choices by asking each character's opinion (adaptation).",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry baskets to the circle to share what was provided.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Wind and sail",
@@ -97,8 +98,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (council, ships) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "42:32",

@@ -40,7 +40,7 @@
  ],
  "summary_for_children": "Surah Maryam tells of Zakariyya's prayer for a child, of Maryam and the birth of Isa, of Ibrahim speaking gently to his father, and of other prophets.",
  "world_title": "The Palm and the Spring",
- "environment_concept": "A sanctuary of prayer, a distant place with a palm tree and a stream, and a mount where Musa was called.",
+ "environment_concept": "A quiet chamber (19:11), a tall palm in a remote place (19:23) with a stream below it (19:24) and ripe dates (19:25), and a mountain slope (19:52). No one is shown.",
  "architecture_and_scenery": "Prayer chamber, lonely valley with one tall palm and a stream, family home, and a mountain slope.",
  "palette": {
   "colors": [
@@ -94,8 +94,9 @@
   {
    "name": "The palm and the stream",
    "reference": "19:24-26",
-   "description": "Find the stream and the dates (an adaptation; Maryam is not shown or played).",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Find five ripe dates fallen under the palms.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   }
  ],
  "narration_plan": "Narration is quiet and reverent; Maryam, Isa and all prophets are never shown or voiced.",
@@ -141,8 +142,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (chamber, mountain, palms, river) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "19:2-15",

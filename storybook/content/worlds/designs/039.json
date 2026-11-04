@@ -18,7 +18,7 @@
  "narrative_passages": [],
  "summary_for_children": "Az-Zumar means The Groups. It calls us to worship Allah sincerely, reminds us of His mercy and that we should never despair of it, and speaks of people going in groups to their final place.",
  "world_title": "Groups at the Gates",
- "environment_concept": "A symbolic world of rain, springs and fading crops, ending at two distant gates seen only as light, never as Paradise or Hell.",
+ "environment_concept": "Rain running underground into springs (39:21), crops that grow, turn yellow and dry (39:21) and a soft light on the horizon (39:73; nothing of Paradise is pictured).",
  "architecture_and_scenery": "Rainy valley, springs running through rock, crops turning yellow, and a horizon with abstract gates of light.",
  "palette": {
   "colors": [
@@ -54,8 +54,9 @@
   {
    "name": "Water cycle",
    "reference": "39:21",
-   "description": "Follow rain into springs and crops.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry rain clouds over the fields.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Never despair",
@@ -98,8 +99,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (grain, horizon, spring) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "39:21",

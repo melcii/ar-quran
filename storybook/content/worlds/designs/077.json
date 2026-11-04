@@ -16,7 +16,7 @@
  "narrative_passages": [],
  "summary_for_children": "Al-Mursalat means Those Sent Forth. It swears by the winds and shows the earth holding all, firm mountains and sweet water.",
  "world_title": "Winds in Gusts",
- "environment_concept": "A world of winds sent in gusts, and an earth that holds the living and the dead, with tall mountains and sweet water.",
+ "environment_concept": "Winds in gusts (77:1), the earth that holds (77:25) and mountains with sweet water (77:27).",
  "architecture_and_scenery": "Windswept hills, mountains and fresh springs.",
  "palette": {
   "colors": [
@@ -51,8 +51,9 @@
   {
    "name": "Wind and water",
    "reference": "77:27",
-   "description": "Find sweet water among the mountains (adaptation).",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry three jars of sweet water down from the spring.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   }
  ],
  "narration_plan": "Narration calm.",
@@ -86,8 +87,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (clay, mountain, spring, wind) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "77:1",

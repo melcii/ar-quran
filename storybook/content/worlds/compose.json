@@ -1,0 +1,3904 @@
+{
+ "note": "Composed worlds for the longer surahs (pieces and hands-on activities). Written by scripts/compose-specs.py; no person, prophet, angel, Allah or unseen reality is shown.",
+ "worlds": {
+  "2": {
+   "setting": "meadow",
+   "concept": "A green valley of guidance: an orchard where hidden things are found by name (2:31), a meadow of cows (2:67), great foundation stones (2:127), a river to cross (2:249) and a field where one seed grows seven spikes (2:261).",
+   "places": [
+    {
+     "area": "Garden of Names",
+     "piece": "orchard",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -7,
+     "dz": -5
+    },
+    {
+     "area": "Meadow of the Cow",
+     "piece": "herd",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "kinds": [
+       "cow",
+       "cow",
+       "cow"
+      ]
+     },
+     "dx": 6,
+     "dz": -5
+    },
+    {
+     "area": "Foundations of the House",
+     "piece": "foundations",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -7,
+     "dz": -6
+    },
+    {
+     "area": "River Crossing",
+     "piece": "river",
+     "r": 1.4,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -6
+    },
+    {
+     "area": "Field of Seven Spikes",
+     "piece": "grain",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -7,
+     "dz": -5
+    }
+   ],
+   "acts": [
+    {
+     "name": "Find the names",
+     "ref": "2:31",
+     "area": "Garden of Names",
+     "mech": "tap",
+     "quote": "2:31",
+     "desc": "Find five glowing things hidden in the orchard.",
+     "n": 5
+    },
+    {
+     "name": "Lay the foundations",
+     "ref": "2:127",
+     "area": "Foundations of the House",
+     "mech": "carry",
+     "quote": "2:127",
+     "desc": "Carry four great stones to the foundations.",
+     "item": "block",
+     "n": 4
+    },
+    {
+     "name": "Plant the seed of charity",
+     "ref": "2:261",
+     "area": "Field of Seven Spikes",
+     "mech": "plant",
+     "quote": "2:261",
+     "desc": "Plant three seeds; each one grows seven spikes of grain.",
+     "grow": "grain",
+     "n": 3
+    }
+   ]
+  },
+  "3": {
+   "setting": "morning",
+   "concept": "A sanctuary in morning light: a small chamber with fruit in a lit niche, no one shown (3:37), a courtyard of pillars bound by one rope (3:103), a rooftop where a sundial marks the turning of night and day (3:190) and a distant gateway (3:96).",
+   "places": [
+    {
+     "area": "The Prayer Chamber",
+     "piece": "chamber",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "fruit": true
+     },
+     "dx": 6,
+     "dz": -5
+    },
+    {
+     "area": "Courtyard of the Rope",
+     "piece": "rope",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -7,
+     "dz": -5
+    },
+    {
+     "area": "Rooftop of Night and Day",
+     "piece": "sundial",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -5
+    },
+    {
+     "area": "Gate to Bakkah",
+     "piece": "arch",
+     "r": 0.0,
+     "s": 1.4,
+     "o": {},
+     "dx": 4,
+     "dz": -16
+    }
+   ],
+   "acts": [
+    {
+     "name": "Hold the rope together",
+     "ref": "3:103",
+     "area": "Courtyard of the Rope",
+     "mech": "carry",
+     "quote": "3:103",
+     "desc": "Carry four stones to the circle so the pillars stand together.",
+     "item": "stone",
+     "n": 4,
+     "label": "together"
+    }
+   ]
+  },
+  "4": {
+   "setting": "morning",
+   "concept": "A village of trusts and justice: a square with one fountain from which channels run (4:1), houses waiting for what was lent to come back (4:58), a lane of neighbours (4:36) and tall scales (4:135).",
+   "places": [
+    {
+     "area": "Square of One Soul",
+     "piece": "spring",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -5
+    },
+    {
+     "area": "House of Trusts",
+     "piece": "village",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "n": 3
+     },
+     "dx": -8,
+     "dz": -6
+    },
+    {
+     "area": "Neighbours' Lane",
+     "piece": "village",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "n": 4
+     },
+     "dx": 7,
+     "dz": -7
+    },
+    {
+     "area": "Scales of Justice",
+     "piece": "scale",
+     "r": 0.0,
+     "s": 1.6,
+     "o": {},
+     "dx": 6,
+     "dz": -5
+    }
+   ],
+   "acts": [
+    {
+     "name": "Return the trusts",
+     "ref": "4:58",
+     "area": "House of Trusts",
+     "mech": "carry",
+     "quote": "4:58",
+     "desc": "Carry four chests back to the house they belong to.",
+     "item": "chest",
+     "n": 4,
+     "label": "trusts"
+    }
+   ]
+  },
+  "5": {
+   "setting": "garden",
+   "concept": "A hall of promises (5:1), an olive grove where a crow scratches the ground (5:31), one lantern that lights a whole hall (5:32) and a long table under an arch, spread and empty (5:114).",
+   "places": [
+    {
+     "area": "Hall of Contracts",
+     "piece": "hall",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 7,
+     "dz": -7
+    },
+    {
+     "area": "Grove of the Crow",
+     "piece": "olives",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -7,
+     "dz": -6
+    },
+    {
+     "area": "Grove of the Crow",
+     "piece": "crow",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 3,
+     "dz": -3
+    },
+    {
+     "area": "Lantern of One Life",
+     "piece": "lantern",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 5,
+     "dz": -5
+    },
+    {
+     "area": "Arch of the Table",
+     "piece": "table",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -6,
+     "dz": -5
+    }
+   ],
+   "acts": [
+    {
+     "name": "Help each other",
+     "ref": "5:2",
+     "area": "Hall of Contracts",
+     "mech": "carry",
+     "quote": "5:2",
+     "desc": "Carry baskets of food to the hall to share.",
+     "item": "basket",
+     "n": 4,
+     "label": "share",
+     "dx": -1,
+     "dz": 1
+    }
+   ]
+  },
+  "6": {
+   "setting": "dawn",
+   "concept": "A night of signs turning to dawn: a ridge where a bright star sets (6:76), a plain where the moon rises (6:77), an overlook at sunrise (6:78), a valley where seeds split and sprout (6:95) and date palms with low clusters (6:99).",
+   "places": [
+    {
+     "area": "Ridge of the Star",
+     "piece": "mountain",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -16,
+     "dz": -20
+    },
+    {
+     "area": "Ridge of the Star",
+     "piece": "constellation",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "one": true
+     },
+     "dx": 0,
+     "dz": 0
+    },
+    {
+     "area": "Moon Rise Plain",
+     "piece": "disc",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "color": "#f2eee0",
+      "radius": 5
+     },
+     "dx": 0,
+     "dz": 0
+    },
+    {
+     "area": "Sunrise Overlook",
+     "piece": "horizon",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 0,
+     "dz": 0
+    },
+    {
+     "area": "Valley of Seeds",
+     "piece": "grain",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -7,
+     "dz": -5
+    },
+    {
+     "area": "Palm Clusters",
+     "piece": "palms",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "dates": true,
+      "n": 5
+     },
+     "dx": 6,
+     "dz": -6
+    }
+   ],
+   "acts": [
+    {
+     "name": "Split the seed",
+     "ref": "6:95",
+     "area": "Valley of Seeds",
+     "mech": "plant",
+     "quote": "6:95",
+     "desc": "Plant three seeds and watch each split and sprout.",
+     "grow": "shoot",
+     "n": 3
+    }
+   ]
+  },
+  "7": {
+   "setting": "mountain",
+   "concept": "The heights: a garden with one tree (7:19), timbers of a ship on a hill (7:64), wide windy plains (7:65), homes carved in cliffs (7:74), a market where weights must be fair (7:85) and a calm shore (7:138).",
+   "places": [
+    {
+     "area": "Garden of the Tree",
+     "piece": "tree",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -6
+    },
+    {
+     "area": "Hill of the Ship",
+     "piece": "ark",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "ridge": true
+     },
+     "dx": 9,
+     "dz": -10
+    },
+    {
+     "area": "Plains of 'Aad",
+     "piece": "wind",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 0,
+     "dz": -4
+    },
+    {
+     "area": "Carved Cliffs",
+     "piece": "carved",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 2,
+     "dz": -12
+    },
+    {
+     "area": "Market of Madyan",
+     "piece": "market",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -8,
+     "dz": -6
+    },
+    {
+     "area": "Seashore",
+     "piece": "sea",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 8,
+     "dz": -8
+    }
+   ],
+   "acts": [
+    {
+     "name": "Fair weights",
+     "ref": "7:85",
+     "area": "Market of Madyan",
+     "mech": "carry",
+     "quote": "7:85",
+     "desc": "Carry the brass weights to the scale, giving full measure.",
+     "item": "weight",
+     "n": 4,
+     "label": "full measure"
+    }
+   ]
+  },
+  "8": {
+   "setting": "wind",
+   "concept": "A field where rain falls and the sand grows firm (8:11), a circle of stones that glows (8:2) and a green hill of peace (8:61).",
+   "places": [
+    {
+     "area": "Circle of Hearts",
+     "piece": "stones",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "glow": true
+     },
+     "dx": 6,
+     "dz": -5
+    },
+    {
+     "area": "Hill of Peace",
+     "piece": "mountain",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "color": "#7aa055",
+      "h": 6,
+      "n": 2
+     },
+     "dx": 14,
+     "dz": -16
+    }
+   ],
+   "acts": [
+    {
+     "name": "Walk on firm ground",
+     "ref": "8:11",
+     "area": "Field of Rain",
+     "mech": "rain",
+     "quote": "8:11",
+     "desc": "Carry rain clouds over the dry sand; the ground turns firm and green.",
+     "n": 3
+    }
+   ]
+  },
+  "9": {
+   "setting": "desert-dusk",
+   "concept": "A small empty cave in the hills (9:40), a simple mosque on firm foundations (9:108-109) and a circle of stones for learning (9:122).",
+   "places": [
+    {
+     "area": "Cave of Two",
+     "piece": "cave",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 9,
+     "dz": -12
+    },
+    {
+     "area": "Mosque of Righteousness",
+     "piece": "mosque",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -8,
+     "dz": -7
+    },
+    {
+     "area": "Circle of Learning",
+     "piece": "stones",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "n": 7
+     },
+     "dx": 6,
+     "dz": -5
+    }
+   ],
+   "acts": [
+    {
+     "name": "Firm foundations",
+     "ref": "9:109",
+     "area": "Mosque of Righteousness",
+     "mech": "carry",
+     "quote": "9:109",
+     "desc": "Carry four foundation stones to build on firm ground.",
+     "item": "block",
+     "n": 4
+    }
+   ]
+  },
+  "10": {
+   "setting": "sea",
+   "concept": "A terrace of the moon's phases for counting the months (10:5), a ship at sea (10:22), a garden in the rain (10:24) and a doorway to Yunus's story (10:98).",
+   "places": [
+    {
+     "area": "Moon Phase Terrace",
+     "piece": "moons",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -7,
+     "dz": -6
+    },
+    {
+     "area": "Storm at Sea",
+     "piece": "ships",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 8,
+     "dz": -9
+    },
+    {
+     "area": "Garden of Rain",
+     "piece": "orchard",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -6
+    },
+    {
+     "area": "Garden of Rain",
+     "piece": "cloud",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "rain": true,
+      "w": 8
+     },
+     "dx": 6,
+     "dz": -6
+    },
+    {
+     "area": "Doorway of Yunus",
+     "piece": "arch",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -6
+    }
+   ],
+   "acts": [
+    {
+     "name": "Count the months",
+     "ref": "10:5",
+     "area": "Moon Phase Terrace",
+     "mech": "order",
+     "quote": "10:5",
+     "desc": "Lay five numbered stones in order, counting as the moon does.",
+     "n": 5
+    }
+   ]
+  },
+  "13": {
+   "setting": "storm",
+   "concept": "The valley of thunder: rivers running between mountains (13:3), neighbouring plots growing different fruits from one water (13:4), a ridge and a rocky hall under thunder clouds (13:12-13) and a pool where foam drifts away (13:17).",
+   "places": [
+    {
+     "area": "Rivers between Mountains",
+     "piece": "mountain",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -16,
+     "dz": -20
+    },
+    {
+     "area": "Rivers between Mountains",
+     "piece": "river",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -6
+    },
+    {
+     "area": "Neighbouring Plots",
+     "piece": "orchard",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -8,
+     "dz": -6
+    },
+    {
+     "area": "Lightning Ridge",
+     "piece": "mountain",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "h": 7
+     },
+     "dx": 14,
+     "dz": -16
+    },
+    {
+     "area": "Thunder Hall",
+     "piece": "cave",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 9,
+     "dz": -12
+    },
+    {
+     "area": "Thunder Hall",
+     "piece": "cloud",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "dark": 0.7,
+      "w": 14,
+      "h": 12
+     },
+     "dx": 0,
+     "dz": -10
+    },
+    {
+     "area": "Foam Pool",
+     "piece": "spring",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -5
+    }
+   ],
+   "acts": [
+    {
+     "name": "One water, many fruits",
+     "ref": "13:4",
+     "area": "Neighbouring Plots",
+     "mech": "plant",
+     "quote": "13:4",
+     "desc": "Plant three young trees side by side; they grow from the same water.",
+     "grow": "tree",
+     "n": 3
+    }
+   ]
+  },
+  "14": {
+   "setting": "orchard",
+   "concept": "A good tree with deep roots and high branches (14:24), an uprooted tree lying loose (14:26), a dry valley (14:37) and a river with sailing boats (14:32).",
+   "places": [
+    {
+     "area": "The Good Tree",
+     "piece": "tree",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "roots": true
+     },
+     "dx": -7,
+     "dz": -6
+    },
+    {
+     "area": "Uprooted Tree",
+     "piece": "fallen",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "n": 1
+     },
+     "dx": 6,
+     "dz": -5
+    },
+    {
+     "area": "Uncultivated Valley",
+     "piece": "mountain",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "color": "#c8a878",
+      "h": 6
+     },
+     "dx": 12,
+     "dz": -14
+    },
+    {
+     "area": "River of Ships",
+     "piece": "ships",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "n": 2
+     },
+     "dx": 8,
+     "dz": -8
+    }
+   ],
+   "acts": [
+    {
+     "name": "Good words grow",
+     "ref": "14:24",
+     "area": "The Good Tree",
+     "mech": "plant",
+     "quote": "14:24",
+     "desc": "Plant three saplings; each grows into a firm tree.",
+     "grow": "tree",
+     "n": 3,
+     "item": "sapling"
+    }
+   ]
+  },
+  "15": {
+   "setting": "stars",
+   "night": true,
+   "concept": "A rocky tract under the stars: constellations (15:16), firm mountains (15:19), winds carrying pollen to flowers (15:22) and empty homes carved in the cliffs (15:82).",
+   "places": [
+    {
+     "area": "Sky of Constellations",
+     "piece": "constellation",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 0,
+     "dz": 0
+    },
+    {
+     "area": "Firm Mountains",
+     "piece": "mountain",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -16,
+     "dz": -20
+    },
+    {
+     "area": "Fertilizing Winds",
+     "piece": "wind",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 0,
+     "dz": -4
+    },
+    {
+     "area": "Carved Homes",
+     "piece": "carved",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 2,
+     "dz": -12
+    }
+   ],
+   "acts": [
+    {
+     "name": "Find the constellations",
+     "ref": "15:16",
+     "area": "Sky of Constellations",
+     "mech": "tap",
+     "quote": "15:16",
+     "desc": "Find five bright stars low over the rocks.",
+     "item": "star",
+     "n": 5
+    },
+    {
+     "name": "Carry the pollen",
+     "ref": "15:22",
+     "area": "Fertilizing Winds",
+     "mech": "plant",
+     "quote": "15:22",
+     "desc": "Carry pollen to three bare beds; they flower.",
+     "grow": "flowers",
+     "n": 3
+    }
+   ]
+  },
+  "17": {
+   "setting": "light",
+   "night": true,
+   "concept": "A path of lamps through the night (17:1: nothing of the journey is depicted), two signs, the sun and the moon (17:12), a family courtyard (17:23) and a market with honest scales (17:35).",
+   "places": [
+    {
+     "area": "Path of Lamps",
+     "piece": "lamps",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "n": 6
+     },
+     "dx": 5,
+     "dz": -3
+    },
+    {
+     "area": "Two Signs",
+     "piece": "sunMoon",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -5
+    },
+    {
+     "area": "Courtyard of Parents",
+     "piece": "house",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -5
+    },
+    {
+     "area": "Full Measure Market",
+     "piece": "market",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -8,
+     "dz": -6
+    }
+   ],
+   "acts": [
+    {
+     "name": "Honest measure",
+     "ref": "17:35",
+     "area": "Full Measure Market",
+     "mech": "carry",
+     "quote": "17:35",
+     "desc": "Carry the weights to the scale and give full measure.",
+     "item": "weight",
+     "n": 4,
+     "label": "full measure"
+    }
+   ]
+  },
+  "19": {
+   "setting": "dawn",
+   "concept": "A quiet chamber (19:11), a tall palm in a remote place (19:23) with a stream below it (19:24) and ripe dates (19:25), and a mountain slope (19:52). No one is shown.",
+   "places": [
+    {
+     "area": "Prayer Chamber",
+     "piece": "chamber",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -5
+    },
+    {
+     "area": "The Palm Tree",
+     "piece": "palms",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "n": 1,
+      "dates": true
+     },
+     "dx": 6,
+     "dz": -6
+    },
+    {
+     "area": "The Stream",
+     "piece": "river",
+     "r": 0.4,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -6
+    },
+    {
+     "area": "Ripe Dates",
+     "piece": "palms",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "n": 3,
+      "dates": true
+     },
+     "dx": -7,
+     "dz": -6
+    },
+    {
+     "area": "The Mount",
+     "piece": "mountain",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -16,
+     "dz": -20
+    }
+   ],
+   "acts": [
+    {
+     "name": "The palm and the stream",
+     "ref": "19:24-26",
+     "area": "Ripe Dates",
+     "mech": "tap",
+     "quote": "19:25",
+     "desc": "Find five ripe dates fallen under the palms.",
+     "item": "fruit",
+     "n": 5
+    }
+   ]
+  },
+  "20": {
+   "setting": "night",
+   "night": true,
+   "concept": "A fire glowing far across a dark valley (20:10), a pair of sandals left at the valley's edge (20:12, an adaptation), a chest in the reeds (20:39), a dry path between walls of water (20:77) and an empty camp (20:88). Musa and every person are never shown; no idol is pictured.",
+   "places": [
+    {
+     "area": "The Distant Fire",
+     "piece": "fire",
+     "r": 0.0,
+     "s": 1.4,
+     "o": {},
+     "dx": 6,
+     "dz": -16
+    },
+    {
+     "area": "Valley of Tuwa",
+     "piece": "sandals",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 2.5,
+     "dz": -1.5
+    },
+    {
+     "area": "The River and the Chest",
+     "piece": "chest",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -6
+    },
+    {
+     "area": "Dry Path Through the Sea",
+     "piece": "seaPath",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 9,
+     "dz": -6
+    },
+    {
+     "area": "Camp of the Calf",
+     "piece": "tents",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -8,
+     "dz": -6
+    }
+   ],
+   "acts": [
+    {
+     "name": "Follow the firelight",
+     "ref": "20:10",
+     "area": "The Distant Fire",
+     "mech": "order",
+     "quote": "20:10",
+     "desc": "Lay five numbered stepping stones toward the distant fire.",
+     "n": 5
+    }
+   ]
+  },
+  "21": {
+   "setting": "sea",
+   "concept": "Rooms of signs: a spring (21:30), an empty ring of stones where the fire was made cool (21:69; no fire or person is shown), mountains with birds (21:79), a sail full of wind (21:81) and a dark sea at night (21:87).",
+   "places": [
+    {
+     "area": "Joined Heavens and Earth",
+     "piece": "spring",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -5
+    },
+    {
+     "area": "Room of the Cool Fire",
+     "piece": "stones",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "n": 6
+     },
+     "dx": 6,
+     "dz": -5
+    },
+    {
+     "area": "Room of Mountains and Birds",
+     "piece": "mountain",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -16,
+     "dz": -20
+    },
+    {
+     "area": "Room of Mountains and Birds",
+     "piece": "birds",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 0,
+     "dz": -6
+    },
+    {
+     "area": "Room of the Wind",
+     "piece": "ships",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 8,
+     "dz": -8
+    },
+    {
+     "area": "Room of the Darknesses",
+     "piece": "sea",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "color": "#16324a"
+     },
+     "dx": 7,
+     "dz": -7
+    }
+   ],
+   "acts": [
+    {
+     "name": "The orbits",
+     "ref": "21:33",
+     "area": "Joined Heavens and Earth",
+     "mech": "tap",
+     "quote": "21:33",
+     "desc": "Find four bright lights floating over the spring.",
+     "item": "star",
+     "n": 4
+    }
+   ]
+  },
+  "22": {
+   "setting": "dawn",
+   "concept": "Roads from far mountain passes with camels (22:27), simple foundations (22:26), dry fields that turn green as rain falls (22:63) and a slope where plants stir (22:5).",
+   "places": [
+    {
+     "area": "Roads from Every Pass",
+     "piece": "mountain",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -16,
+     "dz": -20
+    },
+    {
+     "area": "Roads from Every Pass",
+     "piece": "herd",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "kinds": [
+       "camel",
+       "camel",
+       "camel"
+      ]
+     },
+     "dx": 6,
+     "dz": -6
+    },
+    {
+     "area": "Foundations of the House",
+     "piece": "foundations",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -6
+    },
+    {
+     "area": "Stages of Growth",
+     "piece": "shoot",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 5,
+     "dz": -4
+    }
+   ],
+   "acts": [
+    {
+     "name": "Rain on the hills",
+     "ref": "22:63",
+     "area": "Greening Fields",
+     "mech": "rain",
+     "quote": "22:63",
+     "desc": "Carry rain clouds over three dry fields; they turn green.",
+     "n": 3
+    },
+    {
+     "name": "Pack for the journey",
+     "ref": "22:27-28",
+     "area": "Roads from Every Pass",
+     "mech": "carry",
+     "quote": "22:27",
+     "desc": "Pack four sacks for the journey.",
+     "item": "sack",
+     "n": 4,
+     "dx": -12
+    }
+   ]
+  },
+  "23": {
+   "setting": "orchard",
+   "concept": "Terraces of the successful believers: a quiet stepped terrace (23:2-3), rain held in great basins (23:18), palms and vines (23:19), a great olive tree (23:20) and an empty shipyard (23:27).",
+   "places": [
+    {
+     "area": "Terrace of Humble Prayer",
+     "piece": "steps",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -3
+    },
+    {
+     "area": "Terrace of Turning from Idle Talk",
+     "piece": "stones",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -5
+    },
+    {
+     "area": "Measured Rain Reservoir",
+     "piece": "bowls",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -8,
+     "dz": -6
+    },
+    {
+     "area": "Palms and Vines",
+     "piece": "palms",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -6
+    },
+    {
+     "area": "Palms and Vines",
+     "piece": "vine",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -6,
+     "dz": -5
+    },
+    {
+     "area": "Olive Tree of Sinai",
+     "piece": "olives",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "n": 1
+     },
+     "dx": 6,
+     "dz": -6
+    },
+    {
+     "area": "Shipyard",
+     "piece": "ark",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "frame": true
+     },
+     "dx": 7,
+     "dz": -7
+    }
+   ],
+   "acts": [
+    {
+     "name": "Fill the reservoir",
+     "ref": "23:18",
+     "area": "Measured Rain Reservoir",
+     "mech": "carry",
+     "quote": "23:18",
+     "desc": "Carry four jars of rain water to the basins.",
+     "item": "jar",
+     "n": 4
+    }
+   ]
+  },
+  "24": {
+   "setting": "light",
+   "night": true,
+   "concept": "Doors that open after greeting (24:27), a glass lamp in a niche like a bright star (24:35), a blessed olive grove (24:35), a mirage plain (24:39), a dark sea (24:40) and birds with spread wings (24:41).",
+   "places": [
+    {
+     "area": "Doors of Permission",
+     "piece": "village",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "n": 2,
+      "lit": true
+     },
+     "dx": 7,
+     "dz": -7
+    },
+    {
+     "area": "The Lamp in the Niche",
+     "piece": "niche",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 7,
+     "dz": -8
+    },
+    {
+     "area": "Blessed Olive Grove",
+     "piece": "olives",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -6
+    },
+    {
+     "area": "Mirage Plain",
+     "piece": "dunes",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 10,
+     "dz": -12
+    },
+    {
+     "area": "Sea of Darknesses",
+     "piece": "sea",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "color": "#16324a"
+     },
+     "dx": 7,
+     "dz": -7
+    },
+    {
+     "area": "Birds with Spread Wings",
+     "piece": "birds",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "h": 7
+     },
+     "dx": 0,
+     "dz": -6
+    }
+   ],
+   "acts": [
+    {
+     "name": "Layers of light",
+     "ref": "24:35",
+     "area": "The Lamp in the Niche",
+     "mech": "carry",
+     "quote": "24:35",
+     "desc": "Carry three lamps to the niche: light upon light.",
+     "item": "lamp",
+     "n": 3,
+     "label": "the niche",
+     "dx": -2
+    }
+   ]
+  },
+  "25": {
+   "setting": "morning",
+   "concept": "A sundial field where shadows move with the sun (25:45), winds driving clouds (25:48), two waters side by side with a barrier (25:53), the sun and the moon (25:61) and a gentle path (25:63).",
+   "places": [
+    {
+     "area": "Field of Shadows",
+     "piece": "sundial",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -5
+    },
+    {
+     "area": "Winds of Good Tidings",
+     "piece": "wind",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -4,
+     "dz": -6
+    },
+    {
+     "area": "Two Seas and a Barrier",
+     "piece": "twoSeas",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -5
+    },
+    {
+     "area": "Sky Lamp",
+     "piece": "sunMoon",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -5
+    },
+    {
+     "area": "Path of Gentle Walking",
+     "piece": "steps",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 5,
+     "dz": -3
+    }
+   ],
+   "acts": [
+    {
+     "name": "Bring the rain",
+     "ref": "25:48",
+     "area": "Winds of Good Tidings",
+     "mech": "rain",
+     "quote": "25:48",
+     "desc": "Carry rain clouds over three dry fields.",
+     "n": 3
+    }
+   ]
+  },
+  "26": {
+   "setting": "sea",
+   "concept": "Seven shores: towering walls of water either side of a path (26:63), a meadow of many noble kinds (26:7), rock-cut homes, empty (26:149) and a thicket by a market with scales (26:176-183).",
+   "places": [
+    {
+     "area": "Towering Waves",
+     "piece": "seaPath",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 9,
+     "dz": -6
+    },
+    {
+     "area": "Earth of Noble Kinds",
+     "piece": "orchard",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -8,
+     "dz": -6
+    },
+    {
+     "area": "Homes in the Mountains",
+     "piece": "carved",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 2,
+     "dz": -12
+    },
+    {
+     "area": "Thicket of Madyan",
+     "piece": "olives",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -7,
+     "dz": -7
+    },
+    {
+     "area": "Thicket of Madyan",
+     "piece": "market",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 9,
+     "dz": -9
+    }
+   ],
+   "acts": [
+    {
+     "name": "Noble kinds",
+     "ref": "26:7",
+     "area": "Earth of Noble Kinds",
+     "mech": "plant",
+     "quote": "26:7",
+     "desc": "Plant three beds; each blooms with a different kind.",
+     "grow": "flowers",
+     "n": 3
+    },
+    {
+     "name": "Full measure",
+     "ref": "26:181-183",
+     "area": "Thicket of Madyan",
+     "mech": "carry",
+     "quote": "26:181",
+     "desc": "Carry the weights to the scale and give full measure.",
+     "item": "weight",
+     "n": 4,
+     "label": "full measure",
+     "dx": -12
+    }
+   ]
+  },
+  "28": {
+   "setting": "desert-dusk",
+   "concept": "Reeds and calm water (28:7), the well of Madyan with flocks waiting (28:23), a tree's shade (28:24), a fire seen from the road (28:29) and a treasure house sinking into the ground (28:81).",
+   "places": [
+    {
+     "area": "The River",
+     "piece": "river",
+     "r": 1.2,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -6
+    },
+    {
+     "area": "Well of Madyan",
+     "piece": "well",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -6,
+     "dz": -5
+    },
+    {
+     "area": "Well of Madyan",
+     "piece": "herd",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "kinds": [
+       "sheep",
+       "sheep",
+       "goat",
+       "sheep"
+      ]
+     },
+     "dx": -8,
+     "dz": -9
+    },
+    {
+     "area": "The Shade",
+     "piece": "tree",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "shade": true
+     },
+     "dx": 6,
+     "dz": -5
+    },
+    {
+     "area": "Fire on the Mount",
+     "piece": "mountain",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -16,
+     "dz": -20
+    },
+    {
+     "area": "Fire on the Mount",
+     "piece": "fire",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 8,
+     "dz": -14
+    },
+    {
+     "area": "Swallowed Treasure House",
+     "piece": "sunken",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 8,
+     "dz": -8
+    }
+   ],
+   "acts": [
+    {
+     "name": "Water the flock",
+     "ref": "28:23-24",
+     "area": "Well of Madyan",
+     "mech": "carry",
+     "quote": "28:24",
+     "desc": "Carry four jars from the well to the trough for the waiting flocks.",
+     "item": "jar",
+     "n": 4,
+     "label": "trough"
+    }
+   ]
+  },
+  "29": {
+   "setting": "garden",
+   "concept": "A huge, fine spider's web (29:41), a road through many landscapes (29:20) and an ark resting on a ridge as a sign (29:15).",
+   "places": [
+    {
+     "area": "The Spider's Web",
+     "piece": "web",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -5
+    },
+    {
+     "area": "Road of Reflection",
+     "piece": "steps",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "n": 10
+     },
+     "dx": 5,
+     "dz": -3
+    },
+    {
+     "area": "Road of Reflection",
+     "piece": "mountain",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -16,
+     "dz": -20
+    },
+    {
+     "area": "Ark on the Ridge",
+     "piece": "ark",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "ridge": true
+     },
+     "dx": 10,
+     "dz": -12
+    }
+   ],
+   "acts": [
+    {
+     "name": "Observe creation",
+     "ref": "29:20",
+     "area": "Road of Reflection",
+     "mech": "tap",
+     "quote": "29:20",
+     "desc": "Find five glowing things along the road.",
+     "n": 5,
+     "dx": -8
+    }
+   ]
+  },
+  "30": {
+   "setting": "creation",
+   "concept": "A market of many languages (30:22), a harbour with ships on good winds (30:46), clouds that spread and break into rain (30:48) and bare land returning to green (30:50).",
+   "places": [
+    {
+     "area": "Market of Languages",
+     "piece": "market",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 7,
+     "dz": -6
+    },
+    {
+     "area": "Harbour of Winds",
+     "piece": "ships",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "n": 2
+     },
+     "dx": -10,
+     "dz": -10
+    },
+    {
+     "area": "Spreading Clouds",
+     "piece": "cloud",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "rain": true,
+      "w": 12
+     },
+     "dx": 0,
+     "dz": -8
+    }
+   ],
+   "acts": [
+    {
+     "name": "Wind and rain",
+     "ref": "30:48-50",
+     "area": "Earth Revived",
+     "mech": "rain",
+     "quote": "30:50",
+     "desc": "Carry rain clouds over the bare land; it turns green.",
+     "n": 3
+    }
+   ]
+  },
+  "31": {
+   "setting": "garden",
+   "concept": "A great rock with a tiny seed beside it (31:16), a path for walking gently (31:19) and a shore with trees and a pen (31:27).",
+   "places": [
+    {
+     "area": "The Rock and the Mustard Seed",
+     "piece": "rockSeed",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -7,
+     "dz": -5
+    },
+    {
+     "area": "Path of Moderate Pace",
+     "piece": "steps",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 5,
+     "dz": -3
+    },
+    {
+     "area": "Sea of Ink",
+     "piece": "sea",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 8,
+     "dz": -8
+    },
+    {
+     "area": "Sea of Ink",
+     "piece": "pen",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 4,
+     "dz": -4
+    },
+    {
+     "area": "Sea of Ink",
+     "piece": "olives",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -8,
+     "dz": -6
+    }
+   ],
+   "acts": [
+    {
+     "name": "Find the seed",
+     "ref": "31:16",
+     "area": "The Rock and the Mustard Seed",
+     "mech": "tap",
+     "quote": "31:16",
+     "desc": "Find three tiny seeds hidden around the rock.",
+     "item": "seed",
+     "n": 3
+    }
+   ]
+  },
+  "32": {
+   "setting": "night",
+   "night": true,
+   "concept": "A riverbank of clay (32:7), a village with lamps at night (32:16) and dry land receiving water (32:27).",
+   "places": [
+    {
+     "area": "Clay Bank",
+     "piece": "clay",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -5
+    },
+    {
+     "area": "Night Prayer Village",
+     "piece": "village",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "lit": true
+     },
+     "dx": 7,
+     "dz": -7
+    }
+   ],
+   "acts": [
+    {
+     "name": "Water the plain",
+     "ref": "32:27",
+     "area": "Barren Land",
+     "mech": "rain",
+     "quote": "32:27",
+     "desc": "Carry rain clouds to the dry plain.",
+     "n": 3
+    }
+   ]
+  },
+  "33": {
+   "setting": "wind",
+   "concept": "Wind sweeping through empty tents (33:9) and mountains that stand for the trust (33:72, symbolic).",
+   "places": [
+    {
+     "area": "The Windy Plain",
+     "piece": "tents",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "windy": true
+     },
+     "dx": 7,
+     "dz": -7
+    },
+    {
+     "area": "The Windy Plain",
+     "piece": "wind",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 0,
+     "dz": -4
+    },
+    {
+     "area": "Mountains of the Trust",
+     "piece": "mountain",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "snow": true
+     },
+     "dx": -16,
+     "dz": -20
+    }
+   ],
+   "acts": [
+    {
+     "name": "Qualities wall",
+     "ref": "33:35",
+     "area": "Mountains of the Trust",
+     "mech": "carry",
+     "quote": "33:35",
+     "desc": "Carry five stones to build a wall of good qualities.",
+     "item": "stone",
+     "n": 5
+    }
+   ]
+  },
+  "34": {
+   "setting": "orchard",
+   "concept": "Hills that echo with praise and birds (34:10), a glowing spring of copper (34:12), great basins (34:13), gardens on both sides of a dam (34:15) and a broken one where the trees fell (34:16).",
+   "places": [
+    {
+     "area": "Mountains of Praise",
+     "piece": "mountain",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -16,
+     "dz": -20
+    },
+    {
+     "area": "Mountains of Praise",
+     "piece": "birds",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 0,
+     "dz": -6
+    },
+    {
+     "area": "Copper Spring",
+     "piece": "copper",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -5
+    },
+    {
+     "area": "Great Bowls",
+     "piece": "bowls",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -8,
+     "dz": -6
+    },
+    {
+     "area": "Gardens of Saba",
+     "piece": "dam",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 0,
+     "dz": -14
+    },
+    {
+     "area": "Flood of the Dam",
+     "piece": "fallen",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -5
+    }
+   ],
+   "acts": [
+    {
+     "name": "Work in gratitude",
+     "ref": "34:13",
+     "area": "Great Bowls",
+     "mech": "carry",
+     "quote": "34:13",
+     "desc": "Carry four jars to fill the great basins.",
+     "item": "jar",
+     "n": 4
+    }
+   ]
+  },
+  "35": {
+   "setting": "morning",
+   "concept": "Mountains streaked white, red and black (35:27), orchards in many colours (35:27) and two seas, fresh and salt, with pearls (35:12).",
+   "places": [
+    {
+     "area": "Streaked Mountains",
+     "piece": "streaked",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 12,
+     "dz": -14
+    },
+    {
+     "area": "Orchards of Many Colours",
+     "piece": "orchard",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -8,
+     "dz": -6
+    },
+    {
+     "area": "Two Seas",
+     "piece": "twoSeas",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -7,
+     "dz": -5
+    }
+   ],
+   "acts": [
+    {
+     "name": "Colour hunt",
+     "ref": "35:27-28",
+     "area": "Orchards of Many Colours",
+     "mech": "tap",
+     "quote": "35:27",
+     "desc": "Find five fruits fallen in the orchard.",
+     "item": "fruit",
+     "n": 5
+    },
+    {
+     "name": "Pearl diving",
+     "ref": "35:12",
+     "area": "Two Seas",
+     "mech": "tap",
+     "quote": "35:12",
+     "desc": "Find four pearls by the two seas.",
+     "item": "pearl",
+     "n": 4
+    }
+   ]
+  },
+  "36": {
+   "setting": "moon",
+   "night": true,
+   "concept": "Dead earth that bursts with grain (36:33), palms and springs (36:34), the moon's phases (36:39), a laden ship (36:41) and a green tree with a fire (36:80).",
+   "places": [
+    {
+     "area": "Dead Earth Alive",
+     "piece": "grain",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -5
+    },
+    {
+     "area": "Gardens and Springs",
+     "piece": "palms",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -6
+    },
+    {
+     "area": "Gardens and Springs",
+     "piece": "spring",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -6,
+     "dz": -5
+    },
+    {
+     "area": "Phases of the Moon",
+     "piece": "moons",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -7,
+     "dz": -6
+    },
+    {
+     "area": "Laden Ship",
+     "piece": "ships",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "cargo": true
+     },
+     "dx": 8,
+     "dz": -8
+    },
+    {
+     "area": "Green Tree Fire",
+     "piece": "tree",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -6
+    },
+    {
+     "area": "Green Tree Fire",
+     "piece": "fire",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 4,
+     "dz": -3
+    }
+   ],
+   "acts": [
+    {
+     "name": "Moon phases",
+     "ref": "36:39",
+     "area": "Phases of the Moon",
+     "mech": "order",
+     "quote": "36:39",
+     "desc": "Lay five numbered stones in order, as the moon passes through its stages.",
+     "n": 5
+    },
+    {
+     "name": "Pairs",
+     "ref": "36:36",
+     "area": "Dead Earth Alive",
+     "mech": "pairs",
+     "quote": "36:36",
+     "desc": "Bring the animals to their pens in pairs.",
+     "kinds": [
+      "sheep",
+      "camel",
+      "cow"
+     ],
+     "dx": -12
+    }
+   ]
+  },
+  "37": {
+   "setting": "sea",
+   "concept": "A sky adorned with stars (37:6), an open shore (37:145) and a gourd vine over a shady spot (37:146).",
+   "places": [
+    {
+     "area": "Adorned Sky",
+     "piece": "constellation",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 0,
+     "dz": 0
+    },
+    {
+     "area": "Open Shore",
+     "piece": "sea",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 7,
+     "dz": -7
+    }
+   ],
+   "acts": [
+    {
+     "name": "Grow the vine",
+     "ref": "37:146",
+     "area": "Gourd Vine",
+     "mech": "plant",
+     "quote": "37:146",
+     "desc": "Plant three cuttings; a gourd vine grows over each.",
+     "grow": "vine",
+     "n": 3
+    }
+   ]
+  },
+  "38": {
+   "setting": "mountain",
+   "concept": "Hills that echo at sunrise (38:18), birds gathering (38:19) and a cool spring (38:42).",
+   "places": [
+    {
+     "area": "Hills of Praise",
+     "piece": "mountain",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -16,
+     "dz": -20
+    },
+    {
+     "area": "Assembled Birds",
+     "piece": "birds",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 0,
+     "dz": -6
+    },
+    {
+     "area": "Cool Spring",
+     "piece": "spring",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -5
+    }
+   ],
+   "acts": [
+    {
+     "name": "Gather the birds",
+     "ref": "38:19",
+     "area": "Assembled Birds",
+     "mech": "carry",
+     "quote": "38:19",
+     "desc": "Bring four birds to gather together.",
+     "item": "animal:bird",
+     "n": 4,
+     "label": "assembled"
+    }
+   ]
+  },
+  "39": {
+   "setting": "wind",
+   "concept": "Rain running underground into springs (39:21), crops that grow, turn yellow and dry (39:21) and a soft light on the horizon (39:73; nothing of Paradise is pictured).",
+   "places": [
+    {
+     "area": "Rain to Springs",
+     "piece": "spring",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -5
+    },
+    {
+     "area": "Fading Crops",
+     "piece": "grain",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "dry": true
+     },
+     "dx": 6,
+     "dz": -5
+    },
+    {
+     "area": "Gates of Light",
+     "piece": "horizon",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 0,
+     "dz": 0
+    }
+   ],
+   "acts": [
+    {
+     "name": "Water cycle",
+     "ref": "39:21",
+     "area": "Rain to Springs",
+     "mech": "rain",
+     "quote": "39:21",
+     "desc": "Carry rain clouds over the fields.",
+     "n": 3,
+     "dx": -12
+    }
+   ]
+  },
+  "40": {
+   "setting": "desert-dusk",
+   "concept": "A brick tower that stops far short of the sky (40:36-37) and a simple house (40:28). No one is shown.",
+   "places": [
+    {
+     "area": "Unfinished Tower",
+     "piece": "tower",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 8,
+     "dz": -9
+    },
+    {
+     "area": "House of the Believer",
+     "piece": "house",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -5
+    },
+    {
+     "area": "House of the Believer",
+     "piece": "herd",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "kinds": [
+       "camel",
+       "horse",
+       "sheep",
+       "sheep"
+      ]
+     },
+     "dx": -8,
+     "dz": -6
+    }
+   ],
+   "acts": [
+    {
+     "name": "The grazing animals",
+     "ref": "40:79",
+     "area": "House of the Believer",
+     "mech": "pairs",
+     "quote": "40:79",
+     "desc": "Bring the animals to their pens in pairs.",
+     "kinds": [
+      "camel",
+      "horse",
+      "sheep"
+     ],
+     "dx": -12
+    }
+   ]
+  },
+  "41": {
+   "setting": "wind",
+   "concept": "A sky of drifting mist (41:11), a still dry plain (41:39) that stirs and sprouts when rain falls (41:39).",
+   "places": [
+    {
+     "area": "Heaven as Smoke",
+     "piece": "cloud",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "w": 16,
+      "h": 12,
+      "dark": 0.2
+     },
+     "dx": 0,
+     "dz": -8
+    },
+    {
+     "area": "Stilled Earth",
+     "piece": "grain",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "dry": true
+     },
+     "dx": 6,
+     "dz": -5
+    }
+   ],
+   "acts": [
+    {
+     "name": "Rain and growth",
+     "ref": "41:39",
+     "area": "Quivering Growth",
+     "mech": "rain",
+     "quote": "41:39",
+     "desc": "Carry rain clouds to the still earth; it stirs and grows.",
+     "n": 3
+    }
+   ]
+  },
+  "42": {
+   "setting": "sea",
+   "concept": "A harbour of ships like mountains (42:32), ships lying still when the wind stops (42:33) and a circle of seats for deciding together (42:38).",
+   "places": [
+    {
+     "area": "Harbour of Mountain Ships",
+     "piece": "ships",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "big": true
+     },
+     "dx": 9,
+     "dz": -12
+    },
+    {
+     "area": "Stilled Wind",
+     "piece": "ships",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "still": true,
+      "n": 2
+     },
+     "dx": 8,
+     "dz": -9
+    },
+    {
+     "area": "Council Circle",
+     "piece": "council",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -7,
+     "dz": -5
+    }
+   ],
+   "acts": [
+    {
+     "name": "Decide together",
+     "ref": "42:38",
+     "area": "Council Circle",
+     "mech": "carry",
+     "quote": "42:38",
+     "desc": "Carry baskets to the circle to share what was provided.",
+     "item": "basket",
+     "n": 4,
+     "label": "share"
+    }
+   ]
+  },
+  "43": {
+   "setting": "meadow",
+   "concept": "Roads across the earth (43:10), rain in measure reviving dead land (43:11), and ships and animals to ride (43:12).",
+   "places": [
+    {
+     "area": "Roads of Guidance",
+     "piece": "steps",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "n": 10
+     },
+     "dx": 5,
+     "dz": -3
+    },
+    {
+     "area": "Ships and Mounts",
+     "piece": "ships",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 9,
+     "dz": -10
+    },
+    {
+     "area": "Ships and Mounts",
+     "piece": "herd",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "kinds": [
+       "camel",
+       "horse",
+       "camel"
+      ]
+     },
+     "dx": -8,
+     "dz": -6
+    }
+   ],
+   "acts": [
+    {
+     "name": "Rain in measure",
+     "ref": "43:11",
+     "area": "Rain in Measure",
+     "mech": "rain",
+     "quote": "43:11",
+     "desc": "Carry rain clouds to revive the dead land.",
+     "n": 3
+    }
+   ]
+  },
+  "44": {
+   "setting": "night",
+   "night": true,
+   "concept": "A calm blessed night (44:3), a sea lying still (44:24) and gardens and springs left behind (44:25).",
+   "places": [
+    {
+     "area": "Blessed Night",
+     "piece": "constellation",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 0,
+     "dz": 0
+    },
+    {
+     "area": "Blessed Night",
+     "piece": "disc",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "color": "#f2eee0",
+      "radius": 5
+     },
+     "dx": 0,
+     "dz": 0
+    },
+    {
+     "area": "The Still Sea",
+     "piece": "sea",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 7,
+     "dz": -7
+    },
+    {
+     "area": "Left-behind Gardens",
+     "piece": "orchard",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -6
+    },
+    {
+     "area": "Left-behind Gardens",
+     "piece": "spring",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -6,
+     "dz": -5
+    }
+   ],
+   "acts": [
+    {
+     "name": "Gardens and springs",
+     "ref": "44:25",
+     "area": "Left-behind Gardens",
+     "mech": "tap",
+     "quote": "44:25",
+     "desc": "Find four fruits still lying in the empty gardens.",
+     "item": "fruit",
+     "n": 4,
+     "dx": -8
+    }
+   ]
+  },
+  "45": {
+   "setting": "sea",
+   "concept": "Ships sailing (45:12) and a wide view of sky and land, with birds and grazing animals (45:13).",
+   "places": [
+    {
+     "area": "Sea of Ships",
+     "piece": "ships",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "n": 2
+     },
+     "dx": 8,
+     "dz": -9
+    },
+    {
+     "area": "Everything Subjected",
+     "piece": "horizon",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 0,
+     "dz": 0
+    },
+    {
+     "area": "Everything Subjected",
+     "piece": "birds",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 0,
+     "dz": -6
+    },
+    {
+     "area": "Everything Subjected",
+     "piece": "herd",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -8,
+     "dz": -6
+    }
+   ],
+   "acts": [
+    {
+     "name": "Winds",
+     "ref": "45:5",
+     "area": "Everything Subjected",
+     "mech": "rain",
+     "quote": "45:5",
+     "desc": "Carry rain clouds to the dry land.",
+     "n": 3
+    }
+   ]
+  },
+  "46": {
+   "setting": "dunes",
+   "concept": "Wind-curved dunes (46:21), a cloud approaching the valleys (46:24) and a quiet night valley with standing stones (46:29; nothing unseen is shown).",
+   "places": [
+    {
+     "area": "Dunes of Al-Ahqaf",
+     "piece": "dunes",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 8,
+     "dz": -10
+    },
+    {
+     "area": "The Approaching Cloud",
+     "piece": "cloud",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "w": 14,
+      "h": 11,
+      "dark": 0.6
+     },
+     "dx": 0,
+     "dz": -10
+    },
+    {
+     "area": "Listening Valley",
+     "piece": "stones",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "n": 6
+     },
+     "dx": 6,
+     "dz": -5
+    }
+   ],
+   "acts": [
+    {
+     "name": "Kindness to parents",
+     "ref": "46:15",
+     "area": "Dunes of Al-Ahqaf",
+     "mech": "carry",
+     "quote": "46:15",
+     "desc": "Carry water jars home for your parents.",
+     "item": "jar",
+     "n": 3,
+     "label": "for parents",
+     "dx": -12
+    }
+   ]
+  },
+  "47": {
+   "setting": "garden",
+   "concept": "A reading stand with the ayah that describes rivers (47:15; the rivers themselves are not pictured), a quiet garden and stepping stones for steady feet (47:7).",
+   "places": [
+    {
+     "area": "Rivers Described",
+     "piece": "lectern",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 3,
+     "dz": -3
+    },
+    {
+     "area": "Rivers Described",
+     "piece": "orchard",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -8,
+     "dz": -7
+    },
+    {
+     "area": "Rivers Described",
+     "piece": "spring",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 7,
+     "dz": -9
+    }
+   ],
+   "acts": [
+    {
+     "name": "Good deeds",
+     "ref": "47:7",
+     "area": "Rivers Described",
+     "mech": "order",
+     "quote": "47:7",
+     "desc": "Lay five numbered stones in order: feet planted firmly.",
+     "n": 5,
+     "dx": -9
+    }
+   ]
+  },
+  "48": {
+   "setting": "meadow",
+   "concept": "A single tree on a plain, no one shown (48:18), and a shoot growing strong on its stalk (48:29).",
+   "places": [
+    {
+     "area": "The Tree",
+     "piece": "tree",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -6
+    },
+    {
+     "area": "Growing Shoot",
+     "piece": "shoot",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -5,
+     "dz": -4
+    }
+   ],
+   "acts": [
+    {
+     "name": "Grow the shoot",
+     "ref": "48:29",
+     "area": "Growing Shoot",
+     "mech": "plant",
+     "quote": "48:29",
+     "desc": "Plant three seeds; each sends out a shoot that grows strong.",
+     "grow": "shoot",
+     "n": 3
+    }
+   ]
+  },
+  "50": {
+   "setting": "orchard",
+   "concept": "A sky without rifts (50:6), mountains and beautiful plants (50:7), blessed rain over grain (50:9) and lofty palms with layered fruit (50:10).",
+   "places": [
+    {
+     "area": "Sky Without Rifts",
+     "piece": "horizon",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 0,
+     "dz": 0
+    },
+    {
+     "area": "Mountains and Beautiful Kinds",
+     "piece": "mountain",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -16,
+     "dz": -20
+    },
+    {
+     "area": "Mountains and Beautiful Kinds",
+     "piece": "orchard",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -6
+    },
+    {
+     "area": "Blessed Rain",
+     "piece": "cloud",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "rain": true
+     },
+     "dx": 0,
+     "dz": -8
+    },
+    {
+     "area": "Lofty Palms",
+     "piece": "palms",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "dates": true,
+      "n": 5
+     },
+     "dx": 6,
+     "dz": -6
+    }
+   ],
+   "acts": [
+    {
+     "name": "Harvest",
+     "ref": "50:9-11",
+     "area": "Blessed Rain",
+     "mech": "plant",
+     "quote": "50:9",
+     "desc": "Plant three seeds of grain; the rain makes them grow.",
+     "grow": "grain",
+     "n": 3
+    }
+   ]
+  },
+  "51": {
+   "setting": "wind",
+   "concept": "Winds scattering dust (51:1), clouds heavy with water (51:2), ships sailing easily (51:3) and a wide sky (51:47).",
+   "places": [
+    {
+     "area": "Scattering Winds",
+     "piece": "wind",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 0,
+     "dz": -4
+    },
+    {
+     "area": "Laden Clouds",
+     "piece": "cloud",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "dark": 0.5,
+      "w": 12
+     },
+     "dx": 0,
+     "dz": -8
+    },
+    {
+     "area": "Easy Ships",
+     "piece": "ships",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 8,
+     "dz": -9
+    },
+    {
+     "area": "Expanding Heaven",
+     "piece": "horizon",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 0,
+     "dz": 0
+    }
+   ],
+   "acts": [
+    {
+     "name": "Pairs",
+     "ref": "51:49",
+     "area": "Scattering Winds",
+     "mech": "pairs",
+     "quote": "51:49",
+     "desc": "Bring the animals to their pens in pairs.",
+     "kinds": [
+      "sheep",
+      "goat",
+      "camel"
+     ]
+    }
+   ]
+  },
+  "52": {
+   "setting": "mountain",
+   "concept": "A lone mountain (52:1), an open scroll on a stone (52:3) and a high sky (52:5).",
+   "places": [
+    {
+     "area": "The Mount",
+     "piece": "mountain",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "n": 1,
+      "h": 12,
+      "snow": true
+     },
+     "dx": 12,
+     "dz": -16
+    },
+    {
+     "area": "Parchment Spread Open",
+     "piece": "scroll",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -4
+    },
+    {
+     "area": "Raised Heaven",
+     "piece": "birds",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 0,
+     "dz": -6
+    }
+   ],
+   "acts": [
+    {
+     "name": "Oaths path",
+     "ref": "52:1-6",
+     "area": "The Mount",
+     "mech": "order",
+     "quote": "52:1",
+     "desc": "Lay six numbered stones in order, one for each of the first six ayahs.",
+     "n": 6,
+     "dx": -9
+    }
+   ]
+  },
+  "53": {
+   "setting": "stars",
+   "night": true,
+   "concept": "A star setting (53:1), a valley of sunshine and soft rain, standing for joy and tears (53:43; no faces) and the bright star Sirius (53:49).",
+   "places": [
+    {
+     "area": "Descending Star",
+     "piece": "constellation",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "one": true,
+      "seed": 5
+     },
+     "dx": 0,
+     "dz": 0
+    },
+    {
+     "area": "Laughter and Tears",
+     "piece": "cloud",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "rain": true,
+      "w": 8
+     },
+     "dx": 0,
+     "dz": -8
+    },
+    {
+     "area": "Sirius",
+     "piece": "mountain",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -16,
+     "dz": -20
+    }
+   ],
+   "acts": [
+    {
+     "name": "Find Sirius",
+     "ref": "53:49",
+     "area": "Sirius",
+     "mech": "tap",
+     "quote": "53:49",
+     "desc": "Find the brightest star low over the hills.",
+     "item": "star",
+     "n": 1
+    }
+   ]
+  },
+  "54": {
+   "setting": "moon",
+   "night": true,
+   "concept": "A full moon over the plain (54:1; the splitting itself is not pictured), pouring rain (54:11), springs bursting from the earth (54:12), a vessel of planks being built (54:13) and palms uprooted by the wind (54:20).",
+   "places": [
+    {
+     "area": "Split Moon",
+     "piece": "disc",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "color": "#f2eee0",
+      "radius": 6
+     },
+     "dx": 0,
+     "dz": 0
+    },
+    {
+     "area": "Gates of Rain",
+     "piece": "cloud",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "rain": true,
+      "dark": 0.6,
+      "w": 12
+     },
+     "dx": 0,
+     "dz": -8
+    },
+    {
+     "area": "Springs Bursting",
+     "piece": "spring",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -5
+    },
+    {
+     "area": "Vessel of Planks",
+     "piece": "ark",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "frame": true
+     },
+     "dx": 8,
+     "dz": -9
+    },
+    {
+     "area": "Uprooted Palms",
+     "piece": "fallen",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -5
+    }
+   ],
+   "acts": [
+    {
+     "name": "Planks and nails",
+     "ref": "54:13",
+     "area": "Vessel of Planks",
+     "mech": "carry",
+     "quote": "54:13",
+     "desc": "Carry four planks to the vessel being built.",
+     "item": "plank",
+     "n": 4
+    }
+   ]
+  },
+  "56": {
+   "setting": "meadow",
+   "concept": "A field where seeds are planted (56:63), rain falling into a well (56:69) and a tree with a fire for travellers (56:72).",
+   "places": [
+    {
+     "area": "Water from the Clouds",
+     "piece": "well",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -6,
+     "dz": -5
+    },
+    {
+     "area": "Water from the Clouds",
+     "piece": "cloud",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "rain": true
+     },
+     "dx": 0,
+     "dz": -8
+    },
+    {
+     "area": "Tree of Fire",
+     "piece": "tree",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -6
+    },
+    {
+     "area": "Tree of Fire",
+     "piece": "fire",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 3.5,
+     "dz": -3
+    }
+   ],
+   "acts": [
+    {
+     "name": "Who grows it?",
+     "ref": "56:63-64",
+     "area": "Field of Seeds",
+     "mech": "plant",
+     "quote": "56:64",
+     "desc": "Plant three seeds and watch them grow.",
+     "grow": "grain",
+     "n": 3
+    },
+    {
+     "name": "Fresh water",
+     "ref": "56:68-70",
+     "area": "Water from the Clouds",
+     "mech": "carry",
+     "quote": "56:68",
+     "desc": "Carry three jars of fresh water.",
+     "item": "jar",
+     "n": 3,
+     "label": "fresh water"
+    }
+   ]
+  },
+  "57": {
+   "setting": "garden",
+   "concept": "A field that grows and turns yellow (57:20), a forge with iron (57:25) and earth returning to life (57:17).",
+   "places": [
+    {
+     "area": "Passing Field",
+     "piece": "grain",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "dry": true
+     },
+     "dx": 6,
+     "dz": -5
+    },
+    {
+     "area": "The Forge",
+     "piece": "forge",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -7,
+     "dz": -6
+    }
+   ],
+   "acts": [
+    {
+     "name": "Iron to the forge",
+     "ref": "57:25",
+     "area": "The Forge",
+     "mech": "carry",
+     "quote": "57:25",
+     "desc": "Carry four bars of iron to the forge.",
+     "item": "iron",
+     "n": 4
+    },
+    {
+     "name": "Revived earth",
+     "ref": "57:17",
+     "area": "Revived Earth",
+     "mech": "rain",
+     "quote": "57:17",
+     "desc": "Carry rain clouds to bring the earth back to life.",
+     "n": 3
+    }
+   ]
+  },
+  "58": {
+   "setting": "morning",
+   "concept": "An open hall where room is made for others (58:11), with seats in a circle and houses around.",
+   "places": [
+    {
+     "area": "The Hall",
+     "piece": "hall",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -9,
+     "dz": -8
+    },
+    {
+     "area": "The Hall",
+     "piece": "council",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 8,
+     "dz": -10
+    },
+    {
+     "area": "The Hall",
+     "piece": "village",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "n": 3
+     },
+     "dx": -10,
+     "dz": -18
+    }
+   ],
+   "acts": [
+    {
+     "name": "Make space",
+     "ref": "58:11",
+     "area": "The Hall",
+     "mech": "carry",
+     "quote": "58:11",
+     "desc": "Carry six cushions to make room in the circle.",
+     "item": "seed",
+     "n": 6,
+     "label": "make room"
+    }
+   ]
+  },
+  "59": {
+   "setting": "mountain",
+   "concept": "A great mountain, humbled (59:21), and a reading stand with the ayahs of Allah's names (59:22-24; the names are read from the verified text, not drawn in the sky).",
+   "places": [
+    {
+     "area": "Humbled Mountain",
+     "piece": "mountain",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "n": 1,
+      "h": 12,
+      "snow": true
+     },
+     "dx": 12,
+     "dz": -16
+    },
+    {
+     "area": "Names of Allah",
+     "piece": "lectern",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 3,
+     "dz": -3
+    }
+   ],
+   "acts": [
+    {
+     "name": "Prefer others",
+     "ref": "59:9",
+     "area": "Names of Allah",
+     "mech": "carry",
+     "quote": "59:9",
+     "desc": "Carry four baskets to give to others first.",
+     "item": "basket",
+     "n": 4,
+     "label": "for others",
+     "dx": -11
+    }
+   ]
+  },
+  "60": {
+   "setting": "garden",
+   "concept": "A bridge over a stream for fair dealings (60:8) and a garden of hope (60:7).",
+   "places": [
+    {
+     "area": "Bridge of Kindness",
+     "piece": "bridge",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -7,
+     "dz": -6
+    },
+    {
+     "area": "Hope of Affection",
+     "piece": "orchard",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -6
+    }
+   ],
+   "acts": [
+    {
+     "name": "Fair trade",
+     "ref": "60:8",
+     "area": "Bridge of Kindness",
+     "mech": "carry",
+     "quote": "60:8",
+     "desc": "Carry three baskets across, dealing fairly.",
+     "item": "basket",
+     "n": 3,
+     "label": "fairly"
+    }
+   ]
+  },
+  "61": {
+   "setting": "morning",
+   "concept": "A wall of tightly joined stones (61:4).",
+   "places": [
+    {
+     "area": "Firm Structure",
+     "piece": "wall",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -7,
+     "dz": -7
+    },
+    {
+     "area": "Firm Structure",
+     "piece": "village",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "n": 3
+     },
+     "dx": 10,
+     "dz": -14
+    }
+   ],
+   "acts": [
+    {
+     "name": "Build together",
+     "ref": "61:4",
+     "area": "Firm Structure",
+     "mech": "carry",
+     "quote": "61:4",
+     "desc": "Carry six stones to build one firm wall.",
+     "item": "block",
+     "n": 6
+    }
+   ]
+  },
+  "62": {
+   "setting": "morning",
+   "concept": "Market stalls shut for the Friday prayer (62:9) and reopened afterwards (62:10).",
+   "places": [
+    {
+     "area": "Market",
+     "piece": "market",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "closed": true
+     },
+     "dx": -8,
+     "dz": -6
+    },
+    {
+     "area": "Market",
+     "piece": "mosque",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 9,
+     "dz": -12
+    },
+    {
+     "area": "After Prayer",
+     "piece": "market",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -8,
+     "dz": -6
+    }
+   ],
+   "acts": [
+    {
+     "name": "Seek bounty",
+     "ref": "62:10",
+     "area": "After Prayer",
+     "mech": "carry",
+     "quote": "62:10",
+     "desc": "After the prayer, carry four baskets to the open stalls.",
+     "item": "basket",
+     "n": 4
+    }
+   ]
+  },
+  "63": {
+   "setting": "orchard",
+   "concept": "Baskets of harvest to share before the time runs out (63:10).",
+   "places": [
+    {
+     "area": "Harvest Baskets",
+     "piece": "baskets",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -6,
+     "dz": -4
+    },
+    {
+     "area": "Harvest Baskets",
+     "piece": "village",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "n": 3
+     },
+     "dx": -9,
+     "dz": -12
+    },
+    {
+     "area": "Harvest Baskets",
+     "piece": "orchard",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 9,
+     "dz": -14
+    }
+   ],
+   "acts": [
+    {
+     "name": "Share now",
+     "ref": "63:10",
+     "area": "Harvest Baskets",
+     "mech": "carry",
+     "quote": "63:10",
+     "desc": "Carry four baskets to share now.",
+     "item": "basket",
+     "n": 4,
+     "label": "share"
+    }
+   ]
+  },
+  "64": {
+   "setting": "mountain",
+   "concept": "A path of steps up a slope, where effort counts (64:16).",
+   "places": [
+    {
+     "area": "Path of Effort",
+     "piece": "steps",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "n": 10,
+      "rise": 0.12
+     },
+     "dx": -4,
+     "dz": -3
+    },
+    {
+     "area": "Path of Effort",
+     "piece": "mountain",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -16,
+     "dz": -20
+    }
+   ],
+   "acts": [
+    {
+     "name": "Do your best",
+     "ref": "64:16",
+     "area": "Path of Effort",
+     "mech": "order",
+     "quote": "64:16",
+     "desc": "Lay six numbered stones in order, one step at a time.",
+     "n": 6
+    }
+   ]
+  },
+  "65": {
+   "setting": "dunes",
+   "concept": "A spring appearing in a dry place (65:3).",
+   "places": [
+    {
+     "area": "Unexpected Spring",
+     "piece": "spring",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -6,
+     "dz": -5
+    },
+    {
+     "area": "Unexpected Spring",
+     "piece": "dunes",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 10,
+     "dz": -12
+    },
+    {
+     "area": "Unexpected Spring",
+     "piece": "palms",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "n": 3
+     },
+     "dx": -9,
+     "dz": -10
+    }
+   ],
+   "acts": [
+    {
+     "name": "Find the spring",
+     "ref": "65:2-3",
+     "area": "Unexpected Spring",
+     "mech": "tap",
+     "quote": "65:3",
+     "desc": "Find three hidden springs of water in the dry land.",
+     "item": "jar",
+     "n": 3
+    }
+   ]
+  },
+  "66": {
+   "setting": "garden",
+   "concept": "A palace room (66:11) and a quiet sanctuary with fruit in a lit niche (66:12). No one is shown.",
+   "places": [
+    {
+     "area": "Palace Room",
+     "piece": "chamber",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "color": "#e8d8f0"
+     },
+     "dx": 6,
+     "dz": -5
+    },
+    {
+     "area": "Sanctuary",
+     "piece": "chamber",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "fruit": true
+     },
+     "dx": 6,
+     "dz": -5
+    }
+   ],
+   "acts": [
+    {
+     "name": "Sincere repentance",
+     "ref": "66:8",
+     "area": "Sanctuary",
+     "mech": "plant",
+     "quote": "66:8",
+     "desc": "Plant three beds as a fresh start; they bloom.",
+     "grow": "flowers",
+     "n": 3,
+     "dx": -12
+    }
+   ]
+  },
+  "67": {
+   "setting": "morning",
+   "concept": "A sky without flaw to look at again and again (67:3-4), slopes to walk (67:15) and birds with outspread wings (67:19).",
+   "places": [
+    {
+     "area": "Seven Layers",
+     "piece": "horizon",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 0,
+     "dz": 0
+    },
+    {
+     "area": "Look Again",
+     "piece": "birds",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 0,
+     "dz": -6
+    },
+    {
+     "area": "Tame Earth",
+     "piece": "steps",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "rise": 0.1
+     },
+     "dx": 5,
+     "dz": -3
+    },
+    {
+     "area": "Tame Earth",
+     "piece": "mountain",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -16,
+     "dz": -20
+    },
+    {
+     "area": "Outspread Wings",
+     "piece": "birds",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "h": 6
+     },
+     "dx": 0,
+     "dz": -4
+    }
+   ],
+   "acts": [
+    {
+     "name": "Bird watch",
+     "ref": "67:19",
+     "area": "Outspread Wings",
+     "mech": "tap",
+     "quote": "67:19",
+     "desc": "Find five birds resting on the ground.",
+     "item": "animal:bird",
+     "n": 5
+    },
+    {
+     "name": "Walk the slopes",
+     "ref": "67:15",
+     "area": "Tame Earth",
+     "mech": "order",
+     "quote": "67:15",
+     "desc": "Lay five numbered stones up the slope.",
+     "n": 5,
+     "dx": -9
+    }
+   ]
+  },
+  "68": {
+   "setting": "sea",
+   "concept": "A pen and inkwell (68:1), a garden ready to harvest at dawn (68:17) and a garden that looks reaped (68:20).",
+   "places": [
+    {
+     "area": "Pen",
+     "piece": "pen",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 4,
+     "dz": -3
+    },
+    {
+     "area": "Garden at Dawn",
+     "piece": "orchard",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -6
+    },
+    {
+     "area": "Ruined Garden",
+     "piece": "fallen",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -5
+    },
+    {
+     "area": "Ruined Garden",
+     "piece": "grain",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "dry": true
+     },
+     "dx": -6,
+     "dz": -5
+    }
+   ],
+   "acts": [
+    {
+     "name": "Share the harvest",
+     "ref": "68:17-24",
+     "area": "Garden at Dawn",
+     "mech": "carry",
+     "quote": "68:17",
+     "desc": "Carry four baskets from the garden to share.",
+     "item": "basket",
+     "n": 4,
+     "label": "share",
+     "dx": -12
+    }
+   ]
+  },
+  "69": {
+   "setting": "wind",
+   "concept": "A windswept valley (69:6) with hollow palm trunks lying fallen (69:7).",
+   "places": [
+    {
+     "area": "Windy Valley",
+     "piece": "wind",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 0,
+     "dz": -4
+    },
+    {
+     "area": "Windy Valley",
+     "piece": "mountain",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -16,
+     "dz": -20
+    },
+    {
+     "area": "Hollow Trunks",
+     "piece": "fallen",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "n": 4
+     },
+     "dx": 6,
+     "dz": -5
+    }
+   ],
+   "acts": [
+    {
+     "name": "Remember and listen",
+     "ref": "69:12",
+     "area": "Windy Valley",
+     "mech": "order",
+     "quote": "69:12",
+     "desc": "Lay five numbered stones in order through the valley.",
+     "n": 5
+    }
+   ]
+  },
+  "70": {
+   "setting": "dawn",
+   "concept": "Garden steps rising gently and a quiet place of steady prayer (70:23); nothing unseen is shown.",
+   "places": [
+    {
+     "area": "Stairways",
+     "piece": "steps",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "n": 10,
+      "rise": 0.1
+     },
+     "dx": -4,
+     "dz": -3
+    },
+    {
+     "area": "Stairways",
+     "piece": "stones",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 7,
+     "dz": -8
+    },
+    {
+     "area": "Stairways",
+     "piece": "lamps",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "n": 4
+     },
+     "dx": 4,
+     "dz": -2
+    }
+   ],
+   "acts": [
+    {
+     "name": "Steady prayer",
+     "ref": "70:23",
+     "area": "Stairways",
+     "mech": "order",
+     "quote": "70:23",
+     "desc": "Lay five numbered stones in order, steady and constant.",
+     "n": 5,
+     "dx": 2
+    }
+   ]
+  },
+  "72": {
+   "setting": "stars",
+   "night": true,
+   "concept": "A still desert under the stars (72:1) and shooting stars across the sky (72:8). Nothing unseen is shown.",
+   "places": [
+    {
+     "area": "Listening Night",
+     "piece": "dunes",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 9,
+     "dz": -11
+    },
+    {
+     "area": "Listening Night",
+     "piece": "stones",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "n": 6
+     },
+     "dx": 6,
+     "dz": -5
+    },
+    {
+     "area": "Guarded Sky",
+     "piece": "shootingStars",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 0,
+     "dz": 0
+    }
+   ],
+   "acts": [
+    {
+     "name": "Shooting stars",
+     "ref": "72:8",
+     "area": "Guarded Sky",
+     "mech": "tap",
+     "quote": "72:8",
+     "desc": "Find four bright stars low in the sky.",
+     "item": "star",
+     "n": 4
+    }
+   ]
+  },
+  "73": {
+   "setting": "night",
+   "night": true,
+   "concept": "A dial of the night hours (73:2-4) and a reading stand for slow, measured recitation (73:4).",
+   "places": [
+    {
+     "area": "Night Dial",
+     "piece": "dial",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -5
+    },
+    {
+     "area": "Measured Recitation",
+     "piece": "lectern",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 3,
+     "dz": -3
+    },
+    {
+     "area": "Measured Recitation",
+     "piece": "village",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "lit": true,
+      "n": 3
+     },
+     "dx": -9,
+     "dz": -12
+    }
+   ],
+   "acts": [
+    {
+     "name": "Divide the night",
+     "ref": "73:2-4",
+     "area": "Night Dial",
+     "mech": "order",
+     "quote": "73:4",
+     "desc": "Lay four numbered stones in order, dividing the night.",
+     "n": 4,
+     "dx": -9
+    }
+   ]
+  },
+  "74": {
+   "setting": "dawn",
+   "concept": "Sunrise over a home (74:2) and a washing place with clean cloth (74:4).",
+   "places": [
+    {
+     "area": "Dawn Rising",
+     "piece": "house",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -5
+    },
+    {
+     "area": "Dawn Rising",
+     "piece": "horizon",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 0,
+     "dz": 0
+    },
+    {
+     "area": "Purify Clothing",
+     "piece": "basin",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 5,
+     "dz": -4
+    }
+   ],
+   "acts": [
+    {
+     "name": "Morning routine",
+     "ref": "74:3-7",
+     "area": "Purify Clothing",
+     "mech": "carry",
+     "quote": "74:4",
+     "desc": "Carry three jars of clean water to the washing place.",
+     "item": "jar",
+     "n": 3,
+     "label": "wash",
+     "dx": -11
+    }
+   ]
+  },
+  "75": {
+   "setting": "garden",
+   "concept": "A pattern of fingertip whorls in light on a stone (75:4).",
+   "places": [
+    {
+     "area": "Fingertips",
+     "piece": "fingerprint",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -5
+    },
+    {
+     "area": "Fingertips",
+     "piece": "stones",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {
+      "n": 6
+     },
+     "dx": -8,
+     "dz": -7
+    }
+   ],
+   "acts": [
+    {
+     "name": "Fingerprint",
+     "ref": "75:4",
+     "area": "Fingertips",
+     "mech": "tap",
+     "quote": "75:4",
+     "desc": "Find four glowing whorls around the stone.",
+     "n": 4,
+     "dx": -10
+    }
+   ]
+  },
+  "76": {
+   "setting": "morning",
+   "concept": "An open doorway where food is shared (76:8).",
+   "places": [
+    {
+     "area": "The Doorway",
+     "piece": "house",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -8,
+     "dz": -6
+    },
+    {
+     "area": "The Doorway",
+     "piece": "orchard",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 9,
+     "dz": -14
+    }
+   ],
+   "acts": [
+    {
+     "name": "Share the meal",
+     "ref": "76:8-9",
+     "area": "The Doorway",
+     "mech": "carry",
+     "quote": "76:8",
+     "desc": "Carry three loaves to the open door to share.",
+     "item": "bread",
+     "n": 3,
+     "label": "to share"
+    }
+   ]
+  },
+  "77": {
+   "setting": "wind",
+   "concept": "Winds in gusts (77:1), the earth that holds (77:25) and mountains with sweet water (77:27).",
+   "places": [
+    {
+     "area": "Gusts",
+     "piece": "wind",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 0,
+     "dz": -4
+    },
+    {
+     "area": "Earth a Container",
+     "piece": "clay",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": 6,
+     "dz": -5
+    },
+    {
+     "area": "Mountains and Sweet Water",
+     "piece": "mountain",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -16,
+     "dz": -20
+    },
+    {
+     "area": "Mountains and Sweet Water",
+     "piece": "spring",
+     "r": 0.0,
+     "s": 1.0,
+     "o": {},
+     "dx": -6,
+     "dz": -5
+    }
+   ],
+   "acts": [
+    {
+     "name": "Wind and water",
+     "ref": "77:27",
+     "area": "Mountains and Sweet Water",
+     "mech": "carry",
+     "quote": "77:27",
+     "desc": "Carry three jars of sweet water down from the spring.",
+     "item": "jar",
+     "n": 3,
+     "label": "sweet water"
+    }
+   ]
+  }
+ }
+}

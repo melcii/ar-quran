@@ -18,7 +18,7 @@
  "narrative_passages": [],
  "summary_for_children": "At-Tur means The Mount. It swears by the mount, a written book and the raised heaven, and tells the Prophet (peace be upon him) to be patient and glorify Allah.",
  "world_title": "The Mount and the Raised Heaven",
- "environment_concept": "A world built from the surah's oaths: a mount, an inscribed book on spread parchment, a frequented house, a raised heaven and a filled sea.",
+ "environment_concept": "A lone mountain (52:1), an open scroll on a stone (52:3) and a high sky (52:5).",
  "architecture_and_scenery": "A lone mountain, an open scroll on a stone, a distant house, a high sky and a glowing sea.",
  "palette": {
   "colors": [
@@ -54,8 +54,9 @@
   {
    "name": "Oaths path",
    "reference": "52:1-6",
-   "description": "Visit each oath in order.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Lay six numbered stones in order, one for each of the first six ayahs.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Glorify at night",
@@ -98,8 +99,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (birds, mountain, scroll) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "52:1",

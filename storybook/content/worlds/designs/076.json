@@ -17,7 +17,7 @@
  "narrative_passages": [],
  "summary_for_children": "Al-Insan means Man. It praises people who feed the needy, orphans and captives only for Allah, wanting no thanks.",
  "world_title": "Feeding for Allah's Sake",
- "environment_concept": "A home where food is given to the needy, the orphan and the captive, asking nothing in return; the promised reward is only read, not shown.",
+ "environment_concept": "An open doorway where food is shared (76:8).",
  "architecture_and_scenery": "A kitchen and doorway, baskets of food.",
  "palette": {
   "colors": [
@@ -39,8 +39,9 @@
   {
    "name": "Share the meal",
    "reference": "76:8-9",
-   "description": "Pack food for different neighbours (adaptation).",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry three loaves to the open door to share.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   }
  ],
  "narration_plan": "Reward is described only in ayahs.",
@@ -64,8 +65,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (house, orchard) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "76:8",

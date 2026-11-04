@@ -17,7 +17,7 @@
  "narrative_passages": [],
  "summary_for_children": "Al-Hashr means The Gathering. It speaks of generosity among believers, and ends with the beautiful names of Allah and the image of a mountain humbled by the Quran.",
  "world_title": "The Humbled Mountain",
- "environment_concept": "A great mountain that would be humbled if the Quran were sent upon it, and a sky inscribed with the beautiful names of Allah as text.",
+ "environment_concept": "A great mountain, humbled (59:21), and a reading stand with the ayahs of Allah's names (59:22-24; the names are read from the verified text, not drawn in the sky).",
  "architecture_and_scenery": "A towering mountain with cracks of light, a valley of palm trees, and a calm sky where the names appear as calligraphic text only.",
  "palette": {
   "colors": [
@@ -53,8 +53,9 @@
   {
    "name": "Prefer others",
    "reference": "59:9",
-   "description": "Share with others before yourself (adaptation).",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry four baskets to give to others first.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   }
  ],
  "narration_plan": "Allah is never depicted; names appear only as written words.",
@@ -85,8 +86,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (lectern, mountain) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "59:9",

@@ -44,7 +44,7 @@
  ],
  "summary_for_children": "Al-Qasas means The Stories. It tells how Musa's mother placed him in the river trusting Allah, how he grew up, helped two women at the well of Madyan, and was later called at the mount. It ends with Qarun, whose great wealth could not save him.",
  "world_title": "From the River to Madyan",
- "environment_concept": "Musa's story in the order the surah gives: a river where a baby is placed, a palace, a flight to Madyan, a well, a fire on the mount, and the end of Qarun's treasure.",
+ "environment_concept": "Reeds and calm water (28:7), the well of Madyan with flocks waiting (28:23), a tree's shade (28:24), a fire seen from the road (28:29) and a treasure house sinking into the ground (28:81).",
  "architecture_and_scenery": "A river with reeds, a palace on its bank, a desert crossing, the well of Madyan with flocks, a shady tree, a mount with fire, and a sinking treasure house.",
  "palette": {
   "colors": [
@@ -93,8 +93,9 @@
   {
    "name": "Water the flock",
    "reference": "28:23-24",
-   "description": "Help the waiting flocks drink, then rest in the shade and read 28:24 (adaptation).",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry four jars from the well to the trough for the waiting flocks.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Keys too heavy",
@@ -149,8 +150,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (fire, herd, mountain, river, sunken, tree, well) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "28:7",

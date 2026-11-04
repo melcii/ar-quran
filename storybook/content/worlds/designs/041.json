@@ -18,7 +18,7 @@
  "narrative_passages": [],
  "summary_for_children": "Fussilat means Explained in Detail. It speaks of how Allah formed the heavens from smoke and the earth, and shows how still earth comes alive with rain.",
  "world_title": "Smoke Becoming Sky",
- "environment_concept": "A world that begins as swirling smoke and settles into heaven and earth, then a still, dusty earth that quivers and grows when rain falls.",
+ "environment_concept": "A sky of drifting mist (41:11), a still dry plain (41:39) that stirs and sprouts when rain falls (41:39).",
  "architecture_and_scenery": "Swirling haze resolving into layered sky, a flat stilled plain, and sprouting hills.",
  "palette": {
   "colors": [
@@ -60,8 +60,9 @@
   {
    "name": "Rain and growth",
    "reference": "41:39",
-   "description": "Bring rain to the stilled earth.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry rain clouds to the still earth; it stirs and grows.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   }
  ],
  "narration_plan": "Narration stays with the ayahs and invites reflection on signs in the horizons (41:53).",
@@ -97,8 +98,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (cloud, grain) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "41:11",

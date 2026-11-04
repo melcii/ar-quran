@@ -43,7 +43,7 @@
  ],
  "summary_for_children": "Al-Anbiya means The Prophets. It reminds us that the heavens and the earth were made by Allah, and tells briefly of many prophets: Ibrahim and the fire, Dawud and Sulayman, Ayyub, Yunus, Zakariyya and others, who all called to worship Allah alone.",
  "world_title": "The Hall of the Prophets",
- "environment_concept": "A long gallery of open-air rooms, one for each prophet named in the surah, opening onto a sky where the sun and moon swim in their orbits.",
+ "environment_concept": "Rooms of signs: a spring (21:30), an empty ring of stones where the fire was made cool (21:69; no fire or person is shown), mountains with birds (21:79), a sail full of wind (21:81) and a dark sea at night (21:87).",
  "architecture_and_scenery": "Colonnade of plain stone rooms, each with a single symbolic object: a cooled fire pit, mountains and birds, a wind-driven sail, a whale-dark sea.",
  "palette": {
   "colors": [
@@ -91,8 +91,9 @@
   {
    "name": "The orbits",
    "reference": "21:33",
-   "description": "Set the sun and the moon swimming in their orbits on a sky dial.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Find four bright lights floating over the spring.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Prophet timeline",
@@ -152,8 +153,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (birds, mountain, sea, ships, spring, stones) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "21:30",

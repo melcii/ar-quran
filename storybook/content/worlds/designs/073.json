@@ -17,7 +17,7 @@
  "narrative_passages": [],
  "summary_for_children": "Al-Muzzammil calls to stand at night in prayer and to recite the Quran slowly and beautifully.",
  "world_title": "The Night Vigil",
- "environment_concept": "A night house where the hours are measured, half, a third, two thirds, for standing in prayer and measured recitation.",
+ "environment_concept": "A dial of the night hours (73:2-4) and a reading stand for slow, measured recitation (73:4).",
  "architecture_and_scenery": "A house with a night window and a sky dial showing parts of the night.",
  "palette": {
   "colors": [
@@ -45,8 +45,9 @@
   {
    "name": "Divide the night",
    "reference": "73:2-4",
-   "description": "Set the night dial to half, a third (adaptation).",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Lay four numbered stones in order, dividing the night.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Slow reading",
@@ -81,8 +82,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (dial, lectern, village) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "73:2-4",

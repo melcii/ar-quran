@@ -24,7 +24,7 @@
  ],
  "summary_for_children": "Al-An'am shows the signs of Allah in the sky and the earth. It tells how Ibrahim looked at a star, the moon and the sun and saw that they all set.",
  "world_title": "The Night of Signs",
- "environment_concept": "An open desert night where star, moon and sun rise and set, and a valley where seeds split open into green.",
+ "environment_concept": "A night of signs turning to dawn: a ridge where a bright star sets (6:76), a plain where the moon rises (6:77), an overlook at sunrise (6:78), a valley where seeds split and sprout (6:95) and date palms with low clusters (6:99).",
  "architecture_and_scenery": "Wide desert plain, rocky ridge for watching the sky, a green valley with date palms and grain.",
  "palette": {
   "colors": [
@@ -78,8 +78,9 @@
   {
    "name": "Split the seed",
    "reference": "6:95",
-   "description": "Tap seeds to see them split and sprout.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Plant three seeds and watch each split and sprout.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   }
  ],
  "narration_plan": "The narrator follows the ayahs closely for Ibrahim's reasoning, without showing him, and labels any explanation.",
@@ -126,8 +127,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (constellation, disc, grain, horizon, mountain, palms) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "6:74-83",

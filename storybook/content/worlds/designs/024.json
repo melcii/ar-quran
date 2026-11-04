@@ -18,7 +18,7 @@
  "narrative_passages": [],
  "summary_for_children": "Surah An-Nur teaches good manners in the home and in society: asking permission before entering, modesty, and not spreading rumours. It describes Allah's light with the beautiful example of a lamp in a niche.",
  "world_title": "The Niche of Light",
- "environment_concept": "A house of quiet rooms and courtyards lit by a single great lamp in a niche, with a mirage desert and a dark sea beyond its walls as contrasts.",
+ "environment_concept": "Doors that open after greeting (24:27), a glass lamp in a niche like a bright star (24:35), a blessed olive grove (24:35), a mirage plain (24:39), a dark sea (24:40) and birds with spread wings (24:41).",
  "architecture_and_scenery": "Courtyard house with closed doors that open only after greeting, a central niche with a glass lamp, an olive grove, a shimmering mirage plain and a stormy night sea.",
  "palette": {
   "colors": [
@@ -84,8 +84,9 @@
   {
    "name": "Layers of light",
    "reference": "24:35",
-   "description": "Assemble lamp, glass and niche in order as the ayah describes.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry three lamps to the niche: light upon light.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   }
  ],
  "narration_plan": "Narration is gentle and practical, linking each room to a manner from the surah.",
@@ -138,8 +139,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (birds, dunes, niche, olives, sea, village) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "24:15-16",

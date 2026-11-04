@@ -24,7 +24,7 @@
  ],
  "summary_for_children": "Ya-Sin is called the heart of the Quran. It tells of a town that rejected messengers and a man who came running to support them. It shows signs: dead earth made alive, the night, the sun and moon, and ships at sea.",
  "world_title": "The Orbiting Night",
- "environment_concept": "A town and its surroundings under a clockwork sky: dead earth made alive, springs, the moon through its phases, and a laden ship on the sea.",
+ "environment_concept": "Dead earth that bursts with grain (36:33), palms and springs (36:34), the moon's phases (36:39), a laden ship (36:41) and a green tree with a fire (36:80).",
  "architecture_and_scenery": "A town with a messenger's road, palm and vine gardens, springs, a shoreline with a laden ship, and a huge night sky.",
  "palette": {
   "colors": [
@@ -72,8 +72,9 @@
   {
    "name": "Moon phases",
    "reference": "36:39",
-   "description": "Set the moon's phases in order.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Lay five numbered stones in order, as the moon passes through its stages.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Orbits",
@@ -84,8 +85,9 @@
   {
    "name": "Pairs",
    "reference": "36:36",
-   "description": "Match pairs found in the garden (adaptation).",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Bring the animals to their pens in pairs.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   }
  ],
  "narration_plan": "Narration follows the signs; the man who came running and the messengers are not shown.",
@@ -133,8 +135,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (fire, grain, moons, palms, ships, spring, tree) with 2 hands-on activities in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "36:13-27",

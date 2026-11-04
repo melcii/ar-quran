@@ -18,7 +18,7 @@
  "narrative_passages": [],
  "summary_for_children": "Al-Waqi'ah means The Inevitable Event. It speaks of a day that will surely come, and asks us to look at the seeds we plant, the water we drink and the fire we light, all from Allah.",
  "world_title": "Seed, Water and Fire",
- "environment_concept": "A symbolic world about the three questions the surah asks: who grows the seed, who sends down the water, who made the tree of fire. The Event itself is never pictured.",
+ "environment_concept": "A field where seeds are planted (56:63), rain falling into a well (56:69) and a tree with a fire for travellers (56:72).",
  "architecture_and_scenery": "A farmer's field, a cloud-fed well and a fire with its tree; a quiet horizon for what is unseen.",
  "palette": {
   "colors": [
@@ -54,14 +54,16 @@
   {
    "name": "Who grows it?",
    "reference": "56:63-64",
-   "description": "Plant seeds and read 56:64 as they sprout (adaptation).",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Plant three seeds and watch them grow.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Fresh water",
    "reference": "56:68-70",
-   "description": "Draw water and thank Allah.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry three jars of fresh water.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   }
  ],
  "narration_plan": "The Event is spoken of only in ayahs; nothing unseen is shown.",
@@ -98,8 +100,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (cloud, fire, tree, well) with 2 hands-on activities in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "56:63",

@@ -24,7 +24,7 @@
  ],
  "summary_for_children": "Surah Luqman tells of a wise man, Luqman, who gave his son advice: never worship anything besides Allah, be grateful to parents, pray, be patient, don't be proud, walk gently and lower your voice.",
  "world_title": "Luqman's Garden of Advice",
- "environment_concept": "A quiet family garden where each path holds one piece of Luqman's advice to his son, under trees and beside a sea of ink.",
+ "environment_concept": "A great rock with a tiny seed beside it (31:16), a path for walking gently (31:19) and a shore with trees and a pen (31:27).",
  "architecture_and_scenery": "Courtyard garden with a central rock, a mustard plant, slow paths, and a shoreline where the sea stretches like ink.",
  "palette": {
   "colors": [
@@ -68,6 +68,13 @@
    "reference": "31:19",
    "description": "Practise a calm voice level in a playful sound game (adaptation).",
    "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Find the seed",
+   "reference": "31:16",
+   "kind": "find",
+   "description": "Find three tiny seeds hidden around the rock.",
+   "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
  "narration_plan": "Narration explains each piece of advice; Luqman and his son are not shown or voiced, only the ayahs are read.",
@@ -103,8 +110,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (olives, pen, rockSeed, sea, steps) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "31:12-19",

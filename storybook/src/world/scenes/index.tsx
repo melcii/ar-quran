@@ -54,6 +54,7 @@ import { FatihaScene } from './Fatiha';
 import { HudScene } from './Hud';
 import { NahlScene } from './Nahl';
 import { NuhScene } from './Nuh';
+import { COMPOSED } from './compose/Composed';
 
 export type Stop = { p: Passage; pos: THREE.Vector3 };
 export type SceneProps = {
@@ -66,6 +67,7 @@ export type SceneProps = {
 };
 
 export const SCENES: Record<number, ComponentType<SceneProps>> = {
+  ...COMPOSED,
   1: FatihaScene,
   11: HudScene,
   16: NahlScene,

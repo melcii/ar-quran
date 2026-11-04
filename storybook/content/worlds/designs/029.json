@@ -29,7 +29,7 @@
  ],
  "summary_for_children": "Al-'Ankabut means The Spider. It teaches that faith is tested, and that relying on anything besides Allah is like the spider's home, the weakest of homes. It mentions Nuh, Ibrahim, Lut and others.",
  "world_title": "The House of the Spider",
- "environment_concept": "A hillside of fragile and firm homes: a great spider's web glistening at dawn beside strong stone houses, an ark on the hill and roads to travel and observe creation.",
+ "environment_concept": "A huge, fine spider's web (29:41), a road through many landscapes (29:20) and an ark resting on a ridge as a sign (29:15).",
  "architecture_and_scenery": "Rock and timber houses, a vast dew-covered web between trees, an ark on a ridge, and a long road through changing lands.",
  "palette": {
   "colors": [
@@ -71,8 +71,9 @@
   {
    "name": "Observe creation",
    "reference": "29:20",
-   "description": "Travel the road and collect sights of how things begin and grow.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Find five glowing things along the road.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   }
  ],
  "narration_plan": "Narration uses the spider's example to talk about what truly protects us.",
@@ -109,8 +110,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (ark, mountain, steps, web) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "29:14-15",

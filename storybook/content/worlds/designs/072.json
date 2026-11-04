@@ -17,7 +17,7 @@
  "narrative_passages": [],
  "summary_for_children": "Al-Jinn tells that a group of jinn heard the Quran, found it amazing and believed. The jinn are never shown.",
  "world_title": "An Amazing Recitation Heard",
- "environment_concept": "A night desert where an amazing Quran is heard by a group the eye cannot see; the world shows only stillness and a sky guarded with flames.",
+ "environment_concept": "A still desert under the stars (72:1) and shooting stars across the sky (72:8). Nothing unseen is shown.",
  "architecture_and_scenery": "Night desert, sky with shooting stars.",
  "palette": {
   "colors": [
@@ -46,8 +46,9 @@
   {
    "name": "Shooting stars",
    "reference": "72:8",
-   "description": "Count shooting stars (adaptation).",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Find four bright stars low in the sky.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   }
  ],
  "narration_plan": "Jinn are unseen; nothing shows them.",
@@ -76,8 +77,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (dunes, shootingStars, stones) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "72:1",

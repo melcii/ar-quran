@@ -18,7 +18,7 @@
  "narrative_passages": [],
  "summary_for_children": "Al-Mulk means The Dominion. It invites us to look at the sky again and again and find no flaw, to see the birds held up by Allah, and to walk the earth He made easy for us.",
  "world_title": "Seven Skies and the Outspread Wings",
- "environment_concept": "A layered sky with no flaw, birds gliding with wings outspread, and a tame earth with slopes to walk.",
+ "environment_concept": "A sky without flaw to look at again and again (67:3-4), slopes to walk (67:15) and birds with outspread wings (67:19).",
  "architecture_and_scenery": "Seven layered skies, wide slopes, flocks of birds.",
  "palette": {
   "colors": [
@@ -72,14 +72,16 @@
   {
    "name": "Bird watch",
    "reference": "67:19",
-   "description": "Watch birds spread and fold wings.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Find five birds resting on the ground.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Walk the slopes",
    "reference": "67:15",
-   "description": "Walk the slopes and gather provision.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Lay five numbered stones up the slope.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   }
  ],
  "narration_plan": "Narration invites observation.",
@@ -125,8 +127,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (birds, horizon, mountain, steps) with 2 hands-on activities in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "67:3",

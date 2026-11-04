@@ -18,7 +18,7 @@
  "narrative_passages": [],
  "summary_for_children": "Al-Muddaththir tells the Prophet (peace be upon him) to arise and warn, glorify his Lord, purify his clothes and be patient.",
  "world_title": "Arise and Warn",
- "environment_concept": "A morning that begins with rising, glorifying and purifying clothing.",
+ "environment_concept": "Sunrise over a home (74:2) and a washing place with clean cloth (74:4).",
  "architecture_and_scenery": "A home at dawn with a washing place.",
  "palette": {
   "colors": [
@@ -46,8 +46,9 @@
   {
    "name": "Morning routine",
    "reference": "74:3-7",
-   "description": "Glorify, wash and be patient in a morning mini-game (adaptation).",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry three jars of clean water to the washing place.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   }
  ],
  "narration_plan": "The Prophet (peace be upon him) is never shown.",
@@ -75,8 +76,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (basin, horizon, house) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "74:2",

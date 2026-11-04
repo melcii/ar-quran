@@ -18,7 +18,7 @@
  "narrative_passages": [],
  "summary_for_children": "Al-Furqan means the Criterion between right and wrong. It shows signs in nature like shadows and two seas, and ends by describing the servants of the Most Merciful, who walk humbly and answer harshness with peace.",
  "world_title": "Walk of the Servants of the Merciful",
- "environment_concept": "A land of shade and sun, two seas with a barrier between them, and a final path where the Servants of the Most Merciful walk gently.",
+ "environment_concept": "A sundial field where shadows move with the sun (25:45), winds driving clouds (25:48), two waters side by side with a barrier (25:53), the sun and the moon (25:61) and a gentle path (25:63).",
  "architecture_and_scenery": "Open plains where shadows stretch and shrink, a coast where fresh and salt water meet, a starry sky with a lamp-like sun, and a simple path through gardens.",
  "palette": {
   "colors": [
@@ -80,6 +80,13 @@
    "reference": "25:53",
    "description": "Sort which water is fresh and which salty along the barrier.",
    "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Bring the rain",
+   "reference": "25:48",
+   "kind": "find",
+   "description": "Carry rain clouds over three dry fields.",
+   "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
  "narration_plan": "Narration names each sign and finishes with the qualities of the servants of the Most Merciful.",
@@ -127,8 +134,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (steps, sunMoon, sundial, twoSeas, wind) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "25:45",

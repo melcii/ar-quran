@@ -24,7 +24,7 @@
  ],
  "summary_for_children": "Az-Zukhruf means Gold Ornaments. It reminds us that Allah made the earth a bed for us with roads, sends rain in measure, and gave us ships and animals to ride, and that gold and silver are small next to faith.",
  "world_title": "Roads Across the Bed of Earth",
- "environment_concept": "A wide earth laid out like a bed with roads for guidance, rain in measure, and animals and ships for riding, set against a palace of gold ornament that cannot buy truth.",
+ "environment_concept": "Roads across the earth (43:10), rain in measure reviving dead land (43:11), and ships and animals to ride (43:12).",
  "architecture_and_scenery": "Valleys with clear roads, ships and riding animals, and a gilded palace with silver roofs as a warning about worldly ornament.",
  "palette": {
   "colors": [
@@ -68,6 +68,13 @@
    "reference": "43:33-35",
    "description": "Choose between gold rooms and guidance; learn what lasts (adaptation).",
    "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Rain in measure",
+   "reference": "43:11",
+   "kind": "find",
+   "description": "Carry rain clouds to revive the dead land.",
+   "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
  "narration_plan": "Narration contrasts real guidance with ornaments.",
@@ -103,8 +110,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (herd, ships, steps) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "43:10",

@@ -17,7 +17,7 @@
  "narrative_passages": [],
  "summary_for_children": "Al-Qiyamah means The Resurrection. It says Allah can restore even our fingertips and teaches not to hurry when reciting.",
  "world_title": "Fingertips Restored",
- "environment_concept": "A symbolic world about how Allah can restore even fingertips, never depicting the Resurrection.",
+ "environment_concept": "A pattern of fingertip whorls in light on a stone (75:4).",
  "architecture_and_scenery": "Abstract sculpture of a hand made of light (no person), and a gentle path.",
  "palette": {
   "colors": [
@@ -39,8 +39,9 @@
   {
    "name": "Fingerprint",
    "reference": "75:4",
-   "description": "Compare unique fingerprint patterns (adaptation).",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Find four glowing whorls around the stone.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Do not rush",
@@ -69,8 +70,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (fingerprint, stones) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "75:4",

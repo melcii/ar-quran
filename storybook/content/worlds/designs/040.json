@@ -28,7 +28,7 @@
  ],
  "summary_for_children": "Ghafir means The Forgiver. It tells of a believing man in Pharaoh's family who bravely defended Musa, and of Pharaoh ordering a tower to reach the heavens out of pride.",
  "world_title": "The Tower and the Believing Man",
- "environment_concept": "A city of Pharaoh where a tower was ordered built, and a believing man speaks for truth, set against a sky of forgiveness.",
+ "environment_concept": "A brick tower that stops far short of the sky (40:36-37) and a simple house (40:28). No one is shown.",
  "architecture_and_scenery": "Monumental city with a half-built brick tower, palace halls and a simple house of the believing man.",
  "palette": {
   "colors": [
@@ -66,6 +66,13 @@
    "reference": "40:36-37",
    "description": "Watch the tower fall short and talk about pride.",
    "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "The grazing animals",
+   "reference": "40:79",
+   "kind": "find",
+   "description": "Bring the animals to their pens in pairs.",
+   "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
  "narration_plan": "Narration only uses ayahs for speech; no person is shown.",
@@ -96,8 +103,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (herd, house, tower) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "40:28",

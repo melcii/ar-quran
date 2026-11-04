@@ -24,7 +24,7 @@
  ],
  "summary_for_children": "Al-Ahzab means The Confederates. It recalls how armies gathered against the believers and Allah sent a wind against them. It says the Prophet Muhammad (peace be upon him) is the best example and describes qualities of believing men and women.",
  "world_title": "The Trench and the Excellent Example",
- "environment_concept": "A town on a plain where a trench was dug and a wind scattered the armies, with houses of the community and lessons of character.",
+ "environment_concept": "Wind sweeping through empty tents (33:9) and mountains that stand for the trust (33:72, symbolic).",
  "architecture_and_scenery": "Low mud-brick houses, a long defensive trench, a windy plain, and a mountain range rejecting a heavy trust.",
  "palette": {
   "colors": [
@@ -54,8 +54,9 @@
   {
    "name": "Qualities wall",
    "reference": "33:35",
-   "description": "Place the qualities of 33:35 as stones in a wall.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry five stones to build a wall of good qualities.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Remember often",
@@ -93,8 +94,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (mountain, tents, wind) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "33:9",

@@ -71,7 +71,7 @@
    "surah": 2,
    "world_title": "The Valley of Guidance",
    "content_type": "narrative",
-   "concept": "A great valley holding many of the surah's stories as separate glades, joined by a river and crowned by a wide open sky.",
+   "concept": "A green valley of guidance: an orchard where hidden things are found by name (2:31), a meadow of cows (2:67), great foundation stones (2:127), a river to cross (2:249) and a field where one seed grows seven spikes (2:261).",
    "summary": "Al-Baqarah is the longest surah. It shows how Allah guides people, tells of Adam, of the Children of Israel and the cow, of Ibrahim building the House, and teaches about charity, patience and good character.",
    "areas": [
     {
@@ -104,20 +104,20 @@
     {
      "name": "Plant the seed of charity",
      "reference": "2:261",
-     "description": "Plant one seed and watch it grow into seven spikes with many grains, then read 2:261.",
-     "kind": "card"
+     "description": "Plant three seeds; each one grows seven spikes of grain.",
+     "kind": "find"
     },
     {
      "name": "Find the names",
      "reference": "2:31",
-     "description": "Discover named objects around the glade, learning that knowledge is a gift from Allah.",
-     "kind": "card"
+     "description": "Find five glowing things hidden in the orchard.",
+     "kind": "find"
     },
     {
      "name": "Lay the foundations",
      "reference": "2:127",
-     "description": "Set foundation stones in place while 2:127 is shown; the people are not shown.",
-     "kind": "card"
+     "description": "Carry four great stones to the foundations.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -131,8 +131,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (foundations, grain, herd, orchard, river) with 3 hands-on activities in the scene",
+    "testing": "checked in headless Chromium with software WebGL at 960x600; not tested on phones or real GPUs",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "automated screenshots of the scene and the in-scene activities"
    },
    "review": "unreviewed"
   },
@@ -140,7 +142,7 @@
    "surah": 3,
    "world_title": "The Sanctuary of the Family of Imran",
    "content_type": "narrative",
-   "concept": "A quiet sanctuary of prayer and provision, opening onto a night sky where the alternation of night and day is a sign.",
+   "concept": "A sanctuary in morning light: a small chamber with fruit in a lit niche, no one shown (3:37), a courtyard of pillars bound by one rope (3:103), a rooftop where a sundial marks the turning of night and day (3:190) and a distant gateway (3:96).",
    "summary": "Ali 'Imran tells of the family of Imran, of Maryam and the provision she found, and of Zakariyya's prayer. It asks believers to hold together and to reflect on the night and the day.",
    "areas": [
     {
@@ -168,8 +170,8 @@
     {
      "name": "Hold the rope together",
      "reference": "3:103",
-     "description": "Gather scattered rope pieces and tie them to the pillars; the courtyard steadies when it is whole.",
-     "kind": "card"
+     "description": "Carry four stones to the circle so the pillars stand together.",
+     "kind": "find"
     },
     {
      "name": "Watch night turn to day",
@@ -189,8 +191,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (arch, chamber, rope, sundial) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -198,7 +202,7 @@
    "surah": 4,
    "world_title": "The Village of Trusts and Justice",
    "content_type": "moral-and-spiritual",
-   "concept": "A village where every house holds something entrusted, and a central square where scales stay level.",
+   "concept": "A village of trusts and justice: a square with one fountain from which channels run (4:1), houses waiting for what was lent to come back (4:58), a lane of neighbours (4:36) and tall scales (4:135).",
    "summary": "An-Nisa teaches fairness to everyone, kindness to family, orphans and neighbours, and returning what we are trusted with.",
    "areas": [
     {
@@ -226,8 +230,8 @@
     {
      "name": "Return the trusts",
      "reference": "4:58",
-     "description": "Find objects left in the wrong place and return each to its owner's house.",
-     "kind": "card"
+     "description": "Carry four chests back to the house they belong to.",
+     "kind": "find"
     },
     {
      "name": "Keep the scales level",
@@ -247,8 +251,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (scale, spring, village) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -256,7 +262,7 @@
    "surah": 5,
    "world_title": "The Hall of the Spread Table",
    "content_type": "narrative",
-   "concept": "A hall of promises kept and a quiet grove where a crow teaches a lesson, joined by a long table of light.",
+   "concept": "A hall of promises (5:1), an olive grove where a crow scratches the ground (5:31), one lantern that lights a whole hall (5:32) and a long table under an arch, spread and empty (5:114).",
    "summary": "Al-Ma'idah asks us to keep our promises, to help each other in goodness, and to be fair. It tells of Adam's two sons and of the table asked for by the disciples of Isa.",
    "areas": [
     {
@@ -284,8 +290,8 @@
     {
      "name": "Help each other",
      "reference": "5:2",
-     "description": "Carry loads together with helper characters (not real people from the Quran) to learn cooperation in goodness.",
-     "kind": "card"
+     "description": "Carry baskets of food to the hall to share.",
+     "kind": "find"
     },
     {
      "name": "Keep the promise",
@@ -305,8 +311,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (crow, hall, lantern, olives, table) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -314,7 +322,7 @@
    "surah": 6,
    "world_title": "The Night of Signs",
    "content_type": "nature-and-creation",
-   "concept": "An open desert night where star, moon and sun rise and set, and a valley where seeds split open into green.",
+   "concept": "A night of signs turning to dawn: a ridge where a bright star sets (6:76), a plain where the moon rises (6:77), an overlook at sunrise (6:78), a valley where seeds split and sprout (6:95) and date palms with low clusters (6:99).",
    "summary": "Al-An'am shows the signs of Allah in the sky and the earth. It tells how Ibrahim looked at a star, the moon and the sun and saw that they all set.",
    "areas": [
     {
@@ -353,8 +361,8 @@
     {
      "name": "Split the seed",
      "reference": "6:95",
-     "description": "Tap seeds to see them split and sprout.",
-     "kind": "card"
+     "description": "Plant three seeds and watch each split and sprout.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -368,8 +376,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (constellation, disc, grain, horizon, mountain, palms) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -377,7 +387,7 @@
    "surah": 7,
    "world_title": "The Heights of the Peoples",
    "content_type": "narrative",
-   "concept": "A long ridge path past the homes of earlier peoples, each a different landscape: a garden, a ship's hill, wind plains, carved cliffs, a market and a seashore.",
+   "concept": "The heights: a garden with one tree (7:19), timbers of a ship on a hill (7:64), wide windy plains (7:65), homes carved in cliffs (7:74), a market where weights must be fair (7:85) and a calm shore (7:138).",
    "summary": "Al-A'raf tells of Adam and Iblis and of messengers sent to their peoples: Nuh, Hud, Salih, Lut, Shu'ayb and Musa. Each people was called to worship Allah alone.",
    "areas": [
     {
@@ -415,8 +425,8 @@
     {
      "name": "Fair weights",
      "reference": "7:85",
-     "description": "Weigh goods fairly in the market so every customer gets full measure.",
-     "kind": "card"
+     "description": "Carry the brass weights to the scale, giving full measure.",
+     "kind": "find"
     },
     {
      "name": "Walk the ridge",
@@ -436,8 +446,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (ark, carved, market, sea, tree, wind) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -445,7 +457,7 @@
    "surah": 8,
    "world_title": "The Field of Steady Hearts",
    "content_type": "moral-and-spiritual",
-   "concept": "A wide field under a rain that steadies the ground, teaching unity, trust in Allah and the wish for peace.",
+   "concept": "A field where rain falls and the sand grows firm (8:11), a circle of stones that glows (8:2) and a green hill of peace (8:61).",
    "summary": "Al-Anfal speaks to believers about trust in Allah, staying united, not quarrelling, and choosing peace when it is offered.",
    "areas": [
     {
@@ -468,8 +480,8 @@
     {
      "name": "Walk on firm ground",
      "reference": "8:11",
-     "description": "Cross soft sand that becomes firm after the rain.",
-     "kind": "card"
+     "description": "Carry rain clouds over the dry sand; the ground turns firm and green.",
+     "kind": "find"
     },
     {
      "name": "Don't quarrel",
@@ -489,8 +501,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (mountain, stones) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -498,7 +512,7 @@
    "surah": 9,
    "world_title": "The Road of Return",
    "content_type": "moral-and-spiritual",
-   "concept": "A desert road leading back home, past a quiet cave of two and a mosque founded on righteousness.",
+   "concept": "A small empty cave in the hills (9:40), a simple mosque on firm foundations (9:108-109) and a circle of stones for learning (9:122).",
    "summary": "At-Tawbah is about turning back to Allah, keeping our word, and being sincere. It mentions the cave where the Prophet and his companion sheltered.",
    "areas": [
     {
@@ -527,8 +541,8 @@
     {
      "name": "Firm foundations",
      "reference": "9:109",
-     "description": "Compare a building on firm ground with one on a crumbling bank.",
-     "kind": "card"
+     "description": "Carry four foundation stones to build on firm ground.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -542,8 +556,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (cave, mosque, stones) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -551,7 +567,7 @@
    "surah": 10,
    "world_title": "The Sea of Turning Back",
    "content_type": "narrative",
-   "concept": "A coast where the moon's phases count time, a ship meets a storm, and a whole people turn back to Allah.",
+   "concept": "A terrace of the moon's phases for counting the months (10:5), a ship at sea (10:22), a garden in the rain (10:24) and a doorway to Yunus's story (10:98).",
    "summary": "Surah Yunus shows signs in the sun and moon, tells how people call on Allah at sea, and remembers the people of Yunus who believed.",
    "areas": [
     {
@@ -579,8 +595,8 @@
     {
      "name": "Count the months",
      "reference": "10:5",
-     "description": "Set the moon through its phases to see how time is counted.",
-     "kind": "card"
+     "description": "Lay five numbered stones in order, counting as the moon does.",
+     "kind": "find"
     },
     {
      "name": "Calm the sail",
@@ -600,8 +616,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (arch, cloud, moons, orchard, ships) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -767,7 +785,7 @@
    "surah": 13,
    "world_title": "The Valley of Thunder",
    "content_type": "nature-and-creation",
-   "concept": "A mountain valley of rivers, gardens side by side, lightning and thunder, and a flood that leaves foam behind.",
+   "concept": "The valley of thunder: rivers running between mountains (13:3), neighbouring plots growing different fruits from one water (13:4), a ridge and a rocky hall under thunder clouds (13:12-13) and a pool where foam drifts away (13:17).",
    "summary": "Ar-Ra'd shows rivers, gardens, lightning and thunder as signs of Allah, and compares truth to water that stays and falsehood to foam that goes away.",
    "areas": [
     {
@@ -806,8 +824,8 @@
     {
      "name": "One water, many fruits",
      "reference": "13:4",
-     "description": "Water neighbouring plots and see different fruits grow.",
-     "kind": "card"
+     "description": "Plant three young trees side by side; they grow from the same water.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -821,8 +839,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (cave, cloud, mountain, orchard, river, spring) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -830,7 +850,7 @@
    "surah": 14,
    "world_title": "The Valley of the Good Tree",
    "content_type": "nature-and-creation",
-   "concept": "A valley where a good tree's roots are firm and its branches reach the sky, beside an uncultivated valley near a sacred House.",
+   "concept": "A good tree with deep roots and high branches (14:24), an uprooted tree lying loose (14:26), a dry valley (14:37) and a river with sailing boats (14:32).",
    "summary": "Surah Ibrahim compares a good word to a good tree, and teaches that gratitude brings more blessings. It records Ibrahim's prayer for his family in a dry valley.",
    "areas": [
     {
@@ -857,9 +877,9 @@
    "activities": [
     {
      "name": "Good words grow",
-     "reference": "14:24-25",
-     "description": "Choose kind words; each one makes the good tree grow.",
-     "kind": "card"
+     "reference": "14:24",
+     "description": "Plant three saplings; each grows into a firm tree.",
+     "kind": "find"
     },
     {
      "name": "Thankful stones",
@@ -879,8 +899,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (fallen, mountain, ships, tree) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -888,7 +910,7 @@
    "surah": 15,
    "world_title": "The Rocky Tract",
    "content_type": "nature-and-creation",
-   "concept": "Cliffs carved into homes under a sky of constellations, mountains set firm, and winds that carry pollen.",
+   "concept": "A rocky tract under the stars: constellations (15:16), firm mountains (15:19), winds carrying pollen to flowers (15:22) and empty homes carved in the cliffs (15:82).",
    "summary": "Al-Hijr says Allah protects the Quran, shows the stars, mountains and winds as signs, and tells of the people of al-Hijr who carved homes in the mountains.",
    "areas": [
     {
@@ -916,14 +938,14 @@
     {
      "name": "Carry the pollen",
      "reference": "15:22",
-     "description": "Guide the wind to carry pollen between flowers.",
-     "kind": "card"
+     "description": "Carry pollen to three bare beds; they flower.",
+     "kind": "find"
     },
     {
      "name": "Find the constellations",
      "reference": "15:16",
-     "description": "Trace constellations in the sky.",
-     "kind": "card"
+     "description": "Find five bright stars low over the rocks.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -937,8 +959,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (carved, constellation, mountain, wind) with 2 hands-on activities in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -1017,7 +1041,7 @@
    "surah": 17,
    "world_title": "The Night of Light and Guidance",
    "content_type": "moral-and-spiritual",
-   "concept": "A night journey of lamps from one sacred mosque to another, then a land where the night and day are signs and parents are honoured.",
+   "concept": "A path of lamps through the night (17:1: nothing of the journey is depicted), two signs, the sun and the moon (17:12), a family courtyard (17:23) and a market with honest scales (17:35).",
    "summary": "Al-Isra begins with the night journey to al-Masjid al-Aqsa and gives guidance: honour parents, be honest, and know that everything glorifies Allah.",
    "areas": [
     {
@@ -1051,8 +1075,8 @@
     {
      "name": "Honest measure",
      "reference": "17:35",
-     "description": "Measure fairly in the market.",
-     "kind": "card"
+     "description": "Carry the weights to the scale and give full measure.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -1066,8 +1090,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (house, lamps, market, sunMoon) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -1168,7 +1194,7 @@
    "surah": 19,
    "world_title": "The Palm and the Spring",
    "content_type": "narrative",
-   "concept": "A sanctuary of prayer, a distant place with a palm tree and a stream, and a mount where Musa was called.",
+   "concept": "A quiet chamber (19:11), a tall palm in a remote place (19:23) with a stream below it (19:24) and ripe dates (19:25), and a mountain slope (19:52). No one is shown.",
    "summary": "Surah Maryam tells of Zakariyya's prayer for a child, of Maryam and the birth of Isa, of Ibrahim speaking gently to his father, and of other prophets.",
    "areas": [
     {
@@ -1207,8 +1233,8 @@
     {
      "name": "The palm and the stream",
      "reference": "19:24-26",
-     "description": "Find the stream and the dates (an adaptation; Maryam is not shown or played).",
-     "kind": "card"
+     "description": "Find five ripe dates fallen under the palms.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -1222,8 +1248,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (chamber, mountain, palms, river) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -1231,7 +1259,7 @@
    "surah": 20,
    "world_title": "Fire in the Valley of Tuwa",
    "content_type": "narrative",
-   "concept": "A night journey toward a distant fire that becomes the start of Musa's mission: a sacred valley, a river with a floating chest, the palace road, a dry path through the sea and a lonely desert where a calf is melted away.",
+   "concept": "A fire glowing far across a dark valley (20:10), a pair of sandals left at the valley's edge (20:12, an adaptation), a chest in the reeds (20:39), a dry path between walls of water (20:77) and an empty camp (20:88). Musa and every person are never shown; no idol is pictured.",
    "summary": "Surah Ta-Ha tells how Musa saw a fire in the night and was called by Allah, how as a baby he was placed in a chest on the river, how he and Harun went to Pharaoh with gentle words, and how Allah saved the believers through the sea.",
    "areas": [
     {
@@ -1264,8 +1292,8 @@
     {
      "name": "Follow the firelight",
      "reference": "20:10",
-     "description": "Walk through the dark valley guided only by the fire, reading 20:10 at its edge.",
-     "kind": "card"
+     "description": "Lay five numbered stepping stones toward the distant fire.",
+     "kind": "find"
     },
     {
      "name": "Gentle words",
@@ -1291,8 +1319,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (chest, fire, sandals, seaPath, tents) with 1 hands-on activity in the scene",
+    "testing": "checked in headless Chromium with software WebGL at 960x600; not tested on phones or real GPUs",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "automated screenshots of the scene and the in-scene activities"
    },
    "review": "unreviewed"
   },
@@ -1300,7 +1330,7 @@
    "surah": 21,
    "world_title": "The Hall of the Prophets",
    "content_type": "narrative",
-   "concept": "A long gallery of open-air rooms, one for each prophet named in the surah, opening onto a sky where the sun and moon swim in their orbits.",
+   "concept": "Rooms of signs: a spring (21:30), an empty ring of stones where the fire was made cool (21:69; no fire or person is shown), mountains with birds (21:79), a sail full of wind (21:81) and a dark sea at night (21:87).",
    "summary": "Al-Anbiya means The Prophets. It reminds us that the heavens and the earth were made by Allah, and tells briefly of many prophets: Ibrahim and the fire, Dawud and Sulayman, Ayyub, Yunus, Zakariyya and others, who all called to worship Allah alone.",
    "areas": [
     {
@@ -1333,8 +1363,8 @@
     {
      "name": "The orbits",
      "reference": "21:33",
-     "description": "Set the sun and the moon swimming in their orbits on a sky dial.",
-     "kind": "card"
+     "description": "Find four bright lights floating over the spring.",
+     "kind": "find"
     },
     {
      "name": "Prophet timeline",
@@ -1360,8 +1390,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (birds, mountain, sea, ships, spring, stones) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -1369,7 +1401,7 @@
    "surah": 22,
    "world_title": "The Plain of Pilgrims",
    "content_type": "nature-and-creation",
-   "concept": "A vast plain with roads arriving from every distant pass toward a simple House, framed by fields that turn green after rain.",
+   "concept": "Roads from far mountain passes with camels (22:27), simple foundations (22:26), dry fields that turn green as rain falls (22:63) and a slope where plants stir (22:5).",
    "summary": "Surah Al-Hajj speaks of the pilgrimage that Ibrahim proclaimed, of the House, of how rain brings dead land to life, and of worship done sincerely for Allah.",
    "areas": [
     {
@@ -1397,14 +1429,14 @@
     {
      "name": "Rain on the hills",
      "reference": "22:63",
-     "description": "Bring clouds over dry fields and watch them turn green, then read 22:63.",
-     "kind": "card"
+     "description": "Carry rain clouds over three dry fields; they turn green.",
+     "kind": "find"
     },
     {
      "name": "Pack for the journey",
      "reference": "22:27-28",
-     "description": "A gentle sorting game about what a traveller needs and why sincerity matters (adaptation).",
-     "kind": "card"
+     "description": "Pack four sacks for the journey.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -1418,8 +1450,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (foundations, herd, mountain, shoot) with 2 hands-on activities in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -1427,7 +1461,7 @@
    "surah": 23,
    "world_title": "Garden of the Successful Believers",
    "content_type": "moral-and-spiritual",
-   "concept": "A cultivated estate where each terrace is a quality of the believers in the opening ayahs, fed by rain sent in measure and an olive tree from Sinai.",
+   "concept": "Terraces of the successful believers: a quiet stepped terrace (23:2-3), rain held in great basins (23:18), palms and vines (23:19), a great olive tree (23:20) and an empty shipyard (23:27).",
    "summary": "Al-Mu'minun begins by describing successful believers: humble in prayer, avoiding idle talk, giving charity and keeping promises. It reminds us how Allah created us and sends rain in just measure.",
    "areas": [
     {
@@ -1471,8 +1505,8 @@
     {
      "name": "Fill the reservoir",
      "reference": "23:18",
-     "description": "Guide rain in measured amounts to fill the reservoir without flooding (adaptation).",
-     "kind": "card"
+     "description": "Carry four jars of rain water to the basins.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -1486,8 +1520,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (ark, bowls, olives, palms, steps, stones, vine) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -1495,7 +1531,7 @@
    "surah": 24,
    "world_title": "The Niche of Light",
    "content_type": "moral-and-spiritual",
-   "concept": "A house of quiet rooms and courtyards lit by a single great lamp in a niche, with a mirage desert and a dark sea beyond its walls as contrasts.",
+   "concept": "Doors that open after greeting (24:27), a glass lamp in a niche like a bright star (24:35), a blessed olive grove (24:35), a mirage plain (24:39), a dark sea (24:40) and birds with spread wings (24:41).",
    "summary": "Surah An-Nur teaches good manners in the home and in society: asking permission before entering, modesty, and not spreading rumours. It describes Allah's light with the beautiful example of a lamp in a niche.",
    "areas": [
     {
@@ -1545,8 +1581,8 @@
     {
      "name": "Layers of light",
      "reference": "24:35",
-     "description": "Assemble lamp, glass and niche in order as the ayah describes.",
-     "kind": "card"
+     "description": "Carry three lamps to the niche: light upon light.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -1560,8 +1596,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (birds, dunes, niche, olives, sea, village) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -1569,7 +1607,7 @@
    "surah": 25,
    "world_title": "Walk of the Servants of the Merciful",
    "content_type": "moral-and-spiritual",
-   "concept": "A land of shade and sun, two seas with a barrier between them, and a final path where the Servants of the Most Merciful walk gently.",
+   "concept": "A sundial field where shadows move with the sun (25:45), winds driving clouds (25:48), two waters side by side with a barrier (25:53), the sun and the moon (25:61) and a gentle path (25:63).",
    "summary": "Al-Furqan means the Criterion between right and wrong. It shows signs in nature like shadows and two seas, and ends by describing the servants of the Most Merciful, who walk humbly and answer harshness with peace.",
    "areas": [
     {
@@ -1616,6 +1654,12 @@
      "reference": "25:53",
      "description": "Sort which water is fresh and which salty along the barrier.",
      "kind": "card"
+    },
+    {
+     "name": "Bring the rain",
+     "reference": "25:48",
+     "description": "Carry rain clouds over three dry fields.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -1629,8 +1673,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (steps, sunMoon, sundial, twoSeas, wind) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -1638,7 +1684,7 @@
    "surah": 26,
    "world_title": "Seven Shores of the Messengers",
    "content_type": "narrative",
-   "concept": "A coastline of seven settlements, one for each messenger's people in the surah, each ending with the same refrain about Allah's might and mercy.",
+   "concept": "Seven shores: towering walls of water either side of a path (26:63), a meadow of many noble kinds (26:7), rock-cut homes, empty (26:149) and a thicket by a market with scales (26:176-183).",
    "summary": "Ash-Shu'ara tells of Musa and Pharaoh, Ibrahim and his people, Nuh, Hud, Salih, Lut and Shu'ayb. Each called people to worship Allah, and each story ends by reminding us that Allah is Exalted in Might, the Merciful.",
    "areas": [
     {
@@ -1666,14 +1712,20 @@
     {
      "name": "Full measure",
      "reference": "26:181-183",
-     "description": "Weigh goods fairly at the Madyan market (adaptation).",
-     "kind": "card"
+     "description": "Carry the weights to the scale and give full measure.",
+     "kind": "find"
     },
     {
      "name": "The refrain",
      "reference": "26:8-9",
      "description": "Each shore ends with 26:8-9 read in Arabic; collect each refrain to light the coast road.",
      "kind": "card"
+    },
+    {
+     "name": "Noble kinds",
+     "reference": "26:7",
+     "description": "Plant three beds; each blooms with a different kind.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -1687,8 +1739,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (carved, market, olives, orchard, seaPath) with 2 hands-on activities in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -1773,7 +1827,7 @@
    "surah": 28,
    "world_title": "From the River to Madyan",
    "content_type": "narrative",
-   "concept": "Musa's story in the order the surah gives: a river where a baby is placed, a palace, a flight to Madyan, a well, a fire on the mount, and the end of Qarun's treasure.",
+   "concept": "Reeds and calm water (28:7), the well of Madyan with flocks waiting (28:23), a tree's shade (28:24), a fire seen from the road (28:29) and a treasure house sinking into the ground (28:81).",
    "summary": "Al-Qasas means The Stories. It tells how Musa's mother placed him in the river trusting Allah, how he grew up, helped two women at the well of Madyan, and was later called at the mount. It ends with Qarun, whose great wealth could not save him.",
    "areas": [
     {
@@ -1806,8 +1860,8 @@
     {
      "name": "Water the flock",
      "reference": "28:23-24",
-     "description": "Help the waiting flocks drink, then rest in the shade and read 28:24 (adaptation).",
-     "kind": "card"
+     "description": "Carry four jars from the well to the trough for the waiting flocks.",
+     "kind": "find"
     },
     {
      "name": "Keys too heavy",
@@ -1827,8 +1881,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (fire, herd, mountain, river, sunken, tree, well) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -1836,7 +1892,7 @@
    "surah": 29,
    "world_title": "The House of the Spider",
    "content_type": "moral-and-spiritual",
-   "concept": "A hillside of fragile and firm homes: a great spider's web glistening at dawn beside strong stone houses, an ark on the hill and roads to travel and observe creation.",
+   "concept": "A huge, fine spider's web (29:41), a road through many landscapes (29:20) and an ark resting on a ridge as a sign (29:15).",
    "summary": "Al-'Ankabut means The Spider. It teaches that faith is tested, and that relying on anything besides Allah is like the spider's home, the weakest of homes. It mentions Nuh, Ibrahim, Lut and others.",
    "areas": [
     {
@@ -1865,8 +1921,8 @@
     {
      "name": "Observe creation",
      "reference": "29:20",
-     "description": "Travel the road and collect sights of how things begin and grow.",
-     "kind": "card"
+     "description": "Find five glowing things along the road.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -1880,8 +1936,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (ark, mountain, steps, web) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -1889,7 +1947,7 @@
    "surah": 30,
    "world_title": "The Winds and the Colours of People",
    "content_type": "nature-and-creation",
-   "concept": "An open world of signs: winds that carry ships, clouds spread into rain, a market of many languages and colours, and dead earth brought back to life.",
+   "concept": "A market of many languages (30:22), a harbour with ships on good winds (30:46), clouds that spread and break into rain (30:48) and bare land returning to green (30:50).",
    "summary": "Ar-Rum means The Romans. It begins with a promise that came true and points to signs of Allah: our different languages and colours, the winds, rain, and how dead earth comes back to life.",
    "areas": [
     {
@@ -1923,8 +1981,8 @@
     {
      "name": "Wind and rain",
      "reference": "30:48-50",
-     "description": "Guide winds to stir clouds, then watch rain revive the land.",
-     "kind": "card"
+     "description": "Carry rain clouds over the bare land; it turns green.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -1938,8 +1996,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (cloud, market, ships) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -1947,7 +2007,7 @@
    "surah": 31,
    "world_title": "Luqman's Garden of Advice",
    "content_type": "moral-and-spiritual",
-   "concept": "A quiet family garden where each path holds one piece of Luqman's advice to his son, under trees and beside a sea of ink.",
+   "concept": "A great rock with a tiny seed beside it (31:16), a path for walking gently (31:19) and a shore with trees and a pen (31:27).",
    "summary": "Surah Luqman tells of a wise man, Luqman, who gave his son advice: never worship anything besides Allah, be grateful to parents, pray, be patient, don't be proud, walk gently and lower your voice.",
    "areas": [
     {
@@ -1978,6 +2038,12 @@
      "reference": "31:19",
      "description": "Practise a calm voice level in a playful sound game (adaptation).",
      "kind": "card"
+    },
+    {
+     "name": "Find the seed",
+     "reference": "31:16",
+     "description": "Find three tiny seeds hidden around the rock.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -1991,8 +2057,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (olives, pen, rockSeed, sea, steps) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -2000,7 +2068,7 @@
    "surah": 32,
    "world_title": "Night Rising and the Dry Land",
    "content_type": "moral-and-spiritual",
-   "concept": "A night village where some rise to pray, then a barren land where water arrives and crops grow.",
+   "concept": "A riverbank of clay (32:7), a village with lamps at night (32:16) and dry land receiving water (32:27).",
    "summary": "As-Sajdah means The Prostration. It reminds us that Allah created people from clay and gave us hearing, sight and hearts. It praises those who rise at night to pray and shows how water brings crops to barren land.",
    "areas": [
     {
@@ -2029,8 +2097,8 @@
     {
      "name": "Water the plain",
      "reference": "32:27",
-     "description": "Lead water to barren land and watch crops grow.",
-     "kind": "card"
+     "description": "Carry rain clouds to the dry plain.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -2044,8 +2112,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (clay, village) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -2053,7 +2123,7 @@
    "surah": 33,
    "world_title": "The Trench and the Excellent Example",
    "content_type": "moral-and-spiritual",
-   "concept": "A town on a plain where a trench was dug and a wind scattered the armies, with houses of the community and lessons of character.",
+   "concept": "Wind sweeping through empty tents (33:9) and mountains that stand for the trust (33:72, symbolic).",
    "summary": "Al-Ahzab means The Confederates. It recalls how armies gathered against the believers and Allah sent a wind against them. It says the Prophet Muhammad (peace be upon him) is the best example and describes qualities of believing men and women.",
    "areas": [
     {
@@ -2071,8 +2141,8 @@
     {
      "name": "Qualities wall",
      "reference": "33:35",
-     "description": "Place the qualities of 33:35 as stones in a wall.",
-     "kind": "card"
+     "description": "Carry five stones to build a wall of good qualities.",
+     "kind": "find"
     },
     {
      "name": "Remember often",
@@ -2092,8 +2162,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (mountain, tents, wind) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -2101,7 +2173,7 @@
    "surah": 34,
    "world_title": "Gardens of Saba and the Copper Spring",
    "content_type": "narrative",
-   "concept": "Two kingdoms of the surah: Dawud's mountains and soft iron, Sulayman's copper spring and reservoirs, and the two gardens of Saba lost when the dam burst.",
+   "concept": "Hills that echo with praise and birds (34:10), a glowing spring of copper (34:12), great basins (34:13), gardens on both sides of a dam (34:15) and a broken one where the trees fell (34:16).",
    "summary": "Surah Saba tells of Dawud, for whom iron was made soft, and Sulayman, for whom a spring of copper flowed. Then it tells of the people of Saba who had two beautiful gardens but turned away, and lost them in a flood.",
    "areas": [
     {
@@ -2134,8 +2206,8 @@
     {
      "name": "Work in gratitude",
      "reference": "34:13",
-     "description": "Fill the great bowls while reading 34:13 (adaptation).",
-     "kind": "card"
+     "description": "Carry four jars to fill the great basins.",
+     "kind": "find"
     },
     {
      "name": "Before and after",
@@ -2155,8 +2227,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (birds, bowls, copper, dam, fallen, mountain) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -2164,7 +2238,7 @@
    "surah": 35,
    "world_title": "The Originator's Colours",
    "content_type": "nature-and-creation",
-   "concept": "A land of colour: fruits of many colours, white and red mountain streaks, black rock, and two seas giving food and ornaments.",
+   "concept": "Mountains streaked white, red and black (35:27), orchards in many colours (35:27) and two seas, fresh and salt, with pearls (35:12).",
    "summary": "Fatir means The Originator. It praises Allah who created the heavens and the earth and shows signs in colours: fruits, mountains, people and animals of every colour, and fresh and salty seas.",
    "areas": [
     {
@@ -2187,14 +2261,14 @@
     {
      "name": "Colour hunt",
      "reference": "35:27-28",
-     "description": "Collect colours from fruits, rocks and animals.",
-     "kind": "card"
+     "description": "Find five fruits fallen in the orchard.",
+     "kind": "find"
     },
     {
      "name": "Pearl diving",
      "reference": "35:12",
-     "description": "Find ornaments in the sea (adaptation).",
-     "kind": "card"
+     "description": "Find four pearls by the two seas.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -2208,8 +2282,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (orchard, streaked, twoSeas) with 2 hands-on activities in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -2217,7 +2293,7 @@
    "surah": 36,
    "world_title": "The Orbiting Night",
    "content_type": "nature-and-creation",
-   "concept": "A town and its surroundings under a clockwork sky: dead earth made alive, springs, the moon through its phases, and a laden ship on the sea.",
+   "concept": "Dead earth that bursts with grain (36:33), palms and springs (36:34), the moon's phases (36:39), a laden ship (36:41) and a green tree with a fire (36:80).",
    "summary": "Ya-Sin is called the heart of the Quran. It tells of a town that rejected messengers and a man who came running to support them. It shows signs: dead earth made alive, the night, the sun and moon, and ships at sea.",
    "areas": [
     {
@@ -2250,8 +2326,8 @@
     {
      "name": "Moon phases",
      "reference": "36:39",
-     "description": "Set the moon's phases in order.",
-     "kind": "card"
+     "description": "Lay five numbered stones in order, as the moon passes through its stages.",
+     "kind": "find"
     },
     {
      "name": "Orbits",
@@ -2262,8 +2338,8 @@
     {
      "name": "Pairs",
      "reference": "36:36",
-     "description": "Match pairs found in the garden (adaptation).",
-     "kind": "card"
+     "description": "Bring the animals to their pens in pairs.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -2277,8 +2353,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (fire, grain, moons, palms, ships, spring, tree) with 2 hands-on activities in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -2286,7 +2364,7 @@
    "surah": 37,
    "world_title": "Ranks Beneath the Stars",
    "content_type": "narrative",
-   "concept": "A sky adorned with stars above a land of prophets' stories: Nuh's survivors, Ibrahim's trial, the shore where Yunus was cast with a gourd vine.",
+   "concept": "A sky adorned with stars (37:6), an open shore (37:145) and a gourd vine over a shady spot (37:146).",
    "summary": "As-Saffat means Those Lined Up in Ranks. It tells of Nuh, Ibrahim's trial with his son, Musa and Harun, Ilyas, Lut and Yunus, and how Allah saved them.",
    "areas": [
     {
@@ -2309,8 +2387,8 @@
     {
      "name": "Grow the vine",
      "reference": "37:146",
-     "description": "Help a gourd vine grow by the shore (adaptation, no person shown).",
-     "kind": "card"
+     "description": "Plant three cuttings; a gourd vine grows over each.",
+     "kind": "find"
     },
     {
      "name": "Star map",
@@ -2330,8 +2408,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (constellation, sea) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -2339,7 +2419,7 @@
    "surah": 38,
    "world_title": "Mountains That Repeat Praise",
    "content_type": "narrative",
-   "concept": "A kingdom of Dawud's mountains and birds, Sulayman's horses, and Ayyub's cooling spring.",
+   "concept": "Hills that echo at sunrise (38:18), birds gathering (38:19) and a cool spring (38:42).",
    "summary": "Surah Sad tells of Dawud and his justice, Sulayman, and Ayyub's patience, and how Iblis refused out of pride.",
    "areas": [
     {
@@ -2370,6 +2450,12 @@
      "reference": "38:18-19",
      "description": "Echo phrases of glorification across the hills.",
      "kind": "card"
+    },
+    {
+     "name": "Gather the birds",
+     "reference": "38:19",
+     "description": "Bring four birds to gather together.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -2383,8 +2469,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (birds, mountain, spring) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -2392,7 +2480,7 @@
    "surah": 39,
    "world_title": "Groups at the Gates",
    "content_type": "hereafter (symbolic only)",
-   "concept": "A symbolic world of rain, springs and fading crops, ending at two distant gates seen only as light, never as Paradise or Hell.",
+   "concept": "Rain running underground into springs (39:21), crops that grow, turn yellow and dry (39:21) and a soft light on the horizon (39:73; nothing of Paradise is pictured).",
    "summary": "Az-Zumar means The Groups. It calls us to worship Allah sincerely, reminds us of His mercy and that we should never despair of it, and speaks of people going in groups to their final place.",
    "areas": [
     {
@@ -2415,8 +2503,8 @@
     {
      "name": "Water cycle",
      "reference": "39:21",
-     "description": "Follow rain into springs and crops.",
-     "kind": "card"
+     "description": "Carry rain clouds over the fields.",
+     "kind": "find"
     },
     {
      "name": "Never despair",
@@ -2436,8 +2524,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (grain, horizon, spring) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -2445,7 +2535,7 @@
    "surah": 40,
    "world_title": "The Tower and the Believing Man",
    "content_type": "narrative",
-   "concept": "A city of Pharaoh where a tower was ordered built, and a believing man speaks for truth, set against a sky of forgiveness.",
+   "concept": "A brick tower that stops far short of the sky (40:36-37) and a simple house (40:28). No one is shown.",
    "summary": "Ghafir means The Forgiver. It tells of a believing man in Pharaoh's family who bravely defended Musa, and of Pharaoh ordering a tower to reach the heavens out of pride.",
    "areas": [
     {
@@ -2471,6 +2561,12 @@
      "reference": "40:36-37",
      "description": "Watch the tower fall short and talk about pride.",
      "kind": "card"
+    },
+    {
+     "name": "The grazing animals",
+     "reference": "40:79",
+     "description": "Bring the animals to their pens in pairs.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -2484,8 +2580,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (herd, house, tower) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -2493,7 +2591,7 @@
    "surah": 41,
    "world_title": "Smoke Becoming Sky",
    "content_type": "nature-and-creation",
-   "concept": "A world that begins as swirling smoke and settles into heaven and earth, then a still, dusty earth that quivers and grows when rain falls.",
+   "concept": "A sky of drifting mist (41:11), a still dry plain (41:39) that stirs and sprouts when rain falls (41:39).",
    "summary": "Fussilat means Explained in Detail. It speaks of how Allah formed the heavens from smoke and the earth, and shows how still earth comes alive with rain.",
    "areas": [
     {
@@ -2522,8 +2620,8 @@
     {
      "name": "Rain and growth",
      "reference": "41:39",
-     "description": "Bring rain to the stilled earth.",
-     "kind": "card"
+     "description": "Carry rain clouds to the still earth; it stirs and grows.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -2537,8 +2635,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (cloud, grain) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -2546,7 +2646,7 @@
    "surah": 42,
    "world_title": "Ships Like Mountains",
    "content_type": "moral-and-spiritual",
-   "concept": "A harbour where great ships rest when the wind stops and sail when it blows, with a council house where matters are decided by consultation.",
+   "concept": "A harbour of ships like mountains (42:32), ships lying still when the wind stops (42:33) and a circle of seats for deciding together (42:38).",
    "summary": "Ash-Shura means Consultation. It praises believers who decide their affairs by consulting each other, and shows signs like ships on the sea that move only by the wind Allah sends.",
    "areas": [
     {
@@ -2569,8 +2669,8 @@
     {
      "name": "Decide together",
      "reference": "42:38",
-     "description": "Make group choices by asking each character's opinion (adaptation).",
-     "kind": "card"
+     "description": "Carry baskets to the circle to share what was provided.",
+     "kind": "find"
     },
     {
      "name": "Wind and sail",
@@ -2590,8 +2690,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (council, ships) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -2599,7 +2701,7 @@
    "surah": 43,
    "world_title": "Roads Across the Bed of Earth",
    "content_type": "moral-and-spiritual",
-   "concept": "A wide earth laid out like a bed with roads for guidance, rain in measure, and animals and ships for riding, set against a palace of gold ornament that cannot buy truth.",
+   "concept": "Roads across the earth (43:10), rain in measure reviving dead land (43:11), and ships and animals to ride (43:12).",
    "summary": "Az-Zukhruf means Gold Ornaments. It reminds us that Allah made the earth a bed for us with roads, sends rain in measure, and gave us ships and animals to ride, and that gold and silver are small next to faith.",
    "areas": [
     {
@@ -2630,6 +2732,12 @@
      "reference": "43:33-35",
      "description": "Choose between gold rooms and guidance; learn what lasts (adaptation).",
      "kind": "card"
+    },
+    {
+     "name": "Rain in measure",
+     "reference": "43:11",
+     "description": "Carry rain clouds to revive the dead land.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -2643,8 +2751,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (herd, ships, steps) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -2652,7 +2762,7 @@
    "surah": 44,
    "world_title": "The Still Sea and Abandoned Gardens",
    "content_type": "narrative",
-   "concept": "A blessed night of revelation, a smoke-filled sky, and Pharaoh's abandoned gardens, springs and estates beside a still sea.",
+   "concept": "A calm blessed night (44:3), a sea lying still (44:24) and gardens and springs left behind (44:25).",
    "summary": "Ad-Dukhan means The Smoke. It says the Quran was sent down on a blessed night and tells how Pharaoh's people left behind gardens and springs when Allah saved the Children of Israel.",
    "areas": [
     {
@@ -2683,6 +2793,12 @@
      "reference": "44:3",
      "description": "Light the night sky by reading 44:3.",
      "kind": "card"
+    },
+    {
+     "name": "Gardens and springs",
+     "reference": "44:25",
+     "description": "Find four fruits still lying in the empty gardens.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -2696,8 +2812,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (constellation, disc, orchard, sea, spring) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -2705,7 +2823,7 @@
    "surah": 45,
    "world_title": "Subjected Sea and Sky",
    "content_type": "nature-and-creation",
-   "concept": "A coastal world where the sea carries ships and everything in heaven and earth is set to serve people, with a kneeling crowd shown only as a symbolic horizon.",
+   "concept": "Ships sailing (45:12) and a wide view of sky and land, with birds and grazing animals (45:13).",
    "summary": "Al-Jathiyah means The Kneeling. It shows how Allah made the sea and everything in the heavens and earth useful for people, as signs for those who think.",
    "areas": [
     {
@@ -2729,8 +2847,8 @@
     {
      "name": "Winds",
      "reference": "45:5",
-     "description": "Change the winds and notice them as a sign.",
-     "kind": "card"
+     "description": "Carry rain clouds to the dry land.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -2744,8 +2862,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (birds, herd, horizon, ships) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -2753,7 +2873,7 @@
    "surah": 46,
    "world_title": "The Sand Dunes of Al-Ahqaf",
    "content_type": "narrative",
-   "concept": "Winding dunes where the people of 'Ad saw a cloud and thought it was rain, and a quiet valley where a group of jinn listened to the Quran, shown only as stillness.",
+   "concept": "Wind-curved dunes (46:21), a cloud approaching the valleys (46:24) and a quiet night valley with standing stones (46:29; nothing unseen is shown).",
    "summary": "Al-Ahqaf means The Wind-Curved Sandhills. It tells of Hud warning 'Ad in the dunes, and teaches kindness to parents. It mentions jinn who listened to the Quran.",
    "areas": [
     {
@@ -2776,8 +2896,8 @@
     {
      "name": "Kindness to parents",
      "reference": "46:15",
-     "description": "Help with small tasks at home in a mini-game (adaptation).",
-     "kind": "card"
+     "description": "Carry water jars home for your parents.",
+     "kind": "find"
     },
     {
      "name": "Listen quietly",
@@ -2797,8 +2917,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (cloud, dunes, stones) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -2806,7 +2928,7 @@
    "surah": 47,
    "world_title": "Four Rivers Described",
    "content_type": "hereafter (symbolic only)",
-   "concept": "A symbolic world of the rivers named in the surah, shown only as four labelled light-streams so as not to claim a picture of Paradise.",
+   "concept": "A reading stand with the ayah that describes rivers (47:15; the rivers themselves are not pictured), a quiet garden and stepping stones for steady feet (47:7).",
    "summary": "Surah Muhammad speaks of believers and the Prophet Muhammad (peace be upon him), and describes rivers promised to the righteous. We only learn about them from the Quran.",
    "areas": [
     {
@@ -2825,8 +2947,8 @@
     {
      "name": "Good deeds",
      "reference": "47:7",
-     "description": "Choose helping actions in short scenarios (adaptation).",
-     "kind": "card"
+     "description": "Lay five numbered stones in order: feet planted firmly.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -2840,8 +2962,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (lectern, orchard, spring) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -2849,7 +2973,7 @@
    "surah": 48,
    "world_title": "The Tree of the Pledge",
    "content_type": "moral-and-spiritual",
-   "concept": "A plain with a single tree where a pledge was made, and a field of seedlings growing strong.",
+   "concept": "A single tree on a plain, no one shown (48:18), and a shoot growing strong on its stalk (48:29).",
    "summary": "Al-Fath means The Victory. It speaks of the believers' pledge under a tree, of tranquillity Allah sent to their hearts, and compares them to a seed that grows strong.",
    "areas": [
     {
@@ -2867,8 +2991,8 @@
     {
      "name": "Grow the shoot",
      "reference": "48:29",
-     "description": "Help a shoot become strong (adaptation).",
-     "kind": "card"
+     "description": "Plant three seeds; each sends out a shoot that grows strong.",
+     "kind": "find"
     },
     {
      "name": "Tranquillity",
@@ -2888,8 +3012,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (shoot, tree) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -2974,7 +3100,7 @@
    "surah": 50,
    "world_title": "The Sky Without Rifts",
    "content_type": "nature-and-creation",
-   "concept": "A sky so whole it has no rifts above an earth spread out with mountains, blessed rain and tall palms with layered fruit.",
+   "concept": "A sky without rifts (50:6), mountains and beautiful plants (50:7), blessed rain over grain (50:9) and lofty palms with layered fruit (50:10).",
    "summary": "Surah Qaf points to the sky with no cracks, the earth with mountains and plants, and rain that brings life, as signs that Allah can bring people back to life.",
    "areas": [
     {
@@ -3008,8 +3134,8 @@
     {
      "name": "Harvest",
      "reference": "50:9-11",
-     "description": "Grow and harvest grain.",
-     "kind": "card"
+     "description": "Plant three seeds of grain; the rain makes them grow.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -3023,8 +3149,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (cloud, horizon, mountain, orchard, palms) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -3032,7 +3160,7 @@
    "surah": 51,
    "world_title": "Winds, Clouds and Ships",
    "content_type": "nature-and-creation",
-   "concept": "A world of the surah's opening oaths: scattering winds, clouds carrying water, ships sailing easily, then a wide expanding heaven over an earth spread like a carpet.",
+   "concept": "Winds scattering dust (51:1), clouds heavy with water (51:2), ships sailing easily (51:3) and a wide sky (51:47).",
    "summary": "Adh-Dhariyat means The Scattering Winds. It swears by winds, clouds and ships, tells of Ibrahim's guests, and reminds us everything is created in pairs.",
    "areas": [
     {
@@ -3060,8 +3188,8 @@
     {
      "name": "Pairs",
      "reference": "51:49",
-     "description": "Find pairs in nature (adaptation).",
-     "kind": "card"
+     "description": "Bring the animals to their pens in pairs.",
+     "kind": "find"
     },
     {
      "name": "Signs in yourselves",
@@ -3081,8 +3209,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (cloud, horizon, ships, wind) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -3090,7 +3220,7 @@
    "surah": 52,
    "world_title": "The Mount and the Raised Heaven",
    "content_type": "moral-and-spiritual",
-   "concept": "A world built from the surah's oaths: a mount, an inscribed book on spread parchment, a frequented house, a raised heaven and a filled sea.",
+   "concept": "A lone mountain (52:1), an open scroll on a stone (52:3) and a high sky (52:5).",
    "summary": "At-Tur means The Mount. It swears by the mount, a written book and the raised heaven, and tells the Prophet (peace be upon him) to be patient and glorify Allah.",
    "areas": [
     {
@@ -3113,8 +3243,8 @@
     {
      "name": "Oaths path",
      "reference": "52:1-6",
-     "description": "Visit each oath in order.",
-     "kind": "card"
+     "description": "Lay six numbered stones in order, one for each of the first six ayahs.",
+     "kind": "find"
     },
     {
      "name": "Glorify at night",
@@ -3134,8 +3264,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (birds, mountain, scroll) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -3143,7 +3275,7 @@
    "surah": 53,
    "world_title": "The Descending Star",
    "content_type": "nature-and-creation",
-   "concept": "A night sky with a setting star, then a land where laughter and tears, life and death, and the star Sirius are all named as from Allah.",
+   "concept": "A star setting (53:1), a valley of sunshine and soft rain, standing for joy and tears (53:43; no faces) and the bright star Sirius (53:49).",
    "summary": "An-Najm means The Star. It begins by swearing by a star and teaches that the Prophet (peace be upon him) speaks only revelation, that each person is responsible for their own deeds, and that Allah is the Lord of Sirius.",
    "areas": [
     {
@@ -3166,8 +3298,8 @@
     {
      "name": "Find Sirius",
      "reference": "53:49",
-     "description": "Find Sirius in the night sky.",
-     "kind": "card"
+     "description": "Find the brightest star low over the hills.",
+     "kind": "find"
     },
     {
      "name": "Own deeds",
@@ -3187,8 +3319,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (cloud, constellation, mountain) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -3196,7 +3330,7 @@
    "surah": 54,
    "world_title": "Moon Split and the Easy Reminder",
    "content_type": "narrative",
-   "concept": "A sky with a moon split in two, then stories of peoples: rain gates opening for Nuh, a screaming wind for 'Ad, a she-camel for Thamud, each followed by 'We made the Quran easy to remember'.",
+   "concept": "A full moon over the plain (54:1; the splitting itself is not pictured), pouring rain (54:11), springs bursting from the earth (54:12), a vessel of planks being built (54:13) and palms uprooted by the wind (54:20).",
    "summary": "Al-Qamar means The Moon. It tells of the moon splitting and of Nuh, 'Ad, Thamud, Lut and Pharaoh, and repeats that Allah made the Quran easy to remember.",
    "areas": [
     {
@@ -3235,8 +3369,8 @@
     {
      "name": "Planks and nails",
      "reference": "54:13",
-     "description": "Build the vessel from planks and nails.",
-     "kind": "card"
+     "description": "Carry four planks to the vessel being built.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -3250,8 +3384,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (ark, cloud, disc, fallen, spring) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -3362,7 +3498,7 @@
    "surah": 56,
    "world_title": "Seed, Water and Fire",
    "content_type": "hereafter (symbolic only)",
-   "concept": "A symbolic world about the three questions the surah asks: who grows the seed, who sends down the water, who made the tree of fire. The Event itself is never pictured.",
+   "concept": "A field where seeds are planted (56:63), rain falling into a well (56:69) and a tree with a fire for travellers (56:72).",
    "summary": "Al-Waqi'ah means The Inevitable Event. It speaks of a day that will surely come, and asks us to look at the seeds we plant, the water we drink and the fire we light, all from Allah.",
    "areas": [
     {
@@ -3385,14 +3521,14 @@
     {
      "name": "Who grows it?",
      "reference": "56:63-64",
-     "description": "Plant seeds and read 56:64 as they sprout (adaptation).",
-     "kind": "card"
+     "description": "Plant three seeds and watch them grow.",
+     "kind": "find"
     },
     {
      "name": "Fresh water",
      "reference": "56:68-70",
-     "description": "Draw water and thank Allah.",
-     "kind": "card"
+     "description": "Carry three jars of fresh water.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -3406,8 +3542,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (cloud, fire, tree, well) with 2 hands-on activities in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -3415,7 +3553,7 @@
    "surah": 57,
    "world_title": "Iron and the Passing Rain-Plants",
    "content_type": "moral-and-spiritual",
-   "concept": "A land where rain makes plants grow green and then yellow and dry, and a forge where iron is shaped, showing the passing world and real strength.",
+   "concept": "A field that grows and turns yellow (57:20), a forge with iron (57:25) and earth returning to life (57:17).",
    "summary": "Al-Hadid means Iron. It reminds us that this life is short like plants that grow and then dry, encourages spending for good, and mentions iron with its strength and benefits.",
    "areas": [
     {
@@ -3446,6 +3584,18 @@
      "reference": "57:20",
      "description": "Watch a field through its life.",
      "kind": "card"
+    },
+    {
+     "name": "Iron to the forge",
+     "reference": "57:25",
+     "description": "Carry four bars of iron to the forge.",
+     "kind": "find"
+    },
+    {
+     "name": "Revived earth",
+     "reference": "57:17",
+     "description": "Carry rain clouds to bring the earth back to life.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -3459,8 +3609,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (forge, grain) with 2 hands-on activities in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -3468,7 +3620,7 @@
    "surah": 58,
    "world_title": "The Assembly That Makes Room",
    "content_type": "moral-and-spiritual",
-   "concept": "A meeting hall where a woman's complaint was heard, and where people make space for each other.",
+   "concept": "An open hall where room is made for others (58:11), with seats in a circle and houses around.",
    "summary": "Al-Mujadila means The Pleading Woman. It begins with Allah hearing a woman who complained to Him, and teaches making room for others in gatherings and seeking knowledge.",
    "areas": [
     {
@@ -3481,8 +3633,8 @@
     {
      "name": "Make space",
      "reference": "58:11",
-     "description": "Shift cushions to make room for newcomers (adaptation).",
-     "kind": "card"
+     "description": "Carry six cushions to make room in the circle.",
+     "kind": "find"
     },
     {
      "name": "Allah hears",
@@ -3502,8 +3654,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (council, hall, village) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -3511,7 +3665,7 @@
    "surah": 59,
    "world_title": "The Humbled Mountain",
    "content_type": "moral-and-spiritual",
-   "concept": "A great mountain that would be humbled if the Quran were sent upon it, and a sky inscribed with the beautiful names of Allah as text.",
+   "concept": "A great mountain, humbled (59:21), and a reading stand with the ayahs of Allah's names (59:22-24; the names are read from the verified text, not drawn in the sky).",
    "summary": "Al-Hashr means The Gathering. It speaks of generosity among believers, and ends with the beautiful names of Allah and the image of a mountain humbled by the Quran.",
    "areas": [
     {
@@ -3535,8 +3689,8 @@
     {
      "name": "Prefer others",
      "reference": "59:9",
-     "description": "Share with others before yourself (adaptation).",
-     "kind": "card"
+     "description": "Carry four baskets to give to others first.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -3550,8 +3704,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (lectern, mountain) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -3559,7 +3715,7 @@
    "surah": 60,
    "world_title": "Bridges of Fairness",
    "content_type": "moral-and-spiritual",
-   "concept": "A border land where bridges stand between communities, teaching justice and kindness to those who do not fight us.",
+   "concept": "A bridge over a stream for fair dealings (60:8) and a garden of hope (60:7).",
    "summary": "Al-Mumtahanah means She Who Is Examined. It points to Ibrahim as an example and teaches being just and kind to people who are not hostile.",
    "areas": [
     {
@@ -3577,8 +3733,8 @@
     {
      "name": "Fair trade",
      "reference": "60:8",
-     "description": "Trade fairly across the bridge (adaptation).",
-     "kind": "card"
+     "description": "Carry three baskets across, dealing fairly.",
+     "kind": "find"
     },
     {
      "name": "Example of Ibrahim",
@@ -3597,8 +3753,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (bridge, orchard) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -3606,7 +3764,7 @@
    "surah": 61,
    "world_title": "Ranks Like a Structure",
    "content_type": "moral-and-spiritual",
-   "concept": "A wall of stones fitting together tightly, standing for believers united in rows.",
+   "concept": "A wall of tightly joined stones (61:4).",
    "summary": "As-Saff means The Ranks. It tells us to do what we say, praises believers united like a solid structure, and mentions Isa's disciples as supporters of Allah.",
    "areas": [
     {
@@ -3619,8 +3777,8 @@
     {
      "name": "Build together",
      "reference": "61:4",
-     "description": "Fit stones together in a wall (adaptation).",
-     "kind": "card"
+     "description": "Carry six stones to build one firm wall.",
+     "kind": "find"
     },
     {
      "name": "Say and do",
@@ -3639,8 +3797,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (village, wall) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -3648,7 +3808,7 @@
    "surah": 62,
    "world_title": "Friday Market and Prayer",
    "content_type": "moral-and-spiritual",
-   "concept": "A market town where trade pauses for Friday prayer and resumes after.",
+   "concept": "Market stalls shut for the Friday prayer (62:9) and reopened afterwards (62:10).",
    "summary": "Al-Jumu'ah means Friday. It tells us to leave trade and go to the prayer when called on Friday, then go out and seek Allah's bounty.",
    "areas": [
     {
@@ -3672,8 +3832,8 @@
     {
      "name": "Seek bounty",
      "reference": "62:10",
-     "description": "Return to work and remember Allah.",
-     "kind": "card"
+     "description": "After the prayer, carry four baskets to the open stalls.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -3686,8 +3846,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (market, mosque) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -3695,7 +3857,7 @@
    "surah": 63,
    "world_title": "Before the Term Ends",
    "content_type": "moral-and-spiritual",
-   "concept": "A harvest world where provision is shared before the season ends.",
+   "concept": "Baskets of harvest to share before the time runs out (63:10).",
    "summary": "Al-Munafiqun means The Hypocrites. It warns against saying one thing and meaning another, and tells us to spend from what we have before it is too late.",
    "areas": [
     {
@@ -3708,8 +3870,8 @@
     {
      "name": "Share now",
      "reference": "63:10",
-     "description": "Share provisions before the season ends (adaptation).",
-     "kind": "card"
+     "description": "Carry four baskets to share now.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -3722,8 +3884,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (baskets, orchard, village) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -3731,7 +3895,7 @@
    "surah": 64,
    "world_title": "The Mutual Exchange",
    "content_type": "moral-and-spiritual",
-   "concept": "A garden where giving and patience are traded for real gain.",
+   "concept": "A path of steps up a slope, where effort counts (64:16).",
    "summary": "At-Taghabun teaches us to trust Allah, fear Him as much as we can, listen, obey and spend for good.",
    "areas": [
     {
@@ -3744,8 +3908,8 @@
     {
      "name": "Do your best",
      "reference": "64:16",
-     "description": "Complete tasks as well as you can (adaptation).",
-     "kind": "card"
+     "description": "Lay six numbered stones in order, one step at a time.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -3757,8 +3921,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (mountain, steps) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -3766,7 +3932,7 @@
    "surah": 65,
    "world_title": "Provision From Where You Do Not Expect",
    "content_type": "moral-and-spiritual",
-   "concept": "A world of unexpected springs appearing for those who rely on Allah.",
+   "concept": "A spring appearing in a dry place (65:3).",
    "summary": "At-Talaq gives rules for fairness in families and promises that Allah provides from where one does not expect.",
    "areas": [
     {
@@ -3779,8 +3945,8 @@
     {
      "name": "Find the spring",
      "reference": "65:2-3",
-     "description": "Discover springs when you rely on Allah (adaptation).",
-     "kind": "card"
+     "description": "Find three hidden springs of water in the dry land.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -3792,8 +3958,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (dunes, palms, spring) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -3801,7 +3969,7 @@
    "surah": 66,
    "world_title": "Two Examples of Faith",
    "content_type": "moral-and-spiritual",
-   "concept": "A palace and a quiet sanctuary representing two women praised for faith, with no person shown.",
+   "concept": "A palace room (66:11) and a quiet sanctuary with fruit in a lit niche (66:12). No one is shown.",
    "summary": "At-Tahrim tells believers to protect their families with good deeds and gives two examples of faith: the wife of Pharaoh and Maryam.",
    "areas": [
     {
@@ -3819,8 +3987,8 @@
     {
      "name": "Sincere repentance",
      "reference": "66:8",
-     "description": "Light lamps by reading 66:8 (adaptation).",
-     "kind": "card"
+     "description": "Plant three beds as a fresh start; they bloom.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -3833,8 +4001,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (chamber) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -3842,7 +4012,7 @@
    "surah": 67,
    "world_title": "Seven Skies and the Outspread Wings",
    "content_type": "nature-and-creation",
-   "concept": "A layered sky with no flaw, birds gliding with wings outspread, and a tame earth with slopes to walk.",
+   "concept": "A sky without flaw to look at again and again (67:3-4), slopes to walk (67:15) and birds with outspread wings (67:19).",
    "summary": "Al-Mulk means The Dominion. It invites us to look at the sky again and again and find no flaw, to see the birds held up by Allah, and to walk the earth He made easy for us.",
    "areas": [
     {
@@ -3881,14 +4051,14 @@
     {
      "name": "Bird watch",
      "reference": "67:19",
-     "description": "Watch birds spread and fold wings.",
-     "kind": "card"
+     "description": "Find five birds resting on the ground.",
+     "kind": "find"
     },
     {
      "name": "Walk the slopes",
      "reference": "67:15",
-     "description": "Walk the slopes and gather provision.",
-     "kind": "card"
+     "description": "Lay five numbered stones up the slope.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -3902,8 +4072,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (birds, horizon, mountain, steps) with 2 hands-on activities in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -3911,7 +4083,7 @@
    "surah": 68,
    "world_title": "The Pen and the Burnt Garden",
    "content_type": "narrative",
-   "concept": "A writing desk with a pen, and a garden whose owners swore to harvest without giving to the poor, and found it ruined.",
+   "concept": "A pen and inkwell (68:1), a garden ready to harvest at dawn (68:17) and a garden that looks reaped (68:20).",
    "summary": "Al-Qalam means The Pen. It praises the Prophet's (peace be upon him) great character and tells of garden owners who planned to keep everything from the poor and lost their garden.",
    "areas": [
     {
@@ -3934,8 +4106,8 @@
     {
      "name": "Share the harvest",
      "reference": "68:17-24",
-     "description": "Choose to share the harvest (adaptation).",
-     "kind": "card"
+     "description": "Carry four baskets from the garden to share.",
+     "kind": "find"
     },
     {
      "name": "Writing",
@@ -3954,8 +4126,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (fallen, grain, orchard, pen) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -3963,7 +4137,7 @@
    "surah": 69,
    "world_title": "Hollow Palm Trunks",
    "content_type": "hereafter (symbolic only)",
-   "concept": "A desert of fallen palm trunks after a violent wind, with the Reality spoken of only as text.",
+   "concept": "A windswept valley (69:6) with hollow palm trunks lying fallen (69:7).",
    "summary": "Al-Haqqah means The Reality. It recalls peoples who denied the truth, like 'Ad, and speaks of the Day of Judgement only in its own words.",
    "areas": [
     {
@@ -3983,6 +4157,12 @@
      "reference": "69:19",
      "description": "Reflect on good deeds (adaptation).",
      "kind": "card"
+    },
+    {
+     "name": "Remember and listen",
+     "reference": "69:12",
+     "description": "Lay five numbered stones in order through the valley.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -3995,8 +4175,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (fallen, mountain, wind) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -4004,7 +4186,7 @@
    "surah": 70,
    "world_title": "Ways of Ascent",
    "content_type": "hereafter (symbolic only)",
-   "concept": "A symbolic world of stairways of light rising to the sky, never showing angels.",
+   "concept": "Garden steps rising gently and a quiet place of steady prayer (70:23); nothing unseen is shown.",
    "summary": "Al-Ma'arij means The Ascending Stairways. It speaks of patience and describes people who pray steadily and keep their trusts.",
    "areas": [
     {
@@ -4017,8 +4199,8 @@
     {
      "name": "Steady prayer",
      "reference": "70:23",
-     "description": "Keep a lamp lit by returning to it each time (adaptation).",
-     "kind": "card"
+     "description": "Lay five numbered stones in order, steady and constant.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -4031,8 +4213,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (lamps, steps, stones) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -4099,7 +4283,7 @@
    "surah": 72,
    "world_title": "An Amazing Recitation Heard",
    "content_type": "moral-and-spiritual",
-   "concept": "A night desert where an amazing Quran is heard by a group the eye cannot see; the world shows only stillness and a sky guarded with flames.",
+   "concept": "A still desert under the stars (72:1) and shooting stars across the sky (72:8). Nothing unseen is shown.",
    "summary": "Al-Jinn tells that a group of jinn heard the Quran, found it amazing and believed. The jinn are never shown.",
    "areas": [
     {
@@ -4117,8 +4301,8 @@
     {
      "name": "Shooting stars",
      "reference": "72:8",
-     "description": "Count shooting stars (adaptation).",
-     "kind": "card"
+     "description": "Find four bright stars low in the sky.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -4131,8 +4315,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (dunes, shootingStars, stones) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -4140,7 +4326,7 @@
    "surah": 73,
    "world_title": "The Night Vigil",
    "content_type": "moral-and-spiritual",
-   "concept": "A night house where the hours are measured, half, a third, two thirds, for standing in prayer and measured recitation.",
+   "concept": "A dial of the night hours (73:2-4) and a reading stand for slow, measured recitation (73:4).",
    "summary": "Al-Muzzammil calls to stand at night in prayer and to recite the Quran slowly and beautifully.",
    "areas": [
     {
@@ -4158,8 +4344,8 @@
     {
      "name": "Divide the night",
      "reference": "73:2-4",
-     "description": "Set the night dial to half, a third (adaptation).",
-     "kind": "card"
+     "description": "Lay four numbered stones in order, dividing the night.",
+     "kind": "find"
     },
     {
      "name": "Slow reading",
@@ -4178,8 +4364,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (dial, lectern, village) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -4187,7 +4375,7 @@
    "surah": 74,
    "world_title": "Arise and Warn",
    "content_type": "moral-and-spiritual",
-   "concept": "A morning that begins with rising, glorifying and purifying clothing.",
+   "concept": "Sunrise over a home (74:2) and a washing place with clean cloth (74:4).",
    "summary": "Al-Muddaththir tells the Prophet (peace be upon him) to arise and warn, glorify his Lord, purify his clothes and be patient.",
    "areas": [
     {
@@ -4205,8 +4393,8 @@
     {
      "name": "Morning routine",
      "reference": "74:3-7",
-     "description": "Glorify, wash and be patient in a morning mini-game (adaptation).",
-     "kind": "card"
+     "description": "Carry three jars of clean water to the washing place.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -4218,8 +4406,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (basin, horizon, house) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -4227,7 +4417,7 @@
    "surah": 75,
    "world_title": "Fingertips Restored",
    "content_type": "hereafter (symbolic only)",
-   "concept": "A symbolic world about how Allah can restore even fingertips, never depicting the Resurrection.",
+   "concept": "A pattern of fingertip whorls in light on a stone (75:4).",
    "summary": "Al-Qiyamah means The Resurrection. It says Allah can restore even our fingertips and teaches not to hurry when reciting.",
    "areas": [
     {
@@ -4240,8 +4430,8 @@
     {
      "name": "Fingerprint",
      "reference": "75:4",
-     "description": "Compare unique fingerprint patterns (adaptation).",
-     "kind": "card"
+     "description": "Find four glowing whorls around the stone.",
+     "kind": "find"
     },
     {
      "name": "Do not rush",
@@ -4260,8 +4450,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (fingerprint, stones) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -4269,7 +4461,7 @@
    "surah": 76,
    "world_title": "Feeding for Allah's Sake",
    "content_type": "moral-and-spiritual",
-   "concept": "A home where food is given to the needy, the orphan and the captive, asking nothing in return; the promised reward is only read, not shown.",
+   "concept": "An open doorway where food is shared (76:8).",
    "summary": "Al-Insan means Man. It praises people who feed the needy, orphans and captives only for Allah, wanting no thanks.",
    "areas": [
     {
@@ -4282,8 +4474,8 @@
     {
      "name": "Share the meal",
      "reference": "76:8-9",
-     "description": "Pack food for different neighbours (adaptation).",
-     "kind": "card"
+     "description": "Carry three loaves to the open door to share.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -4296,8 +4488,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (house, orchard) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },
@@ -4305,7 +4499,7 @@
    "surah": 77,
    "world_title": "Winds in Gusts",
    "content_type": "nature-and-creation",
-   "concept": "A world of winds sent in gusts, and an earth that holds the living and the dead, with tall mountains and sweet water.",
+   "concept": "Winds in gusts (77:1), the earth that holds (77:25) and mountains with sweet water (77:27).",
    "summary": "Al-Mursalat means Those Sent Forth. It swears by the winds and shows the earth holding all, firm mountains and sweet water.",
    "areas": [
     {
@@ -4328,8 +4522,8 @@
     {
      "name": "Wind and water",
      "reference": "77:27",
-     "description": "Find sweet water among the mountains (adaptation).",
-     "kind": "card"
+     "description": "Carry three jars of sweet water down from the spring.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -4341,8 +4535,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: a composed world (clay, mountain, spring, wind) with 1 hands-on activity in the scene",
+    "testing": "not tested yet: written and type-checked, not yet checked on screen",
+    "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+    "tested_by": "nobody yet"
    },
    "review": "unreviewed"
   },

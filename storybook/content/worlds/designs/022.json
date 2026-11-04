@@ -24,7 +24,7 @@
  ],
  "summary_for_children": "Surah Al-Hajj speaks of the pilgrimage that Ibrahim proclaimed, of the House, of how rain brings dead land to life, and of worship done sincerely for Allah.",
  "world_title": "The Plain of Pilgrims",
- "environment_concept": "A vast plain with roads arriving from every distant pass toward a simple House, framed by fields that turn green after rain.",
+ "environment_concept": "Roads from far mountain passes with camels (22:27), simple foundations (22:26), dry fields that turn green as rain falls (22:63) and a slope where plants stir (22:5).",
  "architecture_and_scenery": "Mountain passes feeding into a wide plain, plain stone foundations, sacrificial pastures shown only as grazing camels, and rain-fed fields.",
  "palette": {
   "colors": [
@@ -66,14 +66,16 @@
   {
    "name": "Rain on the hills",
    "reference": "22:63",
-   "description": "Bring clouds over dry fields and watch them turn green, then read 22:63.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry rain clouds over three dry fields; they turn green.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Pack for the journey",
    "reference": "22:27-28",
-   "description": "A gentle sorting game about what a traveller needs and why sincerity matters (adaptation).",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Pack four sacks for the journey.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   }
  ],
  "narration_plan": "Narration explains Hajj simply and links rain-revived land to Allah's power to give life.",
@@ -116,8 +118,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (foundations, herd, mountain, shoot) with 2 hands-on activities in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "22:5",

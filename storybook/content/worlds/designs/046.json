@@ -23,7 +23,7 @@
  ],
  "summary_for_children": "Al-Ahqaf means The Wind-Curved Sandhills. It tells of Hud warning 'Ad in the dunes, and teaches kindness to parents. It mentions jinn who listened to the Quran.",
  "world_title": "The Sand Dunes of Al-Ahqaf",
- "environment_concept": "Winding dunes where the people of 'Ad saw a cloud and thought it was rain, and a quiet valley where a group of jinn listened to the Quran, shown only as stillness.",
+ "environment_concept": "Wind-curved dunes (46:21), a cloud approaching the valleys (46:24) and a quiet night valley with standing stones (46:29; nothing unseen is shown).",
  "architecture_and_scenery": "Curved sand dunes, empty dwellings, an approaching dark cloud, and a quiet night valley.",
  "palette": {
   "colors": [
@@ -59,8 +59,9 @@
   {
    "name": "Kindness to parents",
    "reference": "46:15",
-   "description": "Help with small tasks at home in a mini-game (adaptation).",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry water jars home for your parents.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Listen quietly",
@@ -102,8 +103,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (cloud, dunes, stones) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "46:15",

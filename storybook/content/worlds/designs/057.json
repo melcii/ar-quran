@@ -17,7 +17,7 @@
  "narrative_passages": [],
  "summary_for_children": "Al-Hadid means Iron. It reminds us that this life is short like plants that grow and then dry, encourages spending for good, and mentions iron with its strength and benefits.",
  "world_title": "Iron and the Passing Rain-Plants",
- "environment_concept": "A land where rain makes plants grow green and then yellow and dry, and a forge where iron is shaped, showing the passing world and real strength.",
+ "environment_concept": "A field that grows and turns yellow (57:20), a forge with iron (57:25) and earth returning to life (57:17).",
  "architecture_and_scenery": "Green fields that fade, a forge with iron, and a scale of justice.",
  "palette": {
   "colors": [
@@ -61,6 +61,20 @@
    "reference": "57:20",
    "description": "Watch a field through its life.",
    "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Iron to the forge",
+   "reference": "57:25",
+   "kind": "find",
+   "description": "Carry four bars of iron to the forge.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Revived earth",
+   "reference": "57:17",
+   "kind": "find",
+   "description": "Carry rain clouds to bring the earth back to life.",
+   "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
  "narration_plan": "Narration focuses on generosity and justice.",
@@ -96,8 +110,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (forge, grain) with 2 hands-on activities in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "57:11",

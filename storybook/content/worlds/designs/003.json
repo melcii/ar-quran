@@ -34,7 +34,7 @@
  ],
  "summary_for_children": "Ali 'Imran tells of the family of Imran, of Maryam and the provision she found, and of Zakariyya's prayer. It asks believers to hold together and to reflect on the night and the day.",
  "world_title": "The Sanctuary of the Family of Imran",
- "environment_concept": "A quiet sanctuary of prayer and provision, opening onto a night sky where the alternation of night and day is a sign.",
+ "environment_concept": "A sanctuary in morning light: a small chamber with fruit in a lit niche, no one shown (3:37), a courtyard of pillars bound by one rope (3:103), a rooftop where a sundial marks the turning of night and day (3:190) and a distant gateway (3:96).",
  "architecture_and_scenery": "Stone prayer chamber, cloistered courtyard, olive garden, and a rooftop open to the sky.",
  "palette": {
   "colors": [
@@ -76,8 +76,9 @@
   {
    "name": "Hold the rope together",
    "reference": "3:103",
-   "description": "Gather scattered rope pieces and tie them to the pillars; the courtyard steadies when it is whole.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry four stones to the circle so the pillars stand together.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Watch night turn to day",
@@ -125,8 +126,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (arch, chamber, rope, sundial) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "3:35-37",

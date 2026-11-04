@@ -16,7 +16,7 @@
  "narrative_passages": [],
  "summary_for_children": "Al-Jumu'ah means Friday. It tells us to leave trade and go to the prayer when called on Friday, then go out and seek Allah's bounty.",
  "world_title": "Friday Market and Prayer",
- "environment_concept": "A market town where trade pauses for Friday prayer and resumes after.",
+ "environment_concept": "Market stalls shut for the Friday prayer (62:9) and reopened afterwards (62:10).",
  "architecture_and_scenery": "Market stalls, a call to prayer, and a mosque courtyard.",
  "palette": {
   "colors": [
@@ -51,8 +51,9 @@
   {
    "name": "Seek bounty",
    "reference": "62:10",
-   "description": "Return to work and remember Allah.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "After the prayer, carry four baskets to the open stalls.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   }
  ],
  "narration_plan": "Narration explains Friday simply.",
@@ -81,8 +82,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (market, mosque) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "62:9",

@@ -29,7 +29,7 @@
  ],
  "summary_for_children": "At-Tawbah is about turning back to Allah, keeping our word, and being sincere. It mentions the cave where the Prophet and his companion sheltered.",
  "world_title": "The Road of Return",
- "environment_concept": "A desert road leading back home, past a quiet cave of two and a mosque founded on righteousness.",
+ "environment_concept": "A small empty cave in the hills (9:40), a simple mosque on firm foundations (9:108-109) and a circle of stones for learning (9:122).",
  "architecture_and_scenery": "Long desert road, rocky hills with a cave, a simple mosque with palm trunks and a learning circle.",
  "palette": {
   "colors": [
@@ -71,8 +71,9 @@
   {
    "name": "Firm foundations",
    "reference": "9:109",
-   "description": "Compare a building on firm ground with one on a crumbling bank.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry four foundation stones to build on firm ground.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   }
  ],
  "narration_plan": "The narrator explains the history carefully as explanation, and no person is shown in the cave.",
@@ -109,8 +110,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (cave, mosque, stones) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "9:40",

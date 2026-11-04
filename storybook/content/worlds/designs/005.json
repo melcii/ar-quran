@@ -29,7 +29,7 @@
  ],
  "summary_for_children": "Al-Ma'idah asks us to keep our promises, to help each other in goodness, and to be fair. It tells of Adam's two sons and of the table asked for by the disciples of Isa.",
  "world_title": "The Hall of the Spread Table",
- "environment_concept": "A hall of promises kept and a quiet grove where a crow teaches a lesson, joined by a long table of light.",
+ "environment_concept": "A hall of promises (5:1), an olive grove where a crow scratches the ground (5:31), one lantern that lights a whole hall (5:32) and a long table under an arch, spread and empty (5:114).",
  "architecture_and_scenery": "Covenant hall with carved pillars, a grove of tall trees, and a long table set under an arch.",
  "palette": {
   "colors": [
@@ -71,8 +71,9 @@
   {
    "name": "Help each other",
    "reference": "5:2",
-   "description": "Carry loads together with helper characters (not real people from the Quran) to learn cooperation in goodness.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry baskets of food to the hall to share.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Keep the promise",
@@ -120,8 +121,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (crow, hall, lantern, olives, table) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "5:1",

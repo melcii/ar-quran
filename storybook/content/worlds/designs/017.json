@@ -29,7 +29,7 @@
  ],
  "summary_for_children": "Al-Isra begins with the night journey to al-Masjid al-Aqsa and gives guidance: honour parents, be honest, and know that everything glorifies Allah.",
  "world_title": "The Night of Light and Guidance",
- "environment_concept": "A night journey of lamps from one sacred mosque to another, then a land where the night and day are signs and parents are honoured.",
+ "environment_concept": "A path of lamps through the night (17:1: nothing of the journey is depicted), two signs, the sun and the moon (17:12), a family courtyard (17:23) and a market with honest scales (17:35).",
  "architecture_and_scenery": "A path of lamps across a moonlit land, a domed mosque far off, a family courtyard, a market.",
  "palette": {
   "colors": [
@@ -77,8 +77,9 @@
   {
    "name": "Honest measure",
    "reference": "17:35",
-   "description": "Measure fairly in the market.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry the weights to the scale and give full measure.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   }
  ],
  "narration_plan": "The narrator reads 17:1 and explains only what the Quran states about the journey.",
@@ -120,8 +121,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (house, lamps, market, sunMoon) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "17:1",

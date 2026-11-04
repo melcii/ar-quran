@@ -17,7 +17,7 @@
  "narrative_passages": [],
  "summary_for_children": "At-Tahrim tells believers to protect their families with good deeds and gives two examples of faith: the wife of Pharaoh and Maryam.",
  "world_title": "Two Examples of Faith",
- "environment_concept": "A palace and a quiet sanctuary representing two women praised for faith, with no person shown.",
+ "environment_concept": "A palace room (66:11) and a quiet sanctuary with fruit in a lit niche (66:12). No one is shown.",
  "architecture_and_scenery": "A palace interior and a modest sanctuary.",
  "palette": {
   "colors": [
@@ -45,8 +45,9 @@
   {
    "name": "Sincere repentance",
    "reference": "66:8",
-   "description": "Light lamps by reading 66:8 (adaptation).",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Plant three beds as a fresh start; they bloom.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   }
  ],
  "narration_plan": "No person shown.",
@@ -75,8 +76,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (chamber) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "66:8",

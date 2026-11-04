@@ -54,7 +54,7 @@
  ],
  "summary_for_children": "Ash-Shu'ara tells of Musa and Pharaoh, Ibrahim and his people, Nuh, Hud, Salih, Lut and Shu'ayb. Each called people to worship Allah, and each story ends by reminding us that Allah is Exalted in Might, the Merciful.",
  "world_title": "Seven Shores of the Messengers",
- "environment_concept": "A coastline of seven settlements, one for each messenger's people in the surah, each ending with the same refrain about Allah's might and mercy.",
+ "environment_concept": "Seven shores: towering walls of water either side of a path (26:63), a meadow of many noble kinds (26:7), rock-cut homes, empty (26:149) and a thicket by a market with scales (26:176-183).",
  "architecture_and_scenery": "A Nile palace terrace, a parted sea, Ibrahim's town of idols, an ark yard, the high towers of 'Ad, rock-cut homes of Thamud, Lut's town and the thicket of Madyan, linked by a coastal road.",
  "palette": {
   "colors": [
@@ -97,13 +97,21 @@
   {
    "name": "Full measure",
    "reference": "26:181-183",
-   "description": "Weigh goods fairly at the Madyan market (adaptation).",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry the weights to the scale and give full measure.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "The refrain",
    "reference": "26:8-9",
    "description": "Each shore ends with 26:8-9 read in Arabic; collect each refrain to light the coast road.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Noble kinds",
+   "reference": "26:7",
+   "kind": "find",
+   "description": "Plant three beds; each blooms with a different kind.",
    "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
@@ -147,8 +155,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (carved, market, olives, orchard, seaPath) with 2 hands-on activities in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "26:7",

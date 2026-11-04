@@ -17,7 +17,7 @@
  "narrative_passages": [],
  "summary_for_children": "Ar-Ra'd shows rivers, gardens, lightning and thunder as signs of Allah, and compares truth to water that stays and falsehood to foam that goes away.",
  "world_title": "The Valley of Thunder",
- "environment_concept": "A mountain valley of rivers, gardens side by side, lightning and thunder, and a flood that leaves foam behind.",
+ "environment_concept": "The valley of thunder: rivers running between mountains (13:3), neighbouring plots growing different fruits from one water (13:4), a ridge and a rocky hall under thunder clouds (13:12-13) and a pool where foam drifts away (13:17).",
  "architecture_and_scenery": "River valley between mountains, terraced neighbouring plots, palm groves, storm clouds.",
  "palette": {
   "colors": [
@@ -71,8 +71,9 @@
   {
    "name": "One water, many fruits",
    "reference": "13:4",
-   "description": "Water neighbouring plots and see different fruits grow.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Plant three young trees side by side; they grow from the same water.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   }
  ],
  "narration_plan": "The narrator reads each sign's ayah when it appears.",
@@ -119,8 +120,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (cave, cloud, mountain, orchard, river, spring) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "13:3",

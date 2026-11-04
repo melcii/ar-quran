@@ -34,7 +34,7 @@
  ],
  "summary_for_children": "Al-Hijr says Allah protects the Quran, shows the stars, mountains and winds as signs, and tells of the people of al-Hijr who carved homes in the mountains.",
  "world_title": "The Rocky Tract",
- "environment_concept": "Cliffs carved into homes under a sky of constellations, mountains set firm, and winds that carry pollen.",
+ "environment_concept": "A rocky tract under the stars: constellations (15:16), firm mountains (15:19), winds carrying pollen to flowers (15:22) and empty homes carved in the cliffs (15:82).",
  "architecture_and_scenery": "Sandstone cliffs with carved facades, high mountains, a starry sky, and green slopes.",
  "palette": {
   "colors": [
@@ -76,14 +76,16 @@
   {
    "name": "Carry the pollen",
    "reference": "15:22",
-   "description": "Guide the wind to carry pollen between flowers.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry pollen to three bare beds; they flower.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Find the constellations",
    "reference": "15:16",
-   "description": "Trace constellations in the sky.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Find five bright stars low over the rocks.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   }
  ],
  "narration_plan": "The narrator explains the peoples' story as explanation and reads 15:9 at the start.",
@@ -124,8 +126,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (carved, constellation, mountain, wind) with 2 hands-on activities in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "15:16",

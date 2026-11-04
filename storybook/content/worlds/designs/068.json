@@ -23,7 +23,7 @@
  ],
  "summary_for_children": "Al-Qalam means The Pen. It praises the Prophet's (peace be upon him) great character and tells of garden owners who planned to keep everything from the poor and lost their garden.",
  "world_title": "The Pen and the Burnt Garden",
- "environment_concept": "A writing desk with a pen, and a garden whose owners swore to harvest without giving to the poor, and found it ruined.",
+ "environment_concept": "A pen and inkwell (68:1), a garden ready to harvest at dawn (68:17) and a garden that looks reaped (68:20).",
  "architecture_and_scenery": "A desk with pen and ink, a garden at dawn, a ruined garden.",
  "palette": {
   "colors": [
@@ -58,8 +58,9 @@
   {
    "name": "Share the harvest",
    "reference": "68:17-24",
-   "description": "Choose to share the harvest (adaptation).",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry four baskets from the garden to share.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Writing",
@@ -99,8 +100,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: a composed world (fallen, grain, orchard, pen) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
  },
  "quran_references": [
   "68:1",
