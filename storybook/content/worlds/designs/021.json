@@ -179,32 +179,52 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Hall of Prophetic Journeys",
+  "tier": "playable",
+  "visual_theme": "A quiet courtyard with three lecterns holding prayer tablets and three carved doors in an arc",
   "quran_references": [
-   "21:48–91"
+   "21:83",
+   "21:84",
+   "21:87",
+   "21:88",
+   "21:89",
+   "21:90",
+   "21:107",
+   "21:51-52",
+   "21:56",
+   "21:69",
+   "21:30"
   ],
   "primary_mechanic": {
    "kind": "supplication-match",
-   "engine": "not built yet",
-   "text": "Four doors each open when you match a prophet's situation to the supplication the Quran gives (21:83, 21:87, 21:89), read in verified Arabic."
+   "engine": "doors",
+   "text": "Three lecterns hold the prayers of Ayyub, Yunus and Zakariyya as verified verses; three doors each tell of a situation. Read a prayer, carry it, and set it in the door it answers; that door opens on the verse telling how it was answered. The wrong door refuses it."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "Ibrahim and the statues (21:51-56, 21:69, read only)",
+   "every living thing from water (21:30)"
+  ],
+  "narrative_structure": "The three prayers and doors, then the Ibrahim sign, then the palms",
+  "world_assets": [
+   "three lecterns with tablets",
+   "three carved doors with signs (bent stem, dark waves, lamp)",
+   "courtyard"
+  ],
+  "environment_behaviour": [
+   "doors swing open and light spills through when answered",
+   "the status line shows a door's situation when you stand by it"
+  ],
+  "learning_objective": "Learn three prayers of the prophets in the Quran and that they were answered (21:83-90)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: took a tablet with the on-screen button; the verified verse (21:89) opened)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: the door shows its situation; the wrong door refuses the tablet; the right door opens)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Doors opened: 1 of 3\", the door swings open and the answer verse (21:90) opens)",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: doors [2,0,1], wrong door tried [0])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"prayers\",\"ibrahim\",\"water\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w021.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

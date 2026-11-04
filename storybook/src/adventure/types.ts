@@ -272,7 +272,52 @@ export type PointTask = TaskBase & {
   asks: { prompt: string; thing: number; yes: string; no: string; reading?: Reading }[];
 };
 
-export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask | StandTask | ReachTask | ObserveTask | SkyTask | SailTask | ChoiceTask | ShareTask | PromiseTask | WeighTask | FlowTask | SiftTask | ReturnTask | GranaryTask | ValleyTask | GrowTask | PollenTask | RubbingTask | StreetsTask | SunPathTask | PointTask;
+/** Cross dark hills at night toward a far light, building cairns only where the light can be seen (Ta-Ha). */
+export type BeaconTask = TaskBase & {
+  kind: 'beacon';
+  /** The far light, and how high above the ground it burns. */
+  light: P2;
+  lightY: number;
+  /** Stone piles to build into cairns. From some the light is hidden behind the hills; a cairn there is refused. */
+  piles: P2[];
+  /** How many cairns with the light in view finish the way. */
+  need: number;
+  reading?: Reading;
+};
+
+/** Carry each prayer tablet (a verified verse) to the door whose situation it answers (Al-Anbiya). */
+export type DoorsTask = TaskBase & {
+  kind: 'doors';
+  /** The lecterns with the tablets on them, each with one verse. */
+  tablets: { at: P2; ref: Ref }[];
+  doors: { at: P2; rot: number; emblem: 'wilted' | 'waves' | 'lamp'; situation: string; tablet: number; reading: Reading }[];
+  reading?: Reading;
+};
+
+/** Set the stones of the pilgrimage verses in the order the verses give them, on a map model (Al-Hajj). */
+export type OrderTask = TaskBase & {
+  kind: 'order';
+  /** The centre of the map model. */
+  model: P2;
+  /** In the right order. `at` is where each stone first lies. */
+  stones: { at: P2; label: string; reading: Reading }[];
+  reading?: Reading;
+};
+
+/** A home through one day: keep the trust, the promise and the prayer times as they come due, and give from what you have (Al-Mu'minun). */
+export type HomeRoom = { label: string; at: P2; done: string; reading: Reading } & (
+  | { act: 'trust'; door: P2; shelf: P2; knock: number }
+  | { act: 'prayer'; toys: P2[]; box: P2; chime: number; again: number }
+  | { act: 'promise'; plant: P2; tap: P2; bell: number; window: number; again: number }
+  | { act: 'give'; jar: P2; box: P2; n: number }
+);
+export type HomeTask = TaskBase & {
+  kind: 'home';
+  rooms: HomeRoom[];
+  reading?: Reading;
+};
+
+export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask | StandTask | ReachTask | ObserveTask | SkyTask | SailTask | ChoiceTask | ShareTask | PromiseTask | WeighTask | FlowTask | SiftTask | ReturnTask | GranaryTask | ValleyTask | GrowTask | PollenTask | RubbingTask | StreetsTask | SunPathTask | PointTask | BeaconTask | DoorsTask | OrderTask | HomeTask;
 
 export type Region = { id: string; name: string; at: P2 };
 

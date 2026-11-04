@@ -18,5 +18,9 @@ import { W016 } from './w016';
 import { W017 } from './w017';
 import { W018 } from './w018';
 import { W019 } from './w019';
+import { W020 } from './w020';
+import { W021 } from './w021';
+import { W022 } from './w022';
+import { W023 } from './w023';
 
-export const WORLDS: Record<number, WorldDef> = { 1: W001, 2: W002, 3: W003, 4: W004, 5: W005, 6: W006, 7: W007, 8: W008, 9: W009, 10: W010, 12: W012, 13: W013, 14: W014, 15: W015, 16: W016, 17: W017, 18: W018, 19: W019 };
+export const WORLDS: Record<number, WorldDef> = { 1: W001, 2: W002, 3: W003, 4: W004, 5: W005, 6: W006, 7: W007, 8: W008, 9: W009, 10: W010, 12: W012, 13: W013, 14: W014, 15: W015, 16: W016, 17: W017, 18: W018, 19: W019, 20: W020, 21: W021, 22: W022, 23: W023 };

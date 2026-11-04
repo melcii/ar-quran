@@ -182,33 +182,49 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Journey of Musa",
+  "tier": "playable",
+  "visual_theme": "Dark hills at night, with a light burning far away on a mountain; stone piles on the heights and in the hollows",
   "quran_references": [
-   "20:9–98",
-   "20:115–123"
+   "20:9-10",
+   "20:11-14",
+   "20:25-32",
+   "20:43-44",
+   "20:46",
+   "20:114",
+   "20:123"
   ],
   "primary_mechanic": {
    "kind": "distant-fire-wayfinding",
-   "engine": "not built yet",
-   "text": "At night, find the way across hills toward a far-off light by keeping it in view (20:10)."
+   "engine": "beacon",
+   "text": "Cross the dark hills keeping a far light in view (20:10). The hills really hide it from the hollows; cairns can only be built where the light can be seen, so the way they mark keeps it in view. The player never reaches the light."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "a prayer for help (20:25-32)",
+   "gentle words (20:43-46)",
+   "asking for knowledge (20:114, 20:123)"
+  ],
+  "narrative_structure": "The lantern at the start, the cairns across the hills, then three readings on the way back",
+  "world_assets": [
+   "far light that does not take the fog",
+   "stone piles that become cairns",
+   "night hills with hollows and heights"
+  ],
+  "environment_behaviour": [
+   "the 3D hills cover the light from low ground; the status line says whether it is in view",
+   "cairns rise where built"
+  ],
+  "learning_objective": "Learn how the story of Musa begins in Ta-Ha: a light seen at night, a search for guidance, and a prayer for help",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: pressed \"Build a cairn here\" with the on-screen button)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: in the hollow the status says the light is hidden and the cairn is refused; on the hill top it is in view and the cairn is built)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"The light is in view · Cairns: 1 of 3\" plus the hint)",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: cairns [1,4,6], refused in the hollow [3])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"story\",\"light\",\"helper\",\"gentle\",\"knowledge\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w020.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

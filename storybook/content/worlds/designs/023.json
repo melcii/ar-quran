@@ -160,34 +160,55 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Living Home of Good Character",
+  "tier": "playable",
+  "visual_theme": "Four open rooms round a courtyard: a hall with a door and a high shelf, a prayer corner, a window room with a plant and a bell, and a store room with a giving jar",
   "quran_references": [
-   "23:1–11",
-   "23:12–30",
-   "23:45–50"
+   "23:1-4",
+   "23:8",
+   "23:2",
+   "23:9",
+   "23:10-11",
+   "23:12-14",
+   "23:27",
+   "23:50",
+   "23:96"
   ],
   "primary_mechanic": {
    "kind": "home-transforms",
-   "engine": "not built yet",
-   "text": "A home that changes room by room as the qualities of 23:1-11 are practised (prayer corner, kept trust, kept promise)."
+   "engine": "home",
+   "text": "One day in a home with a running clock: a kept parcel handed back when the neighbour knocks, a promise to water the plant when the bell rings (not before), the prayer corner cleared by the chime, and giving from the jar (23:1-11). A missed time comes round again. Each room comes alive when its quality is kept."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "created in stages (23:12-14)",
+   "the ship (23:27, read only, linked to the Ark in Surah Hud)",
+   "a sign and a shelter (23:50)"
+  ],
+  "narrative_structure": "The sign at the gate, the day at home, then three readings",
+  "world_assets": [
+   "four open rooms",
+   "door, shelf and parcel",
+   "prayer rug, toys and toy box",
+   "window plant, tap, watering can and bell",
+   "giving jar and box"
+  ],
+  "environment_behaviour": [
+   "a day clock with things coming due shown on the status line",
+   "rooms brighten, light up and flower when kept",
+   "the plant droops when the promise is missed",
+   "the bell glows while ringing"
+  ],
+  "learning_objective": "Practise the qualities of 23:1-11 as keeping things at their time: trusts, promises, prayer and giving",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: filled the watering can with the on-screen button)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: watering before the bell is refused; the chime passed with the prayer corner not ready (it comes round again); at the bell the promise is kept)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Kept: 1 of 4 · Coming up: prayer chime in … · …\")",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: rooms kept [2,3,0,1]; missed times [0])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"believers\",\"day\",\"created\",\"ark\",\"shelter\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w023.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

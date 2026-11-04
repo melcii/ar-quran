@@ -138,32 +138,48 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Pilgrimage Journey",
+  "tier": "playable",
+  "visual_theme": "A wide desert valley ringed by hills with passes, and a map model on a stone plinth in the middle",
   "quran_references": [
-   "22:26–37"
+   "22:26",
+   "22:27",
+   "22:28",
+   "22:29",
+   "22:37",
+   "22:32"
   ],
   "primary_mechanic": {
    "kind": "station-sequence",
-   "engine": "not built yet",
-   "text": "Place the stations of the pilgrimage in order on a map model and learn why each matters (22:26-37); no replica of the House."
+   "engine": "order",
+   "text": "Four carved stones each tell one step that 22:26-29 gives (the House made ready, the call and travellers from every distant pass, remembering Allah and feeding the poor, vows kept and the ancient House). Carry them to the map model and set them in the order of the verses; a stone set too early is handed back. Each stone changes the model."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "the piety of hearts (22:32)"
+  ],
+  "narrative_structure": "Find and set the four stones in order, then the lantern by the path",
+  "world_assets": [
+   "map model with hills, passes and paths",
+   "a plain round marker for the site of the House (no Kaaba replica)",
+   "four carved stones"
+  ],
+  "environment_behaviour": [
+   "the House marker turns clean and pale",
+   "small lights travel along the passes (no people)",
+   "bowls of food appear",
+   "a soft ring of light around the marker"
+  ],
+  "learning_objective": "Learn the order the pilgrimage verses give and that what reaches Allah is the mindfulness of the heart (22:37)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: picked up a stone with the on-screen button; status \"Carrying: …\")",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: a stone set too early is handed back with a hint; the first step (22:26) is taken and its verse opens)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Stones set on the model: 1 of 4\"; the House marker turns pale and clean)",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: order [0,1,2,3], too early [2])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"verses\",\"hearts\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w022.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
