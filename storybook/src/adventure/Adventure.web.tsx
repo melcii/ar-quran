@@ -8,7 +8,7 @@ import { N8AO, Bloom, BrightnessContrast, EffectComposer, HueSaturation, ToneMap
 import { PerformanceMonitor } from '@react-three/drei';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { router } from 'expo-router';
-import * as Speech from 'expo-speech';
+import { stopVoice } from '@/state/voice';
 import { ToneMappingMode } from 'postprocessing';
 import { useCallback, useEffect, useMemo, useRef, useState, type MutableRefObject } from 'react';
 import { PanResponder, Pressable, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
@@ -1960,7 +1960,7 @@ function World({ def }: { def: WorldDef }) {
           world={def}
           portrait={portrait}
           onClose={() => {
-            Speech.stop();
+            stopVoice();
             setCards((c) => c.slice(1));
           }}
           onSolved={() => top.kind === 'quiz' && finish(top.task.id)}

@@ -2,7 +2,7 @@
 // matching / ordering / sorting games, the whole surah, the closing
 // reflection, and "About this world". Quran text, translation, explanation
 // and activities are always labelled apart.
-import * as Speech from 'expo-speech';
+import { speakKid } from '@/state/voice';
 import { useMemo, useState } from 'react';
 import { FlatList, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { ContentLabel } from '@/components/ui';
@@ -31,8 +31,7 @@ export function verse([s, a]: Ref) {
 }
 
 export function speak(text: string) {
-  Speech.stop();
-  Speech.speak(text, { rate: 0.92, language: 'en' });
+  speakKid(text);
 }
 
 function shuffle<T>(xs: T[], seed: number) {

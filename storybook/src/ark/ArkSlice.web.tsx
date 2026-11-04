@@ -17,7 +17,7 @@ import * as THREE from 'three';
 import { ContentLabel } from '@/components/ui';
 import { useAppState } from '@/state/AppState';
 import { recitationEnabled, useRecitation } from '@/state/Recitation';
-import * as Speech from 'expo-speech';
+import { speakKid, stopVoice } from '@/state/voice';
 import { SoftShapes } from '@/three/soft';
 import { fonts } from '@/theme';
 import { QUALITY, guessTier, lowerTier, type QualityTier } from '@/world/quality';
@@ -1218,7 +1218,7 @@ function Slice() {
           card={top}
           portrait={portrait}
           onClose={() => {
-            Speech.stop();
+            stopVoice();
             setCards((c) => c.slice(1));
             if (top.kind === 'reading' && top.reading.id === AFTER.id) setCards((c) => [...c, { kind: 'reflection' }]);
             if (top.kind === 'reflection') update((s) => ({ ...s, reflected: true }));
@@ -1243,8 +1243,7 @@ function Slice() {
 }
 
 function speak(text: string) {
-  Speech.stop();
-  Speech.speak(text, { rate: 0.92, language: 'en' });
+  speakKid(text);
 }
 
 function CardView({ card, portrait, onClose, listen }: { card: Card; portrait: boolean; onClose: () => void; listen: (s: number, a: number) => void }) {
