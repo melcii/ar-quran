@@ -167,33 +167,47 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Sanctuary of Hope",
+  "tier": "playable",
+  "visual_theme": "A still palm grove with a small stream, a prayer niche and a pavilion facing the sunrise",
   "quran_references": [
-   "19:2–40",
-   "19:41–58"
+   "19:2-4",
+   "19:16",
+   "19:24",
+   "19:25",
+   "19:26",
+   "19:47",
+   "19:96"
   ],
   "primary_mechanic": {
    "kind": "point-to-answer",
-   "engine": "not built yet",
-   "text": "A quiet world played by pointing only, no words, recalling the vow of silence and the pointing in 19:26-29."
+   "engine": "point",
+   "text": "A quiet world played by pointing only: each question is answered by pointing at something in the grove, never by choosing words, recalling the vow of silence and the pointing in 19:26-29."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "reading on peace and affection (19:47, 19:96)"
+  ],
+  "narrative_structure": "Four questions answered by pointing, then the lantern by the bench",
+  "world_assets": [
+   "prayer niche",
+   "pavilion facing east",
+   "little stream",
+   "tall palm with dates"
+  ],
+  "environment_behaviour": [
+   "palm fronds sway; everything that can be pointed at glows softly while a question is open"
+  ],
+  "learning_objective": "Learn the quiet prayers and mercy of Surah Maryam; answer by looking and noticing",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: pointed with the on-screen button (no word choices anywhere))",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: pointing at the palm for the first question is gently refused; the niche is right)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status shows the next question to answer by pointing)",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: answers [0,1,2,3])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"quiet\",\"peace\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w019.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

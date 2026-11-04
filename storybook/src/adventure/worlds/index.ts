@@ -13,6 +13,10 @@ import { W010 } from './w010';
 import { W012 } from './w012';
 import { W013 } from './w013';
 import { W014 } from './w014';
+import { W015 } from './w015';
 import { W016 } from './w016';
+import { W017 } from './w017';
+import { W018 } from './w018';
+import { W019 } from './w019';
 
-export const WORLDS: Record<number, WorldDef> = { 1: W001, 2: W002, 3: W003, 4: W004, 5: W005, 6: W006, 7: W007, 8: W008, 9: W009, 10: W010, 12: W012, 13: W013, 14: W014, 16: W016 };
+export const WORLDS: Record<number, WorldDef> = { 1: W001, 2: W002, 3: W003, 4: W004, 5: W005, 6: W006, 7: W007, 8: W008, 9: W009, 10: W010, 12: W012, 13: W013, 14: W014, 15: W015, 16: W016, 17: W017, 18: W018, 19: W019 };

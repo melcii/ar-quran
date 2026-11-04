@@ -147,33 +147,48 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Carved Mountains",
+  "tier": "playable",
+  "visual_theme": "A sandstone valley ringed by cliffs with five carved doorways, two rocks, a well, palms and a tent, and a map table",
   "quran_references": [
-   "15:26–50",
-   "15:51–84"
+   "15:19",
+   "15:21",
+   "15:22",
+   "15:75-77",
+   "15:80-82",
+   "15:84"
   ],
   "primary_mechanic": {
    "kind": "rock-rubbings",
-   "engine": "not built yet",
-   "text": "Map the rock-carved valley by taking rubbings of carved doorways and fitting them onto a map (15:80-84)."
+   "engine": "rubbing",
+   "text": "Take a rubbing of each carved doorway by keeping still, then fit every rubbing onto a map of the valley where its doorway stands, using the landmarks and memory (15:80-84)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "reading about measure in creation (15:19-22)",
+   "the road sign (15:75-77)"
+  ],
+  "narrative_structure": "Measure stone, then exploring the cliffs for rubbings, then the map table, then the road sign",
+  "world_assets": [
+   "five carved rock fronts with doorways and distinct patterns",
+   "rubbing paper",
+   "map table and a paper map with landmarks",
+   "well, tent, two rocks, palms"
+  ],
+  "environment_behaviour": [
+   "the paper whitens as the rubbing comes through and smudges if you move",
+   "placed rubbings show on the map"
+  ],
+  "learning_objective": "Look closely at signs left in the land, and remember what truly keeps us safe (15:75-84)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: pressed \"Take a rubbing\" at the first carved doorway)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: keeping still fills the rubbing and it is kept)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Rubbings: 1 of 5\")",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: map done: [0,1,2,3,4]; a wrong place was refused first)",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"measure\",\"map\",\"road\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w015.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

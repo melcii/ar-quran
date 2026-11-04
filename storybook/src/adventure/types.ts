@@ -229,7 +229,50 @@ export type PollenTask = TaskBase & {
   reading?: Reading;
 };
 
-export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask | StandTask | ReachTask | ObserveTask | SkyTask | SailTask | ChoiceTask | ShareTask | PromiseTask | WeighTask | FlowTask | SiftTask | ReturnTask | GranaryTask | ValleyTask | GrowTask | PollenTask;
+/** Take rubbings of carved doorways, then fit each onto a map of the valley where it was found (Al-Hijr). */
+export type RubbingTask = TaskBase & {
+  kind: 'rubbing';
+  doors: { at: P2; rot: number; pattern: 'diamond' | 'ring' | 'bars' | 'steps' | 'sun'; label: string }[];
+  /** The map table. */
+  table: P2;
+  /** Landmarks drawn on the map. */
+  marks: { at: P2; label: string }[];
+  /** Seconds to keep still while rubbing. */
+  secs: number;
+  reading?: Reading;
+};
+
+/** A night town where each street holds one guideline of conduct as a hands-on act (Al-Isra). */
+export type StreetAct =
+  | { act: 'carry'; from: P2; to: P2[]; item: import('./kit').ItemKind; what: string }
+  | { act: 'taps'; taps: P2[] }
+  | { act: 'measure'; at: P2 }
+  | { act: 'calm'; from: P2; to: P2 };
+export type StreetsTask = TaskBase & {
+  kind: 'streets';
+  streets: ({ label: string; lamp: P2; reading: Reading; done: string } & StreetAct)[];
+};
+
+/** Turn the day at a dial and mark where the sunlight falls by a cave mouth at sunrise and sunset; it never reaches inside (Al-Kahf). */
+export type SunPathTask = TaskBase & {
+  kind: 'sunpath';
+  cave: P2;
+  /** Which way the cave mouth faces (radians, 0 = +z). */
+  caveYaw: number;
+  dial: P2;
+  /** The light patches to mark: the morning one and the evening one. */
+  patches: { label: string; at: P2; sun: [number, number, number] }[];
+  reading?: Reading;
+};
+
+/** A quiet world answered by pointing at things, never by choosing words (Maryam). */
+export type PointTask = TaskBase & {
+  kind: 'point';
+  things: { at: P2; label: string; model: 'palm' | 'stream' | 'niche' | 'pavilion' }[];
+  asks: { prompt: string; thing: number; yes: string; no: string; reading?: Reading }[];
+};
+
+export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask | StandTask | ReachTask | ObserveTask | SkyTask | SailTask | ChoiceTask | ShareTask | PromiseTask | WeighTask | FlowTask | SiftTask | ReturnTask | GranaryTask | ValleyTask | GrowTask | PollenTask | RubbingTask | StreetsTask | SunPathTask | PointTask;
 
 export type Region = { id: string; name: string; at: P2 };
 

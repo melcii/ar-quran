@@ -64,6 +64,8 @@ export type Mechanic<T> = {
   Panel?: FC<PanelProps<T>>;
   /** Tests only: answer the panel as a careful child would. */
   solve?: (task: T, api: MechApi) => void;
+  /** A sky and light this mechanic sets for the whole world now (the time of day), if any. */
+  look?: (task: T, data: MechSave) => import('../Scenery').Look | undefined;
   /** Weather this mechanic wants now (rain 0..1, storm 0..1). */
   weather?: (task: T, game: MechGame) => { rain: number; storm: number } | null;
 };

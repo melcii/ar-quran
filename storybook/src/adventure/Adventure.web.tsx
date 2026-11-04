@@ -1622,7 +1622,7 @@ function World({ def }: { def: WorldDef }) {
       if (!cur.includes(i)) update((s) => ({ ...s, prog: { ...s.prog, [key]: [...cur, i] } }));
     },
     set: (key, v) => update((s) => ({ ...s, prog: { ...s.prog, [key]: v } })),
-    panel: (task) => setCards((cs) => [...cs.filter((x) => x.kind === 'narration' || x.kind === 'finale'), { kind: 'mech', task }]),
+    panel: (task) => setCards((cs) => [{ kind: 'mech', task }, ...cs.filter((x) => x.kind === 'narration' || x.kind === 'finale')]),
   };
 
   const act = (key: string) => {
@@ -1694,12 +1694,13 @@ function World({ def }: { def: WorldDef }) {
   const phaseN = skyTask ? (data.done.includes(skyTask.id) ? skyTask.phases.length : (data.prog[skyTask.id] ?? []).length) : 0;
   const phaseLook = skyTask && phaseN > 0 ? skyTask.phases[phaseN - 1].look : undefined;
   const mist = def.mist?.(data.done, data.prog) ?? 0;
+  const mechLook = def.tasks.map((x) => mechFor(x)?.look?.(x, data)).find(Boolean);
   const look = useMemo(() => {
-    const base = phaseLook ?? def.look;
+    const base = mechLook ?? phaseLook ?? def.look;
     if (!mist) return base;
     const fog = new THREE.Color(base.fog).lerp(new THREE.Color('#9ea4ac'), mist);
     return { ...base, fog: `#${fog.getHexString()}`, fogDensity: base.fogDensity + mist * 0.05, sunI: base.sunI * (1 - mist * 0.55), hemiI: base.hemiI * (1 - mist * 0.25), birds: mist < 0.3 && base.birds };
-  }, [phaseLook, mist, def.look]);
+  }, [mechLook, phaseLook, mist, def.look]);
   const doneN = def.tasks.filter((x) => data.done.includes(x.id)).length;
   const objective = data.finished ? 'You finished every activity. Explore, or read the whole surah.' : current ? current.goal : 'Explore';
   const carriedLoad = carrying ? (def.tasks.find((x) => x.id === carrying.task) as Extract<Task, { kind: 'carry' }> | undefined)?.loads[carrying.idx] : undefined;

@@ -216,35 +216,53 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Four Realms",
+  "tier": "playable",
+  "visual_theme": "Four realms in one land: a cave in the pine hills, two garden beds, a shore with a dock where two seas meet, and a gap between two mountain walls",
   "quran_references": [
-   "18:9–26",
-   "18:32–44",
-   "18:60–82",
-   "18:83–98"
+   "18:10",
+   "18:13",
+   "18:17",
+   "18:45",
+   "18:46",
+   "18:60",
+   "18:96",
+   "18:109"
   ],
   "primary_mechanic": {
    "kind": "sun-path-cave",
-   "engine": "not built yet",
-   "text": "Track how the sun's light moves past a cave mouth without entering it, and set stones where it rises and sets (18:17); the barrier build (18:96) is a second activity."
+   "engine": "sunpath",
+   "text": "Turn the day at a dial and mark where the sunlight falls by the cave mouth at sunrise and at sunset; it passes the cave by and never enters (18:17). The barrier (18:96) is a second activity."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "carrying sheets of iron to fill the mountain gap (18:96)",
+   "the two gardens (18:45-46)",
+   "where the two seas meet (18:60, 18:109)"
+  ],
+  "narrative_structure": "The cave, the sun past the cave, the gardens, the shore, the barrier",
+  "world_assets": [
+   "empty cave mouth in a rock",
+   "day-dial",
+   "light patches and marker stones",
+   "garden beds",
+   "dock and boat",
+   "iron sheets and the mountain gap"
+  ],
+  "environment_behaviour": [
+   "the whole world's light turns to sunrise and to evening with the dial",
+   "a sunlit patch appears beside the cave mouth on one side in the morning and the other in the evening"
+  ],
+  "learning_objective": "Notice the sign of 18:17 and the lessons of the four stories: faith, humility, learning, using strength to help",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: turned the day-dial with the on-screen button)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: the day turns to sunrise; the goal points to the morning light)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status line: \"Find the morning light by the cave and mark it\")",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: sun path [0,1,2,3], barrier [0,1,2,3,4])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"cave\",\"sun\",\"gardens\",\"seas\",\"barrier\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w018.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

@@ -141,34 +141,51 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The City of Good Choices",
+  "tier": "playable",
+  "visual_theme": "A small town at night with five streets, dark lamps that light one by one, houses, a bakery and a market stall",
   "quran_references": [
-   "17:1",
-   "17:23–39",
-   "17:70"
+   "17:1 (read only)",
+   "17:23-24",
+   "17:26",
+   "17:27",
+   "17:35",
+   "17:37",
+   "17:70",
+   "17:9"
   ],
   "primary_mechanic": {
    "kind": "command-streets",
-   "engine": "not built yet",
-   "text": "A night town where each street holds one of the guidelines of 17:23-37 as a hands-on act (help a parent carry, close a running tap, fill a full measure, walk calmly)."
+   "engine": "streets",
+   "text": "A night town where each street holds one guideline of 17:23-37 as a hands-on act: carry a neighbour's basket home, take bread to three doors, close running taps, fill a measure to the line without spilling, walk the long street calmly. Each lamp lights when done."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "the Night Journey reading (17:1, read only)",
+   "honour of the children of Adam (17:70)"
+  ],
+  "narrative_structure": "Gate tablet, then the five streets in any order, then the lantern in the middle of town",
+  "world_assets": [
+   "street lamps that light",
+   "basket, bread, running taps",
+   "grain stall and measure",
+   "houses and doors"
+  ],
+  "environment_behaviour": [
+   "night sky; each lit lamp throws warm light on its street",
+   "water runs from open taps until closed",
+   "grain spills over the measure if poured too long"
+  ],
+  "learning_objective": "Practise the conduct of 17:23-37: kindness to parents, giving, not wasting, fair measure, humility",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: picked up the basket and left it at the door with the on-screen buttons)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: the first street lamp lights)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Lamps lit: 1 of 5\" and the done narration)",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: streets lit: [0,1,2,3,4]; the measure was poured with the hold button (0 spills))",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"journey\",\"town\",\"honour\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w017.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
