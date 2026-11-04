@@ -37,6 +37,7 @@ import { level, LEVELS } from './level';
 import { makeNav, type Nav } from '@/creatures/nav';
 import { mindOf, routeTo, think } from '@/creatures/mind';
 import { journal } from '@/journal/store';
+import { celebrate, cue, cueFor } from '@/profile/figure/cue';
 import { mechFor } from './mechanics';
 import type { MechEnv } from './mechanics/base';
 
@@ -538,13 +539,20 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
       game.pending = u.reach > 0 ? key : null;
       return;
     }
+    cueFor(u.label);
     u.run();
   }
   (game as unknown as { act: (k: string) => void }).act = act;
+  useEffect(() => {
+    cue.holding = false;
+    cue.leading = false;
+    cue.sitting = false;
+  }, []);
 
   useFrame((st, rawDt) => {
     const dt = Math.min(0.05, rawDt) * game.timeScale;
     weather.time = st.clock.elapsedTime;
+    if (game.carrying) cue.holding = true;
     const s = api.current.save();
 
     /* ---------- the explorer ---------- */
@@ -1031,6 +1039,7 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
       k.delete('e');
       k.delete(' ');
       k.delete('enter');
+      cueFor(near.label);
       near.run();
     }
 
@@ -1577,6 +1586,7 @@ function World({ def }: { def: WorldDef }) {
       if (saveRef.current.done.includes(id)) return;
       const task = def.tasks.find((x) => x.id === id)!;
       update((s) => ({ ...s, done: [...s.done, id] }));
+      if (task.kind !== 'read') celebrate();
       if (task.outro) say(task.outro);
       if (task.kind === 'choice' || task.kind === 'share' || task.kind === 'weigh' || task.kind === 'return' || mechFor(task)) {
         const r = ownReading(task);

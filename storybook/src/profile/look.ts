@@ -4,7 +4,10 @@
 // original explorer exactly.
 
 export type Build = 'little' | 'middle' | 'older';
-export type Hair = 'short' | 'curly' | 'long' | 'bun' | 'braids' | 'shaved';
+export type Hair = 'short' | 'curly' | 'long' | 'bun' | 'braids' | 'shaved' | 'ponytail' | 'bob';
+export type FaceShape = 'round' | 'oval' | 'heart' | 'square';
+export type EyeShape = 'round' | 'almond' | 'wide' | 'gentle';
+export type Brows = 'soft' | 'straight' | 'arched' | 'thick';
 export type Face = 'round' | 'soft' | 'freckles' | 'bright';
 export type Top = 'shirt' | 'tunic' | 'dress';
 export type Pattern = 'plain' | 'stripes' | 'checks' | 'dots';
@@ -21,6 +24,11 @@ export type Look = {
   hairColor: string;
   eyes: string;
   face: Face;
+  faceShape: FaceShape;
+  eyeShape: EyeShape;
+  brows: Brows;
+  freckles: boolean;
+  blush: boolean;
   top: Top;
   topColor: string;
   pattern: Pattern;
@@ -45,6 +53,11 @@ export const DEFAULT_LOOK: Look = {
   hairColor: '#3a2618',
   eyes: '#241812',
   face: 'round',
+  faceShape: 'round',
+  eyeShape: 'round',
+  brows: 'soft',
+  freckles: false,
+  blush: true,
   top: 'shirt',
   topColor: '#3f8a8c',
   pattern: 'plain',
@@ -81,6 +94,26 @@ export const HAIRS: Opt<Hair>[] = [
   { id: 'bun', label: 'Bun' },
   { id: 'braids', label: 'Two braids' },
   { id: 'shaved', label: 'Very short' },
+  { id: 'ponytail', label: 'Ponytail' },
+  { id: 'bob', label: 'Bob' },
+];
+export const FACE_SHAPES: Opt<FaceShape>[] = [
+  { id: 'round', label: 'Round' },
+  { id: 'oval', label: 'Oval' },
+  { id: 'heart', label: 'Heart' },
+  { id: 'square', label: 'Soft square' },
+];
+export const EYE_SHAPES: Opt<EyeShape>[] = [
+  { id: 'round', label: 'Round' },
+  { id: 'almond', label: 'Almond' },
+  { id: 'wide', label: 'Wide' },
+  { id: 'gentle', label: 'Gentle' },
+];
+export const BROWS: Opt<Brows>[] = [
+  { id: 'soft', label: 'Soft' },
+  { id: 'straight', label: 'Straight' },
+  { id: 'arched', label: 'Arched' },
+  { id: 'thick', label: 'Thick' },
 ];
 export const FACES: Opt<Face>[] = [
   { id: 'round', label: 'Round cheeks' },
@@ -132,11 +165,13 @@ export const PACKS: Opt<Pack>[] = [
 /** Ready-made explorers to start from. Made-up children, not anyone from the stories. */
 export const PRESETS: { name: string; look: Look }[] = [
   { name: 'Trail explorer', look: DEFAULT_LOOK },
-  { name: 'Desert walker', look: { ...DEFAULT_LOOK, skin: '#a8714a', hair: 'curly', hairColor: '#1e140e', top: 'tunic', topColor: '#e8dcc0', outer: 'none', head: 'sunhat', headColor: '#c89a5a', shoes: 'sandboots', shoesColor: '#a8703a', bottomColor: '#8a9a4a' } },
-  { name: 'Rainy coast', look: { ...DEFAULT_LOOK, build: 'little', skin: '#f1d0b0', hair: 'braids', hairColor: '#a8703a', outer: 'raincoat', outerColor: '#d9a55a', topColor: '#2f6a8a', shoes: 'wellies', shoesColor: '#2f6a8a', eyes: '#3a5a7a' } },
-  { name: 'Forest notebook', look: { ...DEFAULT_LOOK, build: 'older', skin: '#6a4028', hair: 'shaved', topColor: '#5a7a3a', pattern: 'checks', outer: 'jacket', outerColor: '#6a5a48', glasses: true, pack: 'satchel', packColor: '#7a4e2a' } },
-  { name: 'Hijab and long dress', look: { ...DEFAULT_LOOK, skin: '#d6a077', top: 'dress', topColor: '#6a4a7a', pattern: 'dots', outer: 'none', head: 'hijab', headColor: '#e8dcc0', shoes: 'shoes', shoesColor: '#3a3a42', bottom: 'skirt', bottomColor: '#6a4a7a' } },
-  { name: 'Hill climber', look: { ...DEFAULT_LOOK, build: 'older', skin: '#8a5a3a', hair: 'bun', hairColor: '#1e140e', top: 'shirt', topColor: '#c86a3a', pattern: 'stripes', outer: 'vest', outerColor: '#5a7a3a', head: 'scarf', headColor: '#d9a55a', hairClip: true } },
+  { name: 'Desert walker', look: { ...DEFAULT_LOOK, skin: '#a8714a', hair: 'curly', hairColor: '#1e140e', faceShape: 'oval', eyeShape: 'almond', top: 'tunic', topColor: '#e8dcc0', outer: 'none', head: 'sunhat', headColor: '#c89a5a', shoes: 'sandboots', shoesColor: '#a8703a', bottomColor: '#8a9a4a' } },
+  { name: 'Rainy coast', look: { ...DEFAULT_LOOK, build: 'little', skin: '#f1d0b0', hair: 'braids', hairColor: '#a8703a', faceShape: 'heart', eyeShape: 'wide', freckles: true, outer: 'raincoat', outerColor: '#d9a55a', topColor: '#2f6a8a', shoes: 'wellies', shoesColor: '#2f6a8a', eyes: '#3a5a7a' } },
+  { name: 'Forest notebook', look: { ...DEFAULT_LOOK, build: 'older', skin: '#6a4028', hair: 'shaved', faceShape: 'square', brows: 'thick', topColor: '#5a7a3a', pattern: 'checks', outer: 'jacket', outerColor: '#6a5a48', glasses: true, pack: 'satchel', packColor: '#7a4e2a' } },
+  { name: 'Hijab and long dress', look: { ...DEFAULT_LOOK, skin: '#d6a077', faceShape: 'oval', eyeShape: 'gentle', brows: 'arched', top: 'dress', topColor: '#6a4a7a', pattern: 'dots', outer: 'none', head: 'hijab', headColor: '#e8dcc0', shoes: 'shoes', shoesColor: '#3a3a42', bottom: 'skirt', bottomColor: '#6a4a7a' } },
+  { name: 'Hill climber', look: { ...DEFAULT_LOOK, build: 'older', skin: '#8a5a3a', hair: 'bun', hairColor: '#1e140e', eyeShape: 'almond', top: 'shirt', topColor: '#c86a3a', pattern: 'stripes', outer: 'vest', outerColor: '#5a7a3a', head: 'scarf', headColor: '#d9a55a', hairClip: true } },
+  { name: 'Meadow runner', look: { ...DEFAULT_LOOK, skin: '#e6b88e', hair: 'ponytail', hairColor: '#5a3a22', faceShape: 'round', eyeShape: 'wide', eyes: '#4a2e1a', top: 'tunic', topColor: '#8a3a4a', pattern: 'plain', outer: 'none', bottomColor: '#3a3a42', shoes: 'shoes', shoesColor: '#6a4a7a', pack: 'satchel', packColor: '#d9a55a', hairClip: true } },
+  { name: 'Library reader', look: { ...DEFAULT_LOOK, build: 'little', skin: '#c98c62', hair: 'bob', hairColor: '#1e140e', faceShape: 'heart', eyeShape: 'gentle', topColor: '#2f6a8a', pattern: 'stripes', outer: 'jacket', outerColor: '#d9a55a', bottom: 'skirt', bottomColor: '#6a5a48', head: 'woolhat', headColor: '#c86a3a', glasses: true, pack: 'none' } },
 ];
 
 const pick = <T,>(v: unknown, ok: readonly T[], d: T): T => (ok.includes(v as T) ? (v as T) : d);
@@ -154,6 +189,11 @@ export function cleanLook(raw: unknown): Look {
     hairColor: color(r.hairColor, d.hairColor),
     eyes: color(r.eyes, d.eyes),
     face: pick(r.face, ids(FACES), d.face),
+    faceShape: pick(r.faceShape, ids(FACE_SHAPES), d.faceShape),
+    eyeShape: pick(r.eyeShape, ids(EYE_SHAPES), r.face === 'bright' ? 'wide' : d.eyeShape),
+    brows: pick(r.brows, ids(BROWS), d.brows),
+    freckles: typeof r.freckles === 'boolean' ? r.freckles : r.face === 'freckles',
+    blush: typeof r.blush === 'boolean' ? r.blush : r.face !== 'soft',
     top: pick(r.top, ids(TOPS), d.top),
     topColor: color(r.topColor, d.topColor),
     pattern: pick(r.pattern, ids(PATTERNS), d.pattern),

@@ -115,8 +115,15 @@ const TABS: [Tab, string][] = [
 const ANIMS: [Anim, string][] = [
   ['idle', 'Stand'],
   ['walk', 'Walk'],
+  ['run', 'Run'],
+  ['turn', 'Turn'],
   ['wave', 'Wave'],
   ['point', 'Point'],
+  ['pickup', 'Pick up'],
+  ['carry', 'Carry'],
+  ['place', 'Put down'],
+  ['guide', 'Lead an animal'],
+  ['interact', 'Open a door'],
   ['cheer', 'Celebrate'],
   ['sit', 'Sit'],
 ];
@@ -285,7 +292,7 @@ export default function DressingRoom() {
         <SoftShapes />
         <color attach="background" args={['#e9d9b8']} />
         <hemisphereLight args={['#fff4dc', '#8a6a44', 0.9]} />
-        <directionalLight position={[2.5, 4, 3]} intensity={2.2} color="#ffe2b0" castShadow shadow-mapSize={[1024, 1024]} shadow-bias={-0.0004} />
+        <directionalLight position={[2.5, 4, 3]} intensity={2.2} color="#ffe2b0" castShadow shadow-mapSize={[1024, 1024]} shadow-bias={-0.0004} shadow-normalBias={0.03} />
         <pointLight position={[1.4, 2.4, -2]} intensity={6} distance={6} color="#ffe8c0" />
         <Room />
         <group ref={turn}>
@@ -357,8 +364,25 @@ export default function DressingRoom() {
       case 'face':
         return (
           <View style={{ gap: 10 }}>
-            <Chips opts={L.FACES} value={look.face} on={(face) => set({ face })} />
+            <Text style={st.small}>Face shape</Text>
+            <Chips opts={L.FACE_SHAPES} value={look.faceShape} on={(faceShape) => set({ faceShape })} />
+            <Text style={st.small}>Eyes</Text>
+            <Chips opts={L.EYE_SHAPES} value={look.eyeShape} on={(eyeShape) => set({ eyeShape })} />
             <Swatches label="Eye colour" list={L.EYES} value={look.eyes} on={(eyes) => set({ eyes })} />
+            <Text style={st.small}>Eyebrows</Text>
+            <Chips opts={L.BROWS} value={look.brows} on={(brows) => set({ brows })} />
+            <View style={st.wrap}>
+              {(
+                [
+                  ['freckles', 'Freckles'],
+                  ['blush', 'Rosy cheeks'],
+                ] as const
+              ).map(([k, t]) => (
+                <Pressable key={k} accessibilityRole="switch" accessibilityState={{ checked: look[k] }} onPress={() => set({ [k]: !look[k] })} style={[st.chip, look[k] && st.chipOn]}>
+                  <Text style={[st.chipText, look[k] && st.chipTextOn]}>{t}</Text>
+                </Pressable>
+              ))}
+            </View>
           </View>
         );
       case 'clothes':

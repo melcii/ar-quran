@@ -4,6 +4,7 @@
 // waits inside as the rain falls and the water rises. Quran passages are read
 // at lanterns; the slice ends with a reflection on patience and trust.
 // Prophets are never shown. Animal choices and supplies are game ideas.
+import { cue, cueFor } from '@/profile/figure/cue';
 import { N8AO, Bloom, BrightnessContrast, EffectComposer, HueSaturation, ToneMapping, Vignette } from '@react-three/postprocessing';
 import { PerformanceMonitor } from '@react-three/drei';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
@@ -229,6 +230,8 @@ function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRe
   });
 
   useFrame((st, rawDt) => {
+    cue.holding = !!game.carrying;
+    cue.leading = game.agents.some((x) => x.state === 'follow');
     const dt = Math.min(0.05, rawDt) * game.timeScale;
     const t = st.clock.elapsedTime;
     weather.time = t;
@@ -554,6 +557,7 @@ function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRe
 
   function act(n: Near) {
     const pp = player.pos;
+    cueFor(n.label);
     if (n.type === 'beast') {
       const a = game.agents.find((x) => x.id === n.id)!;
       if (Math.hypot(a.pos.x - pp.x, a.pos.z - pp.z) > 4 + SPECS[a.kind].len * 0.5) {
