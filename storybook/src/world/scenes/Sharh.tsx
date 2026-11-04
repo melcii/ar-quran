@@ -102,7 +102,7 @@ function BlockingStones({ land, at, onClear, hint }: { land: Land; at: V; onClea
       setMoved(next);
       if (next.length === 3) onClear();
       else hint(`${3 - next.length} more stone${3 - next.length > 1 ? 's' : ''} to roll aside.`);
-    });
+    }, `stone${i}`);
   return (
     <group>
       {spots.map(([x, z], i) => (

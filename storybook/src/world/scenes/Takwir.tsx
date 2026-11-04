@@ -8,7 +8,7 @@ import * as THREE from 'three';
 import type { Land } from '../terrain';
 import type { SceneProps } from './index';
 import { stopNamed } from './index';
-import { HorizonGlow } from './common';
+import { HorizonGlow, NightLight } from './common';
 import { beside, mat, rng, type V } from './kit';
 import { MoonPool } from './Shams';
 
@@ -18,6 +18,7 @@ export function TakwirScene({ land, stops }: SceneProps) {
   const dawn = stopNamed(stops, 'Dawn Breathing');
   return (
     <group>
+      <NightLight />
       {stars && (
         <group>
           <SettingStars at={stars.pos} />

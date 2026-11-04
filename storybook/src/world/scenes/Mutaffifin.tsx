@@ -90,7 +90,7 @@ function Measure({ position, onFull, hint }: { position: [number, number, number
     setLevel(next);
     if (next === 3) onFull();
     else hint(next === 1 ? 'Keep going: the measure is not full yet.' : 'Almost full. One more.');
-  });
+  }, 'sack');
   return (
     <group position={position}>
       {[0, 1, 2].map((i) => (

@@ -25,7 +25,7 @@ export function NaziatScene({ land, stops }: SceneProps) {
           <Pasture land={land} at={water.pos} />
         </group>
       )}
-      {mountains && <Peaks position={beside(land, mountains.pos, 12, -45)} />}
+      {mountains && <Peaks position={beside(land, mountains.pos, 45, -15)} />}
     </group>
   );
 }

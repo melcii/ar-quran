@@ -2,12 +2,12 @@
 // month (97:3), and a hilltop with seats facing east where the sky slowly
 // brightens toward dawn (97:5). The angels and the Spirit (97:4) are not
 // pictured; no person is shown.
-import { useFrame } from '@react-three/fiber';
-import { useMemo, useRef } from 'react';
+import { useMemo } from 'react';
 import * as THREE from 'three';
 import type { Land } from '../terrain';
 import type { SceneProps } from './index';
 import { stopNamed } from './index';
+import { HorizonGlow, NightLight } from './common';
 import { beside, mat, type V } from './kit';
 
 export function QadrScene({ land, stops }: SceneProps) {
@@ -15,6 +15,7 @@ export function QadrScene({ land, stops }: SceneProps) {
   const dawn = stopNamed(stops, 'Peace Until Dawn');
   return (
     <group>
+      <NightLight />
       {wall && <LampWall land={land} at={wall.pos} />}
       {dawn && <DawnHill position={beside(land, dawn.pos, 4, -3)} />}
     </group>
@@ -59,13 +60,9 @@ function LampWall({ land, at }: { land: Land; at: V }) {
   );
 }
 
-/** Low seats facing east, and a band of glow on the horizon that slowly grows. */
+/** Low seats facing east, and a soft glow on the horizon. */
 function DawnHill({ position }: { position: [number, number, number] }) {
   const stone = useMemo(() => mat('#8a8494'), []);
-  const glow = useRef<THREE.MeshBasicMaterial>(null);
-  useFrame(({ clock }) => {
-    if (glow.current) glow.current.opacity = 0.25 + 0.2 * (0.5 + 0.5 * Math.sin(clock.elapsedTime * 0.15));
-  });
   return (
     <group position={position}>
       {[-1, 0, 1].map((k) => (
@@ -73,10 +70,7 @@ function DawnHill({ position }: { position: [number, number, number] }) {
           <boxGeometry args={[0.9, 0.5, 0.5]} />
         </mesh>
       ))}
-      <mesh position={[0, 6, -90]}>
-        <planeGeometry args={[220, 18]} />
-        <meshBasicMaterial ref={glow} color="#ffb070" transparent opacity={0.3} depthWrite={false} fog={false} />
-      </mesh>
+      <HorizonGlow position={[0, 0, 0]} color="#ffb070" />
     </group>
   );
 }

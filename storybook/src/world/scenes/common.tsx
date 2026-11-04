@@ -39,14 +39,41 @@ export function CarvedCliff({ position, rotation = 0, seed = 1 }: { position: [n
   );
 }
 
-/** A band of glow low on the horizon, far ahead (dawn or twilight). It slowly brightens and fades. */
+/** A soft glow low on the horizon, far ahead (dawn or twilight): a vertical gradient that fades out upward and at the sides. */
 export function HorizonGlow({ position, color = '#ffb070' }: { position: [number, number, number]; color?: string }) {
+  const tex = useMemo(() => {
+    const c = document.createElement('canvas');
+    c.width = 64;
+    c.height = 64;
+    const g = c.getContext('2d')!;
+    const v = g.createLinearGradient(0, 0, 0, 64);
+    v.addColorStop(0, 'rgba(255,255,255,0)');
+    v.addColorStop(0.75, 'rgba(255,255,255,0.8)');
+    v.addColorStop(1, 'rgba(255,255,255,1)');
+    g.fillStyle = v;
+    g.fillRect(0, 0, 64, 64);
+    // Fade the sides.
+    g.globalCompositeOperation = 'destination-in';
+    const h = g.createLinearGradient(0, 0, 64, 0);
+    h.addColorStop(0, 'rgba(0,0,0,0)');
+    h.addColorStop(0.3, 'rgba(0,0,0,1)');
+    h.addColorStop(0.7, 'rgba(0,0,0,1)');
+    h.addColorStop(1, 'rgba(0,0,0,0)');
+    g.fillStyle = h;
+    g.fillRect(0, 0, 64, 64);
+    return new THREE.CanvasTexture(c);
+  }, []);
   return (
-    <mesh position={[position[0], position[1] + 6, position[2] - 90]}>
-      <planeGeometry args={[220, 18]} />
-      <meshBasicMaterial color={color} transparent opacity={0.35} depthWrite={false} fog={false} />
+    <mesh position={[position[0], position[1] + 8, position[2] - 120]}>
+      <planeGeometry args={[320, 34]} />
+      <meshBasicMaterial color={color} map={tex} transparent opacity={0.7} depthWrite={false} fog={false} />
     </mesh>
   );
+}
+
+/** Soft extra light for scenes in the night settings, so their pieces can be seen. */
+export function NightLight() {
+  return <hemisphereLight args={['#9aa8d8', '#30304a', 2.4]} />;
 }
 
 /** A large disc low in the sky, far ahead (the full moon, or the sun as a lamp). */

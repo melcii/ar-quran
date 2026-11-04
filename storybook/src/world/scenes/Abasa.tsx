@@ -32,7 +32,7 @@ export function AbasaScene({ land, stops }: SceneProps) {
 }
 
 function Waterfall({ position }: { position: [number, number, number] }) {
-  const rock = useMemo(() => mat('#7a7468'), []);
+  const rock = useMemo(() => mat('#9a9286'), []);
   const stripes = useMemo(() => {
     const c = document.createElement('canvas');
     c.width = 16;

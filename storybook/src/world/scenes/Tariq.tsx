@@ -8,6 +8,7 @@ import * as THREE from 'three';
 import type { Land } from '../terrain';
 import type { SceneProps } from './index';
 import { stopNamed } from './index';
+import { NightLight } from './common';
 import { beside, mat, rng, type V } from './kit';
 
 export function TariqScene({ land, stops }: SceneProps) {
@@ -16,6 +17,7 @@ export function TariqScene({ land, stops }: SceneProps) {
   const earth = stopNamed(stops, 'Cracking Earth');
   return (
     <group>
+      <NightLight />
       {star && <PiercingStar position={beside(land, star.pos, 20, -80)} />}
       {rain && <RainCloud land={land} at={rain.pos} />}
       {earth && <Cracks land={land} at={earth.pos} />}

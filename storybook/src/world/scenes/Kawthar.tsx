@@ -80,8 +80,8 @@ export function PrayerTerrace({ position }: { position: [number, number, number]
   const edge = useMemo(() => mat('#b8a888'), []);
   return (
     <group position={position}>
-      <mesh material={stone} position={[0, 0.25, 0]} receiveShadow castShadow>
-        <boxGeometry args={[4.4, 0.5, 4.4]} />
+      <mesh material={stone} position={[0, -0.75, 0]} receiveShadow castShadow>
+        <boxGeometry args={[4.4, 2.5, 4.4]} />
       </mesh>
       {[-1, 1].map((s) => (
         <mesh key={s} material={edge} position={[0, 0.65, s * 2.1]} castShadow>

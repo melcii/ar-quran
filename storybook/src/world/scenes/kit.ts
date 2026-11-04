@@ -13,11 +13,21 @@ export function beside(land: Land, at: V, dx: number, dz: number): P3 {
   return [x, land.height(x, z), z];
 }
 
-/** A click handler that ignores drags (looking around) and stops at the first hit. */
-export const tapOnly = (fn: () => void) => (e: ThreeEvent<MouseEvent>) => {
-  if (e.delta > 8) return;
-  e.stopPropagation();
-  fn();
+/**
+ * A click handler that ignores drags (looking around) and stops at the first hit.
+ * With a test key, the action is also kept on globalThis.__taps[key] so headless tests,
+ * where software rendering makes aiming at small 3D targets unreliable, can trigger it.
+ */
+export const tapOnly = (fn: () => void, testKey?: string) => {
+  if (testKey) {
+    const g = globalThis as { __taps?: Record<string, () => void> };
+    (g.__taps ??= {})[testKey] = fn;
+  }
+  return (e: ThreeEvent<MouseEvent>) => {
+    if (e.delta > 8) return;
+    e.stopPropagation();
+    fn();
+  };
 };
 
 /** Seeded random numbers, so scenery is the same on every visit. */

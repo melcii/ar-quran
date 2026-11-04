@@ -5,7 +5,7 @@
 import { useMemo } from 'react';
 import type { SceneProps } from './index';
 import { stopNamed } from './index';
-import { HorizonGlow, SkyDisc } from './common';
+import { HorizonGlow, NightLight, SkyDisc } from './common';
 import { beside, mat } from './kit';
 
 export function InshiqaqScene({ land, stops }: SceneProps) {
@@ -14,6 +14,7 @@ export function InshiqaqScene({ land, stops }: SceneProps) {
   const phases = stopNamed(stops, 'State After State');
   return (
     <group>
+      <NightLight />
       {glow && <HorizonGlow position={beside(land, glow.pos, 0, 0)} color="#ff9a60" />}
       {moon && <SkyDisc position={beside(land, moon.pos, 15, 0)} color="#f4f0e0" glow="#c8d0e8" radius={6} />}
       {phases && <PhaseStones position={beside(land, phases.pos, 3.5, -2)} />}

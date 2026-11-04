@@ -7,6 +7,7 @@ import * as THREE from 'three';
 import type { Land } from '../terrain';
 import type { SceneProps } from './index';
 import { stopNamed } from './index';
+import { NightLight } from './common';
 import { beside, mat, rng, type V } from './kit';
 import { BreadTable } from './Maun';
 
@@ -16,6 +17,7 @@ export function LaylScene({ land, stops, hint }: SceneProps) {
   const give = stopNamed(stops, 'The Giving Table');
   return (
     <group>
+      <NightLight />
       {night && <Half land={land} at={night.pos} kind="night" />}
       {day && <Half land={land} at={day.pos} kind="day" />}
       {give && <BreadTable position={beside(land, give.pos, 4, -2.5)} hint={hint} />}
@@ -48,6 +50,7 @@ function Half({ land, at, kind }: { land: Land; at: V; kind: 'night' | 'day' }) 
   return (
     <group>
       <primitive object={tiles} />
+      {kind === 'day' && <pointLight position={beside(land, at, 5.5, -3.5).map((v, i) => (i === 1 ? v + 6 : v)) as [number, number, number]} color="#fff0c0" intensity={60} distance={14} decay={1.5} />}
       {items.map(([dx, dz], i) => {
         const p = beside(land, at, dx, dz);
         return kind === 'night' ? (

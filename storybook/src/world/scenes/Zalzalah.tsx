@@ -76,7 +76,7 @@ function Pots({ position, onDone, hint }: { position: [number, number, number]; 
       setPlanted(next);
       if (next.length === 3) onDone();
       else hint(`${3 - next.length} more pot${3 - next.length > 1 ? 's' : ''} to plant. Even a small good is seen.`);
-    });
+    }, `pot${i}`);
   return (
     <group position={position}>
       {[0, 1, 2].map((i) => (

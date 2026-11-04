@@ -17,7 +17,7 @@ export function GhashiyahScene({ land, stops }: SceneProps) {
     <group>
       {camels && <Caravan land={land} at={camels.pos} />}
       {sky && <SkyPlatform position={beside(land, sky.pos, 4, -3)} />}
-      {mountains && <Peaks position={beside(land, mountains.pos, 10, -40)} />}
+      {mountains && <Peaks position={beside(land, mountains.pos, 45, -15)} />}
       {earth && <Plain position={beside(land, earth.pos, 3, -2)} />}
     </group>
   );

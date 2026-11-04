@@ -60,7 +60,7 @@ function Hollow({ land, at, onLit, hint }: { land: Land; at: V; onLit: () => voi
       setLit(next);
       if (next.length === 3) onLit();
       else hint(`${3 - next.length} more lantern${3 - next.length > 1 ? 's' : ''} to light.`);
-    });
+    }, `lantern${i}`);
   const cx = 5;
   const cz = -4;
   return (

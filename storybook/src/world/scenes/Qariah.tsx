@@ -8,6 +8,7 @@ import * as THREE from 'three';
 import type { Land } from '../terrain';
 import type { SceneProps } from './index';
 import { stopNamed } from './index';
+import { NightLight } from './common';
 import { beside, mat, rng, type V } from './kit';
 
 export function QariahScene({ land, stops }: SceneProps) {
@@ -15,6 +16,7 @@ export function QariahScene({ land, stops }: SceneProps) {
   const wool = stopNamed(stops, 'Fluffed Wool');
   return (
     <group>
+      <NightLight />
       {moths && <MothLamps land={land} at={moths.pos} />}
       {wool && <Wool land={land} at={wool.pos} />}
     </group>

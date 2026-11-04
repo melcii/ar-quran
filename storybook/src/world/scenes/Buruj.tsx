@@ -6,6 +6,7 @@ import { useMemo } from 'react';
 import type { Land } from '../terrain';
 import type { SceneProps } from './index';
 import { stopNamed } from './index';
+import { NightLight } from './common';
 import { ReadingStand } from './Bayyinah';
 import { beside, mat, rng, type V } from './kit';
 
@@ -15,6 +16,7 @@ export function BurujScene({ land, stops }: SceneProps) {
   const quran = stopNamed(stops, 'The Honoured Quran');
   return (
     <group>
+      <NightLight />
       {stars && <GreatStars at={stars.pos} />}
       {trench && <Trench land={land} at={trench.pos} />}
       {quran && <ReadingStand position={beside(land, quran.pos, 3.5, -2.5)} />}

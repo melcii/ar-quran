@@ -106,8 +106,8 @@ function Terrace({ position }: { position: [number, number, number] }) {
   const stone = useMemo(() => mat('#e2d2b2'), []);
   return (
     <group position={position}>
-      <mesh material={stone} position={[0, 0.2, 0]} receiveShadow castShadow>
-        <boxGeometry args={[5, 0.4, 4]} />
+      <mesh material={stone} position={[0, -0.8, 0]} receiveShadow castShadow>
+        <boxGeometry args={[5, 2.4, 4]} />
       </mesh>
       {[
         [0, -1.9, 5, 0.2],

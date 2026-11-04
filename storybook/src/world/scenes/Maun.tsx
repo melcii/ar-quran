@@ -77,7 +77,7 @@ export function BreadTable({ position, onSet, hint }: { position: [number, numbe
       setSet(next);
       if (next.length === 3) onSet?.();
       else hint(`${3 - next.length} more loa${3 - next.length > 1 ? 'ves' : 'f'} to carry to the table.`);
-    });
+    }, `loaf${i}`);
   return (
     <group position={position}>
       <mesh material={wood} position={[0, 0.85, 0]} castShadow receiveShadow>

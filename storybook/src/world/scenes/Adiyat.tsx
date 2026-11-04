@@ -23,9 +23,9 @@ export function AdiyatScene({ land, stops }: SceneProps) {
 const HORSES = 4;
 
 function Track({ land, a, b, rocksAt }: { land: Land; a: V; b: V; rocksAt?: V }) {
-  const cx = (a.x + b.x) / 2 + 14;
+  const cx = (a.x + b.x) / 2 + 22;
   const cz = (a.z + b.z) / 2;
-  const rx = 8;
+  const rx = 9;
   const rz = Math.max(10, Math.abs(a.z - b.z) / 2 + 6);
   const at = (u: number): [number, number, number] => {
     const x = cx + Math.cos(u) * rx;
@@ -35,7 +35,7 @@ function Track({ land, a, b, rocksAt }: { land: Land; a: V; b: V; rocksAt?: V })
   const horses = useRef<THREE.Group[]>([]);
   const legs = useRef<THREE.Object3D[][]>([]);
   const dustMesh = useMemo(() => {
-    const m = new THREE.InstancedMesh(new THREE.IcosahedronGeometry(1, 1), new THREE.MeshStandardMaterial({ color: '#d8bf94', transparent: true, opacity: 0.35, depthWrite: false, roughness: 1 }), 40);
+    const m = new THREE.InstancedMesh(new THREE.IcosahedronGeometry(1, 1), new THREE.MeshStandardMaterial({ color: '#d8bf94', transparent: true, opacity: 0.25, depthWrite: false, roughness: 1 }), 40);
     return m;
   }, []);
   const sparkGeo = useMemo(() => {
@@ -72,8 +72,8 @@ function Track({ land, a, b, rocksAt }: { land: Land; a: V; b: V; rocksAt?: V })
       for (let k = 0; k < 10; k++) {
         const back = (k + ((t * 3) % 1)) * 0.04;
         const d = at(u - back);
-        o.position.set(d[0], d[1] + 0.3 + back * 4, d[2]);
-        o.scale.setScalar(0.25 + back * 10);
+        o.position.set(d[0], d[1] + 0.3 + back * 1.5, d[2]);
+        o.scale.setScalar(0.2 + back * 3);
         o.updateMatrix();
         dustMesh.setMatrixAt(h * 10 + k, o.matrix);
       }

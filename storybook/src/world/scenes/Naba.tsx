@@ -20,7 +20,7 @@ export function NabaScene({ land, stops }: SceneProps) {
   return (
     <group>
       {rest && <Bench position={beside(land, rest.pos, 3, -2)} />}
-      {stakes && <Stakes position={beside(land, stakes.pos, 10, -40)} />}
+      {stakes && <Stakes position={beside(land, stakes.pos, 48, -15)} />}
       {night && <Canopy position={beside(land, night.pos, 4.5, -3.5)} />}
       {lamp && <SkyDisc position={beside(land, lamp.pos, -20, 0)} color="#fff4c8" glow="#ffd060" radius={5} />}
       {gardens && <Vines land={land} at={gardens.pos} />}
