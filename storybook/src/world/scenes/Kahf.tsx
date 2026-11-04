@@ -5,11 +5,13 @@
 // pass closed with iron and copper (18:96). The youths, Musa, the knowing
 // servant and Dhul-Qarnayn are never shown, and no number of sleepers is given.
 import { useFrame } from '@react-three/fiber';
-import { useMemo, useRef } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import * as THREE from 'three';
 import type { Land } from '../terrain';
 import type { SceneProps } from './index';
 import { stopNamed } from './index';
+import { DragPlay, type DragItem, type DropSpot } from './drag';
+import { toWorld, type P3 } from './kit';
 
 type V = THREE.Vector3;
 function beside(land: Land, at: V, dx: number, dz: number): [number, number, number] {
@@ -18,7 +20,7 @@ function beside(land: Land, at: V, dx: number, dz: number): [number, number, num
   return [x, land.height(x, z), z];
 }
 
-export function KahfScene({ land, stops }: SceneProps) {
+export function KahfScene({ land, stops, complete, hint }: SceneProps) {
   const cave = stopNamed(stops, 'The Cave');
   const sun = stopNamed(stops, 'The Sliding Sun');
   const gardens = stopNamed(stops, 'The Two Gardens');
@@ -34,15 +36,31 @@ export function KahfScene({ land, stops }: SceneProps) {
       {gardens && <TwoGardens land={land} at={gardens.pos} />}
       {seas && <TwoSeas position={beside(land, seas.pos, 6, -5)} />}
       {ship && <Ship position={beside(land, ship.pos, 4.5, -3)} />}
-      {wall && <Wall position={beside(land, wall.pos, 4, -3.5)} />}
-      {barrier && <Barrier position={beside(land, barrier.pos, 7, -7)} />}
+      {wall && (
+        <Wall
+          position={beside(land, wall.pos, 4, -3.5)}
+          land={land}
+          at={wall.pos}
+          hint={hint}
+          onDone={() => (complete('Mend the wall'), hint('The wall stands straight again. "They found therein a wall about to collapse, so al-Khidhr restored it" (18:77).'))}
+        />
+      )}
+      {barrier && (
+        <Barrier
+          position={beside(land, barrier.pos, 7, -7)}
+          land={land}
+          at={barrier.pos}
+          hint={hint}
+          onDone={() => (complete('Close the pass'), hint('Iron, then molten copper poured over it: "Bring me sheets of iron" (18:96).'))}
+        />
+      )}
     </group>
   );
 }
 
 /** A rocky mountainside with one dark cave mouth. */
 function Cave({ position }: { position: [number, number, number] }) {
-  const rock = useMemo(() => new THREE.MeshStandardMaterial({ color: '#8a7a64', roughness: 1, flatShading: true }), []);
+  const rock = useMemo(() => new THREE.MeshStandardMaterial({ color: '#8a7a64', roughness: 1, }), []);
   return (
     <group position={position} rotation={[0, -0.5, 0]}>
       <mesh material={rock} position={[0, 2.5, -1.5]} scale={[6, 4.2, 4]} castShadow receiveShadow>
@@ -163,7 +181,7 @@ function TwoSeas({ position }: { position: [number, number, number] }) {
       </mesh>
       <mesh position={[1.4, 0.4, 0.5]} scale={[1, 0.6, 0.8]} castShadow>
         <dodecahedronGeometry args={[1, 0]} />
-        <meshStandardMaterial color="#8a7a64" flatShading />
+        <meshStandardMaterial color="#8a7a64" />
       </mesh>
     </group>
   );
@@ -197,49 +215,110 @@ function Ship({ position }: { position: [number, number, number] }) {
   );
 }
 
-/** A stone wall standing straight, with fresh stones where it was mended. */
-function Wall({ position }: { position: [number, number, number] }) {
+/** A stone wall leaning where three blocks have fallen out; carry them back to set it straight (18:77). */
+function Wall({ position, land, at, hint, onDone }: { position: P3; land: Land; at: V; hint: (t: string) => void; onDone: () => void }) {
   const old = useMemo(() => new THREE.MeshStandardMaterial({ color: '#a8977a', roughness: 0.95 }), []);
   const fresh = useMemo(() => new THREE.MeshStandardMaterial({ color: '#d8c8a4', roughness: 0.9 }), []);
+  const [done, setDone] = useState(false);
+  const ROT = -0.3;
+  const gap = (i: number) => ({ x: -3.6 + (3 + i) * 0.9 + 0.45, y: 0.3 + 0.6 });
   const blocks = useMemo(() => {
-    const out: { x: number; y: number; fresh: boolean }[] = [];
+    const out: { x: number; y: number }[] = [];
     for (let row = 0; row < 5; row++)
-      for (let i = 0; i < 9; i++) out.push({ x: -3.6 + i * 0.9 + (row % 2) * 0.45, y: 0.3 + row * 0.6, fresh: i >= 3 && i <= 5 && row >= 1 });
+      for (let i = 0; i < 9; i++) if (!(row === 1 && i >= 3 && i <= 5)) out.push({ x: -3.6 + i * 0.9 + (row % 2) * 0.45, y: 0.3 + row * 0.6 });
     return out;
   }, []);
+  const lean = useRef<THREE.Group>(null);
+  useFrame((_, dt) => {
+    if (lean.current) lean.current.rotation.z = THREE.MathUtils.damp(lean.current.rotation.z, done ? 0 : 0.06, 2, dt);
+  });
+  const spots: DropSpot[] = [0, 1, 2].map((i) => {
+    const g = gap(i);
+    const w = toWorld(position, ROT, [g.x, 0, 1.4]);
+    return { id: `gap${i}`, pos: [w[0], land.height(w[0], w[2]), w[2]] as P3, r: 0.6, slots: [toWorld(position, ROT, [g.x, g.y - 0.28, 0])], color: '#ffe0a0' };
+  });
+  const items: DragItem[] = [0, 1, 2].map((i) => ({
+    id: `block${i}`,
+    home: beside(land, at, 1.3 + i * 0.8, -0.8 - (i % 2) * 0.6),
+    fits: ['gap0', 'gap1', 'gap2'],
+    lift: 0.5,
+    node: (
+      <mesh material={fresh} position={[0, 0.28, 0]} rotation-y={ROT} castShadow>
+        <boxGeometry args={[0.86, 0.56, 0.7]} />
+      </mesh>
+    ),
+  }));
   return (
-    <group position={position} rotation={[0, -0.3, 0]}>
-      {blocks.map((b, i) => (
-        <mesh key={i} material={b.fresh ? fresh : old} position={[b.x, b.y, 0]} castShadow receiveShadow>
-          <boxGeometry args={[0.86, 0.56, 0.7]} />
-        </mesh>
-      ))}
+    <group>
+      <group position={position} rotation={[0, ROT, 0]}>
+        <group ref={lean} position={[-4, 0, 0]}>
+          {blocks.map((b, i) => (
+            <mesh key={i} material={old} position={[b.x + 4, b.y, 0]} castShadow receiveShadow>
+              <boxGeometry args={[0.86, 0.56, 0.7]} />
+            </mesh>
+          ))}
+        </group>
+      </group>
+      <DragPlay items={items} spots={spots} testPrefix="wall-" onPlace={(_, __, n) => n < 3 && hint(`${3 - n} more stone${3 - n > 1 ? 's' : ''} for the gap.`)} onDone={() => (setDone(true), onDone())} />
     </group>
   );
 }
 
-/** Two cliffs with the gap between them filled with iron blocks and a copper seal (18:96). */
-function Barrier({ position }: { position: [number, number, number] }) {
-  const rock = useMemo(() => new THREE.MeshStandardMaterial({ color: '#7d6a52', roughness: 1, flatShading: true }), []);
+/** Two cliffs with a gap between them: carry iron blocks to fill it, then copper seals the top (18:96). */
+function Barrier({ position, land, at, hint, onDone }: { position: P3; land: Land; at: V; hint: (t: string) => void; onDone: () => void }) {
+  const rock = useMemo(() => new THREE.MeshStandardMaterial({ color: '#7d6a52', roughness: 1 }), []);
   const iron = useMemo(() => new THREE.MeshStandardMaterial({ color: '#4a4c52', metalness: 0.8, roughness: 0.4 }), []);
-  const copper = useMemo(() => new THREE.MeshStandardMaterial({ color: '#b8703a', metalness: 0.9, roughness: 0.3, emissive: '#3a1a08' }), []);
-  return (
-    <group position={position} rotation={[0, -0.4, 0]}>
-      {[-1, 1].map((s) => (
-        <mesh key={s} material={rock} position={[s * 4.2, 3.5, 0]} scale={[2.6, 4.6, 2.6]} castShadow receiveShadow>
-          <dodecahedronGeometry args={[1, 0]} />
-        </mesh>
-      ))}
-      {[0, 1, 2, 3, 4, 5].flatMap((row) =>
-        [-1.5, -0.5, 0.5, 1.5].map((x) => (
-          <mesh key={`${row}${x}`} material={iron} position={[x + (row % 2) * 0.25, 0.4 + row * 0.8, 0]} castShadow>
-            <boxGeometry args={[0.95, 0.75, 1.4]} />
-          </mesh>
-        )),
-      )}
-      <mesh material={copper} position={[0, 5.1, 0]} castShadow>
-        <boxGeometry args={[4.6, 0.3, 1.6]} />
+  const copper = useMemo(() => new THREE.MeshStandardMaterial({ color: '#b8703a', metalness: 0.9, roughness: 0.3, emissive: '#7a3a10', emissiveIntensity: 0 }), []);
+  const [sealed, setSealed] = useState(false);
+  const ROT = -0.4;
+  const pour = useRef(0);
+  useFrame((_, dt) => {
+    pour.current = THREE.MathUtils.damp(pour.current, sealed ? 1 : 0, 1.2, dt);
+    copper.emissiveIntensity = sealed ? 1.5 * (1 - pour.current) + 0.2 : 0;
+  });
+  const rows = [0, 1, 2, 3, 4, 5];
+  const xs = [-1.5, -0.5, 0.5, 1.5];
+  const cell = (row: number, x: number): P3 => [x + (row % 2) * 0.25, 0.4 + row * 0.8, 0];
+  // The top two rows are left open; four blocks wait at the foot of the pass.
+  const open = [4, 5].flatMap((row) => xs.filter((_, k) => (row === 4 ? k < 2 : k >= 2)).map((x) => cell(row, x)));
+  const ring = toWorld(position, ROT, [0, 0, 2.2]);
+  const spots: DropSpot[] = [{ id: 'gap', pos: [ring[0], land.height(ring[0], ring[2]), ring[2]], r: 2, slots: open.map((c) => toWorld(position, ROT, [c[0], c[1] - 0.37, c[2]])), color: '#c8d0e0' }];
+  const items: DragItem[] = [0, 1, 2, 3].map((i) => ({
+    id: `iron${i}`,
+    home: beside(land, at, 1.5 + (i % 2) * 1.1, -1 - Math.floor(i / 2) * 1.1),
+    fits: ['gap'],
+    lift: 0.6,
+    node: (
+      <mesh material={iron} position={[0, 0.37, 0]} rotation-y={ROT} castShadow>
+        <boxGeometry args={[0.95, 0.75, 1.4]} />
       </mesh>
+    ),
+  }));
+  const filled = new Set(open.map((c) => c.join()));
+  return (
+    <group>
+      <group position={position} rotation={[0, ROT, 0]}>
+        {[-1, 1].map((s) => (
+          <mesh key={s} material={rock} position={[s * 4.2, 3.5, 0]} scale={[2.6, 4.6, 2.6]} castShadow receiveShadow>
+            <dodecahedronGeometry args={[1, 0]} />
+          </mesh>
+        ))}
+        {rows.flatMap((row) =>
+          xs.map((x) => {
+            const c = cell(row, x);
+            if (filled.has(c.join())) return null;
+            return (
+              <mesh key={`${row}${x}`} material={iron} position={c} castShadow>
+                <boxGeometry args={[0.95, 0.75, 1.4]} />
+              </mesh>
+            );
+          }),
+        )}
+        <mesh material={copper} position={[0, 5.1, 0]} visible={sealed} castShadow>
+          <boxGeometry args={[4.6, 0.3, 1.6]} />
+        </mesh>
+      </group>
+      <DragPlay items={items} spots={spots} testPrefix="iron-" onPlace={(_, __, n) => n < 4 && hint(`${4 - n} more sheet${4 - n > 1 ? 's' : ''} of iron.`)} onDone={() => (setSealed(true), onDone())} />
     </group>
   );
 }

@@ -18,7 +18,7 @@
  "narrative_passages": [],
  "summary_for_children": "Al-Fatihah is the prayer we say in every salah. We praise Allah, remember His mercy, and ask Him to guide us on the straight path.",
  "world_title": "The Opening Path",
- "environment_concept": "A single path that opens the whole Quran: from a gate of praise, through a garden of mercy, to a fork where one road runs straight and clear.",
+ "environment_concept": "A symbolic path (Al-Fatihah has no story): a gate of praise hung with flowers (1:2), a garden of mercy where dry beds bloom when watered (1:3, with 30:50), a terrace facing a wide dawn horizon (1:4; nothing of the Day is pictured) and a fork where one bright road runs straight (1:6).",
  "architecture_and_scenery": "Low arches of pale stone, a walled garden with a central fountain, and a long straight walkway lit at dawn.",
  "palette": {
   "colors": [
@@ -60,13 +60,21 @@
   {
    "name": "Seven-step walk",
    "reference": "1:1-7",
-   "description": "Each of the seven ayahs is a stepping stone; reading it lights the next stone.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry seven numbered stepping stones, one for each ayah, and lay them in order along the straight road.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Asking for help",
    "reference": "1:5",
    "description": "A lantern the child lights by reading 1:5, linking worship and asking Allah for help.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Bring the garden to life",
+   "reference": "1:3",
+   "kind": "find",
+   "description": "Carry water jars from the fountain to three dry beds; each one blooms. Linked to 30:50: \"observe the effects of the mercy of Allah - how He gives life to the earth after its lifelessness\". (30:50 is quoted as a related ayah from another surah.)",
    "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
@@ -109,8 +117,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: its own scene (gate, garden, terrace, fork) with two hands-on activities in the scene",
+  "testing": "checked in headless Chromium with software WebGL at 960x600; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Fatiha.tsx, src/world/scenes/drag.tsx",
+  "tested_by": "automated screenshots of the scene and the in-scene activities"
  },
  "quran_references": [
   "1:1-7",

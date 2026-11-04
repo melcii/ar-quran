@@ -10,6 +10,8 @@ import * as THREE from 'three';
 import type { Land } from '../terrain';
 import type { SceneProps } from './index';
 import { stopNamed } from './index';
+import { DragPlay, type DragItem, type DropSpot } from './drag';
+import type { P3 } from './kit';
 
 type V = THREE.Vector3;
 const stone = () => new THREE.MeshStandardMaterial({ color: '#cbb894', roughness: 0.9 });
@@ -21,7 +23,7 @@ function beside(land: Land, at: V, dx: number, dz: number): [number, number, num
   return [x, land.height(x, z), z];
 }
 
-export function YusufScene({ land, stops }: SceneProps) {
+export function YusufScene({ land, stops, complete, hint }: SceneProps) {
   const stars = stopNamed(stops, 'Night of Eleven Stars');
   const well = stopNamed(stops, 'The Well');
   const road = stopNamed(stops, 'Caravan Road');
@@ -35,7 +37,14 @@ export function YusufScene({ land, stops }: SceneProps) {
       {well && <Well position={beside(land, well.pos, 3.5, -2.5)} />}
       {road && <Caravan land={land} at={road.pos} />}
       {prison && <Prison position={beside(land, prison.pos, 5, -4)} />}
-      {store && <Granaries land={land} at={store.pos} />}
+      {store && (
+        <Granaries
+          land={land}
+          at={store.pos}
+          hint={hint}
+          onDone={() => (complete('Carry the sheaves'), hint('Stored for the hard years: "what you harvest leave in its spikes, except a little from which you will eat" (12:47).'))}
+        />
+      )}
       {shirt && <Shirt position={beside(land, shirt.pos, 2.2, -1.8)} />}
       {hall && <Hall position={beside(land, hall.pos, 6, -5)} />}
     </group>
@@ -186,7 +195,39 @@ function Prison({ position }: { position: [number, number, number] }) {
 }
 
 /** Round granaries and sheaves of grain kept in their spikes (12:47). */
-function Granaries({ land, at }: { land: Land; at: V }) {
+function Granaries({ land, at, hint, onDone }: { land: Land; at: V; hint: (t: string) => void; onDone: () => void }) {
+  const sheaf = useMemo(() => new THREE.MeshStandardMaterial({ color: '#e0bc68', roughness: 1 }), []);
+  const doors: [number, number][] = [
+    [4, -3],
+    [6.6, -2],
+    [5.6, -5.6],
+    [8.2, -4.6],
+  ];
+  // Each granary takes one sheaf at its door; the sheaves wait in the field by the path.
+  const spots: DropSpot[] = doors.map(([dx, dz], i) => {
+    const d = beside(land, at, dx, dz + 1.9);
+    return { id: `door${i}`, pos: d, r: 1, slots: [[d[0], d[1], d[2] - 0.5]] as P3[], color: '#ffe2a0' };
+  });
+  const items: DragItem[] = [0, 1, 2, 3].map((i) => ({
+    id: `sheaf${i}`,
+    home: beside(land, at, 1.3 + (i % 2) * 0.8, -0.4 - i * 0.7),
+    fits: spots.map((s) => s.id),
+    lift: 0.5,
+    node: (
+      <group>
+        <mesh material={sheaf} position={[0, 0.55, 0]} castShadow>
+          <cylinderGeometry args={[0.24, 0.3, 1.1, 14]} />
+        </mesh>
+        <mesh material={sheaf} position={[0, 1.15, 0]} scale={[1, 0.8, 1]}>
+          <sphereGeometry args={[0.32, 14, 10]} />
+        </mesh>
+        <mesh position={[0, 0.6, 0]} rotation-x={Math.PI / 2}>
+          <torusGeometry args={[0.27, 0.035, 6, 20]} />
+          <meshStandardMaterial color="#8a5a2a" />
+        </mesh>
+      </group>
+    ),
+  }));
   const mud = useMemo(() => new THREE.MeshStandardMaterial({ color: '#c9a878', roughness: 0.95 }), []);
   const thatch = useMemo(() => new THREE.MeshStandardMaterial({ color: '#a8874e', roughness: 1 }), []);
   const sheaves = useMemo(() => {
@@ -225,6 +266,7 @@ function Granaries({ land, at }: { land: Land; at: V }) {
         </group>
       ))}
       <primitive object={sheaves} />
+      <DragPlay items={items} spots={spots} testPrefix="sheaf-" onPlace={(_, __, n) => n < 4 && hint(`${4 - n} more sheaf${4 - n > 1 ? 'ves' : ''} to store.`)} onDone={onDone} />
     </group>
   );
 }

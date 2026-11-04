@@ -37,3 +37,10 @@ export function rng(seed: number) {
 }
 
 export const mat = (color: string, roughness = 0.9, metalness = 0) => new THREE.MeshStandardMaterial({ color, roughness, metalness });
+
+/** A point given in a group's own frame (origin, turned rotY about the vertical), in world coordinates. */
+export function toWorld(origin: P3, rotY: number, local: P3): P3 {
+  const c = Math.cos(rotY);
+  const s = Math.sin(rotY);
+  return [origin[0] + local[0] * c + local[2] * s, origin[1] + local[1], origin[2] - local[0] * s + local[2] * c];
+}

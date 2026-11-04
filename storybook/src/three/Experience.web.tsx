@@ -2,6 +2,7 @@
 // that rises out of the open book. Flow:
 //   intro → closed → opening → open (choose a passage) → entering → story
 //   scenes → returning → reading (the verses, reflection) → back to open.
+import { SoftShapes } from '@/three/soft';
 import { Canvas, useThree } from '@react-three/fiber';
 import { router } from 'expo-router';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
@@ -275,6 +276,7 @@ function Book() {
         style={{ position: 'absolute', inset: 0 } as any}
         onPointerMissed={() => setDiscovery(null)}
       >
+        <SoftShapes />
         <Director
           refs={refs}
           initial={initial}

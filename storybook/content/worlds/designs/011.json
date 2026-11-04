@@ -49,7 +49,7 @@
  ],
  "summary_for_children": "Surah Hud tells how Nuh built the ark and was carried safely, and how Hud, Salih, Ibrahim, Lut and Shu'ayb called their peoples.",
  "world_title": "The Ark Coast",
- "environment_concept": "A shipyard where the ark is built, a flood with waves like mountains, and the green slopes of al-Judiyy where the ark comes to rest.",
+ "environment_concept": "The ark coast, following 11:36-48: a shipyard where the ark's last planks are fitted (11:37), the loading ground where animals come aboard two by two and the weather turns (11:40), a stormy bay with waves like mountains (11:42), the green slopes where the ark rests (11:44), and an empty tent with a roasted calf for guests (11:69). Nuh, his family and the guests are never shown; the animal kinds are the artist's choice.",
  "architecture_and_scenery": "Timber shipyard, rising flood plain, high waves, a mountain slope, and a tent where guests are welcomed.",
  "palette": {
   "colors": [
@@ -97,13 +97,21 @@
   {
    "name": "Build the ark",
    "reference": "11:37",
-   "description": "Place timbers on the ark's frame; the narrator notes this is an adaptation.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry four planks to the glowing gaps on the ark's frame; when all are fitted the hull is complete.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Fair measure",
    "reference": "11:85",
    "description": "Balance a market scale so everyone receives full measure.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Two of each kind",
+   "reference": "11:40",
+   "kind": "find",
+   "description": "Guide the animals aboard in pairs: each pair goes to its own pen (giraffes, camels, sheep, elephants), and the food and water go to the hold. Then the rain begins. The kinds of animals are the artist's choice; the Quran says \"of each [creature] two mates\".",
    "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
@@ -151,8 +159,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: its own scene (shipyard, loading ground with weather change, stormy bay, resting ark, tent) with two hands-on activities in the scene",
+  "testing": "checked in headless Chromium with software WebGL at 960x600; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Hud.tsx, src/world/scenes/props.tsx, src/world/scenes/drag.tsx",
+  "tested_by": "automated screenshots of the scene and the in-scene activities"
  },
  "quran_references": [
   "11:25-49",

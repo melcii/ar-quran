@@ -115,6 +115,13 @@
    "kind": "card",
    "description": "Talk about how the sun rises at different points through the year.",
    "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Plant the garden",
+   "reference": "55:11-12",
+   "kind": "find",
+   "description": "Set four young plants in their labelled beds: fruit, palm trees, grain and scented plants.",
+   "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
  "narration_plan": "Narration is gentle and rhythmic: each area ends with the refrain read in Arabic and meaning.",
@@ -185,9 +192,9 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "first version built: its own shore (an orrery, a balance to level, grain and pots, two waters with a barrier, pearls and coral, tall-sailed ships), two find-it activities in the scene and a matching game",
+  "playable_environment": "first version built: its own shore (an orrery, a balance to level, grain and pots, two waters with a barrier, pearls and coral, tall-sailed ships), two find-it activities in the scene and a matching game; plant the garden (hands-on, in the scene)",
   "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
-  "built_in": "src/world/scenes/Rahman.tsx, src/world/ActivityGame.tsx",
+  "built_in": "src/world/scenes/Rahman.tsx, src/world/ActivityGame.tsx, src/world/scenes/drag.tsx",
   "tested_by": "automated screenshots of the scene and the balance"
  },
  "quran_references": [

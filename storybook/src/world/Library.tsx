@@ -1,5 +1,6 @@
 // The library hall: all 114 surahs as books shown cover-out on a ring of
 // shelves around a domed room. Drag to turn, tap a book to take it down.
+import { holding } from './holding';
 import { useFrame, useThree, type ThreeEvent } from '@react-three/fiber';
 import { useEffect, useMemo, useRef } from 'react';
 import * as THREE from 'three';
@@ -277,6 +278,7 @@ export function useDragLook(look: { yaw: number; pitch: number }, opts: { pitch:
     let last: { x: number; y: number } | null = null;
     const down = (e: PointerEvent) => (last = { x: e.clientX, y: e.clientY });
     const move = (e: PointerEvent) => {
+      if (holding.on) return void (last = null);
       if (!last) return;
       // Drag the view like a photo sphere: pull left to turn right.
       look.yaw -= (e.clientX - last.x) * 0.005;

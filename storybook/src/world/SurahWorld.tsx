@@ -6,7 +6,7 @@ import { useEffect, useMemo, useRef, type MutableRefObject } from 'react';
 import * as THREE from 'three';
 import { designFor } from '@/content/designs';
 import { getSurah, parseRef } from '@/content/quran';
-import { Ground, Grass, Moon, Palms, Particles, Rocks, Sky, Trees, Water, scatter, sunVector } from './Nature';
+import { Ground, Grass, Moon, Palms, Particles, Rocks, Sky, Trees, Water, scatter, sunVector, Clouds } from './Nature';
 import type { Quality } from './quality';
 import { PRESETS, worldFor } from './settings';
 import { makeLand, type Land } from './terrain';
@@ -129,7 +129,10 @@ export function SurahWorld({
       <Sky preset={preset} />
       {preset.moon && <Moon preset={preset} />}
       {preset.stars && <Stars count={Math.round(2500 * quality.vegetation + 500)} />}
-      <hemisphereLight intensity={preset.night ? 0.25 : 0.55} color={preset.night ? '#5a6a9a' : '#fff1dc'} groundColor={preset.ground[1]} />
+      <Clouds preset={preset} count={Math.round((preset.night ? 0 : 5) + preset.clouds * (preset.night ? 10 : 22))} seed={surah} />
+      <hemisphereLight intensity={preset.night ? 0.3 : 0.75} color={preset.night ? '#5a6a9a' : '#ffeacc'} groundColor={preset.night ? preset.ground[1] : '#b98a5a'} />
+      {/* A warm bounce from the side opposite the sun, like light off sunlit ground: softens shadows the way animated films do. */}
+      {!preset.night && <directionalLight position={[-sunPos.x, 20, -sunPos.z]} intensity={0.45} color="#ffc89a" />}
       <directionalLight
         position={preset.night ? [-40, 60, 20] : [sunPos.x, Math.max(8, sunPos.y), sunPos.z]}
         intensity={preset.night ? 0.35 : 2.4}
@@ -259,8 +262,8 @@ function Lantern({ position, found, onClick }: { position: THREE.Vector3; found:
         <meshStandardMaterial color="#4a3a28" metalness={0.6} roughness={0.35} />
       </mesh>
       <mesh ref={halo} position={[0, 1.72, 0]}>
-        <circleGeometry args={[0.9, 32]} />
-        <meshBasicMaterial color={found ? '#e8d49a' : '#ffc060'} transparent opacity={found ? 0.08 : 0.18} depthWrite={false} blending={THREE.AdditiveBlending} />
+        <circleGeometry args={[0.6, 32]} />
+        <meshBasicMaterial color={found ? '#e8d49a' : '#ffc060'} transparent opacity={found ? 0.06 : 0.12} depthWrite={false} blending={THREE.AdditiveBlending} />
       </mesh>
       {/* A larger invisible target, so small fingers can tap it */}
       <mesh position={[0, 1.4, 0]} visible={false}>

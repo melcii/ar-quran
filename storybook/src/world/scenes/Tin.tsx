@@ -67,7 +67,7 @@ function FarMountain({ position }: { position: [number, number, number] }) {
   return (
     <mesh position={[position[0], position[1] + 8, position[2]]} scale={[18, 26, 14]}>
       <coneGeometry args={[1, 1, 7]} />
-      <meshStandardMaterial color="#8a6a58" roughness={1} flatShading />
+      <meshStandardMaterial color="#8a6a58" roughness={1} />
     </mesh>
   );
 }

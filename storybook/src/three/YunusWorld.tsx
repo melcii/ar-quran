@@ -175,7 +175,7 @@ function Seabed() {
       {rocks.map((r, i) => (
         <mesh key={i} position={r.p} rotation={[r.r, r.r * 2, 0]} scale={[r.s, r.s * 0.6, r.s]}>
           <dodecahedronGeometry args={[1, 0]} />
-          <meshStandardMaterial color="#4c5a5a" roughness={1} flatShading />
+          <meshStandardMaterial color="#4c5a5a" roughness={1} />
         </mesh>
       ))}
     </group>

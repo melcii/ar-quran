@@ -10,6 +10,8 @@ import * as THREE from 'three';
 import type { Land } from '../terrain';
 import type { SceneProps } from './index';
 import { stopNamed } from './index';
+import { DragPlay, type DragItem, type DropSpot } from './drag';
+import { labelTexture } from './props';
 
 type V = THREE.Vector3;
 function beside(land: Land, at: V, dx: number, dz: number): [number, number, number] {
@@ -40,6 +42,7 @@ export function RahmanScene({ land, stops, quality, complete, hint }: SceneProps
   const orbit = stopNamed(stops, 'Orbit of Sun and Moon');
   const balance = stopNamed(stops, 'The Balance');
   const grain = stopNamed(stops, 'Grain and Fragrance');
+  const fruit = stopNamed(stops, 'Fruit and Palms');
   const clay = stopNamed(stops, 'Pottery Clay Bank');
   const seas = stopNamed(stops, 'Two Seas');
   const pearls = stopNamed(stops, 'Pearl and Coral');
@@ -53,6 +56,14 @@ export function RahmanScene({ land, stops, quality, complete, hint }: SceneProps
           position={beside(land, balance.pos, 3.5, -2.5)}
           onLevel={() => (complete('Keep the balance'), hint('Level! "And establish weight in justice and do not make deficient the balance" (55:9).'))}
           hint={hint}
+        />
+      )}
+      {fruit && (
+        <PlantBeds
+          land={land}
+          at={fruit.pos}
+          hint={hint}
+          onDone={() => (complete('Plant the garden'), hint('"Therein is fruit and palm trees having sheaths [of dates] and grain having husks and scented plants" (55:11-12).'))}
         />
       )}
       {grain && <Grain land={land} at={grain.pos} count={Math.round(300 + 700 * quality.vegetation)} />}
@@ -334,6 +345,84 @@ function Ships({ at }: { at: V }) {
           </group>
         ))}
       </group>
+    </group>
+  );
+}
+
+/** Four labelled beds and four young plants to set in them: fruit, palm, grain, scented plant (55:11-12). */
+function PlantBeds({ land, at, hint, onDone }: { land: Land; at: V; hint: (t: string) => void; onDone: () => void }) {
+  const soil = useMemo(() => new THREE.MeshStandardMaterial({ color: '#6a4a32', roughness: 1 }), []);
+  const kinds = ['fruit', 'palm', 'grain', 'scent'] as const;
+  const labels = { fruit: 'fruit', palm: 'palm trees', grain: 'grain', scent: 'scented\nplants' };
+  const signs = useMemo(() => kinds.map((k) => new THREE.MeshBasicMaterial({ map: labelTexture(labels[k], '#fbefd0', '#4a3a1a', 256, 128) })), []);
+  const beds = kinds.map((_, i) => beside(land, at, 3.2 + (i % 2) * 2.6, -2.2 - Math.floor(i / 2) * 2.6));
+  const spots: DropSpot[] = kinds.map((k, i) => ({ id: k, pos: beds[i], r: 1, slots: [beds[i]], color: '#c8f0a0' }));
+  const leaf = useMemo(() => new THREE.MeshStandardMaterial({ color: '#5a9a3a', roughness: 0.8 }), []);
+  const node = (k: (typeof kinds)[number]) =>
+    k === 'fruit' ? (
+      <group>
+        <mesh material={leaf} position={[0, 0.7, 0]}>
+          <sphereGeometry args={[0.38, 16, 12]} />
+        </mesh>
+        <mesh position={[0, 0.3, 0]}>
+          <cylinderGeometry args={[0.05, 0.07, 0.6, 8]} />
+          <meshStandardMaterial color="#6a4a30" />
+        </mesh>
+        {[0, 2, 4].map((a) => (
+          <mesh key={a} position={[Math.cos(a) * 0.36, 0.62, Math.sin(a) * 0.36]}>
+            <sphereGeometry args={[0.08, 10, 8]} />
+            <meshStandardMaterial color="#e8503a" />
+          </mesh>
+        ))}
+      </group>
+    ) : k === 'palm' ? (
+      <group>
+        <mesh position={[0, 0.35, 0]}>
+          <cylinderGeometry args={[0.06, 0.09, 0.7, 10]} />
+          <meshStandardMaterial color="#7a6040" />
+        </mesh>
+        {[0, 1, 2, 3, 4].map((a) => (
+          <mesh key={a} material={leaf} position={[Math.cos(a * 1.26) * 0.25, 0.72, Math.sin(a * 1.26) * 0.25]} rotation={[0, -a * 1.26, 0.6]} scale={[1, 0.12, 0.3]}>
+            <sphereGeometry args={[0.35, 10, 6]} />
+          </mesh>
+        ))}
+      </group>
+    ) : k === 'grain' ? (
+      <group>
+        {[-0.12, 0, 0.12].map((x) => (
+          <mesh key={x} position={[x, 0.4, x * 0.5]} rotation-z={x}>
+            <capsuleGeometry args={[0.035, 0.7, 4, 6]} />
+            <meshStandardMaterial color="#d8b450" />
+          </mesh>
+        ))}
+      </group>
+    ) : (
+      <group>
+        <mesh material={leaf} position={[0, 0.25, 0]} scale={[1, 0.7, 1]}>
+          <sphereGeometry args={[0.3, 14, 10]} />
+        </mesh>
+        {[0, 1.5, 3, 4.5].map((a) => (
+          <mesh key={a} position={[Math.cos(a) * 0.2, 0.45, Math.sin(a) * 0.2]}>
+            <sphereGeometry args={[0.06, 8, 6]} />
+            <meshStandardMaterial color="#b07ad0" />
+          </mesh>
+        ))}
+      </group>
+    );
+  const items: DragItem[] = [2, 0, 3, 1].map((i, k) => ({ id: kinds[i], home: beside(land, at, 1.2 + (k % 2) * 0.8, -0.3 - k * 0.6), fits: [kinds[i]], lift: 0.5, node: node(kinds[i]) }));
+  return (
+    <group>
+      {beds.map((b, i) => (
+        <group key={i} position={b}>
+          <mesh material={soil} position={[0, 0.02, 0]} scale={[1, 0.12, 1]} receiveShadow>
+            <sphereGeometry args={[0.9, 24, 10]} />
+          </mesh>
+          <mesh material={signs[i]} position={[0, 0.55, 0.95]}>
+            <planeGeometry args={[0.8, 0.4]} />
+          </mesh>
+        </group>
+      ))}
+      <DragPlay items={items} spots={spots} testPrefix="plant-" onWrong={() => hint('Read the little sign on each bed.')} onDone={onDone} />
     </group>
   );
 }

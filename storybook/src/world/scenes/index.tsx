@@ -50,6 +50,10 @@ import { HujuratScene } from './Hujurat';
 import { NamlScene } from './Naml';
 import { RahmanScene } from './Rahman';
 import { YusufScene } from './Yusuf';
+import { FatihaScene } from './Fatiha';
+import { HudScene } from './Hud';
+import { NahlScene } from './Nahl';
+import { NuhScene } from './Nuh';
 
 export type Stop = { p: Passage; pos: THREE.Vector3 };
 export type SceneProps = {
@@ -62,6 +66,10 @@ export type SceneProps = {
 };
 
 export const SCENES: Record<number, ComponentType<SceneProps>> = {
+  1: FatihaScene,
+  11: HudScene,
+  16: NahlScene,
+  71: NuhScene,
   12: YusufScene,
   18: KahfScene,
   27: NamlScene,

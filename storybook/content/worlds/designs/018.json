@@ -117,6 +117,20 @@
    "kind": "card",
    "description": "At the ship and the wall, read the reasons given in 18:79-82 and talk about patience in learning.",
    "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Mend the wall",
+   "reference": "18:77",
+   "kind": "find",
+   "description": "Carry three stones back into the leaning wall; it stands straight again.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Close the pass",
+   "reference": "18:96",
+   "kind": "find",
+   "description": "Carry four blocks of iron into the gap between the two cliffs; then copper seals the top.",
+   "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
  "narration_plan": "Each journey opens with its ayahs, then gentle explanation. Musa, the knowing servant and Dhul-Qarnayn are never shown.",
@@ -175,9 +189,9 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "first version built: its own valley of four journeys (cave with sliding sunlight, two gardens and a river, two waters meeting, a holed ship, a mended wall, an iron and copper barrier) and two playable games",
+  "playable_environment": "first version built: its own valley of four journeys (cave with sliding sunlight, two gardens and a river, two waters meeting, a holed ship, a mended wall, an iron and copper barrier) and two playable games; mend the wall and close the pass with iron (hands-on, in the scene)",
   "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
-  "built_in": "src/world/scenes/Kahf.tsx, src/world/ActivityGame.tsx",
+  "built_in": "src/world/scenes/Kahf.tsx, src/world/ActivityGame.tsx, src/world/scenes/drag.tsx",
   "tested_by": "automated screenshots of the scene and the journey game"
  },
  "quran_references": [

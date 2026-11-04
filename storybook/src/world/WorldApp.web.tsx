@@ -2,8 +2,9 @@
 // the domed library of all 114 surahs, and a walkable world for each surah.
 // One canvas; places change behind a short fade.
 import { PerformanceMonitor } from '@react-three/drei';
+import { SoftShapes } from '@/three/soft';
 import { Canvas, useThree } from '@react-three/fiber';
-import { Bloom, EffectComposer, ToneMapping, Vignette } from '@react-three/postprocessing';
+import { Bloom, EffectComposer, HueSaturation, ToneMapping, Vignette } from '@react-three/postprocessing';
 import { router } from 'expo-router';
 import { ToneMappingMode } from 'postprocessing';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
@@ -309,6 +310,7 @@ function World() {
         camera={{ fov: 50, near: 0.02, far: 4000, position: [0.6, 1.5, 3.6] }}
         style={{ position: 'absolute', inset: 0 } as never}
       >
+        <SoftShapes />
         <color attach="background" args={['#0b0806']} />
         <PerformanceMonitor onDecline={() => st.quality === 'auto' && setAutoTier((t) => lowerTier(t))} />
         <Env name={hdri} intensity={hdriIntensity} />
@@ -359,8 +361,10 @@ function World() {
         {quality.post && place !== 'room' && (
           <EffectComposer multisampling={tier === 'high' ? 4 : 0}>
             <Bloom mipmapBlur intensity={BLOOM.intensity} luminanceThreshold={BLOOM.threshold} luminanceSmoothing={0.2} />
-            <Vignette offset={0.3} darkness={0.5} />
+            <Vignette offset={0.3} darkness={0.45} />
             <ToneMapping mode={ToneMappingMode.ACES_FILMIC} />
+            {/* Filmic tone mapping greys colours a little; give them back for a warm storybook look. */}
+            <HueSaturation saturation={0.16} />
           </EffectComposer>
         )}
       </Canvas>

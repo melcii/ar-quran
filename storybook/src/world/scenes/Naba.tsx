@@ -62,7 +62,7 @@ function Stakes({ position }: { position: [number, number, number] }) {
       {peaks.map(([x, z, r, h], i) => (
         <mesh key={i} position={[x, h / 2 - 3, z]}>
           <coneGeometry args={[r, h, 5]} />
-          <meshStandardMaterial color={i % 2 ? '#7a6e60' : '#6a6054'} roughness={1} flatShading />
+          <meshStandardMaterial color={i % 2 ? '#7a6e60' : '#6a6054'} roughness={1} />
         </mesh>
       ))}
     </group>

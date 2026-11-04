@@ -18,7 +18,7 @@
  "narrative_passages": [],
  "summary_for_children": "An-Nahl is the surah of the bee. It shows Allah's blessings in bees, honey, milk, rain, the sea, birds and animals, and asks us to be grateful.",
  "world_title": "The Bee Garden",
- "environment_concept": "A valley of blossoms where bees build homes in mountains and trees, honey of many colours flows, and every creature is a sign.",
+ "environment_concept": "A valley of blessings: rounded cliffs and a tree with bees' homes and wooden hives (16:68), honey jars in different colours (16:69), a pasture with a fold and a barn (16:5-6, 16:66), a lagoon with a boat and pearl shells (16:14) and birds held up in the sky (16:79). No person is shown.",
  "architecture_and_scenery": "Flower meadows, cliffs and trees with hives, a stream, grazing animals, birds in the sky, and a coast.",
  "palette": {
   "colors": [
@@ -66,13 +66,21 @@
   {
    "name": "Follow the bee",
    "reference": "16:68-69",
-   "description": "Follow a bee from flower to flower back to its hive.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Tap the flower where the bee sits; it flies on to the next, and after five flowers it goes home to the hive.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Count the blessings",
    "reference": "16:18",
    "description": "Collect blessings around the valley and learn they cannot all be counted.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Bring the flock home",
+   "reference": "16:5-6",
+   "kind": "find",
+   "description": "Bring the sheep into the round fold and the cows into the barn for the evening (16:6).",
    "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
@@ -121,8 +129,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: its own scene (hive cliffs, honey jars, pasture, lagoon, birds) with two hands-on activities in the scene",
+  "testing": "checked in headless Chromium with software WebGL at 960x600; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Nahl.tsx, src/world/scenes/props.tsx, src/world/scenes/drag.tsx",
+  "tested_by": "automated screenshots of the scene and the in-scene activities"
  },
  "quran_references": [
   "16:14",

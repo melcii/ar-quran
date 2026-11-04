@@ -5,7 +5,7 @@
    "surah": 1,
    "world_title": "The Opening Path",
    "content_type": "moral-and-spiritual",
-   "concept": "A single path that opens the whole Quran: from a gate of praise, through a garden of mercy, to a fork where one road runs straight and clear.",
+   "concept": "A symbolic path (Al-Fatihah has no story): a gate of praise hung with flowers (1:2), a garden of mercy where dry beds bloom when watered (1:3, with 30:50), a terrace facing a wide dawn horizon (1:4; nothing of the Day is pictured) and a fork where one bright road runs straight (1:6).",
    "summary": "Al-Fatihah is the prayer we say in every salah. We praise Allah, remember His mercy, and ask Him to guide us on the straight path.",
    "areas": [
     {
@@ -33,14 +33,20 @@
     {
      "name": "Seven-step walk",
      "reference": "1:1-7",
-     "description": "Each of the seven ayahs is a stepping stone; reading it lights the next stone.",
-     "kind": "card"
+     "description": "Carry seven numbered stepping stones, one for each ayah, and lay them in order along the straight road.",
+     "kind": "find"
     },
     {
      "name": "Asking for help",
      "reference": "1:5",
      "description": "A lantern the child lights by reading 1:5, linking worship and asking Allah for help.",
      "kind": "card"
+    },
+    {
+     "name": "Bring the garden to life",
+     "reference": "1:3",
+     "description": "Carry water jars from the fountain to three dry beds; each one blooms. Linked to 30:50: \"observe the effects of the mercy of Allah - how He gives life to the earth after its lifelessness\". (30:50 is quoted as a related ayah from another surah.)",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -54,8 +60,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (gate, garden, terrace, fork) with two hands-on activities in the scene",
+    "testing": "checked in headless Chromium with software WebGL at 960x600; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Fatiha.tsx, src/world/scenes/drag.tsx",
+    "tested_by": "automated screenshots of the scene and the in-scene activities"
    },
    "review": "unreviewed"
   },
@@ -601,7 +609,7 @@
    "surah": 11,
    "world_title": "The Ark Coast",
    "content_type": "narrative",
-   "concept": "A shipyard where the ark is built, a flood with waves like mountains, and the green slopes of al-Judiyy where the ark comes to rest.",
+   "concept": "The ark coast, following 11:36-48: a shipyard where the ark's last planks are fitted (11:37), the loading ground where animals come aboard two by two and the weather turns (11:40), a stormy bay with waves like mountains (11:42), the green slopes where the ark rests (11:44), and an empty tent with a roasted calf for guests (11:69). Nuh, his family and the guests are never shown; the animal kinds are the artist's choice.",
    "summary": "Surah Hud tells how Nuh built the ark and was carried safely, and how Hud, Salih, Ibrahim, Lut and Shu'ayb called their peoples.",
    "areas": [
     {
@@ -634,14 +642,20 @@
     {
      "name": "Build the ark",
      "reference": "11:37",
-     "description": "Place timbers on the ark's frame; the narrator notes this is an adaptation.",
-     "kind": "card"
+     "description": "Carry four planks to the glowing gaps on the ark's frame; when all are fitted the hull is complete.",
+     "kind": "find"
     },
     {
      "name": "Fair measure",
      "reference": "11:85",
      "description": "Balance a market scale so everyone receives full measure.",
      "kind": "card"
+    },
+    {
+     "name": "Two of each kind",
+     "reference": "11:40",
+     "description": "Guide the animals aboard in pairs: each pair goes to its own pen (giraffes, camels, sheep, elephants), and the food and water go to the hold. Then the rain begins. The kinds of animals are the artist's choice; the Quran says \"of each [creature] two mates\".",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -655,8 +669,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (shipyard, loading ground with weather change, stormy bay, resting ark, tent) with two hands-on activities in the scene",
+    "testing": "checked in headless Chromium with software WebGL at 960x600; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Hud.tsx, src/world/scenes/props.tsx, src/world/scenes/drag.tsx",
+    "tested_by": "automated screenshots of the scene and the in-scene activities"
    },
    "review": "unreviewed"
   },
@@ -721,6 +737,12 @@
      "reference": "12:47-49",
      "description": "Over seven years of plenty, store grain in its spikes; then share it through seven hard years.",
      "kind": "card"
+    },
+    {
+     "name": "Carry the sheaves",
+     "reference": "12:47",
+     "description": "Carry four sheaves of grain to the granary doors, kept in their spikes for the hard years (12:47).",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -734,9 +756,9 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "first version built: its own road of seven places (stars, well, caravan, prison, granaries, shirt, hall) and two playable games",
+    "playable_environment": "first version built: its own road of seven places (stars, well, caravan, prison, granaries, shirt, hall) and two playable games; carry the sheaves to the granaries (hands-on, in the scene)",
     "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
-    "built_in": "src/world/scenes/Yusuf.tsx, src/world/ActivityGame.tsx",
+    "built_in": "src/world/scenes/Yusuf.tsx, src/world/ActivityGame.tsx, src/world/scenes/drag.tsx",
     "tested_by": "automated screenshots of the scene and the journey game"
    },
    "review": "unreviewed"
@@ -924,7 +946,7 @@
    "surah": 16,
    "world_title": "The Bee Garden",
    "content_type": "nature-and-creation",
-   "concept": "A valley of blossoms where bees build homes in mountains and trees, honey of many colours flows, and every creature is a sign.",
+   "concept": "A valley of blessings: rounded cliffs and a tree with bees' homes and wooden hives (16:68), honey jars in different colours (16:69), a pasture with a fold and a barn (16:5-6, 16:66), a lagoon with a boat and pearl shells (16:14) and birds held up in the sky (16:79). No person is shown.",
    "summary": "An-Nahl is the surah of the bee. It shows Allah's blessings in bees, honey, milk, rain, the sea, birds and animals, and asks us to be grateful.",
    "areas": [
     {
@@ -957,14 +979,20 @@
     {
      "name": "Follow the bee",
      "reference": "16:68-69",
-     "description": "Follow a bee from flower to flower back to its hive.",
-     "kind": "card"
+     "description": "Tap the flower where the bee sits; it flies on to the next, and after five flowers it goes home to the hive.",
+     "kind": "find"
     },
     {
      "name": "Count the blessings",
      "reference": "16:18",
      "description": "Collect blessings around the valley and learn they cannot all be counted.",
      "kind": "card"
+    },
+    {
+     "name": "Bring the flock home",
+     "reference": "16:5-6",
+     "description": "Bring the sheep into the round fold and the cows into the barn for the evening (16:6).",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -978,8 +1006,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (hive cliffs, honey jars, pasture, lagoon, birds) with two hands-on activities in the scene",
+    "testing": "checked in headless Chromium with software WebGL at 960x600; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Nahl.tsx, src/world/scenes/props.tsx, src/world/scenes/drag.tsx",
+    "tested_by": "automated screenshots of the scene and the in-scene activities"
    },
    "review": "unreviewed"
   },
@@ -1102,6 +1132,18 @@
      "reference": "18:79-82",
      "description": "At the ship and the wall, read the reasons given in 18:79-82 and talk about patience in learning.",
      "kind": "card"
+    },
+    {
+     "name": "Mend the wall",
+     "reference": "18:77",
+     "description": "Carry three stones back into the leaning wall; it stands straight again.",
+     "kind": "find"
+    },
+    {
+     "name": "Close the pass",
+     "reference": "18:96",
+     "description": "Carry four blocks of iron into the gap between the two cliffs; then copper seals the top.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -1115,9 +1157,9 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "first version built: its own valley of four journeys (cave with sliding sunlight, two gardens and a river, two waters meeting, a holed ship, a mended wall, an iron and copper barrier) and two playable games",
+    "playable_environment": "first version built: its own valley of four journeys (cave with sliding sunlight, two gardens and a river, two waters meeting, a holed ship, a mended wall, an iron and copper barrier) and two playable games; mend the wall and close the pass with iron (hands-on, in the scene)",
     "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
-    "built_in": "src/world/scenes/Kahf.tsx, src/world/ActivityGame.tsx",
+    "built_in": "src/world/scenes/Kahf.tsx, src/world/ActivityGame.tsx, src/world/scenes/drag.tsx",
     "tested_by": "automated screenshots of the scene and the journey game"
    },
    "review": "unreviewed"
@@ -3290,6 +3332,12 @@
      "reference": "55:17",
      "description": "Talk about how the sun rises at different points through the year.",
      "kind": "card"
+    },
+    {
+     "name": "Plant the garden",
+     "reference": "55:11-12",
+     "description": "Set four young plants in their labelled beds: fruit, palm trees, grain and scented plants.",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -3303,9 +3351,9 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "first version built: its own shore (an orrery, a balance to level, grain and pots, two waters with a barrier, pearls and coral, tall-sailed ships), two find-it activities in the scene and a matching game",
+    "playable_environment": "first version built: its own shore (an orrery, a balance to level, grain and pots, two waters with a barrier, pearls and coral, tall-sailed ships), two find-it activities in the scene and a matching game; plant the garden (hands-on, in the scene)",
     "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
-    "built_in": "src/world/scenes/Rahman.tsx, src/world/ActivityGame.tsx",
+    "built_in": "src/world/scenes/Rahman.tsx, src/world/ActivityGame.tsx, src/world/scenes/drag.tsx",
     "tested_by": "automated screenshots of the scene and the balance"
    },
    "review": "unreviewed"
@@ -3992,7 +4040,7 @@
    "surah": 71,
    "world_title": "Nuh's Call by Night and Day",
    "content_type": "narrative",
-   "concept": "A village where a call goes out by night and day, in public and in private, offering showers of rain, gardens and rivers to those who seek forgiveness; the idols' names stand as empty stones.",
+   "concept": "The promise of 71:10-12 told through the land: three dry fields that turn green when the child brings rain clouds, a riverbed that fills beside fruit trees, two pedestals for the moon as \"a [reflected] light\" and the sun as \"a burning lamp\" (71:16), and roads winding through wide hills (71:19-20). Nuh and his people are never shown; the seven heavens are not pictured.",
    "summary": "Surah Nuh tells how Nuh called his people for a very long time, by day and by night, telling them to ask Allah's forgiveness so He would send rain, gardens and rivers.",
    "areas": [
     {
@@ -4020,14 +4068,14 @@
     {
      "name": "Ask forgiveness",
      "reference": "71:10-12",
-     "description": "Read 71:10 and watch rain return to gardens (adaptation).",
-     "kind": "card"
+     "description": "Carry three rain clouds over three dry fields; they turn green and the river by the gardens fills (an adaptation of the promise in 71:10-12).",
+     "kind": "find"
     },
     {
      "name": "Sun and moon",
      "reference": "71:16",
-     "description": "Tell the burning lamp from the reflected light.",
-     "kind": "card"
+     "description": "Set the moon on the pedestal for \"a [reflected] light\" and the sun on the one for \"a burning lamp\" (71:16).",
+     "kind": "find"
     }
    ],
    "objectives": [
@@ -4040,8 +4088,10 @@
     "translation": "Saheeh International, attributed",
     "educational_content": "draft, unreviewed",
     "world_design": "designed, unreviewed",
-    "playable_environment": "not built: a shared symbolic setting stands in",
-    "testing": "not tested"
+    "playable_environment": "first version built: its own scene (fields, gardens and river, sun and moon pedestals, roads) with two hands-on activities in the scene",
+    "testing": "checked in headless Chromium with software WebGL at 960x600; not tested on phones or real GPUs",
+    "built_in": "src/world/scenes/Nuh.tsx, src/world/scenes/props.tsx, src/world/scenes/drag.tsx",
+    "tested_by": "automated screenshots of the scene and the in-scene activities"
    },
    "review": "unreviewed"
   },

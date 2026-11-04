@@ -53,7 +53,7 @@ export function Peaks({ position }: { position: [number, number, number] }) {
       ].map(([x, z, r, h], i) => (
         <mesh key={i} position={[x, h / 2 - 2, z]}>
           <coneGeometry args={[r, h, 6]} />
-          <meshStandardMaterial color={['#7a6a5a', '#8a7866', '#6e6050'][i]} roughness={1} flatShading />
+          <meshStandardMaterial color={['#7a6a5a', '#8a7866', '#6e6050'][i]} roughness={1} />
         </mesh>
       ))}
     </group>

@@ -23,7 +23,7 @@
  ],
  "summary_for_children": "Surah Nuh tells how Nuh called his people for a very long time, by day and by night, telling them to ask Allah's forgiveness so He would send rain, gardens and rivers.",
  "world_title": "Nuh's Call by Night and Day",
- "environment_concept": "A village where a call goes out by night and day, in public and in private, offering showers of rain, gardens and rivers to those who seek forgiveness; the idols' names stand as empty stones.",
+ "environment_concept": "The promise of 71:10-12 told through the land: three dry fields that turn green when the child brings rain clouds, a riverbed that fills beside fruit trees, two pedestals for the moon as \"a [reflected] light\" and the sun as \"a burning lamp\" (71:16), and roads winding through wide hills (71:19-20). Nuh and his people are never shown; the seven heavens are not pictured.",
  "architecture_and_scenery": "A village square, private courtyards, rain clouds over gardens and rivers, and a row of nameless standing stones.",
  "palette": {
   "colors": [
@@ -65,14 +65,16 @@
   {
    "name": "Ask forgiveness",
    "reference": "71:10-12",
-   "description": "Read 71:10 and watch rain return to gardens (adaptation).",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Carry three rain clouds over three dry fields; they turn green and the river by the gardens fills (an adaptation of the promise in 71:10-12).",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   },
   {
    "name": "Sun and moon",
    "reference": "71:16",
-   "description": "Tell the burning lamp from the reflected light.",
-   "label": "artistic educational adaptation, not an event in the Quran"
+   "description": "Set the moon on the pedestal for \"a [reflected] light\" and the sun on the one for \"a burning lamp\" (71:16).",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
   }
  ],
  "narration_plan": "Nuh is not shown or voiced.",
@@ -113,8 +115,10 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "not built: a shared symbolic setting stands in",
-  "testing": "not tested"
+  "playable_environment": "first version built: its own scene (fields, gardens and river, sun and moon pedestals, roads) with two hands-on activities in the scene",
+  "testing": "checked in headless Chromium with software WebGL at 960x600; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Nuh.tsx, src/world/scenes/props.tsx, src/world/scenes/drag.tsx",
+  "tested_by": "automated screenshots of the scene and the in-scene activities"
  },
  "quran_references": [
   "71:5-20",

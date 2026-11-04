@@ -7,6 +7,7 @@ import { Sky as SkyImpl } from 'three/examples/jsm/objects/Sky.js';
 import { mergeGeometries } from 'three/examples/jsm/utils/BufferGeometryUtils.js';
 import { seeded } from '@/illustrations/paint';
 import { canvas, noiseField, toTexture } from '@/three/textures';
+import { pebble } from '@/three/soft';
 import type { Preset } from './settings';
 import type { Land } from './terrain';
 
@@ -41,10 +42,10 @@ export function Sky({ preset }: { preset: Preset }) {
 /** A canvas detail map for the ground: speckle, pebbles and fine grain. */
 function groundDetail(seed: number) {
   const [c, ctx] = canvas(512, 512);
-  ctx.fillStyle = '#d2d2d2';
+  ctx.fillStyle = '#e4e4e4';
   ctx.fillRect(0, 0, 512, 512);
-  noiseField(ctx, 512, 512, seed, 0.18, 2.2);
-  noiseField(ctx, 512, 512, seed + 1, 0.12, 9, '40,40,40', '255,255,255');
+  noiseField(ctx, 512, 512, seed, 0.09, 2.2);
+  noiseField(ctx, 512, 512, seed + 1, 0.05, 9, '40,40,40', '255,255,255');
   return toTexture(c, 40);
 }
 
@@ -248,22 +249,26 @@ export function Palms({ spots }: { spots: Spot[] }) {
 export function Trees({ spots, olive = false }: { spots: Spot[]; olive?: boolean }) {
   const trunk = useRef<THREE.InstancedMesh>(null);
   const crown = useRef<THREE.InstancedMesh>(null);
-  const BLOBS = 5;
+  const BLOBS = 8;
   const trunkGeo = useMemo(() => {
-    const g = new THREE.CylinderGeometry(0.12, olive ? 0.32 : 0.22, olive ? 2.2 : 3.2, 7, 4);
+    const g = new THREE.CylinderGeometry(0.14, olive ? 0.34 : 0.26, olive ? 2.4 : 3.4, 14, 4);
     g.translate(0, olive ? 1.1 : 1.6, 0);
     return g;
   }, [olive]);
   const blobGeo = useMemo(() => {
-    const g = new THREE.IcosahedronGeometry(1, 2);
+    // A soft, lumpy ball, shaded darker underneath and sunlit on top, so a
+    // crown of them reads as one puffy storybook tree.
+    const g = pebble(1, 3);
     const p = g.attributes.position;
-    const rnd = seeded(olive ? 71 : 17);
+    const col = new Float32Array(p.count * 3);
+    const under = new THREE.Color(olive ? '#5e6b4c' : '#2f5a2a');
+    const top = new THREE.Color(olive ? '#b7c39a' : '#8cc25a');
+    const c = new THREE.Color();
     for (let i = 0; i < p.count; i++) {
-      const v = new THREE.Vector3(p.getX(i), p.getY(i), p.getZ(i));
-      v.multiplyScalar(0.85 + rnd() * 0.3);
-      p.setXYZ(i, v.x, v.y, v.z);
+      c.copy(under).lerp(top, THREE.MathUtils.smoothstep(p.getY(i), -0.9, 0.9));
+      col.set([c.r, c.g, c.b], i * 3);
     }
-    g.computeVertexNormals();
+    g.setAttribute('color', new THREE.BufferAttribute(col, 3));
     return g;
   }, [olive]);
   const buildTrunk = useMemo(
@@ -277,12 +282,15 @@ export function Trees({ spots, olive = false }: { spots: Spot[]; olive?: boolean
     const m = new THREE.Matrix4();
     const rnd = seeded(5);
     spots.forEach((s, i) => {
+      // One big ball on top, a ring of five round it and two lower puffs.
       for (let b = 0; b < BLOBS; b++) {
+        const ring = b >= 1 && b <= 5;
         const a = (b / BLOBS) * Math.PI * 2 + s.r;
-        const r = b === 0 ? 0 : (olive ? 0.9 : 1.1) * s.s;
-        const h = (olive ? 2.4 : 3.6) * s.s + (b === 0 ? 0.7 : rnd() * 0.6);
-        const sc = (olive ? 0.95 : 1.3) * s.s * (0.8 + rnd() * 0.4);
-        m.compose(new THREE.Vector3(s.x + Math.cos(a) * r, s.y + h, s.z + Math.sin(a) * r), new THREE.Quaternion(), new THREE.Vector3(sc, sc * 0.8, sc));
+        const r = b === 0 ? 0 : (ring ? (olive ? 0.85 : 1.05) : 0.7) * s.s;
+        const base = (olive ? 2.4 : 3.5) * s.s;
+        const h = base + (b === 0 ? 1.0 : ring ? 0.3 + rnd() * 0.4 : -0.35);
+        const sc = (olive ? 0.85 : 1.15) * s.s * (b === 0 ? 1.25 : 0.75 + rnd() * 0.3);
+        m.compose(new THREE.Vector3(s.x + Math.cos(a) * r, s.y + h, s.z + Math.sin(a) * r), new THREE.Quaternion(), new THREE.Vector3(sc, sc * 0.88, sc));
         mesh.setMatrixAt(i * BLOBS + b, m);
       }
     });
@@ -296,7 +304,7 @@ export function Trees({ spots, olive = false }: { spots: Spot[]; olive?: boolean
         <meshStandardMaterial color={olive ? '#6d6458' : '#5a4632'} roughness={0.95} />
       </instancedMesh>
       <instancedMesh ref={crown} args={[blobGeo, undefined, spots.length * BLOBS]} castShadow receiveShadow>
-        <meshStandardMaterial color={olive ? '#7d8a68' : '#3f6430'} roughness={0.85} flatShading />
+        <meshStandardMaterial vertexColors roughness={0.8} />
       </instancedMesh>
     </>
   );
@@ -305,11 +313,8 @@ export function Trees({ spots, olive = false }: { spots: Spot[]; olive?: boolean
 export function Rocks({ spots }: { spots: Spot[] }) {
   const ref = useRef<THREE.InstancedMesh>(null);
   const geo = useMemo(() => {
-    const g = new THREE.DodecahedronGeometry(1, 1);
-    const p = g.attributes.position;
-    const rnd = seeded(91);
-    for (let i = 0; i < p.count; i++) p.setXYZ(i, p.getX(i) * (0.8 + rnd() * 0.4), p.getY(i) * (0.55 + rnd() * 0.3), p.getZ(i) * (0.8 + rnd() * 0.4));
-    g.computeVertexNormals();
+    // Smooth, rounded boulders like river stones, not faceted crystals.
+    const g = pebble(1, 3, [1, 0.62, 1]);
     return g;
   }, []);
   const build = useMemo(
@@ -321,7 +326,7 @@ export function Rocks({ spots }: { spots: Spot[] }) {
   if (!spots.length) return null;
   return (
     <instancedMesh ref={ref} args={[geo, undefined, spots.length]} castShadow receiveShadow>
-      <meshStandardMaterial color="#8c8174" roughness={0.9} flatShading />
+      <meshStandardMaterial color="#a39484" roughness={0.85} />
     </instancedMesh>
   );
 }
@@ -494,5 +499,63 @@ export function Moon({ preset }: { preset: Preset }) {
       <sphereGeometry args={[34, 32, 16]} />
       <meshBasicMaterial map={tex} color="#fffbe8" fog={false} />
     </mesh>
+  );
+}
+
+/**
+ * Puffy clouds: clusters of soft balls, lit from above, drifting slowly across
+ * the far sky. Each world gets the same clouds every visit (seeded).
+ */
+export function Clouds({ preset, count = 14, seed = 3 }: { preset: Preset; count?: number; seed?: number }) {
+  const ref = useRef<THREE.InstancedMesh>(null);
+  const group = useRef<THREE.Group>(null);
+  const PUFFS = 7;
+  const geo = useMemo(() => {
+    const g = pebble(1, 3);
+    const p = g.attributes.position;
+    const col = new Float32Array(p.count * 3);
+    const lo = new THREE.Color(preset.night ? '#3a4466' : preset.sun[0] < 12 ? '#f0c4a8' : '#dfe6f2');
+    const hi = new THREE.Color(preset.night ? '#8a96bd' : preset.sun[0] < 12 ? '#fff0dc' : '#ffffff');
+    const c = new THREE.Color();
+    for (let i = 0; i < p.count; i++) {
+      c.copy(lo).lerp(hi, THREE.MathUtils.smoothstep(p.getY(i), -0.7, 0.8));
+      col.set([c.r, c.g, c.b], i * 3);
+    }
+    g.setAttribute('color', new THREE.BufferAttribute(col, 3));
+    return g;
+  }, [preset]);
+  useEffect(() => {
+    const mesh = ref.current;
+    if (!mesh) return;
+    const rnd = seeded(seed);
+    const m = new THREE.Matrix4();
+    const q = new THREE.Quaternion();
+    for (let i = 0; i < count; i++) {
+      const cx = (rnd() - 0.5) * 520;
+      const cz = -90 - rnd() * 260;
+      const cy = 38 + rnd() * 40;
+      const size = 5 + rnd() * 7;
+      for (let k = 0; k < PUFFS; k++) {
+        const t = k / (PUFFS - 1) - 0.5;
+        const s = size * (1 - Math.abs(t) * 1.1) * (0.8 + rnd() * 0.4);
+        m.compose(new THREE.Vector3(cx + t * size * 3.4, cy + s * 0.25 + (rnd() - 0.5) * 2, cz + (rnd() - 0.5) * size), q, new THREE.Vector3(s, s * 0.8, s));
+        mesh.setMatrixAt(i * PUFFS + k, m);
+      }
+    }
+    mesh.instanceMatrix.needsUpdate = true;
+    mesh.computeBoundingSphere();
+  }, [count, seed]);
+  useFrame((_, dt) => {
+    const g = group.current;
+    if (!g) return;
+    g.position.x += dt * 0.8;
+    if (g.position.x > 120) g.position.x = -120;
+  });
+  return (
+    <group ref={group}>
+      <instancedMesh ref={ref} args={[geo, undefined, count * PUFFS]} frustumCulled={false}>
+        <meshBasicMaterial vertexColors fog={false} transparent opacity={preset.night ? 0.55 : 0.96} />
+      </instancedMesh>
+    </group>
   );
 }

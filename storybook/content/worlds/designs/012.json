@@ -133,6 +133,13 @@
    "kind": "card",
    "description": "Over seven years of plenty, store grain in its spikes; then share it through seven hard years.",
    "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Carry the sheaves",
+   "reference": "12:47",
+   "kind": "find",
+   "description": "Carry four sheaves of grain to the granary doors, kept in their spikes for the hard years (12:47).",
+   "label": "artistic educational adaptation, not an event in the Quran"
   }
  ],
  "narration_plan": "Narration moves place by place in the Quran's order. Yusuf, his family and all others are never shown or voiced.",
@@ -192,9 +199,9 @@
   "translation": "Saheeh International, attributed",
   "educational_content": "draft, unreviewed",
   "world_design": "designed, unreviewed",
-  "playable_environment": "first version built: its own road of seven places (stars, well, caravan, prison, granaries, shirt, hall) and two playable games",
+  "playable_environment": "first version built: its own road of seven places (stars, well, caravan, prison, granaries, shirt, hall) and two playable games; carry the sheaves to the granaries (hands-on, in the scene)",
   "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
-  "built_in": "src/world/scenes/Yusuf.tsx, src/world/ActivityGame.tsx",
+  "built_in": "src/world/scenes/Yusuf.tsx, src/world/ActivityGame.tsx, src/world/scenes/drag.tsx",
   "tested_by": "automated screenshots of the scene and the journey game"
  },
  "quran_references": [
