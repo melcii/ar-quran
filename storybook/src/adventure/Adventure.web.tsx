@@ -617,7 +617,8 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
       player.speed += (want - player.speed) * Math.min(1, dt * 8);
       if (mag > 0.05) player.yaw = Math.atan2(dx, dz);
       if (player.speed > 0.02) {
-        const step = player.speed * dt;
+        // Never overshoot a tapped spot (slow frames would make the explorer dance round it).
+        const step = !(ix || iy) && game.target ? Math.min(player.speed * dt, Math.hypot(game.target.x - player.pos.x, game.target.z - player.pos.z)) : player.speed * dt;
         const fx = Math.sin(player.yaw) * step;
         const fz = Math.cos(player.yaw) * step;
         const { x, z } = player.pos;

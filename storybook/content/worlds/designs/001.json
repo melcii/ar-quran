@@ -177,13 +177,13 @@
   ],
   "learning_objective": "Know the seven ayahs of Al-Fatihah in order and what each asks of us",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: tap-to-go route to the threshold, then standing still starts the gate timer)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: the first gate opens: task c1 done)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: reading card or hint text shown)",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line and activity list visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: completion stored in the world save)",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"c1\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse, and Pixel 7 emulation with touch taps; both in headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
   "built_in": "src/adventure/worlds/w001.ts"

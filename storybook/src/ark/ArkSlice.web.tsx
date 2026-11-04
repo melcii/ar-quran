@@ -76,6 +76,9 @@ type Game = {
   timeScale: number;
   lastPadHint: number;
   stepPhase: number;
+  /** Tap-to-go waypoints round the river, trees and the hull. */
+  route?: THREE.Vector3[];
+  routeFor?: THREE.Vector3 | null;
 };
 
 function makeAgents(s: Save): Agent[] {
@@ -250,9 +253,16 @@ function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRe
       dx = -Math.sin(cy) * iy + Math.cos(cy) * ix;
       dz = -Math.cos(cy) * iy - Math.sin(cy) * ix;
     } else if (game.target) {
-      const tx = game.target.x - player.pos.x;
-      const tz = game.target.z - player.pos.z;
-      const d = Math.hypot(tx, tz);
+      if (game.routeFor !== game.target) {
+        game.routeFor = game.target;
+        game.route = arkNav.route(player.pos, game.target, { r: 0.35, budget: 2500, near: game.pending ? 2 : 1.2 }) ?? [];
+      }
+      const rt = game.route ?? [];
+      while (rt.length > 1 && Math.hypot(rt[0].x - player.pos.x, rt[0].z - player.pos.z) < 0.7) rt.shift();
+      const wp = rt.length > 1 ? rt[0] : game.target;
+      const tx = wp.x - player.pos.x;
+      const tz = wp.z - player.pos.z;
+      const d = Math.hypot(game.target.x - player.pos.x, game.target.z - player.pos.z);
       if (d < (game.pending ? 2.2 : 0.4)) {
         game.target = null;
         if (game.pending) {
@@ -261,8 +271,9 @@ function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRe
           act(p);
         }
       } else {
-        dx = tx / d;
-        dz = tz / d;
+        const dw = Math.hypot(tx, tz) || 1;
+        dx = tx / dw;
+        dz = tz / dw;
       }
     }
     const mag = Math.hypot(dx, dz);
@@ -270,7 +281,8 @@ function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRe
     player.speed += (want - player.speed) * Math.min(1, dt * 8);
     if (mag > 0.05) player.yaw = Math.atan2(dx, dz);
     if (player.speed > 0.02) {
-      const step = player.speed * dt;
+      // Never overshoot a tapped spot (slow frames would make the explorer dance round it).
+      const step = !(ix || iy) && game.target ? Math.min(player.speed * dt, Math.hypot(game.target.x - player.pos.x, game.target.z - player.pos.z)) : player.speed * dt;
       const fx = Math.sin(player.yaw) * step;
       const fz = Math.cos(player.yaw) * step;
       const { x, z } = player.pos;
