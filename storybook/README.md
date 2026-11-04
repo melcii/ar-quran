@@ -108,6 +108,42 @@ Limits: checked only in headless Chromium with software WebGL (slow there, so fr
 unmeasured); web only, phones fall back to the text screens; the animals are procedural models, not artist-made
 assets, so they read as stylised toys more than the reference games' hand-sculpted creatures.
 
+## Adventure worlds for surahs 1 to 10 (`/adventure`, web)
+
+The Ark slice's look and controls, turned into a shared engine (`src/adventure/`) with one world recipe per surah
+(`src/adventure/worlds/w001.ts` … `w010.ts`). Open the list at `/adventure`, or a world at `/adventure/1` … `/adventure/10`,
+or from the reading room's "Adventure worlds: surahs 1–10" button. Built from the "First 10 Surahs World Design Table".
+
+| Surah | World | What you do |
+| --- | --- | --- |
+| 1 Al-Fatihah | Garden of Guidance (short) | Light seven lanterns along one path, one per ayah; match each ayah to its translation; put the seven in order |
+| 2 Al-Baqarah | Four Lands of the Cow (4 regions) | Garden of Beginnings (2:30-39, a names game), Village of the Cow (2:67-73, read the questions in order, then find the cow that fits every description), Desert Sanctuary (2:124-129, lay a symbolic foundation), Community Orchard (2:261-274, plant seven rows, share baskets). Each gate opens when the land before it is done |
+| 3 Ali 'Imran | Garden of Steadfast Hearts | Read at the gate and the prayer chamber (3:35-37), water the garden, read by the pool (3:42-45), climb a mountain path of patience (3:139-148) |
+| 4 An-Nisa | Village of Trust and Fairness | Return lost things to the right houses (4:58), read about orphans (4:2-6), share bread equally (4:135), sweep the square, sort fair from unfair |
+| 5 Al-Ma'idah | Promises and Provision | Sort promises kept and broken (5:1), set a shared table, sort the market (5:8), read 5:27-31 in a quiet grove and 5:112-115 at the table |
+| 6 Al-An'am | Valley of Creation (dusk) | Lead the flock home, find signs (6:95-99), read 6:74-79 on the watching hill under the stars, plant olives and pomegranates |
+| 7 Al-A'raf | Path of Ancient Stories (4 regions) | Hall of Beginnings (7:11-26), Shore and Cliffs (7:59-74, water for travellers, doorway to the Ark), Market of Madyan (7:85, full measure, fair trade), Garden by the Sea (7:103-156, ayahs in order, patience) |
+| 8 Al-Anfal | Camp of Courage and Unity | Carry water (8:11), organise supplies, share fairly (8:1), mend tents, sort what unites (8:46), read 8:2-4 |
+| 9 At-Tawbah | Valley of Return | Give back borrowed things, repair the path, restore the garden, sort honest choices, read 9:102-104 and 9:117-119 |
+| 10 Yunus | Sea of Signs | Light the harbour (10:5-6), guide three boats in (10:22), cross bridges to islands for 10:71-73, 10:75-92 and 10:98, with doorways to the Ark and to the Yunus story |
+
+- **Every world** has a "Read the whole surah" book with every ayah in verified Arabic (KFGQPC Hafs) and the Saheeh
+  International translation, an "About this world" card listing the ayahs used, what each activity adapts, and what is
+  never shown, and a closing reflection quoting a verified ayah. Quran text, translation, explanation and activity are
+  labelled apart on every card. Progress is saved per world in the browser.
+- **Activities** (one engine for all): read at a lantern, tablet or lectern; light, water, sweep or read a set of spots
+  (some in order); carry things from where they are to where they belong (items, sprouting seedlings, foundation
+  stones, path stones); lead animals home; pick the one animal that fits a description; guide boats along a channel;
+  and three panel games: match ayah to translation, put ayahs in order (both use only the verified text), and sort
+  cards written for the game. A soft column of light marks where to go next.
+- **Never shown:** Allah, any prophet, angels, Iblees, Paradise or anything of the unseen, battles, punishments of
+  past peoples, or the events the readings describe. Places are game places, not reconstructions; the Baqarah
+  foundation is symbolic and not a model of the Ka'bah.
+
+Limits: drafts for scholarly review; checked in headless Chromium with software WebGL only (screenshots and an
+automatic check that every activity spot can be walked to); web only, phones fall back to the text screens; no
+recitation until a licensed source is configured; no music.
+
 ## Run it
 
 Requires Node 22 or newer.

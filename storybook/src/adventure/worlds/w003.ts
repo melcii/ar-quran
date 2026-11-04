@@ -1,0 +1,186 @@
+// Surah 3, Ali 'Imran: the Garden of Steadfast Hearts. A walled garden with a
+// small domed prayer chamber, plants to water, a quiet pool for reading, and a
+// mountain path with reading stones about patience. Maryam, Zakariyya and
+// the angels are never shown; their ayahs are only read.
+import { curve, type P2 } from '../terrain';
+import type { WorldDef } from '../types';
+import { LOOKS, PAL, rolling } from './common';
+
+const PATH: P2[] = curve([
+  [0, 62],
+  [-6, 46],
+  [0, 30],
+  [0, 16],
+  [0, 4],
+  [6, -8],
+  [16, -18],
+  [-8, -28],
+  [12, -38],
+  [-2, -48],
+  [0, -54],
+]);
+
+export const W003: WorldDef = {
+  surah: 3,
+  name: 'Garden of Steadfast Hearts',
+  theme: 'A prayer chamber, a garden to tend, and a mountain path of patience',
+  seed: 303,
+  ground: {
+    radius: 66,
+    base: rolling({
+      radius: 66,
+      amp: 3,
+      seed: 3,
+      shapes: [
+        { x: 0, z: -50, r: 36, h: 15 },
+        { x: -32, z: 20, r: 14, h: 4 },
+        { x: 30, z: 26, r: 12, h: 3 },
+        { x: 27, z: 17, r: 7, h: -6 },
+      ],
+    }),
+    palette: PAL.autumn,
+    paths: [PATH],
+    water: -3,
+    flats: [
+      { x: 0, z: 10, r: 12, paint: '#e4d4b0' },
+      { x: 0, z: -52, r: 6, paint: '#d8c8a8' },
+    ],
+  },
+  look: LOOKS.morning,
+  veg: {
+    grass: 1,
+    flowers: ['#fff2d8', '#f4d060', '#c8a0e8', '#f6c0d0'],
+    flowerDensity: 1.2,
+    trees: [
+      { kind: 'cypress', at: [[-6, 24], [6, 24], [-12, 18], [12, 18], [-12, 2], [12, 2]] },
+      { kind: 'fig', area: { x: -20, z: 30, r: 12 }, count: 4 },
+      { kind: 'olive', area: { x: 22, z: 38, r: 12 }, count: 5 },
+      { kind: 'autumn', area: { x: 0, z: 20, r: 50 }, count: 8 },
+      { kind: 'pine', area: { x: 0, z: -48, r: 30 }, count: 14, size: [0.8, 1.2] },
+      { kind: 'blossom', area: { x: 0, z: 40, r: 22 }, count: 5 },
+    ],
+    rocks: [
+      { x: 0, z: -46, n: 18, big: 1.8, spread: 46 },
+      { x: -32, z: 20, n: 5, big: 1.4, spread: 10 },
+    ],
+    pebbles: 40,
+    rim: ['pine', 'oak', 'autumn'],
+  },
+  far: '#7a9450',
+  mountains: { color: '#8a94b4', height: 1.2 },
+  start: [0, 62],
+  startYaw: Math.PI,
+  structures: [
+    { type: 'wall', x: -14, z: 22, to: [-3, 22], color: '#e2d0aa' },
+    { type: 'wall', x: 3, z: 22, to: [14, 22], color: '#e2d0aa' },
+    { type: 'wall', x: -14, z: 22, to: [-14, 0], color: '#e2d0aa' },
+    { type: 'wall', x: 14, z: 22, to: [14, 0], color: '#e2d0aa' },
+    { type: 'arch', x: 0, z: 22, w: 4, h: 4, color: '#e2d0aa' },
+    { type: 'dome', x: 0, z: 4, w: 6, d: 5.5, h: 3.6, color: '#f0e2c4', accent: '#4f8a8a' },
+    { type: 'bed', x: -8, z: 14, w: 4, d: 2 },
+    { type: 'bed', x: 8, z: 14, w: 4, d: 2 },
+    { type: 'well', x: -8, z: 7 },
+    { type: 'bench', x: 18, z: 8, rot: -0.8 },
+    { type: 'terrace', x: 0, z: -53, w: 8, d: 6, h: 0.3 },
+    { type: 'columns', x: 0, z: -56, w: 7, n: 3, color: '#e6d8bc' },
+  ],
+  welcome:
+    'Welcome to the Garden of Steadfast Hearts. Surah Ali \'Imran, "The Family of Imran", tells of a family devoted to Allah, and teaches patience when things are hard. Walk through the gate into the garden.',
+  tasks: [
+    {
+      id: 'vow',
+      kind: 'read',
+      at: [-3, 25],
+      marker: 'tablet',
+      title: 'A mother\'s promise',
+      goal: 'Read the stone at the garden gate',
+      reading: {
+        title: 'The wife of Imran',
+        refs: [[3, 35], [3, 36]],
+        note: 'The wife of Imran promised her child to the service of Allah before the child was born. She named her daughter Maryam (Mary) and asked Allah to protect her.',
+      },
+    },
+    {
+      id: 'chamber',
+      kind: 'read',
+      requires: ['vow'],
+      at: [3.5, 8.5],
+      marker: 'scroll',
+      title: 'The prayer chamber',
+      goal: 'Read at the door of the prayer chamber',
+      reading: {
+        title: '"It is from Allah"',
+        refs: [[3, 37]],
+        note: 'Allah accepted Maryam and placed her in the care of Zakariyya. Whenever he came to her in the prayer chamber, he found provision with her. She said, "It is from Allah. Allah provides for whom He wills without account."',
+      },
+      adaptation: 'The domed room is a game building for reading this ayah. It is not a picture of the real prayer chamber, and no one is shown inside.',
+    },
+    {
+      id: 'tend',
+      kind: 'points',
+      requires: ['chamber'],
+      style: 'plant',
+      verb: 'Water',
+      title: 'Tend the garden',
+      goal: 'Water the six plants in the garden',
+      intro: 'Gardens need patience: water today, and wait for the flowers. Water the six plants around the chamber.',
+      adaptation: 'Watering plants is a game idea about patient care.',
+      points: [
+        { at: [-9, 16.5], label: 'the plant by the gate' },
+        { at: [9, 16.5], label: 'the plant by the east wall' },
+        { at: [-10, 10], label: 'the plant by the well' },
+        { at: [10, 10], label: 'the plant by the bench' },
+        { at: [-6, 1], label: 'the plant behind the chamber' },
+        { at: [6, 1], label: 'the corner plant' },
+      ],
+      outro: 'The garden is in flower. Behind the chamber, a path climbs the mountain.',
+    },
+    {
+      id: 'pool',
+      kind: 'read',
+      requires: ['chamber'],
+      at: [19, 14],
+      marker: 'lantern',
+      title: 'Chosen and purified',
+      goal: 'Read by the quiet pool',
+      reading: {
+        title: 'Maryam was chosen',
+        refs: [[3, 42], [3, 43], [3, 45]],
+        note: 'Allah chose Maryam and purified her, and gave her good news of a son, \'Isa (Jesus), the Messiah. The angels in these ayahs are never pictured.',
+      },
+    },
+    {
+      id: 'climb',
+      kind: 'points',
+      requires: ['tend'],
+      style: 'sign',
+      ordered: true,
+      verb: 'Read',
+      title: 'The steadfast path',
+      goal: 'Climb the mountain path and read the four stones',
+      intro: 'The climb is steep, so take it slowly. Four stones on the way hold ayahs about not losing heart.',
+      points: [
+        { at: [9, -12], label: 'the first stone', reading: { title: 'Do not weaken', refs: [[3, 139]], note: 'Do not weaken and do not grieve. These words came to the believers after a hard day.' } },
+        { at: [14, -22], label: 'the second stone', reading: { title: 'Allah loves the steadfast', refs: [[3, 146]], note: 'Many prophets, and believers with them, faced hardship, yet they did not lose heart or give up. Allah loves those who are steadfast.' } },
+        { at: [-6, -31], label: 'the third stone', reading: { title: 'Their prayer', refs: [[3, 147]], note: 'Their words were a prayer: forgive us, and make our feet firm.' } },
+        { at: [3, -50], label: 'the summit stone', reading: { title: 'The doers of good', refs: [[3, 148]], note: 'Allah gave them good in this world and the best reward in the Hereafter. Allah loves those who do good.' } },
+      ],
+    },
+  ],
+  finale: {
+    title: 'Steady hearts',
+    body: [
+      'You read about a mother\'s promise, about Maryam who said "It is from Allah", and about believers who did not lose heart.',
+      'You also tended a garden and climbed a steep path. Both need patience: you keep going, step by step, and trust Allah.',
+    ],
+    ref: [3, 146],
+    questions: ['When did you need patience this week?', 'What short prayer from these ayahs could you say when something is hard?'],
+  },
+  notes: [
+    'Allah is never pictured, in any form.',
+    'No prophet is shown, and neither Maryam, her mother nor Zakariyya appear.',
+    'Angels are never pictured.',
+    'The chamber and garden are game places, not reconstructions.',
+  ],
+  extras: { motes: [{ at: [0, 10], r: 12 }] },
+};

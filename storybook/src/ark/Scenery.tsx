@@ -192,8 +192,8 @@ function clearOf(x: number, z: number, room: number) {
   return true;
 }
 
-type TreeKind = 'oak' | 'autumn' | 'blossom' | 'pine';
-type TreeSpec = { x: number; z: number; kind: TreeKind; size: number; seed: number; solid: boolean };
+export type TreeKind = 'oak' | 'autumn' | 'blossom' | 'pine' | 'palm' | 'olive' | 'cypress' | 'fig';
+export type TreeSpec = { x: number; z: number; kind: TreeKind; size: number; seed: number; solid: boolean };
 
 /** Every tree in the valley, chosen once (deterministic). */
 function plantTrees(): TreeSpec[] {
@@ -228,7 +228,7 @@ function plantTrees(): TreeSpec[] {
   return out;
 }
 
-type RockSpec = { x: number; z: number; s: number; sy: number; rot: number; v: number };
+export type RockSpec = { x: number; z: number; s: number; sy: number; rot: number; v: number };
 function placeRocks(): RockSpec[] {
   const r = rng(29);
   const out: RockSpec[] = [];
@@ -264,6 +264,7 @@ function placeRocks(): RockSpec[] {
 }
 
 export const TREES = plantTrees();
+export { clearOf as arkClearOf };
 export const ROCKS = placeRocks();
 for (const t of TREES) {
   if (t.solid) obstacles.push({ x: t.x, z: t.z, r: 0.55 * t.size + (t.kind === 'autumn' ? 0.5 : 0.2) });
@@ -281,7 +282,7 @@ shade.push({ x: ARK.x, z: ARK.z, r: 17, k: 0.18 });
 const windUniforms = { uTime: { value: 0 }, uPlayer: { value: new THREE.Vector3() }, uGust: { value: 1 } };
 
 /** Make a material sway in the wind: displacement grows with local height. */
-function windy<T extends THREE.Material>(m: T, strength: number, pushable: boolean, noFlip = false) {
+export function windy<T extends THREE.Material>(m: T, strength: number, pushable: boolean, noFlip = false) {
   m.onBeforeCompile = (sh) => {
     Object.assign(sh.uniforms, windUniforms);
     // Leaf cards: light both faces as if facing outward from the canopy.
@@ -324,7 +325,7 @@ export function Wind() {
 
 /* ------------------------------- grass ------------------------------- */
 
-function tuftGeometry() {
+export function tuftGeometry() {
   const blades: THREE.BufferGeometry[] = [];
   const r = rng(5);
   for (let b = 0; b < 9; b++) {
@@ -417,7 +418,7 @@ export function Grass({ q }: { q: SceneQuality }) {
 
 /* ------------------------------- flowers ------------------------------- */
 
-function flowerGeometry() {
+export function flowerGeometry() {
   const stem = new THREE.CylinderGeometry(0.008, 0.012, 0.32, 4, 1, true).translate(0, 0.16, 0);
   const sc = new Float32Array(stem.attributes.position.count * 3).fill(0);
   for (let i = 0; i < sc.length; i += 3) {
@@ -486,7 +487,7 @@ export function Flowers({ q }: { q: SceneQuality }) {
 /* ------------------------------- trees ------------------------------- */
 
 /** A tapered, curving tube along a path of points. */
-function limb(points: THREE.Vector3[], r0: number, r1: number, radial = 9, flare = 0) {
+export function limb(points: THREE.Vector3[], r0: number, r1: number, radial = 9, flare = 0) {
   const curve = new THREE.CatmullRomCurve3(points);
   const tub = Math.max(6, points.length * 4);
   const g = new THREE.TubeGeometry(curve, tub, 1, radial, false);
@@ -514,7 +515,7 @@ function limb(points: THREE.Vector3[], r0: number, r1: number, radial = 9, flare
 }
 
 /** A soft lumpy blob for canopies. */
-function blobGeometry(seed: number) {
+export function blobGeometry(seed: number) {
   const base = new THREE.IcosahedronGeometry(1, 3);
   base.deleteAttribute('normal');
   base.deleteAttribute('uv');
@@ -539,27 +540,87 @@ function blobGeometry(seed: number) {
   return g;
 }
 
-const CANOPY: Record<TreeKind, string[]> = {
+export const CANOPY: Record<TreeKind, string[]> = {
+  palm: ['#5d9a3a', '#4e8a30', '#70aa44', '#62a03a'],
+  olive: ['#8aa070', '#7a9264', '#9aae80', '#86a06c'],
+  cypress: ['#2f5e34', '#2a5530', '#376a3a', '#31603a'],
+  fig: ['#4f8f3a', '#5a9a40', '#468232', '#62a046'],
   oak: ['#5e9a3a', '#4f8a34', '#76ad44', '#689f3c'],
   autumn: ['#e0702e', '#d2582a', '#ee9a3c', '#c84a26'],
   blossom: ['#f2a0c0', '#e889b0', '#f8c0d4', '#d878a8'],
   pine: ['#3f6e3a', '#365f34', '#4a7a40', '#3a6838'],
 };
 
-type Built = { trunks: THREE.BufferGeometry; blobs: { m: THREE.Matrix4; c: THREE.Color }[]; cards: { m: THREE.Matrix4; c: THREE.Color }[] };
+export type Built = { trunks: THREE.BufferGeometry; fronds: THREE.BufferGeometry | null; blobs: { m: THREE.Matrix4; c: THREE.Color }[]; cards: { m: THREE.Matrix4; c: THREE.Color }[] };
 
-function buildForest(trees: TreeSpec[]): Built {
+/** One palm frond: a drooping, tapering leaf strip with a centre rib, coloured lighter at the tip. */
+export function frond(base: THREE.Vector3, angle: number, len: number, lift: number) {
+  const n = 10;
+  const pos: number[] = [];
+  const col: number[] = [];
+  const idx: number[] = [];
+  const dir = new THREE.Vector3(Math.cos(angle), 0, Math.sin(angle));
+  const side = new THREE.Vector3(-dir.z, 0, dir.x);
+  for (let i = 0; i <= n; i++) {
+    const t = i / n;
+    const c = base.clone().addScaledVector(dir, t * len);
+    c.y += lift * len * t - t * t * len * 0.75;
+    const w = Math.sin(Math.PI * Math.min(1, t * 1.15)) * 0.42 * (len / 3);
+    for (const sd of [-1, 0, 1]) {
+      const p = c.clone().addScaledVector(side, sd * w);
+      if (sd) p.y -= w * 0.35;
+      pos.push(p.x, p.y, p.z);
+      const l = sd === 0 ? 0.55 : 0.75 + t * 0.35;
+      col.push(0.36 * l, 0.62 * l, 0.22 * l);
+    }
+    if (i < n) {
+      const k = i * 3;
+      idx.push(k, k + 3, k + 1, k + 1, k + 3, k + 4, k + 1, k + 4, k + 2, k + 2, k + 4, k + 5);
+    }
+  }
+  const g = new THREE.BufferGeometry();
+  g.setAttribute('position', new THREE.Float32BufferAttribute(pos, 3));
+  g.setAttribute('color', new THREE.Float32BufferAttribute(col, 3));
+  g.setIndex(idx);
+  g.computeVertexNormals();
+  return g.toNonIndexed();
+}
+
+export function buildForest(trees: TreeSpec[], yAt: (x: number, z: number) => number = groundY): Built {
+  const fronds: THREE.BufferGeometry[] = [];
   const trunks: THREE.BufferGeometry[] = [];
   const blobs: Built['blobs'] = [];
   const cards: Built['cards'] = [];
   const up = new THREE.Vector3(0, 1, 0);
   for (const t of trees) {
     const r = rng(t.seed);
-    const y0 = groundY(t.x, t.z) - 0.25;
+    const y0 = yAt(t.x, t.z) - 0.25;
     const s = t.size;
     const pal = CANOPY[t.kind].map((h) => new THREE.Color(h));
     const crown: { p: THREE.Vector3; rad: number }[] = [];
-    if (t.kind === 'pine') {
+    if (t.kind === 'palm') {
+      const h = 7 * s;
+      const lean = new THREE.Vector3(r() - 0.5, 0, r() - 0.5).normalize().multiplyScalar(1.8 * s);
+      const pts = [0, 0.35, 0.7, 1].map((k) => new THREE.Vector3(t.x + lean.x * k * k, y0 + h * k, t.z + lean.z * k * k));
+      trunks.push(limb(pts, 0.32 * s, 0.2 * s, 8, 0.4));
+      const top = pts[3];
+      const nf = 9;
+      for (let f = 0; f < nf; f++) fronds.push(frond(top, (f / nf) * Math.PI * 2 + r() * 0.4, (2.6 + r() * 0.8) * s, 0.25 + r() * 0.5));
+      // Dates hanging under the crown.
+      crown.push({ p: top.clone().add(new THREE.Vector3(0, -0.35 * s, 0)), rad: 0.35 * s });
+      pal.splice(0, pal.length, new THREE.Color('#a8642a'), new THREE.Color('#c07a30'));
+    } else if (t.kind === 'cypress') {
+      trunks.push(limb([new THREE.Vector3(t.x, y0, t.z), new THREE.Vector3(t.x, y0 + 2 * s, t.z)], 0.22 * s, 0.15 * s, 6));
+      for (let i = 0; i < 4; i++) crown.push({ p: new THREE.Vector3(t.x, y0 + (2.2 + i * 1.6) * s, t.z), rad: (1.3 - i * 0.22) * s });
+    } else if (t.kind === 'olive') {
+      const pts = [0, 0.4, 0.75, 1].map((k, i) => new THREE.Vector3(t.x + Math.sin(i * 2.1 + t.seed) * 0.4 * s, y0 + 2.6 * s * k, t.z + Math.cos(i * 1.7 + t.seed) * 0.4 * s));
+      trunks.push(limb(pts, 0.4 * s, 0.22 * s, 9, 0.6));
+      for (let b = 0; b < 5; b++) {
+        const a = (b / 5) * Math.PI * 2 + r();
+        crown.push({ p: pts[3].clone().add(new THREE.Vector3(Math.cos(a) * 1.3 * s, 0.6 * s + r() * 0.6 * s, Math.sin(a) * 1.3 * s)), rad: 1.2 * s * (0.8 + r() * 0.3) });
+      }
+      crown.push({ p: pts[3].clone().add(new THREE.Vector3(0, 1.4 * s, 0)), rad: 1.4 * s });
+    } else if (t.kind === 'pine') {
       trunks.push(limb([new THREE.Vector3(t.x, y0, t.z), new THREE.Vector3(t.x, y0 + 9 * s, t.z)], 0.35 * s, 0.1 * s, 7));
       for (let i = 0; i < 4; i++) crown.push({ p: new THREE.Vector3(t.x, y0 + (3 + i * 1.9) * s, t.z), rad: (2.4 - i * 0.5) * s });
     } else {
@@ -584,7 +645,7 @@ function buildForest(trees: TreeSpec[]): Built {
     }
     const blobQ = new THREE.Quaternion();
     // Keep canopies well above head height so the camera can walk beneath.
-    for (const c of crown) c.p.y = Math.max(c.p.y, y0 + 3.4 * Math.min(1.2, s) + c.rad * 0.75);
+    if (t.kind !== 'palm' && t.kind !== 'cypress' && t.kind !== 'olive') for (const c of crown) c.p.y = Math.max(c.p.y, y0 + 3.4 * Math.min(1.2, s) + c.rad * 0.75);
     for (const c of crown) {
       const col = pal[Math.floor(r() * pal.length)].clone();
       blobQ.setFromAxisAngle(up, r() * 6.28);
@@ -604,7 +665,7 @@ function buildForest(trees: TreeSpec[]): Built {
     }
   }
   const merged = mergeGeometries(trunks.map((g) => g.toNonIndexed()))!;
-  return { trunks: merged, blobs, cards };
+  return { trunks: merged, fronds: fronds.length ? mergeGeometries(fronds)! : null, blobs, cards };
 }
 
 export function Forest({ q }: { q: SceneQuality }) {
@@ -654,7 +715,7 @@ export function Forest({ q }: { q: SceneQuality }) {
 
 /* ------------------------------- rocks ------------------------------- */
 
-function rockGeometry(seed: number) {
+export function rockGeometry(seed: number) {
   const base = new THREE.IcosahedronGeometry(1, 2);
   base.deleteAttribute('normal');
   const g = mergeVertices(base, 1e-4);
@@ -721,7 +782,7 @@ export function Rocks({ q }: { q: SceneQuality }) {
 
 /* ------------------------------- water ------------------------------- */
 
-function waterMaterial(flow: number, alpha: number) {
+export function waterMaterial(flow: number, alpha: number) {
   return new THREE.ShaderMaterial({
     transparent: true,
     fog: true,

@@ -394,6 +394,7 @@ function World() {
                 }}
               />
               <Button kind="secondary" icon="stories" label="Library of 114 surahs" onPress={() => toLibrary(surah)} />
+              <Button kind="secondary" label="Adventure worlds: surahs 1–10" onPress={() => router.push('/adventure' as never)} />
               <Button kind="secondary" label="Nuh's Ark: new-look preview" onPress={() => router.push('/ark')} />
             </Row>
           </View>

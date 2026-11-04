@@ -206,7 +206,22 @@ export function coatTexture(kind: string, base: string, mark: string) {
   return make(`coat-${kind}-${base}`, 256, 256, (g, r) => {
     g.fillStyle = base;
     g.fillRect(0, 0, 256, 256);
-    if (kind === 'giraffe') {
+    if (kind === 'patches') {
+      g.fillStyle = mark;
+      for (let i = 0; i < 7; i++) {
+        const cx = r() * 256;
+        const cy = r() * 256;
+        g.beginPath();
+        for (let k = 0; k < 9; k++) {
+          const a = (k / 9) * Math.PI * 2;
+          const d = 22 + r() * 26;
+          if (k === 0) g.moveTo(cx + Math.cos(a) * d, cy + Math.sin(a) * d);
+          else g.lineTo(cx + Math.cos(a) * d, cy + Math.sin(a) * d);
+        }
+        g.closePath();
+        g.fill();
+      }
+    } else if (kind === 'giraffe') {
       g.fillStyle = mark;
       for (let yy = 0; yy < 6; yy++)
         for (let xx = 0; xx < 6; xx++) {

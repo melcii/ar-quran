@@ -196,5 +196,13 @@
   "reviewer": null,
   "notes": []
  },
- "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "adventure_world": {
+  "title": "Path of Ancient Stories",
+  "route": "/adventure/7",
+  "built_in": "src/adventure/worlds/w007.ts (engine: src/adventure/)",
+  "source": "\"Quran Adventure: First 10 Surahs World Design Table\" (requested 2026-11)",
+  "status": "first version built for the web; draft, unreviewed; checked in headless Chromium with software WebGL only, not on phones or real GPUs",
+  "note": "The new-look adventure world for this surah. It is a separate design from the composed scene this record describes; both are kept until reviewers choose."
+ }
 }

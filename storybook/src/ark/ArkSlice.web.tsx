@@ -20,7 +20,7 @@ import { SoftShapes } from '@/three/soft';
 import { fonts } from '@/theme';
 import { QUALITY, guessTier, lowerTier, type QualityTier } from '@/world/quality';
 import { Ark, SUPPLY_SPOTS, Supply, Yard, clip, type SupplyKind } from './Ark';
-import { Beast, SPECS, drawBeastIcon, type Agent } from './Beasts';
+import { Beast, SPECS, drawBeastIcon, type Agent as AnyAgent } from './Beasts';
 import { Child } from './Child';
 import { ARK, ARK_FLOOR_Y, PADS, RAMP, RIVER_Y, START, STALLS, canStep, floorY, groundY, inHull, onRamp, riverZ, type BeastKind } from './land';
 import { nature } from './nature';
@@ -29,6 +29,7 @@ import { Birds, Clouds, FarLand, Flood, Flowers, Forest, Grass, Ground, Lighting
 import { motion, player, pointer, weather, type Move } from './shared';
 import { AFTER, NAMES, NARRATION, READINGS, REFLECTION, REFLECT_REF, SUPPLY_NAMES, clearSave, fresh, load, save, verse, type Reading, type Save } from './story';
 
+type Agent = AnyAgent<BeastKind>;
 const KINDS: BeastKind[] = ['giraffe', 'elephant', 'camel', 'sheep', 'horse'];
 const SUPPLIES: SupplyKind[] = ['grain', 'hay', 'water'];
 const HOMES: Record<BeastKind, [number, number]> = {

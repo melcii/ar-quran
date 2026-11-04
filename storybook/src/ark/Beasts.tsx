@@ -11,9 +11,11 @@ import { motion } from './shared';
 
 export type BeastState = 'wander' | 'follow' | 'drag' | 'pad' | 'board' | 'stall';
 
-export type Agent = {
+export type Animal = BeastKind | 'cow' | 'goat';
+
+export type Agent<K extends Animal = Animal> = {
   id: string;
-  kind: BeastKind;
+  kind: K;
   mate: 0 | 1;
   pos: THREE.Vector3;
   yaw: number;
@@ -29,6 +31,8 @@ export type Agent = {
   timer: number;
   highlight: boolean;
   scale: number;
+  /** Per-animal looks: coat colours, patches, a work yoke (used to tell animals apart). */
+  look?: { coat?: string; mark?: string; patches?: boolean; yoke?: boolean; grey?: boolean };
 };
 
 type Spec = {
@@ -49,11 +53,13 @@ type Spec = {
   speed: number;
 };
 
-export const SPECS: Record<BeastKind, Spec> = {
+export const SPECS: Record<Animal, Spec> = {
   giraffe: { name: 'giraffe', hip: 1.9, len: 1.55, r: 0.52, legR: 0.09, neck: 2.0, neckTilt: 0.42, head: 0.24, snout: 0.26, coat: '#ebbd68', coat2: '#e2ae58', mark: '#a0602e', dark: '#4a3020', stride: 2.6, speed: 2.2 },
   elephant: { name: 'elephant', hip: 1.15, len: 2.0, r: 1.0, legR: 0.27, neck: 0.25, neckTilt: 1.25, head: 0.62, snout: 0, coat: '#9a9aa6', coat2: '#8e8e9a', mark: '#7c7c88', dark: '#3a3a44', stride: 2.2, speed: 1.6 },
   camel: { name: 'camel', hip: 1.35, len: 1.45, r: 0.5, legR: 0.08, neck: 1.15, neckTilt: 0.95, head: 0.22, snout: 0.26, coat: '#d4a464', coat2: '#c89858', mark: '#b08048', dark: '#4a3424', stride: 2.2, speed: 2.0 },
   horse: { name: 'horse', hip: 0.95, len: 1.35, r: 0.42, legR: 0.075, neck: 0.8, neckTilt: 0.62, head: 0.2, snout: 0.3, coat: '#8a5634', coat2: '#d8cab4', mark: '#6a4024', dark: '#2a1c14', stride: 2.0, speed: 2.6 },
+  cow: { name: 'cow', hip: 0.78, len: 1.5, r: 0.5, legR: 0.08, neck: 0.42, neckTilt: 1.05, head: 0.22, snout: 0.22, coat: '#a8754a', coat2: '#b8865a', mark: '#f2ead8', dark: '#3a2a20', stride: 1.7, speed: 1.5 },
+  goat: { name: 'goat', hip: 0.46, len: 0.78, r: 0.27, legR: 0.045, neck: 0.32, neckTilt: 0.7, head: 0.15, snout: 0.16, coat: '#e8ddc8', coat2: '#6a4a34', mark: '#3a2a20', dark: '#2a201a', stride: 1.0, speed: 1.8 },
   sheep: { name: 'sheep', hip: 0.42, len: 0.78, r: 0.4, legR: 0.05, neck: 0.18, neckTilt: 0.9, head: 0.16, snout: 0.12, coat: '#f3eee2', coat2: '#e8e0d0', mark: '#d8d0c0', dark: '#3a302a', stride: 0.9, speed: 1.6 },
 };
 
@@ -125,7 +131,7 @@ function Hl({ on, k = 1 }: { on: boolean; k?: number }) {
   return on ? <Outlines thickness={0.035 * k} color={HL} /> : null;
 }
 
-export function Beast({ agent, highlight = false, onDown, onTap }: { agent: Agent; highlight?: boolean; onDown?: (a: Agent, e: ThreeEvent<PointerEvent>) => void; onTap?: (a: Agent) => void }) {
+export function Beast<K extends Animal>({ agent, highlight = false, onDown, onTap }: { agent: Agent<K>; highlight?: boolean; onDown?: (a: Agent<K>, e: ThreeEvent<PointerEvent>) => void; onTap?: (a: Agent<K>) => void }) {
   const s = SPECS[agent.kind];
   const root = useRef<THREE.Group>(null);
   const torso = useRef<THREE.Group>(null);
@@ -138,8 +144,12 @@ export function Beast({ agent, highlight = false, onDown, onTap }: { agent: Agen
   const shadowRef = useRef<THREE.Mesh>(null);
   const flick = useRef(0);
   const mats = useMemo(() => {
-    const base = agent.mate ? s.coat2 : s.coat;
-    const tex = agent.kind === 'giraffe' || agent.kind === 'elephant' || agent.kind === 'horse' ? coatTexture(agent.kind, base, s.mark) : undefined;
+    const lk = agent.look ?? {};
+    const base = lk.coat ?? (agent.mate ? s.coat2 : s.coat);
+    const tex =
+      agent.kind === 'giraffe' || agent.kind === 'elephant' || agent.kind === 'horse' || agent.kind === 'cow' || agent.kind === 'goat'
+        ? coatTexture(lk.patches ? 'patches' : agent.kind, base, lk.mark ?? s.mark)
+        : undefined;
     if (tex) tex.repeat.set(agent.kind === 'giraffe' ? 2 : 1, agent.kind === 'giraffe' ? 2 : 1);
     return {
       coat: mat(base, tex),
@@ -151,8 +161,9 @@ export function Beast({ agent, highlight = false, onDown, onTap }: { agent: Agen
       shine: new THREE.MeshBasicMaterial({ color: '#ffffff' }),
       ivory: mat('#f2ead8'),
       pink: mat('#d89a90'),
+      wood: mat('#7a5232', undefined, 0.8),
     };
-  }, [agent.kind, agent.mate, s]);
+  }, [agent.kind, agent.mate, agent.look, s]);
 
   // Layout of the rig.
   const hx = s.r * (agent.kind === 'elephant' ? 0.55 : 0.5);
@@ -299,6 +310,18 @@ export function Beast({ agent, highlight = false, onDown, onTap }: { agent: Agen
             </mesh>
           )}
         </group>
+        {agent.look?.yoke && (
+          <group position={[0, bodyY + s.r * 0.75, s.len / 2 - s.r * 0.35]}>
+            <mesh material={mats.wood} rotation-z={Math.PI / 2} castShadow>
+              <capsuleGeometry args={[0.06, s.r * 2.6, 4, 8]} />
+            </mesh>
+            {[-1, 1].map((sd) => (
+              <mesh key={sd} material={mats.wood} position={[sd * s.r * 0.55, -s.r * 0.45, 0]}>
+                <cylinderGeometry args={[0.03, 0.03, s.r * 0.9, 6]} />
+              </mesh>
+            ))}
+          </group>
+        )}
         {/* Neck and head. */}
         <group ref={neck} position={[0, bodyY + s.r * 0.35, s.len / 2 - s.r * 0.2]} rotation-x={s.neckTilt}>
           {s.neck > 0.3 && (
@@ -378,6 +401,22 @@ export function Beast({ agent, highlight = false, onDown, onTap }: { agent: Agen
                   </mesh>
                 ))}
               </>
+            )}
+            {(k === 'cow' || k === 'goat') &&
+              [-1, 1].map((sd) => (
+                <mesh key={sd} material={k === 'cow' ? mats.ivory : mats.dark} position={[sd * s.head * 0.45, s.head * 0.85, -s.head * 0.15]} rotation={[k === 'goat' ? -0.7 : -0.2, 0, sd * (k === 'cow' ? -1.1 : -0.25)]}>
+                  <coneGeometry args={[s.head * 0.14, s.head * (k === 'cow' ? 0.7 : 1.1), 8]} />
+                </mesh>
+              ))}
+            {k === 'goat' && (
+              <mesh material={mats.dark} position={[0, -s.head * 0.85, s.head * 0.95]} scale={[0.5, 1, 0.5]}>
+                <coneGeometry args={[0.05, 0.16, 6]} />
+              </mesh>
+            )}
+            {agent.look?.grey && (
+              <mesh material={mats.ivory} position={[0, -s.head * 0.25, s.head * 1.05]} scale={[0.9, 0.9, 0.8]}>
+                <sphereGeometry args={[s.head * 0.62, 10, 8]} />
+              </mesh>
             )}
             {k === 'horse' && (
               <mesh material={mats.dark} position={[0, s.head * 0.7, s.head * 0.35]} rotation-x={-0.3} scale={[0.4, 0.8, 1]}>
