@@ -183,5 +183,49 @@
   "reviewer": null,
   "notes": []
  },
- "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "Green valley with a river, a wooden ark and a yard; rain, rising water, then calm",
+  "quran_references": [
+   "11:36-44",
+   "54:13"
+  ],
+  "primary_mechanic": {
+   "kind": "lead-pairs-aboard",
+   "engine": "ark slice (src/ark/)",
+   "text": "Find animal pairs, lead them (or drag one) to the pad with their picture, watch them board; store grain, hay and water; wait inside while the water rises and falls."
+  },
+  "secondary_activities": [
+   "carry supplies",
+   "lantern readings 11:36-41"
+  ],
+  "narrative_structure": "Gather, board, flood, calm",
+  "world_assets": [
+   "ark with cutaway inside",
+   "boarding pads",
+   "stalls",
+   "five animal kinds in pairs",
+   "supplies"
+  ],
+  "environment_behaviour": [
+   "rain and wind grow",
+   "water rises and the ark lifts",
+   "water goes down (11:44)",
+   "animals have temperaments and find ways round"
+  ],
+  "learning_objective": "Trust and obedience; the pairs (11:40) and the ark coming to rest (11:44)",
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/ark/",
+  "note": "This is the Ark slice (/ark), the benchmark for the shared animal and world systems. The rest of Surah Hud is not yet in the new engine."
+ }
 }

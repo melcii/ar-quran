@@ -147,5 +147,46 @@
   "status": "second version built for the web: each world now has its own core mechanic; draft, unreviewed; checked in headless Chromium with software WebGL only, not on phones or real GPUs",
   "note": "The new-look adventure world for this surah. It is a separate design from the composed scene this record describes; both are kept until reviewers choose.",
   "core_play": "A sailing adventure: steer your own boat round the bay and out to sea, to five places where the sea, the sky and the stories of earlier peoples are read."
+ },
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "Island town and open sea with a storm leg",
+  "quran_references": [
+   "10:5",
+   "10:22-23",
+   "10:98",
+   "21:87-88"
+  ],
+  "primary_mechanic": {
+   "kind": "sailing",
+   "engine": "sail",
+   "text": "Board a boat at the dock and sail to five stops, one through a storm (10:22-23)."
+  },
+  "secondary_activities": [
+   "shore reading 21:87-88 (the fish account is not in surah 10)"
+  ],
+  "narrative_structure": "Voyage of stops",
+  "world_assets": [
+   "player boat",
+   "dock",
+   "island town",
+   "storm"
+  ],
+  "environment_behaviour": [
+   "storm weather on one leg",
+   "boat slides along shores"
+  ],
+  "learning_objective": "Remembering Allah in ease as in hardship (10:22-23)",
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w010.ts"
  }
 }

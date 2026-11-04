@@ -618,3 +618,87 @@ export function Motes({ center, r = 20, n = 60, color = '#ffe8a0', height = 2.5 
     </points>
   );
 }
+
+/**
+ * Small birds pecking on the ground in a few spots. They hop and peck while
+ * the child walks by calmly, flutter up and away from a running child (or a
+ * storm), and come back down a little later.
+ */
+export function GroundBirds({ spots, t }: { spots: P2[]; t: Terrain }) {
+  const g = useRef<THREE.Group>(null);
+  const birds = useMemo(() => {
+    const r = rng(spots.length * 31 + 5);
+    return spots.flatMap((s, si) =>
+      Array.from({ length: 4 }, () => {
+        const hx = s[0] + (r() - 0.5) * 3;
+        const hz = s[1] + (r() - 0.5) * 3;
+        return { si, hx, hz, x: hx, z: hz, y: 0, yaw: r() * 6.28, up: 0, away: 0, peck: r() * 6, dir: r() * 6.28 };
+      }),
+    );
+  }, [spots]);
+  const flock = useMemo(() => spots.map(() => ({ gone: 0 })), [spots]);
+  const mats = useMemo(() => ({ body: new THREE.MeshLambertMaterial({ color: '#8a6a52' }), wing: new THREE.MeshLambertMaterial({ color: '#6a5040', side: THREE.DoubleSide }), beak: new THREE.MeshLambertMaterial({ color: '#e0a040' }) }), []);
+  const wing = useMemo(() => new THREE.BufferGeometry().setFromPoints([new THREE.Vector3(0, 0, -0.06), new THREE.Vector3(0, 0, 0.07), new THREE.Vector3(0.2, 0.02, -0.02)]), []);
+  useFrame((st, rawDt) => {
+    const dt = Math.min(0.05, rawDt);
+    const time = st.clock.elapsedTime;
+    // A whole flock lifts together when the child runs close or the weather turns.
+    spots.forEach((s, i) => {
+      const f = flock[i];
+      const d = Math.hypot(player.pos.x - s[0], player.pos.z - s[1]);
+      if ((d < 5.5 && player.speed > 5) || d < 1.6 || weather.storm > 0.5 || weather.rain > 0.5) f.gone = 9 + Math.random() * 5;
+      else f.gone = Math.max(0, f.gone - dt);
+    });
+    g.current?.children.forEach((o, i) => {
+      const b = birds[i];
+      const gone = flock[b.si].gone > 0;
+      b.up += ((gone ? 1 : 0) - b.up) * Math.min(1, dt * (gone ? 1.5 : 0.5));
+      if (gone && b.up > 0.02) {
+        // Fly off and up, away from the child.
+        const a = Math.atan2(b.x - player.pos.x, b.z - player.pos.z);
+        b.dir = a;
+        b.x += Math.sin(a) * dt * 6 * b.up;
+        b.z += Math.cos(a) * dt * 6 * b.up;
+      } else if (!gone) {
+        // Glide back home and hop about.
+        b.x += (b.hx - b.x) * Math.min(1, dt * 0.6);
+        b.z += (b.hz - b.z) * Math.min(1, dt * 0.6);
+        if (b.up < 0.05 && Math.sin(time * 0.7 + b.peck) > 0.97) {
+          b.yaw += (Math.random() - 0.5) * 1.5;
+          b.hx += Math.sin(b.yaw) * 0.25;
+          b.hz += Math.cos(b.yaw) * 0.25;
+        }
+      }
+      const ground = t.floorY(b.x, b.z);
+      o.position.set(b.x, ground + 0.08 + b.up * 9 + (b.up < 0.05 ? Math.max(0, Math.sin(time * 6 + b.peck)) * 0.03 : 0), b.z);
+      o.rotation.y = b.up > 0.05 ? b.dir : b.yaw;
+      o.visible = b.up < 0.98;
+      const head = o.children[1];
+      head.rotation.x = b.up < 0.05 && !motion.reduced ? Math.max(0, Math.sin(time * 3 + b.peck * 2)) * 0.9 : 0;
+      const flap = b.up > 0.05 && !motion.reduced ? Math.sin(time * 30 + i) * 0.9 : 0.1;
+      o.children[2].rotation.z = flap;
+      o.children[3].rotation.z = -flap;
+    });
+  });
+  return (
+    <group ref={g}>
+      {birds.map((_, i) => (
+        <group key={i}>
+          <mesh material={mats.body} scale={[0.07, 0.065, 0.11]}>
+            <sphereGeometry args={[1, 10, 8]} />
+          </mesh>
+          <group position={[0, 0.05, 0.08]}>
+            <mesh material={mats.body} position={[0, 0, 0.02]}>
+              <sphereGeometry args={[0.045, 8, 6]} />
+            </mesh>
+            <mesh material={mats.beak} position={[0, -0.005, 0.07]} rotation-x={Math.PI / 2}>
+              <coneGeometry args={[0.012, 0.035, 5]} />
+            </mesh>
+          </group>
+          <mesh geometry={wing} material={mats.wing} position={[0.04, 0.03, 0]} />
+          <mesh geometry={wing} material={mats.wing} position={[-0.04, 0.03, 0]} scale={[-1, 1, 1]} />
+        </group>
+      ))}
+    </group>
+  );
+}

@@ -165,5 +165,34 @@
   "reviewer": null,
   "notes": []
  },
- "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations."
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
+  "visual_theme": null,
+  "quran_references": [
+   "19:2-15",
+   "19:11",
+   "19:16-36",
+   "19:23",
+   "19:24",
+   "19:24-26"
+  ],
+  "primary_mechanic": null,
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ }
 }

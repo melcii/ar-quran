@@ -27,6 +27,10 @@ export default function Chooser() {
         <Text style={st.backText}>‹ Back</Text>
       </Pressable>
       <Text style={st.h1}>Adventure worlds</Text>
+      <Pressable onPress={() => router.push('/journal' as never)} style={[st.card, { paddingVertical: 10 }]} accessibilityRole="button">
+        <Text style={st.name}>📔 My Discovery Journal</Text>
+        <Text style={[st.small, { flex: 1 }]}>Worlds, ayahs read, words met, nature notes and your own thoughts</Text>
+      </Pressable>
       <Text style={st.p}>
         Walk, explore and learn in a world for each surah. Every world holds the whole surah in verified Arabic with a translation. The places and activities are game ideas
         made to help you think about the meanings; they are not pictures of real events. These are drafts waiting for scholarly review.

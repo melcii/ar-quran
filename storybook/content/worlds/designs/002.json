@@ -189,5 +189,45 @@
   "status": "second version built for the web: each world now has its own core mechanic; draft, unreviewed; checked in headless Chromium with software WebGL only, not on phones or real GPUs",
   "note": "The new-look adventure world for this surah. It is a separate design from the composed scene this record describes; both are kept until reviewers choose.",
   "core_play": "A hub-and-doors adventure: the atlas hall sends you into four story lands, each with its own kind of play. The village is an investigation in which you narrow a herd down by each answer in turn."
+ },
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "Story atlas hall with a lit floor map and doors to separate lands",
+  "quran_references": [
+   "2:67-71",
+   "2:125-129"
+  ],
+  "primary_mechanic": {
+   "kind": "atlas-warps+sift",
+   "engine": "sift",
+   "text": "Choose story lands from an atlas; in the cow land, hear each description in the Quran's order (2:67-71) and send away cows that do not match."
+  },
+  "secondary_activities": [
+   "carry",
+   "ordered corner walk round a low outline (2:125-129)",
+   "orchard giving"
+  ],
+  "narrative_structure": "Hub and spokes: atlas hall with story doors",
+  "world_assets": [
+   "atlas hall",
+   "floor map",
+   "story doors",
+   "cow herd with looks"
+  ],
+  "environment_behaviour": [
+   "map lights per land finished"
+  ],
+  "learning_objective": "Follow the questions about the cow in order and see the surah as many stories",
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w002.ts"
  }
 }

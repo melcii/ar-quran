@@ -27,6 +27,12 @@ import { nature } from './nature';
 import { signTexture } from './paint';
 import { Birds, Clouds, FarLand, Flood, Flowers, Forest, Grass, Ground, Lighting, Mountains, Rain, River, Rocks, Sky, Wind, type SceneQuality } from './Scenery';
 import { motion, player, pointer, weather, type Move } from './shared';
+import { journal } from '@/journal/store';
+import { makeNav } from '@/creatures/nav';
+import { mindOf, routeTo, think } from '@/creatures/mind';
+
+/** Ways round the hull, the river, trunks and rocks, for the animals (the ramp counts only while it is down). */
+const arkNav = makeNav((ax, az, bx, bz, r) => canStep(ax, az, bx, bz, r, weather.rampUp < 0.5), { radius: 76, cell: 1.6, y: groundY });
 import { AFTER, NAMES, NARRATION, READINGS, REFLECTION, REFLECT_REF, SUPPLY_NAMES, clearSave, fresh, load, save, verse, type Reading, type Save } from './story';
 
 type Agent = AnyAgent<BeastKind>;
@@ -303,16 +309,17 @@ function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRe
       let goal: THREE.Vector3 | null = null;
       let pace = spec.speed;
       if (a.state === 'wander') {
-        if (!a.target || a.timer > 9) {
-          if (a.timer > 4 + (a.scale * 10) % 4 || !a.target) {
-            const ang = Math.random() * 6.28;
-            const r = 2 + Math.random() * 5;
-            a.target = a.home.clone().add(new THREE.Vector3(Math.cos(ang) * r, 0, Math.sin(ang) * r));
-            a.timer = 0;
-          }
-        }
-        goal = a.target;
-        pace = spec.speed * 0.45;
+        // Each kind's own temperament: pairs keep together, sheep lie down, giraffes and goats come to look (creatures/mind.ts).
+        const want = think(a, {
+          dt,
+          player: player.pos,
+          playerSpeed: player.speed,
+          group: game.agents.filter((o) => o.kind === a.kind && o.state === 'wander'),
+          nav: arkNav,
+          ok: (x, z) => canStep(x, z, x, z, 0.3, rampDown) && !inHull(x, z, 1.5),
+        });
+        goal = want?.goal ?? null;
+        pace = spec.speed * (want?.pace ?? 0.45);
         // Notice the explorer nearby: found.
         const d = Math.hypot(a.pos.x - player.pos.x, a.pos.z - player.pos.z);
         if (!a.found && d < 7) {
@@ -324,9 +331,14 @@ function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRe
         const back = new THREE.Vector3(Math.sin(player.yaw), 0, Math.cos(player.yaw)).multiplyScalar(-(2.6 + a.mate * 2.4 + spec.len * 0.6));
         const side = new THREE.Vector3(Math.cos(player.yaw), 0, -Math.sin(player.yaw)).multiplyScalar(a.mate ? 1.2 : -1.2);
         goal = game.drag ? leader.clone().add(side) : leader.clone().add(back).add(side);
+        // Round the river bend, trees and the hull instead of walking into them.
+        if (!game.drag) goal = routeTo(a, goal, arkNav);
+        mindOf(a).rest = 0;
         pace = Math.max(spec.speed, player.speed * 1.05);
         const pad = PADS.find((p) => p.kind === a.kind)!;
-        if (a.mate === 0 && Math.hypot(a.pos.x - pad.x, a.pos.z - pad.z) < 4.2) sendToPad(a.kind);
+        // The pair goes onto its pad when it gets close, or when the child stands on the pad with the pair just behind.
+        const onPad = Math.hypot(player.pos.x - pad.x, player.pos.z - pad.z) < 2.5 && Math.hypot(a.pos.x - pad.x, a.pos.z - pad.z) < 7.5;
+        if (a.mate === 0 && (Math.hypot(a.pos.x - pad.x, a.pos.z - pad.z) < 4.2 || onPad)) sendToPad(a.kind);
         else if (a.mate === 0 && t - game.lastPadHint > 6) {
           const other = PADS.find((p) => p.kind !== a.kind && Math.hypot(a.pos.x - p.x, a.pos.z - p.z) < 3);
           if (other) {
@@ -377,13 +389,21 @@ function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRe
             a.pos.z = nz;
             moving = true;
             a.yaw = Math.atan2(gx, gz);
-          } else if (a.state === 'wander') a.target = null;
+          } else if (a.state === 'wander') {
+            mindOf(a).route = [];
+            mindOf(a).left = Math.min(mindOf(a).left, 0.5);
+          }
           a.phase += (step / spec.stride) * Math.PI * 2;
         }
       }
       if (!moving) a.speed += (0 - a.speed) * Math.min(1, dt * 5);
       // Graze while standing still in the meadow.
-      const grazeWant = !moving && (a.state === 'wander' || a.state === 'stall') && Math.sin(t * 0.21 + a.scale * 40) > 0.1 ? 1 : 0;
+      const mm = mindOf(a);
+      if (a.state !== 'wander') {
+        mm.rest += (0 - mm.rest) * Math.min(1, dt * 2);
+        mm.look *= 1 - Math.min(1, dt * 3);
+      }
+      const grazeWant = !moving && (a.state === 'wander' || a.state === 'stall') && mm.rest < 0.2 && Math.abs(mm.look) < 0.2 && Math.sin(t * 0.21 + a.scale * 40) > 0.1 ? 1 : 0;
       a.graze += (grazeWant - a.graze) * Math.min(1, dt * 1.2);
       const ground = a.state === 'board' || a.state === 'stall' ? floorY(a.pos.x, a.pos.z, weather.lift, true) : floorY(a.pos.x, a.pos.z, weather.lift, rampDown);
       a.pos.y += (ground - a.pos.y) * Math.min(1, dt * 10);
@@ -872,6 +892,7 @@ function Slice() {
   const portrait = height > width;
   const [webgl] = useState(hasWebGL);
   const [data, setData] = useState<Save>(load);
+  useEffect(() => journal.visit('ark', "Nuh's Ark", 11), []);
   const saveRef = useRef(data);
   saveRef.current = data;
   const update = useCallback((f: (s: Save) => Save) => {
@@ -969,6 +990,7 @@ function Slice() {
     onPad: (k) => setHint(`The ${NAMES[k][1]} are on their pad. Watch them walk up into the ark.`),
     onBoarded: (k) => {
       update((s) => (s.boarded.includes(k) ? s : { ...s, boarded: [...s.boarded, k] }));
+      journal.observe(`ark:${k}`, { world: 'ark', label: `a pair of ${NAMES[k][1]}`, note: `You led the ${NAMES[k][1]} two by two up the ramp into their stall.`, animal: k });
       const n = saveRef.current.boarded.length;
       setHint(n === KINDS.length ? 'All five pairs are aboard.' : `The ${NAMES[k][1]} are in their stall.`);
       if (n === KINDS.length && saveRef.current.stored.length === SUPPLIES.length) say(NARRATION.ready);
@@ -995,11 +1017,13 @@ function Slice() {
     onFloodCalm: () => {
       update((s) => ({ ...s, flood: 2 }));
       say(NARRATION.calm);
+      journal.read(AFTER.refs.map((r) => [r[0], r[1]] as [number, number]));
       setCards((c) => [...c, { kind: 'reading', reading: AFTER }]);
     },
     onLantern: (id) => {
       const r = READINGS.find((x) => x.id === id)!;
       update((s) => (s.read.includes(id) ? s : { ...s, read: [...s.read, id] }));
+      journal.read(r.refs.map((x) => [x[0], x[1]] as [number, number]));
       setCards((c) => [...c.filter((x) => x.kind !== 'reading'), { kind: 'reading', reading: r }]);
     },
     onHint: setHint,
@@ -1107,6 +1131,9 @@ function Slice() {
         <Pressable style={st.pill} onPress={() => (router.canGoBack() ? router.back() : router.replace('/'))} accessibilityRole="button" accessibilityLabel="Leave the ark">
           <Text style={st.pillText}>‹ Leave</Text>
         </Pressable>
+        <Pressable style={[st.pill, { position: 'absolute', left: 0, top: 46 }]} onPress={() => router.push('/journal' as never)} accessibilityRole="button" accessibilityLabel="Open my discovery journal">
+          <Text style={st.pillText}>My journal</Text>
+        </Pressable>
         <View style={st.objective} pointerEvents="none">
           <Text style={st.title}>Nuh&apos;s Ark · Surah Hud</Text>
           <Text style={st.goal}>{objective}</Text>
@@ -1209,10 +1236,10 @@ function CardView({ card, portrait, onClose, listen }: { card: Card; portrait: b
         <ContentLabel kind="explanation" extra="narration written for this game" />
         <Text style={st.cardText}>{card.text}</Text>
         <View style={st.row}>
-          <Pressable style={st.btnGhost} onPress={() => speak(card.text)}>
+          <Pressable accessibilityRole="button" style={st.btnGhost} onPress={() => speak(card.text)}>
             <Text style={st.btnGhostText}>Read aloud</Text>
           </Pressable>
-          <Pressable style={st.btn} onPress={onClose}>
+          <Pressable accessibilityRole="button" style={st.btn} onPress={onClose}>
             <Text style={st.btnText}>Continue</Text>
           </Pressable>
         </View>
@@ -1233,7 +1260,7 @@ function CardView({ card, portrait, onClose, listen }: { card: Card; portrait: b
                 <ContentLabel kind="translation" extra="Saheeh International" />
                 <Text style={st.cardText}>{v.translation ?? 'Translation not available.'}</Text>
                 {recitationEnabled ? (
-                  <Pressable style={st.btnGhost} onPress={() => listen(v.surah, v.ayah)}>
+                  <Pressable accessibilityRole="button" style={st.btnGhost} onPress={() => listen(v.surah, v.ayah)}>
                     <Text style={st.btnGhostText}>Listen to the recitation</Text>
                   </Pressable>
                 ) : (
@@ -1246,10 +1273,10 @@ function CardView({ card, portrait, onClose, listen }: { card: Card; portrait: b
           <Text style={st.cardText}>{r.note}</Text>
         </ScrollView>
         <View style={st.row}>
-          <Pressable style={st.btnGhost} onPress={() => speak(r.note)}>
+          <Pressable accessibilityRole="button" style={st.btnGhost} onPress={() => speak(r.note)}>
             <Text style={st.btnGhostText}>Read the explanation aloud</Text>
           </Pressable>
-          <Pressable style={st.btn} onPress={onClose}>
+          <Pressable accessibilityRole="button" style={st.btn} onPress={onClose}>
             <Text style={st.btnText}>Close</Text>
           </Pressable>
         </View>
@@ -1279,7 +1306,7 @@ function CardView({ card, portrait, onClose, listen }: { card: Card; portrait: b
         ))}
       </ScrollView>
       <View style={st.row}>
-        <Pressable style={st.btn} onPress={onClose}>
+        <Pressable accessibilityRole="button" style={st.btn} onPress={onClose}>
           <Text style={st.btnText}>Finish</Text>
         </Pressable>
       </View>

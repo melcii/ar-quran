@@ -130,5 +130,46 @@
   "status": "second version built for the web: each world now has its own core mechanic; draft, unreviewed; checked in headless Chromium with software WebGL only, not on phones or real GPUs",
   "note": "The new-look adventure world for this surah. It is a separate design from the composed scene this record describes; both are kept until reviewers choose.",
   "core_play": "A planning puzzle: route rain water from the spring through channels and gates so every cistern fills and little is wasted. A wrong plan is not a failure: the spring refills and you try again."
+ },
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "Grey rainy camp with channels and cisterns",
+  "quran_references": [
+   "8:1",
+   "8:11",
+   "8:63"
+  ],
+  "primary_mechanic": {
+   "kind": "water-gates",
+   "engine": "flow",
+   "text": "Open a sluice and turn gates in time so rain water fills three cisterns without spilling (8:11)."
+  },
+  "secondary_activities": [
+   "unity quiz",
+   "readings"
+  ],
+  "narrative_structure": "Camp loop",
+  "world_assets": [
+   "sluice",
+   "gates",
+   "cisterns",
+   "channels"
+  ],
+  "environment_behaviour": [
+   "rain simulation fills channels",
+   "spill counter"
+  ],
+  "learning_objective": "Cooperation and setting things right between people (8:1, 8:63)",
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w008.ts"
  }
 }

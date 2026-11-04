@@ -147,6 +147,16 @@ of every world, a check that every activity spot can be walked or sailed to, and
 wind climb and the panels); web only, phones fall back to the text screens; no recitation until a licensed source
 is configured; no music.
 
+## Living-world systems and the Discovery Journal (web)
+
+Shared by the adventure worlds and the Ark slice:
+
+- **Animals** (`src/creatures/`): `nav.ts` is a grid path finder over any world's "can I step here" rule, so animals and the explorer go round walls, water, rocks and the hull. `mind.ts` gives each kind a temperament (shy, curious, flocking, resting): free animals turn their heads to watch the child, step aside from a running child, come over to a child who keeps still, keep with their flock and lie down to rest. Led animals find a way round obstacles to their leader. The rig in `src/ark/Beasts.tsx` turns the neck and folds the legs to lie down. The animal models are still the procedural rig; more polished models need an artist or licensed model files.
+- **Ground birds** peck near the start and reading places, and fly off from a running child or a storm.
+- **Controls**: tap the ground and the explorer walks a found route (not a straight line). "Show me the way" draws glowing footsteps to the next place. Help levels (`src/adventure/level.ts`): Gentle (footsteps always on, longer candles, softer wind, calmer animals), Steady, Explorer (no light over the next place, shorter candles, stronger wind).
+- **Discovery Journal** (`/journal`, `src/journal/`): worlds explored and their chapters (read from each world's save), every ayah opened (verified Arabic and Saheeh International), Arabic words met (taken by position from the verified text; meanings are labelled drafts), nature notes from watching animals and plants, and the child's own reflections. Quran text, game-written notes and the child's writing are labelled apart. No points are given for ayahs. Kept on the device only.
+- **Unique-world record**: every design record has a `unique_world` block (theme, references, primary mechanic, secondary activities, narrative, assets, environment behaviour, learning objective, the 7-point interaction test results, review status). `npm run worlds:unique` fails if two playable worlds share a primary mechanic, look like the same world, or a record claims a mechanic its recipe does not have.
+
 ## Run it
 
 Requires Node 22 or newer.

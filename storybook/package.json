@@ -48,6 +48,7 @@
     "import:quran": "node scripts/import-quran.mjs",
     "validate": "node scripts/validate-content.mjs",
     "designs:index": "node scripts/design-index.mjs",
+    "worlds:unique": "node scripts/check-unique-worlds.mjs",
     "typecheck": "tsc --noEmit",
     "export:web": "expo export --platform web"
   },

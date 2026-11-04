@@ -155,5 +155,48 @@
   "status": "second version built for the web: each world now has its own core mechanic; draft, unreviewed; checked in headless Chromium with software WebGL only, not on phones or real GPUs",
   "note": "The new-look adventure world for this surah. It is a separate design from the composed scene this record describes; both are kept until reviewers choose.",
   "core_play": "A nature-discovery world: turn the sky from night to day at the hilltop dial, then fill a field journal by watching animals and plants quietly. You never move or round up the animals."
+ },
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "Hills turning from night to moonrise to dawn to day, grazing animals and orchards",
+  "quran_references": [
+   "6:74-79",
+   "6:38",
+   "6:95",
+   "6:96",
+   "6:99",
+   "6:141-144"
+  ],
+  "primary_mechanic": {
+   "kind": "sky-cycle+observe",
+   "engine": "sky+observe",
+   "text": "Turn the sky from night to day at the hilltop dial (6:74-79), then fill a field journal by watching animals and plants quietly; running startles them."
+  },
+  "secondary_activities": [
+   "plant observation"
+  ],
+  "narrative_structure": "Hilltop first, then a free field journal",
+  "world_assets": [
+   "sky dial",
+   "night/moon/dawn/day looks",
+   "sheep, goats, camels, cattle",
+   "grain, palms, orchard"
+  ],
+  "environment_behaviour": [
+   "sky phases change the whole world light",
+   "animals watch the child, step aside from running, come over to a still child"
+  ],
+  "learning_objective": "See signs of creation by noticing carefully (6:38, 6:95-99)",
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w006.ts"
  }
 }

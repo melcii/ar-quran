@@ -29,7 +29,7 @@ import { Boat, StructureView, footprint } from './kit';
 import { Carried, Doorway, GuidedBoat, Pile, PointSpot, ReadingMarker, Slot, Wayfinder } from './props';
 import { Balance, FlowView, GoRing, HomeLamp, NeedSign, PlayerBoat, PromiseBoard, PromiseSpot, SkyDial, StandPlate, WatchRing, type FlowState } from './mech';
 import { ChoiceCard, ShareCard, VowCard, WeighCard } from './panels';
-import { CloudLayer, FarLand, Flock, FlowerField, GrassField, GroundMesh, Lighting, Moon, Motes, Mountains, RockField, Sky, StillWater, Trees, place, type SceneQuality } from './Scenery';
+import { CloudLayer, FarLand, Flock, FlowerField, GroundBirds, GrassField, GroundMesh, Lighting, Moon, Motes, Mountains, RockField, Sky, StillWater, Trees, place, type SceneQuality } from './Scenery';
 import { makeTerrain, rng, type P2, type Terrain } from './terrain';
 import type { FlowTask, Reading, Task, WorldDef } from './types';
 import { WORLDS } from './worlds';
@@ -1407,6 +1407,12 @@ function World({ def }: { def: WorldDef }) {
   }, []);
 
   const t = useLand(def);
+  // A few spots where small birds peck on the ground: near the start and near the first reading places.
+  const birdSpots = useMemo(() => {
+    const cand: P2[] = [[def.start[0] + 5, def.start[1] + 4]];
+    for (const task of def.tasks) if (task.kind === 'read') cand.push([task.at[0] + 3.5, task.at[1] - 3]);
+    return cand.filter(([x, z]) => !t.isWater(x, z) && t.clear(x, z, 0.5)).slice(0, 3);
+  }, [def, t]);
   const placed = useMemo(() => {
     // Buildings first, so trees keep clear of them and of every activity spot.
     for (const s of def.structures) footprint(s, t, (id) => !!id && saveRef.current.done.includes(id));
@@ -1632,6 +1638,8 @@ function World({ def }: { def: WorldDef }) {
         return true;
       },
       boat: game.boat,
+      /** Tap the ground at x, z (tap-to-go, routed round obstacles). */
+      go: (x: number, z: number) => tapGround(new THREE.Vector3(x, t.floorY(x, z), z)),
       flowRoute,
       close: () => setCards((c) => c.slice(1)),
       open: (kind: 'book' | 'about' | 'finale') => setCards((c) => [...c, { kind } as Card]),
@@ -1689,6 +1697,7 @@ function World({ def }: { def: WorldDef }) {
         <Mountains color={def.mountains?.color} height={def.mountains?.height} seed={def.seed} />
         {(look.clouds ?? 1) > 0 && <CloudLayer look={look} />}
         {look.birds !== false && <Flock center={def.start} />}
+        {look.birds !== false && <GroundBirds spots={birdSpots} t={t} />}
         <Things def={def} t={t} data={data} game={game} carrying={carrying} act={act} isOn={isOn} />
         <Animals game={game} onTap={act} />
         <Carried item={carriedLoad?.item ?? null} color={carriedLoad?.color} />
