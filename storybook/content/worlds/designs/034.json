@@ -160,32 +160,47 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Gardens of Saba",
+  "tier": "playable",
+  "visual_theme": "A stone dam between two hills holding rain water, with a garden of fruit trees on the left and on the right below it",
   "quran_references": [
-   "34:10–19"
+   "34:10-11",
+   "34:15",
+   "34:16-17"
   ],
   "primary_mechanic": {
-   "kind": "dam-stewardship",
-   "engine": "not built yet",
-   "text": "Keep two gardens watered by managing a dam's sluices and repairs (34:15); the flood (34:16) is narrated, not played."
+   "kind": "dam-sluices",
+   "engine": "sluice",
+   "text": "Through a season of changing rain, open and close the sluice to each garden so both stay green, keep water in the dam, and patch cracks before they drain it. If a garden dries out, that month starts again. The two gardens are from 34:15; the flood (34:16) is read only, never played or shown."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "Dawud and the coats of mail (34:10-11, read only)",
+   "they turned away (34:16-17, read only)"
+  ],
+  "narrative_structure": "The sign, three months at the dam, then a reading",
+  "world_assets": [
+   "stone dam and reservoir",
+   "two sluice gates and channels",
+   "two gardens of fruit trees",
+   "cracks to patch"
+  ],
+  "environment_behaviour": [
+   "the reservoir rises and falls",
+   "water runs down the open channels",
+   "garden ground and trees go from dry to green",
+   "water spills over the side when the dam is full"
+  ],
+  "learning_objective": "Learn about the two gardens of Saba and the call to be grateful (34:15), by sharing water fairly",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: began the season and opened the left sluice with the on-screen buttons)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: with both sluices shut a garden wilted and the month restarted; then 12 sluice changes and 3 cracks patched)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Month 1 of 3 · 18 s left · dam 52% · left garden 61% · right garden 48%\"; the water level, channels and garden colours change live)",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: months [0,1,2], wilted [0])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"dawud\",\"gardens\",\"turned\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w034.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

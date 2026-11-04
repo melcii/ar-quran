@@ -116,33 +116,46 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Layers of Creation",
+  "tier": "playable",
+  "visual_theme": "Green hills with three fenced paddocks around a stone fold, oaks and a path from the south",
   "quran_references": [
-   "32:4–9",
-   "32:15–22"
+   "32:7",
+   "32:27",
+   "32:9",
+   "32:15-16"
   ],
   "primary_mechanic": {
-   "kind": "creation-layers",
-   "engine": "not built yet",
-   "text": "Descend through symbolic layers (earth, water, growing things) with observation exhibits (32:7-9); no divine act shown."
+   "kind": "pasture-rotation",
+   "engine": "pasture",
+   "text": "Lead a small flock out of the fold and from paddock to paddock: where it grazes the grass goes down, and where it has left the grass grows back. Keep it fed through three days without any paddock eaten down to bare soil; if one is, the flock goes back to the fold and the day starts again (32:27). The growing is only watched."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "hearing, sight and hearts (32:9)",
+   "rising at night in fear and hope (32:15-16)"
+  ],
+  "narrative_structure": "The sign, three grazing days, then two readings",
+  "world_assets": [
+   "three fenced paddocks with grass tufts",
+   "stone fold",
+   "paddock gates",
+   "a flock of the existing sheep"
+  ],
+  "environment_behaviour": [
+   "paddock ground and tufts fade from green to bare as the flock grazes and grow back after it leaves",
+   "the sheep walk between paddocks and graze"
+  ],
+  "learning_objective": "Notice how land, rain and grazing animals depend on each other (32:27), and care for a flock",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: opened the north paddock gate with the on-screen button; the flock walks in and the day begins)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: left in one paddock, the flock ate it bare and the day restarted; then moved 6 times so every paddock could grow back)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Day 2 of 3 · 21 s to evening · flock in the east paddock · grass here 64%\"; the paddock ground and tufts fade from green to bare and grow back)",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: days [0,1,2], bare [0])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"perfected\",\"flock\",\"senses\",\"rise\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w032.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

@@ -113,34 +113,47 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The City of Steadfastness",
+  "tier": "playable",
+  "visual_theme": "A sunny mason's yard with a short wall on a sloping footing, a plumb line, a level and piles of shaped stones",
   "quran_references": [
-   "33:9–27",
-   "33:35",
-   "33:53–59"
+   "33:21",
+   "33:70-71",
+   "33:41-42",
+   "33:35"
   ],
   "primary_mechanic": {
-   "kind": "trench-logistics",
-   "engine": "not built yet",
-   "text": "Plan water, food and shelter for a city in a hard winter without any battle (33:9-11 read as narration)."
+   "kind": "plumb-wall",
+   "engine": "plumb",
+   "text": "Lay a wall course by course from piles of stones: some are thicker on one side and tip the wall, some are flat. The footing slopes, so the wall starts leaning. Watch the plumb line and the level; if the wall leans too far the top stone slides off. Finish with the wall standing true, a picture of straight, sound words (33:70)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "an excellent example (33:21, read only)",
+   "remembering Allah morning and afternoon (33:41-42)",
+   "good qualities of men and women (33:35)"
+  ],
+  "narrative_structure": "The sign, the wall, then two readings",
+  "world_assets": [
+   "sloping footing and wall courses",
+   "plumb line on a post",
+   "level with a bubble",
+   "four stone piles"
+  ],
+  "environment_behaviour": [
+   "each course tips by its stone; the level bubble and the lean in the status line follow it",
+   "a stone that tips the wall too far slides off"
+  ],
+  "learning_objective": "Connect \"straight words\" (33:70-71) with something you can see stand true",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: picked up a stone and laid it on the wall with the on-screen buttons)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: a second left-thick stone tipped the wall past the limit and slid off; a big right-thick stone brought it back to true)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Courses laid: 1 of 5 · the wall is leaning 6° to the right\"; the plumb line and the level bubble show the lean)",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: wall finished true; slid off [1])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"pattern\",\"wall\",\"remember\",\"qualities\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w033.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
