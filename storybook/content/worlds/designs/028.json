@@ -176,17 +176,17 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The River, the Well, and the Treasure",
   "quran_references": [
-   "28:7",
-   "28:7-13",
-   "28:20-22",
-   "28:23",
-   "28:23-24",
-   "28:23-28"
+   "28:3–46",
+   "28:76–82"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "river-chest-current",
+   "engine": "not built yet",
+   "text": "Guide a floating chest down a river by opening and closing reed channels so it reaches the right bank (28:7-13); draw water at Madyan's well (28:23)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -203,5 +203,22 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "Musa's Journey and Qarun",
+  "quran_references": [
+   "28:3–46",
+   "28:76–82"
+  ],
+  "children_narration": "Musa was born during a dangerous time, but Allah protected him. His mother placed him in a chest on the river, and he was eventually returned to her. As Musa grew older, he traveled to Madyan and later received his prophetic mission. The surah also tells of Qarun, whose great wealth made him proud.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The River, the Well, and the Treasure",
+   "description": "Follow the chest's path along a river, explore Madyan's water source, and examine a symbolic wealth-and-gratitude challenge connected to Qarun's story."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "Musa and his mother are not shown. The chest floats empty in the game, labelled as an adaptation. The killing in 28:15 is reading only. Qarun's fate (28:81) is narrated only.",
+  "status": "draft, unreviewed"
  }
 }

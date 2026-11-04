@@ -160,17 +160,18 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Living Home of Good Character",
   "quran_references": [
-   "23:1-11",
-   "23:2",
-   "23:3",
-   "23:18",
-   "23:19",
-   "23:20"
+   "23:1–11",
+   "23:12–30",
+   "23:45–50"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "home-transforms",
+   "engine": "not built yet",
+   "text": "A home that changes room by room as the qualities of 23:1-11 are practised (prayer corner, kept trust, kept promise)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -187,5 +188,23 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Qualities of Believers",
+  "quran_references": [
+   "23:1–11",
+   "23:12–30",
+   "23:45–50"
+  ],
+  "children_narration": "The Quran describes believers who pray sincerely, keep their promises, and avoid harmful behavior. It reminds us how human life begins and retells parts of the stories of Nuh and Musa. Faith is not only something we say; it also changes how we act.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Living Home of Good Character",
+   "description": "A home and community environment that changes as children practice trustworthiness, care, and responsibility. A separate ark chapter introduces Nuh's account."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The library suggests an ark chapter. 23:27 does mention the ship and the pairs, but the ark game already lives in Hud. Surah 23 gets a reading and a link, not a second ark game.",
+  "status": "draft, unreviewed"
  }
 }

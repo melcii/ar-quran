@@ -106,14 +106,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Garden of Gratitude",
   "quran_references": [
-   "108:1",
-   "108:1-3",
-   "108:2"
+   "108:1–3"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "gratitude-garden",
+   "engine": "not built yet",
+   "text": "Water a garden stream and pray and give thanks (108:2); not a picture of al-Kawthar."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -130,5 +132,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Gift of Abundance",
+  "quran_references": [
+   "108:1–3"
+  ],
+  "children_narration": "Allah tells Prophet Muhammad that He has granted him Al-Kawthar, an extraordinary abundance. The surah calls for prayer and devotion. It reminds us to respond to Allah's blessings with gratitude and worship.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Garden of Gratitude",
+   "description": "A peaceful, flowing-water-inspired environment representing gratitude through artistic symbolism. Avoid claiming that the game depicts Al-Kawthar's actual unseen reality."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "Al-Kawthar is not pictured. The garden stream is an ordinary stream, labelled.",
+  "status": "draft, unreviewed"
  }
 }

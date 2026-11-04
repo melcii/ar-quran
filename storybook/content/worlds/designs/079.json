@@ -129,17 +129,17 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Palace and the Cosmos",
   "quran_references": [
-   "79:27-33",
-   "79:28",
-   "79:28-32",
-   "79:31",
-   "79:32",
-   "79:33"
+   "79:15–26",
+   "79:27–46"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "cosmos-builder",
+   "engine": "not built yet",
+   "text": "Raise a sky ceiling, spread the earth and set mountains in a scale model (79:27-33)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -156,5 +156,22 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "Musa and Pharaoh",
+  "quran_references": [
+   "79:15–26",
+   "79:27–46"
+  ],
+  "children_narration": "Musa was sent to Pharaoh with a message calling him away from arrogance and wrongdoing. Pharaoh rejected the warning. The surah invites us to learn from his example and to reflect on the creation of the heavens and earth.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Palace and the Cosmos",
+   "description": "Explore a historical Egyptian setting connected to Musa's story, then transition to an interactive astronomy environment."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "Musa and Pharaoh are not shown. The angels in 79:1-5 are not shown.",
+  "status": "draft, unreviewed"
  }
 }

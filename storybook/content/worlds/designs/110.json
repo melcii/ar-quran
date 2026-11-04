@@ -119,15 +119,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Courtyard of Gratitude",
   "quran_references": [
-   "110:1",
-   "110:1-3",
-   "110:2",
-   "110:3"
+   "110:1–3"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "praise-after-success",
+   "engine": "not built yet",
+   "text": "After finishing a big task, stop to praise and ask forgiveness before celebrating (110:3)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -144,5 +145,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "Gratitude After Success",
+  "quran_references": [
+   "110:1–3"
+  ],
+  "children_narration": "When Allah's help and victory come and people enter the religion in groups, the surah calls for praising Allah and seeking forgiveness. It reminds us that success should make us grateful, not arrogant.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Courtyard of Gratitude",
+   "description": "Explore a historically informed city setting and complete a reflection activity about humility after success. Do not depict Prophet Muhammad."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The Prophet and the people entering Islam are not shown.",
+  "status": "draft, unreviewed"
  }
 }

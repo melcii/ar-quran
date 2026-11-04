@@ -79,13 +79,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Neighborhood of Care",
   "quran_references": [
-   "65:2-3",
-   "65:3"
+   "65:1–7"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "care-during-change",
+   "engine": "not built yet",
+   "text": "Help households through changes by bringing what each needs, with family rulings kept to an information area (65:6-7)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -102,5 +105,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "Caring Through Change",
+  "quran_references": [
+   "65:1–7"
+  ],
+  "children_narration": "Families sometimes experience difficult changes. Surah At-Talaq gives adults responsibilities to act fairly, provide appropriate care, and avoid causing harm. It reminds us that even during hardship, people should act with compassion and trust in Allah.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Neighborhood of Care",
+   "description": "A gentle community-care environment with activities about making people feel supported during changes. Family-law rulings are explained in an age-appropriate information area rather than turned into children's decisions."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

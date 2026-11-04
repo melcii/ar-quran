@@ -139,16 +139,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Storm Valley",
   "quran_references": [
-   "13:3",
-   "13:4",
-   "13:12",
-   "13:13",
-   "13:17"
+   "13:2–17"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "valley-capacity",
+   "engine": "not built yet",
+   "text": "Rain fills each valley by its size; skim off the foam so the useful water stays (13:17)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -165,5 +165,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Voice of Thunder",
+  "quran_references": [
+   "13:2–17"
+  ],
+  "children_narration": "Have you ever watched the sky become dark before a storm? Have you heard the powerful sound of thunder? Surah Ar-Ra'd invites us to notice the wonders around us: clouds, rain, mountains, rivers, and growing plants. Rain falls from the sky, and valleys carry water according to their capacity. The Quran also gives the example of foam floating on water. The foam disappears, while what benefits people remains. This teaches us to think about the difference between what is true and lasting and what quickly disappears.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Storm Valley",
+   "description": "Explore a changing mountain environment, watch rainwater flow through valleys, experiment with safe water channels, and observe the difference between foam and water. This is a nature-based reflection adventure, not a historical event."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

@@ -230,17 +230,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Journey of Yusuf",
   "quran_references": [
-   "12:4",
-   "12:4-100",
-   "12:4-6",
-   "12:8-18",
-   "12:15",
-   "12:19"
+   "12:4–101"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "granary-years",
+   "engine": "not built yet",
+   "text": "Store grain through seven good years and ration it through seven hard ones, as the dream's meaning advised (12:47-49)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -257,5 +256,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Dream That Came True",
+  "quran_references": [
+   "12:4–101"
+  ],
+  "children_narration": "When Yusuf was young, he dreamed that eleven stars, the sun, and the moon were bowing to him. His father, Ya'qub, recognized that the dream was important. But Yusuf's brothers became jealous and left him in a well. Travelers later took him to Egypt, where he faced many difficult experiences. Even when he was imprisoned unjustly, Yusuf remained patient and faithful. Allah gave Yusuf wisdom and the ability to interpret dreams. Eventually, he was entrusted with responsibility over Egypt's storehouses. Years later, when his brothers came seeking food, Yusuf chose forgiveness instead of revenge. His family was reunited, and the meaning of his childhood dream became clear.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Journey of Yusuf",
+   "description": "Seven interconnected chapters: the dream, the well, the caravan, the Egyptian household, the prison, the grain storehouses, and reunion. Children can learn about planning by organizing grain for the years of hardship."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "Yusuf, his father and brothers are never shown, and the player never plays Yusuf. The well, caravan, household and prison are places with readings. The household episode (12:23-32) is kept to a reading suitable for the age group, to be checked by reviewers.",
+  "status": "draft, unreviewed"
  }
 }

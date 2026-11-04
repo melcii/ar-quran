@@ -116,15 +116,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Council House",
   "quran_references": [
-   "42:32",
-   "42:32-33",
-   "42:33",
-   "42:38"
+   "42:36–43"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "consultation-table",
+   "engine": "not built yet",
+   "text": "Help a fictional village decide by hearing each household and finding a fair plan together (42:38)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -141,5 +142,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Council of Wisdom",
+  "quran_references": [
+   "42:36–43"
+  ],
+  "children_narration": "Important decisions are easier to make wisely when people listen to one another. Surah Ash-Shura praises believers who consult together, avoid wrongdoing, and forgive when appropriate. It teaches that strength is not only about winning an argument but also about fairness and self-control.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Council House",
+   "description": "Children help a fictional community make decisions by listening to different needs and comparing fair solutions. The scenarios are educational examples, not Quranic historical events."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

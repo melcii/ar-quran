@@ -106,14 +106,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Courtyard of Conviction",
   "quran_references": [
-   "109:1-6",
-   "109:2",
-   "109:6"
+   "109:1–6"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "clear-courtyard",
+   "engine": "not built yet",
+   "text": "Answer respectfully in fictional dialogues while keeping to what you believe (109:6)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -130,5 +132,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Meaning of Worship",
+  "quran_references": [
+   "109:1–6"
+  ],
+  "children_narration": "Surah Al-Kafirun teaches clarity and steadfastness in worship. It reminds us that beliefs should not be changed merely to please others. People can disagree, and we can remain clear about our faith without being unkind.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Courtyard of Conviction",
+   "description": "Explore an architectural reflection space and learn to communicate beliefs respectfully through fictional, age-appropriate dialogues."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

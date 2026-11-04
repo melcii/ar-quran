@@ -196,17 +196,17 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Kingdom of Creatures",
   "quran_references": [
-   "27:7-14",
-   "27:17-19",
-   "27:18",
-   "27:18-88",
-   "27:19",
-   "27:20"
+   "27:15–44",
+   "27:45–58"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "ant-valley-scale",
+   "engine": "not built yet",
+   "text": "At ant scale, clear safe paths so a colony can get home before others pass (27:18); follow a hoopoe's route on a map (27:20-22)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -223,5 +223,22 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Ant and the Kingdom",
+  "quran_references": [
+   "27:15–44",
+   "27:45–58"
+  ],
+  "children_narration": "Prophet Sulayman understood the words of an ant warning its colony to seek safety. Later, a hoopoe brought news about a kingdom ruled by a queen. Sulayman sent a message, and the queen eventually came to recognize the truth. The surah teaches that knowledge and power should be accompanied by gratitude and wisdom.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Kingdom of Creatures",
+   "description": "Explore a miniature ant valley, follow a hoopoe's flight route, and investigate a palace environment inspired by the narrative. The player never takes Sulayman's role."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "Sulayman and the queen are never shown; the hoopoe and the ants are animals only. The throne episode (27:38-44) is reading only.",
+  "status": "draft, unreviewed"
  }
 }

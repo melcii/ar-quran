@@ -136,17 +136,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Elephant Expedition",
   "quran_references": [
-   "105:1",
-   "105:1-5",
-   "105:2",
-   "105:3",
-   "105:4",
-   "105:5"
+   "105:1–5"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "elephant-tracks",
+   "engine": "not built yet",
+   "text": "Follow elephant tracks across a landscape and read the surah where they stop; birds fly, nothing is struck (105:1-5)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -163,5 +162,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Elephant Army",
+  "quran_references": [
+   "105:1–5"
+  ],
+  "children_narration": "An army came with elephants and intended to attack the sacred House in Makkah. But Allah stopped their plan. The Quran tells us that birds came in groups and struck the army with stones of baked clay. The army's strength could not overcome Allah's will.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Elephant Expedition",
+   "description": "Explore a historical-style Arabian landscape, observe elephant tracks, and learn about the Quranic event through an environmental sequence. Use believable elephant models and avoid playable violence."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "Birds fly in flocks, but nothing is struck and no army is harmed on screen; the stones are a reading.",
+  "status": "draft, unreviewed"
  }
 }

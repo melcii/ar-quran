@@ -182,17 +182,17 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Journey of Musa",
   "quran_references": [
-   "20:9-24",
-   "20:10",
-   "20:12",
-   "20:37-40",
-   "20:39",
-   "20:43-48"
+   "20:9–98",
+   "20:115–123"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "distant-fire-wayfinding",
+   "engine": "not built yet",
+   "text": "At night, find the way across hills toward a far-off light by keeping it in view (20:10)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -209,5 +209,22 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "Musa and the Mountain of Light",
+  "quran_references": [
+   "20:9–98",
+   "20:115–123"
+  ],
+  "children_narration": "While traveling with his family, Musa noticed a fire in the distance. When he approached, Allah called him and gave him a special mission. Musa was told to go to Pharaoh and invite him to turn away from wrongdoing. He asked Allah to help him and to allow his brother Harun to support him. The story continues through Pharaoh's court, the confrontation with the magicians, the escape of the Children of Israel, and the events that followed. Surah Ta-Ha also reminds us of Adam and the importance of following guidance.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Journey of Musa",
+   "description": "Explore a mountain landscape, an ancient Egyptian environment, and a sea-crossing observation sequence. Children investigate story clues and follow events without portraying or controlling Musa or Harun. ## Part 2 — Surahs 21–40"
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "Musa and Harun are never shown or played. The sea crossing is an observation from a distance, with no drowning.",
+  "status": "draft, unreviewed"
  }
 }

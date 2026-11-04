@@ -136,17 +136,18 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The World Through Seasons",
   "quran_references": [
-   "30:2-4",
-   "30:22",
-   "30:46",
-   "30:48",
-   "30:48-50",
-   "30:50"
+   "30:2–5",
+   "30:19–27",
+   "30:46–50"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "season-return",
+   "engine": "not built yet",
+   "text": "Bring a dry land back to life by watching winds, clouds and rain move across it (30:48-50)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -163,5 +164,23 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Changing World",
+  "quran_references": [
+   "30:2–5",
+   "30:19–27",
+   "30:46–50"
+  ],
+  "children_narration": "Surah Ar-Rum begins by referring to the Romans' defeat and future victory. It reminds us that events in the world can change. The Quran also invites us to look at the signs of creation: the changing seasons, the winds, and the return of life to the land after rain.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The World Through Seasons",
+   "description": "Explore a landscape changing from dry conditions to rainfall and renewed growth. Study the historical passage through a separate illustrated map."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

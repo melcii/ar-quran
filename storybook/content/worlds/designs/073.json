@@ -99,14 +99,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Night Observatory",
   "quran_references": [
-   "73:2-4",
-   "73:3",
-   "73:4"
+   "73:1–20"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "measured-recitation",
+   "engine": "not built yet",
+   "text": "Practise reciting slowly and clearly (73:4) in a calm night, with your own pace shown as a gentle meter."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -123,5 +125,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Quiet Night",
+  "quran_references": [
+   "73:1–20"
+  ],
+  "children_narration": "When the world becomes quiet at night, it can be easier to concentrate and reflect. Surah Al-Muzzammil emphasizes night prayer, reciting the Quran carefully, and remembering Allah. It also recognizes that people have different responsibilities and circumstances.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Night Observatory",
+   "description": "Experience a calm transition from evening to dawn and learn about thoughtful Quran recitation and the passage of time."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

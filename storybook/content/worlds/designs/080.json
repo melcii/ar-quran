@@ -149,17 +149,17 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The School of Respect",
   "quran_references": [
-   "80:24",
-   "80:24-32",
-   "80:25",
-   "80:25-31",
-   "80:26",
-   "80:28"
+   "80:1–16",
+   "80:24–32"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "food-journey",
+   "engine": "not built yet",
+   "text": "Follow food from rain to grain, grapes, olives and palms (80:24-32); an inclusive school with accessible activities (80:1-10, narration)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -176,5 +176,22 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "Everyone Deserves Respect",
+  "quran_references": [
+   "80:1–16",
+   "80:24–32"
+  ],
+  "children_narration": "Surah 'Abasa recalls an incident involving a blind man who sincerely sought guidance. The revelation teaches an important lesson about giving proper attention and respect to people, regardless of their position or abilities. It also invites us to look at food and how plants grow.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The School of Respect",
+   "description": "Explore an inclusive learning environment with activities designed around different accessibility needs. A second zone investigates the journey from rain to growing crops. ## Part 5 — Surahs 81–100"
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The Prophet and the blind man are not shown. The event is narration with its source labelled.",
+  "status": "draft, unreviewed"
  }
 }

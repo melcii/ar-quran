@@ -130,17 +130,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Dawn Archaeological Expedition",
   "quran_references": [
-   "89:1",
-   "89:1-5",
-   "89:1-9",
-   "89:7",
-   "89:9",
-   "89:27"
+   "89:1–30"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "dawn-excavation",
+   "engine": "not built yet",
+   "text": "At dawn, brush sand from columns and carved stones to uncover a lost city (89:6-9)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -157,5 +156,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Dawn and the Ancient Peoples",
+  "quran_references": [
+   "89:1–30"
+  ],
+  "children_narration": "The surah begins with an oath by dawn and recalls powerful ancient communities, including 'Ad, Thamud, and Pharaoh. It reminds us not to become proud because of wealth or strength and encourages care for orphans and the poor.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Dawn Archaeological Expedition",
+   "description": "Travel through three distinct historical-style regions and discover lessons about power, generosity, and responsibility."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The library speaks of \"historical regions\". Iram, Thamud and Pharaoh's places are labelled as imagined, not reconstructed.",
+  "status": "draft, unreviewed"
  }
 }

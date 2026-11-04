@@ -121,15 +121,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Village of Helping Hands",
   "quran_references": [
-   "107:1-7",
-   "107:2",
-   "107:3",
-   "107:7"
+   "107:1–7"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "small-kindnesses",
+   "engine": "not built yet",
+   "text": "Lend small household things to neighbours who need them (107:7)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -146,5 +147,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Little Acts of Kindness",
+  "quran_references": [
+   "107:1–7"
+  ],
+  "children_narration": "Sometimes a small helpful action can make a big difference. Surah Al-Ma'un reminds us to care for orphans and people in need and not to turn worship into something done only to impress others. Sincere kindness matters.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Village of Helping Hands",
+   "description": "Help fictional neighbors by sharing useful household items, preparing supplies, and practicing thoughtful community care."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

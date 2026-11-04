@@ -160,17 +160,17 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Village of Friendship",
   "quran_references": [
    "49:6",
-   "49:6-13",
-   "49:9-10",
-   "49:10",
-   "49:11",
-   "49:12"
+   "49:10–13"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "rumour-check",
+   "engine": "not built yet",
+   "text": "Track a rumour through a village and check each claim before passing it on (49:6)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -187,5 +187,22 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Village of Kind Words",
+  "quran_references": [
+   "49:6",
+   "49:10–13"
+  ],
+  "children_narration": "What should we do when someone tells us a rumor? Should we believe it immediately? Surah Al-Hujurat teaches us to check information carefully, avoid mocking others, and respect people from different families and communities. Our differences can help us know one another, not look down on one another.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Village of Friendship",
+   "description": "Children investigate a fictional misunderstanding, compare information, and help neighbors resolve it through respectful communication."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

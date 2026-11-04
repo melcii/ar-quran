@@ -110,15 +110,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Night of Peace",
   "quran_references": [
-   "97:1-5",
-   "97:3",
-   "97:3-5",
-   "97:5"
+   "97:1–5"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "night-till-dawn",
+   "engine": "not built yet",
+   "text": "A peaceful night that moves toward dawn as you listen to the surah (97:5)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -135,5 +136,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Blessed Night",
+  "quran_references": [
+   "97:1–5"
+  ],
+  "children_narration": "Surah Al-Qadr tells us about the Night of Decree, a night better than a thousand months. It is a night of great blessing and peace until dawn. The surah reminds us of the importance of revelation and worship.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Night of Peace",
+   "description": "Explore an atmospheric nighttime environment, observe a gradual transition toward dawn, and learn about the surah through recitation. Do not depict angels or the unseen events of the night."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The angels and the Spirit (97:4) are not shown.",
+  "status": "draft, unreviewed"
  }
 }

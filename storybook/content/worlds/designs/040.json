@@ -121,15 +121,17 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Hidden Voice of Truth",
   "quran_references": [
-   "40:28",
-   "40:28-45",
-   "40:36",
-   "40:36-37"
+   "40:23–46",
+   "40:60–67"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "evidence-board",
+   "engine": "not built yet",
+   "text": "Gather clues around a council hall to follow the believing man's reasoning (40:28-44), presented as narration."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -146,5 +148,22 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Courageous Believer",
+  "quran_references": [
+   "40:23–46",
+   "40:60–67"
+  ],
+  "children_narration": "Musa brought Allah's message to Pharaoh. In Pharaoh's own family, a believing man spoke courageously in defense of truth. He encouraged the people to think carefully about the consequences of their actions and reminded them of Allah's guidance.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Hidden Voice of Truth",
+   "description": "Explore an ancient Egyptian council setting, follow a narrated argument through interactive evidence, and learn how to speak thoughtfully even when others disagree. ## Part 3 — Surahs 41–60"
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

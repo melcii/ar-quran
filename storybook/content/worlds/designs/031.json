@@ -129,16 +129,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "Luqman's Wisdom Workshop",
   "quran_references": [
-   "31:12-19",
-   "31:13-19",
-   "31:16",
-   "31:19",
-   "31:27"
+   "31:12–19"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "advice-workshop",
+   "engine": "not built yet",
+   "text": "A workshop with one station per piece of advice in 31:13-19 (lower your voice: a sound meter; moderate pace: a walking path)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -155,5 +155,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "A Father's Wise Advice",
+  "quran_references": [
+   "31:12–19"
+  ],
+  "children_narration": "Luqman was blessed with wisdom. He advised his son to worship Allah alone, be grateful, respect his parents, pray, practice patience, and avoid arrogance. He also encouraged him to be moderate in how he walked and spoke. These lessons can guide us in everyday life.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "Luqman's Wisdom Workshop",
+   "description": "Explore a storybook learning home with practical activities about kindness, gratitude, and thoughtful speech. Luqman's advice is presented through verified narration rather than invented conversations."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

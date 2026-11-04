@@ -179,17 +179,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Hall of Prophetic Journeys",
   "quran_references": [
-   "21:30",
-   "21:33",
-   "21:48-91",
-   "21:51-70",
-   "21:69",
-   "21:78-82"
+   "21:48–91"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "supplication-match",
+   "engine": "not built yet",
+   "text": "Four doors each open when you match a prophet's situation to the supplication the Quran gives (21:83, 21:87, 21:89), read in verified Arabic."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -206,5 +205,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Prophets' Legacy",
+  "quran_references": [
+   "21:48–91"
+  ],
+  "children_narration": "Allah sent many prophets to guide people. Ibrahim challenged the worship of idols and was saved from the fire. Ayyub called upon Allah during suffering, Yunus prayed in distress, and Zakariyya prayed for a child. Their stories show different forms of patience, courage, and faith.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Hall of Prophetic Journeys",
+   "description": "Explore separate environments for Ibrahim, Ayyub, Yunus, and Zakariyya. Each has a different exploration mechanic: reasoning, patience, supplication, or discovering the story through its setting."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "Ibrahim in the fire (21:68-70) is reading only, with no fire scene with a person.",
+  "status": "draft, unreviewed"
  }
 }

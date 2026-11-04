@@ -93,13 +93,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Valley of Listening",
   "quran_references": [
-   "72:1",
-   "72:8"
+   "72:1–15"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "listening-valley",
+   "engine": "not built yet",
+   "text": "Find the quietest spots in a desert valley to hear the recitation clearly (72:1); nothing unseen is shown."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -116,5 +119,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Listeners",
+  "quran_references": [
+   "72:1–15"
+  ],
+  "children_narration": "The Quran tells us that a group of jinn listened to its recitation. They recognized its remarkable guidance and spoke about believing in Allah. The surah reminds us that Allah's creation includes things humans cannot normally see.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Valley of Listening",
+   "description": "Explore an atmospheric desert listening environment with recitation and nature sounds. Jinn are not visually represented or controlled."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "Jinn are never shown or played.",
+  "status": "draft, unreviewed"
  }
 }

@@ -150,17 +150,18 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "Honeybee Kingdom",
   "quran_references": [
-   "16:14",
-   "16:18",
-   "16:66",
-   "16:68",
-   "16:68-69",
-   "16:69"
+   "16:5–18",
+   "16:65–69",
+   "16:78–83"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "pollinate",
+   "engine": "not built yet",
+   "text": "Follow bees at flower height and carry pollen between matching flowers so the hive can make honey (16:68-69)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -177,5 +178,23 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Secret World of Bees",
+  "quran_references": [
+   "16:5–18",
+   "16:65–69",
+   "16:78–83"
+  ],
+  "children_narration": "Tiny bees fly from flower to flower, collecting nectar and returning to their homes. Their work helps us understand one of the many wonders of creation. Surah An-Nahl tells us that Allah inspired the bees and describes the drink that comes from within them, with different colors and benefits for people. The surah also reminds us of other blessings: rain, fruits, animals, shelter, and the world around us. Even the smallest creature can remind us to be grateful.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "Honeybee Kingdom",
+   "description": "Children explore a detailed meadow at insect scale, follow animated bees, identify flowers, investigate the life of a beehive, and learn about pollination and honey."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

@@ -123,17 +123,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Changing Cosmos",
   "quran_references": [
-   "81:15",
-   "81:15-18",
-   "81:15-21",
-   "81:17",
-   "81:18",
-   "81:26"
+   "81:1–29"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "horizon-light",
+   "engine": "not built yet",
+   "text": "An abstract space of changing light where you follow the morning as it breathes in (81:18)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -150,5 +149,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "When the World Changes",
+  "quran_references": [
+   "81:1–29"
+  ],
+  "children_narration": "Surah At-Takwir describes extraordinary changes associated with the end of the world. These descriptions remind us that the world as we know it will not last forever. The surah also affirms the truthfulness of the revelation.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Changing Cosmos",
+   "description": "An abstract astronomy-and-reflection environment that uses light and changing horizons without claiming to reproduce the unseen events."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The end-of-world images (81:1-14) are not pictured; the world is abstract light.",
+  "status": "draft, unreviewed"
  }
 }

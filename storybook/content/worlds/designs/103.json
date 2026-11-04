@@ -124,15 +124,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Clockwork World",
   "quran_references": [
-   "103:1",
-   "103:1-3",
-   "103:2",
-   "103:3"
+   "103:1–3"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "day-clock",
+   "engine": "not built yet",
+   "text": "Arrange a day on a giant clock so faith, good deeds, truth and patience fit (103:1-3)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -149,5 +150,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Treasure of Time",
+  "quran_references": [
+   "103:1–3"
+  ],
+  "children_narration": "Time passes whether we notice it or not. Surah Al-Asr reminds us that faith, good actions, truth, and patience are essential. Every day gives us opportunities to do something meaningful.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Clockwork World",
+   "description": "Explore giant moving clock mechanisms and arrange a fictional day's activities to learn about balancing responsibilities and helping others."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

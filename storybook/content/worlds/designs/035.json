@@ -117,14 +117,17 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Living Color Atlas",
   "quran_references": [
-   "35:12",
-   "35:27",
-   "35:27-28"
+   "35:9",
+   "35:27–28"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "colour-atlas",
+   "engine": "not built yet",
+   "text": "Sort minerals, fruits and animals by colour into a living atlas (35:27-28)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -141,5 +144,22 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The World of Colors",
+  "quran_references": [
+   "35:9",
+   "35:27–28"
+  ],
+  "children_narration": "Have you noticed that mountains can have different colors, fruits can grow in many shades, and animals have beautiful patterns? Surah Fatir reminds us to look closely at the diversity of Allah's creation. The more we learn about the world, the more reasons we may find to be grateful and humble.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Living Color Atlas",
+   "description": "Explore mineral formations, colorful mountains, orchards, and animal habitats through a nature-observation adventure."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

@@ -141,17 +141,18 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The City of Good Choices",
   "quran_references": [
    "17:1",
-   "17:12",
-   "17:23",
-   "17:23-24",
-   "17:35",
-   "17:61-65"
+   "17:23–39",
+   "17:70"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "command-streets",
+   "engine": "not built yet",
+   "text": "A night town where each street holds one of the guidelines of 17:23-37 as a hands-on act (help a parent carry, close a running tap, fill a full measure, walk calmly)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -168,5 +169,23 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Journey and the Book of Good Conduct",
+  "quran_references": [
+   "17:1",
+   "17:23–39",
+   "17:70"
+  ],
+  "children_narration": "Surah Al-Isra begins by telling us about the Night Journey of Prophet Muhammad, from the Sacred Mosque to the Farthest Mosque. The surah then teaches important lessons about living well. We should treat our parents kindly, care for people in need, avoid wastefulness, speak responsibly, and never act arrogantly. These teachings remind us that kindness is something we practice every day, through both our words and our actions.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The City of Good Choices",
+   "description": "A beautifully designed nighttime city with interactive community situations. Children make decisions about generosity, respectful speech, family kindness, and avoiding waste. The Night Journey itself is introduced through Quran reading and respectful narration, without depicting the Prophet or inventing unseen events."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The Night Journey (17:1) is a reading only. The Prophet, al-Buraq and the journey are not shown.",
+  "status": "draft, unreviewed"
  }
 }

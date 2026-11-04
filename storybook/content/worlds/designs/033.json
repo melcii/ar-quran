@@ -113,16 +113,18 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The City of Steadfastness",
   "quran_references": [
-   "33:9",
-   "33:9-27",
+   "33:9–27",
    "33:35",
-   "33:41-42",
-   "33:72"
+   "33:53–59"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "trench-logistics",
+   "engine": "not built yet",
+   "text": "Plan water, food and shelter for a city in a hard winter without any battle (33:9-11 read as narration)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -139,5 +141,23 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The City That Stood Together",
+  "quran_references": [
+   "33:9–27",
+   "33:35",
+   "33:53–59"
+  ],
+  "children_narration": "During a difficult period in Madinah, the believers faced an alliance of opposing forces. They experienced fear and uncertainty, but were reminded to remain steadfast. The surah also teaches about responsibility, sincerity, and respectful community relationships.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The City of Steadfastness",
+   "description": "Explore a historical-style city, organize noncombat community preparations, and discover why cooperation and responsibility matter. No battlefield gameplay or depictions of Prophet Muhammad."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "No battle. The Prophet is not shown. The family rulings (33:53-59) go in an information area for adults.",
+  "status": "draft, unreviewed"
  }
 }

@@ -136,17 +136,17 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Roots of Faith",
   "quran_references": [
-   "14:7",
-   "14:24",
-   "14:24-25",
-   "14:26",
-   "14:32",
-   "14:35-41"
+   "14:24–27",
+   "14:35–41"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "grow-good-tree",
+   "engine": "not built yet",
+   "text": "Grow a good tree: set firm roots, raise branches toward the sky, and wait for fruit in each season (14:24-25)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -163,5 +163,22 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Prayer for a Peaceful City",
+  "quran_references": [
+   "14:24–27",
+   "14:35–41"
+  ],
+  "children_narration": "Prophet Ibrahim prayed to Allah for the safety of a special city. He asked that his family be guided toward worship and that people would have reasons to be grateful. The surah also compares a good word to a good tree. Its roots are strong, its branches reach high, and it gives fruit. Imagine a tree whose roots are firmly planted in the ground. Just as strong roots help a tree grow, sincere faith and good actions help a person grow in character.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Roots of Faith",
+   "description": "Explore an ancient sanctuary-inspired environment, then build a symbolic tree by connecting roots, branches, and fruit to examples of good words and actions. The growing tree is an interactive representation of the Quranic parable, not a literal tree from Ibrahim's life."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

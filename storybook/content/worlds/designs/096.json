@@ -124,17 +124,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Cave of Learning",
   "quran_references": [
-   "96:1",
-   "96:1-5",
-   "96:1-19",
-   "96:4",
-   "96:5",
-   "96:19"
+   "96:1–19"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "letters-and-pen",
+   "engine": "not built yet",
+   "text": "A workshop of letters: trace and read with a pen (96:1-5); the first revelation is narrated from hadith, labelled."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -151,5 +150,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "Read!",
+  "quran_references": [
+   "96:1–19"
+  ],
+  "children_narration": "The opening verses of Surah Al-Alaq call us to read in the name of the Lord who created. They remind us that Allah teaches human beings what they did not know. Learning is a wonderful gift, but knowledge should lead us toward humility rather than arrogance.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Cave of Learning",
+   "description": "Explore a quiet cave-inspired environment and an interactive learning workshop featuring letters, language, and discovery. The context of the first revelation is presented through sourced narration, without depicting Prophet Muhammad or Jibril."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The cave of Hira and Jibril are not shown. The context of the first revelation comes from hadith and is labelled as hadith, not Quran.",
+  "status": "draft, unreviewed"
  }
 }

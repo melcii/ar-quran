@@ -51,6 +51,7 @@ function recipeKinds(r) {
 }
 
 const live = [];
+const planned = [];
 const tiers = { playable: 0, partial: 0, conceptual: 0 };
 for (const r of recs) {
   const u = r.unique_world;
@@ -61,7 +62,11 @@ for (const r of recs) {
   }
   const tier = u.tier.startsWith('playable') ? 'playable' : u.tier.startsWith('partial') ? 'partial' : 'conceptual';
   tiers[tier]++;
-  if (tier === 'conceptual') continue;
+  if (tier === 'conceptual') {
+    // Designs not built yet still may not share a primary mechanic with any other world.
+    if (u.primary_mechanic?.kind) planned.push({ id, kind: u.primary_mechanic.kind });
+    continue;
+  }
   for (const f of FIELDS) {
     const v = u[f];
     if (v == null || (Array.isArray(v) && !v.length) || v === '') errors.push(`${id}: missing ${f}`);
@@ -88,7 +93,14 @@ for (let i = 0; i < live.length; i++)
     else if (k >= 0.6) warns.push(`${a.id} and ${b.id}: ${(k * 100) | 0}% overlap in kinds of play (${[...a.kinds].filter((x) => b.kinds.has(x)).join(', ')}), but different primary mechanic and look`);
   }
 
-console.log(`Worlds: ${tiers.playable} playable, ${tiers.partial} partial, ${tiers.conceptual} conceptual (of ${recs.length}).`);
+{
+  const seen = new Map(live.map((w) => [w.u.primary_mechanic.kind, w.id]));
+  for (const p of planned) {
+    if (seen.has(p.kind)) errors.push(`${p.id} (planned) and ${seen.get(p.kind)}: same primary mechanic "${p.kind}"`);
+    else seen.set(p.kind, p.id);
+  }
+}
+console.log(`Worlds: ${tiers.playable} playable, ${tiers.partial} partial, ${tiers.conceptual} conceptual (of ${recs.length}); ${planned.length} designs not built yet have a primary mechanic, all different.`);
 for (const w of warns) console.log(`note: ${w}`);
 if (errors.length) {
   for (const e of errors) console.error(`FAIL: ${e}`);

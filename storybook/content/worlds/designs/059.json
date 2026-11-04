@@ -104,15 +104,17 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The House of Generosity",
   "quran_references": [
-   "59:9",
-   "59:21",
-   "59:22-24",
-   "59:23"
+   "59:2–10",
+   "59:18–24"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "aid-centre",
+   "engine": "not built yet",
+   "text": "Run a community aid centre where those who give prefer others even when in need (59:9)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -129,5 +131,22 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Community and Its Responsibilities",
+  "quran_references": [
+   "59:2–10",
+   "59:18–24"
+  ],
+  "children_narration": "Surah Al-Hashr recalls a difficult historical event involving the exile of a community and teaches about the distribution of resources, generosity, and responsibility. It praises those who care for others, even when they themselves have needs.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The House of Generosity",
+   "description": "Organize a community aid center, learn about sharing resources justly, and discover how a community can care for people in need."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

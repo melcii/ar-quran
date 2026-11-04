@@ -118,16 +118,17 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Mountain of Reflection",
   "quran_references": [
-   "52:1",
-   "52:1-6",
-   "52:3",
-   "52:5",
-   "52:48-49"
+   "52:1–28",
+   "52:35–36"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "mountain-lookouts",
+   "engine": "not built yet",
+   "text": "Climb safe trails to lookouts and answer the questions of 52:35-36 at each."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -144,5 +145,22 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Mountain",
+  "quran_references": [
+   "52:1–28",
+   "52:35–36"
+  ],
+  "children_narration": "A mountain can remind us of the greatness of the natural world. Surah At-Tur asks people to think seriously about creation, truth, and the life to come. It encourages reflection on where we came from and why our choices matter.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Mountain of Reflection",
+   "description": "Climb safe trails, explore different rock formations, and reach observation points where children discover questions and lessons from the surah."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

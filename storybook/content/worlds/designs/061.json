@@ -88,13 +88,18 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Workshop of Commitment",
   "quran_references": [
-   "61:2-3",
-   "61:4"
+   "61:2–4",
+   "61:6",
+   "61:10–14"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "wall-of-ranks",
+   "engine": "not built yet",
+   "text": "Build a solid wall with a team, each block placed when promised (61:2-4)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -111,5 +116,23 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "Standing Together",
+  "quran_references": [
+   "61:2–4",
+   "61:6",
+   "61:10–14"
+  ],
+  "children_narration": "Surah As-Saff reminds us that our words and actions should agree. If we promise something good, we should try our best to do it. It also recalls Isa's message and encourages believers to support truth.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Workshop of Commitment",
+   "description": "Children work with a team of friendly fictional characters to complete a shared community project, learning that cooperation requires keeping promises."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

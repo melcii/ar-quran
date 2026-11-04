@@ -116,15 +116,17 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Layers of Creation",
   "quran_references": [
-   "32:7",
-   "32:9",
-   "32:16",
-   "32:27"
+   "32:4–9",
+   "32:15–22"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "creation-layers",
+   "engine": "not built yet",
+   "text": "Descend through symbolic layers (earth, water, growing things) with observation exhibits (32:7-9); no divine act shown."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -141,5 +143,22 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Wonders of Creation",
+  "quran_references": [
+   "32:4–9",
+   "32:15–22"
+  ],
+  "children_narration": "The Quran asks us to reflect on creation, human life, and our return to Allah. It reminds us that true believers are willing to listen, reflect, and worship with humility. Every breath and every opportunity to do good matters.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Layers of Creation",
+   "description": "Travel through symbolic environments representing the earth, sky, and the development of living things. Interactive exhibits teach observation and gratitude without visualizing divine actions."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

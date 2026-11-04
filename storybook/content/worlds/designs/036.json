@@ -157,17 +157,17 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Town and the Turning Sky",
   "quran_references": [
-   "36:13-27",
-   "36:33",
-   "36:34",
-   "36:36",
-   "36:39",
-   "36:40"
+   "36:13–32",
+   "36:33–44"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "star-orbits",
+   "engine": "not built yet",
+   "text": "Set the sun and moon on their courses in an orrery so they never overtake each other (36:37-40); the town story (36:13-27) is read."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -184,5 +184,22 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The People of the Town",
+  "quran_references": [
+   "36:13–32",
+   "36:33–44"
+  ],
+  "children_narration": "The Quran tells us about a town to which messengers were sent. When the people rejected them, a man came from the farthest part of the city and urged his people to follow the messengers. He showed courage by standing for what he believed was true. The surah then invites us to reflect on the earth, plants, night, day, and the movement of heavenly bodies.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Town and the Turning Sky",
+   "description": "Investigate the town narrative through environmental clues, then explore an interactive astronomy observatory."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The man from the far end of the city (36:20-27) is not shown. His killing is not mentioned in the Quran and is not added.",
+  "status": "draft, unreviewed"
  }
 }

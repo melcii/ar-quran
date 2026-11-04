@@ -115,15 +115,17 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Starlight Observatory",
   "quran_references": [
-   "53:1",
-   "53:38-39",
-   "53:43",
-   "53:49"
+   "53:1–18",
+   "53:31–42"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "observe-vs-guess",
+   "engine": "not built yet",
+   "text": "Sort statements about the night sky into \"observed\" and \"only guessed\" (53:28)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -140,5 +142,22 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Star",
+  "quran_references": [
+   "53:1–18",
+   "53:31–42"
+  ],
+  "children_narration": "Stars shine far above us, reminding us how large the universe is. Surah An-Najm begins with an oath by the star and teaches about revelation, accountability, and the limits of human assumptions. It reminds us not to claim something is true without good reason.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Starlight Observatory",
+   "description": "Explore a magnificent night-sky environment and use an observation journal to distinguish what can be observed from unsupported guesses. Do not attempt to depict the unseen events described in the revelation passages."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The ascension passages (53:1-18) concern the unseen: reading only.",
+  "status": "draft, unreviewed"
  }
 }

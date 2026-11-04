@@ -96,14 +96,17 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Hall of Listening",
   "quran_references": [
-   "58:1",
-   "58:1-4",
+   "58:1–4",
    "58:11"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "listening-hall",
+   "engine": "not built yet",
+   "text": "Practise listening: hear fictional concerns and repeat them back accurately before answering (58:1)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -120,5 +123,22 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Woman Who Was Heard",
+  "quran_references": [
+   "58:1–4",
+   "58:11"
+  ],
+  "children_narration": "A woman brought a serious concern about unfair treatment in her marriage to Prophet Muhammad. The Quran tells us that Allah heard her complaint. Her story reminds us that people's concerns matter and that unfairness should not be ignored.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Hall of Listening",
+   "description": "Explore a respectful council environment and practice listening carefully to fictional community concerns. The original historical event is conveyed through narration, not acted out by invented characters."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The woman and the Prophet are not shown; the hall uses fictional concerns, labelled.",
+  "status": "draft, unreviewed"
  }
 }

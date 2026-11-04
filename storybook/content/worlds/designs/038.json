@@ -137,17 +137,17 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Chambers of Wisdom",
   "quran_references": [
-   "38:18",
-   "38:18-19",
-   "38:19",
-   "38:21-26",
-   "38:26",
-   "38:41-44"
+   "38:17–48",
+   "38:71–85"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "wise-judgement-scale",
+   "engine": "not built yet",
+   "text": "Hear two sides of everyday disputes and weigh them fairly, as Dawud was told to judge with truth (38:26)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -164,5 +164,22 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "Wisdom, Responsibility, and Patience",
+  "quran_references": [
+   "38:17–48",
+   "38:71–85"
+  ],
+  "children_narration": "Dawud was given wisdom and responsibility. Sulayman was blessed with a remarkable kingdom. Ayyub faced suffering but remained devoted to Allah. The surah also recalls Adam and the arrogance of Iblis. Together, these accounts teach us to use our blessings wisely and remain humble.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Chambers of Wisdom",
+   "description": "Explore different educational environments about justice, responsibility, gratitude, and patience, each based on a separate narrated passage."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "Adam and Iblis (38:71-85) are reading only, as unseen matters.",
+  "status": "draft, unreviewed"
  }
 }

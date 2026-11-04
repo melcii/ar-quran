@@ -219,17 +219,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Living Symphony of Nature",
   "quran_references": [
-   "55:5",
-   "55:5-24",
-   "55:6",
-   "55:7",
-   "55:7-9",
-   "55:11"
+   "55:1–78"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "two-seas-barrier",
+   "engine": "not built yet",
+   "text": "Find where fresh and salt water meet but do not mix, and test it with floating markers (55:19-20)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -246,5 +245,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The World of Blessings",
+  "quran_references": [
+   "55:1–78"
+  ],
+  "children_narration": "The sun, the moon, the trees, the seas, and the fruits around us are among the signs of Allah's blessings. Surah Ar-Rahman repeatedly invites us to recognize these gifts. It encourages gratitude and reflection.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Living Symphony of Nature",
+   "description": "Explore distinct biomes, observe fruit-bearing plants, discover the meeting of different bodies of water, and interact with educational models of natural balance. Depictions of Paradise must remain symbolic rather than claiming to show the unseen reality."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The library allows \"symbolic\" Paradise. This project keeps Paradise unpictured; 55:46-78 are readings only. The two seas are a real-world estuary.",
+  "status": "draft, unreviewed"
  }
 }

@@ -119,16 +119,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Four Wonders",
   "quran_references": [
-   "56:63",
-   "56:63-64",
-   "56:68-70",
-   "56:69",
-   "56:72"
+   "56:1–96"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "four-wonders",
+   "engine": "not built yet",
+   "text": "Four hands-on stations: sow a seed, bring water down, kindle a fire safely, and reflect on human life (56:58-73)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -145,5 +145,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Great Event",
+  "quran_references": [
+   "56:1–96"
+  ],
+  "children_narration": "Surah Al-Waqi'ah reminds us that the Day of Judgment will come. It speaks about different groups of people and asks us to reflect on the creation of human life, crops, water, and fire. These everyday things can remind us how much we depend on Allah.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Four Wonders",
+   "description": "Explore educational spaces centered on seeds, water, fire, and human life, connected to reflection on accountability. Do not attempt literal representations of the unseen Day of Judgment."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "No Day of Judgment imagery; the groups of 56:7-56 are readings only.",
+  "status": "draft, unreviewed"
  }
 }

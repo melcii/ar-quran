@@ -132,16 +132,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Camel and Mountain Expedition",
   "quran_references": [
-   "88:17",
-   "88:17-20",
-   "88:18",
-   "88:19",
-   "88:20"
+   "88:1–26"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "camel-sky-mountain",
+   "engine": "not built yet",
+   "text": "Observe four things in turn: a camel, the raised sky, set mountains, spread earth (88:17-20)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -158,5 +158,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "Look at the Wonders Around You",
+  "quran_references": [
+   "88:1–26"
+  ],
+  "children_narration": "Have you ever looked carefully at a camel? What about the sky, mountains, and the earth? Surah Al-Ghashiyah encourages people to observe these remarkable parts of creation. It also reminds us of the Hereafter.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Camel and Mountain Expedition",
+   "description": "Explore a beautiful desert with realistically animated camels, high mountains, and a dramatic open sky. Children complete observation activities connected to the Quranic signs."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

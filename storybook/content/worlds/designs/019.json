@@ -167,17 +167,17 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Sanctuary of Hope",
   "quran_references": [
-   "19:2-15",
-   "19:11",
-   "19:16-36",
-   "19:23",
-   "19:24",
-   "19:24-26"
+   "19:2–40",
+   "19:41–58"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "point-to-answer",
+   "engine": "not built yet",
+   "text": "A quiet world played by pointing only, no words, recalling the vow of silence and the pointing in 19:26-29."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -194,5 +194,22 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Garden of Miracles",
+  "quran_references": [
+   "19:2–40",
+   "19:41–58"
+  ],
+  "children_narration": "Prophet Zakariyya prayed to Allah for a child, even though he and his wife were old. Allah answered his prayer and gave him the joyful news of Yahya. Maryam was also given extraordinary news: she would have a son named Isa, by Allah's command. When Maryam was alone and distressed, Allah provided comfort and help for her. The Quran describes a palm tree and water as part of her story. Surah Maryam also remembers Ibrahim and other prophets who were devoted to Allah. These stories teach us that Allah hears prayers, knows our needs, and has power over all things.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Sanctuary of Hope",
+   "description": "Explore a prayer sanctuary, a quiet palm grove, and several connected story areas. Activities focus on discovering the narration, observing nature, and learning about hope and devotion."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "Zakariyya, Maryam, Isa, Yahya and Ibrahim are never shown. The palm and stream (19:23-26) are a quiet place; Maryam is not pictured in it.",
+  "status": "draft, unreviewed"
  }
 }

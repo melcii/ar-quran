@@ -122,17 +122,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Two Paths",
   "quran_references": [
-   "92:1",
-   "92:1-5",
-   "92:1-7",
-   "92:2",
-   "92:5",
-   "92:19"
+   "92:1–21"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "two-paths-day-night",
+   "engine": "not built yet",
+   "text": "One landscape seen by night and by day; choices change which path lights up (92:1-10)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -149,5 +148,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Night and the Generous Heart",
+  "quran_references": [
+   "92:1–21"
+  ],
+  "children_narration": "Night and day are different, just as people's choices can be different. Surah Al-Layl contrasts generosity and mindfulness with selfishness. It reminds us that helping others sincerely is a meaningful way to live.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Two Paths",
+   "description": "Navigate a stylized day-and-night landscape and make age-appropriate choices about generosity and responsibility."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

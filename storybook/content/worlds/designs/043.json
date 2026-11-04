@@ -130,17 +130,17 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Golden City",
   "quran_references": [
-   "43:10",
-   "43:11",
-   "43:12",
-   "43:13",
-   "43:26-28",
-   "43:33-35"
+   "43:22–35",
+   "43:46–65"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "gold-or-good",
+   "engine": "not built yet",
+   "text": "An ornamented city where gold, silver and decorations can be set aside to reveal what really helps people (43:33-35)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -157,5 +157,22 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The City of Gold",
+  "quran_references": [
+   "43:22–35",
+   "43:46–65"
+  ],
+  "children_narration": "Imagine a city filled with beautiful ornaments, golden decorations, and impressive buildings. Does having all those things make someone good or wise? Surah Az-Zukhruf reminds us that wealth and beauty are not the true measure of a person's worth. It also recalls the stories of Musa and Isa.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Golden City",
+   "description": "Explore an ornate city and learn to distinguish luxury from kindness, honesty, and sincere faith through interactive choices."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

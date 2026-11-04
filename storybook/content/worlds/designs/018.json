@@ -216,17 +216,19 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Four Realms",
   "quran_references": [
-   "18:9-26",
-   "18:10",
-   "18:10-96",
-   "18:17",
-   "18:32",
-   "18:32-44"
+   "18:9–26",
+   "18:32–44",
+   "18:60–82",
+   "18:83–98"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "sun-path-cave",
+   "engine": "not built yet",
+   "text": "Track how the sun's light moves past a cave mouth without entering it, and set stones where it rises and sets (18:17); the barrier build (18:96) is a second activity."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -243,5 +245,24 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "Four Extraordinary Journeys",
+  "quran_references": [
+   "18:9–26",
+   "18:32–44",
+   "18:60–82",
+   "18:83–98"
+  ],
+  "children_narration": "Surah Al-Kahf contains several remarkable journeys. First, a group of young believers sought refuge in a cave. Allah caused them to sleep for many years. Then we hear about two men and their gardens, reminding us that wealth should never make us proud. Next comes Musa's journey with a knowledgeable servant of Allah. Musa learns that some events have wisdom he does not understand at first. Finally, Dhul-Qarnayn travels across different lands and helps a community by building a strong barrier. Each journey teaches something special about faith, humility, knowledge, and responsibility.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Four Realms",
+   "description": "Four distinct adventures: an explorable cave, two contrasting gardens, a journey through coastal locations, and a barrier-engineering activity inspired by 18:93–98."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The young men of the cave, Musa, al-Khidr and Dhul-Qarnayn are not shown. The boy in 18:74 and 18:80 is reading only, with no scene.",
+  "status": "draft, unreviewed"
  }
 }

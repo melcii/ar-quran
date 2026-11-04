@@ -109,16 +109,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Mountain Meadow",
   "quran_references": [
-   "87:1-5",
-   "87:4",
-   "87:4-5",
-   "87:5",
-   "87:17"
+   "87:1–19"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "meadow-cycle",
+   "engine": "not built yet",
+   "text": "Watch pasture grow green then dry to dark stubble (87:4-5) and plant again."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -135,5 +135,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "Remember and Grow",
+  "quran_references": [
+   "87:1–19"
+  ],
+  "children_narration": "The Quran invites us to remember Allah and appreciate His creation. Surah Al-A'la speaks about creation, growth, and guidance. It encourages people to remember what is truly important rather than becoming distracted by temporary things.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Mountain Meadow",
+   "description": "Explore the growth of plants through the seasons and follow a quiet learning path about remembrance and gratitude."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

@@ -115,14 +115,17 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Earth and Sky Observatory",
   "quran_references": [
-   "41:11",
-   "41:11-12",
-   "41:39"
+   "41:9–12",
+   "41:30–39"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "telescope-horizons",
+   "engine": "not built yet",
+   "text": "Use a telescope to find signs on the horizons and in the land (41:53); green a barren slope after rain (41:39)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -139,5 +142,22 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Earth and the Sky",
+  "quran_references": [
+   "41:9–12",
+   "41:30–39"
+  ],
+  "children_narration": "The Quran invites us to look at the earth beneath our feet and the sky above our heads. It reminds us of the signs of creation and encourages people to respond to harmful behavior with what is better. Even a dry landscape can come alive after rain.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Earth and Sky Observatory",
+   "description": "Explore mountains, valleys, and a night sky; use a telescope-style discovery system and watch a barren landscape become green after rainfall."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

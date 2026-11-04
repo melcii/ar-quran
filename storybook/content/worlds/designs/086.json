@@ -122,17 +122,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Piercing Star Observatory",
   "quran_references": [
-   "86:1-4",
-   "86:3",
-   "86:3-12",
-   "86:4",
-   "86:11",
-   "86:12"
+   "86:1–17"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "piercing-star",
+   "engine": "not built yet",
+   "text": "Find the brightest star through clouds with a star finder (86:1-3)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -149,5 +148,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Night Visitor",
+  "quran_references": [
+   "86:1–17"
+  ],
+  "children_narration": "On a clear night, a bright star can catch our attention. Surah At-Tariq begins with an oath by the sky and the night visitor, described as a piercing star. The surah reminds us of human creation and Allah's knowledge.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Piercing Star Observatory",
+   "description": "Explore a night-sky learning environment and investigate stars, light, and human development through carefully separated educational exhibits."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

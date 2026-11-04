@@ -122,16 +122,18 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Singing Sand Dunes",
   "quran_references": [
    "46:15",
-   "46:21",
-   "46:21-25",
-   "46:24",
-   "46:29"
+   "46:21–26",
+   "46:29–32"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "dune-shaping",
+   "engine": "not built yet",
+   "text": "Place windbreaks to shape moving dunes and keep a path open (46:21-25 as setting)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -148,5 +150,23 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Wind-Curved Dunes",
+  "quran_references": [
+   "46:15",
+   "46:21–26",
+   "46:29–32"
+  ],
+  "children_narration": "The people of 'Ad lived in a land associated with sand dunes. Prophet Hud warned them, but they rejected his message. The surah also reminds us to care for our parents and describes a group of jinn who listened to the Quran and believed.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Singing Sand Dunes",
+   "description": "Explore a wind-shaped desert landscape, investigate the story of 'Ad, and learn about caring for parents through a separate symbolic activity."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The jinn (46:29-32) are not shown, and nothing stands in for them.",
+  "status": "draft, unreviewed"
  }
 }

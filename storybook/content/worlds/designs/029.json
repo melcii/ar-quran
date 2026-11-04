@@ -129,16 +129,17 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Web of Choices",
   "quran_references": [
-   "29:14-15",
-   "29:15",
-   "29:16-27",
-   "29:20",
-   "29:41"
+   "29:2–3",
+   "29:14–43"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "web-strength-test",
+   "engine": "not built yet",
+   "text": "Test shelters of different materials against wind and rain and compare them with a spider's web (29:41)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -155,5 +156,22 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Spider's House",
+  "quran_references": [
+   "29:2–3",
+   "29:14–43"
+  ],
+  "children_narration": "Everyone experiences challenges, and faith is tested through our choices. The Quran gives the example of the spider's house when describing how weak it is to rely on false protectors instead of Allah. The surah also recalls the stories of Nuh, Ibrahim, Lut, and other communities.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Web of Choices",
+   "description": "Explore a giant artistic spider-web environment and test how different materials behave. Then visit narrative stations about faith and perseverance. Do not portray the spider's house as literally the weakest structure in all scientific respects."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

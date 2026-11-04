@@ -182,17 +182,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "Seven Ancient Worlds",
   "quran_references": [
-   "26:7",
-   "26:8-9",
-   "26:10-51",
-   "26:61-66",
-   "26:63",
-   "26:69-82"
+   "26:10–191"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "echo-amphitheatre",
+   "engine": "not built yet",
+   "text": "Tune echoes in a rock amphitheatre so the refrain of each chapter (26:8-9) carries clearly; seven chapters, each a reading."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -209,5 +208,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Messengers' Stories",
+  "quran_references": [
+   "26:10–191"
+  ],
+  "children_narration": "Musa was sent to confront Pharaoh. Ibrahim invited his people to think about what they worshipped. Nuh, Hud, Salih, Lut, and Shu'ayb each warned their communities and invited them toward guidance. These stories remind us that truthfulness and sincerity matter more than wealth or status.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "Seven Ancient Worlds",
+   "description": "Travel through distinct narrative chapters, including an Egyptian setting, a rock-carved settlement, and a marketplace where children learn about honest measurement."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "This surah's chapters overlap with A'raf (7), Hud (11) and Al-Qamar (54). It gets its own echo mechanic so the worlds stay different.",
+  "status": "draft, unreviewed"
  }
 }

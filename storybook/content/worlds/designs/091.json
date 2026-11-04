@@ -142,17 +142,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Sun and Moon Valley",
   "quran_references": [
-   "91:1",
-   "91:1-10",
-   "91:1-13",
-   "91:2",
-   "91:9",
-   "91:11"
+   "91:1–15"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "orbit-follow",
+   "engine": "not built yet",
+   "text": "Set the moon to follow the sun and day to reveal it (91:1-4); Thamud is a reading place."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -169,5 +168,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Sun and the Soul",
+  "quran_references": [
+   "91:1–15"
+  ],
+  "children_narration": "The Quran draws our attention to the sun, moon, day, night, and the human soul. It teaches that people have a responsibility to cultivate goodness rather than wrongdoing. It also recalls the people of Thamud and the she-camel.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Sun and Moon Valley",
+   "description": "Explore shifting daylight and moonlight, then enter a separate Thamud narrative environment."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The she-camel and its hamstringing (91:13-14): the camel may appear alive in the narrative place; the hamstringing is narration only.",
+  "status": "draft, unreviewed"
  }
 }

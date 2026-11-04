@@ -109,14 +109,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Road to Hudaybiyyah",
   "quran_references": [
-   "48:4",
-   "48:18",
-   "48:29"
+   "48:1–29"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "treaty-patience",
+   "engine": "not built yet",
+   "text": "A journey where waiting and restraint open the way: the gate opens only when you stop pushing (48:24-26, narration)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -133,5 +135,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Victory of Peace",
+  "quran_references": [
+   "48:1–29"
+  ],
+  "children_narration": "Sometimes a difficult agreement can lead to a good outcome. Surah Al-Fath speaks about a clear victory associated with the events of Hudaybiyyah. It reminds believers of trust, patience, commitment, and the importance of following guidance.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Road to Hudaybiyyah",
+   "description": "Explore a historical route and a peaceful agreement setting. Use a child-friendly decision activity to learn why resolving conflict can require patience and restraint."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "Hudaybiyyah has no people shown; the route is a landscape. No re-enactment.",
+  "status": "draft, unreviewed"
  }
 }

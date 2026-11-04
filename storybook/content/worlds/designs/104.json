@@ -109,16 +109,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Town of Kind Words",
   "quran_references": [
-   "104:1",
-   "104:1-3",
-   "104:1-9",
-   "104:2",
-   "104:3"
+   "104:1–9"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "kind-words-swap",
+   "engine": "not built yet",
+   "text": "Replace mocking words with kind ones on village signs (104:1)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -135,5 +135,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Power of Words",
+  "quran_references": [
+   "104:1–9"
+  ],
+  "children_narration": "Words can make someone feel welcome, or they can hurt. Surah Al-Humazah warns against mocking others, speaking badly about people, and becoming overly attached to wealth. We should choose our words carefully.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Town of Kind Words",
+   "description": "Take part in communication challenges where harmful statements can be replaced with respectful responses."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

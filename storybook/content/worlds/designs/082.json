@@ -109,15 +109,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Gallery of Responsibility",
   "quran_references": [
-   "82:6",
-   "82:6-7",
-   "82:6-8",
-   "82:7"
+   "82:1–19"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "human-formed",
+   "engine": "not built yet",
+   "text": "Exhibits on how a person is formed and balanced (82:7-8), with a private journal of choices."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -134,5 +135,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "Nothing Is Forgotten",
+  "quran_references": [
+   "82:1–19"
+  ],
+  "children_narration": "The surah reminds us of the Day of Judgment and asks us to reflect on how wonderfully human beings are formed. It teaches that our actions matter and are not forgotten.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Gallery of Responsibility",
+   "description": "Explore interactive displays about human development and everyday choices. Represent accountability through a symbolic journal, not depictions of angels or divine records."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The recording angels (82:10-12) are not shown; a personal journal is used, labelled as not the real record.",
+  "status": "draft, unreviewed"
  }
 }

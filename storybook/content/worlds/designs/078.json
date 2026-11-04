@@ -149,17 +149,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Earth and Sky Museum",
   "quran_references": [
-   "78:6",
-   "78:6-15",
-   "78:6-16",
-   "78:7",
-   "78:10",
-   "78:13"
+   "78:1–40"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "earth-sky-museum",
+   "engine": "not built yet",
+   "text": "A museum of large exhibits: mountains as pegs, sleep as rest, night as covering (78:6-16)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -176,5 +175,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Great News",
+  "quran_references": [
+   "78:1–40"
+  ],
+  "children_narration": "The Quran asks us to look at mountains, the earth, sleep, night, day, and rainfall. These are familiar parts of life, but each can inspire wonder. Surah An-Naba connects these signs to the great news of resurrection and accountability.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Earth and Sky Museum",
+   "description": "Travel through a series of large interactive natural exhibits, from mountains and clouds to night and day."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

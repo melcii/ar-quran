@@ -131,15 +131,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Two Caravan Routes",
   "quran_references": [
-   "106:1-4",
-   "106:2",
-   "106:3",
-   "106:4"
+   "106:1–4"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "two-caravans",
+   "engine": "not built yet",
+   "text": "Pack a winter caravan and a summer caravan for their different roads (106:2)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -156,5 +157,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Journeys of Safety",
+  "quran_references": [
+   "106:1–4"
+  ],
+  "children_narration": "The people of Quraysh traveled on trading journeys in winter and summer. Surah Quraysh reminds them of the safety and provision they enjoyed and calls them to worship the Lord of the Sacred House.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Two Caravan Routes",
+   "description": "Explore two distinctly different travel environments representing winter and summer journeys. Children organize fictional caravan supplies and learn about gratitude and safe travel."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

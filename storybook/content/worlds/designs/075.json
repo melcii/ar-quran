@@ -86,13 +86,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Hall of Reflection",
   "quran_references": [
-   "75:4",
-   "75:16-18"
+   "75:1–40"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "time-and-memory-hall",
+   "engine": "not built yet",
+   "text": "Arrange objects of a day you lived into a timeline and reflect on choices (75:14-15)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -109,5 +112,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Day of Resurrection",
+  "quran_references": [
+   "75:1–40"
+  ],
+  "children_narration": "Surah Al-Qiyamah reminds us that life is meaningful and that we will return to Allah. It invites people to reflect on their choices and consider the life to come. It also reminds us of Allah's power to create and resurrect.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Hall of Reflection",
+   "description": "Explore symbolic architecture built around time, memory, and responsibility. Do not portray the actual Day of Resurrection."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "Resurrection is not pictured.",
+  "status": "draft, unreviewed"
  }
 }

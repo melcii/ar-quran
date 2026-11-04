@@ -107,15 +107,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Mountain Passage",
   "quran_references": [
-   "94:1-8",
-   "94:2",
-   "94:2-5",
-   "94:5"
+   "94:1–8"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "narrow-to-wide",
+   "engine": "not built yet",
+   "text": "A narrow pass that widens each time you keep going after a hard part (94:5-6)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -132,5 +133,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "With Hardship Comes Ease",
+  "quran_references": [
+   "94:1–8"
+  ],
+  "children_narration": "Everyone faces difficult moments. Surah Ash-Sharh reminds us that with hardship comes ease. It encourages perseverance and turning to Allah. Even when a challenge feels difficult, we can continue with patience and hope.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Mountain Passage",
+   "description": "Navigate an initially narrow mountain path that opens into a wide landscape. The physical journey symbolizes perseverance, not a literal Quranic event."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

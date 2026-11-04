@@ -137,17 +137,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Orchard of Dignity",
   "quran_references": [
-   "95:1",
-   "95:1-3",
-   "95:1-8",
-   "95:2",
-   "95:3",
-   "95:4"
+   "95:1–8"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "fig-and-olive",
+   "engine": "not built yet",
+   "text": "Tend fig and olive trees and learn their seasons (95:1)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -164,5 +163,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Fig and the Olive",
+  "quran_references": [
+   "95:1–8"
+  ],
+  "children_narration": "Surah At-Tin begins with oaths by the fig and olive, Mount Sinai, and the secure city. It reminds us that human beings were created with dignity and are responsible for their faith and actions.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Orchard of Dignity",
+   "description": "Explore fig and olive trees, discover their natural characteristics, and visit symbolic learning spaces connected to the surah's themes."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

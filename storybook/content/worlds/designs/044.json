@@ -128,16 +128,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Valley of Warnings",
   "quran_references": [
-   "44:3",
-   "44:17-31",
-   "44:24",
-   "44:25",
-   "44:25-28"
+   "44:10–33"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "left-behind-inventory",
+   "engine": "not built yet",
+   "text": "Count the gardens, springs and fine places a proud people left behind (44:25-27), as a quiet survey."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -154,5 +154,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Warning of the Smoke",
+  "quran_references": [
+   "44:10–33"
+  ],
+  "children_narration": "Surah Ad-Dukhan contains powerful warnings, including the image of smoke, and reminds us of Pharaoh's people and the rescue of the Children of Israel. The message encourages people to take guidance seriously before the opportunity passes.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Valley of Warnings",
+   "description": "Explore an atmospheric landscape with shifting mist, then follow a narrated historical journey through an Egyptian setting and a sea-crossing sequence. Avoid presenting the speculative appearance of the smoke as historical fact."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The smoke (44:10) is not pictured, and the mist in the world is not presented as that smoke.",
+  "status": "draft, unreviewed"
  }
 }

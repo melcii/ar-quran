@@ -135,17 +135,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "Nuh's Village of Signs",
   "quran_references": [
-   "71:5-20",
-   "71:10-12",
-   "71:11",
-   "71:12",
-   "71:16",
-   "71:20"
+   "71:1–28"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "day-and-night-appeals",
+   "engine": "not built yet",
+   "text": "Visit places by day and by night, in public and in private (71:5-9), and watch the sky signs of 71:15-16."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -162,5 +161,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Patient Messenger",
+  "quran_references": [
+   "71:1–28"
+  ],
+  "children_narration": "Prophet Nuh encouraged his people to worship Allah and ask for forgiveness. He spoke to them openly and privately, during the day and at night. He reminded them to look at the heavens, the moon, the sun, and the earth. Although many refused to listen, he continued his mission with patience.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "Nuh's Village of Signs",
+   "description": "This world focuses on Nuh's message and long perseverance. Children explore places symbolizing his different appeals, with sky-observation activities. The ark adventure belongs to the wider Nuh story collection, grounded particularly in passages such as Hud 11:37–44, rather than being falsely attributed to Surah Nuh itself."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "Agreed with the library: no ark here. The ark story is in Hud (11:37-44).",
+  "status": "draft, unreviewed"
  }
 }

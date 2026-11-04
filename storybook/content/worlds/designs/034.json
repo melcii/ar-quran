@@ -160,17 +160,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Gardens of Saba",
   "quran_references": [
-   "34:10",
-   "34:10-11",
-   "34:12",
-   "34:12-14",
-   "34:13",
-   "34:15"
+   "34:10–19"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "dam-stewardship",
+   "engine": "not built yet",
+   "text": "Keep two gardens watered by managing a dam's sluices and repairs (34:15); the flood (34:16) is narrated, not played."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -187,5 +186,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Gardens and the Dam",
+  "quran_references": [
+   "34:10–19"
+  ],
+  "children_narration": "Allah gave Dawud and Sulayman remarkable blessings. The people of Saba also enjoyed beautiful gardens and abundant provision. But they were not grateful, and the Quran tells how a flood brought destruction to their gardens. The story reminds us that blessings should be appreciated and never taken for granted.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Gardens of Saba",
+   "description": "Explore two flourishing gardens and a large dam-inspired structure. Watch a narrated environmental transformation connected to the flood, and learn about water stewardship through a separate educational simulation."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The flood of the dam is narrated, not played as destruction. Dawud and Sulayman are not shown.",
+  "status": "draft, unreviewed"
  }
 }

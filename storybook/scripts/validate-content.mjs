@@ -293,4 +293,4 @@ console.log(`Quran dataset OK: 114 surahs, ${total} ayahs, checksums match.`);
 console.log(`Stories OK: ${storyIds.join(", ")}.`);
 console.log(`Story outlines OK: ${outlines.length} drafts, all references real; catalog covers 114 surahs.`);
 console.log(`Surah worlds OK: 114 settings; ${worlds.filter((w) => w.review_status === "unreviewed").length} still await scholarly review.`);
-console.log(`World designs OK: 114 records, every anchor found in its ayah; ${designsBuilt} built as playable worlds; ${unreviewedDesigns} await scholarly review.`);
+console.log(`World designs OK: 114 records, every anchor found in its ayah; ${designsBuilt} have an older composed scene; see npm run worlds:unique for the new-engine status; ${unreviewedDesigns} await scholarly review.`);

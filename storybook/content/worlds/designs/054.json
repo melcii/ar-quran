@@ -159,17 +159,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Moonlit History Atlas",
   "quran_references": [
-   "54:1",
-   "54:9-17",
-   "54:11",
-   "54:12",
-   "54:13",
-   "54:17"
+   "54:1–42"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "memory-refrain",
+   "engine": "not built yet",
+   "text": "Remember and repeat the refrain \"We have made the Quran easy to remember\" (54:17) as a memory path between chapters."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -186,5 +185,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Moon and the Warnings",
+  "quran_references": [
+   "54:1–42"
+  ],
+  "children_narration": "Surah Al-Qamar begins with the splitting of the moon as a sign, then recalls communities that rejected the messages sent to them. The stories of Nuh, 'Ad, Thamud, Lut's people, and Pharaoh's people remind us that guidance should not be ignored.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Moonlit History Atlas",
+   "description": "Explore a moonlit observatory connected to separate narrative environments. The opening sign is explained through scripture rather than presented as a scientifically reconstructed event."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The splitting of the moon (54:1) is not animated or reconstructed.",
+  "status": "draft, unreviewed"
  }
 }

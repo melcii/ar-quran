@@ -103,14 +103,17 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Gallery of Choices",
   "quran_references": [
-   "45:5",
-   "45:12",
-   "45:13"
+   "45:3–13",
+   "45:28–29"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "wind-and-rain-ledger",
+   "engine": "not built yet",
+   "text": "Keep a field ledger of winds, rain and day length that you measure yourself (45:5)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -127,5 +130,22 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Book of Our Actions",
+  "quran_references": [
+   "45:3–13",
+   "45:28–29"
+  ],
+  "children_narration": "Every day, we make choices. Some choices help others, while some can cause harm. The Quran reminds us that our actions matter and that Allah knows what we do. It also invites us to reflect on the signs around us: the wind, rain, and changing day and night.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Gallery of Choices",
+   "description": "Explore an interactive book of fictional everyday decisions and see how acts of kindness affect a community. Do not claim to portray the actual records of deeds or the Day of Judgment."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

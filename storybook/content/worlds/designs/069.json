@@ -106,15 +106,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Great Reflection Hall",
   "quran_references": [
-   "69:6",
-   "69:6-8",
-   "69:7",
-   "69:19"
+   "69:1–52"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "quiet-ledger-journal",
+   "engine": "not built yet",
+   "text": "A reflection journal you fill with your own everyday actions; no scenes of judgment (69:18-24 read only)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -131,5 +132,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Certain Reality",
+  "quran_references": [
+   "69:1–52"
+  ],
+  "children_narration": "Surah Al-Haqqah reminds us that the Day of Judgment is real. It recalls communities that rejected guidance and asks us to think about our actions. Our choices matter, even when no one else seems to notice them.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Great Reflection Hall",
+   "description": "Travel through atmospheric landscapes connected to narrated lessons from past communities. Use an interactive journal to reflect on everyday actions without attempting to depict the unseen judgment."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "No judgment scenes; past peoples are readings only.",
+  "status": "draft, unreviewed"
  }
 }

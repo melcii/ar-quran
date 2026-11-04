@@ -128,16 +128,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Paths of Trust",
   "quran_references": [
-   "37:6",
-   "37:99-111",
-   "37:139-148",
-   "37:145",
-   "37:146"
+   "37:75–148"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "ship-of-yunus-shore",
+   "engine": "not built yet",
+   "text": "On a shore, grow a gourd vine for shade over the beach (37:145-146); Ibrahim's test (37:102-107) stays a reading only."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -154,5 +154,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "Ibrahim's Great Test",
+  "quran_references": [
+   "37:75–148"
+  ],
+  "children_narration": "Surah As-Saffat recalls several prophets, including Nuh, Ibrahim, Musa, Harun, Ilyas, Lut, and Yunus. Ibrahim experienced an extraordinary test involving his son, and Allah provided a great sacrifice in his place. The surah teaches trust and obedience while reminding us of Allah's mercy.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Paths of Trust",
+   "description": "Several distinct story areas include an ancient sanctuary-inspired setting, an environmental retelling of Ibrahim's test without human depiction, and a maritime setting for Yunus's account."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "Ibrahim's test with his son (37:102-107) is reading only. No knife, altar or ram scene is shown. The library's \"environmental retelling\" is dropped.",
+  "status": "draft, unreviewed"
  }
 }

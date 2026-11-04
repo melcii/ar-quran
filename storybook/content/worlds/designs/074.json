@@ -93,14 +93,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Dawn of Responsibility",
   "quran_references": [
-   "74:2",
-   "74:3-7",
-   "74:4"
+   "74:1–56"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "clean-the-commons",
+   "engine": "not built yet",
+   "text": "Tidy shared spaces from dawn, keeping your clothes clean (74:4-5) and helping without counting it (74:6)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -117,5 +119,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "A Call to Responsibility",
+  "quran_references": [
+   "74:1–56"
+  ],
+  "children_narration": "Surah Al-Muddaththir begins with a call to rise and warn. It teaches about sincerity, personal responsibility, and not becoming proud of one's efforts. The surah also includes serious warnings about rejecting truth and neglecting those in need.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Dawn of Responsibility",
+   "description": "Explore a landscape moving from darkness to daylight and complete activities about keeping shared spaces clean, caring for others, and acting sincerely."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

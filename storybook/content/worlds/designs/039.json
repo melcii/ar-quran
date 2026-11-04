@@ -116,14 +116,18 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Valley of Renewal",
   "quran_references": [
+   "39:9",
    "39:21",
-   "39:53",
-   "39:73"
+   "39:53–55"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "rain-to-harvest-cycle",
+   "engine": "not built yet",
+   "text": "Watch rain become springs, crops and colours, then turn yellow and dry (39:21); never lose hope (39:53) as a reading."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -140,5 +144,23 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "Never Lose Hope",
+  "quran_references": [
+   "39:9",
+   "39:21",
+   "39:53–55"
+  ],
+  "children_narration": "Sometimes people make mistakes and feel unsure how to improve. Surah Az-Zumar reminds us not to despair of Allah's mercy. It also asks us to reflect on rain, plants, knowledge, and sincere worship. No matter how difficult something seems, sincere repentance is always meaningful.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Valley of Renewal",
+   "description": "Explore a landscape that changes through seasonal growth and discover how correcting mistakes differs from simply hiding them."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

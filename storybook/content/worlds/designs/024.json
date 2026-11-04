@@ -160,17 +160,18 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Architecture of Light",
   "quran_references": [
-   "24:15-16",
-   "24:27",
-   "24:27-28",
+   "24:27–31",
    "24:35",
-   "24:39",
-   "24:40"
+   "24:58–61"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "mirror-light",
+   "engine": "not built yet",
+   "text": "Guide sunlight with mirrors through geometric windows, and knock and wait for welcome before entering a house (24:27); the lamp parable (24:35) stays a reading."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -187,5 +188,23 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Light",
+  "quran_references": [
+   "24:27–31",
+   "24:35",
+   "24:58–61"
+  ],
+  "children_narration": "Surah An-Nur teaches us about respectful behavior, privacy, modesty, and treating people fairly. It also contains a beautiful parable involving light, a lamp, and a niche. Light helps us think about the importance of guidance, but Allah is not represented by anything we create.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Architecture of Light",
+   "description": "Navigate beautifully designed buildings using reflected light and geometric openings. Practice knocking before entering, respecting privacy, and learning about responsible speech."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The light parable (24:35) is about Allah. It stays a reading; mirrors and light are never used to stand for Allah.",
+  "status": "draft, unreviewed"
  }
 }

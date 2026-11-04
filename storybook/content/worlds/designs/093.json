@@ -121,17 +121,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Morning of Hope",
   "quran_references": [
-   "93:1",
-   "93:1-8",
-   "93:1-10",
-   "93:2",
-   "93:10",
-   "93:11"
+   "93:1–11"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "morning-brightens",
+   "engine": "not built yet",
+   "text": "A sunrise that brightens as you help the orphan and the one who asks (93:9-10)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -148,5 +147,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "A Morning Full of Hope",
+  "quran_references": [
+   "93:1–11"
+  ],
+  "children_narration": "Sometimes difficult moments make us feel uncertain. Surah Ad-Duha offers comfort and reassurance to Prophet Muhammad. It recalls Allah's care for him and reminds us to treat orphans and those who ask for help with kindness.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Morning of Hope",
+   "description": "Explore a beautiful sunrise environment that gradually brightens. Children learn about kindness through community-care activities."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }

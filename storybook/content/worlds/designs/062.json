@@ -98,13 +98,16 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (an older composed scene exists; not validated as unique)",
-  "visual_theme": null,
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Friday Town",
   "quran_references": [
-   "62:9",
-   "62:10"
+   "62:1–11"
   ],
-  "primary_mechanic": null,
+  "primary_mechanic": {
+   "kind": "friday-schedule",
+   "engine": "not built yet",
+   "text": "Plan a Friday in a town: close the stalls when the call comes and reopen after (62:9-10)."
+  },
   "secondary_activities": [],
   "narrative_structure": null,
   "world_assets": [],
@@ -121,5 +124,21 @@
   },
   "scholarly_review": "unreviewed",
   "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "A Special Day Together",
+  "quran_references": [
+   "62:1–11"
+  ],
+  "children_narration": "Friday is an important day for Muslim communities. The Quran teaches believers to give attention to the remembrance of Allah when called to Friday prayer, rather than being distracted by trade and other activities.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Friday Town",
+   "description": "Explore a peaceful town as its weekly routine changes. Learn about the importance of gathering, listening, and making time for worship through interactive scheduling and exploration."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
  }
 }
