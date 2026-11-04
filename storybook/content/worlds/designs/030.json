@@ -136,34 +136,49 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The World Through Seasons",
+  "tier": "playable",
+  "visual_theme": "A parched plain with five dry plots around a wind vane, under a wide sky where clouds gather",
   "quran_references": [
-   "30:2–5",
-   "30:19–27",
-   "30:46–50"
+   "30:2-4",
+   "30:48",
+   "30:49-50",
+   "30:24",
+   "30:46",
+   "30:22"
   ],
   "primary_mechanic": {
-   "kind": "season-return",
-   "engine": "not built yet",
-   "text": "Bring a dry land back to life by watching winds, clouds and rain move across it (30:48-50)."
+   "kind": "wind-reading-sowing",
+   "engine": "rain",
+   "text": "Watch the wind vane: the wind rises and a cloud gathers on one side and drifts with the wind. Read where it is heading and sow seeds in the dry plot it will reach before the rain falls there. Sown and rained on, the plot comes to life (30:48-50). The player never makes the rain: wind and rain come by themselves."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "the Romans (30:2-4)",
+   "languages and colours (30:22)"
+  ],
+  "narrative_structure": "The sign, three rain rounds, then a reading",
+  "world_assets": [
+   "wind vane",
+   "five dry plots",
+   "drifting cloud",
+   "rain"
+  ],
+  "environment_behaviour": [
+   "the vane turns to the wind",
+   "the cloud grows and darkens as it drifts, then rains",
+   "plots turn green with shoots after rain on sown seed"
+  ],
+  "learning_objective": "See the signs of wind, cloud and rain giving life to dry land (30:48-50)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: watched the vane with the on-screen button; the wind gets up and a cloud gathers)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: seeds sown in the wrong plot stay dry when the rain falls elsewhere; sown where the cloud was heading, the plot comes to life)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"The wind is carrying a cloud · seeds sown\", then \"Round 2 of 3 · Plots brought to life: 1\")",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: rounds [0,1,2], dry tries [0])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"rome\",\"rain\",\"signs\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w030.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

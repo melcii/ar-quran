@@ -26,5 +26,9 @@ import { W024 } from './w024';
 import { W025 } from './w025';
 import { W026 } from './w026';
 import { W027 } from './w027';
+import { W028 } from './w028';
+import { W029 } from './w029';
+import { W030 } from './w030';
+import { W031 } from './w031';
 
-export const WORLDS: Record<number, WorldDef> = { 1: W001, 2: W002, 3: W003, 4: W004, 5: W005, 6: W006, 7: W007, 8: W008, 9: W009, 10: W010, 12: W012, 13: W013, 14: W014, 15: W015, 16: W016, 17: W017, 18: W018, 19: W019, 20: W020, 21: W021, 22: W022, 23: W023, 24: W024, 25: W025, 26: W026, 27: W027 };
+export const WORLDS: Record<number, WorldDef> = { 1: W001, 2: W002, 3: W003, 4: W004, 5: W005, 6: W006, 7: W007, 8: W008, 9: W009, 10: W010, 12: W012, 13: W013, 14: W014, 15: W015, 16: W016, 17: W017, 18: W018, 19: W019, 20: W020, 21: W021, 22: W022, 23: W023, 24: W024, 25: W025, 26: W026, 27: W027, 28: W028, 29: W029, 30: W030, 31: W031 };

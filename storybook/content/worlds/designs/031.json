@@ -129,32 +129,44 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "Luqman's Wisdom Workshop",
+  "tier": "playable",
+  "visual_theme": "A garden path with fig and olive trees where a goat, a cat and a dove rest",
   "quran_references": [
-   "31:12–19"
+   "31:12-13",
+   "31:14",
+   "31:18-19",
+   "31:17",
+   "31:16"
   ],
   "primary_mechanic": {
-   "kind": "advice-workshop",
-   "engine": "not built yet",
-   "text": "A workshop with one station per piece of advice in 31:13-19 (lower your voice: a sound meter; moderate pace: a walking path)."
+   "kind": "voice-loudness-meter",
+   "engine": "voice",
+   "text": "At each animal, pass on a message at the right loudness: hold Speak and the voice needle rises, let go and it sinks. Keep it in the green band for 2.5 seconds and the message is heard; past the red line the animal is startled and settles again before you try more gently. Each listener is more easily startled than the one before (31:19, lower your voice). Luqman and his son are not shown; his advice is read from the verses."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "the mustard seed (31:16)"
+  ],
+  "narrative_structure": "Goat, cat and dove along the path, then the mustard seed reading",
+  "world_assets": [
+   "goat, cat and dove",
+   "voice meter panel with green band and red line"
+  ],
+  "environment_behaviour": [
+   "heard animals show a soft gold ring",
+   "the needle and the \"Heard\" timer update live"
+  ],
+  "learning_objective": "Learn Luqman's advice to his son (31:12-19), especially gentleness in walk and voice",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: pressed \"Pass the message to the goat\"; the voice meter opens with a hold-to-speak button)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: held too long: the needle passed the red line and the goat was startled; kept in the green band for 2.5 s, the goat heard the message)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: panel: needle, green band, red line, \"Heard: 1.2 of 2.5 s\"; status: \"Messages heard: 1 of 3 · Next: the cat\")",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: heard [0,1,2], startled [0,1,2])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"gently\",\"seed\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w031.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

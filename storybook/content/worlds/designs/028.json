@@ -176,33 +176,50 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The River, the Well, and the Treasure",
+  "tier": "playable",
+  "visual_theme": "A river running down from the hills, splitting twice into channels that end in a quiet landing or a reed marsh, with palms and olives on the banks",
   "quran_references": [
-   "28:3–46",
-   "28:76–82"
+   "28:7",
+   "28:11-13",
+   "28:22-24",
+   "28:77",
+   "28:79",
+   "28:80",
+   "28:83"
   ],
   "primary_mechanic": {
-   "kind": "river-chest-current",
-   "engine": "not built yet",
-   "text": "Guide a floating chest down a river by opening and closing reed channels so it reaches the right bank (28:7-13); draw water at Madyan's well (28:23)."
+   "kind": "river-chest",
+   "engine": "river",
+   "text": "Let an empty chest go at the top of the river and follow it along the bank. At each fork, move a bundle of reeds to close one channel so the chest takes the way to the quiet landing, and nudge it free where it catches on the bank. A wrong channel ends in a reed marsh and the chest is brought back to try again. Nobody rides in the chest; Musa, his mother and his sister are not shown, and the story is read (28:7, 28:11-13)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "the well of Madyan (28:22-24)",
+   "Qarun and his treasure (28:77, 79, 80, 83)"
+  ],
+  "narrative_structure": "The promise to Musa's mother, the chest on the river, then two readings",
+  "world_assets": [
+   "branching river with two reed gates",
+   "floating wooden chest",
+   "snag rocks",
+   "landing stone"
+  ],
+  "environment_behaviour": [
+   "the chest floats with the current and bobs on the water",
+   "reed bundles visibly close the channel they block",
+   "the chest stops at snags until nudged"
+  ],
+  "learning_objective": "Learn how Allah kept His promise to Musa's mother (28:7, 28:13), and the lessons of Madyan and Qarun",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: let the chest go with the on-screen button; it floats with the current)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: with the reeds at their start the chest drifted into the reed marsh and came back; after moving both reed bundles it took the other channels (gates [1,0]) and was nudged free 2 times)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: hints: \"The chest drifted into the reed marsh…\", \"The chest has caught on the bank…\"; status: \"The chest is coming to a fork: are the reeds set?\")",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: landed; marsh tries [0])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"promise\",\"chest\",\"madyan\",\"qarun\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w028.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

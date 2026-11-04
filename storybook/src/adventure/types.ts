@@ -379,7 +379,55 @@ export type AntsTask = TaskBase & {
   reading?: Reading;
 };
 
-export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask | StandTask | ReachTask | ObserveTask | SkyTask | SailTask | ChoiceTask | ShareTask | PromiseTask | WeighTask | FlowTask | SiftTask | ReturnTask | GranaryTask | ValleyTask | GrowTask | PollenTask | RubbingTask | StreetsTask | SunPathTask | PointTask | BeaconTask | DoorsTask | OrderTask | HomeTask | MirrorTask | ShadowTask | EchoTask | AntsTask;
+/** A river that splits: the chest floats down it, following whichever channel the reed gates leave open (Al-Qasas). */
+export type RiverSeg = { pts: P2[]; gate?: number; kids?: [RiverSeg, RiverSeg]; end?: 'landing' | 'reeds' };
+export type RiverTask = TaskBase & {
+  kind: 'river';
+  river: RiverSeg;
+  /** Reed gates at the forks; state 0 sends the chest down kids[0]. */
+  gates: { at: P2; start: 0 | 1; labels: [string, string] }[];
+  /** Places on the banks where the chest catches and must be nudged free. */
+  snags: P2[];
+  /** Metres per second the current carries the chest. */
+  speed: number;
+  reading?: Reading;
+};
+
+/** Shelter a lamp from wind and rain: test the web shelter, then rebuild it part by part until the lamp stays lit (Al-Ankabut). */
+export type ShelterMat = 'web' | 'reed' | 'brick';
+export type ShelterTask = TaskBase & {
+  kind: 'shelter';
+  stand: P2;
+  piles: { at: P2; mat: ShelterMat }[];
+  /** Seconds the storm test lasts. */
+  secs: number;
+  /** Read after the first test of the web shelter. */
+  web: Reading;
+  reading?: Reading;
+};
+
+/** Read the wind, and sow the dry plot the rain cloud will reach before it rains there (Ar-Rum). */
+export type RainTask = TaskBase & {
+  kind: 'rain';
+  vane: P2;
+  plots: P2[];
+  /** Each round: the plot the wind will carry the cloud over. */
+  rounds: { plot: number; reading: Reading }[];
+  /** Seconds the cloud takes to drift across. */
+  drift: number;
+  reading?: Reading;
+};
+
+/** Deliver a message at a gentle voice: keep the voice needle in the band for a moment without startling the listener (Luqman). */
+export type VoiceTask = TaskBase & {
+  kind: 'voice';
+  listeners: { at: P2; animal: 'dove' | 'cat' | 'goat'; band: [number, number]; reading: Reading }[];
+  /** Seconds the voice must stay in the band. */
+  hold: number;
+  reading?: Reading;
+};
+
+export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask | StandTask | ReachTask | ObserveTask | SkyTask | SailTask | ChoiceTask | ShareTask | PromiseTask | WeighTask | FlowTask | SiftTask | ReturnTask | GranaryTask | ValleyTask | GrowTask | PollenTask | RubbingTask | StreetsTask | SunPathTask | PointTask | BeaconTask | DoorsTask | OrderTask | HomeTask | MirrorTask | ShadowTask | EchoTask | AntsTask | RiverTask | ShelterTask | RainTask | VoiceTask;
 
 export type Region = { id: string; name: string; at: P2 };
 
