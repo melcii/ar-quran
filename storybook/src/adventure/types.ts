@@ -317,7 +317,69 @@ export type HomeTask = TaskBase & {
   reading?: Reading;
 };
 
-export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask | StandTask | ReachTask | ObserveTask | SkyTask | SailTask | ChoiceTask | ShareTask | PromiseTask | WeighTask | FlowTask | SiftTask | ReturnTask | GranaryTask | ValleyTask | GrowTask | PollenTask | RubbingTask | StreetsTask | SunPathTask | PointTask | BeaconTask | DoorsTask | OrderTask | HomeTask;
+/** Knock and wait for welcome, then turn mirrors to bring sunlight through a courtyard to a window (An-Nur). */
+export type MirrorHouse = {
+  label: string;
+  door: P2;
+  /** South-west corner of the courtyard grid (world x, z); cells run +x (i) and -z (j). */
+  origin: P2;
+  /** Grid size in cells. */
+  n: number;
+  /** Where the sunbeam enters: the cell row/column on the west side (it travels +x). */
+  sun: number;
+  /** The window the light must reach: the cell it leaves from and the side ('n' | 'e' | 's'). */
+  target: { cell: [number, number]; side: 'n' | 'e' | 's' };
+  /** Mirror stands: cell and starting turn (0 = '/', 1 = '\\'). */
+  mirrors: { cell: [number, number]; turn: 0 | 1 }[];
+  /** The first knock is answered "please come back later" (24:28). */
+  later?: boolean;
+  reading: Reading;
+};
+export type MirrorTask = TaskBase & {
+  kind: 'mirror';
+  houses: MirrorHouse[];
+  /** Cell size in metres. */
+  cell: number;
+  reading?: Reading;
+};
+
+/** Predict where a pole's shadow tip will be later in the day, place a stone there, then let the day run (Al-Furqan). */
+export type ShadowTask = TaskBase & {
+  kind: 'shadow';
+  pole: P2;
+  height: number;
+  /** The seat where the day is let run. */
+  seat: P2;
+  /** Each round: the time it starts and the time to predict (0 = sunrise, 1 = sunset), and what to call that time. */
+  rounds: { from: number; to: number; label: string; reading: Reading }[];
+  /** How close the stone must be to the shadow tip (m). */
+  near: number;
+  reading?: Reading;
+};
+
+/** Move stones nearer or farther in an amphitheatre so each one's echo returns on its beat (Ash-Shu'ara). */
+export type EchoTask = TaskBase & {
+  kind: 'echo';
+  centre: P2;
+  /** Distances a stone can stand at, from the centre. */
+  slots: number[];
+  /** Speed of the sound rings (m/s). */
+  speed: number;
+  stones: { angle: number; label: string; slot: number; start: number; reading: Reading }[];
+  reading?: Reading;
+};
+
+/** At ant size, clear the paths so each group of ants reaches the nest before the footsteps come (An-Naml). */
+export type AntsTask = TaskBase & {
+  kind: 'ants';
+  nest: P2;
+  groups: { path: P2[]; blocks: { at: P2; what: 'pebble' | 'twig' | 'leaf' }[] }[];
+  /** Seconds before the footsteps come. */
+  time: number;
+  reading?: Reading;
+};
+
+export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask | StandTask | ReachTask | ObserveTask | SkyTask | SailTask | ChoiceTask | ShareTask | PromiseTask | WeighTask | FlowTask | SiftTask | ReturnTask | GranaryTask | ValleyTask | GrowTask | PollenTask | RubbingTask | StreetsTask | SunPathTask | PointTask | BeaconTask | DoorsTask | OrderTask | HomeTask | MirrorTask | ShadowTask | EchoTask | AntsTask;
 
 export type Region = { id: string; name: string; at: P2 };
 

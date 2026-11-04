@@ -154,33 +154,49 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Shadow and Sun Observatory",
+  "tier": "playable",
+  "visual_theme": "A stone plaza with one tall pole on open grassland, a seat to let the day run, and hour lines on the stone",
   "quran_references": [
-   "25:45–62",
-   "25:63–76"
+   "25:45",
+   "25:46",
+   "25:61",
+   "25:62",
+   "25:47",
+   "25:63",
+   "25:48",
+   "25:49"
   ],
   "primary_mechanic": {
    "kind": "shadow-tracking",
-   "engine": "not built yet",
-   "text": "Watch shadows lengthen and shorten over a day and place markers where the shadow will be (25:45-46)."
+   "engine": "shadow",
+   "text": "The day is held still; put a stone where you think the tip of the pole's shadow will be at a later time, then let the day run and watch the sun cross the sky and the shadow shorten, stretch and swing (25:45-46). Close enough wins the round; otherwise the day goes back."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "words of peace: kind answers to harsh words (25:63)",
+   "winds and rain (25:48-49)"
+  ],
+  "narrative_structure": "Three shadow rounds (midday, mid-afternoon, late afternoon), then the sign by the olives, then the lantern",
+  "world_assets": [
+   "tall pole and plaza with hour lines",
+   "guess stone",
+   "seat"
+  ],
+  "environment_behaviour": [
+   "the sun and the world's light move continuously while the day runs",
+   "the drawn shadow follows the sun exactly"
+  ],
+  "learning_objective": "Notice how the shadow follows the sun through a day (25:45-46), and answer harshness with peace (25:63)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: put the stone down with the on-screen button)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: a stone far from the midday tip: the day runs, the tip stops away from it and the day goes back; at the predicted tip the round is won)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Round 2 of 3: where will the shadow tip be at mid-afternoon?\"; the shadow and the sky move while the day runs)",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: rounds [0,1,2], missed first [0])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"shadow\",\"peace\",\"rain\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w025.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

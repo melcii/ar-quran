@@ -196,33 +196,49 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Kingdom of Creatures",
+  "tier": "playable",
+  "visual_theme": "An ant-sized meadow: towering grass blades, boulder-sized pebbles, a nest mound and three ant paths",
   "quran_references": [
-   "27:15–44",
-   "27:45–58"
+   "27:15-16",
+   "27:18",
+   "27:19",
+   "27:20",
+   "27:22",
+   "27:40"
   ],
   "primary_mechanic": {
    "kind": "ant-valley-scale",
-   "engine": "not built yet",
-   "text": "At ant scale, clear safe paths so a colony can get home before others pass (27:18); follow a hoopoe's route on a map (27:20-22)."
+   "engine": "ants",
+   "text": "At ant size, start at the nest and the footsteps count begins; roll pebbles, drag twigs and lift leaves off three paths so each group of ants can march home in time (27:18). If the count runs out, the ants still out scatter safely and the paths reset."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "knowledge and thanks (27:15-16)",
+   "the hoopoe (27:20, 27:22)",
+   "a test of thanks (27:40)"
+  ],
+  "narrative_structure": "The sign, the ant valley, then two readings",
+  "world_assets": [
+   "giant grass blades",
+   "pebble, twig and leaf blocks",
+   "nest mound",
+   "ant groups"
+  ],
+  "environment_behaviour": [
+   "ants mill at the start of a blocked path and march home along a cleared one",
+   "a count of the coming footsteps on the status line (nothing of the army is shown)"
+  ],
+  "learning_objective": "Learn how the ant cared for the others (27:18) and Sulayman's prayer of thanks (27:19)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: started at the nest with the on-screen button; the footsteps count begins)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: clearing the leaf lets that group march home; when the count runs out the others scatter safely and the paths reset)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Footsteps coming in N s · Ant groups home: 1 of 3\")",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: groups home [1,0,2], ran out [1])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"gift\",\"ants\",\"hoopoe\",\"thanks\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w027.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

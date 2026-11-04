@@ -182,32 +182,57 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "Seven Ancient Worlds",
+  "tier": "playable",
+  "visual_theme": "A rock amphitheatre with seven standing stones in a half ring, a chime in the middle and tracks for the stones",
   "quran_references": [
-   "26:10–191"
+   "26:1-2",
+   "26:10",
+   "26:67-68",
+   "26:69-70",
+   "26:103-104",
+   "26:105",
+   "26:121-122",
+   "26:123",
+   "26:140",
+   "26:141",
+   "26:159",
+   "26:160",
+   "26:175",
+   "26:176",
+   "26:181-183",
+   "26:191",
+   "26:8-9"
   ],
   "primary_mechanic": {
    "kind": "echo-amphitheatre",
-   "engine": "not built yet",
-   "text": "Tune echoes in a rock amphitheatre so the refrain of each chapter (26:8-9) carries clearly; seven chapters, each a reading."
+   "engine": "echo",
+   "text": "Seven stones, one per chapter of the surah, each with a light beating at its own pace. Strike the chime: a ring goes out and an echo comes back from each stone, later from farther stones. Slide each stone until its echo returns on its beat; then its chapter and the refrain are read."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "the clear Book (26:1-2)"
+  ],
+  "narrative_structure": "The sign, then tuning the seven stones (one strike can tune several)",
+  "world_assets": [
+   "seven standing stones with beat lights",
+   "sliding tracks with four places",
+   "chime"
+  ],
+  "environment_behaviour": [
+   "a ring of sound spreads from the chime and bright echoes travel back from each stone",
+   "tuned stones turn pale and their lights stay on"
+  ],
+  "learning_objective": "Learn the seven stories of Ash-Shu'ara and their shared refrain, and that a farther wall sends an echo back later",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: struck the chime with the on-screen button)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: every echo first came back \"too soon\"; Musa's stone slid to its place rings in time)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Stones in time: 1 of 7\"; by a stone: \"its light beats every 2.3 s · its echo now takes 1.3 s\")",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: stones in time [0,1,4,3,6,2,5])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"book\",\"echoes\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w026.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

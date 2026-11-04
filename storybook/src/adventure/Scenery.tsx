@@ -54,6 +54,9 @@ export function sunDir(look: Look) {
   return new THREE.Vector3(...look.sun).normalize();
 }
 
+/** A sun direction a plug-in moves every frame (a day running), over the world's look. Null when none. */
+export const sunLive: { dir: THREE.Vector3 | null } = { dir: null };
+
 /* ------------------------------- sky ------------------------------- */
 
 export function Sky({ look }: { look: Look }) {
@@ -107,8 +110,10 @@ export function Sky({ look }: { look: Look }) {
       }),
     [look],
   );
+  const base = useMemo(() => sunDir(look), [look]);
   useFrame(() => {
     mat.uniforms.storm.value = weather.storm;
+    mat.uniforms.sunDir.value.copy(sunLive.dir ?? base);
   });
   return (
     <mesh material={mat} renderOrder={-10} frustumCulled={false}>
@@ -155,7 +160,7 @@ export function Lighting({ q, look }: { q: SceneQuality; look: Look }) {
     }
     if (sun.current) {
       sun.current.intensity = look.sunI * (1 - s * 0.82);
-      sun.current.position.copy(player.pos).addScaledVector(dir, 60);
+      sun.current.position.copy(player.pos).addScaledVector(sunLive.dir ?? dir, 60);
       sun.current.target.position.copy(player.pos);
       sun.current.target.updateMatrixWorld();
     }
