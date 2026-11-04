@@ -22,7 +22,7 @@ import { QUALITY, guessTier, lowerTier, type QualityTier } from '@/world/quality
 import { Beast, SPECS, type Agent } from '@/ark/Beasts';
 import { Child } from '@/ark/Child';
 import { nature } from '@/ark/nature';
-import { Wind } from '@/ark/Scenery';
+import { Rain, Wind } from '@/ark/Scenery';
 import { motion, player, pointer, weather, type Move } from '@/ark/shared';
 import { CardView, type Card } from './cards';
 import { Boat, StructureView, footprint } from './kit';
@@ -37,6 +37,8 @@ import { level, LEVELS } from './level';
 import { makeNav, type Nav } from '@/creatures/nav';
 import { mindOf, routeTo, think } from '@/creatures/mind';
 import { journal } from '@/journal/store';
+import { mechFor } from './mechanics';
+import type { MechEnv } from './mechanics/base';
 
 /* ------------------------------- saving ------------------------------- */
 
@@ -85,6 +87,8 @@ type Game = {
   vows: Record<string, number>;
   clock: number;
   flow: Record<string, FlowState>;
+  /** Live state of plug-in kinds of play (mechanics/), by task id. */
+  mech: Record<string, unknown>;
   /** One-off hints already given. */
   told: Record<string, number>;
   /** A short live status line for the current activity (water left, candles, ...). */
@@ -126,7 +130,7 @@ export function total(task: Task) {
     case 'return':
       return task.times;
     default:
-      return 1;
+      return mechFor(task)?.total(task) ?? 1;
   }
 }
 
@@ -249,6 +253,10 @@ type Api = {
   say: (text: string) => void;
   /** Add to a side list in the save (heard rounds, animals sent away, late promises) without finishing anything. */
   note: (key: string, i: number) => void;
+  /** Replace a side list in the save. */
+  set: (key: string, v: number[]) => void;
+  /** Open a plug-in task's own panel. */
+  panel: (task: Task) => void;
 };
 
 function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game: Game; move: MutableRefObject<Move>; api: MutableRefObject<Api> }) {
@@ -276,6 +284,11 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
     };
   }, []);
 
+  /** What a plug-in kind of play sees (mechanics/). */
+  function mechEnv(task: Task, s: Save, dt = 0, still = false, tell: MechEnv['tell'] = () => undefined): MechEnv {
+    return { def, t, save: s, prog: s.prog[task.id] ?? [], api: api.current, game, pp: player.pos, still, dt, tell, v3: (p, dy = 0) => v3(p, t, dy) };
+  }
+
   /** Everything that can be used right now. */
   function uses(): Use[] {
     const s = api.current.save();
@@ -283,6 +296,11 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
     for (const task of def.tasks) {
       if (!ready(task, s.done)) continue;
       const prog = s.prog[task.id] ?? [];
+      const plug = mechFor(task);
+      if (plug) {
+        if (plug.uses) out.push(...plug.uses(task, mechEnv(task, s)));
+        continue;
+      }
       switch (task.kind) {
         case 'read':
           out.push({ key: `read:${task.id}`, pos: v3(task.at, t), label: `Read: ${task.reading.title}`, reach: 3.2, run: () => {
@@ -764,10 +782,22 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
     };
     let gusting = 0;
     let stormy = 0;
+    let raining = 0;
     let status = '';
     for (const task of def.tasks) {
       if (!ready(task, s.done)) continue;
       const prog = s.prog[task.id] ?? [];
+      const plug = mechFor(task);
+      if (plug) {
+        const line = plug.frame?.(task, mechEnv(task, s, dt, still, tell));
+        if (line) status = line;
+        const w = plug.weather?.(task, game);
+        if (w) {
+          stormy = Math.max(stormy, w.storm);
+          raining = Math.max(raining, w.rain);
+        }
+        continue;
+      }
       const dist = (p: P2) => Math.hypot(p[0] - pp.x, p[1] - pp.z);
       if (task.kind === 'stand') {
         const r = task.r ?? 1.3;
@@ -934,6 +964,7 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
       }
     }
     weather.storm += (Math.max(gusting, stormy) - weather.storm) * Math.min(1, dt * 0.8);
+    weather.rain += (raining - weather.rain) * Math.min(1, dt * 0.6);
     game.status = status;
 
     /* ---------- what is near, and where to go next ---------- */
@@ -1034,7 +1065,7 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
     camera.position.copy(cam.pos);
     camera.lookAt(cam.look);
 
-    nature.update({ river: t.water != null ? (game.boat.on ? 0 : 30) : 99, storm: weather.storm, rain: 0, inside: false, dt });
+    nature.update({ river: t.water != null ? (game.boat.on ? 0 : 30) : 99, storm: weather.storm, rain: weather.rain, inside: false, dt });
   });
 
   return null;
@@ -1262,8 +1293,10 @@ function Things({ def, t, data, game, carrying, act, isOn }: { def: WorldDef; t:
             const mid = task.herd.reduce((a, c) => [a[0] + c.at[0] / task.herd.length, a[1] + c.at[1] / task.herd.length] as P2, [0, 0] as P2);
             return <ReadingMarker key={task.id} kind="sign" x={mid[0] + 4} z={mid[1]} t={t} done={done} active={open(task) && !(data.prog[`${task.id}/h`] ?? []).includes(prog.length)} onTap={() => act(`ask:${task.id}`)} />;
           }
-          default:
-            return null;
+          default: {
+            const plug = mechFor(task);
+            return plug?.View ? <plug.View key={task.id} task={task} t={t} data={data} game={game} active={open(task)} act={act} /> : null;
+          }
         }
       })}
       {(def.links ?? []).map((l, i) => (
@@ -1479,6 +1512,7 @@ function World({ def }: { def: WorldDef }) {
       vows: {},
       clock: 0,
       flow: {},
+      mech: {},
       told: {},
       status: '',
       nav: makeNav(t.canStep, { radius: t.radius, cell: 1.4, y: t.floorY }),
@@ -1544,7 +1578,7 @@ function World({ def }: { def: WorldDef }) {
       const task = def.tasks.find((x) => x.id === id)!;
       update((s) => ({ ...s, done: [...s.done, id] }));
       if (task.outro) say(task.outro);
-      if (task.kind === 'choice' || task.kind === 'share' || task.kind === 'weigh' || task.kind === 'return') {
+      if (task.kind === 'choice' || task.kind === 'share' || task.kind === 'weigh' || task.kind === 'return' || mechFor(task)) {
         const r = ownReading(task);
         if (r) setCards((c) => [...c, { kind: 'reading', reading: r }]);
       }
@@ -1587,6 +1621,8 @@ function World({ def }: { def: WorldDef }) {
       const cur = saveRef.current.prog[key] ?? [];
       if (!cur.includes(i)) update((s) => ({ ...s, prog: { ...s.prog, [key]: [...cur, i] } }));
     },
+    set: (key, v) => update((s) => ({ ...s, prog: { ...s.prog, [key]: v } })),
+    panel: (task) => setCards((cs) => [...cs.filter((x) => x.kind === 'narration' || x.kind === 'finale'), { kind: 'mech', task }]),
   };
 
   const act = (key: string) => {
@@ -1635,6 +1671,9 @@ function World({ def }: { def: WorldDef }) {
         } else if (c.kind === 'vow') {
           setCards((cs) => cs.slice(1));
           api.current.note(`${c.task.id}/a`, 1);
+        } else if (c.kind === 'mech') {
+          setCards((cs) => cs.slice(1));
+          mechFor(c.task)?.solve?.(c.task, api.current);
         } else return false;
         return true;
       },
@@ -1699,6 +1738,7 @@ function World({ def }: { def: WorldDef }) {
         {(look.clouds ?? 1) > 0 && <CloudLayer look={look} />}
         {look.birds !== false && <Flock center={def.start} />}
         {look.birds !== false && <GroundBirds spots={birdSpots} t={t} />}
+        {def.tasks.some((x) => mechFor(x)?.weather) && <Rain />}
         <Things def={def} t={t} data={data} game={game} carrying={carrying} act={act} isOn={isOn} />
         <Animals game={game} onTap={act} />
         <Carried item={carriedLoad?.item ?? null} color={carriedLoad?.color} />
@@ -1894,7 +1934,13 @@ function World({ def }: { def: WorldDef }) {
         />
       )}
 
-      {top && top.kind !== 'choice' && top.kind !== 'share' && top.kind !== 'weigh' && top.kind !== 'vow' && (
+      {top &&
+        top.kind === 'mech' &&
+        (() => {
+          const P = mechFor(top.task)?.Panel;
+          return P ? <P task={top.task} data={data} api={api.current} width={portrait ? '96%' : 620} portrait={portrait} onClose={() => setCards((c) => c.slice(1))} /> : null;
+        })()}
+      {top && top.kind !== 'choice' && top.kind !== 'share' && top.kind !== 'weigh' && top.kind !== 'vow' && top.kind !== 'mech' && (
         <CardView
           card={top}
           world={def}

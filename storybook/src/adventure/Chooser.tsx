@@ -1,4 +1,5 @@
-// The adventure worlds for surahs 1 to 10: which exist, and how far you got.
+// The adventure worlds: surahs 1 to 10, the Ark, and the Story Library worlds
+// built so far, with how far you got.
 // Every world is a draft for scholarly review.
 import { router } from 'expo-router';
 import { Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
@@ -20,6 +21,32 @@ function progress(n: number): string {
   }
 }
 
+const list = (a: number, b: number) => Array.from({ length: b - a + 1 }, (_, i) => a + i);
+
+function WorldCard({ n }: { n: number }) {
+  const s = getSurah(n)!;
+  const w = WORLDS[n];
+  const p = progress(n);
+  return (
+    <Pressable
+      disabled={!w}
+      onPress={() => router.push(`/adventure/${n}` as never)}
+      style={({ pressed }) => [st.card, !w && st.off, pressed && { opacity: 0.85 }]}
+      accessibilityRole="button"
+    >
+      <Text style={st.num}>{n}</Text>
+      <View style={{ flex: 1, gap: 2 }}>
+        <Text style={st.name}>
+          {s.nameTransliterated} · {w ? w.name : 'not built yet'}
+        </Text>
+        <Text style={st.small}>{w ? w.theme : s.nameMeaning}</Text>
+        {!!p && <Text style={st.prog}>{p}</Text>}
+      </View>
+      <Text style={st.arabic}>{s.nameArabic}</Text>
+    </Pressable>
+  );
+}
+
 export default function Chooser() {
   return (
     <ScrollView style={st.root} contentContainerStyle={st.body}>
@@ -36,30 +63,9 @@ export default function Chooser() {
         made to help you think about the meanings; they are not pictures of real events. These are drafts waiting for scholarly review.
       </Text>
       {Platform.OS !== 'web' && <Text style={st.warn}>These 3D worlds open in the web version of the app for now.</Text>}
-      {Array.from({ length: 10 }, (_, i) => i + 1).map((n) => {
-        const s = getSurah(n)!;
-        const w = WORLDS[n];
-        const p = progress(n);
-        return (
-          <Pressable
-            key={n}
-            disabled={!w}
-            onPress={() => router.push(`/adventure/${n}` as never)}
-            style={({ pressed }) => [st.card, !w && st.off, pressed && { opacity: 0.85 }]}
-            accessibilityRole="button"
-          >
-            <Text style={st.num}>{n}</Text>
-            <View style={{ flex: 1, gap: 2 }}>
-              <Text style={st.name}>
-                {s.nameTransliterated} · {w ? w.name : 'not built yet'}
-              </Text>
-              <Text style={st.small}>{w ? w.theme : s.nameMeaning}</Text>
-              {!!p && <Text style={st.prog}>{p}</Text>}
-            </View>
-            <Text style={st.arabic}>{s.nameArabic}</Text>
-          </Pressable>
-        );
-      })}
+      {list(1, 10).map((n) => (
+        <WorldCard key={n} n={n} />
+      ))}
       <Pressable onPress={() => router.push('/ark')} style={st.card}>
         <Text style={st.num}>11</Text>
         <View style={{ flex: 1, gap: 2 }}>
@@ -67,6 +73,12 @@ export default function Chooser() {
           <Text style={st.small}>Gather the animals and supplies; wait out the flood inside</Text>
         </View>
       </Pressable>
+      <Text style={st.p}>From the Story Library (surahs 12 to 114): the worlds built so far.</Text>
+      {list(12, 114)
+        .filter((n) => WORLDS[n])
+        .map((n) => (
+          <WorldCard key={n} n={n} />
+        ))}
     </ScrollView>
   );
 }

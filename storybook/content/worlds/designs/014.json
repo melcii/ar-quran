@@ -136,33 +136,52 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Roots of Faith",
+  "tier": "playable",
+  "visual_theme": "A dry golden valley with a spring, travellers' tents and a sandy dune, where one good tree grows",
   "quran_references": [
-   "14:24–27",
-   "14:35–41"
+   "14:7",
+   "14:24",
+   "14:25",
+   "14:26",
+   "14:35",
+   "14:37"
   ],
   "primary_mechanic": {
    "kind": "grow-good-tree",
-   "engine": "not built yet",
-   "text": "Grow a good tree: set firm roots, raise branches toward the sky, and wait for fruit in each season (14:24-25)."
+   "engine": "grow",
+   "text": "Grow the good tree of the parable: plant on firm ground (sand gives no stability), water the roots, choose good words to raise the branches, and gather fruit season after season for travellers (14:24-26)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "testing the ground",
+   "choosing good words (examples written for this app)",
+   "sharing fruit with travellers (14:37)"
+  ],
+  "narrative_structure": "Parable stone, then the tree from seed to three seasons of fruit, then Ibrahim's prayer read at the travellers' rest, then gratitude",
+  "world_assets": [
+   "planting spots on soil and sand",
+   "the good tree with roots, trunk, branches and fruit",
+   "a loose sapling on the dune",
+   "spring basin",
+   "travellers' table and tents"
+  ],
+  "environment_behaviour": [
+   "the tree's roots spread and its trunk thickens with each watering",
+   "branches and crown grow after the good words",
+   "the loose sapling on the sand sways and blows over in the wind",
+   "fruit appears each season and collects on the travellers' table"
+  ],
+  "learning_objective": "Understand the parable of the good word and the good tree (14:24-26), and gratitude (14:7)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: plant buttons pressed on the sandy spot and on the firm soil)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: sand refuses the seedling (no stability), firm soil takes it)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Roots watered: 0 of 3\")",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: tree done: [0,1,2,3,4,5,6,7])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"parable\",\"tree\",\"prayer\",\"thanks\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w014.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

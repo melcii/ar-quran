@@ -230,32 +230,55 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Journey of Yusuf",
+  "tier": "playable",
+  "visual_theme": "A river valley in Egypt with seven field strips, a great storehouse, the old well in the desert, the house, the prison walls and the king's hall of columns",
   "quran_references": [
-   "12:4–101"
+   "12:4-6",
+   "12:15",
+   "12:19",
+   "12:21",
+   "12:33",
+   "12:39",
+   "12:43",
+   "12:46",
+   "12:47-49",
+   "12:90",
+   "12:92",
+   "12:111"
   ],
   "primary_mechanic": {
    "kind": "granary-years",
-   "engine": "not built yet",
-   "text": "Store grain through seven good years and ration it through seven hard ones, as the dream's meaning advised (12:47-49)."
+   "engine": "granary",
+   "text": "Store grain through seven good years and ration it through seven hard ones, as the dream's meaning advised (12:47-49): choose each year how much to eat and whether to keep it in the ear; if the store runs short, plan the good years again."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "reading places along the story: the dream, the well, the house, the prison, the king's hall",
+   "forgiveness reading at the end (12:92)"
+  ],
+  "narrative_structure": "Story places in order (dream, well, house, prison, king's dream), then the fourteen storehouse years, then the reunion reading",
+  "world_assets": [
+   "seven field strips that ripen, are cut, dry and turn green again",
+   "storehouse with stacks of sheaves (in the ear) and sacks (threshed)",
+   "tally board",
+   "river boats"
+  ],
+  "environment_behaviour": [
+   "one field ripens each good year; all fields dry in the hard years and turn green after sowing",
+   "the stacks in front of the storehouse grow and shrink with the store"
+  ],
+  "learning_objective": "Plan ahead and eat only a little in times of plenty, as Yusuf advised (12:47-48); patience and forgiveness (12:92)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: cut the first field and open the storehouse panel with the on-screen buttons)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: year 1 stored ([0]), the stack and the status line update)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status line: \"Good year 2 of 7 · In store: …\")",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: storehouse years done: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"dream\",\"well\",\"house\",\"prison\",\"king\",\"years\",\"together\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)",
+   "shortage_path": "pass (threshing every year ran short at hard year 4; the years restarted: prog [])"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w012.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

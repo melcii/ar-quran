@@ -139,32 +139,51 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Storm Valley",
+  "tier": "playable",
+  "visual_theme": "A high green valley under big skies with a rock overhang, three hollows of different sizes and a field below each",
   "quran_references": [
-   "13:2–17"
+   "13:2",
+   "13:3",
+   "13:4",
+   "13:12 (narration only)",
+   "13:17",
+   "13:28"
   ],
   "primary_mechanic": {
    "kind": "valley-capacity",
-   "engine": "not built yet",
-   "text": "Rain fills each valley by its size; skim off the foam so the useful water stays (13:17)."
+   "engine": "valley",
+   "text": "A storm comes on its own; shelter under the rock overhang while lightning flashes, watch each valley fill by its own size, then cast the foam off the water so what benefits stays and waters the fields (13:17)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "lightning safety: wait out the storm in shelter",
+   "neighbouring fields watered with one water (13:4)",
+   "sitting quietly after the storm (13:28)"
+  ],
+  "narrative_structure": "Lookout reading, then the storm and the valleys, then the fields, then quiet under the overhang",
+  "world_assets": [
+   "rock overhang shelter",
+   "three valley pools that rise with the rain",
+   "foam patches on the water",
+   "fields that turn green"
+  ],
+  "environment_behaviour": [
+   "clouds gather and darken, rain falls and lightning flashes the sky",
+   "valley water rises by each valley's size",
+   "foam slowly breaks up on its own and is cast off faster by hand",
+   "ground birds lift off in the storm"
+  ],
+  "learning_objective": "See the parable of 13:17: what looks big on top does not last, what benefits people remains",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: walk to the overhang with tap-to-go; the storm starts on its own)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: storm passed; valleys filled [1,1,1])",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: narration about the foam, status line with foam left per valley)",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: storm task done, fields and calm done)",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"sky\",\"storm\",\"fields\",\"calm\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w013.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

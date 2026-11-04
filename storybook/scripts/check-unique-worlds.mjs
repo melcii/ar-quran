@@ -46,7 +46,7 @@ function recipeKinds(r) {
   // Task kinds only (tree kinds and structure kinds use other words).
   const kinds = new Set();
   for (const m of src.matchAll(/kind: '([a-z]+)'/g)) kinds.add(m[1]);
-  const TASKS = ['read', 'points', 'carry', 'lead', 'pick', 'guide', 'quiz', 'stand', 'reach', 'observe', 'sky', 'sail', 'choice', 'share', 'promise', 'weigh', 'flow', 'sift', 'return'];
+  const TASKS = ['read', 'points', 'carry', 'lead', 'pick', 'guide', 'quiz', 'stand', 'reach', 'observe', 'sky', 'sail', 'choice', 'share', 'promise', 'weigh', 'flow', 'sift', 'return', 'granary', 'valley', 'grow', 'pollen'];
   return new Set([...kinds].filter((k) => TASKS.includes(k)));
 }
 

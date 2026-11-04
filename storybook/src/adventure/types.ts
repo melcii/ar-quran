@@ -169,7 +169,67 @@ export type SiftTask = TaskBase & {
 /** Come into a place again and again; each time something has changed. */
 export type ReturnTask = TaskBase & { kind: 'return'; at: P2; r: number; away: number; times: number; label: string; notes: string[]; reading?: Reading };
 
-export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask | StandTask | ReachTask | ObserveTask | SkyTask | SailTask | ChoiceTask | ShareTask | PromiseTask | WeighTask | FlowTask | SiftTask | ReturnTask;
+
+/* ---- Kinds of play built as plug-ins (src/adventure/mechanics/), one per Story Library world. ---- */
+
+/** Seven good years and seven hard ones at a storehouse: how much to eat, how to keep it, and whether it lasts (Yusuf). */
+export type GranaryTask = TaskBase & {
+  kind: 'granary';
+  store: P2;
+  /** One field strip per good year. */
+  fields: P2[];
+  /** Measures cut in each good year. */
+  harvest: number;
+  /** What the household must eat in a good year, at least. */
+  eatMin: number;
+  /** Measures given out in each hard year. */
+  need: number;
+  /** What must be left for sowing when the hard years end. */
+  seed: number;
+  /** Fraction lost each year: grain left in its ear, and threshed grain. */
+  loss: { ear: number; loose: number };
+  sow: P2;
+  readings: { good: Reading; hard: Reading; rain: Reading };
+};
+
+/** Storms fill valleys each by its own size; cast the foam off the water so what benefits stays (Ar-Ra'd). */
+export type ValleyTask = TaskBase & {
+  kind: 'valley';
+  /** A rock overhang to shelter under while lightning flashes. */
+  shelter: P2;
+  valleys: { at: P2; r: number; cap: number; label: string; field: P2; note: string }[];
+  /** Seconds of rain (game time). */
+  rain: number;
+  reading?: Reading;
+};
+
+/** Grow a good tree: find firm ground, water the roots, choose good words for the branches, and gather fruit season after season (Ibrahim). */
+export type GrowTask = TaskBase & {
+  kind: 'grow';
+  spots: { at: P2; firm: boolean; label: string; why: string }[];
+  spring: P2;
+  waters: number;
+  words: { text: string; good: boolean; why: string }[];
+  seasons: { label: string; fruit: string; color: string }[];
+  /** Where fruit is carried for travellers. */
+  share: P2;
+  /** A loose-rooted sapling on the sand, for comparison. */
+  loose: P2;
+  readings: { firm: Reading; loose: Reading; fruit: Reading };
+};
+
+/** Carry pollen between flowers of the same kind at flower height, with the bees (An-Nahl). */
+export type PollenTask = TaskBase & {
+  kind: 'pollen';
+  kinds: { label: string; color: string }[];
+  flowers: { at: P2; kind: number }[];
+  /** Flowers to pollinate. */
+  n: number;
+  hive: P2;
+  reading?: Reading;
+};
+
+export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask | StandTask | ReachTask | ObserveTask | SkyTask | SailTask | ChoiceTask | ShareTask | PromiseTask | WeighTask | FlowTask | SiftTask | ReturnTask | GranaryTask | ValleyTask | GrowTask | PollenTask;
 
 export type Region = { id: string; name: string; at: P2 };
 

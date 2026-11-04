@@ -21,7 +21,9 @@ export type Card =
   | { kind: 'choice'; task: Task & { kind: 'choice' } }
   | { kind: 'share'; task: Task & { kind: 'share' } }
   | { kind: 'weigh'; task: Task & { kind: 'weigh' } }
-  | { kind: 'vow'; task: Task & { kind: 'promise' } };
+  | { kind: 'vow'; task: Task & { kind: 'promise' } }
+  /** A plug-in kind of play's own panel (mechanics/). */
+  | { kind: 'mech'; task: Task };
 
 export function verse([s, a]: Ref) {
   const v = getVerse(s, a);

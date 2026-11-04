@@ -150,34 +150,55 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "Honeybee Kingdom",
+  "tier": "playable",
+  "visual_theme": "A flower meadow at a bee's height: flowers taller than the explorer, bees, a hive in a hollow tree, flocks and a bench on the hill",
   "quran_references": [
-   "16:5–18",
-   "16:65–69",
-   "16:78–83"
+   "16:5",
+   "16:6",
+   "16:10",
+   "16:11",
+   "16:18",
+   "16:66",
+   "16:68",
+   "16:69",
+   "16:78",
+   "16:79"
   ],
   "primary_mechanic": {
    "kind": "pollinate",
-   "engine": "not built yet",
-   "text": "Follow bees at flower height and carry pollen between matching flowers so the hive can make honey (16:68-69)."
+   "engine": "pollen",
+   "text": "At flower height, gather pollen from a flower and brush it onto another flower of the same kind; a different kind will not set fruit. Pollinated flowers swell into fruit, bees visit them, and the comb fills with honey of different colours (16:68-69)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "watching the hive quietly",
+   "the grazing flocks (16:5-6, 16:66)",
+   "sitting and listening: hearing, sight and understanding (16:78-79)"
+  ],
+  "narrative_structure": "Meadow gate, the hive, the pollen game, the flocks, the listening bench",
+  "world_assets": [
+   "giant flowers of three kinds that sway",
+   "flying bees",
+   "hollow tree hive with comb cells",
+   "pollen dust on the explorer's hand",
+   "sheep and cattle"
+  ],
+  "environment_behaviour": [
+   "bees fly flower to flower and home to the hive, and favour pollinated flowers",
+   "pollinated flowers swell into fruit",
+   "the comb fills with honey of four colours as flowers are pollinated"
+  ],
+  "learning_objective": "Notice the bee as a sign (16:68-69) and count blessings that cannot be counted (16:18)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: gather and brush buttons pressed at two flowers)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: wrong kind refused with a hint; the same kind sets fruit)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Flowers pollinated: 1 of 6\")",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: pollen done: [0,1,2,3,4,5])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"rain\",\"hive\",\"pollen\",\"flocks\",\"senses\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w016.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
