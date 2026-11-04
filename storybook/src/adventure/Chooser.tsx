@@ -6,6 +6,7 @@ import { Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-n
 import { getSurah } from '@/content/quran';
 import { colors, fonts } from '@/theme';
 import { WORLDS } from './worlds';
+import { useActiveProfile } from '@/profile/store';
 
 function progress(n: number): string {
   if (Platform.OS !== 'web') return '';
@@ -48,12 +49,19 @@ function WorldCard({ n }: { n: number }) {
 }
 
 export default function Chooser() {
+  const me = useActiveProfile();
   return (
     <ScrollView style={st.root} contentContainerStyle={st.body}>
       <Pressable onPress={() => (router.canGoBack() ? router.back() : router.replace('/'))} style={st.back}>
         <Text style={st.backText}>‹ Back</Text>
       </Pressable>
       <Text style={st.h1}>Adventure worlds</Text>
+      {Platform.OS === 'web' && (
+        <Pressable onPress={() => router.push('/dressing' as never)} style={[st.card, { paddingVertical: 10 }]} accessibilityRole="button" accessibilityLabel={`Dressing room: exploring as ${me.nickname}`}>
+          <Text style={st.name}>🧭 Exploring as {me.nickname}</Text>
+          <Text style={[st.small, { flex: 1 }]}>Dressing room: change your explorer's look, or switch explorer</Text>
+        </Pressable>
+      )}
       <Pressable onPress={() => router.push('/journal' as never)} style={[st.card, { paddingVertical: 10 }]} accessibilityRole="button">
         <Text style={st.name}>📔 My Discovery Journal</Text>
         <Text style={[st.small, { flex: 1 }]}>Worlds, ayahs read, words met, nature notes and your own thoughts</Text>
