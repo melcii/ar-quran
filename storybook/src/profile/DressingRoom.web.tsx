@@ -126,6 +126,7 @@ const ANIMS: [Anim, string][] = [
   ['interact', 'Open a door'],
   ['cheer', 'Celebrate'],
   ['sit', 'Sit'],
+  ['adjust', 'Fix the backpack'],
 ];
 
 function Chips<T extends string>({ opts, value, on }: { opts: L.Opt<T>[]; value: T; on: (v: T) => void }) {

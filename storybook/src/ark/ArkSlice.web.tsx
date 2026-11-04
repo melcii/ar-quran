@@ -9,6 +9,7 @@ import { N8AO, Bloom, BrightnessContrast, EffectComposer, HueSaturation, ToneMap
 import { PerformanceMonitor } from '@react-three/drei';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { router } from 'expo-router';
+import { noteAdventure } from '@/home/adventures';
 import { ToneMappingMode } from 'postprocessing';
 import { useCallback, useEffect, useMemo, useRef, useState, type MutableRefObject } from 'react';
 import { PanResponder, Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
@@ -902,6 +903,8 @@ export default function ArkSlice() {
 
 function Slice() {
   const app = useAppState();
+  // Continue Adventure on the home screen comes back here.
+  useEffect(() => noteAdventure({ kind: 'ark' }), []);
   const set = app.settings;
   const rec = useRecitation();
   const { width, height } = useWindowDimensions();

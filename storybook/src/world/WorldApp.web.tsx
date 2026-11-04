@@ -25,6 +25,9 @@ import { PRESETS, worldFor, type SettingName } from './settings';
 import { designFor } from '@/content/designs';
 import { SurahWorld, passagesOf, type Move, type Passage } from './SurahWorld';
 import { useReader } from './useReader';
+import { HomeExplorer } from '@/home/HomeExplorer';
+import { HomeHud } from '@/home/HomeHud';
+import { useActiveProfile } from '@/profile/store';
 
 type Place = 'room' | 'library' | 'world';
 
@@ -82,6 +85,7 @@ export default function WorldApp() {
 
 function World() {
   const app = useAppState();
+  const me = useActiveProfile();
   const st = app.settings;
   const { width, height } = useWindowDimensions();
   const portrait = height > width;
@@ -331,6 +335,7 @@ function World() {
               onBook={() => !bookOpen && openBook()}
               onDoor={() => toLibrary(surah)}
               inset={inset}
+              extra={!bookOpen && <HomeExplorer look={me.look} motion={motion} onOpen={() => router.push('/dressing' as never)} />}
             />
           </>
         )}
@@ -377,28 +382,16 @@ function World() {
       )}
 
       {place === 'room' && !bookOpen && (
-        <>
-          <View style={[styles.center, { top: portrait ? '12%' : '8%' }]} pointerEvents="none">
-            <Text style={styles.brand}>{brand.name}</Text>
-            <Text style={styles.tagline}>The whole Quran, 114 surahs, in one quiet world</Text>
-          </View>
-          <View style={styles.bottom} pointerEvents="box-none">
-            <Text style={styles.hint}>Tap the Quran to open it, or walk through the doorway into the library</Text>
-            <Row wrap style={{ justifyContent: 'center' }}>
-              <Button
-                label={last ? `Continue: ${getSurah(last.surah)?.nameTransliterated} ${last.surah}:${last.ayah}` : 'Open the Quran'}
-                icon="book"
-                onPress={() => {
-                  if (last) reader.jumpTo(last.ayah, false);
-                  openBook();
-                }}
-              />
-              <Button kind="secondary" icon="stories" label="Library of 114 surahs" onPress={() => toLibrary(surah)} />
-              <Button kind="secondary" label="Adventure worlds: surahs 1–10" onPress={() => router.push('/adventure' as never)} />
-              <Button kind="secondary" label="Nuh's Ark: new-look preview" onPress={() => router.push('/ark')} />
-            </Row>
-          </View>
-        </>
+        <HomeHud
+          portrait={portrait}
+          onLibrary={() => toLibrary(surah)}
+          onReadOn={() => {
+            if (last) reader.jumpTo(last.ayah, false);
+            openBook();
+          }}
+          onJournal={() => setPanel('journal')}
+          onSettings={() => setPanel('settings')}
+        />
       )}
 
       {place === 'room' && bookOpen && reader.ready && (
@@ -448,12 +441,14 @@ function World() {
         />
       )}
 
-      <TopBar
+      {!(place === 'room' && !bookOpen) && (
+        <TopBar
         onRoom={place !== 'room' ? () => goTo('room') : undefined}
         onLibrary={place !== 'library' ? () => toLibrary(surah) : undefined}
         onJournal={() => setPanel('journal')}
         onSettings={() => setPanel('settings')}
-      />
+        />
+      )}
 
       {panel === 'journal' && (
         <JournalPanel

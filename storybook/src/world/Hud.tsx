@@ -14,6 +14,8 @@ import { sound } from '@/three/sound';
 import { colors, fonts, radius } from '@/theme';
 import { worldFor } from './settings';
 import { ActivityGame } from './ActivityGame';
+import { WORLDS } from '@/adventure/worlds';
+import { arkProgress, chaptersFor, worldProgress } from '@/home/adventures';
 import { passagesOf, type Move, type Passage as PassageT } from './SurahWorld';
 
 const glass = 'rgba(24, 18, 12, 0.6)';
@@ -245,7 +247,7 @@ export function LibraryHud({ selected, portrait, onSelect, onRead, onWorld }: { 
         </View>
       )}
       {info && prog && world && (
-        <View style={[s.plaque, portrait ? s.plaquePortrait : s.plaqueLandscape]}>
+        <ScrollView style={[s.plaque, portrait ? s.plaquePortrait : s.plaqueLandscape, { maxHeight: portrait ? '64%' : '86%' }]} contentContainerStyle={{ padding: 14, gap: 8 }}>
           <Row style={{ justifyContent: 'space-between', alignItems: 'flex-start' }}>
             <View style={{ flexShrink: 1 }}>
               <Text style={s.plaqueArabic}>{info.nameArabic}</Text>
@@ -279,11 +281,38 @@ export function LibraryHud({ selected, portrait, onSelect, onRead, onWorld }: { 
             <ContentLabel kind="art" extra="its world" />
             <Text style={s.basisText}>{world.basis}</Text>
           </View>
+          {WORLDS[info.number] && (
+            <Text style={s.plaqueProg}>
+              Adventure: {WORLDS[info.number].name}
+              {worldProgress(info.number) ? ` · ${worldProgress(info.number)}` : ''}
+            </Text>
+          )}
           <Row wrap style={{ gap: 6 }}>
             <Button small icon="book" label={prog.furthestAyah ? 'Continue reading' : 'Read'} onPress={() => onRead(info.number)} />
+            {WORLDS[info.number] && <Button small icon="journey" label={worldProgress(info.number) ? 'Continue its adventure' : 'Play its adventure'} onPress={() => router.push(`/adventure/${info.number}` as never)} />}
             <Button small kind="secondary" icon="journey" label="Walk its world" onPress={() => onWorld(info.number)} />
           </Row>
-        </View>
+          {chaptersFor(info.number).length > 0 && (
+            <View style={{ gap: 6 }}>
+              <Text style={[s.plaqueSub, { fontFamily: fonts.bodyBold }]}>Story chapters</Text>
+              {chaptersFor(info.number).map((c) => {
+                const p = c.key === 'ark' ? arkProgress() : '';
+                return (
+                  <View key={c.key} style={s.chapter}>
+                    <View style={{ flex: 1, gap: 2 }}>
+                      <Text style={s.chapterTitle}>
+                        {c.title} <Text style={s.plaqueSub}>({c.ref})</Text>
+                      </Text>
+                      <Text style={s.plaqueSub}>{c.note}</Text>
+                      {!!p && <Text style={s.plaqueProg}>{p}</Text>}
+                    </View>
+                    <Button small label={p && p !== 'Finished' ? 'Continue' : 'Play'} onPress={() => router.push(c.href as never)} accessibilityLabel={`${p ? 'Continue' : 'Play'}: ${c.title}`} />
+                  </View>
+                );
+              })}
+            </View>
+          )}
+        </ScrollView>
       )}
     </>
   );
@@ -733,6 +762,8 @@ export const surahCount = surahs.length;
 
 const s = StyleSheet.create({
   pill: { backgroundColor: glass, borderRadius: 999 },
+  chapter: { flexDirection: 'row', alignItems: 'center', gap: 10, padding: 10, borderRadius: 12, backgroundColor: 'rgba(120,90,50,0.08)' },
+  chapterTitle: { fontFamily: fonts.bodyBold, fontSize: 14, color: '#3b2a18' },
   topBar: { position: 'absolute', top: 12, left: 12, right: 12, flexDirection: 'row', justifyContent: 'space-between' },
   readTitle: { position: 'absolute', top: 12, left: 0, right: 0, alignItems: 'center' },
   worldTitle: { position: 'absolute', top: 12, left: 0, right: 0, alignItems: 'center', gap: 8 },
@@ -758,7 +789,7 @@ const s = StyleSheet.create({
   bottomHint: { position: 'absolute', left: 16, right: 16, bottom: 24, alignItems: 'center', gap: 4 },
   hint: { fontFamily: fonts.body, fontSize: 15, color: '#f6ead2', textAlign: 'center', textShadowColor: 'rgba(0,0,0,0.6)', textShadowRadius: 8 },
   hintSmall: { fontFamily: fonts.body, fontSize: 13, color: '#e0cfb0', textAlign: 'center', textShadowColor: 'rgba(0,0,0,0.6)', textShadowRadius: 8 },
-  plaque: { position: 'absolute', backgroundColor: 'rgba(250, 245, 233, 0.96)', borderRadius: radius.lg, padding: 14, gap: 8, borderWidth: 1, borderColor: '#d9c9a3' },
+  plaque: { position: 'absolute', backgroundColor: 'rgba(250, 245, 233, 0.96)', borderRadius: radius.lg, borderWidth: 1, borderColor: '#d9c9a3' },
   plaquePortrait: { left: 10, right: 10, bottom: 10 },
   plaqueLandscape: { left: 16, bottom: 16, width: 380 },
   plaqueArabic: { fontFamily: fonts.quran, fontSize: 28, color: colors.ink, lineHeight: 46 },

@@ -23,9 +23,15 @@ export type IconName =
   | 'check'
   | 'motion'
   | 'still'
-  | 'book';
+  | 'book'
+  | 'menu'
+  | 'person'
+  | 'compass';
 
 const paths: Record<IconName, string> = {
+  menu: 'M4 7h16M4 12h16M4 17h16',
+  person: 'M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4.5 21c.8-4 3.8-6 7.5-6s6.7 2 7.5 6',
+  compass: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM15.5 8.5l-2 5-5 2 2-5z',
   home: 'M4 11.5 12 4l8 7.5V20a1 1 0 0 1-1 1h-4.5v-5.5h-5V21H5a1 1 0 0 1-1-1z',
   stories: 'M5 4h9a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3zM5 17a3 3 0 0 1 3-3h9M19 7v13',
   quran: 'M12 6.5C10 5 7 4.5 3.5 5v13c3.5-.5 6.5 0 8.5 1.5 2-1.5 5-2 8.5-1.5V5C17 4.5 14 5 12 6.5zM12 6.5v13',

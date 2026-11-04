@@ -77,7 +77,7 @@ export default function Chooser() {
       <Pressable onPress={() => router.push('/ark')} style={st.card}>
         <Text style={st.num}>11</Text>
         <View style={{ flex: 1, gap: 2 }}>
-          <Text style={st.name}>Hud · Nuh&apos;s Ark (the first slice)</Text>
+          <Text style={st.name}>Hud · The story of Nuh: the Ark</Text>
           <Text style={st.small}>Gather the animals and supplies; wait out the flood inside</Text>
         </View>
       </Pressable>

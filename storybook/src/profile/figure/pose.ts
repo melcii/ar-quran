@@ -4,8 +4,8 @@
 // Angles are radians on a simple skeleton; the character faces +z, its left
 // side is +x. A leg or arm rotating with negative x swings forward.
 
-export type Anim = 'idle' | 'walk' | 'run' | 'sit' | 'wave' | 'point' | 'pickup' | 'carry' | 'place' | 'guide' | 'interact' | 'cheer' | 'turn';
-export type Gesture = 'wave' | 'point' | 'pickup' | 'place' | 'interact' | 'cheer';
+export type Anim = 'idle' | 'walk' | 'run' | 'sit' | 'wave' | 'point' | 'pickup' | 'carry' | 'place' | 'guide' | 'interact' | 'cheer' | 'turn' | 'adjust';
+export type Gesture = 'wave' | 'point' | 'pickup' | 'place' | 'interact' | 'cheer' | 'adjust';
 
 export const CH = [
   'hipsY', 'hipsX', 'hipsZ', 'hipsYaw',
@@ -136,7 +136,7 @@ const GUIDE: Pose = { shLX: -0.5, shLZ: 0.32, shLY: 0.2, elLX: -0.35, wrLX: 0.1,
 const CARRY_CH: Ch[] = ['shLX', 'shRX', 'shLZ', 'shRZ', 'shLY', 'shRY', 'elLX', 'elRX', 'wrLX', 'wrRX', 'gripL', 'gripR'];
 const GUIDE_CH: Ch[] = ['shLX', 'shLZ', 'shLY', 'elLX', 'wrLX', 'gripL'];
 
-const DUR: Record<Gesture, number> = { wave: 2.2, point: 1.8, pickup: 1.15, place: 1.15, interact: 1.0, cheer: 2.0 };
+const DUR: Record<Gesture, number> = { wave: 2.2, point: 1.8, pickup: 1.15, place: 1.15, interact: 1.0, cheer: 2.0, adjust: 1.7 };
 
 /** A gesture at time u (seconds since it began); the pose it wants. */
 function gesture(g: Gesture, u: number, holding: boolean): Pose {
@@ -171,6 +171,21 @@ function gesture(g: Gesture, u: number, holding: boolean): Pose {
   if (g === 'interact') {
     const reach = ss(0, 0.35, u) * (1 - ss(0.65, 1, u));
     return { shRX: -1.2 * reach, shRZ: -0.05, elRX: -0.35 * reach, wrRX: -0.3 * reach, gripR: 0.5 * reach, spineX: 0.12 * reach, chestY: -0.1 * reach, headX: 0.05 };
+  }
+  if (g === 'adjust') {
+    // Both hands take the backpack straps at the chest and hitch the pack up.
+    const up = ss(0, 0.35, u) * (1 - ss(1.25, 1.7, u));
+    const hitch = ss(0.55, 0.75, u) * (1 - ss(0.75, 1.0, u));
+    return {
+      shLX: -0.42 * up, shRX: -0.42 * up,
+      shLZ: -0.1 * up + hitch * 0.12, shRZ: 0.1 * up - hitch * 0.12,
+      shLY: -0.25 * up, shRY: 0.25 * up,
+      elLX: -2.0 * up, elRX: -2.0 * up,
+      wrLX: 0.25 * up, wrRX: 0.25 * up,
+      gripL: 0.95 * up, gripR: 0.95 * up,
+      hipsY: hitch * 0.025, chestX: -0.06 * hitch, headX: 0.12 * up - 0.08 * hitch,
+      smile: 0.45,
+    };
   }
   // Cheer: both arms up and a little hop.
   const hop = pos(S(u * 7.5));

@@ -1,7 +1,7 @@
 // The reading room: the Quran open on its rehal. Any surah can be read here,
 // page by page; the niche in the back wall is the doorway to the library.
 import { useFrame, useThree, type ThreeEvent } from '@react-three/fiber';
-import { useEffect, useMemo, useRef, type MutableRefObject } from 'react';
+import { useEffect, useMemo, useRef, type MutableRefObject, type ReactNode } from 'react';
 import * as THREE from 'three';
 import { Study } from '@/three/Study';
 import { ROOM_SHOTS, fitShot, type Shot } from '@/three/environments';
@@ -26,6 +26,7 @@ export function Sanctuary({
   onBook,
   onDoor,
   inset = NO_INSET,
+  extra,
 }: {
   view: RoomView;
   motion: boolean;
@@ -40,6 +41,8 @@ export function Sanctuary({
   onDoor: () => void;
   /** Screen space (px) taken by the interface; the book is framed in what is left. */
   inset?: Inset;
+  /** More things standing in the room, such as the player's explorer. */
+  extra?: ReactNode;
 }) {
   const { camera, size } = useThree();
   const dim = useRef(0);
@@ -66,7 +69,10 @@ export function Sanctuary({
     t0.current = performance.now();
   }, [target]);
 
-  useFrame(() => {
+  // A slow drift of the camera in the wide view, so the room feels alive.
+  const drift = useRef(0);
+  useFrame((state, dt) => {
+    drift.current += ((view === 'wide' && motion ? 1 : 0) - drift.current) * Math.min(1, dt * 0.8);
     const dur = motion ? 2200 : 300;
     const p = from.current ? Math.min(1, (performance.now() - t0.current) / dur) : 1;
     const e = ease(p);
@@ -80,6 +86,12 @@ export function Sanctuary({
     const dir = cur.current.look.clone().sub(cur.current.pos);
     dir.applyAxisAngle(new THREE.Vector3(0, 1, 0), -look.yaw * 0.6);
     cam.position.copy(cur.current.pos);
+    if (drift.current > 0.001) {
+      const t = state.clock.elapsedTime;
+      cam.position.x += Math.sin(t * 0.11) * 0.09 * drift.current;
+      cam.position.y += Math.sin(t * 0.07 + 1) * 0.035 * drift.current;
+      cam.position.z += Math.sin(t * 0.05 + 2) * 0.06 * drift.current;
+    }
     cam.lookAt(cur.current.pos.clone().add(dir).add(new THREE.Vector3(0, look.pitch * 0.8, 0)));
     if (Math.abs(cam.fov - cur.current.fov) > 0.01) {
       cam.fov = cur.current.fov;
@@ -95,6 +107,7 @@ export function Sanctuary({
 
   return (
     <Study motion={motion} dim={dim}>
+      {extra}
       <Book open={open} right={right} left={left} leaf={leaf} onForward={onForward} onBack={onBack} onTap={onBook} />
       {/* The niche glows with the light of the library beyond it. */}
       <mesh position={[0, 1.75, -2.7]} onClick={door}>

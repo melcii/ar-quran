@@ -39,6 +39,7 @@ import { mindOf, routeTo, think } from '@/creatures/mind';
 import { journal } from '@/journal/store';
 import { celebrate, cue, cueFor } from '@/profile/figure/cue';
 import { mechFor } from './mechanics';
+import { noteAdventure } from '@/home/adventures';
 import type { MechEnv } from './mechanics/base';
 
 /* ------------------------------- saving ------------------------------- */
@@ -1399,8 +1400,8 @@ export default function Adventure({ n }: { n: number }) {
     return (
       <View style={[st.root, st.center]}>
         <Text style={st.note}>This adventure world has not been built yet.</Text>
-        <Pressable style={st.pill} onPress={() => router.replace('/adventure' as never)}>
-          <Text style={st.pillText}>See the worlds that exist</Text>
+        <Pressable style={st.pill} onPress={() => router.replace('/')}>
+          <Text style={st.pillText}>Back to the home</Text>
         </Pressable>
       </View>
     );
@@ -1423,6 +1424,8 @@ function World({ def }: { def: WorldDef }) {
   const portrait = height > width;
   const [webgl] = useState(hasWebGL);
   const surah = getSurah(def.surah)!;
+  // Continue Adventure on the home screen comes back here.
+  useEffect(() => noteAdventure({ kind: 'world', n: def.surah }), [def.surah]);
 
   const [data, setData] = useState<Save>(() => load(def.surah));
   const [lvl, setLvl] = useState(level.name);
@@ -1772,7 +1775,7 @@ function World({ def }: { def: WorldDef }) {
 
       <View style={st.topBar} pointerEvents="box-none">
         <View style={{ gap: 6 }}>
-          <Pressable style={st.pill} onPress={() => (router.canGoBack() ? router.back() : router.replace('/adventure' as never))} accessibilityRole="button" accessibilityLabel="Leave this world">
+          <Pressable style={st.pill} onPress={() => (router.canGoBack() ? router.back() : router.replace('/'))} accessibilityRole="button" accessibilityLabel="Leave this world">
             <Text style={st.pillText}>‹ Leave</Text>
           </Pressable>
           <Pressable style={st.pill} onPress={() => setCards((c) => [...c, { kind: 'book' }])} accessibilityRole="button">

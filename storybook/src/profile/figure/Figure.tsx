@@ -494,7 +494,9 @@ export function Figure({ look, follow, anim, lantern: withLantern = true, onRead
   const light = useRef<THREE.PointLight>(null);
   const A = useMemo(() => new Animator(), []);
   const st = useRef({ last: new V(), vel: new V(), yaw: 0, lastAnim: '' as string, lastCue: 0, init: false });
-  useEffect(() => onReady?.({ play: (g) => A.play(g) }), [A, onReady]);
+  useEffect(() => {
+    onReady?.({ play: (g) => A.play(g) });
+  }, [A, onReady]);
   const B = BUILD[look.build];
   const hips0 = 0.7;
 
@@ -547,7 +549,7 @@ export function Figure({ look, follow, anim, lantern: withLantern = true, onRead
       if (a === 'guide') (base = 'move'), (speed = 1.1);
       if (a !== s.lastAnim) {
         s.lastAnim = a;
-        if (a === 'wave' || a === 'point' || a === 'cheer' || a === 'interact') A.play(a, true);
+        if (a === 'wave' || a === 'point' || a === 'cheer' || a === 'interact' || a === 'adjust') A.play(a, true);
         else if (a === 'pickup' || a === 'place') A.play(a, true);
         else A.g = null;
       }
