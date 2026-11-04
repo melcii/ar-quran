@@ -184,6 +184,11 @@ export function Beast<K extends Animal>({ agent, highlight = false, onDown, onTa
     const g = root.current;
     if (!g) return;
     g.position.copy(agent.pos);
+    // Free animals (see creatures/mind.ts) turn their heads to watch and lie down to rest.
+    const mind = (agent as { mind?: { look: number; rest: number } }).mind;
+    const rest = mind?.rest ?? 0;
+    const look = mind?.look ?? 0;
+    g.position.y -= rest * s.hip * 0.62;
     let d = agent.yaw - g.rotation.y;
     d = Math.atan2(Math.sin(d), Math.cos(d));
     g.rotation.y += d * Math.min(1, dt * 5);
@@ -195,9 +200,9 @@ export function Beast<K extends Animal>({ agent, highlight = false, onDown, onTa
       if (!L.hip || !L.knee) continue;
       const p = ph + legPhase[i];
       const front = legSpots[i][2];
-      L.hip.rotation.x = Math.sin(p) * 0.42 * sf;
-      // Knees fold while the foot swings forward (front knees bend back, hocks forward).
-      L.knee.rotation.x = Math.max(0, Math.sin(p + Math.PI / 2)) * 0.75 * sf * (front ? 1 : -1);
+      L.hip.rotation.x = Math.sin(p) * 0.42 * sf + rest * (front ? 1.35 : -1.35);
+      // Knees fold while the foot swings forward (front knees bend back, hocks forward); lying down tucks them under.
+      L.knee.rotation.x = Math.max(0, Math.sin(p + Math.PI / 2)) * 0.75 * sf * (front ? 1 : -1) + rest * (front ? -2.5 : 2.5);
     }
     if (torso.current) {
       torso.current.position.y = motion.reduced ? 0 : Math.abs(Math.sin(ph)) * 0.035 * sf * s.hip;
@@ -208,10 +213,12 @@ export function Beast<K extends Animal>({ agent, highlight = false, onDown, onTa
       const bob = Math.sin(ph * 2) * 0.05 * sf;
       // Positive x tilts the neck forward (the animal faces +z); grazing bends it down.
       neck.current.rotation.x = s.neckTilt * (1 - down) + (agent.kind === 'giraffe' ? 1.0 : agent.kind === 'elephant' ? 1.35 : 1.75) * down + bob;
+      neck.current.rotation.order = 'YXZ';
+      neck.current.rotation.y = look * 0.75;
     }
     if (headG.current && neck.current) {
       headG.current.rotation.x = -neck.current.rotation.x + 0.12 + 0.75 * agent.graze + Math.sin(t * 0.7) * 0.04;
-      headG.current.rotation.y = Math.sin(t * 0.33) * 0.18 * (1 - sf);
+      headG.current.rotation.y = Math.sin(t * 0.33) * 0.18 * (1 - sf) * (1 - Math.min(1, Math.abs(look) * 2)) + look * 0.25;
     }
     if (tail.current) tail.current.rotation.z = Math.sin(t * 2.3) * 0.35 + Math.sin(t * 5.1) * 0.08;
     flick.current -= dt;
@@ -225,7 +232,7 @@ export function Beast<K extends Animal>({ agent, highlight = false, onDown, onTa
     trunk.current.forEach((seg, i) => {
       if (seg) seg.rotation.x = 0.18 + Math.sin(t * 1.1 - i * 0.6) * 0.16 + agent.graze * 0.12;
     });
-    if (shadowRef.current) shadowRef.current.position.y = 0.04;
+    if (shadowRef.current) shadowRef.current.position.y = 0.04 + rest * s.hip * 0.62;
   });
 
   const tapProps = {

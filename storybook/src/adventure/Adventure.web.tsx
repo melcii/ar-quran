@@ -33,6 +33,10 @@ import { CloudLayer, FarLand, Flock, FlowerField, GrassField, GroundMesh, Lighti
 import { makeTerrain, rng, type P2, type Terrain } from './terrain';
 import type { FlowTask, Reading, Task, WorldDef } from './types';
 import { WORLDS } from './worlds';
+import { level, LEVELS } from './level';
+import { makeNav, type Nav } from '@/creatures/nav';
+import { mindOf, routeTo, think } from '@/creatures/mind';
+import { journal } from '@/journal/store';
 
 /* ------------------------------- saving ------------------------------- */
 
@@ -85,6 +89,13 @@ type Game = {
   told: Record<string, number>;
   /** A short live status line for the current activity (water left, candles, ...). */
   status: string;
+  /** Finds ways round walls, water and rocks (animals, tap-to-go, the footstep trail). */
+  nav: Nav;
+  /** Tap-to-go waypoints toward `target`. */
+  route: THREE.Vector3[];
+  routeFor: THREE.Vector3 | null;
+  /** Footsteps to the next place, and until when they show when asked for. */
+  way: { pts: THREE.Vector3[]; until: number; at: number };
 };
 
 /** How many steps finish a task. */
@@ -539,9 +550,17 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
       dx = -Math.sin(cy) * iy + Math.cos(cy) * ix;
       dz = -Math.cos(cy) * iy - Math.sin(cy) * ix;
     } else if (game.target) {
-      const tx = game.target.x - player.pos.x;
-      const tz = game.target.z - player.pos.z;
-      const d = Math.hypot(tx, tz);
+      // Walk round walls and water: follow waypoints from the navigator (not while sailing).
+      if (game.routeFor !== game.target) {
+        game.routeFor = game.target;
+        game.route = game.boat.on ? [] : game.nav.route(player.pos, game.target, { r: 0.35, budget: 2500, near: game.pending ? 2 : 1.2 }) ?? [];
+      }
+      while (game.route.length > 1 && Math.hypot(game.route[0].x - player.pos.x, game.route[0].z - player.pos.z) < 0.7) game.route.shift();
+      const wp = game.route.length > 1 ? game.route[0] : game.target;
+      const d = Math.hypot(game.target.x - player.pos.x, game.target.z - player.pos.z);
+      const tx = wp.x - player.pos.x;
+      const tz = wp.z - player.pos.z;
+      const dw = Math.hypot(tx, tz) || 1;
       const want = game.pending ? (game.pending.startsWith('boat') ? 36 : game.pending.startsWith('ashore') ? 6 : 2.2) : game.boat.on ? 3 : 0.4;
       if (d < want) {
         game.target = null;
@@ -551,8 +570,8 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
           act(p);
         }
       } else {
-        dx = tx / d;
-        dz = tz / d;
+        dx = tx / dw;
+        dz = tz / dw;
       }
     }
     game.clock += dt;
@@ -625,6 +644,9 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
     const pp = player.pos;
 
     /* ---------- animals ---------- */
+    const groups: Record<string, Ani[]> = {};
+    for (const a of game.animals) (groups[a.task] ??= []).push(a);
+    const okSpot = (x: number, z: number) => Math.hypot(x, z) < t.radius - 1 && (t.floorY(x, z) > t.y(x, z) + 0.05 || !t.isWater(x, z));
     for (const a of game.animals) {
       const spec = SPECS[a.kind];
       a.timer += dt;
@@ -632,15 +654,13 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
       let pace = spec.speed;
       if (a.state !== 'follow') a.tid = undefined;
       if (a.state === 'wander' || a.state === 'stall') {
-        const roam = a.state === 'stall' ? 1.4 : 4;
-        if (!a.target || a.timer > 6 + (a.scale * 10) % 4) {
-          const ang = Math.random() * 6.28;
-          a.target = a.home.clone().add(new THREE.Vector3(Math.cos(ang) * roam * Math.random(), 0, Math.sin(ang) * roam * Math.random()));
-          a.timer = 0;
-        }
-        goal = a.target;
-        pace = spec.speed * 0.4;
+        // Species temperament: flocking, resting, watching the child, stepping aside, coming over (creatures/mind.ts).
+        const want = think(a, { dt, player: pp, playerSpeed: player.speed, group: groups[a.task] ?? [], nav: game.nav, ok: okSpot, roam: a.state === 'stall' ? 1.4 : undefined, shyK: level.spec.shyK });
+        goal = want?.goal ?? null;
+        pace = spec.speed * (want?.pace ?? 0.4);
       } else if (a.state === 'follow') {
+        mindOf(a).rest = 0;
+        mindOf(a).look *= 0.9;
         const i = game.animals.filter((x) => x.state === 'follow').indexOf(a);
         const keep = 2.2 + i * 1.6 + spec.len * 0.5;
         const tr = game.trail;
@@ -651,8 +671,8 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
         let ahead = k < tr.length ? Math.hypot(pp.x - tr[tr.length - 1].p.x, pp.z - tr[tr.length - 1].p.z) : 0;
         for (let j = k; j < tr.length - 1; j++) ahead += tr[j].p.distanceTo(tr[j + 1].p);
         if (k < tr.length && Math.hypot(a.pos.x - tr[k].p.x, a.pos.z - tr[k].p.z) < 1.6 && ahead > keep) a.tid = tr[k].id + 1;
-        if (k < tr.length && ahead > keep) goal = tr[k].p.clone();
-        else if (Math.hypot(pp.x - a.pos.x, pp.z - a.pos.z) > keep) goal = pp.clone();
+        if (k < tr.length && ahead > keep) goal = routeTo(a, tr[k].p, game.nav);
+        else if (Math.hypot(pp.x - a.pos.x, pp.z - a.pos.z) > keep) goal = routeTo(a, pp, game.nav);
         else goal = null;
         pace = Math.max(spec.speed, player.speed * 1.05) * (ahead > keep + 6 ? 1.8 : 1);
         const task = def.tasks.find((x) => x.id === a.task);
@@ -681,15 +701,30 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
         const step = a.speed * dt;
         const nx = a.pos.x + Math.sin(a.yaw) * step;
         const nz = a.pos.z + Math.cos(a.yaw) * step;
-        const onFloor = t.floorY(nx, nz) > t.y(nx, nz) + 0.05;
-        if ((onFloor || !t.isWater(nx, nz)) && Math.hypot(nx, nz) < t.radius) {
+        // Animals keep to the same ground as the explorer: no walking through walls or into water.
+        if (t.canStep(a.pos.x, a.pos.z, nx, nz, 0.3)) {
           a.pos.x = nx;
           a.pos.z = nz;
-        } else a.target = null;
+        } else if (a.state !== 'follow') {
+          mindOf(a).route = [];
+          mindOf(a).left = Math.min(mindOf(a).left, 0.5);
+        } else {
+          // Slide round the corner toward the leader.
+          for (const off of [0.6, -0.6, 1.2, -1.2]) {
+            const sx = a.pos.x + Math.sin(a.yaw + off) * step;
+            const sz = a.pos.z + Math.cos(a.yaw + off) * step;
+            if (t.canStep(a.pos.x, a.pos.z, sx, sz, 0.3)) {
+              a.pos.x = sx;
+              a.pos.z = sz;
+              break;
+            }
+          }
+        }
         a.phase += (step / spec.stride) * Math.PI * 2;
       }
       a.pos.y = t.floorY(a.pos.x, a.pos.z);
-      a.graze += ((a.speed < 0.15 && a.state !== 'follow' ? 1 : 0) - a.graze) * Math.min(1, dt * 1.2);
+      const m = mindOf(a);
+      a.graze += ((a.speed < 0.15 && a.state !== 'follow' && m.rest < 0.2 && Math.abs(m.look) < 0.2 && m.mode === 'idle' ? 1 : 0) - a.graze) * Math.min(1, dt * 1.2);
     }
 
     /* ---------- boats ---------- */
@@ -746,7 +781,7 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
         game.hold[task.id] = on && still && facing ? h + dt : Math.max(0, h - dt * 2);
         if (on && still && !facing) tell(`${task.id}f`, 'Turn to face it: take one small step toward it, then keep still.');
         else if (on && !still) tell(`${task.id}s`, 'Stand still here for a moment.', 8);
-        if (game.hold[task.id] >= task.secs) {
+        if (game.hold[task.id] >= task.secs * level.spec.holdK) {
           api.current.finish(task.id);
           if (task.reading) api.current.open({ kind: 'reading', reading: task.reading });
         }
@@ -782,8 +817,8 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
                 const [ax, az] = task.gust.path[seg];
                 const [bx, bz] = task.gust.path[seg + 1];
                 const l = Math.hypot(bx - ax, bz - az) || 1;
-                const px = pp.x - ((bx - ax) / l) * 8.5 * dt;
-                const pz = pp.z - ((bz - az) / l) * 8.5 * dt;
+                const px = pp.x - ((bx - ax) / l) * 8.5 * level.spec.windK * dt;
+                const pz = pp.z - ((bz - az) / l) * 8.5 * level.spec.windK * dt;
                 if (t.canStep(pp.x, pp.z, px, pz, 0.35)) pp.set(px, pp.y, pz);
                 tell('gustback', 'The wind pushes you back down. Keep still while it blows, then climb on.', 5);
               }
@@ -806,15 +841,17 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
             for (const a of game.animals)
               if (a.task === `obs-${task.id}-${i}`) {
                 const ang = Math.atan2(a.pos.x - pp.x, a.pos.z - pp.z);
-                a.target = a.pos.clone().add(new THREE.Vector3(Math.sin(ang) * 4, 0, Math.cos(ang) * 4));
-                a.timer = 0;
+                const to = a.pos.clone().add(new THREE.Vector3(Math.sin(ang) * 4, 0, Math.cos(ang) * 4));
+                const m = mindOf(a);
+                if (m.mode !== 'shy' && okSpot(to.x, to.z)) Object.assign(m, { mode: 'shy', left: 2.5, route: [to], rest: m.rest });
               }
             tell(`${key}run`, 'Running startled them. Come close at a walk, then keep still and watch.');
           } else if (close && still) {
             game.hold[key] = (game.hold[key] ?? 0) + dt;
-            status = `Watching: ${sub.label} ${Math.min(100, Math.round(((game.hold[key] ?? 0) / task.secs) * 100))}%`;
-            if (game.hold[key] >= task.secs) {
+            status = `Watching: ${sub.label} ${Math.min(100, Math.round(((game.hold[key] ?? 0) / (task.secs * level.spec.holdK)) * 100))}%`;
+            if (game.hold[key] >= task.secs * level.spec.holdK) {
               api.current.progress(task.id, i);
+              journal.observe(`${def.surah}:${task.id}:${i}`, { world: String(def.surah), label: sub.label, note: sub.note, animal: sub.animal });
               api.current.say(sub.note);
               if (sub.reading) api.current.open({ kind: 'reading', reading: sub.reading });
             }
@@ -849,7 +886,7 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
           const parts: string[] = [];
           task.promises.forEach((p, i) => {
             const k = `${task.id}:${i}`;
-            if (game.vows[k] == null) game.vows[k] = game.clock + p.secs;
+            if (game.vows[k] == null) game.vows[k] = game.clock + p.secs * level.spec.timeK;
             if (prog.includes(i)) return;
             const left = Math.max(0, Math.ceil(game.vows[k] - game.clock));
             parts.push(left > 0 ? `${p.label} (${left}s)` : `${p.label} (candle out)`);
@@ -927,6 +964,31 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
       }
     }
     game.next.current = nextPos;
+    // Footsteps to the next place: always on the Gentle level, or for a while after "Show me the way".
+    const wantWay = !!nextPos && !game.boat.on && (level.spec.trail || game.clock < game.way.until);
+    if (!wantWay) game.way.pts = [];
+    else if (game.clock - game.way.at > 1.2) {
+      game.way.at = game.clock;
+      const r = game.nav.route(pp, nextPos!, { r: 0.35, budget: 3000, near: 2.5 });
+      const pts: THREE.Vector3[] = [];
+      if (r) {
+        let prev = pp.clone();
+        let carry = 1.6;
+        for (const q of r) {
+          const seg = Math.hypot(q.x - prev.x, q.z - prev.z);
+          while (carry < seg && pts.length < 40) {
+            const k = carry / seg;
+            const x = prev.x + (q.x - prev.x) * k;
+            const z = prev.z + (q.z - prev.z) * k;
+            pts.push(new THREE.Vector3(x, t.floorY(x, z) + 0.06, z));
+            carry += 1.25;
+          }
+          carry -= seg;
+          prev = q.clone();
+        }
+      }
+      game.way.pts = pts;
+    }
     const key = near ? near.key + near.label : '';
     if (key !== lastNear.current) {
       lastNear.current = key;
@@ -987,6 +1049,41 @@ function Animals({ game, onTap }: { game: Game; onTap: (key: string) => void }) 
       ))}
     </>
   );
+}
+
+/** Glowing footsteps along the navigator's way to the next place. */
+function WayTrail({ game }: { game: Game; t: Terrain }) {
+  const ref = useRef<THREE.InstancedMesh>(null);
+  const geo = useMemo(() => {
+    const g = new THREE.CircleGeometry(0.16, 12);
+    g.scale(1, 1.5, 1);
+    g.rotateX(-Math.PI / 2);
+    return g;
+  }, []);
+  const mat = useMemo(() => new THREE.MeshBasicMaterial({ color: '#fff0b8', transparent: true, opacity: 0.85, depthWrite: false, fog: false }), []);
+  const m4 = useMemo(() => new THREE.Matrix4(), []);
+  const q = useMemo(() => new THREE.Quaternion(), []);
+  const up = useMemo(() => new THREE.Vector3(0, 1, 0), []);
+  const one = useMemo(() => new THREE.Vector3(1, 1, 1), []);
+  useFrame((st) => {
+    const im = ref.current;
+    if (!im) return;
+    const pts = game.way.pts;
+    im.count = pts.length;
+    for (let i = 0; i < pts.length; i++) {
+      const p = pts[i];
+      const n = pts[i + 1] ?? pts[i - 1] ?? p;
+      const yaw = Math.atan2(n.x - p.x, n.z - p.z) * (pts[i + 1] ? 1 : -1);
+      q.setFromAxisAngle(up, yaw);
+      // Left, right, left: a little offset sideways like real steps.
+      const side = (i % 2 ? 0.14 : -0.14);
+      const s = motion.reduced ? 1 : 0.85 + 0.25 * Math.max(0, Math.sin(st.clock.elapsedTime * 3 - i * 0.5));
+      m4.compose(new THREE.Vector3(p.x + Math.cos(yaw) * side, p.y, p.z - Math.sin(yaw) * side), q, one.clone().multiplyScalar(s));
+      im.setMatrixAt(i, m4);
+    }
+    im.instanceMatrix.needsUpdate = true;
+  });
+  return <instancedMesh ref={ref} args={[geo, mat, 40]} frustumCulled={false} renderOrder={2} />;
 }
 
 function TapMarker({ game, t }: { game: Game; t: Terrain }) {
@@ -1084,14 +1181,14 @@ function Things({ def, t, data, game, carrying, act, isOn }: { def: WorldDef; t:
               .filter((b) => b.task === task.id)
               .map((b) => <GuidedBoat key={`${task.id}-${b.idx}`} state={b} color={task.boats[b.idx].color} sail={task.boats[b.idx].sail} active={open(task) && !b.done && !b.moving} onTap={() => act(`boat:${task.id}:${b.idx}`)} />);
           case 'stand':
-            return <StandPlate key={task.id} x={task.at[0]} z={task.at[1]} t={t} r={task.r ?? 1.3} style={task.style} k={() => Math.min(1, (game.hold[task.id] ?? 0) / task.secs)} done={done} active={open(task)} />;
+            return <StandPlate key={task.id} x={task.at[0]} z={task.at[1]} t={t} r={task.r ?? 1.3} style={task.style} k={() => Math.min(1, (game.hold[task.id] ?? 0) / (task.secs * level.spec.holdK))} done={done} active={open(task)} />;
           case 'reach':
             return <GoRing key={task.id} x={task.at[0]} z={task.at[1]} y={t.floorY(task.at[0], task.at[1])} r={task.r ?? 2.5} active={open(task)} />;
           case 'return':
             return <GoRing key={task.id} x={task.at[0]} z={task.at[1]} y={t.floorY(task.at[0], task.at[1])} r={task.r} active={open(task)} color="#ffe2b0" />;
           case 'observe':
             return task.subjects.map((sub, i) => (
-              <WatchRing key={`${task.id}-${i}`} x={sub.at[0]} z={sub.at[1]} t={t} r={sub.r + 2} k={() => Math.min(1, (game.hold[`${task.id}:${i}`] ?? 0) / task.secs)} done={done || prog.includes(i)} active={open(task) && !prog.includes(i)} />
+              <WatchRing key={`${task.id}-${i}`} x={sub.at[0]} z={sub.at[1]} t={t} r={sub.r + 2} k={() => Math.min(1, (game.hold[`${task.id}:${i}`] ?? 0) / (task.secs * level.spec.holdK))} done={done || prog.includes(i)} active={open(task) && !prog.includes(i)} />
             ));
           case 'sky':
             return <SkyDial key={task.id} x={task.at[0]} z={task.at[1]} t={t} phase={done ? task.phases.length : prog.length} n={task.phases.length} active={open(task)} onTap={() => act(`sky:${task.id}`)} />;
@@ -1136,7 +1233,7 @@ function Things({ def, t, data, game, carrying, act, isOn }: { def: WorldDef; t:
                     kept={done || prog.includes(i)}
                     left={() => {
                       const due = game.vows[`${task.id}:${i}`];
-                      return due == null ? 1 : (due - game.clock) / p.secs;
+                      return due == null ? 1 : (due - game.clock) / (p.secs * level.spec.timeK);
                     }}
                     active={open(task) && took && !prog.includes(i)}
                     onTap={() => act(`vow:${task.id}:${i}`)}
@@ -1285,6 +1382,8 @@ function World({ def }: { def: WorldDef }) {
   const surah = getSurah(def.surah)!;
 
   const [data, setData] = useState<Save>(() => load(def.surah));
+  const [lvl, setLvl] = useState(level.name);
+  useEffect(() => journal.visit(String(def.surah), def.name, def.surah), [def]);
   const saveRef = useRef(data);
   saveRef.current = data;
   const update = useCallback(
@@ -1375,6 +1474,10 @@ function World({ def }: { def: WorldDef }) {
       flow: {},
       told: {},
       status: '',
+      nav: makeNav(t.canStep, { radius: t.radius, cell: 1.4, y: t.floorY }),
+      route: [],
+      routeFor: null,
+      way: { pts: [], until: 0, at: -9 },
     };
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
   useOrbit(game);
@@ -1466,7 +1569,11 @@ function World({ def }: { def: WorldDef }) {
       setHint(text);
       setCarrying(game.carrying ? { ...game.carrying } : null);
     },
-    open: (c) => setCards((cs) => [...cs.filter((x) => x.kind === 'narration' || x.kind === 'finale'), c]),
+    open: (c) => {
+      // The journal remembers every ayah opened in a world (and the words met in it).
+      if (c.kind === 'reading') journal.read(c.reading.refs.map((r) => [r[0], r[1]] as [number, number]));
+      setCards((cs) => [...cs.filter((x) => x.kind === 'narration' || x.kind === 'finale'), c]);
+    },
     near: setNear,
     say,
     note: (key, i) => {
@@ -1587,7 +1694,8 @@ function World({ def }: { def: WorldDef }) {
         <Carried item={carriedLoad?.item ?? null} color={carriedLoad?.color} />
         <Child />
         <TapMarker game={game} t={t} />
-        <Wayfinder at={game.next} />
+        {LEVELS[lvl].light && <Wayfinder at={game.next} />}
+        <WayTrail game={game} t={t} />
         <Director def={def} t={t} game={game} move={move} api={api} />
         {Q.post && (
           <EffectComposer multisampling={tier === 'high' ? 4 : 0}>
@@ -1611,6 +1719,9 @@ function World({ def }: { def: WorldDef }) {
           </Pressable>
           <Pressable style={st.pill} onPress={() => setCards((c) => [...c, { kind: 'about' }])} accessibilityRole="button">
             <Text style={st.pillText}>About this world</Text>
+          </Pressable>
+          <Pressable style={st.pill} onPress={() => router.push('/journal' as never)} accessibilityRole="button" accessibilityLabel="Open my discovery journal">
+            <Text style={st.pillText}>My journal</Text>
           </Pressable>
         </View>
         <View style={st.objective} pointerEvents="box-none">
@@ -1636,6 +1747,18 @@ function World({ def }: { def: WorldDef }) {
           )}
         </View>
         <View style={{ gap: 6, alignItems: 'flex-end' }}>
+          <Pressable
+            style={st.pill}
+            onPress={() => {
+              const l = level.next();
+              setLvl(l);
+              setHint(`${LEVELS[l].label}: ${LEVELS[l].blurb}`);
+            }}
+            accessibilityRole="button"
+            accessibilityLabel={`Help level ${LEVELS[lvl].label}. Tap to change.`}
+          >
+            <Text style={st.pillText}>Help: {LEVELS[lvl].label}</Text>
+          </Pressable>
           <Pressable style={st.pill} onPress={() => setReduced((r) => !r)} accessibilityRole="switch" accessibilityState={{ checked: reduced }}>
             <Text style={st.pillText}>{reduced ? 'Calm motion: on' : 'Calm motion: off'}</Text>
           </Pressable>
@@ -1678,6 +1801,20 @@ function World({ def }: { def: WorldDef }) {
       )}
 
       {!top && <Joystick move={move} />}
+
+      {!top && !LEVELS[lvl].trail && (
+        <Pressable
+          style={[st.pill, st.wayBtn]}
+          onPress={() => {
+            game.way.until = game.clock + 14;
+            game.way.at = -9;
+            setHint(game.next.current ? 'Follow the glowing footsteps.' : 'Nothing is waiting here. Look at the list of activities.');
+          }}
+          accessibilityRole="button"
+        >
+          <Text style={st.pillText}>Show me the way</Text>
+        </Pressable>
+      )}
 
       {!!status && !top && (
         <View style={st.statusWrap} pointerEvents="none">
@@ -1832,6 +1969,7 @@ const st = StyleSheet.create({
   status: { fontFamily: fonts.bodyBold, fontSize: 13, color: '#fff6e2', ...glass, borderRadius: 12, paddingHorizontal: 12, paddingVertical: 6, maxWidth: 620, textAlign: 'center', overflow: 'hidden' },
   hintWrap: { position: 'absolute', left: 16, right: 16, bottom: 150, alignItems: 'center' },
   hint: { fontFamily: fonts.body, fontSize: 15, color: '#fff6e2', ...glass, borderRadius: 14, paddingHorizontal: 16, paddingVertical: 10, maxWidth: 560, textAlign: 'center', overflow: 'hidden' },
+  wayBtn: { position: 'absolute', right: 20, bottom: 112 } as never,
   action: { position: 'absolute', right: 20, bottom: 42, flexDirection: 'row', alignItems: 'center', gap: 10, backgroundColor: 'rgba(255,240,205,0.95)', borderRadius: 999, paddingLeft: 20, paddingRight: 8, paddingVertical: 8, maxWidth: '70%' } as never,
   actionText: { fontFamily: fonts.bodyBold, fontSize: 16, color: '#4a3220', flexShrink: 1 },
   actionKey: { fontFamily: fonts.bodyBold, fontSize: 13, color: '#fff6e2', backgroundColor: '#8a5a34', borderRadius: 999, width: 28, height: 28, textAlign: 'center', lineHeight: 28, overflow: 'hidden' },
