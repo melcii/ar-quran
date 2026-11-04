@@ -67,6 +67,47 @@ Limits, honestly:
 - **Nothing has had scholarly review**: not the worlds, not the story, not the explanations.
 - All 3D shapes are made in code. The look is stylised, not photoreal.
 
+## Nuh's Ark: the new-look vertical slice (`/ark`, web)
+
+A single playable slice built to test the new art direction (organic, painterly, no blocks) before any other world is
+redone. Code in `src/ark/`; open it at `/ark` or from the reading room's "Nuh's Ark: new-look preview" button.
+
+- **Look.** A sculpted valley (`land.ts`, `Scenery.tsx`): rolling hills with painterly vertex colour and a brush
+  texture, a river, a ring of hills and distant mountains, a lilac-to-peach sky with a low warm sun, haze, puffy
+  clouds and birds. Trees have curved, tapering bark trunks and branches with leafy canopies (lumpy blobs plus
+  alpha leaf cards), in green, autumn orange and blossom pink. Sculpted rock outcrops, wind-blown grass tufts that
+  part around the explorer, flower drifts, painted contact shade under trees and rocks, soft shadows, and on medium
+  and high quality bloom, ACES tone mapping, a warm grade, vignette and (high) ambient occlusion. Every texture is
+  drawn in code (`paint.ts`); no outside assets.
+- **Explorer.** A made-up modern child explorer (`Child.tsx`) with a backpack and a small lantern, walking and running
+  with a procedural walk cycle. Third-person camera with smooth follow and free orbit: drag to look, wheel or pinch to
+  zoom, W A S D or the arrow keys (Shift to hurry), an on-screen stick, and tap the ground to walk there. E or the
+  action button uses what is in reach; tapping a far object walks to it first.
+- **Animals.** Pairs of giraffes, elephants, camels, sheep and horses (`Beasts.tsx`), each with jointed legs in a
+  four-beat walk, a bobbing body, a neck and head that follow the stride, swishing tails, flicking ears, an
+  elephant's trunk, and grazing when still. Walk near one to find it; when both of a pair are found, tap one to lead
+  them, or press and drag one onto its pad. On the right pad the pair walks up the ramp into its stall; at a wrong
+  pad a gentle hint names the picture. The giraffes are the suggested first pair.
+- **The ark.** A plank hull with raised bow and stern, ribs, a long deck house with round windows and a pitched roof,
+  a ramp that swings shut as the door, and a hold you can walk through (`Ark.tsx`): stalls with gates that close
+  behind each pair, a store, and lamps. Inside, the walls above waist height are cut away so the camera can see in.
+- **Activities.** Explore the valley; find and identify the pairs; lead or drag them to their pads; carry grain, hay
+  and water from the cart to the store; then go inside. The rain begins, the ramp closes, the water rises from the
+  river and the ark floats; then the rain stops and the water grows calm.
+- **Quran and narration, kept apart.** Four reading lanterns (start, by the ark, at the boarding area, inside) show
+  the verified Arabic and the Saheeh International translation of Hud 11:36, 11:37 with Al-Qamar 54:13, 11:40 and
+  11:41, each labelled, with a short labelled explanation. After the flood, 11:44 is shown, then a reflection on
+  patience and trust with 11:49. Narration cards are labelled as written for the game and can be read aloud with the
+  device voice. Recitation plays only when a licensed source is configured. All of it is a draft for scholarly review.
+- **Saved and gentle.** Progress (found animals, pairs aboard, supplies stored, lanterns read, the flood, the
+  reflection, where you stood) is saved in the browser. A calm-motion toggle stops camera easing, bobbing and
+  rocking. Sounds are synthesized and natural only: wind, river, birds, rain, footsteps on grass and wood, soft
+  animal calls, the door's creak and thud. No music. No prophet is shown.
+
+Limits: checked only in headless Chromium with software WebGL (slow there, so frame rates on real GPUs and phones are
+unmeasured); web only, phones fall back to the text screens; the animals are procedural models, not artist-made
+assets, so they read as stylised toys more than the reference games' hand-sculpted creatures.
+
 ## Run it
 
 Requires Node 22 or newer.
