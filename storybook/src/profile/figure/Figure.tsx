@@ -514,8 +514,20 @@ export function Figure({ look, follow, anim, lantern: withLantern = true, onRead
     let holding = false;
     let leading = false;
     const a = anim?.current ?? 'idle';
+    // One canonical size everywhere: nothing may grow or shrink the explorer.
+    if (g.scale.x !== 1 || g.scale.y !== 1 || g.scale.z !== 1) g.scale.setScalar(1);
     if (follow) {
       g.position.copy(player.pos);
+      const probe = (globalThis as { __figProbe?: { scale: number; y: number; h?: number } }).__figProbe;
+      if (probe) {
+        // Tests: the figure's real height and scale in the world, every frame it is asked for.
+        probe.scale = g.getWorldScale(new V()).x;
+        probe.y = g.position.y;
+        if (probe.h == null) {
+          const b = new THREE.Box3().setFromObject(g);
+          probe.h = b.max.y - b.min.y;
+        }
+      }
       let d = player.yaw - g.rotation.y;
       d = Math.atan2(Math.sin(d), Math.cos(d));
       const turn = d * Math.min(1, dt * 12);

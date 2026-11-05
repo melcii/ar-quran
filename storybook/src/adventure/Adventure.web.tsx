@@ -40,6 +40,10 @@ import { journal } from '@/journal/store';
 import { celebrate, cue, cueFor } from '@/profile/figure/cue';
 import { mechFor } from './mechanics';
 import { noteAdventure } from '@/home/adventures';
+import { loadPhysics, physicsReady, type Space, type Walker } from '@/physics/space';
+import { makeSpace } from './space';
+import { validateSpace } from '@/physics/validate';
+import { ColliderView, debugColliders } from '@/physics/DebugView';
 import { useActionHint } from '@/audio/hooks';
 import { ListeningSheet } from '@/audio/ListeningSettings';
 import type { MechEnv } from './mechanics/base';
@@ -49,6 +53,7 @@ import type { MechEnv } from './mechanics/base';
 type Save = { done: string[]; prog: Record<string, number[]>; seen: string[]; pos?: [number, number, number]; finished?: boolean };
 const KEY = (n: number) => `quran-adventure.world-${n}.v1`;
 const fresh = (): Save => ({ done: [], prog: {}, seen: [] });
+const STEP = 1 / 60;
 function load(n: number): Save {
   try {
     const s = JSON.parse(localStorage.getItem(KEY(n)) ?? 'null');
@@ -64,7 +69,7 @@ function store(n: number, s: Save) {
 
 /* ------------------------------- the live game ------------------------------- */
 
-type Ani = Agent & { task: string; idx: number; penned: boolean; tid?: number };
+type Ani = Agent & { task: string; idx: number; penned: boolean; tid?: number; w?: Walker; stuck?: number };
 type BoatState = { task: string; idx: number; pos: THREE.Vector3; yaw: number; k: number; moving: boolean; done: boolean };
 type Use = { key: string; pos: THREE.Vector3; label: string; reach: number; run: () => void };
 
@@ -99,6 +104,25 @@ type Game = {
   status: string;
   /** Finds ways round walls, water and rocks (animals, tap-to-go, the footstep trail). */
   nav: Nav;
+  /** The physics space: every solid, the water and the edge. */
+  space: Space;
+  /** The explorer's capsule in it. */
+  me: Walker;
+  /** Fixed-step accumulator for movement, commanded walking speed, time spent pushing against something. */
+  acc: number;
+  cmd: number;
+  stuck: number;
+  /** The capsule's place one physics step ago (drawing goes between), and where the explorer was last drawn. */
+  prev: { x: number; y: number; z: number };
+  at: { x: number; z: number };
+  /** Firm places stood on lately, oldest first, for "Return to safe ground". */
+  safes: { x: number; y: number; z: number; at: number }[];
+  /** Where the explorer was put at the start (after the spawn check). */
+  spawn: P2;
+  /** Times the explorer was put back on safe ground (for tests). */
+  recovered: number;
+  wip: number;
+  wipMax: number;
   /** Tap-to-go waypoints toward `target`. */
   route: THREE.Vector3[];
   routeFor: THREE.Vector3 | null;
@@ -268,6 +292,7 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
   const keys = useRef(new Set<string>());
   const lastNear = useRef('');
   const camDist = useRef(game.cam.dist);
+  const camPitch = useRef(game.cam.pitch);
   const tmp = useMemo(() => new THREE.Vector3(), []);
 
   useEffect(() => {
@@ -641,25 +666,70 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
       player.yaw = b.yaw;
       player.speed = 0;
     } else {
+      const sp = game.space;
+      const me = game.me;
+      // Something else moved the explorer (a warp, stepping off the boat, a
+      // scripted move): put the capsule there too, on open ground.
+      if (Math.hypot(game.at.x - player.pos.x, game.at.z - player.pos.z) > 0.01) {
+        const o = sp.findOpen(player.pos.x, player.pos.z, me.r, 8) ?? [player.pos.x, player.pos.z];
+        sp.place(me, o[0], o[1]);
+        game.prev = { x: me.x, y: me.y, z: me.z };
+        game.acc = 0;
+      }
+      sp.sync();
       const mag = Math.hypot(dx, dz);
       const want = mag > 0.05 ? (run ? 7 : 4.2) * Math.min(1, mag) : 0;
-      player.speed += (want - player.speed) * Math.min(1, dt * 8);
+      game.cmd += (want - game.cmd) * Math.min(1, dt * 8);
+      if (game.cmd < 0.02) game.cmd = 0;
       if (mag > 0.05) player.yaw = Math.atan2(dx, dz);
-      if (player.speed > 0.02) {
-        // Never overshoot a tapped spot (slow frames would make the explorer dance round it).
-        const step = !(ix || iy) && game.target ? Math.min(player.speed * dt, Math.hypot(game.target.x - player.pos.x, game.target.z - player.pos.z)) : player.speed * dt;
-        const fx = Math.sin(player.yaw) * step;
-        const fz = Math.cos(player.yaw) * step;
-        const { x, z } = player.pos;
-        if (t.canStep(x, z, x + fx, z + fz, 0.35)) player.pos.set(x + fx, player.pos.y, z + fz);
-        else if (t.canStep(x, z, x + fx, z, 0.35)) player.pos.x += fx;
-        else if (t.canStep(x, z, x, z + fz, 0.35)) player.pos.z += fz;
-        else if (game.target) {
-          game.target = null;
-          game.pending = null;
+      // Fixed 60 Hz steps, so movement and collision are the same at any frame rate.
+      game.acc += dt;
+      let moved = 0;
+      let ran = 0;
+      while (game.acc >= STEP) {
+        game.acc -= STEP;
+        ran += STEP;
+        game.prev = { x: me.x, y: me.y, z: me.z };
+        if (game.cmd <= 0.02) {
+          sp.move(me, 0, 0, STEP);
+          continue;
         }
+        // Never overshoot a tapped spot (slow frames would make the explorer dance round it).
+        const step = !(ix || iy) && game.target ? Math.min(game.cmd * STEP, Math.hypot(game.target.x - me.x, game.target.z - me.z)) : game.cmd * STEP;
+        moved += sp.move(me, Math.sin(player.yaw) * step, Math.cos(player.yaw) * step, STEP);
+      }
+      // Walking speed for the animation is how far the feet really went, so
+      // pushing against a wall stands still instead of walking on the spot.
+      const real = ran > 0 ? moved / ran : player.speed;
+      player.speed += (real - player.speed) * Math.min(1, dt * 12);
+      if (player.speed < 0.05) player.speed = 0;
+      // For tests: the longest time the walk cycle played without the feet really moving.
+      game.wip = ran > 0 && player.speed > 0.3 && real < 0.1 * player.speed ? game.wip + dt : 0;
+      game.wipMax = Math.max(game.wipMax, game.wip);
+      if (game.cmd > 1 && real < game.cmd * 0.15) game.stuck += dt;
+      else game.stuck = 0;
+      if (game.stuck > 0.6 && game.target) {
+        game.target = null;
+        game.pending = null;
+        game.stuck = 0;
+      }
+      sp.noteSafe(me, game.clock);
+      const ls = game.safes[game.safes.length - 1];
+      if (!ls || game.clock - ls.at > 3) {
+        game.safes.push({ ...me.safe, at: game.clock });
+        if (game.safes.length > 20) game.safes.shift();
+      }
+      if (sp.checkAndRecover(me)) {
+        game.recovered++;
+        game.prev = { x: me.x, y: me.y, z: me.z };
+      }
+      // Draw between the last two physics steps.
+      const al = Math.min(1, game.acc / STEP);
+      player.pos.set(game.prev.x + (me.x - game.prev.x) * al, game.prev.y + (me.y - game.prev.y) * al, game.prev.z + (me.z - game.prev.z) * al);
+      game.at = { x: player.pos.x, z: player.pos.z };
+      if (moved > 0) {
         const before = player.phase;
-        player.phase += (step / 1.3) * Math.PI;
+        player.phase += (moved / 1.3) * Math.PI;
         if (Math.floor(before / Math.PI) !== Math.floor(player.phase / Math.PI)) nature.step(t.floors.some((f) => typeof f.y !== 'number') && t.floorY(player.pos.x, player.pos.z) > t.y(player.pos.x, player.pos.z) + 0.2);
       }
       const lastT = game.trail[game.trail.length - 1];
@@ -667,9 +737,6 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
         game.trail.push({ id: (lastT?.id ?? 0) + 1, p: player.pos.clone() });
         if (game.trail.length > 400) game.trail.shift();
       }
-      const fy = t.floorY(player.pos.x, player.pos.z);
-      player.pos.y += (fy - player.pos.y) * Math.min(1, dt * 14);
-      if (Math.abs(fy - player.pos.y) > 1.5) player.pos.y = fy;
     }
     const pp = player.pos;
 
@@ -727,32 +794,46 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
           a.yaw += dy * Math.min(1, dt * 4);
         }
       } else a.speed *= 1 - Math.min(1, dt * 3);
+      const w = a.w!;
+      if (Math.hypot(w.x - a.pos.x, w.z - a.pos.z) > 0.01) {
+        // Moved by the story (penned, called over): bring its capsule along, onto open ground.
+        const o = game.space.findOpen(a.pos.x, a.pos.z, w.r, 6) ?? [a.pos.x, a.pos.z];
+        game.space.place(w, o[0], o[1]);
+      }
       if (a.speed > 0.01) {
         const step = a.speed * dt;
-        const nx = a.pos.x + Math.sin(a.yaw) * step;
-        const nz = a.pos.z + Math.cos(a.yaw) * step;
-        // Animals keep to the same ground as the explorer: no walking through walls or into water.
-        if (t.canStep(a.pos.x, a.pos.z, nx, nz, 0.3)) {
-          a.pos.x = nx;
-          a.pos.z = nz;
-        } else if (a.state !== 'follow') {
-          mindOf(a).route = [];
-          mindOf(a).left = Math.min(mindOf(a).left, 0.5);
-        } else {
-          // Slide round the corner toward the leader.
+        // Swept against every solid and every other animal; slides along walls.
+        let went = game.space.move(w, Math.sin(a.yaw) * step, Math.cos(a.yaw) * step, dt, { maxStep: 0.4 });
+        if (went < step * 0.3 && a.state === 'follow') {
+          // Round the corner toward the leader.
           for (const off of [0.6, -0.6, 1.2, -1.2]) {
-            const sx = a.pos.x + Math.sin(a.yaw + off) * step;
-            const sz = a.pos.z + Math.cos(a.yaw + off) * step;
-            if (t.canStep(a.pos.x, a.pos.z, sx, sz, 0.3)) {
-              a.pos.x = sx;
-              a.pos.z = sz;
+            const g = game.space.move(w, Math.sin(a.yaw + off) * step, Math.cos(a.yaw + off) * step, dt, { maxStep: 0.4 });
+            if (g > step * 0.3) {
+              went += g;
               break;
             }
           }
         }
-        a.phase += (step / spec.stride) * Math.PI * 2;
-      }
-      a.pos.y = t.floorY(a.pos.x, a.pos.z);
+        if (went < step * 0.3) {
+          a.stuck = (a.stuck ?? 0) + dt;
+          if (a.state !== 'follow') {
+            mindOf(a).route = [];
+            mindOf(a).left = Math.min(mindOf(a).left, 0.5);
+          }
+          // Wedged for a while: turn away and slow down rather than jump anywhere.
+          if (a.stuck > 1.5) {
+            a.yaw += Math.PI * (0.5 + Math.random() * 0.5);
+            a.speed *= 0.3;
+            a.stuck = 0;
+          }
+        } else a.stuck = 0;
+        // Legs move with the ground actually covered: no sliding feet.
+        a.phase += (went / spec.stride) * Math.PI * 2;
+        if (went < step * 0.3) a.speed *= 0.6;
+      } else game.space.move(w, 0, 0, dt, { maxStep: 0.4 });
+      game.space.noteSafe(w, game.clock);
+      game.space.checkAndRecover(w);
+      a.pos.set(w.x, w.y, w.z);
       const m = mindOf(a);
       a.graze += ((a.speed < 0.15 && a.state !== 'follow' && m.rest < 0.2 && Math.abs(m.look) < 0.2 && m.mode === 'idle' ? 1 : 0) - a.graze) * Math.min(1, dt * 1.2);
     }
@@ -861,7 +942,10 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
                 const l = Math.hypot(bx - ax, bz - az) || 1;
                 const px = pp.x - ((bx - ax) / l) * 8.5 * level.spec.windK * dt;
                 const pz = pp.z - ((bz - az) / l) * 8.5 * level.spec.windK * dt;
-                if (t.canStep(pp.x, pp.z, px, pz, 0.35)) pp.set(px, pp.y, pz);
+                game.space.move(game.me, px - pp.x, pz - pp.z, dt);
+                pp.set(game.me.x, game.me.y, game.me.z);
+                game.prev = { x: game.me.x, y: game.me.y, z: game.me.z };
+                game.at = { x: pp.x, z: pp.z };
                 tell('gustback', 'The wind pushes you back down. Keep still while it blows, then climb on.', 5);
               }
             } else game.gust.warned = false;
@@ -1052,25 +1136,16 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
     const snap = cam.snap;
     cam.snap = false;
     cam.look.lerp(look, snap ? 1 : Math.min(1, dt * (motion.reduced ? 30 : 9)));
-    // Pull in closer when a tree trunk or a wall stands between the camera and the explorer.
-    let dist = cam.dist;
-    const ox = Math.sin(cam.yaw) * Math.cos(cam.pitch);
-    const oz = Math.cos(cam.yaw) * Math.cos(cam.pitch);
-    for (const o of t.obstacles) {
-      const rx = o.x - cam.look.x;
-      const rz = o.z - cam.look.z;
-      const along = rx * ox + rz * oz;
-      if (along <= 0.5 || along > dist) continue;
-      const side = Math.abs(rx * oz - rz * ox);
-      if (side < o.r + 0.7) dist = Math.max(2.5, Math.min(dist, along - o.r - 0.6));
-    }
-    if (game.boat.on) dist = Math.max(dist, 11);
-    camDist.current += (dist - camDist.current) * Math.min(1, dt * (dist < camDist.current ? 10 : 2));
-    if (snap) camDist.current = dist;
+    // A trunk, wall, house or hill between the camera and the explorer: look over it, or come closer.
+    const fit = game.boat.on ? { pitch: cam.pitch, dist: Math.max(cam.dist, 11) } : game.space.cameraFit(cam.look.x, cam.look.y, cam.look.z, cam.yaw, cam.pitch, cam.dist);
+    camDist.current += (fit.dist - camDist.current) * Math.min(1, dt * (fit.dist < camDist.current ? 10 : 2));
+    camPitch.current += (fit.pitch - camPitch.current) * Math.min(1, dt * (fit.pitch > camPitch.current ? 8 : 2));
+    if (snap) (camDist.current = fit.dist), (camPitch.current = fit.pitch);
+    const cp = camPitch.current;
     const want3 = new THREE.Vector3(
-      cam.look.x + Math.sin(cam.yaw) * Math.cos(cam.pitch) * camDist.current,
-      cam.look.y + Math.sin(cam.pitch) * camDist.current,
-      cam.look.z + Math.cos(cam.yaw) * Math.cos(cam.pitch) * camDist.current,
+      cam.look.x + Math.sin(cam.yaw) * Math.cos(cp) * camDist.current,
+      cam.look.y + Math.sin(cp) * camDist.current,
+      cam.look.z + Math.cos(cam.yaw) * Math.cos(cp) * camDist.current,
     );
     want3.y = Math.max(want3.y, t.floorY(want3.x, want3.z) + 0.7, (t.water ?? -99) + 0.6);
     cam.pos.lerp(want3, snap ? 1 : Math.min(1, dt * (motion.reduced ? 30 : 6)));
@@ -1397,7 +1472,11 @@ function hasWebGL() {
 export default function Adventure({ n }: { n: number }) {
   const app = useAppState();
   const def = WORLDS[n];
-  if (!app.ready) return <View style={st.root} />;
+  const [phys, setPhys] = useState(!!physicsReady());
+  useEffect(() => {
+    if (!phys) loadPhysics().then(() => setPhys(true));
+  }, [phys]);
+  if (!app.ready || !phys) return <View style={st.root} />;
   if (!def)
     return (
       <View style={[st.root, st.center]}>
@@ -1500,7 +1579,14 @@ function World({ def }: { def: WorldDef }) {
 
   const game = useMemo<Game>(() => {
     const s = saveRef.current;
-    const p = s.pos && !t.isWater(s.pos[0], s.pos[2]) ? new THREE.Vector3(...s.pos) : v3(def.start, t);
+    // Collision first, then a checked place to stand: the saved spot if it is
+    // still open and walkable, otherwise the world's start, otherwise the
+    // nearest open ground to it.
+    const space = makeSpace(physicsReady()!, t);
+    const want = s.pos && !t.isWater(s.pos[0], s.pos[2]) && space.okSpot(s.pos[0], s.pos[2], 0.35) ? ([s.pos[0], s.pos[2]] as P2) : null;
+    const spawn = want ?? space.findOpen(def.start[0], def.start[1], 0.35) ?? def.start;
+    const p = new THREE.Vector3(spawn[0], t.floorY(spawn[0], spawn[1]), spawn[1]);
+    const me = space.addWalker('player', 0.35, p.x, p.z);
     player.pos.copy(p);
     player.pos.y = t.floorY(p.x, p.z);
     player.yaw = def.startYaw ?? 0;
@@ -1512,8 +1598,27 @@ function World({ def }: { def: WorldDef }) {
     weather.lift = 0;
     weather.rampUp = 0;
     const back = (def.startYaw ?? 0) + Math.PI;
+    const animals = makeAnimals(def, s, t);
+    for (const a of animals) {
+      const r = Math.min(0.9, Math.max(0.22, SPECS[a.kind].r * a.scale * 0.85));
+      const o = space.findOpen(a.pos.x, a.pos.z, r, 8) ?? [a.pos.x, a.pos.z];
+      a.pos.set(o[0], t.floorY(o[0], o[1]), o[1]);
+      a.w = space.addWalker('animal', r, o[0], o[1]);
+    }
     return {
-      animals: makeAnimals(def, s, t),
+      space,
+      me,
+      acc: 0,
+      cmd: 0,
+      stuck: 0,
+      recovered: 0,
+      wip: 0,
+      wipMax: 0,
+      prev: { x: p.x, y: p.y, z: p.z },
+      at: { x: p.x, z: p.z },
+      safes: [],
+      spawn: [spawn[0], spawn[1]] as P2,
+      animals,
       boats: makeBoats(def, s, t),
       carrying: null,
       target: null,
@@ -1653,6 +1758,33 @@ function World({ def }: { def: WorldDef }) {
     game.pending = null;
   };
 
+  // Back to firm open ground somewhere recent (or the world's start). Story
+  // progress, the backpack and what is carried are untouched.
+  const toSafeGround = useCallback(() => {
+    if (game.boat.on) return;
+    const me = game.me;
+    const pick = [...game.safes].reverse().find((p) => Math.hypot(p.x - me.x, p.z - me.z) > 4 && game.space.okSpot(p.x, p.z, me.r));
+    const o = pick ? [pick.x, pick.z] : game.space.findOpen(def.start[0], def.start[1], me.r) ?? def.start;
+    game.target = null;
+    game.pending = null;
+    game.space.place(me, o[0], o[1]);
+    player.pos.set(me.x, me.y, me.z);
+    game.prev = { x: me.x, y: me.y, z: me.z };
+    game.at = { x: me.x, z: me.z };
+    game.cam.look.copy(player.pos);
+    game.cam.snap = true;
+    game.recovered++;
+  }, [game, def]);
+  useEffect(() => {
+    const sp = game.space;
+    sp.holds++;
+    return () => {
+      sp.holds--;
+      // Freed a moment later, so a quick remount (development mode) keeps it.
+      setTimeout(() => sp.holds || sp.dispose(), 0);
+    };
+  }, [game]);
+
   // Test hooks.
   useEffect(() => {
     (globalThis as Record<string, unknown>).__adv = {
@@ -1696,6 +1828,8 @@ function World({ def }: { def: WorldDef }) {
         return true;
       },
       boat: game.boat,
+      toSafeGround,
+      validate: () => validateSpace(game.space, { spawn: game.spawn, radius: t.radius }),
       /** Tap the ground at x, z (tap-to-go, routed round obstacles). */
       go: (x: number, z: number) => tapGround(new THREE.Vector3(x, t.floorY(x, z), z)),
       flowRoute,
@@ -1765,6 +1899,7 @@ function World({ def }: { def: WorldDef }) {
         <TapMarker game={game} t={t} />
         {LEVELS[lvl].light && <Wayfinder at={game.next} />}
         <WayTrail game={game} t={t} />
+        {debugColliders() && <ColliderView space={game.space} spawn={game.spawn} />}
         <Director def={def} t={t} game={game} move={move} api={api} />
         {Q.post && (
           <EffectComposer multisampling={tier === 'high' ? 4 : 0}>
@@ -1794,6 +1929,9 @@ function World({ def }: { def: WorldDef }) {
           </Pressable>
           <Pressable style={st.pill} onPress={() => setVoices(true)} accessibilityRole="button" accessibilityLabel="Voices and sound">
             <Text style={st.pillText}>Voices and sound</Text>
+          </Pressable>
+          <Pressable style={st.pill} onPress={toSafeGround} accessibilityRole="button" accessibilityLabel="Return to safe ground">
+            <Text style={st.pillText}>Return to safe ground</Text>
           </Pressable>
         </View>
         <View style={st.objective} pointerEvents="box-none">

@@ -12,7 +12,7 @@ export type P2 = [number, number];
 export type Floor = { x0: number; x1: number; z0: number; z1: number; y: number | ((x: number, z: number) => number); rot?: number; cx?: number; cz?: number };
 /** A box that blocks walking (a wall, a house), optionally only while active() is true. */
 export type Block = { x: number; z: number; hx: number; hz: number; rot?: number; active?: () => boolean };
-export type Obstacle = { x: number; z: number; r: number };
+export type Obstacle = { x: number; z: number; r: number; active?: () => boolean };
 
 export type Palette = {
   lush: string;
@@ -57,6 +57,8 @@ export type Terrain = {
   clear: (x: number, z: number, room: number) => boolean;
   floorY: (x: number, z: number) => number;
   canStep: (ax: number, az: number, bx: number, bz: number, r: number) => boolean;
+  /** Is this point under the footprint of a bridge, dock or terrace (whether or not it is there yet)? */
+  covered: (x: number, z: number) => boolean;
 };
 
 function smooth(t: number) {
@@ -79,12 +81,13 @@ export function curve(pts: P2[], step = 2): P2[] {
   return c.getSpacedPoints(n).map((v) => [v.x, v.z]);
 }
 
+// rot is the same as the drawn group's rotation-y (three.js): local x runs along (cos rot, -sin rot).
 function inBox(x: number, z: number, b: { x: number; z: number; hx: number; hz: number; rot?: number }, m = 0) {
   let lx = x - b.x;
   let lz = z - b.z;
   if (b.rot) {
-    const c = Math.cos(-b.rot);
-    const s = Math.sin(-b.rot);
+    const c = Math.cos(b.rot);
+    const s = Math.sin(b.rot);
     [lx, lz] = [lx * c - lz * s, lx * s + lz * c];
   }
   return Math.abs(lx) < b.hx + m && Math.abs(lz) < b.hz + m;
@@ -96,8 +99,8 @@ function inFloor(x: number, z: number, f: Floor) {
   if (f.rot) {
     const cx = f.cx ?? (f.x0 + f.x1) / 2;
     const cz = f.cz ?? (f.z0 + f.z1) / 2;
-    const c = Math.cos(-f.rot);
-    const s = Math.sin(-f.rot);
+    const c = Math.cos(f.rot);
+    const s = Math.sin(f.rot);
     const dx = x - cx;
     const dz = z - cz;
     lx = cx + dx * c - dz * s;
@@ -173,6 +176,7 @@ export function makeTerrain(g: Ground): Terrain {
       for (const b of t.blocks) if (inBox(x, z, b, 1.5 + room)) return false;
       return true;
     },
+    covered: (x, z) => t.floors.some((f) => inFloor(x, z, f)),
     floorY: (x, z) => {
       let h = y(x, z);
       for (const f of t.floors) if (inFloor(x, z, f)) h = Math.max(h, typeof f.y === 'number' ? f.y : f.y(x, z));
@@ -182,10 +186,18 @@ export function makeTerrain(g: Ground): Terrain {
       if (Math.hypot(bx, bz) > g.radius) return false;
       const onFloor = t.floors.some((f) => inFloor(bx, bz, f));
       if (!onFloor && isWater(bx, bz)) return false;
-      // Steep climbs are walls.
-      if (!onFloor && y(bx, bz) - y(ax, az) > 0.9 * Math.hypot(bx - ax, bz - az) + 0.25) return false;
+      // Steep climbs are walls. The slope is measured over a fixed span, so many
+      // tiny steps cannot add up to walking up a cliff (they used to).
+      const run = Math.hypot(bx - ax, bz - az);
+      if (!onFloor && run > 1e-6) {
+        const ux = (bx - ax) / run;
+        const uz = (bz - az) / run;
+        if ((y(ax + ux * 0.5, az + uz * 0.5) - y(ax, az)) / 0.5 > 0.78 && y(bx, bz) > y(ax, az) + 0.02) return false;
+      }
+      if (onFloor && t.floorY(bx, bz) - t.floorY(ax, az) > 0.45) return false;
       for (const b of t.blocks) if ((!b.active || b.active()) && inBox(bx, bz, b, r) && !inBox(ax, az, b, r)) return false;
       for (const o of t.obstacles) {
+        if (o.active && !o.active()) continue;
         const db = Math.hypot(bx - o.x, bz - o.z);
         if (db < o.r + r) return Math.hypot(ax - o.x, az - o.z) < o.r + r && db > Math.hypot(ax - o.x, az - o.z);
       }

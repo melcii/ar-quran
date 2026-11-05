@@ -87,6 +87,10 @@ export function footprint(s: Structure, t: Terrain, isOn: (id?: string) => boole
   const w = s.w ?? 6;
   const d = s.d ?? 5;
   const keep = (r: number) => t.keepClear.push({ x: s.x, z: s.z, r });
+  // A structure that appears or goes away with an activity is solid only while it is there.
+  const shown = s.show || (s.hide && s.type !== 'gate' && s.type !== 'tower') ? () => (!s.show || isOn(s.show)) && (!s.hide || s.type === 'gate' || s.type === 'tower' || !isOn(s.hide)) : undefined;
+  const nb = t.blocks.length;
+  const no = t.obstacles.length;
   const block = (hx: number, hz: number, active?: () => boolean) => t.blocks.push({ x: s.x, z: s.z, hx, hz, rot, active });
   switch (s.type) {
     case 'house':
@@ -156,19 +160,49 @@ export function footprint(s: Structure, t: Terrain, isOn: (id?: string) => boole
       t.floors.push({ x0: s.x - w / 2, x1: s.x + w / 2, z0: s.z - d / 2, z1: s.z + d / 2, y: s.y ?? t.y(s.x, s.z) + (s.h ?? 0.4) });
       keep(Math.max(w, d) * 0.6);
       break;
-    case 'pen':
-      keep((s.w ?? 6) * 0.6);
+    case 'pen': {
+      // The fence ring is solid except for its opening (local +x), like the posts drawn.
+      const r = w / 2;
+      const n = 14;
+      for (let i = 1; i < n; i++) {
+        const a = (i / n) * Math.PI * 2;
+        const lx = Math.cos(a) * r;
+        const lz = Math.sin(a) * r;
+        t.obstacles.push({ x: s.x + lx * Math.cos(rot) + lz * Math.sin(rot), z: s.z - lx * Math.sin(rot) + lz * Math.cos(rot), r: Math.min(0.75, (Math.PI * r) / n) });
+      }
+      keep(w * 0.6);
+      break;
+    }
+    case 'columns': {
+      // Each pillar is solid; the low plinth can be stepped onto.
+      const n = s.n ?? 4;
+      const cw = s.w ?? 8;
+      for (let i = 0; i < n; i++) {
+        const lx = -cw / 2 + (i * cw) / (n - 1);
+        t.obstacles.push({ x: s.x + lx * Math.cos(rot), z: s.z - lx * Math.sin(rot), r: 0.5 });
+      }
+      keep(Math.max(cw, d) * 0.55);
+      break;
+    }
+    case 'bench':
+      block((s.w ?? 2.4) / 2, 0.3);
+      keep(Math.max(w, d) * 0.55);
       break;
     case 'bed':
     case 'pool':
     case 'stones':
     case 'rug':
-    case 'columns':
-    case 'bench':
     case 'boat':
     case 'festoon':
       keep(Math.max(w, d) * 0.55);
       break;
+  }
+  if (shown) {
+    for (const b of t.blocks.slice(nb)) {
+      const prev = b.active;
+      b.active = prev ? () => shown() && prev() : shown;
+    }
+    for (const o of t.obstacles.slice(no)) o.active = shown;
   }
 }
 

@@ -31,9 +31,16 @@ export type Agent<K extends Animal = Animal> = {
   timer: number;
   highlight: boolean;
   scale: number;
+  /** Time spent unable to move toward its goal (for recovery). */
+  stuck?: number;
+  /** 0..1: lowering the head and neck to pass under a doorway. */
+  duck?: number;
   /** Per-animal looks: coat colours, patches, a work yoke (used to tell animals apart). */
   look?: { coat?: string; mark?: string; patches?: boolean; yoke?: boolean; grey?: boolean };
 };
+
+/** Neck tilt (radians forward from upright) when ducking through a doorway. */
+export const DUCK_TILT = 1.5;
 
 type Spec = {
   name: string;
@@ -212,7 +219,11 @@ export function Beast<K extends Animal>({ agent, highlight = false, onDown, onTa
       const down = agent.graze;
       const bob = Math.sin(ph * 2) * 0.05 * sf;
       // Positive x tilts the neck forward (the animal faces +z); grazing bends it down.
-      neck.current.rotation.x = s.neckTilt * (1 - down) + (agent.kind === 'giraffe' ? 1.0 : agent.kind === 'elephant' ? 1.35 : 1.75) * down + bob;
+      let nx = s.neckTilt * (1 - down) + (agent.kind === 'giraffe' ? 1.0 : agent.kind === 'elephant' ? 1.35 : 1.75) * down + bob;
+      // Ducking under a lintel: bring the neck forward and low (a giraffe's head clears the ark's doorway).
+      const duck = agent.duck ?? 0;
+      if (duck > 0 && nx < DUCK_TILT) nx += (DUCK_TILT - nx) * duck;
+      neck.current.rotation.x = nx;
       neck.current.rotation.order = 'YXZ';
       neck.current.rotation.y = look * 0.75;
     }

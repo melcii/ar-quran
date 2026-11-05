@@ -27,13 +27,17 @@ import { QUALITY, guessTier, lowerTier, type QualityTier } from '@/world/quality
 import { Ark, SUPPLY_SPOTS, Supply, Yard, clip, type SupplyKind } from './Ark';
 import { Beast, SPECS, drawBeastIcon, type Agent as AnyAgent } from './Beasts';
 import { Child } from './Child';
-import { ARK, ARK_FLOOR_Y, PADS, RAMP, RIVER_Y, START, STALLS, canStep, floorY, groundY, inHull, onRamp, riverZ, type BeastKind } from './land';
+import { ARK, ARK_FLOOR_Y, PADS, RAMP, RIVER_Y, START, STALLS, WORLD_R, canStep, floorY, groundY, inHull, onRamp, riverZ, type BeastKind } from './land';
 import { nature } from './nature';
 import { signTexture } from './paint';
 import { Birds, Clouds, FarLand, Flood, Flowers, Forest, Grass, Ground, Lighting, Mountains, Rain, River, Rocks, Sky, Wind, type SceneQuality } from './Scenery';
 import { motion, player, pointer, weather, type Move } from './shared';
 import { journal } from '@/journal/store';
 import { makeNav } from '@/creatures/nav';
+import { loadPhysics, physicsReady, type Space, type Walker } from '@/physics/space';
+import { validateSpace } from '@/physics/validate';
+import { ColliderView, debugColliders } from '@/physics/DebugView';
+import { makeArkSpace } from './space';
 import { mindOf, routeTo, think } from '@/creatures/mind';
 
 /** Ways round the hull, the river, trunks and rocks, for the animals (the ramp counts only while it is down). */
@@ -84,7 +88,24 @@ type Game = {
   /** Tap-to-go waypoints round the river, trees and the hull. */
   route?: THREE.Vector3[];
   routeFor?: THREE.Vector3 | null;
+  /** Collision: the hull, door, ramp rails, trees, rocks, river and rim; the explorer's capsule and each animal's. */
+  space: Space;
+  me: Walker;
+  walkers: Map<Agent, Walker>;
+  /** Fixed-step movement (see the adventure worlds): accumulator, commanded speed, time pushing against something. */
+  acc: number;
+  cmd: number;
+  stuck: number;
+  prev: { x: number; y: number; z: number };
+  at: { x: number; z: number };
+  safes: { x: number; y: number; z: number; at: number }[];
+  clock: number;
+  recovered: number;
+  wip: number;
+  wipMax: number;
+  spawn: [number, number];
 };
+const STEP = 1 / 60;
 
 function makeAgents(s: Save): Agent[] {
   const out: Agent[] = [];
@@ -147,12 +168,14 @@ type Api = {
 };
 
 function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRefObject<Move>; api: MutableRefObject<Api>; saveRef: MutableRefObject<Save>; q: SceneQuality }) {
-  const { camera, raycaster, pointer: ndc } = useThree();
+  const { camera, raycaster, pointer: ndc, scene } = useThree();
   const keys = useRef(new Set<string>());
   const lastNear = useRef<string>('');
   const insideRef = useRef<boolean | null>(null);
   const plane = useMemo(() => new THREE.Plane(new THREE.Vector3(0, 1, 0), 0), []);
   const tmp = useMemo(() => new THREE.Vector3(), []);
+  const camDist = useRef(7.5);
+  const camPitch = useRef(0.3);
 
   useEffect(() => {
     const down = (e: KeyboardEvent) => {
@@ -222,7 +245,9 @@ function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRe
         new THREE.Vector3(RAMP.x + off * 0.5, 0, RAMP.z1 + 1.2),
         new THREE.Vector3(RAMP.x + off * 0.3, 0, RAMP.z0 + 0.4),
         local(off * 0.3, aisle),
-        local(st.x + off, aisle),
+        // Through the middle of the stall's gate, one behind the other, then to its place.
+        local(st.x + off * 0.45, aisle),
+        local(st.x + off * 0.45, st.z < 0 ? -1.5 : 1.6),
         local(st.x + off, st.z + (st.z < 0 ? -0.6 : 0.6)),
       ];
     }
@@ -230,7 +255,7 @@ function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRe
 
   // Expose a few test hooks.
   useEffect(() => {
-    (globalThis as any).__arkGame = { game, sendToPad, board, player, weather };
+    (globalThis as any).__arkGame = { game, sendToPad, board, player, weather, scene };
   });
 
   useFrame((st, rawDt) => {
@@ -283,27 +308,70 @@ function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRe
         dz = tz / dw;
       }
     }
+    game.clock += dt;
+    const sp = game.space;
+    const me = game.me;
+    // Something else moved the explorer (a test, the start of the flood): bring the capsule, onto open ground.
+    if (Math.hypot(game.at.x - player.pos.x, game.at.z - player.pos.z) > 0.01) {
+      const o = sp.findOpen(player.pos.x, player.pos.z, me.r, 8) ?? [player.pos.x, player.pos.z];
+      sp.place(me, o[0], o[1]);
+      game.prev = { x: me.x, y: me.y, z: me.z };
+      game.acc = 0;
+    }
+    sp.sync();
     const mag = Math.hypot(dx, dz);
     const want = mag > 0.05 ? (run ? 7 : 4.2) * Math.min(1, mag) : 0;
-    player.speed += (want - player.speed) * Math.min(1, dt * 8);
+    game.cmd += (want - game.cmd) * Math.min(1, dt * 8);
+    if (game.cmd < 0.02) game.cmd = 0;
     if (mag > 0.05) player.yaw = Math.atan2(dx, dz);
-    if (player.speed > 0.02) {
+    // Fixed 60 Hz physics steps: the same result at any frame rate.
+    game.acc += dt;
+    let moved = 0;
+    let ran = 0;
+    while (game.acc >= STEP) {
+      game.acc -= STEP;
+      ran += STEP;
+      game.prev = { x: me.x, y: me.y, z: me.z };
+      if (game.cmd <= 0.02) {
+        sp.move(me, 0, 0, STEP);
+        continue;
+      }
       // Never overshoot a tapped spot (slow frames would make the explorer dance round it).
-      const step = !(ix || iy) && game.target ? Math.min(player.speed * dt, Math.hypot(game.target.x - player.pos.x, game.target.z - player.pos.z)) : player.speed * dt;
-      const fx = Math.sin(player.yaw) * step;
-      const fz = Math.cos(player.yaw) * step;
-      const { x, z } = player.pos;
-      if (canStep(x, z, x + fx, z + fz, 0.35, rampDown)) player.pos.set(x + fx, player.pos.y, z + fz);
-      else if (canStep(x, z, x + fx, z, 0.35, rampDown)) player.pos.x += fx;
-      else if (canStep(x, z, x, z + fz, 0.35, rampDown)) player.pos.z += fz;
-      else if (game.target) game.target = null;
+      const step = !(ix || iy) && game.target ? Math.min(game.cmd * STEP, Math.hypot(game.target.x - me.x, game.target.z - me.z)) : game.cmd * STEP;
+      moved += sp.move(me, Math.sin(player.yaw) * step, Math.cos(player.yaw) * step, STEP);
+    }
+    // The walk cycle follows the ground really covered: against a wall the explorer stands, not walks on the spot.
+    const real = ran > 0 ? moved / ran : player.speed;
+    player.speed += (real - player.speed) * Math.min(1, dt * 12);
+    if (player.speed < 0.05) player.speed = 0;
+    // For tests: the longest time the walk cycle played without the feet really moving.
+    game.wip = ran > 0 && player.speed > 0.3 && real < 0.1 * player.speed ? game.wip + dt : 0;
+    game.wipMax = Math.max(game.wipMax, game.wip);
+    if (game.cmd > 1 && real < game.cmd * 0.15) game.stuck += dt;
+    else game.stuck = 0;
+    if (game.stuck > 0.6 && game.target) {
+      game.target = null;
+      game.pending = null;
+      game.stuck = 0;
+    }
+    sp.noteSafe(me, game.clock);
+    const ls = game.safes[game.safes.length - 1];
+    if (!ls || game.clock - ls.at > 3) {
+      game.safes.push({ ...me.safe, at: game.clock });
+      if (game.safes.length > 20) game.safes.shift();
+    }
+    if (sp.checkAndRecover(me)) {
+      game.recovered++;
+      game.prev = { x: me.x, y: me.y, z: me.z };
+    }
+    const al = Math.min(1, game.acc / STEP);
+    player.pos.set(game.prev.x + (me.x - game.prev.x) * al, game.prev.y + (me.y - game.prev.y) * al, game.prev.z + (me.z - game.prev.z) * al);
+    game.at = { x: player.pos.x, z: player.pos.z };
+    if (moved > 0) {
       const before = player.phase;
-      player.phase += (step / 1.3) * Math.PI;
+      player.phase += (moved / 1.3) * Math.PI;
       if (Math.floor(before / Math.PI) !== Math.floor(player.phase / Math.PI)) nature.step(player.inside || onRamp(player.pos.x, player.pos.z));
     }
-    const fy = floorY(player.pos.x, player.pos.z, weather.lift, rampDown);
-    player.pos.y += (fy - player.pos.y) * Math.min(1, dt * 14);
-    if (Math.abs(fy - player.pos.y) > 1.5) player.pos.y = fy;
     const nowInside = inHull(player.pos.x, player.pos.z, 0);
     if (nowInside !== insideRef.current) {
       insideRef.current = nowInside;
@@ -390,31 +458,49 @@ function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRe
         }
         pace = spec.speed * 0.7;
       }
-      // Walk toward the goal.
+      // Walk toward the goal, swept against the hull, rails, trees, rocks and the other animals.
       let moving = false;
+      const w = game.walkers.get(a)!;
+      if (Math.hypot(w.x - a.pos.x, w.z - a.pos.z) > 0.01) {
+        const o = a.state === 'stall' || a.state === 'board' ? [a.pos.x, a.pos.z] : (sp.findOpen(a.pos.x, a.pos.z, w.r, 6) ?? [a.pos.x, a.pos.z]);
+        sp.place(w, o[0], o[1]);
+      }
+      // Boarding follows a fixed path up the ramp and through the doorway (checked by the tests), so it is not pushed about.
+      const ghost = a.state === 'board' || a.state === 'stall' || (a.state === 'pad' && (a.stuck ?? 0) > 3);
+      const aFloor = ghost ? (x: number, z: number) => floorY(x, z, weather.lift, true) : undefined;
       if (goal) {
         const gx = goal.x - a.pos.x;
         const gz = goal.z - a.pos.z;
         const d = Math.hypot(gx, gz);
         if (d > (a.state === 'follow' ? 0.8 : 0.25)) {
-          const sp = Math.min(pace, d * 1.6 + 0.3);
-          a.speed += (sp - a.speed) * Math.min(1, dt * 4);
+          const spd = Math.min(pace, d * 1.6 + 0.3);
+          a.speed += (spd - a.speed) * Math.min(1, dt * 4);
           const step = a.speed * dt;
-          const nx = a.pos.x + (gx / d) * step;
-          const nz = a.pos.z + (gz / d) * step;
-          const free = a.state === 'board' || a.state === 'drag' || a.state === 'pad' || canStep(a.pos.x, a.pos.z, nx, nz, 0.3, rampDown);
-          if (free) {
-            a.pos.x = nx;
-            a.pos.z = nz;
+          const went = sp.move(w, (gx / d) * step, (gz / d) * step, dt, { maxStep: 0.5, ghost, floor: aFloor });
+          if (went > step * 0.3) {
             moving = true;
             a.yaw = Math.atan2(gx, gz);
-          } else if (a.state === 'wander') {
-            mindOf(a).route = [];
-            mindOf(a).left = Math.min(mindOf(a).left, 0.5);
+            a.stuck = 0;
+          } else {
+            a.stuck = (a.stuck ?? 0) + dt;
+            if (a.state === 'wander') {
+              mindOf(a).route = [];
+              mindOf(a).left = Math.min(mindOf(a).left, 0.5);
+            }
           }
-          a.phase += (step / spec.stride) * Math.PI * 2;
-        }
+          // Legs move with the ground really covered: no sliding hooves.
+          a.phase += (went / spec.stride) * Math.PI * 2;
+        } else sp.move(w, 0, 0, dt, { ghost, floor: aFloor });
+      } else sp.move(w, 0, 0, dt, { ghost, floor: aFloor });
+      if (!ghost) {
+        sp.noteSafe(w, game.clock);
+        sp.checkAndRecover(w);
       }
+      a.pos.set(w.x, a.pos.y, w.z);
+      // Duck through the doorway: a giraffe lowers its neck to pass under the lintel.
+      const lz = a.pos.z - ARK.z;
+      const atDoor = Math.abs(a.pos.x - ARK.x) < ARK.door + 1.5 && lz > ARK.wid / 2 - 3 && lz < ARK.wid / 2 + 3.5;
+      a.duck = (a.duck ?? 0) + ((atDoor ? 1 : 0) - (a.duck ?? 0)) * Math.min(1, dt * 4);
       if (!moving) a.speed += (0 - a.speed) * Math.min(1, dt * 5);
       // Graze while standing still in the meadow.
       const mm = mindOf(a);
@@ -424,9 +510,8 @@ function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRe
       }
       const grazeWant = !moving && (a.state === 'wander' || a.state === 'stall') && mm.rest < 0.2 && Math.abs(mm.look) < 0.2 && Math.sin(t * 0.21 + a.scale * 40) > 0.1 ? 1 : 0;
       a.graze += (grazeWant - a.graze) * Math.min(1, dt * 1.2);
-      const ground = a.state === 'board' || a.state === 'stall' ? floorY(a.pos.x, a.pos.z, weather.lift, true) : floorY(a.pos.x, a.pos.z, weather.lift, rampDown);
-      a.pos.y += (ground - a.pos.y) * Math.min(1, dt * 10);
-      if (Math.abs(ground - a.pos.y) > 2) a.pos.y = ground;
+      // Feet on whatever is underfoot: the walker's height comes from the same floor the land is drawn with.
+      a.pos.y = w.y;
     }
 
     /* ---------- supplies ---------- */
@@ -539,12 +624,20 @@ function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRe
     /* ---------- camera ---------- */
     const cam = game.cam;
     const inside = player.inside;
-    const pitch = inside ? Math.max(cam.pitch, 0.78) : cam.pitch;
-    const dist = inside ? Math.max(cam.dist, 9) : cam.dist;
+    let pitch = inside ? Math.max(cam.pitch, 0.78) : cam.pitch;
+    let dist = inside ? Math.max(cam.dist, 9) : cam.dist;
     const look = tmp.set(pp.x, pp.y + (inside ? 0.8 : 1.35), pp.z);
     const snap = cam.snap;
     cam.snap = false;
     cam.look.lerp(look, snap ? 1 : Math.min(1, dt * (motion.reduced ? 30 : 9)));
+    // Outside, when the hull, a trunk or a hill is in the way: look over it, or come closer.
+    // (Inside, the roof is cut away and the camera looks down from above.)
+    const fit = inside ? { pitch, dist } : game.space.cameraFit(cam.look.x, cam.look.y, cam.look.z, cam.yaw, pitch, dist);
+    camDist.current += (fit.dist - camDist.current) * Math.min(1, dt * (fit.dist < camDist.current ? 10 : 2));
+    camPitch.current += (fit.pitch - camPitch.current) * Math.min(1, dt * (fit.pitch > camPitch.current ? 8 : 2));
+    if (snap || inside) (camDist.current = fit.dist), (camPitch.current = fit.pitch);
+    dist = camDist.current;
+    pitch = camPitch.current;
     const want3 = new THREE.Vector3(
       cam.look.x + Math.sin(cam.yaw) * Math.cos(pitch) * dist,
       cam.look.y + Math.sin(pitch) * dist,
@@ -900,7 +993,11 @@ type Card = { kind: 'narration'; text: string } | { kind: 'reading'; reading: Re
 
 export default function ArkSlice() {
   const app = useAppState();
-  if (!app.ready) return <View style={st.root} />;
+  const [phys, setPhys] = useState(!!physicsReady());
+  useEffect(() => {
+    if (!phys) loadPhysics().then(() => setPhys(true));
+  }, [phys]);
+  if (!app.ready || !phys) return <View style={st.root} />;
   return <Slice />;
 }
 
@@ -948,7 +1045,12 @@ function Slice() {
     // Where to begin: inside the ark if everything is aboard, else where you left off.
     const ready = s.boarded.length === KINDS.length && s.stored.length === SUPPLIES.length;
     if (s.flood === 1) s.flood = 0;
-    const p = ready || s.flood === 2 ? local(4, 1.4) : s.pos ? new THREE.Vector3(...s.pos) : START.clone();
+    const space = makeArkSpace(physicsReady()!, CART, (k) => saveRef.current.boarded.includes(k));
+    // A checked place to begin: the saved spot if still open, else the nearest open ground to it.
+    const want = ready || s.flood === 2 ? local(4, 1.4) : s.pos ? new THREE.Vector3(...s.pos) : START.clone();
+    const o = space.findOpen(want.x, want.z, 0.35) ?? space.findOpen(START.x, START.z, 0.35) ?? [START.x, START.z];
+    const p = new THREE.Vector3(o[0], 0, o[1]);
+    const me = space.addWalker('player', 0.35, p.x, p.z);
     player.pos.copy(p);
     player.pos.y = floorY(p.x, p.z, 0, true);
     player.yaw = Math.PI;
@@ -959,8 +1061,30 @@ function Slice() {
     weather.lift = 0;
     weather.rampUp = 0;
     clip.constant = 999;
+    const agents = makeAgents(s);
+    const walkers = new Map<Agent, Walker>();
+    for (const a of agents) {
+      const r = Math.min(0.9, Math.max(0.22, SPECS[a.kind].r * a.scale * 0.85));
+      const f = space.findOpen(a.pos.x, a.pos.z, r, 6) ?? [a.pos.x, a.pos.z];
+      a.pos.set(f[0], floorY(f[0], f[1], 0, true), f[1]);
+      walkers.set(a, space.addWalker('animal', r, f[0], f[1]));
+    }
     const g: Game = {
-      agents: makeAgents(s),
+      space,
+      me,
+      walkers,
+      acc: 0,
+      cmd: 0,
+      stuck: 0,
+      prev: { x: p.x, y: player.pos.y, z: p.z },
+      at: { x: p.x, z: p.z },
+      safes: [],
+      clock: 0,
+      recovered: 0,
+      wip: 0,
+      wipMax: 0,
+      spawn: [p.x, p.z],
+      agents,
       supplies: makeSupplies(s),
       carrying: null,
       target: null,
@@ -1064,9 +1188,35 @@ function Slice() {
     game.pending = null;
   };
 
+  // Back to firm open ground somewhere recent (or the start of the path). Nothing in the story is undone.
+  const toSafeGround = useCallback(() => {
+    const me = game.me;
+    const pick = [...game.safes].reverse().find((p) => Math.hypot(p.x - me.x, p.z - me.z) > 4 && game.space.okSpot(p.x, p.z, me.r));
+    const o = pick ? [pick.x, pick.z] : (game.space.findOpen(START.x, START.z, me.r) ?? [START.x, START.z]);
+    game.target = null;
+    game.pending = null;
+    game.space.place(me, o[0], o[1]);
+    player.pos.set(me.x, me.y, me.z);
+    game.prev = { x: me.x, y: me.y, z: me.z };
+    game.at = { x: me.x, z: me.z };
+    game.cam.look.copy(player.pos);
+    game.cam.snap = true;
+    game.recovered++;
+  }, [game]);
+  useEffect(() => {
+    const sp = game.space;
+    sp.holds++;
+    return () => {
+      sp.holds--;
+      setTimeout(() => sp.holds || sp.dispose(), 0);
+    };
+  }, [game]);
+
   // Test hooks.
   useEffect(() => {
     (globalThis as any).__ark = {
+      toSafeGround,
+      validate: () => validateSpace(game.space, { spawn: game.spawn, radius: WORLD_R }),
       game,
       player,
       weather,
@@ -1137,6 +1287,7 @@ function Slice() {
         <Animals game={game} near={near} onTap={tapBeast} />
         <Child />
         <TapMarker game={game} />
+        {debugColliders() && <ColliderView space={game.space} spawn={game.spawn} />}
         <Flood />
         <Rain />
         <Director game={game} move={move} api={api} saveRef={saveRef} q={q} />
@@ -1162,6 +1313,9 @@ function Slice() {
         </Pressable>
         <Pressable style={[st.pill, { position: 'absolute', left: 0, top: 92 }]} onPress={() => setVoices(true)} accessibilityRole="button" accessibilityLabel="Voices and sound">
           <Text style={st.pillText}>Voices and sound</Text>
+        </Pressable>
+        <Pressable style={[st.pill, { position: 'absolute', left: 0, top: 138 }]} onPress={toSafeGround} accessibilityRole="button" accessibilityLabel="Return to safe ground">
+          <Text style={st.pillText}>Return to safe ground</Text>
         </Pressable>
         <View style={st.objective} pointerEvents="none">
           <Text style={st.title}>Nuh&apos;s Ark · Surah Hud</Text>

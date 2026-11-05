@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "main": "expo-router/entry",
   "dependencies": {
+    "@dimforge/rapier3d-compat": "^0.14.0",
     "@expo-google-fonts/amiri-quran": "^0.4.1",
     "@expo-google-fonts/fraunces": "^0.4.1",
     "@expo-google-fonts/nunito": "^0.4.2",
