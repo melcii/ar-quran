@@ -6,6 +6,9 @@ import os, re, base64, glob
 import sys
 src=sys.argv[1] if len(sys.argv)>1 else 'dist'; out=sys.argv[2] if len(sys.argv)>2 else 'dist-single'
 os.makedirs(out, exist_ok=True)
+# SPLIT=<bytes>: write chunks bigger than this as separate files next to index.html.
+big=int(os.environ.get('SPLIT','0'))
+for old_f in glob.glob(f'{out}/c-*.js'): os.remove(old_f)
 web=f'{src}/_expo/static/js/web'
 def inline_fonts(s):
     return re.sub(r'"(/assets/[^"]+\.ttf)"', lambda m: '"data:font/ttf;base64,'+base64.b64encode(open(src+m.group(1),'rb').read()).decode()+'"', s)
@@ -28,7 +31,14 @@ for f in seq:
     s=s.replace('window.history', 'window.__H')
     s=re.sub(r'(?<![\w.$])location\.(href|origin|pathname)', r'window.__L.\1', s)
     assert '</script' not in s.lower(), f
-    parts.append(f'<script>/* {f} */\n{s}\n</script>')
+    if big and len(s) > big:
+        # Too large to keep the page under the host's size limit: a sibling
+        # file, loaded in the same order (a plain script tag runs in sequence).
+        name='c-'+re.sub(r'[^A-Za-z0-9_.-]','_',f)
+        open(f'{out}/{name}','w').write(s)
+        parts.append(f'<script src="{name}"></script>')
+    else:
+        parts.append(f'<script>/* {f} */\n{s}\n</script>')
 h=re.sub(r'<script src="/_expo[^"]+" defer></script>','',h)
 h=h.replace('<link rel="icon" href="/favicon.ico" />','')
 boot="""<script>
