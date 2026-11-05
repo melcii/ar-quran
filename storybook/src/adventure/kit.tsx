@@ -138,6 +138,7 @@ export function footprint(s: Structure, t: Terrain, isOn: (id?: string) => boole
       const on = () => (s.show ? isOn(s.show) : true);
       const y0 = t.y(s.x, s.z) + 0.1;
       const y1 = t.y(x1, z1) + 0.1;
+      const deck = bridgeDeck(y0, y1, top, len);
       t.floors.push({
         x0: cx - len / 2 - 0.3,
         x1: cx + len / 2 + 0.3,
@@ -151,7 +152,7 @@ export function footprint(s: Structure, t: Terrain, isOn: (id?: string) => boole
           if (s.type === 'dock') return top;
           // A gentle hump: ends meet the banks, the middle rises.
           const k = Math.min(1, Math.max(0, ((x - s.x) * (x1 - s.x) + (z - s.z) * (z1 - s.z)) / (len * len)));
-          return Math.max(y0 + (y1 - y0) * k, top + Math.sin(k * Math.PI) * 0.6 - (1 - Math.sin(k * Math.PI)) * 0.2);
+          return deck(k);
         },
       });
       break;
@@ -525,6 +526,24 @@ function Tent({ s }: { s: Structure }) {
   );
 }
 
+/**
+ * Height of a bridge deck along its length (k 0..1): a gentle hump over the
+ * water whose ends ease down to meet each bank, so there is no lip to climb.
+ */
+export function bridgeDeck(y0: number, y1: number, top: number, len: number) {
+  const e = Math.min(0.3, 1.8 / Math.max(1, len));
+  const ease = (v: number) => {
+    const c = Math.min(1, Math.max(0, v));
+    return c * c * (3 - 2 * c);
+  };
+  return (k: number) => {
+    const hump = Math.max(y0 + (y1 - y0) * k, top + Math.sin(k * Math.PI) * 0.6 - (1 - Math.sin(k * Math.PI)) * 0.2);
+    if (k < e) return y0 + (hump - y0) * ease(k / e);
+    if (k > 1 - e) return y1 + (hump - y1) * ease((1 - k) / e);
+    return hump;
+  };
+}
+
 function Bridge({ s, t, dock }: { s: Structure; t: Terrain; dock?: boolean }) {
   const [x1, z1] = s.to ?? [s.x + 8, s.z];
   const len = Math.hypot(x1 - s.x, z1 - s.z);
@@ -535,11 +554,12 @@ function Bridge({ s, t, dock }: { s: Structure; t: Terrain; dock?: boolean }) {
   const y1 = t.y(x1, z1) + 0.1;
   const n = Math.round(len / 0.5);
   const base = t.y(s.x, s.z);
+  const deck = bridgeDeck(y0, y1, top, len);
   return (
     <group rotation-y={a}>
       {Array.from({ length: n }, (_, i) => {
         const k = (i + 0.5) / n;
-        const y = dock ? top : Math.max(y0 + (y1 - y0) * k, top + Math.sin(k * Math.PI) * 0.6 - (1 - Math.sin(k * Math.PI)) * 0.2);
+        const y = dock ? top : deck(k);
         return (
           <mesh key={i} material={M(i % 3 ? WOOD : '#7a4e2e', { map: 'planks' })} position={[k * len, y - base - 0.06, 0]} rotation-z={dock ? 0 : -Math.cos(k * Math.PI) * 0.1} castShadow receiveShadow>
             <boxGeometry args={[0.46, 0.12, w]} />
@@ -548,7 +568,7 @@ function Bridge({ s, t, dock }: { s: Structure; t: Terrain; dock?: boolean }) {
       })}
       {Array.from({ length: Math.round(len / 2) + 1 }, (_, i) => {
         const k = i / Math.round(len / 2);
-        const y = dock ? top : Math.max(y0 + (y1 - y0) * k, top + Math.sin(k * Math.PI) * 0.6 - (1 - Math.sin(k * Math.PI)) * 0.2);
+        const y = dock ? top : deck(k);
         return [-1, 1].map((sd) => (
           <group key={`${i}${sd}`} position={[k * len, y - base, (sd * w) / 2]}>
             <mesh material={M(DARK)} position-y={dock ? -0.8 : 0.45}>

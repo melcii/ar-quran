@@ -45,6 +45,8 @@ export type Terrain = {
   y: (x: number, z: number) => number;
   color: (x: number, z: number, y: number, slope: number, out: THREE.Color) => THREE.Color;
   pathDist: (x: number, z: number) => number;
+  /** Path stretches built up into ramps (count of points, highest fill), for tests. */
+  graded?: { n: number; max: number; at: P2 }[];
   isWater: (x: number, z: number) => boolean;
   water: number | null;
   radius: number;
@@ -109,6 +111,59 @@ function inFloor(x: number, z: number, f: Floor) {
   return lx >= f.x0 && lx <= f.x1 && lz >= f.z0 && lz <= f.z1;
 }
 
+/** Steepest a path may climb (rise over run) before it is built up into a ramp. */
+const PATH_GRADE = 0.55;
+
+/**
+ * Along each path, the ground height with every climb steeper than `grade`
+ * filled in from below. Returns only the stretches that needed filling.
+ */
+function gradePaths(paths: P2[][], ground: (x: number, z: number) => number, grade: number, water: number | null) {
+  const out: { pts: { x: number; z: number; lift: number }[]; x0: number; x1: number; z0: number; z1: number }[] = [];
+  for (const p of paths) {
+    const pts: { x: number; z: number; s: number; h: number }[] = [];
+    let s = 0;
+    for (let i = 0; i < p.length - 1; i++) {
+      const [ax, az] = p[i];
+      const [bx, bz] = p[i + 1];
+      const l = Math.hypot(bx - ax, bz - az);
+      const n = Math.max(1, Math.ceil(l / 0.5));
+      for (let k = 0; k < n; k++) {
+        const x = ax + ((bx - ax) * k) / n;
+        const z = az + ((bz - az) * k) / n;
+        pts.push({ x, z, s: s + (l * k) / n, h: ground(x, z) });
+      }
+      s += l;
+    }
+    const last = p[p.length - 1];
+    if (last) pts.push({ x: last[0], z: last[1], s, h: ground(last[0], last[1]) });
+    // Banks and fords near water are left exactly as they are.
+    const wet = (h: number) => water != null && h < water + 1;
+    const P = pts.map((q) => q.h);
+    for (let i = 1; i < P.length; i++) if (!wet(pts[i].h)) P[i] = Math.max(P[i], P[i - 1] - grade * (pts[i].s - pts[i - 1].s));
+    for (let i = P.length - 2; i >= 0; i--) if (!wet(pts[i].h)) P[i] = Math.max(P[i], P[i + 1] - grade * (pts[i + 1].s - pts[i].s));
+    let run: { x: number; z: number; lift: number }[] = [];
+    const flush = () => {
+      if (run.length > 1)
+        out.push({ pts: run, x0: Math.min(...run.map((q) => q.x)), x1: Math.max(...run.map((q) => q.x)), z0: Math.min(...run.map((q) => q.z)), z1: Math.max(...run.map((q) => q.z)) });
+      run = [];
+    };
+    pts.forEach((q, i) => {
+      const lift = P[i] - q.h;
+      if (lift > 0.02) {
+        if (!run.length && i > 0) run.push({ x: pts[i - 1].x, z: pts[i - 1].z, lift: 0 });
+        run.push({ x: q.x, z: q.z, lift });
+      }
+      else {
+        if (run.length) run.push({ x: q.x, z: q.z, lift: 0 });
+        flush();
+      }
+    });
+    flush();
+  }
+  return out;
+}
+
 export function makeTerrain(g: Ground): Terrain {
   const paths = (g.paths ?? []).map((p) => p);
   const pw = g.pathWidth ?? 1.9;
@@ -127,12 +182,34 @@ export function makeTerrain(g: Ground): Terrain {
     for (const p of paths) for (let i = 0; i < p.length - 1; i++) d = Math.min(d, segDist(x, z, p[i], p[i + 1]));
     return d;
   };
-  const y = (x: number, z: number) => {
+  const ground = (x: number, z: number) => {
     let h = g.base(x, z);
     for (const f of flats) {
       const d = Math.hypot(x - f.x, z - f.z);
       const k = smooth((f.r + 5 - d) / 5);
       if (k > 0) h = h * (1 - k) + (f.y ?? g.base(f.x, f.z)) * k;
+    }
+    return h;
+  };
+  // Where a path climbs a hill more steeply than a child can walk, it is built
+  // up into a gentle earth ramp (raised, never cut, so hilltops stay as they are).
+  const ramps = gradePaths(paths, ground, PATH_GRADE, g.water ?? null);
+  const y = (x: number, z: number) => {
+    let h = ground(x, z);
+    for (const r of ramps) {
+      if (x < r.x0 - pw - 2 || x > r.x1 + pw + 2 || z < r.z0 - pw - 2 || z > r.z1 + pw + 2) continue;
+      let best = 99;
+      let lift = 0;
+      for (let i = 0; i < r.pts.length - 1; i++) {
+        const a = r.pts[i];
+        const b = r.pts[i + 1];
+        const ex = b.x - a.x;
+        const ez = b.z - a.z;
+        const u = Math.min(1, Math.max(0, ((x - a.x) * ex + (z - a.z) * ez) / (ex * ex + ez * ez || 1)));
+        const d = Math.hypot(x - a.x - ex * u, z - a.z - ez * u);
+        if (d < best) (best = d), (lift = a.lift + (b.lift - a.lift) * u);
+      }
+      if (best < pw + 2) h += lift * smooth(Math.min(1, (pw + 2 - best) / 2));
     }
     const dp = pathDist(x, z);
     if (dp < pw + 0.6) h -= 0.1 * smooth(1 - dp / (pw + 0.6));
@@ -141,6 +218,10 @@ export function makeTerrain(g: Ground): Terrain {
   const isWater = (x: number, z: number) => g.water != null && y(x, z) < g.water - 0.25;
   const t: Terrain = {
     y,
+    graded: ramps.map((r) => {
+      const top = r.pts.reduce((a, b) => (b.lift > a.lift ? b : a));
+      return { n: r.pts.length, max: top.lift, at: [top.x, top.z] as P2 };
+    }),
     pathDist,
     water: g.water ?? null,
     radius: g.radius,
