@@ -37,6 +37,8 @@ import { makeNav } from '@/creatures/nav';
 import { loadPhysics, physicsReady, type Space, type Walker } from '@/physics/space';
 import { validateSpace } from '@/physics/validate';
 import { ColliderView, debugColliders } from '@/physics/DebugView';
+import { auditScene } from '@/physics/sceneSolids';
+import { PropSolids } from '@/physics/PropSolids';
 import { makeArkSpace } from './space';
 import { mindOf, routeTo, think } from '@/creatures/mind';
 
@@ -73,7 +75,14 @@ type Near =
 
 type Supplies = Record<SupplyKind, { state: 'cart' | 'carried' | 'flying' | 'stored'; pos: THREE.Vector3; t: number }>;
 
+/** Keeps the scene on the game for the missing-collider audit. */
+function SceneGrab({ game }: { game: Game }) {
+  game.scene = useThree((s) => s.scene);
+  return null;
+}
+
 type Game = {
+  scene?: THREE.Scene;
   agents: Agent[];
   supplies: Supplies;
   carrying: SupplyKind | null;
@@ -1006,6 +1015,7 @@ function Slice() {
   // Continue Adventure on the home screen comes back here.
   useEffect(() => noteAdventure({ kind: 'ark' }), []);
   const set = app.settings;
+  const propsRef = useRef<THREE.Group>(null);
   const rec = useRecitation();
   const { width, height } = useWindowDimensions();
   const portrait = height > width;
@@ -1217,6 +1227,8 @@ function Slice() {
     (globalThis as any).__ark = {
       toSafeGround,
       validate: () => validateSpace(game.space, { spawn: game.spawn, radius: WORLD_R }),
+      /** Drawn parts that look solid but have no collider (should be none). */
+      audit: () => (game.scene ? auditScene(game.scene, game.space, WORLD_R) : null),
       game,
       player,
       weather,
@@ -1270,23 +1282,31 @@ function Slice() {
         <Lighting q={q} />
         <Wind />
         <Ground q={q} onTap={tapGround} />
-        <Grass q={q} />
-        <Flowers q={q} />
+        <group userData={{ noSolid: true }}>
+          <Grass q={q} />
+          <Flowers q={q} />
+        </group>
         <Forest q={q} />
-        <Rocks q={q} />
         <River />
         <FarLand />
         <Mountains />
         <Clouds />
         <Birds />
-        <Yard />
-        <PadSigns />
-        <Ark boarded={data.boarded} stored={data.stored} inside={inside} />
-        <Lanterns read={data.read} onTap={tapLantern} />
-        <Cart game={game} onTap={tapSupply} />
-        <Animals game={game} near={near} onTap={tapBeast} />
-        <Child />
-        <TapMarker game={game} />
+        <group ref={propsRef}>
+          <Rocks q={q} />
+          <Yard />
+          <PadSigns />
+          <Ark boarded={data.boarded} stored={data.stored} inside={inside} />
+          <Lanterns read={data.read} onTap={tapLantern} />
+          <Cart game={game} onTap={tapSupply} />
+        </group>
+        <PropSolids root={propsRef} space={game.space} />
+        <group userData={{ noSolid: true }}>
+          <Animals game={game} near={near} onTap={tapBeast} />
+          <Child />
+          <TapMarker game={game} />
+        </group>
+        <SceneGrab game={game} />
         {debugColliders() && <ColliderView space={game.space} spawn={game.spawn} />}
         <Flood />
         <Rain />

@@ -44,6 +44,8 @@ import { loadPhysics, physicsReady, type Space, type Walker } from '@/physics/sp
 import { makeSpace } from './space';
 import { validateSpace } from '@/physics/validate';
 import { ColliderView, debugColliders } from '@/physics/DebugView';
+import { PropSolids } from '@/physics/PropSolids';
+import { auditScene } from '@/physics/sceneSolids';
 import { useActionHint } from '@/audio/hooks';
 import { ListeningSheet } from '@/audio/ListeningSettings';
 import type { MechEnv } from './mechanics/base';
@@ -106,6 +108,8 @@ type Game = {
   nav: Nav;
   /** The physics space: every solid, the water and the edge. */
   space: Space;
+  /** The drawn scene (for the missing-collider audit). */
+  scene?: THREE.Scene;
   /** The explorer's capsule in it. */
   me: Walker;
   /** Fixed-step accumulator for movement, commanded walking speed, time spent pushing against something. */
@@ -571,6 +575,7 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
     u.run();
   }
   (game as unknown as { act: (k: string) => void }).act = act;
+  (game as unknown as { uses: () => Use[] }).uses = uses;
   useEffect(() => {
     cue.holding = false;
     cue.leading = false;
@@ -1296,9 +1301,13 @@ function Things({ def, t, data, game, carrying, act, isOn }: { def: WorldDef; t:
               </group>
             );
           case 'guide':
-            return game.boats
-              .filter((b) => b.task === task.id)
-              .map((b) => <GuidedBoat key={`${task.id}-${b.idx}`} state={b} color={task.boats[b.idx].color} sail={task.boats[b.idx].sail} active={open(task) && !b.done && !b.moving} onTap={() => act(`boat:${task.id}:${b.idx}`)} />);
+            return (
+              <group key={task.id} userData={{ noSolid: true }}>
+                {game.boats
+                  .filter((b) => b.task === task.id)
+                  .map((b) => <GuidedBoat key={`${task.id}-${b.idx}`} state={b} color={task.boats[b.idx].color} sail={task.boats[b.idx].sail} active={open(task) && !b.done && !b.moving} onTap={() => act(`boat:${task.id}:${b.idx}`)} />)}
+              </group>
+            );
           case 'stand':
             return <StandPlate key={task.id} x={task.at[0]} z={task.at[1]} t={t} r={task.r ?? 1.3} style={task.style} k={() => Math.min(1, (game.hold[task.id] ?? 0) / (task.secs * level.spec.holdK))} done={done} active={open(task)} />;
           case 'reach':
@@ -1576,6 +1585,7 @@ function World({ def }: { def: WorldDef }) {
   const [region, setRegion] = useState('');
   const [showList, setShowList] = useState(!portrait);
   const [status, setStatus] = useState('');
+  const propsRef = useRef<THREE.Group>(null);
 
   const game = useMemo<Game>(() => {
     const s = saveRef.current;
@@ -1637,7 +1647,9 @@ function World({ def }: { def: WorldDef }) {
       mech: {},
       told: {},
       status: '',
-      nav: makeNav(t.canStep, { radius: t.radius, cell: 1.4, y: t.floorY }),
+      // Routes for tap-to-go: the terrain's rules plus every collider in the
+      // space (activity props included), never into a solid.
+      nav: makeNav((ax, az, bx, bz, r) => t.canStep(ax, az, bx, bz, r) && (!space.blockedAt(bx, bz, r * 0.9) || space.blockedAt(ax, az, r * 0.9)), { radius: t.radius, cell: 1.4, y: t.floorY }),
       route: [],
       routeFor: null,
       way: { pts: [], until: 0, at: -9 },
@@ -1785,6 +1797,23 @@ function World({ def }: { def: WorldDef }) {
     };
   }, [game]);
 
+  /** Activity props changed their colliders: never leave the explorer or the spawn inside one. */
+  function propsMoved() {
+    const sp = game.space;
+    const me = game.me;
+    if (sp.blockedAt(me.x, me.z, me.r * 0.8, me.collider)) {
+      const o = sp.findOpen(me.x, me.z, me.r, 8);
+      if (o) {
+        sp.place(me, o[0], o[1]);
+        player.pos.set(o[0], me.y, o[1]);
+        game.prev = { x: o[0], y: me.y, z: o[1] };
+        game.at = { x: o[0], z: o[1] };
+      }
+    }
+    if (!sp.okSpot(game.spawn[0], game.spawn[1], 0.35)) game.spawn = sp.findOpen(game.spawn[0], game.spawn[1], 0.35) ?? game.spawn;
+    game.safes = game.safes.filter((p) => !sp.blockedAt(p.x, p.z, 0.3));
+  }
+
   // Test hooks.
   useEffect(() => {
     (globalThis as Record<string, unknown>).__adv = {
@@ -1829,7 +1858,23 @@ function World({ def }: { def: WorldDef }) {
       },
       boat: game.boat,
       toSafeGround,
-      validate: () => validateSpace(game.space, { spawn: game.spawn, radius: t.radius }),
+      validate: () =>
+        validateSpace(game.space, {
+          spawn: game.spawn,
+          radius: t.radius,
+          paths: (def.ground.paths ?? []) as [number, number][][],
+          zones: (game as unknown as { uses: () => Use[] }).uses().filter((u) => !u.key.startsWith('ani:') && !u.key.startsWith('boat:') && !u.key.startsWith('ashore:')).map((u) => ({ key: u.key, x: u.pos.x, z: u.pos.z, reach: u.reach })),
+        }),
+      /** Drawn parts that look solid but have no collider (should be none). */
+      audit: () => {
+        if (!game.scene) return null;
+        const a = auditScene(game.scene, game.space, t.radius);
+        // Tree trunks are drawn merged into one mesh: check each placed tree instead.
+        const trees = placed.trees.filter((k) => Math.hypot(k.x, k.z) < t.radius && !game.space.blockedAt(k.x, k.z, 0.04));
+        return { ...a, trees: placed.trees.filter((k) => Math.hypot(k.x, k.z) < t.radius).length, uncovered: [...a.uncovered, ...trees.map((k) => ({ what: `${k.kind} tree`, geo: 'trunk', x: k.x, z: k.z, h: 0 }))] };
+      },
+      /** Everything usable now, with where it is and how close you must be. */
+      uses: () => (game as unknown as { uses: () => Use[] }).uses().map((u) => ({ key: u.key, label: u.label, x: u.pos.x, z: u.pos.z, reach: u.reach })),
       /** Tap the ground at x, z (tap-to-go, routed round obstacles). */
       go: (x: number, z: number) => tapGround(new THREE.Vector3(x, t.floorY(x, z), z)),
       flowRoute,
@@ -1880,22 +1925,37 @@ function World({ def }: { def: WorldDef }) {
         <Lighting q={q} look={look} />
         <Wind />
         <GroundMesh t={t} q={q} onTap={tapGround} />
-        <GrassField t={t} veg={def.veg} q={q} />
-        <FlowerField t={t} veg={def.veg} q={q} />
-        <Trees t={t} placed={placed} q={q} />
-        <RockField t={t} placed={placed} q={q} />
+        <group userData={{ noSolid: true }}>
+          <GrassField t={t} veg={def.veg} q={q} />
+          <FlowerField t={t} veg={def.veg} q={q} />
+        </group>
+        {/* Leafy canopies are soft; trunks are checked from where each tree was placed. */}
+        <group userData={{ noSolid: true }}>
+          <Trees t={t} placed={placed} q={q} />
+        </group>
+
         {t.water != null && <StillWater t={t} look={look} />}
-        {t.water != null && <PlayerBoat boat={game.boat} water={t.water} />}
+        {t.water != null && (
+          <group userData={{ noSolid: true }}>
+            <PlayerBoat boat={game.boat} water={t.water} />
+          </group>
+        )}
         <FarLand t={t} tint={def.far} />
         <Mountains color={def.mountains?.color} height={def.mountains?.height} seed={def.seed} />
         {(look.clouds ?? 1) > 0 && <CloudLayer look={look} />}
         {look.birds !== false && <Flock center={def.start} />}
         {look.birds !== false && <GroundBirds spots={birdSpots} t={t} />}
         {def.tasks.some((x) => mechFor(x)?.weather) && <Rain />}
-        <Things def={def} t={t} data={data} game={game} carrying={carrying} act={act} isOn={isOn} />
-        <Animals game={game} onTap={act} />
-        <Carried item={carriedLoad?.item ?? null} color={carriedLoad?.color} />
-        <Child />
+        <group ref={propsRef}>
+          <RockField t={t} placed={placed} q={q} />
+          <Things def={def} t={t} data={data} game={game} carrying={carrying} act={act} isOn={isOn} />
+        </group>
+        <PropSolids root={propsRef} space={game.space} onScene={(sc) => (game.scene = sc)} onChange={propsMoved} />
+        <group userData={{ noSolid: true }}>
+          <Animals game={game} onTap={act} />
+          <Carried item={carriedLoad?.item ?? null} color={carriedLoad?.color} />
+          <Child />
+        </group>
         <TapMarker game={game} t={t} />
         {LEVELS[lvl].light && <Wayfinder at={game.next} />}
         <WayTrail game={game} t={t} />

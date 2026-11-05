@@ -10,10 +10,16 @@ export type Report = {
   solids: { tested: number; pushes: number; entered: { tag: string; x: number; z: number }[] };
   slopes: { tested: number; climbs: { x: number; z: number; rise: number; run: number }[] };
   edge: { tested: number; escaped: { x: number; z: number }[] };
+  /** Every footpath walked end to end, steering along it as a child would. */
+  paths: { tested: number; walked: number; stuck: { path: number; x: number; z: number; to: [number, number] }[] };
+  /** Every activity spot: somewhere open to stand within reach of it. */
+  zones: { tested: number; unreachable: { key: string; x: number; z: number; reach: number }[] };
   ok: boolean;
 };
 
-export function validateSpace(sp: Space, opts: { spawn: [number, number]; r?: number; radius: number; seed?: number }): Report {
+type Zone = { key: string; x: number; z: number; reach: number };
+
+export function validateSpace(sp: Space, opts: { spawn: [number, number]; r?: number; radius: number; seed?: number; paths?: [number, number][][]; zones?: Zone[] }): Report {
   const r = opts.r ?? 0.35;
   let seed = opts.seed ?? 7;
   const rnd = () => ((seed = (seed * 16807) % 2147483647) / 2147483647);
@@ -98,12 +104,61 @@ export function validateSpace(sp: Space, opts: { spawn: [number, number]; r?: nu
     if (Math.hypot(probe.x, probe.z) > opts.radius + 0.5) escaped.push({ x: +probe.x.toFixed(1), z: +probe.z.toFixed(1) });
   }
 
+  // 5. Footpaths: start at each end and steer point to point along it.
+  const stuck: Report['paths']['stuck'] = [];
+  let walked = 0;
+  (opts.paths ?? []).forEach((pts, pi) => {
+    for (const way of [pts, pts.slice().reverse()]) {
+      const o0 = sp.findOpen(way[0][0], way[0][1], r, 4);
+      if (!o0) continue;
+      sp.place(probe, o0[0], o0[1]);
+      for (let i = 1; i < way.length; i++) {
+        // A bench or a lantern standing on the path: aim past it, as a child would.
+        if (i < way.length - 1 && sp.blockedAt(way[i][0], way[i][1], r + 0.5)) continue;
+        const [tx, tz] = way[i];
+        const d0 = Math.hypot(tx - probe.x, tz - probe.z);
+        let left = Math.ceil((d0 / 4.2) * 60 * 2.5) + 60;
+        let best = d0;
+        let since = 0;
+        while (left-- > 0) {
+          const dx = tx - probe.x;
+          const dz = tz - probe.z;
+          const d = Math.hypot(dx, dz);
+          if (d < 0.9) break;
+          sp.move(probe, (dx / d) * 4.2 * H, (dz / d) * 4.2 * H, H);
+          walked += 4.2 * H;
+          if (d < best - 0.05) (best = d), (since = 0);
+          else if (++since > 90) break; // a second and a half with no headway
+        }
+        const d = Math.hypot(tx - probe.x, tz - probe.z);
+        // Path ends may sit on a feature (a lantern, a gate): close is enough there.
+        const endOk = i === way.length - 1 && d < 2.6;
+        if (d >= 0.9 && !endOk) {
+          stuck.push({ path: pi, x: +probe.x.toFixed(2), z: +probe.z.toFixed(2), to: [tx, tz] });
+          break;
+        }
+      }
+    }
+  });
+
+  // 6. Activity spots: open, walkable ground within reach of each.
+  const unreachable: Report['zones']['unreachable'] = [];
+  for (const u of opts.zones ?? []) {
+    if (u.reach <= 0) continue;
+    let ok = false;
+    for (let d = 0; d <= u.reach && !ok; d += 0.3)
+      for (let a = 0; a < Math.PI * 2 && !ok; a += 0.35 / Math.max(0.5, d)) ok = sp.okSpot(u.x + Math.cos(a) * d, u.z + Math.sin(a) * d, r);
+    if (!ok) unreachable.push({ key: u.key, x: +u.x.toFixed(2), z: +u.z.toFixed(2), reach: u.reach });
+  }
+
   sp.removeWalker(probe);
   return {
     spawn,
     solids: { tested: solids.length, pushes, entered },
     slopes: { tested, climbs },
     edge: { tested: 16, escaped },
-    ok: spawn.ok && !entered.length && !climbs.length && !escaped.length,
+    paths: { tested: (opts.paths ?? []).length, walked: Math.round(walked), stuck },
+    zones: { tested: (opts.zones ?? []).filter((u) => u.reach > 0).length, unreachable },
+    ok: spawn.ok && !entered.length && !climbs.length && !escaped.length && !stuck.length && !unreachable.length,
   };
 }

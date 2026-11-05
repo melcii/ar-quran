@@ -1,4 +1,6 @@
-// Validate one world's collision space, then exercise it live: walking, the camera, recovery, scale.
+// Validate one world: missing-collider audit, the collision space (solids, slopes,
+// edge, every footpath, every activity spot), then live checks: walking into
+// solids, the camera, recovery, scale.
 const { chromium, devices } = require('playwright');
 const W = process.env.W || '1';
 const DEV = process.env.DEV || 'desktop';
@@ -14,9 +16,13 @@ const DEV = process.env.DEV || 'desktop';
   await p.goto(ark ? 'http://localhost:8090/ark?q=low' : `http://localhost:8090/adventure/${W}?q=low`, { timeout: 180000 });
   await p.waitForFunction((h) => !!globalThis[h], H, { timeout: 400000 });
   await p.waitForTimeout(2500);
+  // Let the activity props register their colliders (twice a second of game time).
+  await p.waitForFunction((h) => (globalThis[h].game.clock ?? 99) > 1.2, H, { timeout: 300000 }).catch(() => {});
   const out = { world: W, dev: DEV };
+  out.audit = await p.evaluate((h) => { const a = globalThis[h].audit?.(); if (!a) return null; const ex = globalThis[h].game.space.extra.get('props'); return { parts: a.parts, props: ex ? ex.solids.length : 0, uncoveredN: a.uncovered.length, uncovered: a.uncovered.slice(0, 25), wide: a.wide.slice(0, 10) }; }, H);
   const t0 = Date.now();
   out.report = await p.evaluate((h) => globalThis[h].validate(), H);
+  out.graded = await p.evaluate((h) => globalThis[h].t?.graded ?? null, H);
   out.validateMs = Date.now() - t0;
   // Live: walk into the nearest solids with the keyboard, check never inside one, then the camera at 8 angles.
   const live = await p.evaluate(async (h) => {

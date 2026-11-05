@@ -36,9 +36,11 @@ export const GRAVITY = 18;
 const SUB = 0.12;
 
 export type Solid =
-  | { kind: 'circle'; x: number; z: number; r: number; tag: string; active?: () => boolean }
+  | { kind: 'circle'; x: number; z: number; r: number; tag: string; active?: () => boolean; top?: number; cam?: boolean }
   /** rot as in three.js rotation-y: the box's local x runs along (cos rot, -sin rot). */
-  | { kind: 'box'; x: number; z: number; hx: number; hz: number; rot?: number; tag: string; active?: () => boolean };
+  | { kind: 'box'; x: number; z: number; hx: number; hz: number; rot?: number; tag: string; active?: () => boolean; top?: number; cam?: boolean };
+// top: height of the solid above the ground (the camera passes over lower
+// ones; 2.4 m if not given). cam: false lets the camera through (thin posts).
 
 export type SpaceSpec = {
   solids: Solid[];
@@ -99,6 +101,51 @@ export class Space {
     this.world.step();
   }
 
+  /** Solids that come from what is drawn, refreshed while the world runs (see sceneSolids.ts). */
+  extra = new Map<string, { solids: Solid[]; cs: RAPIER.Collider[] }>();
+  /** Bumped whenever the set of solids changes (the debug view redraws). */
+  version = 0;
+  private camTop = new Map<number, number>();
+  private extraHandles = new Set<number>();
+
+  /** Is the spot already covered by a hand-made collider, water or the edge (not counting the extra solids)? */
+  baseBlocked(x: number, z: number, r: number) {
+    let hit = false;
+    this.world.intersectionsWithShape(
+      { x, y: 0, z },
+      { x: 0, y: 0, z: 0, w: 1 },
+      new this.R.Ball(r),
+      (c) => {
+        if (this.extraHandles.has(c.handle) || !c.isEnabled()) return true;
+        hit = true;
+        return false;
+      },
+      undefined,
+      groups(G_PLAYER, G_STATIC),
+    );
+    return hit;
+  }
+
+  /** Replace one named group of extra solids. */
+  setDynamic(key: string, solids: Solid[]) {
+    const old = this.extra.get(key);
+    if (old) {
+      const gone = new Set(old.cs.map((c) => c.handle));
+      for (const c of old.cs) {
+        this.camTop.delete(c.handle);
+        this.world.removeCollider(c, false);
+      }
+      this.toggles = this.toggles.filter((t) => !gone.has(t.c.handle));
+    }
+    if (old) for (const c of old.cs) this.extraHandles.delete(c.handle);
+    const cs = solids.map((s) => this.addSolid(s));
+    for (const c of cs) this.extraHandles.add(c.handle);
+    this.extra.set(key, { solids, cs });
+    this.solids = [...this.spec.solids, ...[...this.extra.values()].flatMap((e) => e.solids)];
+    this.version++;
+    this.world.step();
+  }
+
   private addSolid(s: Solid) {
     const R = this.R;
     const d =
@@ -110,6 +157,9 @@ export class Space {
     d.setCollisionGroups(groups(G_STATIC, G_ANIMAL | G_PLAYER));
     const c = this.world.createCollider(d);
     if (s.active) this.toggles.push({ c, on: s.active });
+    if (s.cam === false) this.camTop.set(c.handle, -1);
+    else if (s.top != null) this.camTop.set(c.handle, s.top);
+    return c;
   }
 
   /** Scan the grid for blocked cells and merge each row's runs into boxes. */
@@ -345,10 +395,12 @@ export class Space {
       true,
       (h) => {
         if (this.ground.has(h.collider.handle)) return true;
+        const top = this.camTop.get(h.collider.handle) ?? 2.4;
+        if (top < 0) return true;
         const s = h.timeOfImpact;
         const x = lx + dx * s;
         const z = lz + dz * s;
-        if (ly + dy * s < this.spec.floor(x, z) + 2.6) d = Math.min(d, s);
+        if (ly + dy * s < this.spec.floor(x, z) + top + 0.2) d = Math.min(d, s);
         return true;
       },
       undefined,

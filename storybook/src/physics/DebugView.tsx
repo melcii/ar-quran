@@ -1,9 +1,10 @@
 // Development view of the collision space: add ?debug=colliders to the URL.
+// Hand-made colliders are orange, colliders read from drawn parts cyan.
 // Solids are drawn as orange wire shapes standing on the ground, water and
 // edge cells as flat blue tiles, cells that open (a bridge) as green, and the
 // checked spawn point as a white post. Nothing here is shown to children.
 import { useFrame } from '@react-three/fiber';
-import { useMemo, useRef } from 'react';
+import { useMemo, useRef, useState } from 'react';
 import * as THREE from 'three';
 import type { Space } from './space';
 
@@ -18,9 +19,12 @@ export const debugColliders = () => {
 export function ColliderView({ space, spawn }: { space: Space; spawn?: [number, number] }) {
   const f = space.spec.floor;
   const group = useRef<THREE.Group>(null);
+  // Activity props add and drop colliders as they change: redraw then.
+  const [ver, setVer] = useState(space.version);
   const objs = useMemo(() => {
     const out: THREE.Object3D[] = [];
     const wire = new THREE.MeshBasicMaterial({ color: '#ff8a1f', wireframe: true, depthTest: false, transparent: true, opacity: 0.8 });
+    const propWire = new THREE.MeshBasicMaterial({ color: '#25e0ff', wireframe: true, depthTest: false, transparent: true, opacity: 0.8 });
     const off = new THREE.MeshBasicMaterial({ color: '#888', wireframe: true, depthTest: false, transparent: true, opacity: 0.3 });
     for (const s of space.solids) {
       const y = f(s.x, s.z);
@@ -30,7 +34,10 @@ export function ColliderView({ space, spawn }: { space: Space; spawn?: [number, 
           : new THREE.Mesh(new THREE.BoxGeometry(s.hx * 2, 2.4, s.hz * 2), wire);
       m.position.set(s.x, y + 1.2, s.z);
       if (s.kind === 'box') m.rotation.y = s.rot ?? 0;
-      m.userData = { s, on: wire, off };
+      // Colliders taken from drawn activity props are cyan.
+      const own = s.tag.startsWith('drawn part') ? propWire : wire;
+      m.material = own;
+      m.userData = { s, on: own, off };
       m.renderOrder = 999;
       out.push(m);
     }
@@ -53,8 +60,10 @@ export function ColliderView({ space, spawn }: { space: Space; spawn?: [number, 
       out.push(m);
     }
     return out;
-  }, [space, f, spawn]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [space, f, spawn, ver]);
   useFrame(() => {
+    if (space.version !== ver) setVer(space.version);
     for (const o of objs) {
       const { s, w, on, off } = o.userData as { s?: { active?: () => boolean }; w?: { x: number; y: number; z: number }; on?: THREE.Material; off?: THREE.Material };
       if (s?.active) (o as THREE.Mesh).material = s.active() ? on! : off!;
