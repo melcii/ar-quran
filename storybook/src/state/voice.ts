@@ -67,11 +67,11 @@ export function stopVoice() {
 }
 
 /** Read text aloud in the child-like narration voice. */
-export function speakKid(text: string, cb: Done = {}, rateK = 1) {
+export function speakKid(text: string, cb: Done = {}, rateK = 1, volume = 1) {
   stopVoice();
   const id = run;
   if (!web()) {
-    Speech.speak(text, { language: 'en', pitch: 1.25, rate: 0.92 * rateK, ...cb });
+    Speech.speak(text, { language: 'en', pitch: 1.25, rate: 0.92 * rateK, volume, ...cb });
     return;
   }
   const v = pickVoice();
@@ -85,6 +85,7 @@ export function speakKid(text: string, cb: Done = {}, rateK = 1) {
     // A little life: questions lift, and the pitch wanders slightly.
     u.pitch = Math.min(2, v.pitch + (/\?$/.test(queue[i]) ? 0.08 : 0) + (i % 2 ? 0.03 : -0.02));
     u.rate = v.rate * rateK;
+    u.volume = Math.max(0, Math.min(1, volume));
     u.onend = () => setTimeout(() => next(i + 1), 180);
     u.onerror = (e) => (e.error === 'interrupted' || e.error === 'canceled' ? cb.onStopped?.() : cb.onError?.());
     window.speechSynthesis.speak(u);

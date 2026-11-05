@@ -2,12 +2,13 @@
 // matching / ordering / sorting games, the whole surah, the closing
 // reflection, and "About this world". Quran text, translation, explanation
 // and activities are always labelled apart.
-import { speakKid } from '@/state/voice';
+import { AyahPlayer } from '@/audio/AyahPlayer';
+import { director } from '@/audio/director';
+import { useCardNarration } from '@/audio/hooks';
 import { useMemo, useState } from 'react';
 import { FlatList, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { ContentLabel } from '@/components/ui';
 import { basmalahFor, getSurah, getVerse, toArabicDigits } from '@/content/quran';
-import { recitationEnabled } from '@/state/Recitation';
 import { fonts } from '@/theme';
 import type { QuizGame, Reading, Ref, Task, WorldDef } from './types';
 
@@ -30,8 +31,9 @@ export function verse([s, a]: Ref) {
   return { surah: s, ayah: a, ref: `${s}:${a}`, arabic: v?.arabic_text ?? null, translation: v?.translation_text ?? null };
 }
 
+/** A "read aloud" button: the narrator reads this now. */
 export function speak(text: string) {
-  speakKid(text);
+  director.readNow(text);
 }
 
 function shuffle<T>(xs: T[], seed: number) {
@@ -51,21 +53,7 @@ type Props = { card: Card; world: WorldDef; portrait: boolean; onClose: () => vo
 
 export function CardView({ card, world, portrait, onClose, onSolved, listen }: Props) {
   const width = portrait ? '94%' : 600;
-  if (card.kind === 'narration')
-    return (
-      <View style={[st.card, { width } as never, st.cardBottom]}>
-        <ContentLabel kind="explanation" extra="narration written for this game" />
-        <Text style={st.cardText}>{card.text}</Text>
-        <View style={st.row}>
-          <Pressable style={st.btnGhost} onPress={() => speak(card.text)}>
-            <Text style={st.btnGhostText}>Read aloud</Text>
-          </Pressable>
-          <Pressable style={st.btn} onPress={onClose} accessibilityRole="button">
-            <Text style={st.btnText}>Continue</Text>
-          </Pressable>
-        </View>
-      </View>
-    );
+  if (card.kind === 'narration') return <NarrationCard text={card.text} width={width} onClose={onClose} />;
   if (card.kind === 'reading') return <ReadingCard reading={card.reading} width={width} portrait={portrait} onClose={onClose} listen={listen} />;
   if (card.kind === 'quiz') return <QuizCard task={card.task} width={width} portrait={portrait} onClose={onClose} onSolved={onSolved} />;
   if (card.kind === 'book') return <BookCard surah={world.surah} width={width} portrait={portrait} onClose={onClose} />;
@@ -102,20 +90,20 @@ export function CardView({ card, world, portrait, onClose, onSolved, listen }: P
   );
 }
 
-function AyahBlock({ r, listen }: { r: Ref; listen?: (s: number, a: number) => void }) {
-  const v = verse(r);
+function NarrationCard({ text, width, onClose }: { text: string; width: string | number; onClose: () => void }) {
+  useCardNarration(text);
   return (
-    <View style={{ gap: 6 }}>
-      <ContentLabel kind="quran" extra={`Surah ${v.surah}, ayah ${v.ayah}`} />
-      {v.arabic ? <Text style={st.arabic}>{v.arabic}</Text> : <Text style={st.small}>Arabic text not available.</Text>}
-      <ContentLabel kind="translation" extra="Saheeh International" />
-      <Text style={st.cardText}>{v.translation ?? 'Translation not available.'}</Text>
-      {listen &&
-        (recitationEnabled ? (
-          <Pressable style={st.btnGhost} onPress={() => listen(v.surah, v.ayah)}>
-            <Text style={st.btnGhostText}>Listen to the recitation</Text>
-          </Pressable>
-        ) : null)}
+    <View style={[st.card, { width } as never, st.cardBottom]}>
+      <ContentLabel kind="explanation" extra="narration written for this game" />
+      <Text style={st.cardText}>{text}</Text>
+      <View style={st.row}>
+        <Pressable style={st.btnGhost} onPress={() => speak(text)}>
+          <Text style={st.btnGhostText}>Read aloud</Text>
+        </Pressable>
+        <Pressable style={st.btn} onPress={onClose} accessibilityRole="button">
+          <Text style={st.btnText}>Continue</Text>
+        </Pressable>
+      </View>
     </View>
   );
 }
@@ -125,10 +113,7 @@ function ReadingCard({ reading, width, portrait, onClose, listen }: { reading: R
     <View style={[st.card, { width } as never, st.cardMid]}>
       <ScrollView style={{ maxHeight: portrait ? 470 : 430 }} contentContainerStyle={{ gap: 12 }}>
         <Text style={st.cardTitle}>{reading.title}</Text>
-        {reading.refs.map((r) => (
-          <AyahBlock key={r.join(':')} r={r} listen={listen} />
-        ))}
-        {!recitationEnabled && <Text style={st.small}>Recitation will play here once a licensed recording is confirmed.</Text>}
+        <AyahPlayer refs={reading.refs} note={reading.note} />
         <ContentLabel kind="explanation" />
         <Text style={st.cardText}>{reading.note}</Text>
       </ScrollView>

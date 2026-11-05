@@ -16,6 +16,7 @@ import { worldFor } from './settings';
 import { ActivityGame } from './ActivityGame';
 import { WORLDS } from '@/adventure/worlds';
 import { arkProgress, chaptersFor, worldProgress } from '@/home/adventures';
+import { ListeningSettings } from '@/audio/ListeningSettings';
 import { passagesOf, type Move, type Passage as PassageT } from './SurahWorld';
 
 const glass = 'rgba(24, 18, 12, 0.6)';
@@ -712,10 +713,11 @@ export function SettingsPanel({ onClose, surah, ayah }: { onClose: () => void; s
   const set = (p: Partial<Settings>) => app.updateSettings(p);
   return (
     <Sheet title="Settings" onClose={onClose}>
+      <Text style={s.sheetHeading}>Voices and sound</Text>
+      <ListeningSettings />
       <Choice label="Ambience (wind, sea, rooms)" value={st.ambienceVolume} options={[[0, 'Off'], [0.3, 'Soft'], [0.6, 'Medium'], [1, 'Full']]} onChange={(v) => set({ ambienceVolume: v })} />
-      <Choice label="Effects (page turns, doorways)" value={st.effectsVolume} options={[[0, 'Off'], [0.4, 'Soft'], [0.7, 'Medium'], [1, 'Full']]} onChange={(v) => set({ effectsVolume: v })} />
-      <Choice label="Quiet mode" value={st.quietMode} options={[[false, 'Off'], [true, 'On']]} onChange={(v) => set({ quietMode: v })} />
-      <Text style={s.small}>There is no background music. Recitation is off until a licensed recording is added.</Text>
+      <Choice label="Quiet mode for ambience and effects" value={st.quietMode} options={[[false, 'Off'], [true, 'On']]} onChange={(v) => set({ quietMode: v })} />
+      <Text style={s.sheetHeading}>Picture and text</Text>
       <Choice label="Reduced motion" value={st.reducedMotion} options={[[false, 'Off'], [true, 'On']]} onChange={(v) => set({ reducedMotion: v })} />
       {app.systemReducedMotion && <Text style={s.small}>Your device asks for reduced motion, so camera moves are already short.</Text>}
       <Choice label="Graphics quality" value={st.quality} options={[['auto', 'Auto'], ['low', 'Low'], ['medium', 'Medium'], ['high', 'High']]} onChange={(v) => set({ quality: v })} />

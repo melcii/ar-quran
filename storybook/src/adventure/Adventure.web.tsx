@@ -40,6 +40,8 @@ import { journal } from '@/journal/store';
 import { celebrate, cue, cueFor } from '@/profile/figure/cue';
 import { mechFor } from './mechanics';
 import { noteAdventure } from '@/home/adventures';
+import { useActionHint } from '@/audio/hooks';
+import { ListeningSheet } from '@/audio/ListeningSettings';
 import type { MechEnv } from './mechanics/base';
 
 /* ------------------------------- saving ------------------------------- */
@@ -1485,6 +1487,9 @@ function World({ def }: { def: WorldDef }) {
 
   const move = useRef<Move>({ x: 0, y: 0, run: false });
   const [near, setNear] = useState<{ key: string; label: string } | null>(null);
+  const [voices, setVoices] = useState(false);
+  // A short spoken hint the first time each kind of action is in reach.
+  useActionHint(near?.label);
   const [cards, setCards] = useState<Card[]>([]);
   const [hint, setHint] = useState('');
   const [quiet, setQuiet] = useState(set.quietMode);
@@ -1787,6 +1792,9 @@ function World({ def }: { def: WorldDef }) {
           <Pressable style={st.pill} onPress={() => router.push('/journal' as never)} accessibilityRole="button" accessibilityLabel="Open my discovery journal">
             <Text style={st.pillText}>My journal</Text>
           </Pressable>
+          <Pressable style={st.pill} onPress={() => setVoices(true)} accessibilityRole="button" accessibilityLabel="Voices and sound">
+            <Text style={st.pillText}>Voices and sound</Text>
+          </Pressable>
         </View>
         <View style={st.objective} pointerEvents="box-none">
           <Text style={st.title}>
@@ -1975,6 +1983,8 @@ function World({ def }: { def: WorldDef }) {
           </Pressable>
         </View>
       )}
+
+      {voices && <ListeningSheet onClose={() => setVoices(false)} />}
 
       <Text style={st.footer} pointerEvents="none">
         Draft for scholarly review · places, buildings and activities are game ideas, not historical claims · no prophet, angel or anything of the unseen is shown

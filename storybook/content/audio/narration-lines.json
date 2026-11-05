@@ -1,0 +1,3873 @@
+{
+ "about": "Every narration line the worlds speak, for recording. Record each line as written; name the file by its id and list it in catalog.json clips with line = id. These are the game's own words, never Quran text. Lines marked quotesTranslation contain words quoted from the Saheeh International translation; reviewers should check each quote against the translation before it is recorded.",
+ "count": 480,
+ "lines": [
+  {
+   "id": "l1tx6zn1",
+   "text": "Welcome to the valley of the ark. This is a picture made for learning, not an exact view of the real place. The Quran tells us that Allah commanded Nuh (peace be upon him) to build a ship. Out of respect, no prophet is shown in this game. Follow the path to the ark.",
+   "category": "narration",
+   "surah": 11,
+   "chapter": "ark",
+   "key": "ark.welcome"
+  },
+  {
+   "id": "l14he88c",
+   "text": "The Quran says the ship was made of planks and nails. Its shape and size here are an artist’s idea.",
+   "category": "narration",
+   "surah": 11,
+   "chapter": "ark",
+   "key": "ark.ark"
+  },
+  {
+   "id": "l1aba163",
+   "text": "The Quran says a pair of each kind was carried. It does not tell us which animals, or how they came aboard, so this part is a game: find each pair, then lead them to the pad with their picture.",
+   "category": "narration",
+   "surah": 11,
+   "chapter": "ark",
+   "key": "ark.animals"
+  },
+  {
+   "id": "l18jh0lu",
+   "text": "Try the giraffes first: tap one to lead the pair, or press and drag a giraffe onto its pad.",
+   "category": "narration",
+   "surah": 11,
+   "chapter": "ark",
+   "key": "ark.giraffe"
+  },
+  {
+   "id": "l88r0r4",
+   "text": "Supplies are a game idea too: the Quran does not list what was stored. Carry the grain, hay and water from the cart to the store inside the ark.",
+   "category": "narration",
+   "surah": 11,
+   "chapter": "ark",
+   "key": "ark.supplies"
+  },
+  {
+   "id": "lwaw9wu",
+   "text": "Everything is aboard. Go inside the ark.",
+   "category": "narration",
+   "surah": 11,
+   "chapter": "ark",
+   "key": "ark.ready"
+  },
+  {
+   "id": "ld6yknl",
+   "text": "The rain begins and the water rises. You are safe inside. Read the lantern by the door while you wait.",
+   "category": "narration",
+   "surah": 11,
+   "chapter": "ark",
+   "key": "ark.rain"
+  },
+  {
+   "id": "lhw5314",
+   "text": "The rain stops and the water grows calm. Read what the Quran says came next.",
+   "category": "narration",
+   "surah": 11,
+   "chapter": "ark",
+   "key": "ark.calm"
+  },
+  {
+   "id": "l1ebwyhi",
+   "text": "Allah comforted Nuh (peace be upon him) when few people believed.",
+   "category": "narration",
+   "surah": 11,
+   "chapter": "ark",
+   "key": "ark.reading.r1"
+  },
+  {
+   "id": "l1bkb5s7",
+   "text": "The ship was built of planks and nails, under Allah’s watch and guidance.",
+   "category": "narration",
+   "surah": 11,
+   "chapter": "ark",
+   "key": "ark.reading.r2"
+  },
+  {
+   "id": "l1koduq",
+   "text": "Allah commanded that a pair of each kind be carried on the ship.",
+   "category": "narration",
+   "surah": 11,
+   "chapter": "ark",
+   "key": "ark.reading.r3"
+  },
+  {
+   "id": "lf4pxk8",
+   "text": "Boarding the ship began with the name of Allah.",
+   "category": "narration",
+   "surah": 11,
+   "chapter": "ark",
+   "key": "ark.reading.r4"
+  },
+  {
+   "id": "l8du26q",
+   "text": "Then the rain was held back, the water went down, and the ship came to rest on Al-Judiyy.",
+   "category": "narration",
+   "surah": 11,
+   "chapter": "ark",
+   "key": "ark.reading.r5"
+  },
+  {
+   "id": "lvchxvm",
+   "text": "Welcome to the Seven Gates. Al-Fatihah, \"The Opening\", has seven ayahs and is recited in every prayer. Here are seven chambers, one for each ayah. Each gate opens in its own way. The gates are a learning game, not something described in the surah.",
+   "category": "narration",
+   "surah": 1,
+   "chapter": "world-1",
+   "key": "w1.welcome"
+  },
+  {
+   "id": "l1ksmx23",
+   "text": "The first chamber. Muslims begin with \"In the name of Allah\". Stand still on the round threshold stone to begin.",
+   "category": "narration",
+   "surah": 1,
+   "chapter": "world-1",
+   "key": "w1.tasks[0].intro",
+   "quotesTranslation": true
+  },
+  {
+   "id": "l5efu8h",
+   "text": "In the name of Allah, the Entirely Merciful, the Especially Merciful. Muslims begin good things with these words. In this way of counting, this first ayah is part of Al-Fatihah.",
+   "category": "narration",
+   "surah": 1,
+   "chapter": "world-1",
+   "key": "w1.tasks[0].reading.note"
+  },
+  {
+   "id": "lcnwyjc",
+   "text": "All praise belongs to Allah, Lord of all the worlds. Look out of the three windows of this garden court: the land, the water and the sky.",
+   "category": "narration",
+   "surah": 1,
+   "chapter": "world-1",
+   "key": "w1.tasks[1].intro"
+  },
+  {
+   "id": "lxl24so",
+   "text": "All praise belongs to Allah, the Lord of all the worlds: the land, the sea, the sky, and everything in them.",
+   "category": "narration",
+   "surah": 1,
+   "chapter": "world-1",
+   "key": "w1.tasks[1].after.note"
+  },
+  {
+   "id": "l16tyvzs",
+   "text": "This chamber is dry and dusty. Open the spring in the middle and see what changes.",
+   "category": "narration",
+   "surah": 1,
+   "chapter": "world-1",
+   "key": "w1.tasks[2].intro"
+  },
+  {
+   "id": "l1mo69nm",
+   "text": "Water runs, and the chamber turns green. Mercy is named twice in Al-Fatihah.",
+   "category": "narration",
+   "surah": 1,
+   "chapter": "world-1",
+   "key": "w1.tasks[2].outro"
+  },
+  {
+   "id": "l16x259x",
+   "text": "Allah is the Entirely Merciful, the Especially Merciful. His mercy is named again in the surah, so we keep remembering it.",
+   "category": "narration",
+   "surah": 1,
+   "chapter": "world-1",
+   "key": "w1.tasks[2].after.note"
+  },
+  {
+   "id": "l1ni6gar",
+   "text": "A quiet hall with a sundial. Stand still on the stone and watch while time passes. Every moment, and every deed in it, counts.",
+   "category": "narration",
+   "surah": 1,
+   "chapter": "world-1",
+   "key": "w1.tasks[3].intro"
+  },
+  {
+   "id": "lb4ni5a",
+   "text": "Allah is the Sovereign of the Day of Recompense, the day when every deed, small or large, is repaid with perfect fairness.",
+   "category": "narration",
+   "surah": 1,
+   "chapter": "world-1",
+   "key": "w1.tasks[3].reading.note"
+  },
+  {
+   "id": "l161vgue",
+   "text": "A prayer hall. Stand on the rug in the middle, facing the niche in the east wall, and keep still.",
+   "category": "narration",
+   "surah": 1,
+   "chapter": "world-1",
+   "key": "w1.tasks[4].intro"
+  },
+  {
+   "id": "lb6veep",
+   "text": "We worship Allah alone, and we ask Him alone for help. Every prayer says this.",
+   "category": "narration",
+   "surah": 1,
+   "chapter": "world-1",
+   "key": "w1.tasks[4].reading.note"
+  },
+  {
+   "id": "ljpy85",
+   "text": "A hall of branching passages. Some turn aside and end at a wall. Find the way that runs straight through to the far gate.",
+   "category": "narration",
+   "surah": 1,
+   "chapter": "world-1",
+   "key": "w1.tasks[5].intro"
+  },
+  {
+   "id": "l1qzj9k0",
+   "text": "Guide us to the straight path. We ask for guidance every day, even when we already know the way.",
+   "category": "narration",
+   "surah": 1,
+   "chapter": "world-1",
+   "key": "w1.tasks[5].reading.note"
+  },
+  {
+   "id": "lt4p6s3",
+   "text": "The path of those Allah has favoured, not of those who earned His anger or who went astray. Now read all seven ayahs together, from the first to the last, and listen to each one where a recitation is available.",
+   "category": "narration",
+   "surah": 1,
+   "chapter": "world-1",
+   "key": "w1.tasks[6].reading.note"
+  },
+  {
+   "id": "lpd47rn",
+   "text": "You passed through seven chambers: you began with His name, looked out on the worlds, saw a dry place made green, waited while time passed, faced the niche, and found the straight way.",
+   "category": "narration",
+   "surah": 1,
+   "chapter": "world-1",
+   "key": "w1.finale.body[0]"
+  },
+  {
+   "id": "l1gsgtdh",
+   "text": "Al-Fatihah begins with praise, remembers mercy and the Day of Recompense, and then turns into a prayer for guidance.",
+   "category": "narration",
+   "surah": 1,
+   "chapter": "world-1",
+   "key": "w1.finale.body[1]"
+  },
+  {
+   "id": "lub1jep",
+   "text": "Welcome to the Great Story Atlas. Al-Baqarah, \"The Cow\", is the longest surah of the Quran, with 286 ayahs and several stories. This hall holds a map of four story lands and a door into each. The first door is open; each next door opens when you finish the land before it. The map on the floor lights up as you go.",
+   "category": "narration",
+   "surah": 2,
+   "chapter": "world-2",
+   "key": "w2.welcome"
+  },
+  {
+   "id": "l1xer2oc",
+   "text": "Allah told the angels that He would place people on the earth to look after it. The angels asked a question, and Allah answered that He knows what they do not know.",
+   "category": "narration",
+   "surah": 2,
+   "chapter": "world-2",
+   "key": "w2.tasks[0].reading.note"
+  },
+  {
+   "id": "lljj8b3",
+   "text": "The next ayahs say that Allah taught Adam the names of all things. Here is a small game inspired by that: walk to five things in this garden and learn what each is called.",
+   "category": "narration",
+   "surah": 2,
+   "chapter": "world-2",
+   "key": "w2.tasks[1].intro"
+  },
+  {
+   "id": "l1bjuqcx",
+   "text": "Allah taught Adam the names of all things. The angels said they knew only what Allah had taught them. Knowledge is a gift from Allah.",
+   "category": "narration",
+   "surah": 2,
+   "chapter": "world-2",
+   "key": "w2.tasks[1].after.note"
+  },
+  {
+   "id": "lkdy61s",
+   "text": "Iblees refused out of pride. Adam and his wife were told not to approach one tree, and Satan made them slip. Then Adam received words from his Lord, and Allah accepted his repentance. When we make a mistake, we can turn back to Allah.",
+   "category": "narration",
+   "surah": 2,
+   "chapter": "world-2",
+   "key": "w2.tasks[2].reading.note"
+  },
+  {
+   "id": "l1b7e22e",
+   "text": "Allah promised that guidance would come, and that those who follow it will have no fear and will not grieve.",
+   "category": "narration",
+   "surah": 2,
+   "chapter": "world-2",
+   "key": "w2.tasks[3].reading.note"
+  },
+  {
+   "id": "l1tsrkc",
+   "text": "The gate to the Village of the Cow is open. Follow the path west.",
+   "category": "narration",
+   "surah": 2,
+   "chapter": "world-2",
+   "key": "w2.tasks[3].outro"
+  },
+  {
+   "id": "l173bwao",
+   "text": "Musa told his people that Allah commanded them to slaughter a cow. They asked if he was mocking them. Instead of simply obeying, they began to ask question after question.",
+   "category": "narration",
+   "surah": 2,
+   "chapter": "world-2",
+   "key": "w2.tasks[4].reading.note"
+  },
+  {
+   "id": "l1208qc2",
+   "text": "This is the Village of the Cow. In the pasture are ten cows. You will hear the answers to the people's questions in the Quran's own order. After each answer, send back to the far pasture every cow that does not fit, until only one is left.",
+   "category": "narration",
+   "surah": 2,
+   "chapter": "world-2",
+   "key": "w2.tasks[4].intro"
+  },
+  {
+   "id": "lypmab9",
+   "text": "They asked what kind of cow. The answer: neither old nor very young, but in between. \"So do what you are commanded.\"",
+   "category": "narration",
+   "surah": 2,
+   "chapter": "world-2",
+   "key": "w2.tasks[5].rounds[0].reading.note",
+   "quotesTranslation": true
+  },
+  {
+   "id": "lkfur3g",
+   "text": "They asked about her colour. The answer: a yellow cow, bright in colour, pleasing to those who see her.",
+   "category": "narration",
+   "surah": 2,
+   "chapter": "world-2",
+   "key": "w2.tasks[5].rounds[1].reading.note"
+  },
+  {
+   "id": "lusay81",
+   "text": "They asked again, saying all cows looked alike to them. The answer: a cow not trained to plough the earth or to water the fields.",
+   "category": "narration",
+   "surah": 2,
+   "chapter": "world-2",
+   "key": "w2.tasks[5].rounds[2].reading.note"
+  },
+  {
+   "id": "lm6jayv",
+   "text": "The same ayah goes on: sound, with no spot on her. Then they said, \"Now you have come with the truth.\" Each question had made the task harder for them, not easier.",
+   "category": "narration",
+   "surah": 2,
+   "chapter": "world-2",
+   "key": "w2.tasks[5].rounds[3].reading.note",
+   "quotesTranslation": true
+  },
+  {
+   "id": "lvfb9hn",
+   "text": "One cow is left, and she fits every answer. You listened to each description in order. The door to the Valley of the House is open in the atlas hall, and the gate on the path is open too.",
+   "category": "narration",
+   "surah": 2,
+   "chapter": "world-2",
+   "key": "w2.tasks[5].outro"
+  },
+  {
+   "id": "l1z1jl9",
+   "text": "The ayahs then tell why: someone had been killed and the people argued about who did it. Allah brought out what they were hiding, as a sign that He gives life to the dead, so that people would reason. The game shows none of this; it is for reading.",
+   "category": "narration",
+   "surah": 2,
+   "chapter": "world-2",
+   "key": "w2.tasks[5].after.note"
+  },
+  {
+   "id": "lt0id3n",
+   "text": "Allah tested Ibrahim (Abraham) with commands, and he fulfilled them. Allah made him a leader for people.",
+   "category": "narration",
+   "surah": 2,
+   "chapter": "world-2",
+   "key": "w2.tasks[6].reading.note"
+  },
+  {
+   "id": "ljchccl",
+   "text": "Ayah 127 says that Ibrahim and Isma'il raised the foundations of the House. Here there is only a low outline of stones to walk round. At each corner, pause and read.",
+   "category": "narration",
+   "surah": 2,
+   "chapter": "world-2",
+   "key": "w2.tasks[7].intro"
+  },
+  {
+   "id": "ln1volv",
+   "text": "The House was made a place of return for people and a place of safety. Ibrahim and Isma'il were told to keep it pure for those who worship there.",
+   "category": "narration",
+   "surah": 2,
+   "chapter": "world-2",
+   "key": "w2.tasks[7].points[0].reading.note"
+  },
+  {
+   "id": "lnc06mq",
+   "text": "Ibrahim asked Allah to make the city secure and to provide its people with fruits.",
+   "category": "narration",
+   "surah": 2,
+   "chapter": "world-2",
+   "key": "w2.tasks[7].points[1].reading.note"
+  },
+  {
+   "id": "l8tv0ht",
+   "text": "While they raised the foundations, they prayed: \"Our Lord, accept this from us. You are the Hearing, the Knowing.\"",
+   "category": "narration",
+   "surah": 2,
+   "chapter": "world-2",
+   "key": "w2.tasks[7].points[2].reading.note",
+   "quotesTranslation": true
+  },
+  {
+   "id": "l1jz0kh5",
+   "text": "They asked Allah to make them and their children submit to Him, and to send a messenger from among them who would teach the Book and wisdom.",
+   "category": "narration",
+   "surah": 2,
+   "chapter": "world-2",
+   "key": "w2.tasks[7].points[3].reading.note"
+  },
+  {
+   "id": "l1rjsaqf",
+   "text": "You walked all the way round. The door to the Community District is open in the atlas hall, and the gate on the path is open too.",
+   "category": "narration",
+   "surah": 2,
+   "chapter": "world-2",
+   "key": "w2.tasks[7].outro"
+  },
+  {
+   "id": "lyq339r",
+   "text": "Spending in the way of Allah is like one seed of grain that grows seven spikes, with a hundred grains in each. Allah multiplies the reward for whom He wills.",
+   "category": "narration",
+   "surah": 2,
+   "chapter": "world-2",
+   "key": "w2.tasks[8].reading.note"
+  },
+  {
+   "id": "l182qw1p",
+   "text": "The harvest is in. Ayah 273 speaks of people in need who do not ask, so others think they are well off. Take a basket to each house and leave it quietly at the door, without a word, as the ayahs ahead advise.",
+   "category": "narration",
+   "surah": 2,
+   "chapter": "world-2",
+   "key": "w2.tasks[10].intro"
+  },
+  {
+   "id": "lc7ti5x",
+   "text": "Those who give and do not remind others of it, or hurt them, have their reward with their Lord. Giving openly is good; giving quietly to those in need is better.",
+   "category": "narration",
+   "surah": 2,
+   "chapter": "world-2",
+   "key": "w2.tasks[10].after.note"
+  },
+  {
+   "id": "lzmwojd",
+   "text": "You walked through the atlas of Al-Baqarah: names in the garden and the words of repentance; the herd narrowed down answer by answer; the outline in the valley and the prayer \"accept this from us\"; seven rows planted and baskets left quietly at doors.",
+   "category": "narration",
+   "surah": 2,
+   "chapter": "world-2",
+   "key": "w2.finale.body[0]"
+  },
+  {
+   "id": "l1ud0lss",
+   "text": "Al-Baqarah has many more lessons. You can read all 286 of its ayahs in the book.",
+   "category": "narration",
+   "surah": 2,
+   "chapter": "world-2",
+   "key": "w2.finale.body[1]"
+  },
+  {
+   "id": "ljwcwrs",
+   "text": "Welcome to the Sanctuary of Maryam. Surah Ali 'Imran, \"The Family of Imran\", tells of a mother who gave her child to the service of Allah, of Maryam who grew up devoted in prayer, and of patience when things are hard. It is evening, and the lamps are lit. Walk through the gate into the sanctuary.",
+   "category": "narration",
+   "surah": 3,
+   "chapter": "world-3",
+   "key": "w3.welcome"
+  },
+  {
+   "id": "lyq9mbm",
+   "text": "The wife of Imran promised Allah that her child would be dedicated to His service. She gave birth to a girl and named her Maryam (Mary), and asked Allah to protect her and her children.",
+   "category": "narration",
+   "surah": 3,
+   "chapter": "world-3",
+   "key": "w3.tasks[0].reading.note"
+  },
+  {
+   "id": "l10heu69",
+   "text": "Go into the courtyard to the lamp-lit prayer niche. Ayah 37 says that every time Zakariyya came in to Maryam in the prayer chamber, he found provision with her. Come in, walk out of the gate, and come back, and see what is different each time.",
+   "category": "narration",
+   "surah": 3,
+   "chapter": "world-3",
+   "key": "w3.tasks[1].intro"
+  },
+  {
+   "id": "l1vvdvnk",
+   "text": "You come into the prayer chamber. It is quiet, and a lamp burns. Now walk out of the sanctuary gate, and then come back.",
+   "category": "narration",
+   "surah": 3,
+   "chapter": "world-3",
+   "key": "w3.tasks[1].notes[0]"
+  },
+  {
+   "id": "l1hluy92",
+   "text": "You come back, and there is fruit by the niche that was not there before. In this game it is a picture of the provision in 3:37. Walk out once more and come back.",
+   "category": "narration",
+   "surah": 3,
+   "chapter": "world-3",
+   "key": "w3.tasks[1].notes[1]"
+  },
+  {
+   "id": "l1okht55",
+   "text": "Again something new is there. Every time, there was provision.",
+   "category": "narration",
+   "surah": 3,
+   "chapter": "world-3",
+   "key": "w3.tasks[1].notes[2]"
+  },
+  {
+   "id": "l15yz33g",
+   "text": "Allah accepted her with good acceptance and made her grow well, and put her in the care of Zakariyya. Every time he entered upon her in the prayer chamber he found provision with her. He asked, \"Maryam, where does this come from?\" She said, \"It is from Allah. Allah provides for whom He wills without account.\"",
+   "category": "narration",
+   "surah": 3,
+   "chapter": "world-3",
+   "key": "w3.tasks[1].reading.note",
+   "quotesTranslation": true
+  },
+  {
+   "id": "ldzc9r2",
+   "text": "There, Zakariyya prayed for a good child, though he was old. The angels called to him while he stood praying in the chamber: Allah gives you good news of Yahya (John). The angels are not pictured.",
+   "category": "narration",
+   "surah": 3,
+   "chapter": "world-3",
+   "key": "w3.tasks[2].reading.note"
+  },
+  {
+   "id": "lzje2ja",
+   "text": "Behind the sanctuary, a walled passage leads toward the mountain. Its stones hold more of the story, in order.",
+   "category": "narration",
+   "surah": 3,
+   "chapter": "world-3",
+   "key": "w3.tasks[2].outro"
+  },
+  {
+   "id": "lnskvnx",
+   "text": "The angels said: Maryam, Allah has chosen you and purified you, and chosen you above the women of the worlds. Be devoutly obedient to your Lord and pray.",
+   "category": "narration",
+   "surah": 3,
+   "chapter": "world-3",
+   "key": "w3.tasks[3].points[0].reading.note"
+  },
+  {
+   "id": "lx97qol",
+   "text": "The angels gave Maryam good news of a son, the Messiah, Isa (Jesus), son of Maryam, honoured in this world and the next.",
+   "category": "narration",
+   "surah": 3,
+   "chapter": "world-3",
+   "key": "w3.tasks[3].points[1].reading.note"
+  },
+  {
+   "id": "lfi3na8",
+   "text": "Maryam asked how she could have a child when no man had touched her. The answer: Allah creates what He wills; when He decrees a matter, He only says to it \"Be\", and it is.",
+   "category": "narration",
+   "surah": 3,
+   "chapter": "world-3",
+   "key": "w3.tasks[3].points[2].reading.note"
+  },
+  {
+   "id": "lrc77b2",
+   "text": "The example of Isa with Allah is like that of Adam: He created him from dust, then said to him \"Be\", and he was.",
+   "category": "narration",
+   "surah": 3,
+   "chapter": "world-3",
+   "key": "w3.tasks[3].points[3].reading.note"
+  },
+  {
+   "id": "lnip2b6",
+   "text": "The passage opens onto the mountain path. Up there, the wind blows in gusts.",
+   "category": "narration",
+   "surah": 3,
+   "chapter": "world-3",
+   "key": "w3.tasks[3].outro"
+  },
+  {
+   "id": "lxmh7rr",
+   "text": "Climb the mountain path. When the wind rises, stand still until it passes, then climb on. If you keep walking in a gust, it pushes you back.",
+   "category": "narration",
+   "surah": 3,
+   "chapter": "world-3",
+   "key": "w3.tasks[4].intro"
+  },
+  {
+   "id": "l1s181j3",
+   "text": "Do not weaken and do not grieve. You who believe, be patient, persevere, stay firm, and be mindful of Allah, so that you may succeed.",
+   "category": "narration",
+   "surah": 3,
+   "chapter": "world-3",
+   "key": "w3.tasks[4].reading.note"
+  },
+  {
+   "id": "la70lid",
+   "text": "You came back to the prayer chamber again and again, and each time something was there. You read the ayahs about Maryam in order. On the mountain you held steady in the wind and climbed on.",
+   "category": "narration",
+   "surah": 3,
+   "chapter": "world-3",
+   "key": "w3.finale.body[0]"
+  },
+  {
+   "id": "l1ni2mrp",
+   "text": "Ali 'Imran teaches that provision comes from Allah, and that patience means holding firm when things are hard.",
+   "category": "narration",
+   "surah": 3,
+   "chapter": "world-3",
+   "key": "w3.finale.body[1]"
+  },
+  {
+   "id": "l1gjqzpy",
+   "text": "Welcome to the Village of Trust and Fairness. Surah An-Nisa teaches how to look after one another: to give back what belongs to others, to care for those who have no parents, and to be fair, always. Walk into the square.",
+   "category": "narration",
+   "surah": 4,
+   "chapter": "world-4",
+   "key": "w4.welcome"
+  },
+  {
+   "id": "l10madr0",
+   "text": "Allah commands us to give back what we were trusted with, to the people it belongs to, and to judge fairly between people.",
+   "category": "narration",
+   "surah": 4,
+   "chapter": "world-4",
+   "key": "w4.tasks[0].reading.note"
+  },
+  {
+   "id": "lhxij30",
+   "text": "Winter is coming. The village store holds grain, blankets and firewood, just enough for everyone who needs them. Six homes are round the square, and each needs something different. Look at each home, then decide.",
+   "category": "narration",
+   "surah": 4,
+   "chapter": "world-4",
+   "key": "w4.tasks[1].intro"
+  },
+  {
+   "id": "lfua90p",
+   "text": "Lamps are lit in the homes that needed help, and smoke rises from their chimneys. The yellow-door family needed nothing, and that was fair too: fair did not mean the same for everyone.",
+   "category": "narration",
+   "surah": 4,
+   "chapter": "world-4",
+   "key": "w4.tasks[1].outro"
+  },
+  {
+   "id": "l4ugxoy",
+   "text": "Allah tells us to do good to our parents, relatives, orphans, the needy, the near neighbour and the far neighbour, the companion at our side, and the traveller.",
+   "category": "narration",
+   "surah": 4,
+   "chapter": "world-4",
+   "key": "w4.tasks[1].reading.note"
+  },
+  {
+   "id": "lipyy48",
+   "text": "Four things have been left around the village. Each one belongs to a family in a house with a coloured door. Find them and give them back.",
+   "category": "narration",
+   "surah": 4,
+   "chapter": "world-4",
+   "key": "w4.tasks[2].intro"
+  },
+  {
+   "id": "l1s98yqs",
+   "text": "Children who have lost their parents must be given what is theirs. Those who look after their things must keep them safe, never swap good for bad, and speak to them kindly.",
+   "category": "narration",
+   "surah": 4,
+   "chapter": "world-4",
+   "key": "w4.tasks[3].reading.note"
+  },
+  {
+   "id": "llve17c",
+   "text": "Be fair and tell the truth, even if it is against yourself, your parents or your relatives, and whether a person is rich or poor.",
+   "category": "narration",
+   "surah": 4,
+   "chapter": "world-4",
+   "key": "w4.tasks[4].reading.note"
+  },
+  {
+   "id": "lxsyxxb",
+   "text": "You shared the winter stores by need, and saw the lamps lit where help was needed. You gave back what was lost, and read about orphans and justice. An-Nisa asks us to be people others can trust.",
+   "category": "narration",
+   "surah": 4,
+   "chapter": "world-4",
+   "key": "w4.finale.body[0]"
+  },
+  {
+   "id": "lv9f803",
+   "text": "Being fair is not always easy, especially when it is about ourselves or the people we love. That is when it matters most.",
+   "category": "narration",
+   "surah": 4,
+   "chapter": "world-4",
+   "key": "w4.finale.body[1]"
+  },
+  {
+   "id": "l12ypf2x",
+   "text": "Welcome to the meadow of Promises and Provision. Surah Al-Ma'idah, \"The Table Spread\", begins by asking believers to keep their promises. Walk up to the first stone.",
+   "category": "narration",
+   "surah": 5,
+   "chapter": "world-5",
+   "key": "w5.welcome"
+  },
+  {
+   "id": "lo952ey",
+   "text": "The surah opens: \"O you who have believed, fulfil all contracts.\" A promise is a trust: when we give our word, we keep it.",
+   "category": "narration",
+   "surah": 5,
+   "chapter": "world-5",
+   "key": "w5.tasks[0].reading.note",
+   "quotesTranslation": true
+  },
+  {
+   "id": "l175ugbo",
+   "text": "Notes on the board by the path ask for help. If you promise, a candle is lit for each one. Think about which to do first: the candles are not all the same length.",
+   "category": "narration",
+   "surah": 5,
+   "chapter": "world-5",
+   "key": "w5.tasks[1].intro"
+  },
+  {
+   "id": "lrrkt2d",
+   "text": "Every promise is kept. Promising is easy; keeping a promise takes planning and effort.",
+   "category": "narration",
+   "surah": 5,
+   "chapter": "world-5",
+   "key": "w5.tasks[1].outro"
+  },
+  {
+   "id": "l1he2aus",
+   "text": "Help one another in goodness and in being mindful of Allah, and do not help one another in wrongdoing and aggression.",
+   "category": "narration",
+   "surah": 5,
+   "chapter": "world-5",
+   "key": "w5.tasks[1].after.note"
+  },
+  {
+   "id": "ln1dq41",
+   "text": "Stand firm for Allah and be fair witnesses. Do not let dislike of anyone stop you from being just. Being fair is nearest to righteousness.",
+   "category": "narration",
+   "surah": 5,
+   "chapter": "world-5",
+   "key": "w5.tasks[2].reading.note"
+  },
+  {
+   "id": "lyxbw1",
+   "text": "Two brothers each made an offering. It was accepted from one and not the other, and the other let anger and envy lead him to a terrible wrong, and then to regret. Allah accepts from those who are mindful of Him. This is a story to read with an adult; nothing of it is shown here.",
+   "category": "narration",
+   "surah": 5,
+   "chapter": "world-5",
+   "key": "w5.tasks[3].reading.note"
+  },
+  {
+   "id": "l1v955vt",
+   "text": "The surah is named after a table. At the long table on the terrace, three lamps hold its account in the Quran's order. This table is only a place to remember the account; it is not the table that was sent down.",
+   "category": "narration",
+   "surah": 5,
+   "chapter": "world-5",
+   "key": "w5.tasks[4].intro"
+  },
+  {
+   "id": "lrptzts",
+   "text": "The disciples asked 'Isa whether his Lord could send down to them a table spread with food from heaven. He told them to be mindful of Allah, if they were believers.",
+   "category": "narration",
+   "surah": 5,
+   "chapter": "world-5",
+   "key": "w5.tasks[4].points[0].reading.note"
+  },
+  {
+   "id": "l2es1wf",
+   "text": "They said they wanted to eat from it, to have their hearts reassured, to know that he had told them the truth, and to be witnesses to it.",
+   "category": "narration",
+   "surah": 5,
+   "chapter": "world-5",
+   "key": "w5.tasks[4].points[1].reading.note"
+  },
+  {
+   "id": "l1sd3ccw",
+   "text": "'Isa prayed: \"Our Lord, send down to us a table from heaven, to be a festival for us and a sign from You, and provide for us; You are the best of providers.\" Allah said He would send it down, and warned those who would disbelieve afterwards.",
+   "category": "narration",
+   "surah": 5,
+   "chapter": "world-5",
+   "key": "w5.tasks[4].points[2].reading.note",
+   "quotesTranslation": true
+  },
+  {
+   "id": "l1cjxacs",
+   "text": "You made four promises and kept them, planning your way round the town. You read about being just, about the two sons of Adam, and about the table the surah is named after.",
+   "category": "narration",
+   "surah": 5,
+   "chapter": "world-5",
+   "key": "w5.finale.body[0]"
+  },
+  {
+   "id": "l1ilre3h",
+   "text": "Al-Ma'idah asks believers to keep their word, to cooperate in good and to be just, even with people they do not like.",
+   "category": "narration",
+   "surah": 5,
+   "chapter": "world-5",
+   "key": "w5.finale.body[1]"
+  },
+  {
+   "id": "l1u3yzhv",
+   "text": "And it reminds us who the best of providers is.",
+   "category": "narration",
+   "surah": 5,
+   "chapter": "world-5",
+   "key": "w5.finale.body[2]"
+  },
+  {
+   "id": "l14vwo05",
+   "text": "Welcome to the Living World of Creation. Surah Al-An'am, \"The Cattle\", points again and again to signs in the world around us: night and daybreak, the stars, the moon and the sun, grain and seeds, rain and gardens, and the animals. Night is coming. Climb to the sky-dial on the watching hill.",
+   "category": "narration",
+   "surah": 6,
+   "chapter": "world-6",
+   "key": "w6.welcome"
+  },
+  {
+   "id": "lpcmqzh",
+   "text": "All praise belongs to Allah, who created the heavens and the earth and made the darkness and the light. Soon you will turn the sky through night and day.",
+   "category": "narration",
+   "surah": 6,
+   "chapter": "world-6",
+   "key": "w6.tasks[0].reading.note"
+  },
+  {
+   "id": "l1oenobx",
+   "text": "On the watching hill is a sky-dial. Each turn moves the whole sky on: deep night with a bright star, then moonrise, then sunrise, then full day. At each one, read what the Quran says about Ibrahim's argument with his people, who worshipped the heavenly bodies.",
+   "category": "narration",
+   "surah": 6,
+   "chapter": "world-6",
+   "key": "w6.tasks[1].intro"
+  },
+  {
+   "id": "l19nvoe5",
+   "text": "Ibrahim told his father that worshipping idols was a clear error. When the night grew dark he saw a star, and said to his people, \"This is my lord\", and when it set he said, \"I do not like things that set.\" He was showing his people, step by step, that what disappears cannot be a lord.",
+   "category": "narration",
+   "surah": 6,
+   "chapter": "world-6",
+   "key": "w6.tasks[1].phases[0].reading.note",
+   "quotesTranslation": true
+  },
+  {
+   "id": "l1m32w2g",
+   "text": "When he saw the moon rising, he said, \"This is my lord.\" When it set, he said, \"Unless my Lord guides me, I will surely be among the people gone astray.\"",
+   "category": "narration",
+   "surah": 6,
+   "chapter": "world-6",
+   "key": "w6.tasks[1].phases[1].reading.note",
+   "quotesTranslation": true
+  },
+  {
+   "id": "lvrkfqa",
+   "text": "When he saw the sun rising he said, \"This is my lord; this is greater.\" When it set, he said, \"My people, I am free from what you associate with Allah.\"",
+   "category": "narration",
+   "surah": 6,
+   "chapter": "world-6",
+   "key": "w6.tasks[1].phases[2].reading.note",
+   "quotesTranslation": true
+  },
+  {
+   "id": "luj0gem",
+   "text": "Ibrahim turned his face to the One who created the heavens and the earth. Allah is the One who splits the daybreak, made the night for rest, and the sun and the moon for counting time.",
+   "category": "narration",
+   "surah": 6,
+   "chapter": "world-6",
+   "key": "w6.tasks[1].phases[3].reading.note"
+  },
+  {
+   "id": "l1556aa7",
+   "text": "It is full day. Now walk down into the valley and watch the living world: come close at a walk, then keep still.",
+   "category": "narration",
+   "surah": 6,
+   "chapter": "world-6",
+   "key": "w6.tasks[1].outro"
+  },
+  {
+   "id": "l1s620bp",
+   "text": "A field journal has four empty pages. Find each herd, come close at a walk, and keep still and watch. Running startles them.",
+   "category": "narration",
+   "surah": 6,
+   "chapter": "world-6",
+   "key": "w6.tasks[2].intro"
+  },
+  {
+   "id": "l13p8kjs",
+   "text": "Journal: the sheep graze close together, and the lambs stay by their mothers. Ayah 38 says every creature on the earth and every bird is part of a community, like us.",
+   "category": "narration",
+   "surah": 6,
+   "chapter": "world-6",
+   "key": "w6.tasks[2].subjects[0].note"
+  },
+  {
+   "id": "lj2vjz4",
+   "text": "There is no creature on the earth and no bird flying with its wings except that they are communities like you.",
+   "category": "narration",
+   "surah": 6,
+   "chapter": "world-6",
+   "key": "w6.tasks[2].subjects[0].reading.note"
+  },
+  {
+   "id": "lit9hgs",
+   "text": "Journal: the goats climb the rocky slope easily and nibble at the bushes.",
+   "category": "narration",
+   "surah": 6,
+   "chapter": "world-6",
+   "key": "w6.tasks[2].subjects[1].note"
+  },
+  {
+   "id": "lozv5fk",
+   "text": "Journal: the camels rest in the shade, then rise and walk slowly. They carry heavy loads on long journeys.",
+   "category": "narration",
+   "surah": 6,
+   "chapter": "world-6",
+   "key": "w6.tasks[2].subjects[2].note"
+  },
+  {
+   "id": "l3bdskn",
+   "text": "Among the grazing animals are some for carrying loads and some that are small. Eat of what Allah has provided for you.",
+   "category": "narration",
+   "surah": 6,
+   "chapter": "world-6",
+   "key": "w6.tasks[2].subjects[2].reading.note"
+  },
+  {
+   "id": "lgo7g9r",
+   "text": "Journal: the cattle drink at the stream and stand in the water to keep cool.",
+   "category": "narration",
+   "surah": 6,
+   "chapter": "world-6",
+   "key": "w6.tasks[2].subjects[3].note"
+  },
+  {
+   "id": "l12cqpm1",
+   "text": "The ayahs name the grazing animals in pairs: sheep and goats, camels and cattle. The Quran asks the people who made up rules about them to bring knowledge for what they claimed.",
+   "category": "narration",
+   "surah": 6,
+   "chapter": "world-6",
+   "key": "w6.tasks[2].subjects[3].reading.note"
+  },
+  {
+   "id": "l1grbxyj",
+   "text": "The animal pages are full. Now the plants: the grain field, the palms, and the orchard.",
+   "category": "narration",
+   "surah": 6,
+   "chapter": "world-6",
+   "key": "w6.tasks[2].outro"
+  },
+  {
+   "id": "ldtvgjs",
+   "text": "Journal: the grain stands in rows, each ear full of seeds. From one seed, many.",
+   "category": "narration",
+   "surah": 6,
+   "chapter": "world-6",
+   "key": "w6.tasks[3].subjects[0].note"
+  },
+  {
+   "id": "loqg5m3",
+   "text": "Allah splits open the grain and the date seed. He brings the living out of the dead.",
+   "category": "narration",
+   "surah": 6,
+   "chapter": "world-6",
+   "key": "w6.tasks[3].subjects[0].reading.note"
+  },
+  {
+   "id": "l1h70kia",
+   "text": "Journal: clusters of dates hang low on the palms near the water.",
+   "category": "narration",
+   "surah": 6,
+   "chapter": "world-6",
+   "key": "w6.tasks[3].subjects[1].note"
+  },
+  {
+   "id": "lfq8nsf",
+   "text": "Allah sends down rain from the sky, and by it brings out every kind of plant: green shoots, close-packed grain, palm trees with low-hanging clusters of dates, gardens of grapes, olives and pomegranates. Look at their fruit as it ripens: in that are signs.",
+   "category": "narration",
+   "surah": 6,
+   "chapter": "world-6",
+   "key": "w6.tasks[3].subjects[1].reading.note"
+  },
+  {
+   "id": "l1xnp44z",
+   "text": "Journal: olives and pomegranates grow side by side, alike and yet different.",
+   "category": "narration",
+   "surah": 6,
+   "chapter": "world-6",
+   "key": "w6.tasks[3].subjects[2].note"
+  },
+  {
+   "id": "l1ltth2n",
+   "text": "Allah produces gardens, trellised and not, palm trees and crops of different taste, olives and pomegranates, alike and unlike. Eat of their fruit, give its due on harvest day, and do not waste.",
+   "category": "narration",
+   "surah": 6,
+   "chapter": "world-6",
+   "key": "w6.tasks[3].subjects[2].reading.note"
+  },
+  {
+   "id": "ld20v6d",
+   "text": "You turned the sky from night to day and read how Ibrahim showed his people that what sets cannot be a lord. Then you watched the living world quietly and filled your journal.",
+   "category": "narration",
+   "surah": 6,
+   "chapter": "world-6",
+   "key": "w6.finale.body[0]"
+  },
+  {
+   "id": "l10jj98",
+   "text": "Al-An'am asks us to look, and to think about who made all of it.",
+   "category": "narration",
+   "surah": 6,
+   "chapter": "world-6",
+   "key": "w6.finale.body[1]"
+  },
+  {
+   "id": "l6jq2n1",
+   "text": "The Nuh's Ark adventure from Surah Hud",
+   "category": "narration",
+   "surah": 7,
+   "chapter": "world-7",
+   "key": "w7.links[0].note"
+  },
+  {
+   "id": "l1c8crrw",
+   "text": "Welcome to the Path of Ancient Stories. Surah Al-A'raf, \"The Heights\", tells the stories of many messengers and their peoples. Its four lands lie around the high hill: walk them in order, and each gate opens when you have finished the land before it.",
+   "category": "narration",
+   "surah": 7,
+   "chapter": "world-7",
+   "key": "w7.welcome"
+  },
+  {
+   "id": "l155z3fo",
+   "text": "Chapter 1. Al-A'raf tells of peoples who came before us, one after another, and how each answered the messenger sent to them. Read, then look closely at the traces in this land.",
+   "category": "narration",
+   "surah": 7,
+   "chapter": "world-7",
+   "key": "w7.tasks[0].intro"
+  },
+  {
+   "id": "l1i8sbf3",
+   "text": "Nuh (Noah) called his people to worship Allah alone. They denied him, and Allah saved him and those with him in the ship. The doorway on this terrace leads to the Nuh's Ark adventure.",
+   "category": "narration",
+   "surah": 7,
+   "chapter": "world-7",
+   "key": "w7.tasks[0].reading.note"
+  },
+  {
+   "id": "l1alf8gj",
+   "text": "After Nuh's people came 'Aad, and Allah sent them their brother Hud. Look closely at three traces here. Each one tells you what the Quran says, and what is only a picture.",
+   "category": "narration",
+   "surah": 7,
+   "chapter": "world-7",
+   "key": "w7.tasks[1].intro"
+  },
+  {
+   "id": "ldei038",
+   "text": "From the Quran: Hud reminded 'Aad that Allah made them successors after the people of Nuh and increased them in stature. The tall columns here are only a picture of a strong people.",
+   "category": "narration",
+   "surah": 7,
+   "chapter": "world-7",
+   "key": "w7.tasks[1].points[0].reading.note"
+  },
+  {
+   "id": "lxunrbu",
+   "text": "From the Quran: Hud told his people, \"Worship Allah; you have no deity other than Him. Will you not fear Him?\" The fallen stones are only a picture.",
+   "category": "narration",
+   "surah": 7,
+   "chapter": "world-7",
+   "key": "w7.tasks[1].points[1].reading.note",
+   "quotesTranslation": true
+  },
+  {
+   "id": "lsmz146",
+   "text": "From the Quran: they refused to leave what their fathers worshipped, and Allah saved Hud and those with him by mercy. Nothing of what happened to the others is shown.",
+   "category": "narration",
+   "surah": 7,
+   "chapter": "world-7",
+   "key": "w7.tasks[1].points[2].reading.note"
+  },
+  {
+   "id": "l5t7no6",
+   "text": "The gate to Chapter 2, the carved cliffs, is open. Follow the path west.",
+   "category": "narration",
+   "surah": 7,
+   "chapter": "world-7",
+   "key": "w7.tasks[1].outro"
+  },
+  {
+   "id": "l1dxz1wb",
+   "text": "Chapter 2. To Thamud, Allah sent their brother Salih. Thamud carved homes from the mountains. Look closely at the traces here, in order.",
+   "category": "narration",
+   "surah": 7,
+   "chapter": "world-7",
+   "key": "w7.tasks[2].intro"
+  },
+  {
+   "id": "l1h47r1f",
+   "text": "From the Quran: Salih called Thamud to worship Allah alone, and reminded them that they built palaces on the plains and carved homes from the mountains. The doorways here are only a picture.",
+   "category": "narration",
+   "surah": 7,
+   "chapter": "world-7",
+   "key": "w7.tasks[2].points[0].reading.note"
+  },
+  {
+   "id": "lugwu56",
+   "text": "From the Quran: the arrogant chiefs mocked those who believed. The believers answered, \"We believe in what he was sent with.\"",
+   "category": "narration",
+   "surah": 7,
+   "chapter": "world-7",
+   "key": "w7.tasks[2].points[1].reading.note",
+   "quotesTranslation": true
+  },
+  {
+   "id": "l1wemqd1",
+   "text": "From the Quran: Salih turned away from them, saying he had conveyed his Lord's message and advised them sincerely, but they did not like sincere advisers. What happened to them is only read.",
+   "category": "narration",
+   "surah": 7,
+   "chapter": "world-7",
+   "key": "w7.tasks[2].points[2].reading.note"
+  },
+  {
+   "id": "l1y5mdkk",
+   "text": "Allah sent Lut to his people, who did a shameful thing no people had done before. Allah saved Lut and his family, except his wife. This place is only for reading; the full account is in the book, to be read with an adult.",
+   "category": "narration",
+   "surah": 7,
+   "chapter": "world-7",
+   "key": "w7.tasks[3].reading.note"
+  },
+  {
+   "id": "lmop6wu",
+   "text": "The gate to Chapter 3, the market of Madyan, is open. Follow the path north.",
+   "category": "narration",
+   "surah": 7,
+   "chapter": "world-7",
+   "key": "w7.tasks[3].outro"
+  },
+  {
+   "id": "ljwzag9",
+   "text": "Chapter 3. To Madyan, Allah sent their brother Shu'ayb. Madyan was a people of trade.",
+   "category": "narration",
+   "surah": 7,
+   "chapter": "world-7",
+   "key": "w7.tasks[4].intro"
+  },
+  {
+   "id": "l170gc1n",
+   "text": "Shu'ayb told the people of Madyan to worship Allah alone, to give full measure and weight, not to cheat people of what is theirs, and not to cause corruption on the earth after it was set right.",
+   "category": "narration",
+   "surah": 7,
+   "chapter": "world-7",
+   "key": "w7.tasks[4].reading.note"
+  },
+  {
+   "id": "l1dqgjp4",
+   "text": "At the balance, weigh out each order until the balance hangs level. The box of weights has one weight that has been shaved: its mark says more than it really weighs. Watch the balance, not just the marks.",
+   "category": "narration",
+   "surah": 7,
+   "chapter": "world-7",
+   "key": "w7.tasks[5].intro"
+  },
+  {
+   "id": "l1y9kspz",
+   "text": "Three orders, each weighed fairly. Did you leave the worn weight in the box?",
+   "category": "narration",
+   "surah": 7,
+   "chapter": "world-7",
+   "key": "w7.tasks[5].outro"
+  },
+  {
+   "id": "l1jwc635",
+   "text": "Shu'ayb reminded them that they had been few and Allah increased them, and told them to look at how the corrupters ended. He told them to be patient until Allah judges between them.",
+   "category": "narration",
+   "surah": 7,
+   "chapter": "world-7",
+   "key": "w7.tasks[5].reading.note"
+  },
+  {
+   "id": "l16jpowm",
+   "text": "If the people of those towns had believed and been mindful of Allah, Allah would have opened to them blessings from the heaven and the earth.",
+   "category": "narration",
+   "surah": 7,
+   "chapter": "world-7",
+   "key": "w7.tasks[6].reading.note"
+  },
+  {
+   "id": "l1chdb56",
+   "text": "The gate to Chapter 4, the shore of Musa, is open. Follow the path east.",
+   "category": "narration",
+   "surah": 7,
+   "chapter": "world-7",
+   "key": "w7.tasks[6].outro"
+  },
+  {
+   "id": "l1s2n6wc",
+   "text": "Chapter 4. After those peoples, Allah sent Musa to Pharaoh. Read, then follow the traces along the shore in order.",
+   "category": "narration",
+   "surah": 7,
+   "chapter": "world-7",
+   "key": "w7.tasks[7].intro"
+  },
+  {
+   "id": "l16jazl8",
+   "text": "After those peoples, Allah sent Musa (Moses) with signs to Pharaoh and his chiefs. Musa said: \"I am a messenger from the Lord of the worlds.\"",
+   "category": "narration",
+   "surah": 7,
+   "chapter": "world-7",
+   "key": "w7.tasks[7].reading.note",
+   "quotesTranslation": true
+  },
+  {
+   "id": "l1h88if2",
+   "text": "From the Quran: Pharaoh's magicians saw the truth and fell down in prostration, saying, \"We believe in the Lord of the worlds, the Lord of Musa and Harun.\"",
+   "category": "narration",
+   "surah": 7,
+   "chapter": "world-7",
+   "key": "w7.tasks[8].points[0].reading.note",
+   "quotesTranslation": true
+  },
+  {
+   "id": "ldv5m94",
+   "text": "From the Quran: Musa told his people, \"Seek help through Allah and be patient. The earth belongs to Allah, and the best outcome is for those who are mindful of Him.\"",
+   "category": "narration",
+   "surah": 7,
+   "chapter": "world-7",
+   "key": "w7.tasks[8].points[1].reading.note",
+   "quotesTranslation": true
+  },
+  {
+   "id": "l1ra3nkz",
+   "text": "From the Quran: Allah brought the Children of Israel across the sea. The crossing is only read; it is not shown.",
+   "category": "narration",
+   "surah": 7,
+   "chapter": "world-7",
+   "key": "w7.tasks[8].points[2].reading.note"
+  },
+  {
+   "id": "lcqnra",
+   "text": "Allah says: \"My mercy encompasses all things.\"",
+   "category": "narration",
+   "surah": 7,
+   "chapter": "world-7",
+   "key": "w7.tasks[9].reading.note",
+   "quotesTranslation": true
+  },
+  {
+   "id": "l1s4z3pw",
+   "text": "You travelled through four chapters: the broken columns of 'Aad, the carved cliffs of Thamud and the salt shore, the market of Madyan, and the shore of Musa. Each messenger called his people to worship Allah alone and to be good and fair.",
+   "category": "narration",
+   "surah": 7,
+   "chapter": "world-7",
+   "key": "w7.finale.body[0]"
+  },
+  {
+   "id": "l1ql2k2f",
+   "text": "Some people listened and many did not. In the market you weighed fairly and left the worn weight in the box.",
+   "category": "narration",
+   "surah": 7,
+   "chapter": "world-7",
+   "key": "w7.finale.body[1]"
+  },
+  {
+   "id": "lpwhcad",
+   "text": "Welcome to the Camp of Courage and Unity. Surah Al-Anfal teaches believers to keep their hearts together, to rely on Allah and to be patient. There is work to do in camp, and it goes best when everyone helps.",
+   "category": "narration",
+   "surah": 8,
+   "chapter": "world-8",
+   "key": "w8.welcome"
+  },
+  {
+   "id": "lsbrw12",
+   "text": "It has rained, and the spring basin above the camp is full. The camp needs water in three places. Read first, then look at the channels.",
+   "category": "narration",
+   "surah": 8,
+   "chapter": "world-8",
+   "key": "w8.tasks[0].intro"
+  },
+  {
+   "id": "l164nmu2",
+   "text": "Before a hard day, Allah sent the believers a calm sleep, and rain from the sky to purify them, strengthen their hearts and make their feet firm. The rain in this game is a picture of that ayah; the camp is not the camp at Badr.",
+   "category": "narration",
+   "surah": 8,
+   "chapter": "world-8",
+   "key": "w8.tasks[0].reading.note"
+  },
+  {
+   "id": "lqz3r2s",
+   "text": "Look at where each gate sends the water before you open the sluice. While it runs, watch the cisterns: when one is full, turn a gate so the water goes to the next. If too much runs onto the sand, the spring refills and you can plan again.",
+   "category": "narration",
+   "surah": 8,
+   "chapter": "world-8",
+   "key": "w8.tasks[1].intro"
+  },
+  {
+   "id": "lxj1fqe",
+   "text": "All three cisterns are full and little was wasted. Shared water, shared work.",
+   "category": "narration",
+   "surah": 8,
+   "chapter": "world-8",
+   "key": "w8.tasks[1].outro"
+  },
+  {
+   "id": "l16usu5x",
+   "text": "The surah begins with a question about how to share things out. The answer: it is for Allah and His Messenger to decide, so be mindful of Allah and set right what is between you.",
+   "category": "narration",
+   "surah": 8,
+   "chapter": "world-8",
+   "key": "w8.tasks[2].reading.note"
+  },
+  {
+   "id": "l1h0hbs6",
+   "text": "Do not argue among yourselves, or you will lose heart and your strength will go. Be patient: Allah is with the patient.",
+   "category": "narration",
+   "surah": 8,
+   "chapter": "world-8",
+   "key": "w8.tasks[3].after.note"
+  },
+  {
+   "id": "l1esl4bx",
+   "text": "The believers are those whose hearts are moved when Allah is mentioned, whose faith grows when they hear His verses, who rely on their Lord, pray, and give from what they have.",
+   "category": "narration",
+   "surah": 8,
+   "chapter": "world-8",
+   "key": "w8.tasks[4].reading.note"
+  },
+  {
+   "id": "l1srw7y7",
+   "text": "Allah brought the hearts of the believers together. Even if you spent everything on earth, you could not have done it, but Allah brought them together.",
+   "category": "narration",
+   "surah": 8,
+   "chapter": "world-8",
+   "key": "w8.tasks[5].reading.note"
+  },
+  {
+   "id": "l1f4ohu8",
+   "text": "You shared out the rain water so that every part of the camp had what it needed, turning each gate at the right time.",
+   "category": "narration",
+   "surah": 8,
+   "chapter": "world-8",
+   "key": "w8.finale.body[0]"
+  },
+  {
+   "id": "lj1uk5v",
+   "text": "Al-Anfal teaches that hearts held together, and relying on Allah, give people courage.",
+   "category": "narration",
+   "surah": 8,
+   "chapter": "world-8",
+   "key": "w8.finale.body[1]"
+  },
+  {
+   "id": "l1he8q4h",
+   "text": "Welcome to the Journey of Return. Surah At-Tawbah, \"The Repentance\", is the only surah that does not begin with \"In the name of Allah\". It speaks of people who turned back to Allah after mistakes, and Allah accepted them. On this path, you will meet everyday choices about honesty. Walk on.",
+   "category": "narration",
+   "surah": 9,
+   "chapter": "world-9",
+   "key": "w9.welcome",
+   "quotesTranslation": true
+  },
+  {
+   "id": "l1jygtv0",
+   "text": "Some people admitted their mistakes: they had done good and also bad. Allah is Forgiving and Merciful, and He is the one who accepts repentance from His servants.",
+   "category": "narration",
+   "surah": 9,
+   "chapter": "world-9",
+   "key": "w9.tasks[0].reading.note"
+  },
+  {
+   "id": "lqz2jh4",
+   "text": "At each signpost there are everyday situations. Choose what you would honestly do. An excuse will send you back a little way up the path to think again.",
+   "category": "narration",
+   "surah": 9,
+   "chapter": "world-9",
+   "key": "w9.tasks[1].intro"
+  },
+  {
+   "id": "lplz8gb",
+   "text": "The path goes on down the valley to the second signpost.",
+   "category": "narration",
+   "surah": 9,
+   "chapter": "world-9",
+   "key": "w9.tasks[1].outro"
+  },
+  {
+   "id": "l3xrfor",
+   "text": "Ahead, the path goes down into a narrow gorge. The surah tells of three believers who stayed behind and then told the truth. Walk on.",
+   "category": "narration",
+   "surah": 9,
+   "chapter": "world-9",
+   "key": "w9.tasks[2].outro"
+  },
+  {
+   "id": "l6njn6p",
+   "text": "Three believers stayed behind from a journey they should have joined, with no real excuse. When they were asked, they did not make up excuses: they told the truth. Then, for a long time, people did not speak with them.",
+   "category": "narration",
+   "surah": 9,
+   "chapter": "world-9",
+   "key": "w9.tasks[3].intro"
+  },
+  {
+   "id": "lgnr6ku",
+   "text": "The mist is closing in. The surah says that for them the earth, vast as it was, closed in on them, and their own selves felt tight. Keep walking.",
+   "category": "narration",
+   "surah": 9,
+   "chapter": "world-9",
+   "key": "w9.tasks[4].intro"
+  },
+  {
+   "id": "l1vgvxj1",
+   "text": "Keep going: there is light at the end of the gorge.",
+   "category": "narration",
+   "surah": 9,
+   "chapter": "world-9",
+   "key": "w9.tasks[5].intro"
+  },
+  {
+   "id": "l1ejh0g6",
+   "text": "The three told the truth. The wide earth closed in on them, until they knew there was no refuge from Allah except in Him. Then Allah turned to them, so that they could repent. \"O you who believe, be mindful of Allah, and be with those who are true.\"",
+   "category": "narration",
+   "surah": 9,
+   "chapter": "world-9",
+   "key": "w9.tasks[5].reading.note",
+   "quotesTranslation": true
+  },
+  {
+   "id": "l5c9ly",
+   "text": "The mist has gone, and the path opens onto a quiet spring garden. Rest there a moment.",
+   "category": "narration",
+   "surah": 9,
+   "chapter": "world-9",
+   "key": "w9.tasks[6].intro"
+  },
+  {
+   "id": "l120f0ea",
+   "text": "Do they not know that it is Allah who accepts repentance from His servants? Allah is the Accepting of repentance, the Merciful.",
+   "category": "narration",
+   "surah": 9,
+   "chapter": "world-9",
+   "key": "w9.tasks[6].reading.note"
+  },
+  {
+   "id": "l1gbblyt",
+   "text": "You chose honesty at the signposts, and when an excuse slipped out you walked back and thought again. You walked through the gorge as it closed in, and out into the light.",
+   "category": "narration",
+   "surah": 9,
+   "chapter": "world-9",
+   "key": "w9.finale.body[0]"
+  },
+  {
+   "id": "l1ev7o3q",
+   "text": "At-Tawbah teaches that the door to Allah stays open: when we make mistakes, we can be truthful, say sorry, put things right, and turn back to Him.",
+   "category": "narration",
+   "surah": 9,
+   "chapter": "world-9",
+   "key": "w9.finale.body[1]"
+  },
+  {
+   "id": "l168koug",
+   "text": "The storybook's story of Yunus and the great fish, told in Surahs As-Saffat and Al-Anbiya",
+   "category": "narration",
+   "surah": 10,
+   "chapter": "world-10",
+   "key": "w10.links[1].note"
+  },
+  {
+   "id": "lehdw4o",
+   "text": "Welcome to the Ocean of Signs. Surah Yunus is named after the prophet Yunus (Jonah). It points to signs in the sun and moon, in night and day, and in ships at sea, and it tells of peoples before. Your own boat is waiting at the east dock.",
+   "category": "narration",
+   "surah": 10,
+   "chapter": "world-10",
+   "key": "w10.welcome"
+  },
+  {
+   "id": "ldib799",
+   "text": "Allah enables people to travel on land and sea. Ships sail with a good wind and the travellers are glad, then a storm wind comes, and waves from every side. Then they call on Allah sincerely: \"If You save us, we will be thankful.\"",
+   "category": "narration",
+   "surah": 10,
+   "chapter": "world-10",
+   "key": "w10.tasks[0].reading.note",
+   "quotesTranslation": true
+  },
+  {
+   "id": "l1mpa83n",
+   "text": "Walk to the end of the east dock and board your boat. Then steer out to each ring of light on the water, one after another. Watch the sky and the sea as you go.",
+   "category": "narration",
+   "surah": 10,
+   "chapter": "world-10",
+   "key": "w10.tasks[1].intro"
+  },
+  {
+   "id": "l49kwmm",
+   "text": "Out on the water you can see the whole sky. Allah made the sun a shining light and the moon a reflected light, with phases, so people can count the years. The turning of night and day is a sign for people who are mindful.",
+   "category": "narration",
+   "surah": 10,
+   "chapter": "world-10",
+   "key": "w10.tasks[1].stops[0].reading.note"
+  },
+  {
+   "id": "l9sue54",
+   "text": "Nuh relied on Allah and asked his people for no payment. They denied him, and Allah saved him and those with him in the ship. The island is only a place to read; nothing of the flood is shown. A doorway in the harbour town leads to the Nuh's Ark adventure.",
+   "category": "narration",
+   "surah": 10,
+   "chapter": "world-10",
+   "key": "w10.tasks[1].stops[1].reading.note"
+  },
+  {
+   "id": "l13rl8uv",
+   "text": "Allah sent Musa and Harun to Pharaoh, who was arrogant. Allah took the Children of Israel across the sea. Pharaoh followed, and as he was drowning he said he believed, but it was too late. His body was kept as a sign for those after him. Nothing of this is shown; it is for reading.",
+   "category": "narration",
+   "surah": 10,
+   "chapter": "world-10",
+   "key": "w10.tasks[1].stops[2].reading.note"
+  },
+  {
+   "id": "l18pb0xz",
+   "text": "A squall blew up on the way out, and now the wind is dropping and the sea is calm again. This is only a picture of the ayah you read at the harbour.",
+   "category": "narration",
+   "surah": 10,
+   "chapter": "world-10",
+   "key": "w10.tasks[1].stops[3].note"
+  },
+  {
+   "id": "l1tmfq2b",
+   "text": "The next ayah says that when Allah saves them, they go back to wrongdoing on the earth. The surah asks us to stay thankful after a difficulty has passed, not only during it.",
+   "category": "narration",
+   "surah": 10,
+   "chapter": "world-10",
+   "key": "w10.tasks[1].stops[3].reading.note"
+  },
+  {
+   "id": "l169isac",
+   "text": "The surah names one town whose belief benefited it: the people of Yunus. When they believed, Allah lifted from them the punishment of disgrace in this life. The little island town stands for them as a picture only; it is not their real town.",
+   "category": "narration",
+   "surah": 10,
+   "chapter": "world-10",
+   "key": "w10.tasks[1].stops[4].reading.note"
+  },
+  {
+   "id": "l19ztzil",
+   "text": "You have sailed to every ring. Back on land, read about Yunus himself by the doorway in the town.",
+   "category": "narration",
+   "surah": 10,
+   "chapter": "world-10",
+   "key": "w10.tasks[1].outro"
+  },
+  {
+   "id": "l1y8swbg",
+   "text": "These two ayahs are from Surah Al-Anbiya, not Surah Yunus. They tell how Yunus called out in the darknesses, \"There is no deity except You; exalted are You; indeed I was among the wrongdoers\", and Allah answered him and saved him from distress. The longer account of Yunus and the great fish is in Surah As-Saffat, 37:139-148. The doorway here opens the storybook's telling.",
+   "category": "narration",
+   "surah": 10,
+   "chapter": "world-10",
+   "key": "w10.tasks[2].reading.note",
+   "quotesTranslation": true
+  },
+  {
+   "id": "lrn9c2n",
+   "text": "You sailed your own boat round the bay and out to sea, past the island of Nuh's story and the cliffs of Musa's story, through a squall and into calm water, and back past the town that stands for the people of Yunus.",
+   "category": "narration",
+   "surah": 10,
+   "chapter": "world-10",
+   "key": "w10.finale.body[0]"
+  },
+  {
+   "id": "leb7xjd",
+   "text": "Surah Yunus asks us to notice the signs around us, in the sky, on the sea, and in what happened to people before us.",
+   "category": "narration",
+   "surah": 10,
+   "chapter": "world-10",
+   "key": "w10.finale.body[1]"
+  },
+  {
+   "id": "l1qzbhqh",
+   "text": "Welcome to the Seven Years Storehouse. Surah Yusuf tells one long story, and the Quran calls it the best of stories. You will walk past its places as reading places: no one in the story is shown. Then the storehouse needs a planner: seven good years are coming, and after them seven hard ones. Start at the first stone.",
+   "category": "narration",
+   "surah": 12,
+   "chapter": "world-12",
+   "key": "w12.welcome"
+  },
+  {
+   "id": "ldov4gn",
+   "text": "Young Yusuf told his father of a dream. His father told him not to tell his brothers, and said that Allah would teach him the meaning of events.",
+   "category": "narration",
+   "surah": 12,
+   "chapter": "world-12",
+   "key": "w12.tasks[0].reading.note"
+  },
+  {
+   "id": "l158d0qg",
+   "text": "His brothers left him in a well. Travellers came to draw water and found him, and he was taken to Egypt. Even then, Allah told him that one day he would tell his brothers about this.",
+   "category": "narration",
+   "surah": 12,
+   "chapter": "world-12",
+   "key": "w12.tasks[1].reading.note"
+  },
+  {
+   "id": "l1yp0a4",
+   "text": "Yusuf grew up in the house of a man in Egypt. When he was pressed to do something wrong, he refused, and said he would rather go to prison than do it. He asked Allah to keep him from it.",
+   "category": "narration",
+   "surah": 12,
+   "chapter": "world-12",
+   "key": "w12.tasks[2].reading.note"
+  },
+  {
+   "id": "losuzrn",
+   "text": "Even in prison Yusuf taught the truth to the two young men with him: is it better to have many separate lords, or Allah, the One?",
+   "category": "narration",
+   "surah": 12,
+   "chapter": "world-12",
+   "key": "w12.tasks[3].reading.note"
+  },
+  {
+   "id": "lky14at",
+   "text": "The king dreamed of seven fat cows eaten by seven lean ones, and seven green ears of grain and seven dry. No one could explain it, until the man who had been in prison remembered Yusuf.",
+   "category": "narration",
+   "surah": 12,
+   "chapter": "world-12",
+   "key": "w12.tasks[4].reading.note"
+  },
+  {
+   "id": "lfulsll",
+   "text": "The meaning of the dream: seven good years, then seven hard ones. The storehouse by the river needs a careful planner. The first field is ripe.",
+   "category": "narration",
+   "surah": 12,
+   "chapter": "world-12",
+   "key": "w12.tasks[4].outro"
+  },
+  {
+   "id": "lmv9r39",
+   "text": "Seven good years are starting. Each year one field by the river ripens. Cut it, carry it to the storehouse, and decide how much the household eats and how the rest is kept. Then seven hard years come, and the town will need grain from the store each year.",
+   "category": "narration",
+   "surah": 12,
+   "chapter": "world-12",
+   "key": "w12.tasks[5].intro"
+  },
+  {
+   "id": "l1yru2y0",
+   "text": "Yusuf explained the dream: plant for seven years, and leave what you harvest in its ears, except a little that you eat.",
+   "category": "narration",
+   "surah": 12,
+   "chapter": "world-12",
+   "key": "w12.tasks[5].readings.good.note"
+  },
+  {
+   "id": "lyo8oh8",
+   "text": "Then seven hard years would come and use up what had been stored for them, except a little kept back.",
+   "category": "narration",
+   "surah": 12,
+   "chapter": "world-12",
+   "key": "w12.tasks[5].readings.hard.note"
+  },
+  {
+   "id": "l1h8emea",
+   "text": "After that would come a year in which people are given rain, and they press olives and grapes again.",
+   "category": "narration",
+   "surah": 12,
+   "chapter": "world-12",
+   "key": "w12.tasks[5].readings.rain.note"
+  },
+  {
+   "id": "ldzxuoq",
+   "text": "In the hard years his brothers came to Egypt for grain. When they finally knew him, Yusuf forgave them: \"No blame will there be upon you today.\"",
+   "category": "narration",
+   "surah": 12,
+   "chapter": "world-12",
+   "key": "w12.tasks[6].reading.note",
+   "quotesTranslation": true
+  },
+  {
+   "id": "l1g5rw01",
+   "text": "You walked through the places of Yusuf's story and kept a storehouse through seven good years and seven hard ones, eating only a little and keeping the rest safe in the ear.",
+   "category": "narration",
+   "surah": 12,
+   "chapter": "world-12",
+   "key": "w12.finale.body[0]"
+  },
+  {
+   "id": "lne2hcc",
+   "text": "Yusuf was patient in the well, honest in the house, a teacher in prison, a careful planner in the good years, and forgiving at the end.",
+   "category": "narration",
+   "surah": 12,
+   "chapter": "world-12",
+   "key": "w12.finale.body[1]"
+  },
+  {
+   "id": "l14t12or",
+   "text": "Welcome to the Storm Valley. Surah Ar-Ra'd, \"The Thunder\", points to signs in the sky and the land: the heavens raised without pillars you can see, mountains and rivers, gardens side by side watered with the same water. Climb to the lookout stone first.",
+   "category": "narration",
+   "surah": 13,
+   "chapter": "world-13",
+   "key": "w13.welcome"
+  },
+  {
+   "id": "l1pjkpsb",
+   "text": "Allah raised the heavens without pillars that you can see, and made the sun and the moon run their courses. He spread out the earth and placed firm mountains and rivers in it, and made the night cover the day.",
+   "category": "narration",
+   "surah": 13,
+   "chapter": "world-13",
+   "key": "w13.tasks[0].reading.note"
+  },
+  {
+   "id": "l1pden31",
+   "text": "The air is heavy and the clouds are building over the mountains. Below are three valleys: a narrow one, a middle one and a wide one. When the storm comes, wait it out under the rock overhang, and watch.",
+   "category": "narration",
+   "surah": 13,
+   "chapter": "world-13",
+   "key": "w13.tasks[1].intro"
+  },
+  {
+   "id": "l1q76v5i",
+   "text": "The narrow valley held only a little, but it is clear water now, and it waters the small field below it.",
+   "category": "narration",
+   "surah": 13,
+   "chapter": "world-13",
+   "key": "w13.tasks[1].valleys[0].note"
+  },
+  {
+   "id": "l1lf4wde",
+   "text": "The middle valley held twice as much. Its clear water runs down into the field beside it.",
+   "category": "narration",
+   "surah": 13,
+   "chapter": "world-13",
+   "key": "w13.tasks[1].valleys[1].note"
+  },
+  {
+   "id": "l63720w",
+   "text": "The wide valley held the most of all. The foam is gone, and what stays is the water that helps the land.",
+   "category": "narration",
+   "surah": 13,
+   "chapter": "world-13",
+   "key": "w13.tasks[1].valleys[2].note"
+  },
+  {
+   "id": "l1q6k0un",
+   "text": "Allah sends down rain from the sky, and valleys flow, each according to its size. The torrent carries foam on top. The foam goes, cast away, and what benefits people stays in the land. That is how Allah gives examples of truth and falsehood.",
+   "category": "narration",
+   "surah": 13,
+   "chapter": "world-13",
+   "key": "w13.tasks[1].reading.note"
+  },
+  {
+   "id": "l1aue3cm",
+   "text": "Every valley is clear, and the fields below them are green. Go and look at the fields.",
+   "category": "narration",
+   "surah": 13,
+   "chapter": "world-13",
+   "key": "w13.tasks[1].outro"
+  },
+  {
+   "id": "l1elqnjd",
+   "text": "On the earth are plots side by side, gardens of grapevines, crops and palms, watered with one water, and yet some give better fruit than others. In that are signs for people who think.",
+   "category": "narration",
+   "surah": 13,
+   "chapter": "world-13",
+   "key": "w13.tasks[2].reading.note"
+  },
+  {
+   "id": "l1oglh4b",
+   "text": "Those who believe find their hearts at rest in the remembrance of Allah. Truly, in the remembrance of Allah hearts find rest.",
+   "category": "narration",
+   "surah": 13,
+   "chapter": "world-13",
+   "key": "w13.tasks[3].reading.note"
+  },
+  {
+   "id": "lx0rfcy",
+   "text": "You sheltered from the storm, watched each valley fill by its own size, and cast the foam away so the clear water could reach the fields.",
+   "category": "narration",
+   "surah": 13,
+   "chapter": "world-13",
+   "key": "w13.finale.body[0]"
+  },
+  {
+   "id": "l1u2ac33",
+   "text": "The foam looked big on top, but it did not last. What stayed was what helps people.",
+   "category": "narration",
+   "surah": 13,
+   "chapter": "world-13",
+   "key": "w13.finale.body[1]"
+  },
+  {
+   "id": "l1rfafx3",
+   "text": "Welcome to the Roots of Faith. This dry valley is where you will grow a tree: not any tree, but the good tree of a parable in Surah Ibrahim. Read the parable at the first stone.",
+   "category": "narration",
+   "surah": 14,
+   "chapter": "world-14",
+   "key": "w14.welcome"
+  },
+  {
+   "id": "l9ateyw",
+   "text": "Allah gives an example: a good word is like a good tree. Its root is firm and its branches reach into the sky, and it gives its fruit at every time, by permission of its Lord.",
+   "category": "narration",
+   "surah": 14,
+   "chapter": "world-14",
+   "key": "w14.tasks[0].reading.note"
+  },
+  {
+   "id": "l9qji73",
+   "text": "Here is a young tree to plant. Some of this ground is firm soil and some is loose sand. Try the marked places and plant where the ground is firm.",
+   "category": "narration",
+   "surah": 14,
+   "chapter": "world-14",
+   "key": "w14.tasks[1].intro"
+  },
+  {
+   "id": "l9wfcxy",
+   "text": "The good tree's root is firmly fixed, and its branches are high in the sky.",
+   "category": "narration",
+   "surah": 14,
+   "chapter": "world-14",
+   "key": "w14.tasks[1].readings.firm.note"
+  },
+  {
+   "id": "l7w9x5u",
+   "text": "And a bad word is like a bad tree, pulled up from the surface of the earth, with no stability.",
+   "category": "narration",
+   "surah": 14,
+   "chapter": "world-14",
+   "key": "w14.tasks[1].readings.loose.note"
+  },
+  {
+   "id": "l19iha29",
+   "text": "It gives its fruit at every time, by permission of its Lord. Allah gives examples so that people will remember.",
+   "category": "narration",
+   "surah": 14,
+   "chapter": "world-14",
+   "key": "w14.tasks[1].readings.fruit.note"
+  },
+  {
+   "id": "l1n3re57",
+   "text": "Three seasons, and the tree has given fruit each time. The travellers have found food in a valley where nothing grew.",
+   "category": "narration",
+   "surah": 14,
+   "chapter": "world-14",
+   "key": "w14.tasks[1].outro"
+  },
+  {
+   "id": "lcgcfx6",
+   "text": "Ibrahim prayed for the city to be safe, and said: I have settled some of my family in a valley without crops, near Your sacred House, so that they may pray. Make people's hearts turn to them, and provide them with fruits, so that they may be grateful.",
+   "category": "narration",
+   "surah": 14,
+   "chapter": "world-14",
+   "key": "w14.tasks[2].reading.note"
+  },
+  {
+   "id": "lcu7654",
+   "text": "Your Lord said: if you are grateful, I will surely give you more.",
+   "category": "narration",
+   "surah": 14,
+   "chapter": "world-14",
+   "key": "w14.tasks[3].reading.note"
+  },
+  {
+   "id": "l1fel5qx",
+   "text": "You planted on firm ground, watered the roots, chose good words for the branches, and shared the fruit with travellers season after season.",
+   "category": "narration",
+   "surah": 14,
+   "chapter": "world-14",
+   "key": "w14.finale.body[0]"
+  },
+  {
+   "id": "l6z6xxa",
+   "text": "The parable says a good word is like that tree: firm underneath, reaching high, and giving all the time.",
+   "category": "narration",
+   "surah": 14,
+   "chapter": "world-14",
+   "key": "w14.finale.body[1]"
+  },
+  {
+   "id": "l1ldsga9",
+   "text": "Welcome to the Carved Valley. Long ago, people here carved their houses out of the mountains. Surah Al-Hijr tells about them, and about the signs in the earth and sky. Read the first stone, then explore the cliffs.",
+   "category": "narration",
+   "surah": 15,
+   "chapter": "world-15",
+   "key": "w15.welcome"
+  },
+  {
+   "id": "l1u0ntmg",
+   "text": "Allah spread out the earth, set firm mountains in it, and made everything grow in balance. Nothing is sent down except in a known measure: He sends the winds that carry what makes plants grow, and the rain you drink.",
+   "category": "narration",
+   "surah": 15,
+   "chapter": "world-15",
+   "key": "w15.tasks[0].reading.note"
+  },
+  {
+   "id": "l4uyhiu",
+   "text": "Five doorways are carved into the cliffs, each with a different pattern above it. Take a rubbing of each one: stand by the door and keep still while it comes through. Then bring them to the map table and put each where it belongs.",
+   "category": "narration",
+   "surah": 15,
+   "chapter": "world-15",
+   "key": "w15.tasks[1].intro"
+  },
+  {
+   "id": "l1skauj2",
+   "text": "The people of al-Hijr denied the messengers and turned away from the signs they were given. They carved houses out of the mountains and felt safe in them, but what they had built could not help them.",
+   "category": "narration",
+   "surah": 15,
+   "chapter": "world-15",
+   "key": "w15.tasks[1].reading.note"
+  },
+  {
+   "id": "l1svvysx",
+   "text": "Your map of the carved valley is complete.",
+   "category": "narration",
+   "surah": 15,
+   "chapter": "world-15",
+   "key": "w15.tasks[1].outro"
+  },
+  {
+   "id": "l1laczd8",
+   "text": "In that are signs for those who look closely. The ruins stand by a road people still travel, as a sign for those who believe.",
+   "category": "narration",
+   "surah": 15,
+   "chapter": "world-15",
+   "key": "w15.tasks[2].reading.note"
+  },
+  {
+   "id": "lbscwi6",
+   "text": "You found every carved doorway, took its rubbing, and put each one on the map where it belongs.",
+   "category": "narration",
+   "surah": 15,
+   "chapter": "world-15",
+   "key": "w15.finale.body[0]"
+  },
+  {
+   "id": "l1m808t9",
+   "text": "The people who carved these houses felt safe in stone. Al-Hijr asks us to look closely at signs like these, and to remember what truly keeps us safe.",
+   "category": "narration",
+   "surah": 15,
+   "chapter": "world-15",
+   "key": "w15.finale.body[1]"
+  },
+  {
+   "id": "l1gpuhq2",
+   "text": "Welcome to the Honeybee Meadow. Here the flowers stand taller than you, and you can watch the bees at their own height. Surah An-Nahl, \"The Bee\", counts the blessings around us: rain, crops, animals, and the bee and its honey. Start at the meadow gate.",
+   "category": "narration",
+   "surah": 16,
+   "chapter": "world-16",
+   "key": "w16.welcome"
+  },
+  {
+   "id": "l1mo424l",
+   "text": "Allah sends down rain from the sky: some of it you drink, and from it grow the plants where animals graze. With it He grows crops, olives, palms, grapes and every kind of fruit.",
+   "category": "narration",
+   "surah": 16,
+   "chapter": "world-16",
+   "key": "w16.tasks[0].reading.note"
+  },
+  {
+   "id": "l19krh66",
+   "text": "There is a hive in a hollow tree at the edge of the meadow. Walk up gently and keep still: bees do not like being rushed.",
+   "category": "narration",
+   "surah": 16,
+   "chapter": "world-16",
+   "key": "w16.tasks[1].intro"
+  },
+  {
+   "id": "l1te8fan",
+   "text": "Journal: bees fly in and out of the hollow tree all the time. Some come back with yellow pollen on their legs.",
+   "category": "narration",
+   "surah": 16,
+   "chapter": "world-16",
+   "key": "w16.tasks[1].subjects[0].note"
+  },
+  {
+   "id": "l1yg5hwc",
+   "text": "Your Lord inspired the bee: make homes in the mountains, in the trees, and in what people build.",
+   "category": "narration",
+   "surah": 16,
+   "chapter": "world-16",
+   "key": "w16.tasks[1].subjects[0].reading.note"
+  },
+  {
+   "id": "lpl6lup",
+   "text": "Bees visit flower after flower. As they drink, pollen sticks to them and they carry it to the next flower of the same kind, and that flower can set fruit and seed. Try it yourself: gather pollen from one flower, then find another of the same kind.",
+   "category": "narration",
+   "surah": 16,
+   "chapter": "world-16",
+   "key": "w16.tasks[2].intro"
+  },
+  {
+   "id": "l8l87ml",
+   "text": "Then eat from all the fruits and follow the ways of your Lord made easy for you. From their bellies comes a drink of different colours, in which there is healing for people. In that is a sign for people who think.",
+   "category": "narration",
+   "surah": 16,
+   "chapter": "world-16",
+   "key": "w16.tasks[2].reading.note"
+  },
+  {
+   "id": "ldr3wuw",
+   "text": "The meadow is setting fruit and seed, and the comb in the hollow tree is filling with honey of different colours.",
+   "category": "narration",
+   "surah": 16,
+   "chapter": "world-16",
+   "key": "w16.tasks[2].outro"
+  },
+  {
+   "id": "l1qe5b8s",
+   "text": "Allah created the grazing animals: from them come warmth, food and many benefits, and there is beauty in them as they come home in the evening and go out in the morning. From them comes pure milk.",
+   "category": "narration",
+   "surah": 16,
+   "chapter": "world-16",
+   "key": "w16.tasks[3].reading.note"
+  },
+  {
+   "id": "l11zui2x",
+   "text": "Allah brought you out of your mothers knowing nothing, and gave you hearing, sight and understanding, so that you might be grateful. Do they not see the birds held up in the sky? No one holds them up but Allah.",
+   "category": "narration",
+   "surah": 16,
+   "chapter": "world-16",
+   "key": "w16.tasks[4].reading.note"
+  },
+  {
+   "id": "levl0yg",
+   "text": "You watched the hive, carried pollen between flowers of the same kind, and saw the comb fill with honey of different colours.",
+   "category": "narration",
+   "surah": 16,
+   "chapter": "world-16",
+   "key": "w16.finale.body[0]"
+  },
+  {
+   "id": "l1rqb3um",
+   "text": "Surah An-Nahl says that if we tried to count Allah's blessings, we could not number them.",
+   "category": "narration",
+   "surah": 16,
+   "chapter": "world-16",
+   "key": "w16.finale.body[1]"
+  },
+  {
+   "id": "l2xlp6w",
+   "text": "Welcome to the Town of Good Conduct. It is night, and the street lamps are dark. Surah Al-Isra gives a list of ways to live well: with parents, relatives, neighbours and travellers, with money and measures, and in the way we walk. Read the first tablet.",
+   "category": "narration",
+   "surah": 17,
+   "chapter": "world-17",
+   "key": "w17.welcome"
+  },
+  {
+   "id": "l1lzi394",
+   "text": "The surah begins with the Night Journey: Allah took His servant by night from the Sacred Mosque to the Farthest Mosque, to show him some of His signs.",
+   "category": "narration",
+   "surah": 17,
+   "chapter": "world-17",
+   "key": "w17.tasks[0].reading.note"
+  },
+  {
+   "id": "lolavw",
+   "text": "Each of the five streets has a dark lamp. On each one there is something to do. When it is done, the lamp lights.",
+   "category": "narration",
+   "surah": 17,
+   "chapter": "world-17",
+   "key": "w17.tasks[1].intro"
+  },
+  {
+   "id": "l1ser6oq",
+   "text": "Be good to your parents. When they grow old, do not say even \"uff\" to them; speak to them kindly, and pray: My Lord, have mercy on them as they cared for me when I was small.",
+   "category": "narration",
+   "surah": 17,
+   "chapter": "world-17",
+   "key": "w17.tasks[1].streets[0].reading.note"
+  },
+  {
+   "id": "l1nu6luh",
+   "text": "Give relatives what is their right, and the poor and the traveller too, and do not waste.",
+   "category": "narration",
+   "surah": 17,
+   "chapter": "world-17",
+   "key": "w17.tasks[1].streets[1].reading.note"
+  },
+  {
+   "id": "lurz14",
+   "text": "Wasteful people are like brothers of the devils, and Satan was ungrateful to his Lord.",
+   "category": "narration",
+   "surah": 17,
+   "chapter": "world-17",
+   "key": "w17.tasks[1].streets[2].reading.note"
+  },
+  {
+   "id": "l4r38dd",
+   "text": "Give full measure when you measure, and weigh with a true balance. That is better, and best in the end.",
+   "category": "narration",
+   "surah": 17,
+   "chapter": "world-17",
+   "key": "w17.tasks[1].streets[3].reading.note"
+  },
+  {
+   "id": "l1tqixvn",
+   "text": "Do not walk on the earth proudly: you cannot tear the earth apart, and you will never be as tall as the mountains.",
+   "category": "narration",
+   "surah": 17,
+   "chapter": "world-17",
+   "key": "w17.tasks[1].streets[4].reading.note"
+  },
+  {
+   "id": "l17i24vw",
+   "text": "All five lamps are lit, and the town glows in the night.",
+   "category": "narration",
+   "surah": 17,
+   "chapter": "world-17",
+   "key": "w17.tasks[1].outro"
+  },
+  {
+   "id": "l8nk2er",
+   "text": "Allah has honoured the children of Adam, carried them on land and sea, and provided them with good things.",
+   "category": "narration",
+   "surah": 17,
+   "chapter": "world-17",
+   "key": "w17.tasks[2].reading.note"
+  },
+  {
+   "id": "l71t7c0",
+   "text": "You helped, gave, saved water, measured fairly and walked calmly, and each street lit up.",
+   "category": "narration",
+   "surah": 17,
+   "chapter": "world-17",
+   "key": "w17.finale.body[0]"
+  },
+  {
+   "id": "ldi5tp5",
+   "text": "Al-Isra says this Quran guides to what is most upright.",
+   "category": "narration",
+   "surah": 17,
+   "chapter": "world-17",
+   "key": "w17.finale.body[1]"
+  },
+  {
+   "id": "l1yfyct4",
+   "text": "Welcome to the Four Realms. Surah Al-Kahf tells four stories: young men who sheltered in a cave, a man proud of his two gardens, a journey to where two seas meet, and a traveller who built a barrier. You will visit a place for each. Start at the cave in the hills.",
+   "category": "narration",
+   "surah": 18,
+   "chapter": "world-18",
+   "key": "w18.welcome"
+  },
+  {
+   "id": "l1l78h37",
+   "text": "Some young men who believed in their Lord took shelter in a cave and prayed: Our Lord, give us mercy from You and guide us rightly in our affair. They believed, and Allah increased them in guidance.",
+   "category": "narration",
+   "surah": 18,
+   "chapter": "world-18",
+   "key": "w18.tasks[0].reading.note"
+  },
+  {
+   "id": "l8n432m",
+   "text": "The dial beside the cave turns the day. At sunrise and at sunset, find where the sunlight falls near the cave mouth, stand in it, and set a marker stone.",
+   "category": "narration",
+   "surah": 18,
+   "chapter": "world-18",
+   "key": "w18.tasks[1].intro"
+  },
+  {
+   "id": "lttx9m9",
+   "text": "You would have seen the sun, when it rose, turning away from their cave to the right, and when it set, passing them by on the left, while they lay in an open space inside it. That was one of the signs of Allah.",
+   "category": "narration",
+   "surah": 18,
+   "chapter": "world-18",
+   "key": "w18.tasks[1].reading.note"
+  },
+  {
+   "id": "l1svxi6u",
+   "text": "Two stones, one on each side. The light passed by the cave mouth morning and evening, and never went in.",
+   "category": "narration",
+   "surah": 18,
+   "chapter": "world-18",
+   "key": "w18.tasks[1].outro"
+  },
+  {
+   "id": "ldpszbi",
+   "text": "The life of this world is like rain that makes the plants grow thick, and then they become dry and are scattered by the wind. Wealth and children are the adornment of this life, but good deeds that last are better with your Lord.",
+   "category": "narration",
+   "surah": 18,
+   "chapter": "world-18",
+   "key": "w18.tasks[2].reading.note"
+  },
+  {
+   "id": "lzeyctp",
+   "text": "Musa travelled to where the two seas meet to learn from a servant of Allah. The surah also says: if the sea were ink for the words of my Lord, the sea would run out before His words ran out.",
+   "category": "narration",
+   "surah": 18,
+   "chapter": "world-18",
+   "key": "w18.tasks[3].reading.note"
+  },
+  {
+   "id": "l1i849cw",
+   "text": "Between the two mountain walls is a gap. Carry the sheets of iron from the pile and set them in the gap.",
+   "category": "narration",
+   "surah": 18,
+   "chapter": "world-18",
+   "key": "w18.tasks[4].intro"
+  },
+  {
+   "id": "lg7gfsr",
+   "text": "He said: bring me sheets of iron. When he had filled the gap between the two mountain walls, he had the fire blown upon it, and poured molten copper over it.",
+   "category": "narration",
+   "surah": 18,
+   "chapter": "world-18",
+   "key": "w18.tasks[4].after.note"
+  },
+  {
+   "id": "lfpp0xb",
+   "text": "You watched the sunlight pass the cave by, saw the two gardens, stood where two seas meet, and helped fill the gap in the mountains.",
+   "category": "narration",
+   "surah": 18,
+   "chapter": "world-18",
+   "key": "w18.finale.body[0]"
+  },
+  {
+   "id": "l1a04k1o",
+   "text": "Al-Kahf is often read on Fridays. Its stories are about faith, humility, learning and using strength to help others.",
+   "category": "narration",
+   "surah": 18,
+   "chapter": "world-18",
+   "key": "w18.finale.body[1]"
+  },
+  {
+   "id": "l1svajc6",
+   "text": "Welcome to the Quiet Grove. In this world you answer without words. When a question comes, look around and point: tap the thing that answers it. Surah Maryam is a surah of mercy, of quiet prayers and of patience. Walk in and listen.",
+   "category": "narration",
+   "surah": 19,
+   "chapter": "world-19",
+   "key": "w19.welcome"
+  },
+  {
+   "id": "lokgxo5",
+   "text": "Look around the grove: a prayer niche, a pavilion facing the sunrise, a little stream and a tall palm. Each question has its answer somewhere here. Point to it.",
+   "category": "narration",
+   "surah": 19,
+   "chapter": "world-19",
+   "key": "w19.tasks[0].intro"
+  },
+  {
+   "id": "lxau7s3",
+   "text": "This is a mention of the mercy of your Lord to His servant Zakariyya, when he called to his Lord in a private prayer: My Lord, my bones are weak and my hair is white, but I have never been disappointed in praying to You.",
+   "category": "narration",
+   "surah": 19,
+   "chapter": "world-19",
+   "key": "w19.tasks[0].asks[0].reading.note"
+  },
+  {
+   "id": "l11vq6hw",
+   "text": "Mention in the Book Maryam, when she withdrew from her family to a place toward the east.",
+   "category": "narration",
+   "surah": 19,
+   "chapter": "world-19",
+   "key": "w19.tasks[0].asks[1].reading.note"
+  },
+  {
+   "id": "lzrze8i",
+   "text": "She was told: Do not grieve; your Lord has placed a stream beneath you.",
+   "category": "narration",
+   "surah": 19,
+   "chapter": "world-19",
+   "key": "w19.tasks[0].asks[2].reading.note"
+  },
+  {
+   "id": "lv0xtxw",
+   "text": "Shake the trunk of the palm toward you, and it will drop fresh, ripe dates. So eat and drink and be glad. And if you see anyone, say: I have promised the Most Merciful to fast from speaking, so I will not speak to anyone today.",
+   "category": "narration",
+   "surah": 19,
+   "chapter": "world-19",
+   "key": "w19.tasks[0].asks[3].reading.note"
+  },
+  {
+   "id": "l38b7z6",
+   "text": "Four answers, and not one word spoken.",
+   "category": "narration",
+   "surah": 19,
+   "chapter": "world-19",
+   "key": "w19.tasks[0].outro"
+  },
+  {
+   "id": "l1dnr2er",
+   "text": "Ibrahim answered his father gently: Peace be upon you; I will ask my Lord to forgive you. And for those who believe and do good, the Most Merciful will place affection in people's hearts.",
+   "category": "narration",
+   "surah": 19,
+   "chapter": "world-19",
+   "key": "w19.tasks[1].reading.note"
+  },
+  {
+   "id": "lxfucz8",
+   "text": "You answered every question without a word, by looking and pointing.",
+   "category": "narration",
+   "surah": 19,
+   "chapter": "world-19",
+   "key": "w19.finale.body[0]"
+  },
+  {
+   "id": "l685rdb",
+   "text": "Surah Maryam is full of quiet prayers answered, and of mercy from the Most Merciful.",
+   "category": "narration",
+   "surah": 19,
+   "chapter": "world-19",
+   "key": "w19.finale.body[1]"
+  },
+  {
+   "id": "lnlqkas",
+   "text": "Welcome to the Far Light. It is night in the hills. Far away, on a mountain, a light is burning, but the hills in between hide it from the low places. Surah Ta-Ha begins the story of Musa with a light seen at night. Read at the lantern first.",
+   "category": "narration",
+   "surah": 20,
+   "chapter": "world-20",
+   "key": "w20.welcome"
+  },
+  {
+   "id": "lt9fqfr",
+   "text": "Musa saw a fire far away at night. He told his family to stay where they were: perhaps he could bring them a burning torch from it, or find some guidance at the fire.",
+   "category": "narration",
+   "surah": 20,
+   "chapter": "world-20",
+   "key": "w20.tasks[0].reading.note"
+  },
+  {
+   "id": "l1nwjje2",
+   "text": "Look for the far light. Down in the hollows the hills hide it; up on the heights you can see it again. Build a cairn only where you can see the light, so the cairns mark a way that keeps it in view.",
+   "category": "narration",
+   "surah": 20,
+   "chapter": "world-20",
+   "key": "w20.tasks[1].intro"
+  },
+  {
+   "id": "l7thjt1",
+   "text": "When Musa came to the fire, he was called: his Lord told him to take off his sandals, for he was in the sacred valley of Tuwa, that He had chosen him, and that he should worship Him and pray to remember Him.",
+   "category": "narration",
+   "surah": 20,
+   "chapter": "world-20",
+   "key": "w20.tasks[1].reading.note"
+  },
+  {
+   "id": "l1wjg1fc",
+   "text": "Musa asked his Lord to open his heart, to make his task easy, to loosen the knot from his tongue so that people would understand him, and to give him his brother Harun as a helper.",
+   "category": "narration",
+   "surah": 20,
+   "chapter": "world-20",
+   "key": "w20.tasks[2].reading.note"
+  },
+  {
+   "id": "lnooip1",
+   "text": "Musa and Harun were sent to Pharaoh, who had gone too far, and told to speak to him with gentle words, so that he might remember or take care. Allah told them: do not be afraid, I am with you both, hearing and seeing.",
+   "category": "narration",
+   "surah": 20,
+   "chapter": "world-20",
+   "key": "w20.tasks[3].reading.note"
+  },
+  {
+   "id": "l1aq4b0y",
+   "text": "The surah teaches a short prayer: My Lord, increase me in knowledge. And it promises that whoever follows the guidance Allah sends will not go astray.",
+   "category": "narration",
+   "surah": 20,
+   "chapter": "world-20",
+   "key": "w20.tasks[4].reading.note"
+  },
+  {
+   "id": "l170mqo6",
+   "text": "You crossed the dark hills and built your cairns only where the far light could be seen.",
+   "category": "narration",
+   "surah": 20,
+   "chapter": "world-20",
+   "key": "w20.finale.body[0]"
+  },
+  {
+   "id": "levzbx4",
+   "text": "Surah Ta-Ha tells how Musa set out toward a light at night, hoping to find guidance there, and how he asked his Lord to ease his task.",
+   "category": "narration",
+   "surah": 20,
+   "chapter": "world-20",
+   "key": "w20.finale.body[1]"
+  },
+  {
+   "id": "l1p6npxw",
+   "text": "Welcome to the Hall of Answered Prayers. Surah Al-Anbiya tells of many prophets who called on their Lord in hard times, and how each prayer was answered. In the courtyard ahead are three prayers on tablets and three carved doors. Each prayer belongs to one door.",
+   "category": "narration",
+   "surah": 21,
+   "chapter": "world-21",
+   "key": "w21.welcome"
+  },
+  {
+   "id": "l9wkrqi",
+   "text": "Take a tablet from a lectern and read the prayer on it. Then walk to the doors and read what each one says. Set the tablet in the door it answers.",
+   "category": "narration",
+   "surah": 21,
+   "chapter": "world-21",
+   "key": "w21.tasks[0].intro"
+  },
+  {
+   "id": "l1qoqopm",
+   "text": "Allah answered him, took away the hardship that had touched him, and gave his family back to him and as many again, as a mercy and a reminder for those who worship.",
+   "category": "narration",
+   "surah": 21,
+   "chapter": "world-21",
+   "key": "w21.tasks[0].doors[0].reading.note"
+  },
+  {
+   "id": "lor8zqw",
+   "text": "Allah answered him and saved him from his distress. And that is how He saves the believers.",
+   "category": "narration",
+   "surah": 21,
+   "chapter": "world-21",
+   "key": "w21.tasks[0].doors[1].reading.note"
+  },
+  {
+   "id": "l1fd241x",
+   "text": "Allah answered him and gave him Yahya. They used to hurry to do good, and called on their Lord in hope and in fear, humbly.",
+   "category": "narration",
+   "surah": 21,
+   "chapter": "world-21",
+   "key": "w21.tasks[0].doors[2].reading.note"
+  },
+  {
+   "id": "la2ob7n",
+   "text": "After the stories of the prophets, the surah says that the Prophet Muhammad, peace be upon him, was sent as a mercy to all the worlds.",
+   "category": "narration",
+   "surah": 21,
+   "chapter": "world-21",
+   "key": "w21.tasks[0].reading.note"
+  },
+  {
+   "id": "lgxz7q9",
+   "text": "All three doors stand open: three prayers, each one answered.",
+   "category": "narration",
+   "surah": 21,
+   "chapter": "world-21",
+   "key": "w21.tasks[0].outro"
+  },
+  {
+   "id": "l36890y",
+   "text": "Ibrahim asked his people what the statues were that they were devoted to, and told them their Lord is the Lord of the heavens and the earth, who created them. When they threw him into a fire, Allah said: O fire, be coolness and safety for Ibrahim.",
+   "category": "narration",
+   "surah": 21,
+   "chapter": "world-21",
+   "key": "w21.tasks[1].reading.note"
+  },
+  {
+   "id": "ll8ywyx",
+   "text": "The heavens and the earth were joined together, and Allah separated them, and made every living thing from water.",
+   "category": "narration",
+   "surah": 21,
+   "chapter": "world-21",
+   "key": "w21.tasks[2].reading.note"
+  },
+  {
+   "id": "lwqlfi4",
+   "text": "You matched three prayers from the Quran to the situations they answer, and every door opened.",
+   "category": "narration",
+   "surah": 21,
+   "chapter": "world-21",
+   "key": "w21.finale.body[0]"
+  },
+  {
+   "id": "l12gzre2",
+   "text": "Surah Al-Anbiya shows that the prophets called on their Lord in hard times, in hope and in fear, and were answered.",
+   "category": "narration",
+   "surah": 21,
+   "chapter": "world-21",
+   "key": "w21.finale.body[1]"
+  },
+  {
+   "id": "ls66b4x",
+   "text": "Welcome to the Pilgrimage Verses. Surah Al-Hajj tells of the House, of the call to the pilgrimage, and of people coming from every distant pass. In the middle of the valley is a map model. Four carved stones lie around the valley; each tells one step from the verses.",
+   "category": "narration",
+   "surah": 22,
+   "chapter": "world-22",
+   "key": "w22.welcome"
+  },
+  {
+   "id": "l1yskq1p",
+   "text": "Pick up a stone and read what it tells. Then set it on the model. The verses give the steps in an order: which comes first?",
+   "category": "narration",
+   "surah": 22,
+   "chapter": "world-22",
+   "key": "w22.tasks[0].intro"
+  },
+  {
+   "id": "l16q7r3h",
+   "text": "Allah showed Ibrahim the site of the House and told him: do not associate anything with Me, and keep My House pure for those who go round it, and those who stand, bow and prostrate in prayer.",
+   "category": "narration",
+   "surah": 22,
+   "chapter": "world-22",
+   "key": "w22.tasks[0].stones[0].reading.note"
+  },
+  {
+   "id": "lih16br",
+   "text": "Call the people to the Hajj: they will come on foot and on lean camels, from every distant pass.",
+   "category": "narration",
+   "surah": 22,
+   "chapter": "world-22",
+   "key": "w22.tasks[0].stones[1].reading.note"
+  },
+  {
+   "id": "l181qzpu",
+   "text": "So that they may see what benefits them, and mention the name of Allah on the known days over the animals He has given them. Eat from them, and feed those who are poor and in need.",
+   "category": "narration",
+   "surah": 22,
+   "chapter": "world-22",
+   "key": "w22.tasks[0].stones[2].reading.note"
+  },
+  {
+   "id": "l1i3hk2b",
+   "text": "Then let them finish their rites, keep their vows, and go round the ancient House.",
+   "category": "narration",
+   "surah": 22,
+   "chapter": "world-22",
+   "key": "w22.tasks[0].stones[3].reading.note"
+  },
+  {
+   "id": "l181aszz",
+   "text": "Neither the meat nor the blood reaches Allah. What reaches Him is the mindfulness of Him in your hearts.",
+   "category": "narration",
+   "surah": 22,
+   "chapter": "world-22",
+   "key": "w22.tasks[0].reading.note"
+  },
+  {
+   "id": "lthrvbk",
+   "text": "The four stones stand in the order of the verses.",
+   "category": "narration",
+   "surah": 22,
+   "chapter": "world-22",
+   "key": "w22.tasks[0].outro"
+  },
+  {
+   "id": "l1gxatm4",
+   "text": "Whoever honours the signs and symbols of Allah: that comes from the mindfulness of the heart.",
+   "category": "narration",
+   "surah": 22,
+   "chapter": "world-22",
+   "key": "w22.tasks[1].reading.note"
+  },
+  {
+   "id": "l1r67n6h",
+   "text": "You set the steps of the pilgrimage verses in their order, and saw the model change with each one.",
+   "category": "narration",
+   "surah": 22,
+   "chapter": "world-22",
+   "key": "w22.finale.body[0]"
+  },
+  {
+   "id": "luacrkz",
+   "text": "Surah Al-Hajj teaches that what matters is not only the outward act but the mindfulness in the heart.",
+   "category": "narration",
+   "surah": 22,
+   "chapter": "world-22",
+   "key": "w22.finale.body[1]"
+  },
+  {
+   "id": "l1ekq4c5",
+   "text": "Welcome to the Home of Good Character. Surah Al-Mu'minun begins by describing the believers: how they pray, how they keep trusts and promises, and how they give. In this home, things will come due through the day. Keep each one in its time, and watch the rooms come alive.",
+   "category": "narration",
+   "surah": 23,
+   "chapter": "world-23",
+   "key": "w23.welcome"
+  },
+  {
+   "id": "l1w2iafe",
+   "text": "The ark game lives in Surah Hud (11:37-44)",
+   "category": "narration",
+   "surah": 23,
+   "chapter": "world-23",
+   "key": "w23.links[0].note"
+  },
+  {
+   "id": "l1qnv3na",
+   "text": "The believers have succeeded: those who are humble in their prayer, who turn away from idle and harmful talk, and who give zakah.",
+   "category": "narration",
+   "surah": 23,
+   "chapter": "world-23",
+   "key": "w23.tasks[0].reading.note"
+  },
+  {
+   "id": "l1e4u879",
+   "text": "The day has begun. A neighbour has left a parcel at the door for you to keep safe. You promised to water the window plant when the bell rings. The prayer corner must be clear by the chime. And there is the giving jar. Watch the clock on your status line.",
+   "category": "narration",
+   "surah": 23,
+   "chapter": "world-23",
+   "key": "w23.tasks[1].intro"
+  },
+  {
+   "id": "lwutaam",
+   "text": "The believers look after what is trusted to them and keep their promises.",
+   "category": "narration",
+   "surah": 23,
+   "chapter": "world-23",
+   "key": "w23.tasks[1].rooms[0].reading.note"
+  },
+  {
+   "id": "l1bzmrx3",
+   "text": "The believers are humble in their prayer, and they guard their prayers with care.",
+   "category": "narration",
+   "surah": 23,
+   "chapter": "world-23",
+   "key": "w23.tasks[1].rooms[1].reading.note"
+  },
+  {
+   "id": "louq8gg",
+   "text": "They are careful with their trusts and with their promises: a promise is kept at the time it was made for.",
+   "category": "narration",
+   "surah": 23,
+   "chapter": "world-23",
+   "key": "w23.tasks[1].rooms[2].reading.note"
+  },
+  {
+   "id": "l1487qw9",
+   "text": "The believers give zakah: a share of what they have, for those in need.",
+   "category": "narration",
+   "surah": 23,
+   "chapter": "world-23",
+   "key": "w23.tasks[1].rooms[3].reading.note"
+  },
+  {
+   "id": "l1w9vsxv",
+   "text": "Those are the ones who will inherit Paradise, al-Firdaws, and stay in it for ever.",
+   "category": "narration",
+   "surah": 23,
+   "chapter": "world-23",
+   "key": "w23.tasks[1].reading.note"
+  },
+  {
+   "id": "l1nrr2r3",
+   "text": "Every room is bright: the trust, the promise, the prayer and the giving, each kept in its time.",
+   "category": "narration",
+   "surah": 23,
+   "chapter": "world-23",
+   "key": "w23.tasks[1].outro"
+  },
+  {
+   "id": "l35ovdo",
+   "text": "Allah created the human being from clay, and then in stages, one after another, and then brought it forth as another creation. So blessed is Allah, the best of creators.",
+   "category": "narration",
+   "surah": 23,
+   "chapter": "world-23",
+   "key": "w23.tasks[2].reading.note"
+  },
+  {
+   "id": "l1265y1p",
+   "text": "Nuh was told to build the ship under Allah's watch and guidance, and when the command came, to take on board two of every kind, and his family. The ark game is in Surah Hud.",
+   "category": "narration",
+   "surah": 23,
+   "chapter": "world-23",
+   "key": "w23.tasks[3].reading.note"
+  },
+  {
+   "id": "l27ngqt",
+   "text": "Allah made the son of Maryam and his mother a sign, and gave them shelter on high ground, a quiet place with flowing water.",
+   "category": "narration",
+   "surah": 23,
+   "chapter": "world-23",
+   "key": "w23.tasks[4].reading.note"
+  },
+  {
+   "id": "l6cj792",
+   "text": "You kept a trust, a promise, the prayer time and the giving, each at its time, and the whole home came alive.",
+   "category": "narration",
+   "surah": 23,
+   "chapter": "world-23",
+   "key": "w23.finale.body[0]"
+  },
+  {
+   "id": "locaelf",
+   "text": "Surah Al-Mu'minun teaches that faith is not only what we say: it changes how we act, all through the day.",
+   "category": "narration",
+   "surah": 23,
+   "chapter": "world-23",
+   "key": "w23.finale.body[1]"
+  },
+  {
+   "id": "lgcer4e",
+   "text": "Welcome to the Courtyards of Permission. Surah An-Nur teaches good manners at people's homes: ask, and be welcomed, before going in. Each house here has a dark courtyard. Knock, wait for an answer, and once you are welcomed, bring the sunlight in with the mirrors.",
+   "category": "narration",
+   "surah": 24,
+   "chapter": "world-24",
+   "key": "w24.welcome"
+  },
+  {
+   "id": "lbfv26e",
+   "text": "Go to a door and knock. Then wait by the door for an answer: do not go in before you are welcomed. Inside, turn the mirror stands so the sunbeam from the west opening reaches the glowing window.",
+   "category": "narration",
+   "surah": 24,
+   "chapter": "world-24",
+   "key": "w24.tasks[0].intro"
+  },
+  {
+   "id": "laivzth",
+   "text": "Do not go into houses other than your own until you have asked and been welcomed, and greet the people inside. That is best for you.",
+   "category": "narration",
+   "surah": 24,
+   "chapter": "world-24",
+   "key": "w24.tasks[0].houses[0].reading.note"
+  },
+  {
+   "id": "l1larnuq",
+   "text": "If no one is home, do not go in until you are given permission. And if you are told \"Go back\", then go back: that is purer for you.",
+   "category": "narration",
+   "surah": 24,
+   "chapter": "world-24",
+   "key": "w24.tasks[0].houses[1].reading.note"
+  },
+  {
+   "id": "lltox0b",
+   "text": "When you go into houses, greet one another with peace: a greeting from Allah, blessed and good.",
+   "category": "narration",
+   "surah": 24,
+   "chapter": "world-24",
+   "key": "w24.tasks[0].houses[2].reading.note"
+  },
+  {
+   "id": "l1f2k420",
+   "text": "Three houses visited with permission, and three courtyards full of sunlight.",
+   "category": "narration",
+   "surah": 24,
+   "chapter": "world-24",
+   "key": "w24.tasks[0].outro"
+  },
+  {
+   "id": "lh7rcb0",
+   "text": "This verse gives a parable about the light of Allah, using a niche, a lamp, glass and the oil of a blessed olive tree. Light helps us think about guidance, but nothing we make is a picture of Allah. Read the verse itself, and ask a teacher about what it means.",
+   "category": "narration",
+   "surah": 24,
+   "chapter": "world-24",
+   "key": "w24.tasks[1].reading.note"
+  },
+  {
+   "id": "lxvoiww",
+   "text": "You knocked and waited at every door, went back when you were asked to, and brought sunlight into each courtyard.",
+   "category": "narration",
+   "surah": 24,
+   "chapter": "world-24",
+   "key": "w24.finale.body[0]"
+  },
+  {
+   "id": "l1jr18eu",
+   "text": "Surah An-Nur teaches respect for people's homes and privacy, and greetings of peace when we go in.",
+   "category": "narration",
+   "surah": 24,
+   "chapter": "world-24",
+   "key": "w24.finale.body[1]"
+  },
+  {
+   "id": "l967xl4",
+   "text": "Welcome to the Shadow Plaza. Surah Al-Furqan asks: have you considered how your Lord stretches out the shadow? In the plaza is a tall pole. The day is held still for you: guess where its shadow will fall later, then let the day run and watch.",
+   "category": "narration",
+   "surah": 25,
+   "chapter": "world-25",
+   "key": "w25.welcome"
+  },
+  {
+   "id": "lxy2uz4",
+   "text": "Look at the shadow of the pole now. The sun will climb, cross the sky and sink. Where will the tip of the shadow be at the time asked? Stand there and put your stone down, then sit at the seat and let the day run.",
+   "category": "narration",
+   "surah": 25,
+   "chapter": "world-25",
+   "key": "w25.tasks[0].intro"
+  },
+  {
+   "id": "lbobzsh",
+   "text": "Have you considered how your Lord stretches out the shadow? If He willed He could have made it stand still. Then He made the sun a guide to it, and then draws it in, little by little.",
+   "category": "narration",
+   "surah": 25,
+   "chapter": "world-25",
+   "key": "w25.tasks[0].rounds[0].reading.note"
+  },
+  {
+   "id": "l1lfl6jw",
+   "text": "Blessed is He who placed great stars in the sky, and a lamp and a shining moon, and made the night and the day follow each other, for anyone who wants to remember or to be thankful.",
+   "category": "narration",
+   "surah": 25,
+   "chapter": "world-25",
+   "key": "w25.tasks[0].rounds[1].reading.note"
+  },
+  {
+   "id": "lpxub84",
+   "text": "He made the night a covering for you, and sleep a rest, and the day a time to rise and go out.",
+   "category": "narration",
+   "surah": 25,
+   "chapter": "world-25",
+   "key": "w25.tasks[0].rounds[2].reading.note"
+  },
+  {
+   "id": "l1bfywte",
+   "text": "Three guesses, and the shadow came to each one.",
+   "category": "narration",
+   "surah": 25,
+   "chapter": "world-25",
+   "key": "w25.tasks[0].outro"
+  },
+  {
+   "id": "l18wrfss",
+   "text": "The servants of the Most Merciful walk on the earth gently, and when foolish people speak to them harshly, they answer with words of peace.",
+   "category": "narration",
+   "surah": 25,
+   "chapter": "world-25",
+   "key": "w25.tasks[1].reading.note"
+  },
+  {
+   "id": "l111m6ls",
+   "text": "He sends the winds as good news before His mercy, and sends down pure water from the sky, to bring dead land to life and give drink to animals and people.",
+   "category": "narration",
+   "surah": 25,
+   "chapter": "world-25",
+   "key": "w25.tasks[2].reading.note"
+  },
+  {
+   "id": "l1104vt5",
+   "text": "You watched the shadow shorten toward midday and stretch again toward evening, and guessed where it would fall.",
+   "category": "narration",
+   "surah": 25,
+   "chapter": "world-25",
+   "key": "w25.finale.body[0]"
+  },
+  {
+   "id": "ly7u8lf",
+   "text": "Surah Al-Furqan points to the shadow, the sun, the night and the day as signs, and describes the servants of the Most Merciful who answer harshness with peace.",
+   "category": "narration",
+   "surah": 25,
+   "chapter": "world-25",
+   "key": "w25.finale.body[1]"
+  },
+  {
+   "id": "l9m5q88",
+   "text": "Welcome to the Echo Amphitheatre. Surah Ash-Shu'ara tells seven stories of messengers and their peoples, and after each one the same words come back, like an echo. Read at the sign, then tune the stones.",
+   "category": "narration",
+   "surah": 26,
+   "chapter": "world-26",
+   "key": "w26.welcome"
+  },
+  {
+   "id": "l177di5n",
+   "text": "Ta, Seen, Meem. These are the verses of the clear Book.",
+   "category": "narration",
+   "surah": 26,
+   "chapter": "world-26",
+   "key": "w26.tasks[0].reading.note"
+  },
+  {
+   "id": "l1rf3pgs",
+   "text": "Each stone has a light that beats at its own pace. Strike the chime in the middle and watch: a ring goes out, and a bright echo comes back from each stone. A stone farther away sends its echo back later. Slide each stone until its echo comes back on its beat.",
+   "category": "narration",
+   "surah": 26,
+   "chapter": "world-26",
+   "key": "w26.tasks[1].intro"
+  },
+  {
+   "id": "l80h78p",
+   "text": "Musa was sent to the wrongdoing people of Pharaoh. At the end of the chapter comes the refrain: in that is a sign, but most of them did not believe; and your Lord is the Exalted in Might, the Merciful.",
+   "category": "narration",
+   "surah": 26,
+   "chapter": "world-26",
+   "key": "w26.tasks[1].stones[0].reading.note"
+  },
+  {
+   "id": "l135gfve",
+   "text": "Ibrahim asked his father and his people: what do you worship? And the refrain comes again.",
+   "category": "narration",
+   "surah": 26,
+   "chapter": "world-26",
+   "key": "w26.tasks[1].stones[1].reading.note"
+  },
+  {
+   "id": "lmrt6vw",
+   "text": "The people of Nuh rejected the messengers. And the refrain comes again.",
+   "category": "narration",
+   "surah": 26,
+   "chapter": "world-26",
+   "key": "w26.tasks[1].stones[2].reading.note"
+  },
+  {
+   "id": "l1xeliyi",
+   "text": "The people of 'Ad rejected the messengers. And your Lord is the Exalted in Might, the Merciful.",
+   "category": "narration",
+   "surah": 26,
+   "chapter": "world-26",
+   "key": "w26.tasks[1].stones[3].reading.note"
+  },
+  {
+   "id": "ls9f3td",
+   "text": "The people of Thamud rejected the messengers. And your Lord is the Exalted in Might, the Merciful.",
+   "category": "narration",
+   "surah": 26,
+   "chapter": "world-26",
+   "key": "w26.tasks[1].stones[4].reading.note"
+  },
+  {
+   "id": "lbb6hz",
+   "text": "The people of Lut rejected the messengers. And your Lord is the Exalted in Might, the Merciful.",
+   "category": "narration",
+   "surah": 26,
+   "chapter": "world-26",
+   "key": "w26.tasks[1].stones[5].reading.note"
+  },
+  {
+   "id": "l13wo95e",
+   "text": "Shu'ayb told his people: give full measure, weigh with an even balance, and do not cheat people of what is theirs. And the refrain comes again.",
+   "category": "narration",
+   "surah": 26,
+   "chapter": "world-26",
+   "key": "w26.tasks[1].stones[6].reading.note"
+  },
+  {
+   "id": "l14fuajm",
+   "text": "Indeed in that is a sign, but most of them did not believe. And indeed your Lord is the Exalted in Might, the Merciful. These words come after every story in the surah.",
+   "category": "narration",
+   "surah": 26,
+   "chapter": "world-26",
+   "key": "w26.tasks[1].reading.note"
+  },
+  {
+   "id": "l1aeyttm",
+   "text": "All seven stones ring in time, like the refrain after each story.",
+   "category": "narration",
+   "surah": 26,
+   "chapter": "world-26",
+   "key": "w26.tasks[1].outro"
+  },
+  {
+   "id": "l1mhmbpg",
+   "text": "You tuned seven stones until each echo came back on its beat, one for each story in Surah Ash-Shu'ara.",
+   "category": "narration",
+   "surah": 26,
+   "chapter": "world-26",
+   "key": "w26.finale.body[0]"
+  },
+  {
+   "id": "ly57jak",
+   "text": "After every story the surah repeats the same words: in that is a sign, and your Lord is the Exalted in Might, the Merciful.",
+   "category": "narration",
+   "surah": 26,
+   "chapter": "world-26",
+   "key": "w26.finale.body[1]"
+  },
+  {
+   "id": "l9eekfd",
+   "text": "Welcome to the Valley of the Ants. Here you are as small as an ant: the grass is like a forest. Surah An-Naml tells of an ant who called to the others to go home before footsteps came near. Read at the sign first.",
+   "category": "narration",
+   "surah": 27,
+   "chapter": "world-27",
+   "key": "w27.welcome"
+  },
+  {
+   "id": "l4unj4x",
+   "text": "Allah gave Dawud and Sulayman knowledge, and they thanked Him. Sulayman said they had been taught the speech of birds and given a share of everything.",
+   "category": "narration",
+   "surah": 27,
+   "chapter": "world-27",
+   "key": "w27.tasks[0].reading.note"
+  },
+  {
+   "id": "l1cryuef",
+   "text": "Groups of ants are out on three paths, and footsteps are coming. Go to the nest to start, then clear the pebbles, twigs and leaves off the paths. A clear path lets its ants march home.",
+   "category": "narration",
+   "surah": 27,
+   "chapter": "world-27",
+   "key": "w27.tasks[1].intro"
+  },
+  {
+   "id": "l6xokji",
+   "text": "In the valley of the ants, an ant said: O ants, go into your homes, so that Sulayman and his soldiers do not crush you without knowing it. Sulayman smiled at what she said, and prayed: My Lord, help me to be thankful for Your favour on me and my parents, and to do good that pleases You.",
+   "category": "narration",
+   "surah": 27,
+   "chapter": "world-27",
+   "key": "w27.tasks[1].reading.note"
+  },
+  {
+   "id": "l28ed06",
+   "text": "Every group is home, safe underground.",
+   "category": "narration",
+   "surah": 27,
+   "chapter": "world-27",
+   "key": "w27.tasks[1].outro"
+  },
+  {
+   "id": "l178iwry",
+   "text": "Sulayman looked for the hoopoe among the birds and could not see it. Before long the hoopoe came back and said: I have learned something you have not, and I bring you sure news from Saba.",
+   "category": "narration",
+   "surah": 27,
+   "chapter": "world-27",
+   "key": "w27.tasks[2].reading.note"
+  },
+  {
+   "id": "l1r8894c",
+   "text": "When Sulayman saw what he had asked for set before him, he said: this is from the favour of my Lord, to test me, whether I am thankful or not. Whoever is thankful is thankful for their own good.",
+   "category": "narration",
+   "surah": 27,
+   "chapter": "world-27",
+   "key": "w27.tasks[3].reading.note"
+  },
+  {
+   "id": "l2mw2o8",
+   "text": "You cleared the paths so every group of ants got home before the footsteps came near.",
+   "category": "narration",
+   "surah": 27,
+   "chapter": "world-27",
+   "key": "w27.finale.body[0]"
+  },
+  {
+   "id": "l1nyycdj",
+   "text": "Surah An-Naml tells how an ant cared for the others, and how Sulayman answered with thanks.",
+   "category": "narration",
+   "surah": 27,
+   "chapter": "world-27",
+   "key": "w27.finale.body[1]"
+  },
+  {
+   "id": "l1is91qk",
+   "text": "Welcome to the River and the Chest. Surah Al-Qasas tells how the mother of Musa was inspired to place her baby in the river, and promised that he would be returned to her. Here the chest floats empty. Read at the lantern first.",
+   "category": "narration",
+   "surah": 28,
+   "chapter": "world-28",
+   "key": "w28.welcome"
+  },
+  {
+   "id": "lrzyjl5",
+   "text": "Allah inspired the mother of Musa: when you fear for him, put him in the river, and do not fear or grieve. We will return him to you.",
+   "category": "narration",
+   "surah": 28,
+   "chapter": "world-28",
+   "key": "w28.tasks[0].reading.note"
+  },
+  {
+   "id": "l122g69o",
+   "text": "The river splits twice. At each fork a bundle of reeds closes one channel. Let the chest go at the top, then walk along the bank ahead of it and move the reeds so it takes the way to the quiet landing. If it catches on the bank, nudge it free.",
+   "category": "narration",
+   "surah": 28,
+   "chapter": "world-28",
+   "key": "w28.tasks[1].intro"
+  },
+  {
+   "id": "l1djvb1w",
+   "text": "His mother told his sister to follow him, and she watched from a distance. Allah returned him to his mother, so that she would be comforted, not grieve, and know that the promise of Allah is true.",
+   "category": "narration",
+   "surah": 28,
+   "chapter": "world-28",
+   "key": "w28.tasks[1].reading.note"
+  },
+  {
+   "id": "lto4ty7",
+   "text": "The chest rests at the quiet landing.",
+   "category": "narration",
+   "surah": 28,
+   "chapter": "world-28",
+   "key": "w28.tasks[1].outro"
+  },
+  {
+   "id": "l14hbl37",
+   "text": "When Musa came to the well of Madyan he found two women waiting to water their flocks. He watered for them, then went into the shade and prayed: My Lord, I am in need of whatever good You send me.",
+   "category": "narration",
+   "surah": 28,
+   "chapter": "world-28",
+   "key": "w28.tasks[2].reading.note"
+  },
+  {
+   "id": "l8mgbgb",
+   "text": "Qarun was told: use what Allah gave you to seek the next life, do not forget your share of this world, and do good as Allah has done good to you. When he showed off his wealth, people with knowledge said the reward of Allah is better for those who believe and do good.",
+   "category": "narration",
+   "surah": 28,
+   "chapter": "world-28",
+   "key": "w28.tasks[3].reading.note"
+  },
+  {
+   "id": "l1y84nx2",
+   "text": "You followed the chest down the river and steered it to the quiet landing.",
+   "category": "narration",
+   "surah": 28,
+   "chapter": "world-28",
+   "key": "w28.finale.body[0]"
+  },
+  {
+   "id": "l1a1eh0t",
+   "text": "Surah Al-Qasas tells how Allah kept His promise to the mother of Musa, and warns against pride in wealth.",
+   "category": "narration",
+   "surah": 28,
+   "chapter": "world-28",
+   "key": "w28.finale.body[1]"
+  },
+  {
+   "id": "l1udwbrf",
+   "text": "Welcome to the Shelter Test. Surah Al-Ankabut, the Spider, gives the example of the spider's house. On the test stand ahead, a lamp burns under a shelter woven like a web. Will it keep the lamp lit in wind and rain?",
+   "category": "narration",
+   "surah": 29,
+   "chapter": "world-29",
+   "key": "w29.welcome"
+  },
+  {
+   "id": "llnfu5b",
+   "text": "Do people think they will be left to say \"We believe\" and not be tested? Those before them were tested too, and Allah makes clear who is truthful.",
+   "category": "narration",
+   "surah": 29,
+   "chapter": "world-29",
+   "key": "w29.tasks[0].reading.note"
+  },
+  {
+   "id": "l9m64ui",
+   "text": "Pull the lever to start the wind and rain test. Watch the lamp. Then use the reed and mud-brick panels to rebuild the roof and the walls, and test again.",
+   "category": "narration",
+   "surah": 29,
+   "chapter": "world-29",
+   "key": "w29.tasks[1].intro"
+  },
+  {
+   "id": "lm0rkfz",
+   "text": "Those who rely on protectors other than Allah are like the spider that makes itself a house; and the frailest of houses is the house of the spider, if only they knew.",
+   "category": "narration",
+   "surah": 29,
+   "chapter": "world-29",
+   "key": "w29.tasks[1].web.note"
+  },
+  {
+   "id": "l1c3q5rn",
+   "text": "Allah gives these examples to people, but only those with knowledge understand them.",
+   "category": "narration",
+   "surah": 29,
+   "chapter": "world-29",
+   "key": "w29.tasks[1].reading.note"
+  },
+  {
+   "id": "l1fu0xl7",
+   "text": "The lamp stayed lit through the whole storm.",
+   "category": "narration",
+   "surah": 29,
+   "chapter": "world-29",
+   "key": "w29.tasks[1].outro"
+  },
+  {
+   "id": "lg2vde1",
+   "text": "Recite the Book and keep up the prayer: prayer keeps a person from shameful and wrong things, and remembering Allah is greater still.",
+   "category": "narration",
+   "surah": 29,
+   "chapter": "world-29",
+   "key": "w29.tasks[2].reading.note"
+  },
+  {
+   "id": "l553nz2",
+   "text": "Those who strive for Allah, He will guide to His ways. And Allah is with those who do good.",
+   "category": "narration",
+   "surah": 29,
+   "chapter": "world-29",
+   "key": "w29.tasks[3].reading.note"
+  },
+  {
+   "id": "ly1v0mc",
+   "text": "You saw the web shelter fail in the wind and rain, and built one that kept the lamp lit.",
+   "category": "narration",
+   "surah": 29,
+   "chapter": "world-29",
+   "key": "w29.finale.body[0]"
+  },
+  {
+   "id": "l2f2ih1",
+   "text": "Surah Al-Ankabut uses the spider's house as an example: what looks like a home can give no real shelter.",
+   "category": "narration",
+   "surah": 29,
+   "chapter": "world-29",
+   "key": "w29.finale.body[1]"
+  },
+  {
+   "id": "l1u3thrs",
+   "text": "Welcome to the Dry Land and the Rain. The ground here is parched. Surah Ar-Rum points to the winds that stir the clouds and the rain that brings dead land back to life. Read at the map table first.",
+   "category": "narration",
+   "surah": 30,
+   "chapter": "world-30",
+   "key": "w30.welcome"
+  },
+  {
+   "id": "l6rj88l",
+   "text": "The surah begins: the Romans have been defeated in a nearby land, but after their defeat they will win, within a few years. The command belongs to Allah before and after.",
+   "category": "narration",
+   "surah": 30,
+   "chapter": "world-30",
+   "key": "w30.tasks[0].reading.note"
+  },
+  {
+   "id": "l187b7sa",
+   "text": "Go to the wind vane and watch. When the wind rises, a cloud will gather and drift. Which plot will it reach? Sow your seeds there before the rain falls.",
+   "category": "narration",
+   "surah": 30,
+   "chapter": "world-30",
+   "key": "w30.tasks[1].intro"
+  },
+  {
+   "id": "l7kudx6",
+   "text": "It is Allah who sends the winds, which stir up the clouds and spread them in the sky, and you see the rain come out from among them, and people rejoice.",
+   "category": "narration",
+   "surah": 30,
+   "chapter": "world-30",
+   "key": "w30.tasks[1].rounds[0].reading.note"
+  },
+  {
+   "id": "lw0qjeq",
+   "text": "Before it came they had lost hope. So look at the effects of the mercy of Allah: how He brings the earth to life after it was dead.",
+   "category": "narration",
+   "surah": 30,
+   "chapter": "world-30",
+   "key": "w30.tasks[1].rounds[1].reading.note"
+  },
+  {
+   "id": "l2k65us",
+   "text": "Among His signs: He shows you lightning, bringing fear and hope, and sends down rain from the sky that brings the earth to life after it was dead.",
+   "category": "narration",
+   "surah": 30,
+   "chapter": "world-30",
+   "key": "w30.tasks[1].rounds[2].reading.note"
+  },
+  {
+   "id": "llr9ibp",
+   "text": "Among His signs, He sends the winds bringing good news, so you may taste His mercy, and perhaps be grateful.",
+   "category": "narration",
+   "surah": 30,
+   "chapter": "world-30",
+   "key": "w30.tasks[1].reading.note"
+  },
+  {
+   "id": "lrg8ki4",
+   "text": "Three plots, sown and rained on, are green again.",
+   "category": "narration",
+   "surah": 30,
+   "chapter": "world-30",
+   "key": "w30.tasks[1].outro"
+  },
+  {
+   "id": "l1a4th9f",
+   "text": "Among His signs are the creation of the heavens and the earth, and the variety of your languages and colours. In that are signs for people who know.",
+   "category": "narration",
+   "surah": 30,
+   "chapter": "world-30",
+   "key": "w30.tasks[2].reading.note"
+  },
+  {
+   "id": "lqneefy",
+   "text": "You read the wind, sowed where the rain would fall, and watched the dry plots turn green.",
+   "category": "narration",
+   "surah": 30,
+   "chapter": "world-30",
+   "key": "w30.finale.body[0]"
+  },
+  {
+   "id": "l1j8kclu",
+   "text": "Surah Ar-Rum asks us to look at how Allah brings dead land back to life, and to see in it a sign.",
+   "category": "narration",
+   "surah": 30,
+   "chapter": "world-30",
+   "key": "w30.finale.body[1]"
+  },
+  {
+   "id": "l1ugziuc",
+   "text": "Welcome to the Garden Path. Surah Luqman gives the advice of a wise man to his son: be grateful, be good to your parents, be patient, walk gently and lower your voice. Along the path, animals are resting. Pass the message on to each one, gently.",
+   "category": "narration",
+   "surah": 31,
+   "chapter": "world-31",
+   "key": "w31.welcome"
+  },
+  {
+   "id": "libervo",
+   "text": "The gardener asks you to tell the animals that the gate will close at sunset. At each one, hold \"Speak\" to raise your voice and let go to soften it. Keep the needle in the green band until the message is heard.",
+   "category": "narration",
+   "surah": 31,
+   "chapter": "world-31",
+   "key": "w31.tasks[0].intro"
+  },
+  {
+   "id": "lbfvib8",
+   "text": "Allah gave Luqman wisdom: be grateful to Allah. Luqman told his son: do not set up anything as equal to Allah.",
+   "category": "narration",
+   "surah": 31,
+   "chapter": "world-31",
+   "key": "w31.tasks[0].listeners[0].reading.note"
+  },
+  {
+   "id": "l18szk9e",
+   "text": "Allah tells people to be good to their parents. A mother carries her child through weakness upon weakness. Be grateful to Me and to your parents.",
+   "category": "narration",
+   "surah": 31,
+   "chapter": "world-31",
+   "key": "w31.tasks[0].listeners[1].reading.note"
+  },
+  {
+   "id": "ljc878z",
+   "text": "Do not turn your face away from people in pride, and do not walk proudly on the earth. Be moderate in your pace and lower your voice.",
+   "category": "narration",
+   "surah": 31,
+   "chapter": "world-31",
+   "key": "w31.tasks[0].listeners[2].reading.note"
+  },
+  {
+   "id": "l1ksjpwj",
+   "text": "Luqman told his son: keep up the prayer, tell others to do what is right and keep away from wrong, and be patient with whatever happens to you.",
+   "category": "narration",
+   "surah": 31,
+   "chapter": "world-31",
+   "key": "w31.tasks[0].reading.note"
+  },
+  {
+   "id": "l1u4gvyx",
+   "text": "Every animal heard the message, and none was startled.",
+   "category": "narration",
+   "surah": 31,
+   "chapter": "world-31",
+   "key": "w31.tasks[0].outro"
+  },
+  {
+   "id": "l1i0wtn8",
+   "text": "Luqman told his son: even something as small as a mustard seed, hidden in a rock or in the heavens or the earth, Allah will bring it out. Allah is Subtle and Aware.",
+   "category": "narration",
+   "surah": 31,
+   "chapter": "world-31",
+   "key": "w31.tasks[1].reading.note"
+  },
+  {
+   "id": "l1w4whoq",
+   "text": "You passed the message on gently, and no one was startled.",
+   "category": "narration",
+   "surah": 31,
+   "chapter": "world-31",
+   "key": "w31.finale.body[0]"
+  },
+  {
+   "id": "lrlltna",
+   "text": "Surah Luqman teaches gratitude, kindness to parents, patience, and walking and speaking gently.",
+   "category": "narration",
+   "surah": 31,
+   "chapter": "world-31",
+   "key": "w31.finale.body[1]"
+  },
+  {
+   "id": "lvn770r",
+   "text": "Welcome to the Grazing Hills. Surah As-Sajdah asks: have they not seen how Allah drives water to dry land and brings out crops that the animals eat, and people too? A flock waits in the stone fold ahead.",
+   "category": "narration",
+   "surah": 32,
+   "chapter": "world-32",
+   "key": "w32.welcome"
+  },
+  {
+   "id": "lii749d",
+   "text": "Allah perfected everything He created, and He began the creation of the human being from clay.",
+   "category": "narration",
+   "surah": 32,
+   "chapter": "world-32",
+   "key": "w32.tasks[0].reading.note"
+  },
+  {
+   "id": "l15ndu2q",
+   "text": "Open a paddock gate to lead the flock in. Watch the grass: where the flock grazes it gets shorter, and where it has left it grows back. Lead the flock on before a paddock is bare.",
+   "category": "narration",
+   "surah": 32,
+   "chapter": "world-32",
+   "key": "w32.tasks[1].intro"
+  },
+  {
+   "id": "l1w81kx4",
+   "text": "Have they not seen that Allah drives water to barren land and brings out crops from it, which their animals eat and they eat too? Do they not see?",
+   "category": "narration",
+   "surah": 32,
+   "chapter": "world-32",
+   "key": "w32.tasks[1].reading.note"
+  },
+  {
+   "id": "lzfjyl5",
+   "text": "The flock is fed and every paddock is still green.",
+   "category": "narration",
+   "surah": 32,
+   "chapter": "world-32",
+   "key": "w32.tasks[1].outro"
+  },
+  {
+   "id": "ll8zlz",
+   "text": "Allah proportioned the human being and made for you hearing, sight and hearts. Little are you grateful.",
+   "category": "narration",
+   "surah": 32,
+   "chapter": "world-32",
+   "key": "w32.tasks[2].reading.note"
+  },
+  {
+   "id": "l174z4mj",
+   "text": "The believers, when reminded by the verses, fall down in prostration and praise their Lord, and are not proud. They rise from their beds to call on their Lord in fear and hope, and they spend from what He has given them.",
+   "category": "narration",
+   "surah": 32,
+   "chapter": "world-32",
+   "key": "w32.tasks[3].reading.note"
+  },
+  {
+   "id": "lt3rvla",
+   "text": "You led the flock around the hills so it was fed every day, and every paddock had time to grow back.",
+   "category": "narration",
+   "surah": 32,
+   "chapter": "world-32",
+   "key": "w32.finale.body[0]"
+  },
+  {
+   "id": "lu0xaw9",
+   "text": "Surah As-Sajdah asks us to see how Allah brings life to the land, food for animals and for people.",
+   "category": "narration",
+   "surah": 32,
+   "chapter": "world-32",
+   "key": "w32.finale.body[1]"
+  },
+  {
+   "id": "lggzx9r",
+   "text": "Welcome to the Mason's Yard. Surah Al-Ahzab asks the believers to speak words that are straight and sound. Here, in a mason's yard, a wall waits to be built straight and true.",
+   "category": "narration",
+   "surah": 33,
+   "chapter": "world-33",
+   "key": "w33.welcome"
+  },
+  {
+   "id": "l1yomfuh",
+   "text": "In the Messenger of Allah you have an excellent example, for whoever hopes in Allah and the Last Day and remembers Allah often.",
+   "category": "narration",
+   "surah": 33,
+   "chapter": "world-33",
+   "key": "w33.tasks[0].reading.note"
+  },
+  {
+   "id": "lobqhj6",
+   "text": "Pick up a stone from the piles and lay it on the wall. Watch the plumb line and the level on top: a stone thicker on one side tips the wall. The footing slopes, so the wall starts leaning. Make it stand true.",
+   "category": "narration",
+   "surah": 33,
+   "chapter": "world-33",
+   "key": "w33.tasks[1].intro"
+  },
+  {
+   "id": "l9rlr3v",
+   "text": "O believers, be mindful of Allah and speak words that are right and just. He will set right your deeds for you and forgive you your sins.",
+   "category": "narration",
+   "surah": 33,
+   "chapter": "world-33",
+   "key": "w33.tasks[1].reading.note"
+  },
+  {
+   "id": "lzpwfbo",
+   "text": "The wall stands true from bottom to top.",
+   "category": "narration",
+   "surah": 33,
+   "chapter": "world-33",
+   "key": "w33.tasks[1].outro"
+  },
+  {
+   "id": "llkutwn",
+   "text": "O believers, remember Allah very often, and glorify Him in the morning and the afternoon.",
+   "category": "narration",
+   "surah": 33,
+   "chapter": "world-33",
+   "key": "w33.tasks[2].reading.note"
+  },
+  {
+   "id": "l1wuv6y5",
+   "text": "For believing men and women who are obedient, truthful, patient, humble, charitable, who fast, who guard their modesty and who remember Allah often, Allah has prepared forgiveness and a great reward.",
+   "category": "narration",
+   "surah": 33,
+   "chapter": "world-33",
+   "key": "w33.tasks[3].reading.note"
+  },
+  {
+   "id": "l1ghay6s",
+   "text": "You built a wall that stands true, choosing each stone by watching the plumb line.",
+   "category": "narration",
+   "surah": 33,
+   "chapter": "world-33",
+   "key": "w33.finale.body[0]"
+  },
+  {
+   "id": "l1jwcnif",
+   "text": "Surah Al-Ahzab asks the believers to speak words that are straight and sound.",
+   "category": "narration",
+   "surah": 33,
+   "chapter": "world-33",
+   "key": "w33.finale.body[1]"
+  },
+  {
+   "id": "lpcbb0",
+   "text": "Welcome to the Two Gardens. Surah Saba tells of a sign for the people of Saba in their home: two gardens, on the right and on the left. They were told: eat from what your Lord provides and be grateful to Him.",
+   "category": "narration",
+   "surah": 34,
+   "chapter": "world-34",
+   "key": "w34.welcome"
+  },
+  {
+   "id": "lkzr6hk",
+   "text": "Allah gave Dawud a great favour, and made iron soft for him: \"Make full coats of mail and measure the links well, and do good. I see what you do.\"",
+   "category": "narration",
+   "surah": 34,
+   "chapter": "world-34",
+   "key": "w34.tasks[0].reading.note",
+   "quotesTranslation": true
+  },
+  {
+   "id": "lq2j7k2",
+   "text": "Begin the season at the dam. Open a sluice and water runs down to its garden, but the dam gets lower. The rain comes and goes. Watch both gardens and patch any crack in the dam.",
+   "category": "narration",
+   "surah": 34,
+   "chapter": "world-34",
+   "key": "w34.tasks[1].intro"
+  },
+  {
+   "id": "l1u7r0ha",
+   "text": "There was a sign for Saba in their home: two gardens, on the right and on the left. \"Eat from what your Lord provides and be grateful to Him: a good land and a forgiving Lord.\"",
+   "category": "narration",
+   "surah": 34,
+   "chapter": "world-34",
+   "key": "w34.tasks[1].reading.note",
+   "quotesTranslation": true
+  },
+  {
+   "id": "lvtlako",
+   "text": "Both gardens stayed green through the season.",
+   "category": "narration",
+   "surah": 34,
+   "chapter": "world-34",
+   "key": "w34.tasks[1].outro"
+  },
+  {
+   "id": "l278vrc",
+   "text": "But they turned away, so the flood of the dam came, and their two gardens were changed into gardens of bitter fruit, tamarisks and a few lote trees. That was because they were ungrateful.",
+   "category": "narration",
+   "surah": 34,
+   "chapter": "world-34",
+   "key": "w34.tasks[2].reading.note"
+  },
+  {
+   "id": "lhys5kb",
+   "text": "You shared the water fairly between the two gardens, through dry weeks and rainy ones.",
+   "category": "narration",
+   "surah": 34,
+   "chapter": "world-34",
+   "key": "w34.finale.body[0]"
+  },
+  {
+   "id": "l1bgwdxy",
+   "text": "Surah Saba tells of a good land with two gardens, and of the call to be grateful for it.",
+   "category": "narration",
+   "surah": 34,
+   "chapter": "world-34",
+   "key": "w34.finale.body[1]"
+  },
+  {
+   "id": "lfq3fym",
+   "text": "Welcome to the Colour Atlas. Surah Fatir asks: do you not see the fruits of many colours, the white, red and very black streaks in the mountains, and people, creatures and animals of many colours too?",
+   "category": "narration",
+   "surah": 35,
+   "chapter": "world-35",
+   "key": "w35.welcome"
+  },
+  {
+   "id": "l1g0ryv1",
+   "text": "Whatever mercy Allah opens for people, no one can hold it back; and whatever He holds back, no one can release after Him. He is the Mighty, the Wise.",
+   "category": "narration",
+   "surah": 35,
+   "chapter": "world-35",
+   "key": "w35.tasks[0].reading.note"
+  },
+  {
+   "id": "l1u4cmqm",
+   "text": "Pick up a stone at the cliff, a fruit in the orchard or a skein of wool by the pen, and lay it in its row on the atlas table. The white post marks the light end; the dark post marks the dark end.",
+   "category": "narration",
+   "surah": 35,
+   "chapter": "world-35",
+   "key": "w35.tasks[1].intro"
+  },
+  {
+   "id": "l1edgr9z",
+   "text": "Do you not see that Allah sends down rain from the sky, and brings out fruits of different colours? And in the mountains are streaks, white and red of different shades, and some very black.",
+   "category": "narration",
+   "surah": 35,
+   "chapter": "world-35",
+   "key": "w35.tasks[1].rows[0].reading.note"
+  },
+  {
+   "id": "lwsmcx1",
+   "text": "From the same rain Allah brings out fruits of different colours.",
+   "category": "narration",
+   "surah": 35,
+   "chapter": "world-35",
+   "key": "w35.tasks[1].rows[1].reading.note"
+  },
+  {
+   "id": "ln5nni5",
+   "text": "And among people, creatures and grazing animals there are different colours too. Of His servants, those who have knowledge are the ones who truly fear Allah.",
+   "category": "narration",
+   "surah": 35,
+   "chapter": "world-35",
+   "key": "w35.tasks[1].rows[2].reading.note"
+  },
+  {
+   "id": "l108qqmz",
+   "text": "Not equal are the blind and the seeing, nor darkness and light, nor shade and heat.",
+   "category": "narration",
+   "surah": 35,
+   "chapter": "world-35",
+   "key": "w35.tasks[1].reading.note"
+  },
+  {
+   "id": "l1pdgt6y",
+   "text": "The atlas is full, every row from light to dark.",
+   "category": "narration",
+   "surah": 35,
+   "chapter": "world-35",
+   "key": "w35.tasks[1].outro"
+  },
+  {
+   "id": "l170cop4",
+   "text": "You looked closely at stones, fruits and wool, and laid each row from light to dark.",
+   "category": "narration",
+   "surah": 35,
+   "chapter": "world-35",
+   "key": "w35.finale.body[0]"
+  },
+  {
+   "id": "l18a7j3f",
+   "text": "Surah Fatir points to the many colours in the mountains, in fruits, and in people and animals, as signs for those who know.",
+   "category": "narration",
+   "surah": 35,
+   "chapter": "world-35",
+   "key": "w35.finale.body[1]"
+  },
+  {
+   "id": "lnlvvjw",
+   "text": "Welcome to the Moon Calendar. It is night. Surah Ya-Sin says the night is a sign, and the moon has stages until it looks like an old, curved date stalk. Look up: the moon is a thin new crescent tonight.",
+   "category": "narration",
+   "surah": 36,
+   "chapter": "world-36",
+   "key": "w36.welcome"
+  },
+  {
+   "id": "ljzwvh2",
+   "text": "A sign for them is the dead earth: Allah brings it to life and brings out grain they eat, gardens of palms and grapevines, and springs, so they may eat its fruit, which their hands did not make. Will they not be grateful?",
+   "category": "narration",
+   "surah": 36,
+   "chapter": "world-36",
+   "key": "w36.tasks[0].reading.note"
+  },
+  {
+   "id": "l7nkvdu",
+   "text": "Look up at the moon. On the rack, find the disc with the same shape, and hang it on the calendar for night 1. Then the nights pass and the moon changes.",
+   "category": "narration",
+   "surah": 36,
+   "chapter": "world-36",
+   "key": "w36.tasks[1].intro"
+  },
+  {
+   "id": "ldmkewi",
+   "text": "And the moon: Allah has set stages for it, until it returns looking like an old, curved date stalk. The sun cannot catch up with the moon, nor does the night outrun the day; each is swimming in its own orbit.",
+   "category": "narration",
+   "surah": 36,
+   "chapter": "world-36",
+   "key": "w36.tasks[1].reading.note"
+  },
+  {
+   "id": "l7vwi0k",
+   "text": "Seven nights, from a thin new crescent to a thin old one.",
+   "category": "narration",
+   "surah": 36,
+   "chapter": "world-36",
+   "key": "w36.tasks[1].outro"
+  },
+  {
+   "id": "l119d0sj",
+   "text": "A sign for them is the night: Allah takes the daylight from it, and they are in darkness. And the sun runs to its resting place; that is the decree of the Mighty, the Knowing.",
+   "category": "narration",
+   "surah": 36,
+   "chapter": "world-36",
+   "key": "w36.tasks[2].reading.note"
+  },
+  {
+   "id": "l1ejhfl4",
+   "text": "You watched the moon change from a thin new crescent to full, and back to a thin old crescent.",
+   "category": "narration",
+   "surah": 36,
+   "chapter": "world-36",
+   "key": "w36.finale.body[0]"
+  },
+  {
+   "id": "l15v1bx",
+   "text": "Surah Ya-Sin calls the night, the sun and the moon signs, each moving in its own orbit.",
+   "category": "narration",
+   "surah": 36,
+   "chapter": "world-36",
+   "key": "w36.finale.body[1]"
+  },
+  {
+   "id": "l45dwih",
+   "text": "Welcome to the Gourd Vine Shore. Surah As-Saffat tells how Yunus was cast onto an open shore, ill, and Allah caused a gourd vine to grow over him. Here, on a hot beach, an empty shade frame waits for a vine.",
+   "category": "narration",
+   "surah": 37,
+   "chapter": "world-37",
+   "key": "w37.welcome"
+  },
+  {
+   "id": "l1x63v6k",
+   "text": "Allah has adorned the nearest sky with the beauty of the stars.",
+   "category": "narration",
+   "surah": 37,
+   "chapter": "world-37",
+   "key": "w37.tasks[0].reading.note"
+  },
+  {
+   "id": "l8d4ewj",
+   "text": "The young vine needs something to climb. Take a stake from the bundle, carry it toward the shade frame and plant it close to the vine. Keep planting until the vine reaches the frame.",
+   "category": "narration",
+   "surah": 37,
+   "chapter": "world-37",
+   "key": "w37.tasks[1].intro"
+  },
+  {
+   "id": "l1xl4dgp",
+   "text": "Yunus was one of the messengers. He ran away to the laden ship, drew lots and lost, and the fish swallowed him. Had he not been one who glorified Allah, he would have stayed inside it. Then Allah cast him onto the open shore, ill, and caused a gourd vine to grow over him.",
+   "category": "narration",
+   "surah": 37,
+   "chapter": "world-37",
+   "key": "w37.tasks[1].reading.note"
+  },
+  {
+   "id": "ldejk9m",
+   "text": "The vine has climbed onto the frame, and there is cool shade over the mat.",
+   "category": "narration",
+   "surah": 37,
+   "chapter": "world-37",
+   "key": "w37.tasks[1].outro"
+  },
+  {
+   "id": "l18rg8lv",
+   "text": "Then Allah sent him to a hundred thousand people or more, and they believed, so they were given enjoyment of life for a time.",
+   "category": "narration",
+   "surah": 37,
+   "chapter": "world-37",
+   "key": "w37.tasks[2].reading.note"
+  },
+  {
+   "id": "ldvcyyi",
+   "text": "You helped a gourd vine climb, stake by stake, until it shaded the frame.",
+   "category": "narration",
+   "surah": 37,
+   "chapter": "world-37",
+   "key": "w37.finale.body[0]"
+  },
+  {
+   "id": "l15oclvi",
+   "text": "Surah As-Saffat ends: Exalted is your Lord, peace upon the messengers, and praise to Allah, Lord of the worlds.",
+   "category": "narration",
+   "surah": 37,
+   "chapter": "world-37",
+   "key": "w37.finale.body[1]"
+  },
+  {
+   "id": "l15bcu6r",
+   "text": "Welcome to the Valley of Signs. Surah Sad calls this a blessed Book for people to think about its verses. Think carefully here too: the land shows signs of where water is close.",
+   "category": "narration",
+   "surah": 38,
+   "chapter": "world-38",
+   "key": "w38.welcome"
+  },
+  {
+   "id": "l3s0ehj",
+   "text": "A blessed Book sent down so that people may think about its verses, and those with understanding may remember.",
+   "category": "narration",
+   "surah": 38,
+   "chapter": "world-38",
+   "key": "w38.tasks[0].reading.note"
+  },
+  {
+   "id": "lbqr2e0",
+   "text": "The status line says which signs go together where water is close. Look closely at each place before you dig.",
+   "category": "narration",
+   "surah": 38,
+   "chapter": "world-38",
+   "key": "w38.tasks[1].intro"
+  },
+  {
+   "id": "lrcz9bk",
+   "text": "Remember Ayyub, when he called to his Lord: \"Satan has touched me with hardship and pain.\" He was told: \"Strike the ground with your foot: here is cool water to wash in and to drink.\"",
+   "category": "narration",
+   "surah": 38,
+   "chapter": "world-38",
+   "key": "w38.tasks[1].rounds[0].reading.note",
+   "quotesTranslation": true
+  },
+  {
+   "id": "l1opp3nn",
+   "text": "Allah gave him back his family and as many again with them, as a mercy and a reminder for people of understanding. Allah found him patient: an excellent servant who always turned back to Him.",
+   "category": "narration",
+   "surah": 38,
+   "chapter": "world-38",
+   "key": "w38.tasks[1].rounds[1].reading.note"
+  },
+  {
+   "id": "l1cdb2ax",
+   "text": "Dawud was told: \"We have made you a successor in the land, so judge between people with truth, and do not follow your own wishes, for they would lead you away from the way of Allah.\"",
+   "category": "narration",
+   "surah": 38,
+   "chapter": "world-38",
+   "key": "w38.tasks[1].rounds[2].reading.note",
+   "quotesTranslation": true
+  },
+  {
+   "id": "l189czs2",
+   "text": "Allah did not create the sky and the earth and what is between them without purpose.",
+   "category": "narration",
+   "surah": 38,
+   "chapter": "world-38",
+   "key": "w38.tasks[1].reading.note"
+  },
+  {
+   "id": "l1hcdo5y",
+   "text": "Three springs found by reading the signs of the land.",
+   "category": "narration",
+   "surah": 38,
+   "chapter": "world-38",
+   "key": "w38.tasks[1].outro"
+  },
+  {
+   "id": "lswwmoq",
+   "text": "You looked closely and dug only where every sign of water was there.",
+   "category": "narration",
+   "surah": 38,
+   "chapter": "world-38",
+   "key": "w38.finale.body[0]"
+  },
+  {
+   "id": "l1k504d4",
+   "text": "Surah Sad asks people to think about the verses and to judge with truth, not with their own wishes.",
+   "category": "narration",
+   "surah": 38,
+   "chapter": "world-38",
+   "key": "w38.finale.body[1]"
+  },
+  {
+   "id": "lsmts7h",
+   "text": "Welcome to the Turning Field. Surah Az-Zumar asks: do you not see how Allah sends rain, makes it flow in springs, brings out crops of many colours, and then they dry and turn yellow?",
+   "category": "narration",
+   "surah": 39,
+   "chapter": "world-39",
+   "key": "w39.welcome"
+  },
+  {
+   "id": "l1f541w1",
+   "text": "Is one who stands in prayer in the night, fearing the Hereafter and hoping for the mercy of his Lord, like one who does not? Say: \"Are those who know equal to those who do not know?\" Only people of understanding take heed.",
+   "category": "narration",
+   "surah": 39,
+   "chapter": "world-39",
+   "key": "w39.tasks[0].reading.note",
+   "quotesTranslation": true
+  },
+  {
+   "id": "lr0krgi",
+   "text": "Sow the field with the seed bag. Each plot grows at its own pace: green, then gold, then dry and breaking. Bring in each plot while it is gold.",
+   "category": "narration",
+   "surah": 39,
+   "chapter": "world-39",
+   "key": "w39.tasks[1].intro"
+  },
+  {
+   "id": "lcjo0qz",
+   "text": "Do you not see that Allah sends down rain from the sky and makes it flow as springs in the earth, then brings out crops of many colours; then they dry and you see them turn yellow, then He makes them crumble? In that is a reminder for people of understanding.",
+   "category": "narration",
+   "surah": 39,
+   "chapter": "world-39",
+   "key": "w39.tasks[1].reading.note"
+  },
+  {
+   "id": "lpgu74r",
+   "text": "All six plots are brought in, each while it was golden.",
+   "category": "narration",
+   "surah": 39,
+   "chapter": "world-39",
+   "key": "w39.tasks[1].outro"
+  },
+  {
+   "id": "l1vjgx1k",
+   "text": "Say: \"O My servants who have wronged themselves, do not despair of the mercy of Allah. Allah forgives all sins. He is the Forgiving, the Merciful.\"",
+   "category": "narration",
+   "surah": 39,
+   "chapter": "world-39",
+   "key": "w39.tasks[2].reading.note",
+   "quotesTranslation": true
+  },
+  {
+   "id": "ls5skk8",
+   "text": "You watched each plot turn from green to gold, and brought it in at the right time.",
+   "category": "narration",
+   "surah": 39,
+   "chapter": "world-39",
+   "key": "w39.finale.body[0]"
+  },
+  {
+   "id": "l1ub98qm",
+   "text": "Surah Az-Zumar points to the turning of the crops as a reminder, and tells us never to despair of Allah's mercy.",
+   "category": "narration",
+   "surah": 39,
+   "chapter": "world-39",
+   "key": "w39.finale.body[1]"
+  }
+ ]
+}

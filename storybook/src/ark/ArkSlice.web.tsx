@@ -16,8 +16,11 @@ import { PanResponder, Pressable, ScrollView, StyleSheet, Text, View, useWindowD
 import * as THREE from 'three';
 import { ContentLabel } from '@/components/ui';
 import { useAppState } from '@/state/AppState';
-import { recitationEnabled, useRecitation } from '@/state/Recitation';
-import { speakKid, stopVoice } from '@/state/voice';
+import { useRecitation } from '@/state/Recitation';
+import { AyahPlayer } from '@/audio/AyahPlayer';
+import { director } from '@/audio/director';
+import { useActionHint, useCardNarration } from '@/audio/hooks';
+import { ListeningSheet } from '@/audio/ListeningSettings';
 import { SoftShapes } from '@/three/soft';
 import { fonts } from '@/theme';
 import { QUALITY, guessTier, lowerTier, type QualityTier } from '@/world/quality';
@@ -932,6 +935,9 @@ function Slice() {
 
   const move = useRef<Move>({ x: 0, y: 0, run: false });
   const [near, setNear] = useState<Near | null>(null);
+  const [voices, setVoices] = useState(false);
+  // A short spoken hint the first time each kind of action is in reach.
+  useActionHint(near?.label, near?.label.replace(/\b(the|a|an)\b/gi, '').trim());
   const [inside, setInside] = useState(false);
   const [cards, setCards] = useState<Card[]>([]);
   const [hint, setHint] = useState('');
@@ -1074,6 +1080,7 @@ function Slice() {
       speed: (k: number) => (game.timeScale = k),
       save: () => saveRef.current,
       cards: () => cards.length,
+      reading: (id: string) => setCards((c) => [...c, { kind: 'reading', reading: [...READINGS, AFTER].find((r) => r.id === id)! }]),
     };
   });
 
@@ -1153,6 +1160,9 @@ function Slice() {
         <Pressable style={[st.pill, { position: 'absolute', left: 0, top: 46 }]} onPress={() => router.push('/journal' as never)} accessibilityRole="button" accessibilityLabel="Open my discovery journal">
           <Text style={st.pillText}>My journal</Text>
         </Pressable>
+        <Pressable style={[st.pill, { position: 'absolute', left: 0, top: 92 }]} onPress={() => setVoices(true)} accessibilityRole="button" accessibilityLabel="Voices and sound">
+          <Text style={st.pillText}>Voices and sound</Text>
+        </Pressable>
         <View style={st.objective} pointerEvents="none">
           <Text style={st.title}>Nuh&apos;s Ark · Surah Hud</Text>
           <Text style={st.goal}>{objective}</Text>
@@ -1218,7 +1228,7 @@ function Slice() {
           card={top}
           portrait={portrait}
           onClose={() => {
-            stopVoice();
+            director.stop();
             setCards((c) => c.slice(1));
             if (top.kind === 'reading' && top.reading.id === AFTER.id) setCards((c) => [...c, { kind: 'reflection' }]);
             if (top.kind === 'reflection') update((s) => ({ ...s, reflected: true }));
@@ -1235,6 +1245,8 @@ function Slice() {
         </View>
       )}
 
+      {voices && <ListeningSheet onClose={() => setVoices(false)} />}
+
       <Text style={st.footer} pointerEvents="none">
         Draft for scholarly review · animal choices, supplies and the ark&apos;s look are game ideas, not historical claims · no prophet is shown
       </Text>
@@ -1242,51 +1254,39 @@ function Slice() {
   );
 }
 
+/** A "read aloud" button: the narrator reads this now. */
 function speak(text: string) {
-  speakKid(text);
+  director.readNow(text);
+}
+
+function NarrationCard({ text, width, onClose }: { text: string; width: string | number; onClose: () => void }) {
+  useCardNarration(text);
+  return (
+    <View style={[st.card, { width } as never, st.cardBottom]}>
+      <ContentLabel kind="explanation" extra="narration written for this game" />
+      <Text style={st.cardText}>{text}</Text>
+      <View style={st.row}>
+        <Pressable accessibilityRole="button" style={st.btnGhost} onPress={() => speak(text)}>
+          <Text style={st.btnGhostText}>Read aloud</Text>
+        </Pressable>
+        <Pressable accessibilityRole="button" style={st.btn} onPress={onClose}>
+          <Text style={st.btnText}>Continue</Text>
+        </Pressable>
+      </View>
+    </View>
+  );
 }
 
 function CardView({ card, portrait, onClose, listen }: { card: Card; portrait: boolean; onClose: () => void; listen: (s: number, a: number) => void }) {
   const width = portrait ? '94%' : 560;
-  if (card.kind === 'narration')
-    return (
-      <View style={[st.card, { width } as never, st.cardBottom]}>
-        <ContentLabel kind="explanation" extra="narration written for this game" />
-        <Text style={st.cardText}>{card.text}</Text>
-        <View style={st.row}>
-          <Pressable accessibilityRole="button" style={st.btnGhost} onPress={() => speak(card.text)}>
-            <Text style={st.btnGhostText}>Read aloud</Text>
-          </Pressable>
-          <Pressable accessibilityRole="button" style={st.btn} onPress={onClose}>
-            <Text style={st.btnText}>Continue</Text>
-          </Pressable>
-        </View>
-      </View>
-    );
+  if (card.kind === 'narration') return <NarrationCard text={card.text} width={width} onClose={onClose} />;
   if (card.kind === 'reading') {
     const r = card.reading;
     return (
       <View style={[st.card, { width } as never, st.cardMid]}>
         <ScrollView style={{ maxHeight: portrait ? 460 : 420 }} contentContainerStyle={{ gap: 10 }}>
           <Text style={st.cardTitle}>{r.title}</Text>
-          {r.refs.map((ref) => {
-            const v = verse(ref);
-            return (
-              <View key={v.ref} style={{ gap: 6 }}>
-                <ContentLabel kind="quran" extra={`Surah ${v.surah}, ayah ${v.ayah}`} />
-                {v.arabic ? <Text style={st.arabic}>{v.arabic}</Text> : <Text style={st.small}>Arabic text not available.</Text>}
-                <ContentLabel kind="translation" extra="Saheeh International" />
-                <Text style={st.cardText}>{v.translation ?? 'Translation not available.'}</Text>
-                {recitationEnabled ? (
-                  <Pressable accessibilityRole="button" style={st.btnGhost} onPress={() => listen(v.surah, v.ayah)}>
-                    <Text style={st.btnGhostText}>Listen to the recitation</Text>
-                  </Pressable>
-                ) : (
-                  <Text style={st.small}>Recitation will play here once a licensed recording is confirmed.</Text>
-                )}
-              </View>
-            );
-          })}
+          <AyahPlayer key={r.id} refs={r.refs} note={r.note} />
           <ContentLabel kind="explanation" />
           <Text style={st.cardText}>{r.note}</Text>
         </ScrollView>

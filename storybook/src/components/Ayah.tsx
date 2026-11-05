@@ -6,7 +6,7 @@ import { router } from 'expo-router';
 import { basmalahFor, formatRef, getSurah, parseRef, quranSources, toArabicDigits, versesFor } from '@/content/quran';
 import type { AyahRef, QuranVerse } from '@/content/types';
 import { useAppState } from '@/state/AppState';
-import { recitation, recitationEnabled, useRecitation } from '@/state/Recitation';
+import { useRecitation } from '@/state/Recitation';
 import { colors, fonts, radius } from '@/theme';
 import { ContentLabel, IconButton, Row } from './ui';
 
@@ -27,7 +27,7 @@ export function AyahView({ verse, compact, rangeTo }: { verse: QuranVerse; compa
           </Text>
         </View>
         <Row style={{ gap: 2 }}>
-          {recitationEnabled && <IconButton
+          {rec.enabled && <IconButton
             icon={isCurrent && rec.playing ? 'pause' : 'play'}
             label={isCurrent && rec.playing ? 'Pause recitation' : `Listen to recitation of ${verse.surah_number}:${verse.ayah_number}`}
             onPress={() => (isCurrent ? rec.toggle() : rec.play(verse.surah_number, verse.ayah_number, rangeTo ?? verse.ayah_number))}
@@ -87,7 +87,7 @@ export function Passage({ refs, showHeader = true, playAll = true }: { refs: Aya
                     {getSurah(p.surah)!.nameArabic} · open in the Quran reader
                   </Text>
                 </Pressable>
-                {recitationEnabled && playAll && p.to > p.from && (
+                {rec.enabled && playAll && p.to > p.from && (
                   <IconButton icon="play" label={`Listen to ${formatRef(ref)}`} onPress={() => rec.play(p.surah, p.from, p.to)} size={40} />
                 )}
                 <IconButton
@@ -108,7 +108,7 @@ export function Passage({ refs, showHeader = true, playAll = true }: { refs: Aya
       })}
       <Text style={styles.attribution}>
         Arabic: {quranSources.arabic.publisher}. Translation: {quranSources.translation.title}. Recitation:{' '}
-        {recitationEnabled ? `${recitation.reciter} via ${recitation.host}.` : 'off until a licensed recording is added.'}
+        {rec.reciter ? `${rec.reciter.name} (${rec.reciter.reading}).` : 'off until a licensed, verified recording is added.'}
       </Text>
     </View>
   );

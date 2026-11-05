@@ -1,4 +1,5 @@
-import recitations from '@content/audio/recitations.json';
+import { CATALOG, narratorById } from '@/audio/catalog';
+import { ListeningSettings } from '@/audio/ListeningSettings';
 import { useState } from 'react';
 import { Linking, Pressable, StyleSheet, Text, View } from 'react-native';
 import { RefLink } from '@/components/Ayah';
@@ -161,12 +162,13 @@ export default function Parents() {
         <Body style={styles.small}>{quranSources.translation.licenceStatus}</Body>
         <Text style={styles.sub}>Recitation</Text>
         <Body style={styles.listItem}>
-          {recitation.reciter} ({recitation.reading}), streamed from {recitation.host}.
+          {recitation.name} ({recitation.reading}), streamed from {recitation.host}.
         </Body>
-        <Body style={styles.small}>{recitation.verification}</Body>
-        <Body style={styles.small}>{recitation.licenceStatus}</Body>
+        <Body style={styles.small}>{recitation.verification.note}</Body>
+        <Body style={styles.small}>{recitation.licence.note}</Body>
+        <Body style={styles.small}>{CATALOG.reciters.find((r) => r.age === 'child')?.licence.note}</Body>
         <Text style={styles.sub}>Narration</Text>
-        <Body style={styles.small}>{recitations.narration.note}</Body>
+        <Body style={styles.small}>{narratorById(CATALOG.defaultNarrator)?.note}</Body>
         <Text style={styles.sub}>Fonts</Text>
         <Body style={styles.small}>
           Amiri Quran (Quran text), Fraunces and Nunito (interface). All under the SIL Open Font License.
@@ -191,25 +193,7 @@ export default function Parents() {
           onChange={(v) => set({ arabicSize: v })}
         />
         <Toggle label="Show translation" value={s.showTranslation} onChange={(v) => set({ showTranslation: v })} />
-        <Choice
-          label="Recitation speed"
-          value={s.recitationRate}
-          options={[
-            { v: 0.75, label: 'Slower' },
-            { v: 1, label: 'Normal' },
-          ]}
-          onChange={(v) => set({ recitationRate: v })}
-        />
-        <Choice
-          label="Recitation volume"
-          value={s.volume}
-          options={[
-            { v: 0.4, label: 'Quiet' },
-            { v: 0.7, label: 'Medium' },
-            { v: 1, label: 'Full' },
-          ]}
-          onChange={(v) => set({ volume: v })}
-        />
+        <ListeningSettings />
         <Toggle
           label="Read explanations aloud"
           hint="Uses the device's own voice for explanations only. Never used for Quran text."

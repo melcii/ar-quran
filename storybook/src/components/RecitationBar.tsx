@@ -1,13 +1,15 @@
 // Floating controls for the recitation that is playing, shown on every screen.
 import { StyleSheet, Text, View } from 'react-native';
 import { formatRef } from '@/content/quran';
-import { recitation, useRecitation } from '@/state/Recitation';
+import { inlinePlayers } from '@/audio/AyahPlayer';
+import { useRecitation } from '@/state/Recitation';
 import { colors, fonts, shadow } from '@/theme';
 import { IconButton } from './ui';
 
 export function RecitationBar() {
   const rec = useRecitation();
-  if (!rec.current) return null;
+  // A reading card shows its own controls next to the ayahs.
+  if (!rec.current || inlinePlayers.n > 0) return null;
   const { surah, ayah } = rec.current;
   const canPrev = !!rec.queue && ayah > rec.queue.from;
   const canNext = !!rec.queue && ayah < rec.queue.to;
@@ -18,7 +20,7 @@ export function RecitationBar() {
           Recitation · {formatRef(`${surah}:${ayah}`)}
         </Text>
         <Text style={styles.sub} numberOfLines={1}>
-          {rec.unavailable ? 'Recitation unavailable right now' : rec.loading ? 'Loading…' : recitation.reciter}
+          {rec.unavailable ? 'Recitation unavailable right now' : rec.loading ? 'Loading…' : rec.reciter?.name ?? ''}
         </Text>
       </View>
       <IconButton icon="previous" label="Previous ayah" onPress={rec.previous} disabled={!canPrev} size={40} />

@@ -51,7 +51,18 @@ export type Settings = {
   /** 3D quality. 'auto' starts from the device and steps down if frames drop. */
   quality: 'auto' | 'low' | 'medium' | 'high';
   narrationVolume: number;
+  /** Short "what to do" hints in play. */
+  instructionVolume: number;
+  /** What plays by itself in the worlds. Quiet mode for voices is 'quiet'. */
+  listenMode: ListenMode;
+  /** Story narrator and Quran reciter (ids in content/audio/catalog.json). */
+  narrator: string;
+  reciter: string;
+  /** Language of the story narration (the Quran is always Arabic). */
+  narrationLanguage: string;
 };
+
+export type ListenMode = 'both' | 'narration' | 'recitation' | 'quiet';
 
 type Persisted = {
   bookmarks: Bookmark[];
@@ -86,6 +97,11 @@ const defaults: Persisted = {
     pageTextSize: 'medium',
     quality: 'auto',
     narrationVolume: 1,
+    instructionVolume: 0.85,
+    listenMode: 'both',
+    narrator: 'device-child-en',
+    reciter: 'alafasy-everyayah',
+    narrationLanguage: 'en',
   },
 };
 

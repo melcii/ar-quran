@@ -10,9 +10,18 @@ import { useEffect } from 'react';
 import { ActivityIndicator, Platform, View } from 'react-native';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { RecitationBar } from '@/components/RecitationBar';
+import { Subtitles } from '@/audio/Subtitles';
+import { useVoiceSettings } from '@/audio/hooks';
+import '@/audio/lines';
 import { AppStateProvider } from '@/state/AppState';
 import { RecitationProvider } from '@/state/Recitation';
 import { colors } from '@/theme';
+
+/** Passes the explorer's listening settings to the voice director. */
+function VoiceSettings() {
+  useVoiceSettings();
+  return null;
+}
 
 export default function RootLayout() {
   const [loaded, fontError] = useFonts({
@@ -46,6 +55,8 @@ export default function RootLayout() {
           <StatusBar style="dark" />
           <Stack screenOptions={{ headerShown: false, contentStyle: { backgroundColor: colors.paper }, animation: 'fade' }} />
           <RecitationBar />
+          <Subtitles />
+          <VoiceSettings />
         </RecitationProvider>
       </AppStateProvider>
     </SafeAreaProvider>
