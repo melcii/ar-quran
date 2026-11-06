@@ -115,6 +115,8 @@ type Game = {
   spawn: [number, number];
 };
 const STEP = 1 / 60;
+/** Share of the way to close this frame when easing at rate k: the same over a second at any frame rate. */
+const damp = (dt: number, k: number) => 1 - Math.exp(-k * dt);
 
 function makeAgents(s: Save): Agent[] {
   const out: Agent[] = [];
@@ -267,6 +269,10 @@ function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRe
     (globalThis as any).__arkGame = { game, sendToPad, board, player, weather, scene };
   });
 
+  // Runs before everything else each frame (priority -1), so the explorer, the
+  // animals and the camera are all drawn at this frame's positions. It used to
+  // run after the figure, which then showed last frame's step every frame:
+  // with uneven frame times that read as a stutter.
   useFrame((st, rawDt) => {
     cue.holding = !!game.carrying;
     cue.leading = game.agents.some((x) => x.state === 'follow');
@@ -330,7 +336,7 @@ function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRe
     sp.sync();
     const mag = Math.hypot(dx, dz);
     const want = mag > 0.05 ? (run ? 7 : 4.2) * Math.min(1, mag) : 0;
-    game.cmd += (want - game.cmd) * Math.min(1, dt * 8);
+    game.cmd += (want - game.cmd) * damp(dt, 8);
     if (game.cmd < 0.02) game.cmd = 0;
     if (mag > 0.05) player.yaw = Math.atan2(dx, dz);
     // Fixed 60 Hz physics steps: the same result at any frame rate.
@@ -351,7 +357,7 @@ function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRe
     }
     // The walk cycle follows the ground really covered: against a wall the explorer stands, not walks on the spot.
     const real = ran > 0 ? moved / ran : player.speed;
-    player.speed += (real - player.speed) * Math.min(1, dt * 12);
+    player.speed += (real - player.speed) * damp(dt, 12);
     if (player.speed < 0.05) player.speed = 0;
     // For tests: the longest time the walk cycle played without the feet really moving.
     game.wip = ran > 0 && player.speed > 0.3 && real < 0.1 * player.speed ? game.wip + dt : 0;
@@ -638,12 +644,12 @@ function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRe
     const look = tmp.set(pp.x, pp.y + (inside ? 0.8 : 1.35), pp.z);
     const snap = cam.snap;
     cam.snap = false;
-    cam.look.lerp(look, snap ? 1 : Math.min(1, dt * (motion.reduced ? 30 : 9)));
+    cam.look.lerp(look, snap ? 1 : damp(dt, (motion.reduced ? 30 : 9)));
     // Outside, when the hull, a trunk or a hill is in the way: look over it, or come closer.
     // (Inside, the roof is cut away and the camera looks down from above.)
     const fit = inside ? { pitch, dist } : game.space.cameraFit(cam.look.x, cam.look.y, cam.look.z, cam.yaw, pitch, dist);
-    camDist.current += (fit.dist - camDist.current) * Math.min(1, dt * (fit.dist < camDist.current ? 10 : 2));
-    camPitch.current += (fit.pitch - camPitch.current) * Math.min(1, dt * (fit.pitch > camPitch.current ? 8 : 2));
+    camDist.current += (fit.dist - camDist.current) * damp(dt, (fit.dist < camDist.current ? 10 : 2));
+    camPitch.current += (fit.pitch - camPitch.current) * damp(dt, (fit.pitch > camPitch.current ? 8 : 2));
     if (snap || inside) (camDist.current = fit.dist), (camPitch.current = fit.pitch);
     dist = camDist.current;
     pitch = camPitch.current;
@@ -653,13 +659,13 @@ function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRe
       cam.look.z + Math.cos(cam.yaw) * Math.cos(pitch) * dist,
     );
     if (!inside) want3.y = Math.max(want3.y, groundY(want3.x, want3.z) + 0.7, weather.water + 0.6);
-    cam.pos.lerp(want3, snap ? 1 : Math.min(1, dt * (motion.reduced ? 30 : 6)));
+    cam.pos.lerp(want3, snap ? 1 : damp(dt, (motion.reduced ? 30 : 6)));
     camera.position.copy(cam.pos);
     camera.lookAt(cam.look);
 
     /* ---------- sound ---------- */
     nature.update({ river: Math.abs(pp.z - riverZ(pp.x)), storm: weather.storm, rain: weather.rain, inside, dt });
-  });
+  }, -1);
 
   function act(n: Near) {
     const pp = player.pos;

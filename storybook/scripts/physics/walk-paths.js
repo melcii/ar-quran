@@ -130,6 +130,9 @@ const BASE = process.env.BASE || 'http://localhost:8090';
         const ok = await goTo(way[i][0], way[i][1], i === way.length - 1 ? 2.6 : 1.0, 40);
         if (!ok) {
           const s = await state();
+          // Shut by a gate that opens later in the story: not a fault.
+          const gate = await p.evaluate(([x, z]) => { const sp = globalThis.__adv.game.space; const g = sp.solids.find((q) => q.active && q.active() && Math.hypot(q.x - x, q.z - z) < (q.kind === 'circle' ? q.r : Math.hypot(q.hx, q.hz)) + 1.2); return g ? g.tag : null; }, [s.x, s.z]);
+          if (gate) { (res.gated ??= []).push({ path: pi, tag: gate }); break; }
           res.stuck.push({ path: pi, at: [+s.x.toFixed(1), +s.z.toFixed(1)], to: way[i].map((v) => +v.toFixed(1)) });
           break;
         }
@@ -137,6 +140,52 @@ const BASE = process.env.BASE || 'http://localhost:8090';
       await steer(null);
     }
   }
+  // A tour of every place the world's activities and buildings use (open now or later), from the spawn.
+  const spots = await p.evaluate(() => {
+    const A = globalThis.__adv, out = [], seen = new Set();
+    const add = (q, what) => {
+      if (!Array.isArray(q) || q.length !== 2 || typeof q[0] !== 'number' || typeof q[1] !== 'number') return;
+      const k = `${Math.round(q[0])},${Math.round(q[1])}`;
+      if (seen.has(k) || Math.hypot(q[0], q[1]) > A.t.radius - 1) return;
+      seen.add(k);
+      out.push({ x: q[0], z: q[1], what });
+    };
+    const scan = (o, what, depth) => {
+      if (!o || typeof o !== 'object' || depth > 3) return;
+      for (const [k, v] of Object.entries(o)) {
+        if (['at', 'pen', 'dock', 'source', 'from', 'to', 'launch', 'home', 'door'].includes(k)) add(v, `${what}.${k}`);
+        else if (Array.isArray(v) || (v && typeof v === 'object')) scan(v, what, depth + 1);
+      }
+    };
+    for (const t of A.def.tasks) scan(t, `task ${t.id}`, 0);
+    for (const s of A.def.structures) add([s.x, s.z], s.type);
+    return out;
+  });
+  res.tour = { spots: spots.length, walked: 0, tapped: 0, unreached: [] };
+  for (const q of spots) {
+    const back = await p.evaluate(() => globalThis.__adv.game.spawn);
+    await p.evaluate(([x, z]) => globalThis.__adv.teleport(x, z), back);
+    await p.waitForTimeout(250);
+    last = await state();
+    // Close is enough: the spot may be inside the thing (a house, a well).
+    const near = await p.evaluate(([x, z]) => { const o = globalThis.__adv.game.space.findOpen(x, z, 0.35, 10); return o ? Math.hypot(o[0] - x, o[1] - z) : 10; }, [q.x, q.z]);
+    if (await goTo(q.x, q.z, near + 1.6, 60)) { res.tour.walked++; continue; }
+    await steer(null);
+    // Something in the way: tap the ground by it, as a child would, and let the route go round.
+    await p.evaluate(([x, z]) => globalThis.__adv.go(x, z), [q.x, q.z]);
+    const t0 = Date.now();
+    let s, best = 1e9, bestAt = Date.now();
+    do {
+      await p.waitForTimeout(250);
+      s = await state();
+      watch(s);
+      const d = Math.hypot(q.x - s.x, q.z - s.z);
+      if (d < best - 0.1) (best = d), (bestAt = Date.now());
+    } while (Math.hypot(q.x - s.x, q.z - s.z) > near + 1.6 && Date.now() - t0 < 120000 && Date.now() - bestAt < 20000);
+    if (Math.hypot(q.x - s.x, q.z - s.z) <= near + 1.6) res.tour.tapped++;
+    else res.tour.unreached.push({ what: q.what, at: [+q.x.toFixed(1), +q.z.toFixed(1)], got: [+s.x.toFixed(1), +s.z.toFixed(1)] });
+  }
+
   // Every activity spot open now: walk to it with the real input, then check the action button is offered.
   const zones = await p.evaluate(() => globalThis.__adv.uses().filter((u) => u.reach > 0 && !/^(ani|boat|ashore|link):/.test(u.key)));
   for (const u of zones) {
@@ -169,7 +218,7 @@ const BASE = process.env.BASE || 'http://localhost:8090';
   res.metres = Math.round(res.metres);
   res.recovered = last.recovered;
   res.errors = errs;
-  res.ok = !res.inside && !res.feetOff && res.scaleDev < 1e-6 && !res.camUnder && !res.camHit && !res.jumps && !res.stuck.length && res.zones.every((z) => z.ok) && !errs.length;
+  res.ok = !res.inside && !res.feetOff && res.scaleDev < 1e-6 && !res.camUnder && !res.camHit && !res.jumps && !res.stuck.length && res.zones.every((z) => z.ok) && !res.tour.unreached.length && !errs.length;
   console.log(JSON.stringify(res));
   await b.close();
 })();

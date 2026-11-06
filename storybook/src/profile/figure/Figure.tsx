@@ -518,8 +518,9 @@ export function Figure({ look, follow, anim, lantern: withLantern = true, onRead
     if (g.scale.x !== 1 || g.scale.y !== 1 || g.scale.z !== 1) g.scale.setScalar(1);
     if (follow) {
       g.position.copy(player.pos);
-      const probe = (globalThis as { __figProbe?: { scale: number; y: number; h?: number } }).__figProbe;
+      const probe = (globalThis as { __figProbe?: { scale: number; y: number; h?: number; obj?: THREE.Object3D; ph?: number; base?: string } }).__figProbe;
       if (probe) {
+        probe.obj = g;
         // Tests: the figure's real height and scale in the world, every frame it is asked for.
         probe.scale = g.getWorldScale(new V()).x;
         probe.y = g.position.y;
@@ -533,7 +534,11 @@ export function Figure({ look, follow, anim, lantern: withLantern = true, onRead
       const turn = d * Math.min(1, dt * 12);
       g.rotation.y += turn;
       yawRate = dt > 0 ? turn / dt : 0;
-      speed = player.speed;
+      // The walk cycle follows how far the drawn figure really moved this frame,
+      // so the feet keep pace while speeding up, slowing down or sliding along a wall.
+      const step = Math.hypot(player.pos.x - s.last.x, player.pos.z - s.last.z);
+      // (Riding a boat moves the figure too, but the game says it is not walking then.)
+      speed = player.speed > 0.05 && s.init && dt > 0 && step < 1 ? step / dt : player.speed;
       runK = Math.max(0, Math.min(1, (player.speed - 4.2) / 2.5));
       base = speed > 0.15 ? 'move' : cue.sitting ? 'sit' : 'idle';
       holding = cue.holding;
@@ -567,6 +572,8 @@ export function Figure({ look, follow, anim, lantern: withLantern = true, onRead
       }
     }
     const p = A.update(dt, { speed, run: runK, yawRate, accel, base, holding, leading, reduced });
+    const probe = follow ? (globalThis as { __figProbe?: { ph?: number } }).__figProbe : undefined;
+    if (probe) probe.ph = A.ph;
     apply(p, j, A, hips0, P, reduced);
     if (j.lantern) {
       j.lantern.rotation.x = -(p.elRX ?? 0) - (p.shRX ?? 0) - (p.wrRX ?? 0) + A.pack.x * 2;

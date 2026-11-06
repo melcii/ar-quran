@@ -11,7 +11,7 @@ export type Report = {
   slopes: { tested: number; climbs: { x: number; z: number; rise: number; run: number }[] };
   edge: { tested: number; escaped: { x: number; z: number }[] };
   /** Every footpath walked end to end, steering along it as a child would. */
-  paths: { tested: number; walked: number; stuck: { path: number; x: number; z: number; to: [number, number] }[] };
+  paths: { tested: number; walked: number; stuck: { path: number; x: number; z: number; to: [number, number] }[]; gated: { path: number; tag: string }[] };
   /** Every activity spot: somewhere open to stand within reach of it. */
   zones: { tested: number; unreachable: { key: string; x: number; z: number; reach: number }[] };
   ok: boolean;
@@ -106,6 +106,9 @@ export function validateSpace(sp: Space, opts: { spawn: [number, number]; r?: nu
 
   // 5. Footpaths: start at each end and steer point to point along it.
   const stuck: Report['paths']['stuck'] = [];
+  const gated: Report['paths']['gated'] = [];
+  // A gate that opens later in the story (shut now) is not a fault.
+  const gateBy = () => sp.solids.find((s) => s.active && s.active() && Math.hypot(s.x - probe.x, s.z - probe.z) < (s.kind === 'circle' ? s.r : Math.hypot(s.hx, s.hz)) + r + 0.8);
   let walked = 0;
   (opts.paths ?? []).forEach((pts, pi) => {
     for (const way of [pts, pts.slice().reverse()]) {
@@ -134,6 +137,11 @@ export function validateSpace(sp: Space, opts: { spawn: [number, number]; r?: nu
         // Path ends may sit on a feature (a lantern, a gate): close is enough there.
         const endOk = i === way.length - 1 && d < 2.6;
         if (d >= 0.9 && !endOk) {
+          const g = gateBy();
+          if (g) {
+            gated.push({ path: pi, tag: g.tag });
+            break;
+          }
           stuck.push({ path: pi, x: +probe.x.toFixed(2), z: +probe.z.toFixed(2), to: [tx, tz] });
           break;
         }
@@ -157,7 +165,7 @@ export function validateSpace(sp: Space, opts: { spawn: [number, number]; r?: nu
     solids: { tested: solids.length, pushes, entered },
     slopes: { tested, climbs },
     edge: { tested: 16, escaped },
-    paths: { tested: (opts.paths ?? []).length, walked: Math.round(walked), stuck },
+    paths: { tested: (opts.paths ?? []).length, walked: Math.round(walked), stuck, gated },
     zones: { tested: (opts.zones ?? []).filter((u) => u.reach > 0).length, unreachable },
     ok: spawn.ok && !entered.length && !climbs.length && !escaped.length && !stuck.length && !unreachable.length,
   };

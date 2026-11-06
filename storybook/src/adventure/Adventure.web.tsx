@@ -56,6 +56,22 @@ type Save = { done: string[]; prog: Record<string, number[]>; seen: string[]; po
 const KEY = (n: number) => `quran-adventure.world-${n}.v1`;
 const fresh = (): Save => ({ done: [], prog: {}, seen: [] });
 const STEP = 1 / 60;
+/** Share of the way to close this frame when easing at rate k: the same over a second at any frame rate. */
+const damp = (dt: number, k: number) => 1 - Math.exp(-k * dt);
+
+/**
+ * Solid at a spot, for route planning: answers are kept on a 0.2 m grid until
+ * the colliders change, so planning a long route never stalls a frame.
+ */
+const navCache = new WeakMap<Space, { v: number; m: Map<number, boolean> }>();
+function navBlocked(space: Space, x: number, z: number, r: number) {
+  let c = navCache.get(space);
+  if (!c || c.v !== space.version) navCache.set(space, (c = { v: space.version, m: new Map() }));
+  const k = ((Math.round(x * 5) + 4096) * 8192 + (Math.round(z * 5) + 4096)) * 16 + Math.min(15, Math.round(r * 10));
+  let b = c.m.get(k);
+  if (b === undefined) c.m.set(k, (b = space.blockedAt(Math.round(x * 5) / 5, Math.round(z * 5) / 5, r * 0.9)));
+  return b;
+}
 function load(n: number): Save {
   try {
     const s = JSON.parse(localStorage.getItem(KEY(n)) ?? 'null');
@@ -293,6 +309,7 @@ type Api = {
 
 function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game: Game; move: MutableRefObject<Move>; api: MutableRefObject<Api> }) {
   const { camera } = useThree();
+  (game as unknown as { camera: THREE.Camera }).camera = camera;
   const keys = useRef(new Set<string>());
   const lastNear = useRef('');
   const camDist = useRef(game.cam.dist);
@@ -582,6 +599,10 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
     cue.sitting = false;
   }, []);
 
+  // Runs before everything else each frame (priority -1), so the explorer, the
+  // animals and the camera are all drawn at this frame's positions. It used to
+  // run after the figure, which then showed last frame's step every frame:
+  // with uneven frame times that read as a stutter.
   useFrame((st, rawDt) => {
     const dt = Math.min(0.05, rawDt) * game.timeScale;
     weather.time = st.clock.elapsedTime;
@@ -684,7 +705,7 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
       sp.sync();
       const mag = Math.hypot(dx, dz);
       const want = mag > 0.05 ? (run ? 7 : 4.2) * Math.min(1, mag) : 0;
-      game.cmd += (want - game.cmd) * Math.min(1, dt * 8);
+      game.cmd += (want - game.cmd) * damp(dt, 8);
       if (game.cmd < 0.02) game.cmd = 0;
       if (mag > 0.05) player.yaw = Math.atan2(dx, dz);
       // Fixed 60 Hz steps, so movement and collision are the same at any frame rate.
@@ -706,7 +727,7 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
       // Walking speed for the animation is how far the feet really went, so
       // pushing against a wall stands still instead of walking on the spot.
       const real = ran > 0 ? moved / ran : player.speed;
-      player.speed += (real - player.speed) * Math.min(1, dt * 12);
+      player.speed += (real - player.speed) * damp(dt, 12);
       if (player.speed < 0.05) player.speed = 0;
       // For tests: the longest time the walk cycle played without the feet really moving.
       game.wip = ran > 0 && player.speed > 0.3 && real < 0.1 * player.speed ? game.wip + dt : 0;
@@ -1140,11 +1161,11 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
     const look = tmp.set(pp.x, pp.y + 1.35, pp.z);
     const snap = cam.snap;
     cam.snap = false;
-    cam.look.lerp(look, snap ? 1 : Math.min(1, dt * (motion.reduced ? 30 : 9)));
+    cam.look.lerp(look, snap ? 1 : damp(dt, (motion.reduced ? 30 : 9)));
     // A trunk, wall, house or hill between the camera and the explorer: look over it, or come closer.
     const fit = game.boat.on ? { pitch: cam.pitch, dist: Math.max(cam.dist, 11) } : game.space.cameraFit(cam.look.x, cam.look.y, cam.look.z, cam.yaw, cam.pitch, cam.dist);
-    camDist.current += (fit.dist - camDist.current) * Math.min(1, dt * (fit.dist < camDist.current ? 10 : 2));
-    camPitch.current += (fit.pitch - camPitch.current) * Math.min(1, dt * (fit.pitch > camPitch.current ? 8 : 2));
+    camDist.current += (fit.dist - camDist.current) * damp(dt, (fit.dist < camDist.current ? 10 : 2));
+    camPitch.current += (fit.pitch - camPitch.current) * damp(dt, (fit.pitch > camPitch.current ? 8 : 2));
     if (snap) (camDist.current = fit.dist), (camPitch.current = fit.pitch);
     const cp = camPitch.current;
     const want3 = new THREE.Vector3(
@@ -1153,12 +1174,12 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
       cam.look.z + Math.cos(cam.yaw) * Math.cos(cp) * camDist.current,
     );
     want3.y = Math.max(want3.y, t.floorY(want3.x, want3.z) + 0.7, (t.water ?? -99) + 0.6);
-    cam.pos.lerp(want3, snap ? 1 : Math.min(1, dt * (motion.reduced ? 30 : 6)));
+    cam.pos.lerp(want3, snap ? 1 : damp(dt, (motion.reduced ? 30 : 6)));
     camera.position.copy(cam.pos);
     camera.lookAt(cam.look);
 
     nature.update({ river: t.water != null ? (game.boat.on ? 0 : 30) : 99, storm: weather.storm, rain: weather.rain, inside: false, dt });
-  });
+  }, -1);
 
   return null;
 }
@@ -1649,7 +1670,7 @@ function World({ def }: { def: WorldDef }) {
       status: '',
       // Routes for tap-to-go: the terrain's rules plus every collider in the
       // space (activity props included), never into a solid.
-      nav: makeNav((ax, az, bx, bz, r) => t.canStep(ax, az, bx, bz, r) && (!space.blockedAt(bx, bz, r * 0.9) || space.blockedAt(ax, az, r * 0.9)), { radius: t.radius, cell: 1.4, y: t.floorY }),
+      nav: makeNav((ax, az, bx, bz, r) => t.canStep(ax, az, bx, bz, r) && (!navBlocked(space, bx, bz, r) || navBlocked(space, ax, az, r)), { radius: t.radius, cell: 1.4, y: t.floorY }),
       route: [],
       routeFor: null,
       way: { pts: [], until: 0, at: -9 },
