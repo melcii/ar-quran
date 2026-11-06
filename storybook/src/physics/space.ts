@@ -106,6 +106,8 @@ export class Space {
   /** Bumped whenever the set of solids changes (the debug view redraws). */
   version = 0;
   private camTop = new Map<number, number>();
+  /** Height (world y) of the top of a solid that knows its own height, measured where it stands (so a slope beside it does not move it). */
+  private camTopY = new Map<number, number>();
   private extraHandles = new Set<number>();
 
   /** Is the spot already covered by a hand-made collider, water or the edge (not counting the extra solids)? */
@@ -133,6 +135,7 @@ export class Space {
       const gone = new Set(old.cs.map((c) => c.handle));
       for (const c of old.cs) {
         this.camTop.delete(c.handle);
+        this.camTopY.delete(c.handle);
         this.world.removeCollider(c, false);
       }
       this.toggles = this.toggles.filter((t) => !gone.has(t.c.handle));
@@ -158,7 +161,7 @@ export class Space {
     const c = this.world.createCollider(d);
     if (s.active) this.toggles.push({ c, on: s.active });
     if (s.cam === false) this.camTop.set(c.handle, -1);
-    else if (s.top != null) this.camTop.set(c.handle, s.top);
+    else if (s.top != null) this.camTop.set(c.handle, s.top), this.camTopY.set(c.handle, this.spec.floor(s.x, s.z) + s.top);
     return c;
   }
 
@@ -451,7 +454,8 @@ export class Space {
         const s = h.timeOfImpact;
         const x = lx + dx * s;
         const z = lz + dz * s;
-        if (ly + dy * s < this.spec.floor(x, z) + top + 0.2) d = Math.min(d, s);
+        const topY = this.camTopY.get(h.collider.handle) ?? this.spec.floor(x, z) + top;
+        if (ly + dy * s < topY + 0.2) d = Math.min(d, s);
         return true;
       },
       undefined,

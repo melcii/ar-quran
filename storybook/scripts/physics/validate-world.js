@@ -65,7 +65,7 @@ const DEV = process.env.DEV || 'desktop';
       await waitClk(0.4);
       const c = g.camera?.position ?? g.cam.pos; // where it is drawn
       if (c.y < sp.spec.floor(c.x, c.z) + 0.2) res.camUnder++;
-      let realHit = false; sp.world.intersectionsWithShape({ x: c.x, y: 0, z: c.z }, { x: 0, y: 0, z: 0, w: 1 }, new sp.R.Ball(0.05), (h) => { const top = sp.camTop.get(h.handle) ?? 2.4; if (!sp.ground.has(h.handle) && top >= 0 && c.y < sp.spec.floor(c.x, c.z) + top) realHit = true; return !realHit; }, undefined, (4 << 16) | 1); if (realHit && c.y < sp.spec.floor(c.x, c.z) + 2.4 && !A.player.inside) { res.camInside++; (res.camAt ??= []).push([k, +c.x.toFixed(1), +c.y.toFixed(1), +c.z.toFixed(1), +me.x.toFixed(1), +me.z.toFixed(1)]); }
+      let realHit = false; sp.world.intersectionsWithShape({ x: c.x, y: 0, z: c.z }, { x: 0, y: 0, z: 0, w: 1 }, new sp.R.Ball(0.05), (h) => { const top = sp.camTop.get(h.handle) ?? 2.4; if (!sp.ground.has(h.handle) && top >= 0 && c.y < (sp.camTopY.get(h.handle) ?? sp.spec.floor(c.x, c.z) + top)) realHit = true; return !realHit; }, undefined, (4 << 16) | 1); if (realHit && c.y < sp.spec.floor(c.x, c.z) + 2.4 && !A.player.inside) { res.camInside++; (res.camAt ??= []).push([k, +c.x.toFixed(1), +c.y.toFixed(1), +c.z.toFixed(1), +me.x.toFixed(1), +me.z.toFixed(1)]); }
     }
     // Return to safe ground keeps story progress.
     const before = JSON.stringify(A.save().done ?? A.save().boarded);
