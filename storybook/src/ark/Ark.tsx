@@ -217,7 +217,8 @@ function Fence({ from, to, gate, open, mat }: { from: [number, number]; to: [num
   });
   const gx = gate ?? -99;
   return (
-    <group position={[from[0], FL, from[1]]} rotation-y={-ang}>
+    // Stall fences and gates have hand-made colliders that open with the gate.
+    <group position={[from[0], FL, from[1]]} rotation-y={-ang} userData={{ noSolid: true }}>
       {Array.from({ length: posts }, (_, i) => {
         const x = (i / (posts - 1)) * len;
         if (Math.abs(x - gx) < 1.0) return null;
@@ -341,7 +342,8 @@ export function Ark({ boarded, stored, inside }: { boarded: BeastKind[]; stored:
       <group position-y={ARK.ground}>
         {[-10, -5, 0, 5, 10].map((x) =>
           [-1, 1].map((sd) => (
-            <mesh key={`${x}${sd}`} material={mats.beam} position={[x, 1.0, sd * (W / 2 + 0.9)]} rotation-x={sd * 0.55} castShadow>
+            // The middle shore on the door side stands under the ramp: walked over, not into.
+            <mesh key={`${x}${sd}`} material={mats.beam} position={[x, 1.0, sd * (W / 2 + 0.9)]} rotation-x={sd * 0.55} castShadow userData={x === 0 && sd > 0 ? { noSolid: true } : undefined}>
               <boxGeometry args={[0.28, 2.6, 0.28]} />
             </mesh>
           )),
@@ -426,7 +428,8 @@ export function Ark({ boarded, stored, inside }: { boarded: BeastKind[]; stored:
           </mesh>
         </group>
         {/* The ramp, hinged at the doorway; it swings up to close the door. */}
-        <group ref={ramp} position={[0, FL, W / 2 + 0.1]}>
+        {/* Its colliders are hand-made (deck, rails, door when raised); not read from the drawing. */}
+        <group ref={ramp} position={[0, FL, W / 2 + 0.1]} userData={{ noSolid: true }}>
           <mesh material={mats.deck} position={[0, -0.09, rampLen.len / 2]} castShadow receiveShadow>
             <boxGeometry args={[RAMP.half * 2, 0.18, rampLen.len]} />
           </mesh>
@@ -465,7 +468,8 @@ export function Ark({ boarded, stored, inside }: { boarded: BeastKind[]; stored:
             <mesh material={mats.hay} position={[1.2, 0.08, 0]} scale={[1.4, 0.25, 0.8]}>
               <sphereGeometry args={[0.6, 12, 8]} />
             </mesh>
-            <mesh material={mats.beam} position={[-1.4, 0.3, 0]}>
+            {/* The trough is where the pair stands to eat: no collider, as before. */}
+            <mesh material={mats.beam} position={[-1.4, 0.3, 0]} userData={{ noSolid: true }}>
               <boxGeometry args={[1.2, 0.5, 0.5]} />
             </mesh>
             {boarded.includes(k) && (
