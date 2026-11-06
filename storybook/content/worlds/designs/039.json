@@ -1,0 +1,176 @@
+{
+ "surah": 39,
+ "name": {
+  "transliterated": "Az-Zumar",
+  "meaning": "The Troops"
+ },
+ "ayah_count": 75,
+ "content_type": {
+  "primary": "hereafter (symbolic only)",
+  "secondary": []
+ },
+ "themes": [
+  "Sincere worship",
+  "Allah's mercy and forgiveness",
+  "Accountability",
+  "Do not despair"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Az-Zumar means The Groups. It calls us to worship Allah sincerely, reminds us of His mercy and that we should never despair of it, and speaks of people going in groups to their final place.",
+ "world_title": "Groups at the Gates",
+ "environment_concept": "Rain running underground into springs (39:21), crops that grow, turn yellow and dry (39:21) and a soft light on the horizon (39:73; nothing of Paradise is pictured).",
+ "architecture_and_scenery": "Rainy valley, springs running through rock, crops turning yellow, and a horizon with abstract gates of light.",
+ "palette": {
+  "colors": [
+   "#7a8f5a",
+   "#c9b36a",
+   "#e8e1d1",
+   "#5a6b8a"
+  ],
+  "lighting": "Rain light then soft golden haze",
+  "atmosphere": "Rain, then stillness"
+ },
+ "areas": [
+  {
+   "name": "Rain to Springs",
+   "reference": "39:21",
+   "anchor_phrase": "springs",
+   "description": "Rain flowing underground into springs."
+  },
+  {
+   "name": "Fading Crops",
+   "reference": "39:21",
+   "anchor_phrase": "yellow",
+   "description": "Crops that grow, turn yellow and dry: life is short."
+  },
+  {
+   "name": "Gates of Light",
+   "reference": "39:73",
+   "anchor_phrase": "gates",
+   "description": "Abstract gates of light on the horizon; symbolic only, not a picture of Paradise."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Water cycle",
+   "reference": "39:21",
+   "description": "Carry rain clouds over the fields.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  },
+  {
+   "name": "Never despair",
+   "reference": "39:53",
+   "description": "Light a lantern of hope by reading 39:53.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration stresses mercy and hope; the unseen is spoken of only through ayahs.",
+ "learning_objectives": [
+  "Explain 39:53",
+  "Describe the crop cycle",
+  "Explain sincere worship"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "39:21",
+   "anchor_phrase": "springs",
+   "element": "Rain to Springs"
+  },
+  {
+   "reference": "39:21",
+   "anchor_phrase": "yellow",
+   "element": "Fading Crops"
+  },
+  {
+   "reference": "39:73",
+   "anchor_phrase": "gates",
+   "element": "Gates of Light"
+  }
+ ],
+ "required_assets": [
+  "Rain valley",
+  "Springs",
+  "Crops",
+  "Abstract light gates"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (grain, horizon, spring) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "39:21",
+  "39:53",
+  "39:73"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "A field of six plots in a valley after rain, with springs at its edge and a seed bag by the path",
+  "quran_references": [
+   "39:9",
+   "39:21",
+   "39:53"
+  ],
+  "primary_mechanic": {
+   "kind": "harvest-timing",
+   "engine": "harvest",
+   "text": "Sow the field after the rain; the plots sprout one after another, turn green, then gold, then dry. Bring each plot in while it is gold. Too early it is green and soft; too late the stalks crumble (39:21) and the plot is sown again, a picture of starting again without despair (39:53). No points are given."
+  },
+  "secondary_activities": [
+   "those who know and those who do not (39:9)",
+   "do not despair of the mercy of Allah (39:53)"
+  ],
+  "narrative_structure": "The sign, the growing field, then the closing reading",
+  "world_assets": [
+   "six field plots",
+   "seed bag",
+   "stalks that change colour"
+  ],
+  "environment_behaviour": [
+   "rain falls before and just after sowing",
+   "each plot changes from bare to green to gold to dry"
+  ],
+  "learning_objective": "See the cycle of rain, crops and drying in 39:21 and learn that one can always begin again (39:53)",
+  "interaction_tests": {
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: sowed the field with the on-screen button; the plots sprout one after another)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: a green plot brought in too early was refused with a hint; each golden plot was brought in)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Plots brought in: 2 of 6 · golden now: 1\"; plots turn green, then golden, then dry)",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: plots [0,1,2,3,4,5], early/late [0])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"know\",\"field\",\"hope\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w039.ts"
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "Never Lose Hope",
+  "quran_references": [
+   "39:9",
+   "39:21",
+   "39:53–55"
+  ],
+  "children_narration": "Sometimes people make mistakes and feel unsure how to improve. Surah Az-Zumar reminds us not to despair of Allah's mercy. It also asks us to reflect on rain, plants, knowledge, and sincere worship. No matter how difficult something seems, sincere repentance is always meaningful.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Valley of Renewal",
+   "description": "Explore a landscape that changes through seasonal growth and discover how correcting mistakes differs from simply hiding them."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

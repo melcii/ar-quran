@@ -1,0 +1,188 @@
+{
+ "surah": 91,
+ "name": {
+  "transliterated": "Ash-Shams",
+  "meaning": "The Sun"
+ },
+ "ayah_count": 15,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Purifying the soul",
+  "Oaths",
+  "Thamud's lesson"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Thamud and the she-camel",
+   "reference": "91:11-15",
+   "anchor_phrase": "she-camel"
+  }
+ ],
+ "summary_for_children": "Ash-Shams means The Sun. It swears by the sun, moon, day, night and the soul, and says success is in purifying the soul. It recalls the she-camel of Thamud.",
+ "world_title": "Sun and Its Brightness",
+ "environment_concept": "A sundial in a bright square (91:1) and a still round pool beside it, where the moon is seen when it follows the sun (91:2). Further on, an old stone well with an empty drinking trough (91:13) below cliffs with carved doorways, for Thamud (91:11). No person and no she-camel are shown, and the destruction of 91:14 is not pictured.",
+ "architecture_and_scenery": "Sundial, still reflecting pool, a stone well and trough, sandstone cliffs with carved doorways.",
+ "palette": {
+  "colors": [
+   "#f2c97a",
+   "#1c2541",
+   "#8c5a3a"
+  ],
+  "lighting": "Day and night",
+  "atmosphere": "Calm"
+ },
+ "areas": [
+  {
+   "name": "The Sundial",
+   "reference": "91:1",
+   "anchor_phrase": "sun",
+   "description": "A sundial whose shadow moves with the sun."
+  },
+  {
+   "name": "Moon Pool",
+   "reference": "91:2",
+   "anchor_phrase": "moon",
+   "description": "A still pool for watching the moon when it follows the sun."
+  },
+  {
+   "name": "The Well",
+   "reference": "91:13",
+   "anchor_phrase": "drink",
+   "description": "An old well with an empty drinking trough. No animal is shown."
+  },
+  {
+   "name": "Carved Cliffs",
+   "reference": "91:11",
+   "anchor_phrase": "Thamud",
+   "description": "Sandstone cliffs with doorways carved into them, empty and quiet."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Read the first ten",
+   "reference": "91:1-10",
+   "kind": "order",
+   "description": "Put the first ten ayahs of Ash-Shams in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "91:1-13",
+   "kind": "match",
+   "description": "Match the sundial, the pool, the well and the cliffs to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Keep your heart clean",
+   "reference": "91:9",
+   "kind": "card",
+   "description": "Talk about what makes a heart pure and what spoils it.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Salih not shown.",
+ "learning_objectives": [
+  "Explain 91:9-10"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "91:1",
+   "anchor_phrase": "sun",
+   "element": "The Sundial"
+  },
+  {
+   "reference": "91:2",
+   "anchor_phrase": "moon",
+   "element": "Moon Pool"
+  },
+  {
+   "reference": "91:13",
+   "anchor_phrase": "drink",
+   "element": "The Well"
+  },
+  {
+   "reference": "91:11",
+   "anchor_phrase": "Thamud",
+   "element": "Carved Cliffs"
+  }
+ ],
+ "required_assets": [
+  "Sunlit terrain (shared)",
+  "Sundial",
+  "Reflecting pool",
+  "Well and trough",
+  "Carved cliffs"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: its own scene (a moving-shadow sundial, a moon pool, a well and carved cliffs) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Shams.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
+ },
+ "quran_references": [
+  "91:1",
+  "91:1-10",
+  "91:1-13",
+  "91:2",
+  "91:9",
+  "91:11",
+  "91:13"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Sun and Moon Valley",
+  "quran_references": [
+   "91:1–15"
+  ],
+  "primary_mechanic": {
+   "kind": "orbit-follow",
+   "engine": "not built yet",
+   "text": "Set the moon to follow the sun and day to reveal it (91:1-4); Thamud is a reading place."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Sun and the Soul",
+  "quran_references": [
+   "91:1–15"
+  ],
+  "children_narration": "The Quran draws our attention to the sun, moon, day, night, and the human soul. It teaches that people have a responsibility to cultivate goodness rather than wrongdoing. It also recalls the people of Thamud and the she-camel.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Sun and Moon Valley",
+   "description": "Explore shifting daylight and moonlight, then enter a separate Thamud narrative environment."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The she-camel and its hamstringing (91:13-14): the camel may appear alive in the narrative place; the hamstringing is narration only.",
+  "status": "draft, unreviewed"
+ }
+}

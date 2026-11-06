@@ -1,0 +1,305 @@
+{
+  "id": "yunus",
+  "slug": "yunus",
+  "title": "The Story of Yunus",
+  "figure": "Yunus (Jonah)",
+  "description": "Yunus, peace be upon him, was one of Allah's messengers. The Quran tells how he boarded a laden ship, was swallowed by a fish, called out to Allah in the darkness, and was saved. Follow the story through the sea, the deep, and the shore, and read the verses it comes from.",
+  "recommended_age": {
+    "min": 5,
+    "max": 12
+  },
+  "estimated_duration_minutes": 10,
+  "cover_art": "sea-dawn",
+  "category_ids": [
+    "lives-of-the-prophets",
+    "turning-to-allah",
+    "mercy"
+  ],
+  "quran_references": [
+    "37:139-148",
+    "21:87-88"
+  ],
+  "publication_status": "prototype",
+  "editorial_review_status": "draft",
+  "learning_objectives": [
+    "Know that the story of Yunus is told in Surah As-Saffat (37:139-148) and Surah Al-Anbiya (21:87-88).",
+    "Read the supplication of Yunus in Surah Al-Anbiya 21:87 in the original Arabic with a translation.",
+    "Reflect on turning to Allah in hard moments and on Allah's mercy."
+  ],
+  "scenes": [
+    {
+      "id": "yunus-1",
+      "story_id": "yunus",
+      "scene_number": 1,
+      "kind": "scene",
+      "title": "A story from the Quran",
+      "illustration_asset": "sea-dawn",
+      "illustration_alt": "A calm sea at dawn under a pale sky, with soft clouds and a low sun.",
+      "educational_narration": "This story comes from the Quran. Allah tells us about Yunus, peace be upon him, in Surah As-Saffat and in Surah Al-Anbiya. The Quran says that Yunus was one of the messengers. In this book we will not show Yunus. Instead we will explore the places the Quran mentions: the sea, the deep water, and the shore.",
+      "audio_asset": null,
+      "linked_ayah_references": [
+        "37:139"
+      ],
+      "interactive_elements": [
+        {
+          "id": "yunus-1-sun",
+          "scene_id": "yunus-1",
+          "object_name": "The morning sun",
+          "position": {
+            "x": 0.74,
+            "y": 0.45,
+            "radius": 0.09
+          },
+          "animation_asset": "glow",
+          "explanatory_text": "This sunrise is only a painting to begin our story. The Quran does not tell us what time of day the events happened.",
+          "supporting_source": "note-artistic-setting"
+        },
+        {
+          "id": "yunus-1-sea",
+          "scene_id": "yunus-1",
+          "object_name": "The sea",
+          "position": {
+            "x": 0.3,
+            "y": 0.8,
+            "radius": 0.12
+          },
+          "animation_asset": "ripple",
+          "explanatory_text": "The sea is part of this story. The Quran tells us about a ship and a great fish. Tap 'Next' to find out more.",
+          "supporting_source": "37:140-142"
+        }
+      ],
+      "source_notes": "The sea at dawn is an artistic setting. The Quran does not describe the time of day or the sky."
+    },
+    {
+      "id": "yunus-2",
+      "story_id": "yunus",
+      "scene_number": 2,
+      "kind": "scene",
+      "title": "The laden ship",
+      "illustration_asset": "sea-ship",
+      "illustration_alt": "Open sea with gentle waves. A small sailing ship sits far away on the horizon. No people are shown.",
+      "educational_narration": "The Quran tells us that Yunus went away to a ship that was laden, which means it was loaded full. On the ship, lots were drawn, and Yunus was among the ones who lost. The Quran does not tell us what the ship looked like or what the weather was like, so this picture is only an artist's idea.",
+      "audio_asset": null,
+      "linked_ayah_references": [
+        "37:140-141"
+      ],
+      "interactive_elements": [
+        {
+          "id": "yunus-2-ship",
+          "scene_id": "yunus-2",
+          "object_name": "The ship",
+          "position": {
+            "x": 0.665,
+            "y": 0.42,
+            "radius": 0.09
+          },
+          "animation_asset": "bob",
+          "explanatory_text": "The Quran calls it 'the laden ship' (37:140): a ship that was full. It does not describe its shape, its size or its sails, so we painted it small and far away.",
+          "supporting_source": "37:140"
+        },
+        {
+          "id": "yunus-2-waves",
+          "scene_id": "yunus-2",
+          "object_name": "The waves",
+          "position": {
+            "x": 0.25,
+            "y": 0.82,
+            "radius": 0.12
+          },
+          "animation_asset": "ripple",
+          "explanatory_text": "Watch the water move! The Quran does not tell us if the sea was calm or stormy that day, so we kept our sea quiet.",
+          "supporting_source": "note-artistic-setting"
+        }
+      ],
+      "source_notes": "The ship's shape, sail and colours, the sea state and the sky are artistic interpretation. Only 'the laden ship' (37:140) and the drawing of lots (37:141) are stated."
+    },
+    {
+      "id": "yunus-3",
+      "story_id": "yunus",
+      "scene_number": 3,
+      "kind": "scene",
+      "title": "The great fish",
+      "illustration_asset": "deep-fish",
+      "illustration_alt": "Deep blue water with light falling from above. A very large, dark, softly painted fish shape glides through the water.",
+      "educational_narration": "Then a fish swallowed Yunus. The Quran tells us that if Yunus had not been one of those who glorify Allah, he would have stayed inside the fish until the Day of Resurrection. The Quran does not tell us what kind of fish it was, so this shape is only an artist's idea.",
+      "audio_asset": null,
+      "linked_ayah_references": [
+        "37:142-144"
+      ],
+      "interactive_elements": [
+        {
+          "id": "yunus-3-fish",
+          "scene_id": "yunus-3",
+          "object_name": "The fish",
+          "position": {
+            "x": 0.5,
+            "y": 0.53,
+            "radius": 0.15
+          },
+          "animation_asset": "glide",
+          "explanatory_text": "'Then the fish swallowed him' (37:142). The Quran does not say what kind of fish it was, how big it was or what colour it was. We painted a soft shadow instead of a real animal.",
+          "supporting_source": "37:142"
+        },
+        {
+          "id": "yunus-3-deep",
+          "scene_id": "yunus-3",
+          "object_name": "The deep water",
+          "position": {
+            "x": 0.17,
+            "y": 0.78,
+            "radius": 0.08
+          },
+          "animation_asset": "bubbles",
+          "explanatory_text": "In Surah Al-Anbiya the Quran says that Yunus called out 'within the darknesses' (21:87). Notice the word: not one darkness, but darknesses.",
+          "supporting_source": "21:87"
+        }
+      ],
+      "source_notes": "The species, size and appearance of the fish, and the look of the underwater scene, are artistic interpretation. 37:142-144 state the swallowing and what would have happened without glorification of Allah."
+    },
+    {
+      "id": "yunus-4",
+      "story_id": "yunus",
+      "scene_number": 4,
+      "kind": "scene",
+      "title": "The supplication",
+      "illustration_asset": "night-sea",
+      "illustration_alt": "A very dark, quiet sea at night under a sky full of small stars.",
+      "educational_narration": "In the darkness, Yunus called out to Allah. The Quran tells us his exact words in Surah Al-Anbiya, verse 87. You can read them below in Arabic, read the translation, and listen to a recitation as many times as you like.",
+      "audio_asset": null,
+      "linked_ayah_references": [
+        "21:87"
+      ],
+      "featured_ayah_references": [
+        "21:87"
+      ],
+      "interactive_elements": [],
+      "source_notes": "The night sky is artistic interpretation. The words of the supplication are shown only from the verified Quran text of 21:87."
+    },
+    {
+      "id": "yunus-5",
+      "story_id": "yunus",
+      "scene_number": 5,
+      "kind": "scene",
+      "title": "Mercy and relief",
+      "illustration_asset": "shore-gourd",
+      "illustration_alt": "A wide, open, empty shore beside the sea. A green gourd vine with broad leaves grows on the sand. A path leads inland.",
+      "educational_narration": "Allah answered Yunus and saved him from his distress. The Quran says that Yunus was cast onto an open shore while he was ill, and that Allah made a gourd vine grow over him. Then Allah sent him to a hundred thousand people or more, and they believed.",
+      "audio_asset": null,
+      "linked_ayah_references": [
+        "21:88",
+        "37:145-148"
+      ],
+      "interactive_elements": [
+        {
+          "id": "yunus-5-shore",
+          "scene_id": "yunus-5",
+          "object_name": "The open shore",
+          "position": {
+            "x": 0.28,
+            "y": 0.86,
+            "radius": 0.11
+          },
+          "animation_asset": "ripple",
+          "explanatory_text": "'But We threw him onto the open shore while he was ill' (37:145). The Quran says the shore was open. It does not tell us where this shore was.",
+          "supporting_source": "37:145"
+        },
+        {
+          "id": "yunus-5-gourd",
+          "scene_id": "yunus-5",
+          "object_name": "The gourd vine",
+          "position": {
+            "x": 0.6,
+            "y": 0.65,
+            "radius": 0.11
+          },
+          "animation_asset": "grow",
+          "explanatory_text": "'And We caused to grow over him a gourd vine' (37:146). The Arabic word is yaqṭīn, which this translation renders as 'gourd vine'. Watch it grow!",
+          "supporting_source": "37:146"
+        },
+        {
+          "id": "yunus-5-path",
+          "scene_id": "yunus-5",
+          "object_name": "The path inland",
+          "position": {
+            "x": 0.73,
+            "y": 0.8,
+            "radius": 0.08
+          },
+          "animation_asset": "glow",
+          "explanatory_text": "Allah sent Yunus to a hundred thousand people or more, and they believed (37:147-148). The Quran does not name their town here.",
+          "supporting_source": "37:147-148"
+        }
+      ],
+      "source_notes": "The shoreline, plant drawing and path are artistic interpretation. The open shore (37:145), the gourd vine (37:146) and the hundred thousand or more (37:147) are stated."
+    },
+    {
+      "id": "yunus-6",
+      "story_id": "yunus",
+      "scene_number": 6,
+      "kind": "verses",
+      "title": "Explore the original verses",
+      "illustration_asset": "verses-paper",
+      "illustration_alt": "A plain cream reading page.",
+      "educational_narration": "Here are the verses this story comes from. Read the Arabic, open the translation, listen to the recitation, and bookmark a passage to come back to it.",
+      "audio_asset": null,
+      "linked_ayah_references": [
+        "37:139-148",
+        "21:87-88"
+      ],
+      "featured_ayah_references": [
+        "37:139-148",
+        "21:87-88"
+      ],
+      "interactive_elements": [],
+      "source_notes": "Verses are shown only from the read-only Quran dataset."
+    },
+    {
+      "id": "yunus-7",
+      "story_id": "yunus",
+      "scene_number": 7,
+      "kind": "reflect",
+      "title": "Reflect",
+      "illustration_asset": "reflect-dusk",
+      "illustration_alt": "A quiet shore at dusk with a warm sky and a small gourd vine.",
+      "educational_narration": "Take a moment to think about the story. There are no points and no right or wrong answers here.",
+      "audio_asset": null,
+      "linked_ayah_references": [
+        "21:87-88"
+      ],
+      "interactive_elements": [],
+      "source_notes": "Learning activity written by the app's editors. It is not a quotation from the Quran."
+    }
+  ],
+  "reflection": {
+    "question": "What can we learn about turning to Allah in difficult moments?",
+    "prompts": [
+      "Yunus called out to Allah even in the darkness. When could you call out to Allah?",
+      "Allah answered Yunus and saved him from distress (21:88). How does that make you feel?"
+    ]
+  },
+  "activity": {
+    "instructions": "Optional: tap the events in the order the verses of Surah As-Saffat tell them.",
+    "events": [
+      {
+        "id": "ship",
+        "text": "Yunus went to the laden ship.",
+        "reference": "37:140"
+      },
+      {
+        "id": "fish",
+        "text": "The fish swallowed him.",
+        "reference": "37:142"
+      },
+      {
+        "id": "shore",
+        "text": "He was cast onto the open shore.",
+        "reference": "37:145"
+      },
+      {
+        "id": "gourd",
+        "text": "A gourd vine grew over him.",
+        "reference": "37:146"
+      }
+    ]
+  }
+}

@@ -1,0 +1,233 @@
+// Bookmarks, progress and settings. Stored only on this device, separately
+// from the Quran content, and never sent anywhere. No names, photos, voices or
+// locations are collected.
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { createContext, useCallback, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
+import { AccessibilityInfo } from 'react-native';
+
+const STORAGE_KEY = 'quran-storybook/v1';
+
+export type Bookmark = { surah: number; from: number; to: number; addedAt: number };
+export type RecentStory = { slug: string; scene: number; at: number };
+export type RecentReading = { surah: number; ayah: number; at: number };
+
+/** Progress through one surah in the 3D world. */
+export type SurahProgress = {
+  /** Highest ayah number shown on an open page. */
+  furthestAyah: number;
+  /** Where the reader last left the book. */
+  lastAyah: number;
+  /** Passage lanterns found in the surah's world, by index. */
+  passagesFound: number[];
+  /** Areas of the surah's designed world visited, by index into its design. */
+  areasFound?: number[];
+  /** Activities finished in the surah's world, by index into its design. */
+  activitiesDone?: number[];
+  /** The closing reflection has been opened. */
+  reflected?: boolean;
+  visitedWorld: boolean;
+  at: number;
+};
+
+export type Settings = {
+  arabicSize: number;
+  showTranslation: boolean;
+  reducedMotion: boolean;
+  narrationVoice: boolean;
+  recitationRate: number;
+  volume: number;
+  recordProgress: boolean;
+  dailyReflection: boolean;
+  /** Sea, wind and room sounds in the 3D world. */
+  ambienceVolume: number;
+  /** Page turns and transitions. */
+  effectsVolume: number;
+  /** Silences ambience and effects; narration and recitation stay under their own controls. */
+  quietMode: boolean;
+  /** After the first visit the opening sequence is shortened. */
+  introSeen: boolean;
+  /** Size of the Arabic on the 3D pages. */
+  pageTextSize: 'small' | 'medium' | 'large';
+  /** 3D quality. 'auto' starts from the device and steps down if frames drop. */
+  quality: 'auto' | 'low' | 'medium' | 'high';
+  narrationVolume: number;
+  /** Short "what to do" hints in play. */
+  instructionVolume: number;
+  /** What plays by itself in the worlds. Quiet mode for voices is 'quiet'. */
+  listenMode: ListenMode;
+  /** Story narrator and Quran reciter (ids in content/audio/catalog.json). */
+  narrator: string;
+  reciter: string;
+  /** Language of the story narration (the Quran is always Arabic). */
+  narrationLanguage: string;
+};
+
+export type ListenMode = 'both' | 'narration' | 'recitation' | 'quiet';
+
+type Persisted = {
+  bookmarks: Bookmark[];
+  completedScenes: Record<string, number[]>;
+  completedStories: Record<string, number>;
+  recentStories: RecentStory[];
+  recentReading: RecentReading[];
+  surahProgress: Record<string, SurahProgress>;
+  settings: Settings;
+};
+
+const defaults: Persisted = {
+  bookmarks: [],
+  completedScenes: {},
+  completedStories: {},
+  recentStories: [],
+  recentReading: [],
+  surahProgress: {},
+  settings: {
+    arabicSize: 30,
+    showTranslation: true,
+    reducedMotion: false,
+    narrationVoice: true,
+    recitationRate: 1,
+    volume: 1,
+    recordProgress: true,
+    dailyReflection: true,
+    ambienceVolume: 0.6,
+    effectsVolume: 0.7,
+    quietMode: false,
+    introSeen: false,
+    pageTextSize: 'medium',
+    quality: 'auto',
+    narrationVolume: 1,
+    instructionVolume: 0.85,
+    listenMode: 'both',
+    narrator: 'device-child-en',
+    reciter: 'alafasy-everyayah',
+    narrationLanguage: 'en',
+  },
+};
+
+type AppState = Persisted & {
+  ready: boolean;
+  systemReducedMotion: boolean;
+  motionOff: boolean;
+  isBookmarked: (surah: number, from: number, to?: number) => boolean;
+  toggleBookmark: (surah: number, from: number, to?: number) => void;
+  markScene: (slug: string, scene: number, sceneCount: number) => void;
+  noteReading: (surah: number, ayah: number) => void;
+  updateSettings: (patch: Partial<Settings>) => void;
+  updateSurahProgress: (surah: number, patch: (p: SurahProgress) => Partial<SurahProgress>) => void;
+  clearProgress: () => void;
+};
+
+export const emptySurahProgress: SurahProgress = { furthestAyah: 0, lastAyah: 1, passagesFound: [], visitedWorld: false, at: 0 };
+
+const Ctx = createContext<AppState | null>(null);
+
+export function AppStateProvider({ children }: { children: ReactNode }) {
+  const [data, setData] = useState<Persisted>(defaults);
+  const [ready, setReady] = useState(false);
+  const [systemReducedMotion, setSystemReducedMotion] = useState(false);
+
+  useEffect(() => {
+    AsyncStorage.getItem(STORAGE_KEY)
+      .then((raw) => {
+        if (raw) {
+          const saved = JSON.parse(raw) as Partial<Persisted>;
+          setData({ ...defaults, ...saved, surahProgress: saved.surahProgress ?? {}, settings: { ...defaults.settings, ...saved.settings } });
+        }
+      })
+      .catch(() => {})
+      .finally(() => setReady(true));
+    AccessibilityInfo.isReduceMotionEnabled().then(setSystemReducedMotion).catch(() => {});
+    const sub = AccessibilityInfo.addEventListener('reduceMotionChanged', setSystemReducedMotion);
+    return () => sub.remove();
+  }, []);
+
+  useEffect(() => {
+    if (ready) AsyncStorage.setItem(STORAGE_KEY, JSON.stringify(data)).catch(() => {});
+  }, [data, ready]);
+
+  const isBookmarked = useCallback(
+    (surah: number, from: number, to = from) =>
+      data.bookmarks.some((b) => b.surah === surah && b.from === from && b.to === to),
+    [data.bookmarks],
+  );
+
+  const toggleBookmark = useCallback((surah: number, from: number, to = from) => {
+    setData((d) => {
+      const exists = d.bookmarks.some((b) => b.surah === surah && b.from === from && b.to === to);
+      return {
+        ...d,
+        bookmarks: exists
+          ? d.bookmarks.filter((b) => !(b.surah === surah && b.from === from && b.to === to))
+          : [{ surah, from, to, addedAt: Date.now() }, ...d.bookmarks],
+      };
+    });
+  }, []);
+
+  const markScene = useCallback((slug: string, scene: number, sceneCount: number) => {
+    setData((d) => {
+      const recentStories = [{ slug, scene, at: Date.now() }, ...d.recentStories.filter((r) => r.slug !== slug)].slice(0, 10);
+      if (!d.settings.recordProgress) return { ...d, recentStories };
+      const done = new Set(d.completedScenes[slug] ?? []);
+      done.add(scene);
+      const completedStories =
+        done.size >= sceneCount && !d.completedStories[slug]
+          ? { ...d.completedStories, [slug]: Date.now() }
+          : d.completedStories;
+      return {
+        ...d,
+        recentStories,
+        completedScenes: { ...d.completedScenes, [slug]: [...done].sort((a, b) => a - b) },
+        completedStories,
+      };
+    });
+  }, []);
+
+  const noteReading = useCallback((surah: number, ayah: number) => {
+    setData((d) => ({
+      ...d,
+      recentReading: [{ surah, ayah, at: Date.now() }, ...d.recentReading.filter((r) => r.surah !== surah)].slice(0, 8),
+    }));
+  }, []);
+
+  const updateSettings = useCallback((patch: Partial<Settings>) => {
+    setData((d) => ({ ...d, settings: { ...d.settings, ...patch } }));
+  }, []);
+
+  const updateSurahProgress = useCallback((surah: number, patch: (p: SurahProgress) => Partial<SurahProgress>) => {
+    setData((d) => {
+      if (!d.settings.recordProgress) return d;
+      const cur = d.surahProgress[surah] ?? emptySurahProgress;
+      return { ...d, surahProgress: { ...d.surahProgress, [surah]: { ...cur, ...patch(cur), at: Date.now() } } };
+    });
+  }, []);
+
+  const clearProgress = useCallback(() => {
+    setData((d) => ({ ...defaults, settings: d.settings }));
+  }, []);
+
+  const value = useMemo<AppState>(
+    () => ({
+      ...data,
+      ready,
+      systemReducedMotion,
+      motionOff: data.settings.reducedMotion || systemReducedMotion,
+      isBookmarked,
+      toggleBookmark,
+      markScene,
+      noteReading,
+      updateSettings,
+      updateSurahProgress,
+      clearProgress,
+    }),
+    [data, ready, systemReducedMotion, isBookmarked, toggleBookmark, markScene, noteReading, updateSettings, updateSurahProgress, clearProgress],
+  );
+
+  return <Ctx.Provider value={value}>{children}</Ctx.Provider>;
+}
+
+export function useAppState() {
+  const v = useContext(Ctx);
+  if (!v) throw new Error('useAppState must be used inside AppStateProvider');
+  return v;
+}

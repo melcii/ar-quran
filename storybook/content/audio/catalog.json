@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "about": "Every voice and clip the app can play, with its licence and review status. Quran recitation, story narration, instructions and sound effects are separate categories and never share a voice. Quran recitation is only ever a human recording from an identified reciter; text-to-speech and pitch changes are never used for it.",
+  "reciters": [
+    {
+      "id": "alafasy-everyayah",
+      "name": "Mishary Rashid Alafasy",
+      "age": "adult",
+      "reading": "Hafs an Asim",
+      "host": "EveryAyah.com",
+      "source": { "kind": "stream", "urlTemplate": "https://everyayah.com/data/Alafasy_128kbps/{surah3}{ayah3}.mp3", "unit": "ayah" },
+      "licence": { "status": "pending", "holder": "Unknown", "note": "EveryAyah states no licence. Usage rights must be confirmed with the rights holder before release, or the files replaced with licensed audio." },
+      "verification": { "matchesText": "unverified", "reviewedBy": null, "note": "Human recitation streamed per ayah. Not yet checked ayah by ayah against the KFGQPC Hafs text by a recitation specialist for this app." },
+      "wordTimings": null
+    },
+    {
+      "id": "child-reciter",
+      "name": "Child reciter (not supplied yet)",
+      "age": "child",
+      "reading": "Hafs an Asim",
+      "host": "",
+      "source": { "kind": "files", "urlTemplate": "", "unit": "ayah" },
+      "licence": { "status": "none", "holder": "", "note": "No licensed child-reciter recordings have been supplied. This entry stays switched off until recordings, written permission and a specialist review are in place." },
+      "verification": { "matchesText": "unverified", "reviewedBy": null, "note": "Needs a recitation specialist to check every ayah against the KFGQPC Hafs text." },
+      "wordTimings": null
+    }
+  ],
+  "defaultReciter": "alafasy-everyayah",
+  "narrators": [
+    {
+      "id": "device-child-en",
+      "name": "Young voice (this device)",
+      "language": "en",
+      "kind": "device",
+      "note": "Uses the speech voices built into the device: a child's voice when the device has one, otherwise the most natural voice it has, lifted to sound younger. Nothing is recorded or sent anywhere. Sound quality depends on the device.",
+      "licence": { "status": "not-needed", "note": "Built-in device voices; no audio is shipped." }
+    },
+    {
+      "id": "recorded-child-en",
+      "name": "Child narrator, recorded (not supplied yet)",
+      "language": "en",
+      "kind": "recorded",
+      "note": "Recorded narration for every line in narration-lines.json, by a licensed child voice actor or a voice provider whose terms permit this use. Until clips exist, lines fall back to the device voice.",
+      "licence": { "status": "none", "note": "No recordings supplied yet." }
+    }
+  ],
+  "defaultNarrator": "device-child-en",
+  "languages": [
+    { "id": "en", "name": "English", "narration": true },
+    { "id": "tr", "name": "Türkçe", "narration": false, "note": "Narration lines not translated or recorded yet." },
+    { "id": "ar", "name": "العربية", "narration": false, "note": "Educational narration in Arabic not written or recorded yet. This is never Quran recitation." }
+  ],
+  "clips": []
+}

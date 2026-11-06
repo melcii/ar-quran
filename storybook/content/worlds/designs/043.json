@@ -1,0 +1,178 @@
+{
+ "surah": 43,
+ "name": {
+  "transliterated": "Az-Zukhruf",
+  "meaning": "The Ornaments of Gold"
+ },
+ "ayah_count": 89,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Guidance",
+  "Gratitude when travelling",
+  "Worldly ornament is small",
+  "Following forefathers blindly"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Ibrahim leaves idols",
+   "reference": "43:26-28",
+   "anchor_phrase": "Abraham"
+  }
+ ],
+ "summary_for_children": "Az-Zukhruf means Gold Ornaments. It reminds us that Allah made the earth a bed for us with roads, sends rain in measure, and gave us ships and animals to ride, and that gold and silver are small next to faith.",
+ "world_title": "Roads Across the Bed of Earth",
+ "environment_concept": "Roads across the earth (43:10), rain in measure reviving dead land (43:11), and ships and animals to ride (43:12).",
+ "architecture_and_scenery": "Valleys with clear roads, ships and riding animals, and a gilded palace with silver roofs as a warning about worldly ornament.",
+ "palette": {
+  "colors": [
+   "#d4af37",
+   "#6f8f4a",
+   "#3f6d8f",
+   "#efe6d2"
+  ],
+  "lighting": "Clear daylight; a glittering palace that dims",
+  "atmosphere": "Open air"
+ },
+ "areas": [
+  {
+   "name": "Roads of Guidance",
+   "reference": "43:10",
+   "anchor_phrase": "roads",
+   "description": "Roads across the earth."
+  },
+  {
+   "name": "Rain in Measure",
+   "reference": "43:11",
+   "anchor_phrase": "measured amounts",
+   "description": "Rain reviving a dead land."
+  },
+  {
+   "name": "Ships and Mounts",
+   "reference": "43:12",
+   "anchor_phrase": "ships and animals",
+   "description": "Ships and animals to ride."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Travel prayer",
+   "reference": "43:13",
+   "description": "Read the travelling words of 43:13 before riding (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Gold or guidance",
+   "reference": "43:33-35",
+   "description": "Choose between gold rooms and guidance; learn what lasts (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Rain in measure",
+   "reference": "43:11",
+   "kind": "find",
+   "description": "Carry rain clouds to revive the dead land.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration contrasts real guidance with ornaments.",
+ "learning_objectives": [
+  "Explain gratitude while travelling",
+  "Explain why ornaments are small",
+  "Describe 43:10-12"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "43:10",
+   "anchor_phrase": "roads",
+   "element": "Roads of Guidance"
+  },
+  {
+   "reference": "43:11",
+   "anchor_phrase": "measured amounts",
+   "element": "Rain in Measure"
+  },
+  {
+   "reference": "43:12",
+   "anchor_phrase": "ships and animals",
+   "element": "Ships and Mounts"
+  }
+ ],
+ "required_assets": [
+  "Valleys and roads",
+  "Ships and mounts",
+  "Gilded palace"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (herd, ships, steps) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "43:10",
+  "43:11",
+  "43:12",
+  "43:13",
+  "43:26-28",
+  "43:33-35"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Golden City",
+  "quran_references": [
+   "43:22–35",
+   "43:46–65"
+  ],
+  "primary_mechanic": {
+   "kind": "gold-or-good",
+   "engine": "not built yet",
+   "text": "An ornamented city where gold, silver and decorations can be set aside to reveal what really helps people (43:33-35)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The City of Gold",
+  "quran_references": [
+   "43:22–35",
+   "43:46–65"
+  ],
+  "children_narration": "Imagine a city filled with beautiful ornaments, golden decorations, and impressive buildings. Does having all those things make someone good or wise? Surah Az-Zukhruf reminds us that wealth and beauty are not the true measure of a person's worth. It also recalls the stories of Musa and Isa.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Golden City",
+   "description": "Explore an ornate city and learn to distinguish luxury from kindness, honesty, and sincere faith through interactive choices."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

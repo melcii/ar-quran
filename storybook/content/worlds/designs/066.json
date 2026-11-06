@@ -1,0 +1,139 @@
+{
+ "surah": 66,
+ "name": {
+  "transliterated": "At-Taḥrīm",
+  "meaning": "The Prohibition"
+ },
+ "ayah_count": 12,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Protecting family",
+  "Repentance",
+  "Examples of faith"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "At-Tahrim tells believers to protect their families with good deeds and gives two examples of faith: the wife of Pharaoh and Maryam.",
+ "world_title": "Two Examples of Faith",
+ "environment_concept": "A palace room (66:11) and a quiet sanctuary with fruit in a lit niche (66:12). No one is shown.",
+ "architecture_and_scenery": "A palace interior and a modest sanctuary.",
+ "palette": {
+  "colors": [
+   "#d4b66a",
+   "#efe6d2"
+  ],
+  "lighting": "Interior light",
+  "atmosphere": "Quiet"
+ },
+ "areas": [
+  {
+   "name": "Palace Room",
+   "reference": "66:11",
+   "anchor_phrase": "wife of Pharaoh",
+   "description": "A room in Pharaoh's palace; no one shown."
+  },
+  {
+   "name": "Sanctuary",
+   "reference": "66:12",
+   "anchor_phrase": "Mary",
+   "description": "A quiet sanctuary."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Sincere repentance",
+   "reference": "66:8",
+   "description": "Plant three beds as a fresh start; they bloom.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  }
+ ],
+ "narration_plan": "No person shown.",
+ "learning_objectives": [
+  "Explain repentance",
+  "Name two examples of faith"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "66:11",
+   "anchor_phrase": "wife of Pharaoh",
+   "element": "Palace Room"
+  },
+  {
+   "reference": "66:12",
+   "anchor_phrase": "Mary",
+   "element": "Sanctuary"
+  }
+ ],
+ "required_assets": [
+  "Palace",
+  "Sanctuary"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (chamber) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "66:8",
+  "66:11",
+  "66:12"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Gallery of Examples",
+  "quran_references": [
+   "66:1–12"
+  ],
+  "primary_mechanic": {
+   "kind": "examples-gallery",
+   "engine": "not built yet",
+   "text": "A gallery of four examples (66:10-12): read each and place it under \"chose well\" or \"did not\", no figures shown."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "Learning from Our Choices",
+  "quran_references": [
+   "66:1–12"
+  ],
+  "children_narration": "Surah At-Tahrim includes lessons about responsibility within households and examples of women who made different choices. It reminds us that every person is responsible for their own faith and actions. Maryam is presented as an example of devotion.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Gallery of Examples",
+   "description": "Discover narrated lessons through separate historical-style environments and reflect on sincerity and personal responsibility."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The four women (66:10-12) are not shown; they appear only as readings.",
+  "status": "draft, unreviewed"
+ }
+}

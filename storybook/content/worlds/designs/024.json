@@ -1,0 +1,222 @@
+{
+ "surah": 24,
+ "name": {
+  "transliterated": "An-Nūr",
+  "meaning": "The Light"
+ },
+ "ayah_count": 64,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Light of guidance",
+  "Modesty and privacy",
+  "Asking permission",
+  "Honesty and avoiding slander"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Surah An-Nur teaches good manners in the home and in society: asking permission before entering, modesty, and not spreading rumours. It describes Allah's light with the beautiful example of a lamp in a niche.",
+ "world_title": "The Niche of Light",
+ "environment_concept": "Doors that open after greeting (24:27), a glass lamp in a niche like a bright star (24:35), a blessed olive grove (24:35), a mirage plain (24:39), a dark sea (24:40) and birds with spread wings (24:41).",
+ "architecture_and_scenery": "Courtyard house with closed doors that open only after greeting, a central niche with a glass lamp, an olive grove, a shimmering mirage plain and a stormy night sea.",
+ "palette": {
+  "colors": [
+   "#fff1c9",
+   "#d7a640",
+   "#2b3b55",
+   "#e6dcc5"
+  ],
+  "lighting": "One radiant lamp, warm interior glow; outside, harsh mirage light and deep sea darkness",
+  "atmosphere": "Still indoors; heat haze and thunder outside"
+ },
+ "areas": [
+  {
+   "name": "Doors of Permission",
+   "reference": "24:27",
+   "anchor_phrase": "ascertain welcome",
+   "description": "Doors that open only after the player greets and asks."
+  },
+  {
+   "name": "The Lamp in the Niche",
+   "reference": "24:35",
+   "anchor_phrase": "niche",
+   "description": "A glass lamp like a bright star in a wall niche."
+  },
+  {
+   "name": "Blessed Olive Grove",
+   "reference": "24:35",
+   "anchor_phrase": "olive tree",
+   "description": "An olive grove neither of the east nor the west."
+  },
+  {
+   "name": "Mirage Plain",
+   "reference": "24:39",
+   "anchor_phrase": "mirage",
+   "description": "A desert where water appears but is not there."
+  },
+  {
+   "name": "Sea of Darknesses",
+   "reference": "24:40",
+   "anchor_phrase": "waves, upon which are waves",
+   "description": "Waves upon waves under clouds."
+  },
+  {
+   "name": "Birds with Spread Wings",
+   "reference": "24:41",
+   "anchor_phrase": "wings spread",
+   "description": "Birds gliding over the courtyard."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Knock and greet",
+   "reference": "24:27-28",
+   "description": "Practise asking permission at each door before entering.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Stop the rumour",
+   "reference": "24:15-16",
+   "description": "A rumour passes from lantern to lantern; choose to stop it (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Layers of light",
+   "reference": "24:35",
+   "description": "Carry three lamps to the niche: light upon light.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  }
+ ],
+ "narration_plan": "Narration is gentle and practical, linking each room to a manner from the surah.",
+ "learning_objectives": [
+  "Explain asking permission",
+  "Explain why rumours hurt",
+  "Describe the parable of light"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "24:27",
+   "anchor_phrase": "ascertain welcome",
+   "element": "Doors of Permission"
+  },
+  {
+   "reference": "24:35",
+   "anchor_phrase": "niche",
+   "element": "The Lamp in the Niche"
+  },
+  {
+   "reference": "24:35",
+   "anchor_phrase": "olive tree",
+   "element": "Blessed Olive Grove"
+  },
+  {
+   "reference": "24:39",
+   "anchor_phrase": "mirage",
+   "element": "Mirage Plain"
+  },
+  {
+   "reference": "24:40",
+   "anchor_phrase": "waves, upon which are waves",
+   "element": "Sea of Darknesses"
+  },
+  {
+   "reference": "24:41",
+   "anchor_phrase": "wings spread",
+   "element": "Birds with Spread Wings"
+  }
+ ],
+ "required_assets": [
+  "Courtyard house",
+  "Niche lamp",
+  "Olive grove",
+  "Mirage desert",
+  "Night sea"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (birds, dunes, niche, olives, sea, village) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "24:15-16",
+  "24:27",
+  "24:27-28",
+  "24:35",
+  "24:39",
+  "24:40",
+  "24:41"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "A lane of three walled courtyard houses in the afternoon sun, each with a door to knock at, a west opening for the sun and a reading window",
+  "quran_references": [
+   "24:27",
+   "24:28",
+   "24:61",
+   "24:35 (read only)"
+  ],
+  "primary_mechanic": {
+   "kind": "mirror-light",
+   "engine": "mirror",
+   "text": "Knock at each house and wait by the door to be welcomed (24:27); one asks you to come back later and you go away and return (24:28). Once welcomed, turn the mirror stands so the sunbeam from the west opening bounces through the courtyard to the reading window. The light is sunlight only; 24:35 stays a reading."
+  },
+  "secondary_activities": [
+   "the verse of light (24:35), read only"
+  ],
+  "narrative_structure": "Three houses in any order, then the lantern by the bench",
+  "world_assets": [
+   "three low-walled courtyards",
+   "doors with knockers",
+   "mirror stands",
+   "sunbeam and reading windows"
+  ],
+  "environment_behaviour": [
+   "the courtyard floor brightens when welcomed",
+   "the beam is traced live through the mirrors",
+   "the window glows and lights the courtyard when reached"
+  ],
+  "learning_objective": "Practise asking permission and greeting before entering homes, and going back when asked (24:27-28, 24:61)",
+  "interaction_tests": {
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: knocked with the on-screen button and waited by the door until welcomed)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: welcome answer, then the first mirror turn brings the beam to the window; the second house answers \"come back later\" (24:28))",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Courtyards lit: 1 of 3\" / \"You were asked to come back later: go away for now\"; the beam and the window glow)",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: courtyards lit [0,1,2]; asked to come back later at [1]; no mirror before welcome: true)",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"houses\",\"parable\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w024.ts"
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Light",
+  "quran_references": [
+   "24:27–31",
+   "24:35",
+   "24:58–61"
+  ],
+  "children_narration": "Surah An-Nur teaches us about respectful behavior, privacy, modesty, and treating people fairly. It also contains a beautiful parable involving light, a lamp, and a niche. Light helps us think about the importance of guidance, but Allah is not represented by anything we create.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Architecture of Light",
+   "description": "Navigate beautifully designed buildings using reflected light and geometric openings. Practice knocking before entering, respecting privacy, and learning about responsible speech."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The light parable (24:35) is about Allah. It stays a reading; mirrors and light are never used to stand for Allah.",
+  "status": "draft, unreviewed"
+ }
+}

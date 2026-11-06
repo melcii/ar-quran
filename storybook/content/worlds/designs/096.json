@@ -1,0 +1,170 @@
+{
+ "surah": 96,
+ "name": {
+  "transliterated": "Al-‘Alaq",
+  "meaning": "The Clot"
+ },
+ "ayah_count": 19,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Reading and knowledge",
+  "Creation",
+  "Prostration and nearness"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-'Alaq means The Clinging Substance. Its first ayahs were the first revelation: Recite in the name of your Lord who created, who taught by the pen.",
+ "world_title": "Recite! The Pen and the Clinging Substance",
+ "environment_concept": "A rocky hill rises over the path with a small cave high on its side. The surah does not describe this place; the cave follows the hadith of the first revelation and is labelled as such. Below, a writing desk holds a reed pen, ink and blank paper (96:4), and a quiet terrace invites prostration (96:19). No person is shown.",
+ "architecture_and_scenery": "A steep hill with a cave mouth, a writing desk with reed pen, inkwell and paper, a prayer terrace.",
+ "palette": {
+  "colors": [
+   "#1c2541",
+   "#e6d38a",
+   "#8c6b4a"
+  ],
+  "lighting": "Night then lamp light",
+  "atmosphere": "Silent"
+ },
+ "areas": [
+  {
+   "name": "Hill of Revelation",
+   "reference": "96:1",
+   "anchor_phrase": "Recite",
+   "description": "A high hill with a small cave. The surah does not describe the place; the cave follows the hadith of the first revelation."
+  },
+  {
+   "name": "The Pen",
+   "reference": "96:4",
+   "anchor_phrase": "pen",
+   "description": "A writing desk with a reed pen, an inkwell and blank paper."
+  },
+  {
+   "name": "Draw Near",
+   "reference": "96:19",
+   "anchor_phrase": "prostrate",
+   "description": "A clean, quiet terrace for prayer."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Read the first five",
+   "reference": "96:1-5",
+   "kind": "order",
+   "description": "Put the first five ayahs of Al-'Alaq in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "96:1-19",
+   "kind": "match",
+   "description": "Match the hill, the pen and the terrace to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Learn something new",
+   "reference": "96:5",
+   "kind": "card",
+   "description": "Talk about something you did not know until you learned it.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "The Prophet (peace be upon him) and the angel are never shown or voiced.",
+ "learning_objectives": [
+  "Explain the first revelation",
+  "Explain the value of learning"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "96:1",
+   "anchor_phrase": "Recite",
+   "element": "Hill of Revelation"
+  },
+  {
+   "reference": "96:4",
+   "anchor_phrase": "pen",
+   "element": "The Pen"
+  },
+  {
+   "reference": "96:19",
+   "anchor_phrase": "prostrate",
+   "element": "Draw Near"
+  }
+ ],
+ "required_assets": [
+  "Mountain terrain (shared)",
+  "Hill with a cave",
+  "Writing desk, reed pen and ink",
+  "Prayer terrace"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: its own scene (a hill with a cave, a writing desk with a reed pen and a prayer terrace) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Alaq.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
+ },
+ "quran_references": [
+  "96:1",
+  "96:1-5",
+  "96:1-19",
+  "96:4",
+  "96:5",
+  "96:19"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Cave of Learning",
+  "quran_references": [
+   "96:1–19"
+  ],
+  "primary_mechanic": {
+   "kind": "letters-and-pen",
+   "engine": "not built yet",
+   "text": "A workshop of letters: trace and read with a pen (96:1-5); the first revelation is narrated from hadith, labelled."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "Read!",
+  "quran_references": [
+   "96:1–19"
+  ],
+  "children_narration": "The opening verses of Surah Al-Alaq call us to read in the name of the Lord who created. They remind us that Allah teaches human beings what they did not know. Learning is a wonderful gift, but knowledge should lead us toward humility rather than arrogance.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Cave of Learning",
+   "description": "Explore a quiet cave-inspired environment and an interactive learning workshop featuring letters, language, and discovery. The context of the first revelation is presented through sourced narration, without depicting Prophet Muhammad or Jibril."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The cave of Hira and Jibril are not shown. The context of the first revelation comes from hadith and is labelled as hadith, not Quran.",
+  "status": "draft, unreviewed"
+ }
+}

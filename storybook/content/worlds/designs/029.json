@@ -1,0 +1,191 @@
+{
+ "surah": 29,
+ "name": {
+  "transliterated": "Al-‘Ankabūt",
+  "meaning": "The Spider"
+ },
+ "ayah_count": 69,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Testing of faith",
+  "Reliance only on Allah",
+  "Patience",
+  "Travel and reflection"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Nuh's long call",
+   "reference": "29:14-15",
+   "anchor_phrase": "thousand years"
+  },
+  {
+   "title": "Ibrahim and the fire",
+   "reference": "29:16-27",
+   "anchor_phrase": "Abraham"
+  }
+ ],
+ "summary_for_children": "Al-'Ankabut means The Spider. It teaches that faith is tested, and that relying on anything besides Allah is like the spider's home, the weakest of homes. It mentions Nuh, Ibrahim, Lut and others.",
+ "world_title": "The House of the Spider",
+ "environment_concept": "A huge, fine spider's web (29:41), a road through many landscapes (29:20) and an ark resting on a ridge as a sign (29:15).",
+ "architecture_and_scenery": "Rock and timber houses, a vast dew-covered web between trees, an ark on a ridge, and a long road through changing lands.",
+ "palette": {
+  "colors": [
+   "#d9d2c0",
+   "#7c8f9a",
+   "#5a6b4a",
+   "#c9a46a"
+  ],
+  "lighting": "Morning dew catching the light on the web",
+  "atmosphere": "Misty dawn, quiet"
+ },
+ "areas": [
+  {
+   "name": "The Spider's Web",
+   "reference": "29:41",
+   "anchor_phrase": "spider",
+   "description": "A huge, beautiful but fragile web."
+  },
+  {
+   "name": "Road of Reflection",
+   "reference": "29:20",
+   "anchor_phrase": "Travel through the land",
+   "description": "A road through many landscapes."
+  },
+  {
+   "name": "Ark on the Ridge",
+   "reference": "29:15",
+   "anchor_phrase": "ship",
+   "description": "An ark resting on a ridge as a sign."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Test the homes",
+   "reference": "29:41",
+   "description": "Push gently on the web and the stone house to see which stands (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Observe creation",
+   "reference": "29:20",
+   "description": "Find five glowing things along the road.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  }
+ ],
+ "narration_plan": "Narration uses the spider's example to talk about what truly protects us.",
+ "learning_objectives": [
+  "Explain the spider example",
+  "Explain that faith is tested",
+  "Name prophets mentioned"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "29:41",
+   "anchor_phrase": "spider",
+   "element": "The Spider's Web"
+  },
+  {
+   "reference": "29:20",
+   "anchor_phrase": "Travel through the land",
+   "element": "Road of Reflection"
+  },
+  {
+   "reference": "29:15",
+   "anchor_phrase": "ship",
+   "element": "Ark on the Ridge"
+  }
+ ],
+ "required_assets": [
+  "Spider web",
+  "Stone houses",
+  "Ark on ridge",
+  "Long road"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (ark, mountain, steps, web) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "29:14-15",
+  "29:15",
+  "29:16-27",
+  "29:20",
+  "29:41"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "An oak clearing with a test stand: a small lamp under a shelter woven like a spider's web, with piles of reeds and mud bricks nearby",
+  "quran_references": [
+   "29:2-3",
+   "29:41",
+   "29:43",
+   "29:45",
+   "29:69"
+  ],
+  "primary_mechanic": {
+   "kind": "shelter-storm-test",
+   "engine": "shelter",
+   "text": "Start the wind and rain test and watch: rain falls through the web roof, wind blows through the web walls and the lamp goes out (29:41). Rebuild the shelter part by part with reed and mud-brick panels and test again; reed walls let a strong gust through, so keep testing until the lamp stays lit through the whole storm. The game shows only what a web can and cannot shelter from; the verse is about relying on anything other than Allah."
+  },
+  "secondary_activities": [
+   "being tested (29:2-3)",
+   "prayer (29:45)",
+   "striving (29:69)"
+  ],
+  "narrative_structure": "The sign, the shelter test, then two readings",
+  "world_assets": [
+   "test stand with lamp",
+   "web, reed and brick panels",
+   "test lever"
+  ],
+  "environment_behaviour": [
+   "rain and storm weather during a test",
+   "the lamp flame flickers in the wind and goes out when the storm gets in"
+  ],
+  "learning_objective": "Understand the example of the spider's house (29:41) and that examples are for those who think (29:43)",
+  "interaction_tests": {
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: pulled the test lever with the on-screen button; rain and wind start)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: the web shelter lets rain and wind through and the lamp goes out; rebuilt as [\"reed\",\"brick\",\"reed\"], a gust still gets between the reeds of the east wall)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Rebuild the shelter, then test it · roof: reed · west wall: mud brick · east wall: reed\"; the lamp goes dark when the storm gets in)",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: steps [0,1]; first card was the web reading: true)",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"tried\",\"shelter\",\"prayer\",\"strive\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w029.ts"
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Spider's House",
+  "quran_references": [
+   "29:2–3",
+   "29:14–43"
+  ],
+  "children_narration": "Everyone experiences challenges, and faith is tested through our choices. The Quran gives the example of the spider's house when describing how weak it is to rely on false protectors instead of Allah. The surah also recalls the stories of Nuh, Ibrahim, Lut, and other communities.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Web of Choices",
+   "description": "Explore a giant artistic spider-web environment and test how different materials behave. Then visit narrative stations about faith and perseverance. Do not portray the spider's house as literally the weakest structure in all scientific respects."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

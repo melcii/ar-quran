@@ -1,0 +1,172 @@
+{
+ "surah": 46,
+ "name": {
+  "transliterated": "Al-Aḥqāf",
+  "meaning": "The Wind-Curved Sandhills"
+ },
+ "ayah_count": 35,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "Kindness to parents",
+  "Warnings of messengers",
+  "Listening to the Quran"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Hud warns 'Ad",
+   "reference": "46:21-25",
+   "anchor_phrase": "al-Ahqaf"
+  }
+ ],
+ "summary_for_children": "Al-Ahqaf means The Wind-Curved Sandhills. It tells of Hud warning 'Ad in the dunes, and teaches kindness to parents. It mentions jinn who listened to the Quran.",
+ "world_title": "The Sand Dunes of Al-Ahqaf",
+ "environment_concept": "Wind-curved dunes (46:21), a cloud approaching the valleys (46:24) and a quiet night valley with standing stones (46:29; nothing unseen is shown).",
+ "architecture_and_scenery": "Curved sand dunes, empty dwellings, an approaching dark cloud, and a quiet night valley.",
+ "palette": {
+  "colors": [
+   "#d9b46a",
+   "#8c5a3a",
+   "#4a4a5a",
+   "#f0e2c0"
+  ],
+  "lighting": "Hot dune light, then storm darkness",
+  "atmosphere": "Sand wind"
+ },
+ "areas": [
+  {
+   "name": "Dunes of Al-Ahqaf",
+   "reference": "46:21",
+   "anchor_phrase": "al-Ahqaf",
+   "description": "Wind-curved dunes."
+  },
+  {
+   "name": "The Approaching Cloud",
+   "reference": "46:24",
+   "anchor_phrase": "cloud approaching",
+   "description": "A cloud approaching the valleys."
+  },
+  {
+   "name": "Listening Valley",
+   "reference": "46:29",
+   "anchor_phrase": "Listen quietly",
+   "description": "A quiet night valley; nothing unseen is shown."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Kindness to parents",
+   "reference": "46:15",
+   "description": "Carry water jars home for your parents.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  },
+  {
+   "name": "Listen quietly",
+   "reference": "46:29",
+   "description": "Sit still while a recitation-free ayah card is read.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration keeps Hud and the jinn unseen.",
+ "learning_objectives": [
+  "Retell Hud and 'Ad",
+  "Explain 46:15",
+  "Explain listening to the Quran"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "46:21",
+   "anchor_phrase": "al-Ahqaf",
+   "element": "Dunes of Al-Ahqaf"
+  },
+  {
+   "reference": "46:24",
+   "anchor_phrase": "cloud approaching",
+   "element": "The Approaching Cloud"
+  },
+  {
+   "reference": "46:29",
+   "anchor_phrase": "Listen quietly",
+   "element": "Listening Valley"
+  }
+ ],
+ "required_assets": [
+  "Dunes",
+  "Storm cloud",
+  "Night valley"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (cloud, dunes, stones) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "46:15",
+  "46:21",
+  "46:21-25",
+  "46:24",
+  "46:29"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Singing Sand Dunes",
+  "quran_references": [
+   "46:15",
+   "46:21–26",
+   "46:29–32"
+  ],
+  "primary_mechanic": {
+   "kind": "dune-shaping",
+   "engine": "not built yet",
+   "text": "Place windbreaks to shape moving dunes and keep a path open (46:21-25 as setting)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Wind-Curved Dunes",
+  "quran_references": [
+   "46:15",
+   "46:21–26",
+   "46:29–32"
+  ],
+  "children_narration": "The people of 'Ad lived in a land associated with sand dunes. Prophet Hud warned them, but they rejected his message. The surah also reminds us to care for our parents and describes a group of jinn who listened to the Quran and believed.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Singing Sand Dunes",
+   "description": "Explore a wind-shaped desert landscape, investigate the story of 'Ad, and learn about caring for parents through a separate symbolic activity."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The jinn (46:29-32) are not shown, and nothing stands in for them.",
+  "status": "draft, unreviewed"
+ }
+}

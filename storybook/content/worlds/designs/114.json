@@ -1,0 +1,152 @@
+{
+ "surah": 114,
+ "name": {
+  "transliterated": "An-Nās",
+  "meaning": "Mankind"
+ },
+ "ayah_count": 6,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Seeking refuge",
+  "Whispers"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "An-Nas teaches seeking refuge in the Lord of mankind from the whisperer.",
+ "world_title": "Lord of Mankind",
+ "environment_concept": "A lane of tall reeds that rustle and whisper in the wind, leading to a small lit stone shelter. The whisper is only the sound of reeds; no whisperer, jinn or person is shown.",
+ "architecture_and_scenery": "Reed lane, a stone shelter with a lamp, a bench to sit and read.",
+ "palette": {
+  "colors": [
+   "#efe6d2",
+   "#3f6d8f"
+  ],
+  "lighting": "Calm",
+  "atmosphere": "Quiet"
+ },
+ "areas": [
+  {
+   "name": "The Refuge Shelter",
+   "reference": "114:1",
+   "anchor_phrase": "refuge",
+   "description": "A small stone shelter with a warm lamp where 114:1 is read."
+  },
+  {
+   "name": "Whisper Lane",
+   "reference": "114:4",
+   "anchor_phrase": "whisperer",
+   "description": "A lane of tall reeds that rustle in the wind. Only reeds are shown; the whisperer is not pictured."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Read the six",
+   "reference": "114:1-6",
+   "kind": "order",
+   "description": "Put the six ayahs of An-Nas in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "114:1-6",
+   "kind": "match",
+   "description": "Match the shelter and the reed lane to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Words of refuge",
+   "reference": "114:1",
+   "kind": "card",
+   "description": "Talk about saying these words when you feel afraid or unsure.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Nothing unseen shown.",
+ "learning_objectives": [
+  "Explain 114"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "114:1",
+   "anchor_phrase": "refuge",
+   "element": "The Refuge Shelter"
+  },
+  {
+   "reference": "114:4",
+   "anchor_phrase": "whisperer",
+   "element": "Whisper Lane"
+  }
+ ],
+ "required_assets": [
+  "Wind-swept terrain (shared)",
+  "Instanced reeds",
+  "Stone shelter with lamp"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: its own scene (a whispering reed lane and a lit refuge shelter) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Nas.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
+ },
+ "quran_references": [
+  "114:1",
+  "114:1-6",
+  "114:4"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Sanctuary of Peace",
+  "quran_references": [
+   "114:1–6"
+  ],
+  "primary_mechanic": {
+   "kind": "helpful-or-harmful",
+   "engine": "not built yet",
+   "text": "Sort suggestions into helpful and harmful and choose the good (114:4-5); no whisperer shown."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Safe Place",
+  "quran_references": [
+   "114:1–6"
+  ],
+  "children_narration": "Sometimes unhelpful thoughts or suggestions can lead us toward wrong choices. Surah An-Nas teaches us to seek refuge in Allah, the Lord, King, and God of humanity, from evil whispering. We can ask Allah for help and choose what is good.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Sanctuary of Peace",
+   "description": "Explore a comforting, carefully designed environment about making good choices. Complete simple activities distinguishing helpful suggestions from harmful ones. Do not depict Allah, jinn, or unseen whisperers. ## Final content checklist Surah coverage in this response 104 / 104 All remaining surahs, 11 through 114, now have introductory English narration, Quran references, and a proposed personalized 3D world. Important distinction: This completes the introductory content outline for the remaining 104 surahs, not the full set of stories contained in them. For example, Surah Hud needs separate complete narratives for Nuh, Hud, Salih, Ibrahim, Lut, Shu'ayb, and Musa. Other long surahs also require multiple chapters and coverage of teachings not included in these short summaries. The next content-development stage should expand each entry into full narration scripts, playable scenes, child actions, learning objectives, and exact ayah-to-scene mappings. Every script will also need review against reliable tafsir by a qualified Quran scholar before public release. For source verification and future expansion, use  for the full surahs, translations, and tafsir access, alongside a verified Quran-text database.&#x20; [image](https://www.google.com/s2/favicons?domain=https://islamtics.com\\&sz=32) Islamtics+2 My strongest recommendation is to keep each surah's world distinct while linking stories shared between multiple surahs. That will let children visit all 114 worlds without encountering the same adventure repeatedly under different names."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The whisperer is not pictured.",
+  "status": "draft, unreviewed"
+ }
+}

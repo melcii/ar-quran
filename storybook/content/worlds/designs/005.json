@@ -1,0 +1,196 @@
+{
+ "surah": 5,
+ "name": {
+  "transliterated": "Al-Mā’idah",
+  "meaning": "The Table Spread"
+ },
+ "ayah_count": 120,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "Keeping promises",
+  "Justice",
+  "Cooperation in goodness",
+  "The value of every life"
+ ],
+ "narrative_passages": [
+  {
+   "title": "The two sons of Adam",
+   "reference": "5:27-31",
+   "anchor_phrase": "Adam's two sons"
+  },
+  {
+   "title": "The table spread",
+   "reference": "5:112-115",
+   "anchor_phrase": "table"
+  }
+ ],
+ "summary_for_children": "Al-Ma'idah asks us to keep our promises, to help each other in goodness, and to be fair. It tells of Adam's two sons and of the table asked for by the disciples of Isa.",
+ "world_title": "The Hall of the Spread Table",
+ "environment_concept": "A hall of promises (5:1), an olive grove where a crow scratches the ground (5:31), one lantern that lights a whole hall (5:32) and a long table under an arch, spread and empty (5:114).",
+ "architecture_and_scenery": "Covenant hall with carved pillars, a grove of tall trees, and a long table set under an arch.",
+ "palette": {
+  "colors": [
+   "#e9dcc0",
+   "#7a5c3a",
+   "#556b2f",
+   "#b8c4d6"
+  ],
+  "lighting": "Late afternoon gold, cool grove shade",
+  "atmosphere": "Calm, with birdsong in the grove"
+ },
+ "areas": [
+  {
+   "name": "Hall of Contracts",
+   "reference": "5:1",
+   "anchor_phrase": "contracts",
+   "description": "A hall where promises are written on pillars."
+  },
+  {
+   "name": "Grove of the Crow",
+   "reference": "5:31",
+   "anchor_phrase": "crow",
+   "description": "A grove where a crow scratches the ground; read 5:31."
+  },
+  {
+   "name": "Lantern of One Life",
+   "reference": "5:32",
+   "anchor_phrase": "saves one",
+   "description": "A single lantern that lights a whole hall."
+  },
+  {
+   "name": "Arch of the Table",
+   "reference": "5:114",
+   "anchor_phrase": "table",
+   "description": "A long table under an arch, shown empty and lit; no people."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Help each other",
+   "reference": "5:2",
+   "description": "Carry baskets of food to the hall to share.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  },
+  {
+   "name": "Keep the promise",
+   "reference": "5:1",
+   "description": "Make a promise at the start of the world and keep it by finishing a task.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "The narrator distinguishes the Quran's account of the two sons from explanation and keeps the tone gentle.",
+ "learning_objectives": [
+  "Explain why keeping promises matters",
+  "Retell the lesson of the crow",
+  "Understand that saving one life is precious"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "5:1",
+   "anchor_phrase": "contracts",
+   "element": "Hall of Contracts"
+  },
+  {
+   "reference": "5:31",
+   "anchor_phrase": "crow",
+   "element": "Grove of the Crow"
+  },
+  {
+   "reference": "5:32",
+   "anchor_phrase": "saves one",
+   "element": "Lantern of One Life"
+  },
+  {
+   "reference": "5:114",
+   "anchor_phrase": "table",
+   "element": "Arch of the Table"
+  }
+ ],
+ "required_assets": [
+  "Pillared hall",
+  "Grove and crow animation",
+  "Long table under arch",
+  "Lanterns"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (crow, hall, lantern, olives, table) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "5:1",
+  "5:2",
+  "5:27-31",
+  "5:31",
+  "5:32",
+  "5:112-115",
+  "5:114"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "adventure_world": {
+  "title": "The Table of Promises",
+  "route": "/adventure/5",
+  "built_in": "src/adventure/worlds/w005.ts (engine: src/adventure/)",
+  "source": "\"Quran Adventure: First 10 Unique Worlds\" with the rule \"114 unique game experiences\" (2026-11-04); replaces the first adventure version built from the earlier design table",
+  "status": "second version built for the web: each world now has its own core mechanic; draft, unreviewed; checked in headless Chromium with software WebGL only, not on phones or real GPUs",
+  "note": "The new-look adventure world for this surah. It is a separate design from the composed scene this record describes; both are kept until reviewers choose.",
+  "core_play": "A commitments game: promise four things at the board, then plan your way round the town to keep each one before its candle burns down."
+ },
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "Sea hollow with white houses and blue doors, terrace and columns",
+  "quran_references": [
+   "5:1",
+   "5:2",
+   "5:8",
+   "5:27-31",
+   "5:112-115"
+  ],
+  "primary_mechanic": {
+   "kind": "timed-promises",
+   "engine": "promise",
+   "text": "Accept four promises at a board and keep each before its candle burns out (5:1)."
+  },
+  "secondary_activities": [
+   "justice reading (5:8)",
+   "quiet grove reading (5:27-31)",
+   "ordered lamps (5:112-115)"
+  ],
+  "narrative_structure": "Promises first, then three reading places",
+  "world_assets": [
+   "promise board",
+   "candles",
+   "blue-door houses"
+  ],
+  "environment_behaviour": [
+   "candles burn down",
+   "lamps light in order"
+  ],
+  "learning_objective": "Keeping promises (5:1)",
+  "interaction_tests": {
+   "activate": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
+   "responds": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
+   "feedback": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
+   "goal": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
+   "completion": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
+   "saved": "untested (save is written; reload not re-checked in the 7-point run)",
+   "devices": "untested (desktop headless only; not run in phone emulation)"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w005.ts"
+ }
+}

@@ -1,0 +1,173 @@
+{
+ "surah": 85,
+ "name": {
+  "transliterated": "Al-Burūj",
+  "meaning": "The Mansions of the Stars"
+ },
+ "ayah_count": 22,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "Steadfastness in faith",
+  "Allah sees all"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Companions of the trench",
+   "reference": "85:4-9",
+   "anchor_phrase": "trench"
+  }
+ ],
+ "summary_for_children": "Al-Buruj tells of believers who stayed firm in faith when people of the trench harmed them.",
+ "world_title": "Sky of Great Stars and the Trench",
+ "environment_concept": "A night of great bright stars (85:1). Further on, an old, empty trench overgrown with grass, long after the events of 85:4-8: no fire and no people are shown. Last, a reading stand with a closed, covered book for the honoured Quran (85:21). The Preserved Slate (85:22) is not pictured.",
+ "architecture_and_scenery": "Bright large stars, an overgrown empty trench, a reading stand with a covered book.",
+ "palette": {
+  "colors": [
+   "#0f1a33",
+   "#c05030"
+  ],
+  "lighting": "Starlight",
+  "atmosphere": "Silent"
+ },
+ "areas": [
+  {
+   "name": "Great Stars",
+   "reference": "85:1",
+   "anchor_phrase": "great stars",
+   "description": "Large bright stars low over the path."
+  },
+  {
+   "name": "The Trench",
+   "reference": "85:4",
+   "anchor_phrase": "trench",
+   "description": "An old empty trench, overgrown with grass. No fire and no people are shown."
+  },
+  {
+   "name": "The Honoured Quran",
+   "reference": "85:21",
+   "anchor_phrase": "honored Qur'an",
+   "description": "A reading stand with a closed, covered book."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Read the last eight",
+   "reference": "85:15-22",
+   "kind": "order",
+   "description": "Put the last eight ayahs of Al-Buruj in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "85:1-21",
+   "kind": "match",
+   "description": "Match the stars, the trench and the reading stand to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Standing firm",
+   "reference": "85:8",
+   "kind": "card",
+   "description": "Talk about staying true to what you believe, even when it is hard.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "No people shown.",
+ "learning_objectives": [
+  "Explain steadfastness"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "85:1",
+   "anchor_phrase": "great stars",
+   "element": "Great Stars"
+  },
+  {
+   "reference": "85:4",
+   "anchor_phrase": "trench",
+   "element": "The Trench"
+  },
+  {
+   "reference": "85:21",
+   "anchor_phrase": "honored Qur'an",
+   "element": "The Honoured Quran"
+  }
+ ],
+ "required_assets": [
+  "Starry terrain (shared)",
+  "Great stars",
+  "Overgrown trench",
+  "Reading stand"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: its own scene (great stars, an old empty trench and a reading stand) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Buruj.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
+ },
+ "quran_references": [
+  "85:1",
+  "85:1-21",
+  "85:4",
+  "85:8",
+  "85:15-22",
+  "85:21"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Constellation of Courage",
+  "quran_references": [
+   "85:1–22"
+  ],
+  "primary_mechanic": {
+   "kind": "constellation-memorial",
+   "engine": "not built yet",
+   "text": "Light constellations in a calm memorial sky; the trench is narrated only (85:4-8)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The People of the Trench",
+  "quran_references": [
+   "85:1–22"
+  ],
+  "children_narration": "Long ago, some believers were persecuted because of their faith. Surah Al-Buruj recalls the people of the trench and condemns the cruelty committed against believers. It reminds us of the importance of faith and justice.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Constellation of Courage",
+   "description": "A nighttime memorial-style environment using stars, architecture, and narration. Do not turn the persecution into a reenactment or violent game."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The people of the trench are not shown; no fire and no re-enactment.",
+  "status": "draft, unreviewed"
+ }
+}

@@ -1,0 +1,167 @@
+{
+ "surah": 107,
+ "name": {
+  "transliterated": "Al-Mā‘ūn",
+  "meaning": "The Small kindnesses"
+ },
+ "ayah_count": 7,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Caring for orphans",
+  "Feeding the poor",
+  "Sincere prayer",
+  "Small help"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Ma'un means Small Kindnesses. It warns against pushing away orphans, not feeding the poor, praying to show off and refusing small help.",
+ "world_title": "Small Kindnesses",
+ "environment_concept": "A small morning street: a home with an open door and a bench (107:2), a table with bread and water (107:3) and a shelf of small things to lend, like a bucket and a pot (107:7). No people are shown.",
+ "architecture_and_scenery": "Low homes, an open doorway with a bench, a table, a lending shelf, a well.",
+ "palette": {
+  "colors": [
+   "#e9c98f",
+   "#7a9a5a"
+  ],
+  "lighting": "Warm",
+  "atmosphere": "Calm"
+ },
+ "areas": [
+  {
+   "name": "The Open Door",
+   "reference": "107:2",
+   "anchor_phrase": "orphan",
+   "description": "A home with its door open and a bench outside: the opposite of driving the orphan away."
+  },
+  {
+   "name": "The Bread Table",
+   "reference": "107:3",
+   "anchor_phrase": "feeding",
+   "description": "A table set with bread and water, ready to share."
+  },
+  {
+   "name": "Lending Shelf",
+   "reference": "107:7",
+   "anchor_phrase": "assistance",
+   "description": "A shelf of small things to lend: a bucket, a pot, a rope."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Read the seven",
+   "reference": "107:1-7",
+   "kind": "order",
+   "description": "Put the seven ayahs of Al-Ma'un in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "107:1-7",
+   "kind": "match",
+   "description": "Match the door, the table and the shelf to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Set the table",
+   "reference": "107:3",
+   "kind": "find",
+   "description": "Carry the three loaves from the basket to the table by tapping them.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration gentle.",
+ "learning_objectives": [
+  "Explain 107:1-7"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "107:2",
+   "anchor_phrase": "orphan",
+   "element": "The Open Door"
+  },
+  {
+   "reference": "107:3",
+   "anchor_phrase": "feeding",
+   "element": "The Bread Table"
+  },
+  {
+   "reference": "107:7",
+   "anchor_phrase": "assistance",
+   "element": "Lending Shelf"
+  }
+ ],
+ "required_assets": [
+  "Morning terrain (shared)",
+  "Homes and open door",
+  "Table with bread",
+  "Lending shelf"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: its own scene (an open door, a bread table and a lending shelf) with two playable games and one activity played in the scene",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Maun.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
+ },
+ "quran_references": [
+  "107:1-7",
+  "107:2",
+  "107:3",
+  "107:7"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Village of Helping Hands",
+  "quran_references": [
+   "107:1–7"
+  ],
+  "primary_mechanic": {
+   "kind": "small-kindnesses",
+   "engine": "not built yet",
+   "text": "Lend small household things to neighbours who need them (107:7)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Little Acts of Kindness",
+  "quran_references": [
+   "107:1–7"
+  ],
+  "children_narration": "Sometimes a small helpful action can make a big difference. Surah Al-Ma'un reminds us to care for orphans and people in need and not to turn worship into something done only to impress others. Sincere kindness matters.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Village of Helping Hands",
+   "description": "Help fictional neighbors by sharing useful household items, preparing supplies, and practicing thoughtful community care."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

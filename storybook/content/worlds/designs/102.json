@@ -1,0 +1,154 @@
+{
+ "surah": 102,
+ "name": {
+  "transliterated": "At-Takāthur",
+  "meaning": "The Rivalry in world increase"
+ },
+ "ayah_count": 8,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Competition for more",
+  "Blessings will be asked about"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "At-Takathur warns that competing for more distracts people until they reach the graves.",
+ "world_title": "Counting That Distracts",
+ "environment_concept": "Towers of crates, jars and boxes stacked higher and higher beside the path, each trying to outgrow the last (102:1). Further on, a quiet walled graveyard with plain, unmarked stones (102:2). No person is shown. The Day of Judgement and the Fire are not pictured.",
+ "architecture_and_scenery": "Stacked crate towers, a low graveyard wall with a gate, plain upright stones.",
+ "palette": {
+  "colors": [
+   "#c9a46a",
+   "#5a5a6a"
+  ],
+  "lighting": "Plain",
+  "atmosphere": "Still"
+ },
+ "areas": [
+  {
+   "name": "Towers of More",
+   "reference": "102:1",
+   "anchor_phrase": "Competition",
+   "description": "Towers of crates and jars, each stacked higher than the one before."
+  },
+  {
+   "name": "The Quiet Graveyard",
+   "reference": "102:2",
+   "anchor_phrase": "graveyards",
+   "description": "A walled graveyard with plain stones. A calm place to remember that this life ends."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Read the eight",
+   "reference": "102:1-8",
+   "kind": "order",
+   "description": "Put the eight ayahs of At-Takathur in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "102:1-2",
+   "kind": "match",
+   "description": "Match the towers and the graveyard to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Enough is a blessing",
+   "reference": "102:8",
+   "kind": "card",
+   "description": "Talk about enjoying what you have and being thankful for it.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration calm.",
+ "learning_objectives": [
+  "Explain 102:1-8"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "102:1",
+   "anchor_phrase": "Competition",
+   "element": "Towers of More"
+  },
+  {
+   "reference": "102:2",
+   "anchor_phrase": "graveyards",
+   "element": "The Quiet Graveyard"
+  }
+ ],
+ "required_assets": [
+  "Garden terrain (shared)",
+  "Crate and jar towers",
+  "Walled graveyard"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: its own scene (towers of stacked crates and a quiet walled graveyard) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Takathur.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
+ },
+ "quran_references": [
+  "102:1",
+  "102:1-2",
+  "102:1-8",
+  "102:2",
+  "102:8"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Tower of Treasures",
+  "quran_references": [
+   "102:1–8"
+  ],
+  "primary_mechanic": {
+   "kind": "enough-tower",
+   "engine": "not built yet",
+   "text": "Climb a tower of things and discover you can leave most of them (102:1-2)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Race for More",
+  "quran_references": [
+   "102:1–8"
+  ],
+  "children_narration": "Imagine always wanting one more toy, one more prize, or one more treasure. Would having more things automatically make us happy? Surah At-Takathur warns us about becoming so distracted by competing for possessions that we forget what really matters.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Tower of Treasures",
+   "description": "Explore a whimsical tower full of objects, then discover that possessions cannot replace gratitude, responsibility, and kindness."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

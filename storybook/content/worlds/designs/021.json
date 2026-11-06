@@ -1,0 +1,245 @@
+{
+ "surah": 21,
+ "name": {
+  "transliterated": "Al-Anbiyā’",
+  "meaning": "The Prophets"
+ },
+ "ayah_count": 112,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "The prophets brought one message",
+  "Creation as a sign",
+  "Patience and prayer in trial"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Ibrahim and the idols",
+   "reference": "21:51-70",
+   "anchor_phrase": "idols"
+  },
+  {
+   "title": "Dawud and Sulayman",
+   "reference": "21:78-82",
+   "anchor_phrase": "Solomon"
+  },
+  {
+   "title": "Ayyub's patience",
+   "reference": "21:83-84",
+   "anchor_phrase": "adversity"
+  },
+  {
+   "title": "Yunus in the darknesses",
+   "reference": "21:87-88",
+   "anchor_phrase": "darknesses"
+  },
+  {
+   "title": "Zakariyya's prayer",
+   "reference": "21:89-90",
+   "anchor_phrase": "Zechariah"
+  }
+ ],
+ "summary_for_children": "Al-Anbiya means The Prophets. It reminds us that the heavens and the earth were made by Allah, and tells briefly of many prophets: Ibrahim and the fire, Dawud and Sulayman, Ayyub, Yunus, Zakariyya and others, who all called to worship Allah alone.",
+ "world_title": "The Hall of the Prophets",
+ "environment_concept": "Rooms of signs: a spring (21:30), an empty ring of stones where the fire was made cool (21:69; no fire or person is shown), mountains with birds (21:79), a sail full of wind (21:81) and a dark sea at night (21:87).",
+ "architecture_and_scenery": "Colonnade of plain stone rooms, each with a single symbolic object: a cooled fire pit, mountains and birds, a wind-driven sail, a whale-dark sea.",
+ "palette": {
+  "colors": [
+   "#e9dfc8",
+   "#b8743a",
+   "#2c4e6a",
+   "#7a8f68"
+  ],
+  "lighting": "Shifting daylight with a slow-orbiting sun and moon above the gallery",
+  "atmosphere": "Calm and spacious, quiet echo"
+ },
+ "areas": [
+  {
+   "name": "Joined Heavens and Earth",
+   "reference": "21:30",
+   "anchor_phrase": "joined entity",
+   "description": "A dome where sky and land slowly part and water appears."
+  },
+  {
+   "name": "Room of the Cool Fire",
+   "reference": "21:69",
+   "anchor_phrase": "coolness and safety",
+   "description": "A fire pit glowing cool blue; no person is shown."
+  },
+  {
+   "name": "Room of Mountains and Birds",
+   "reference": "21:79",
+   "anchor_phrase": "mountains",
+   "description": "Hills and birds that seem to join in glorifying Allah."
+  },
+  {
+   "name": "Room of the Wind",
+   "reference": "21:81",
+   "anchor_phrase": "wind",
+   "description": "A sail filled by a strong steady wind."
+  },
+  {
+   "name": "Room of the Darknesses",
+   "reference": "21:87",
+   "anchor_phrase": "darknesses",
+   "description": "Layered darkness of night, sea and the deep, with one ayah lit."
+  }
+ ],
+ "activities": [
+  {
+   "name": "The orbits",
+   "reference": "21:33",
+   "description": "Find four bright lights floating over the spring.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  },
+  {
+   "name": "Prophet timeline",
+   "reference": "21:48-91",
+   "description": "Place each room's object in the order the surah mentions it.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Words of Yunus",
+   "reference": "21:87",
+   "description": "Read 21:87 aloud to brighten the darkened room (the prophet is not shown).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Each room opens with its ayahs; the narrator explains, never speaking as a prophet.",
+ "learning_objectives": [
+  "Name the prophets mentioned",
+  "Explain the shared message of all prophets",
+  "Connect creation to faith"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "21:30",
+   "anchor_phrase": "joined entity",
+   "element": "Joined Heavens and Earth"
+  },
+  {
+   "reference": "21:69",
+   "anchor_phrase": "coolness and safety",
+   "element": "Room of the Cool Fire"
+  },
+  {
+   "reference": "21:79",
+   "anchor_phrase": "mountains",
+   "element": "Room of Mountains and Birds"
+  },
+  {
+   "reference": "21:81",
+   "anchor_phrase": "wind",
+   "element": "Room of the Wind"
+  },
+  {
+   "reference": "21:87",
+   "anchor_phrase": "darknesses",
+   "element": "Room of the Darknesses"
+  }
+ ],
+ "required_assets": [
+  "Stone gallery",
+  "Cool fire pit",
+  "Mountains and birds",
+  "Sail and wind",
+  "Night sea"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (birds, mountain, sea, ships, spring, stones) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "21:30",
+  "21:33",
+  "21:48-91",
+  "21:51-70",
+  "21:69",
+  "21:78-82",
+  "21:79",
+  "21:81",
+  "21:83-84",
+  "21:87",
+  "21:87-88",
+  "21:89-90"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "A quiet courtyard with three lecterns holding prayer tablets and three carved doors in an arc",
+  "quran_references": [
+   "21:83",
+   "21:84",
+   "21:87",
+   "21:88",
+   "21:89",
+   "21:90",
+   "21:107",
+   "21:51-52",
+   "21:56",
+   "21:69",
+   "21:30"
+  ],
+  "primary_mechanic": {
+   "kind": "supplication-match",
+   "engine": "doors",
+   "text": "Three lecterns hold the prayers of Ayyub, Yunus and Zakariyya as verified verses; three doors each tell of a situation. Read a prayer, carry it, and set it in the door it answers; that door opens on the verse telling how it was answered. The wrong door refuses it."
+  },
+  "secondary_activities": [
+   "Ibrahim and the statues (21:51-56, 21:69, read only)",
+   "every living thing from water (21:30)"
+  ],
+  "narrative_structure": "The three prayers and doors, then the Ibrahim sign, then the palms",
+  "world_assets": [
+   "three lecterns with tablets",
+   "three carved doors with signs (bent stem, dark waves, lamp)",
+   "courtyard"
+  ],
+  "environment_behaviour": [
+   "doors swing open and light spills through when answered",
+   "the status line shows a door's situation when you stand by it"
+  ],
+  "learning_objective": "Learn three prayers of the prophets in the Quran and that they were answered (21:83-90)",
+  "interaction_tests": {
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: took a tablet with the on-screen button; the verified verse (21:89) opened)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: the door shows its situation; the wrong door refuses the tablet; the right door opens)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Doors opened: 1 of 3\", the door swings open and the answer verse (21:90) opens)",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: doors [2,0,1], wrong door tried [0])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"prayers\",\"ibrahim\",\"water\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w021.ts"
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Prophets' Legacy",
+  "quran_references": [
+   "21:48–91"
+  ],
+  "children_narration": "Allah sent many prophets to guide people. Ibrahim challenged the worship of idols and was saved from the fire. Ayyub called upon Allah during suffering, Yunus prayed in distress, and Zakariyya prayed for a child. Their stories show different forms of patience, courage, and faith.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Hall of Prophetic Journeys",
+   "description": "Explore separate environments for Ibrahim, Ayyub, Yunus, and Zakariyya. Each has a different exploration mechanic: reasoning, patience, supplication, or discovering the story through its setting."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "Ibrahim in the fire (21:68-70) is reading only, with no fire scene with a person.",
+  "status": "draft, unreviewed"
+ }
+}

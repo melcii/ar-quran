@@ -1,0 +1,125 @@
+{
+ "surah": 65,
+ "name": {
+  "transliterated": "Aṭ-Ṭalāq",
+  "meaning": "The Divorce"
+ },
+ "ayah_count": 12,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Fairness in family matters",
+  "Reliance on Allah"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "At-Talaq gives rules for fairness in families and promises that Allah provides from where one does not expect.",
+ "world_title": "Provision From Where You Do Not Expect",
+ "environment_concept": "A spring appearing in a dry place (65:3).",
+ "architecture_and_scenery": "Hidden springs, simple homes.",
+ "palette": {
+  "colors": [
+   "#3f6d8f",
+   "#c9a46a"
+  ],
+  "lighting": "Soft light",
+  "atmosphere": "Calm"
+ },
+ "areas": [
+  {
+   "name": "Unexpected Spring",
+   "reference": "65:3",
+   "anchor_phrase": "does not expect",
+   "description": "A spring appearing in a dry place."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Find the spring",
+   "reference": "65:2-3",
+   "description": "Find three hidden springs of water in the dry land.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  }
+ ],
+ "narration_plan": "Family rules are not dramatised for children; narration focuses on 65:2-3.",
+ "learning_objectives": [
+  "Explain reliance on Allah"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "65:3",
+   "anchor_phrase": "does not expect",
+   "element": "Unexpected Spring"
+  }
+ ],
+ "required_assets": [
+  "Springs",
+  "Homes"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (dunes, palms, spring) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "65:2-3",
+  "65:3"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Neighborhood of Care",
+  "quran_references": [
+   "65:1–7"
+  ],
+  "primary_mechanic": {
+   "kind": "care-during-change",
+   "engine": "not built yet",
+   "text": "Help households through changes by bringing what each needs, with family rulings kept to an information area (65:6-7)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "Caring Through Change",
+  "quran_references": [
+   "65:1–7"
+  ],
+  "children_narration": "Families sometimes experience difficult changes. Surah At-Talaq gives adults responsibilities to act fairly, provide appropriate care, and avoid causing harm. It reminds us that even during hardship, people should act with compassion and trust in Allah.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Neighborhood of Care",
+   "description": "A gentle community-care environment with activities about making people feel supported during changes. Family-law rulings are explained in an age-appropriate information area rather than turned into children's decisions."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

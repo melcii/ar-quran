@@ -1,0 +1,63 @@
+{
+  "story_id": "yunus",
+  "title": "The Story of Yunus",
+  "quran_references": ["37:139-148", "21:87-88"],
+  "translation_id": "en-saheeh",
+  "children_explanation_summary": "Yunus was one of the messengers. He went to a laden ship, lots were drawn and he was among the losers, a fish swallowed him, and had he not been one who glorifies Allah he would have remained in it until the Day of Resurrection. In the darknesses he called out with the words of 21:87. Allah answered him and saved him from distress, cast him onto an open shore while he was ill, made a gourd vine grow over him, and sent him to a hundred thousand or more, who believed.",
+  "stated_in_quran": [
+    { "detail": "Yunus was among the messengers.", "reference": "37:139" },
+    { "detail": "He ran away to the laden ship.", "reference": "37:140" },
+    { "detail": "He drew lots and was among the losers.", "reference": "37:141" },
+    { "detail": "The fish swallowed him while he was blameworthy.", "reference": "37:142" },
+    { "detail": "Had he not been of those who exalt Allah, he would have remained inside its belly until the Day of Resurrection.", "reference": "37:143-144" },
+    { "detail": "He went off in anger and thought that Allah would not decree anything upon him.", "reference": "21:87" },
+    { "detail": "He called out within the darknesses with the words of the supplication.", "reference": "21:87" },
+    { "detail": "Allah responded to him and saved him from the distress, and thus saves the believers.", "reference": "21:88" },
+    { "detail": "He was thrown onto the open shore while he was ill.", "reference": "37:145" },
+    { "detail": "A gourd vine was caused to grow over him.", "reference": "37:146" },
+    { "detail": "He was sent to a hundred thousand or more, who believed and were given enjoyment for a time.", "reference": "37:147-148" }
+  ],
+  "not_specified_or_inferred": [
+    { "detail": "Why he left and what made him angry.", "how_the_app_handles_it": "Not explained. Commentaries discuss it; this needs scholar review before any explanation is added." },
+    { "detail": "The ship's appearance, size, crew and passengers.", "how_the_app_handles_it": "Painted small and far away, with no people; labeled as an artist's idea." },
+    { "detail": "The weather and sea conditions.", "how_the_app_handles_it": "A calm sea is painted and the hotspot says the Quran does not describe the weather." },
+    { "detail": "Why the lots were drawn.", "how_the_app_handles_it": "Only the fact of drawing lots (37:141) is mentioned." },
+    { "detail": "The species, size and colour of the fish.", "how_the_app_handles_it": "Shown as a soft dark shape; the hotspot says the Quran does not specify." },
+    { "detail": "How long he stayed inside the fish.", "how_the_app_handles_it": "Not mentioned." },
+    { "detail": "The meaning of 'the darknesses' (plural).", "how_the_app_handles_it": "The app only points out that the word is plural. Explanations from tafsir need a cited source and review first." },
+    { "detail": "The location of the shore and the name of his people's town.", "how_the_app_handles_it": "Not named. Traditions that name a town are not used." },
+    { "detail": "What Yunus looked like.", "how_the_app_handles_it": "Yunus is never depicted, in any form." },
+    { "detail": "In the 3D book on the web: the ship's shape, sail and cargo, the look of the fish, the seabed, the hills and dunes of the shore, the leaf shape of the vine, and the reading room with its rehal.", "how_the_app_handles_it": "Artistic staging with no people shown at any point; hotspot text says what the Quran does and does not describe. The Quran text on the 3D pages is the verified text, drawn unchanged." }
+  ],
+  "supplementary_sources": [
+    {
+      "id": "note-artistic-setting",
+      "story_id": "yunus",
+      "source_type": "editorial",
+      "source_reference": "Editorial note: artistic setting",
+      "supporting_claim": "Time of day, sky, weather, sea state and every object in the 3D scenes (ship, fish, shore, vine, room) are artistic choices; the hotspot text says that the Quran does not describe them.",
+      "reviewer_status": "unreviewed"
+    },
+    {
+      "id": "translation-en-saheeh",
+      "story_id": "yunus",
+      "source_type": "translation",
+      "source_reference": "Saheeh International English translation (content/quran/manifest.json)",
+      "supporting_claim": "Quoted English phrases in explanations ('the laden ship', 'gourd vine', 'within the darknesses', 'the open shore') are taken from this translation.",
+      "reviewer_status": "unreviewed"
+    }
+  ],
+  "reviewers": [],
+  "revision_history": [
+    {
+      "date": "2026-10-31",
+      "author": "Claude (AI drafting assistant)",
+      "summary": "First draft of scenes, explanations, hotspots and this record for the prototype. Not reviewed by a scholar or Islamic educator."
+    },
+    {
+      "date": "2026-10-31",
+      "author": "Claude (AI drafting assistant)",
+      "summary": "Added notes for the 3D web staging. Story text unchanged. Not reviewed by a scholar or Islamic educator."
+    }
+  ]
+}

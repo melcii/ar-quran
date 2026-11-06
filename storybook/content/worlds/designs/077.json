@@ -1,0 +1,150 @@
+{
+ "surah": 77,
+ "name": {
+  "transliterated": "Al-Mursalāt",
+  "meaning": "The Emissaries"
+ },
+ "ayah_count": 50,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "Signs in creation",
+  "Warning"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Mursalat means Those Sent Forth. It swears by the winds and shows the earth holding all, firm mountains and sweet water.",
+ "world_title": "Winds in Gusts",
+ "environment_concept": "Winds in gusts (77:1), the earth that holds (77:25) and mountains with sweet water (77:27).",
+ "architecture_and_scenery": "Windswept hills, mountains and fresh springs.",
+ "palette": {
+  "colors": [
+   "#8a9aaa",
+   "#6f8f4a",
+   "#3f6d8f"
+  ],
+  "lighting": "Windy grey",
+  "atmosphere": "Gusts"
+ },
+ "areas": [
+  {
+   "name": "Gusts",
+   "reference": "77:1",
+   "anchor_phrase": "gusts",
+   "description": "Winds blowing in gusts."
+  },
+  {
+   "name": "Earth a Container",
+   "reference": "77:25",
+   "anchor_phrase": "container",
+   "description": "An earth that holds."
+  },
+  {
+   "name": "Mountains and Sweet Water",
+   "reference": "77:27",
+   "anchor_phrase": "sweet water",
+   "description": "Mountains and springs."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Wind and water",
+   "reference": "77:27",
+   "description": "Carry three jars of sweet water down from the spring.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  }
+ ],
+ "narration_plan": "Narration calm.",
+ "learning_objectives": [
+  "Explain 77:25-27"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "77:1",
+   "anchor_phrase": "gusts",
+   "element": "Gusts"
+  },
+  {
+   "reference": "77:25",
+   "anchor_phrase": "container",
+   "element": "Earth a Container"
+  },
+  {
+   "reference": "77:27",
+   "anchor_phrase": "sweet water",
+   "element": "Mountains and Sweet Water"
+  }
+ ],
+ "required_assets": [
+  "Hills",
+  "Mountains",
+  "Springs"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (clay, mountain, spring, wind) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "77:1",
+  "77:25",
+  "77:27"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Wind Sculpture Valley",
+  "quran_references": [
+   "77:1–50"
+  ],
+  "primary_mechanic": {
+   "kind": "kinetic-wind-valley",
+   "engine": "not built yet",
+   "text": "Watch sculptures that move with wind and steer gusts through them (77:1-3 as nature)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Winds and the Warnings",
+  "quran_references": [
+   "77:1–50"
+  ],
+  "children_narration": "The surah begins with powerful images associated with winds and other forces. It repeatedly reminds us of the certainty of the Day of Judgment. The message encourages people to think seriously about creation and accountability.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Wind Sculpture Valley",
+   "description": "Explore a kinetic environment with moving grasses, sand patterns, and cloud formations. Activities focus on observation and reflection, not portraying unseen realities."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "Judgment imagery stays unpictured; the winds are nature only.",
+  "status": "draft, unreviewed"
+ }
+}

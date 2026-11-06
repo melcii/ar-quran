@@ -1,0 +1,154 @@
+{
+ "surah": 83,
+ "name": {
+  "transliterated": "Al-Muṭaffifīn",
+  "meaning": "The Defrauding"
+ },
+ "ayah_count": 36,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Honesty in trade",
+  "Accountability"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Mutaffifin means Those Who Give Less. It warns traders who cheat on weight and measure.",
+ "world_title": "Market of Fair Measure",
+ "environment_concept": "A morning market stall: a pair of honest scales with brass weights (83:3), and sacks of grain beside an empty wooden measure that can be filled right to the brim (83:2). No person is shown, and the Day, the registers and the next life of 83:4-36 are not pictured.",
+ "architecture_and_scenery": "A canopied market stall, balance scales with weights, grain sacks and a wooden measure.",
+ "palette": {
+  "colors": [
+   "#c9a46a",
+   "#6f8f4a"
+  ],
+  "lighting": "Midday",
+  "atmosphere": "Lively"
+ },
+ "areas": [
+  {
+   "name": "Honest Scales",
+   "reference": "83:3",
+   "anchor_phrase": "weight",
+   "description": "A pair of scales with brass weights, level and true."
+  },
+  {
+   "name": "Full Measure",
+   "reference": "83:2",
+   "anchor_phrase": "measure",
+   "description": "Sacks of grain beside a wooden measure to fill to the brim."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Read the first three",
+   "reference": "83:1-3",
+   "kind": "order",
+   "description": "Put the first three ayahs of Al-Mutaffifin in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "83:2-3",
+   "kind": "match",
+   "description": "Match the scales and the measure to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Fill the measure",
+   "reference": "83:3",
+   "kind": "find",
+   "description": "Tap the grain sack three times to fill the measure right to the brim.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "No person shown.",
+ "learning_objectives": [
+  "Explain fair measure"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "83:3",
+   "anchor_phrase": "weight",
+   "element": "Honest Scales"
+  },
+  {
+   "reference": "83:2",
+   "anchor_phrase": "measure",
+   "element": "Full Measure"
+  }
+ ],
+ "required_assets": [
+  "Morning terrain (shared)",
+  "Market stall",
+  "Balance scales",
+  "Grain sacks and measure"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: its own scene (a market stall with honest scales and a measure to fill), two playable games and one activity played in the scene",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Mutaffifin.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
+ },
+ "quran_references": [
+  "83:1-3",
+  "83:2",
+  "83:2-3",
+  "83:3"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Marketplace of Honesty",
+  "quran_references": [
+   "83:1–6"
+  ],
+  "primary_mechanic": {
+   "kind": "fill-full-measure",
+   "engine": "not built yet",
+   "text": "Fill containers to the exact mark and catch short measures in a market (83:1-3)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Honest Marketplace",
+  "quran_references": [
+   "83:1–6"
+  ],
+  "children_narration": "Imagine buying a basket of fruit and discovering that the seller gave you less than you paid for. How would you feel? Surah Al-Mutaffifin warns people who cheat when measuring and weighing goods. It teaches us to treat others fairly.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Marketplace of Honesty",
+   "description": "Use working balance scales, fill containers accurately, and solve realistic trade challenges."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

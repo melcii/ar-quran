@@ -1,0 +1,200 @@
+{
+ "surah": 22,
+ "name": {
+  "transliterated": "Al-Ḥajj",
+  "meaning": "The Pilgrimage"
+ },
+ "ayah_count": 78,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "The Hajj",
+  "Sincerity in worship",
+  "Signs of resurrection in the earth",
+  "Gratitude"
+ ],
+ "narrative_passages": [
+  {
+   "title": "The site of the House",
+   "reference": "22:26-29",
+   "anchor_phrase": "site of the House"
+  }
+ ],
+ "summary_for_children": "Surah Al-Hajj speaks of the pilgrimage that Ibrahim proclaimed, of the House, of how rain brings dead land to life, and of worship done sincerely for Allah.",
+ "world_title": "The Plain of Pilgrims",
+ "environment_concept": "Roads from far mountain passes with camels (22:27), simple foundations (22:26), dry fields that turn green as rain falls (22:63) and a slope where plants stir (22:5).",
+ "architecture_and_scenery": "Mountain passes feeding into a wide plain, plain stone foundations, sacrificial pastures shown only as grazing camels, and rain-fed fields.",
+ "palette": {
+  "colors": [
+   "#e6d2a8",
+   "#9b6b3d",
+   "#5a8b4a",
+   "#f7f2e6"
+  ],
+  "lighting": "Bright sun over pale stone, rain bursts turning hills green",
+  "atmosphere": "Dry heat, then the scent of rain"
+ },
+ "areas": [
+  {
+   "name": "Roads from Every Pass",
+   "reference": "22:27",
+   "anchor_phrase": "distant pass",
+   "description": "Winding roads from far mountain passes; travellers are suggested by footprints and camel tracks only."
+  },
+  {
+   "name": "Foundations of the House",
+   "reference": "22:26",
+   "anchor_phrase": "site of the House",
+   "description": "Simple foundations, quiet and plain."
+  },
+  {
+   "name": "Greening Fields",
+   "reference": "22:63",
+   "anchor_phrase": "earth becomes green",
+   "description": "Dry fields that turn green as rain falls."
+  },
+  {
+   "name": "Stages of Growth",
+   "reference": "22:5",
+   "anchor_phrase": "barren",
+   "description": "A barren slope that stirs and swells with plants."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Rain on the hills",
+   "reference": "22:63",
+   "description": "Carry rain clouds over three dry fields; they turn green.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  },
+  {
+   "name": "Pack for the journey",
+   "reference": "22:27-28",
+   "description": "Pack four sacks for the journey.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  }
+ ],
+ "narration_plan": "Narration explains Hajj simply and links rain-revived land to Allah's power to give life.",
+ "learning_objectives": [
+  "Know what Hajj is",
+  "Explain who first proclaimed Hajj in the surah",
+  "Connect rain and new life"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "22:27",
+   "anchor_phrase": "distant pass",
+   "element": "Roads from Every Pass"
+  },
+  {
+   "reference": "22:26",
+   "anchor_phrase": "site of the House",
+   "element": "Foundations of the House"
+  },
+  {
+   "reference": "22:63",
+   "anchor_phrase": "earth becomes green",
+   "element": "Greening Fields"
+  },
+  {
+   "reference": "22:5",
+   "anchor_phrase": "barren",
+   "element": "Stages of Growth"
+  }
+ ],
+ "required_assets": [
+  "Mountain passes",
+  "Wide plain",
+  "House foundations",
+  "Rain clouds",
+  "Greening terrain"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (foundations, herd, mountain, shoot) with 2 hands-on activities in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "22:5",
+  "22:26",
+  "22:26-29",
+  "22:27",
+  "22:27-28",
+  "22:63"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "A wide desert valley ringed by hills with passes, and a map model on a stone plinth in the middle",
+  "quran_references": [
+   "22:26",
+   "22:27",
+   "22:28",
+   "22:29",
+   "22:37",
+   "22:32"
+  ],
+  "primary_mechanic": {
+   "kind": "station-sequence",
+   "engine": "order",
+   "text": "Four carved stones each tell one step that 22:26-29 gives (the House made ready, the call and travellers from every distant pass, remembering Allah and feeding the poor, vows kept and the ancient House). Carry them to the map model and set them in the order of the verses; a stone set too early is handed back. Each stone changes the model."
+  },
+  "secondary_activities": [
+   "the piety of hearts (22:32)"
+  ],
+  "narrative_structure": "Find and set the four stones in order, then the lantern by the path",
+  "world_assets": [
+   "map model with hills, passes and paths",
+   "a plain round marker for the site of the House (no Kaaba replica)",
+   "four carved stones"
+  ],
+  "environment_behaviour": [
+   "the House marker turns clean and pale",
+   "small lights travel along the passes (no people)",
+   "bowls of food appear",
+   "a soft ring of light around the marker"
+  ],
+  "learning_objective": "Learn the order the pilgrimage verses give and that what reaches Allah is the mindfulness of the heart (22:37)",
+  "interaction_tests": {
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: picked up a stone with the on-screen button; status \"Carrying: …\")",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: a stone set too early is handed back with a hint; the first step (22:26) is taken and its verse opens)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Stones set on the model: 1 of 4\"; the House marker turns pale and clean)",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: order [0,1,2,3], too early [2])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"verses\",\"hearts\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w022.ts"
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Journey of Pilgrimage",
+  "quran_references": [
+   "22:26–37"
+  ],
+  "children_narration": "The Quran reminds us of the Sacred House and the pilgrimage. People come from distant places to worship Allah, remember Him, and carry out acts of devotion. The surah teaches that what matters is not simply an outward action but sincere faith and mindfulness of Allah.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Pilgrimage Journey",
+   "description": "Explore a carefully researched sacred-landscape learning environment, practice recognizing locations and the order of pilgrimage activities, and learn why each matters. Avoid turning worship into a competitive challenge."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "No replica of the Kaaba or the Sacred Mosque; the stations are a simple map model. Reviewers should decide what may be shown.",
+  "status": "draft, unreviewed"
+ }
+}

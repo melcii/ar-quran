@@ -1,0 +1,210 @@
+{
+ "surah": 15,
+ "name": {
+  "transliterated": "Al-Ḥijr",
+  "meaning": "The Rocky Tract"
+ },
+ "ayah_count": 99,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "Protection of the Quran",
+  "Signs in the sky and earth",
+  "Iblis's pride",
+  "Earlier peoples"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Iblis refuses",
+   "reference": "15:28-44",
+   "anchor_phrase": "Iblees"
+  },
+  {
+   "title": "Ibrahim's guests",
+   "reference": "15:51-60",
+   "anchor_phrase": "guests"
+  },
+  {
+   "title": "The people of al-Hijr",
+   "reference": "15:80-84",
+   "anchor_phrase": "Thamud"
+  }
+ ],
+ "summary_for_children": "Al-Hijr says Allah protects the Quran, shows the stars, mountains and winds as signs, and tells of the people of al-Hijr who carved homes in the mountains.",
+ "world_title": "The Rocky Tract",
+ "environment_concept": "A rocky tract under the stars: constellations (15:16), firm mountains (15:19), winds carrying pollen to flowers (15:22) and empty homes carved in the cliffs (15:82).",
+ "architecture_and_scenery": "Sandstone cliffs with carved facades, high mountains, a starry sky, and green slopes.",
+ "palette": {
+  "colors": [
+   "#b0704a",
+   "#e3c39a",
+   "#1d2a4a",
+   "#7a8f5a"
+  ],
+  "lighting": "Warm rock in sun, deep blue night",
+  "atmosphere": "Dry wind, still nights"
+ },
+ "areas": [
+  {
+   "name": "Sky of Constellations",
+   "reference": "15:16",
+   "anchor_phrase": "great stars",
+   "description": "A night sky with bright constellations."
+  },
+  {
+   "name": "Firm Mountains",
+   "reference": "15:19",
+   "anchor_phrase": "firmly set mountains",
+   "description": "Mountains anchoring the land."
+  },
+  {
+   "name": "Fertilizing Winds",
+   "reference": "15:22",
+   "anchor_phrase": "fertilizing winds",
+   "description": "Winds that carry pollen to plants."
+  },
+  {
+   "name": "Carved Homes",
+   "reference": "15:82",
+   "anchor_phrase": "carve",
+   "description": "Homes carved in the cliffs, empty."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Carry the pollen",
+   "reference": "15:22",
+   "description": "Carry pollen to three bare beds; they flower.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  },
+  {
+   "name": "Find the constellations",
+   "reference": "15:16",
+   "description": "Find five bright stars low over the rocks.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  }
+ ],
+ "narration_plan": "The narrator explains the peoples' story as explanation and reads 15:9 at the start.",
+ "learning_objectives": [
+  "Know Allah protects the Quran",
+  "Explain how wind helps plants",
+  "Learn about the people of al-Hijr"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "15:16",
+   "anchor_phrase": "great stars",
+   "element": "Sky of Constellations"
+  },
+  {
+   "reference": "15:19",
+   "anchor_phrase": "firmly set mountains",
+   "element": "Firm Mountains"
+  },
+  {
+   "reference": "15:22",
+   "anchor_phrase": "fertilizing winds",
+   "element": "Fertilizing Winds"
+  },
+  {
+   "reference": "15:82",
+   "anchor_phrase": "carve",
+   "element": "Carved Homes"
+  }
+ ],
+ "required_assets": [
+  "Carved cliffs",
+  "Starfield with constellations",
+  "Wind and pollen particles"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (carved, constellation, mountain, wind) with 2 hands-on activities in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "15:16",
+  "15:19",
+  "15:22",
+  "15:28-44",
+  "15:51-60",
+  "15:80-84",
+  "15:82"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "A sandstone valley ringed by cliffs with five carved doorways, two rocks, a well, palms and a tent, and a map table",
+  "quran_references": [
+   "15:19",
+   "15:21",
+   "15:22",
+   "15:75-77",
+   "15:80-82",
+   "15:84"
+  ],
+  "primary_mechanic": {
+   "kind": "rock-rubbings",
+   "engine": "rubbing",
+   "text": "Take a rubbing of each carved doorway by keeping still, then fit every rubbing onto a map of the valley where its doorway stands, using the landmarks and memory (15:80-84)."
+  },
+  "secondary_activities": [
+   "reading about measure in creation (15:19-22)",
+   "the road sign (15:75-77)"
+  ],
+  "narrative_structure": "Measure stone, then exploring the cliffs for rubbings, then the map table, then the road sign",
+  "world_assets": [
+   "five carved rock fronts with doorways and distinct patterns",
+   "rubbing paper",
+   "map table and a paper map with landmarks",
+   "well, tent, two rocks, palms"
+  ],
+  "environment_behaviour": [
+   "the paper whitens as the rubbing comes through and smudges if you move",
+   "placed rubbings show on the map"
+  ],
+  "learning_objective": "Look closely at signs left in the land, and remember what truly keeps us safe (15:75-84)",
+  "interaction_tests": {
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: pressed \"Take a rubbing\" at the first carved doorway)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: keeping still fills the rubbing and it is kept)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Rubbings: 1 of 5\")",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: map done: [0,1,2,3,4]; a wrong place was refused first)",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"measure\",\"map\",\"road\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w015.ts"
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The City Carved in Stone",
+  "quran_references": [
+   "15:26–50",
+   "15:51–84"
+  ],
+  "children_narration": "Some ancient communities built impressive homes in mountains and rocky landscapes. Their buildings were strong, but their strength did not mean they could ignore Allah's guidance. Surah Al-Hijr reminds us about the creation of Adam, Iblis's arrogance, the visitors who came to Ibrahim, the people of Lut, and the people of Al-Hijr who rejected the signs they were given. The surah teaches that pride can lead people away from truth, while remembering Allah's mercy and guidance can lead them back.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Carved Mountains",
+   "description": "Children explore rock-carved passages, examine historical-style building techniques, and uncover narrated story stations connected to the surah."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The creation of Adam and Iblis (15:26-44) concerns the unseen: reading only, nothing pictured.",
+  "status": "draft, unreviewed"
+ }
+}

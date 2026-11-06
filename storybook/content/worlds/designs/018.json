@@ -1,0 +1,286 @@
+{
+ "surah": 18,
+ "name": {
+  "transliterated": "Al-Kahf",
+  "meaning": "The Cave"
+ },
+ "ayah_count": 110,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "Faith under pressure",
+  "Humility about wealth",
+  "Seeking knowledge with patience",
+  "Using power to help"
+ ],
+ "narrative_passages": [
+  {
+   "title": "The people of the cave",
+   "reference": "18:9-26",
+   "anchor_phrase": "cave"
+  },
+  {
+   "title": "The owner of two gardens",
+   "reference": "18:32-44",
+   "anchor_phrase": "two gardens"
+  },
+  {
+   "title": "Musa and the knowing servant",
+   "reference": "18:60-82",
+   "anchor_phrase": "junction of the two seas"
+  },
+  {
+   "title": "Dhul-Qarnayn",
+   "reference": "18:83-98",
+   "anchor_phrase": "Dhul-Qarnayn"
+  }
+ ],
+ "summary_for_children": "Al-Kahf has four stories: young believers who slept in a cave, a man proud of his two gardens, Musa's journey to learn from a knowing servant of Allah, and Dhul-Qarnayn who built a barrier.",
+ "world_title": "Four Journeys of Al-Kahf",
+ "environment_concept": "Four connected adventures: the cave of the young believers, the two gardens, the meeting of the two seas, and the iron barrier.",
+ "architecture_and_scenery": "Mountain cave with sunlight sliding past its mouth, two walled gardens with a river, a meeting of two seas with a ship and a leaning wall, and a pass sealed by iron and copper.",
+ "palette": {
+  "colors": [
+   "#7a6a5a",
+   "#5a7a4a",
+   "#2f5f7f",
+   "#a8a8a8",
+   "#d9a35a"
+  ],
+  "lighting": "Shafts of light in the cave, bright gardens, sea light, forge glow",
+  "atmosphere": "Cool cave air, garden breeze, sea mist, mountain wind"
+ },
+ "areas": [
+  {
+   "name": "The Cave",
+   "reference": "18:10",
+   "anchor_phrase": "cave",
+   "description": "A mountain cave; the youths are never shown and no number is stated."
+  },
+  {
+   "name": "The Sliding Sun",
+   "reference": "18:17",
+   "anchor_phrase": "sun when it rose",
+   "description": "Sunlight passing by the cave's mouth."
+  },
+  {
+   "name": "The Two Gardens",
+   "reference": "18:32",
+   "anchor_phrase": "two gardens",
+   "description": "Two walled gardens with a river between."
+  },
+  {
+   "name": "Junction of the Two Seas",
+   "reference": "18:60",
+   "anchor_phrase": "junction of the two seas",
+   "description": "Where two seas meet."
+  },
+  {
+   "name": "The Ship",
+   "reference": "18:71",
+   "anchor_phrase": "ship",
+   "description": "A small ship with a hole in its side."
+  },
+  {
+   "name": "The Wall",
+   "reference": "18:77",
+   "anchor_phrase": "wall",
+   "description": "A wall about to fall, set straight."
+  },
+  {
+   "name": "The Iron Barrier",
+   "reference": "18:96",
+   "anchor_phrase": "iron",
+   "description": "A mountain pass filled with iron and copper."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Retell the four journeys",
+   "reference": "18:10-96",
+   "kind": "journey",
+   "description": "Put the places of the four journeys in the order the surah tells them: the cave, the gardens, the meeting of the seas, and the barrier.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "18:10-96",
+   "kind": "match",
+   "description": "Match each place in the valley to the ayah it comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Why did it happen?",
+   "reference": "18:79-82",
+   "kind": "card",
+   "description": "At the ship and the wall, read the reasons given in 18:79-82 and talk about patience in learning.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Mend the wall",
+   "reference": "18:77",
+   "kind": "find",
+   "description": "Carry three stones back into the leaning wall; it stands straight again.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Close the pass",
+   "reference": "18:96",
+   "kind": "find",
+   "description": "Carry four blocks of iron into the gap between the two cliffs; then copper seals the top.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Each journey opens with its ayahs, then gentle explanation. Musa, the knowing servant and Dhul-Qarnayn are never shown.",
+ "learning_objectives": [
+  "Retell the four stories",
+  "Explain patience in learning",
+  "Explain humility about wealth"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "18:10",
+   "anchor_phrase": "cave",
+   "element": "The Cave"
+  },
+  {
+   "reference": "18:17",
+   "anchor_phrase": "sun when it rose",
+   "element": "The Sliding Sun"
+  },
+  {
+   "reference": "18:32",
+   "anchor_phrase": "two gardens",
+   "element": "The Two Gardens"
+  },
+  {
+   "reference": "18:60",
+   "anchor_phrase": "junction of the two seas",
+   "element": "Junction of the Two Seas"
+  },
+  {
+   "reference": "18:71",
+   "anchor_phrase": "ship",
+   "element": "The Ship"
+  },
+  {
+   "reference": "18:77",
+   "anchor_phrase": "wall",
+   "element": "The Wall"
+  },
+  {
+   "reference": "18:96",
+   "anchor_phrase": "iron",
+   "element": "The Iron Barrier"
+  }
+ ],
+ "required_assets": [
+  "Mountain cave with light shafts",
+  "Two walled gardens",
+  "Two-seas shoreline",
+  "Small ship",
+  "Leaning wall",
+  "Iron barrier pass"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: its own valley of four journeys (cave with sliding sunlight, two gardens and a river, two waters meeting, a holed ship, a mended wall, an iron and copper barrier) and two playable games; mend the wall and close the pass with iron (hands-on, in the scene)",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Kahf.tsx, src/world/ActivityGame.tsx, src/world/scenes/drag.tsx",
+  "tested_by": "automated screenshots of the scene and the journey game"
+ },
+ "quran_references": [
+  "18:9-26",
+  "18:10",
+  "18:10-96",
+  "18:17",
+  "18:32",
+  "18:32-44",
+  "18:60",
+  "18:60-82",
+  "18:71",
+  "18:77",
+  "18:79-82",
+  "18:83-98",
+  "18:96"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "Four realms in one land: a cave in the pine hills, two garden beds, a shore with a dock where two seas meet, and a gap between two mountain walls",
+  "quran_references": [
+   "18:10",
+   "18:13",
+   "18:17",
+   "18:45",
+   "18:46",
+   "18:60",
+   "18:96",
+   "18:109"
+  ],
+  "primary_mechanic": {
+   "kind": "sun-path-cave",
+   "engine": "sunpath",
+   "text": "Turn the day at a dial and mark where the sunlight falls by the cave mouth at sunrise and at sunset; it passes the cave by and never enters (18:17). The barrier (18:96) is a second activity."
+  },
+  "secondary_activities": [
+   "carrying sheets of iron to fill the mountain gap (18:96)",
+   "the two gardens (18:45-46)",
+   "where the two seas meet (18:60, 18:109)"
+  ],
+  "narrative_structure": "The cave, the sun past the cave, the gardens, the shore, the barrier",
+  "world_assets": [
+   "empty cave mouth in a rock",
+   "day-dial",
+   "light patches and marker stones",
+   "garden beds",
+   "dock and boat",
+   "iron sheets and the mountain gap"
+  ],
+  "environment_behaviour": [
+   "the whole world's light turns to sunrise and to evening with the dial",
+   "a sunlit patch appears beside the cave mouth on one side in the morning and the other in the evening"
+  ],
+  "learning_objective": "Notice the sign of 18:17 and the lessons of the four stories: faith, humility, learning, using strength to help",
+  "interaction_tests": {
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: turned the day-dial with the on-screen button)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: the day turns to sunrise; the goal points to the morning light)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status line: \"Find the morning light by the cave and mark it\")",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: sun path [0,1,2,3], barrier [0,1,2,3,4])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"cave\",\"sun\",\"gardens\",\"seas\",\"barrier\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w018.ts"
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "Four Extraordinary Journeys",
+  "quran_references": [
+   "18:9–26",
+   "18:32–44",
+   "18:60–82",
+   "18:83–98"
+  ],
+  "children_narration": "Surah Al-Kahf contains several remarkable journeys. First, a group of young believers sought refuge in a cave. Allah caused them to sleep for many years. Then we hear about two men and their gardens, reminding us that wealth should never make us proud. Next comes Musa's journey with a knowledgeable servant of Allah. Musa learns that some events have wisdom he does not understand at first. Finally, Dhul-Qarnayn travels across different lands and helps a community by building a strong barrier. Each journey teaches something special about faith, humility, knowledge, and responsibility.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Four Realms",
+   "description": "Four distinct adventures: an explorable cave, two contrasting gardens, a journey through coastal locations, and a barrier-engineering activity inspired by 18:93–98."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The young men of the cave, Musa, al-Khidr and Dhul-Qarnayn are not shown. The boy in 18:74 and 18:80 is reading only, with no scene.",
+  "status": "draft, unreviewed"
+ }
+}

@@ -1,0 +1,187 @@
+{
+ "surah": 31,
+ "name": {
+  "transliterated": "Luqmān",
+  "meaning": "Luqman"
+ },
+ "ayah_count": 34,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Wisdom",
+  "Gratitude to Allah and parents",
+  "Never associating partners with Allah",
+  "Humility and good manners"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Luqman's advice",
+   "reference": "31:12-19",
+   "anchor_phrase": "Luqman"
+  }
+ ],
+ "summary_for_children": "Surah Luqman tells of a wise man, Luqman, who gave his son advice: never worship anything besides Allah, be grateful to parents, pray, be patient, don't be proud, walk gently and lower your voice.",
+ "world_title": "Luqman's Garden of Advice",
+ "environment_concept": "A great rock with a tiny seed beside it (31:16), a path for walking gently (31:19) and a shore with trees and a pen (31:27).",
+ "architecture_and_scenery": "Courtyard garden with a central rock, a mustard plant, slow paths, and a shoreline where the sea stretches like ink.",
+ "palette": {
+  "colors": [
+   "#7a9a5a",
+   "#e8dcc0",
+   "#2a3a5a",
+   "#c9a46a"
+  ],
+  "lighting": "Warm afternoon in a family garden",
+  "atmosphere": "Soft breeze, birds, quiet voices"
+ },
+ "areas": [
+  {
+   "name": "The Rock and the Mustard Seed",
+   "reference": "31:16",
+   "anchor_phrase": "mustard seed",
+   "description": "A large rock with a tiny seed nearby."
+  },
+  {
+   "name": "Path of Moderate Pace",
+   "reference": "31:19",
+   "anchor_phrase": "moderate in your pace",
+   "description": "A path for walking gently."
+  },
+  {
+   "name": "Sea of Ink",
+   "reference": "31:27",
+   "anchor_phrase": "pens",
+   "description": "A shore where trees become pens and the sea ink."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Advice path",
+   "reference": "31:13-19",
+   "description": "Walk each path and match the advice to its ayah.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Lower your voice",
+   "reference": "31:19",
+   "description": "Practise a calm voice level in a playful sound game (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Find the seed",
+   "reference": "31:16",
+   "kind": "find",
+   "description": "Find three tiny seeds hidden around the rock.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration explains each piece of advice; Luqman and his son are not shown or voiced, only the ayahs are read.",
+ "learning_objectives": [
+  "List Luqman's pieces of advice",
+  "Explain kindness to parents",
+  "Explain humility"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "31:16",
+   "anchor_phrase": "mustard seed",
+   "element": "The Rock and the Mustard Seed"
+  },
+  {
+   "reference": "31:19",
+   "anchor_phrase": "moderate in your pace",
+   "element": "Path of Moderate Pace"
+  },
+  {
+   "reference": "31:27",
+   "anchor_phrase": "pens",
+   "element": "Sea of Ink"
+  }
+ ],
+ "required_assets": [
+  "Family garden",
+  "Rock and seed",
+  "Sea shore"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (olives, pen, rockSeed, sea, steps) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "31:12-19",
+  "31:13-19",
+  "31:16",
+  "31:19",
+  "31:27"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "A garden path with fig and olive trees where a goat, a cat and a dove rest",
+  "quran_references": [
+   "31:12-13",
+   "31:14",
+   "31:18-19",
+   "31:17",
+   "31:16"
+  ],
+  "primary_mechanic": {
+   "kind": "voice-loudness-meter",
+   "engine": "voice",
+   "text": "At each animal, pass on a message at the right loudness: hold Speak and the voice needle rises, let go and it sinks. Keep it in the green band for 2.5 seconds and the message is heard; past the red line the animal is startled and settles again before you try more gently. Each listener is more easily startled than the one before (31:19, lower your voice). Luqman and his son are not shown; his advice is read from the verses."
+  },
+  "secondary_activities": [
+   "the mustard seed (31:16)"
+  ],
+  "narrative_structure": "Goat, cat and dove along the path, then the mustard seed reading",
+  "world_assets": [
+   "goat, cat and dove",
+   "voice meter panel with green band and red line"
+  ],
+  "environment_behaviour": [
+   "heard animals show a soft gold ring",
+   "the needle and the \"Heard\" timer update live"
+  ],
+  "learning_objective": "Learn Luqman's advice to his son (31:12-19), especially gentleness in walk and voice",
+  "interaction_tests": {
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: pressed \"Pass the message to the goat\"; the voice meter opens with a hold-to-speak button)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: held too long: the needle passed the red line and the goat was startled; kept in the green band for 2.5 s, the goat heard the message)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: panel: needle, green band, red line, \"Heard: 1.2 of 2.5 s\"; status: \"Messages heard: 1 of 3 · Next: the cat\")",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: heard [0,1,2], startled [0,1,2])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"gently\",\"seed\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w031.ts"
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "A Father's Wise Advice",
+  "quran_references": [
+   "31:12–19"
+  ],
+  "children_narration": "Luqman was blessed with wisdom. He advised his son to worship Allah alone, be grateful, respect his parents, pray, practice patience, and avoid arrogance. He also encouraged him to be moderate in how he walked and spoke. These lessons can guide us in everyday life.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "Luqman's Wisdom Workshop",
+   "description": "Explore a storybook learning home with practical activities about kindness, gratitude, and thoughtful speech. Luqman's advice is presented through verified narration rather than invented conversations."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

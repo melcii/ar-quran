@@ -1,0 +1,208 @@
+{
+ "surah": 49,
+ "name": {
+  "transliterated": "Al-Ḥujurāt",
+  "meaning": "The Rooms"
+ },
+ "ayah_count": 18,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Manners with the Prophet (peace be upon him)",
+  "Checking news",
+  "Making peace",
+  "Respecting others",
+  "Equality of people"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Hujurat means The Rooms. It teaches good manners: check news before believing it, make peace between people, don't make fun of others or call them bad names, don't spy or speak badly behind their backs, and know that the best person is the most God-conscious.",
+ "world_title": "The Village of Good Manners",
+ "environment_concept": "A friendly village where each street teaches a manner from the surah: checking news, making peace, no mocking, no nicknames, no spying, no backbiting, and a market square where peoples and tribes meet to know one another.",
+ "architecture_and_scenery": "Courtyard homes with low walls, a peace bridge between two quarters, a market square with stalls from many lands.",
+ "palette": {
+  "colors": [
+   "#e9c98f",
+   "#7a9a5a",
+   "#3f6d8f",
+   "#f6efe0",
+   "#c47a3a"
+  ],
+  "lighting": "Warm late afternoon",
+  "atmosphere": "Lively but gentle village sounds"
+ },
+ "areas": [
+  {
+   "name": "Messenger's Gate",
+   "reference": "49:6",
+   "anchor_phrase": "investigate",
+   "description": "A gate where news must be checked before entering."
+  },
+  {
+   "name": "Peace Bridge",
+   "reference": "49:10",
+   "anchor_phrase": "make settlement",
+   "description": "A bridge rebuilt between two quarters."
+  },
+  {
+   "name": "Mockery-free Street",
+   "reference": "49:11",
+   "anchor_phrase": "ridicule",
+   "description": "A street where mocking is replaced with respect."
+  },
+  {
+   "name": "Hidden-whispers Lane",
+   "reference": "49:12",
+   "anchor_phrase": "backbite",
+   "description": "A lane where whispers fade."
+  },
+  {
+   "name": "Market of Nations",
+   "reference": "49:13",
+   "anchor_phrase": "peoples and tribes",
+   "description": "A market where people from everywhere meet."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Mend the bridge",
+   "reference": "49:9-10",
+   "kind": "find",
+   "description": "The footbridge between the two quarters has planks missing. Tap each gap to mend it, then read 49:10.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "49:6-13",
+   "kind": "match",
+   "description": "Match each place in the village to the manner and ayah it comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Check the news",
+   "reference": "49:6",
+   "kind": "card",
+   "description": "Talk about checking a message before passing it on.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Know one another",
+   "reference": "49:13",
+   "kind": "card",
+   "description": "Learn a greeting from another language and talk about 49:13.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration guides through each street, citing the ayah for each manner.",
+ "learning_objectives": [
+  "Explain checking news",
+  "Explain making peace",
+  "Explain 49:13"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "49:6",
+   "anchor_phrase": "investigate",
+   "element": "Messenger's Gate"
+  },
+  {
+   "reference": "49:10",
+   "anchor_phrase": "make settlement",
+   "element": "Peace Bridge"
+  },
+  {
+   "reference": "49:11",
+   "anchor_phrase": "ridicule",
+   "element": "Mockery-free Street"
+  },
+  {
+   "reference": "49:12",
+   "anchor_phrase": "backbite",
+   "element": "Hidden-whispers Lane"
+  },
+  {
+   "reference": "49:13",
+   "anchor_phrase": "peoples and tribes",
+   "element": "Market of Nations"
+  }
+ ],
+ "required_assets": [
+  "Garden terrain (shared)",
+  "Village gate",
+  "Footbridge with missing planks",
+  "Courtyard homes",
+  "Market stalls"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: its own village (a gate, a footbridge to mend, courtyard homes, a market of many colours), a mend-the-bridge activity in the scene and a matching game",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Hujurat.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and mending the bridge"
+ },
+ "quran_references": [
+  "49:6",
+  "49:6-13",
+  "49:9-10",
+  "49:10",
+  "49:11",
+  "49:12",
+  "49:13"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Village of Friendship",
+  "quran_references": [
+   "49:6",
+   "49:10–13"
+  ],
+  "primary_mechanic": {
+   "kind": "rumour-check",
+   "engine": "not built yet",
+   "text": "Track a rumour through a village and check each claim before passing it on (49:6)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Village of Kind Words",
+  "quran_references": [
+   "49:6",
+   "49:10–13"
+  ],
+  "children_narration": "What should we do when someone tells us a rumor? Should we believe it immediately? Surah Al-Hujurat teaches us to check information carefully, avoid mocking others, and respect people from different families and communities. Our differences can help us know one another, not look down on one another.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Village of Friendship",
+   "description": "Children investigate a fictional misunderstanding, compare information, and help neighbors resolve it through respectful communication."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

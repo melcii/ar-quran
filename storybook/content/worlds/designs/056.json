@@ -1,0 +1,165 @@
+{
+ "surah": 56,
+ "name": {
+  "transliterated": "Al-Wāqi‘ah",
+  "meaning": "The Inevitable"
+ },
+ "ayah_count": 96,
+ "content_type": {
+  "primary": "hereafter (symbolic only)",
+  "secondary": []
+ },
+ "themes": [
+  "The inevitable Event",
+  "Three groups of people",
+  "Allah provides",
+  "Gratitude"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Waqi'ah means The Inevitable Event. It speaks of a day that will surely come, and asks us to look at the seeds we plant, the water we drink and the fire we light, all from Allah.",
+ "world_title": "Seed, Water and Fire",
+ "environment_concept": "A field where seeds are planted (56:63), rain falling into a well (56:69) and a tree with a fire for travellers (56:72).",
+ "architecture_and_scenery": "A farmer's field, a cloud-fed well and a fire with its tree; a quiet horizon for what is unseen.",
+ "palette": {
+  "colors": [
+   "#7a9a5a",
+   "#3f6d8f",
+   "#e07a3a",
+   "#efe6d2"
+  ],
+  "lighting": "Morning field light, then evening fire glow",
+  "atmosphere": "Calm"
+ },
+ "areas": [
+  {
+   "name": "Field of Seeds",
+   "reference": "56:63",
+   "anchor_phrase": "sow",
+   "description": "A field where seeds are planted."
+  },
+  {
+   "name": "Water from the Clouds",
+   "reference": "56:69",
+   "anchor_phrase": "clouds",
+   "description": "Water falling from clouds into a well."
+  },
+  {
+   "name": "Tree of Fire",
+   "reference": "56:72",
+   "anchor_phrase": "tree",
+   "description": "A tree and a fire for travellers."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Who grows it?",
+   "reference": "56:63-64",
+   "description": "Plant three seeds and watch them grow.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  },
+  {
+   "name": "Fresh water",
+   "reference": "56:68-70",
+   "description": "Carry three jars of fresh water.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  }
+ ],
+ "narration_plan": "The Event is spoken of only in ayahs; nothing unseen is shown.",
+ "learning_objectives": [
+  "Explain the three questions",
+  "Explain gratitude",
+  "Explain that the Event is unseen"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "56:63",
+   "anchor_phrase": "sow",
+   "element": "Field of Seeds"
+  },
+  {
+   "reference": "56:69",
+   "anchor_phrase": "clouds",
+   "element": "Water from the Clouds"
+  },
+  {
+   "reference": "56:72",
+   "anchor_phrase": "tree",
+   "element": "Tree of Fire"
+  }
+ ],
+ "required_assets": [
+  "Field",
+  "Well",
+  "Fire",
+  "Horizon"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (cloud, fire, tree, well) with 2 hands-on activities in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "56:63",
+  "56:63-64",
+  "56:68-70",
+  "56:69",
+  "56:72"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Four Wonders",
+  "quran_references": [
+   "56:1–96"
+  ],
+  "primary_mechanic": {
+   "kind": "four-wonders",
+   "engine": "not built yet",
+   "text": "Four hands-on stations: sow a seed, bring water down, kindle a fire safely, and reflect on human life (56:58-73)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Great Event",
+  "quran_references": [
+   "56:1–96"
+  ],
+  "children_narration": "Surah Al-Waqi'ah reminds us that the Day of Judgment will come. It speaks about different groups of people and asks us to reflect on the creation of human life, crops, water, and fire. These everyday things can remind us how much we depend on Allah.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Four Wonders",
+   "description": "Explore educational spaces centered on seeds, water, fire, and human life, connected to reflection on accountability. Do not attempt literal representations of the unseen Day of Judgment."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "No Day of Judgment imagery; the groups of 56:7-56 are readings only.",
+  "status": "draft, unreviewed"
+ }
+}

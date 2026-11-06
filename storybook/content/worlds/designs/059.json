@@ -1,0 +1,152 @@
+{
+ "surah": 59,
+ "name": {
+  "transliterated": "Al-Ḥashr",
+  "meaning": "The Exile"
+ },
+ "ayah_count": 24,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Awe of the Quran",
+  "Names of Allah",
+  "Brotherhood and generosity"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Hashr means The Gathering. It speaks of generosity among believers, and ends with the beautiful names of Allah and the image of a mountain humbled by the Quran.",
+ "world_title": "The Humbled Mountain",
+ "environment_concept": "A great mountain, humbled (59:21), and a reading stand with the ayahs of Allah's names (59:22-24; the names are read from the verified text, not drawn in the sky).",
+ "architecture_and_scenery": "A towering mountain with cracks of light, a valley of palm trees, and a calm sky where the names appear as calligraphic text only.",
+ "palette": {
+  "colors": [
+   "#6b5a4a",
+   "#d4b66a",
+   "#2f4b6f",
+   "#efe6d2"
+  ],
+  "lighting": "Golden light on the mountain",
+  "atmosphere": "Silent"
+ },
+ "areas": [
+  {
+   "name": "Humbled Mountain",
+   "reference": "59:21",
+   "anchor_phrase": "mountain",
+   "description": "A mountain cracking with light."
+  },
+  {
+   "name": "Names of Allah",
+   "reference": "59:23",
+   "anchor_phrase": "Sovereign",
+   "description": "The names written as text in the sky."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Names",
+   "reference": "59:22-24",
+   "description": "Collect each name and its meaning.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Prefer others",
+   "reference": "59:9",
+   "description": "Carry four baskets to give to others first.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  }
+ ],
+ "narration_plan": "Allah is never depicted; names appear only as written words.",
+ "learning_objectives": [
+  "Name some of the names in 59:22-24",
+  "Explain 59:21",
+  "Explain generosity"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "59:21",
+   "anchor_phrase": "mountain",
+   "element": "Humbled Mountain"
+  },
+  {
+   "reference": "59:23",
+   "anchor_phrase": "Sovereign",
+   "element": "Names of Allah"
+  }
+ ],
+ "required_assets": [
+  "Mountain",
+  "Sky",
+  "Valley"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (lectern, mountain) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "59:9",
+  "59:21",
+  "59:22-24",
+  "59:23"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The House of Generosity",
+  "quran_references": [
+   "59:2–10",
+   "59:18–24"
+  ],
+  "primary_mechanic": {
+   "kind": "aid-centre",
+   "engine": "not built yet",
+   "text": "Run a community aid centre where those who give prefer others even when in need (59:9)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Community and Its Responsibilities",
+  "quran_references": [
+   "59:2–10",
+   "59:18–24"
+  ],
+  "children_narration": "Surah Al-Hashr recalls a difficult historical event involving the exile of a community and teaches about the distribution of resources, generosity, and responsibility. It praises those who care for others, even when they themselves have needs.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The House of Generosity",
+   "description": "Organize a community aid center, learn about sharing resources justly, and discover how a community can care for people in need."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

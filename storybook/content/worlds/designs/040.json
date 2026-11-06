@@ -1,0 +1,169 @@
+{
+ "surah": 40,
+ "name": {
+  "transliterated": "Ghāfir",
+  "meaning": "The Forgiver"
+ },
+ "ayah_count": 85,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "Allah forgives",
+  "Speaking truth with courage",
+  "Pride brings ruin"
+ ],
+ "narrative_passages": [
+  {
+   "title": "The believing man",
+   "reference": "40:28-45",
+   "anchor_phrase": "believing man"
+  },
+  {
+   "title": "Pharaoh's tower",
+   "reference": "40:36-37",
+   "anchor_phrase": "tower"
+  }
+ ],
+ "summary_for_children": "Ghafir means The Forgiver. It tells of a believing man in Pharaoh's family who bravely defended Musa, and of Pharaoh ordering a tower to reach the heavens out of pride.",
+ "world_title": "The Tower and the Believing Man",
+ "environment_concept": "A brick tower that stops far short of the sky (40:36-37) and a simple house (40:28). No one is shown.",
+ "architecture_and_scenery": "Monumental city with a half-built brick tower, palace halls and a simple house of the believing man.",
+ "palette": {
+  "colors": [
+   "#d8b878",
+   "#7a5a3a",
+   "#3f6d8f",
+   "#f0e2c0"
+  ],
+  "lighting": "Hard sun on brick",
+  "atmosphere": "Dust, busy builders"
+ },
+ "areas": [
+  {
+   "name": "Unfinished Tower",
+   "reference": "40:36",
+   "anchor_phrase": "tower",
+   "description": "A brick tower that can never reach the heavens."
+  },
+  {
+   "name": "House of the Believer",
+   "reference": "40:28",
+   "anchor_phrase": "believing man",
+   "description": "A simple house; no one shown."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Courage words",
+   "reference": "40:28",
+   "description": "Choose words of truth in difficult moments (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Pride tower",
+   "reference": "40:36-37",
+   "description": "Watch the tower fall short and talk about pride.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "The grazing animals",
+   "reference": "40:79",
+   "kind": "find",
+   "description": "Bring the animals to their pens in pairs.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration only uses ayahs for speech; no person is shown.",
+ "learning_objectives": [
+  "Retell the believing man",
+  "Explain pride",
+  "Explain Allah's forgiveness"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "40:36",
+   "anchor_phrase": "tower",
+   "element": "Unfinished Tower"
+  },
+  {
+   "reference": "40:28",
+   "anchor_phrase": "believing man",
+   "element": "House of the Believer"
+  }
+ ],
+ "required_assets": [
+  "City",
+  "Brick tower",
+  "Simple house"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (herd, house, tower) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "40:28",
+  "40:28-45",
+  "40:36",
+  "40:36-37"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Hidden Voice of Truth",
+  "quran_references": [
+   "40:23–46",
+   "40:60–67"
+  ],
+  "primary_mechanic": {
+   "kind": "evidence-board",
+   "engine": "not built yet",
+   "text": "Gather clues around a council hall to follow the believing man's reasoning (40:28-44), presented as narration."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Courageous Believer",
+  "quran_references": [
+   "40:23–46",
+   "40:60–67"
+  ],
+  "children_narration": "Musa brought Allah's message to Pharaoh. In Pharaoh's own family, a believing man spoke courageously in defense of truth. He encouraged the people to think carefully about the consequences of their actions and reminded them of Allah's guidance.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Hidden Voice of Truth",
+   "description": "Explore an ancient Egyptian council setting, follow a narrated argument through interactive evidence, and learn how to speak thoughtfully even when others disagree. ## Part 3 — Surahs 41–60"
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

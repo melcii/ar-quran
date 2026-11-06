@@ -1,0 +1,145 @@
+{
+ "surah": 73,
+ "name": {
+  "transliterated": "Al-Muzzammil",
+  "meaning": "The Enshrouded One"
+ },
+ "ayah_count": 20,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Night prayer",
+  "Measured recitation",
+  "Devotion"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Muzzammil calls to stand at night in prayer and to recite the Quran slowly and beautifully.",
+ "world_title": "The Night Vigil",
+ "environment_concept": "A dial of the night hours (73:2-4) and a reading stand for slow, measured recitation (73:4).",
+ "architecture_and_scenery": "A house with a night window and a sky dial showing parts of the night.",
+ "palette": {
+  "colors": [
+   "#1c2541",
+   "#e2c88a"
+  ],
+  "lighting": "Moonlight",
+  "atmosphere": "Still"
+ },
+ "areas": [
+  {
+   "name": "Night Dial",
+   "reference": "73:3",
+   "anchor_phrase": "Half of it",
+   "description": "A dial of night hours."
+  },
+  {
+   "name": "Measured Recitation",
+   "reference": "73:4",
+   "anchor_phrase": "measured recitation",
+   "description": "A lectern where an ayah card is read slowly."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Divide the night",
+   "reference": "73:2-4",
+   "description": "Lay four numbered stones in order, dividing the night.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  },
+  {
+   "name": "Slow reading",
+   "reference": "73:4",
+   "description": "Read slowly and clearly.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "The Prophet (peace be upon him) is never shown.",
+ "learning_objectives": [
+  "Explain measured recitation",
+  "Explain night prayer"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "73:3",
+   "anchor_phrase": "Half of it",
+   "element": "Night Dial"
+  },
+  {
+   "reference": "73:4",
+   "anchor_phrase": "measured recitation",
+   "element": "Measured Recitation"
+  }
+ ],
+ "required_assets": [
+  "Night house",
+  "Dial"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (dial, lectern, village) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "73:2-4",
+  "73:3",
+  "73:4"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Night Observatory",
+  "quran_references": [
+   "73:1–20"
+  ],
+  "primary_mechanic": {
+   "kind": "measured-recitation",
+   "engine": "not built yet",
+   "text": "Practise reciting slowly and clearly (73:4) in a calm night, with your own pace shown as a gentle meter."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Quiet Night",
+  "quran_references": [
+   "73:1–20"
+  ],
+  "children_narration": "When the world becomes quiet at night, it can be easier to concentrate and reflect. Surah Al-Muzzammil emphasizes night prayer, reciting the Quran carefully, and remembering Allah. It also recognizes that people have different responsibilities and circumstances.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Night Observatory",
+   "description": "Experience a calm transition from evening to dawn and learn about thoughtful Quran recitation and the passage of time."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

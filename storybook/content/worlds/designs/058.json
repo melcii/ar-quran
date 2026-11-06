@@ -1,0 +1,144 @@
+{
+ "surah": 58,
+ "name": {
+  "transliterated": "Al-Mujādilah",
+  "meaning": "The Pleading Woman"
+ },
+ "ayah_count": 22,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Allah hears",
+  "Making room in gatherings",
+  "Secret talk",
+  "Knowledge raises people"
+ ],
+ "narrative_passages": [
+  {
+   "title": "The woman's complaint",
+   "reference": "58:1-4",
+   "anchor_phrase": "complaint"
+  }
+ ],
+ "summary_for_children": "Al-Mujadila means The Pleading Woman. It begins with Allah hearing a woman who complained to Him, and teaches making room for others in gatherings and seeking knowledge.",
+ "world_title": "The Assembly That Makes Room",
+ "environment_concept": "An open hall where room is made for others (58:11), with seats in a circle and houses around.",
+ "architecture_and_scenery": "A simple hall with mats, room that expands when people make space.",
+ "palette": {
+  "colors": [
+   "#e8dcc0",
+   "#7a8f68",
+   "#c9a46a"
+  ],
+  "lighting": "Warm interior",
+  "atmosphere": "Calm"
+ },
+ "areas": [
+  {
+   "name": "The Hall",
+   "reference": "58:11",
+   "anchor_phrase": "make space",
+   "description": "A hall that expands as space is made."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Make space",
+   "reference": "58:11",
+   "description": "Carry six cushions to make room in the circle.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  },
+  {
+   "name": "Allah hears",
+   "reference": "58:1",
+   "description": "Read 58:1 and discuss how Allah hears every request.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "No person shown.",
+ "learning_objectives": [
+  "Explain 58:1",
+  "Explain making room",
+  "Explain the value of knowledge"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "58:11",
+   "anchor_phrase": "make space",
+   "element": "The Hall"
+  }
+ ],
+ "required_assets": [
+  "Hall"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (council, hall, village) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "58:1",
+  "58:1-4",
+  "58:11"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Hall of Listening",
+  "quran_references": [
+   "58:1–4",
+   "58:11"
+  ],
+  "primary_mechanic": {
+   "kind": "listening-hall",
+   "engine": "not built yet",
+   "text": "Practise listening: hear fictional concerns and repeat them back accurately before answering (58:1)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Woman Who Was Heard",
+  "quran_references": [
+   "58:1–4",
+   "58:11"
+  ],
+  "children_narration": "A woman brought a serious concern about unfair treatment in her marriage to Prophet Muhammad. The Quran tells us that Allah heard her complaint. Her story reminds us that people's concerns matter and that unfairness should not be ignored.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Hall of Listening",
+   "description": "Explore a respectful council environment and practice listening carefully to fictional community concerns. The original historical event is conveyed through narration, not acted out by invented characters."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The woman and the Prophet are not shown; the hall uses fictional concerns, labelled.",
+  "status": "draft, unreviewed"
+ }
+}

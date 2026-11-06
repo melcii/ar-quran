@@ -1,0 +1,202 @@
+{
+ "surah": 6,
+ "name": {
+  "transliterated": "Al-An‘ām",
+  "meaning": "The Cattle"
+ },
+ "ayah_count": 165,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "Oneness of Allah",
+  "Signs in creation",
+  "Ibrahim's reasoning",
+  "Guidance"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Ibrahim and the star, moon and sun",
+   "reference": "6:74-83",
+   "anchor_phrase": "Abraham"
+  }
+ ],
+ "summary_for_children": "Al-An'am shows the signs of Allah in the sky and the earth. It tells how Ibrahim looked at a star, the moon and the sun and saw that they all set.",
+ "world_title": "The Night of Signs",
+ "environment_concept": "A night of signs turning to dawn: a ridge where a bright star sets (6:76), a plain where the moon rises (6:77), an overlook at sunrise (6:78), a valley where seeds split and sprout (6:95) and date palms with low clusters (6:99).",
+ "architecture_and_scenery": "Wide desert plain, rocky ridge for watching the sky, a green valley with date palms and grain.",
+ "palette": {
+  "colors": [
+   "#0f1a33",
+   "#3b4d7a",
+   "#e7c27a",
+   "#5e8a4a"
+  ],
+  "lighting": "Starlight to moonlight to sunrise",
+  "atmosphere": "Clear cold night warming to dawn"
+ },
+ "areas": [
+  {
+   "name": "Ridge of the Star",
+   "reference": "6:76",
+   "anchor_phrase": "star",
+   "description": "A ridge to watch a bright star set."
+  },
+  {
+   "name": "Moon Rise Plain",
+   "reference": "6:77",
+   "anchor_phrase": "moon rising",
+   "description": "The moon rises and then sets."
+  },
+  {
+   "name": "Sunrise Overlook",
+   "reference": "6:78",
+   "anchor_phrase": "sun rising",
+   "description": "The sun rises; the narrator reads 6:79."
+  },
+  {
+   "name": "Valley of Seeds",
+   "reference": "6:95",
+   "anchor_phrase": "grain and date seeds",
+   "description": "Seeds split and sprout in a green valley."
+  },
+  {
+   "name": "Palm Clusters",
+   "reference": "6:99",
+   "anchor_phrase": "palm trees",
+   "description": "Date palms with low-hanging clusters."
+  }
+ ],
+ "activities": [
+  {
+   "name": "What sets and what stays",
+   "reference": "6:76-79",
+   "description": "Watch star, moon and sun each set, and reflect, as the ayahs say, on turning to the Creator.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Split the seed",
+   "reference": "6:95",
+   "description": "Plant three seeds and watch each split and sprout.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  }
+ ],
+ "narration_plan": "The narrator follows the ayahs closely for Ibrahim's reasoning, without showing him, and labels any explanation.",
+ "learning_objectives": [
+  "Explain why things that set are not worthy of worship",
+  "Name signs of Allah in plants",
+  "Read 6:79"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "6:76",
+   "anchor_phrase": "star",
+   "element": "Ridge of the Star"
+  },
+  {
+   "reference": "6:77",
+   "anchor_phrase": "moon rising",
+   "element": "Moon Rise Plain"
+  },
+  {
+   "reference": "6:78",
+   "anchor_phrase": "sun rising",
+   "element": "Sunrise Overlook"
+  },
+  {
+   "reference": "6:95",
+   "anchor_phrase": "grain and date seeds",
+   "element": "Valley of Seeds"
+  },
+  {
+   "reference": "6:99",
+   "anchor_phrase": "palm trees",
+   "element": "Palm Clusters"
+  }
+ ],
+ "required_assets": [
+  "Desert night sky with sun and moon cycle",
+  "Ridge rocks",
+  "Sprouting seed animation",
+  "Date palms"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (constellation, disc, grain, horizon, mountain, palms) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "6:74-83",
+  "6:76",
+  "6:76-79",
+  "6:77",
+  "6:78",
+  "6:95",
+  "6:99"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "adventure_world": {
+  "title": "The Living World of Creation",
+  "route": "/adventure/6",
+  "built_in": "src/adventure/worlds/w006.ts (engine: src/adventure/)",
+  "source": "\"Quran Adventure: First 10 Unique Worlds\" with the rule \"114 unique game experiences\" (2026-11-04); replaces the first adventure version built from the earlier design table",
+  "status": "second version built for the web: each world now has its own core mechanic; draft, unreviewed; checked in headless Chromium with software WebGL only, not on phones or real GPUs",
+  "note": "The new-look adventure world for this surah. It is a separate design from the composed scene this record describes; both are kept until reviewers choose.",
+  "core_play": "A nature-discovery world: turn the sky from night to day at the hilltop dial, then fill a field journal by watching animals and plants quietly. You never move or round up the animals."
+ },
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "Hills turning from night to moonrise to dawn to day, grazing animals and orchards",
+  "quran_references": [
+   "6:74-79",
+   "6:38",
+   "6:95",
+   "6:96",
+   "6:99",
+   "6:141-144"
+  ],
+  "primary_mechanic": {
+   "kind": "sky-cycle+observe",
+   "engine": "sky+observe",
+   "text": "Turn the sky from night to day at the hilltop dial (6:74-79), then fill a field journal by watching animals and plants quietly; running startles them."
+  },
+  "secondary_activities": [
+   "plant observation"
+  ],
+  "narrative_structure": "Hilltop first, then a free field journal",
+  "world_assets": [
+   "sky dial",
+   "night/moon/dawn/day looks",
+   "sheep, goats, camels, cattle",
+   "grain, palms, orchard"
+  ],
+  "environment_behaviour": [
+   "sky phases change the whole world light",
+   "animals watch the child, step aside from running, come over to a still child"
+  ],
+  "learning_objective": "See signs of creation by noticing carefully (6:38, 6:95-99)",
+  "interaction_tests": {
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: Read and sky-dial pressed with the on-screen button)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: sky phase moved [] -> [0])",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: watching % status, then the nature note)",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: sky task done and first animal group watched)",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"praise\",\"sky\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse, and Pixel 7 emulation with touch taps; both in headless Chromium with software WebGL; no real phone or GPU tested)"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w006.ts"
+ }
+}

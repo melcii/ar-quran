@@ -1,0 +1,253 @@
+{
+ "surah": 26,
+ "name": {
+  "transliterated": "Ash-Shu‘arā’",
+  "meaning": "The Poets"
+ },
+ "ayah_count": 227,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "Every messenger called to worship Allah",
+  "Rejection and its end",
+  "Honest measure",
+  "Humility"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Musa and the magicians",
+   "reference": "26:10-51",
+   "anchor_phrase": "magicians"
+  },
+  {
+   "title": "The sea parts",
+   "reference": "26:61-66",
+   "anchor_phrase": "sea"
+  },
+  {
+   "title": "Ibrahim and the idols",
+   "reference": "26:69-82",
+   "anchor_phrase": "idols"
+  },
+  {
+   "title": "Nuh and the ship",
+   "reference": "26:105-122",
+   "anchor_phrase": "Noah"
+  },
+  {
+   "title": "'Ad and their towers",
+   "reference": "26:123-140",
+   "anchor_phrase": "elevation"
+  },
+  {
+   "title": "Thamud and the she-camel",
+   "reference": "26:141-159",
+   "anchor_phrase": "she-camel"
+  },
+  {
+   "title": "Shu'ayb and the thicket",
+   "reference": "26:176-191",
+   "anchor_phrase": "thicket"
+  }
+ ],
+ "summary_for_children": "Ash-Shu'ara tells of Musa and Pharaoh, Ibrahim and his people, Nuh, Hud, Salih, Lut and Shu'ayb. Each called people to worship Allah, and each story ends by reminding us that Allah is Exalted in Might, the Merciful.",
+ "world_title": "Seven Shores of the Messengers",
+ "environment_concept": "Seven shores: towering walls of water either side of a path (26:63), a meadow of many noble kinds (26:7), rock-cut homes, empty (26:149) and a thicket by a market with scales (26:176-183).",
+ "architecture_and_scenery": "A Nile palace terrace, a parted sea, Ibrahim's town of idols, an ark yard, the high towers of 'Ad, rock-cut homes of Thamud, Lut's town and the thicket of Madyan, linked by a coastal road.",
+ "palette": {
+  "colors": [
+   "#e6cfa0",
+   "#2f5d7c",
+   "#8c6b4a",
+   "#5a7a4a",
+   "#c0a080"
+  ],
+  "lighting": "Changing light at each shore: palace gold, sea blue, rock red, thicket green",
+  "atmosphere": "Wind on the coast, waves, and quiet between each settlement"
+ },
+ "areas": [
+  {
+   "name": "Towering Waves",
+   "reference": "26:63",
+   "anchor_phrase": "great towering mountain",
+   "description": "Sea walls like mountains either side of a path."
+  },
+  {
+   "name": "Earth of Noble Kinds",
+   "reference": "26:7",
+   "anchor_phrase": "every noble kind",
+   "description": "A meadow of many plant kinds at the coast road's start."
+  },
+  {
+   "name": "Homes in the Mountains",
+   "reference": "26:149",
+   "anchor_phrase": "carve out of the mountains",
+   "description": "Rock-cut homes of Thamud, empty and silent."
+  },
+  {
+   "name": "Thicket of Madyan",
+   "reference": "26:176",
+   "anchor_phrase": "thicket",
+   "description": "A dense thicket by a marketplace with scales."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Full measure",
+   "reference": "26:181-183",
+   "description": "Carry the weights to the scale and give full measure.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  },
+  {
+   "name": "The refrain",
+   "reference": "26:8-9",
+   "description": "Each shore ends with 26:8-9 read in Arabic; collect each refrain to light the coast road.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Noble kinds",
+   "reference": "26:7",
+   "kind": "find",
+   "description": "Plant three beds; each blooms with a different kind.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration repeats the surah's own structure: each shore, its ayahs, then the refrain. No messenger or person is shown or voiced.",
+ "learning_objectives": [
+  "Name the seven messengers",
+  "Explain honest measuring",
+  "Notice the surah's refrain"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "26:63",
+   "anchor_phrase": "great towering mountain",
+   "element": "Towering Waves"
+  },
+  {
+   "reference": "26:7",
+   "anchor_phrase": "every noble kind",
+   "element": "Earth of Noble Kinds"
+  },
+  {
+   "reference": "26:149",
+   "anchor_phrase": "carve out of the mountains",
+   "element": "Homes in the Mountains"
+  },
+  {
+   "reference": "26:176",
+   "anchor_phrase": "thicket",
+   "element": "Thicket of Madyan"
+  }
+ ],
+ "required_assets": [
+  "Coastal road",
+  "Sea walls",
+  "Rock-cut homes",
+  "Thicket and market",
+  "Meadow"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (carved, market, olives, orchard, seaPath) with 2 hands-on activities in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "26:7",
+  "26:8-9",
+  "26:10-51",
+  "26:61-66",
+  "26:63",
+  "26:69-82",
+  "26:105-122",
+  "26:123-140",
+  "26:141-159",
+  "26:149",
+  "26:176",
+  "26:176-191",
+  "26:181-183"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "A rock amphitheatre with seven standing stones in a half ring, a chime in the middle and tracks for the stones",
+  "quran_references": [
+   "26:1-2",
+   "26:10",
+   "26:67-68",
+   "26:69-70",
+   "26:103-104",
+   "26:105",
+   "26:121-122",
+   "26:123",
+   "26:140",
+   "26:141",
+   "26:159",
+   "26:160",
+   "26:175",
+   "26:176",
+   "26:181-183",
+   "26:191",
+   "26:8-9"
+  ],
+  "primary_mechanic": {
+   "kind": "echo-amphitheatre",
+   "engine": "echo",
+   "text": "Seven stones, one per chapter of the surah, each with a light beating at its own pace. Strike the chime: a ring goes out and an echo comes back from each stone, later from farther stones. Slide each stone until its echo returns on its beat; then its chapter and the refrain are read."
+  },
+  "secondary_activities": [
+   "the clear Book (26:1-2)"
+  ],
+  "narrative_structure": "The sign, then tuning the seven stones (one strike can tune several)",
+  "world_assets": [
+   "seven standing stones with beat lights",
+   "sliding tracks with four places",
+   "chime"
+  ],
+  "environment_behaviour": [
+   "a ring of sound spreads from the chime and bright echoes travel back from each stone",
+   "tuned stones turn pale and their lights stay on"
+  ],
+  "learning_objective": "Learn the seven stories of Ash-Shu'ara and their shared refrain, and that a farther wall sends an echo back later",
+  "interaction_tests": {
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: struck the chime with the on-screen button)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: every echo first came back \"too soon\"; Musa's stone slid to its place rings in time)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Stones in time: 1 of 7\"; by a stone: \"its light beats every 2.3 s · its echo now takes 1.3 s\")",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: stones in time [0,1,4,3,6,2,5])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"book\",\"echoes\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w026.ts"
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Messengers' Stories",
+  "quran_references": [
+   "26:10–191"
+  ],
+  "children_narration": "Musa was sent to confront Pharaoh. Ibrahim invited his people to think about what they worshipped. Nuh, Hud, Salih, Lut, and Shu'ayb each warned their communities and invited them toward guidance. These stories remind us that truthfulness and sincerity matter more than wealth or status.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "Seven Ancient Worlds",
+   "description": "Travel through distinct narrative chapters, including an Egyptian setting, a rock-carved settlement, and a marketplace where children learn about honest measurement."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "This surah's chapters overlap with A'raf (7), Hud (11) and Al-Qamar (54). It gets its own echo mechanic so the worlds stay different.",
+  "status": "draft, unreviewed"
+ }
+}

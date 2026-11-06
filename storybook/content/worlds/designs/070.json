@@ -1,0 +1,127 @@
+{
+ "surah": 70,
+ "name": {
+  "transliterated": "Al-Ma‘ārij",
+  "meaning": "The Ascending Stairways"
+ },
+ "ayah_count": 44,
+ "content_type": {
+  "primary": "hereafter (symbolic only)",
+  "secondary": []
+ },
+ "themes": [
+  "Patience",
+  "Prayer",
+  "Human nature"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Ma'arij means The Ascending Stairways. It speaks of patience and describes people who pray steadily and keep their trusts.",
+ "world_title": "Ways of Ascent",
+ "environment_concept": "Garden steps rising gently and a quiet place of steady prayer (70:23); nothing unseen is shown.",
+ "architecture_and_scenery": "Light stairways, a patient garden.",
+ "palette": {
+  "colors": [
+   "#e6f0f8",
+   "#c9a46a"
+  ],
+  "lighting": "Soft light",
+  "atmosphere": "Calm"
+ },
+ "areas": [
+  {
+   "name": "Stairways",
+   "reference": "70:3",
+   "anchor_phrase": "ways of ascent",
+   "description": "Abstract stairways of light; nothing unseen shown."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Steady prayer",
+   "reference": "70:23",
+   "description": "Lay five numbered stones in order, steady and constant.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  }
+ ],
+ "narration_plan": "Unseen is not shown.",
+ "learning_objectives": [
+  "Explain patience",
+  "List the qualities in 70:22-35"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "70:3",
+   "anchor_phrase": "ways of ascent",
+   "element": "Stairways"
+  }
+ ],
+ "required_assets": [
+  "Light stairs",
+  "Garden"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (lamps, steps, stones) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "70:3",
+  "70:23"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Tower of Good Habits",
+  "quran_references": [
+   "70:19–35"
+  ],
+  "primary_mechanic": {
+   "kind": "habit-tower",
+   "engine": "not built yet",
+   "text": "Climb a tower where each floor is a habit from 70:22-35, unlocked by practising it."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Path of Patience",
+  "quran_references": [
+   "70:19–35"
+  ],
+  "children_narration": "People sometimes become impatient when things are difficult and selfish when things are easy. Surah Al-Ma'arij praises those who pray sincerely, care for people in need, and keep their promises. Good habits help us grow.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Tower of Good Habits",
+   "description": "Explore a distinctive vertical architectural environment where each level contains an activity about patience, generosity, trust, or responsibility."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

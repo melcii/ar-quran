@@ -1,0 +1,177 @@
+{
+ "surah": 106,
+ "name": {
+  "transliterated": "Quraish",
+  "meaning": "Quraysh"
+ },
+ "ayah_count": 4,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Gratitude for safety and food",
+  "Worship"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Quraysh reminds the people of Quraysh of their safe caravan journeys in winter and summer, and calls them to worship the Lord of the House who fed them and kept them safe.",
+ "world_title": "Caravans of Winter and Summer",
+ "environment_concept": "A desert road with two resting caravans of camels and loads, one with winter wraps and one with summer shades (106:2). A well and baskets of food stand by the road (106:4). The House of 106:3 is seen far off in a valley, simply, without detail. No people are shown.",
+ "architecture_and_scenery": "Two caravan camps, a well with baskets, a far valley with a simple cube house.",
+ "palette": {
+  "colors": [
+   "#d9b46a",
+   "#8a9aaa",
+   "#6f8f4a"
+  ],
+  "lighting": "Winter grey, summer gold",
+  "atmosphere": "Seasonal"
+ },
+ "areas": [
+  {
+   "name": "Winter Caravan",
+   "reference": "106:2",
+   "anchor_phrase": "winter",
+   "description": "A resting caravan with heavy wraps on its loads."
+  },
+  {
+   "name": "Summer Caravan",
+   "reference": "106:2",
+   "anchor_phrase": "summer",
+   "description": "A resting caravan with light shades on its loads."
+  },
+  {
+   "name": "Lord of this House",
+   "reference": "106:3",
+   "anchor_phrase": "House",
+   "description": "A view to a far valley where the House stands, shown simply and from far away."
+  },
+  {
+   "name": "Fed and Safe",
+   "reference": "106:4",
+   "anchor_phrase": "hunger",
+   "description": "A well and baskets of food by the road."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Read the four",
+   "reference": "106:1-4",
+   "kind": "order",
+   "description": "Put the four ayahs of Quraysh in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "106:1-4",
+   "kind": "match",
+   "description": "Match the caravans, the view and the well to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Gratitude",
+   "reference": "106:4",
+   "kind": "card",
+   "description": "Talk about the food and safety you have and who to thank for them.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration calm.",
+ "learning_objectives": [
+  "Explain 106:3-4"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "106:2",
+   "anchor_phrase": "winter",
+   "element": "Winter Caravan"
+  },
+  {
+   "reference": "106:2",
+   "anchor_phrase": "summer",
+   "element": "Summer Caravan"
+  },
+  {
+   "reference": "106:3",
+   "anchor_phrase": "House",
+   "element": "Lord of this House"
+  },
+  {
+   "reference": "106:4",
+   "anchor_phrase": "hunger",
+   "element": "Fed and Safe"
+  }
+ ],
+ "required_assets": [
+  "Dune terrain (shared)",
+  "Camels and loads",
+  "Well and baskets",
+  "Distant house"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: its own scene (winter and summer caravans, a well and a far view of the House) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Quraysh.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
+ },
+ "quran_references": [
+  "106:1-4",
+  "106:2",
+  "106:3",
+  "106:4"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Two Caravan Routes",
+  "quran_references": [
+   "106:1–4"
+  ],
+  "primary_mechanic": {
+   "kind": "two-caravans",
+   "engine": "not built yet",
+   "text": "Pack a winter caravan and a summer caravan for their different roads (106:2)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Journeys of Safety",
+  "quran_references": [
+   "106:1–4"
+  ],
+  "children_narration": "The people of Quraysh traveled on trading journeys in winter and summer. Surah Quraysh reminds them of the safety and provision they enjoyed and calls them to worship the Lord of the Sacred House.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Two Caravan Routes",
+   "description": "Explore two distinctly different travel environments representing winter and summer journeys. Children organize fictional caravan supplies and learn about gratitude and safe travel."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

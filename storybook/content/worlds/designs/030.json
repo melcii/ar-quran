@@ -1,0 +1,201 @@
+{
+ "surah": 30,
+ "name": {
+  "transliterated": "Ar-Rūm",
+  "meaning": "The Romans"
+ },
+ "ayah_count": 60,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "Signs of Allah in creation",
+  "Diversity of languages and colours",
+  "Allah's promise comes true",
+  "The natural disposition"
+ ],
+ "narrative_passages": [
+  {
+   "title": "The promise about the Romans",
+   "reference": "30:2-4",
+   "anchor_phrase": "Byzantines"
+  }
+ ],
+ "summary_for_children": "Ar-Rum means The Romans. It begins with a promise that came true and points to signs of Allah: our different languages and colours, the winds, rain, and how dead earth comes back to life.",
+ "world_title": "The Winds and the Colours of People",
+ "environment_concept": "A market of many languages (30:22), a harbour with ships on good winds (30:46), clouds that spread and break into rain (30:48) and bare land returning to green (30:50).",
+ "architecture_and_scenery": "A port town with ships, a hillside market with many voices, rain-swept hills, and a distant land of an old empire's ruins.",
+ "palette": {
+  "colors": [
+   "#5d8fb0",
+   "#d9b46a",
+   "#7da35a",
+   "#f1e9d8"
+  ],
+  "lighting": "Shifting cloud shadows and sudden sunlight after rain",
+  "atmosphere": "Wind, rain, many voices"
+ },
+ "areas": [
+  {
+   "name": "Market of Languages",
+   "reference": "30:22",
+   "anchor_phrase": "diversity of your languages",
+   "description": "A market where greetings come in many languages."
+  },
+  {
+   "name": "Harbour of Winds",
+   "reference": "30:46",
+   "anchor_phrase": "ships",
+   "description": "Ships setting out on good winds."
+  },
+  {
+   "name": "Spreading Clouds",
+   "reference": "30:48",
+   "anchor_phrase": "stir the clouds",
+   "description": "Clouds spread and break into rain."
+  },
+  {
+   "name": "Earth Revived",
+   "reference": "30:50",
+   "anchor_phrase": "gives life to the earth",
+   "description": "Bare land returning to green."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Hello in many languages",
+   "reference": "30:22",
+   "description": "Greet stall keepers in different languages and notice each is a sign (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Wind and rain",
+   "reference": "30:48-50",
+   "description": "Carry rain clouds over the bare land; it turns green.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  }
+ ],
+ "narration_plan": "Narration names each sign as 'and of His signs', as the surah does.",
+ "learning_objectives": [
+  "Explain why diversity is a sign",
+  "Describe the rain cycle in 30:48",
+  "Name two signs from the surah"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "30:22",
+   "anchor_phrase": "diversity of your languages",
+   "element": "Market of Languages"
+  },
+  {
+   "reference": "30:46",
+   "anchor_phrase": "ships",
+   "element": "Harbour of Winds"
+  },
+  {
+   "reference": "30:48",
+   "anchor_phrase": "stir the clouds",
+   "element": "Spreading Clouds"
+  },
+  {
+   "reference": "30:50",
+   "anchor_phrase": "gives life to the earth",
+   "element": "Earth Revived"
+  }
+ ],
+ "required_assets": [
+  "Port and ships",
+  "Market",
+  "Rain clouds",
+  "Reviving landscape"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (cloud, market, ships) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "30:2-4",
+  "30:22",
+  "30:46",
+  "30:48",
+  "30:48-50",
+  "30:50"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "A parched plain with five dry plots around a wind vane, under a wide sky where clouds gather",
+  "quran_references": [
+   "30:2-4",
+   "30:48",
+   "30:49-50",
+   "30:24",
+   "30:46",
+   "30:22"
+  ],
+  "primary_mechanic": {
+   "kind": "wind-reading-sowing",
+   "engine": "rain",
+   "text": "Watch the wind vane: the wind rises and a cloud gathers on one side and drifts with the wind. Read where it is heading and sow seeds in the dry plot it will reach before the rain falls there. Sown and rained on, the plot comes to life (30:48-50). The player never makes the rain: wind and rain come by themselves."
+  },
+  "secondary_activities": [
+   "the Romans (30:2-4)",
+   "languages and colours (30:22)"
+  ],
+  "narrative_structure": "The sign, three rain rounds, then a reading",
+  "world_assets": [
+   "wind vane",
+   "five dry plots",
+   "drifting cloud",
+   "rain"
+  ],
+  "environment_behaviour": [
+   "the vane turns to the wind",
+   "the cloud grows and darkens as it drifts, then rains",
+   "plots turn green with shoots after rain on sown seed"
+  ],
+  "learning_objective": "See the signs of wind, cloud and rain giving life to dry land (30:48-50)",
+  "interaction_tests": {
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: watched the vane with the on-screen button; the wind gets up and a cloud gathers)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: seeds sown in the wrong plot stay dry when the rain falls elsewhere; sown where the cloud was heading, the plot comes to life)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"The wind is carrying a cloud · seeds sown\", then \"Round 2 of 3 · Plots brought to life: 1\")",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: rounds [0,1,2], dry tries [0])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"rome\",\"rain\",\"signs\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w030.ts"
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Changing World",
+  "quran_references": [
+   "30:2–5",
+   "30:19–27",
+   "30:46–50"
+  ],
+  "children_narration": "Surah Ar-Rum begins by referring to the Romans' defeat and future victory. It reminds us that events in the world can change. The Quran also invites us to look at the signs of creation: the changing seasons, the winds, and the return of life to the land after rain.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The World Through Seasons",
+   "description": "Explore a landscape changing from dry conditions to rainfall and renewed growth. Study the historical passage through a separate illustrated map."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

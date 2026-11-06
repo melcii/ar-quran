@@ -1,0 +1,155 @@
+{
+ "surah": 104,
+ "name": {
+  "transliterated": "Al-Humazah",
+  "meaning": "The Traducer"
+ },
+ "ayah_count": 9,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Mocking is wrong",
+  "Wealth does not last"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Humazah warns those who mock and backbite and who collect and count wealth thinking it will last.",
+ "world_title": "The Counting House",
+ "environment_concept": "An empty counting room at dusk: a table heaped with coins, an open ledger and an abacus, and locked chests along the wall. No person is shown. The Day of Judgement and the Fire are not pictured.",
+ "architecture_and_scenery": "A small room open on one side, a counting table, chests, an abacus, a ledger.",
+ "palette": {
+  "colors": [
+   "#c9a46a",
+   "#5a5a6a"
+  ],
+  "lighting": "Dim light",
+  "atmosphere": "Still"
+ },
+ "areas": [
+  {
+   "name": "Counting Table",
+   "reference": "104:2",
+   "anchor_phrase": "counts",
+   "description": "A table heaped with coins, an open ledger and an abacus, all left behind."
+  },
+  {
+   "name": "Locked Chests",
+   "reference": "104:3",
+   "anchor_phrase": "immortal",
+   "description": "A row of locked chests. Wealth kept in them cannot make anyone live forever."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Read the nine",
+   "reference": "104:1-9",
+   "kind": "order",
+   "description": "Put the nine ayahs of Al-Humazah in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "104:1-3",
+   "kind": "match",
+   "description": "Match the counting table and the chests to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Kind words",
+   "reference": "104:1",
+   "kind": "card",
+   "description": "Talk about why mocking and making fun of people hurts, and what to say instead.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Punishment not shown.",
+ "learning_objectives": [
+  "Explain 104:1-3"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "104:2",
+   "anchor_phrase": "counts",
+   "element": "Counting Table"
+  },
+  {
+   "reference": "104:3",
+   "anchor_phrase": "immortal",
+   "element": "Locked Chests"
+  }
+ ],
+ "required_assets": [
+  "Dusk terrain (shared)",
+  "Counting room",
+  "Coins, ledger and abacus",
+  "Locked chests"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: its own scene (a counting room with coins, a ledger and locked chests) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Humazah.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
+ },
+ "quran_references": [
+  "104:1",
+  "104:1-3",
+  "104:1-9",
+  "104:2",
+  "104:3"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Town of Kind Words",
+  "quran_references": [
+   "104:1–9"
+  ],
+  "primary_mechanic": {
+   "kind": "kind-words-swap",
+   "engine": "not built yet",
+   "text": "Replace mocking words with kind ones on village signs (104:1)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Power of Words",
+  "quran_references": [
+   "104:1–9"
+  ],
+  "children_narration": "Words can make someone feel welcome, or they can hurt. Surah Al-Humazah warns against mocking others, speaking badly about people, and becoming overly attached to wealth. We should choose our words carefully.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Town of Kind Words",
+   "description": "Take part in communication challenges where harmful statements can be replaced with respectful responses."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

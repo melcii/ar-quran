@@ -1,0 +1,152 @@
+{
+ "surah": 109,
+ "name": {
+  "transliterated": "Al-Kāfirūn",
+  "meaning": "The Disbelievers"
+ },
+ "ayah_count": 6,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Clear faith",
+  "Respect"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Kafirun teaches clarity in worship: for you is your religion and for me is mine.",
+ "world_title": "Two Separate Paths",
+ "environment_concept": "A meadow path divides into two paths that run side by side to the horizon and never cross. Paired standing stones mark the repeated ayahs. No people are shown.",
+ "architecture_and_scenery": "Forking path with a low wall between its two branches, four pairs of standing stones.",
+ "palette": {
+  "colors": [
+   "#c9a46a",
+   "#3f6d8f"
+  ],
+  "lighting": "Calm",
+  "atmosphere": "Calm"
+ },
+ "areas": [
+  {
+   "name": "The Paired Stones",
+   "reference": "109:2",
+   "anchor_phrase": "worship",
+   "description": "Four pairs of standing stones for the four ayahs that answer each other (109:2-5)."
+  },
+  {
+   "name": "Two Paths",
+   "reference": "109:6",
+   "anchor_phrase": "religion",
+   "description": "Two paths that run side by side and never cross."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Read the six",
+   "reference": "109:1-6",
+   "kind": "order",
+   "description": "Put the six ayahs of Al-Kafirun in order. Look closely: ayahs 2 to 5 are alike.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "109:1-6",
+   "kind": "match",
+   "description": "Match the stones and the two paths to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Clear and kind",
+   "reference": "109:6",
+   "kind": "card",
+   "description": "Talk about being clear about your faith while staying kind to others.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration calm.",
+ "learning_objectives": [
+  "Explain 109:6"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "109:2",
+   "anchor_phrase": "worship",
+   "element": "The Paired Stones"
+  },
+  {
+   "reference": "109:6",
+   "anchor_phrase": "religion",
+   "element": "Two Paths"
+  }
+ ],
+ "required_assets": [
+  "Meadow terrain (shared)",
+  "Forking path and dividing wall",
+  "Paired standing stones"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: its own scene (paired stones and two separate paths) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Kafirun.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
+ },
+ "quran_references": [
+  "109:1-6",
+  "109:2",
+  "109:6"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Courtyard of Conviction",
+  "quran_references": [
+   "109:1–6"
+  ],
+  "primary_mechanic": {
+   "kind": "clear-courtyard",
+   "engine": "not built yet",
+   "text": "Answer respectfully in fictional dialogues while keeping to what you believe (109:6)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Meaning of Worship",
+  "quran_references": [
+   "109:1–6"
+  ],
+  "children_narration": "Surah Al-Kafirun teaches clarity and steadfastness in worship. It reminds us that beliefs should not be changed merely to please others. People can disagree, and we can remain clear about our faith without being unkind.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Courtyard of Conviction",
+   "description": "Explore an architectural reflection space and learn to communicate beliefs respectfully through fictional, age-appropriate dialogues."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

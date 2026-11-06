@@ -1,0 +1,24 @@
+{
+  "categories": [
+    { "id": "lives-of-the-prophets", "kind": "collection", "title": "Lessons from the lives of the prophets", "description": "Stories of the prophets as the Quran tells them." },
+    { "id": "turning-to-allah", "kind": "theme", "title": "Turning to Allah", "description": "Calling on Allah, especially in hard moments." },
+    { "id": "mercy", "kind": "theme", "title": "Mercy and relief", "description": "How Allah answers and saves." },
+    { "id": "trust-in-allah", "kind": "collection", "title": "Trust in Allah", "description": "Relying on Allah." },
+    { "id": "patience", "kind": "collection", "title": "Patience and perseverance", "description": "Staying steady through difficulty." },
+    { "id": "kindness", "kind": "collection", "title": "Kindness and compassion", "description": "Caring for others." },
+    { "id": "courage", "kind": "collection", "title": "Courage and faith", "description": "Standing firm in belief." },
+    { "id": "gratitude", "kind": "collection", "title": "Gratitude", "description": "Being thankful to Allah." },
+    { "id": "creation", "kind": "collection", "title": "Creation and the natural world", "description": "The signs of Allah in nature." }
+  ],
+  "planned": [
+    { "id": "adam", "title": "Adam", "figure": "Adam", "primary_surahs": [2, 7, 20], "research_note": "Candidate topic. Passages to be researched and confirmed by a reviewer." },
+    { "id": "nuh", "title": "Nuh and the Ark", "figure": "Nuh (Noah)", "primary_surahs": [11, 71], "research_note": "Candidate topic. Passages to be researched and confirmed by a reviewer." },
+    { "id": "ibrahim", "title": "Ibrahim", "figure": "Ibrahim (Abraham)", "primary_surahs": [14, 21, 37], "research_note": "Candidate topic. Passages to be researched and confirmed by a reviewer." },
+    { "id": "yusuf", "title": "Yusuf", "figure": "Yusuf (Joseph)", "primary_surahs": [12], "research_note": "Candidate topic, to be developed from Surah Yusuf." },
+    { "id": "musa", "title": "Musa", "figure": "Musa (Moses)", "primary_surahs": [20, 28], "research_note": "Candidate topic. Passages to be researched and confirmed by a reviewer." },
+    { "id": "dawud", "title": "Dawud", "figure": "Dawud (David)", "primary_surahs": [34, 38], "research_note": "Candidate topic. Passages to be researched and confirmed by a reviewer." },
+    { "id": "sulayman", "title": "Sulayman", "figure": "Sulayman (Solomon)", "primary_surahs": [27, 34], "research_note": "Candidate topic. Passages to be researched and confirmed by a reviewer." },
+    { "id": "maryam", "title": "Maryam", "figure": "Maryam (Mary)", "primary_surahs": [3, 19], "research_note": "Candidate topic. Passages to be researched and confirmed by a reviewer." },
+    { "id": "cave", "title": "The People of the Cave", "figure": "The People of the Cave", "primary_surahs": [18], "research_note": "Candidate topic, to be developed from Surah Al-Kahf." }
+  ]
+}

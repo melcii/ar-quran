@@ -1,0 +1,132 @@
+{
+ "surah": 75,
+ "name": {
+  "transliterated": "Al-Qiyāmah",
+  "meaning": "The Resurrection"
+ },
+ "ayah_count": 40,
+ "content_type": {
+  "primary": "hereafter (symbolic only)",
+  "secondary": []
+ },
+ "themes": [
+  "Resurrection",
+  "The self-reproaching soul",
+  "Not rushing the Quran"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Qiyamah means The Resurrection. It says Allah can restore even our fingertips and teaches not to hurry when reciting.",
+ "world_title": "Fingertips Restored",
+ "environment_concept": "A pattern of fingertip whorls in light on a stone (75:4).",
+ "architecture_and_scenery": "Abstract sculpture of a hand made of light (no person), and a gentle path.",
+ "palette": {
+  "colors": [
+   "#efe6d2",
+   "#c9a46a"
+  ],
+  "lighting": "Soft light",
+  "atmosphere": "Calm"
+ },
+ "areas": [
+  {
+   "name": "Fingertips",
+   "reference": "75:4",
+   "anchor_phrase": "fingertips",
+   "description": "A fingerprint pattern in light."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Fingerprint",
+   "reference": "75:4",
+   "description": "Find four glowing whorls around the stone.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  },
+  {
+   "name": "Do not rush",
+   "reference": "75:16-18",
+   "description": "Recite slowly.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "The Day is not shown.",
+ "learning_objectives": [
+  "Explain 75:4",
+  "Explain 75:16-19"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "75:4",
+   "anchor_phrase": "fingertips",
+   "element": "Fingertips"
+  }
+ ],
+ "required_assets": [
+  "Light sculpture"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (fingerprint, stones) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "75:4",
+  "75:16-18"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Hall of Reflection",
+  "quran_references": [
+   "75:1–40"
+  ],
+  "primary_mechanic": {
+   "kind": "time-and-memory-hall",
+   "engine": "not built yet",
+   "text": "Arrange objects of a day you lived into a timeline and reflect on choices (75:14-15)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Day of Resurrection",
+  "quran_references": [
+   "75:1–40"
+  ],
+  "children_narration": "Surah Al-Qiyamah reminds us that life is meaningful and that we will return to Allah. It invites people to reflect on their choices and consider the life to come. It also reminds us of Allah's power to create and resurrect.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Hall of Reflection",
+   "description": "Explore symbolic architecture built around time, memory, and responsibility. Do not portray the actual Day of Resurrection."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "Resurrection is not pictured.",
+  "status": "draft, unreviewed"
+ }
+}

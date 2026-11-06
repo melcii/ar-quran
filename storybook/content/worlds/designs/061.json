@@ -1,0 +1,138 @@
+{
+ "surah": 61,
+ "name": {
+  "transliterated": "Aṣ-Ṣaff",
+  "meaning": "The Ranks"
+ },
+ "ayah_count": 14,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Doing what you say",
+  "Unity",
+  "Supporting Allah's cause"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "As-Saff means The Ranks. It tells us to do what we say, praises believers united like a solid structure, and mentions Isa's disciples as supporters of Allah.",
+ "world_title": "Ranks Like a Structure",
+ "environment_concept": "A wall of tightly joined stones (61:4).",
+ "architecture_and_scenery": "Stone wall building site, a field.",
+ "palette": {
+  "colors": [
+   "#c9a46a",
+   "#7a8f68",
+   "#3f6d8f"
+  ],
+  "lighting": "Bright day",
+  "atmosphere": "Calm"
+ },
+ "areas": [
+  {
+   "name": "Firm Structure",
+   "reference": "61:4",
+   "anchor_phrase": "single structure",
+   "description": "A wall of tightly joined stones."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Build together",
+   "reference": "61:4",
+   "description": "Carry six stones to build one firm wall.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  },
+  {
+   "name": "Say and do",
+   "reference": "61:2-3",
+   "description": "Match promises to actions.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "No prophet shown.",
+ "learning_objectives": [
+  "Explain 61:2-3",
+  "Explain unity"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "61:4",
+   "anchor_phrase": "single structure",
+   "element": "Firm Structure"
+  }
+ ],
+ "required_assets": [
+  "Wall",
+  "Field"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (village, wall) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "61:2-3",
+  "61:4"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Workshop of Commitment",
+  "quran_references": [
+   "61:2–4",
+   "61:6",
+   "61:10–14"
+  ],
+  "primary_mechanic": {
+   "kind": "wall-of-ranks",
+   "engine": "not built yet",
+   "text": "Build a solid wall with a team, each block placed when promised (61:2-4)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "Standing Together",
+  "quran_references": [
+   "61:2–4",
+   "61:6",
+   "61:10–14"
+  ],
+  "children_narration": "Surah As-Saff reminds us that our words and actions should agree. If we promise something good, we should try our best to do it. It also recalls Isa's message and encourages believers to support truth.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Workshop of Commitment",
+   "description": "Children work with a team of friendly fictional characters to complete a shared community project, learning that cooperation requires keeping promises."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

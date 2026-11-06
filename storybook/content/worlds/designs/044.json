@@ -1,0 +1,174 @@
+{
+ "surah": 44,
+ "name": {
+  "transliterated": "Ad-Dukhān",
+  "meaning": "The Smoke"
+ },
+ "ayah_count": 59,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "The Quran revealed on a blessed night",
+  "Warnings",
+  "What people leave behind"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Leaving Egypt",
+   "reference": "44:17-31",
+   "anchor_phrase": "sea"
+  }
+ ],
+ "summary_for_children": "Ad-Dukhan means The Smoke. It says the Quran was sent down on a blessed night and tells how Pharaoh's people left behind gardens and springs when Allah saved the Children of Israel.",
+ "world_title": "The Still Sea and Abandoned Gardens",
+ "environment_concept": "A calm blessed night (44:3), a sea lying still (44:24) and gardens and springs left behind (44:25).",
+ "architecture_and_scenery": "Night sky, a stilled sea, gardens and springs left empty, noble dwellings and fields.",
+ "palette": {
+  "colors": [
+   "#1c2541",
+   "#6f8f4a",
+   "#3f6d8f",
+   "#d9c48f"
+  ],
+  "lighting": "Night, then grey smoky light, then calm",
+  "atmosphere": "Silence, still sea"
+ },
+ "areas": [
+  {
+   "name": "Blessed Night",
+   "reference": "44:3",
+   "anchor_phrase": "blessed night",
+   "description": "A calm night sky."
+  },
+  {
+   "name": "The Still Sea",
+   "reference": "44:24",
+   "anchor_phrase": "stillness",
+   "description": "A sea lying perfectly still."
+  },
+  {
+   "name": "Left-behind Gardens",
+   "reference": "44:25",
+   "anchor_phrase": "gardens and springs",
+   "description": "Empty gardens and springs."
+  }
+ ],
+ "activities": [
+  {
+   "name": "What stays",
+   "reference": "44:25-28",
+   "description": "Find what was left behind and talk about what really lasts (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Night of the Quran",
+   "reference": "44:3",
+   "description": "Light the night sky by reading 44:3.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Gardens and springs",
+   "reference": "44:25",
+   "kind": "find",
+   "description": "Find four fruits still lying in the empty gardens.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "No people shown; narration focuses on what lasts.",
+ "learning_objectives": [
+  "Explain the blessed night",
+  "Retell the escape briefly",
+  "Explain what lasts"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "44:3",
+   "anchor_phrase": "blessed night",
+   "element": "Blessed Night"
+  },
+  {
+   "reference": "44:24",
+   "anchor_phrase": "stillness",
+   "element": "The Still Sea"
+  },
+  {
+   "reference": "44:25",
+   "anchor_phrase": "gardens and springs",
+   "element": "Left-behind Gardens"
+  }
+ ],
+ "required_assets": [
+  "Night sky",
+  "Still sea",
+  "Gardens and springs"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (constellation, disc, orchard, sea, spring) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "44:3",
+  "44:17-31",
+  "44:24",
+  "44:25",
+  "44:25-28"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Valley of Warnings",
+  "quran_references": [
+   "44:10–33"
+  ],
+  "primary_mechanic": {
+   "kind": "left-behind-inventory",
+   "engine": "not built yet",
+   "text": "Count the gardens, springs and fine places a proud people left behind (44:25-27), as a quiet survey."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Warning of the Smoke",
+  "quran_references": [
+   "44:10–33"
+  ],
+  "children_narration": "Surah Ad-Dukhan contains powerful warnings, including the image of smoke, and reminds us of Pharaoh's people and the rescue of the Children of Israel. The message encourages people to take guidance seriously before the opportunity passes.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Valley of Warnings",
+   "description": "Explore an atmospheric landscape with shifting mist, then follow a narrated historical journey through an Egyptian setting and a sea-crossing sequence. Avoid presenting the speculative appearance of the smoke as historical fact."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The smoke (44:10) is not pictured, and the mist in the world is not presented as that smoke.",
+  "status": "draft, unreviewed"
+ }
+}

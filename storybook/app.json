@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "Quran Storybook",
+    "slug": "quran-storybook",
+    "scheme": "quranstorybook",
+    "version": "0.1.0",
+    "orientation": "default",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "org.erguvan.quranstorybook"
+    },
+    "android": {
+      "package": "org.erguvan.quranstorybook",
+      "adaptiveIcon": {
+        "backgroundColor": "#F4ECDC",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "output": "single",
+      "bundler": "metro"
+    },
+    "plugins": ["expo-router", "expo-audio", "expo-font"],
+    "experiments": {
+      "baseUrl": ""
+    }
+  }
+}

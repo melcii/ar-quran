@@ -1,0 +1,208 @@
+{
+ "surah": 17,
+ "name": {
+  "transliterated": "Al-Isrā’",
+  "meaning": "The Night Journey"
+ },
+ "ayah_count": 111,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "The night journey",
+  "Kindness to parents",
+  "Honesty in measure",
+  "Everything glorifies Allah"
+ ],
+ "narrative_passages": [
+  {
+   "title": "The night journey",
+   "reference": "17:1",
+   "anchor_phrase": "Aqsa"
+  },
+  {
+   "title": "Iblis refuses",
+   "reference": "17:61-65",
+   "anchor_phrase": "Iblees"
+  }
+ ],
+ "summary_for_children": "Al-Isra begins with the night journey to al-Masjid al-Aqsa and gives guidance: honour parents, be honest, and know that everything glorifies Allah.",
+ "world_title": "The Night of Light and Guidance",
+ "environment_concept": "A path of lamps through the night (17:1: nothing of the journey is depicted), two signs, the sun and the moon (17:12), a family courtyard (17:23) and a market with honest scales (17:35).",
+ "architecture_and_scenery": "A path of lamps across a moonlit land, a domed mosque far off, a family courtyard, a market.",
+ "palette": {
+  "colors": [
+   "#101a33",
+   "#c9a95c",
+   "#3a4f7a",
+   "#e9e2cf"
+  ],
+  "lighting": "Moonlight and lamplight",
+  "atmosphere": "Quiet, cool night"
+ },
+ "areas": [
+  {
+   "name": "Path of Lamps",
+   "reference": "17:1",
+   "anchor_phrase": "by night",
+   "description": "A path of lamps through the night; nothing of the journey is depicted."
+  },
+  {
+   "name": "Two Signs",
+   "reference": "17:12",
+   "anchor_phrase": "two signs",
+   "description": "Night and day shown as two signs."
+  },
+  {
+   "name": "Courtyard of Parents",
+   "reference": "17:23",
+   "anchor_phrase": "parents",
+   "description": "A family courtyard; no people shown."
+  },
+  {
+   "name": "Full Measure Market",
+   "reference": "17:35",
+   "anchor_phrase": "full measure",
+   "description": "A market with honest scales."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Words for parents",
+   "reference": "17:23-24",
+   "description": "Choose gentle words to say to parents.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Honest measure",
+   "reference": "17:35",
+   "description": "Carry the weights to the scale and give full measure.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  }
+ ],
+ "narration_plan": "The narrator reads 17:1 and explains only what the Quran states about the journey.",
+ "learning_objectives": [
+  "Retell what 17:1 says",
+  "Know how to speak to parents",
+  "Explain honesty in trade"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "17:1",
+   "anchor_phrase": "by night",
+   "element": "Path of Lamps"
+  },
+  {
+   "reference": "17:12",
+   "anchor_phrase": "two signs",
+   "element": "Two Signs"
+  },
+  {
+   "reference": "17:23",
+   "anchor_phrase": "parents",
+   "element": "Courtyard of Parents"
+  },
+  {
+   "reference": "17:35",
+   "anchor_phrase": "full measure",
+   "element": "Full Measure Market"
+  }
+ ],
+ "required_assets": [
+  "Lamp path",
+  "Distant mosque silhouette",
+  "Family courtyard",
+  "Market scales"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (house, lamps, market, sunMoon) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "17:1",
+  "17:12",
+  "17:23",
+  "17:23-24",
+  "17:35",
+  "17:61-65"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "A small town at night with five streets, dark lamps that light one by one, houses, a bakery and a market stall",
+  "quran_references": [
+   "17:1 (read only)",
+   "17:23-24",
+   "17:26",
+   "17:27",
+   "17:35",
+   "17:37",
+   "17:70",
+   "17:9"
+  ],
+  "primary_mechanic": {
+   "kind": "command-streets",
+   "engine": "streets",
+   "text": "A night town where each street holds one guideline of 17:23-37 as a hands-on act: carry a neighbour's basket home, take bread to three doors, close running taps, fill a measure to the line without spilling, walk the long street calmly. Each lamp lights when done."
+  },
+  "secondary_activities": [
+   "the Night Journey reading (17:1, read only)",
+   "honour of the children of Adam (17:70)"
+  ],
+  "narrative_structure": "Gate tablet, then the five streets in any order, then the lantern in the middle of town",
+  "world_assets": [
+   "street lamps that light",
+   "basket, bread, running taps",
+   "grain stall and measure",
+   "houses and doors"
+  ],
+  "environment_behaviour": [
+   "night sky; each lit lamp throws warm light on its street",
+   "water runs from open taps until closed",
+   "grain spills over the measure if poured too long"
+  ],
+  "learning_objective": "Practise the conduct of 17:23-37: kindness to parents, giving, not wasting, fair measure, humility",
+  "interaction_tests": {
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: picked up the basket and left it at the door with the on-screen buttons)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: the first street lamp lights)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Lamps lit: 1 of 5\" and the done narration)",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: streets lit: [0,1,2,3,4]; the measure was poured with the hold button (0 spills))",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"journey\",\"town\",\"honour\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w017.ts"
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Journey and the Book of Good Conduct",
+  "quran_references": [
+   "17:1",
+   "17:23–39",
+   "17:70"
+  ],
+  "children_narration": "Surah Al-Isra begins by telling us about the Night Journey of Prophet Muhammad, from the Sacred Mosque to the Farthest Mosque. The surah then teaches important lessons about living well. We should treat our parents kindly, care for people in need, avoid wastefulness, speak responsibly, and never act arrogantly. These teachings remind us that kindness is something we practice every day, through both our words and our actions.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The City of Good Choices",
+   "description": "A beautifully designed nighttime city with interactive community situations. Children make decisions about generosity, respectful speech, family kindness, and avoiding waste. The Night Journey itself is introduced through Quran reading and respectful narration, without depicting the Prophet or inventing unseen events."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The Night Journey (17:1) is a reading only. The Prophet, al-Buraq and the journey are not shown.",
+  "status": "draft, unreviewed"
+ }
+}

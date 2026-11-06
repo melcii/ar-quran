@@ -1,0 +1,176 @@
+{
+ "surah": 33,
+ "name": {
+  "transliterated": "Al-Aḥzāb",
+  "meaning": "The Combined Forces"
+ },
+ "ayah_count": 73,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "The Prophet as the best example",
+  "Steadfastness",
+  "Good character for men and women",
+  "The trust"
+ ],
+ "narrative_passages": [
+  {
+   "title": "The armies and the wind",
+   "reference": "33:9-27",
+   "anchor_phrase": "wind"
+  }
+ ],
+ "summary_for_children": "Al-Ahzab means The Confederates. It recalls how armies gathered against the believers and Allah sent a wind against them. It says the Prophet Muhammad (peace be upon him) is the best example and describes qualities of believing men and women.",
+ "world_title": "The Trench and the Excellent Example",
+ "environment_concept": "Wind sweeping through empty tents (33:9) and mountains that stand for the trust (33:72, symbolic).",
+ "architecture_and_scenery": "Low mud-brick houses, a long defensive trench, a windy plain, and a mountain range rejecting a heavy trust.",
+ "palette": {
+  "colors": [
+   "#c9a46a",
+   "#6b5a4a",
+   "#8a9aaa",
+   "#efe6d2"
+  ],
+  "lighting": "Cold wind and dust, then clear sky",
+  "atmosphere": "Strong wind, sand"
+ },
+ "areas": [
+  {
+   "name": "The Windy Plain",
+   "reference": "33:9",
+   "anchor_phrase": "wind",
+   "description": "Wind sweeping through empty tents; no one is shown."
+  },
+  {
+   "name": "Mountains of the Trust",
+   "reference": "33:72",
+   "anchor_phrase": "mountains",
+   "description": "Mountains that declined to bear the trust: symbolic."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Qualities wall",
+   "reference": "33:35",
+   "description": "Carry five stones to build a wall of good qualities.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  },
+  {
+   "name": "Remember often",
+   "reference": "33:41-42",
+   "description": "Light lamps morning and evening by reading the ayah.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration focuses on character and steadfastness; the Prophet (peace be upon him) and his companions are never shown or voiced.",
+ "learning_objectives": [
+  "Explain why the Prophet (peace be upon him) is the best example",
+  "List qualities in 33:35",
+  "Explain the trust"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "33:9",
+   "anchor_phrase": "wind",
+   "element": "The Windy Plain"
+  },
+  {
+   "reference": "33:72",
+   "anchor_phrase": "mountains",
+   "element": "Mountains of the Trust"
+  }
+ ],
+ "required_assets": [
+  "Mud-brick town",
+  "Trench",
+  "Windy plain",
+  "Mountains"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (mountain, tents, wind) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "33:9",
+  "33:9-27",
+  "33:35",
+  "33:41-42",
+  "33:72"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "A sunny mason's yard with a short wall on a sloping footing, a plumb line, a level and piles of shaped stones",
+  "quran_references": [
+   "33:21",
+   "33:70-71",
+   "33:41-42",
+   "33:35"
+  ],
+  "primary_mechanic": {
+   "kind": "plumb-wall",
+   "engine": "plumb",
+   "text": "Lay a wall course by course from piles of stones: some are thicker on one side and tip the wall, some are flat. The footing slopes, so the wall starts leaning. Watch the plumb line and the level; if the wall leans too far the top stone slides off. Finish with the wall standing true, a picture of straight, sound words (33:70)."
+  },
+  "secondary_activities": [
+   "an excellent example (33:21, read only)",
+   "remembering Allah morning and afternoon (33:41-42)",
+   "good qualities of men and women (33:35)"
+  ],
+  "narrative_structure": "The sign, the wall, then two readings",
+  "world_assets": [
+   "sloping footing and wall courses",
+   "plumb line on a post",
+   "level with a bubble",
+   "four stone piles"
+  ],
+  "environment_behaviour": [
+   "each course tips by its stone; the level bubble and the lean in the status line follow it",
+   "a stone that tips the wall too far slides off"
+  ],
+  "learning_objective": "Connect \"straight words\" (33:70-71) with something you can see stand true",
+  "interaction_tests": {
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: picked up a stone and laid it on the wall with the on-screen buttons)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: a second left-thick stone tipped the wall past the limit and slid off; a big right-thick stone brought it back to true)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Courses laid: 1 of 5 · the wall is leaning 6° to the right\"; the plumb line and the level bubble show the lean)",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: wall finished true; slid off [1])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"pattern\",\"wall\",\"remember\",\"qualities\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w033.ts"
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The City That Stood Together",
+  "quran_references": [
+   "33:9–27",
+   "33:35",
+   "33:53–59"
+  ],
+  "children_narration": "During a difficult period in Madinah, the believers faced an alliance of opposing forces. They experienced fear and uncertainty, but were reminded to remain steadfast. The surah also teaches about responsibility, sincerity, and respectful community relationships.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The City of Steadfastness",
+   "description": "Explore a historical-style city, organize noncombat community preparations, and discover why cooperation and responsibility matter. No battlefield gameplay or depictions of Prophet Muhammad."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "No battle. The Prophet is not shown. The family rulings (33:53-59) go in an information area for adults.",
+  "status": "draft, unreviewed"
+ }
+}

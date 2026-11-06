@@ -1,0 +1,299 @@
+{
+ "surah": 12,
+ "name": {
+  "transliterated": "Yūsuf",
+  "meaning": "Joseph"
+ },
+ "ayah_count": 111,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "Patience",
+  "Trust in Allah's plan",
+  "Honesty",
+  "Forgiveness",
+  "Planning in times of plenty"
+ ],
+ "narrative_passages": [
+  {
+   "title": "The dream",
+   "reference": "12:4-6",
+   "anchor_phrase": "eleven stars"
+  },
+  {
+   "title": "The well",
+   "reference": "12:8-18",
+   "anchor_phrase": "well"
+  },
+  {
+   "title": "The caravan",
+   "reference": "12:19-22",
+   "anchor_phrase": "company of travelers"
+  },
+  {
+   "title": "The prison and the dreams",
+   "reference": "12:36-42",
+   "anchor_phrase": "prison"
+  },
+  {
+   "title": "The king's dream",
+   "reference": "12:43-49",
+   "anchor_phrase": "seven fat cows"
+  },
+  {
+   "title": "The brothers come to Egypt",
+   "reference": "12:58-93",
+   "anchor_phrase": "brothers"
+  },
+  {
+   "title": "The reunion",
+   "reference": "12:94-101",
+   "anchor_phrase": "raised his parents"
+  }
+ ],
+ "summary_for_children": "Surah Yusuf tells one complete story: Yusuf's dream, his brothers' jealousy, the well, his patience in Egypt and in prison, the storehouses, and his forgiveness when his family is reunited.",
+ "world_title": "Yusuf's Journey: From the Well to the Storehouses",
+ "environment_concept": "Seven connected places follow the surah in order: the night of eleven stars, the well, the caravan road, a house in Egypt, the prison, the storehouses and the reunion hall.",
+ "architecture_and_scenery": "Canaanite hills at night, a stone well, a desert caravan road, an Egyptian house with gardens, a prison courtyard, granaries along the Nile, and a palace hall.",
+ "palette": {
+  "colors": [
+   "#1b2440",
+   "#d9b46a",
+   "#c58a4a",
+   "#6f8a5a",
+   "#f0e2c0"
+  ],
+  "lighting": "Starlight, desert sun, cool interiors, warm palace lamps",
+  "atmosphere": "Night breeze, dusty road, Nile humidity"
+ },
+ "areas": [
+  {
+   "name": "Night of Eleven Stars",
+   "reference": "12:4",
+   "anchor_phrase": "eleven stars",
+   "description": "A hilltop under eleven bright stars, the sun and the moon."
+  },
+  {
+   "name": "The Well",
+   "reference": "12:15",
+   "anchor_phrase": "well",
+   "description": "A deep stone well in the wilderness."
+  },
+  {
+   "name": "Caravan Road",
+   "reference": "12:19",
+   "anchor_phrase": "company of travelers",
+   "description": "A desert road with a passing caravan's tracks."
+  },
+  {
+   "name": "The Prison",
+   "reference": "12:36",
+   "anchor_phrase": "prison",
+   "description": "A prison courtyard where dreams are explained."
+  },
+  {
+   "name": "The Storehouses",
+   "reference": "12:47",
+   "anchor_phrase": "spikes",
+   "description": "Granaries where grain is stored in its spikes."
+  },
+  {
+   "name": "The Shirt",
+   "reference": "12:93",
+   "anchor_phrase": "shirt",
+   "description": "A shirt carried home as a sign."
+  },
+  {
+   "name": "Hall of Reunion",
+   "reference": "12:100",
+   "anchor_phrase": "raised his parents",
+   "description": "A palace hall at the end of the journey; no one is shown."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Retell the journey",
+   "reference": "12:4-100",
+   "kind": "journey",
+   "description": "Put the seven places of Yusuf's story in the order the surah tells them, from the dream to the reunion.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "12:4-100",
+   "kind": "match",
+   "description": "Match each place on the road to the ayah it comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Store the harvest",
+   "reference": "12:47-49",
+   "kind": "card",
+   "description": "Over seven years of plenty, store grain in its spikes; then share it through seven hard years.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Carry the sheaves",
+   "reference": "12:47",
+   "kind": "find",
+   "description": "Carry four sheaves of grain to the granary doors, kept in their spikes for the hard years (12:47).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration moves place by place in the Quran's order. Yusuf, his family and all others are never shown or voiced.",
+ "learning_objectives": [
+  "Retell Yusuf's story in order",
+  "Explain how planning helped during hardship",
+  "Talk about forgiveness"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "12:4",
+   "anchor_phrase": "eleven stars",
+   "element": "Night of Eleven Stars"
+  },
+  {
+   "reference": "12:15",
+   "anchor_phrase": "well",
+   "element": "The Well"
+  },
+  {
+   "reference": "12:19",
+   "anchor_phrase": "company of travelers",
+   "element": "Caravan Road"
+  },
+  {
+   "reference": "12:36",
+   "anchor_phrase": "prison",
+   "element": "The Prison"
+  },
+  {
+   "reference": "12:47",
+   "anchor_phrase": "spikes",
+   "element": "The Storehouses"
+  },
+  {
+   "reference": "12:93",
+   "anchor_phrase": "shirt",
+   "element": "The Shirt"
+  },
+  {
+   "reference": "12:100",
+   "anchor_phrase": "raised his parents",
+   "element": "Hall of Reunion"
+  }
+ ],
+ "required_assets": [
+  "Night hilltop and starfield",
+  "Stone well",
+  "Caravan road",
+  "Egyptian house",
+  "Prison courtyard",
+  "Granaries",
+  "Palace hall"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: its own road of seven places (stars, well, caravan, prison, granaries, shirt, hall) and two playable games; carry the sheaves to the granaries (hands-on, in the scene)",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Yusuf.tsx, src/world/ActivityGame.tsx, src/world/scenes/drag.tsx",
+  "tested_by": "automated screenshots of the scene and the journey game"
+ },
+ "quran_references": [
+  "12:4",
+  "12:4-100",
+  "12:4-6",
+  "12:8-18",
+  "12:15",
+  "12:19",
+  "12:19-22",
+  "12:36",
+  "12:36-42",
+  "12:43",
+  "12:43-49",
+  "12:47",
+  "12:47-49",
+  "12:58-93",
+  "12:93",
+  "12:94-101",
+  "12:100"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "A river valley in Egypt with seven field strips, a great storehouse, the old well in the desert, the house, the prison walls and the king's hall of columns",
+  "quran_references": [
+   "12:4-6",
+   "12:15",
+   "12:19",
+   "12:21",
+   "12:33",
+   "12:39",
+   "12:43",
+   "12:46",
+   "12:47-49",
+   "12:90",
+   "12:92",
+   "12:111"
+  ],
+  "primary_mechanic": {
+   "kind": "granary-years",
+   "engine": "granary",
+   "text": "Store grain through seven good years and ration it through seven hard ones, as the dream's meaning advised (12:47-49): choose each year how much to eat and whether to keep it in the ear; if the store runs short, plan the good years again."
+  },
+  "secondary_activities": [
+   "reading places along the story: the dream, the well, the house, the prison, the king's hall",
+   "forgiveness reading at the end (12:92)"
+  ],
+  "narrative_structure": "Story places in order (dream, well, house, prison, king's dream), then the fourteen storehouse years, then the reunion reading",
+  "world_assets": [
+   "seven field strips that ripen, are cut, dry and turn green again",
+   "storehouse with stacks of sheaves (in the ear) and sacks (threshed)",
+   "tally board",
+   "river boats"
+  ],
+  "environment_behaviour": [
+   "one field ripens each good year; all fields dry in the hard years and turn green after sowing",
+   "the stacks in front of the storehouse grow and shrink with the store"
+  ],
+  "learning_objective": "Plan ahead and eat only a little in times of plenty, as Yusuf advised (12:47-48); patience and forgiveness (12:92)",
+  "interaction_tests": {
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: cut the first field and open the storehouse panel with the on-screen buttons)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: year 1 stored ([0]), the stack and the status line update)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status line: \"Good year 2 of 7 · In store: …\")",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: storehouse years done: [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"dream\",\"well\",\"house\",\"prison\",\"king\",\"years\",\"together\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)",
+   "shortage_path": "pass (threshing every year ran short at hard year 4; the years restarted: prog [])"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w012.ts"
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Dream That Came True",
+  "quran_references": [
+   "12:4–101"
+  ],
+  "children_narration": "When Yusuf was young, he dreamed that eleven stars, the sun, and the moon were bowing to him. His father, Ya'qub, recognized that the dream was important. But Yusuf's brothers became jealous and left him in a well. Travelers later took him to Egypt, where he faced many difficult experiences. Even when he was imprisoned unjustly, Yusuf remained patient and faithful. Allah gave Yusuf wisdom and the ability to interpret dreams. Eventually, he was entrusted with responsibility over Egypt's storehouses. Years later, when his brothers came seeking food, Yusuf chose forgiveness instead of revenge. His family was reunited, and the meaning of his childhood dream became clear.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Journey of Yusuf",
+   "description": "Seven interconnected chapters: the dream, the well, the caravan, the Egyptian household, the prison, the grain storehouses, and reunion. Children can learn about planning by organizing grain for the years of hardship."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "Yusuf, his father and brothers are never shown, and the player never plays Yusuf. The well, caravan, household and prison are places with readings. The household episode (12:23-32) is kept to a reading suitable for the age group, to be checked by reviewers.",
+  "status": "draft, unreviewed"
+ }
+}

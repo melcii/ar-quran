@@ -1,0 +1,175 @@
+{
+ "surah": 8,
+ "name": {
+  "transliterated": "Al-Anfāl",
+  "meaning": "The Spoils of War"
+ },
+ "ayah_count": 75,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Unity",
+  "Reliance on Allah",
+  "Preferring peace",
+  "Responsibility"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Rain before the day of Badr",
+   "reference": "8:11",
+   "anchor_phrase": "rain by which to purify"
+  }
+ ],
+ "summary_for_children": "Al-Anfal speaks to believers about trust in Allah, staying united, not quarrelling, and choosing peace when it is offered.",
+ "world_title": "The Field of Steady Hearts",
+ "environment_concept": "A field where rain falls and the sand grows firm (8:11), a circle of stones that glows (8:2) and a green hill of peace (8:61).",
+ "architecture_and_scenery": "Open plain with wells, low dunes, a camp of plain tents and a hill to look from. No battle is shown.",
+ "palette": {
+  "colors": [
+   "#c8b48a",
+   "#6d7f8c",
+   "#3a4a5a",
+   "#efe8d8"
+  ],
+  "lighting": "Overcast turning to rain, then clear",
+  "atmosphere": "Soft rain, damp earth"
+ },
+ "areas": [
+  {
+   "name": "Field of Rain",
+   "reference": "8:11",
+   "anchor_phrase": "feet",
+   "description": "Rain falls and the sand firms under the child's feet."
+  },
+  {
+   "name": "Circle of Hearts",
+   "reference": "8:2",
+   "anchor_phrase": "hearts",
+   "description": "A circle of stones that glows when 8:2 is read."
+  },
+  {
+   "name": "Hill of Peace",
+   "reference": "8:61",
+   "anchor_phrase": "peace",
+   "description": "A hill where a white banner of peace lifts in the breeze."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Walk on firm ground",
+   "reference": "8:11",
+   "description": "Carry rain clouds over the dry sand; the ground turns firm and green.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  },
+  {
+   "name": "Don't quarrel",
+   "reference": "8:46",
+   "description": "Solve a teamwork puzzle that only works when every piece cooperates.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "History is told as explanation, clearly labelled; no fighting is shown.",
+ "learning_objectives": [
+  "Explain why unity matters",
+  "Know that Allah's help comes with patience",
+  "Value peace"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "8:11",
+   "anchor_phrase": "feet",
+   "element": "Field of Rain"
+  },
+  {
+   "reference": "8:2",
+   "anchor_phrase": "hearts",
+   "element": "Circle of Hearts"
+  },
+  {
+   "reference": "8:61",
+   "anchor_phrase": "peace",
+   "element": "Hill of Peace"
+  }
+ ],
+ "required_assets": [
+  "Plain with wells",
+  "Rain system",
+  "Stone circle",
+  "Banner"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (mountain, stones) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "8:2",
+  "8:11",
+  "8:46",
+  "8:61"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "adventure_world": {
+  "title": "The Camp of Cooperation",
+  "route": "/adventure/8",
+  "built_in": "src/adventure/worlds/w008.ts (engine: src/adventure/)",
+  "source": "\"Quran Adventure: First 10 Unique Worlds\" with the rule \"114 unique game experiences\" (2026-11-04); replaces the first adventure version built from the earlier design table",
+  "status": "second version built for the web: each world now has its own core mechanic; draft, unreviewed; checked in headless Chromium with software WebGL only, not on phones or real GPUs",
+  "note": "The new-look adventure world for this surah. It is a separate design from the composed scene this record describes; both are kept until reviewers choose.",
+  "core_play": "A planning puzzle: route rain water from the spring through channels and gates so every cistern fills and little is wasted. A wrong plan is not a failure: the spring refills and you try again."
+ },
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "Grey rainy camp with channels and cisterns",
+  "quran_references": [
+   "8:1",
+   "8:11",
+   "8:63"
+  ],
+  "primary_mechanic": {
+   "kind": "water-gates",
+   "engine": "flow",
+   "text": "Open a sluice and turn gates in time so rain water fills three cisterns without spilling (8:11)."
+  },
+  "secondary_activities": [
+   "unity quiz",
+   "readings"
+  ],
+  "narrative_structure": "Camp loop",
+  "world_assets": [
+   "sluice",
+   "gates",
+   "cisterns",
+   "channels"
+  ],
+  "environment_behaviour": [
+   "rain simulation fills channels",
+   "spill counter"
+  ],
+  "learning_objective": "Cooperation and setting things right between people (8:1, 8:63)",
+  "interaction_tests": {
+   "activate": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
+   "responds": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
+   "feedback": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
+   "goal": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
+   "completion": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
+   "saved": "untested (save is written; reload not re-checked in the 7-point run)",
+   "devices": "untested (desktop headless only; not run in phone emulation)"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w008.ts"
+ }
+}

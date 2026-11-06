@@ -1,0 +1,241 @@
+{
+ "surah": 28,
+ "name": {
+  "transliterated": "Al-Qaṣaṣ",
+  "meaning": "The Stories"
+ },
+ "ayah_count": 88,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "Trust in Allah's promise",
+  "Helping the weak",
+  "Asking Allah in need",
+  "Wealth does not save"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Placed in the river",
+   "reference": "28:7-13",
+   "anchor_phrase": "river"
+  },
+  {
+   "title": "Flight to Madyan",
+   "reference": "28:20-22",
+   "anchor_phrase": "Madyan"
+  },
+  {
+   "title": "The well of Madyan",
+   "reference": "28:23-28",
+   "anchor_phrase": "well of Madyan"
+  },
+  {
+   "title": "Fire at the mount",
+   "reference": "28:29-35",
+   "anchor_phrase": "fire"
+  },
+  {
+   "title": "Qarun's treasure",
+   "reference": "28:76-82",
+   "anchor_phrase": "Qarun"
+  }
+ ],
+ "summary_for_children": "Al-Qasas means The Stories. It tells how Musa's mother placed him in the river trusting Allah, how he grew up, helped two women at the well of Madyan, and was later called at the mount. It ends with Qarun, whose great wealth could not save him.",
+ "world_title": "From the River to Madyan",
+ "environment_concept": "Reeds and calm water (28:7), the well of Madyan with flocks waiting (28:23), a tree's shade (28:24), a fire seen from the road (28:29) and a treasure house sinking into the ground (28:81).",
+ "architecture_and_scenery": "A river with reeds, a palace on its bank, a desert crossing, the well of Madyan with flocks, a shady tree, a mount with fire, and a sinking treasure house.",
+ "palette": {
+  "colors": [
+   "#3f6d7a",
+   "#d8c39a",
+   "#6f8a5a",
+   "#e0a050",
+   "#8c5a3a"
+  ],
+  "lighting": "River blue at dawn, desert noon, fire glow at night",
+  "atmosphere": "River reeds, flocks bleating, desert wind"
+ },
+ "areas": [
+  {
+   "name": "The River",
+   "reference": "28:7",
+   "anchor_phrase": "river",
+   "description": "Reeds and calm water."
+  },
+  {
+   "name": "Well of Madyan",
+   "reference": "28:23",
+   "anchor_phrase": "well of Madyan",
+   "description": "A well with flocks waiting their turn."
+  },
+  {
+   "name": "The Shade",
+   "reference": "28:24",
+   "anchor_phrase": "shade",
+   "description": "A tree's shade after a long journey."
+  },
+  {
+   "name": "Fire on the Mount",
+   "reference": "28:29",
+   "anchor_phrase": "fire",
+   "description": "A fire seen from the road at night."
+  },
+  {
+   "name": "Swallowed Treasure House",
+   "reference": "28:81",
+   "anchor_phrase": "swallow",
+   "description": "A house of treasure sinking into the ground."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Water the flock",
+   "reference": "28:23-24",
+   "description": "Carry four jars from the well to the trough for the waiting flocks.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  },
+  {
+   "name": "Keys too heavy",
+   "reference": "28:76",
+   "description": "Try to lift Qarun's keys; learn why boasting about wealth is wrong (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration keeps to the ayahs; Musa, his mother, the women at the well and Qarun are never shown or voiced.",
+ "learning_objectives": [
+  "Retell Musa's story in order",
+  "Explain trusting Allah's promise",
+  "Explain why Qarun's wealth did not help"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "28:7",
+   "anchor_phrase": "river",
+   "element": "The River"
+  },
+  {
+   "reference": "28:23",
+   "anchor_phrase": "well of Madyan",
+   "element": "Well of Madyan"
+  },
+  {
+   "reference": "28:24",
+   "anchor_phrase": "shade",
+   "element": "The Shade"
+  },
+  {
+   "reference": "28:29",
+   "anchor_phrase": "fire",
+   "element": "Fire on the Mount"
+  },
+  {
+   "reference": "28:81",
+   "anchor_phrase": "swallow",
+   "element": "Swallowed Treasure House"
+  }
+ ],
+ "required_assets": [
+  "River and reeds",
+  "Palace bank",
+  "Desert road",
+  "Well and flocks",
+  "Night mount with fire",
+  "Treasure house"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (fire, herd, mountain, river, sunken, tree, well) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "28:7",
+  "28:7-13",
+  "28:20-22",
+  "28:23",
+  "28:23-24",
+  "28:23-28",
+  "28:24",
+  "28:29",
+  "28:29-35",
+  "28:76",
+  "28:76-82",
+  "28:81"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "A river running down from the hills, splitting twice into channels that end in a quiet landing or a reed marsh, with palms and olives on the banks",
+  "quran_references": [
+   "28:7",
+   "28:11-13",
+   "28:22-24",
+   "28:77",
+   "28:79",
+   "28:80",
+   "28:83"
+  ],
+  "primary_mechanic": {
+   "kind": "river-chest",
+   "engine": "river",
+   "text": "Let an empty chest go at the top of the river and follow it along the bank. At each fork, move a bundle of reeds to close one channel so the chest takes the way to the quiet landing, and nudge it free where it catches on the bank. A wrong channel ends in a reed marsh and the chest is brought back to try again. Nobody rides in the chest; Musa, his mother and his sister are not shown, and the story is read (28:7, 28:11-13)."
+  },
+  "secondary_activities": [
+   "the well of Madyan (28:22-24)",
+   "Qarun and his treasure (28:77, 79, 80, 83)"
+  ],
+  "narrative_structure": "The promise to Musa's mother, the chest on the river, then two readings",
+  "world_assets": [
+   "branching river with two reed gates",
+   "floating wooden chest",
+   "snag rocks",
+   "landing stone"
+  ],
+  "environment_behaviour": [
+   "the chest floats with the current and bobs on the water",
+   "reed bundles visibly close the channel they block",
+   "the chest stops at snags until nudged"
+  ],
+  "learning_objective": "Learn how Allah kept His promise to Musa's mother (28:7, 28:13), and the lessons of Madyan and Qarun",
+  "interaction_tests": {
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: let the chest go with the on-screen button; it floats with the current)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: with the reeds at their start the chest drifted into the reed marsh and came back; after moving both reed bundles it took the other channels (gates [1,0]) and was nudged free 2 times)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: hints: \"The chest drifted into the reed marsh…\", \"The chest has caught on the bank…\"; status: \"The chest is coming to a fork: are the reeds set?\")",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: landed; marsh tries [0])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"promise\",\"chest\",\"madyan\",\"qarun\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w028.ts"
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "Musa's Journey and Qarun",
+  "quran_references": [
+   "28:3–46",
+   "28:76–82"
+  ],
+  "children_narration": "Musa was born during a dangerous time, but Allah protected him. His mother placed him in a chest on the river, and he was eventually returned to her. As Musa grew older, he traveled to Madyan and later received his prophetic mission. The surah also tells of Qarun, whose great wealth made him proud.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The River, the Well, and the Treasure",
+   "description": "Follow the chest's path along a river, explore Madyan's water source, and examine a symbolic wealth-and-gratitude challenge connected to Qarun's story."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "Musa and his mother are not shown. The chest floats empty in the game, labelled as an adaptation. The killing in 28:15 is reading only. Qarun's fate (28:81) is narrated only.",
+  "status": "draft, unreviewed"
+ }
+}

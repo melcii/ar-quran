@@ -1,0 +1,168 @@
+{
+ "surah": 86,
+ "name": {
+  "transliterated": "Aṭ-Ṭāriq",
+  "meaning": "The Nightcommer"
+ },
+ "ayah_count": 17,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "Every soul has a guardian",
+  "The Quran is decisive"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "At-Tariq means The Night Comer, the piercing star. It reminds us every soul is watched over and swears by the sky that returns rain and the earth that cracks open.",
+ "world_title": "The Piercing Star",
+ "environment_concept": "A clear night with one star brighter than the rest, its light sharp and piercing (86:3). Further on, a small cloud keeps returning rain onto a patch of ground (86:11), where the earth cracks open and sprouts push through (86:12). No person is shown.",
+ "architecture_and_scenery": "A bright star with rays, a rain cloud with falling drops, cracked earth with sprouts.",
+ "palette": {
+  "colors": [
+   "#0f1a33",
+   "#f0f0ff",
+   "#6f8f4a"
+  ],
+  "lighting": "Night, piercing star",
+  "atmosphere": "Rain"
+ },
+ "areas": [
+  {
+   "name": "Piercing Star",
+   "reference": "86:3",
+   "anchor_phrase": "piercing star",
+   "description": "One very bright star with sharp rays."
+  },
+  {
+   "name": "Returning Rain",
+   "reference": "86:11",
+   "anchor_phrase": "returns",
+   "description": "A small cloud that keeps returning rain."
+  },
+  {
+   "name": "Cracking Earth",
+   "reference": "86:12",
+   "anchor_phrase": "cracks open",
+   "description": "Ground cracking open as sprouts push through."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Read the first four",
+   "reference": "86:1-4",
+   "kind": "order",
+   "description": "Put the first four ayahs of At-Tariq in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "86:3-12",
+   "kind": "match",
+   "description": "Match the star, the rain and the cracked earth to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "A protector over every soul",
+   "reference": "86:4",
+   "kind": "card",
+   "description": "Talk about how Allah knows and looks after every person.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration calm.",
+ "learning_objectives": [
+  "Explain 86:11-12"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "86:3",
+   "anchor_phrase": "piercing star",
+   "element": "Piercing Star"
+  },
+  {
+   "reference": "86:11",
+   "anchor_phrase": "returns",
+   "element": "Returning Rain"
+  },
+  {
+   "reference": "86:12",
+   "anchor_phrase": "cracks open",
+   "element": "Cracking Earth"
+  }
+ ],
+ "required_assets": [
+  "Starry terrain (shared)",
+  "Bright star",
+  "Rain cloud and drops",
+  "Cracked earth and sprouts"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: its own scene (a piercing star, returning rain and earth cracking with sprouts) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Tariq.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
+ },
+ "quran_references": [
+  "86:1-4",
+  "86:3",
+  "86:3-12",
+  "86:4",
+  "86:11",
+  "86:12"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Piercing Star Observatory",
+  "quran_references": [
+   "86:1–17"
+  ],
+  "primary_mechanic": {
+   "kind": "piercing-star",
+   "engine": "not built yet",
+   "text": "Find the brightest star through clouds with a star finder (86:1-3)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Night Visitor",
+  "quran_references": [
+   "86:1–17"
+  ],
+  "children_narration": "On a clear night, a bright star can catch our attention. Surah At-Tariq begins with an oath by the sky and the night visitor, described as a piercing star. The surah reminds us of human creation and Allah's knowledge.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Piercing Star Observatory",
+   "description": "Explore a night-sky learning environment and investigate stars, light, and human development through carefully separated educational exhibits."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

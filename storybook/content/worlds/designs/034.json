@@ -1,0 +1,221 @@
+{
+ "surah": 34,
+ "name": {
+  "transliterated": "Saba’",
+  "meaning": "Sheba"
+ },
+ "ayah_count": 54,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "Gratitude for blessings",
+  "Ingratitude and its result",
+  "Craft as a gift from Allah"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Dawud and the iron",
+   "reference": "34:10-11",
+   "anchor_phrase": "iron"
+  },
+  {
+   "title": "Sulayman and the copper",
+   "reference": "34:12-14",
+   "anchor_phrase": "copper"
+  },
+  {
+   "title": "The two gardens of Saba",
+   "reference": "34:15-17",
+   "anchor_phrase": "two fields of gardens"
+  }
+ ],
+ "summary_for_children": "Surah Saba tells of Dawud, for whom iron was made soft, and Sulayman, for whom a spring of copper flowed. Then it tells of the people of Saba who had two beautiful gardens but turned away, and lost them in a flood.",
+ "world_title": "Gardens of Saba and the Copper Spring",
+ "environment_concept": "Hills that echo with praise and birds (34:10), a glowing spring of copper (34:12), great basins (34:13), gardens on both sides of a dam (34:15) and a broken one where the trees fell (34:16).",
+ "architecture_and_scenery": "Mountains echoing praise, a forge, a flowing copper spring, great bowls like reservoirs, and the fertile valley of Saba behind a dam.",
+ "palette": {
+  "colors": [
+   "#b87333",
+   "#6f8f4a",
+   "#3d6e8f",
+   "#e9dcc0"
+  ],
+  "lighting": "Warm forge light and green valley sun",
+  "atmosphere": "Echoes in the mountains, water over the dam"
+ },
+ "areas": [
+  {
+   "name": "Mountains of Praise",
+   "reference": "34:10",
+   "anchor_phrase": "mountains",
+   "description": "Hills that echo as if repeating praise."
+  },
+  {
+   "name": "Copper Spring",
+   "reference": "34:12",
+   "anchor_phrase": "copper",
+   "description": "A glowing spring of liquid copper."
+  },
+  {
+   "name": "Great Bowls",
+   "reference": "34:13",
+   "anchor_phrase": "reservoirs",
+   "description": "Bowls like reservoirs and fixed kettles."
+  },
+  {
+   "name": "Gardens of Saba",
+   "reference": "34:15",
+   "anchor_phrase": "two fields of gardens",
+   "description": "Gardens on either side of a valley."
+  },
+  {
+   "name": "Flood of the Dam",
+   "reference": "34:16",
+   "anchor_phrase": "flood of the dam",
+   "description": "The dam breaking and gardens changing to bitter fruit."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Work in gratitude",
+   "reference": "34:13",
+   "description": "Carry four jars to fill the great basins.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  },
+  {
+   "name": "Before and after",
+   "reference": "34:15-16",
+   "description": "Compare the gardens before and after and talk about gratitude.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration keeps prophets unseen and draws the gratitude lesson from the ayahs.",
+ "learning_objectives": [
+  "Retell the people of Saba",
+  "Explain gratitude for blessings",
+  "Name the gifts of Dawud and Sulayman"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "34:10",
+   "anchor_phrase": "mountains",
+   "element": "Mountains of Praise"
+  },
+  {
+   "reference": "34:12",
+   "anchor_phrase": "copper",
+   "element": "Copper Spring"
+  },
+  {
+   "reference": "34:13",
+   "anchor_phrase": "reservoirs",
+   "element": "Great Bowls"
+  },
+  {
+   "reference": "34:15",
+   "anchor_phrase": "two fields of gardens",
+   "element": "Gardens of Saba"
+  },
+  {
+   "reference": "34:16",
+   "anchor_phrase": "flood of the dam",
+   "element": "Flood of the Dam"
+  }
+ ],
+ "required_assets": [
+  "Mountains",
+  "Forge",
+  "Copper spring",
+  "Valley with dam",
+  "Gardens"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (birds, bowls, copper, dam, fallen, mountain) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "34:10",
+  "34:10-11",
+  "34:12",
+  "34:12-14",
+  "34:13",
+  "34:15",
+  "34:15-16",
+  "34:15-17",
+  "34:16"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "A stone dam between two hills holding rain water, with a garden of fruit trees on the left and on the right below it",
+  "quran_references": [
+   "34:10-11",
+   "34:15",
+   "34:16-17"
+  ],
+  "primary_mechanic": {
+   "kind": "dam-sluices",
+   "engine": "sluice",
+   "text": "Through a season of changing rain, open and close the sluice to each garden so both stay green, keep water in the dam, and patch cracks before they drain it. If a garden dries out, that month starts again. The two gardens are from 34:15; the flood (34:16) is read only, never played or shown."
+  },
+  "secondary_activities": [
+   "Dawud and the coats of mail (34:10-11, read only)",
+   "they turned away (34:16-17, read only)"
+  ],
+  "narrative_structure": "The sign, three months at the dam, then a reading",
+  "world_assets": [
+   "stone dam and reservoir",
+   "two sluice gates and channels",
+   "two gardens of fruit trees",
+   "cracks to patch"
+  ],
+  "environment_behaviour": [
+   "the reservoir rises and falls",
+   "water runs down the open channels",
+   "garden ground and trees go from dry to green",
+   "water spills over the side when the dam is full"
+  ],
+  "learning_objective": "Learn about the two gardens of Saba and the call to be grateful (34:15), by sharing water fairly",
+  "interaction_tests": {
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: began the season and opened the left sluice with the on-screen buttons)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: with both sluices shut a garden wilted and the month restarted; then 12 sluice changes and 3 cracks patched)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Month 1 of 3 · 18 s left · dam 52% · left garden 61% · right garden 48%\"; the water level, channels and garden colours change live)",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: months [0,1,2], wilted [0])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"dawud\",\"gardens\",\"turned\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w034.ts"
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Gardens and the Dam",
+  "quran_references": [
+   "34:10–19"
+  ],
+  "children_narration": "Allah gave Dawud and Sulayman remarkable blessings. The people of Saba also enjoyed beautiful gardens and abundant provision. But they were not grateful, and the Quran tells how a flood brought destruction to their gardens. The story reminds us that blessings should be appreciated and never taken for granted.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Gardens of Saba",
+   "description": "Explore two flourishing gardens and a large dam-inspired structure. Watch a narrated environmental transformation connected to the flood, and learn about water stewardship through a separate educational simulation."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The flood of the dam is narrated, not played as destruction. Dawud and Sulayman are not shown.",
+  "status": "draft, unreviewed"
+ }
+}

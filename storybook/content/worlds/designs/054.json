@@ -1,0 +1,205 @@
+{
+ "surah": 54,
+ "name": {
+  "transliterated": "Al-Qamar",
+  "meaning": "The Moon"
+ },
+ "ayah_count": 55,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "The Hour is near",
+  "The Quran is easy to remember",
+  "Warnings ignored"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Nuh and the flood",
+   "reference": "54:9-17",
+   "anchor_phrase": "planks and nails"
+  },
+  {
+   "title": "'Ad and the wind",
+   "reference": "54:18-22",
+   "anchor_phrase": "screaming wind"
+  },
+  {
+   "title": "Thamud and the she-camel",
+   "reference": "54:23-32",
+   "anchor_phrase": "she-camel"
+  }
+ ],
+ "summary_for_children": "Al-Qamar means The Moon. It tells of the moon splitting and of Nuh, 'Ad, Thamud, Lut and Pharaoh, and repeats that Allah made the Quran easy to remember.",
+ "world_title": "Moon Split and the Easy Reminder",
+ "environment_concept": "A full moon over the plain (54:1; the splitting itself is not pictured), pouring rain (54:11), springs bursting from the earth (54:12), a vessel of planks being built (54:13) and palms uprooted by the wind (54:20).",
+ "architecture_and_scenery": "Night sky, a flood plain with a vessel of planks and nails, uprooted palms, a rocky valley with a she-camel's trail.",
+ "palette": {
+  "colors": [
+   "#1c2541",
+   "#3f6d8f",
+   "#8c5a3a",
+   "#c9b090"
+  ],
+  "lighting": "Night with a pale moon, storm light",
+  "atmosphere": "Rain, wind"
+ },
+ "areas": [
+  {
+   "name": "Split Moon",
+   "reference": "54:1",
+   "anchor_phrase": "moon has split",
+   "description": "A moon in two halves."
+  },
+  {
+   "name": "Gates of Rain",
+   "reference": "54:11",
+   "anchor_phrase": "gates of the heaven",
+   "description": "Pouring rain."
+  },
+  {
+   "name": "Springs Bursting",
+   "reference": "54:12",
+   "anchor_phrase": "burst with springs",
+   "description": "Earth bursting with springs."
+  },
+  {
+   "name": "Vessel of Planks",
+   "reference": "54:13",
+   "anchor_phrase": "planks and nails",
+   "description": "A vessel of planks and nails."
+  },
+  {
+   "name": "Uprooted Palms",
+   "reference": "54:20",
+   "anchor_phrase": "palm trees uprooted",
+   "description": "Palms uprooted by wind."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Easy to remember",
+   "reference": "54:17",
+   "description": "Memorise 54:17 by repeating it (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Planks and nails",
+   "reference": "54:13",
+   "description": "Carry four planks to the vessel being built.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  }
+ ],
+ "narration_plan": "Narration repeats the refrain from the surah.",
+ "learning_objectives": [
+  "Explain the refrain 54:17",
+  "Retell three peoples",
+  "Explain the moon sign"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "54:1",
+   "anchor_phrase": "moon has split",
+   "element": "Split Moon"
+  },
+  {
+   "reference": "54:11",
+   "anchor_phrase": "gates of the heaven",
+   "element": "Gates of Rain"
+  },
+  {
+   "reference": "54:12",
+   "anchor_phrase": "burst with springs",
+   "element": "Springs Bursting"
+  },
+  {
+   "reference": "54:13",
+   "anchor_phrase": "planks and nails",
+   "element": "Vessel of Planks"
+  },
+  {
+   "reference": "54:20",
+   "anchor_phrase": "palm trees uprooted",
+   "element": "Uprooted Palms"
+  }
+ ],
+ "required_assets": [
+  "Night sky",
+  "Flood plain",
+  "Vessel",
+  "Windy valley"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (ark, cloud, disc, fallen, spring) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "54:1",
+  "54:9-17",
+  "54:11",
+  "54:12",
+  "54:13",
+  "54:17",
+  "54:18-22",
+  "54:20",
+  "54:23-32"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Moonlit History Atlas",
+  "quran_references": [
+   "54:1–42"
+  ],
+  "primary_mechanic": {
+   "kind": "memory-refrain",
+   "engine": "not built yet",
+   "text": "Remember and repeat the refrain \"We have made the Quran easy to remember\" (54:17) as a memory path between chapters."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Moon and the Warnings",
+  "quran_references": [
+   "54:1–42"
+  ],
+  "children_narration": "Surah Al-Qamar begins with the splitting of the moon as a sign, then recalls communities that rejected the messages sent to them. The stories of Nuh, 'Ad, Thamud, Lut's people, and Pharaoh's people remind us that guidance should not be ignored.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Moonlit History Atlas",
+   "description": "Explore a moonlit observatory connected to separate narrative environments. The opening sign is explained through scripture rather than presented as a scientifically reconstructed event."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The splitting of the moon (54:1) is not animated or reconstructed.",
+  "status": "draft, unreviewed"
+ }
+}

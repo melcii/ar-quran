@@ -1,0 +1,167 @@
+{
+ "surah": 112,
+ "name": {
+  "transliterated": "Al-Ikhlāṣ",
+  "meaning": "The Sincerity"
+ },
+ "ayah_count": 4,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Oneness of Allah",
+  "Allah has no equal"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Ikhlas says Allah is One, the Eternal Refuge, He neither has children nor was born, and nothing is like Him.",
+ "world_title": "The One",
+ "environment_concept": "A quiet courtyard of geometric tiles, a shaded shelter and an open terrace facing an empty sky, where the four ayahs are read. No image, figure or symbol stands for Allah.",
+ "architecture_and_scenery": "Geometric tiled courtyard, a small domed shelter with four columns, and a terrace with a low wall.",
+ "palette": {
+  "colors": [
+   "#f6efe0",
+   "#2f4b6f",
+   "#c9a46a"
+  ],
+  "lighting": "Even, shadowless light",
+  "atmosphere": "Silence"
+ },
+ "areas": [
+  {
+   "name": "The Reading Courtyard",
+   "reference": "112:1",
+   "anchor_phrase": "One",
+   "description": "A courtyard of geometric tiles where the first ayah is read."
+  },
+  {
+   "name": "Eternal Refuge",
+   "reference": "112:2",
+   "anchor_phrase": "Eternal Refuge",
+   "description": "A small shaded shelter to sit and rest in while reading 112:2."
+  },
+  {
+   "name": "Nothing Like Him",
+   "reference": "112:4",
+   "anchor_phrase": "equivalent",
+   "description": "An open terrace looking out at an empty sky. Nothing is shown to stand for Allah."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Read the four",
+   "reference": "112:1-4",
+   "kind": "order",
+   "description": "Put the four ayahs of Al-Ikhlas in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "112:1-4",
+   "kind": "match",
+   "description": "Match the courtyard, the shelter and the terrace to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Nothing compares",
+   "reference": "112:4",
+   "kind": "card",
+   "description": "Talk about why nothing in creation can be compared to Allah.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration explains each ayah plainly; Allah is never depicted.",
+ "learning_objectives": [
+  "Explain tawhid",
+  "Recite 112"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "112:1",
+   "anchor_phrase": "One",
+   "element": "The Reading Courtyard"
+  },
+  {
+   "reference": "112:2",
+   "anchor_phrase": "Eternal Refuge",
+   "element": "Eternal Refuge"
+  },
+  {
+   "reference": "112:4",
+   "anchor_phrase": "equivalent",
+   "element": "Nothing Like Him"
+  }
+ ],
+ "required_assets": [
+  "Morning garden terrain (shared)",
+  "Geometric star tiles",
+  "Domed shelter",
+  "Terrace"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: its own scene (tiled courtyard, shelter, open terrace) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Ikhlas.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and both games"
+ },
+ "quran_references": [
+  "112:1",
+  "112:1-4",
+  "112:2",
+  "112:4"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Chamber of Reflection",
+  "quran_references": [
+   "112:1–4"
+  ],
+  "primary_mechanic": {
+   "kind": "geometry-reading-room",
+   "engine": "not built yet",
+   "text": "A quiet geometric room for reading and learning the surah by heart; no shape stands for Allah (112:1-4)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "Allah Is One",
+  "quran_references": [
+   "112:1–4"
+  ],
+  "children_narration": "Surah Al-Ikhlas teaches us about Allah's absolute oneness. Allah is not dependent on anyone, and nothing is comparable to Him. It is a short surah with a very important message.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Chamber of Reflection",
+   "description": "A minimalist architectural experience with beautiful geometric patterns and a calm reading space. Do not use objects, light, shapes, or effects to represent Allah."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "No shape, light or object stands for Allah.",
+  "status": "draft, unreviewed"
+ }
+}

@@ -1,0 +1,155 @@
+{
+ "surah": 87,
+ "name": {
+  "transliterated": "Al-A‘lā",
+  "meaning": "The Most High"
+ },
+ "ayah_count": 19,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "Glorifying Allah",
+  "Creation and guidance",
+  "Purification"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-A'la means The Most High. It tells us to glorify Allah who created, proportioned and guided, who brings out pasture and turns it dark.",
+ "world_title": "Pasture to Stubble",
+ "environment_concept": "A wide field beside the path: one part fresh green pasture (87:4), and further on the same grass dried to dark stubble (87:5). The field slowly turns from green to dark and grows again, a picture of how short the life of this world is. The Fire of 87:12 is not pictured. No person is shown.",
+ "architecture_and_scenery": "A grass field that changes colour over time, dry stubble rows.",
+ "palette": {
+  "colors": [
+   "#6f8f4a",
+   "#3a3a2a"
+  ],
+  "lighting": "Seasonal light",
+  "atmosphere": "Breeze"
+ },
+ "areas": [
+  {
+   "name": "Pasture",
+   "reference": "87:4",
+   "anchor_phrase": "pasture",
+   "description": "Fresh green grass growing thick."
+  },
+  {
+   "name": "Black Stubble",
+   "reference": "87:5",
+   "anchor_phrase": "stubble",
+   "description": "The same grass dried to dark stubble."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Read the first five",
+   "reference": "87:1-5",
+   "kind": "order",
+   "description": "Put the first five ayahs of Al-A'la in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "87:4-5",
+   "kind": "match",
+   "description": "Match the pasture and the stubble to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "What lasts",
+   "reference": "87:17",
+   "kind": "card",
+   "description": "Talk about which good things last longer than toys and treats.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration calm.",
+ "learning_objectives": [
+  "Explain 87:2-5"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "87:4",
+   "anchor_phrase": "pasture",
+   "element": "Pasture"
+  },
+  {
+   "reference": "87:5",
+   "anchor_phrase": "stubble",
+   "element": "Black Stubble"
+  }
+ ],
+ "required_assets": [
+  "Meadow terrain (shared)",
+  "Changing pasture field",
+  "Stubble rows"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: its own scene (a field that grows green and dries to dark stubble) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Ala.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
+ },
+ "quran_references": [
+  "87:1-5",
+  "87:4",
+  "87:4-5",
+  "87:5",
+  "87:17"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Mountain Meadow",
+  "quran_references": [
+   "87:1–19"
+  ],
+  "primary_mechanic": {
+   "kind": "meadow-cycle",
+   "engine": "not built yet",
+   "text": "Watch pasture grow green then dry to dark stubble (87:4-5) and plant again."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "Remember and Grow",
+  "quran_references": [
+   "87:1–19"
+  ],
+  "children_narration": "The Quran invites us to remember Allah and appreciate His creation. Surah Al-A'la speaks about creation, growth, and guidance. It encourages people to remember what is truly important rather than becoming distracted by temporary things.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Mountain Meadow",
+   "description": "Explore the growth of plants through the seasons and follow a quiet learning path about remembrance and gratitude."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

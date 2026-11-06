@@ -1,0 +1,155 @@
+{
+ "surah": 48,
+ "name": {
+  "transliterated": "Al-Fatḥ",
+  "meaning": "The Victory"
+ },
+ "ayah_count": 29,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Victory from Allah",
+  "Tranquillity",
+  "Loyalty"
+ ],
+ "narrative_passages": [
+  {
+   "title": "The pledge under the tree",
+   "reference": "48:18",
+   "anchor_phrase": "under the tree"
+  }
+ ],
+ "summary_for_children": "Al-Fath means The Victory. It speaks of the believers' pledge under a tree, of tranquillity Allah sent to their hearts, and compares them to a seed that grows strong.",
+ "world_title": "The Tree of the Pledge",
+ "environment_concept": "A single tree on a plain, no one shown (48:18), and a shoot growing strong on its stalk (48:29).",
+ "architecture_and_scenery": "Open plain, a single tree, a field of crops whose shoots grow stronger.",
+ "palette": {
+  "colors": [
+   "#7a9a5a",
+   "#e8d8a8",
+   "#5a6b4a",
+   "#3f6d8f"
+  ],
+  "lighting": "Calm sunrise",
+  "atmosphere": "Tranquil"
+ },
+ "areas": [
+  {
+   "name": "The Tree",
+   "reference": "48:18",
+   "anchor_phrase": "under the tree",
+   "description": "A single tree on a plain; no one shown."
+  },
+  {
+   "name": "Growing Shoot",
+   "reference": "48:29",
+   "anchor_phrase": "plant which produces its offshoots",
+   "description": "A shoot growing strong on its stalk."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Grow the shoot",
+   "reference": "48:29",
+   "description": "Plant three seeds; each sends out a shoot that grows strong.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  },
+  {
+   "name": "Tranquillity",
+   "reference": "48:4",
+   "description": "A breathing game for calm.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "No companions shown; narration from ayahs.",
+ "learning_objectives": [
+  "Explain tranquillity",
+  "Explain the plant example",
+  "Retell the pledge"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "48:18",
+   "anchor_phrase": "under the tree",
+   "element": "The Tree"
+  },
+  {
+   "reference": "48:29",
+   "anchor_phrase": "plant which produces its offshoots",
+   "element": "Growing Shoot"
+  }
+ ],
+ "required_assets": [
+  "Plain",
+  "Tree",
+  "Crop field"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (shoot, tree) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "48:4",
+  "48:18",
+  "48:29"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Road to Hudaybiyyah",
+  "quran_references": [
+   "48:1–29"
+  ],
+  "primary_mechanic": {
+   "kind": "treaty-patience",
+   "engine": "not built yet",
+   "text": "A journey where waiting and restraint open the way: the gate opens only when you stop pushing (48:24-26, narration)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Victory of Peace",
+  "quran_references": [
+   "48:1–29"
+  ],
+  "children_narration": "Sometimes a difficult agreement can lead to a good outcome. Surah Al-Fath speaks about a clear victory associated with the events of Hudaybiyyah. It reminds believers of trust, patience, commitment, and the importance of following guidance.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Road to Hudaybiyyah",
+   "description": "Explore a historical route and a peaceful agreement setting. Use a child-friendly decision activity to learn why resolving conflict can require patience and restraint."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "Hudaybiyyah has no people shown; the route is a landscape. No re-enactment.",
+  "status": "draft, unreviewed"
+ }
+}

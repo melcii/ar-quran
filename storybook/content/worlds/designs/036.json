@@ -1,0 +1,216 @@
+{
+ "surah": 36,
+ "name": {
+  "transliterated": "Yā-Sīn",
+  "meaning": "Ya Sin"
+ },
+ "ayah_count": 83,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "Signs in creation",
+  "Resurrection",
+  "Messengers",
+  "Gratitude"
+ ],
+ "narrative_passages": [
+  {
+   "title": "The town and the man who came running",
+   "reference": "36:13-27",
+   "anchor_phrase": "running"
+  }
+ ],
+ "summary_for_children": "Ya-Sin is called the heart of the Quran. It tells of a town that rejected messengers and a man who came running to support them. It shows signs: dead earth made alive, the night, the sun and moon, and ships at sea.",
+ "world_title": "The Orbiting Night",
+ "environment_concept": "Dead earth that bursts with grain (36:33), palms and springs (36:34), the moon's phases (36:39), a laden ship (36:41) and a green tree with a fire (36:80).",
+ "architecture_and_scenery": "A town with a messenger's road, palm and vine gardens, springs, a shoreline with a laden ship, and a huge night sky.",
+ "palette": {
+  "colors": [
+   "#0f1a33",
+   "#e6d38a",
+   "#6a8f4a",
+   "#3f6d8f"
+  ],
+  "lighting": "Dusk to night to dawn cycle; moon phases",
+  "atmosphere": "Calm night, gentle sea"
+ },
+ "areas": [
+  {
+   "name": "Dead Earth Alive",
+   "reference": "36:33",
+   "anchor_phrase": "dead earth",
+   "description": "Dry land that bursts with grain."
+  },
+  {
+   "name": "Gardens and Springs",
+   "reference": "36:34",
+   "anchor_phrase": "springs",
+   "description": "Palms, vines and springs."
+  },
+  {
+   "name": "Phases of the Moon",
+   "reference": "36:39",
+   "anchor_phrase": "phases",
+   "description": "The moon passing through its phases."
+  },
+  {
+   "name": "Laden Ship",
+   "reference": "36:41",
+   "anchor_phrase": "laden ship",
+   "description": "A ship carrying cargo over calm water."
+  },
+  {
+   "name": "Green Tree Fire",
+   "reference": "36:80",
+   "anchor_phrase": "green tree",
+   "description": "A green tree from which fire is kindled."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Moon phases",
+   "reference": "36:39",
+   "description": "Lay five numbered stones in order, as the moon passes through its stages.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  },
+  {
+   "name": "Orbits",
+   "reference": "36:40",
+   "description": "Keep the sun and moon in their own orbits so neither overtakes.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Pairs",
+   "reference": "36:36",
+   "description": "Bring the animals to their pens in pairs.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  }
+ ],
+ "narration_plan": "Narration follows the signs; the man who came running and the messengers are not shown.",
+ "learning_objectives": [
+  "Name signs in Ya-Sin",
+  "Explain the moon's phases",
+  "Explain resurrection as a sign"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "36:33",
+   "anchor_phrase": "dead earth",
+   "element": "Dead Earth Alive"
+  },
+  {
+   "reference": "36:34",
+   "anchor_phrase": "springs",
+   "element": "Gardens and Springs"
+  },
+  {
+   "reference": "36:39",
+   "anchor_phrase": "phases",
+   "element": "Phases of the Moon"
+  },
+  {
+   "reference": "36:41",
+   "anchor_phrase": "laden ship",
+   "element": "Laden Ship"
+  },
+  {
+   "reference": "36:80",
+   "anchor_phrase": "green tree",
+   "element": "Green Tree Fire"
+  }
+ ],
+ "required_assets": [
+  "Town",
+  "Gardens and springs",
+  "Night sky",
+  "Ship",
+  "Green tree"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (fire, grain, moons, palms, ships, spring, tree) with 2 hands-on activities in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "36:13-27",
+  "36:33",
+  "36:34",
+  "36:36",
+  "36:39",
+  "36:40",
+  "36:41",
+  "36:80"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "A quiet hilltop at night with a calendar board of seven hooks, a rack of painted moon discs, palms and olive trees, and a large moon in the sky",
+  "quran_references": [
+   "36:33-35",
+   "36:39-40",
+   "36:37-38"
+  ],
+  "primary_mechanic": {
+   "kind": "moon-phase-calendar",
+   "engine": "moon",
+   "text": "Each night look up at the moon, choose the painted disc with the same shape (thin or round, lit on the right or the left) and hang it on that night's hook. The nights pass and the sky moon changes, from a thin new crescent to full and back to a thin old crescent like an old date stalk (36:39). A disc that does not match goes back with a hint."
+  },
+  "secondary_activities": [
+   "the dead earth brought to life (36:33-35)",
+   "night and the sun (36:37-38)"
+  ],
+  "narrative_structure": "The sign of the earth, seven nights at the calendar, then the reading on night and the sun",
+  "world_assets": [
+   "calendar board with seven hooks",
+   "rack of seven painted moon discs",
+   "large phase-changing moon in the night sky"
+  ],
+  "environment_behaviour": [
+   "the sky moon changes phase after each correct night",
+   "hung discs stay on the board"
+  ],
+  "learning_objective": "Watch the moon's stages (36:39-40) and learn that each thing in the sky keeps its own orbit",
+  "interaction_tests": {
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: took a disc from the rack and hung it on the night board with the on-screen buttons)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: a full-moon disc on night 1 went back with a hint; matching each night's moon moved the sky moon on to the next night)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Night 1 of 7: look up at the moon and hang the disc that matches\"; the sky moon changes phase each night)",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: nights [0,1,2,3,4,5,6], wrong [0])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"earth\",\"moon\",\"night\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w036.ts"
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The People of the Town",
+  "quran_references": [
+   "36:13–32",
+   "36:33–44"
+  ],
+  "children_narration": "The Quran tells us about a town to which messengers were sent. When the people rejected them, a man came from the farthest part of the city and urged his people to follow the messengers. He showed courage by standing for what he believed was true. The surah then invites us to reflect on the earth, plants, night, day, and the movement of heavenly bodies.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Town and the Turning Sky",
+   "description": "Investigate the town narrative through environmental clues, then explore an interactive astronomy observatory."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The man from the far end of the city (36:20-27) is not shown. His killing is not mentioned in the Quran and is not added.",
+  "status": "draft, unreviewed"
+ }
+}

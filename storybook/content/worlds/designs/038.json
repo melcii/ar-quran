@@ -1,0 +1,197 @@
+{
+ "surah": 38,
+ "name": {
+  "transliterated": "Ṣād",
+  "meaning": "The Letter \"Saad\""
+ },
+ "ayah_count": 88,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "Turning back to Allah",
+  "Justice",
+  "Patience in hardship",
+  "Pride of Iblis"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Dawud's judgement",
+   "reference": "38:21-26",
+   "anchor_phrase": "judge"
+  },
+  {
+   "title": "Ayyub's patience",
+   "reference": "38:41-44",
+   "anchor_phrase": "Job"
+  }
+ ],
+ "summary_for_children": "Surah Sad tells of Dawud and his justice, Sulayman, and Ayyub's patience, and how Iblis refused out of pride.",
+ "world_title": "Mountains That Repeat Praise",
+ "environment_concept": "Hills that echo at sunrise (38:18), birds gathering (38:19) and a cool spring (38:42).",
+ "architecture_and_scenery": "Hills echoing at sunrise and afternoon, a stable yard, a court of judgement, and a spring in rocky ground.",
+ "palette": {
+  "colors": [
+   "#e6cfa0",
+   "#7a8f68",
+   "#3f6d8f",
+   "#c08a4a"
+  ],
+  "lighting": "Sunrise and afternoon light",
+  "atmosphere": "Echo of praise, birds"
+ },
+ "areas": [
+  {
+   "name": "Hills of Praise",
+   "reference": "38:18",
+   "anchor_phrase": "mountains",
+   "description": "Hills that echo at sunrise."
+  },
+  {
+   "name": "Assembled Birds",
+   "reference": "38:19",
+   "anchor_phrase": "birds",
+   "description": "Birds gathering."
+  },
+  {
+   "name": "Cool Spring",
+   "reference": "38:42",
+   "anchor_phrase": "cool bath",
+   "description": "A spring where the ground is struck."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Fair judgement",
+   "reference": "38:26",
+   "description": "Decide fairly in simple disputes (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Echo game",
+   "reference": "38:18-19",
+   "description": "Echo phrases of glorification across the hills.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Gather the birds",
+   "reference": "38:19",
+   "kind": "find",
+   "description": "Bring four birds to gather together.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration keeps prophets unseen and highlights patience and justice.",
+ "learning_objectives": [
+  "Explain justice in Dawud's story",
+  "Explain Ayyub's patience",
+  "Explain why pride is wrong"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "38:18",
+   "anchor_phrase": "mountains",
+   "element": "Hills of Praise"
+  },
+  {
+   "reference": "38:19",
+   "anchor_phrase": "birds",
+   "element": "Assembled Birds"
+  },
+  {
+   "reference": "38:42",
+   "anchor_phrase": "cool bath",
+   "element": "Cool Spring"
+  }
+ ],
+ "required_assets": [
+  "Hills",
+  "Birds",
+  "Court",
+  "Spring"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (birds, mountain, spring) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "38:18",
+  "38:18-19",
+  "38:19",
+  "38:21-26",
+  "38:26",
+  "38:41-44",
+  "38:42"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "A dry valley with reeds, ferns, bird pools, dark damp patches and white salt crusts in three parts of the valley",
+  "quran_references": [
+   "38:29",
+   "38:41-42",
+   "38:43-44",
+   "38:26",
+   "38:27"
+  ],
+  "primary_mechanic": {
+   "kind": "spring-signs",
+   "engine": "spring",
+   "text": "In three rounds, read the signs the board names (reeds, damp dark soil, birds coming to drink, ferns, no white salt crust) and dig only where every sign is present. A dry hole names the sign that was missing. Each spring found opens a reading: the spring given to Ayyub (peace be upon him) (38:41-44) and the call to judge with truth (38:26). The springs are a learning game, not a retelling of the event."
+  },
+  "secondary_activities": [
+   "a blessed Book to think about (38:29)",
+   "not without purpose (38:27)"
+  ],
+  "narrative_structure": "The sign, three rounds of reading the land, then the closing reading",
+  "world_assets": [
+   "reeds, ferns, damp soil, birds and salt crusts at several spots",
+   "dig spots that become small pools"
+  ],
+  "environment_behaviour": [
+   "a correct dig fills with water",
+   "a wrong dig leaves a dry hole"
+  ],
+  "learning_objective": "Practise careful looking and thinking (38:29) and learn about Ayyub's patience (38:41-44)",
+  "interaction_tests": {
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: dug at a spot in the valley with the on-screen button)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: a spot without reeds gave a dry hole and a hint; the spot with every sign gave water and the next round)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Round 1 of 3 · water is close where you find reeds and damp dark soil\")",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: rounds [0,1,2], dry [0])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"reflect\",\"water\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w038.ts"
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "Wisdom, Responsibility, and Patience",
+  "quran_references": [
+   "38:17–48",
+   "38:71–85"
+  ],
+  "children_narration": "Dawud was given wisdom and responsibility. Sulayman was blessed with a remarkable kingdom. Ayyub faced suffering but remained devoted to Allah. The surah also recalls Adam and the arrogance of Iblis. Together, these accounts teach us to use our blessings wisely and remain humble.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Chambers of Wisdom",
+   "description": "Explore different educational environments about justice, responsibility, gratitude, and patience, each based on a separate narrated passage."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "Adam and Iblis (38:71-85) are reading only, as unseen matters.",
+  "status": "draft, unreviewed"
+ }
+}

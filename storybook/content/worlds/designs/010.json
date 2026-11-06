@@ -1,0 +1,192 @@
+{
+ "surah": 10,
+ "name": {
+  "transliterated": "Yūnus",
+  "meaning": "Jonah"
+ },
+ "ayah_count": 109,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "Signs in creation",
+  "Trust in Allah at sea",
+  "The people of Yunus",
+  "Truth and falsehood"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Musa and Pharaoh at the sea",
+   "reference": "10:75-92",
+   "anchor_phrase": "across the sea"
+  },
+  {
+   "title": "The people of Yunus",
+   "reference": "10:98",
+   "anchor_phrase": "Jonah"
+  }
+ ],
+ "summary_for_children": "Surah Yunus shows signs in the sun and moon, tells how people call on Allah at sea, and remembers the people of Yunus who believed.",
+ "world_title": "The Sea of Turning Back",
+ "environment_concept": "A terrace of the moon's phases for counting the months (10:5), a ship at sea (10:22), a garden in the rain (10:24) and a doorway to Yunus's story (10:98).",
+ "architecture_and_scenery": "Seaside cliffs, a harbour, a ship on open water, a garden above the shore, and a night sky for moon phases.",
+ "palette": {
+  "colors": [
+   "#2c4a6b",
+   "#7fa7c9",
+   "#e8d8b0",
+   "#3f6b4a"
+  ],
+  "lighting": "Moonlight and stormy daylight",
+  "atmosphere": "Sea spray, storm wind then calm"
+ },
+ "areas": [
+  {
+   "name": "Moon Phase Terrace",
+   "reference": "10:5",
+   "anchor_phrase": "phases",
+   "description": "A terrace marking the moon's phases."
+  },
+  {
+   "name": "Storm at Sea",
+   "reference": "10:22",
+   "anchor_phrase": "ship",
+   "description": "A ship in a storm that grows calm."
+  },
+  {
+   "name": "Garden of Rain",
+   "reference": "10:24",
+   "anchor_phrase": "plants of the earth",
+   "description": "Rain makes the garden bloom, then fade."
+  },
+  {
+   "name": "Doorway of Yunus",
+   "reference": "10:98",
+   "anchor_phrase": "Jonah",
+   "description": "A doorway to the Yunus story world."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Count the months",
+   "reference": "10:5",
+   "description": "Lay five numbered stones in order, counting as the moon does.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  },
+  {
+   "name": "Calm the sail",
+   "reference": "10:22",
+   "description": "Hold the ship steady through a storm while reading 10:22.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "The narrator keeps the sea scenes as setting, and the doorway leads to the Yunus story.",
+ "learning_objectives": [
+  "Explain moon phases as a sign",
+  "Retell 10:22 in their own words",
+  "Know that the people of Yunus believed"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "10:5",
+   "anchor_phrase": "phases",
+   "element": "Moon Phase Terrace"
+  },
+  {
+   "reference": "10:22",
+   "anchor_phrase": "ship",
+   "element": "Storm at Sea"
+  },
+  {
+   "reference": "10:24",
+   "anchor_phrase": "plants of the earth",
+   "element": "Garden of Rain"
+  },
+  {
+   "reference": "10:98",
+   "anchor_phrase": "Jonah",
+   "element": "Doorway of Yunus"
+  }
+ ],
+ "required_assets": [
+  "Sea and ship",
+  "Storm weather",
+  "Moon phase sky",
+  "Rain garden"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (arch, cloud, moons, orchard, ships) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "10:5",
+  "10:22",
+  "10:24",
+  "10:75-92",
+  "10:98"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "adventure_world": {
+  "title": "The Ocean of Signs",
+  "route": "/adventure/10",
+  "built_in": "src/adventure/worlds/w010.ts (engine: src/adventure/)",
+  "source": "\"Quran Adventure: First 10 Unique Worlds\" with the rule \"114 unique game experiences\" (2026-11-04); replaces the first adventure version built from the earlier design table",
+  "status": "second version built for the web: each world now has its own core mechanic; draft, unreviewed; checked in headless Chromium with software WebGL only, not on phones or real GPUs",
+  "note": "The new-look adventure world for this surah. It is a separate design from the composed scene this record describes; both are kept until reviewers choose.",
+  "core_play": "A sailing adventure: steer your own boat round the bay and out to sea, to five places where the sea, the sky and the stories of earlier peoples are read."
+ },
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "Island town and open sea with a storm leg",
+  "quran_references": [
+   "10:5",
+   "10:22-23",
+   "10:98",
+   "21:87-88"
+  ],
+  "primary_mechanic": {
+   "kind": "sailing",
+   "engine": "sail",
+   "text": "Board a boat at the dock and sail to five stops, one through a storm (10:22-23)."
+  },
+  "secondary_activities": [
+   "shore reading 21:87-88 (the fish account is not in surah 10)"
+  ],
+  "narrative_structure": "Voyage of stops",
+  "world_assets": [
+   "player boat",
+   "dock",
+   "island town",
+   "storm"
+  ],
+  "environment_behaviour": [
+   "storm weather on one leg",
+   "boat slides along shores"
+  ],
+  "learning_objective": "Remembering Allah in ease as in hardship (10:22-23)",
+  "interaction_tests": {
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: read the harbour sign, then board with the on-screen button)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: the boat moves when steered)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: stop card / status line)",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: first voyage stop recorded)",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"harbour\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse, and Pixel 7 emulation with touch taps; both in headless Chromium with software WebGL; no real phone or GPU tested)"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w010.ts"
+ }
+}

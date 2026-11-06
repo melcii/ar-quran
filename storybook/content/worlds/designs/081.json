@@ -1,0 +1,169 @@
+{
+ "surah": 81,
+ "name": {
+  "transliterated": "At-Takwīr",
+  "meaning": "The Overthrowing"
+ },
+ "ayah_count": 29,
+ "content_type": {
+  "primary": "hereafter (symbolic only)",
+  "secondary": []
+ },
+ "themes": [
+  "Signs of the Day",
+  "The Quran is a reminder"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "At-Takwir describes great changes of the Last Day in words, and swears by the dawn as it breathes.",
+ "world_title": "When the Sun Is Wrapped",
+ "environment_concept": "Late night. Stars run low and slip below the horizon, mirrored in a still pool (81:15-16); a dark grove holds the night as it closes in (81:17); and at the end of the path a dawn glow rises while a soft breeze moves the grass, the dawn as it breathes (81:18). The events of 81:1-14 are not pictured. No person is shown.",
+ "architecture_and_scenery": "A still star pool, a dark grove, a dawn glow with swaying grasses.",
+ "palette": {
+  "colors": [
+   "#1c2541",
+   "#f0d890"
+  ],
+  "lighting": "Night then dawn breathing",
+  "atmosphere": "Still"
+ },
+ "areas": [
+  {
+   "name": "Retreating Stars",
+   "reference": "81:15",
+   "anchor_phrase": "retreating stars",
+   "description": "Stars slipping below the horizon, mirrored in a still pool."
+  },
+  {
+   "name": "Night Closing In",
+   "reference": "81:17",
+   "anchor_phrase": "night",
+   "description": "A dark grove where the night gathers."
+  },
+  {
+   "name": "Dawn Breathing",
+   "reference": "81:18",
+   "anchor_phrase": "dawn",
+   "description": "A dawn glow on the horizon and grass moving in a soft breeze."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Read the oaths",
+   "reference": "81:15-21",
+   "kind": "order",
+   "description": "Put ayahs 15 to 21 of At-Takwir in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "81:15-18",
+   "kind": "match",
+   "description": "Match the pool, the grove and the dawn to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Where are you going?",
+   "reference": "81:26",
+   "kind": "card",
+   "description": "Talk about choosing a good path each day.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration says these are described only in the Quran.",
+ "learning_objectives": [
+  "Explain that the Day is described in the Quran",
+  "Explain 81:18"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "81:15",
+   "anchor_phrase": "retreating stars",
+   "element": "Retreating Stars"
+  },
+  {
+   "reference": "81:17",
+   "anchor_phrase": "night",
+   "element": "Night Closing In"
+  },
+  {
+   "reference": "81:18",
+   "anchor_phrase": "dawn",
+   "element": "Dawn Breathing"
+  }
+ ],
+ "required_assets": [
+  "Night terrain (shared)",
+  "Setting stars",
+  "Star pool",
+  "Dark grove",
+  "Dawn glow"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: its own scene (setting stars over a still pool, a dark grove and a breathing dawn) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Takwir.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
+ },
+ "quran_references": [
+  "81:15",
+  "81:15-18",
+  "81:15-21",
+  "81:17",
+  "81:18",
+  "81:26"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Changing Cosmos",
+  "quran_references": [
+   "81:1–29"
+  ],
+  "primary_mechanic": {
+   "kind": "horizon-light",
+   "engine": "not built yet",
+   "text": "An abstract space of changing light where you follow the morning as it breathes in (81:18)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "When the World Changes",
+  "quran_references": [
+   "81:1–29"
+  ],
+  "children_narration": "Surah At-Takwir describes extraordinary changes associated with the end of the world. These descriptions remind us that the world as we know it will not last forever. The surah also affirms the truthfulness of the revelation.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Changing Cosmos",
+   "description": "An abstract astronomy-and-reflection environment that uses light and changing horizons without claiming to reproduce the unseen events."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The end-of-world images (81:1-14) are not pictured; the world is abstract light.",
+  "status": "draft, unreviewed"
+ }
+}

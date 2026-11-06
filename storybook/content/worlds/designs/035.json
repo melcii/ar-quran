@@ -1,0 +1,176 @@
+{
+ "surah": 35,
+ "name": {
+  "transliterated": "Fāṭir",
+  "meaning": "Originator"
+ },
+ "ayah_count": 45,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "Allah the Originator",
+  "Colours in creation",
+  "Knowledge leads to awe",
+  "Two seas"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Fatir means The Originator. It praises Allah who created the heavens and the earth and shows signs in colours: fruits, mountains, people and animals of every colour, and fresh and salty seas.",
+ "world_title": "The Originator's Colours",
+ "environment_concept": "Mountains streaked white, red and black (35:27), orchards in many colours (35:27) and two seas, fresh and salt, with pearls (35:12).",
+ "architecture_and_scenery": "Striped mountains, orchards, pearl beaches, and a sky streaked with wings of light suggested only by colour, never angels.",
+ "palette": {
+  "colors": [
+   "#ffffff",
+   "#c0392b",
+   "#222222",
+   "#3f8f5f",
+   "#2f6f8f"
+  ],
+  "lighting": "Bright clear daylight to show colour",
+  "atmosphere": "Fresh breeze, surf"
+ },
+ "areas": [
+  {
+   "name": "Streaked Mountains",
+   "reference": "35:27",
+   "anchor_phrase": "white and red",
+   "description": "Mountains with white, red and black streaks."
+  },
+  {
+   "name": "Orchards of Many Colours",
+   "reference": "35:27",
+   "anchor_phrase": "fruits of varying colors",
+   "description": "Fruit trees in many colours."
+  },
+  {
+   "name": "Two Seas",
+   "reference": "35:12",
+   "anchor_phrase": "two bodies of water",
+   "description": "Fresh and salt seas with pearls and fish."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Colour hunt",
+   "reference": "35:27-28",
+   "description": "Find five fruits fallen in the orchard.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  },
+  {
+   "name": "Pearl diving",
+   "reference": "35:12",
+   "description": "Find four pearls by the two seas.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  }
+ ],
+ "narration_plan": "Narration celebrates colour and links knowledge with awe of Allah (35:28).",
+ "learning_objectives": [
+  "Explain colour as a sign",
+  "Explain 35:28",
+  "Describe the two seas"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "35:27",
+   "anchor_phrase": "white and red",
+   "element": "Streaked Mountains"
+  },
+  {
+   "reference": "35:27",
+   "anchor_phrase": "fruits of varying colors",
+   "element": "Orchards of Many Colours"
+  },
+  {
+   "reference": "35:12",
+   "anchor_phrase": "two bodies of water",
+   "element": "Two Seas"
+  }
+ ],
+ "required_assets": [
+  "Striped mountains",
+  "Orchards",
+  "Coastline"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (orchard, streaked, twoSeas) with 2 hands-on activities in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "35:12",
+  "35:27",
+  "35:27-28"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "A valley with a banded white, red and black cliff, an orchard, a shearing pen and an atlas of three benches between them",
+  "quran_references": [
+   "35:2",
+   "35:27",
+   "35:28",
+   "35:19-21"
+  ],
+  "primary_mechanic": {
+   "kind": "shade-atlas",
+   "engine": "shades",
+   "text": "Gather stones from the banded cliff, fruits from the orchard and wool from the pen, and lay each row of the atlas from the lightest at the left end to the darkest at the right (35:27-28). A full row out of order sends the misplaced things back; a row in order is read."
+  },
+  "secondary_activities": [
+   "mercy no one can hold back (35:2)"
+  ],
+  "narrative_structure": "The sign, then the three rows in any order, then the closing reading (35:19-21)",
+  "world_assets": [
+   "banded cliff",
+   "atlas benches with light and dark end posts",
+   "stones, fruits and wool skeins"
+  ],
+  "environment_behaviour": [
+   "things sit where they are found until carried",
+   "placed things show on the bench; a finished row glows"
+  ],
+  "learning_objective": "Look closely at the colours the verses name (35:27-28) and learn that knowledge brings awe of Allah",
+  "interaction_tests": {
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: picked up the white stone at the cliff and set it on the atlas table with the on-screen buttons)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: with two stones swapped the full row sent them back; in order from white to black, the row is read)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Atlas rows in order, lightest to darkest: 1 of 3\"; while carrying: \"carrying the white stone: put it in the mountain stones row\")",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: rows [0,1,2], sent back [0])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"mercy\",\"atlas\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w035.ts"
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The World of Colors",
+  "quran_references": [
+   "35:9",
+   "35:27–28"
+  ],
+  "children_narration": "Have you noticed that mountains can have different colors, fruits can grow in many shades, and animals have beautiful patterns? Surah Fatir reminds us to look closely at the diversity of Allah's creation. The more we learn about the world, the more reasons we may find to be grateful and humble.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Living Color Atlas",
+   "description": "Explore mineral formations, colorful mountains, orchards, and animal habitats through a nature-observation adventure."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

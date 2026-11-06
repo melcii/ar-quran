@@ -1,0 +1,177 @@
+{
+ "surah": 32,
+ "name": {
+  "transliterated": "As-Sajdah",
+  "meaning": "The Prostration"
+ },
+ "ayah_count": 30,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Creation of the human",
+  "Prayer at night",
+  "Signs of life after barrenness",
+  "Humility before Allah"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "As-Sajdah means The Prostration. It reminds us that Allah created people from clay and gave us hearing, sight and hearts. It praises those who rise at night to pray and shows how water brings crops to barren land.",
+ "world_title": "Night Rising and the Dry Land",
+ "environment_concept": "A riverbank of clay (32:7), a village with lamps at night (32:16) and dry land receiving water (32:27).",
+ "architecture_and_scenery": "Quiet clay houses under stars, a lamp-lit prayer space, and a dry plain with a river channel.",
+ "palette": {
+  "colors": [
+   "#1c2541",
+   "#e2c88a",
+   "#6f8f4a",
+   "#c9b090"
+  ],
+  "lighting": "Moonlight and small lamps, then dawn over a plain",
+  "atmosphere": "Still night, then flowing water"
+ },
+ "areas": [
+  {
+   "name": "Clay Bank",
+   "reference": "32:7",
+   "anchor_phrase": "clay",
+   "description": "A riverbank of clay recalling the beginning of human creation."
+  },
+  {
+   "name": "Night Prayer Village",
+   "reference": "32:16",
+   "anchor_phrase": "arise from",
+   "description": "Lamps glowing in a quiet village at night."
+  },
+  {
+   "name": "Barren Land",
+   "reference": "32:27",
+   "anchor_phrase": "barren land",
+   "description": "Dry land receiving water and crops."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Gifts of hearing, sight and heart",
+   "reference": "32:9",
+   "description": "Find three gifts named in 32:9 around the village (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Water the plain",
+   "reference": "32:27",
+   "description": "Carry rain clouds to the dry plain.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  }
+ ],
+ "narration_plan": "Narration is calm and night-toned, ending at dawn.",
+ "learning_objectives": [
+  "Name the gifts in 32:9",
+  "Explain night prayer",
+  "Explain the barren-land sign"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "32:7",
+   "anchor_phrase": "clay",
+   "element": "Clay Bank"
+  },
+  {
+   "reference": "32:16",
+   "anchor_phrase": "arise from",
+   "element": "Night Prayer Village"
+  },
+  {
+   "reference": "32:27",
+   "anchor_phrase": "barren land",
+   "element": "Barren Land"
+  }
+ ],
+ "required_assets": [
+  "Clay bank",
+  "Night village",
+  "Dry plain and channel"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (clay, village) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "32:7",
+  "32:9",
+  "32:16",
+  "32:27"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "Green hills with three fenced paddocks around a stone fold, oaks and a path from the south",
+  "quran_references": [
+   "32:7",
+   "32:27",
+   "32:9",
+   "32:15-16"
+  ],
+  "primary_mechanic": {
+   "kind": "pasture-rotation",
+   "engine": "pasture",
+   "text": "Lead a small flock out of the fold and from paddock to paddock: where it grazes the grass goes down, and where it has left the grass grows back. Keep it fed through three days without any paddock eaten down to bare soil; if one is, the flock goes back to the fold and the day starts again (32:27). The growing is only watched."
+  },
+  "secondary_activities": [
+   "hearing, sight and hearts (32:9)",
+   "rising at night in fear and hope (32:15-16)"
+  ],
+  "narrative_structure": "The sign, three grazing days, then two readings",
+  "world_assets": [
+   "three fenced paddocks with grass tufts",
+   "stone fold",
+   "paddock gates",
+   "a flock of the existing sheep"
+  ],
+  "environment_behaviour": [
+   "paddock ground and tufts fade from green to bare as the flock grazes and grow back after it leaves",
+   "the sheep walk between paddocks and graze"
+  ],
+  "learning_objective": "Notice how land, rain and grazing animals depend on each other (32:27), and care for a flock",
+  "interaction_tests": {
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: opened the north paddock gate with the on-screen button; the flock walks in and the day begins)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: left in one paddock, the flock ate it bare and the day restarted; then moved 6 times so every paddock could grow back)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Day 2 of 3 · 21 s to evening · flock in the east paddock · grass here 64%\"; the paddock ground and tufts fade from green to bare and grow back)",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: days [0,1,2], bare [0])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"perfected\",\"flock\",\"senses\",\"rise\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w032.ts"
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Wonders of Creation",
+  "quran_references": [
+   "32:4–9",
+   "32:15–22"
+  ],
+  "children_narration": "The Quran asks us to reflect on creation, human life, and our return to Allah. It reminds us that true believers are willing to listen, reflect, and worship with humility. Every breath and every opportunity to do good matters.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Layers of Creation",
+   "description": "Travel through symbolic environments representing the earth, sky, and the development of living things. Interactive exhibits teach observation and gratitude without visualizing divine actions."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

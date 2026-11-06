@@ -1,0 +1,163 @@
+{
+ "surah": 41,
+ "name": {
+  "transliterated": "Fuṣṣilat",
+  "meaning": "Explained in Detail"
+ },
+ "ayah_count": 54,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "The Quran explained in detail",
+  "Creation of heaven and earth",
+  "Signs in the horizons and in ourselves",
+  "Steadfastness"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Fussilat means Explained in Detail. It speaks of how Allah formed the heavens from smoke and the earth, and shows how still earth comes alive with rain.",
+ "world_title": "Smoke Becoming Sky",
+ "environment_concept": "A sky of drifting mist (41:11), a still dry plain (41:39) that stirs and sprouts when rain falls (41:39).",
+ "architecture_and_scenery": "Swirling haze resolving into layered sky, a flat stilled plain, and sprouting hills.",
+ "palette": {
+  "colors": [
+   "#9aa3ad",
+   "#d8c39a",
+   "#5a8b4a",
+   "#2f4b6f"
+  ],
+  "lighting": "Hazy diffuse light clearing to blue",
+  "atmosphere": "Smoke-like mist, then rain"
+ },
+ "areas": [
+  {
+   "name": "Heaven as Smoke",
+   "reference": "41:11",
+   "anchor_phrase": "smoke",
+   "description": "A sky of drifting smoke that clears into layers."
+  },
+  {
+   "name": "Stilled Earth",
+   "reference": "41:39",
+   "anchor_phrase": "earth stilled",
+   "description": "A dry still plain."
+  },
+  {
+   "name": "Quivering Growth",
+   "reference": "41:39",
+   "anchor_phrase": "quivers and grows",
+   "description": "The plain stirs and sprouts when rain falls."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Clear the sky",
+   "reference": "41:11-12",
+   "description": "Watch smoke settle into seven layers and lamps of stars (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Rain and growth",
+   "reference": "41:39",
+   "description": "Carry rain clouds to the still earth; it stirs and grows.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  }
+ ],
+ "narration_plan": "Narration stays with the ayahs and invites reflection on signs in the horizons (41:53).",
+ "learning_objectives": [
+  "Describe the smoke image",
+  "Explain rain as a sign of life",
+  "Explain steadfastness"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "41:11",
+   "anchor_phrase": "smoke",
+   "element": "Heaven as Smoke"
+  },
+  {
+   "reference": "41:39",
+   "anchor_phrase": "earth stilled",
+   "element": "Stilled Earth"
+  },
+  {
+   "reference": "41:39",
+   "anchor_phrase": "quivers and grows",
+   "element": "Quivering Growth"
+  }
+ ],
+ "required_assets": [
+  "Smoke sky",
+  "Plain",
+  "Sprouting hills"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (cloud, grain) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "41:11",
+  "41:11-12",
+  "41:39"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Earth and Sky Observatory",
+  "quran_references": [
+   "41:9–12",
+   "41:30–39"
+  ],
+  "primary_mechanic": {
+   "kind": "telescope-horizons",
+   "engine": "not built yet",
+   "text": "Use a telescope to find signs on the horizons and in the land (41:53); green a barren slope after rain (41:39)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Earth and the Sky",
+  "quran_references": [
+   "41:9–12",
+   "41:30–39"
+  ],
+  "children_narration": "The Quran invites us to look at the earth beneath our feet and the sky above our heads. It reminds us of the signs of creation and encourages people to respond to harmful behavior with what is better. Even a dry landscape can come alive after rain.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Earth and Sky Observatory",
+   "description": "Explore mountains, valleys, and a night sky; use a telescope-style discovery system and watch a barren landscape become green after rainfall."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

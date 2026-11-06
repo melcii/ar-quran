@@ -1,0 +1,1314 @@
+{
+ "note": "Settings for the walkable world of each surah. They are symbolic, artistic choices, not depictions of events, and none shows a prophet or represents Allah. Each needs scholarly review before release.",
+ "worlds": [
+  {
+   "surah": 1,
+   "setting": "opening",
+   "basis": "Al-Fatihah has no story, so the world is symbolic: a gate of praise (1:2), a garden of mercy that blooms when watered (1:3), a dawn terrace (1:4, nothing of the Day pictured) and a straight road at a fork (1:6).",
+   "references": [
+    "1:2",
+    "1:3",
+    "1:4",
+    "1:6"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 2,
+   "setting": "meadow",
+   "basis": "A green valley of guidance: an orchard where hidden things are found by name (2:31), a meadow of cows (2:67), great foundation stones (2:127), a river to cross (2:249) and a field where one seed grows seven spikes (2:261).",
+   "references": [
+    "2:31",
+    "2:67",
+    "2:127",
+    "2:249",
+    "2:261"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 3,
+   "setting": "morning",
+   "basis": "A sanctuary in morning light: a small chamber with fruit in a lit niche, no one shown (3:37), a courtyard of pillars bound by one rope (3:103), a rooftop where a sundial marks the turning of night and day (3:190) and a distant gateway (3:96).",
+   "references": [
+    "3:37",
+    "3:96",
+    "3:103",
+    "3:190"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 4,
+   "setting": "morning",
+   "basis": "A village of trusts and justice: a square with one fountain from which channels run (4:1), houses waiting for what was lent to come back (4:58), a lane of neighbours (4:36) and tall scales (4:135).",
+   "references": [
+    "4:1",
+    "4:36",
+    "4:58",
+    "4:135"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 5,
+   "setting": "garden",
+   "basis": "A hall of promises (5:1), an olive grove where a crow scratches the ground (5:31), one lantern that lights a whole hall (5:32) and a long table under an arch, spread and empty (5:114).",
+   "references": [
+    "5:1",
+    "5:2",
+    "5:31",
+    "5:32",
+    "5:114"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 6,
+   "setting": "dawn",
+   "basis": "A night of signs turning to dawn: a ridge where a bright star sets (6:76), a plain where the moon rises (6:77), an overlook at sunrise (6:78), a valley where seeds split and sprout (6:95) and date palms with low clusters (6:99).",
+   "references": [
+    "6:76",
+    "6:77",
+    "6:78",
+    "6:95",
+    "6:99"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 7,
+   "setting": "mountain",
+   "basis": "The heights: a garden with one tree (7:19), timbers of a ship on a hill (7:64), wide windy plains (7:65), homes carved in cliffs (7:74), a market where weights must be fair (7:85) and a calm shore (7:138).",
+   "references": [
+    "7:19",
+    "7:64",
+    "7:65",
+    "7:74",
+    "7:85",
+    "7:138"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 8,
+   "setting": "wind",
+   "basis": "A field where rain falls and the sand grows firm (8:11), a circle of stones that glows (8:2) and a green hill of peace (8:61).",
+   "references": [
+    "8:2",
+    "8:11",
+    "8:61"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 9,
+   "setting": "desert-dusk",
+   "basis": "A small empty cave in the hills (9:40), a simple mosque on firm foundations (9:108-109) and a circle of stones for learning (9:122).",
+   "references": [
+    "9:40",
+    "9:108",
+    "9:109",
+    "9:122"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 10,
+   "setting": "sea",
+   "basis": "A terrace of the moon's phases for counting the months (10:5), a ship at sea (10:22), a garden in the rain (10:24) and a doorway to Yunus's story (10:98).",
+   "references": [
+    "10:5",
+    "10:22",
+    "10:24",
+    "10:98"
+   ],
+   "story": "yunus",
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 11,
+   "setting": "meadow",
+   "basis": "The ark passages of 11:36-48: a shipyard (11:37), animals boarding in pairs as the weather turns (11:40), waves like mountains (11:42) and the ark at rest on al-Judiyy (11:44); also the tent prepared for guests (11:69). No person is shown.",
+   "references": [
+    "11:37",
+    "11:40",
+    "11:42",
+    "11:44",
+    "11:69"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 12,
+   "setting": "desert-dusk",
+   "basis": "One road through Yusuf's story in the surah's order: eleven stars with the sun and the moon (12:4), a well (12:15), a caravan's camels and bucket (12:19), a prison courtyard (12:36), granaries (12:47), a shirt (12:93) and an empty hall (12:100). No person is shown.",
+   "references": [
+    "12:4",
+    "12:15",
+    "12:19",
+    "12:36",
+    "12:47",
+    "12:93",
+    "12:100"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 13,
+   "setting": "storm",
+   "basis": "The valley of thunder: rivers running between mountains (13:3), neighbouring plots growing different fruits from one water (13:4), a ridge and a rocky hall under thunder clouds (13:12-13) and a pool where foam drifts away (13:17).",
+   "references": [
+    "13:3",
+    "13:4",
+    "13:12",
+    "13:13",
+    "13:17"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 14,
+   "setting": "orchard",
+   "basis": "A good tree with deep roots and high branches (14:24), an uprooted tree lying loose (14:26), a dry valley (14:37) and a river with sailing boats (14:32).",
+   "references": [
+    "14:24",
+    "14:26",
+    "14:32",
+    "14:37"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 15,
+   "setting": "stars",
+   "basis": "A rocky tract under the stars: constellations (15:16), firm mountains (15:19), winds carrying pollen to flowers (15:22) and empty homes carved in the cliffs (15:82).",
+   "references": [
+    "15:16",
+    "15:19",
+    "15:22",
+    "15:82"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 16,
+   "setting": "meadow",
+   "basis": "The bee and the blessings of the valley: bees' homes in mountains, trees and hives (16:68), honey of varying colours (16:69), livestock brought home (16:5-6, 16:66), the sea with ships and ornaments (16:14) and birds in the sky (16:79).",
+   "references": [
+    "16:5-6",
+    "16:14",
+    "16:66",
+    "16:68-69",
+    "16:79"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 17,
+   "setting": "light",
+   "basis": "A path of lamps through the night (17:1: nothing of the journey is depicted), two signs, the sun and the moon (17:12), a family courtyard (17:23) and a market with honest scales (17:35).",
+   "references": [
+    "17:1",
+    "17:12",
+    "17:23",
+    "17:35"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 18,
+   "setting": "cave",
+   "basis": "A valley of four journeys: a cave in the mountainside with sunlight passing its mouth (18:10, 18:17), two walled gardens with a river between (18:32-33), two waters meeting (18:60), a small ship with a hole (18:71), a wall set straight (18:77) and a pass closed with iron and copper (18:96). No person is shown and no number of sleepers is given.",
+   "references": [
+    "18:10",
+    "18:17",
+    "18:32-33",
+    "18:60",
+    "18:71",
+    "18:77",
+    "18:96"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 19,
+   "setting": "dawn",
+   "basis": "A quiet chamber (19:11), a tall palm in a remote place (19:23) with a stream below it (19:24) and ripe dates (19:25), and a mountain slope (19:52). No one is shown.",
+   "references": [
+    "19:11",
+    "19:23",
+    "19:24-26",
+    "19:24",
+    "19:25",
+    "19:52"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 20,
+   "setting": "night",
+   "basis": "A fire glowing far across a dark valley (20:10), a pair of sandals left at the valley's edge (20:12, an adaptation), a chest in the reeds (20:39), a dry path between walls of water (20:77) and an empty camp (20:88). Musa and every person are never shown; no idol is pictured.",
+   "references": [
+    "20:10",
+    "20:12",
+    "20:39",
+    "20:77",
+    "20:88"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 21,
+   "setting": "sea",
+   "basis": "Rooms of signs: a spring (21:30), an empty ring of stones where the fire was made cool (21:69; no fire or person is shown), mountains with birds (21:79), a sail full of wind (21:81) and a dark sea at night (21:87).",
+   "references": [
+    "21:30",
+    "21:33",
+    "21:69",
+    "21:79",
+    "21:81",
+    "21:87"
+   ],
+   "story": "yunus",
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 22,
+   "setting": "dawn",
+   "basis": "Roads from far mountain passes with camels (22:27), simple foundations (22:26), dry fields that turn green as rain falls (22:63) and a slope where plants stir (22:5).",
+   "references": [
+    "22:5",
+    "22:26",
+    "22:27",
+    "22:27-28",
+    "22:63"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 23,
+   "setting": "orchard",
+   "basis": "Terraces of the successful believers: a quiet stepped terrace (23:2-3), rain held in great basins (23:18), palms and vines (23:19), a great olive tree (23:20) and an empty shipyard (23:27).",
+   "references": [
+    "23:2",
+    "23:3",
+    "23:18",
+    "23:19",
+    "23:20",
+    "23:27"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 24,
+   "setting": "light",
+   "basis": "Doors that open after greeting (24:27), a glass lamp in a niche like a bright star (24:35), a blessed olive grove (24:35), a mirage plain (24:39), a dark sea (24:40) and birds with spread wings (24:41).",
+   "references": [
+    "24:27",
+    "24:35",
+    "24:39",
+    "24:40",
+    "24:41"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 25,
+   "setting": "morning",
+   "basis": "A sundial field where shadows move with the sun (25:45), winds driving clouds (25:48), two waters side by side with a barrier (25:53), the sun and the moon (25:61) and a gentle path (25:63).",
+   "references": [
+    "25:45",
+    "25:48",
+    "25:53",
+    "25:61",
+    "25:63"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 26,
+   "setting": "sea",
+   "basis": "Seven shores: towering walls of water either side of a path (26:63), a meadow of many noble kinds (26:7), rock-cut homes, empty (26:149) and a thicket by a market with scales (26:176-183).",
+   "references": [
+    "26:7",
+    "26:63",
+    "26:149",
+    "26:176",
+    "26:181-183"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 27,
+   "setting": "meadow",
+   "basis": "A sunny valley of the surah's creatures and places: ant hills with ants going into their dwellings (27:18), a tree of birds with one empty branch (27:20), a hoopoe on the road toward a far city (27:22), a floor of glass over water (27:44) and mountains drifting like clouds (27:88). No person is shown.",
+   "references": [
+    "27:18",
+    "27:20",
+    "27:22",
+    "27:44",
+    "27:88"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 28,
+   "setting": "desert-dusk",
+   "basis": "Reeds and calm water (28:7), the well of Madyan with flocks waiting (28:23), a tree's shade (28:24), a fire seen from the road (28:29) and a treasure house sinking into the ground (28:81).",
+   "references": [
+    "28:7",
+    "28:23-24",
+    "28:23",
+    "28:24",
+    "28:29",
+    "28:81"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 29,
+   "setting": "garden",
+   "basis": "A huge, fine spider's web (29:41), a road through many landscapes (29:20) and an ark resting on a ridge as a sign (29:15).",
+   "references": [
+    "29:15",
+    "29:20",
+    "29:41"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 30,
+   "setting": "creation",
+   "basis": "A market of many languages (30:22), a harbour with ships on good winds (30:46), clouds that spread and break into rain (30:48) and bare land returning to green (30:50).",
+   "references": [
+    "30:22",
+    "30:46",
+    "30:48",
+    "30:48-50",
+    "30:50"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 31,
+   "setting": "garden",
+   "basis": "A great rock with a tiny seed beside it (31:16), a path for walking gently (31:19) and a shore with trees and a pen (31:27).",
+   "references": [
+    "31:16",
+    "31:19",
+    "31:27"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 32,
+   "setting": "night",
+   "basis": "A riverbank of clay (32:7), a village with lamps at night (32:16) and dry land receiving water (32:27).",
+   "references": [
+    "32:7",
+    "32:16",
+    "32:27"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 33,
+   "setting": "wind",
+   "basis": "Wind sweeping through empty tents (33:9) and mountains that stand for the trust (33:72, symbolic).",
+   "references": [
+    "33:9",
+    "33:35",
+    "33:72"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 34,
+   "setting": "orchard",
+   "basis": "Hills that echo with praise and birds (34:10), a glowing spring of copper (34:12), great basins (34:13), gardens on both sides of a dam (34:15) and a broken one where the trees fell (34:16).",
+   "references": [
+    "34:10",
+    "34:12",
+    "34:13",
+    "34:15",
+    "34:16"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 35,
+   "setting": "morning",
+   "basis": "Mountains streaked white, red and black (35:27), orchards in many colours (35:27) and two seas, fresh and salt, with pearls (35:12).",
+   "references": [
+    "35:12",
+    "35:27",
+    "35:27-28"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 36,
+   "setting": "moon",
+   "basis": "Dead earth that bursts with grain (36:33), palms and springs (36:34), the moon's phases (36:39), a laden ship (36:41) and a green tree with a fire (36:80).",
+   "references": [
+    "36:33",
+    "36:34",
+    "36:36",
+    "36:39",
+    "36:41",
+    "36:80"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 37,
+   "setting": "sea",
+   "basis": "A sky adorned with stars (37:6), an open shore (37:145) and a gourd vine over a shady spot (37:146).",
+   "references": [
+    "37:6",
+    "37:145",
+    "37:146"
+   ],
+   "story": "yunus",
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 38,
+   "setting": "mountain",
+   "basis": "Hills that echo at sunrise (38:18), birds gathering (38:19) and a cool spring (38:42).",
+   "references": [
+    "38:18",
+    "38:19",
+    "38:42"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 39,
+   "setting": "wind",
+   "basis": "Rain running underground into springs (39:21), crops that grow, turn yellow and dry (39:21) and a soft light on the horizon (39:73; nothing of Paradise is pictured).",
+   "references": [
+    "39:21",
+    "39:73"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 40,
+   "setting": "desert-dusk",
+   "basis": "A brick tower that stops far short of the sky (40:36-37) and a simple house (40:28). No one is shown.",
+   "references": [
+    "40:28",
+    "40:36",
+    "40:79"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 41,
+   "setting": "wind",
+   "basis": "A sky of drifting mist (41:11), a still dry plain (41:39) that stirs and sprouts when rain falls (41:39).",
+   "references": [
+    "41:11",
+    "41:39"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 42,
+   "setting": "sea",
+   "basis": "A harbour of ships like mountains (42:32), ships lying still when the wind stops (42:33) and a circle of seats for deciding together (42:38).",
+   "references": [
+    "42:32",
+    "42:33",
+    "42:38"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 43,
+   "setting": "meadow",
+   "basis": "Roads across the earth (43:10), rain in measure reviving dead land (43:11), and ships and animals to ride (43:12).",
+   "references": [
+    "43:10",
+    "43:11",
+    "43:12"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 44,
+   "setting": "night",
+   "basis": "A calm blessed night (44:3), a sea lying still (44:24) and gardens and springs left behind (44:25).",
+   "references": [
+    "44:3",
+    "44:24",
+    "44:25"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 45,
+   "setting": "sea",
+   "basis": "Ships sailing (45:12) and a wide view of sky and land, with birds and grazing animals (45:13).",
+   "references": [
+    "45:5",
+    "45:12",
+    "45:13"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 46,
+   "setting": "dunes",
+   "basis": "Wind-curved dunes (46:21), a cloud approaching the valleys (46:24) and a quiet night valley with standing stones (46:29; nothing unseen is shown).",
+   "references": [
+    "46:15",
+    "46:21",
+    "46:24",
+    "46:29"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 47,
+   "setting": "garden",
+   "basis": "A reading stand with the ayah that describes rivers (47:15; the rivers themselves are not pictured), a quiet garden and stepping stones for steady feet (47:7).",
+   "references": [
+    "47:7",
+    "47:15"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 48,
+   "setting": "meadow",
+   "basis": "A single tree on a plain, no one shown (48:18), and a shoot growing strong on its stalk (48:29).",
+   "references": [
+    "48:18",
+    "48:29"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 49,
+   "setting": "garden",
+   "basis": "A village of courtyard homes for the manners the surah teaches: a gate for checking news (49:6), a bridge between two quarters (49:9-10), quiet streets (49:11-12) and a market where peoples meet (49:13). No person is shown.",
+   "references": [
+    "49:6",
+    "49:10",
+    "49:11",
+    "49:12",
+    "49:13"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 50,
+   "setting": "orchard",
+   "basis": "A sky without rifts (50:6), mountains and beautiful plants (50:7), blessed rain over grain (50:9) and lofty palms with layered fruit (50:10).",
+   "references": [
+    "50:6",
+    "50:7",
+    "50:9-11",
+    "50:9",
+    "50:10"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 51,
+   "setting": "wind",
+   "basis": "Winds scattering dust (51:1), clouds heavy with water (51:2), ships sailing easily (51:3) and a wide sky (51:47).",
+   "references": [
+    "51:1",
+    "51:2",
+    "51:3",
+    "51:47",
+    "51:49"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 52,
+   "setting": "mountain",
+   "basis": "A lone mountain (52:1), an open scroll on a stone (52:3) and a high sky (52:5).",
+   "references": [
+    "52:1",
+    "52:1-6",
+    "52:3",
+    "52:5"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 53,
+   "setting": "stars",
+   "basis": "A star setting (53:1), a valley of sunshine and soft rain, standing for joy and tears (53:43; no faces) and the bright star Sirius (53:49).",
+   "references": [
+    "53:1",
+    "53:43",
+    "53:49"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 54,
+   "setting": "moon",
+   "basis": "A full moon over the plain (54:1; the splitting itself is not pictured), pouring rain (54:11), springs bursting from the earth (54:12), a vessel of planks being built (54:13) and palms uprooted by the wind (54:20).",
+   "references": [
+    "54:1",
+    "54:11",
+    "54:12",
+    "54:13",
+    "54:20"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 55,
+   "setting": "creation",
+   "basis": "A shore of the favours the surah names: the sun and moon on their courses (55:5), the balance (55:7), grain and fragrant plants (55:12), clay (55:14), two seas with a barrier (55:19-20), pearl and coral (55:22) and ships like mountains (55:24).",
+   "references": [
+    "55:5",
+    "55:7",
+    "55:12",
+    "55:14",
+    "55:19-20",
+    "55:22",
+    "55:24"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 56,
+   "setting": "meadow",
+   "basis": "A field where seeds are planted (56:63), rain falling into a well (56:69) and a tree with a fire for travellers (56:72).",
+   "references": [
+    "56:63-64",
+    "56:63",
+    "56:68-70",
+    "56:69",
+    "56:72"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 57,
+   "setting": "garden",
+   "basis": "A field that grows and turns yellow (57:20), a forge with iron (57:25) and earth returning to life (57:17).",
+   "references": [
+    "57:17",
+    "57:20",
+    "57:25"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 58,
+   "setting": "morning",
+   "basis": "An open hall where room is made for others (58:11), with seats in a circle and houses around.",
+   "references": [
+    "58:11"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 59,
+   "setting": "mountain",
+   "basis": "A great mountain, humbled (59:21), and a reading stand with the ayahs of Allah's names (59:22-24; the names are read from the verified text, not drawn in the sky).",
+   "references": [
+    "59:9",
+    "59:21",
+    "59:23"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 60,
+   "setting": "garden",
+   "basis": "A bridge over a stream for fair dealings (60:8) and a garden of hope (60:7).",
+   "references": [
+    "60:7",
+    "60:8"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 61,
+   "setting": "morning",
+   "basis": "A wall of tightly joined stones (61:4).",
+   "references": [
+    "61:4"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 62,
+   "setting": "morning",
+   "basis": "Market stalls shut for the Friday prayer (62:9) and reopened afterwards (62:10).",
+   "references": [
+    "62:9",
+    "62:10"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 63,
+   "setting": "orchard",
+   "basis": "Baskets of harvest to share before the time runs out (63:10).",
+   "references": [
+    "63:10"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 64,
+   "setting": "mountain",
+   "basis": "A path of steps up a slope, where effort counts (64:16).",
+   "references": [
+    "64:16"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 65,
+   "setting": "dunes",
+   "basis": "A spring appearing in a dry place (65:3).",
+   "references": [
+    "65:2-3",
+    "65:3"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 66,
+   "setting": "garden",
+   "basis": "A palace room (66:11) and a quiet sanctuary with fruit in a lit niche (66:12). No one is shown.",
+   "references": [
+    "66:8",
+    "66:11",
+    "66:12"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 67,
+   "setting": "morning",
+   "basis": "A sky without flaw to look at again and again (67:3-4), slopes to walk (67:15) and birds with outspread wings (67:19).",
+   "references": [
+    "67:3",
+    "67:4",
+    "67:15",
+    "67:19"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 68,
+   "setting": "sea",
+   "basis": "A pen and inkwell (68:1), a garden ready to harvest at dawn (68:17) and a garden that looks reaped (68:20).",
+   "references": [
+    "68:1",
+    "68:17-24",
+    "68:17",
+    "68:20"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 69,
+   "setting": "wind",
+   "basis": "A windswept valley (69:6) with hollow palm trunks lying fallen (69:7).",
+   "references": [
+    "69:6",
+    "69:7",
+    "69:12"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 70,
+   "setting": "dawn",
+   "basis": "Garden steps rising gently and a quiet place of steady prayer (70:23); nothing unseen is shown.",
+   "references": [
+    "70:3",
+    "70:23"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 71,
+   "setting": "wind",
+   "basis": "The promise of rain, gardens and rivers to those who ask forgiveness (71:10-12), the moon as a light and the sun as a lamp (71:16) and roads through a wide earth (71:19-20). Nuh and his people are not shown.",
+   "references": [
+    "71:10-12",
+    "71:16",
+    "71:19-20"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 72,
+   "setting": "stars",
+   "basis": "A still desert under the stars (72:1) and shooting stars across the sky (72:8). Nothing unseen is shown.",
+   "references": [
+    "72:1",
+    "72:8"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 73,
+   "setting": "night",
+   "basis": "A dial of the night hours (73:2-4) and a reading stand for slow, measured recitation (73:4).",
+   "references": [
+    "73:2-4",
+    "73:3",
+    "73:4"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 74,
+   "setting": "dawn",
+   "basis": "Sunrise over a home (74:2) and a washing place with clean cloth (74:4).",
+   "references": [
+    "74:2",
+    "74:3-7",
+    "74:4"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 75,
+   "setting": "garden",
+   "basis": "A pattern of fingertip whorls in light on a stone (75:4).",
+   "references": [
+    "75:4"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 76,
+   "setting": "morning",
+   "basis": "An open doorway where food is shared (76:8).",
+   "references": [
+    "76:8-9",
+    "76:8"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 77,
+   "setting": "wind",
+   "basis": "Winds in gusts (77:1), the earth that holds (77:25) and mountains with sweet water (77:27).",
+   "references": [
+    "77:1",
+    "77:25",
+    "77:27"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 78,
+   "setting": "meadow",
+   "basis": "Signs of 78:6-16: the earth as a resting place, mountains as stakes, the night as clothing, the burning lamp of the sun, rain and entwined gardens. The Day (78:17-40) is not pictured. No person is shown.",
+   "references": [
+    "78:10",
+    "78:13",
+    "78:16",
+    "78:6",
+    "78:7"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 79,
+   "setting": "mountain",
+   "basis": "Creation signs of 79:27-32: the raised sky, water and pasture brought out of the earth, and mountains set firmly. The story of 79:15-26 and the Day (79:34-46) are not pictured. No person is shown.",
+   "references": [
+    "79:28",
+    "79:31",
+    "79:32"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 80,
+   "setting": "orchard",
+   "basis": "\"Let mankind look at his food\" (80:24): a torrent of water (80:25), earth split by sprouts (80:26), grain and vines (80:27-28), olive and palm trees (80:29) and fruit and grass (80:31). The event of 80:1-10 and the Day (80:33-42) are not pictured. No person is shown.",
+   "references": [
+    "80:25",
+    "80:26",
+    "80:28",
+    "80:29",
+    "80:31"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 81,
+   "setting": "night",
+   "basis": "The surah's oaths of 81:15-18: stars that run their courses and disappear, the night closing in and the dawn as it breathes, shown as stars setting over a still pool, a dark grove and a dawn glow with a breeze. The events of 81:1-14 are not pictured. No person is shown.",
+   "references": [
+    "81:15",
+    "81:17",
+    "81:18"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 82,
+   "setting": "garden",
+   "basis": "A garden of well-proportioned, balanced natural forms, a spiral shell, a symmetrical leaf and a balanced stone arch (82:7), and a table of gifts for the Generous (82:6). The events of 82:1-4 are not pictured. No person is shown.",
+   "references": [
+    "82:6",
+    "82:7"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 83,
+   "setting": "morning",
+   "basis": "A market stall with honest scales and a grain measure (83:1-3), where a measure can be filled to the brim. No person is shown; the Day, the registers and the next life (83:4-36) are not pictured.",
+   "references": [
+    "83:2",
+    "83:3"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 84,
+   "setting": "night",
+   "basis": "The surah's oaths of 84:16-19: the twilight glow, the night, the full moon and \"state after state\", shown as a glowing horizon, a large full moon and a row of moon-phase stones. The events of 84:1-15 are not pictured. No person is shown.",
+   "references": [
+    "84:16",
+    "84:18",
+    "84:19"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 85,
+   "setting": "stars",
+   "basis": "A sky of great stars (85:1), an old empty trench long after the story, with no fire and no people (85:4), and a reading stand for the honoured Quran (85:21). The suffering of the story is not pictured.",
+   "references": [
+    "85:1",
+    "85:21",
+    "85:4"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 86,
+   "setting": "stars",
+   "basis": "A piercing bright star (86:3), a cloud that returns rain (86:11) and earth cracking open with sprouts (86:12). No person is shown, and the Day of 86:9 is not pictured.",
+   "references": [
+    "86:11",
+    "86:12",
+    "86:3"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 87,
+   "setting": "meadow",
+   "basis": "A pasture that grows green and then turns to dark stubble (87:4-5), shown as a field that slowly changes. The Fire (87:12) is not pictured. No person is shown.",
+   "references": [
+    "87:4",
+    "87:5"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 88,
+   "setting": "dunes",
+   "basis": "Four things the surah asks us to look at: camels (88:17), the raised sky (88:18), mountains (88:19) and the spread-out earth (88:20). The scenes of the Day and of the Garden (88:1-16) are not pictured. No person is shown.",
+   "references": [
+    "88:17",
+    "88:18",
+    "88:19",
+    "88:20"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 89,
+   "setting": "dawn",
+   "basis": "A dawn lookout (89:1), ruins of tall pillars for Iram (89:7) and a valley of rock with carved doorways for Thamud (89:9). They are artistic stand-ins, not the real places. No person is shown and the punishment (89:13) is not pictured.",
+   "references": [
+    "89:1",
+    "89:7",
+    "89:9"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 90,
+   "setting": "mountain",
+   "basis": "A fork with two ways (90:10), one an easy path and one a steep, narrow rocky pass (90:11), and at the top of the pass a table for feeding on a day of hunger (90:14). No person is shown.",
+   "references": [
+    "90:10",
+    "90:11",
+    "90:14"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 91,
+   "setting": "sun",
+   "basis": "A sundial (91:1) and a still pool where the moon is seen after the sun (91:2), a well with an empty trough (91:13), and cliffs with carved doorways for Thamud (91:11). No person or animal from the story is shown, and the destruction (91:14) is not pictured.",
+   "references": [
+    "91:1",
+    "91:11",
+    "91:13",
+    "91:2"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 92,
+   "setting": "night",
+   "basis": "A courtyard in two halves, one of night with lanterns (92:1) and one of day with sunflowers (92:2), and a giving table for the one who gives (92:5, 92:18). No person is shown. The Fire and the next life are not pictured.",
+   "references": [
+    "92:1",
+    "92:2",
+    "92:5"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 93,
+   "setting": "morning",
+   "basis": "A bright morning meadow (93:1), a shaded grove where the night's darkness lingers (93:2), and a home with a door open to the orphan and the one who asks (93:9-10). No person is shown.",
+   "references": [
+    "93:1",
+    "93:10",
+    "93:2"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 94,
+   "setting": "meadow",
+   "basis": "A steep, stony stretch of path that opens onto an easy meadow path, for \"with hardship will be ease\" (94:5-6), with a heavy pack set down by the way as a picture of a burden removed (94:2). An artistic picture; no person is shown.",
+   "references": [
+    "94:2",
+    "94:5"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 95,
+   "setting": "orchard",
+   "basis": "A fig orchard and an olive grove (95:1), a far mountain standing for Mount Sinai (95:2) and a distant walled city for the secure city (95:3). The mountain and city are simple stand-ins, not their real shapes. No person is shown.",
+   "references": [
+    "95:1",
+    "95:2",
+    "95:3"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 96,
+   "setting": "mountain",
+   "basis": "A high rocky hill with a small cave, following the hadith that the first revelation came in a cave on a mountain (the surah itself does not describe the place), a writing desk with a reed pen and ink (96:4), and a prayer terrace (96:19). No person is shown.",
+   "references": [
+    "96:1",
+    "96:19",
+    "96:4"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 97,
+   "setting": "night",
+   "basis": "A long wall of a thousand small lamps for \"better than a thousand months\" (97:3), and a hill where the sky brightens at the emergence of dawn (97:5). The angels and the Spirit (97:4) are not pictured.",
+   "references": [
+    "97:3",
+    "97:5"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 98,
+   "setting": "morning",
+   "basis": "A reading stand with a closed, covered book for the purified scriptures (98:2-3) and a clear spring for sincerity (98:5). No person is shown; the Fire and the gardens of 98:6-8 are not pictured.",
+   "references": [
+    "98:2",
+    "98:5"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 99,
+   "setting": "morning",
+   "basis": "Dust motes in a shaft of sunlight and a garden of tiny seedlings, pictures of how small an atom's weight is (99:7-8). The earthquake and the Day are not pictured.",
+   "references": [
+    "99:7",
+    "99:8"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 100,
+   "setting": "dunes",
+   "basis": "Riderless horses racing over dunes at dawn (100:1, 100:3), sparks where hooves strike stone (100:2) and clouds of dust (100:4). No riders or people are shown.",
+   "references": [
+    "100:1",
+    "100:2",
+    "100:4"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 101,
+   "setting": "night",
+   "basis": "The surah's two comparisons, shown as ordinary things of this world: moths scattered around lamps at night (101:4) and fluffed wool (101:5). The Day itself, the scales and the Fire are not pictured.",
+   "references": [
+    "101:4",
+    "101:5"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 102,
+   "setting": "garden",
+   "basis": "Towers of stacked crates and jars competing in height, a picture of competition in worldly increase (102:1), and a quiet walled graveyard with plain stones (102:2). The Day of Judgement and the Fire are not pictured.",
+   "references": [
+    "102:1",
+    "102:2"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 103,
+   "setting": "dunes",
+   "basis": "Open sand in late afternoon light, the time the surah is named for: a great hourglass (103:1), footprints fading across the plain (103:2) and four plain gates for the four qualities of 103:3.",
+   "references": [
+    "103:1",
+    "103:2",
+    "103:3"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 104,
+   "setting": "desert-dusk",
+   "basis": "A dusty counting room with a table of coins and a ledger, wealth collected and counted (104:2), which cannot make anyone live forever (104:3). The Day of Judgement and the Fire are not pictured.",
+   "references": [
+    "104:2",
+    "104:3"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 105,
+   "setting": "desert-dusk",
+   "basis": "A desert valley at dusk holding what the surah names: an elephant and its tracks (105:1), flocks of birds over the hills (105:3), small stones of baked clay (105:4) and a field of eaten straw (105:5). No army or person is shown, and nothing is acted out.",
+   "references": [
+    "105:1",
+    "105:3",
+    "105:4",
+    "105:5"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 106,
+   "setting": "dunes",
+   "basis": "Two resting caravans, one for winter and one for summer (106:2), a distant house in a valley (106:3), and food and water given (106:4). No people are shown.",
+   "references": [
+    "106:2",
+    "106:3",
+    "106:4"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 107,
+   "setting": "morning",
+   "basis": "A small street with a home whose door is open to orphans (107:2), a table for feeding the poor (107:3) and a shelf of small things to lend (107:7). No people are shown.",
+   "references": [
+    "107:2",
+    "107:3",
+    "107:7"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 108,
+   "setting": "orchard",
+   "basis": "An orchard heavy with fruit as a sign of good things given (108:1) and a quiet prayer terrace (108:2). Al-Kawthar itself is not pictured.",
+   "references": [
+    "108:1",
+    "108:2"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 109,
+   "setting": "meadow",
+   "basis": "One path that divides into two separate paths that never cross (109:6), with paired stones for the repeated ayahs (109:2-5). An artistic picture; no people are shown.",
+   "references": [
+    "109:2",
+    "109:6"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 110,
+   "setting": "sun",
+   "basis": "Many roads meeting at an open gate, a picture of people entering in multitudes (110:2), and a quiet terrace for praise and asking forgiveness (110:3). No people are shown.",
+   "references": [
+    "110:1",
+    "110:2",
+    "110:3"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 111,
+   "setting": "desert-dusk",
+   "basis": "An abandoned heap of wealth (111:2) and a bundle of firewood with a twisted fibre rope (111:4-5) beside a dusk road. No person is shown and the Fire (111:3) is not pictured.",
+   "references": [
+    "111:2",
+    "111:4"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 112,
+   "setting": "morning",
+   "basis": "A calm morning courtyard of geometric tiles, a shaded shelter and an open terrace where the four ayahs are read (112:1-4). Nothing is shown to stand for Allah.",
+   "references": [
+    "112:1",
+    "112:2",
+    "112:4"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 113,
+   "setting": "dawn",
+   "basis": "A ridge facing the first light of daybreak (113:1) and a hollow where darkness settles (113:3), lit by lanterns. An artistic setting; nothing unseen is pictured.",
+   "references": [
+    "113:1",
+    "113:3"
+   ],
+   "review_status": "unreviewed"
+  },
+  {
+   "surah": 114,
+   "setting": "wind",
+   "basis": "A windy lane of tall reeds that whisper, leading to a lit stone shelter: an artistic picture of seeking refuge (114:1) from the whisperer (114:4). Nothing unseen is pictured.",
+   "references": [
+    "114:1",
+    "114:4"
+   ],
+   "review_status": "unreviewed"
+  }
+ ]
+}

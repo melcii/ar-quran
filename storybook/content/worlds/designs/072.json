@@ -1,0 +1,139 @@
+{
+ "surah": 72,
+ "name": {
+  "transliterated": "Al-Jinn",
+  "meaning": "The Jinn"
+ },
+ "ayah_count": 28,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "The Quran guides",
+  "Unseen beings exist but are not shown",
+  "Worship only Allah"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Jinn tells that a group of jinn heard the Quran, found it amazing and believed. The jinn are never shown.",
+ "world_title": "An Amazing Recitation Heard",
+ "environment_concept": "A still desert under the stars (72:1) and shooting stars across the sky (72:8). Nothing unseen is shown.",
+ "architecture_and_scenery": "Night desert, sky with shooting stars.",
+ "palette": {
+  "colors": [
+   "#0f1a33",
+   "#e6d38a",
+   "#c9b090"
+  ],
+  "lighting": "Starlight and shooting stars",
+  "atmosphere": "Silent"
+ },
+ "areas": [
+  {
+   "name": "Listening Night",
+   "reference": "72:1",
+   "anchor_phrase": "amazing Qur'an",
+   "description": "A still desert under stars."
+  },
+  {
+   "name": "Guarded Sky",
+   "reference": "72:8",
+   "anchor_phrase": "burning flames",
+   "description": "Shooting stars across the sky."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Shooting stars",
+   "reference": "72:8",
+   "description": "Find four bright stars low in the sky.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  }
+ ],
+ "narration_plan": "Jinn are unseen; nothing shows them.",
+ "learning_objectives": [
+  "Explain that jinn are unseen",
+  "Explain 72:1-2"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "72:1",
+   "anchor_phrase": "amazing Qur'an",
+   "element": "Listening Night"
+  },
+  {
+   "reference": "72:8",
+   "anchor_phrase": "burning flames",
+   "element": "Guarded Sky"
+  }
+ ],
+ "required_assets": [
+  "Desert",
+  "Night sky"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (dunes, shootingStars, stones) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "72:1",
+  "72:8"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Valley of Listening",
+  "quran_references": [
+   "72:1–15"
+  ],
+  "primary_mechanic": {
+   "kind": "listening-valley",
+   "engine": "not built yet",
+   "text": "Find the quietest spots in a desert valley to hear the recitation clearly (72:1); nothing unseen is shown."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Listeners",
+  "quran_references": [
+   "72:1–15"
+  ],
+  "children_narration": "The Quran tells us that a group of jinn listened to its recitation. They recognized its remarkable guidance and spoke about believing in Allah. The surah reminds us that Allah's creation includes things humans cannot normally see.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Valley of Listening",
+   "description": "Explore an atmospheric desert listening environment with recitation and nature sounds. Jinn are not visually represented or controlled."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "Jinn are never shown or played.",
+  "status": "draft, unreviewed"
+ }
+}

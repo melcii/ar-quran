@@ -1,0 +1,195 @@
+{
+ "surah": 78,
+ "name": {
+  "transliterated": "An-Naba’",
+  "meaning": "The Tidings"
+ },
+ "ayah_count": 40,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "Signs of Allah",
+  "Rest and work",
+  "The Great News"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "An-Naba' means The Great News. It asks people to look at signs: the earth, mountains, sleep, night and day, the sun, rain and gardens.",
+ "world_title": "The Earth as a Resting Place",
+ "environment_concept": "A walk through the signs of 78:6-16: a soft meadow with a resting bench (78:6), mountains standing like stakes (78:7), a starry canopy that covers like clothing (78:10), a bright sun disc like a burning lamp (78:13), and gardens of vines grown thickly together (78:16). The Day of 78:17-40 is not pictured. No person is shown.",
+ "architecture_and_scenery": "A meadow bench, stake-like peaks, a starry cloth canopy, a sun disc, entwined vine arbours.",
+ "palette": {
+  "colors": [
+   "#c9b090",
+   "#5a5a6a",
+   "#f0d890",
+   "#6f8f4a"
+  ],
+  "lighting": "Full day-night cycle",
+  "atmosphere": "Calm, rain"
+ },
+ "areas": [
+  {
+   "name": "Resting Place",
+   "reference": "78:6",
+   "anchor_phrase": "resting place",
+   "description": "A soft meadow with a bench to rest on."
+  },
+  {
+   "name": "Mountains as Stakes",
+   "reference": "78:7",
+   "anchor_phrase": "stakes",
+   "description": "Tall, narrow peaks standing like stakes."
+  },
+  {
+   "name": "Night as Clothing",
+   "reference": "78:10",
+   "anchor_phrase": "clothing",
+   "description": "A dark starry canopy that covers like clothing."
+  },
+  {
+   "name": "Burning Lamp",
+   "reference": "78:13",
+   "anchor_phrase": "burning lamp",
+   "description": "A bright sun disc shining like a lamp."
+  },
+  {
+   "name": "Gardens of Entwined Growth",
+   "reference": "78:16",
+   "anchor_phrase": "entwined",
+   "description": "Arbours where vines grow thickly together."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Read the signs",
+   "reference": "78:6-15",
+   "kind": "order",
+   "description": "Put ayahs 6 to 15 of An-Naba' in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "78:6-16",
+   "kind": "match",
+   "description": "Match the meadow, the peaks, the canopy, the sun and the arbours to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Walk the signs",
+   "reference": "78:6-16",
+   "kind": "journey",
+   "description": "Put the places in the order the surah gives them.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration repeats the questions of the surah.",
+ "learning_objectives": [
+  "List signs in 78:6-16"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "78:6",
+   "anchor_phrase": "resting place",
+   "element": "Resting Place"
+  },
+  {
+   "reference": "78:7",
+   "anchor_phrase": "stakes",
+   "element": "Mountains as Stakes"
+  },
+  {
+   "reference": "78:10",
+   "anchor_phrase": "clothing",
+   "element": "Night as Clothing"
+  },
+  {
+   "reference": "78:13",
+   "anchor_phrase": "burning lamp",
+   "element": "Burning Lamp"
+  },
+  {
+   "reference": "78:16",
+   "anchor_phrase": "entwined",
+   "element": "Gardens of Entwined Growth"
+  }
+ ],
+ "required_assets": [
+  "Meadow terrain (shared)",
+  "Bench",
+  "Peaks",
+  "Starry canopy",
+  "Sun disc",
+  "Vine arbours"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: its own scene (a meadow bench, stake-like peaks, a starry canopy, a sun disc and vine arbours) and three playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Naba.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
+ },
+ "quran_references": [
+  "78:6",
+  "78:6-15",
+  "78:6-16",
+  "78:7",
+  "78:10",
+  "78:13",
+  "78:16"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Earth and Sky Museum",
+  "quran_references": [
+   "78:1–40"
+  ],
+  "primary_mechanic": {
+   "kind": "earth-sky-museum",
+   "engine": "not built yet",
+   "text": "A museum of large exhibits: mountains as pegs, sleep as rest, night as covering (78:6-16)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Great News",
+  "quran_references": [
+   "78:1–40"
+  ],
+  "children_narration": "The Quran asks us to look at mountains, the earth, sleep, night, day, and rainfall. These are familiar parts of life, but each can inspire wonder. Surah An-Naba connects these signs to the great news of resurrection and accountability.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Earth and Sky Museum",
+   "description": "Travel through a series of large interactive natural exhibits, from mountains and clouds to night and day."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

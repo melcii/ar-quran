@@ -1,0 +1,179 @@
+{
+ "surah": 9,
+ "name": {
+  "transliterated": "At-Taubah",
+  "meaning": "The Repentance"
+ },
+ "ayah_count": 129,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Repentance",
+  "Keeping commitments",
+  "Sincerity",
+  "Learning"
+ ],
+ "narrative_passages": [
+  {
+   "title": "The two in the cave",
+   "reference": "9:40",
+   "anchor_phrase": "one of two"
+  },
+  {
+   "title": "The three who were left behind",
+   "reference": "9:118",
+   "anchor_phrase": "three"
+  }
+ ],
+ "summary_for_children": "At-Tawbah is about turning back to Allah, keeping our word, and being sincere. It mentions the cave where the Prophet and his companion sheltered.",
+ "world_title": "The Road of Return",
+ "environment_concept": "A small empty cave in the hills (9:40), a simple mosque on firm foundations (9:108-109) and a circle of stones for learning (9:122).",
+ "architecture_and_scenery": "Long desert road, rocky hills with a cave, a simple mosque with palm trunks and a learning circle.",
+ "palette": {
+  "colors": [
+   "#d8c29a",
+   "#a3734a",
+   "#4b5b3c",
+   "#e8e2d0"
+  ],
+  "lighting": "Hot noon softening to evening",
+  "atmosphere": "Dry wind, then evening calm"
+ },
+ "areas": [
+  {
+   "name": "Cave of Two",
+   "reference": "9:40",
+   "anchor_phrase": "cave",
+   "description": "A small cave in the hills, empty and still."
+  },
+  {
+   "name": "Mosque of Righteousness",
+   "reference": "9:108",
+   "anchor_phrase": "founded on righteousness",
+   "description": "A simple mosque on firm foundations."
+  },
+  {
+   "name": "Circle of Learning",
+   "reference": "9:122",
+   "anchor_phrase": "obtain understanding",
+   "description": "Stones in a circle where knowledge is shared."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Lanterns of return",
+   "reference": "9:104",
+   "description": "Light lanterns along the road home while reading about repentance.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Firm foundations",
+   "reference": "9:109",
+   "description": "Carry four foundation stones to build on firm ground.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  }
+ ],
+ "narration_plan": "The narrator explains the history carefully as explanation, and no person is shown in the cave.",
+ "learning_objectives": [
+  "Explain what repentance means",
+  "Compare firm and weak foundations",
+  "Value learning"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "9:40",
+   "anchor_phrase": "cave",
+   "element": "Cave of Two"
+  },
+  {
+   "reference": "9:108",
+   "anchor_phrase": "founded on righteousness",
+   "element": "Mosque of Righteousness"
+  },
+  {
+   "reference": "9:122",
+   "anchor_phrase": "obtain understanding",
+   "element": "Circle of Learning"
+  }
+ ],
+ "required_assets": [
+  "Desert road",
+  "Cave",
+  "Simple mosque",
+  "Learning circle stones"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (cave, mosque, stones) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "9:40",
+  "9:104",
+  "9:108",
+  "9:109",
+  "9:118",
+  "9:122"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "adventure_world": {
+  "title": "The Journey of Return",
+  "route": "/adventure/9",
+  "built_in": "src/adventure/worlds/w009.ts (engine: src/adventure/)",
+  "source": "\"Quran Adventure: First 10 Unique Worlds\" with the rule \"114 unique game experiences\" (2026-11-04); replaces the first adventure version built from the earlier design table",
+  "status": "second version built for the web: each world now has its own core mechanic; draft, unreviewed; checked in headless Chromium with software WebGL only, not on phones or real GPUs",
+  "note": "The new-look adventure world for this surah. It is a separate design from the composed scene this record describes; both are kept until reviewers choose.",
+  "core_play": "A choices-and-reflection journey: answer everyday situations at signposts (an excuse sends you back a little way to think again), then walk through a gorge where the mist closes in and clears."
+ },
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "Mountain gorge in mist that clears",
+  "quran_references": [
+   "9:104",
+   "9:118",
+   "9:119"
+  ],
+  "primary_mechanic": {
+   "kind": "choices+mist-gorge",
+   "engine": "choice+reach",
+   "text": "Everyday choices where a wrong answer walks you back to think again, then a gorge whose mist thickens and clears as you go on (9:118)."
+  },
+  "secondary_activities": [
+   "rest stand (9:104)"
+  ],
+  "narrative_structure": "Linear journey",
+  "world_assets": [
+   "gorge cliffs",
+   "mist"
+  ],
+  "environment_behaviour": [
+   "mist thickens then clears",
+   "cliffs close and open"
+  ],
+  "learning_objective": "Turning back to Allah and being truthful",
+  "interaction_tests": {
+   "activate": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
+   "responds": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
+   "feedback": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
+   "goal": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
+   "completion": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
+   "saved": "untested (save is written; reload not re-checked in the 7-point run)",
+   "devices": "untested (desktop headless only; not run in phone emulation)"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w009.ts"
+ }
+}

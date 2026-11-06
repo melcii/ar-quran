@@ -1,0 +1,233 @@
+{
+ "surah": 2,
+ "name": {
+  "transliterated": "Al-Baqarah",
+  "meaning": "The Cow"
+ },
+ "ayah_count": 286,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "Guidance for the God-conscious",
+  "Adam and the knowledge of names",
+  "The Children of Israel",
+  "Ibrahim and the House",
+  "Charity",
+  "Patience and testing"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Adam and the names",
+   "reference": "2:30-39",
+   "anchor_phrase": "successive authority"
+  },
+  {
+   "title": "The cow",
+   "reference": "2:67-73",
+   "anchor_phrase": "slaughter a cow"
+  },
+  {
+   "title": "Ibrahim and Ismail raise the House",
+   "reference": "2:127-129",
+   "anchor_phrase": "foundations"
+  },
+  {
+   "title": "Talut and the river",
+   "reference": "2:249-251",
+   "anchor_phrase": "river"
+  },
+  {
+   "title": "The town and the hundred years",
+   "reference": "2:259",
+   "anchor_phrase": "hundred years"
+  }
+ ],
+ "summary_for_children": "Al-Baqarah is the longest surah. It shows how Allah guides people, tells of Adam, of the Children of Israel and the cow, of Ibrahim building the House, and teaches about charity, patience and good character.",
+ "world_title": "The Valley of Guidance",
+ "environment_concept": "A green valley of guidance: an orchard where hidden things are found by name (2:31), a meadow of cows (2:67), great foundation stones (2:127), a river to cross (2:249) and a field where one seed grows seven spikes (2:261).",
+ "architecture_and_scenery": "Terraced valley with a garden of names, a pastoral meadow, stone foundations of an ancient house, a river crossing and fields of grain.",
+ "palette": {
+  "colors": [
+   "#d9c48f",
+   "#7d9a55",
+   "#3d6e8f",
+   "#efe6d2"
+  ],
+  "lighting": "Warm midday sun turning to clear evening",
+  "atmosphere": "Breezy, open sky, river spray"
+ },
+ "areas": [
+  {
+   "name": "Garden of Names",
+   "reference": "2:31",
+   "anchor_phrase": "names",
+   "description": "Objects around the glade reveal their names when found."
+  },
+  {
+   "name": "Meadow of the Cow",
+   "reference": "2:67",
+   "anchor_phrase": "cow",
+   "description": "A pasture recalling the account; the people are never shown."
+  },
+  {
+   "name": "Foundations of the House",
+   "reference": "2:127",
+   "anchor_phrase": "foundations",
+   "description": "Great foundation stones by a quiet valley."
+  },
+  {
+   "name": "River Crossing",
+   "reference": "2:249",
+   "anchor_phrase": "river",
+   "description": "A river whose ayah is read before crossing; a lesson on patience."
+  },
+  {
+   "name": "Field of Seven Spikes",
+   "reference": "2:261",
+   "anchor_phrase": "seven spikes",
+   "description": "A field where one seed grows into seven spikes of grain."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Plant the seed of charity",
+   "reference": "2:261",
+   "description": "Plant three seeds; each one grows seven spikes of grain.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  },
+  {
+   "name": "Find the names",
+   "reference": "2:31",
+   "description": "Find five glowing things hidden in the orchard.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  },
+  {
+   "name": "Lay the foundations",
+   "reference": "2:127",
+   "description": "Carry four great stones to the foundations.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  }
+ ],
+ "narration_plan": "The narrator guides from glade to glade, separating what the Quran states from explanation, and reads each glade's ayah.",
+ "learning_objectives": [
+  "Name the main stories in Al-Baqarah",
+  "Explain the seed example of charity",
+  "Understand that knowledge comes from Allah"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "2:31",
+   "anchor_phrase": "names",
+   "element": "Garden of Names"
+  },
+  {
+   "reference": "2:67",
+   "anchor_phrase": "cow",
+   "element": "Meadow of the Cow"
+  },
+  {
+   "reference": "2:127",
+   "anchor_phrase": "foundations",
+   "element": "Foundations of the House"
+  },
+  {
+   "reference": "2:249",
+   "anchor_phrase": "river",
+   "element": "River Crossing"
+  },
+  {
+   "reference": "2:261",
+   "anchor_phrase": "seven spikes",
+   "element": "Field of Seven Spikes"
+  }
+ ],
+ "required_assets": [
+  "Terraced valley terrain",
+  "River with crossing stones",
+  "Grain field with growth animation",
+  "Foundation stones",
+  "Pasture"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (foundations, grain, herd, orchard, river) with 3 hands-on activities in the scene",
+  "testing": "checked in headless Chromium with software WebGL at 960x600; not tested on phones or real GPUs",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "automated screenshots of the scene and the in-scene activities"
+ },
+ "quran_references": [
+  "2:30-39",
+  "2:31",
+  "2:67",
+  "2:67-73",
+  "2:127",
+  "2:127-129",
+  "2:249",
+  "2:249-251",
+  "2:259",
+  "2:261"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "adventure_world": {
+  "title": "The Great Story Atlas",
+  "route": "/adventure/2",
+  "built_in": "src/adventure/worlds/w002.ts (engine: src/adventure/)",
+  "source": "\"Quran Adventure: First 10 Unique Worlds\" with the rule \"114 unique game experiences\" (2026-11-04); replaces the first adventure version built from the earlier design table",
+  "status": "second version built for the web: each world now has its own core mechanic; draft, unreviewed; checked in headless Chromium with software WebGL only, not on phones or real GPUs",
+  "note": "The new-look adventure world for this surah. It is a separate design from the composed scene this record describes; both are kept until reviewers choose.",
+  "core_play": "A hub-and-doors adventure: the atlas hall sends you into four story lands, each with its own kind of play. The village is an investigation in which you narrow a herd down by each answer in turn."
+ },
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "Story atlas hall with a lit floor map and doors to separate lands",
+  "quran_references": [
+   "2:67-71",
+   "2:125-129"
+  ],
+  "primary_mechanic": {
+   "kind": "atlas-warps+sift",
+   "engine": "sift",
+   "text": "Choose story lands from an atlas; in the cow land, hear each description in the Quran's order (2:67-71) and send away cows that do not match."
+  },
+  "secondary_activities": [
+   "carry",
+   "ordered corner walk round a low outline (2:125-129)",
+   "orchard giving"
+  ],
+  "narrative_structure": "Hub and spokes: atlas hall with story doors",
+  "world_assets": [
+   "atlas hall",
+   "floor map",
+   "story doors",
+   "cow herd with looks"
+  ],
+  "environment_behaviour": [
+   "map lights per land finished"
+  ],
+  "learning_objective": "Follow the questions about the cow in order and see the surah as many stories",
+  "interaction_tests": {
+   "activate": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
+   "responds": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
+   "feedback": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
+   "goal": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
+   "completion": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
+   "saved": "untested (save is written; reload not re-checked in the 7-point run)",
+   "devices": "untested (desktop headless only; not run in phone emulation)"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w002.ts"
+ }
+}

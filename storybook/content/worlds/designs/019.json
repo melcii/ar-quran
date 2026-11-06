@@ -1,0 +1,229 @@
+{
+ "surah": 19,
+ "name": {
+  "transliterated": "Maryam",
+  "meaning": "Mary"
+ },
+ "ayah_count": 98,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "Mercy",
+  "Zakariyya's prayer",
+  "Maryam and Isa",
+  "Ibrahim and his father",
+  "Prophets"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Zakariyya and Yahya",
+   "reference": "19:2-15",
+   "anchor_phrase": "Zechariah"
+  },
+  {
+   "title": "Maryam and Isa",
+   "reference": "19:16-36",
+   "anchor_phrase": "Mary"
+  },
+  {
+   "title": "Ibrahim and his father",
+   "reference": "19:41-50",
+   "anchor_phrase": "Abraham"
+  },
+  {
+   "title": "Musa at the mount",
+   "reference": "19:51-53",
+   "anchor_phrase": "mount"
+  }
+ ],
+ "summary_for_children": "Surah Maryam tells of Zakariyya's prayer for a child, of Maryam and the birth of Isa, of Ibrahim speaking gently to his father, and of other prophets.",
+ "world_title": "The Palm and the Spring",
+ "environment_concept": "A quiet chamber (19:11), a tall palm in a remote place (19:23) with a stream below it (19:24) and ripe dates (19:25), and a mountain slope (19:52). No one is shown.",
+ "architecture_and_scenery": "Prayer chamber, lonely valley with one tall palm and a stream, family home, and a mountain slope.",
+ "palette": {
+  "colors": [
+   "#e8dcc0",
+   "#6a8f4a",
+   "#3d6e8f",
+   "#c9a46a"
+  ],
+  "lighting": "Soft morning light",
+  "atmosphere": "Quiet, birdsong by the stream"
+ },
+ "areas": [
+  {
+   "name": "Prayer Chamber",
+   "reference": "19:11",
+   "anchor_phrase": "prayer chamber",
+   "description": "A quiet chamber; no one shown."
+  },
+  {
+   "name": "The Palm Tree",
+   "reference": "19:23",
+   "anchor_phrase": "palm tree",
+   "description": "A tall palm in a remote place."
+  },
+  {
+   "name": "The Stream",
+   "reference": "19:24",
+   "anchor_phrase": "stream",
+   "description": "A stream below the palm."
+  },
+  {
+   "name": "Ripe Dates",
+   "reference": "19:25",
+   "anchor_phrase": "fresh dates",
+   "description": "Dates falling from the palm."
+  },
+  {
+   "name": "The Mount",
+   "reference": "19:52",
+   "anchor_phrase": "mount",
+   "description": "A mountain slope where Musa was called."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Gentle words",
+   "reference": "19:42-47",
+   "description": "Choose the gentle way Ibrahim spoke to his father, read from the ayahs.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "The palm and the stream",
+   "reference": "19:24-26",
+   "description": "Find five ripe dates fallen under the palms.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  }
+ ],
+ "narration_plan": "Narration is quiet and reverent; Maryam, Isa and all prophets are never shown or voiced.",
+ "learning_objectives": [
+  "Retell Maryam's account from the ayahs",
+  "Explain gentle speech to parents",
+  "Name prophets mentioned"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "19:11",
+   "anchor_phrase": "prayer chamber",
+   "element": "Prayer Chamber"
+  },
+  {
+   "reference": "19:23",
+   "anchor_phrase": "palm tree",
+   "element": "The Palm Tree"
+  },
+  {
+   "reference": "19:24",
+   "anchor_phrase": "stream",
+   "element": "The Stream"
+  },
+  {
+   "reference": "19:25",
+   "anchor_phrase": "fresh dates",
+   "element": "Ripe Dates"
+  },
+  {
+   "reference": "19:52",
+   "anchor_phrase": "mount",
+   "element": "The Mount"
+  }
+ ],
+ "required_assets": [
+  "Prayer chamber",
+  "Palm tree and stream",
+  "Mountain slope"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (chamber, mountain, palms, river) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "19:2-15",
+  "19:11",
+  "19:16-36",
+  "19:23",
+  "19:24",
+  "19:24-26",
+  "19:25",
+  "19:41-50",
+  "19:42-47",
+  "19:51-53",
+  "19:52"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "A still palm grove with a small stream, a prayer niche and a pavilion facing the sunrise",
+  "quran_references": [
+   "19:2-4",
+   "19:16",
+   "19:24",
+   "19:25",
+   "19:26",
+   "19:47",
+   "19:96"
+  ],
+  "primary_mechanic": {
+   "kind": "point-to-answer",
+   "engine": "point",
+   "text": "A quiet world played by pointing only: each question is answered by pointing at something in the grove, never by choosing words, recalling the vow of silence and the pointing in 19:26-29."
+  },
+  "secondary_activities": [
+   "reading on peace and affection (19:47, 19:96)"
+  ],
+  "narrative_structure": "Four questions answered by pointing, then the lantern by the bench",
+  "world_assets": [
+   "prayer niche",
+   "pavilion facing east",
+   "little stream",
+   "tall palm with dates"
+  ],
+  "environment_behaviour": [
+   "palm fronds sway; everything that can be pointed at glows softly while a question is open"
+  ],
+  "learning_objective": "Learn the quiet prayers and mercy of Surah Maryam; answer by looking and noticing",
+  "interaction_tests": {
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: pointed with the on-screen button (no word choices anywhere))",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: pointing at the palm for the first question is gently refused; the niche is right)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status shows the next question to answer by pointing)",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: answers [0,1,2,3])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"quiet\",\"peace\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w019.ts"
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Garden of Miracles",
+  "quran_references": [
+   "19:2–40",
+   "19:41–58"
+  ],
+  "children_narration": "Prophet Zakariyya prayed to Allah for a child, even though he and his wife were old. Allah answered his prayer and gave him the joyful news of Yahya. Maryam was also given extraordinary news: she would have a son named Isa, by Allah's command. When Maryam was alone and distressed, Allah provided comfort and help for her. The Quran describes a palm tree and water as part of her story. Surah Maryam also remembers Ibrahim and other prophets who were devoted to Allah. These stories teach us that Allah hears prayers, knows our needs, and has power over all things.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Sanctuary of Hope",
+   "description": "Explore a prayer sanctuary, a quiet palm grove, and several connected story areas. Activities focus on discovering the narration, observing nature, and learning about hope and devotion."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "Zakariyya, Maryam, Isa, Yahya and Ibrahim are never shown. The palm and stream (19:23-26) are a quiet place; Maryam is not pictured in it.",
+  "status": "draft, unreviewed"
+ }
+}

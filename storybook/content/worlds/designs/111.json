@@ -1,0 +1,152 @@
+{
+ "surah": 111,
+ "name": {
+  "transliterated": "Al-Masad",
+  "meaning": "The Palm Fiber"
+ },
+ "ayah_count": 5,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Opposing truth brings loss",
+  "Wealth does not save"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Masad tells of Abu Lahab and his wife, who opposed the Prophet (peace be upon him), and that wealth did not help them.",
+ "world_title": "Wealth Will Not Avail",
+ "environment_concept": "A dusk road past an abandoned heap of chests and coins that does no good to anyone, and a bundle of firewood tied with a twisted rope. No person is shown, and the Fire of 111:3 is not pictured.",
+ "architecture_and_scenery": "Dusty chests and scattered coins, a firewood bundle with a rope of twisted fibre.",
+ "palette": {
+  "colors": [
+   "#8c5a3a",
+   "#5a5a6a"
+  ],
+  "lighting": "Dim",
+  "atmosphere": "Still"
+ },
+ "areas": [
+  {
+   "name": "Wealth That Will Not Avail",
+   "reference": "111:2",
+   "anchor_phrase": "wealth",
+   "description": "An abandoned heap of chests and coins half sunk in sand: wealth that did not help its owner."
+  },
+  {
+   "name": "Firewood and Rope",
+   "reference": "111:4",
+   "anchor_phrase": "firewood",
+   "description": "A bundle of firewood tied with a rope of twisted fibre (111:4-5). No person is shown."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Read the five",
+   "reference": "111:1-5",
+   "kind": "order",
+   "description": "Put the five ayahs of Al-Masad in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "111:1-5",
+   "kind": "match",
+   "description": "Match the heap of wealth and the firewood to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "What really helps",
+   "reference": "111:2",
+   "kind": "card",
+   "description": "Talk about why money alone cannot save anyone, and what does help.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "No person shown; the Fire is not shown.",
+ "learning_objectives": [
+  "Explain 111:2"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "111:2",
+   "anchor_phrase": "wealth",
+   "element": "Wealth That Will Not Avail"
+  },
+  {
+   "reference": "111:4",
+   "anchor_phrase": "firewood",
+   "element": "Firewood and Rope"
+  }
+ ],
+ "required_assets": [
+  "Desert dusk terrain (shared)",
+  "Chests and coins",
+  "Firewood bundle and rope"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: its own scene (an abandoned heap of wealth, a firewood bundle with a twisted rope) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Masad.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
+ },
+ "quran_references": [
+  "111:1-5",
+  "111:2",
+  "111:4"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The House of Pride",
+  "quran_references": [
+   "111:1–5"
+  ],
+  "primary_mechanic": {
+   "kind": "rope-of-palm-fibre",
+   "engine": "not built yet",
+   "text": "Twist palm fibre into rope for useful work, contrasting with the warning (111:5), narration only."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "A Warning Against Arrogance",
+  "quran_references": [
+   "111:1–5"
+  ],
+  "children_narration": "Abu Lahab strongly opposed Prophet Muhammad's message. Surah Al-Masad warns about his opposition and that of his wife. The surah reminds us that wealth, family position, or influence do not make harmful actions right.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The House of Pride",
+   "description": "Explore a symbolic historic courtyard and learn about the consequences of arrogance and opposition to truth. Present the original account through narration, not fictional reenactment."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "Abu Lahab and his wife are not shown and nothing is acted out; the warning is a reading.",
+  "status": "draft, unreviewed"
+ }
+}

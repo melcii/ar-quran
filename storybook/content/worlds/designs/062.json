@@ -1,0 +1,144 @@
+{
+ "surah": 62,
+ "name": {
+  "transliterated": "Al-Jumu‘ah",
+  "meaning": "The Congregation, Friday"
+ },
+ "ayah_count": 11,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Friday prayer",
+  "Balance of work and worship"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Jumu'ah means Friday. It tells us to leave trade and go to the prayer when called on Friday, then go out and seek Allah's bounty.",
+ "world_title": "Friday Market and Prayer",
+ "environment_concept": "Market stalls shut for the Friday prayer (62:9) and reopened afterwards (62:10).",
+ "architecture_and_scenery": "Market stalls, a call to prayer, and a mosque courtyard.",
+ "palette": {
+  "colors": [
+   "#e9c98f",
+   "#6f8f4a",
+   "#3f6d8f"
+  ],
+  "lighting": "Midday light",
+  "atmosphere": "Busy market then quiet"
+ },
+ "areas": [
+  {
+   "name": "Market",
+   "reference": "62:9",
+   "anchor_phrase": "leave trade",
+   "description": "Busy stalls that close for prayer."
+  },
+  {
+   "name": "After Prayer",
+   "reference": "62:10",
+   "anchor_phrase": "disperse within the land",
+   "description": "Streets reopening after prayer."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Close the stall",
+   "reference": "62:9",
+   "description": "Pause trade when the call comes (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Seek bounty",
+   "reference": "62:10",
+   "description": "After the prayer, carry four baskets to the open stalls.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  }
+ ],
+ "narration_plan": "Narration explains Friday simply.",
+ "learning_objectives": [
+  "Explain Friday prayer",
+  "Explain balance"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "62:9",
+   "anchor_phrase": "leave trade",
+   "element": "Market"
+  },
+  {
+   "reference": "62:10",
+   "anchor_phrase": "disperse within the land",
+   "element": "After Prayer"
+  }
+ ],
+ "required_assets": [
+  "Market",
+  "Courtyard"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (market, mosque) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "62:9",
+  "62:10"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Friday Town",
+  "quran_references": [
+   "62:1–11"
+  ],
+  "primary_mechanic": {
+   "kind": "friday-schedule",
+   "engine": "not built yet",
+   "text": "Plan a Friday in a town: close the stalls when the call comes and reopen after (62:9-10)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "A Special Day Together",
+  "quran_references": [
+   "62:1–11"
+  ],
+  "children_narration": "Friday is an important day for Muslim communities. The Quran teaches believers to give attention to the remembrance of Allah when called to Friday prayer, rather than being distracted by trade and other activities.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Friday Town",
+   "description": "Explore a peaceful town as its weekly routine changes. Learn about the importance of gathering, listening, and making time for worship through interactive scheduling and exploration."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

@@ -1,0 +1,178 @@
+{
+ "surah": 88,
+ "name": {
+  "transliterated": "Al-Ghāshiyah",
+  "meaning": "The Overwhelming"
+ },
+ "ayah_count": 26,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "Reflection on creation",
+  "Reminder"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Ghashiyah asks us to look at the camel, the sky, the mountains and the earth and think how they were created.",
+ "world_title": "Camels, Sky, Mountains, Earth",
+ "environment_concept": "A walk past the four things 88:17-20 asks us to look at: resting camels, a high open lookout for the raised sky, tall mountains standing up from the plain, and a wide flat plain spread out to the horizon. The Day and the Garden described in 88:1-16 are not pictured. No person is shown.",
+ "architecture_and_scenery": "Resting camels, a raised viewing platform, tall peaks, a wide open plain.",
+ "palette": {
+  "colors": [
+   "#d9b46a",
+   "#3a6fb0",
+   "#8c5a3a"
+  ],
+  "lighting": "Desert daylight",
+  "atmosphere": "Dry wind"
+ },
+ "areas": [
+  {
+   "name": "Camels",
+   "reference": "88:17",
+   "anchor_phrase": "camels",
+   "description": "A group of resting camels to look at closely."
+  },
+  {
+   "name": "Raised Sky",
+   "reference": "88:18",
+   "anchor_phrase": "raised",
+   "description": "A high platform for looking up at the sky."
+  },
+  {
+   "name": "Erected Mountains",
+   "reference": "88:19",
+   "anchor_phrase": "mountains",
+   "description": "Tall mountains standing up from the plain."
+  },
+  {
+   "name": "Spread Earth",
+   "reference": "88:20",
+   "anchor_phrase": "spread out",
+   "description": "A wide plain spread out to the horizon."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Read the four signs",
+   "reference": "88:17-20",
+   "kind": "order",
+   "description": "Put ayahs 17 to 20 of Al-Ghashiyah in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "88:17-20",
+   "kind": "match",
+   "description": "Match the camels, the sky, the mountains and the plain to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Look and think",
+   "reference": "88:17",
+   "kind": "card",
+   "description": "Talk about something in nature that makes you think of how it was made.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration calm.",
+ "learning_objectives": [
+  "Explain 88:17-20"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "88:17",
+   "anchor_phrase": "camels",
+   "element": "Camels"
+  },
+  {
+   "reference": "88:18",
+   "anchor_phrase": "raised",
+   "element": "Raised Sky"
+  },
+  {
+   "reference": "88:19",
+   "anchor_phrase": "mountains",
+   "element": "Erected Mountains"
+  },
+  {
+   "reference": "88:20",
+   "anchor_phrase": "spread out",
+   "element": "Spread Earth"
+  }
+ ],
+ "required_assets": [
+  "Dune terrain (shared)",
+  "Camels",
+  "Viewing platform",
+  "Mountain peaks"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: its own scene (camels, a sky platform, tall mountains and a wide plain) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Ghashiyah.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
+ },
+ "quran_references": [
+  "88:17",
+  "88:17-20",
+  "88:18",
+  "88:19",
+  "88:20"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Camel and Mountain Expedition",
+  "quran_references": [
+   "88:1–26"
+  ],
+  "primary_mechanic": {
+   "kind": "camel-sky-mountain",
+   "engine": "not built yet",
+   "text": "Observe four things in turn: a camel, the raised sky, set mountains, spread earth (88:17-20)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "Look at the Wonders Around You",
+  "quran_references": [
+   "88:1–26"
+  ],
+  "children_narration": "Have you ever looked carefully at a camel? What about the sky, mountains, and the earth? Surah Al-Ghashiyah encourages people to observe these remarkable parts of creation. It also reminds us of the Hereafter.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Camel and Mountain Expedition",
+   "description": "Explore a beautiful desert with realistically animated camels, high mountains, and a dramatic open sky. Children complete observation activities connected to the Quranic signs."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

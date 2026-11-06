@@ -1,0 +1,152 @@
+{
+ "surah": 113,
+ "name": {
+  "transliterated": "Al-Falaq",
+  "meaning": "The Daybreak"
+ },
+ "ayah_count": 5,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Seeking protection",
+  "Envy"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Falaq teaches seeking refuge in the Lord of daybreak from evil, darkness and envy.",
+ "world_title": "Lord of Daybreak",
+ "environment_concept": "A ridge facing the eastern horizon as daybreak comes, and a low hollow below it where the evening shadow settles. Lanterns light the hollow. No person, magic or envier is shown.",
+ "architecture_and_scenery": "Ridge-top lookout with low stone seats, a shaded hollow with lanterns.",
+ "palette": {
+  "colors": [
+   "#1c2541",
+   "#f0c080"
+  ],
+  "lighting": "Night to dawn",
+  "atmosphere": "Calm"
+ },
+ "areas": [
+  {
+   "name": "Daybreak Ridge",
+   "reference": "113:1",
+   "anchor_phrase": "daybreak",
+   "description": "A ridge where the sun is rising over the horizon, for reading 113:1."
+  },
+  {
+   "name": "Settling Darkness",
+   "reference": "113:3",
+   "anchor_phrase": "darkness",
+   "description": "A hollow where shadow gathers, lit by small lanterns you can light."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Read the five",
+   "reference": "113:1-5",
+   "kind": "order",
+   "description": "Put the five ayahs of Al-Falaq in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "113:1-5",
+   "kind": "match",
+   "description": "Match the ridge and the hollow to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Light the hollow",
+   "reference": "113:3",
+   "kind": "find",
+   "description": "Tap the three lanterns in the hollow to light them.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "No evil shown.",
+ "learning_objectives": [
+  "Explain seeking refuge"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "113:1",
+   "anchor_phrase": "daybreak",
+   "element": "Daybreak Ridge"
+  },
+  {
+   "reference": "113:3",
+   "anchor_phrase": "darkness",
+   "element": "Settling Darkness"
+  }
+ ],
+ "required_assets": [
+  "Dawn terrain (shared)",
+  "Rising sun disc and glow",
+  "Shaded hollow with lanterns"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: its own scene (a daybreak ridge and a shaded hollow with lanterns to light), two playable games and one activity played in the scene",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Falaq.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
+ },
+ "quran_references": [
+  "113:1",
+  "113:1-5",
+  "113:3"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Forest at Dawn",
+  "quran_references": [
+   "113:1–5"
+  ],
+  "primary_mechanic": {
+   "kind": "forest-dawn-calm",
+   "engine": "not built yet",
+   "text": "A forest growing light at dawn where you recite to feel safe (113:1)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Light of Daybreak",
+  "quran_references": [
+   "113:1–5"
+  ],
+  "children_narration": "When we feel afraid or uncertain, we can ask Allah for protection. Surah Al-Falaq teaches us to seek refuge in the Lord of daybreak from different kinds of harm. It reminds us that we can turn to Allah in difficult moments.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Forest at Dawn",
+   "description": "Explore a quiet forest as morning approaches, with comforting narration and opportunities to learn the surah. Avoid frightening depictions of unseen harms."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The harms (113:2-5) are not pictured.",
+  "status": "draft, unreviewed"
+ }
+}

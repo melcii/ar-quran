@@ -1,0 +1,127 @@
+{
+ "surah": 76,
+ "name": {
+  "transliterated": "Al-Insān",
+  "meaning": "The Man"
+ },
+ "ayah_count": 31,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Feeding others",
+  "Sincerity",
+  "Gratitude"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Insan means Man. It praises people who feed the needy, orphans and captives only for Allah, wanting no thanks.",
+ "world_title": "Feeding for Allah's Sake",
+ "environment_concept": "An open doorway where food is shared (76:8).",
+ "architecture_and_scenery": "A kitchen and doorway, baskets of food.",
+ "palette": {
+  "colors": [
+   "#e9c98f",
+   "#7a9a5a"
+  ],
+  "lighting": "Warm kitchen light",
+  "atmosphere": "Calm"
+ },
+ "areas": [
+  {
+   "name": "The Doorway",
+   "reference": "76:8",
+   "anchor_phrase": "give food",
+   "description": "A doorway where food is shared."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Share the meal",
+   "reference": "76:8-9",
+   "description": "Carry three loaves to the open door to share.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  }
+ ],
+ "narration_plan": "Reward is described only in ayahs.",
+ "learning_objectives": [
+  "Explain 76:8-9",
+  "Explain sincerity"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "76:8",
+   "anchor_phrase": "give food",
+   "element": "The Doorway"
+  }
+ ],
+ "required_assets": [
+  "Kitchen",
+  "Doorway"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (house, orchard) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "76:8",
+  "76:8-9"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The House of Giving",
+  "quran_references": [
+   "76:1–31"
+  ],
+  "primary_mechanic": {
+   "kind": "food-parcels",
+   "engine": "not built yet",
+   "text": "Prepare food parcels for the poor, orphans and captives, asking nothing back (76:8-9)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Gift of Kindness",
+  "quran_references": [
+   "76:1–31"
+  ],
+  "children_narration": "Surah Al-Insan reminds us that human beings are tested through choices. It praises people who give food to those in need, including the poor, orphans, and captives, without expecting a reward from them. True generosity can come from sincere care.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The House of Giving",
+   "description": "Prepare food parcels, identify community needs, and learn why kindness matters even when no one is watching. Quranic descriptions of Paradise are studied respectfully, not reconstructed as fact."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "Paradise passages (76:12-22) are readings only, not built.",
+  "status": "draft, unreviewed"
+ }
+}

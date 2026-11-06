@@ -1,0 +1,168 @@
+{
+ "surah": 92,
+ "name": {
+  "transliterated": "Al-Lail",
+  "meaning": "The Night"
+ },
+ "ayah_count": 21,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Different efforts",
+  "Giving",
+  "Ease"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Layl means The Night. It says people's efforts differ, and those who give and are mindful of Allah will find ease.",
+ "world_title": "Night Covers, Day Appears",
+ "environment_concept": "A courtyard split in two: one half tiled in deep blue with lanterns and night flowers for \"the night when it covers\" (92:1), the other in warm gold with sunflowers for \"the day when it appears\" (92:2). Beside it, a table set out for giving (92:5, 92:18). No person is shown. The Fire and the next life are not pictured.",
+ "architecture_and_scenery": "A two-coloured tiled courtyard with lanterns on one side and sunflowers on the other, a giving table.",
+ "palette": {
+  "colors": [
+   "#1c2541",
+   "#f2c97a"
+  ],
+  "lighting": "Day/night",
+  "atmosphere": "Calm"
+ },
+ "areas": [
+  {
+   "name": "Night Half",
+   "reference": "92:1",
+   "anchor_phrase": "night",
+   "description": "Deep blue tiles, lanterns and night flowers."
+  },
+  {
+   "name": "Day Half",
+   "reference": "92:2",
+   "anchor_phrase": "day",
+   "description": "Warm golden tiles and tall sunflowers."
+  },
+  {
+   "name": "The Giving Table",
+   "reference": "92:5",
+   "anchor_phrase": "gives",
+   "description": "A table set with bread and fruit to give away."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Read the first seven",
+   "reference": "92:1-7",
+   "kind": "order",
+   "description": "Put the first seven ayahs of Al-Layl in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "92:1-5",
+   "kind": "match",
+   "description": "Match the two halves and the table to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Give without wanting thanks",
+   "reference": "92:19",
+   "kind": "card",
+   "description": "Talk about giving only for Allah, not to be paid back.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration calm.",
+ "learning_objectives": [
+  "Explain 92:5-7"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "92:1",
+   "anchor_phrase": "night",
+   "element": "Night Half"
+  },
+  {
+   "reference": "92:2",
+   "anchor_phrase": "day",
+   "element": "Day Half"
+  },
+  {
+   "reference": "92:5",
+   "anchor_phrase": "gives",
+   "element": "The Giving Table"
+  }
+ ],
+ "required_assets": [
+  "Night terrain (shared)",
+  "Two-half courtyard",
+  "Sunflowers",
+  "Giving table"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: its own scene (a night-and-day courtyard and a giving table) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Layl.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
+ },
+ "quran_references": [
+  "92:1",
+  "92:1-5",
+  "92:1-7",
+  "92:2",
+  "92:5",
+  "92:19"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Two Paths",
+  "quran_references": [
+   "92:1–21"
+  ],
+  "primary_mechanic": {
+   "kind": "two-paths-day-night",
+   "engine": "not built yet",
+   "text": "One landscape seen by night and by day; choices change which path lights up (92:1-10)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Night and the Generous Heart",
+  "quran_references": [
+   "92:1–21"
+  ],
+  "children_narration": "Night and day are different, just as people's choices can be different. Surah Al-Layl contrasts generosity and mindfulness with selfishness. It reminds us that helping others sincerely is a meaningful way to live.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Two Paths",
+   "description": "Navigate a stylized day-and-night landscape and make age-appropriate choices about generosity and responsibility."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

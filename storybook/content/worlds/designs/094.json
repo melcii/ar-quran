@@ -1,0 +1,153 @@
+{
+ "surah": 94,
+ "name": {
+  "transliterated": "Ash-Sharḥ",
+  "meaning": "The Relief"
+ },
+ "ayah_count": 8,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Ease after hardship",
+  "Turning to Allah"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Ash-Sharh means The Expansion. It promises twice that with hardship comes ease.",
+ "world_title": "With Hardship, Ease",
+ "environment_concept": "The path climbs a steep, stony stretch, then opens onto an easy, level meadow path (94:5-6). A heavy pack lies set down beside the way, a picture of a burden removed (94:2). Stones block part of the path and can be cleared. No person is shown.",
+ "architecture_and_scenery": "A stony climb with boulders, a level meadow path, a heavy pack resting on a stone.",
+ "palette": {
+  "colors": [
+   "#c9a46a",
+   "#6f8f4a"
+  ],
+  "lighting": "Morning",
+  "atmosphere": "Calm"
+ },
+ "areas": [
+  {
+   "name": "The Burden Set Down",
+   "reference": "94:2",
+   "anchor_phrase": "burden",
+   "description": "A heavy pack set down beside the path: a picture of a burden removed."
+  },
+  {
+   "name": "Hardship and Ease",
+   "reference": "94:5",
+   "anchor_phrase": "ease",
+   "description": "A steep stony climb that opens onto an easy meadow path."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Read the eight",
+   "reference": "94:1-8",
+   "kind": "order",
+   "description": "Put the eight ayahs of Ash-Sharh in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "94:2-5",
+   "kind": "match",
+   "description": "Match the pack and the climb to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Clear the path",
+   "reference": "94:5",
+   "kind": "find",
+   "description": "Tap the three stones blocking the path to roll them aside.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration gentle.",
+ "learning_objectives": [
+  "Explain 94:5-6"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "94:2",
+   "anchor_phrase": "burden",
+   "element": "The Burden Set Down"
+  },
+  {
+   "reference": "94:5",
+   "anchor_phrase": "ease",
+   "element": "Hardship and Ease"
+  }
+ ],
+ "required_assets": [
+  "Meadow terrain (shared)",
+  "Boulders and stony path",
+  "Heavy pack"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: its own scene (a stony climb opening onto an easy path, a burden set down, stones to clear), two playable games and one activity played in the scene",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Sharh.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
+ },
+ "quran_references": [
+  "94:1-8",
+  "94:2",
+  "94:2-5",
+  "94:5"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Mountain Passage",
+  "quran_references": [
+   "94:1–8"
+  ],
+  "primary_mechanic": {
+   "kind": "narrow-to-wide",
+   "engine": "not built yet",
+   "text": "A narrow pass that widens each time you keep going after a hard part (94:5-6)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "With Hardship Comes Ease",
+  "quran_references": [
+   "94:1–8"
+  ],
+  "children_narration": "Everyone faces difficult moments. Surah Ash-Sharh reminds us that with hardship comes ease. It encourages perseverance and turning to Allah. Even when a challenge feels difficult, we can continue with patience and hope.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Mountain Passage",
+   "description": "Navigate an initially narrow mountain path that opens into a wide landscape. The physical journey symbolizes perseverance, not a literal Quranic event."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

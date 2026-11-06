@@ -1,0 +1,156 @@
+{
+ "surah": 97,
+ "name": {
+  "transliterated": "Al-Qadr",
+  "meaning": "The Power"
+ },
+ "ayah_count": 5,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Night of Decree",
+  "Peace",
+  "Value of worship"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Qadr tells that the Quran was sent down on the Night of Decree, better than a thousand months, a night of peace until dawn.",
+ "world_title": "Night Until the Dawn",
+ "environment_concept": "A still night. A long low wall holds a thousand tiny lamps, one for each month, for 97:3. Beyond it, a quiet hill faces the east, where the sky slowly brightens toward dawn (97:5). The angels and the Spirit of 97:4 are not pictured; no person is shown.",
+ "architecture_and_scenery": "A long wall with a thousand small lamp niches, a hilltop with low seats facing east.",
+ "palette": {
+  "colors": [
+   "#0f1a33",
+   "#e6d38a",
+   "#f0c080"
+  ],
+  "lighting": "Calm starlight until dawn",
+  "atmosphere": "Peace"
+ },
+ "areas": [
+  {
+   "name": "Thousand Months Wall",
+   "reference": "97:3",
+   "anchor_phrase": "thousand months",
+   "description": "A long wall holding a thousand tiny lamps, one for each month."
+  },
+  {
+   "name": "Peace Until Dawn",
+   "reference": "97:5",
+   "anchor_phrase": "emergence of dawn",
+   "description": "A hilltop facing east where the sky slowly brightens."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Read the five",
+   "reference": "97:1-5",
+   "kind": "order",
+   "description": "Put the five ayahs of Al-Qadr in order.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Match each place to its ayah",
+   "reference": "97:3-5",
+   "kind": "match",
+   "description": "Match the wall and the hilltop to the ayah each comes from.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "A night worth more",
+   "reference": "97:3",
+   "kind": "card",
+   "description": "Talk about how a good deed on this night is worth more than a thousand months.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Angels and the Spirit are not shown.",
+ "learning_objectives": [
+  "Explain Laylat al-Qadr",
+  "Explain 97:3"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "97:3",
+   "anchor_phrase": "thousand months",
+   "element": "Thousand Months Wall"
+  },
+  {
+   "reference": "97:5",
+   "anchor_phrase": "emergence of dawn",
+   "element": "Peace Until Dawn"
+  }
+ ],
+ "required_assets": [
+  "Night terrain (shared)",
+  "Wall of a thousand lamps",
+  "Dawn glow on the horizon"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: its own scene (a wall of a thousand lamps and a hilltop facing the dawn) and two playable games",
+  "testing": "checked in headless Chromium with software WebGL at 1280x800; not tested on phones or real GPUs",
+  "built_in": "src/world/scenes/Qadr.tsx, src/world/ActivityGame.tsx",
+  "tested_by": "automated screenshots of the scene and the games"
+ },
+ "quran_references": [
+  "97:1-5",
+  "97:3",
+  "97:3-5",
+  "97:5"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Night of Peace",
+  "quran_references": [
+   "97:1–5"
+  ],
+  "primary_mechanic": {
+   "kind": "night-till-dawn",
+   "engine": "not built yet",
+   "text": "A peaceful night that moves toward dawn as you listen to the surah (97:5)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Blessed Night",
+  "quran_references": [
+   "97:1–5"
+  ],
+  "children_narration": "Surah Al-Qadr tells us about the Night of Decree, a night better than a thousand months. It is a night of great blessing and peace until dawn. The surah reminds us of the importance of revelation and worship.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Night of Peace",
+   "description": "Explore an atmospheric nighttime environment, observe a gradual transition toward dawn, and learn about the surah through recitation. Do not depict angels or the unseen events of the night."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The angels and the Spirit (97:4) are not shown.",
+  "status": "draft, unreviewed"
+ }
+}

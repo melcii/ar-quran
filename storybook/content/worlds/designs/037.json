@@ -1,0 +1,187 @@
+{
+ "surah": 37,
+ "name": {
+  "transliterated": "Aṣ-Ṣāffāt",
+  "meaning": "Those who set the Ranks"
+ },
+ "ayah_count": 182,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "Oneness of Allah",
+  "Submission and obedience",
+  "Rescue of the prophets"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Ibrahim's trial",
+   "reference": "37:99-111",
+   "anchor_phrase": "sacrifice"
+  },
+  {
+   "title": "Yunus and the fish",
+   "reference": "37:139-148",
+   "anchor_phrase": "fish"
+  }
+ ],
+ "summary_for_children": "As-Saffat means Those Lined Up in Ranks. It tells of Nuh, Ibrahim's trial with his son, Musa and Harun, Ilyas, Lut and Yunus, and how Allah saved them.",
+ "world_title": "Ranks Beneath the Stars",
+ "environment_concept": "A sky adorned with stars (37:6), an open shore (37:145) and a gourd vine over a shady spot (37:146).",
+ "architecture_and_scenery": "Starry dome, an ark on hills, a quiet hilltop recalling Ibrahim's trial through landscape only, a shore with a gourd vine.",
+ "palette": {
+  "colors": [
+   "#0e1630",
+   "#f0d890",
+   "#5a7a4a",
+   "#3f6d8f"
+  ],
+  "lighting": "Starlight and silver dawn",
+  "atmosphere": "Silent night, waves at dawn"
+ },
+ "areas": [
+  {
+   "name": "Adorned Sky",
+   "reference": "37:6",
+   "anchor_phrase": "adornment of stars",
+   "description": "A dome of stars."
+  },
+  {
+   "name": "Open Shore",
+   "reference": "37:145",
+   "anchor_phrase": "open shore",
+   "description": "An open shore at dawn."
+  },
+  {
+   "name": "Gourd Vine",
+   "reference": "37:146",
+   "anchor_phrase": "gourd vine",
+   "description": "A gourd vine growing over a shady spot."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Grow the vine",
+   "reference": "37:146",
+   "description": "Plant three cuttings; a gourd vine grows over each.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  },
+  {
+   "name": "Star map",
+   "reference": "37:6",
+   "description": "Light the stars that adorn the nearest heaven.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration keeps to the ayahs; no prophet or son is shown. The trial is told only with words from the ayahs.",
+ "learning_objectives": [
+  "Explain submission in Ibrahim's story",
+  "Retell Yunus briefly",
+  "Name prophets mentioned"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "37:6",
+   "anchor_phrase": "adornment of stars",
+   "element": "Adorned Sky"
+  },
+  {
+   "reference": "37:145",
+   "anchor_phrase": "open shore",
+   "element": "Open Shore"
+  },
+  {
+   "reference": "37:146",
+   "anchor_phrase": "gourd vine",
+   "element": "Gourd Vine"
+  }
+ ],
+ "required_assets": [
+  "Starry sky",
+  "Shore",
+  "Gourd vine",
+  "Hills"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (constellation, sea) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "37:6",
+  "37:99-111",
+  "37:139-148",
+  "37:145",
+  "37:146"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "A hot open beach with an empty shade frame over a resting mat, a bundle of stakes and a young gourd vine growing from the sand",
+  "quran_references": [
+   "37:6",
+   "37:139-146",
+   "37:147-148",
+   "37:182"
+  ],
+  "primary_mechanic": {
+   "kind": "vine-trellis",
+   "engine": "vine",
+   "text": "Carry stakes from the bundle and plant them in a line close enough for the gourd vine to climb from stake to stake until it covers the shade frame (37:145-146). A stake planted too far from the vine is out of its reach and the child is told how far it is. Yunus (peace be upon him) is never shown; the mat stays empty."
+  },
+  "secondary_activities": [
+   "stars adorning the sky (37:6)",
+   "sent to a hundred thousand or more (37:147-148)"
+  ],
+  "narrative_structure": "The stars, the vine, then the reading on being sent again; the closing line is 37:182",
+  "world_assets": [
+   "empty shade frame and mat",
+   "stake bundle",
+   "growing gourd vine with leaves"
+  ],
+  "environment_behaviour": [
+   "the vine grows along each stake within reach and onto the frame",
+   "the frame gives shade once covered"
+  ],
+  "learning_objective": "Learn about the mercy shown to Yunus on the shore (37:139-146) by helping a plant give shade",
+  "interaction_tests": {
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: took a stake from the bundle and planted it with the on-screen buttons)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: a stake 6 steps from the root was refused; 6 stakes 2.5 steps apart let the vine climb to the frame)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"The vine needs something to climb\" then \"The vine is climbing · stakes reached: 2\"; the vine grows along the stakes)",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: vine done; too-far [0])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"ranks\",\"vine\",\"sent\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w037.ts"
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "Ibrahim's Great Test",
+  "quran_references": [
+   "37:75–148"
+  ],
+  "children_narration": "Surah As-Saffat recalls several prophets, including Nuh, Ibrahim, Musa, Harun, Ilyas, Lut, and Yunus. Ibrahim experienced an extraordinary test involving his son, and Allah provided a great sacrifice in his place. The surah teaches trust and obedience while reminding us of Allah's mercy.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Paths of Trust",
+   "description": "Several distinct story areas include an ancient sanctuary-inspired setting, an environmental retelling of Ibrahim's test without human depiction, and a maritime setting for Yunus's account."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "Ibrahim's test with his son (37:102-107) is reading only. No knife, altar or ram scene is shown. The library's \"environmental retelling\" is dropped.",
+  "status": "draft, unreviewed"
+ }
+}

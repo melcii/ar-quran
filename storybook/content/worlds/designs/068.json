@@ -1,0 +1,165 @@
+{
+ "surah": 68,
+ "name": {
+  "transliterated": "Al-Qalam",
+  "meaning": "The Pen"
+ },
+ "ayah_count": 52,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "Good character",
+  "Generosity",
+  "Patience"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Owners of the garden",
+   "reference": "68:17-33",
+   "anchor_phrase": "companions of the garden"
+  }
+ ],
+ "summary_for_children": "Al-Qalam means The Pen. It praises the Prophet's (peace be upon him) great character and tells of garden owners who planned to keep everything from the poor and lost their garden.",
+ "world_title": "The Pen and the Burnt Garden",
+ "environment_concept": "A pen and inkwell (68:1), a garden ready to harvest at dawn (68:17) and a garden that looks reaped (68:20).",
+ "architecture_and_scenery": "A desk with pen and ink, a garden at dawn, a ruined garden.",
+ "palette": {
+  "colors": [
+   "#2a2a2a",
+   "#6f8f4a",
+   "#8c5a3a"
+  ],
+  "lighting": "Dawn light",
+  "atmosphere": "Quiet"
+ },
+ "areas": [
+  {
+   "name": "Pen",
+   "reference": "68:1",
+   "anchor_phrase": "pen",
+   "description": "A pen and inkwell."
+  },
+  {
+   "name": "Garden at Dawn",
+   "reference": "68:17",
+   "anchor_phrase": "garden",
+   "description": "A garden ready to harvest."
+  },
+  {
+   "name": "Ruined Garden",
+   "reference": "68:20",
+   "anchor_phrase": "reaped",
+   "description": "A garden that looks reaped."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Share the harvest",
+   "reference": "68:17-24",
+   "description": "Carry four baskets from the garden to share.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  },
+  {
+   "name": "Writing",
+   "reference": "68:1",
+   "description": "Trace letters with a pen.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "No people shown.",
+ "learning_objectives": [
+  "Retell the garden owners",
+  "Explain generosity"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "68:1",
+   "anchor_phrase": "pen",
+   "element": "Pen"
+  },
+  {
+   "reference": "68:17",
+   "anchor_phrase": "garden",
+   "element": "Garden at Dawn"
+  },
+  {
+   "reference": "68:20",
+   "anchor_phrase": "reaped",
+   "element": "Ruined Garden"
+  }
+ ],
+ "required_assets": [
+  "Desk",
+  "Garden"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (fallen, grain, orchard, pen) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "68:1",
+  "68:17",
+  "68:17-24",
+  "68:17-33",
+  "68:20"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Orchard of Generosity",
+  "quran_references": [
+   "68:17–33"
+  ],
+  "primary_mechanic": {
+   "kind": "orchard-share-plan",
+   "engine": "not built yet",
+   "text": "Plan a harvest that keeps a share for those in need, unlike the garden owners (68:17-33)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Owners of the Garden",
+  "quran_references": [
+   "68:17–33"
+  ],
+  "children_narration": "A group of garden owners planned to harvest their fruits early so that the poor would receive nothing. But when they reached their garden, they discovered that it had been destroyed. They recognized that their plan had been wrong. Their story teaches us to remember Allah and avoid selfishness.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Orchard of Generosity",
+   "description": "Explore a beautiful orchard and its changed condition. Help create a fair sharing plan through an educational activity inspired by the parable."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

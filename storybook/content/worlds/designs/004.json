@@ -1,0 +1,178 @@
+{
+ "surah": 4,
+ "name": {
+  "transliterated": "An-Nisā’",
+  "meaning": "The Women"
+ },
+ "ayah_count": 176,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Justice",
+  "Caring for orphans and family",
+  "Returning trusts",
+  "Kindness to neighbours"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "An-Nisa teaches fairness to everyone, kindness to family, orphans and neighbours, and returning what we are trusted with.",
+ "world_title": "The Village of Trusts and Justice",
+ "environment_concept": "A village of trusts and justice: a square with one fountain from which channels run (4:1), houses waiting for what was lent to come back (4:58), a lane of neighbours (4:36) and tall scales (4:135).",
+ "architecture_and_scenery": "Whitewashed village houses, a well, a market square with large balance scales, family courtyards.",
+ "palette": {
+  "colors": [
+   "#f1ece0",
+   "#b5895a",
+   "#5c7c6b",
+   "#2e3a4a"
+  ],
+  "lighting": "Even daylight, no harsh shadows",
+  "atmosphere": "Warm, peaceful village air"
+ },
+ "areas": [
+  {
+   "name": "Square of One Soul",
+   "reference": "4:1",
+   "anchor_phrase": "one soul",
+   "description": "A square with a single fountain from which many channels flow."
+  },
+  {
+   "name": "House of Trusts",
+   "reference": "4:58",
+   "anchor_phrase": "trusts",
+   "description": "Houses each waiting for something they lent to come back."
+  },
+  {
+   "name": "Neighbours' Lane",
+   "reference": "4:36",
+   "anchor_phrase": "neighbor",
+   "description": "A lane where children help neighbours near and far."
+  },
+  {
+   "name": "Scales of Justice",
+   "reference": "4:135",
+   "anchor_phrase": "justice",
+   "description": "Great balance scales that tip when something unfair is placed."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Return the trusts",
+   "reference": "4:58",
+   "description": "Carry four chests back to the house they belong to.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  },
+  {
+   "name": "Keep the scales level",
+   "reference": "4:135",
+   "description": "Choose fair options so the scales stay balanced, then read 4:135.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "The narrator explains each value with everyday examples, clearly as explanation, then reads the ayah.",
+ "learning_objectives": [
+  "Explain what a trust is",
+  "Name people the Quran asks us to be kind to",
+  "Understand standing for justice"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "4:1",
+   "anchor_phrase": "one soul",
+   "element": "Square of One Soul"
+  },
+  {
+   "reference": "4:58",
+   "anchor_phrase": "trusts",
+   "element": "House of Trusts"
+  },
+  {
+   "reference": "4:36",
+   "anchor_phrase": "neighbor",
+   "element": "Neighbours' Lane"
+  },
+  {
+   "reference": "4:135",
+   "anchor_phrase": "justice",
+   "element": "Scales of Justice"
+  }
+ ],
+ "required_assets": [
+  "Village houses",
+  "Market scales",
+  "Well and channels",
+  "Lane props"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (scale, spring, village) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "4:1",
+  "4:36",
+  "4:58",
+  "4:135"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "adventure_world": {
+  "title": "The Village of Fairness",
+  "route": "/adventure/4",
+  "built_in": "src/adventure/worlds/w004.ts (engine: src/adventure/)",
+  "source": "\"Quran Adventure: First 10 Unique Worlds\" with the rule \"114 unique game experiences\" (2026-11-04); replaces the first adventure version built from the earlier design table",
+  "status": "second version built for the web: each world now has its own core mechanic; draft, unreviewed; checked in headless Chromium with software WebGL only, not on phones or real GPUs",
+  "note": "The new-look adventure world for this surah. It is a separate design from the composed scene this record describes; both are kept until reviewers choose.",
+  "core_play": "A decision game: share limited stores among households with different needs, and watch the village show the result. Splitting everything evenly is not the fair answer here."
+ },
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "Winter village of six homes, lamps in windows",
+  "quran_references": [
+   "4:135"
+  ],
+  "primary_mechanic": {
+   "kind": "share-by-need",
+   "engine": "share",
+   "text": "Share grain, blankets and wood among six homes by what each needs; an even split fails, and lamps light where needs are met."
+  },
+  "secondary_activities": [
+   "carry",
+   "orphans reading",
+   "justice (4:135)"
+  ],
+  "narrative_structure": "Village loop",
+  "world_assets": [
+   "six homes",
+   "need signs",
+   "home lamps",
+   "stores"
+  ],
+  "environment_behaviour": [
+   "lamps light per home"
+  ],
+  "learning_objective": "Fairness means giving what is due, which is not always the same share",
+  "interaction_tests": {
+   "activate": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
+   "responds": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
+   "feedback": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
+   "goal": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
+   "completion": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
+   "saved": "untested (save is written; reload not re-checked in the 7-point run)",
+   "devices": "untested (desktop headless only; not run in phone emulation)"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w004.ts"
+ }
+}

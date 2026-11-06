@@ -1,0 +1,231 @@
+{
+ "surah": 23,
+ "name": {
+  "transliterated": "Al-Mu’minūn",
+  "meaning": "The Believers"
+ },
+ "ayah_count": 118,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Qualities of believers",
+  "Creation of the human being",
+  "Rain in measure",
+  "Prophets rejected"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Nuh builds the ship",
+   "reference": "23:23-30",
+   "anchor_phrase": "ship"
+  }
+ ],
+ "summary_for_children": "Al-Mu'minun begins by describing successful believers: humble in prayer, avoiding idle talk, giving charity and keeping promises. It reminds us how Allah created us and sends rain in just measure.",
+ "world_title": "Garden of the Successful Believers",
+ "environment_concept": "Terraces of the successful believers: a quiet stepped terrace (23:2-3), rain held in great basins (23:18), palms and vines (23:19), a great olive tree (23:20) and an empty shipyard (23:27).",
+ "architecture_and_scenery": "Terraced garden with palm and vine rows, a single great olive tree on a slope, a reservoir, and a ship-building yard at its lower edge.",
+ "palette": {
+  "colors": [
+   "#6f8f4a",
+   "#c9b36a",
+   "#3d6e8f",
+   "#efe7d3"
+  ],
+  "lighting": "Soft clear afternoon",
+  "atmosphere": "Calm, the sound of water held in reservoirs"
+ },
+ "areas": [
+  {
+   "name": "Terrace of Humble Prayer",
+   "reference": "23:2",
+   "anchor_phrase": "humbly submissive",
+   "description": "A quiet terrace for stillness."
+  },
+  {
+   "name": "Terrace of Turning from Idle Talk",
+   "reference": "23:3",
+   "anchor_phrase": "ill speech",
+   "description": "A path where noisy chatter fades as the player walks on."
+  },
+  {
+   "name": "Measured Rain Reservoir",
+   "reference": "23:18",
+   "anchor_phrase": "measured amount",
+   "description": "Rain gathered and held in the earth."
+  },
+  {
+   "name": "Palms and Vines",
+   "reference": "23:19",
+   "anchor_phrase": "palm trees and grapevines",
+   "description": "Rows of palms and grapevines."
+  },
+  {
+   "name": "Olive Tree of Sinai",
+   "reference": "23:20",
+   "anchor_phrase": "Mount Sinai",
+   "description": "A great olive tree on a slope."
+  },
+  {
+   "name": "Shipyard",
+   "reference": "23:27",
+   "anchor_phrase": "Construct the ship",
+   "description": "An empty shipyard with timbers."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Qualities ladder",
+   "reference": "23:1-11",
+   "description": "Light each terrace by matching it to its ayah.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Fill the reservoir",
+   "reference": "23:18",
+   "description": "Carry four jars of rain water to the basins.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  }
+ ],
+ "narration_plan": "Narration links each terrace to a quality and asks the child about their own day.",
+ "learning_objectives": [
+  "List the qualities of believers in 23:1-11",
+  "Explain rain in measure",
+  "Connect gratitude to creation"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "23:2",
+   "anchor_phrase": "humbly submissive",
+   "element": "Terrace of Humble Prayer"
+  },
+  {
+   "reference": "23:3",
+   "anchor_phrase": "ill speech",
+   "element": "Terrace of Turning from Idle Talk"
+  },
+  {
+   "reference": "23:18",
+   "anchor_phrase": "measured amount",
+   "element": "Measured Rain Reservoir"
+  },
+  {
+   "reference": "23:19",
+   "anchor_phrase": "palm trees and grapevines",
+   "element": "Palms and Vines"
+  },
+  {
+   "reference": "23:20",
+   "anchor_phrase": "Mount Sinai",
+   "element": "Olive Tree of Sinai"
+  },
+  {
+   "reference": "23:27",
+   "anchor_phrase": "Construct the ship",
+   "element": "Shipyard"
+  }
+ ],
+ "required_assets": [
+  "Terraced garden",
+  "Olive tree",
+  "Reservoir",
+  "Shipyard"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (ark, bowls, olives, palms, steps, stones, vine) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "23:1-11",
+  "23:2",
+  "23:3",
+  "23:18",
+  "23:19",
+  "23:20",
+  "23:23-30",
+  "23:27"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "Four open rooms round a courtyard: a hall with a door and a high shelf, a prayer corner, a window room with a plant and a bell, and a store room with a giving jar",
+  "quran_references": [
+   "23:1-4",
+   "23:8",
+   "23:2",
+   "23:9",
+   "23:10-11",
+   "23:12-14",
+   "23:27",
+   "23:50",
+   "23:96"
+  ],
+  "primary_mechanic": {
+   "kind": "home-transforms",
+   "engine": "home",
+   "text": "One day in a home with a running clock: a kept parcel handed back when the neighbour knocks, a promise to water the plant when the bell rings (not before), the prayer corner cleared by the chime, and giving from the jar (23:1-11). A missed time comes round again. Each room comes alive when its quality is kept."
+  },
+  "secondary_activities": [
+   "created in stages (23:12-14)",
+   "the ship (23:27, read only, linked to the Ark in Surah Hud)",
+   "a sign and a shelter (23:50)"
+  ],
+  "narrative_structure": "The sign at the gate, the day at home, then three readings",
+  "world_assets": [
+   "four open rooms",
+   "door, shelf and parcel",
+   "prayer rug, toys and toy box",
+   "window plant, tap, watering can and bell",
+   "giving jar and box"
+  ],
+  "environment_behaviour": [
+   "a day clock with things coming due shown on the status line",
+   "rooms brighten, light up and flower when kept",
+   "the plant droops when the promise is missed",
+   "the bell glows while ringing"
+  ],
+  "learning_objective": "Practise the qualities of 23:1-11 as keeping things at their time: trusts, promises, prayer and giving",
+  "interaction_tests": {
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: filled the watering can with the on-screen button)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: watering before the bell is refused; the chime passed with the prayer corner not ready (it comes round again); at the bell the promise is kept)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Kept: 1 of 4 · Coming up: prayer chime in … · …\")",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: rooms kept [2,3,0,1]; missed times [0])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"believers\",\"day\",\"created\",\"ark\",\"shelter\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w023.ts"
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Qualities of Believers",
+  "quran_references": [
+   "23:1–11",
+   "23:12–30",
+   "23:45–50"
+  ],
+  "children_narration": "The Quran describes believers who pray sincerely, keep their promises, and avoid harmful behavior. It reminds us how human life begins and retells parts of the stories of Nuh and Musa. Faith is not only something we say; it also changes how we act.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Living Home of Good Character",
+   "description": "A home and community environment that changes as children practice trustworthiness, care, and responsibility. A separate ark chapter introduces Nuh's account."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": "The library suggests an ark chapter. 23:27 does mention the ship and the pairs, but the ark game already lives in Hud. Surah 23 gets a reading and a link, not a second ark game.",
+  "status": "draft, unreviewed"
+ }
+}

@@ -1,0 +1,147 @@
+{
+ "surah": 60,
+ "name": {
+  "transliterated": "Al-Mumtaḥanah",
+  "meaning": "She that is to be examined"
+ },
+ "ayah_count": 13,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Loyalty to faith",
+  "Justice to all",
+  "Ibrahim as an example"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Mumtahanah means She Who Is Examined. It points to Ibrahim as an example and teaches being just and kind to people who are not hostile.",
+ "world_title": "Bridges of Fairness",
+ "environment_concept": "A bridge over a stream for fair dealings (60:8) and a garden of hope (60:7).",
+ "architecture_and_scenery": "Two villages separated by a river, bridges rebuilt for fair dealing.",
+ "palette": {
+  "colors": [
+   "#6f8f4a",
+   "#c9a46a",
+   "#3f6d8f"
+  ],
+  "lighting": "Even daylight",
+  "atmosphere": "Calm river"
+ },
+ "areas": [
+  {
+   "name": "Bridge of Kindness",
+   "reference": "60:8",
+   "anchor_phrase": "righteous",
+   "description": "A bridge for fair dealings."
+  },
+  {
+   "name": "Hope of Affection",
+   "reference": "60:7",
+   "anchor_phrase": "affection",
+   "description": "A garden where enemies may become friends."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Fair trade",
+   "reference": "60:8",
+   "description": "Carry three baskets across, dealing fairly.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  },
+  {
+   "name": "Example of Ibrahim",
+   "reference": "60:4",
+   "description": "Read 60:4 about Ibrahim's example.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "No person shown.",
+ "learning_objectives": [
+  "Explain 60:8",
+  "Explain Ibrahim as an example"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "60:8",
+   "anchor_phrase": "righteous",
+   "element": "Bridge of Kindness"
+  },
+  {
+   "reference": "60:7",
+   "anchor_phrase": "affection",
+   "element": "Hope of Affection"
+  }
+ ],
+ "required_assets": [
+  "River",
+  "Two villages",
+  "Bridges"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (bridge, orchard) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "60:4",
+  "60:7",
+  "60:8"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Bridge Between Communities",
+  "quran_references": [
+   "60:1–12"
+  ],
+  "primary_mechanic": {
+   "kind": "bridge-trade",
+   "engine": "not built yet",
+   "text": "Help two fictional communities exchange supplies fairly across a bridge (60:8)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "Kindness and Fairness",
+  "quran_references": [
+   "60:1–12"
+  ],
+  "children_narration": "Surah Al-Mumtahanah teaches important lessons about loyalty, faith, fairness, and relationships between communities. It reminds believers that they may treat people who are not fighting them with kindness and justice.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Bridge Between Communities",
+   "description": "Help two fictional communities exchange supplies, resolve misunderstandings, and build respectful relationships. The gameplay illustrates ethical principles rather than reconstructing the surah's historical incidents. ## Part 4 — Surahs 61–80"
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

@@ -1,0 +1,185 @@
+{
+ "surah": 51,
+ "name": {
+  "transliterated": "Adh-Dhāriyāt",
+  "meaning": "The Winnowing Winds"
+ },
+ "ayah_count": 60,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "Oaths by creation",
+  "Provision",
+  "Ibrahim's guests",
+  "Creation in pairs"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Ibrahim's honoured guests",
+   "reference": "51:24-30",
+   "anchor_phrase": "guests"
+  }
+ ],
+ "summary_for_children": "Adh-Dhariyat means The Scattering Winds. It swears by winds, clouds and ships, tells of Ibrahim's guests, and reminds us everything is created in pairs.",
+ "world_title": "Winds, Clouds and Ships",
+ "environment_concept": "Winds scattering dust (51:1), clouds heavy with water (51:2), ships sailing easily (51:3) and a wide sky (51:47).",
+ "architecture_and_scenery": "Dust-swept plains, heavy rain clouds, a smooth sea, and an expanding starry sky.",
+ "palette": {
+  "colors": [
+   "#c9b090",
+   "#5a7a9a",
+   "#2f6f8f",
+   "#0f1a33"
+  ],
+  "lighting": "Dust light, rain grey, night",
+  "atmosphere": "Wind and rain"
+ },
+ "areas": [
+  {
+   "name": "Scattering Winds",
+   "reference": "51:1",
+   "anchor_phrase": "scattering",
+   "description": "Winds scattering dust."
+  },
+  {
+   "name": "Laden Clouds",
+   "reference": "51:2",
+   "anchor_phrase": "carrying a load",
+   "description": "Clouds heavy with water."
+  },
+  {
+   "name": "Easy Ships",
+   "reference": "51:3",
+   "anchor_phrase": "sailing with ease",
+   "description": "Ships sailing smoothly."
+  },
+  {
+   "name": "Expanding Heaven",
+   "reference": "51:47",
+   "anchor_phrase": "expander",
+   "description": "A sky that seems to widen."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Pairs",
+   "reference": "51:49",
+   "description": "Bring the animals to their pens in pairs.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  },
+  {
+   "name": "Signs in yourselves",
+   "reference": "51:20-21",
+   "description": "Notice signs in the earth and in our own bodies.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration walks the oaths in order; the guests and Ibrahim are not shown.",
+ "learning_objectives": [
+  "Explain the opening oaths",
+  "Explain pairs in creation",
+  "Explain provision comes from Allah"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "51:1",
+   "anchor_phrase": "scattering",
+   "element": "Scattering Winds"
+  },
+  {
+   "reference": "51:2",
+   "anchor_phrase": "carrying a load",
+   "element": "Laden Clouds"
+  },
+  {
+   "reference": "51:3",
+   "anchor_phrase": "sailing with ease",
+   "element": "Easy Ships"
+  },
+  {
+   "reference": "51:47",
+   "anchor_phrase": "expander",
+   "element": "Expanding Heaven"
+  }
+ ],
+ "required_assets": [
+  "Plains",
+  "Clouds",
+  "Sea",
+  "Night sky"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (cloud, horizon, ships, wind) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "51:1",
+  "51:2",
+  "51:3",
+  "51:20-21",
+  "51:24-30",
+  "51:47",
+  "51:49"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Windborne Journey",
+  "quran_references": [
+   "51:1–6",
+   "51:24–46"
+  ],
+  "primary_mechanic": {
+   "kind": "wind-carry",
+   "engine": "not built yet",
+   "text": "Use winds to carry seeds and light things across a valley to the right places (51:1-4)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Winds That Carry",
+  "quran_references": [
+   "51:1–6",
+   "51:24–46"
+  ],
+  "children_narration": "Winds can carry dust, clouds, and seeds. Surah Adh-Dhariyat begins with powerful images of movement in creation. It also tells us about the guests who came to Ibrahim and recalls the stories of Musa and other earlier peoples.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Windborne Journey",
+   "description": "Use the wind to guide lightweight objects through a landscape, explore a welcoming historical courtyard, and discover narrated story locations."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

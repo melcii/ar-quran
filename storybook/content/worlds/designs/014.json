@@ -1,0 +1,203 @@
+{
+ "surah": 14,
+ "name": {
+  "transliterated": "Ibrāhīm",
+  "meaning": "Abraham"
+ },
+ "ayah_count": 52,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "Good and bad words",
+  "Gratitude",
+  "Ibrahim's prayers",
+  "Blessings subjected to us"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Ibrahim's prayer in the valley",
+   "reference": "14:35-41",
+   "anchor_phrase": "Abraham"
+  }
+ ],
+ "summary_for_children": "Surah Ibrahim compares a good word to a good tree, and teaches that gratitude brings more blessings. It records Ibrahim's prayer for his family in a dry valley.",
+ "world_title": "The Valley of the Good Tree",
+ "environment_concept": "A good tree with deep roots and high branches (14:24), an uprooted tree lying loose (14:26), a dry valley (14:37) and a river with sailing boats (14:32).",
+ "architecture_and_scenery": "A great tree on a hill, a dry valley with a well, rivers and ships below, sun and moon overhead.",
+ "palette": {
+  "colors": [
+   "#6e8b3d",
+   "#c7a46b",
+   "#3b5f7f",
+   "#efe2c6"
+  ],
+  "lighting": "Bright day with a clear sunset",
+  "atmosphere": "Dry heat in the valley, cool by the rivers"
+ },
+ "areas": [
+  {
+   "name": "The Good Tree",
+   "reference": "14:24",
+   "anchor_phrase": "good tree",
+   "description": "A tree with deep roots and high branches."
+  },
+  {
+   "name": "Uprooted Tree",
+   "reference": "14:26",
+   "anchor_phrase": "uprooted",
+   "description": "A dead tree lying loose on the ground."
+  },
+  {
+   "name": "Uncultivated Valley",
+   "reference": "14:37",
+   "anchor_phrase": "uncultivated valley",
+   "description": "A dry valley near the sacred House."
+  },
+  {
+   "name": "River of Ships",
+   "reference": "14:32",
+   "anchor_phrase": "ships",
+   "description": "A river with sailing boats."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Good words grow",
+   "reference": "14:24",
+   "description": "Plant three saplings; each grows into a firm tree.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  },
+  {
+   "name": "Thankful stones",
+   "reference": "14:7",
+   "description": "Place a stone for each blessing you thank Allah for.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "The narrator explains the parable carefully and reads Ibrahim's prayer from the Quran's text.",
+ "learning_objectives": [
+  "Explain the good tree parable",
+  "Link gratitude and blessings",
+  "Know Ibrahim prayed for his family"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "14:24",
+   "anchor_phrase": "good tree",
+   "element": "The Good Tree"
+  },
+  {
+   "reference": "14:26",
+   "anchor_phrase": "uprooted",
+   "element": "Uprooted Tree"
+  },
+  {
+   "reference": "14:37",
+   "anchor_phrase": "uncultivated valley",
+   "element": "Uncultivated Valley"
+  },
+  {
+   "reference": "14:32",
+   "anchor_phrase": "ships",
+   "element": "River of Ships"
+  }
+ ],
+ "required_assets": [
+  "Great tree with growth stages",
+  "Dry valley",
+  "River and boats"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (fallen, mountain, ships, tree) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "14:7",
+  "14:24",
+  "14:24-25",
+  "14:26",
+  "14:32",
+  "14:35-41",
+  "14:37"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "A dry golden valley with a spring, travellers' tents and a sandy dune, where one good tree grows",
+  "quran_references": [
+   "14:7",
+   "14:24",
+   "14:25",
+   "14:26",
+   "14:35",
+   "14:37"
+  ],
+  "primary_mechanic": {
+   "kind": "grow-good-tree",
+   "engine": "grow",
+   "text": "Grow the good tree of the parable: plant on firm ground (sand gives no stability), water the roots, choose good words to raise the branches, and gather fruit season after season for travellers (14:24-26)."
+  },
+  "secondary_activities": [
+   "testing the ground",
+   "choosing good words (examples written for this app)",
+   "sharing fruit with travellers (14:37)"
+  ],
+  "narrative_structure": "Parable stone, then the tree from seed to three seasons of fruit, then Ibrahim's prayer read at the travellers' rest, then gratitude",
+  "world_assets": [
+   "planting spots on soil and sand",
+   "the good tree with roots, trunk, branches and fruit",
+   "a loose sapling on the dune",
+   "spring basin",
+   "travellers' table and tents"
+  ],
+  "environment_behaviour": [
+   "the tree's roots spread and its trunk thickens with each watering",
+   "branches and crown grow after the good words",
+   "the loose sapling on the sand sways and blows over in the wind",
+   "fruit appears each season and collects on the travellers' table"
+  ],
+  "learning_objective": "Understand the parable of the good word and the good tree (14:24-26), and gratitude (14:7)",
+  "interaction_tests": {
+   "activate": "pass (2026-11-04, headless Chromium, software WebGL: plant buttons pressed on the sandy spot and on the firm soil)",
+   "responds": "pass (2026-11-04, headless Chromium, software WebGL: sand refuses the seedling (no stability), firm soil takes it)",
+   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Roots watered: 0 of 3\")",
+   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
+   "completion": "pass (2026-11-04, headless Chromium, software WebGL: tree done: [0,1,2,3,4,5,6,7])",
+   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"parable\",\"tree\",\"prayer\",\"thanks\"])",
+   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w014.ts"
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Prayer for a Peaceful City",
+  "quran_references": [
+   "14:24–27",
+   "14:35–41"
+  ],
+  "children_narration": "Prophet Ibrahim prayed to Allah for the safety of a special city. He asked that his family be guided toward worship and that people would have reasons to be grateful. The surah also compares a good word to a good tree. Its roots are strong, its branches reach high, and it gives fruit. Imagine a tree whose roots are firmly planted in the ground. Just as strong roots help a tree grow, sincere faith and good actions help a person grow in character.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Roots of Faith",
+   "description": "Explore an ancient sanctuary-inspired environment, then build a symbolic tree by connecting roots, branches, and fruit to examples of good words and actions. The growing tree is an interactive representation of the Quranic parable, not a literal tree from Ibrahim's life."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

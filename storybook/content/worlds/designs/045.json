@@ -1,0 +1,151 @@
+{
+ "surah": 45,
+ "name": {
+  "transliterated": "Al-Jāthiyah",
+  "meaning": "The Crouching"
+ },
+ "ayah_count": 37,
+ "content_type": {
+  "primary": "nature-and-creation",
+  "secondary": []
+ },
+ "themes": [
+  "Allah subjected creation to people",
+  "Signs for those who think",
+  "Accountability"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Jathiyah means The Kneeling. It shows how Allah made the sea and everything in the heavens and earth useful for people, as signs for those who think.",
+ "world_title": "Subjected Sea and Sky",
+ "environment_concept": "Ships sailing (45:12) and a wide view of sky and land, with birds and grazing animals (45:13).",
+ "architecture_and_scenery": "Busy sea lanes, fishing boats, a sky with orderly winds and an endless shore.",
+ "palette": {
+  "colors": [
+   "#2f6f8f",
+   "#e9dcc0",
+   "#5a7a4a",
+   "#c9a46a"
+  ],
+  "lighting": "Bright sea light",
+  "atmosphere": "Breezy"
+ },
+ "areas": [
+  {
+   "name": "Sea of Ships",
+   "reference": "45:12",
+   "anchor_phrase": "ships",
+   "description": "Ships sailing by Allah's command."
+  },
+  {
+   "name": "Everything Subjected",
+   "reference": "45:13",
+   "anchor_phrase": "heavens and whatever is on the earth",
+   "description": "A wide view of sky and land."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Think about it",
+   "reference": "45:13",
+   "description": "Find things in the scene that serve people and say thanks (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Winds",
+   "reference": "45:5",
+   "description": "Carry rain clouds to the dry land.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  }
+ ],
+ "narration_plan": "Narration repeats the surah's call to think.",
+ "learning_objectives": [
+  "Explain 45:13",
+  "List signs in 45:3-5",
+  "Explain gratitude"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "45:12",
+   "anchor_phrase": "ships",
+   "element": "Sea of Ships"
+  },
+  {
+   "reference": "45:13",
+   "anchor_phrase": "heavens and whatever is on the earth",
+   "element": "Everything Subjected"
+  }
+ ],
+ "required_assets": [
+  "Sea lanes",
+  "Shore",
+  "Sky"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (birds, herd, horizon, ships) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "45:5",
+  "45:12",
+  "45:13"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Gallery of Choices",
+  "quran_references": [
+   "45:3–13",
+   "45:28–29"
+  ],
+  "primary_mechanic": {
+   "kind": "wind-and-rain-ledger",
+   "engine": "not built yet",
+   "text": "Keep a field ledger of winds, rain and day length that you measure yourself (45:5)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Book of Our Actions",
+  "quran_references": [
+   "45:3–13",
+   "45:28–29"
+  ],
+  "children_narration": "Every day, we make choices. Some choices help others, while some can cause harm. The Quran reminds us that our actions matter and that Allah knows what we do. It also invites us to reflect on the signs around us: the wind, rain, and changing day and night.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Gallery of Choices",
+   "description": "Explore an interactive book of fictional everyday decisions and see how acts of kindness affect a community. Do not claim to portray the actual records of deeds or the Day of Judgment."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

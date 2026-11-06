@@ -1,0 +1,139 @@
+{
+ "surah": 74,
+ "name": {
+  "transliterated": "Al-Muddaththir",
+  "meaning": "The Cloaked One"
+ },
+ "ayah_count": 56,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Calling to good",
+  "Glorifying Allah",
+  "Purity",
+  "Patience"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Muddaththir tells the Prophet (peace be upon him) to arise and warn, glorify his Lord, purify his clothes and be patient.",
+ "world_title": "Arise and Warn",
+ "environment_concept": "Sunrise over a home (74:2) and a washing place with clean cloth (74:4).",
+ "architecture_and_scenery": "A home at dawn with a washing place.",
+ "palette": {
+  "colors": [
+   "#f0d890",
+   "#efe6d2"
+  ],
+  "lighting": "Dawn",
+  "atmosphere": "Fresh"
+ },
+ "areas": [
+  {
+   "name": "Dawn Rising",
+   "reference": "74:2",
+   "anchor_phrase": "Arise",
+   "description": "Sunrise over the home."
+  },
+  {
+   "name": "Purify Clothing",
+   "reference": "74:4",
+   "anchor_phrase": "clothing purify",
+   "description": "A washing place."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Morning routine",
+   "reference": "74:3-7",
+   "description": "Carry three jars of clean water to the washing place.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  }
+ ],
+ "narration_plan": "The Prophet (peace be upon him) is never shown.",
+ "learning_objectives": [
+  "Explain 74:1-7"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "74:2",
+   "anchor_phrase": "Arise",
+   "element": "Dawn Rising"
+  },
+  {
+   "reference": "74:4",
+   "anchor_phrase": "clothing purify",
+   "element": "Purify Clothing"
+  }
+ ],
+ "required_assets": [
+  "Home",
+  "Washing place"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (basin, horizon, house) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "74:2",
+  "74:3-7",
+  "74:4"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Dawn of Responsibility",
+  "quran_references": [
+   "74:1–56"
+  ],
+  "primary_mechanic": {
+   "kind": "clean-the-commons",
+   "engine": "not built yet",
+   "text": "Tidy shared spaces from dawn, keeping your clothes clean (74:4-5) and helping without counting it (74:6)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "A Call to Responsibility",
+  "quran_references": [
+   "74:1–56"
+  ],
+  "children_narration": "Surah Al-Muddaththir begins with a call to rise and warn. It teaches about sincerity, personal responsibility, and not becoming proud of one's efforts. The surah also includes serious warnings about rejecting truth and neglecting those in need.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Dawn of Responsibility",
+   "description": "Explore a landscape moving from darkness to daylight and complete activities about keeping shared spaces clean, caring for others, and acting sincerely."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}

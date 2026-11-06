@@ -1,0 +1,249 @@
+{
+ "surah": 7,
+ "name": {
+  "transliterated": "Al-A‘rāf",
+  "meaning": "The Heights"
+ },
+ "ayah_count": 206,
+ "content_type": {
+  "primary": "narrative",
+  "secondary": []
+ },
+ "themes": [
+  "Adam and Iblis",
+  "Messengers to their peoples",
+  "Gratitude and warnings",
+  "Musa and Pharaoh"
+ ],
+ "narrative_passages": [
+  {
+   "title": "Adam and Iblis",
+   "reference": "7:11-25",
+   "anchor_phrase": "Iblees"
+  },
+  {
+   "title": "Nuh",
+   "reference": "7:59-64",
+   "anchor_phrase": "Noah"
+  },
+  {
+   "title": "Hud and 'Aad",
+   "reference": "7:65-72",
+   "anchor_phrase": "Aad"
+  },
+  {
+   "title": "Salih and Thamud",
+   "reference": "7:73-79",
+   "anchor_phrase": "she-camel"
+  },
+  {
+   "title": "Lut",
+   "reference": "7:80-84",
+   "anchor_phrase": "Lot"
+  },
+  {
+   "title": "Shu'ayb and Madyan",
+   "reference": "7:85-93",
+   "anchor_phrase": "Madyan"
+  },
+  {
+   "title": "Musa and Pharaoh",
+   "reference": "7:103-137",
+   "anchor_phrase": "Pharaoh"
+  }
+ ],
+ "summary_for_children": "Al-A'raf tells of Adam and Iblis and of messengers sent to their peoples: Nuh, Hud, Salih, Lut, Shu'ayb and Musa. Each people was called to worship Allah alone.",
+ "world_title": "The Heights of the Peoples",
+ "environment_concept": "The heights: a garden with one tree (7:19), timbers of a ship on a hill (7:64), wide windy plains (7:65), homes carved in cliffs (7:74), a market where weights must be fair (7:85) and a calm shore (7:138).",
+ "architecture_and_scenery": "Garden terrace, hill with a ship's timbers, windswept plain, cliff dwellings carved in rock, a market town, and a sea shore.",
+ "palette": {
+  "colors": [
+   "#d6b98a",
+   "#8c5a3c",
+   "#4f6f8f",
+   "#a9b7a0"
+  ],
+  "lighting": "Shifting light from area to area",
+  "atmosphere": "Wind on the plains, sea air at the shore"
+ },
+ "areas": [
+  {
+   "name": "Garden of the Tree",
+   "reference": "7:19",
+   "anchor_phrase": "tree",
+   "description": "A garden terrace with one tree not to approach."
+  },
+  {
+   "name": "Hill of the Ship",
+   "reference": "7:64",
+   "anchor_phrase": "ship",
+   "description": "Timbers resting on a hill, recalling Nuh's ship."
+  },
+  {
+   "name": "Plains of 'Aad",
+   "reference": "7:65",
+   "anchor_phrase": "Aad",
+   "description": "Wide windy plains."
+  },
+  {
+   "name": "Carved Cliffs",
+   "reference": "7:74",
+   "anchor_phrase": "mountains",
+   "description": "Homes carved into cliffs."
+  },
+  {
+   "name": "Market of Madyan",
+   "reference": "7:85",
+   "anchor_phrase": "measure",
+   "description": "A market where weights must be fair."
+  },
+  {
+   "name": "Seashore",
+   "reference": "7:138",
+   "anchor_phrase": "sea",
+   "description": "A calm shore where the sea was crossed."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Fair weights",
+   "reference": "7:85",
+   "description": "Carry the brass weights to the scale, giving full measure.",
+   "label": "artistic educational adaptation, not an event in the Quran",
+   "kind": "find"
+  },
+  {
+   "name": "Walk the ridge",
+   "reference": "7:59-93",
+   "description": "Visit each people's area in order and hear the message they were given.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Each area opens with the Quran's own words for that messenger's call, then a short explanation.",
+ "learning_objectives": [
+  "Name the messengers in Al-A'raf",
+  "Explain fair measure",
+  "Understand Iblis's pride"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "7:19",
+   "anchor_phrase": "tree",
+   "element": "Garden of the Tree"
+  },
+  {
+   "reference": "7:64",
+   "anchor_phrase": "ship",
+   "element": "Hill of the Ship"
+  },
+  {
+   "reference": "7:65",
+   "anchor_phrase": "Aad",
+   "element": "Plains of 'Aad"
+  },
+  {
+   "reference": "7:74",
+   "anchor_phrase": "mountains",
+   "element": "Carved Cliffs"
+  },
+  {
+   "reference": "7:85",
+   "anchor_phrase": "measure",
+   "element": "Market of Madyan"
+  },
+  {
+   "reference": "7:138",
+   "anchor_phrase": "sea",
+   "element": "Seashore"
+  }
+ ],
+ "required_assets": [
+  "Ridge path",
+  "Garden terrace",
+  "Ship timbers",
+  "Carved cliff facades",
+  "Market stalls and scales",
+  "Shoreline"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (ark, carved, market, sea, tree, wind) with 1 hands-on activity in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "7:11-25",
+  "7:19",
+  "7:59-64",
+  "7:59-93",
+  "7:64",
+  "7:65",
+  "7:65-72",
+  "7:73-79",
+  "7:74",
+  "7:80-84",
+  "7:85",
+  "7:85-93",
+  "7:103-137",
+  "7:138"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "adventure_world": {
+  "title": "The Lost Civilizations",
+  "route": "/adventure/7",
+  "built_in": "src/adventure/worlds/w007.ts (engine: src/adventure/)",
+  "source": "\"Quran Adventure: First 10 Unique Worlds\" with the rule \"114 unique game experiences\" (2026-11-04); replaces the first adventure version built from the earlier design table",
+  "status": "second version built for the web: each world now has its own core mechanic; draft, unreviewed; checked in headless Chromium with software WebGL only, not on phones or real GPUs",
+  "note": "The new-look adventure world for this surah. It is a separate design from the composed scene this record describes; both are kept until reviewers choose.",
+  "core_play": "An episodic journey: four chapters, each a different land, where you investigate traces of past peoples (each one says what the Quran tells and what is only a picture) and, in Madyan, weigh fairly at a balance."
+ },
+ "unique_world": {
+  "tier": "playable",
+  "visual_theme": "Red-rock lands in four chapters, market of Madyan",
+  "quran_references": [
+   "7:59-93",
+   "7:85",
+   "7:96",
+   "7:156"
+  ],
+  "primary_mechanic": {
+   "kind": "episodic-lands+honest-weigh",
+   "engine": "weigh",
+   "text": "Four lands in turn; in the Madyan market you weigh goods honestly and must spot a shaved weight (7:85)."
+  },
+  "secondary_activities": [
+   "trace-finding points",
+   "readings for each people"
+  ],
+  "narrative_structure": "Episodic chapters",
+  "world_assets": [
+   "carved cliffs",
+   "market stalls",
+   "balance and weights"
+  ],
+  "environment_behaviour": [
+   "chapter gates open"
+  ],
+  "learning_objective": "Honest measure and listening to guidance",
+  "interaction_tests": {
+   "activate": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
+   "responds": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
+   "feedback": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
+   "goal": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
+   "completion": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
+   "saved": "untested (save is written; reload not re-checked in the 7-point run)",
+   "devices": "untested (desktop headless only; not run in phone emulation)"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": "src/adventure/worlds/w007.ts"
+ }
+}

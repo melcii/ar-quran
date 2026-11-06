@@ -1,0 +1,174 @@
+{
+ "surah": 57,
+ "name": {
+  "transliterated": "Al-Ḥadīd",
+  "meaning": "The Iron"
+ },
+ "ayah_count": 29,
+ "content_type": {
+  "primary": "moral-and-spiritual",
+  "secondary": []
+ },
+ "themes": [
+  "Spending in Allah's way",
+  "The world is temporary",
+  "Iron and justice"
+ ],
+ "narrative_passages": [],
+ "summary_for_children": "Al-Hadid means Iron. It reminds us that this life is short like plants that grow and then dry, encourages spending for good, and mentions iron with its strength and benefits.",
+ "world_title": "Iron and the Passing Rain-Plants",
+ "environment_concept": "A field that grows and turns yellow (57:20), a forge with iron (57:25) and earth returning to life (57:17).",
+ "architecture_and_scenery": "Green fields that fade, a forge with iron, and a scale of justice.",
+ "palette": {
+  "colors": [
+   "#6f8f4a",
+   "#d9c48f",
+   "#5a5a6a",
+   "#c08a4a"
+  ],
+  "lighting": "Seasonal light",
+  "atmosphere": "Rain and forge sounds"
+ },
+ "areas": [
+  {
+   "name": "Passing Field",
+   "reference": "57:20",
+   "anchor_phrase": "yellow",
+   "description": "Plants grow and turn yellow."
+  },
+  {
+   "name": "The Forge",
+   "reference": "57:25",
+   "anchor_phrase": "iron",
+   "description": "A forge with iron."
+  },
+  {
+   "name": "Revived Earth",
+   "reference": "57:17",
+   "anchor_phrase": "gives life to the earth",
+   "description": "Earth returning to life."
+  }
+ ],
+ "activities": [
+  {
+   "name": "Lend a good loan",
+   "reference": "57:11",
+   "description": "Give from what you have and watch it grow (adaptation).",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Seasons",
+   "reference": "57:20",
+   "description": "Watch a field through its life.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Iron to the forge",
+   "reference": "57:25",
+   "kind": "find",
+   "description": "Carry four bars of iron to the forge.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  },
+  {
+   "name": "Revived earth",
+   "reference": "57:17",
+   "kind": "find",
+   "description": "Carry rain clouds to bring the earth back to life.",
+   "label": "artistic educational adaptation, not an event in the Quran"
+  }
+ ],
+ "narration_plan": "Narration focuses on generosity and justice.",
+ "learning_objectives": [
+  "Explain 57:20",
+  "Explain spending for good",
+  "Explain the balance and iron"
+ ],
+ "ayah_environment_connections": [
+  {
+   "reference": "57:20",
+   "anchor_phrase": "yellow",
+   "element": "Passing Field"
+  },
+  {
+   "reference": "57:25",
+   "anchor_phrase": "iron",
+   "element": "The Forge"
+  },
+  {
+   "reference": "57:17",
+   "anchor_phrase": "gives life to the earth",
+   "element": "Revived Earth"
+  }
+ ],
+ "required_assets": [
+  "Fields",
+  "Forge",
+  "Scale"
+ ],
+ "status": {
+  "quran_text": "verified (KFGQPC Hafs, checksummed)",
+  "translation": "Saheeh International, attributed",
+  "educational_content": "draft, unreviewed",
+  "world_design": "designed, unreviewed",
+  "playable_environment": "first version built: a composed world (forge, grain) with 2 hands-on activities in the scene",
+  "testing": "not tested yet: written and type-checked, not yet checked on screen",
+  "built_in": "content/worlds/compose.json, src/world/scenes/compose/, src/world/scenes/drag.tsx",
+  "tested_by": "nobody yet"
+ },
+ "quran_references": [
+  "57:11",
+  "57:17",
+  "57:20",
+  "57:25"
+ ],
+ "scholarly_review": {
+  "status": "unreviewed",
+  "reviewer": null,
+  "notes": []
+ },
+ "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
+ "unique_world": {
+  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
+  "visual_theme": "The Workshop of Responsibility",
+  "quran_references": [
+   "57:20–27"
+  ],
+  "primary_mechanic": {
+   "kind": "forge",
+   "engine": "not built yet",
+   "text": "Shape iron into useful tools for a community workshop (57:25)."
+  },
+  "secondary_activities": [],
+  "narrative_structure": null,
+  "world_assets": [],
+  "environment_behaviour": [],
+  "learning_objective": null,
+  "interaction_tests": {
+   "activate": "untested",
+   "responds": "untested",
+   "feedback": "untested",
+   "goal": "untested",
+   "completion": "untested",
+   "saved": "untested",
+   "devices": "untested"
+  },
+  "scholarly_review": "unreviewed",
+  "built_in": null
+ },
+ "story_library": {
+  "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
+  "title": "The Gift of Iron",
+  "quran_references": [
+   "57:20–27"
+  ],
+  "children_narration": "Iron is a remarkable material. People use it to make useful tools, buildings, and many everyday objects. Surah Al-Hadid reminds us about strength, justice, generosity, and the short-lived nature of worldly life. True goodness includes using what we have responsibly.",
+  "story_chapters": null,
+  "world_idea": {
+   "title": "The Workshop of Responsibility",
+   "description": "Explore an educational workshop to learn about iron's properties and build a useful community structure in an activity inspired by the surah's teachings."
+  },
+  "checks": "Every reference exists in the verified text (checked 2026-11-04). Narration is draft, written by the owner, not reviewed by a scholar.",
+  "rule_conflicts_resolved": null,
+  "status": "draft, unreviewed"
+ }
+}
