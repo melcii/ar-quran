@@ -288,6 +288,57 @@ export class Space {
    * walkable heights. Returns how far it really went.
    */
   move(w: Walker, dx: number, dz: number, dt: number, opts: { maxStep?: number; floor?: (x: number, z: number) => number; ghost?: boolean } = {}) {
+    const len = Math.hypot(dx, dz);
+    const save = { x: w.x, y: w.y, z: w.z, vy: w.vy, grounded: w.grounded };
+    const got = this.moveOnce(w, dx, dz, dt, opts);
+    if (w.kind !== 'player' || opts.ghost || len < 1e-4 || got > len * 0.3) return got;
+    // Walking dead-on into something narrow (a post, a lamp, a sign): the
+    // controller slides along a surface, but straight at the middle of a
+    // round one there is nothing to slide along and the explorer just stops.
+    // Try a little to either side and keep it only if it still gets on
+    // forward, so pressing into a flat wall still stops you there.
+    const ux = dx / len;
+    const uz = dz / len;
+    const tryAt = (a: number) => {
+      Object.assign(w, save);
+      w.collider.setTranslation({ x: w.x, y: 0, z: w.z });
+      const c = Math.cos(a);
+      const sn = Math.sin(a);
+      this.moveOnce(w, dx * c - dz * sn, dx * sn + dz * c, dt, opts);
+      return (w.x - save.x) * ux + (w.z - save.z) * uz;
+    };
+    const base = { x: w.x, y: w.y, z: w.z, vy: w.vy, grounded: w.grounded };
+    let best = (base.x - save.x) * ux + (base.z - save.z) * uz;
+    let pick: typeof base | null = null;
+    for (const a of [0.6, -0.6, 1.0, -1.0]) {
+      const f = tryAt(a);
+      if (f > Math.max(best, len * 0.25)) (best = f), (pick = { x: w.x, y: w.y, z: w.z, vy: w.vy, grounded: w.grounded });
+    }
+    if (!pick) {
+      // A square post hit square on gives no forward gain to either side
+      // until its corner is passed. If just ahead and a little to one side is
+      // open (a post, not a wall), step sideways toward that side.
+      const ahead = w.r + 0.35;
+      for (const off of [0.5, 0.8]) {
+        for (const sd of [1, -1]) {
+          if (pick) break;
+          const px = save.x + ux * ahead - uz * sd * off;
+          const pz = save.z + uz * ahead + ux * sd * off;
+          if (this.blockedAt(px, pz, w.r * 0.97, w.collider)) continue;
+          tryAt(sd * 1.2);
+          const side = Math.hypot(w.x - save.x, w.z - save.z);
+          const fwd = (w.x - save.x) * ux + (w.z - save.z) * uz;
+          if (side > len * 0.25 && fwd > -0.05 * len) pick = { x: w.x, y: w.y, z: w.z, vy: w.vy, grounded: w.grounded };
+        }
+        if (pick) break;
+      }
+    }
+    Object.assign(w, pick ?? base);
+    w.collider.setTranslation({ x: w.x, y: 0, z: w.z });
+    return Math.hypot(w.x - save.x, w.z - save.z);
+  }
+
+  private moveOnce(w: Walker, dx: number, dz: number, dt: number, opts: { maxStep?: number; floor?: (x: number, z: number) => number; ghost?: boolean }) {
     const floor = opts.floor ?? this.spec.floor;
     const maxStep = opts.maxStep ?? MAX_STEP;
     const len = Math.hypot(dx, dz);
@@ -428,12 +479,37 @@ export class Space {
     let reach = at(pitch);
     let best = pitch;
     if (reach < need)
-      for (let p = pitch + 0.15; p <= 1.3; p += 0.15) {
+      // Up to nearly overhead: backed against a wall, only a look from above clears it.
+      for (let p = pitch + 0.15; p <= 1.5; p += 0.15) {
         const r = at(p);
         if (r > reach) (reach = r), (best = p);
         if (r >= need) break;
       }
-    return { pitch: best, dist: reach < dist ? Math.max(minDist, reach - 0.4) : dist };
+    // Pull in short of whatever is in the way; closer than minDist only when the
+    // alternative is sitting inside it.
+    return { pitch: best, dist: reach < dist ? Math.max(Math.min(minDist, reach - 0.15), reach - 0.4) : dist };
+  }
+
+  /**
+   * Hard stop for the eased camera: if anything stands between the look point
+   * and where the camera has drifted to (it lags behind turns and pull-ins),
+   * bring it in along that same line to just short of it. Changes pos in place.
+   */
+  clampCamera(look: { x: number; y: number; z: number }, pos: { x: number; y: number; z: number }) {
+    const dx = pos.x - look.x;
+    const dy = pos.y - look.y;
+    const dz = pos.z - look.z;
+    const d = Math.hypot(dx, dy, dz);
+    if (d < 0.3) return false;
+    // Keep a margin, so the lens is never against the wall (the near plane would cut into it).
+    const M = 0.25;
+    const reach = this.cameraReach(look.x, look.y, look.z, dx / d, dy / d, dz / d, d + M);
+    if (reach >= d + M) return false;
+    const k = Math.max(0.25, reach - M) / d;
+    pos.x = look.x + dx * k;
+    pos.y = look.y + dy * k;
+    pos.z = look.z + dz * k;
+    return true;
   }
 
   /** Screens using this space; freed when none are left. */

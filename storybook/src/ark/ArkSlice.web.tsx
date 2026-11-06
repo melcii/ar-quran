@@ -180,6 +180,8 @@ type Api = {
 
 function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRefObject<Move>; api: MutableRefObject<Api>; saveRef: MutableRefObject<Save>; q: SceneQuality }) {
   const { camera, raycaster, pointer: ndc, scene } = useThree();
+  // Where the camera is drawn (tests check it never sits inside a solid).
+  (game as unknown as { camera: THREE.Camera }).camera = camera;
   const keys = useRef(new Set<string>());
   const lastNear = useRef<string>('');
   const insideRef = useRef<boolean | null>(null);
@@ -660,7 +662,9 @@ function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRe
     );
     if (!inside) want3.y = Math.max(want3.y, groundY(want3.x, want3.z) + 0.7, weather.water + 0.6);
     cam.pos.lerp(want3, snap ? 1 : damp(dt, (motion.reduced ? 30 : 6)));
+    // The eased position may lag into a wall the target already avoids; draw it short of it.
     camera.position.copy(cam.pos);
+    if (!inside) game.space.clampCamera(cam.look, camera.position);
     camera.lookAt(cam.look);
 
     /* ---------- sound ---------- */

@@ -66,6 +66,10 @@ function partSolid(geo: THREE.BufferGeometry, world: THREE.Matrix4, floor: Floor
   _up.set(0, 1, 0).applyQuaternion(_q);
   const upright = _up.y > 0.9;
   const lb = geo.boundingBox!;
+  // A slanting cord (a tent's guy rope, a festoon string): a thread, not a wall.
+  // Its box on the ground plan would be an invisible wall the length of the rope.
+  // (Steeply slanting and under 5 cm thick: rails, which run level or up a ramp, stay solid.)
+  if ((geo.type === 'CylinderGeometry' || geo.type === 'CapsuleGeometry') && _up.y > 0.45 && _up.y < 0.9 && Math.max((lb.max.x - lb.min.x) * Math.abs(_s.x), (lb.max.z - lb.min.z) * Math.abs(_s.z)) < 0.05) return { h, why: 'rope', x, z };
   if (upright && ROUND.has(geo.type)) {
     const r = Math.max(((lb.max.x - lb.min.x) / 2) * Math.abs(_s.x), ((lb.max.z - lb.min.z) / 2) * Math.abs(_s.z));
     if (r * 2 > MAX_SPAN) return { h, why: 'wide', x, z };

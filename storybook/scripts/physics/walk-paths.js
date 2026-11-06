@@ -68,9 +68,9 @@ const BASE = process.env.BASE || 'http://localhost:8090';
   }
   const state = () =>
     p.evaluate(() => {
-      const A = globalThis.__adv, g = A.game, sp = g.space, me = g.me, P = A.player.pos, c = g.cam.pos, f = sp.spec.floor;
+      const A = globalThis.__adv, g = A.game, sp = g.space, me = g.me, P = A.player.pos, c = g.camera?.position ?? g.cam.pos, f = sp.spec.floor;
       let camHit = false;
-      sp.world.intersectionsWithShape({ x: c.x, y: 0, z: c.z }, { x: 0, y: 0, z: 0, w: 1 }, new sp.R.Ball(0.05), (h) => { const top = sp.camTop.get(h.handle) ?? 2.4; if (!sp.ground.has(h.handle) && top >= 0 && c.y < f(c.x, c.z) + top) camHit = { cam: [+c.x.toFixed(1), +c.y.toFixed(1), +c.z.toFixed(1)], me: [+P.x.toFixed(1), +P.z.toFixed(1)], top, floor: +f(c.x, c.z).toFixed(1), near: sp.solids.map((q) => ({ q, d: Math.hypot(q.x - c.x, q.z - c.z) })).sort((a, b) => a.d - b.d)[0]?.q.tag }; return !camHit; }, undefined, (4 << 16) | 1);
+      sp.world.intersectionsWithShape({ x: c.x, y: 0, z: c.z }, { x: 0, y: 0, z: 0, w: 1 }, new sp.R.Ball(0.05), (h) => { const top = sp.camTop.get(h.handle) ?? 2.4; if (!sp.ground.has(h.handle) && top >= 0 && c.y < f(c.x, c.z) + top) camHit = { cam: [+c.x.toFixed(1), +c.y.toFixed(1), +c.z.toFixed(1)], me: [+P.x.toFixed(1), +P.z.toFixed(1)], top, floor: +f(c.x, c.z).toFixed(1), near: sp.solids.map((q) => ({ q, d: Math.hypot(q.x - c.x, q.z - c.z) })).sort((a, b) => a.d - b.d)[0]?.q.tag, look: [g.cam.look.x, g.cam.look.y, g.cam.look.z].map((v) => +v.toFixed(2)), reach: (() => { const L = g.cam.look, dx = c.x - L.x, dy = c.y - L.y, dz = c.z - L.z, d = Math.hypot(dx, dy, dz); return [+d.toFixed(2), +sp.cameraReach(L.x, L.y, L.z, dx / d, dy / d, dz / d, d).toFixed(2)]; })(), shape: h.shapeType(), ct: [h.translation().x, h.translation().z].map((v) => +v.toFixed(2)) }; return !camHit; }, undefined, (4 << 16) | 1);
       return {
         x: P.x, z: P.z, feet: P.y - f(P.x, P.z), clock: g.clock, cy: g.cam.yaw,
         inside: sp.blockedAt(me.x, me.z, me.r * 0.8, me.collider), scale: globalThis.__figProbe?.scale ?? 1,

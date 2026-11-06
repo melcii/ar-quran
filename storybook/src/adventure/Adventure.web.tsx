@@ -1175,7 +1175,9 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
     );
     want3.y = Math.max(want3.y, t.floorY(want3.x, want3.z) + 0.7, (t.water ?? -99) + 0.6);
     cam.pos.lerp(want3, snap ? 1 : damp(dt, (motion.reduced ? 30 : 6)));
+    // The eased position may lag into a wall the target already avoids; draw it short of it.
     camera.position.copy(cam.pos);
+    if (!game.boat.on) game.space.clampCamera(cam.look, camera.position);
     camera.lookAt(cam.look);
 
     nature.update({ river: t.water != null ? (game.boat.on ? 0 : 30) : 99, storm: weather.storm, rain: weather.rain, inside: false, dt });

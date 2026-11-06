@@ -11,6 +11,7 @@ one() {
 }
 export -f one
 echo ${WORLDS:-ark $(seq 1 10) $(seq 12 39)} | tr ' ' '\n' | xargs -P ${JOBS:-3} -I{} bash -c 'one {}'
+[ "$PHONE" = none ] && exit 0
 for w in ${PHONE:-1 7 19 20 39}; do
   W=$w DEV=phone timeout 3000 node walk-paths.js > out/w-$w-phone.json 2> out/w-$w-phone.err
   W=$w DEV=phone timeout 1500 node validate-world.js > out/v-$w-phone.json 2> out/v-$w-phone.err
