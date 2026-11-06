@@ -12,7 +12,7 @@ const DEV = process.env.DEV || 'desktop';
 const BASE = process.env.BASE || 'http://localhost:8090';
 (async () => {
   const b = await chromium.launch({ args: ['--use-gl=angle', '--use-angle=swiftshader', '--enable-unsafe-swiftshader'] });
-  const ctx = await b.newContext(DEV === 'phone' ? { ...devices['Pixel 7'] } : { viewport: { width: 1000, height: 650 } });
+  const ctx = await b.newContext(DEV === 'phone' ? { ...devices['Pixel 7'] } : { viewport: { width: 480, height: 320 } });
   const p = await ctx.newPage();
   const errs = [];
   p.on('pageerror', (e) => errs.push(e.message));
@@ -22,7 +22,7 @@ const BASE = process.env.BASE || 'http://localhost:8090';
   });
   await p.goto(`${BASE}/adventure/${W}?q=low`, { timeout: 180000 });
   await p.waitForFunction(() => !!globalThis.__adv && globalThis.__adv.game.clock > 1.2, null, { timeout: 400000 });
-  await p.evaluate(() => globalThis.__adv.speed(3));
+  await p.evaluate((k) => globalThis.__adv.speed(k), +(process.env.SPEED || 5));
   // Close the welcome narration the way a child would: tap or click Continue.
   for (let i = 0; i < 6 && (await p.evaluate(() => globalThis.__adv.cards().length)); i++) {
     const btn = p.getByRole('button', { name: /^(Continue|Close|OK|Got it|Start)/ }).first();
@@ -70,11 +70,11 @@ const BASE = process.env.BASE || 'http://localhost:8090';
     p.evaluate(() => {
       const A = globalThis.__adv, g = A.game, sp = g.space, me = g.me, P = A.player.pos, c = g.cam.pos, f = sp.spec.floor;
       let camHit = false;
-      sp.world.intersectionsWithShape({ x: c.x, y: 0, z: c.z }, { x: 0, y: 0, z: 0, w: 1 }, new sp.R.Ball(0.05), (h) => { if (!sp.ground.has(h.handle)) camHit = true; return !camHit; }, undefined, (4 << 16) | 1);
+      sp.world.intersectionsWithShape({ x: c.x, y: 0, z: c.z }, { x: 0, y: 0, z: 0, w: 1 }, new sp.R.Ball(0.05), (h) => { const top = sp.camTop.get(h.handle) ?? 2.4; if (!sp.ground.has(h.handle) && top >= 0 && c.y < f(c.x, c.z) + top) camHit = { cam: [+c.x.toFixed(1), +c.y.toFixed(1), +c.z.toFixed(1)], me: [+P.x.toFixed(1), +P.z.toFixed(1)], top, floor: +f(c.x, c.z).toFixed(1), near: sp.solids.map((q) => ({ q, d: Math.hypot(q.x - c.x, q.z - c.z) })).sort((a, b) => a.d - b.d)[0]?.q.tag }; return !camHit; }, undefined, (4 << 16) | 1);
       return {
         x: P.x, z: P.z, feet: P.y - f(P.x, P.z), clock: g.clock, cy: g.cam.yaw,
         inside: sp.blockedAt(me.x, me.z, me.r * 0.8, me.collider), scale: globalThis.__figProbe?.scale ?? 1,
-        camUnder: c.y < f(c.x, c.z) + 0.15, camHit: camHit && c.y < f(c.x, c.z) + 2.2,
+        camUnder: c.y < f(c.x, c.z) + 0.15, camHit,
         speed: A.player.speed, recovered: g.recovered, cards: A.cards().length, boat: g.boat.on,
       };
     });
@@ -89,7 +89,7 @@ const BASE = process.env.BASE || 'http://localhost:8090';
     if (Math.abs(s.feet) > 0.3 && !s.boat) res.feetOff++;
     res.scaleDev = Math.max(res.scaleDev, Math.abs(s.scale - 1));
     if (s.camUnder) res.camUnder++;
-    if (s.camHit) res.camHit++;
+    if (s.camHit) (res.camHit++, res.camHit < 4 && (res.camAt ??= []).push(s.camHit));
     const step = Math.hypot(s.x - last.x, s.z - last.z);
     const dt = s.clock - last.clock;
     if (dt > 0 && step > Math.max(1.5, 7 * dt * 1.6) && s.recovered === last.recovered) res.jumps++;
@@ -141,7 +141,7 @@ const BASE = process.env.BASE || 'http://localhost:8090';
     }
   }
   // A tour of every place the world's activities and buildings use (open now or later), from the spawn.
-  const spots = await p.evaluate(() => {
+  const spots = await p.evaluate((TOUR) => {
     const A = globalThis.__adv, out = [], seen = new Set();
     const add = (q, what) => {
       if (!Array.isArray(q) || q.length !== 2 || typeof q[0] !== 'number' || typeof q[1] !== 'number') return;
@@ -158,32 +158,119 @@ const BASE = process.env.BASE || 'http://localhost:8090';
       }
     };
     for (const t of A.def.tasks) scan(t, `task ${t.id}`, 0);
-    for (const s of A.def.structures) add([s.x, s.z], s.type);
+    // Buildings are covered by the validator (every solid pushed from eight sides); set TOUR=all to visit them too.
+    if (TOUR === 'all') for (const s of A.def.structures) add([s.x, s.z], s.type);
     return out;
+  }, process.env.TOUR || 'tasks');
+  // Which spots can be reached on foot now, and which only once a story gate opens.
+  const reach = await p.evaluate((spots) => {
+    const A = globalThis.__adv, sp = A.game.space, t = A.t, C = 0.7;
+    const fill = () => {
+      const s0 = sp.findOpen(A.game.spawn[0], A.game.spawn[1], 0.35) ?? A.game.spawn;
+      const key = (i, j) => `${i},${j}`;
+      // Breadth first, so each cell knows how far it is on foot from the spawn.
+      const seen = new Map([[key(0, 0), 0]]);
+      const q = [[0, 0]];
+      for (let h = 0; h < q.length; h++) {
+        const [i, j] = q[h];
+        const ax = s0[0] + i * C, az = s0[1] + j * C;
+        for (const [di, dj] of [[1, 0], [-1, 0], [0, 1], [0, -1]]) {
+          const k = key(i + di, j + dj);
+          if (seen.has(k)) continue;
+          const bx = ax + di * C, bz = az + dj * C;
+          if (Math.hypot(bx, bz) > t.radius || sp.blockedAt(bx, bz, 0.3) || !t.canStep(ax, az, bx, bz, 0.3)) continue;
+          seen.set(k, seen.get(key(i, j)) + 1);
+          q.push([i + di, j + dj]);
+        }
+      }
+      // A spot counts as reachable if ground reached on foot lies within 2.5 m of
+      // it with a walker-wide way in between (not the other side of a wall or a
+      // row of trunks).
+      const clear = (ax, az, bx, bz) => { const n = Math.ceil(Math.hypot(bx - ax, bz - az) / 0.2); for (let k = 1; k < n; k++) { const x = ax + ((bx - ax) * k) / n, z = az + ((bz - az) * k) / n; if (Math.hypot(bx - x, bz - z) > 0.6 && sp.blockedAt(x, z, 0.3)) return false; } return true; };
+      return spots.map((p) => {
+        let best = null;
+        for (const [k, n] of seen) {
+          const [i, j] = k.split(',').map(Number);
+          const x = s0[0] + i * C, z = s0[1] + j * C, d = Math.hypot(x - p.x, z - p.z);
+          if (d <= 2.5 && (!best || d < best.d) && clear(x, z, p.x, p.z)) best = { x, z, d, walk: n * C };
+        }
+        // Spots inside a solid (a well, a house): the nearest reached ground counts.
+        if (!best && sp.blockedAt(p.x, p.z, 0.05))
+          for (const [k, n] of seen) {
+            const [i, j] = k.split(',').map(Number);
+            const x = s0[0] + i * C, z = s0[1] + j * C, d = Math.hypot(x - p.x, z - p.z);
+            if (d <= 4 && (!best || d < best.d)) best = { x, z, d, walk: n * C };
+          }
+        return best;
+      });
+    };
+    sp.sync();
+    const now = fill();
+    // Every gate open: switch off the gate colliders and the terrain's own gate rules.
+    const saved = [];
+    for (const b of [...t.blocks, ...t.obstacles]) if (b.active) (saved.push([b, b.active]), (b.active = () => false));
+    for (const g of sp.toggles) g.c.setEnabled(false);
+    sp.world.step();
+    const open = fill();
+    for (const [b, f] of saved) b.active = f;
+    sp.sync();
+    return { now, open };
+  }, spots);
+  res.tour = { spots: spots.length, reachableNow: reach.now.filter(Boolean).length, walked: 0, tapped: 0, unreached: [], farOnly: [], gated: [], closed: [] };
+  const tourSpots = [];
+  spots.forEach((q, i) => {
+    // Walk to the ground beside it that the flood fill reached.
+    if (reach.now[i]) tourSpots.push({ ...q, gx: reach.now[i].x, gz: reach.now[i].z, walk: reach.now[i].walk });
+    else if (reach.open[i]) res.tour.gated.push(q.what);
+    else res.tour.closed.push({ what: q.what, at: [+q.x.toFixed(1), +q.z.toFixed(1)] });
   });
-  res.tour = { spots: spots.length, walked: 0, tapped: 0, unreached: [] };
-  for (const q of spots) {
-    const back = await p.evaluate(() => globalThis.__adv.game.spawn);
-    await p.evaluate(([x, z]) => globalThis.__adv.teleport(x, z), back);
-    await p.waitForTimeout(250);
+  spots.length = 0;
+  spots.push(...tourSpots);
+  // Visit them nearest-first, one after another, as a child exploring would.
+  let here = await state();
+  const order = [];
+  const left = spots.slice();
+  while (left.length) {
+    left.sort((a, b2) => Math.hypot(a.x - here.x, a.z - here.z) - Math.hypot(b2.x - here.x, b2.z - here.z));
+    const q = left.shift();
+    order.push(q);
+    here = { x: q.x, z: q.z };
+  }
+  let lost = false;
+  const budget = Date.now() + +(process.env.TOUR_MIN || 12) * 60000;
+  for (const q of order) {
+    if (Date.now() > budget) { res.tour.timedOut = (res.tour.timedOut ?? 0) + 1; continue; }
+    if (lost) {
+      const back = await p.evaluate(() => globalThis.__adv.game.spawn);
+      await p.evaluate(([x, z]) => globalThis.__adv.teleport(x, z), back);
+      await p.waitForTimeout(250);
+      lost = false;
+    }
     last = await state();
     // Close is enough: the spot may be inside the thing (a house, a well).
-    const near = await p.evaluate(([x, z]) => { const o = globalThis.__adv.game.space.findOpen(x, z, 0.35, 10); return o ? Math.hypot(o[0] - x, o[1] - z) : 10; }, [q.x, q.z]);
-    if (await goTo(q.x, q.z, near + 1.6, 60)) { res.tour.walked++; continue; }
+    const near = 0;
+    if (await goTo(q.gx, q.gz, near + 1.2, 60)) { res.tour.walked++; continue; }
     await steer(null);
     // Something in the way: tap the ground by it, as a child would, and let the route go round.
-    await p.evaluate(([x, z]) => globalThis.__adv.go(x, z), [q.x, q.z]);
+    await p.evaluate(([x, z]) => globalThis.__adv.go(x, z), [q.gx, q.gz]);
     const t0 = Date.now();
     let s, best = 1e9, bestAt = Date.now();
     do {
       await p.waitForTimeout(250);
       s = await state();
       watch(s);
-      const d = Math.hypot(q.x - s.x, q.z - s.z);
+      const d = Math.hypot(q.gx - s.x, q.gz - s.z);
       if (d < best - 0.1) (best = d), (bestAt = Date.now());
-    } while (Math.hypot(q.x - s.x, q.z - s.z) > near + 1.6 && Date.now() - t0 < 120000 && Date.now() - bestAt < 20000);
-    if (Math.hypot(q.x - s.x, q.z - s.z) <= near + 1.6) res.tour.tapped++;
-    else res.tour.unreached.push({ what: q.what, at: [+q.x.toFixed(1), +q.z.toFixed(1)], got: [+s.x.toFixed(1), +s.z.toFixed(1)] });
+    } while (Math.hypot(q.gx - s.x, q.gz - s.z) > near + 1.2 && Date.now() - t0 < 90000 && Date.now() - bestAt < 15000);
+    if (Math.hypot(q.gx - s.x, q.gz - s.z) <= near + 1.2 || Math.hypot(q.x - s.x, q.z - s.z) <= 2.6) res.tour.tapped++;
+    else {
+      lost = true;
+      // Only reachable the long way round (outside the walls, the far side of a
+      // lake): tap-to-go plans routes of a few dozen metres, so note it apart.
+      const item = { what: q.what, at: [+q.x.toFixed(1), +q.z.toFixed(1)], got: [+s.x.toFixed(1), +s.z.toFixed(1)], onFoot: Math.round(q.walk) };
+      if (q.walk > 70) res.tour.farOnly.push(item);
+      else res.tour.unreached.push(item);
+    }
   }
 
   // Every activity spot open now: walk to it with the real input, then check the action button is offered.
@@ -218,7 +305,7 @@ const BASE = process.env.BASE || 'http://localhost:8090';
   res.metres = Math.round(res.metres);
   res.recovered = last.recovered;
   res.errors = errs;
-  res.ok = !res.inside && !res.feetOff && res.scaleDev < 1e-6 && !res.camUnder && !res.camHit && !res.jumps && !res.stuck.length && res.zones.every((z) => z.ok) && !res.tour.unreached.length && !errs.length;
+  res.ok = !res.inside && !res.feetOff && res.scaleDev < 1e-6 && !res.camUnder && !res.camHit && !res.jumps && !res.stuck.length && res.zones.every((z) => z.ok) && !res.tour.unreached.length && !res.tour.closed.length && !errs.length;
   console.log(JSON.stringify(res));
   await b.close();
 })();

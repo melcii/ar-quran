@@ -2,7 +2,7 @@
 // pavilion pillars, a palm trunk, lantern posts, sluice gates, looms...) are
 // built in each mechanic's View and used to have no collision at all, so a
 // child could walk straight through them. Here every drawn part that stands on
-// the ground and is taller than a step becomes a simple upright collider
+// the ground and is taller than a step (0.45 m) becomes a simple upright collider
 // (a circle for round parts, an oriented box for the rest). Nothing visible
 // changes. Parts that should stay passable (plants, glows, floating marks)
 // are skipped, and any group can opt out with userData.noSolid.
@@ -10,12 +10,13 @@
 // The same walk over the scene also powers the audit: every drawn solid-looking
 // part anywhere in the world whose middle is not covered by some collider.
 import * as THREE from 'three';
-import type { Solid, Space } from './space';
+import { MAX_STEP, type Solid, type Space } from './space';
 
-/** Shorter than this above the ground: stepped over, no collider. */
-const MIN_H = 0.55;
-/** Bottom further than this above the ground: it floats (a roof, a canopy, a sign). */
-const MAX_LIFT = 0.35;
+/** No taller above the ground than a step: walked over, no collider. Anything taller is in the way. */
+const MIN_H = MAX_STEP;
+/** Bottom further than this above the ground: it floats (a roof, a canopy, a sign).
+ * Lower than this it is in the way: a post, or a fence rail at knee height. */
+const MAX_LIFT = 0.9;
 /** Wider than this: ground cover or a platform, not a wall (reported, not added). */
 const MAX_SPAN = 9;
 
@@ -29,6 +30,8 @@ const _p = new THREE.Vector3();
 const _q = new THREE.Quaternion();
 const _s = new THREE.Vector3();
 const _up = new THREE.Vector3();
+const _ax = new THREE.Vector3();
+const _c = new THREE.Vector3();
 
 function skipped(o: THREE.Object3D) {
   for (let a: THREE.Object3D | null = o; a; a = a.parent) {
@@ -57,7 +60,6 @@ function partSolid(geo: THREE.BufferGeometry, world: THREE.Matrix4, floor: Floor
   if (FLAT.has(geo.type)) return { h, why: 'flat', x, z };
   if (_box.min.y > fy + MAX_LIFT) return { h, why: 'raised', x, z };
   if (h < MIN_H) return { h, why: 'low', x, z };
-  if (_box.max.y - _box.min.y < MIN_H) return { h, why: 'thin', x, z };
   // A platform the ground already rises onto (a deck, a step the terrain knows).
   if (floor(x, z) >= _box.max.y - 0.3) return { h, why: 'walkable', x, z };
   world.decompose(_p, _q, _s);
@@ -69,24 +71,38 @@ function partSolid(geo: THREE.BufferGeometry, world: THREE.Matrix4, floor: Floor
     if (r * 2 > MAX_SPAN) return { h, why: 'wide', x, z };
     return { solid: { kind: 'circle', x, z, r, tag, top: h, cam: r > 0.22 }, h, x, z };
   }
-  let hx: number;
-  let hz: number;
+  // An oriented box on the ground plan, turned along the part's longest
+  // horizontal axis (a rail running round a pen, a plank, a wall).
+  const ext = [(lb.max.x - lb.min.x) / 2, (lb.max.y - lb.min.y) / 2, (lb.max.z - lb.min.z) / 2];
+  let best = -1;
   let rot = 0;
-  let cx = x;
-  let cz = z;
-  if (upright) {
-    // Oriented box from the part's own extents and its turn about y.
-    const e = new THREE.Euler().setFromQuaternion(_q, 'YXZ');
-    rot = e.y;
-    hx = ((lb.max.x - lb.min.x) / 2) * Math.abs(_s.x);
-    hz = ((lb.max.z - lb.min.z) / 2) * Math.abs(_s.z);
-    const c = new THREE.Vector3((lb.min.x + lb.max.x) / 2, (lb.min.y + lb.max.y) / 2, (lb.min.z + lb.max.z) / 2).applyMatrix4(world);
-    cx = c.x;
-    cz = c.z;
-  } else {
-    hx = (_box.max.x - _box.min.x) / 2;
-    hz = (_box.max.z - _box.min.z) / 2;
+  for (let k = 0; k < 3; k++) {
+    _ax.set(k === 0 ? 1 : 0, k === 1 ? 1 : 0, k === 2 ? 1 : 0).transformDirection(world).multiplyScalar(ext[k] * [_s.x, _s.y, _s.z].map(Math.abs)[k]);
+    const len = Math.hypot(_ax.x, _ax.z);
+    if (len > best) (best = len), (rot = Math.atan2(-_ax.z, _ax.x));
   }
+  // Rotation-y convention: local x runs along (cos rot, -sin rot), local z along (sin rot, cos rot).
+  const ux = Math.cos(rot);
+  const uz = -Math.sin(rot);
+  let u0 = Infinity;
+  let u1 = -Infinity;
+  let w0 = Infinity;
+  let w1 = -Infinity;
+  for (let c = 0; c < 8; c++) {
+    _c.set(c & 1 ? lb.max.x : lb.min.x, c & 2 ? lb.max.y : lb.min.y, c & 4 ? lb.max.z : lb.min.z).applyMatrix4(world);
+    const u = _c.x * ux + _c.z * uz;
+    const w = _c.x * -uz + _c.z * ux;
+    u0 = Math.min(u0, u);
+    u1 = Math.max(u1, u);
+    w0 = Math.min(w0, w);
+    w1 = Math.max(w1, w);
+  }
+  const hx = (u1 - u0) / 2;
+  const hz = (w1 - w0) / 2;
+  const um = (u0 + u1) / 2;
+  const wm = (w0 + w1) / 2;
+  const cx = um * ux - wm * uz;
+  const cz = um * uz + wm * ux;
   if (Math.max(hx, hz) * 2 > MAX_SPAN) return { h, why: 'wide', x, z };
   return { solid: { kind: 'box', x: cx, z: cz, hx, hz, rot, tag, top: h, cam: Math.min(hx, hz) > 0.22 || Math.max(hx, hz) > 0.8 }, h, x, z };
 }

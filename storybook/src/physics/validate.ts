@@ -11,7 +11,7 @@ export type Report = {
   slopes: { tested: number; climbs: { x: number; z: number; rise: number; run: number }[] };
   edge: { tested: number; escaped: { x: number; z: number }[] };
   /** Every footpath walked end to end, steering along it as a child would. */
-  paths: { tested: number; walked: number; stuck: { path: number; x: number; z: number; to: [number, number] }[]; gated: { path: number; tag: string }[] };
+  paths: { tested: number; walked: number; stuck: { path: number; x: number; z: number; to: [number, number] }[]; gated: { path: number; tag: string }[]; around: { path: number; x: number; z: number }[] };
   /** Every activity spot: somewhere open to stand within reach of it. */
   zones: { tested: number; unreachable: { key: string; x: number; z: number; reach: number }[] };
   ok: boolean;
@@ -108,6 +108,44 @@ export function validateSpace(sp: Space, opts: { spawn: [number, number]; r?: nu
   const stuck: Report['paths']['stuck'] = [];
   const gated: Report['paths']['gated'] = [];
   // A gate that opens later in the story (shut now) is not a fault.
+  // Something stands on the path (a house at its end, a bench): fine if a
+  // child can walk round it, found with a small search on a 0.5 m grid.
+  const aroundTo = (tx: number, tz: number) => {
+    const goal = sp.findOpen(tx, tz, r, 4);
+    if (!goal) return null;
+    const C = 0.5;
+    const ox = probe.x;
+    const oz = probe.z;
+    const seen = new Set<string>(['0,0']);
+    const q: [number, number][] = [[0, 0]];
+    for (let h = 0; h < q.length && h < 6000; h++) {
+      const [i, j] = q[h];
+      const ax = ox + i * C;
+      const az = oz + j * C;
+      if (Math.hypot(ax - goal[0], az - goal[1]) < 0.8) return goal;
+      for (const [di, dj] of [[1, 0], [-1, 0], [0, 1], [0, -1]]) {
+        const k = `${i + di},${j + dj}`;
+        const bx = ax + di * C;
+        const bz = az + dj * C;
+        if (seen.has(k) || Math.abs(bx - ox) > 20 || Math.abs(bz - oz) > 20) continue;
+        if (!sp.okSpot(bx, bz, r * 0.85) || Math.abs(sp.spec.floor(bx, bz) - sp.spec.floor(ax, az)) > MAX_STEP) continue;
+        seen.add(k);
+        q.push([i + di, j + dj]);
+      }
+    }
+    return null;
+  };
+  const around: Report['paths']['around'] = [];
+  /** A solid thing here (not the water's edge or the rim, which paths may run beside). */
+  const solidAt = (x: number, z: number, rr: number) => {
+    let hit = false;
+    sp.world.intersectionsWithShape({ x, y: 0, z }, { x: 0, y: 0, z: 0, w: 1 }, new sp.R.Ball(rr), (c) => {
+      if (sp.ground.has(c.handle) || !c.isEnabled()) return true;
+      hit = true;
+      return false;
+    });
+    return hit;
+  };
   const gateBy = () => sp.solids.find((s) => s.active && s.active() && Math.hypot(s.x - probe.x, s.z - probe.z) < (s.kind === 'circle' ? s.r : Math.hypot(s.hx, s.hz)) + r + 0.8);
   let walked = 0;
   (opts.paths ?? []).forEach((pts, pi) => {
@@ -117,7 +155,7 @@ export function validateSpace(sp: Space, opts: { spawn: [number, number]; r?: nu
       sp.place(probe, o0[0], o0[1]);
       for (let i = 1; i < way.length; i++) {
         // A bench or a lantern standing on the path: aim past it, as a child would.
-        if (i < way.length - 1 && sp.blockedAt(way[i][0], way[i][1], r + 0.5)) continue;
+        if (i < way.length - 1 && solidAt(way[i][0], way[i][1], r + 0.5)) continue;
         const [tx, tz] = way[i];
         const d0 = Math.hypot(tx - probe.x, tz - probe.z);
         let left = Math.ceil((d0 / 4.2) * 60 * 2.5) + 60;
@@ -135,12 +173,22 @@ export function validateSpace(sp: Space, opts: { spawn: [number, number]; r?: nu
         }
         const d = Math.hypot(tx - probe.x, tz - probe.z);
         // Path ends may sit on a feature (a lantern, a gate): close is enough there.
-        const endOk = i === way.length - 1 && d < 2.6;
+        // A path may also end in the water or against a building: as near as the ground allows is enough.
+        const last = i === way.length - 1;
+        const shore = last && !sp.okSpot(tx, tz, r) ? sp.findOpen(tx, tz, r, 6) : null;
+        const endOk = last && (d < 2.6 || (!!shore && Math.hypot(shore[0] - probe.x, shore[1] - probe.z) < 2));
         if (d >= 0.9 && !endOk) {
           const g = gateBy();
           if (g) {
             gated.push({ path: pi, tag: g.tag });
             break;
+          }
+          const by = aroundTo(tx, tz);
+          if (by) {
+            // Carry on along the path from the far side.
+            around.push({ path: pi, x: +probe.x.toFixed(1), z: +probe.z.toFixed(1) });
+            sp.place(probe, by[0], by[1]);
+            continue;
           }
           stuck.push({ path: pi, x: +probe.x.toFixed(2), z: +probe.z.toFixed(2), to: [tx, tz] });
           break;
@@ -165,7 +213,7 @@ export function validateSpace(sp: Space, opts: { spawn: [number, number]; r?: nu
     solids: { tested: solids.length, pushes, entered },
     slopes: { tested, climbs },
     edge: { tested: 16, escaped },
-    paths: { tested: (opts.paths ?? []).length, walked: Math.round(walked), stuck, gated },
+    paths: { tested: (opts.paths ?? []).length, walked: Math.round(walked), stuck, gated, around },
     zones: { tested: (opts.zones ?? []).filter((u) => u.reach > 0).length, unreachable },
     ok: spawn.ok && !entered.length && !climbs.length && !escaped.length && !stuck.length && !unreachable.length,
   };
