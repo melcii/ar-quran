@@ -98,21 +98,32 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Friday Town",
+  "tier": "playable",
+  "visual_theme": "A busy market street on Friday morning with fruit stalls under awnings and a domed mosque with a minaret at the top",
   "quran_references": [
-   "62:1–11"
+   "62:1-2",
+   "62:9-11"
   ],
   "primary_mechanic": {
    "kind": "friday-schedule",
-   "engine": "not built yet",
-   "text": "Plan a Friday in a town: close the stalls when the call comes and reopen after (62:9-10)."
+   "engine": "friday",
+   "text": "Keep a fruit stall and give each unseen customer what they ask for; mid-sale the call for the Friday prayer comes (shown as words) and selling is refused until you close the stall and walk to the mosque; after the prayer (not played) reopen and sell again (62:9-10)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "everything glorifies Allah (62:1-2, read)",
+   "better than trade (62:11, read)"
+  ],
+  "narrative_structure": "A reading at the top of the street, the stall and the call, the mosque, then a reading at the mosque",
+  "world_assets": [
+   "fruit stall with awning",
+   "market street",
+   "domed mosque with minaret"
+  ],
+  "environment_behaviour": [
+   "the stall is covered with a cloth while shut",
+   "the mosque door glows when it is time"
+  ],
+  "learning_objective": "Know to leave trade at the Friday call and seek bounty after the prayer (62:9-10)",
   "interaction_tests": {
    "activate": "untested",
    "responds": "untested",
@@ -123,7 +134,7 @@
    "devices": "untested"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w062.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

@@ -11,6 +11,11 @@ import { Firedrill } from './firedrill';
 import { Forge } from './forge';
 import { Listen } from './listen';
 import { Welcome } from './welcome';
+import { Span } from './span';
+import { Bond } from './bond';
+import { Friday } from './friday';
+import { Chances } from './chances';
+import { Pack } from './pack';
 import { Release } from './release';
 import { Rootbox } from './rootbox';
 import { Starhop } from './starhop';
@@ -110,6 +115,11 @@ export const MECHS: Partial<Record<Task['kind'], Mechanic<never>>> = {
   forge: Forge as Mechanic<never>,
   listen: Listen as Mechanic<never>,
   welcome: Welcome as Mechanic<never>,
+  span: Span as Mechanic<never>,
+  bond: Bond as Mechanic<never>,
+  friday: Friday as Mechanic<never>,
+  chances: Chances as Mechanic<never>,
+  pack: Pack as Mechanic<never>,
 };
 
 /** The plug-in for a task, typed loosely so the engine can call it with any task. */

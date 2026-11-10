@@ -101,21 +101,33 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Bridge Between Communities",
+  "tier": "playable",
+  "visual_theme": "Two small villages facing each other across a stream, posts standing in the water and plank piles on both banks",
   "quran_references": [
-   "60:1–12"
+   "60:4",
+   "60:6-8"
   ],
   "primary_mechanic": {
    "kind": "bridge-trade",
-   "engine": "not built yet",
-   "text": "Help two fictional communities exchange supplies fairly across a bridge (60:8)."
+   "engine": "span",
+   "text": "Lay a plank across each gap between posts (gaps 2.6-4.0 m) from planks sent by both villages; a plank must rest 0.2 m on each post, too-short ones are refused, and using a long plank on a narrow gap leaves the widest gap without one (lift planks back to fix it). Each laid plank becomes walkable (60:7-8)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "perhaps affection (60:7, read)",
+   "a good example (60:4, 60:6, read)"
+  ],
+  "narrative_structure": "A reading on your bank, the bridge, then a reading in the far village",
+  "world_assets": [
+   "stream with posts",
+   "plank piles on both banks",
+   "walkable plank bridge",
+   "two villages"
+  ],
+  "environment_behaviour": [
+   "each plank appears and can be walked on as it is laid",
+   "the plank piles shrink"
+  ],
+  "learning_objective": "Know that Allah loves those who are just and kind to neighbours who do no harm (60:8)",
   "interaction_tests": {
    "activate": "untested",
    "responds": "untested",
@@ -126,7 +138,7 @@
    "devices": "untested"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w060.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

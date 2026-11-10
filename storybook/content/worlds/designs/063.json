@@ -80,21 +80,31 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The House of Sincerity",
+  "tier": "playable",
+  "visual_theme": "A village of winding lanes in the late afternoon with a well, a pen, a bakery stall and lanterns on posts",
   "quran_references": [
-   "63:1–11"
+   "63:1",
+   "63:9-11"
   ],
   "primary_mechanic": {
    "kind": "word-and-deed",
-   "engine": "not built yet",
-   "text": "Match promises on a board to what was actually done in the town (63:1-4)."
+   "engine": "chances",
+   "text": "Lanterns light one at a time where someone needs a hand and burn down over 40 seconds; reach each while lit and help. Late arrivals find it out and that chance has passed (63:10); four must be taken."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "do not be distracted (63:9, read)",
+   "saying and being (63:1, read)"
+  ],
+  "narrative_structure": "A reading at the edge of the village, the lanterns, then a reading in the lane",
+  "world_assets": [
+   "lanterns on posts that burn down",
+   "village lanes, well, pen, bakery stall"
+  ],
+  "environment_behaviour": [
+   "the lit lantern’s flame shrinks as time passes",
+   "a green light marks each chance taken"
+  ],
+  "learning_objective": "Know to give now, before it is too late (63:10)",
   "interaction_tests": {
    "activate": "untested",
    "responds": "untested",
@@ -105,7 +115,7 @@
    "devices": "untested"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w063.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
