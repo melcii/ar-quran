@@ -129,22 +129,35 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Garden After Rain",
+  "tier": "playable",
+  "visual_theme": "A dry valley under a wide clear sky, ringed by firm hills, with tall date palms by a spring and a garden shed of glass-sided growing boxes",
   "quran_references": [
-   "50:6–11",
-   "50:16–22"
+   "50:6-11",
+   "50:16-18",
+   "50:38-39"
   ],
   "primary_mechanic": {
    "kind": "seed-germination",
-   "engine": "not built yet",
-   "text": "Plant seeds in dry ground, water them and watch them sprout over days (50:9-11)."
+   "engine": "rootbox",
+   "text": "Sow three seeds (sesame, wheat, broad bean) each at its own depth in glass-sided boxes (too shallow or too deep is refused with the reason), then water and wait three days, watching roots go down and shoots come up out of dry earth (50:9-11)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "have they not looked (50:6-8, read)",
+   "closer than the jugular vein (50:16-18, read)",
+   "before sunrise and sunset (50:38-39, read)"
+  ],
+  "narrative_structure": "A reading on the path, three days at the growing boxes, then readings by the palms",
+  "world_assets": [
+   "glass-sided growing boxes",
+   "rain barrel",
+   "date palms by a spring",
+   "garden shed"
+  ],
+  "environment_behaviour": [
+   "roots grow down and shoots come up through the glass, day by day",
+   "the soil darkens when watered"
+  ],
+  "learning_objective": "See how rain gives life to dead land (50:9-11) and that this is a sign of the coming forth",
   "interaction_tests": {
    "activate": "untested",
    "responds": "untested",
@@ -155,7 +168,7 @@
    "devices": "untested"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w050.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

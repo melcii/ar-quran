@@ -467,7 +467,17 @@ export type ChannelsTask = TaskBase & { kind: 'channels'; rack: P2; tools: strin
 export type CalmTask = TaskBase & { kind: 'calm'; gate: P2; r: number; secs: number; stirs: { text: string; calm: string; push: string }[] };
 /** Surah Al-Hujurat: check each claim of a rumour at its source before passing anything on (49:6). */
 export type RumourTask = TaskBase & { kind: 'rumour'; board: P2; claims: { text: string; at: P2; look: string; seen: string; true: boolean }[] };
-export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask | StandTask | ReachTask | ObserveTask | SkyTask | SailTask | ChoiceTask | ShareTask | PromiseTask | WeighTask | FlowTask | SiftTask | ReturnTask | GranaryTask | ValleyTask | GrowTask | PollenTask | RubbingTask | StreetsTask | SunPathTask | PointTask | BeaconTask | DoorsTask | OrderTask | HomeTask | MirrorTask | ShadowTask | EchoTask | AntsTask | RiverTask | ShelterTask | RainTask | VoiceTask | PastureTask | PlumbTask | SluiceTask | ShadesTask | MoonTask | VineTask | SpringTask | HarvestTask | MeasureTask | DawnTask | ShimmerTask | RollcallTask | LinksTask | CluesTask | ScopeTask | CouncilTask | AdornTask | SurveyTask | StationTask | DunesTask | ChannelsTask | CalmTask | RumourTask;
+/** Surah Qaf: sow each seed at its own depth in a glass-sided box, water it, and watch the dead earth come to life over three days (50:9-11). */
+export type RootboxTask = TaskBase & { kind: 'rootbox'; at: P2; seeds: { name: string; depth: number; why: string }[]; days: number };
+/** Surah Adh-Dhariyat: let the scattering wind carry seed puffs to the beds: release each when the vane points toward its bed (51:1). */
+export type ReleaseTask = TaskBase & { kind: 'release'; posts: { at: P2; bed: P2; label: string }[]; turn: number };
+/** Surah At-Tur: climb the mountain by its painted blazes; wrong branches end in "no way through" (52:1). */
+export type BlazesTask = TaskBase & { kind: 'blazes'; lookouts: { at: P2; r: number; label: string; reading: Reading }[]; ends: { at: P2; r: number }[]; blazes: { at: P2; rot: number }[] };
+/** Surah An-Najm: hop from star to star in the night sky to find Sirius (53:49). */
+export type StarhopTask = TaskBase & { kind: 'starhop'; at: P2 };
+/** Surah Al-Qamar: recall the refrain (54:17) at each story stone, with fewer pieces shown each time. */
+export type RecallTask = TaskBase & { kind: 'recall'; ref: Ref; pieces: string[]; stones: { at: P2; label: string; reading: Reading; hide: number }[] };
+export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask | StandTask | ReachTask | ObserveTask | SkyTask | SailTask | ChoiceTask | ShareTask | PromiseTask | WeighTask | FlowTask | SiftTask | ReturnTask | GranaryTask | ValleyTask | GrowTask | PollenTask | RubbingTask | StreetsTask | SunPathTask | PointTask | BeaconTask | DoorsTask | OrderTask | HomeTask | MirrorTask | ShadowTask | EchoTask | AntsTask | RiverTask | ShelterTask | RainTask | VoiceTask | PastureTask | PlumbTask | SluiceTask | ShadesTask | MoonTask | VineTask | SpringTask | HarvestTask | MeasureTask | DawnTask | ShimmerTask | RollcallTask | LinksTask | CluesTask | ScopeTask | CouncilTask | AdornTask | SurveyTask | StationTask | DunesTask | ChannelsTask | CalmTask | RumourTask | RootboxTask | ReleaseTask | BlazesTask | StarhopTask | RecallTask;
 
 export type Region = { id: string; name: string; at: P2 };
 

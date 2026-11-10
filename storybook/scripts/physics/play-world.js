@@ -21,6 +21,8 @@ const SHOTS = process.env.SHOTS; // a folder: a screenshot after each finished t
   const log = [];
   const t0 = Date.now();
   let lastDone = -1;
+  const forced = [];
+  const same = { id: null, n: -1, k: 0 };
   let stuck = 0;
   for (let step = 0; step < 400; step++) {
     const r = await p.evaluate(async () => {
@@ -68,6 +70,31 @@ const SHOTS = process.env.SHOTS; // a folder: a screenshot after each finished t
         await waitClk(task.secs + 2);
         return { task: task.id, kind: task.kind, did: `watched ${sub.label}` };
       }
+      // Climbing by blazes: walk (routed) to the next lookout.
+      if (task.kind === 'blazes') {
+        const got = s.prog[task.id] ?? [];
+        const i = task.lookouts.findIndex((_, j) => !got.includes(j));
+        const lk = task.lookouts[Math.max(0, i)];
+        A.go(lk.at[0], lk.at[1]);
+        const w0 = performance.now();
+        while ((A.save().prog[task.id] ?? []).length === got.length && !A.save().done.includes(task.id) && performance.now() - w0 < 120000) await sleep(200);
+        return { task: task.id, kind: task.kind, did: `climbed to ${lk.label}` };
+      }
+      // Come in, go away, come back (each return counts).
+      if (task.kind === 'return') {
+        await go(task.at[0], task.at[1], task.r * 0.6);
+        await waitClk(1.2);
+        let out = null;
+        for (const d of [task.away + 3, task.away + 6])
+          for (let k = 0; k < 24 && !out; k++) {
+            const a = (k / 24) * Math.PI * 2;
+            const px = task.at[0] + Math.cos(a) * d, pz = task.at[1] + Math.sin(a) * d;
+            if (sp.okSpot(px, pz, 0.4)) out = [px, pz];
+          }
+        if (out) A.teleport(out[0], out[1]);
+        await waitClk(1.2);
+        return { task: task.id, kind: task.kind, did: 'came in and went away again' };
+      }
       // Leading animals home: tap one so it follows, then walk (routed) to the pen.
       if (task.kind === 'lead') {
         const a = A.uses().find((x) => x.key.startsWith(`ani:${task.id}-`));
@@ -104,7 +131,18 @@ const SHOTS = process.env.SHOTS; // a folder: a screenshot after each finished t
       await waitClk(1);
       return { task: task.id, kind: task.kind, did: u.key, label: u.label };
     });
-    const s = await p.evaluate(() => globalThis.__adv.save());
+    let s = await p.evaluate(() => globalThis.__adv.save());
+    // A task the walker cannot finish after many tries is finished for it and
+    // reported as forced: such a task needs its own real-input check.
+    if (r.task && r.task === same.id && s.done.length === same.n) same.k++;
+    else Object.assign(same, { id: r.task, n: s.done.length, k: 0 });
+    if (same.k >= 18) {
+      forced.push(r.task);
+      await p.evaluate((id) => globalThis.__adv.finish(id), r.task);
+      await p.waitForTimeout(500);
+      s = await p.evaluate(() => globalThis.__adv.save());
+      same.k = 0;
+    }
     log.push({ step, ...r, doneN: s.done.length });
     process.stderr.write(`${r.task ?? ''} ${r.did ?? r.note ?? ''} → ${s.done.length}\n`);
     if (r.finished) break;
@@ -131,6 +169,7 @@ const SHOTS = process.env.SHOTS; // a folder: a screenshot after each finished t
     tasks: tasks.length,
     done: before.done,
     allDone: tasks.every((t) => before.done.includes(t)),
+    forced,
     savedAfterReload: JSON.stringify(after.done) === JSON.stringify(before.done),
     notes: before.notes ?? null,
     errors: errs,

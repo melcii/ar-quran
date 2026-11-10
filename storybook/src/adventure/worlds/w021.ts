@@ -43,7 +43,7 @@ export const W021: WorldDef = {
     { type: 'bench', x: -6, z: 12, rot: Math.PI / 2 },
     // The field the sheep got into at night (21:78), and the fold they belong in.
     { type: 'bed', x: 24, z: 22, w: 9, d: 7, color: '#7a9a3a' },
-    { type: 'pen', x: 26, z: -2, w: 7, rot: Math.PI },
+    { type: 'pen', x: 26, z: -2, w: 7, rot: -Math.PI / 2 }, // opening toward the field in the north
   ],
   welcome:
     'Welcome to the Hall of Answered Prayers. Surah Al-Anbiya tells of many prophets who called on their Lord in hard times, and how each prayer was answered. In the courtyard ahead are three prayers on tablets and three carved doors. Each prayer belongs to one door.',

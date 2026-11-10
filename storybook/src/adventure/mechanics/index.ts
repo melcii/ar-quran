@@ -4,6 +4,11 @@ import type { Task } from '../types';
 import type { Mechanic } from './base';
 import { Adorn } from './adorn';
 import { Ants } from './ants';
+import { Blazes } from './blazes';
+import { Recall } from './recall';
+import { Release } from './release';
+import { Rootbox } from './rootbox';
+import { Starhop } from './starhop';
 import { Calm } from './calm';
 import { Channels } from './channels';
 import { Dunes } from './dunes';
@@ -90,6 +95,11 @@ export const MECHS: Partial<Record<Task['kind'], Mechanic<never>>> = {
   channels: Channels as Mechanic<never>,
   calm: Calm as Mechanic<never>,
   rumour: Rumour as Mechanic<never>,
+  rootbox: Rootbox as Mechanic<never>,
+  release: Release as Mechanic<never>,
+  blazes: Blazes as Mechanic<never>,
+  starhop: Starhop as Mechanic<never>,
+  recall: Recall as Mechanic<never>,
 };
 
 /** The plug-in for a task, typed loosely so the engine can call it with any task. */
