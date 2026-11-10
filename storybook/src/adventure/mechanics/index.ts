@@ -16,6 +16,11 @@ import { Bond } from './bond';
 import { Friday } from './friday';
 import { Chances } from './chances';
 import { Pack } from './pack';
+import { Loads } from './loads';
+import { Amends } from './amends';
+import { Wings } from './wings';
+import { Glean } from './glean';
+import { Unseen } from './unseen';
 import { Release } from './release';
 import { Rootbox } from './rootbox';
 import { Starhop } from './starhop';
@@ -120,6 +125,11 @@ export const MECHS: Partial<Record<Task['kind'], Mechanic<never>>> = {
   friday: Friday as Mechanic<never>,
   chances: Chances as Mechanic<never>,
   pack: Pack as Mechanic<never>,
+  loads: Loads as Mechanic<never>,
+  amends: Amends as Mechanic<never>,
+  wings: Wings as Mechanic<never>,
+  glean: Glean as Mechanic<never>,
+  unseen: Unseen as Mechanic<never>,
 };
 
 /** The plug-in for a task, typed loosely so the engine can call it with any task. */

@@ -497,7 +497,17 @@ export type FridayTask = TaskBase & { kind: 'friday'; stall: P2; mosque: P2; goo
 export type ChancesTask = TaskBase & { kind: 'chances'; spots: { at: P2; what: string; done: string }[]; life: number; need: number };
 /** At-Taghabun: pack a small bag for a long walk; what you chose to carry decides what you can do on the way (64:15-16). */
 export type PackTask = TaskBase & { kind: 'pack'; at: P2; room: number; items: { name: string; size: number; use?: number }[]; stops: { at: P2; need: string; ok: string }[] };
-export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask | StandTask | ReachTask | ObserveTask | SkyTask | SailTask | ChoiceTask | ShareTask | PromiseTask | WeighTask | FlowTask | SiftTask | ReturnTask | GranaryTask | ValleyTask | GrowTask | PollenTask | RubbingTask | StreetsTask | SunPathTask | PointTask | BeaconTask | DoorsTask | OrderTask | HomeTask | MirrorTask | ShadowTask | EchoTask | AntsTask | RiverTask | ShelterTask | RainTask | VoiceTask | PastureTask | PlumbTask | SluiceTask | ShadesTask | MoonTask | VineTask | SpringTask | HarvestTask | MeasureTask | DawnTask | ShimmerTask | RollcallTask | LinksTask | CluesTask | ScopeTask | CouncilTask | AdornTask | SurveyTask | StationTask | DunesTask | ChannelsTask | CalmTask | RumourTask | RootboxTask | ReleaseTask | BlazesTask | StarhopTask | RecallTask | EstuaryTask | FiredrillTask | ForgeTask | ListenTask | WelcomeTask | SpanTask | BondTask | FridayTask | ChancesTask | PackTask;
+/** At-Talaq: share a family's move among carts so that none carries more than it can (65:7). */
+export type LoadsTask = TaskBase & { kind: 'loads'; at: P2; to: P2; carts: { name: string; cap: number }[]; parcels: { name: string; w: number }[] };
+/** At-Tahrim: follow your own footprints back and put right each thing you spoiled on the way (66:8). */
+export type AmendsTask = TaskBase & { kind: 'amends'; trail: P2[]; harms: { at: P2; what: string; fix: string }[] };
+/** Al-Mulk: watch the birds above with wings spread and folding, and tell which is which (67:19). */
+export type WingsTask = TaskBase & { kind: 'wings'; at: P2; rounds: number };
+/** Al-Qalam: open the orchard gate for the gleaners, pick from the branches and leave the fallen fruit (68:17-33). */
+export type GleanTask = TaskBase & { kind: 'glean'; gate: P2; trees: P2[] };
+/** Al-Haqqah: find things that are real but cannot be seen, each with the right tool (69:38-39). */
+export type UnseenTask = TaskBase & { kind: 'unseen'; stations: { at: P2; thing: string; tool: number; shows: string }[]; tools: string[] };
+export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask | StandTask | ReachTask | ObserveTask | SkyTask | SailTask | ChoiceTask | ShareTask | PromiseTask | WeighTask | FlowTask | SiftTask | ReturnTask | GranaryTask | ValleyTask | GrowTask | PollenTask | RubbingTask | StreetsTask | SunPathTask | PointTask | BeaconTask | DoorsTask | OrderTask | HomeTask | MirrorTask | ShadowTask | EchoTask | AntsTask | RiverTask | ShelterTask | RainTask | VoiceTask | PastureTask | PlumbTask | SluiceTask | ShadesTask | MoonTask | VineTask | SpringTask | HarvestTask | MeasureTask | DawnTask | ShimmerTask | RollcallTask | LinksTask | CluesTask | ScopeTask | CouncilTask | AdornTask | SurveyTask | StationTask | DunesTask | ChannelsTask | CalmTask | RumourTask | RootboxTask | ReleaseTask | BlazesTask | StarhopTask | RecallTask | EstuaryTask | FiredrillTask | ForgeTask | ListenTask | WelcomeTask | SpanTask | BondTask | FridayTask | ChancesTask | PackTask | LoadsTask | AmendsTask | WingsTask | GleanTask | UnseenTask;
 
 export type Region = { id: string; name: string; at: P2 };
 

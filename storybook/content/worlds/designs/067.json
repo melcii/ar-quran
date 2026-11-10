@@ -147,21 +147,36 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Celestial Observatory",
+  "tier": "playable",
+  "visual_theme": "A high grassy hill under a wide sky with birds circling, a stargazing mat at the top and a well at the foot",
   "quran_references": [
-   "67:1–30"
+   "67:1-4",
+   "67:15",
+   "67:19",
+   "67:30"
   ],
   "primary_mechanic": {
    "kind": "look-again",
-   "engine": "not built yet",
-   "text": "Look at the sky again and again with different tools and find no flaw (67:3-4)."
+   "engine": "wings",
+   "text": "Lie on the hilltop mat and watch the birds circling; one at a time a bird is marked by a soft light; say whether it glides on spread, still wings or beats and folds them (67:19). Wrong answers are refused with a hint to watch longer."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "blessed is He (67:1-2, read)",
+   "look again (67:3-4, read)",
+   "walk its slopes (67:15, read)",
+   "who brings water (67:30, read)"
+  ],
+  "narrative_structure": "Two readings on the way up, the birds at the top, two readings on the way down",
+  "world_assets": [
+   "circling birds with flapping and gliding wings",
+   "hilltop mat",
+   "well"
+  ],
+  "environment_behaviour": [
+   "the marked bird glows softly",
+   "gliding birds hold their wings still; others beat and fold them"
+  ],
+  "learning_objective": "Know that none holds the birds up but the Most Merciful (67:19)",
   "interaction_tests": {
    "activate": "untested",
    "responds": "untested",
@@ -172,7 +187,7 @@
    "devices": "untested"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w067.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

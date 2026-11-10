@@ -18,7 +18,10 @@
   {
    "title": "'Ad and the wind",
    "reference": "69:6-8",
-   "anchor_phrase": "Aad"
+   "anchor_phrase": "Aad",
+   "treatment": "reading",
+   "treatment_reason": "Not shown. What happened to ‘Ad is told and played in Surah Hud’s world; nothing of the wind is shown here.",
+   "played_in": 11
   }
  ],
  "summary_for_children": "Al-Haqqah means The Reality. It recalls peoples who denied the truth, like 'Ad, and speaks of the Day of Judgement only in its own words.",
@@ -106,21 +109,34 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Great Reflection Hall",
+  "tier": "playable",
+  "visual_theme": "An old stone workshop on a windy cliff above the sea at dusk, with a bench of tools and four plain plinths",
   "quran_references": [
-   "69:1–52"
+   "69:1-3",
+   "69:11-12",
+   "69:38-43"
   ],
   "primary_mechanic": {
    "kind": "quiet-ledger-journal",
-   "engine": "not built yet",
-   "text": "A reflection journal you fill with your own everyday actions; no scenes of judgment (69:18-24 read only)."
+   "engine": "unseen",
+   "text": "At four plinths something real but invisible waits (a draught, a lodestone, a sun-warmed rock, a scent); choose the tool that reveals it (ribbon, compass, back of the hand, nose); the wrong tool shows nothing (69:38-39). The unseen of the Quran is never “found”."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "the Reality (69:1-3, read)",
+   "an ear that remembers (69:11-12, read)"
+  ],
+  "narrative_structure": "Two readings on the cliff path, then the workshop",
+  "world_assets": [
+   "cliff-top workshop",
+   "plinths",
+   "ribbon, compass"
+  ],
+  "environment_behaviour": [
+   "a ribbon flutters in the draught",
+   "a compass needle swings to the lodestone",
+   "warmth and scent glow when found"
+  ],
+  "learning_objective": "Know that there is what we see and what we do not see (69:38-39)",
   "interaction_tests": {
    "activate": "untested",
    "responds": "untested",
@@ -131,7 +147,7 @@
    "devices": "untested"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w069.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
