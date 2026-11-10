@@ -477,7 +477,17 @@ export type BlazesTask = TaskBase & { kind: 'blazes'; lookouts: { at: P2; r: num
 export type StarhopTask = TaskBase & { kind: 'starhop'; at: P2 };
 /** Surah Al-Qamar: recall the refrain (54:17) at each story stone, with fewer pieces shown each time. */
 export type RecallTask = TaskBase & { kind: 'recall'; ref: Ref; pieces: string[]; stones: { at: P2; label: string; reading: Reading; hide: number }[] };
-export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask | StandTask | ReachTask | ObserveTask | SkyTask | SailTask | ChoiceTask | ShareTask | PromiseTask | WeighTask | FlowTask | SiftTask | ReturnTask | GranaryTask | ValleyTask | GrowTask | PollenTask | RubbingTask | StreetsTask | SunPathTask | PointTask | BeaconTask | DoorsTask | OrderTask | HomeTask | MirrorTask | ShadowTask | EchoTask | AntsTask | RiverTask | ShelterTask | RainTask | VoiceTask | PastureTask | PlumbTask | SluiceTask | ShadesTask | MoonTask | VineTask | SpringTask | HarvestTask | MeasureTask | DawnTask | ShimmerTask | RollcallTask | LinksTask | CluesTask | ScopeTask | CouncilTask | AdornTask | SurveyTask | StationTask | DunesTask | ChannelsTask | CalmTask | RumourTask | RootboxTask | ReleaseTask | BlazesTask | StarhopTask | RecallTask;
+/** Surah Ar-Rahman: test the water at buoys along a pier with a float, and find where fresh and salt water meet (55:19-20). */
+export type EstuaryTask = TaskBase & { kind: 'estuary'; buoys: P2[]; meet: number };
+/** Surah Al-Waqi'ah: kindle a fire with a bow drill: steady strokes make an ember, gentle breaths make a flame (56:71-72). */
+export type FiredrillTask = TaskBase & { kind: 'firedrill'; at: P2 };
+/** Surah Al-Hadid: heat iron to working heat with the bellows and strike it into useful tools before it cools (57:25). */
+export type ForgeTask = TaskBase & { kind: 'forge'; at: P2; items: { name: string; strikes: number; use: string }[] };
+/** Surah Al-Mujadilah: listen to each speaker to the end without interrupting, then say back accurately what they said (58:1). */
+export type ListenTask = TaskBase & { kind: 'listen'; at: P2; speakers: { name: string; words: string; repeats: { text: string; ok: boolean; why: string }[] }[] };
+/** Surah Al-Hashr: make ready homes for newcomers; when the store runs out, give from your own house (59:9). */
+export type WelcomeTask = TaskBase & { kind: 'welcome'; store: P2; own: P2; homes: { at: P2; name: string }[]; items: string[]; stock: number[] };
+export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask | StandTask | ReachTask | ObserveTask | SkyTask | SailTask | ChoiceTask | ShareTask | PromiseTask | WeighTask | FlowTask | SiftTask | ReturnTask | GranaryTask | ValleyTask | GrowTask | PollenTask | RubbingTask | StreetsTask | SunPathTask | PointTask | BeaconTask | DoorsTask | OrderTask | HomeTask | MirrorTask | ShadowTask | EchoTask | AntsTask | RiverTask | ShelterTask | RainTask | VoiceTask | PastureTask | PlumbTask | SluiceTask | ShadesTask | MoonTask | VineTask | SpringTask | HarvestTask | MeasureTask | DawnTask | ShimmerTask | RollcallTask | LinksTask | CluesTask | ScopeTask | CouncilTask | AdornTask | SurveyTask | StationTask | DunesTask | ChannelsTask | CalmTask | RumourTask | RootboxTask | ReleaseTask | BlazesTask | StarhopTask | RecallTask | EstuaryTask | FiredrillTask | ForgeTask | ListenTask | WelcomeTask;
 
 export type Region = { id: string; name: string; at: P2 };
 

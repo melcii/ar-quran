@@ -19,7 +19,9 @@
   {
    "title": "The woman's complaint",
    "reference": "58:1-4",
-   "anchor_phrase": "complaint"
+   "anchor_phrase": "complaint",
+   "treatment": "reading",
+   "treatment_reason": "Read at the sign on the way in; the woman and the Prophet are never shown or voiced. The listening game uses fictional speakers who are never shown."
   }
  ],
  "summary_for_children": "Al-Mujadila means The Pleading Woman. It begins with Allah hearing a woman who complained to Him, and teaches making room for others in gatherings and seeking knowledge.",
@@ -96,22 +98,34 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Hall of Listening",
+  "tier": "playable",
+  "visual_theme": "A shaded courtyard with a pool, columns, fig trees and a sitting rug",
   "quran_references": [
-   "58:1–4",
+   "58:1",
+   "58:9",
    "58:11"
   ],
   "primary_mechanic": {
    "kind": "listening-hall",
-   "engine": "not built yet",
-   "text": "Practise listening: hear fictional concerns and repeat them back accurately before answering (58:1)."
+   "engine": "listen",
+   "text": "Three fictional townspeople (never shown) speak one at a time; their words appear and fade. Interrupting is noted and refused; afterwards choose the accurate repeat, not a bigger or smaller one (58:1)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "Allah has heard (58:1, read)",
+   "make room (58:11, read)",
+   "private talk about good (58:9, read)"
+  ],
+  "narrative_structure": "A reading on the way in, the listening rug, then two readings by the benches",
+  "world_assets": [
+   "courtyard with pool and columns",
+   "sitting rug with cushions",
+   "lights for each speaker heard"
+  ],
+  "environment_behaviour": [
+   "a light glows for each speaker heard to the end",
+   "words appear as spoken and fade"
+  ],
+  "learning_objective": "Know that Allah hears (58:1) and practise listening fully before answering",
   "interaction_tests": {
    "activate": "untested",
    "responds": "untested",
@@ -122,7 +136,7 @@
    "devices": "untested"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w058.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

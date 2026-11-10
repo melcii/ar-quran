@@ -219,21 +219,37 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Living Symphony of Nature",
+  "tier": "playable",
+  "visual_theme": "A green coast where a river runs into the sea past a long pier with buoys, palm and fig gardens on the slopes",
   "quran_references": [
-   "55:1–78"
+   "55:1-4",
+   "55:7-13",
+   "55:19-22",
+   "55:26-27"
   ],
   "primary_mechanic": {
    "kind": "two-seas-barrier",
-   "engine": "not built yet",
-   "text": "Find where fresh and salt water meet but do not mix, and test it with floating markers (55:19-20)."
+   "engine": "estuary",
+   "text": "At each buoy along the pier, lower the testing tube and read the float: it rides higher in salt water than fresh. Record fresh or salt at every buoy (wrong answers are refused with the reason), then mark between which two buoys the waters meet (55:19-20)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "the Most Merciful taught the Quran (55:1-4, read)",
+   "fruit, palms and scented plants (55:10-13, read)",
+   "the balance (55:7-9, read)",
+   "what remains (55:26-27, read)"
+  ],
+  "narrative_structure": "Three readings down the coast, the pier test, then a reading at the foot of the pier",
+  "world_assets": [
+   "river mouth and sea",
+   "long pier",
+   "buoys that change colour when tested",
+   "float line marking the meeting"
+  ],
+  "environment_behaviour": [
+   "tested buoys turn green (fresh) or blue (salt)",
+   "a line of floats appears where the waters meet"
+  ],
+  "learning_objective": "Know the refrain of Ar-Rahman (55:13) and the sign of the two seas meeting (55:19-20)",
   "interaction_tests": {
    "activate": "untested",
    "responds": "untested",
@@ -244,7 +260,7 @@
    "devices": "untested"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w055.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

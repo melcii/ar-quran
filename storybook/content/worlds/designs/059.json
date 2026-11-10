@@ -104,22 +104,35 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The House of Generosity",
+  "tier": "playable",
+  "visual_theme": "A small desert town below a great mountain, with a store in the square, your own house by the road and three empty houses",
   "quran_references": [
-   "59:2–10",
-   "59:18–24"
+   "59:9-10",
+   "59:18",
+   "59:21-24"
   ],
   "primary_mechanic": {
    "kind": "aid-centre",
-   "engine": "not built yet",
-   "text": "Run a community aid centre where those who give prefer others even when in need (59:9)."
+   "engine": "welcome",
+   "text": "Make three empty houses ready with bread, a blanket, a water jar and a lamp. The store has too few blankets and lamps; when it runs out, the only way to finish is to take your own from your own house and give it (59:9)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "for tomorrow (59:18, read)",
+   "the mountain (59:21, read)",
+   "the best names (59:22-24, read)"
+  ],
+  "narrative_structure": "A reading on the road in, the three houses, then two readings at the foot of the mountain",
+  "world_assets": [
+   "store with crates that empty",
+   "your own house",
+   "three empty houses whose windows light",
+   "mountain"
+  ],
+  "environment_behaviour": [
+   "store crates disappear as they are given",
+   "a house’s window lights when it is ready"
+  ],
+  "learning_objective": "Understand giving others preference over yourself (59:9)",
   "interaction_tests": {
    "activate": "untested",
    "responds": "untested",
@@ -130,7 +143,7 @@
    "devices": "untested"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w059.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

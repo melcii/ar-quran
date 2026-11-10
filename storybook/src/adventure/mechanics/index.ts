@@ -6,6 +6,11 @@ import { Adorn } from './adorn';
 import { Ants } from './ants';
 import { Blazes } from './blazes';
 import { Recall } from './recall';
+import { Estuary } from './estuary';
+import { Firedrill } from './firedrill';
+import { Forge } from './forge';
+import { Listen } from './listen';
+import { Welcome } from './welcome';
 import { Release } from './release';
 import { Rootbox } from './rootbox';
 import { Starhop } from './starhop';
@@ -100,6 +105,11 @@ export const MECHS: Partial<Record<Task['kind'], Mechanic<never>>> = {
   blazes: Blazes as Mechanic<never>,
   starhop: Starhop as Mechanic<never>,
   recall: Recall as Mechanic<never>,
+  estuary: Estuary as Mechanic<never>,
+  firedrill: Firedrill as Mechanic<never>,
+  forge: Forge as Mechanic<never>,
+  listen: Listen as Mechanic<never>,
+  welcome: Welcome as Mechanic<never>,
 };
 
 /** The plug-in for a task, typed loosely so the engine can call it with any task. */
