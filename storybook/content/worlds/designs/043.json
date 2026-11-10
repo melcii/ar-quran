@@ -19,7 +19,9 @@
   {
    "title": "Ibrahim leaves idols",
    "reference": "43:26-28",
-   "anchor_phrase": "Abraham"
+   "anchor_phrase": "Abraham",
+   "treatment": "reading",
+   "treatment_reason": "Ibrahim is never shown; his word to his people is read at the edge of town."
   }
  ],
  "summary_for_children": "Az-Zukhruf means Gold Ornaments. It reminds us that Allah made the earth a bed for us with roads, sends rain in measure, and gave us ships and animals to ride, and that gold and silver are small next to faith.",
@@ -130,22 +132,36 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Golden City",
+  "tier": "playable",
+  "visual_theme": "A bright street lined with silver and gold on a showcase terrace, a plain shed, a garden bed, a dark oak path, a shelter and a seed store",
   "quran_references": [
-   "43:22–35",
-   "43:46–65"
+   "43:2-3",
+   "43:10-11",
+   "43:26-28",
+   "43:33-35"
   ],
   "primary_mechanic": {
    "kind": "gold-or-good",
-   "engine": "not built yet",
-   "text": "An ornamented city where gold, silver and decorations can be set aside to reveal what really helps people (43:33-35)."
+   "engine": "adorn",
+   "text": "Pick up a thing and bring it to one of four needs (a dry garden, a dark path, a cold shelter, an empty seed store). Silver and gold are refused (43:33-35: only the enjoyment of worldly life); each need is met only by the plain thing that helps."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "the clear Book (43:2-3, read)",
+   "Ibrahim’s lasting word (43:26-28, read)",
+   "roads and rain (43:10-11, read)"
+  ],
+  "narrative_structure": "A reading, the four needs around the street, then Ibrahim’s word and the roads",
+  "world_assets": [
+   "silver door, stairs and couch",
+   "gold ornament",
+   "water jar, lamp, blanket, seed sack",
+   "need signs"
+  ],
+  "environment_behaviour": [
+   "the carried thing is held in front of the explorer",
+   "a met need’s sign turns green and the useful thing stays there"
+  ],
+  "learning_objective": "Understand that ornaments are only the enjoyment of this world (43:33-35)",
   "interaction_tests": {
    "activate": "untested",
    "responds": "untested",
@@ -156,7 +172,7 @@
    "devices": "untested"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w043.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

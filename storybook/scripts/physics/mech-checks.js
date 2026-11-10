@@ -17,7 +17,7 @@ const SHOTS = process.env.SHOTS;
     const p = await ctx.newPage();
     const errs = [];
     p.on('pageerror', (e) => errs.push(e.message));
-    await p.goto(`http://localhost:8090/adventure/${w}?q=low`, { timeout: 180000 });
+    await p.goto(`http://localhost:${process.env.PORT || 8090}/adventure/${w}?q=low`, { timeout: 180000 });
     await p.waitForFunction(() => !!globalThis.__adv, null, { timeout: 400000 });
     await p.waitForTimeout(1500);
     await p.evaluate(async (upTo) => {
@@ -35,7 +35,9 @@ const SHOTS = process.env.SHOTS;
     }, upTo);
     return { p, errs };
   };
-  const near = (p, x, z) => p.evaluate(([x, z]) => {
+  // Teleport next to a spot, then give the game a moment of real time to take the new position.
+  const near = async (p, x, z) => { await nearNow(p, x, z); await p.waitForTimeout(1200); };
+  const nearNow = (p, x, z) => p.evaluate(([x, z]) => {
     const A = globalThis.__adv;
     for (const d of [1.2, 0.6, 2])
       for (let k = 0; k < 16; k++) {

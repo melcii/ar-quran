@@ -90,24 +90,38 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Garden of Reflection",
+  "tier": "playable",
+  "visual_theme": "A walled garden of this world on a slope, with a spring at the top and four stone channels to four pools",
   "quran_references": [
-   "47:4",
-   "47:12",
+   "47:7",
+   "47:15",
    "47:24",
-   "47:36–38"
+   "47:38"
   ],
   "primary_mechanic": {
    "kind": "reflection-garden-rivers",
-   "engine": "not built yet",
-   "text": "Fix four channels in a reflection garden so each runs clear (47:15 read as a description only)."
+   "engine": "channels",
+   "text": "Take the right tool from the rack (rake for leaves, lever bar for stones, scoop for mud) and clear each of four channels from the spring down; the water runs on as far as the next block, and a pool turns clear when its channel runs all the way. The Garden of 47:15 is read only, never pictured."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "do they not reflect (47:24, read)",
+   "firm feet (47:7, read)",
+   "whoever holds back (47:38, read)"
+  ],
+  "narrative_structure": "A reading at the gate, four channels to clear, then two readings in the garden",
+  "world_assets": [
+   "spring pool",
+   "four stone channels",
+   "tool rack with rake, lever bar and scoop",
+   "leaves, stones and mud blocking the channels",
+   "four pools"
+  ],
+  "environment_behaviour": [
+   "water runs down a channel as far as the first block",
+   "a pool turns from murky to clear when its channel runs",
+   "the chosen tool is carried in hand"
+  ],
+  "learning_objective": "Reflect on the Quran (47:24) and on fresh, running water as a sign",
   "interaction_tests": {
    "activate": "untested",
    "responds": "untested",
@@ -118,7 +132,7 @@
    "devices": "untested"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w047.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

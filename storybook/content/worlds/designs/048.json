@@ -18,7 +18,9 @@
   {
    "title": "The pledge under the tree",
    "reference": "48:18",
-   "anchor_phrase": "under the tree"
+   "anchor_phrase": "under the tree",
+   "treatment": "reading",
+   "treatment_reason": "The pledge is read under the tree; no one is shown."
   }
  ],
  "summary_for_children": "Al-Fath means The Victory. It speaks of the believers' pledge under a tree, of tranquillity Allah sent to their hearts, and compares them to a seed that grows strong.",
@@ -109,21 +111,39 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Road to Hudaybiyyah",
+  "tier": "playable",
+  "visual_theme": "A road through dry hills to a long wall with a closed gate, with a broad tree before it",
   "quran_references": [
-   "48:1–29"
+   "48:18",
+   "48:24",
+   "48:26",
+   "48:27",
+   "48:29"
   ],
   "primary_mechanic": {
    "kind": "treaty-patience",
-   "engine": "not built yet",
-   "text": "A journey where waiting and restraint open the way: the gate opens only when you stop pushing (48:24-26, narration)."
+   "engine": "calm",
+   "text": "The gate does not open for pushing. Wait still in the circle before it while three provocations come; each can be met calmly or with pushing, which sets the waiting back. The gate opens only to calm patience (48:24-26). The gate is a game idea; no one is shown."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "the pledge under the tree (48:18, read)",
+   "hands held back (48:24, read)",
+   "the vision came true (48:27, read)",
+   "like a plant growing strong (48:29, read)"
+  ],
+  "narrative_structure": "A reading under the tree, the wait at the gate, then readings along the road beyond it",
+  "world_assets": [
+   "long wall with a gate",
+   "waiting circle",
+   "broad tree",
+   "road through dry hills"
+  ],
+  "environment_behaviour": [
+   "the waiting circle fills as calm builds",
+   "the circle flickers when something provocative happens",
+   "the gate swings open when calm is complete"
+  ],
+  "learning_objective": "Learn that calm and holding back opened the way (48:24-26)",
   "interaction_tests": {
    "activate": "untested",
    "responds": "untested",
@@ -134,7 +154,7 @@
    "devices": "untested"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w048.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

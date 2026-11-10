@@ -1867,7 +1867,8 @@ function World({ def }: { def: WorldDef }) {
         } else if (c.kind === 'share') {
           setCards((cs) => cs.slice(1));
           c.task.homes.forEach((_, i) => api.current.progress(c.task.id, i));
-        } else if (c.kind === 'weigh') {
+        } else if (c.kind === 'weigh' || c.kind === 'quiz') {
+          // Quiz panels are the engine's shared match/order/sort games, tested on their own.
           setCards((cs) => cs.slice(1));
           finish(c.task.id);
         } else if (c.kind === 'vow') {

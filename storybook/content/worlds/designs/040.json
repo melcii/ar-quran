@@ -121,22 +121,38 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Hidden Voice of Truth",
+  "tier": "playable",
+  "visual_theme": "A brick city in Pharaoh’s land with an unfinished brick tower, old ruins, a domed granary, a market and a simple house",
   "quran_references": [
-   "40:23–46",
-   "40:60–67"
+   "40:28",
+   "40:30-39",
+   "40:44-45",
+   "40:60"
   ],
   "primary_mechanic": {
    "kind": "evidence-board",
-   "engine": "not built yet",
-   "text": "Gather clues around a council hall to follow the believing man's reasoning (40:28-44), presented as narration."
+   "engine": "clues",
+   "text": "Find the four clues the believing man’s words point to (ruins 40:31, a granary from Yusuf’s time 40:34, the tower 40:36-37, a market 40:39), read each, then pin each clue to its ayah on a board. A wrong pin is refused with a hint. No one is shown."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "a man who spoke up (40:28, read)",
+   "call upon Me (40:3, 40:60, read)"
+  ],
+  "narrative_structure": "His first words, four clues through the city, the board, then his trust in Allah (40:44-45)",
+  "world_assets": [
+   "unfinished brick tower",
+   "ruined columns",
+   "domed granary",
+   "market stall",
+   "clue tablets",
+   "pin board"
+  ],
+  "environment_behaviour": [
+   "a clue tablet glows until read",
+   "cards appear on the board as clues are found",
+   "pinned cards move to the top row with a red pin"
+  ],
+  "learning_objective": "Retell the believing man’s reasons (40:28-44) and how pride ended in ruin (40:37)",
   "interaction_tests": {
    "activate": "untested",
    "responds": "untested",
@@ -147,7 +163,7 @@
    "devices": "untested"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w040.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

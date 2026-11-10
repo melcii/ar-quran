@@ -160,22 +160,37 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Village of Friendship",
+  "tier": "playable",
+  "visual_theme": "A busy village with a well, a bridge over a stream, a bakery and a goat pen around a square with a notice board",
   "quran_references": [
    "49:6",
-   "49:10–13"
+   "49:10-13"
   ],
   "primary_mechanic": {
    "kind": "rumour-check",
-   "engine": "not built yet",
-   "text": "Track a rumour through a village and check each claim before passing it on (49:6)."
+   "engine": "rumour",
+   "text": "A rumour of four claims is going round. Check each one at its source (well, bridge, oven, pen), then mark each true or not true on the notice board; an unchecked claim cannot be passed on and a wrong mark is refused (49:6). The village is fictional."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "investigate first (49:6, read)",
+   "no mocking, no suspicion (49:11-12, choices)",
+   "make peace (49:10, read)",
+   "to know one another (49:13, read)"
+  ],
+  "narrative_structure": "The ayah on news, four claims to check, the notice board, then manners and peace",
+  "world_assets": [
+   "notice board with claim notes",
+   "well",
+   "bridge over a stream",
+   "bakery oven",
+   "goat pen",
+   "question-mark signs at each source"
+  ],
+  "environment_behaviour": [
+   "a question-mark sign stands at each unchecked source",
+   "notes on the board turn green or red as claims are marked"
+  ],
+  "learning_objective": "Check news before passing it on (49:6), and avoid mocking and suspicion (49:11-12)",
   "interaction_tests": {
    "activate": "untested",
    "responds": "untested",
@@ -186,7 +201,7 @@
    "devices": "untested"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w049.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

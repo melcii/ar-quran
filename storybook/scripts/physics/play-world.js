@@ -14,7 +14,7 @@ const SHOTS = process.env.SHOTS; // a folder: a screenshot after each finished t
   const p = await ctx.newPage();
   const errs = [];
   p.on('pageerror', (e) => errs.push(e.message));
-  const url = `http://localhost:8090/adventure/${W}?q=low`;
+  const url = `http://localhost:${process.env.PORT || 8090}/adventure/${W}?q=low`;
   await p.goto(url, { timeout: 180000 });
   await p.waitForFunction(() => !!globalThis.__adv, null, { timeout: 400000 });
   await p.waitForTimeout(2000);

@@ -447,7 +447,27 @@ export type ShimmerTask = TaskBase & { kind: 'shimmer'; things: { at: P2; kind: 
 export type RollcallTask = TaskBase & { kind: 'rollcall'; birds: { at: P2; name: string; color: string }[]; /** Which bird is missing (the hoopoe). */ missing: number; board: P2 };
 /** Fit rings of exactly the right size into each row of chain mail (Saba, Dawud). */
 export type LinksTask = TaskBase & { kind: 'links'; table: P2; rows: { size: number; gap: number }[]; tray: number[] };
-export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask | StandTask | ReachTask | ObserveTask | SkyTask | SailTask | ChoiceTask | ShareTask | PromiseTask | WeighTask | FlowTask | SiftTask | ReturnTask | GranaryTask | ValleyTask | GrowTask | PollenTask | RubbingTask | StreetsTask | SunPathTask | PointTask | BeaconTask | DoorsTask | OrderTask | HomeTask | MirrorTask | ShadowTask | EchoTask | AntsTask | RiverTask | ShelterTask | RainTask | VoiceTask | PastureTask | PlumbTask | SluiceTask | ShadesTask | MoonTask | VineTask | SpringTask | HarvestTask | MeasureTask | DawnTask | ShimmerTask | RollcallTask | LinksTask;
+/** Surah Ghafir: find the clues the believing man's words point to, then pin each to his words on the board. */
+export type CluesTask = TaskBase & { kind: 'clues'; clues: { at: P2; name: string; reading: Reading }[]; board: P2; questions: { q: string; ref: Ref; answer: number; wrong: string }[] };
+/** Surah Fussilat: turn a telescope on a hilltop to find signs on the horizons (41:53). */
+export type ScopeTask = TaskBase & { kind: 'scope'; at: P2; signs: { at: P2; name: string; shape: 'sun' | 'moon' | 'mountain' | 'slope' | 'stars'; reading: Reading }[]; within: Reading };
+/** Surah Ash-Shura: hear every household, then agree a plan that meets every need (42:38). */
+export type CouncilTask = TaskBase & { kind: 'council'; table: P2; homes: { at: P2; name: string; need: string }[]; plans: { text: string; meets: number[] }[] };
+/** Surah Az-Zukhruf: gold and silver shine, but only useful things meet a real need (43:33-35). */
+export type AdornTask = TaskBase & { kind: 'adorn'; items: { at: P2; name: string; gold: boolean; shape: 'jar' | 'lamp' | 'blanket' | 'seeds' | 'door' | 'couch' | 'stair' | 'ornament' }[]; needs: { at: P2; name: string; item: number; done: string }[] };
+/** Surah Ad-Dukhan: survey what was left behind (44:25-27) and record it in a ledger. */
+export type SurveyTask = TaskBase & { kind: 'survey'; cats: { name: string; shape: 'garden' | 'spring' | 'crop' | 'site' | 'comfort' }[]; things: { at: P2; cat: number }[]; ledger: P2 };
+/** Surah Al-Jathiyah: read the wind vane and the rain gauge through one day and keep the field ledger (45:5). */
+export type StationTask = TaskBase & { kind: 'station'; at: P2; landmarks: { at: P2; name: string }[]; readings: { time: 'morning' | 'noon' | 'evening'; wind: number; rain: 0 | 1 | 2 }[] };
+/** Surah Al-Ahqaf: place windbreaks upwind of a path through the curving dunes and keep it open through a windy spell. */
+export type DunesTask = TaskBase & { kind: 'dunes'; spots: { at: P2; guards: number | null }[]; segments: P2[]; fences: number; secs: number; well: P2; wind: number };
+/** Surah Muhammad: clear each channel with the right tool so the water runs fresh to its pool (47:15 as a description only). */
+export type ChannelsTask = TaskBase & { kind: 'channels'; rack: P2; tools: string[]; channels: { from: P2; to: P2; blocks: { t: number; tool: number; name: string }[] }[] };
+/** Surah Al-Fath: at a closed gate, stay calm and still while provocations come; the way opens to the patient (48:24-26). */
+export type CalmTask = TaskBase & { kind: 'calm'; gate: P2; r: number; secs: number; stirs: { text: string; calm: string; push: string }[] };
+/** Surah Al-Hujurat: check each claim of a rumour at its source before passing anything on (49:6). */
+export type RumourTask = TaskBase & { kind: 'rumour'; board: P2; claims: { text: string; at: P2; look: string; seen: string; true: boolean }[] };
+export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask | StandTask | ReachTask | ObserveTask | SkyTask | SailTask | ChoiceTask | ShareTask | PromiseTask | WeighTask | FlowTask | SiftTask | ReturnTask | GranaryTask | ValleyTask | GrowTask | PollenTask | RubbingTask | StreetsTask | SunPathTask | PointTask | BeaconTask | DoorsTask | OrderTask | HomeTask | MirrorTask | ShadowTask | EchoTask | AntsTask | RiverTask | ShelterTask | RainTask | VoiceTask | PastureTask | PlumbTask | SluiceTask | ShadesTask | MoonTask | VineTask | SpringTask | HarvestTask | MeasureTask | DawnTask | ShimmerTask | RollcallTask | LinksTask | CluesTask | ScopeTask | CouncilTask | AdornTask | SurveyTask | StationTask | DunesTask | ChannelsTask | CalmTask | RumourTask;
 
 export type Region = { id: string; name: string; at: P2 };
 

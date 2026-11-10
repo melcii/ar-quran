@@ -2,7 +2,17 @@
 // own built-in kinds.
 import type { Task } from '../types';
 import type { Mechanic } from './base';
+import { Adorn } from './adorn';
 import { Ants } from './ants';
+import { Calm } from './calm';
+import { Channels } from './channels';
+import { Dunes } from './dunes';
+import { Rumour } from './rumour';
+import { Station } from './station';
+import { Clues } from './clues';
+import { Council } from './council';
+import { Scope } from './scope';
+import { Survey } from './survey';
 import { Beacon } from './beacon';
 import { Dawn } from './dawn';
 import { Doors } from './doors';
@@ -70,6 +80,16 @@ export const MECHS: Partial<Record<Task['kind'], Mechanic<never>>> = {
   shimmer: Shimmer as Mechanic<never>,
   rollcall: Rollcall as Mechanic<never>,
   links: Links as Mechanic<never>,
+  clues: Clues as Mechanic<never>,
+  scope: Scope as Mechanic<never>,
+  council: Council as Mechanic<never>,
+  adorn: Adorn as Mechanic<never>,
+  survey: Survey as Mechanic<never>,
+  station: Station as Mechanic<never>,
+  dunes: Dunes as Mechanic<never>,
+  channels: Channels as Mechanic<never>,
+  calm: Calm as Mechanic<never>,
+  rumour: Rumour as Mechanic<never>,
 };
 
 /** The plug-in for a task, typed loosely so the engine can call it with any task. */
