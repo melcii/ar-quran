@@ -19,12 +19,15 @@
   {
    "title": "Iblis refuses",
    "reference": "15:28-44",
-   "anchor_phrase": "Iblees"
+   "anchor_phrase": "Iblees",
+   "treatment": "reading",
+   "treatment_reason": "Iblis and the angels are of the unseen; never pictured"
   },
   {
    "title": "Ibrahim's guests",
    "reference": "15:51-60",
-   "anchor_phrase": "guests"
+   "anchor_phrase": "guests",
+   "played_in": 11
   },
   {
    "title": "The people of al-Hijr",
@@ -188,7 +191,8 @@
    "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": "src/adventure/worlds/w015.ts"
+  "built_in": "src/adventure/worlds/w015.ts",
+  "tested_hash": "6deb47258aee"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

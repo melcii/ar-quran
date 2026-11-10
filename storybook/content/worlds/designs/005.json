@@ -19,7 +19,9 @@
   {
    "title": "The two sons of Adam",
    "reference": "5:27-31",
-   "anchor_phrase": "Adam's two sons"
+   "anchor_phrase": "Adam's two sons",
+   "treatment": "reading",
+   "treatment_reason": "a killing; kept to the verified reading for this age group"
   },
   {
    "title": "The table spread",
@@ -191,6 +193,7 @@
    "devices": "untested (desktop headless only; not run in phone emulation)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": "src/adventure/worlds/w005.ts"
+  "built_in": "src/adventure/worlds/w005.ts",
+  "tested_hash": "afa18a0dbd68"
  }
 }

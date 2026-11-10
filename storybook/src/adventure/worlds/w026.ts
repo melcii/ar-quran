@@ -74,6 +74,16 @@ export const W026: WorldDef = {
       reading: { title: 'The refrain', refs: [[26, 8], [26, 9]], note: 'Indeed in that is a sign, but most of them did not believe. And indeed your Lord is the Exalted in Might, the Merciful. These words come after every story in the surah.' },
       outro: 'All seven stones ring in time, like the refrain after each story.',
     },
+    {
+      id: 'sea',
+      kind: 'read',
+      requires: ['echoes'],
+      at: [3, 25],
+      marker: 'tablet',
+      title: 'The sea parts',
+      goal: 'Read the stone by the start',
+      reading: { title: 'My Lord is with me', refs: [[26, 61], [26, 62], [26, 63], [26, 65]], note: 'When the two groups saw each other, Musa\'s companions said: "We will be overtaken!" He said: "No! My Lord is with me; He will guide me." Then Allah inspired Musa to strike the sea with his staff, and it parted, each side like a great mountain, and Allah saved Musa and all who were with him. The dry path is walked in the world of Surah Ta-Ha.' },
+    },
   ],
   finale: {
     title: 'The refrain',

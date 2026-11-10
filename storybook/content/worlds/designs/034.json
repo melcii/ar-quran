@@ -23,7 +23,9 @@
   {
    "title": "Sulayman and the copper",
    "reference": "34:12-14",
-   "anchor_phrase": "copper"
+   "anchor_phrase": "copper",
+   "treatment": "reading",
+   "treatment_reason": "the jinn are of the unseen; never pictured"
   },
   {
    "title": "The two gardens of Saba",
@@ -200,7 +202,8 @@
    "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": "src/adventure/worlds/w034.ts"
+  "built_in": "src/adventure/worlds/w034.ts",
+  "tested_hash": "d1e73870b983"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

@@ -195,6 +195,7 @@
    "devices": "untested (desktop headless only; not run in phone emulation)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": "src/adventure/worlds/w003.ts"
+  "built_in": "src/adventure/worlds/w003.ts",
+  "tested_hash": "5ce3b6acaf41"
  }
 }

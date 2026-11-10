@@ -18,7 +18,9 @@
   {
    "title": "Ibrahim and the idols",
    "reference": "21:51-70",
-   "anchor_phrase": "idols"
+   "anchor_phrase": "idols",
+   "treatment": "reading",
+   "treatment_reason": "the breaking of the idols and the fire are kept to the reading"
   },
   {
    "title": "Dawud and Sulayman",
@@ -224,7 +226,8 @@
    "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": "src/adventure/worlds/w021.ts"
+  "built_in": "src/adventure/worlds/w021.ts",
+  "tested_hash": "537e8b4d38ac"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

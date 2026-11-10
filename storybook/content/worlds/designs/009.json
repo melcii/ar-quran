@@ -19,7 +19,9 @@
   {
    "title": "The two in the cave",
    "reference": "9:40",
-   "anchor_phrase": "one of two"
+   "anchor_phrase": "one of two",
+   "treatment": "reading",
+   "treatment_reason": "the Prophet is never shown; the cave is a reading place"
   },
   {
    "title": "The three who were left behind",
@@ -174,6 +176,7 @@
    "devices": "untested (desktop headless only; not run in phone emulation)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": "src/adventure/worlds/w009.ts"
+  "built_in": "src/adventure/worlds/w009.ts",
+  "tested_hash": "fb46de4e38c2"
  }
 }

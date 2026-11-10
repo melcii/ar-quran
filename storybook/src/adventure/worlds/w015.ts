@@ -108,6 +108,16 @@ export const W015: WorldDef = {
         note: 'In that are signs for those who look closely. The ruins stand by a road people still travel, as a sign for those who believe.',
       },
     },
+    {
+      id: 'guests',
+      kind: 'read',
+      requires: ['road'],
+      at: [3, 41],
+      marker: 'lantern',
+      title: 'Ibrahim\'s guests',
+      goal: 'Read at the lantern by the start',
+      reading: { title: 'Good news of a knowing boy', refs: [[15, 51], [15, 52], [15, 53]], note: 'Tell them about the guests of Ibrahim. They came in and said "Peace", and he said: "We are afraid of you." They said: "Do not be afraid; we bring you good news of a boy who will have knowledge." Setting the guest mat for them is played in the world of Surah Hud.' },
+    },
   ],
   finale: {
     title: 'Signs for those who look',

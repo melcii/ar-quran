@@ -18,7 +18,9 @@
   {
    "title": "Ibrahim's trial",
    "reference": "37:99-111",
-   "anchor_phrase": "sacrifice"
+   "anchor_phrase": "sacrifice",
+   "treatment": "reading",
+   "treatment_reason": "Ibrahim's trial with his son is kept to the reading; no knife, altar or ram scene"
   },
   {
    "title": "Yunus and the fish",
@@ -166,7 +168,8 @@
    "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": "src/adventure/worlds/w037.ts"
+  "built_in": "src/adventure/worlds/w037.ts",
+  "tested_hash": "26a6ee5385d3"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

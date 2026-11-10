@@ -437,7 +437,17 @@ export type VineTask = TaskBase & { kind: 'vine'; root: P2; frame: P2; bundle: P
 export type SpringSign = 'reeds' | 'damp' | 'birds' | 'ferns' | 'salt';
 export type SpringTask = TaskBase & { kind: 'spring'; board: P2; rounds: { need: SpringSign[]; spots: { at: P2; signs: SpringSign[] }[]; reading: Reading }[]; reading?: Reading };
 export type HarvestTask = TaskBase & { kind: 'harvest'; bag: P2; plots: P2[]; stage: number; stagger: number; reading?: Reading };
-export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask | StandTask | ReachTask | ObserveTask | SkyTask | SailTask | ChoiceTask | ShareTask | PromiseTask | WeighTask | FlowTask | SiftTask | ReturnTask | GranaryTask | ValleyTask | GrowTask | PollenTask | RubbingTask | StreetsTask | SunPathTask | PointTask | BeaconTask | DoorsTask | OrderTask | HomeTask | MirrorTask | ShadowTask | EchoTask | AntsTask | RiverTask | ShelterTask | RainTask | VoiceTask | PastureTask | PlumbTask | SluiceTask | ShadesTask | MoonTask | VineTask | SpringTask | HarvestTask;
+/** Pour grain into a wooden measure up to the line for each buyer, then find the measure with a false bottom (Hud, Madyan). */
+export type MeasureTask = TaskBase & { kind: 'measure'; stall: P2; buyers: { label: string; want: number; color?: string }[]; /** Depth of the false bottom (fraction). */ falseBottom: number; /** Which of the two measures (0 or 1) has it. */ falseIn: 0 | 1; reading?: Reading };
+/** Leave by night along way-stones, lighting each, without turning back toward the town; the sky pales to morning (Hud, Lut). */
+export type DawnTask = TaskBase & { kind: 'dawn'; town: P2; stones: P2[]; /** How far back toward the town you may step before the last stone goes out (m). */ slack: number };
+/** Ropes and staffs that seem to move from far away and lie still up close: look closely at each (Ta-Ha, the magicians). */
+export type ShimmerTask = TaskBase & { kind: 'shimmer'; things: { at: P2; kind: 'rope' | 'staff'; rot?: number }[]; /** Closer than this, nothing seems to move (m). */ near: number };
+/** Birds on perches: tick each off a list, then name the one missing (An-Naml, the hoopoe). */
+export type RollcallTask = TaskBase & { kind: 'rollcall'; birds: { at: P2; name: string; color: string }[]; /** Which bird is missing (the hoopoe). */ missing: number; board: P2 };
+/** Fit rings of exactly the right size into each row of chain mail (Saba, Dawud). */
+export type LinksTask = TaskBase & { kind: 'links'; table: P2; rows: { size: number; gap: number }[]; tray: number[] };
+export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask | StandTask | ReachTask | ObserveTask | SkyTask | SailTask | ChoiceTask | ShareTask | PromiseTask | WeighTask | FlowTask | SiftTask | ReturnTask | GranaryTask | ValleyTask | GrowTask | PollenTask | RubbingTask | StreetsTask | SunPathTask | PointTask | BeaconTask | DoorsTask | OrderTask | HomeTask | MirrorTask | ShadowTask | EchoTask | AntsTask | RiverTask | ShelterTask | RainTask | VoiceTask | PastureTask | PlumbTask | SluiceTask | ShadesTask | MoonTask | VineTask | SpringTask | HarvestTask | MeasureTask | DawnTask | ShimmerTask | RollcallTask | LinksTask;
 
 export type Region = { id: string; name: string; at: P2 };
 
@@ -471,6 +481,8 @@ export type WorldDef = {
   warps?: { at: P2; to: P2; toYaw?: number; label: string; show?: string; rot?: number }[];
   /** How thick the mist is (0..1) given what is done: worlds where the land closes in and opens again. */
   mist?: (done: string[], prog: Record<string, number[]>) => number;
+  /** The world's sky once a task is done (in order; the last one done wins): stories that move from night to day. */
+  looks?: { after: string; look: Look }[];
   /** A one-line description of the world's core gameplay (shown in About). */
   play?: string;
   /** Night skies, sea boats, motes over gardens. */

@@ -86,17 +86,18 @@
    ],
    "status": "Playable",
    "quran_text_complete": "Yes: 200 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
-   "story_coverage": "2 of 3 played, 1 read only, 0 missing",
-   "story_complete": false,
+   "story_coverage": "3 of 3 played, 0 read only, 0 missing",
+   "story_complete": true,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
    "gameplay_functional": "Not fully tested",
-   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "movement_collision": "Not run",
    "mobile": "No",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
-    "Story passages that are a reading place only, with no hands-on chapter: Zakariyya's prayer (3:38-41).",
+    "The world changed since its interaction tests; they must be run again.",
     "Interaction checks not yet passed: saved.",
+    "The world changed since its last movement and collision sweep; it must be run again.",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
   },
@@ -150,8 +151,8 @@
    ],
    "status": "Playable",
    "quran_text_complete": "Yes: 120 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
-   "story_coverage": "1 of 2 played, 1 read only, 0 missing",
-   "story_complete": false,
+   "story_coverage": "2 of 2 played, 0 read only, 0 missing",
+   "story_complete": true,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
    "gameplay_functional": "Not fully tested",
@@ -159,7 +160,7 @@
    "mobile": "No",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
-    "Story passages that are a reading place only, with no hands-on chapter: The two sons of Adam (5:27-31).",
+    "Reading place only, by design: The two sons of Adam (5:27-31: a killing; kept to the verified reading for this age group).",
     "Interaction checks not yet passed: saved.",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
@@ -216,7 +217,7 @@
    ],
    "status": "Playable",
    "quran_text_complete": "Yes: 206 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
-   "story_coverage": "4 of 7 played, 2 read only, 1 missing",
+   "story_coverage": "6 of 7 played, 0 read only, 1 missing",
    "story_complete": false,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
@@ -226,7 +227,7 @@
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
     "Story passages with no place in the world: Adam and Iblis (7:11-25).",
-    "Story passages that are a reading place only, with no hands-on chapter: Nuh (7:59-64); Lut (7:80-84).",
+    "Played in another surah's world (story atlas), read here: Nuh (7:59-64, played in surah 11); Lut (7:80-84, played in surah 11).",
     "Interaction checks not yet passed: saved.",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
@@ -246,8 +247,8 @@
    ],
    "status": "Playable",
    "quran_text_complete": "Yes: 75 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
-   "story_coverage": "0 of 1 played, 1 read only, 0 missing",
-   "story_complete": false,
+   "story_coverage": "1 of 1 played, 0 read only, 0 missing",
+   "story_complete": true,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
    "gameplay_functional": "Not fully tested",
@@ -255,7 +256,7 @@
    "mobile": "No",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
-    "Story passages that are a reading place only, with no hands-on chapter: Rain before the day of Badr (8:11).",
+    "Reading place only, by design: Rain before the day of Badr (8:11: the eve of a battle; no combat is played).",
     "Interaction checks not yet passed: saved.",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
@@ -325,21 +326,34 @@
    "name": "Hūd",
    "meaning": "Hud",
    "ayahs": 123,
-   "world": "Story chapter only (Ark, 11:37-44)",
-   "kinds": [],
-   "status": "In Development",
+   "world": "The Road of the Messengers",
+   "kinds": [
+    "pine",
+    "oak",
+    "olive",
+    "palm",
+    "cypress",
+    "read",
+    "carry",
+    "points",
+    "observe",
+    "dawn",
+    "measure",
+    "choice",
+    "stand"
+   ],
+   "status": "Playable",
    "quran_text_complete": "Yes: 123 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
-   "story_coverage": "1 of 7 played, 0 read only, 6 missing",
-   "story_complete": false,
+   "story_coverage": "7 of 7 played, 0 read only, 0 missing",
+   "story_complete": true,
    "narration": "Written (child-friendly English, draft); device voice only",
-   "unique_world": "Partial",
-   "gameplay_functional": "No",
-   "movement_collision": "Pass (desktop, 2026-11-06)",
-   "mobile": "Phone emulation pass (2026-11-06); no real phone",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Not run",
+   "mobile": "Phone emulation (interaction tests); no real phone",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
-    "Only one story chapter is playable; the surah has no adventure world of its own yet.",
-    "Story passages with no place in the world: Hud and 'Aad (11:50-60); Salih and Thamud (11:61-68); Ibrahim's guests (11:69-76); Lut (11:77-83); Shu'ayb and Madyan (11:84-95); Musa and Pharaoh (11:96-99).",
+    "Movement and collision sweep not run yet.",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
   },
@@ -354,22 +368,24 @@
     "fig",
     "olive",
     "read",
+    "carry",
+    "choice",
     "granary"
    ],
    "status": "Playable",
    "quran_text_complete": "Yes: 111 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
-   "story_coverage": "1 of 7 played, 5 read only, 1 missing",
-   "story_complete": false,
+   "story_coverage": "8 of 8 played, 0 read only, 0 missing",
+   "story_complete": true,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
-   "gameplay_functional": "Yes (interaction tests pass, headless)",
-   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "gameplay_functional": "Not fully tested",
+   "movement_collision": "Not run",
    "mobile": "Phone emulation (interaction tests); no real phone",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
-    "Story passages with no place in the world: The reunion (12:94-101).",
-    "Story passages that are a reading place only, with no hands-on chapter: The dream (12:4-6); The well (12:8-18); The caravan (12:19-22); The prison and the dreams (12:36-42); The brothers come to Egypt (12:58-93).",
-    "Some drawn footpaths cross solids (layout note; the walker goes round).",
+    "Reading place only, by design: The dream (12:4-6: a dream told in three ayahs; the vision is not pictured); The household in Egypt (12:21-33: kept to a brief reading for young readers, flagged for review).",
+    "The world changed since its interaction tests; they must be run again.",
+    "The world changed since its last movement and collision sweep; it must be run again.",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
   },
@@ -414,10 +430,10 @@
     "read",
     "grow"
    ],
-   "status": "Playable",
+   "status": "Tested",
    "quran_text_complete": "Yes: 52 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
-   "story_coverage": "0 of 1 played, 1 read only, 0 missing",
-   "story_complete": false,
+   "story_coverage": "1 of 1 played, 0 read only, 0 missing",
+   "story_complete": true,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
    "gameplay_functional": "Yes (interaction tests pass, headless)",
@@ -425,7 +441,7 @@
    "mobile": "Phone emulation (interaction tests); no real phone",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
-    "Story passages that are a reading place only, with no hands-on chapter: Ibrahim's prayer in the valley (14:35-41).",
+    "Reading place only, by design: Ibrahim's prayer in the valley (14:35-41: a prayer, read in full; its theme of provision is played in the tree chapter, where fruit is carried to travellers).",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
   },
@@ -442,16 +458,19 @@
    ],
    "status": "Playable",
    "quran_text_complete": "Yes: 99 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
-   "story_coverage": "1 of 3 played, 0 read only, 2 missing",
+   "story_coverage": "2 of 3 played, 0 read only, 1 missing",
    "story_complete": false,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
-   "gameplay_functional": "Yes (interaction tests pass, headless)",
-   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "gameplay_functional": "Not fully tested",
+   "movement_collision": "Not run",
    "mobile": "Phone emulation (interaction tests); no real phone",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
-    "Story passages with no place in the world: Iblis refuses (15:28-44); Ibrahim's guests (15:51-60).",
+    "Story passages with no place in the world: Iblis refuses (15:28-44).",
+    "Played in another surah's world (story atlas), read here: Ibrahim's guests (15:51-60, played in surah 11).",
+    "The world changed since its interaction tests; they must be run again.",
+    "The world changed since its last movement and collision sweep; it must be run again.",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
   },
@@ -499,7 +518,7 @@
    ],
    "status": "Playable",
    "quran_text_complete": "Yes: 111 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
-   "story_coverage": "0 of 2 played, 1 read only, 1 missing",
+   "story_coverage": "1 of 2 played, 0 read only, 1 missing",
    "story_complete": false,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
@@ -509,7 +528,7 @@
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
     "Story passages with no place in the world: Iblis refuses (17:61-65).",
-    "Story passages that are a reading place only, with no hands-on chapter: The night journey (17:1).",
+    "Reading place only, by design: The night journey (17:1: the Night Journey concerns the Prophet and the unseen; never pictured).",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
   },
@@ -526,21 +545,24 @@
     "oak",
     "read",
     "sunpath",
+    "points",
+    "choice",
+    "stand",
     "carry"
    ],
    "status": "Playable",
    "quran_text_complete": "Yes: 110 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
-   "story_coverage": "2 of 4 played, 2 read only, 0 missing",
-   "story_complete": false,
+   "story_coverage": "4 of 4 played, 0 read only, 0 missing",
+   "story_complete": true,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
-   "gameplay_functional": "Yes (interaction tests pass, headless)",
-   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "gameplay_functional": "Not fully tested",
+   "movement_collision": "Not run",
    "mobile": "Phone emulation (interaction tests); no real phone",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
-    "Story passages that are a reading place only, with no hands-on chapter: The owner of two gardens (18:32-44); Musa and the knowing servant (18:60-82).",
-    "Some drawn footpaths cross solids (layout note; the walker goes round).",
+    "The world changed since its interaction tests; they must be run again.",
+    "The world changed since its last movement and collision sweep; it must be run again.",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
   },
@@ -554,21 +576,23 @@
     "palm",
     "olive",
     "point",
-    "read"
+    "choice",
+    "read",
+    "promise"
    ],
    "status": "Playable",
    "quran_text_complete": "Yes: 98 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
-   "story_coverage": "2 of 6 played, 1 read only, 3 missing",
-   "story_complete": false,
+   "story_coverage": "6 of 6 played, 0 read only, 0 missing",
+   "story_complete": true,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
-   "gameplay_functional": "Yes (interaction tests pass, headless)",
-   "movement_collision": "Pass (desktop, 2026-11-06)",
-   "mobile": "Phone emulation pass (2026-11-06); no real phone",
+   "gameplay_functional": "Not fully tested",
+   "movement_collision": "Not run",
+   "mobile": "Phone emulation (interaction tests); no real phone",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
-    "Story passages with no place in the world: Musa at the mount (19:51-53); Ismail, true to his promise (19:54-55); Idris, a man of truth (19:56-57).",
-    "Story passages that are a reading place only, with no hands-on chapter: Ibrahim and his father (19:41-50).",
+    "The world changed since its interaction tests; they must be run again.",
+    "The world changed since its last movement and collision sweep; it must be run again.",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
   },
@@ -582,21 +606,28 @@
     "olive",
     "cypress",
     "read",
-    "beacon"
+    "beacon",
+    "choice",
+    "shimmer",
+    "rope",
+    "staff",
+    "points",
+    "quiz"
    ],
    "status": "Playable",
    "quran_text_complete": "Yes: 135 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
-   "story_coverage": "1 of 7 played, 2 read only, 4 missing",
-   "story_complete": false,
+   "story_coverage": "7 of 7 played, 0 read only, 0 missing",
+   "story_complete": true,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
-   "gameplay_functional": "Yes (interaction tests pass, headless)",
-   "movement_collision": "Pass (desktop, 2026-11-06)",
-   "mobile": "Phone emulation pass (2026-11-06); no real phone",
+   "gameplay_functional": "Not fully tested",
+   "movement_collision": "Not run",
+   "mobile": "Phone emulation (interaction tests); no real phone",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
-    "Story passages with no place in the world: The chest on the river (20:37-40); The magicians (20:56-73); The dry path in the sea (20:77-79); The calf (20:85-97).",
-    "Story passages that are a reading place only, with no hands-on chapter: Gentle words to Pharaoh (20:43-48); Adam and the lesson of guidance (20:115-123).",
+    "Played in another surah's world (story atlas), read here: The chest on the river (20:37-40, played in surah 28).",
+    "The world changed since its interaction tests; they must be run again.",
+    "The world changed since its last movement and collision sweep; it must be run again.",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
   },
@@ -611,21 +642,23 @@
     "olive",
     "palm",
     "doors",
-    "read"
+    "read",
+    "lead"
    ],
    "status": "Playable",
    "quran_text_complete": "Yes: 112 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
-   "story_coverage": "3 of 5 played, 1 read only, 1 missing",
-   "story_complete": false,
+   "story_coverage": "5 of 5 played, 0 read only, 0 missing",
+   "story_complete": true,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
-   "gameplay_functional": "Yes (interaction tests pass, headless)",
-   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "gameplay_functional": "Not fully tested",
+   "movement_collision": "Not run",
    "mobile": "Phone emulation (interaction tests); no real phone",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
-    "Story passages with no place in the world: Dawud and Sulayman (21:78-82).",
-    "Story passages that are a reading place only, with no hands-on chapter: Ibrahim and the idols (21:51-70).",
+    "Reading place only, by design: Ibrahim and the idols (21:51-70: the breaking of the idols and the fire are kept to the reading).",
+    "The world changed since its interaction tests; they must be run again.",
+    "The world changed since its last movement and collision sweep; it must be run again.",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
   },
@@ -667,10 +700,10 @@
     "read",
     "home"
    ],
-   "status": "Playable",
+   "status": "Tested",
    "quran_text_complete": "Yes: 118 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
-   "story_coverage": "0 of 1 played, 1 read only, 0 missing",
-   "story_complete": false,
+   "story_coverage": "1 of 1 played, 0 read only, 0 missing",
+   "story_complete": true,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
    "gameplay_functional": "Yes (interaction tests pass, headless)",
@@ -678,7 +711,7 @@
    "mobile": "Phone emulation (interaction tests); no real phone",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
-    "Story passages that are a reading place only, with no hands-on chapter: Nuh builds the ship (23:23-30).",
+    "Played in another surah's world (story atlas), read here: Nuh builds the ship (23:23-30, played in surah 11).",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
   },
@@ -750,16 +783,18 @@
    ],
    "status": "Playable",
    "quran_text_complete": "Yes: 227 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
-   "story_coverage": "6 of 7 played, 0 read only, 1 missing",
-   "story_complete": false,
+   "story_coverage": "7 of 7 played, 0 read only, 0 missing",
+   "story_complete": true,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
-   "gameplay_functional": "Yes (interaction tests pass, headless)",
-   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "gameplay_functional": "Not fully tested",
+   "movement_collision": "Not run",
    "mobile": "Phone emulation (interaction tests); no real phone",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
-    "Story passages with no place in the world: The sea parts (26:61-66).",
+    "Played in another surah's world (story atlas), read here: The sea parts (26:61-66, played in surah 20).",
+    "The world changed since its interaction tests; they must be run again.",
+    "The world changed since its last movement and collision sweep; it must be run again.",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
   },
@@ -771,21 +806,24 @@
    "world": "The Valley of the Ants",
    "kinds": [
     "read",
-    "ants"
+    "ants",
+    "rollcall"
    ],
    "status": "Playable",
    "quran_text_complete": "Yes: 93 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
-   "story_coverage": "1 of 6 played, 2 read only, 3 missing",
-   "story_complete": false,
+   "story_coverage": "6 of 6 played, 0 read only, 0 missing",
+   "story_complete": true,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
-   "gameplay_functional": "Yes (interaction tests pass, headless)",
-   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "gameplay_functional": "Not fully tested",
+   "movement_collision": "Not run",
    "mobile": "Phone emulation (interaction tests); no real phone",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
-    "Story passages with no place in the world: Musa and the fire (27:7-14); The glass palace (27:44); Salih and the plotters (27:45-53).",
-    "Story passages that are a reading place only, with no hands-on chapter: The hoopoe's news (27:20-28); The throne (27:38-42).",
+    "Reading place only, by design: The throne (27:38-42: the throne brought in the blink of an eye; Sulayman, the queen and the one with knowledge are never shown); The glass palace (27:44: Sulayman and the queen are never shown); Salih and the plotters (27:45-53: a plot to kill at night; kept to the reading).",
+    "Played in another surah's world (story atlas), read here: Musa and the fire (27:7-14, played in surah 20).",
+    "The world changed since its interaction tests; they must be run again.",
+    "The world changed since its last movement and collision sweep; it must be run again.",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
   },
@@ -799,22 +837,25 @@
     "palm",
     "olive",
     "read",
-    "river"
+    "river",
+    "reach",
+    "carry",
+    "choice"
    ],
    "status": "Playable",
    "quran_text_complete": "Yes: 88 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
-   "story_coverage": "1 of 5 played, 3 read only, 1 missing",
-   "story_complete": false,
+   "story_coverage": "5 of 5 played, 0 read only, 0 missing",
+   "story_complete": true,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
-   "gameplay_functional": "Yes (interaction tests pass, headless)",
-   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "gameplay_functional": "Not fully tested",
+   "movement_collision": "Not run",
    "mobile": "Phone emulation (interaction tests); no real phone",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
-    "Story passages with no place in the world: Fire at the mount (28:29-35).",
-    "Story passages that are a reading place only, with no hands-on chapter: Flight to Madyan (28:20-22); The well of Madyan (28:23-28); Qarun's treasure (28:76-82).",
-    "Some drawn footpaths cross solids (layout note; the walker goes round).",
+    "Played in another surah's world (story atlas), read here: Fire at the mount (28:29-35, played in surah 20).",
+    "The world changed since its interaction tests; they must be run again.",
+    "The world changed since its last movement and collision sweep; it must be run again.",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
   },
@@ -831,16 +872,19 @@
    ],
    "status": "Playable",
    "quran_text_complete": "Yes: 69 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
-   "story_coverage": "0 of 2 played, 0 read only, 2 missing",
+   "story_coverage": "1 of 2 played, 0 read only, 1 missing",
    "story_complete": false,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
-   "gameplay_functional": "Yes (interaction tests pass, headless)",
-   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "gameplay_functional": "Not fully tested",
+   "movement_collision": "Not run",
    "mobile": "Phone emulation (interaction tests); no real phone",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
-    "Story passages with no place in the world: Nuh's long call (29:14-15); Ibrahim and the fire (29:16-27).",
+    "Story passages with no place in the world: Ibrahim and the fire (29:16-27).",
+    "Played in another surah's world (story atlas), read here: Nuh's long call (29:14-15, played in surah 11).",
+    "The world changed since its interaction tests; they must be run again.",
+    "The world changed since its last movement and collision sweep; it must be run again.",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
   },
@@ -855,10 +899,10 @@
     "read",
     "rain"
    ],
-   "status": "Playable",
+   "status": "Tested",
    "quran_text_complete": "Yes: 60 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
-   "story_coverage": "0 of 1 played, 1 read only, 0 missing",
-   "story_complete": false,
+   "story_coverage": "1 of 1 played, 0 read only, 0 missing",
+   "story_complete": true,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
    "gameplay_functional": "Yes (interaction tests pass, headless)",
@@ -866,7 +910,7 @@
    "mobile": "Phone emulation (interaction tests); no real phone",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
-    "Story passages that are a reading place only, with no hands-on chapter: The promise about the Romans (30:2-4).",
+    "Reading place only, by design: The promise about the Romans (30:2-4: a brief foretelling about a war between empires; no battle is played).",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
   },
@@ -932,10 +976,10 @@
     "read",
     "plumb"
    ],
-   "status": "Playable",
+   "status": "Tested",
    "quran_text_complete": "Yes: 73 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
-   "story_coverage": "0 of 1 played, 1 read only, 0 missing",
-   "story_complete": false,
+   "story_coverage": "1 of 1 played, 0 read only, 0 missing",
+   "story_complete": true,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
    "gameplay_functional": "Yes (interaction tests pass, headless)",
@@ -943,7 +987,7 @@
    "mobile": "Phone emulation (interaction tests); no real phone",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
-    "Story passages that are a reading place only, with no hands-on chapter: The armies and the wind (33:9-27).",
+    "Reading place only, by design: The armies and the wind (33:9-27: a battle; no combat is played).",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
   },
@@ -956,21 +1000,23 @@
    "kinds": [
     "palm",
     "read",
+    "links",
     "sluice"
    ],
    "status": "Playable",
    "quran_text_complete": "Yes: 54 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
-   "story_coverage": "1 of 3 played, 1 read only, 1 missing",
+   "story_coverage": "2 of 3 played, 0 read only, 1 missing",
    "story_complete": false,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
-   "gameplay_functional": "Yes (interaction tests pass, headless)",
-   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "gameplay_functional": "Not fully tested",
+   "movement_collision": "Not run",
    "mobile": "Phone emulation (interaction tests); no real phone",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
     "Story passages with no place in the world: Sulayman and the copper (34:12-14).",
-    "Story passages that are a reading place only, with no hands-on chapter: Dawud and the iron (34:10-11).",
+    "The world changed since its interaction tests; they must be run again.",
+    "The world changed since its last movement and collision sweep; it must be run again.",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
   },
@@ -1010,20 +1056,22 @@
     "palm",
     "olive",
     "read",
-    "moon"
+    "moon",
+    "reach"
    ],
    "status": "Playable",
    "quran_text_complete": "Yes: 83 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
-   "story_coverage": "0 of 1 played, 0 read only, 1 missing",
-   "story_complete": false,
+   "story_coverage": "1 of 1 played, 0 read only, 0 missing",
+   "story_complete": true,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
-   "gameplay_functional": "Yes (interaction tests pass, headless)",
-   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "gameplay_functional": "Not fully tested",
+   "movement_collision": "Not run",
    "mobile": "Phone emulation (interaction tests); no real phone",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
-    "Story passages with no place in the world: The town and the man who came running (36:13-27).",
+    "The world changed since its interaction tests; they must be run again.",
+    "The world changed since its last movement and collision sweep; it must be run again.",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
   },

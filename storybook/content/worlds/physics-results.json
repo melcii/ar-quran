@@ -4,129 +4,167 @@
  "worlds": {
   "1": {
    "desktop": "pass",
-   "phone": "pass"
+   "phone": "pass",
+   "hash": "61ea58fce511"
   },
   "2": {
    "desktop": "pass",
-   "note": "Camera grazes a moving prop in 20 of 10,981 frames."
+   "note": "Camera grazes a moving prop in 20 of 10,981 frames.",
+   "hash": "8008a28cfd48"
   },
   "3": {
-   "desktop": "pass"
+   "desktop": "pass",
+   "hash": "5ce3b6acaf41"
   },
   "4": {
    "desktop": "pass",
-   "note": "Some drawn footpaths cross solids (layout note; the walker goes round)."
+   "note": "Some drawn footpaths cross solids (layout note; the walker goes round).",
+   "hash": "6dd6c2e8883a"
   },
   "5": {
-   "desktop": "pass"
+   "desktop": "pass",
+   "hash": "afa18a0dbd68"
   },
   "6": {
    "desktop": "pass",
-   "note": "Some drawn footpaths cross solids (layout note; the walker goes round)."
+   "note": "Some drawn footpaths cross solids (layout note; the walker goes round).",
+   "hash": "d35c9a90d8e2"
   },
   "7": {
    "desktop": "pass",
-   "phone": "pass"
+   "phone": "pass",
+   "hash": "34a1a68b529c"
   },
   "8": {
-   "desktop": "pass"
+   "desktop": "pass",
+   "hash": "0884d04f5f87"
   },
   "9": {
-   "desktop": "pass"
+   "desktop": "pass",
+   "hash": "fb46de4e38c2"
   },
   "10": {
-   "desktop": "pass"
+   "desktop": "pass",
+   "hash": "0ff74fa5fc85"
   },
   "12": {
    "desktop": "pass",
-   "note": "Some drawn footpaths cross solids (layout note; the walker goes round)."
+   "note": "Some drawn footpaths cross solids (layout note; the walker goes round).",
+   "hash": "b7eb63df776c"
   },
   "13": {
    "desktop": "pass",
-   "note": "Some drawn footpaths cross solids (layout note; the walker goes round)."
+   "note": "Some drawn footpaths cross solids (layout note; the walker goes round).",
+   "hash": "f4132ca92c1a"
   },
   "14": {
-   "desktop": "pass"
+   "desktop": "pass",
+   "hash": "d49d74bc8c62"
   },
   "15": {
-   "desktop": "pass"
+   "desktop": "pass",
+   "hash": "6deb47258aee"
   },
   "16": {
-   "desktop": "pass"
+   "desktop": "pass",
+   "hash": "e376e8be919b"
   },
   "17": {
-   "desktop": "pass"
+   "desktop": "pass",
+   "hash": "38af6b5a8d1c"
   },
   "18": {
    "desktop": "pass",
-   "note": "Some drawn footpaths cross solids (layout note; the walker goes round)."
+   "note": "Some drawn footpaths cross solids (layout note; the walker goes round).",
+   "hash": "8c60b64cac7c"
   },
   "19": {
    "desktop": "pass",
-   "phone": "pass"
+   "phone": "pass",
+   "hash": "bb08ccc57811"
   },
   "20": {
    "desktop": "pass",
-   "phone": "pass"
+   "phone": "pass",
+   "hash": "6e525ced7a41"
   },
   "21": {
-   "desktop": "pass"
+   "desktop": "pass",
+   "hash": "537e8b4d38ac"
   },
   "22": {
-   "desktop": "pass"
+   "desktop": "pass",
+   "hash": "b7343d982742"
   },
   "23": {
-   "desktop": "pass"
+   "desktop": "pass",
+   "hash": "2dc752924dc1"
   },
   "24": {
-   "desktop": "pass"
+   "desktop": "pass",
+   "hash": "db17e1e05670"
   },
   "25": {
-   "desktop": "pass"
+   "desktop": "pass",
+   "hash": "f473dfcf139d"
   },
   "26": {
-   "desktop": "pass"
+   "desktop": "pass",
+   "hash": "15d5e56ff148"
   },
   "27": {
-   "desktop": "pass"
+   "desktop": "pass",
+   "hash": "01100b23b8da"
   },
   "28": {
    "desktop": "pass",
-   "note": "Some drawn footpaths cross solids (layout note; the walker goes round)."
+   "note": "Some drawn footpaths cross solids (layout note; the walker goes round).",
+   "hash": "48888d81e73d"
   },
   "29": {
-   "desktop": "pass"
+   "desktop": "pass",
+   "hash": "29761a670f74"
   },
   "30": {
-   "desktop": "pass"
+   "desktop": "pass",
+   "hash": "e9d93d38aeed"
   },
   "31": {
-   "desktop": "pass"
+   "desktop": "pass",
+   "hash": "21314093eb00"
   },
   "32": {
-   "desktop": "pass"
+   "desktop": "pass",
+   "hash": "34c105633d22"
   },
   "33": {
-   "desktop": "pass"
+   "desktop": "pass",
+   "hash": "c77cde30e749"
   },
   "34": {
-   "desktop": "pass"
+   "desktop": "pass",
+   "hash": "d1e73870b983"
   },
   "35": {
-   "desktop": "pass"
+   "desktop": "pass",
+   "hash": "bd5a6facc536"
   },
   "36": {
-   "desktop": "pass"
+   "desktop": "pass",
+   "hash": "4787e814320e"
   },
   "37": {
-   "desktop": "pass"
+   "desktop": "pass",
+   "hash": "26a6ee5385d3"
   },
   "38": {
-   "desktop": "pass"
+   "desktop": "pass",
+   "hash": "23a013270456"
   },
   "39": {
    "desktop": "pass",
-   "phone": "pass"
+   "phone": "pass",
+   "hash": "8436a3c4761c"
   },
   "ark": {
    "desktop": "pass",

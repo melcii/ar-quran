@@ -19,12 +19,15 @@
   {
    "title": "Nuh's long call",
    "reference": "29:14-15",
-   "anchor_phrase": "thousand years"
+   "anchor_phrase": "thousand years",
+   "played_in": 11
   },
   {
    "title": "Ibrahim and the fire",
    "reference": "29:16-27",
-   "anchor_phrase": "Abraham"
+   "anchor_phrase": "Abraham",
+   "treatment": "reading",
+   "treatment_reason": "Ibrahim and the fire: kept to the reading, no fire scene with a person"
   }
  ],
  "summary_for_children": "Al-'Ankabut means The Spider. It teaches that faith is tested, and that relying on anything besides Allah is like the spider's home, the weakest of homes. It mentions Nuh, Ibrahim, Lut and others.",
@@ -169,7 +172,8 @@
    "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": "src/adventure/worlds/w029.ts"
+  "built_in": "src/adventure/worlds/w029.ts",
+  "tested_hash": "29761a670f74"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

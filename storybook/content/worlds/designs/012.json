@@ -20,7 +20,9 @@
   {
    "title": "The dream",
    "reference": "12:4-6",
-   "anchor_phrase": "eleven stars"
+   "anchor_phrase": "eleven stars",
+   "treatment": "reading",
+   "treatment_reason": "a dream told in three ayahs; the vision is not pictured"
   },
   {
    "title": "The well",
@@ -31,6 +33,13 @@
    "title": "The caravan",
    "reference": "12:19-22",
    "anchor_phrase": "company of travelers"
+  },
+  {
+   "title": "The household in Egypt",
+   "reference": "12:21-33",
+   "anchor_phrase": "Egypt",
+   "treatment": "reading",
+   "treatment_reason": "kept to a brief reading for young readers, flagged for review"
   },
   {
    "title": "The prison and the dreams",
@@ -253,7 +262,11 @@
   },
   "secondary_activities": [
    "reading places along the story: the dream, the well, the house, the prison, the king's hall",
-   "forgiveness reading at the end (12:92)"
+   "forgiveness reading at the end (12:92)",
+   "water the travellers' camels at the well (12:15-20)",
+   "doing good in hard times, at the prison (12:36-42)",
+   "put the brothers' goods back in their saddlebags (12:59-62)",
+   "carry the shirt home to the tent in the north (12:93-96)"
   ],
   "narrative_structure": "Story places in order (dream, well, house, prison, king's dream), then the fourteen storehouse years, then the reunion reading",
   "world_assets": [
@@ -278,7 +291,8 @@
    "shortage_path": "pass (threshing every year ran short at hard year 4; the years restarted: prog [])"
   },
   "scholarly_review": "unreviewed",
-  "built_in": "src/adventure/worlds/w012.ts"
+  "built_in": "src/adventure/worlds/w012.ts",
+  "tested_hash": "b7eb63df776c"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

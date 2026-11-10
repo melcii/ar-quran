@@ -19,7 +19,8 @@
   {
    "title": "Musa and the fire",
    "reference": "27:7-14",
-   "anchor_phrase": "fire"
+   "anchor_phrase": "fire",
+   "played_in": 20
   },
   {
    "title": "The valley of the ants",
@@ -34,17 +35,23 @@
   {
    "title": "The throne",
    "reference": "27:38-42",
-   "anchor_phrase": "throne"
+   "anchor_phrase": "throne",
+   "treatment": "reading",
+   "treatment_reason": "the throne brought in the blink of an eye; Sulayman, the queen and the one with knowledge are never shown"
   },
   {
    "title": "The glass palace",
    "reference": "27:44",
-   "anchor_phrase": "palace"
+   "anchor_phrase": "palace",
+   "treatment": "reading",
+   "treatment_reason": "Sulayman and the queen are never shown"
   },
   {
    "title": "Salih and the plotters",
    "reference": "27:45-53",
-   "anchor_phrase": "Thamud"
+   "anchor_phrase": "Thamud",
+   "treatment": "reading",
+   "treatment_reason": "a plot to kill at night; kept to the reading"
   }
  ],
  "summary_for_children": "An-Naml means The Ants. It tells of Sulayman, who heard an ant warn the others, of a hoopoe that brought news of the Queen of Sheba, and how she came to believe in Allah. It also tells briefly of Musa, Salih and Lut.",
@@ -238,7 +245,8 @@
    "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": "src/adventure/worlds/w027.ts"
+  "built_in": "src/adventure/worlds/w027.ts",
+  "tested_hash": "01100b23b8da"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

@@ -4,6 +4,7 @@ import type { Task } from '../types';
 import type { Mechanic } from './base';
 import { Ants } from './ants';
 import { Beacon } from './beacon';
+import { Dawn } from './dawn';
 import { Doors } from './doors';
 import { Echo } from './echo';
 import { Granary } from './granary';
@@ -11,6 +12,8 @@ import { Grow } from './grow';
 import { Harvest } from './harvest';
 import { Home } from './home';
 import { Mirror } from './mirror';
+import { Links } from './links';
+import { Measure } from './measure';
 import { Moon } from './moon';
 import { Order } from './order';
 import { Point } from './point';
@@ -19,10 +22,12 @@ import { Plumb } from './plumb';
 import { Pollen } from './pollen';
 import { Sowing } from './rain';
 import { River } from './river';
+import { Rollcall } from './rollcall';
 import { Rubbing } from './rubbing';
 import { Shades } from './shades';
 import { Shadow } from './shadow';
 import { Shelter } from './shelter';
+import { Shimmer } from './shimmer';
 import { Sluice } from './sluice';
 import { Spring } from './spring';
 import { Streets } from './streets';
@@ -60,6 +65,11 @@ export const MECHS: Partial<Record<Task['kind'], Mechanic<never>>> = {
   vine: Vine as Mechanic<never>,
   spring: Spring as Mechanic<never>,
   harvest: Harvest as Mechanic<never>,
+  measure: Measure as Mechanic<never>,
+  dawn: Dawn as Mechanic<never>,
+  shimmer: Shimmer as Mechanic<never>,
+  rollcall: Rollcall as Mechanic<never>,
+  links: Links as Mechanic<never>,
 };
 
 /** The plug-in for a task, typed loosely so the engine can call it with any task. */

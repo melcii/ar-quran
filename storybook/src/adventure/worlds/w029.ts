@@ -82,6 +82,16 @@ export const W029: WorldDef = {
       goal: 'Read at the sign on the east side',
       reading: { title: 'Guided to His ways', refs: [[29, 69]], note: 'Those who strive for Allah, He will guide to His ways. And Allah is with those who do good.' },
     },
+    {
+      id: 'nuh',
+      kind: 'read',
+      requires: ['strive'],
+      at: [3, 21],
+      marker: 'tablet',
+      title: 'A thousand years less fifty',
+      goal: 'Read the stone by the start',
+      reading: { title: 'Nuh stayed among them', refs: [[29, 14], [29, 15]], note: 'Nuh stayed among his people a thousand years less fifty, calling them. Allah saved him and those in the ship, and made it a sign for the worlds. The Ark is played in the world of Surah Hud.' },
+    },
   ],
   finale: {
     title: 'A true shelter',

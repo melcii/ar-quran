@@ -19,7 +19,9 @@
   {
    "title": "Rain before the day of Badr",
    "reference": "8:11",
-   "anchor_phrase": "rain by which to purify"
+   "anchor_phrase": "rain by which to purify",
+   "treatment": "reading",
+   "treatment_reason": "the eve of a battle; no combat is played"
   }
  ],
  "summary_for_children": "Al-Anfal speaks to believers about trust in Allah, staying united, not quarrelling, and choosing peace when it is offered.",
@@ -170,6 +172,7 @@
    "devices": "untested (desktop headless only; not run in phone emulation)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": "src/adventure/worlds/w008.ts"
+  "built_in": "src/adventure/worlds/w008.ts",
+  "tested_hash": "0884d04f5f87"
  }
 }

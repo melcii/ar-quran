@@ -46,7 +46,7 @@ function recipeKinds(r) {
   // Task kinds only (tree kinds and structure kinds use other words).
   const kinds = new Set();
   for (const m of src.matchAll(/kind: '([a-z]+)'/g)) kinds.add(m[1]);
-  const TASKS = ['read', 'points', 'carry', 'lead', 'pick', 'guide', 'quiz', 'stand', 'reach', 'observe', 'sky', 'sail', 'choice', 'share', 'promise', 'weigh', 'flow', 'sift', 'return', 'granary', 'valley', 'grow', 'pollen', 'rubbing', 'streets', 'sunpath', 'point', 'beacon', 'doors', 'order', 'home', 'mirror', 'shadow', 'echo', 'ants', 'river', 'shelter', 'rain', 'voice', 'pasture', 'plumb', 'sluice', 'shades', 'moon', 'vine', 'spring', 'harvest'];
+  const TASKS = ['read', 'points', 'carry', 'lead', 'pick', 'guide', 'quiz', 'stand', 'reach', 'observe', 'sky', 'sail', 'choice', 'share', 'promise', 'weigh', 'flow', 'sift', 'return', 'granary', 'valley', 'grow', 'pollen', 'rubbing', 'streets', 'sunpath', 'point', 'beacon', 'doors', 'order', 'home', 'mirror', 'shadow', 'echo', 'ants', 'river', 'shelter', 'rain', 'voice', 'pasture', 'plumb', 'sluice', 'shades', 'moon', 'vine', 'spring', 'harvest', 'measure', 'dawn', 'shimmer', 'rollcall', 'links'];
   return new Set([...kinds].filter((k) => TASKS.includes(k)));
 }
 

@@ -25,7 +25,8 @@
   {
    "title": "The chest on the river",
    "reference": "20:37-40",
-   "anchor_phrase": "chest"
+   "anchor_phrase": "chest",
+   "played_in": 28
   },
   {
    "title": "Gentle words to Pharaoh",
@@ -211,7 +212,12 @@
   "secondary_activities": [
    "a prayer for help (20:25-32)",
    "gentle words (20:43-46)",
-   "asking for knowledge (20:114, 20:123)"
+   "asking for knowledge (20:114, 20:123)",
+   "gentle words, at a signpost (20:43-46)",
+   "look closely at ropes and staffs that only seem to move from far away (20:66-69)",
+   "mark the dry path across the sea inlet (20:77-82)",
+   "sort what the calf could never do (20:88-91)",
+   "put the ayahs about Adam in order (20:115-123)"
   ],
   "narrative_structure": "The lantern at the start, the cairns across the hills, then three readings on the way back",
   "world_assets": [
@@ -234,7 +240,8 @@
    "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": "src/adventure/worlds/w020.ts"
+  "built_in": "src/adventure/worlds/w020.ts",
+  "tested_hash": "6e525ced7a41"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

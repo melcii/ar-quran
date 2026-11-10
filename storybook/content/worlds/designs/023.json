@@ -19,7 +19,8 @@
   {
    "title": "Nuh builds the ship",
    "reference": "23:23-30",
-   "anchor_phrase": "ship"
+   "anchor_phrase": "ship",
+   "played_in": 11
   }
  ],
  "summary_for_children": "Al-Mu'minun begins by describing successful believers: humble in prayer, avoiding idle talk, giving charity and keeping promises. It reminds us how Allah created us and sends rain in just measure.",
@@ -208,7 +209,8 @@
    "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": "src/adventure/worlds/w023.ts"
+  "built_in": "src/adventure/worlds/w023.ts",
+  "tested_hash": "2dc752924dc1"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

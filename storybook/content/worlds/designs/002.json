@@ -41,7 +41,9 @@
   {
    "title": "The town and the hundred years",
    "reference": "2:259",
-   "anchor_phrase": "hundred years"
+   "anchor_phrase": "hundred years",
+   "treatment": "reading",
+   "treatment_reason": "a man made to die for a hundred years and raised again; kept to the reading"
   }
  ],
  "summary_for_children": "Al-Baqarah is the longest surah. It shows how Allah guides people, tells of Adam, of the Children of Israel and the cow, of Ibrahim building the House, and teaches about charity, patience and good character.",
@@ -228,6 +230,7 @@
    "devices": "untested (desktop headless only; not run in phone emulation)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": "src/adventure/worlds/w002.ts"
+  "built_in": "src/adventure/worlds/w002.ts",
+  "tested_hash": "8008a28cfd48"
  }
 }
