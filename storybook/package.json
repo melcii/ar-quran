@@ -51,7 +51,8 @@
     "designs:index": "node scripts/design-index.mjs",
     "worlds:unique": "node scripts/check-unique-worlds.mjs",
     "typecheck": "tsc --noEmit",
-    "export:web": "expo export --platform web"
+    "export:web": "expo export --platform web",
+    "status": "node scripts/status-report.mjs"
   },
   "private": true
 }

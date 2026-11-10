@@ -1,0 +1,136 @@
+{
+ "date": "2026-11-06",
+ "how": "scripts/physics/run-all.sh: validate-world.js and walk-paths.js on desktop for every world; phone (Pixel 7 emulation, touch stick) and j60 motion traces for 1, 7, 19, 20, 39 and the Ark. Headless Chromium, software WebGL. Re-run after any collider or world change.",
+ "worlds": {
+  "1": {
+   "desktop": "pass",
+   "phone": "pass"
+  },
+  "2": {
+   "desktop": "pass",
+   "note": "Camera grazes a moving prop in 20 of 10,981 frames."
+  },
+  "3": {
+   "desktop": "pass"
+  },
+  "4": {
+   "desktop": "pass",
+   "note": "Some drawn footpaths cross solids (layout note; the walker goes round)."
+  },
+  "5": {
+   "desktop": "pass"
+  },
+  "6": {
+   "desktop": "pass",
+   "note": "Some drawn footpaths cross solids (layout note; the walker goes round)."
+  },
+  "7": {
+   "desktop": "pass",
+   "phone": "pass"
+  },
+  "8": {
+   "desktop": "pass"
+  },
+  "9": {
+   "desktop": "pass"
+  },
+  "10": {
+   "desktop": "pass"
+  },
+  "12": {
+   "desktop": "pass",
+   "note": "Some drawn footpaths cross solids (layout note; the walker goes round)."
+  },
+  "13": {
+   "desktop": "pass",
+   "note": "Some drawn footpaths cross solids (layout note; the walker goes round)."
+  },
+  "14": {
+   "desktop": "pass"
+  },
+  "15": {
+   "desktop": "pass"
+  },
+  "16": {
+   "desktop": "pass"
+  },
+  "17": {
+   "desktop": "pass"
+  },
+  "18": {
+   "desktop": "pass",
+   "note": "Some drawn footpaths cross solids (layout note; the walker goes round)."
+  },
+  "19": {
+   "desktop": "pass",
+   "phone": "pass"
+  },
+  "20": {
+   "desktop": "pass",
+   "phone": "pass"
+  },
+  "21": {
+   "desktop": "pass"
+  },
+  "22": {
+   "desktop": "pass"
+  },
+  "23": {
+   "desktop": "pass"
+  },
+  "24": {
+   "desktop": "pass"
+  },
+  "25": {
+   "desktop": "pass"
+  },
+  "26": {
+   "desktop": "pass"
+  },
+  "27": {
+   "desktop": "pass"
+  },
+  "28": {
+   "desktop": "pass",
+   "note": "Some drawn footpaths cross solids (layout note; the walker goes round)."
+  },
+  "29": {
+   "desktop": "pass"
+  },
+  "30": {
+   "desktop": "pass"
+  },
+  "31": {
+   "desktop": "pass"
+  },
+  "32": {
+   "desktop": "pass"
+  },
+  "33": {
+   "desktop": "pass"
+  },
+  "34": {
+   "desktop": "pass"
+  },
+  "35": {
+   "desktop": "pass"
+  },
+  "36": {
+   "desktop": "pass"
+  },
+  "37": {
+   "desktop": "pass"
+  },
+  "38": {
+   "desktop": "pass"
+  },
+  "39": {
+   "desktop": "pass",
+   "phone": "pass"
+  },
+  "ark": {
+   "desktop": "pass",
+   "phone": "pass"
+  }
+ }
+}
