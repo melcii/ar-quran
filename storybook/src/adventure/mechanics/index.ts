@@ -36,6 +36,11 @@ import { Bearings } from './bearings';
 import { Beam } from './beam';
 import { Inspect } from './inspect';
 import { Stages } from './stages';
+import { Shelves } from './shelves';
+import { Still } from './still';
+import { Lightbox } from './lightbox';
+import { Camel } from './camel';
+import { EvenOdd } from './evenodd';
 import { Release } from './release';
 import { Rootbox } from './rootbox';
 import { Starhop } from './starhop';
@@ -160,6 +165,11 @@ export const MECHS: Partial<Record<Task['kind'], Mechanic<never>>> = {
   beam: Beam as Mechanic<never>,
   inspect: Inspect as Mechanic<never>,
   stages: Stages as Mechanic<never>,
+  shelves: Shelves as Mechanic<never>,
+  still: Still as Mechanic<never>,
+  lightbox: Lightbox as Mechanic<never>,
+  camel: Camel as Mechanic<never>,
+  evenodd: EvenOdd as Mechanic<never>,
 };
 
 /** The plug-in for a task, typed loosely so the engine can call it with any task. */

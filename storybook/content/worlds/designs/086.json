@@ -122,21 +122,32 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Piercing Star Observatory",
+  "tier": "playable",
+  "visual_theme": "A hot rocky shore by a bright sea, with salt pans and no fresh spring",
   "quran_references": [
-   "86:1–17"
+   "86:1-5",
+   "86:11-14"
   ],
   "primary_mechanic": {
    "kind": "piercing-star",
-   "engine": "not built yet",
-   "text": "Find the brightest star through clouds with a star finder (86:1-3)."
+   "engine": "still",
+   "text": "Build a sun still: choose shade or full sun, a flat cover or one sloping to or away from the cup, open or sealed edges; each wrong setup shows why (no warmth, vapour escapes, drops fall back, drops run away); the right one drips fresh water into the cup, then taste it (fresh, the salt stays behind) (86:11, the sky that returns)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "over every soul (86:4-5, read)",
+   "the piercing star (86:1-3, read at evening)"
+  ],
+  "narrative_structure": "A reading on the path down, the sun still, then a reading at the lookout",
+  "world_assets": [
+   "basin, clear cover and cup",
+   "salt pan pool",
+   "rocky shore"
+  ],
+  "environment_behaviour": [
+   "the cover and cup appear once the still works",
+   "the cup fills with fresh water"
+  ],
+  "learning_objective": "Know the oath by the sky that returns the rain (86:11)",
   "interaction_tests": {
    "activate": "untested",
    "responds": "untested",
@@ -147,7 +158,7 @@
    "devices": "untested"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w086.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

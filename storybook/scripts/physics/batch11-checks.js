@@ -78,8 +78,14 @@ const ONLY = process.env.ONLY ? process.env.ONLY.split(',') : null;
     await stand(p, lx(0), ends(0)[0]);
     await p.evaluate(([x, z]) => globalThis.__adv.go(x, z), [lx(0) + 3.5, (t.z0 + t.z1) / 2]);
     r.wanderRefused = await waitFor(p, () => (globalThis.__adv.save().prog['plough/x'] ?? []).length > 0, null, 40000);
+    await closeAll(p);
     for (let k = 0; k < t.n; k++) {
       const [a, b] = ends(k);
+      await closeAll(p);
+      // Face down the furrow first, as a player turns before setting off.
+      await stand(p, lx(k) - 3, a);
+      await p.evaluate(([x, z]) => globalThis.__adv.go(x, z), [lx(k) - 3, a + (b > a ? 2 : -2)]);
+      await p.waitForTimeout(1500);
       await stand(p, lx(k), a);
       await p.evaluate(([x, z]) => globalThis.__adv.go(x, z), [lx(k), b + (b > a ? 0.6 : -0.6)]);
       r.lanes.push(await waitFor(p, (k) => (globalThis.__adv.save().prog.plough ?? []).includes(k) || globalThis.__adv.save().done.includes('plough'), k, 60000));

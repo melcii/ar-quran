@@ -64,7 +64,7 @@ export const W080: WorldDef = {
       n: 5,
       z0: -6,
       z1: 10,
-      tol: 1,
+      tol: 1.2,
       title: 'Splitting the earth',
       goal: 'Plough five straight furrows, walking from the gold-flagged stake to the far stake each time',
       intro: 'Stand at the gold-flagged stake and walk straight to the far stake. Each new furrow starts at the end where the last one finished.',

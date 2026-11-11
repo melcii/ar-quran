@@ -547,7 +547,22 @@ export type InspectTask = TaskBase & { kind: 'inspect'; stalls: { at: P2; what: 
 /** Al-Inshiqaq: plan a caravan's stages between wells, then travel them from twilight to morning. */
 export type StagesTask = TaskBase & { kind: 'stages'; at: P2; wells: number[]; reach: number; road: P2[] };
 
-export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask | StandTask | ReachTask | ObserveTask | SkyTask | SailTask | ChoiceTask | ShareTask | PromiseTask | WeighTask | FlowTask | SiftTask | ReturnTask | GranaryTask | ValleyTask | GrowTask | PollenTask | RubbingTask | StreetsTask | SunPathTask | PointTask | BeaconTask | DoorsTask | OrderTask | HomeTask | MirrorTask | ShadowTask | EchoTask | AntsTask | RiverTask | ShelterTask | RainTask | VoiceTask | PastureTask | PlumbTask | SluiceTask | ShadesTask | MoonTask | VineTask | SpringTask | HarvestTask | MeasureTask | DawnTask | ShimmerTask | RollcallTask | LinksTask | CluesTask | ScopeTask | CouncilTask | AdornTask | SurveyTask | StationTask | DunesTask | ChannelsTask | CalmTask | RumourTask | RootboxTask | ReleaseTask | BlazesTask | StarhopTask | RecallTask | EstuaryTask | FiredrillTask | ForgeTask | ListenTask | WelcomeTask | SpanTask | BondTask | FridayTask | ChancesTask | PackTask | LoadsTask | AmendsTask | WingsTask | GleanTask | UnseenTask | PortionTask | ReflectTask | HushTask | NightclockTask | WashTask | PrintsTask | DoorstepTask | WinnowTask | PegsTask | DigTask | FurrowsTask | BearingsTask | BeamTask | InspectTask | StagesTask;
+/** Al-Buruj: carry each book and tool of the library to a place that keeps it safe. */
+export type ShelvesTask = TaskBase & { kind: 'shelves'; table: P2; items: { name: string; needs: ('dry' | 'shade' | 'high')[] }[]; spots: { name: string; at: P2; has: ('dry' | 'shade' | 'high')[]; why: string }[] };
+
+/** At-Tariq: set up a sun still so the sky "returns" fresh water from salt water. */
+export type StillTask = TaskBase & { kind: 'still'; at: P2 };
+
+/** Al-A'la: open the box's windows in turn to guide a seedling round its shelves to the light. */
+export type LightboxTask = TaskBase & { kind: 'lightbox'; at: P2; gaps: ('left' | 'right')[] };
+
+/** Al-Ghashiyah: look at how the camel is made, then shelter behind it in a sandstorm. */
+export type CamelTask = TaskBase & { kind: 'camel'; at: P2; parts: { name: string; use: string }[]; wind: P2; secs: number };
+
+/** Al-Fajr: pair up the dates in each basket to find whether the count is even or odd. */
+export type EvenOddTask = TaskBase & { kind: 'evenodd'; at: P2; baskets: { what: string; n: number }[] };
+
+export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask | StandTask | ReachTask | ObserveTask | SkyTask | SailTask | ChoiceTask | ShareTask | PromiseTask | WeighTask | FlowTask | SiftTask | ReturnTask | GranaryTask | ValleyTask | GrowTask | PollenTask | RubbingTask | StreetsTask | SunPathTask | PointTask | BeaconTask | DoorsTask | OrderTask | HomeTask | MirrorTask | ShadowTask | EchoTask | AntsTask | RiverTask | ShelterTask | RainTask | VoiceTask | PastureTask | PlumbTask | SluiceTask | ShadesTask | MoonTask | VineTask | SpringTask | HarvestTask | MeasureTask | DawnTask | ShimmerTask | RollcallTask | LinksTask | CluesTask | ScopeTask | CouncilTask | AdornTask | SurveyTask | StationTask | DunesTask | ChannelsTask | CalmTask | RumourTask | RootboxTask | ReleaseTask | BlazesTask | StarhopTask | RecallTask | EstuaryTask | FiredrillTask | ForgeTask | ListenTask | WelcomeTask | SpanTask | BondTask | FridayTask | ChancesTask | PackTask | LoadsTask | AmendsTask | WingsTask | GleanTask | UnseenTask | PortionTask | ReflectTask | HushTask | NightclockTask | WashTask | PrintsTask | DoorstepTask | WinnowTask | PegsTask | DigTask | FurrowsTask | BearingsTask | BeamTask | InspectTask | StagesTask | ShelvesTask | StillTask | LightboxTask | CamelTask | EvenOddTask;
 
 export type Region = { id: string; name: string; at: P2 };
 
