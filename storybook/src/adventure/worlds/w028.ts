@@ -41,7 +41,7 @@ export const W028: WorldDef = {
     radius: 50,
     base: rolling({ radius: 50, amp: 1.2, seed: 28, streams: beds(RIVER), shapes: [{ x: 0, z: -46, r: 12, h: 5 }] }),
     palette: PAL.coast,
-    paths: [curve([[-5, -36], [-7, -29], [-7.5, -24], [-6, -24], [6, -24], [12, -12], [12, -2], [15, 0], [17, 3], [16.5, 3.5], [11.5, 8.5], [10.1, 9.9], [9, 14], [6, 19]])],
+    paths: [curve([[-5, -33.5], [-6.5, -29], [-7.5, -24], [-6, -24], [6, -24], [9.5, -24], [11.5, -20], [13, -12], [13.5, -8], [15, -5], [16.5, -2], [18, 0.5], [17.5, 2.5], [10, 10], [9.5, 11.5], [9.3, 13], [8, 15.5], [6, 19]])],
     water: -1.8,
     flats: [{ x: 2, z: -40, r: 3 }],
   },
@@ -49,7 +49,7 @@ export const W028: WorldDef = {
   veg: {
     grass: 1,
     flowers: ['#fff2d8', '#f4d060'],
-    trees: [{ kind: 'palm', area: { x: 0, z: 20, r: 10 }, count: 5 }, { kind: 'palm', at: [[-10, -30], [12, -30]] }, { kind: 'olive', area: { x: -20, z: 20, r: 8 }, count: 3 }],
+    trees: [{ kind: 'palm', area: { x: -3, z: 21, r: 7 }, count: 5 }, { kind: 'palm', at: [[-10, -30], [12, -30]] }, { kind: 'olive', area: { x: -20, z: 20, r: 8 }, count: 3 }],
     rocks: [{ x: -24, z: -24, n: 6, big: 1.2, spread: 12 }],
     pebbles: 20,
     rim: ['palm', 'olive'],
@@ -58,7 +58,7 @@ export const W028: WorldDef = {
   mountains: { color: '#9a90a8', height: 1 },
   start: [-5, -34],
   startYaw: 0,
-  structures: [{ type: 'bridge', x: -6, z: -24, to: [8, -24], w: 2.2 }, { type: 'bridge', x: 16.5, z: 3.5, to: [11.5, 8.5], w: 2.2 }, { type: 'dock', x: 3, z: 20, rot: 0, w: 2, d: 4 }, { type: 'well', x: -20, z: 14 }],
+  structures: [{ type: 'bridge', x: -6, z: -24, to: [8, -24], w: 2.2 }, { type: 'bridge', x: 17.5, z: 2.5, to: [10, 10], w: 2.2 }, { type: 'dock', x: 3, z: 20, rot: 0, w: 2, d: 4 }, { type: 'well', x: -20, z: 14 }],
   herds: [{ animal: 'sheep', at: [-26, 22], r: 3, n: 5 }],
   welcome:
     'Welcome to the River and the Chest. Surah Al-Qasas tells how the mother of Musa was inspired to place her baby in the river, and promised that he would be returned to her. Here the chest floats empty. Read at the lantern first.',

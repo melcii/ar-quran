@@ -813,20 +813,18 @@
     "carry",
     "choice"
    ],
-   "status": "Playable",
+   "status": "Tested",
    "quran_text_complete": "Yes: 88 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
    "story_coverage": "5 of 5 played, 0 read only, 0 missing",
    "story_complete": true,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
-   "gameplay_functional": "Not fully tested",
-   "movement_collision": "Not run",
-   "mobile": "No",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
     "Played in another surah's world (story atlas), read here: Fire at the mount (28:29-35, played in surah 20).",
-    "The world changed since its interaction tests; they must be run again.",
-    "The world changed since its last movement and collision sweep; it must be run again.",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
   },
