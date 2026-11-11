@@ -31,6 +31,11 @@ import { Doorstep } from './doorstep';
 import { Winnow } from './winnow';
 import { Pegs } from './pegs';
 import { Dig } from './dig';
+import { Furrows } from './furrows';
+import { Bearings } from './bearings';
+import { Beam } from './beam';
+import { Inspect } from './inspect';
+import { Stages } from './stages';
 import { Release } from './release';
 import { Rootbox } from './rootbox';
 import { Starhop } from './starhop';
@@ -150,6 +155,11 @@ export const MECHS: Partial<Record<Task['kind'], Mechanic<never>>> = {
   winnow: Winnow as Mechanic<never>,
   pegs: Pegs as Mechanic<never>,
   dig: Dig as Mechanic<never>,
+  furrows: Furrows as Mechanic<never>,
+  bearings: Bearings as Mechanic<never>,
+  beam: Beam as Mechanic<never>,
+  inspect: Inspect as Mechanic<never>,
+  stages: Stages as Mechanic<never>,
 };
 
 /** The plug-in for a task, typed loosely so the engine can call it with any task. */

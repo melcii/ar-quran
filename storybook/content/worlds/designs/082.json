@@ -109,21 +109,30 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Gallery of Responsibility",
+  "tier": "playable",
+  "visual_theme": "A rocky pine gorge with a rushing stream that the path crosses three times on narrow logs",
   "quran_references": [
-   "82:1–19"
+   "82:1-12"
   ],
   "primary_mechanic": {
    "kind": "human-formed",
-   "engine": "not built yet",
-   "text": "Exhibits on how a person is formed and balanced (82:7-8), with a private journal of choices."
+   "engine": "beam",
+   "text": "Cross three logs: once you start to tip you tip further, and the log sways you; lean the other way to keep the balance needle in the middle while you walk 6 seconds across. Tipping too far sends you back to the bank (noted). The logs get springier (82:7, created, shaped and balanced)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "created, shaped and balanced (82:6-8, read)",
+   "when the sky cleaves (82:1-5, read only)"
+  ],
+  "narrative_structure": "A reading above the gorge, three log crossings, then a reading at the top",
+  "world_assets": [
+   "three log bridges",
+   "rushing stream",
+   "marker stones"
+  ],
+  "environment_behaviour": [
+   "each log’s marker stone turns gold once crossed"
+  ],
+  "learning_objective": "Know that Allah created us, shaped us and balanced us (82:6-8)",
   "interaction_tests": {
    "activate": "untested",
    "responds": "untested",
@@ -134,7 +143,7 @@
    "devices": "untested"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w082.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
