@@ -2607,19 +2607,17 @@
     "read",
     "oilpress"
    ],
-   "status": "Playable",
+   "status": "Tested",
    "quran_text_complete": "Yes: 8 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
    "story_coverage": "No historical narrative listed; themes only",
    "story_complete": true,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
-   "gameplay_functional": "Not fully tested",
-   "movement_collision": "Not run",
-   "mobile": "No",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
-    "Interaction checks not yet passed: activate, responds, feedback, goal, completion, saved.",
-    "Movement and collision sweep not run yet.",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
   },
@@ -2635,19 +2633,17 @@
     "read",
     "pen"
    ],
-   "status": "Playable",
+   "status": "Tested",
    "quran_text_complete": "Yes: 19 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
    "story_coverage": "No historical narrative listed; themes only",
    "story_complete": true,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
-   "gameplay_functional": "Not fully tested",
-   "movement_collision": "Not run",
-   "mobile": "No",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
-    "Interaction checks not yet passed: activate, responds, feedback, goal, completion, saved.",
-    "Movement and collision sweep not run yet.",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
   },
@@ -2662,19 +2658,17 @@
     "read",
     "abacus"
    ],
-   "status": "Playable",
+   "status": "Tested",
    "quran_text_complete": "Yes: 5 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
    "story_coverage": "No historical narrative listed; themes only",
    "story_complete": true,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
-   "gameplay_functional": "Not fully tested",
-   "movement_collision": "Not run",
-   "mobile": "No",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
-    "Interaction checks not yet passed: activate, responds, feedback, goal, completion, saved.",
-    "Movement and collision sweep not run yet.",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
   },
@@ -2690,19 +2684,17 @@
     "read",
     "sight"
    ],
-   "status": "Playable",
+   "status": "Tested",
    "quran_text_complete": "Yes: 8 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
    "story_coverage": "No historical narrative listed; themes only",
    "story_complete": true,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
-   "gameplay_functional": "Not fully tested",
-   "movement_collision": "Not run",
-   "mobile": "No",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
-    "Interaction checks not yet passed: activate, responds, feedback, goal, completion, saved.",
-    "Movement and collision sweep not run yet.",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
   },
@@ -2718,19 +2710,17 @@
     "read",
     "speck"
    ],
-   "status": "Playable",
+   "status": "Tested",
    "quran_text_complete": "Yes: 8 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
    "story_coverage": "No historical narrative listed; themes only",
    "story_complete": true,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
-   "gameplay_functional": "Not fully tested",
-   "movement_collision": "Not run",
-   "mobile": "No",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
-    "Interaction checks not yet passed: activate, responds, feedback, goal, completion, saved.",
-    "Movement and collision sweep not run yet.",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
   },
@@ -2745,19 +2735,17 @@
     "read",
     "gaits"
    ],
-   "status": "Playable",
+   "status": "Tested",
    "quran_text_complete": "Yes: 11 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
    "story_coverage": "No historical narrative listed; themes only",
    "story_complete": true,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
-   "gameplay_functional": "Not fully tested",
-   "movement_collision": "Not run",
-   "mobile": "No",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
-    "Interaction checks not yet passed: activate, responds, feedback, goal, completion, saved.",
-    "Movement and collision sweep not run yet.",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
   },
@@ -2772,19 +2760,17 @@
     "read",
     "carding"
    ],
-   "status": "Playable",
+   "status": "Tested",
    "quran_text_complete": "Yes: 11 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
    "story_coverage": "No historical narrative listed; themes only",
    "story_complete": true,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
-   "gameplay_functional": "Not fully tested",
-   "movement_collision": "Not run",
-   "mobile": "No",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
-    "Interaction checks not yet passed: activate, responds, feedback, goal, completion, saved.",
-    "Movement and collision sweep not run yet.",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
   },
@@ -2799,19 +2785,17 @@
     "read",
     "errand"
    ],
-   "status": "Playable",
+   "status": "Tested",
    "quran_text_complete": "Yes: 8 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
    "story_coverage": "No historical narrative listed; themes only",
    "story_complete": true,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
-   "gameplay_functional": "Not fully tested",
-   "movement_collision": "Not run",
-   "mobile": "No",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
-    "Interaction checks not yet passed: activate, responds, feedback, goal, completion, saved.",
-    "Movement and collision sweep not run yet.",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
   },
@@ -2826,19 +2810,17 @@
     "read",
     "hourglass"
    ],
-   "status": "Playable",
+   "status": "Tested",
    "quran_text_complete": "Yes: 3 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
    "story_coverage": "No historical narrative listed; themes only",
    "story_complete": true,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
-   "gameplay_functional": "Not fully tested",
-   "movement_collision": "Not run",
-   "mobile": "No",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
-    "Interaction checks not yet passed: activate, responds, feedback, goal, completion, saved.",
-    "Movement and collision sweep not run yet.",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
   },
@@ -2854,19 +2836,17 @@
     "read",
     "chalk"
    ],
-   "status": "Playable",
+   "status": "Tested",
    "quran_text_complete": "Yes: 9 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
    "story_coverage": "No historical narrative listed; themes only",
    "story_complete": true,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
-   "gameplay_functional": "Not fully tested",
-   "movement_collision": "Not run",
-   "mobile": "No",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
-    "Interaction checks not yet passed: activate, responds, feedback, goal, completion, saved.",
-    "Movement and collision sweep not run yet.",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
   },
