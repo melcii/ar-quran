@@ -88,8 +88,9 @@
   },
   "20": {
    "desktop": "pass",
-   "phone": "pass",
-   "hash": "6e525ced7a41"
+   "phone": "not run",
+   "hash": "ad4af1b30b9a",
+   "date": "2026-11-11"
   },
   "21": {
    "desktop": "pass",
@@ -285,6 +286,12 @@
    "hash": "417ea88c8979",
    "date": "2026-11-11"
   },
+  "60": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "32bf88023565",
+   "date": "2026-11-11"
+  },
   "61": {
    "desktop": "pass",
    "phone": "not run",
@@ -307,6 +314,42 @@
    "desktop": "pass",
    "phone": "not run",
    "hash": "02df34f3e322",
+   "date": "2026-11-11"
+  },
+  "65": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "c950ed7caa32",
+   "date": "2026-11-11"
+  },
+  "66": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "712aea14d9a9",
+   "date": "2026-11-11"
+  },
+  "67": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "d7d9a3a9370f",
+   "date": "2026-11-11"
+  },
+  "68": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "9f7ba70a52f1",
+   "date": "2026-11-11"
+  },
+  "69": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "ebac418596bd",
+   "date": "2026-11-11"
+  },
+  "70": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "b8d999e8e515",
    "date": "2026-11-11"
   },
   "ark": {
