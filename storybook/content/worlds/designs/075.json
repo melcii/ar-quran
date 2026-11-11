@@ -86,21 +86,31 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Hall of Reflection",
+  "tier": "playable",
+  "visual_theme": "A sunny yard behind a potter’s workshop with clay tablets drying on low stands and an ink card of your own prints on the bench",
   "quran_references": [
-   "75:1–40"
+   "75:1-4",
+   "75:13-19"
   ],
   "primary_mechanic": {
    "kind": "time-and-memory-hall",
-   "engine": "not built yet",
-   "text": "Arrange objects of a day you lived into a timeline and reflect on choices (75:14-15)."
+   "engine": "prints",
+   "text": "Six clay tablets each carry a fingerprint (loop, whorl or arch, with a small mark in one of four places); compare each with your own five prints and name the finger that made it, or say it is someone else’s (75:3-4, even the fingertips; 75:14-15, a witness against oneself). A wrong answer says whether the pattern or the mark differs."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "even the fingertips (75:1-4, read)",
+   "do not hurry (75:16-19, read)"
+  ],
+  "narrative_structure": "A reading by the olives, the tablets in the yard, then a reading by the workshop",
+  "world_assets": [
+   "potter’s yard and workshop",
+   "clay tablets on stands",
+   "ink card of prints"
+  ],
+  "environment_behaviour": [
+   "each tablet changes colour once read"
+  ],
+  "learning_objective": "Know that Allah is able to put together even our fingertips, and that each person will witness against themselves (75:4, 75:14)",
   "interaction_tests": {
    "activate": "untested",
    "responds": "untested",
@@ -111,7 +121,7 @@
    "devices": "untested"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w075.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

@@ -26,6 +26,11 @@ import { Reflect } from './reflect';
 import { Hush } from './hush';
 import { Nightclock } from './nightclock';
 import { Wash } from './wash';
+import { Prints } from './prints';
+import { Doorstep } from './doorstep';
+import { Winnow } from './winnow';
+import { Pegs } from './pegs';
+import { Dig } from './dig';
 import { Release } from './release';
 import { Rootbox } from './rootbox';
 import { Starhop } from './starhop';
@@ -140,6 +145,11 @@ export const MECHS: Partial<Record<Task['kind'], Mechanic<never>>> = {
   hush: Hush as Mechanic<never>,
   nightclock: Nightclock as Mechanic<never>,
   wash: Wash as Mechanic<never>,
+  prints: Prints as Mechanic<never>,
+  doorstep: Doorstep as Mechanic<never>,
+  winnow: Winnow as Mechanic<never>,
+  pegs: Pegs as Mechanic<never>,
+  dig: Dig as Mechanic<never>,
 };
 
 /** The plug-in for a task, typed loosely so the engine can call it with any task. */

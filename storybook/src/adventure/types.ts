@@ -517,7 +517,22 @@ export type HushTask = TaskBase & { kind: 'hush'; sources: { at: P2; name: strin
 export type NightclockTask = TaskBase & { kind: 'nightclock'; at: P2; dusk: number; dawn: number; marks: { name: string; frac: number }[] };
 /** Al-Muddaththir: wash your clothes clean: soak, scrub, rinse until the water runs clear, wring and hang (74:4). */
 export type WashTask = TaskBase & { kind: 'wash'; at: P2; items: string[]; clear: number };
-export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask | StandTask | ReachTask | ObserveTask | SkyTask | SailTask | ChoiceTask | ShareTask | PromiseTask | WeighTask | FlowTask | SiftTask | ReturnTask | GranaryTask | ValleyTask | GrowTask | PollenTask | RubbingTask | StreetsTask | SunPathTask | PointTask | BeaconTask | DoorsTask | OrderTask | HomeTask | MirrorTask | ShadowTask | EchoTask | AntsTask | RiverTask | ShelterTask | RainTask | VoiceTask | PastureTask | PlumbTask | SluiceTask | ShadesTask | MoonTask | VineTask | SpringTask | HarvestTask | MeasureTask | DawnTask | ShimmerTask | RollcallTask | LinksTask | CluesTask | ScopeTask | CouncilTask | AdornTask | SurveyTask | StationTask | DunesTask | ChannelsTask | CalmTask | RumourTask | RootboxTask | ReleaseTask | BlazesTask | StarhopTask | RecallTask | EstuaryTask | FiredrillTask | ForgeTask | ListenTask | WelcomeTask | SpanTask | BondTask | FridayTask | ChancesTask | PackTask | LoadsTask | AmendsTask | WingsTask | GleanTask | UnseenTask | PortionTask | ReflectTask | HushTask | NightclockTask | WashTask;
+/** Al-Qiyamah: match prints pressed in clay to your own fingertips, or say they are someone else's. */
+export type PrintsTask = TaskBase & { kind: 'prints'; at: P2; mine: { finger: string; type: 'loop' | 'whorl' | 'arch'; mark: number }[]; tablets: { at: P2; type: 'loop' | 'whorl' | 'arch'; mark: number; of: number }[] };
+
+/** Al-Insan: leave food at a doorstep, knock, and be gone before the door opens, wanting no thanks. */
+export type DoorstepTask = TaskBase & { kind: 'doorstep'; pantry: P2; doors: { at: P2; who: string; wants: string }[]; foods: string[]; away: number; secs: number };
+
+/** Al-Mursalat: toss grain on the threshing floor when the wind is just right. */
+export type WinnowTask = TaskBase & { kind: 'winnow'; at: P2; lo: number; hi: number; tosses: number };
+
+/** An-Naba: drive a tent's pegs, each opposite the last, so it stands firm in the wind. */
+export type PegsTask = TaskBase & { kind: 'pegs'; at: P2; n: number; r: number; rest: Reading };
+
+/** An-Nazi'at: dig a well layer by layer, lining the walls, until water comes and pasture grows. */
+export type DigTask = TaskBase & { kind: 'dig'; at: P2; layers: { name: string; to: number; tool: 'spade' | 'pick' }[]; line: number };
+
+export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask | StandTask | ReachTask | ObserveTask | SkyTask | SailTask | ChoiceTask | ShareTask | PromiseTask | WeighTask | FlowTask | SiftTask | ReturnTask | GranaryTask | ValleyTask | GrowTask | PollenTask | RubbingTask | StreetsTask | SunPathTask | PointTask | BeaconTask | DoorsTask | OrderTask | HomeTask | MirrorTask | ShadowTask | EchoTask | AntsTask | RiverTask | ShelterTask | RainTask | VoiceTask | PastureTask | PlumbTask | SluiceTask | ShadesTask | MoonTask | VineTask | SpringTask | HarvestTask | MeasureTask | DawnTask | ShimmerTask | RollcallTask | LinksTask | CluesTask | ScopeTask | CouncilTask | AdornTask | SurveyTask | StationTask | DunesTask | ChannelsTask | CalmTask | RumourTask | RootboxTask | ReleaseTask | BlazesTask | StarhopTask | RecallTask | EstuaryTask | FiredrillTask | ForgeTask | ListenTask | WelcomeTask | SpanTask | BondTask | FridayTask | ChancesTask | PackTask | LoadsTask | AmendsTask | WingsTask | GleanTask | UnseenTask | PortionTask | ReflectTask | HushTask | NightclockTask | WashTask | PrintsTask | DoorstepTask | WinnowTask | PegsTask | DigTask;
 
 export type Region = { id: string; name: string; at: P2 };
 

@@ -81,21 +81,33 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The House of Giving",
+  "tier": "playable",
+  "visual_theme": "A small hill town at evening with a pantry table in the square and three doors along the lanes: a poor family’s, an orphan’s house and a prison yard hatch",
   "quran_references": [
-   "76:1–31"
+   "76:1-3",
+   "76:7-9",
+   "76:25-26"
   ],
   "primary_mechanic": {
    "kind": "food-parcels",
-   "engine": "not built yet",
-   "text": "Prepare food parcels for the poor, orphans and captives, asking nothing back (76:8-9)."
+   "engine": "doorstep",
+   "text": "At the pantry pack each parcel with what that house asked for (stale bread and bruised figs are refused: give from what you love, 76:8), leave it on the step and knock, then be more than 7 m away when the door opens after 4 s; lingering is noted and the door waits until you step away (76:9, wanting no reward or thanks)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "shown the way (76:1-3, read)",
+   "morning and evening (76:25-26, read)"
+  ],
+  "narrative_structure": "A reading on the lane up, three secret parcels, then a reading on the way down",
+  "world_assets": [
+   "pantry table",
+   "three doorsteps",
+   "parcels"
+  ],
+  "environment_behaviour": [
+   "the parcel sits on the step after the knock",
+   "a warm light shows behind each door that received one"
+  ],
+  "learning_objective": "Know that the righteous give food they love and want no reward or thanks (76:8-9)",
   "interaction_tests": {
    "activate": "untested",
    "responds": "untested",
@@ -106,7 +118,7 @@
    "devices": "untested"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w076.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

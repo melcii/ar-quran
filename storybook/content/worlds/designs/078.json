@@ -149,21 +149,30 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Earth and Sky Museum",
+  "tier": "playable",
+  "visual_theme": "A wide windy plain at the foot of high mountains, late in the day, with a loose tent flapping",
   "quran_references": [
-   "78:1–40"
+   "78:1-16"
   ],
   "primary_mechanic": {
    "kind": "earth-sky-museum",
-   "engine": "not built yet",
-   "text": "A museum of large exhibits: mountains as pegs, sleep as rest, night as covering (78:6-16)."
+   "engine": "pegs",
+   "text": "Drive six tent pegs round the tent, each straight across from the last before starting a new pair (out of turn the tent is pulled over and the peg slips out); when all hold, the tent stops swaying and you rest inside (78:6-7 mountains as pegs; 78:9-11 sleep a rest, night a covering)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "a resting place (78:6-8, read)",
+   "the great news (78:1-5, read)"
+  ],
+  "narrative_structure": "A reading on the plain, pegging the tent and resting, then a reading near the tent",
+  "world_assets": [
+   "tent with six ropes and pegs",
+   "plain under high mountains"
+  ],
+  "environment_behaviour": [
+   "the tent sways less with each peg",
+   "ropes tighten to each driven peg"
+  ],
+  "learning_objective": "Know the signs of 78:6-16: the earth a resting place, the mountains as pegs, sleep a rest",
   "interaction_tests": {
    "activate": "untested",
    "responds": "untested",
@@ -174,7 +183,7 @@
    "devices": "untested"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w078.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

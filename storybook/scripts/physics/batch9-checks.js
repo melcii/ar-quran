@@ -62,7 +62,6 @@ const ONLY = process.env.ONLY ? process.env.ONLY.split(',') : null;
 
   const stand = async (p, x, z) => { await p.evaluate(([x, z]) => globalThis.__adv.teleport(x, z), [x, z]); await p.waitForTimeout(1200); };
 
-  /* ---- loads (65) ---- */
 
   const press = async (p, label, n = 1) => { for (let k = 0; k < n; k++) { await p.getByLabel(label, { exact: true }).click(); await p.waitForTimeout(80); } };
 
