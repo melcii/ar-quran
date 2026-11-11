@@ -108,21 +108,31 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Tower of Treasures",
+  "tier": "playable",
+  "visual_theme": "A busy town market on a bright morning with stalls heaped high under a string of bunting",
   "quran_references": [
-   "102:1–8"
+   "102:1-5",
+   "102:8"
   ],
   "primary_mechanic": {
    "kind": "enough-tower",
-   "engine": "not built yet",
-   "text": "Climb a tower of things and discover you can leave most of them (102:1-2)."
+   "engine": "errand",
+   "text": "At four stalls, buy exactly what the household list says (4 loaves, 6 eggs, 1 jar of oil, 2 bunches of dates) while each stallholder calls out to buy more than the neighbours; too few is refused (someone goes without) and more is refused as piling up (102:1)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "piling up (102:1-4, read)",
+   "knowledge of certainty (102:5, read)"
+  ],
+  "narrative_structure": "A reading at the market gate, the shopping list, then a reading on the way home",
+  "world_assets": [
+   "four stalls with crates heaped high",
+   "bunting",
+   "basket"
+  ],
+  "environment_behaviour": [
+   "a basket appears at each stall once its goods are bought"
+  ],
+  "learning_objective": "Know that competing to pile up more distracts us, and we will be asked about blessings (102:1, 102:8)",
   "interaction_tests": {
    "activate": "untested",
    "responds": "untested",
@@ -133,7 +143,7 @@
    "devices": "untested"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w102.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

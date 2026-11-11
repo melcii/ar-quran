@@ -51,6 +51,11 @@ import { Pen } from './pen';
 import { Abacus } from './abacus';
 import { Sight } from './sight';
 import { Speck } from './speck';
+import { Gaits } from './gaits';
+import { Carding } from './carding';
+import { Errand } from './errand';
+import { Hourglass } from './hourglass';
+import { Chalk } from './chalk';
 import { Release } from './release';
 import { Rootbox } from './rootbox';
 import { Starhop } from './starhop';
@@ -190,6 +195,11 @@ export const MECHS: Partial<Record<Task['kind'], Mechanic<never>>> = {
   abacus: Abacus as Mechanic<never>,
   sight: Sight as Mechanic<never>,
   speck: Speck as Mechanic<never>,
+  gaits: Gaits as Mechanic<never>,
+  carding: Carding as Mechanic<never>,
+  errand: Errand as Mechanic<never>,
+  hourglass: Hourglass as Mechanic<never>,
+  chalk: Chalk as Mechanic<never>,
 };
 
 /** The plug-in for a task, typed loosely so the engine can call it with any task. */
