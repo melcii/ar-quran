@@ -254,17 +254,17 @@
   ],
   "learning_objective": "Notice the sign of 18:17 and the lessons of the four stories: faith, humility, learning, using strength to help",
   "interaction_tests": {
-   "activate": "pass (2026-11-04, headless Chromium, software WebGL: turned the day-dial with the on-screen button)",
-   "responds": "pass (2026-11-04, headless Chromium, software WebGL: the day turns to sunrise; the goal points to the morning light)",
-   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status line: \"Find the morning light by the cave and mark it\")",
-   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
-   "completion": "pass (2026-11-04, headless Chromium, software WebGL: sun path [0,1,2,3], barrier [0,1,2,3,4])",
-   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"cave\",\"sun\",\"gardens\",\"seas\",\"barrier\"])",
-   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
   "built_in": "src/adventure/worlds/w018.ts",
-  "tested_hash": "8c60b64cac7c"
+  "tested_hash": "301fd087119d"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
