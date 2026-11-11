@@ -21,8 +21,9 @@
   },
   "4": {
    "desktop": "pass",
-   "note": "Some drawn footpaths cross solids (layout note; the walker goes round).",
-   "hash": "6dd6c2e8883a"
+   "phone": "not run",
+   "hash": "8e4f6e407dfc",
+   "date": "2026-11-11"
   },
   "5": {
    "desktop": "pass",
@@ -56,6 +57,12 @@
   "10": {
    "desktop": "pass",
    "hash": "0ff74fa5fc85"
+  },
+  "11": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "88fa173ef49d",
+   "date": "2026-11-11"
   },
   "12": {
    "desktop": "pass",

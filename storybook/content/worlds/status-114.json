@@ -120,10 +120,9 @@
    "unique_world": "Yes",
    "gameplay_functional": "Yes (interaction tests pass, headless)",
    "movement_collision": "Pass (desktop, 2026-11-06)",
-   "mobile": "No",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
-    "Some drawn footpaths cross solids (layout note; the walker goes round).",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
   },
@@ -332,18 +331,17 @@
     "choice",
     "stand"
    ],
-   "status": "Playable",
+   "status": "Tested",
    "quran_text_complete": "Yes: 123 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
    "story_coverage": "7 of 7 played, 0 read only, 0 missing",
    "story_complete": true,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
    "gameplay_functional": "Yes (interaction tests pass, headless)",
-   "movement_collision": "Not run",
-   "mobile": "Phone emulation (interaction tests); no real phone",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
-    "Movement and collision sweep not run yet.",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
   },
@@ -825,7 +823,7 @@
    "unique_world": "Yes",
    "gameplay_functional": "Not fully tested",
    "movement_collision": "Not run",
-   "mobile": "Phone emulation (interaction tests); no real phone",
+   "mobile": "No",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
     "Played in another surah's world (story atlas), read here: Fire at the mount (28:29-35, played in surah 20).",

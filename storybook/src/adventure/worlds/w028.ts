@@ -41,7 +41,7 @@ export const W028: WorldDef = {
     radius: 50,
     base: rolling({ radius: 50, amp: 1.2, seed: 28, streams: beds(RIVER), shapes: [{ x: 0, z: -46, r: 12, h: 5 }] }),
     palette: PAL.coast,
-    paths: [curve([[-5, -36], [-4, -24], [6, -24], [12, -12], [12, -2], [9.5, 8], [9, 14], [6, 19]])],
+    paths: [curve([[-5, -36], [-4, -24], [6, -24], [12, -12], [12, -2], [15, 0], [17, 3], [16.5, 3.5], [11.5, 8.5], [9, 14], [6, 19]])],
     water: -1.8,
     flats: [{ x: 2, z: -40, r: 3 }],
   },
@@ -58,7 +58,7 @@ export const W028: WorldDef = {
   mountains: { color: '#9a90a8', height: 1 },
   start: [-5, -34],
   startYaw: 0,
-  structures: [{ type: 'bridge', x: -3.2, z: -24, to: [5.6, -24], w: 1.4 }, { type: 'dock', x: 3, z: 20, rot: 0, w: 2, d: 4 }, { type: 'well', x: -20, z: 14 }],
+  structures: [{ type: 'bridge', x: -6, z: -24, to: [8, -24], w: 1.4 }, { type: 'bridge', x: 16.5, z: 3.5, to: [11.5, 8.5], w: 1.4 }, { type: 'dock', x: 3, z: 20, rot: 0, w: 2, d: 4 }, { type: 'well', x: -20, z: 14 }],
   herds: [{ animal: 'sheep', at: [-26, 22], r: 3, n: 5 }],
   welcome:
     'Welcome to the River and the Chest. Surah Al-Qasas tells how the mother of Musa was inspired to place her baby in the river, and promised that he would be returned to her. Here the chest floats empty. Read at the lantern first.',
