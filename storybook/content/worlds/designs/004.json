@@ -164,13 +164,13 @@
   ],
   "learning_objective": "Fairness means giving what is due, which is not always the same share",
   "interaction_tests": {
-   "activate": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
-   "responds": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
-   "feedback": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
-   "goal": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
-   "completion": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
-   "saved": "untested (save is written; reload not re-checked in the 7-point run)",
-   "devices": "untested (desktop headless only; not run in phone emulation)"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
   "built_in": "src/adventure/worlds/w004.ts",

@@ -9,8 +9,9 @@
   },
   "2": {
    "desktop": "pass",
-   "note": "Camera grazes a moving prop in 20 of 10,981 frames.",
-   "hash": "8008a28cfd48"
+   "phone": "not run",
+   "hash": "d3a2ae84384a",
+   "date": "2026-11-11"
   },
   "3": {
    "desktop": "pass",
@@ -25,7 +26,9 @@
   },
   "5": {
    "desktop": "pass",
-   "hash": "afa18a0dbd68"
+   "phone": "not run",
+   "hash": "afa18a0dbd68",
+   "date": "2026-11-11"
   },
   "6": {
    "desktop": "pass",
@@ -34,16 +37,21 @@
   },
   "7": {
    "desktop": "pass",
-   "phone": "pass",
-   "hash": "34a1a68b529c"
+   "phone": "not run",
+   "hash": "e396ac69dc5c",
+   "date": "2026-11-11"
   },
   "8": {
    "desktop": "pass",
-   "hash": "0884d04f5f87"
+   "phone": "not run",
+   "hash": "0884d04f5f87",
+   "date": "2026-11-11"
   },
   "9": {
    "desktop": "pass",
-   "hash": "fb46de4e38c2"
+   "phone": "not run",
+   "hash": "7a2fdccad090",
+   "date": "2026-11-11"
   },
   "10": {
    "desktop": "pass",
@@ -66,7 +74,9 @@
   },
   "15": {
    "desktop": "pass",
-   "hash": "6deb47258aee"
+   "phone": "not run",
+   "hash": "157badc1a9ab",
+   "date": "2026-11-11"
   },
   "16": {
    "desktop": "pass",
@@ -74,7 +84,9 @@
   },
   "17": {
    "desktop": "pass",
-   "hash": "38af6b5a8d1c"
+   "phone": "not run",
+   "hash": "63341cb707b5",
+   "date": "2026-11-11"
   },
   "18": {
    "desktop": "pass",
@@ -133,7 +145,9 @@
   },
   "29": {
    "desktop": "pass",
-   "hash": "29761a670f74"
+   "phone": "not run",
+   "hash": "6a985824aca2",
+   "date": "2026-11-11"
   },
   "30": {
    "desktop": "pass",
@@ -153,7 +167,9 @@
   },
   "34": {
    "desktop": "pass",
-   "hash": "d1e73870b983"
+   "phone": "not run",
+   "hash": "2fe53b1d5b4e",
+   "date": "2026-11-11"
   },
   "35": {
    "desktop": "pass",
@@ -167,7 +183,9 @@
   },
   "37": {
    "desktop": "pass",
-   "hash": "26a6ee5385d3"
+   "phone": "not run",
+   "hash": "8cfd9e00a7c5",
+   "date": "2026-11-11"
   },
   "38": {
    "desktop": "pass",
@@ -355,7 +373,7 @@
   "69": {
    "desktop": "pass",
    "phone": "not run",
-   "hash": "ebac418596bd",
+   "hash": "8a53c4b0ed35",
    "date": "2026-11-11"
   },
   "70": {
@@ -475,7 +493,7 @@
   "89": {
    "desktop": "pass",
    "phone": "not run",
-   "hash": "9d505ea557a8",
+   "hash": "5448dcc846ca",
    "date": "2026-11-11"
   },
   "90": {
