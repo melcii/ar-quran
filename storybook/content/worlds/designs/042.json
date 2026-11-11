@@ -116,32 +116,49 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Council House",
+  "tier": "playable",
+  "visual_theme": "A small coastal village around a square with a long council table, four houses, fields, a pen and a harbour",
   "quran_references": [
-   "42:36–43"
+   "42:28",
+   "42:32-33",
+   "42:36-38",
+   "42:40",
+   "42:43"
   ],
   "primary_mechanic": {
    "kind": "consultation-table",
-   "engine": "not built yet",
-   "text": "Help a fictional village decide by hearing each household and finding a fair plan together (42:38)."
+   "engine": "council",
+   "text": "Knock at each of four households to hear its need (a lantern lights at each door heard), then choose a plan at the council table; a plan that leaves out any household is refused and shows whose need it misses (42:38). The village is a fictional setting."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "consultation (42:36-38, read)",
+   "ships like mountains (42:32-33, read at the harbour)",
+   "rain after despair (42:28, read)"
+  ],
+  "narrative_structure": "The ayah on consultation, four doors, the council table, then the harbour and the rain",
+  "world_assets": [
+   "council table with stools",
+   "four village houses",
+   "door lanterns",
+   "harbour with dock and boat"
+  ],
+  "environment_behaviour": [
+   "a door lantern lights when the household is heard",
+   "the agreed plan is laid on the table"
+  ],
+  "learning_objective": "Practise consultation (42:38): hear everyone before deciding together",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w042.ts",
+  "tested_hash": "f50a0539f168"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

@@ -17,7 +17,9 @@
   {
    "title": "Companions of the trench",
    "reference": "85:4-9",
-   "anchor_phrase": "trench"
+   "anchor_phrase": "trench",
+   "treatment": "reading",
+   "treatment_reason": "Read only; no one is shown."
   }
  ],
  "summary_for_children": "Al-Buruj tells of believers who stayed firm in faith when people of the trench harmed them.",
@@ -127,32 +129,44 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Constellation of Courage",
+  "tier": "playable",
+  "visual_theme": "An old stone library in a hill town under a night sky of great stars, its roof leaking in one corner and the sun coming in at the west window",
   "quran_references": [
-   "85:1–22"
+   "85:1-9",
+   "85:21-22"
   ],
   "primary_mechanic": {
    "kind": "constellation-memorial",
-   "engine": "not built yet",
-   "text": "Light constellations in a calm memorial sky; the trench is narrated only (85:4-8)."
+   "engine": "shelves",
+   "text": "Carry four things (an old handwritten Quran, new paper, ink pots, a bag of reed pens) from the table to four places (high dry shaded shelf, sunny window ledge, shelf under the leak, floor by the door); each place holds one thing and must give what the thing needs (dry, out of the sun, off the floor); a wrong place is refused with its reason, and placed things can be picked up again (85:21-22, a Preserved Tablet; caring for our copies)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "the sky of great stars (85:1-3, read)",
+   "the people of the trench (85:4-9, read only; no one and no fire shown)"
+  ],
+  "narrative_structure": "A reading on the lane, the library, then the trench account read in the garden",
+  "world_assets": [
+   "walled library",
+   "table of books and tools",
+   "four keeping places, one under a leak"
+  ],
+  "environment_behaviour": [
+   "each thing appears where it was put",
+   "the leak pools on the floor under its shelf"
+  ],
+  "learning_objective": "Know that the Quran is in a Preserved Tablet, and look after our copies with care (85:21-22)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w085.ts",
+  "tested_hash": "502b19e474d0"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

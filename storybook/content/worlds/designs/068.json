@@ -18,7 +18,9 @@
   {
    "title": "Owners of the garden",
    "reference": "68:17-33",
-   "anchor_phrase": "companions of the garden"
+   "anchor_phrase": "companions of the garden",
+   "treatment": "reading",
+   "treatment_reason": "Read after the harvest (68:17-27); the play does the opposite of the owners: the gate is opened for those in need first. The owners and the ruin of the garden are never shown."
   }
  ],
  "summary_for_children": "Al-Qalam means The Pen. It praises the Prophet's (peace be upon him) great character and tells of garden owners who planned to keep everything from the poor and lost their garden.",
@@ -119,32 +121,47 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Orchard of Generosity",
+  "tier": "playable",
+  "visual_theme": "A walled orchard of fig trees with a stone gate and a bell, on harvest morning",
   "quran_references": [
-   "68:17–33"
+   "68:1",
+   "68:4",
+   "68:17-20",
+   "68:24-27",
+   "68:48"
   ],
   "primary_mechanic": {
    "kind": "orchard-share-plan",
-   "engine": "not built yet",
-   "text": "Plan a harvest that keeps a share for those in need, unlike the garden owners (68:17-33)."
+   "engine": "glean",
+   "text": "Open the gate and ring the bell before harvesting (picking first is refused, recalling the owners of 68:24); then pick each tree from its branches and leave the fallen fruit for gleaners (picking it up is refused)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "by the pen (68:1, 68:4, read)",
+   "be patient (68:48, read)"
+  ],
+  "narrative_structure": "A reading on the lane, the gate and the harvest, then a reading among the trees",
+  "world_assets": [
+   "walled orchard",
+   "gate with a bell",
+   "fruit on branches and fallen fruit"
+  ],
+  "environment_behaviour": [
+   "the gate swings open",
+   "fruit leaves the branches as each tree is picked; fallen fruit stays"
+  ],
+  "learning_objective": "Know the story of the garden owners who would not share (68:17-27)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w068.ts",
+  "tested_hash": "9f7ba70a52f1"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

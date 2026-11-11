@@ -18,7 +18,9 @@
   {
    "title": "Nuh calls his people",
    "reference": "71:5-20",
-   "anchor_phrase": "night and day"
+   "anchor_phrase": "night and day",
+   "treatment": "reading",
+   "treatment_reason": "Read only; no one is shown."
   }
  ],
  "summary_for_children": "Surah Nuh tells how Nuh called his people for a very long time, by day and by night, telling them to ask Allah's forgiveness so He would send rain, gardens and rivers.",
@@ -135,32 +137,46 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "Nuh's Village of Signs",
+  "tier": "playable",
+  "visual_theme": "A walled courtyard in morning sun with a gap in the west wall, mirrors on stands, and a seedling in a dark corner",
   "quran_references": [
-   "71:1–28"
+   "71:10-12",
+   "71:15-17",
+   "71:19-20"
   ],
   "primary_mechanic": {
    "kind": "day-and-night-appeals",
-   "engine": "not built yet",
-   "text": "Visit places by day and by night, in public and in private (71:5-9), and watch the sky signs of 71:15-16."
+   "engine": "reflect",
+   "text": "Turn four mirrors (slanted either way or tipped flat) until the beam of sunlight from the gap, sent back from mirror to mirror, reaches the seedling in the dark corner (71:16, the moon a light, the sun a lamp; the moon shines with the sun’s light sent back). One mirror must be tipped flat or it throws the light out."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "ask forgiveness (71:10-12, read)",
+   "wide roads (71:19-20, read)"
+  ],
+  "narrative_structure": "A reading by the oaks, the courtyard of light, then a reading on the road out",
+  "world_assets": [
+   "walled courtyard",
+   "four mirrors on stands",
+   "sunbeam",
+   "seedling"
+  ],
+  "environment_behaviour": [
+   "the light beam follows the mirrors as they turn",
+   "the seedling grows and glows when the light reaches it"
+  ],
+  "learning_objective": "Know that Allah made the sun a lamp and the moon a light (71:16)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w071.ts",
+  "tested_hash": "0788b6613f54"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

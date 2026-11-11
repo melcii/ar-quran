@@ -18,7 +18,9 @@
   {
    "title": "Musa sent to Pharaoh",
    "reference": "79:15-26",
-   "anchor_phrase": "Tuwa"
+   "anchor_phrase": "Tuwa",
+   "treatment": "reading",
+   "treatment_reason": "Read only; no one is shown."
   }
  ],
  "summary_for_children": "An-Nazi'at tells of Musa called in the valley of Tuwa and sent to Pharaoh, and shows how Allah raised the sky and spread the earth.",
@@ -129,33 +131,47 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Palace and the Cosmos",
+  "tier": "playable",
+  "visual_theme": "A dry upland by a shepherds’ track below firm mountains, with an empty trough and a sheep pen",
   "quran_references": [
-   "79:15–26",
-   "79:27–46"
+   "79:15-19",
+   "79:27-33",
+   "79:40-41"
   ],
   "primary_mechanic": {
    "kind": "cosmos-builder",
-   "engine": "not built yet",
-   "text": "Raise a sky ceiling, spread the earth and set mountains in a scale model (79:27-33)."
+   "engine": "dig",
+   "text": "Dig a well 7 m deep through topsoil, clay, a band of rock, gravel and damp sand, choosing spade or pick for each layer and lining the walls before going more than 2 m below the lining (refused otherwise); at water the trough fills and the ground greens (79:30-33, its water and its pasture)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "go to Pharaoh (79:15-19, read; Musa is not shown)",
+   "holding the self back (79:40-41, read)"
+  ],
+  "narrative_structure": "A reading on the track, the well, then a reading on the rise",
+  "world_assets": [
+   "well mouth with stone ring",
+   "spoil heap",
+   "trough",
+   "sheep pen"
+  ],
+  "environment_behaviour": [
+   "the spoil heap grows as you dig",
+   "water fills the well and trough",
+   "pasture greens around the well"
+  ],
+  "learning_objective": "Know that Allah brought out from the earth its water and pasture as provision (79:30-33)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w079.ts",
+  "tested_hash": "a58b7bad2c53"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

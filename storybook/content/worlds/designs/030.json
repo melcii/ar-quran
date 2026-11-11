@@ -19,7 +19,9 @@
   {
    "title": "The promise about the Romans",
    "reference": "30:2-4",
-   "anchor_phrase": "Byzantines"
+   "anchor_phrase": "Byzantines",
+   "treatment": "reading",
+   "treatment_reason": "a brief foretelling about a war between empires; no battle is played"
   }
  ],
  "summary_for_children": "Ar-Rum means The Romans. It begins with a promise that came true and points to signs of Allah: our different languages and colours, the winds, rain, and how dead earth comes back to life.",
@@ -178,7 +180,8 @@
    "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": "src/adventure/worlds/w030.ts"
+  "built_in": "src/adventure/worlds/w030.ts",
+  "tested_hash": "e9d93d38aeed"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

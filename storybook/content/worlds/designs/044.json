@@ -18,7 +18,9 @@
   {
    "title": "Leaving Egypt",
    "reference": "44:17-31",
-   "anchor_phrase": "sea"
+   "anchor_phrase": "sea",
+   "treatment": "reading",
+   "treatment_reason": "The leaving of Egypt and the drowning are never shown; the survey of what was left behind (44:25-27) is the played part."
   }
  ],
  "summary_for_children": "Ad-Dukhan means The Smoke. It says the Quran was sent down on a blessed night and tells how Pharaoh's people left behind gardens and springs when Allah saved the Children of Israel.",
@@ -128,32 +130,51 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Valley of Warnings",
+  "tier": "playable",
+  "visual_theme": "A quiet green valley at dawn with empty gardens, springs, fields, columned buildings and shaded resting places, by a still shore",
   "quran_references": [
-   "44:10–33"
+   "44:2-6",
+   "44:17-31",
+   "44:38-39"
   ],
   "primary_mechanic": {
    "kind": "left-behind-inventory",
-   "engine": "not built yet",
-   "text": "Count the gardens, springs and fine places a proud people left behind (44:25-27), as a quiet survey."
+   "engine": "survey",
+   "text": "Walk the empty valley and count each garden, spring, field, fine building and place of ease (a flag marks each), then write in the ledger how many of each (44:25-27). A wrong count is refused. No one is shown; the drowning is read only."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "a blessed night (44:2-6, read)",
+   "leaving by night (44:17-24, read at the shore)",
+   "saved from Pharaoh (44:30-31, read)",
+   "created in truth (44:38-39, read)"
+  ],
+  "narrative_structure": "The blessed night, the leaving by the shore, the survey of the valley, then what lasts",
+  "world_assets": [
+   "empty gardens",
+   "springs",
+   "fields of crops",
+   "columned buildings",
+   "canopies with cushions",
+   "ledger stone",
+   "count flags"
+  ],
+  "environment_behaviour": [
+   "a flag appears beside each thing counted",
+   "the ledger glows once everything is counted"
+  ],
+  "learning_objective": "Reflect on what a proud people left behind (44:25-29) and what lasts",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w044.ts",
+  "tested_hash": "693e01b05cc5"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

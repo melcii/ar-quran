@@ -85,7 +85,7 @@ export const W002: WorldDef = {
     palette: PAL.meadow,
     paths: [RING],
     pathWidth: 1.9,
-    flats: [
+    flats: [{ x: 4, z: 82, r: 2.5 }, { x: -4, z: 82, r: 2.5 }, 
       { ...pt(at(180, 0, 0)), r: 14 },
       { ...pt(at(270, 10, 0)), r: 9, paint: '#ead6aa' },
       { ...pt(at(0, 0, 0)), r: 16 },
@@ -180,6 +180,26 @@ export const W002: WorldDef = {
   welcome:
     'Welcome to the Great Story Atlas. Al-Baqarah, "The Cow", is the longest surah of the Quran, with 286 ayahs and several stories. This hall holds a map of four story lands and a door into each. The first door is open; each next door opens when you finish the land before it. The map on the floor lights up as you go.',
   tasks: [
+    {
+      id: 'talut',
+      kind: 'read',
+      at: [4, 82],
+      marker: 'sign',
+      title: 'Talut and the river',
+      goal: 'Read at the sign near the way in',
+      adaptation: 'Talut, his soldiers, Dawud and the battle are read only; none is shown.',
+      reading: { title: 'Talut and the river', refs: [[2, 249], [2, 250], [2, 251]], note: 'Talut set out with his soldiers and said: Allah will test you with a river. Whoever drinks from it is not with me, except one who scoops up a single handful. They drank from it, except a few. Those who were certain they would meet Allah said: How many a small company has overcome a large company by permission of Allah. And Allah is with the patient. Then Dawud killed Jalut, and Allah gave him kingship and wisdom.' },
+    },
+    {
+      id: 'hundred',
+      kind: 'read',
+      at: [-4, 82],
+      marker: 'tablet',
+      title: 'The town and the hundred years',
+      goal: 'Read at the tablet near the way in',
+      adaptation: 'The man, the town and the raising are read only; nothing of the miracle is shown.',
+      reading: { title: 'The town and the hundred years', refs: [[2, 259]], note: 'Or like the one who passed by a town fallen into ruins. He said: How will Allah bring this to life after its death? So Allah caused him to die for a hundred years, then raised him, and showed him his food and drink unchanged, and his donkey, and how the bones are raised and clothed with flesh. He said: I know that Allah is over all things capable.' },
+    },
     // 1. Garden of Beginnings
     {
       id: 'b1',

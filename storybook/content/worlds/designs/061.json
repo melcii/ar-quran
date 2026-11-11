@@ -88,34 +88,45 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Workshop of Commitment",
+  "tier": "playable",
+  "visual_theme": "An orchard on a slope behind an old stone wall with a fallen stretch and stones lying ready",
   "quran_references": [
-   "61:2–4",
-   "61:6",
-   "61:10–14"
+   "61:2-4",
+   "61:10-11",
+   "61:14"
   ],
   "primary_mechanic": {
    "kind": "wall-of-ranks",
-   "engine": "not built yet",
-   "text": "Build a solid wall with a team, each block placed when promised (61:2-4)."
+   "engine": "bond",
+   "text": "Rebuild the fallen stretch of wall course by course with long and short stones; a stone that would put a joint right above a joint in the course below is refused, then push the finished wall and it holds as one (61:4, a picture of “a structure joined firmly”)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "why say what you do not do (61:2-3, read)",
+   "the best trade (61:10-11, read)",
+   "helpers of Allah (61:14, read)"
+  ],
+  "narrative_structure": "A reading on the path, the wall, then two readings in the orchard",
+  "world_assets": [
+   "old stone wall with a fallen stretch",
+   "long and short stones",
+   "orchard of olives and figs"
+  ],
+  "environment_behaviour": [
+   "each course appears on the wall as it is laid"
+  ],
+  "learning_objective": "Know that saying without doing is hated by Allah (61:2-3) and the image of a structure joined firmly (61:4)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w061.ts",
+  "tested_hash": "2a0d1a5d4a5c"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

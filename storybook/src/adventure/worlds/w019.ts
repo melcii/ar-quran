@@ -2,8 +2,10 @@
 // stream, a prayer niche and a pavilion facing the sunrise. The core play is
 // answering without words: each question is answered by pointing at
 // something in the world, recalling the vow not to speak and the pointing in
-// 19:26-29. Zakariyya, Maryam, Isa, Yahya and Ibrahim are never shown; the
-// grove is a quiet place, and no one is pictured in it.
+// 19:26-29. Then the surah's "mention in the Book" passages: Ibrahim and his
+// father (gentle words at a signpost), Musa (a reading), Ismail (keeping
+// promises in the grove) and Idris (a reading). No prophet is ever shown;
+// the grove is a quiet place, and no one is pictured in it.
 import { curve } from '../terrain';
 import type { WorldDef } from '../types';
 import { LOOKS, PAL, rolling } from './common';
@@ -59,30 +61,95 @@ export const W019: WorldDef = {
       ],
       outro: 'Four answers, and not one word spoken.',
     },
+    // "Mention in the Book": Ibrahim and his father, then Musa, Ismail and Idris (19:41-58).
+    {
+      id: 'father',
+      kind: 'choice',
+      requires: ['quiet'],
+      at: [-12, 22],
+      back: [-4, 30],
+      marker: 'sign',
+      title: 'O my father',
+      goal: 'Answer the situations at the signpost by the olive trees',
+      intro: 'Surah Maryam tells how Ibrahim spoke to his father: four times he began with "O my father", gently, even though his father would not listen. Think about how you speak to someone you love when you disagree.',
+      adaptation: 'The situations are everyday ones written for this game, not events from the surah. Ibrahim and his father are not shown.',
+      scenes: [
+        {
+          text: 'Your father wants to do something you have learned is wrong. You want to tell him.',
+          options: [
+            { text: 'Shout that he is wrong in front of everyone.', ok: false, reply: 'Even when he was right, Ibrahim began each time with "O my father", gently (19:42-45). Try again.' },
+            { text: 'Wait for a quiet moment and say kindly what you learned.', ok: true, reply: 'Yes. Ibrahim spoke with respect and care, and shared what he knew.' },
+          ],
+        },
+        {
+          text: 'You explained kindly, but your parent is upset and tells you to go away for a while.',
+          options: [
+            { text: 'Say "Peace be upon you", and pray for them.', ok: true, reply: 'This is what Ibrahim answered: "Peace be upon you. I will ask my Lord to forgive you" (19:47).' },
+            { text: 'Say something hurtful back.', ok: false, reply: 'A hurtful answer closes the door. Think again: what did Ibrahim say?' },
+          ],
+        },
+      ],
+      reading: { title: 'Peace be upon you', refs: [[19, 42], [19, 43], [19, 47]], note: 'Ibrahim said: "O my father, why do you worship what does not hear and does not see and cannot help you at all? O my father, knowledge has come to me that has not come to you, so follow me; I will guide you to an even path." When his father refused, he said: "Peace be upon you. I will ask my Lord to forgive you; He is ever kind to me."' },
+    },
     {
       id: 'peace',
       kind: 'read',
-      requires: ['quiet'],
+      requires: ['father'],
       at: [6, 16],
       marker: 'lantern',
-      title: 'Peace be upon you',
+      title: 'Affection in the hearts',
       goal: 'Read at the lantern by the bench',
       reading: {
         title: 'Peace, and affection',
-        refs: [[19, 47], [19, 96]],
-        note: 'Ibrahim answered his father gently: Peace be upon you; I will ask my Lord to forgive you. And for those who believe and do good, the Most Merciful will place affection in people\'s hearts.',
+        refs: [[19, 48], [19, 96]],
+        note: 'Ibrahim said: "I will leave you and what you call on besides Allah, and I will call on my Lord." And for those who believe and do good, the Most Merciful will place affection in people\'s hearts.',
       },
+    },
+    {
+      id: 'musa',
+      kind: 'read',
+      requires: ['peace'],
+      at: [24, 2],
+      marker: 'tablet',
+      title: 'Musa',
+      goal: 'Read the stone at the foot of the hill',
+      reading: { title: 'Called from the side of the mount', refs: [[19, 51], [19, 52], [19, 53]], note: 'And mention in the Book Musa. He was chosen, a messenger and a prophet. We called him from the right side of the mount and brought him near, speaking to him. And by Our mercy We gave him his brother Harun as a prophet.' },
+    },
+    {
+      id: 'ismail',
+      kind: 'promise',
+      requires: ['musa'],
+      at: [14, 24],
+      title: 'True to his promise',
+      goal: 'Make the two promises at the board, then keep each one before its candle burns down',
+      intro: 'Ismail was true to his promise. Two notes on the board ask for help in the grove. Promise, then keep your word.',
+      adaptation: 'The notes, candles and time limits are a game idea about keeping promises (19:54). Ismail is not shown.',
+      promises: [
+        { label: 'fill the birds\' water bowl at the stream', at: [-2, 2], verb: 'Fill the water bowl', secs: 120, done: 'The birds have water.' },
+        { label: 'sweep the step of the prayer niche', at: [-14, -12], verb: 'Sweep the step', secs: 170, done: 'The step is swept clean.' },
+      ],
+      after: { title: 'True to his promise', refs: [[19, 54], [19, 55]], note: 'And mention in the Book Ismail. He was true to his promise, a messenger and a prophet. He used to tell his family to pray and to give zakah, and his Lord was pleased with him.' },
+    },
+    {
+      id: 'idris',
+      kind: 'read',
+      requires: ['ismail'],
+      at: [-24, 4],
+      marker: 'lantern',
+      title: 'Idris, and those given favour',
+      goal: 'Read at the lantern on the west side of the grove',
+      reading: { title: 'A man of truth', refs: [[19, 56], [19, 57], [19, 58]], note: 'And mention in the Book Idris. He was a man of truth and a prophet, and We raised him to a high station. These are the prophets Allah favoured: when the verses of the Most Merciful were recited to them, they fell down in prostration, weeping.' },
     },
   ],
   finale: {
     title: 'Quiet mercy',
     body: ['You answered every question without a word, by looking and pointing.', 'Surah Maryam is full of quiet prayers answered, and of mercy from the Most Merciful.'],
     ref: [19, 96],
-    questions: ['When is it better to be quiet than to speak?', 'What would you ask for in a quiet prayer?'],
+    questions: ['When is it better to be quiet than to speak?', 'How did Ibrahim speak to his father when they disagreed?', 'Which promise will you keep this week?'],
   },
   notes: [
     'Allah is never pictured, in any form.',
-    'No prophet is shown: Zakariyya, Yahya, Isa and Ibrahim never appear.',
+    'No prophet is shown: Zakariyya, Yahya, Isa, Ibrahim, Musa, Harun, Ismail and Idris never appear.',
     'Maryam is never pictured; the palm and the stream are a quiet place with no one in it.',
     'Answering by pointing is a game idea.',
   ],

@@ -119,32 +119,45 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The House of Sincere Actions",
+  "tier": "playable",
+  "visual_theme": "A new orchard terrace on a spring hillside with a red and a yellow marker post and a bundle of stakes",
   "quran_references": [
-   "98:1–8"
+   "98:1-3",
+   "98:5",
+   "98:7-8"
   ],
   "primary_mechanic": {
    "kind": "intention-and-action",
-   "engine": "not built yet",
-   "text": "Pair everyday actions with their intentions to make them complete (98:5)."
+   "engine": "sight",
+   "text": "Walk from the red post toward the yellow post and plant four stakes in a straight line, sighting back each time; a stake more than 0.6 m to one side is pulled up with its side and distance; stakes must go in order along the line. When true, a cord is stretched and saplings tied to each stake (98:5, upright)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "the clear proof (98:1-3, read)",
+   "the best of creatures (98:7-8, read)"
+  ],
+  "narrative_structure": "A reading on the path, the straight row, then a reading by the orchard well",
+  "world_assets": [
+   "two marker posts",
+   "stakes",
+   "cord",
+   "saplings"
+  ],
+  "environment_behaviour": [
+   "saplings and a straight cord appear once the row is true"
+  ],
+  "learning_objective": "Know that the upright religion is sincere worship, prayer and zakah (98:5)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w098.ts",
+  "tested_hash": "fcfee5cb2799"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

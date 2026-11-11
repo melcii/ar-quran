@@ -79,32 +79,43 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Neighborhood of Care",
+  "tier": "playable",
+  "visual_theme": "A farmyard full of a family’s belongings, four carriers of different strength, and a hill to cross to a new house",
   "quran_references": [
-   "65:1–7"
+   "65:2-3",
+   "65:7"
   ],
   "primary_mechanic": {
    "kind": "care-during-change",
-   "engine": "not built yet",
-   "text": "Help households through changes by bringing what each needs, with family rulings kept to an information area (65:6-7)."
+   "engine": "loads",
+   "text": "Assign nine parcels (weights 1-6) to four carriers with capacities 12, 7, 5 and 3 so that every parcel goes and none is overloaded (the only fit is exact; overloading is refused with the reason), then lead the loaded carriers, which follow you, over the hill to the new house (65:7, after hardship ease)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "a way out (65:2-3, read; the rulings are not played)"
+  ],
+  "narrative_structure": "A reading by the yard, sharing the load, then the walk over the hill",
+  "world_assets": [
+   "big cart, small cart, donkey, handcart",
+   "parcels in the yard",
+   "hill and two houses"
+  ],
+  "environment_behaviour": [
+   "parcels stack on each carrier as assigned",
+   "the carriers follow the explorer over the hill"
+  ],
+  "learning_objective": "Know that Allah does not ask anyone for more than He gave them, and brings ease after hardship (65:7)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w065.ts",
+  "tested_hash": "c950ed7caa32"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

@@ -106,32 +106,42 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Garden of Gratitude",
+  "tier": "playable",
+  "visual_theme": "A walled garden in late winter with a stone water channel and an old fig tree",
   "quran_references": [
-   "108:1–3"
+   "108:1-3"
   ],
   "primary_mechanic": {
    "kind": "gratitude-garden",
-   "engine": "not built yet",
-   "text": "Water a garden stream and pray and give thanks (108:2); not a picture of al-Kawthar."
+   "engine": "prune",
+   "text": "Prune an eight-branch fig tree from a drawing: cut the two dead branches (grey and bare) and the two crossing branches (growing inward across the middle); cutting a healthy budded branch is refused. The tree in the garden loses each cut branch (108:3, cut off; al-Kawthar is never pictured)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "we have given you (108:1, read)",
+   "the whole surah (108:1-3, read)"
+  ],
+  "narrative_structure": "A reading at the gate, the pruning, then a reading by the wall",
+  "world_assets": [
+   "fig tree with branches",
+   "walls",
+   "water channel"
+  ],
+  "environment_behaviour": [
+   "each cut branch disappears from the tree"
+  ],
+  "learning_objective": "Know that Allah gives abundance; pray and sacrifice to Him (108:1-2)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w108.ts",
+  "tested_hash": "4e2f6a9578fd"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

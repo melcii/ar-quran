@@ -437,7 +437,195 @@ export type VineTask = TaskBase & { kind: 'vine'; root: P2; frame: P2; bundle: P
 export type SpringSign = 'reeds' | 'damp' | 'birds' | 'ferns' | 'salt';
 export type SpringTask = TaskBase & { kind: 'spring'; board: P2; rounds: { need: SpringSign[]; spots: { at: P2; signs: SpringSign[] }[]; reading: Reading }[]; reading?: Reading };
 export type HarvestTask = TaskBase & { kind: 'harvest'; bag: P2; plots: P2[]; stage: number; stagger: number; reading?: Reading };
-export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask | StandTask | ReachTask | ObserveTask | SkyTask | SailTask | ChoiceTask | ShareTask | PromiseTask | WeighTask | FlowTask | SiftTask | ReturnTask | GranaryTask | ValleyTask | GrowTask | PollenTask | RubbingTask | StreetsTask | SunPathTask | PointTask | BeaconTask | DoorsTask | OrderTask | HomeTask | MirrorTask | ShadowTask | EchoTask | AntsTask | RiverTask | ShelterTask | RainTask | VoiceTask | PastureTask | PlumbTask | SluiceTask | ShadesTask | MoonTask | VineTask | SpringTask | HarvestTask;
+/** Pour grain into a wooden measure up to the line for each buyer, then find the measure with a false bottom (Hud, Madyan). */
+export type MeasureTask = TaskBase & { kind: 'measure'; stall: P2; buyers: { label: string; want: number; color?: string }[]; /** Depth of the false bottom (fraction). */ falseBottom: number; /** Which of the two measures (0 or 1) has it. */ falseIn: 0 | 1; reading?: Reading };
+/** Leave by night along way-stones, lighting each, without turning back toward the town; the sky pales to morning (Hud, Lut). */
+export type DawnTask = TaskBase & { kind: 'dawn'; town: P2; stones: P2[]; /** How far back toward the town you may step before the last stone goes out (m). */ slack: number };
+/** Ropes and staffs that seem to move from far away and lie still up close: look closely at each (Ta-Ha, the magicians). */
+export type ShimmerTask = TaskBase & { kind: 'shimmer'; things: { at: P2; kind: 'rope' | 'staff'; rot?: number }[]; /** Closer than this, nothing seems to move (m). */ near: number };
+/** Birds on perches: tick each off a list, then name the one missing (An-Naml, the hoopoe). */
+export type RollcallTask = TaskBase & { kind: 'rollcall'; birds: { at: P2; name: string; color: string }[]; /** Which bird is missing (the hoopoe). */ missing: number; board: P2 };
+/** Fit rings of exactly the right size into each row of chain mail (Saba, Dawud). */
+export type LinksTask = TaskBase & { kind: 'links'; table: P2; rows: { size: number; gap: number }[]; tray: number[] };
+/** Surah Ghafir: find the clues the believing man's words point to, then pin each to his words on the board. */
+export type CluesTask = TaskBase & { kind: 'clues'; clues: { at: P2; name: string; reading: Reading }[]; board: P2; questions: { q: string; ref: Ref; answer: number; wrong: string }[] };
+/** Surah Fussilat: turn a telescope on a hilltop to find signs on the horizons (41:53). */
+export type ScopeTask = TaskBase & { kind: 'scope'; at: P2; signs: { at: P2; name: string; shape: 'sun' | 'moon' | 'mountain' | 'slope' | 'stars'; reading: Reading }[]; within: Reading };
+/** Surah Ash-Shura: hear every household, then agree a plan that meets every need (42:38). */
+export type CouncilTask = TaskBase & { kind: 'council'; table: P2; homes: { at: P2; name: string; need: string }[]; plans: { text: string; meets: number[] }[] };
+/** Surah Az-Zukhruf: gold and silver shine, but only useful things meet a real need (43:33-35). */
+export type AdornTask = TaskBase & { kind: 'adorn'; items: { at: P2; name: string; gold: boolean; shape: 'jar' | 'lamp' | 'blanket' | 'seeds' | 'door' | 'couch' | 'stair' | 'ornament' }[]; needs: { at: P2; name: string; item: number; done: string }[] };
+/** Surah Ad-Dukhan: survey what was left behind (44:25-27) and record it in a ledger. */
+export type SurveyTask = TaskBase & { kind: 'survey'; cats: { name: string; shape: 'garden' | 'spring' | 'crop' | 'site' | 'comfort' }[]; things: { at: P2; cat: number }[]; ledger: P2 };
+/** Surah Al-Jathiyah: read the wind vane and the rain gauge through one day and keep the field ledger (45:5). */
+export type StationTask = TaskBase & { kind: 'station'; at: P2; landmarks: { at: P2; name: string }[]; readings: { time: 'morning' | 'noon' | 'evening'; wind: number; rain: 0 | 1 | 2 }[] };
+/** Surah Al-Ahqaf: place windbreaks upwind of a path through the curving dunes and keep it open through a windy spell. */
+export type DunesTask = TaskBase & { kind: 'dunes'; spots: { at: P2; guards: number | null }[]; segments: P2[]; fences: number; secs: number; well: P2; wind: number };
+/** Surah Muhammad: clear each channel with the right tool so the water runs fresh to its pool (47:15 as a description only). */
+export type ChannelsTask = TaskBase & { kind: 'channels'; rack: P2; tools: string[]; channels: { from: P2; to: P2; blocks: { t: number; tool: number; name: string }[] }[] };
+/** Surah Al-Fath: at a closed gate, stay calm and still while provocations come; the way opens to the patient (48:24-26). */
+export type CalmTask = TaskBase & { kind: 'calm'; gate: P2; r: number; secs: number; stirs: { text: string; calm: string; push: string }[] };
+/** Surah Al-Hujurat: check each claim of a rumour at its source before passing anything on (49:6). */
+export type RumourTask = TaskBase & { kind: 'rumour'; board: P2; claims: { text: string; at: P2; look: string; seen: string; true: boolean }[] };
+/** Surah Qaf: sow each seed at its own depth in a glass-sided box, water it, and watch the dead earth come to life over three days (50:9-11). */
+export type RootboxTask = TaskBase & { kind: 'rootbox'; at: P2; seeds: { name: string; depth: number; why: string }[]; days: number };
+/** Surah Adh-Dhariyat: let the scattering wind carry seed puffs to the beds: release each when the vane points toward its bed (51:1). */
+export type ReleaseTask = TaskBase & { kind: 'release'; posts: { at: P2; bed: P2; label: string }[]; turn: number };
+/** Surah At-Tur: climb the mountain by its painted blazes; wrong branches end in "no way through" (52:1). */
+export type BlazesTask = TaskBase & { kind: 'blazes'; lookouts: { at: P2; r: number; label: string; reading: Reading }[]; ends: { at: P2; r: number }[]; blazes: { at: P2; rot: number }[] };
+/** Surah An-Najm: hop from star to star in the night sky to find Sirius (53:49). */
+export type StarhopTask = TaskBase & { kind: 'starhop'; at: P2 };
+/** Surah Al-Qamar: recall the refrain (54:17) at each story stone, with fewer pieces shown each time. */
+export type RecallTask = TaskBase & { kind: 'recall'; ref: Ref; pieces: string[]; stones: { at: P2; label: string; reading: Reading; hide: number }[] };
+/** Surah Ar-Rahman: test the water at buoys along a pier with a float, and find where fresh and salt water meet (55:19-20). */
+export type EstuaryTask = TaskBase & { kind: 'estuary'; buoys: P2[]; meet: number };
+/** Surah Al-Waqi'ah: kindle a fire with a bow drill: steady strokes make an ember, gentle breaths make a flame (56:71-72). */
+export type FiredrillTask = TaskBase & { kind: 'firedrill'; at: P2 };
+/** Surah Al-Hadid: heat iron to working heat with the bellows and strike it into useful tools before it cools (57:25). */
+export type ForgeTask = TaskBase & { kind: 'forge'; at: P2; items: { name: string; strikes: number; use: string }[] };
+/** Surah Al-Mujadilah: listen to each speaker to the end without interrupting, then say back accurately what they said (58:1). */
+export type ListenTask = TaskBase & { kind: 'listen'; at: P2; speakers: { name: string; words: string; repeats: { text: string; ok: boolean; why: string }[] }[] };
+/** Surah Al-Hashr: make ready homes for newcomers; when the store runs out, give from your own house (59:9). */
+export type WelcomeTask = TaskBase & { kind: 'welcome'; store: P2; own: P2; homes: { at: P2; name: string }[]; items: string[]; stock: number[] };
+/** Al-Mumtahanah: lay planks across a stream between two villages; each must rest on both posts (60:7-8). */
+export type SpanTask = TaskBase & { kind: 'span'; posts: P2[]; planks: { len: number; from: string }[]; ends: [string, string] };
+/** As-Saff: lay a wall course by course so that no joint sits over another: a structure joined firmly (61:4). */
+export type BondTask = TaskBase & { kind: 'bond'; at: P2; rot?: number; width: number; courses: number };
+/** Al-Jumu'ah: keep a market stall; when the call comes, leave trade for the prayer, then return and seek bounty (62:9-10). */
+export type FridayTask = TaskBase & { kind: 'friday'; stall: P2; mosque: P2; goods: string[]; orders: number[]; sales: number };
+/** Al-Munafiqun: chances to do good light up one at a time around the village and pass if left for later (63:10). */
+export type ChancesTask = TaskBase & { kind: 'chances'; spots: { at: P2; what: string; done: string }[]; life: number; need: number };
+/** At-Taghabun: pack a small bag for a long walk; what you chose to carry decides what you can do on the way (64:15-16). */
+export type PackTask = TaskBase & { kind: 'pack'; at: P2; room: number; items: { name: string; size: number; use?: number }[]; stops: { at: P2; need: string; ok: string }[] };
+/** At-Talaq: share a family's move among carts so that none carries more than it can (65:7). */
+export type LoadsTask = TaskBase & { kind: 'loads'; at: P2; to: P2; carts: { name: string; cap: number }[]; parcels: { name: string; w: number }[] };
+/** At-Tahrim: follow your own footprints back and put right each thing you spoiled on the way (66:8). */
+export type AmendsTask = TaskBase & { kind: 'amends'; trail: P2[]; harms: { at: P2; what: string; fix: string }[] };
+/** Al-Mulk: watch the birds above with wings spread and folding, and tell which is which (67:19). */
+export type WingsTask = TaskBase & { kind: 'wings'; at: P2; rounds: number };
+/** Al-Qalam: open the orchard gate for the gleaners, pick from the branches and leave the fallen fruit (68:17-33). */
+export type GleanTask = TaskBase & { kind: 'glean'; gate: P2; trees: P2[] };
+/** Al-Haqqah: find things that are real but cannot be seen, each with the right tool (69:38-39). */
+export type UnseenTask = TaskBase & { kind: 'unseen'; stations: { at: P2; thing: string; tool: number; shows: string }[]; tools: string[] };
+/** Al-Ma'arij: from every harvest, big or small, set aside the known share for those who ask and those in need (70:24-25). */
+export type PortionTask = TaskBase & { kind: 'portion'; at: P2; jar: P2; harvests: { what: string; n: number }[]; part: number };
+/** Nuh: turn mirrors so the sun's light, reflected, reaches the dark corner (71:16, the moon a reflected light). */
+export type ReflectTask = TaskBase & { kind: 'reflect'; origin: P2; cell: number; cols: number; rows: number; sun: [number, number, number]; target: [number, number]; mirrors: { c: number; r: number; start: number }[] };
+/** Al-Jinn: find a quiet place to listen, following the hush meter away from the noises (72:1). */
+export type HushTask = TaskBase & { kind: 'hush'; sources: { at: P2; name: string; loud: number; rounds: number[] }[]; rounds: number; quiet: number; reading: Reading };
+/** Al-Muzzammil: mark a third, half and two thirds of the night on the water clock, then keep watch (73:2-4, 73:20). */
+export type NightclockTask = TaskBase & { kind: 'nightclock'; at: P2; dusk: number; dawn: number; marks: { name: string; frac: number }[] };
+/** Al-Muddaththir: wash your clothes clean: soak, scrub, rinse until the water runs clear, wring and hang (74:4). */
+export type WashTask = TaskBase & { kind: 'wash'; at: P2; items: string[]; clear: number };
+/** Al-Qiyamah: match prints pressed in clay to your own fingertips, or say they are someone else's. */
+export type PrintsTask = TaskBase & { kind: 'prints'; at: P2; mine: { finger: string; type: 'loop' | 'whorl' | 'arch'; mark: number }[]; tablets: { at: P2; type: 'loop' | 'whorl' | 'arch'; mark: number; of: number }[] };
+
+/** Al-Insan: leave food at a doorstep, knock, and be gone before the door opens, wanting no thanks. */
+export type DoorstepTask = TaskBase & { kind: 'doorstep'; pantry: P2; doors: { at: P2; who: string; wants: string }[]; foods: string[]; away: number; secs: number };
+
+/** Al-Mursalat: toss grain on the threshing floor when the wind is just right. */
+export type WinnowTask = TaskBase & { kind: 'winnow'; at: P2; lo: number; hi: number; tosses: number };
+
+/** An-Naba: drive a tent's pegs, each opposite the last, so it stands firm in the wind. */
+export type PegsTask = TaskBase & { kind: 'pegs'; at: P2; n: number; r: number; rest: Reading };
+
+/** An-Nazi'at: dig a well layer by layer, lining the walls, until water comes and pasture grows. */
+export type DigTask = TaskBase & { kind: 'dig'; at: P2; layers: { name: string; to: number; tool: 'spade' | 'pick' }[]; line: number };
+
+/** 'Abasa: plough straight furrows across a field, walking from one end to the other. */
+export type FurrowsTask = TaskBase & { kind: 'furrows'; x0: number; gap: number; n: number; z0: number; z1: number; tol: number };
+
+/** At-Takwir: "where are you going?": follow compass bearings from cairn to cairn. */
+export type BearingsTask = TaskBase & { kind: 'bearings'; cairns: { at: P2; name: string }[]; route: number[]; r: number };
+
+/** Al-Infitar: keep your balance crossing narrow logs over a gorge. */
+export type BeamTask = TaskBase & { kind: 'beam'; logs: { at: P2; name: string; drift: number }[]; secs: number };
+
+/** Al-Mutaffifin: test each stall's buying and selling measures against the true one. */
+export type InspectTask = TaskBase & { kind: 'inspect'; stalls: { at: P2; what: string; buy: number; sell: number }[] };
+
+/** Al-Inshiqaq: plan a caravan's stages between wells, then travel them from twilight to morning. */
+export type StagesTask = TaskBase & { kind: 'stages'; at: P2; wells: number[]; reach: number; road: P2[] };
+
+/** Al-Buruj: carry each book and tool of the library to a place that keeps it safe. */
+export type ShelvesTask = TaskBase & { kind: 'shelves'; table: P2; items: { name: string; needs: ('dry' | 'shade' | 'high')[] }[]; spots: { name: string; at: P2; has: ('dry' | 'shade' | 'high')[]; why: string }[] };
+
+/** At-Tariq: set up a sun still so the sky "returns" fresh water from salt water. */
+export type StillTask = TaskBase & { kind: 'still'; at: P2 };
+
+/** Al-A'la: open the box's windows in turn to guide a seedling round its shelves to the light. */
+export type LightboxTask = TaskBase & { kind: 'lightbox'; at: P2; gaps: ('left' | 'right')[] };
+
+/** Al-Ghashiyah: look at how the camel is made, then shelter behind it in a sandstorm. */
+export type CamelTask = TaskBase & { kind: 'camel'; at: P2; parts: { name: string; use: string }[]; wind: P2; secs: number };
+
+/** Al-Fajr: pair up the dates in each basket to find whether the count is even or odd. */
+export type EvenOddTask = TaskBase & { kind: 'evenodd'; at: P2; baskets: { what: string; n: number }[] };
+
+/** Al-Balad: share food fairly by the number in each house on a day of hunger, then carry it up the steep pass. */
+export type RationTask = TaskBase & { kind: 'ration'; at: P2; cups: number; homes: { at: P2; who: string; people: number }[] };
+
+/** Ash-Shams: rub the tarnish off a brass lamp, spot by spot, until it shines. */
+export type PolishTask = TaskBase & { kind: 'polish'; at: P2; cols: number; rows: number; hard: number[] };
+
+/** Al-Layl: lift heavy loads with as few pulleys as you need. */
+export type PulleyTask = TaskBase & { kind: 'pulley'; at: P2; strength: number; loads: { what: string; kg: number }[] };
+
+/** Ad-Duha: answer every knock at the door while you bake, never turning anyone away. */
+export type AnswerTask = TaskBase & { kind: 'answer'; oven: P2; door: P2; callers: { who: string; wants: number }[]; gifts: string[] };
+
+/** Ash-Sharh: untangle a fishing net knot by knot, each only once the knots over it are undone. */
+export type KnotsTask = TaskBase & { kind: 'knots'; at: P2; knots: { name: string; over: number[] }[] };
+
+/** At-Tin: press olives for oil: mill, mats, press, then let it settle and skim. */
+export type OilpressTask = TaskBase & { kind: 'oilpress'; at: P2; turns: number; mats: number; presses: number; settle: number };
+
+/** Al-'Alaq: cut a reed pen and trace letters stroke by stroke, dipping for ink. */
+export type PenTask = TaskBase & { kind: 'pen'; at: P2; ink: number; letters: { name: string; pts: [number, number][] }[] };
+
+/** Al-Qadr: count a thousand months in years, then keep a quiet watch until dawn. */
+export type AbacusTask = TaskBase & { kind: 'abacus'; at: P2; mat: P2; months: number; secs: number };
+
+/** Al-Bayyinah: plant stakes in a straight line between two far poles, by sighting. */
+export type SightTask = TaskBase & { kind: 'sight'; a: P2; b: P2; stakes: number; tol: number };
+
+/** Az-Zalzalah: find the smallest good things to do around the village, and choose them over small wrongs. */
+export type SpeckTask = TaskBase & { kind: 'speck'; spots: { at: P2; what: string; good: string; bad: string }[] };
+
+/** Al-Adiyat: read a horse's gait from its footfalls, then care for it after the run. */
+export type GaitsTask = TaskBase & { kind: 'gaits'; at: P2; ring: P2; runs: ('walk' | 'trot' | 'canter' | 'gallop')[] };
+/** Al-Qari'ah: pick the burrs from raw fleece, then card it into soft wool. */
+export type CardingTask = TaskBase & { kind: 'carding'; at: P2; burrs: P2[]; strokes: number; batches: number };
+/** At-Takathur: buy just what the household needs at each stall, never more. */
+export type ErrandTask = TaskBase & { kind: 'errand'; stalls: { at: P2; what: string; need: number; push: string }[] };
+/** Al-Asr: before sunset, do the four things the surah names; idling spends the afternoon. */
+export type HourglassTask = TaskBase & { kind: 'hourglass'; secs: number; deeds: { at: P2; what: string; done: string }[]; idle: { at: P2; what: string; cost: number }[] };
+/** Al-Humazah: scrub mocking chalk off the boards and write something kind and true. */
+export type ChalkTask = TaskBase & { kind: 'chalk'; boards: { at: P2; who: string; mock: string; good: string; flatter: string }[] };
+
+/** Al-Fil: count flocks of birds the way bird-counters do, in blocks of ten. */
+export type FlockTask = TaskBase & { kind: 'flock'; at: P2; flocks: number[] };
+/** Quraysh: choose the season's road, then keep the camp fires burning till dawn. */
+export type CampfireTask = TaskBase & { kind: 'campfire'; at: P2; fires: P2[]; secs: number; burn: number };
+/** Al-Ma'un: find the small household things neighbours ask to borrow, and take them over. */
+export type LendTask = TaskBase & { kind: 'lend'; chests: { at: P2; holds: string[] }[]; asks: { at: P2; who: string; wants: string }[] };
+/** Al-Kawthar: prune the fig tree: cut dead and crossing wood, keep the fruiting branches. */
+export type PruneTask = TaskBase & { kind: 'prune'; at: P2; branches: { name: string; is: 'dead' | 'crossing' | 'fruiting' }[] };
+/** Al-Kafirun: answer the neighbours: gladly in kindness, a clear and polite no in worship. */
+export type CourtyardTask = TaskBase & { kind: 'courtyard'; at: P2; asks: { text: string; ok: boolean; yes: string; no: string; rude: string }[] };
+
+/** An-Nasr: build a stone arch on its wooden frame, side by side, keystone last; then praise before celebrating. */
+export type ArchTask = TaskBase & { kind: 'arch'; at: P2; stones: number };
+/** Al-Masad: twist palm fibre into strands one way, lay them together the other way, and use the rope. */
+export type RopeTask = TaskBase & { kind: 'rope'; at: P2; well: P2; twists: number };
+/** Al-Ikhlas: draw the reading room's six-fold floor pattern from one circle, with compass and straightedge. */
+export type CompassTask = TaskBase & { kind: 'compass'; at: P2 };
+/** Al-Falaq: light the lanterns through the dark wood in order, until daybreak. */
+export type LanternsTask = TaskBase & { kind: 'lanterns'; lamps: P2[]; secs: number };
+/** An-Nas: on an errand, turn from each whisper by seeking refuge, and deliver the letter. */
+export type WhisperTask = TaskBase & { kind: 'whisper'; stops: { at: P2; says: string }[]; end: P2 };
+
+export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask | StandTask | ReachTask | ObserveTask | SkyTask | SailTask | ChoiceTask | ShareTask | PromiseTask | WeighTask | FlowTask | SiftTask | ReturnTask | GranaryTask | ValleyTask | GrowTask | PollenTask | RubbingTask | StreetsTask | SunPathTask | PointTask | BeaconTask | DoorsTask | OrderTask | HomeTask | MirrorTask | ShadowTask | EchoTask | AntsTask | RiverTask | ShelterTask | RainTask | VoiceTask | PastureTask | PlumbTask | SluiceTask | ShadesTask | MoonTask | VineTask | SpringTask | HarvestTask | MeasureTask | DawnTask | ShimmerTask | RollcallTask | LinksTask | CluesTask | ScopeTask | CouncilTask | AdornTask | SurveyTask | StationTask | DunesTask | ChannelsTask | CalmTask | RumourTask | RootboxTask | ReleaseTask | BlazesTask | StarhopTask | RecallTask | EstuaryTask | FiredrillTask | ForgeTask | ListenTask | WelcomeTask | SpanTask | BondTask | FridayTask | ChancesTask | PackTask | LoadsTask | AmendsTask | WingsTask | GleanTask | UnseenTask | PortionTask | ReflectTask | HushTask | NightclockTask | WashTask | PrintsTask | DoorstepTask | WinnowTask | PegsTask | DigTask | FurrowsTask | BearingsTask | BeamTask | InspectTask | StagesTask | ShelvesTask | StillTask | LightboxTask | CamelTask | EvenOddTask | RationTask | PolishTask | PulleyTask | AnswerTask | KnotsTask | OilpressTask | PenTask | AbacusTask | SightTask | SpeckTask | GaitsTask | CardingTask | ErrandTask | HourglassTask | ChalkTask | FlockTask | CampfireTask | LendTask | PruneTask | CourtyardTask | ArchTask | RopeTask | CompassTask | LanternsTask | WhisperTask;
 
 export type Region = { id: string; name: string; at: P2 };
 
@@ -471,6 +659,8 @@ export type WorldDef = {
   warps?: { at: P2; to: P2; toYaw?: number; label: string; show?: string; rot?: number }[];
   /** How thick the mist is (0..1) given what is done: worlds where the land closes in and opens again. */
   mist?: (done: string[], prog: Record<string, number[]>) => number;
+  /** The world's sky once a task is done (in order; the last one done wins): stories that move from night to day. */
+  looks?: { after: string; look: Look }[];
   /** A one-line description of the world's core gameplay (shown in About). */
   play?: string;
   /** Night skies, sea boats, motes over gardens. */

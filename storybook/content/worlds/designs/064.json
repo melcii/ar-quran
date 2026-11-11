@@ -78,32 +78,46 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Valley of True Treasures",
+  "tier": "playable",
+  "visual_theme": "A cottage in a valley and a path climbing over pine hills and a cold pass to a far village",
   "quran_references": [
-   "64:1–18"
+   "64:1",
+   "64:4",
+   "64:15-17"
   ],
   "primary_mechanic": {
    "kind": "true-treasure",
-   "engine": "not built yet",
-   "text": "Choose what to keep from a collection when your bag can carry little (64:15-16)."
+   "engine": "pack",
+   "text": "Pack a bag of 8 spaces from useful things (water skin, bread, cloak, honey for the hosts) and shining ones (gold bangles, silver mirror, carved box), then walk: at each stop (thirst, noon, the cold pass, arriving as a guest) only what you packed helps; otherwise walk back and repack (64:15-16)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "He knows what you hide (64:1, 64:4, read)",
+   "a good loan (64:17, read)"
+  ],
+  "narrative_structure": "A reading by your door, packing, four stops along the walk, then a reading in the far village",
+  "world_assets": [
+   "packing table with items",
+   "marker stones at each stop",
+   "pine hills and a high pass",
+   "far village"
+  ],
+  "environment_behaviour": [
+   "packed items leave the table",
+   "each stop lights green when its need is met"
+  ],
+  "learning_objective": "Know that wealth is a test and giving is better for ourselves (64:15-16)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w064.ts",
+  "tested_hash": "02df34f3e322"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

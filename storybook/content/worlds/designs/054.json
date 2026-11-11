@@ -18,17 +18,26 @@
   {
    "title": "Nuh and the flood",
    "reference": "54:9-17",
-   "anchor_phrase": "planks and nails"
+   "anchor_phrase": "planks and nails",
+   "treatment": "reading",
+   "treatment_reason": "Read at its standing stone with the refrain; the prophets and the punishments are never shown. The story is played in Surah Hud’s world.",
+   "played_in": 11
   },
   {
    "title": "'Ad and the wind",
    "reference": "54:18-22",
-   "anchor_phrase": "screaming wind"
+   "anchor_phrase": "screaming wind",
+   "treatment": "reading",
+   "treatment_reason": "Read at its standing stone with the refrain; the prophets and the punishments are never shown. The story is played in Surah Hud’s world.",
+   "played_in": 11
   },
   {
    "title": "Thamud and the she-camel",
    "reference": "54:23-32",
-   "anchor_phrase": "she-camel"
+   "anchor_phrase": "she-camel",
+   "treatment": "reading",
+   "treatment_reason": "Read at its standing stone with the refrain; the prophets and the punishments are never shown. The story is played in Surah Hud’s world.",
+   "played_in": 11
   }
  ],
  "summary_for_children": "Al-Qamar means The Moon. It tells of the moon splitting and of Nuh, 'Ad, Thamud, Lut and Pharaoh, and repeats that Allah made the Quran easy to remember.",
@@ -159,32 +168,48 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Moonlit History Atlas",
+  "tier": "playable",
+  "visual_theme": "A path through a quiet autumn valley at evening with four tall standing stones carved with lines",
   "quran_references": [
-   "54:1–42"
+   "54:1",
+   "54:9-15",
+   "54:17-22",
+   "54:23-32",
+   "54:33-40",
+   "54:49-50"
   ],
   "primary_mechanic": {
    "kind": "memory-refrain",
-   "engine": "not built yet",
-   "text": "Remember and repeat the refrain \"We have made the Quran easy to remember\" (54:17) as a memory path between chapters."
+   "engine": "recall",
+   "text": "At each of four standing stones (Nuh, ‘Ad, Thamud, Lut), read the passage, then rebuild the refrain of 54:17 from its English pieces in order; two pieces are hidden at the first stone and all five at the last. Out-of-order pieces are refused."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "the Hour has come near (54:1, read; the moon is not pictured)",
+   "everything in measure (54:49-50, read)"
+  ],
+  "narrative_structure": "A reading at the start, four stones each with a story and the refrain, then a closing reading",
+  "world_assets": [
+   "four standing stones",
+   "carved lines that light when remembered",
+   "autumn valley path"
+  ],
+  "environment_behaviour": [
+   "a stone’s carved lines glow gold once its refrain is remembered",
+   "the next stone glows"
+  ],
+  "learning_objective": "Remember the refrain of 54:17 and the four peoples it follows",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w054.ts",
+  "tested_hash": "8ff8afcf0bcd"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

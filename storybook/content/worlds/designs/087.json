@@ -109,32 +109,43 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Mountain Meadow",
+  "tier": "playable",
+  "visual_theme": "A terraced hillside garden in spring with blossom trees and a potting shed holding a tall wooden seedling box",
   "quran_references": [
-   "87:1–19"
+   "87:1-8",
+   "87:14-17"
   ],
   "primary_mechanic": {
    "kind": "meadow-cycle",
-   "engine": "not built yet",
-   "text": "Watch pasture grow green then dry to dark stubble (87:4-5) and plant again."
+   "engine": "lightbox",
+   "text": "Inside a box with three shelves (gaps right, left, right), open one window at a time to guide a bean shoot toward the light round each shelf and out of the top; the wrong side leaves it pale under the shelf and is noted (87:3, measured out and guided)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "measured and guided (87:1-5, read)",
+   "you will not forget (87:6-8, read; the Prophet is not shown)"
+  ],
+  "narrative_structure": "A reading on the garden path, the seedling box, then a reading by the fence",
+  "world_assets": [
+   "potting shed",
+   "tall seedling box with side and top windows"
+  ],
+  "environment_behaviour": [
+   "the shoot is drawn growing round each shelf",
+   "it climbs out of the top of the box when guided all the way"
+  ],
+  "learning_objective": "Know that Allah measured out and guided everything (87:2-3)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w087.ts",
+  "tested_hash": "69d1c67daffb"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

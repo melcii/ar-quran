@@ -5,7 +5,9 @@
 // and a few words about a situation. The core play is matching: carry each
 // prayer to the door whose situation it answers, and the door opens on the
 // verse that tells how it was answered. No prophet is shown or played; the
-// fire of Ibrahim (21:68-70) is read only.
+// fire of Ibrahim (21:68-70) is read only. Then the field of Dawud and
+// Sulayman: lead the sheep that strayed into a field at night back to their
+// fold (21:78-80).
 import { curve } from '../terrain';
 import type { WorldDef } from '../types';
 import { LOOKS, PAL, rolling } from './common';
@@ -37,7 +39,12 @@ export const W021: WorldDef = {
   mountains: { color: '#9a90a8', height: 1 },
   start: [0, 26],
   startYaw: Math.PI,
-  structures: [{ type: 'bench', x: -6, z: 12, rot: Math.PI / 2 }],
+  structures: [
+    { type: 'bench', x: -6, z: 12, rot: Math.PI / 2 },
+    // The field the sheep got into at night (21:78), and the fold they belong in.
+    { type: 'bed', x: 24, z: 22, w: 9, d: 7, color: '#7a9a3a' },
+    { type: 'pen', x: 26, z: -2, w: 7, rot: -Math.PI / 2 }, // opening toward the field in the north
+  ],
   welcome:
     'Welcome to the Hall of Answered Prayers. Surah Al-Anbiya tells of many prophets who called on their Lord in hard times, and how each prayer was answered. In the courtyard ahead are three prayers on tablets and three carved doors. Each prayer belongs to one door.',
   tasks: [
@@ -102,9 +109,24 @@ export const W021: WorldDef = {
       adaptation: 'Ibrahim, his people, the statues and the fire are not shown. This is a reading only.',
     },
     {
+      id: 'field',
+      kind: 'lead',
+      requires: ['ibrahim'],
+      animal: 'sheep',
+      herd: { at: [24, 22], r: 3 },
+      n: 4,
+      pen: [26, -2],
+      penLabel: 'the fold',
+      title: 'The sheep in the field',
+      goal: 'Lead the four sheep out of the field on the east side and back into their fold',
+      intro: 'The surah tells of Dawud and Sulayman judging a case: a people\'s sheep had got into a field at night and grazed it. Allah gave Sulayman understanding of the case. Lead the sheep out of the field and back to their fold.',
+      adaptation: 'Leading the sheep is a game idea. The Quran tells of the case and the judging (21:78-79), not of anyone leading sheep home. Dawud, Sulayman and the people are not shown.',
+      after: { title: 'Understanding and knowledge', refs: [[21, 78], [21, 79], [21, 80]], note: 'Dawud and Sulayman judged the case of the field, when a people\'s sheep grazed in it at night, and Allah witnessed their judgement. He gave Sulayman understanding of it, and gave each of them wisdom and knowledge. He made the mountains and the birds glorify Him with Dawud, and taught Dawud to make coats of armour to protect people. So will you be grateful?' },
+    },
+    {
       id: 'water',
       kind: 'read',
-      requires: ['ibrahim'],
+      requires: ['field'],
       at: [14, 6],
       marker: 'lantern',
       title: 'Every living thing',
@@ -124,7 +146,7 @@ export const W021: WorldDef = {
   },
   notes: [
     'Allah is never pictured, in any form.',
-    'No prophet is shown or played: Ayyub, Yunus, Zakariyya, Yahya and Ibrahim never appear. You carry the verse, never the person.',
+    'No prophet is shown or played: Ayyub, Yunus, Zakariyya, Yahya, Ibrahim, Dawud and Sulayman never appear. You carry the verse, never the person.',
     "Ibrahim's fire (21:68-70) is read only; there is no fire scene.",
     'The words on each door are narration written for this app; the prayers are verified verses.',
   ],

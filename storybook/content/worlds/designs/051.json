@@ -19,7 +19,10 @@
   {
    "title": "Ibrahim's honoured guests",
    "reference": "51:24-30",
-   "anchor_phrase": "guests"
+   "anchor_phrase": "guests",
+   "treatment": "reading",
+   "treatment_reason": "Ibrahim and his guests are never shown; the welcome is played in Surah Hud’s world.",
+   "played_in": 11
   }
  ],
  "summary_for_children": "Adh-Dhariyat means The Scattering Winds. It swears by winds, clouds and ships, tells of Ibrahim's guests, and reminds us everything is created in pairs.",
@@ -137,33 +140,49 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Windborne Journey",
+  "tier": "playable",
+  "visual_theme": "A wide grassy valley where the wind turns slowly all the way round, with launch posts, bare beds and a tent",
   "quran_references": [
-   "51:1–6",
-   "51:24–46"
+   "51:1-4",
+   "51:20-21",
+   "51:24-27",
+   "51:47-49"
   ],
   "primary_mechanic": {
    "kind": "wind-carry",
-   "engine": "not built yet",
-   "text": "Use winds to carry seeds and light things across a valley to the right places (51:1-4)."
+   "engine": "release",
+   "text": "The wind turns slowly through every direction; at each of three launch posts, release the seed puffs when the pennant points at the bare bed across the valley. Released at the wrong moment, the puffs blow away elsewhere (51:1)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "by the scattering winds (51:1-4, read)",
+   "the honoured guests (51:24-27, read)",
+   "pairs of everything (51:47-49, read)"
+  ],
+  "narrative_structure": "The oath of the winds, three posts and beds, then Ibrahim’s guests and the pairs",
+  "world_assets": [
+   "launch posts with pennants",
+   "seed puffs",
+   "bare beds that bloom",
+   "tent and rug"
+  ],
+  "environment_behaviour": [
+   "pennants turn with the wind",
+   "seed puffs fly along the wind",
+   "a sown bed turns green with flowers"
+  ],
+  "learning_objective": "Know the surah’s opening oath of the scattering winds (51:1) and its signs on the earth (51:20-21)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w051.ts",
+  "tested_hash": "7db7de0813e7"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

@@ -99,32 +99,45 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Night Observatory",
+  "tier": "playable",
+  "visual_theme": "A flat-roofed village at sunset with a quiet roof terrace and a tall water clock that empties from sunset to dawn",
   "quran_references": [
-   "73:1–20"
+   "73:1-4",
+   "73:6-8",
+   "73:20"
   ],
   "primary_mechanic": {
    "kind": "measured-recitation",
-   "engine": "not built yet",
-   "text": "Practise reciting slowly and clearly (73:4) in a calm night, with your own pace shown as a gentle meter."
+   "engine": "nightclock",
+   "text": "Tonight runs from 18:30 to 05:00 (10.5 hours). Set pegs on the water clock for a third (22:00), half (23:45) and two thirds (01:30) of the night, in 15-minute steps; a wrong time is refused as too early or too late. Then keep watch as the water falls past each peg (73:2-4, 73:20)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "arise in the night (73:1-4, read)",
+   "the hours of the night (73:6-8, read)"
+  ],
+  "narrative_structure": "Two readings on the way up, then the water clock through the night",
+  "world_assets": [
+   "roof terrace",
+   "water clock with a scale",
+   "pegs"
+  ],
+  "environment_behaviour": [
+   "pegs appear on the clock as they are set",
+   "the water level falls through the watch"
+  ],
+  "learning_objective": "Know that Allah measures the night and the day, and that we recite what is easy (73:20)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w073.ts",
+  "tested_hash": "0969eeba10c9"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

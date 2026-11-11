@@ -19,7 +19,7 @@ export const W029: WorldDef = {
     base: rolling({ radius: 40, amp: 1.2, seed: 29 }),
     palette: PAL.meadow,
     paths: [curve([[0, 28], [0, 6]])],
-    flats: [{ x: 0, z: -2, r: 10, paint: '#d8c8a4' }],
+    flats: [{ x: 4, z: 18, r: 2.5 }, { x: 0, z: -2, r: 10, paint: '#d8c8a4' }],
   },
   look: { ...LOOKS.morning, sunI: 3 },
   veg: {
@@ -38,6 +38,16 @@ export const W029: WorldDef = {
   welcome:
     'Welcome to the Shelter Test. Surah Al-Ankabut, the Spider, gives the example of the spider\'s house. On the test stand ahead, a lamp burns under a shelter woven like a web. Will it keep the lamp lit in wind and rain?',
   tasks: [
+    {
+      id: 'fire',
+      kind: 'read',
+      at: [4, 18],
+      marker: 'sign',
+      title: 'Ibrahim and the fire',
+      goal: 'Read at the sign near the way in',
+      adaptation: 'Ibrahim, his people and the fire are read only; none is shown.',
+      reading: { title: 'Ibrahim and the fire', refs: [[29, 16], [29, 17], [29, 18], [29, 19], [29, 20], [29, 21], [29, 22], [29, 23], [29, 24], [29, 25], [29, 26], [29, 27]], note: 'Ibrahim said to his people: Worship Allah and fear Him; that is best for you if you only knew. The only answer of his people was: Kill him or burn him. But Allah saved him from the fire. Indeed in that are signs for people who believe.' },
+    },
     {
       id: 'tried',
       kind: 'read',
@@ -81,6 +91,16 @@ export const W029: WorldDef = {
       title: 'Those who strive',
       goal: 'Read at the sign on the east side',
       reading: { title: 'Guided to His ways', refs: [[29, 69]], note: 'Those who strive for Allah, He will guide to His ways. And Allah is with those who do good.' },
+    },
+    {
+      id: 'nuh',
+      kind: 'read',
+      requires: ['strive'],
+      at: [3, 21],
+      marker: 'tablet',
+      title: 'A thousand years less fifty',
+      goal: 'Read the stone by the start',
+      reading: { title: 'Nuh stayed among them', refs: [[29, 14], [29, 15]], note: 'Nuh stayed among his people a thousand years less fifty, calling them. Allah saved him and those in the ship, and made it a sign for the worlds. The Ark is played in the world of Surah Hud.' },
     },
   ],
   finale: {

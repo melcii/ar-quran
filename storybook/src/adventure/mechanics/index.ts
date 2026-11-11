@@ -2,8 +2,84 @@
 // own built-in kinds.
 import type { Task } from '../types';
 import type { Mechanic } from './base';
+import { Adorn } from './adorn';
 import { Ants } from './ants';
+import { Blazes } from './blazes';
+import { Recall } from './recall';
+import { Estuary } from './estuary';
+import { Firedrill } from './firedrill';
+import { Forge } from './forge';
+import { Listen } from './listen';
+import { Welcome } from './welcome';
+import { Span } from './span';
+import { Bond } from './bond';
+import { Friday } from './friday';
+import { Chances } from './chances';
+import { Pack } from './pack';
+import { Loads } from './loads';
+import { Amends } from './amends';
+import { Wings } from './wings';
+import { Glean } from './glean';
+import { Unseen } from './unseen';
+import { Portion } from './portion';
+import { Reflect } from './reflect';
+import { Hush } from './hush';
+import { Nightclock } from './nightclock';
+import { Wash } from './wash';
+import { Prints } from './prints';
+import { Doorstep } from './doorstep';
+import { Winnow } from './winnow';
+import { Pegs } from './pegs';
+import { Dig } from './dig';
+import { Furrows } from './furrows';
+import { Bearings } from './bearings';
+import { Beam } from './beam';
+import { Inspect } from './inspect';
+import { Stages } from './stages';
+import { Shelves } from './shelves';
+import { Still } from './still';
+import { Lightbox } from './lightbox';
+import { Camel } from './camel';
+import { EvenOdd } from './evenodd';
+import { Ration } from './ration';
+import { Polish } from './polish';
+import { Pulley } from './pulley';
+import { Answer } from './answer';
+import { Knots } from './knots';
+import { Oilpress } from './oilpress';
+import { Pen } from './pen';
+import { Abacus } from './abacus';
+import { Sight } from './sight';
+import { Speck } from './speck';
+import { Gaits } from './gaits';
+import { Carding } from './carding';
+import { Errand } from './errand';
+import { Hourglass } from './hourglass';
+import { Chalk } from './chalk';
+import { Flock } from './flock';
+import { Campfire } from './campfire';
+import { Lend } from './lend';
+import { Prune } from './prune';
+import { Courtyard } from './courtyard';
+import { Arch } from './arch';
+import { Rope } from './rope';
+import { Compass } from './compass';
+import { Lanterns } from './lanterns';
+import { Whisper } from './whisper';
+import { Release } from './release';
+import { Rootbox } from './rootbox';
+import { Starhop } from './starhop';
+import { Calm } from './calm';
+import { Channels } from './channels';
+import { Dunes } from './dunes';
+import { Rumour } from './rumour';
+import { Station } from './station';
+import { Clues } from './clues';
+import { Council } from './council';
+import { Scope } from './scope';
+import { Survey } from './survey';
 import { Beacon } from './beacon';
+import { Dawn } from './dawn';
 import { Doors } from './doors';
 import { Echo } from './echo';
 import { Granary } from './granary';
@@ -11,6 +87,8 @@ import { Grow } from './grow';
 import { Harvest } from './harvest';
 import { Home } from './home';
 import { Mirror } from './mirror';
+import { Links } from './links';
+import { Measure } from './measure';
 import { Moon } from './moon';
 import { Order } from './order';
 import { Point } from './point';
@@ -19,10 +97,12 @@ import { Plumb } from './plumb';
 import { Pollen } from './pollen';
 import { Sowing } from './rain';
 import { River } from './river';
+import { Rollcall } from './rollcall';
 import { Rubbing } from './rubbing';
 import { Shades } from './shades';
 import { Shadow } from './shadow';
 import { Shelter } from './shelter';
+import { Shimmer } from './shimmer';
 import { Sluice } from './sluice';
 import { Spring } from './spring';
 import { Streets } from './streets';
@@ -60,6 +140,86 @@ export const MECHS: Partial<Record<Task['kind'], Mechanic<never>>> = {
   vine: Vine as Mechanic<never>,
   spring: Spring as Mechanic<never>,
   harvest: Harvest as Mechanic<never>,
+  measure: Measure as Mechanic<never>,
+  dawn: Dawn as Mechanic<never>,
+  shimmer: Shimmer as Mechanic<never>,
+  rollcall: Rollcall as Mechanic<never>,
+  links: Links as Mechanic<never>,
+  clues: Clues as Mechanic<never>,
+  scope: Scope as Mechanic<never>,
+  council: Council as Mechanic<never>,
+  adorn: Adorn as Mechanic<never>,
+  survey: Survey as Mechanic<never>,
+  station: Station as Mechanic<never>,
+  dunes: Dunes as Mechanic<never>,
+  channels: Channels as Mechanic<never>,
+  calm: Calm as Mechanic<never>,
+  rumour: Rumour as Mechanic<never>,
+  rootbox: Rootbox as Mechanic<never>,
+  release: Release as Mechanic<never>,
+  blazes: Blazes as Mechanic<never>,
+  starhop: Starhop as Mechanic<never>,
+  recall: Recall as Mechanic<never>,
+  estuary: Estuary as Mechanic<never>,
+  firedrill: Firedrill as Mechanic<never>,
+  forge: Forge as Mechanic<never>,
+  listen: Listen as Mechanic<never>,
+  welcome: Welcome as Mechanic<never>,
+  span: Span as Mechanic<never>,
+  bond: Bond as Mechanic<never>,
+  friday: Friday as Mechanic<never>,
+  chances: Chances as Mechanic<never>,
+  pack: Pack as Mechanic<never>,
+  loads: Loads as Mechanic<never>,
+  amends: Amends as Mechanic<never>,
+  wings: Wings as Mechanic<never>,
+  glean: Glean as Mechanic<never>,
+  unseen: Unseen as Mechanic<never>,
+  portion: Portion as Mechanic<never>,
+  reflect: Reflect as Mechanic<never>,
+  hush: Hush as Mechanic<never>,
+  nightclock: Nightclock as Mechanic<never>,
+  wash: Wash as Mechanic<never>,
+  prints: Prints as Mechanic<never>,
+  doorstep: Doorstep as Mechanic<never>,
+  winnow: Winnow as Mechanic<never>,
+  pegs: Pegs as Mechanic<never>,
+  dig: Dig as Mechanic<never>,
+  furrows: Furrows as Mechanic<never>,
+  bearings: Bearings as Mechanic<never>,
+  beam: Beam as Mechanic<never>,
+  inspect: Inspect as Mechanic<never>,
+  stages: Stages as Mechanic<never>,
+  shelves: Shelves as Mechanic<never>,
+  still: Still as Mechanic<never>,
+  lightbox: Lightbox as Mechanic<never>,
+  camel: Camel as Mechanic<never>,
+  evenodd: EvenOdd as Mechanic<never>,
+  ration: Ration as Mechanic<never>,
+  polish: Polish as Mechanic<never>,
+  pulley: Pulley as Mechanic<never>,
+  answer: Answer as Mechanic<never>,
+  knots: Knots as Mechanic<never>,
+  oilpress: Oilpress as Mechanic<never>,
+  pen: Pen as Mechanic<never>,
+  abacus: Abacus as Mechanic<never>,
+  sight: Sight as Mechanic<never>,
+  speck: Speck as Mechanic<never>,
+  gaits: Gaits as Mechanic<never>,
+  carding: Carding as Mechanic<never>,
+  errand: Errand as Mechanic<never>,
+  hourglass: Hourglass as Mechanic<never>,
+  chalk: Chalk as Mechanic<never>,
+  flock: Flock as Mechanic<never>,
+  campfire: Campfire as Mechanic<never>,
+  lend: Lend as Mechanic<never>,
+  prune: Prune as Mechanic<never>,
+  courtyard: Courtyard as Mechanic<never>,
+  arch: Arch as Mechanic<never>,
+  rope: Rope as Mechanic<never>,
+  compass: Compass as Mechanic<never>,
+  lanterns: Lanterns as Mechanic<never>,
+  whisper: Whisper as Mechanic<never>,
 };
 
 /** The plug-in for a task, typed loosely so the engine can call it with any task. */

@@ -124,32 +124,43 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Clockwork World",
+  "tier": "playable",
+  "visual_theme": "A small hill town in the late afternoon with a mosque, a grocer, a well and a green, the sun already low",
   "quran_references": [
-   "103:1–3"
+   "103:1-3"
   ],
   "primary_mechanic": {
    "kind": "day-clock",
-   "engine": "not built yet",
-   "text": "Arrange a day on a giant clock so faith, good deeds, truth and patience fit (103:1-3)."
+   "engine": "hourglass",
+   "text": "Before a 120-second sunset, do the four things 103:3 names at four places: pray the afternoon prayer (believe), carry water for an old neighbour (do good), tell the grocer his scale reads short (urge the truth), sit with a friend whose kite broke (urge patience). A juggler, a gossip bench and marbles each spend 50 seconds; if the sun sets first, the afternoon is lost and the four start over. The sky reddens as time runs out."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "by time (103:1-2, read)",
+   "the whole surah (103:1-3, read)"
+  ],
+  "narrative_structure": "A reading above the town, the afternoon, then a reading on the green",
+  "world_assets": [
+   "mosque",
+   "grocer stall",
+   "well",
+   "juggler’s balls, gossip bench, marbles"
+  ],
+  "environment_behaviour": [
+   "the light turns from golden to red as the afternoon runs out"
+  ],
+  "learning_objective": "Know the four things that save from loss: faith, good deeds, urging truth and urging patience (103:3)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w103.ts",
+  "tested_hash": "6f7a4416fdd8"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

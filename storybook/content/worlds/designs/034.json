@@ -23,7 +23,9 @@
   {
    "title": "Sulayman and the copper",
    "reference": "34:12-14",
-   "anchor_phrase": "copper"
+   "anchor_phrase": "copper",
+   "treatment": "reading",
+   "treatment_reason": "the jinn are of the unseen; never pictured"
   },
   {
    "title": "The two gardens of Saba",
@@ -191,16 +193,17 @@
   ],
   "learning_objective": "Learn about the two gardens of Saba and the call to be grateful (34:15), by sharing water fairly",
   "interaction_tests": {
-   "activate": "pass (2026-11-04, headless Chromium, software WebGL: began the season and opened the left sluice with the on-screen buttons)",
-   "responds": "pass (2026-11-04, headless Chromium, software WebGL: with both sluices shut a garden wilted and the month restarted; then 12 sluice changes and 3 cracks patched)",
-   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Month 1 of 3 · 18 s left · dam 52% · left garden 61% · right garden 48%\"; the water level, channels and garden colours change live)",
-   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
-   "completion": "pass (2026-11-04, headless Chromium, software WebGL: months [0,1,2], wilted [0])",
-   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"dawud\",\"gardens\",\"turned\"])",
-   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": "src/adventure/worlds/w034.ts"
+  "built_in": "src/adventure/worlds/w034.ts",
+  "tested_hash": "2fe53b1d5b4e"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

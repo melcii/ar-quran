@@ -118,33 +118,46 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Mountain of Reflection",
+  "tier": "playable",
+  "visual_theme": "A mountain over a green valley with a branching trail, painted white-over-red blazes, cairns at lookouts and crossed posts at dead ends",
   "quran_references": [
-   "52:1–28",
-   "52:35–36"
+   "52:1-6",
+   "52:21",
+   "52:35-36",
+   "52:48-49"
   ],
   "primary_mechanic": {
    "kind": "mountain-lookouts",
-   "engine": "not built yet",
-   "text": "Climb safe trails to lookouts and answer the questions of 52:35-36 at each."
+   "engine": "blazes",
+   "text": "Climb the mountain from lookout to lookout by following white-over-red blazes; branches without blazes end with no way through and say so. Each lookout opens a reading: the oaths (52:1-6), the questions (52:35-36), and glorifying as the stars fade (52:48-49)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "families joined (52:21, read on the summit)"
+  ],
+  "narrative_structure": "Three lookouts up the mountain, then a reading on the summit",
+  "world_assets": [
+   "mountain trail with branches",
+   "painted blaze rocks",
+   "stone cairns at lookouts",
+   "crossed posts at dead ends"
+  ],
+  "environment_behaviour": [
+   "the next lookout glows",
+   "a reached cairn lights a small lamp"
+  ],
+  "learning_objective": "Think about the questions of 52:35-36 and glorify Allah as the stars fade (52:49)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w052.ts",
+  "tested_hash": "a42940db2c5e"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

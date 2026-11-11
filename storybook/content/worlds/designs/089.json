@@ -18,7 +18,9 @@
   {
    "title": "'Ad, Thamud and Pharaoh",
    "reference": "89:6-14",
-   "anchor_phrase": "Iram"
+   "anchor_phrase": "Iram",
+   "treatment": "reading",
+   "treatment_reason": "Read only; no one is shown."
   }
  ],
  "summary_for_children": "Al-Fajr means The Dawn. It recalls 'Ad, Thamud and Pharaoh who oppressed, and teaches caring for orphans and the poor.",
@@ -130,32 +132,45 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Dawn Archaeological Expedition",
+  "tier": "playable",
+  "visual_theme": "A palm grove at first light with baskets of dates on a mat, two small bowls, and a basket by the gate",
   "quran_references": [
-   "89:1–30"
+   "89:1-5",
+   "89:15-20",
+   "89:27-30"
   ],
   "primary_mechanic": {
    "kind": "dawn-excavation",
-   "engine": "not built yet",
-   "text": "At dawn, brush sand from columns and carved stones to uncover a lost city (89:6-9)."
+   "engine": "evenodd",
+   "text": "Share four baskets of dates (12, 9, 7, 10) between two orphan sisters by pairing them one for each; then say even (none left) or odd (one left, which goes to the poor family); declaring before pairing is done is refused, and a wrong answer is noted (89:3 the even and the odd; 89:17-18 honour the orphan, feed the poor)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "by the dawn (89:1-5, read)",
+   "O soul at peace (89:27-30, read)"
+  ],
+  "narrative_structure": "A reading on the path, sharing the dates, then a reading among the palms",
+  "world_assets": [
+   "date baskets on a mat",
+   "two bowls",
+   "the poor family’s basket"
+  ],
+  "environment_behaviour": [
+   "the sisters’ bowls fill as baskets are shared",
+   "odd dates gather in the gate basket"
+  ],
+  "learning_objective": "Honour the orphan and urge feeding the poor (89:17-18)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w089.ts",
+  "tested_hash": "5448dcc846ca"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

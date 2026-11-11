@@ -19,7 +19,7 @@ export const W037: WorldDef = {
     palette: PAL.coast,
     paths: [curve([[0, 30], [0, 10]])],
     water: -1.2,
-    flats: [{ x: 0, z: 0, r: 12, paint: '#ecdcae' }],
+    flats: [{ x: 4, z: 20, r: 2.5 }, { x: 0, z: 0, r: 12, paint: '#ecdcae' }],
   },
   look: { ...LOOKS.sea, sunI: 3.4 },
   veg: {
@@ -38,6 +38,16 @@ export const W037: WorldDef = {
   welcome:
     'Welcome to the Gourd Vine Shore. Surah As-Saffat tells how Yunus was cast onto an open shore, ill, and Allah caused a gourd vine to grow over him. Here, on a hot beach, an empty shade frame waits for a vine.',
   tasks: [
+    {
+      id: 'trial',
+      kind: 'read',
+      at: [4, 20],
+      marker: 'sign',
+      title: 'Ibrahim’s trial',
+      goal: 'Read at the sign near the way in',
+      adaptation: 'Ibrahim and his son are read only; nothing of the trial is shown.',
+      reading: { title: 'Ibrahim’s trial', refs: [[37, 99], [37, 100], [37, 101], [37, 102], [37, 103], [37, 104], [37, 105], [37, 106], [37, 107], [37, 108], [37, 109], [37, 110], [37, 111]], note: 'Ibrahim said: O my son, I have seen in a dream that I sacrifice you; so see what you think. He said: O my father, do as you are commanded. You will find me, if Allah wills, among the patient. And We ransomed him with a great sacrifice. Peace be upon Ibrahim.' },
+    },
     {
       id: 'ranks',
       kind: 'read',

@@ -121,32 +121,42 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Galloping Plains",
+  "tier": "playable",
+  "visual_theme": "A horse farm on the open steppe at first light with a training ring, a stable and stony ground",
   "quran_references": [
-   "100:1–11"
+   "100:1-11"
   ],
   "primary_mechanic": {
    "kind": "galloping-plains",
-   "engine": "not built yet",
-   "text": "Watch horses run across a plain and learn their gaits; then a gratitude reflection (100:1-6)."
+   "engine": "gaits",
+   "text": "Watch a horse worked round the ring and name each of four paces from an animated footfall diagram: walk (four even beats, one hoof at a time), trot (two beats, diagonal pairs), canter (three beats and a lift), gallop (four quick beats and a moment with all hooves off the ground); a wrong name is refused with a beat count. Then care for the horse: walking it cool must come before water and rubbing down (100:6, gratitude)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "by the chargers (100:1-5, read)",
+   "what is in the hearts (100:9-11, read)"
+  ],
+  "narrative_structure": "A reading on the farm track, the four paces and the care, then a reading by the stable",
+  "world_assets": [
+   "training ring and rail",
+   "running horse with moving legs",
+   "stable"
+  ],
+  "environment_behaviour": [
+   "the horse circles the ring at the pace being shown, slowing after the run"
+  ],
+  "learning_objective": "Know that man is ungrateful to his Lord, and be grateful (100:6)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w100.ts",
+  "tested_hash": "353bca0b7008"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

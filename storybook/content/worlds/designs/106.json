@@ -131,32 +131,42 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Two Caravan Routes",
+  "tier": "playable",
+  "visual_theme": "A caravan camp in rocky desert hills at dusk with tents, a map table and four fire rings",
   "quran_references": [
-   "106:1–4"
+   "106:1-4"
   ],
   "primary_mechanic": {
    "kind": "two-caravans",
-   "engine": "not built yet",
-   "text": "Pack a winter caravan and a summer caravan for their different roads (106:2)."
+   "engine": "campfire",
+   "text": "At the map table choose the road for the winter caravan (south, where it is warm) and the summer caravan (north, where it is cooler); the wrong road is refused with the season's weather. Then keep four fires burning through a 40-second night: each burns down in 14 seconds, adding wood to a fire still burning well is refused, and while any fire is out the night does not pass (106:4, safe from fear)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "winter and summer (106:1-2, read)",
+   "against hunger, from fear (106:4, read)"
+  ],
+  "narrative_structure": "A reading on the caravan road, the map and the night watch, then a reading above the camp",
+  "world_assets": [
+   "tents",
+   "map table",
+   "four fire rings with flames and light"
+  ],
+  "environment_behaviour": [
+   "the sky turns to night during the watch; each flame shrinks as its fuel burns down"
+  ],
+  "learning_objective": "Thank and worship the Lord who feeds us against hunger and makes us safe from fear (106:3-4)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w106.ts",
+  "tested_hash": "7b703a33b5f2"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

@@ -106,32 +106,42 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The House of Pride",
+  "tier": "playable",
+  "visual_theme": "A date grove with an old well whose rope has frayed, and bundles of palm fibre",
   "quran_references": [
-   "111:1–5"
+   "111:1-5"
   ],
   "primary_mechanic": {
    "kind": "rope-of-palm-fibre",
-   "engine": "not built yet",
-   "text": "Twist palm fibre into rope for useful work, contrasting with the warning (111:5), narration only."
+   "engine": "rope",
+   "text": "Twist three strands of palm fibre four times each, all the same way (a strand the other way is refused); lay them together the opposite way (the same way springs apart and is refused); then tie on the bucket and lower it at the well. Abu Lahab and his wife are never shown; the warning is read only."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "his wealth will not avail him (111:1-2, read)",
+   "what he earned (111:2, read)"
+  ],
+  "narrative_structure": "A reading at the grove gate, the rope and the well, then a reading among the palms",
+  "world_assets": [
+   "work bench with palm fibre",
+   "well",
+   "strands and rope"
+  ],
+  "environment_behaviour": [
+   "each twisted strand appears on the bench; the rope hangs in the well once made"
+  ],
+  "learning_objective": "Know that wealth and gains do not avail one who opposes the truth (111:2)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w111.ts",
+  "tested_hash": "124ac851baf8"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

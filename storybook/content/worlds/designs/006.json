@@ -197,6 +197,7 @@
    "devices": "pass (2026-11-04: desktop 1100x700 with mouse, and Pixel 7 emulation with touch taps; both in headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": "src/adventure/worlds/w006.ts"
+  "built_in": "src/adventure/worlds/w006.ts",
+  "tested_hash": "d35c9a90d8e2"
  }
 }

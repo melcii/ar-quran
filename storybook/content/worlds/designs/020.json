@@ -25,12 +25,18 @@
   {
    "title": "The chest on the river",
    "reference": "20:37-40",
-   "anchor_phrase": "chest"
+   "anchor_phrase": "chest",
+   "played_in": 28
   },
   {
    "title": "Gentle words to Pharaoh",
    "reference": "20:43-48",
    "anchor_phrase": "gentle"
+  },
+  {
+   "title": "The magicians",
+   "reference": "20:56-73",
+   "anchor_phrase": "magicians"
   },
   {
    "title": "The dry path in the sea",
@@ -41,6 +47,11 @@
    "title": "The calf",
    "reference": "20:85-97",
    "anchor_phrase": "calf"
+  },
+  {
+   "title": "Adam and the lesson of guidance",
+   "reference": "20:115-123",
+   "anchor_phrase": "Adam"
   }
  ],
  "summary_for_children": "Surah Ta-Ha tells how Musa saw a fire in the night and was called by Allah, how as a baby he was placed in a chest on the river, how he and Harun went to Pharaoh with gentle words, and how Allah saved the believers through the sea.",
@@ -201,7 +212,12 @@
   "secondary_activities": [
    "a prayer for help (20:25-32)",
    "gentle words (20:43-46)",
-   "asking for knowledge (20:114, 20:123)"
+   "asking for knowledge (20:114, 20:123)",
+   "gentle words, at a signpost (20:43-46)",
+   "look closely at ropes and staffs that only seem to move from far away (20:66-69)",
+   "mark the dry path across the sea inlet (20:77-82)",
+   "sort what the calf could never do (20:88-91)",
+   "put the ayahs about Adam in order (20:115-123)"
   ],
   "narrative_structure": "The lantern at the start, the cairns across the hills, then three readings on the way back",
   "world_assets": [
@@ -215,16 +231,17 @@
   ],
   "learning_objective": "Learn how the story of Musa begins in Ta-Ha: a light seen at night, a search for guidance, and a prayer for help",
   "interaction_tests": {
-   "activate": "pass (2026-11-04, headless Chromium, software WebGL: pressed \"Build a cairn here\" with the on-screen button)",
-   "responds": "pass (2026-11-04, headless Chromium, software WebGL: in the hollow the status says the light is hidden and the cairn is refused; on the hill top it is in view and the cairn is built)",
-   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"The light is in view · Cairns: 1 of 3\" plus the hint)",
-   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
-   "completion": "pass (2026-11-04, headless Chromium, software WebGL: cairns [1,4,6], refused in the hollow [3])",
-   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"story\",\"light\",\"helper\",\"gentle\",\"knowledge\"])",
-   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": "src/adventure/worlds/w020.ts"
+  "built_in": "src/adventure/worlds/w020.ts",
+  "tested_hash": "ad4af1b30b9a"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

@@ -19,12 +19,15 @@
   {
    "title": "Nuh's long call",
    "reference": "29:14-15",
-   "anchor_phrase": "thousand years"
+   "anchor_phrase": "thousand years",
+   "played_in": 11
   },
   {
    "title": "Ibrahim and the fire",
    "reference": "29:16-27",
-   "anchor_phrase": "Abraham"
+   "anchor_phrase": "Abraham",
+   "treatment": "reading",
+   "treatment_reason": "Ibrahim and the fire: kept to the reading, no fire scene with a person"
   }
  ],
  "summary_for_children": "Al-'Ankabut means The Spider. It teaches that faith is tested, and that relying on anything besides Allah is like the spider's home, the weakest of homes. It mentions Nuh, Ibrahim, Lut and others.",
@@ -160,16 +163,17 @@
   ],
   "learning_objective": "Understand the example of the spider's house (29:41) and that examples are for those who think (29:43)",
   "interaction_tests": {
-   "activate": "pass (2026-11-04, headless Chromium, software WebGL: pulled the test lever with the on-screen button; rain and wind start)",
-   "responds": "pass (2026-11-04, headless Chromium, software WebGL: the web shelter lets rain and wind through and the lamp goes out; rebuilt as [\"reed\",\"brick\",\"reed\"], a gust still gets between the reeds of the east wall)",
-   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Rebuild the shelter, then test it · roof: reed · west wall: mud brick · east wall: reed\"; the lamp goes dark when the storm gets in)",
-   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
-   "completion": "pass (2026-11-04, headless Chromium, software WebGL: steps [0,1]; first card was the web reading: true)",
-   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"tried\",\"shelter\",\"prayer\",\"strive\"])",
-   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": "src/adventure/worlds/w029.ts"
+  "built_in": "src/adventure/worlds/w029.ts",
+  "tested_hash": "6a985824aca2"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

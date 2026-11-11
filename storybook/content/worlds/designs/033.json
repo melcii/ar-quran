@@ -19,7 +19,9 @@
   {
    "title": "The armies and the wind",
    "reference": "33:9-27",
-   "anchor_phrase": "wind"
+   "anchor_phrase": "wind",
+   "treatment": "reading",
+   "treatment_reason": "a battle; no combat is played"
   }
  ],
  "summary_for_children": "Al-Ahzab means The Confederates. It recalls how armies gathered against the believers and Allah sent a wind against them. It says the Prophet Muhammad (peace be upon him) is the best example and describes qualities of believing men and women.",
@@ -153,7 +155,8 @@
    "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
   },
   "scholarly_review": "unreviewed",
-  "built_in": "src/adventure/worlds/w033.ts"
+  "built_in": "src/adventure/worlds/w033.ts",
+  "tested_hash": "c77cde30e749"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

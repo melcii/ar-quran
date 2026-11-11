@@ -119,32 +119,46 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Four Wonders",
+  "tier": "playable",
+  "visual_theme": "A sheltered dry valley at dusk with a sown field, a well, tents and a stone fire ring for travellers",
   "quran_references": [
-   "56:1–96"
+   "56:1-3",
+   "56:63-74"
   ],
   "primary_mechanic": {
    "kind": "four-wonders",
-   "engine": "not built yet",
-   "text": "Four hands-on stations: sow a seed, bring water down, kindle a fire safely, and reflect on human life (56:58-73)."
+   "engine": "firedrill",
+   "text": "Kindle the travellers’ fire with a bow drill: steady strokes (too fast slips, too slow loses the heat) until the dust smokes into an ember, then a few gentle breaths with pauses until it flames (56:71-73)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "the Event (56:1-3, read)",
+   "the seed you sow (56:63-65, read)",
+   "the water you drink (56:68-70, read)"
+  ],
+  "narrative_structure": "A reading at the top of the valley, readings at the field and the well, then the fire at the camp",
+  "world_assets": [
+   "sown field",
+   "well",
+   "tents and rug",
+   "stone fire ring with bow drill"
+  ],
+  "environment_behaviour": [
+   "smoke rises as the ember forms",
+   "the fire flames and lights the camp"
+  ],
+  "learning_objective": "Think about who gives the seed, the water and the fire (56:63-72)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w056.ts",
+  "tested_hash": "53b61014598e"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

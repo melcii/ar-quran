@@ -19,7 +19,8 @@
   {
    "title": "Musa and the fire",
    "reference": "27:7-14",
-   "anchor_phrase": "fire"
+   "anchor_phrase": "fire",
+   "played_in": 20
   },
   {
    "title": "The valley of the ants",
@@ -34,17 +35,23 @@
   {
    "title": "The throne",
    "reference": "27:38-42",
-   "anchor_phrase": "throne"
+   "anchor_phrase": "throne",
+   "treatment": "reading",
+   "treatment_reason": "the throne brought in the blink of an eye; Sulayman, the queen and the one with knowledge are never shown"
   },
   {
    "title": "The glass palace",
    "reference": "27:44",
-   "anchor_phrase": "palace"
+   "anchor_phrase": "palace",
+   "treatment": "reading",
+   "treatment_reason": "Sulayman and the queen are never shown"
   },
   {
    "title": "Salih and the plotters",
    "reference": "27:45-53",
-   "anchor_phrase": "Thamud"
+   "anchor_phrase": "Thamud",
+   "treatment": "reading",
+   "treatment_reason": "a plot to kill at night; kept to the reading"
   }
  ],
  "summary_for_children": "An-Naml means The Ants. It tells of Sulayman, who heard an ant warn the others, of a hoopoe that brought news of the Queen of Sheba, and how she came to believe in Allah. It also tells briefly of Musa, Salih and Lut.",
@@ -229,16 +236,17 @@
   ],
   "learning_objective": "Learn how the ant cared for the others (27:18) and Sulayman's prayer of thanks (27:19)",
   "interaction_tests": {
-   "activate": "pass (2026-11-04, headless Chromium, software WebGL: started at the nest with the on-screen button; the footsteps count begins)",
-   "responds": "pass (2026-11-04, headless Chromium, software WebGL: clearing the leaf lets that group march home; when the count runs out the others scatter safely and the paths reset)",
-   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Footsteps coming in N s · Ant groups home: 1 of 3\")",
-   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
-   "completion": "pass (2026-11-04, headless Chromium, software WebGL: groups home [1,0,2], ran out [1])",
-   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"gift\",\"ants\",\"hoopoe\",\"thanks\"])",
-   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": "src/adventure/worlds/w027.ts"
+  "built_in": "src/adventure/worlds/w027.ts",
+  "tested_hash": "664517c19471"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

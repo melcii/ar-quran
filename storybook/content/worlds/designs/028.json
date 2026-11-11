@@ -34,7 +34,8 @@
   {
    "title": "Fire at the mount",
    "reference": "28:29-35",
-   "anchor_phrase": "fire"
+   "anchor_phrase": "fire",
+   "played_in": 20
   },
   {
    "title": "Qarun's treasure",
@@ -210,16 +211,17 @@
   ],
   "learning_objective": "Learn how Allah kept His promise to Musa's mother (28:7, 28:13), and the lessons of Madyan and Qarun",
   "interaction_tests": {
-   "activate": "pass (2026-11-04, headless Chromium, software WebGL: let the chest go with the on-screen button; it floats with the current)",
-   "responds": "pass (2026-11-04, headless Chromium, software WebGL: with the reeds at their start the chest drifted into the reed marsh and came back; after moving both reed bundles it took the other channels (gates [1,0]) and was nudged free 2 times)",
-   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: hints: \"The chest drifted into the reed marsh…\", \"The chest has caught on the bank…\"; status: \"The chest is coming to a fork: are the reeds set?\")",
-   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
-   "completion": "pass (2026-11-04, headless Chromium, software WebGL: landed; marsh tries [0])",
-   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"promise\",\"chest\",\"madyan\",\"qarun\"])",
-   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every other activity with real input and kept it after reload; the walker cannot follow the floating chest, so scripts/physics/river-checks.js played it through the world's own uses: the wrong channel ends in the reed marsh with feedback and a reset, and setting both forks, following the chest and nudging it free at both snags brings it to the landing)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every other activity with real input and kept it after reload; the walker cannot follow the floating chest, so scripts/physics/river-checks.js played it through the world's own uses: the wrong channel ends in the reed marsh with feedback and a reset, and setting both forks, following the chest and nudging it free at both snags brings it to the landing)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every other activity with real input and kept it after reload; the walker cannot follow the floating chest, so scripts/physics/river-checks.js played it through the world's own uses: the wrong channel ends in the reed marsh with feedback and a reset, and setting both forks, following the chest and nudging it free at both snags brings it to the landing)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every other activity with real input and kept it after reload; the walker cannot follow the floating chest, so scripts/physics/river-checks.js played it through the world's own uses: the wrong channel ends in the reed marsh with feedback and a reset, and setting both forks, following the chest and nudging it free at both snags brings it to the landing)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every other activity with real input and kept it after reload; the walker cannot follow the floating chest, so scripts/physics/river-checks.js played it through the world's own uses: the wrong channel ends in the reed marsh with feedback and a reset, and setting both forks, following the chest and nudging it free at both snags brings it to the landing)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every other activity with real input and kept it after reload; the walker cannot follow the floating chest, so scripts/physics/river-checks.js played it through the world's own uses: the wrong channel ends in the reed marsh with feedback and a reset, and setting both forks, following the chest and nudging it free at both snags brings it to the landing)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": "src/adventure/worlds/w028.ts"
+  "built_in": "src/adventure/worlds/w028.ts",
+  "tested_hash": "00a4f52e9b1d"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

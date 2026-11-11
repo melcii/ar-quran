@@ -1,0 +1,3064 @@
+{
+ "generated": "2026-11-11",
+ "rows": [
+  {
+   "surah": 1,
+   "name": "Al-Fātiḥah",
+   "meaning": "The Opener",
+   "ayahs": 7,
+   "world": "The Seven Gates",
+   "kinds": [
+    "cypress",
+    "olive",
+    "fig",
+    "pine",
+    "stand",
+    "points",
+    "reach",
+    "read"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 7 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation pass (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 2,
+   "name": "Al-Baqarah",
+   "meaning": "The Cow",
+   "ayahs": 286,
+   "world": "The Great Story Atlas",
+   "kinds": [
+    "oak",
+    "blossom",
+    "olive",
+    "autumn",
+    "fig",
+    "palm",
+    "pine",
+    "cypress",
+    "read",
+    "points",
+    "sift",
+    "carry"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 286 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "5 of 5 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Reading place only, by design: Talut and the river (2:249-251: a battle (Talut, Jalut and Dawud); kept to the reading, nothing is shown); The town and the hundred years (2:259: a man made to die for a hundred years and raised again; kept to the reading).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 3,
+   "name": "Āl-‘Imrān",
+   "meaning": "Family of Imran",
+   "ayahs": 200,
+   "world": "The Sanctuary of Maryam",
+   "kinds": [
+    "cypress",
+    "olive",
+    "pine",
+    "oak",
+    "read",
+    "return",
+    "points",
+    "reach"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 200 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "3 of 3 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 4,
+   "name": "An-Nisā’",
+   "meaning": "The Women",
+   "ayahs": 176,
+   "world": "The Village of Fairness",
+   "kinds": [
+    "oak",
+    "autumn",
+    "olive",
+    "fig",
+    "cypress",
+    "read",
+    "share",
+    "carry"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 176 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 5,
+   "name": "Al-Mā’idah",
+   "meaning": "The Table Spread",
+   "ayahs": 120,
+   "world": "The Table of Promises",
+   "kinds": [
+    "olive",
+    "oak",
+    "blossom",
+    "fig",
+    "autumn",
+    "read",
+    "promise",
+    "points"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 120 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "2 of 2 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Reading place only, by design: The two sons of Adam (5:27-31: a killing; kept to the verified reading for this age group).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 6,
+   "name": "Al-An‘ām",
+   "meaning": "The Cattle",
+   "ayahs": 165,
+   "world": "The Living World of Creation",
+   "kinds": [
+    "olive",
+    "fig",
+    "palm",
+    "autumn",
+    "oak",
+    "pine",
+    "read",
+    "sky",
+    "observe"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 165 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "1 of 1 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation (interaction tests); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Some drawn footpaths cross solids (layout note; the walker goes round).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 7,
+   "name": "Al-A‘rāf",
+   "meaning": "The Heights",
+   "ayahs": 206,
+   "world": "The Lost Civilizations",
+   "kinds": [
+    "blossom",
+    "oak",
+    "palm",
+    "olive",
+    "fig",
+    "cypress",
+    "pine",
+    "read",
+    "points",
+    "weigh"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 206 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "7 of 7 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Reading place only, by design: Adam and Iblis (7:11-25: Adam, Iblis and the Garden are of the unseen; never pictured).",
+    "Played in another surah's world (story atlas), read here: Nuh (7:59-64, played in surah 11); Lut (7:80-84, played in surah 11).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 8,
+   "name": "Al-Anfāl",
+   "meaning": "The Spoils of War",
+   "ayahs": 75,
+   "world": "The Camp of Cooperation",
+   "kinds": [
+    "palm",
+    "olive",
+    "read",
+    "flow",
+    "quiz"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 75 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "1 of 1 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Reading place only, by design: Rain before the day of Badr (8:11: the eve of a battle; no combat is played).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 9,
+   "name": "At-Taubah",
+   "meaning": "The Repentance",
+   "ayahs": 129,
+   "world": "The Journey of Return",
+   "kinds": [
+    "autumn",
+    "oak",
+    "fig",
+    "pine",
+    "read",
+    "choice",
+    "reach",
+    "stand"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 129 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "2 of 2 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Reading place only, by design: The two in the cave (9:40: the Prophet is never shown; the cave is a reading place).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 10,
+   "name": "Yūnus",
+   "meaning": "Jonah",
+   "ayahs": 109,
+   "world": "The Ocean of Signs",
+   "kinds": [
+    "palm",
+    "olive",
+    "cypress",
+    "fig",
+    "read",
+    "sail"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 109 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "2 of 2 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation (interaction tests); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 11,
+   "name": "Hūd",
+   "meaning": "Hud",
+   "ayahs": 123,
+   "world": "The Road of the Messengers",
+   "kinds": [
+    "pine",
+    "oak",
+    "olive",
+    "palm",
+    "cypress",
+    "read",
+    "carry",
+    "points",
+    "observe",
+    "dawn",
+    "measure",
+    "choice",
+    "stand"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 123 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "7 of 7 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 12,
+   "name": "Yūsuf",
+   "meaning": "Joseph",
+   "ayahs": 111,
+   "world": "The Seven Years Storehouse",
+   "kinds": [
+    "palm",
+    "fig",
+    "olive",
+    "read",
+    "carry",
+    "choice",
+    "granary"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 111 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "8 of 8 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Reading place only, by design: The dream (12:4-6: a dream told in three ayahs; the vision is not pictured); The household in Egypt (12:21-33: kept to a brief reading for young readers, flagged for review).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 13,
+   "name": "Ar-Ra‘d",
+   "meaning": "The Thunder",
+   "ayahs": 43,
+   "world": "The Storm Valley",
+   "kinds": [
+    "pine",
+    "oak",
+    "olive",
+    "palm",
+    "read",
+    "valley",
+    "stand"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 43 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation (interaction tests); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Some drawn footpaths cross solids (layout note; the walker goes round).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 14,
+   "name": "Ibrāhīm",
+   "meaning": "Abraham",
+   "ayahs": 52,
+   "world": "The Roots of Faith",
+   "kinds": [
+    "palm",
+    "read",
+    "grow"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 52 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "1 of 1 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation (interaction tests); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Reading place only, by design: Ibrahim's prayer in the valley (14:35-41: a prayer, read in full; its theme of provision is played in the tree chapter, where fruit is carried to travellers).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 15,
+   "name": "Al-Ḥijr",
+   "meaning": "The Rocky Tract",
+   "ayahs": 99,
+   "world": "The Carved Valley",
+   "kinds": [
+    "palm",
+    "read",
+    "rubbing"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 99 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "3 of 3 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Reading place only, by design: Iblis refuses (15:28-44: Iblis and the angels are of the unseen; never pictured).",
+    "Played in another surah's world (story atlas), read here: Ibrahim's guests (15:51-60, played in surah 11).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 16,
+   "name": "An-Naḥl",
+   "meaning": "The Bee",
+   "ayahs": 128,
+   "world": "The Honeybee Meadow",
+   "kinds": [
+    "blossom",
+    "olive",
+    "fig",
+    "palm",
+    "read",
+    "observe",
+    "pollen",
+    "stand"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 128 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation (interaction tests); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 17,
+   "name": "Al-Isrā’",
+   "meaning": "The Night Journey",
+   "ayahs": 111,
+   "world": "The Town of Good Conduct",
+   "kinds": [
+    "olive",
+    "cypress",
+    "read",
+    "streets"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 111 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "2 of 2 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Reading place only, by design: The night journey (17:1: the Night Journey concerns the Prophet and the unseen; never pictured); Iblis refuses (17:61-65: Iblis and the angels are of the unseen; never pictured).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 18,
+   "name": "Al-Kahf",
+   "meaning": "The Cave",
+   "ayahs": 110,
+   "world": "The Four Realms",
+   "kinds": [
+    "palm",
+    "fig",
+    "pine",
+    "oak",
+    "read",
+    "sunpath",
+    "points",
+    "choice",
+    "stand",
+    "carry"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 110 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "4 of 4 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 19,
+   "name": "Maryam",
+   "meaning": "Mary",
+   "ayahs": 98,
+   "world": "The Quiet Grove",
+   "kinds": [
+    "palm",
+    "olive",
+    "point",
+    "choice",
+    "read",
+    "promise"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 98 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "6 of 6 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 20,
+   "name": "Ṭā-Hā",
+   "meaning": "Ta-Ha",
+   "ayahs": 135,
+   "world": "The Far Light",
+   "kinds": [
+    "olive",
+    "cypress",
+    "read",
+    "beacon",
+    "choice",
+    "shimmer",
+    "rope",
+    "staff",
+    "points",
+    "quiz"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 135 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "7 of 7 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Played in another surah's world (story atlas), read here: The chest on the river (20:37-40, played in surah 28).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 21,
+   "name": "Al-Anbiyā’",
+   "meaning": "The Prophets",
+   "ayahs": 112,
+   "world": "The Hall of Answered Prayers",
+   "kinds": [
+    "cypress",
+    "olive",
+    "palm",
+    "doors",
+    "read",
+    "lead"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 112 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "5 of 5 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Reading place only, by design: Ibrahim and the idols (21:51-70: the breaking of the idols and the fire are kept to the reading).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 22,
+   "name": "Al-Ḥajj",
+   "meaning": "The Pilgrimage",
+   "ayahs": 78,
+   "world": "The Pilgrimage Verses",
+   "kinds": [
+    "palm",
+    "order",
+    "read"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 78 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "1 of 1 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation (interaction tests); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 23,
+   "name": "Al-Mu’minūn",
+   "meaning": "The Believers",
+   "ayahs": 118,
+   "world": "The Home of Good Character",
+   "kinds": [
+    "fig",
+    "olive",
+    "cypress",
+    "read",
+    "home"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 118 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "1 of 1 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation (interaction tests); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Played in another surah's world (story atlas), read here: Nuh builds the ship (23:23-30, played in surah 11).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 24,
+   "name": "An-Nūr",
+   "meaning": "The Light",
+   "ayahs": 64,
+   "world": "The Courtyards of Permission",
+   "kinds": [
+    "olive",
+    "palm",
+    "cypress",
+    "mirror",
+    "read"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 64 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation (interaction tests); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 25,
+   "name": "Al-Furqān",
+   "meaning": "The Criterion",
+   "ayahs": 77,
+   "world": "The Shadow Plaza",
+   "kinds": [
+    "oak",
+    "olive",
+    "shadow",
+    "choice",
+    "read"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 77 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation (interaction tests); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 26,
+   "name": "Ash-Shu‘arā’",
+   "meaning": "The Poets",
+   "ayahs": 227,
+   "world": "The Echo Amphitheatre",
+   "kinds": [
+    "cypress",
+    "olive",
+    "read",
+    "echo"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 227 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "7 of 7 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Played in another surah's world (story atlas), read here: The sea parts (26:61-66, played in surah 20).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 27,
+   "name": "An-Naml",
+   "meaning": "The Ant",
+   "ayahs": 93,
+   "world": "The Valley of the Ants",
+   "kinds": [
+    "read",
+    "ants",
+    "rollcall"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 93 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "6 of 6 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Reading place only, by design: The throne (27:38-42: the throne brought in the blink of an eye; Sulayman, the queen and the one with knowledge are never shown); The glass palace (27:44: Sulayman and the queen are never shown); Salih and the plotters (27:45-53: a plot to kill at night; kept to the reading).",
+    "Played in another surah's world (story atlas), read here: Musa and the fire (27:7-14, played in surah 20).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 28,
+   "name": "Al-Qaṣaṣ",
+   "meaning": "The Stories",
+   "ayahs": 88,
+   "world": "The River and the Chest",
+   "kinds": [
+    "palm",
+    "olive",
+    "read",
+    "river",
+    "reach",
+    "carry",
+    "choice"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 88 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "5 of 5 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Played in another surah's world (story atlas), read here: Fire at the mount (28:29-35, played in surah 20).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 29,
+   "name": "Al-‘Ankabūt",
+   "meaning": "The Spider",
+   "ayahs": 69,
+   "world": "The Shelter Test",
+   "kinds": [
+    "oak",
+    "read",
+    "shelter"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 69 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "2 of 2 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Reading place only, by design: Ibrahim and the fire (29:16-27: Ibrahim and the fire: kept to the reading, no fire scene with a person).",
+    "Played in another surah's world (story atlas), read here: Nuh's long call (29:14-15, played in surah 11).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 30,
+   "name": "Ar-Rūm",
+   "meaning": "The Romans",
+   "ayahs": 60,
+   "world": "The Dry Land and the Rain",
+   "kinds": [
+    "olive",
+    "read",
+    "rain"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 60 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "1 of 1 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation (interaction tests); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Reading place only, by design: The promise about the Romans (30:2-4: a brief foretelling about a war between empires; no battle is played).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 31,
+   "name": "Luqmān",
+   "meaning": "Luqman",
+   "ayahs": 34,
+   "world": "The Garden Path",
+   "kinds": [
+    "fig",
+    "olive",
+    "voice",
+    "read"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 34 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "1 of 1 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation (interaction tests); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 32,
+   "name": "As-Sajdah",
+   "meaning": "The Prostration",
+   "ayahs": 30,
+   "world": "The Grazing Hills",
+   "kinds": [
+    "oak",
+    "read",
+    "pasture"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 30 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation (interaction tests); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 33,
+   "name": "Al-Aḥzāb",
+   "meaning": "The Combined Forces",
+   "ayahs": 73,
+   "world": null,
+   "kinds": [
+    "olive",
+    "read",
+    "plumb"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 73 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "1 of 1 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation (interaction tests); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Reading place only, by design: The armies and the wind (33:9-27: a battle; no combat is played).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 34,
+   "name": "Saba’",
+   "meaning": "Sheba",
+   "ayahs": 54,
+   "world": "The Two Gardens",
+   "kinds": [
+    "palm",
+    "read",
+    "links",
+    "sluice"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 54 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "3 of 3 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Reading place only, by design: Sulayman and the copper (34:12-14: the jinn are of the unseen; never pictured).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 35,
+   "name": "Fāṭir",
+   "meaning": "Originator",
+   "ayahs": 45,
+   "world": "The Colour Atlas",
+   "kinds": [
+    "olive",
+    "fig",
+    "read",
+    "shades"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 45 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation (interaction tests); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 36,
+   "name": "Yā-Sīn",
+   "meaning": "Ya Sin",
+   "ayahs": 83,
+   "world": "The Moon Calendar",
+   "kinds": [
+    "palm",
+    "olive",
+    "read",
+    "moon",
+    "reach"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 83 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "1 of 1 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 37,
+   "name": "Aṣ-Ṣāffāt",
+   "meaning": "Those who set the Ranks",
+   "ayahs": 182,
+   "world": "The Gourd Vine Shore",
+   "kinds": [
+    "palm",
+    "read",
+    "vine"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 182 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "2 of 2 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Reading place only, by design: Ibrahim's trial (37:99-111: Ibrahim's trial with his son is kept to the reading; no knife, altar or ram scene).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 38,
+   "name": "Ṣād",
+   "meaning": "The Letter \"Saad\"",
+   "ayahs": 88,
+   "world": "The Valley of Signs",
+   "kinds": [
+    "palm",
+    "read",
+    "spring"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 88 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "2 of 2 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation (interaction tests); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 39,
+   "name": "Az-Zumar",
+   "meaning": "The Troops",
+   "ayahs": 75,
+   "world": "The Turning Field",
+   "kinds": [
+    "oak",
+    "read",
+    "harvest"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 75 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation pass (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 40,
+   "name": "Ghāfir",
+   "meaning": "The Forgiver",
+   "ayahs": 85,
+   "world": "The City of the Believing Man",
+   "kinds": [
+    "palm",
+    "read",
+    "clues"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 85 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "2 of 2 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 41,
+   "name": "Fuṣṣilat",
+   "meaning": "Explained in Detail",
+   "ayahs": 54,
+   "world": "The Hilltop of Signs",
+   "kinds": [
+    "olive",
+    "oak",
+    "read",
+    "scope",
+    "choice"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 54 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 42,
+   "name": "Ash-Shūra",
+   "meaning": "The Consultation",
+   "ayahs": 53,
+   "world": "The Village of the Council",
+   "kinds": [
+    "fig",
+    "olive",
+    "read",
+    "council"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 53 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 43,
+   "name": "Az-Zukhruf",
+   "meaning": "The Ornaments of Gold",
+   "ayahs": 89,
+   "world": "The Street of Ornaments",
+   "kinds": [
+    "cypress",
+    "oak",
+    "read",
+    "adorn"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 89 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "1 of 1 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Reading place only, by design: Ibrahim leaves idols (43:26-28: Ibrahim is never shown; his word to his people is read at the edge of town.).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 44,
+   "name": "Ad-Dukhān",
+   "meaning": "The Smoke",
+   "ayahs": 59,
+   "world": "The Valley Left Behind",
+   "kinds": [
+    "palm",
+    "read",
+    "survey"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 59 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "1 of 1 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Reading place only, by design: Leaving Egypt (44:17-31: The leaving of Egypt and the drowning are never shown; the survey of what was left behind (44:25-27) is the played part.).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 45,
+   "name": "Al-Jāthiyah",
+   "meaning": "The Crouching",
+   "ayahs": 37,
+   "world": "The Headland Weather Station",
+   "kinds": [
+    "palm",
+    "olive",
+    "read",
+    "station"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 37 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 46,
+   "name": "Al-Aḥqāf",
+   "meaning": "The Wind-Curved Sandhills",
+   "ayahs": 35,
+   "world": "The Dune Road",
+   "kinds": [
+    "palm",
+    "read",
+    "dunes",
+    "choice"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 35 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "1 of 1 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Reading place only, by design: Hud warns 'Ad (46:21-25: Hud and ‘Ad are never shown; the punishing wind is read only. Their story is played in Surah Hud’s world.).",
+    "Played in another surah's world (story atlas), read here: Hud warns 'Ad (46:21-25, played in surah 11).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 47,
+   "name": "Muḥammad",
+   "meaning": "Muhammad",
+   "ayahs": 38,
+   "world": "The Garden of Running Water",
+   "kinds": [
+    "fig",
+    "olive",
+    "cypress",
+    "read",
+    "channels"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 38 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 48,
+   "name": "Al-Fatḥ",
+   "meaning": "The Victory",
+   "ayahs": 29,
+   "world": "The Road to the Open Gate",
+   "kinds": [
+    "olive",
+    "palm",
+    "read",
+    "calm"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 29 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "1 of 1 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Reading place only, by design: The pledge under the tree (48:18: The pledge is read under the tree; no one is shown.).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 49,
+   "name": "Al-Ḥujurāt",
+   "meaning": "The Rooms",
+   "ayahs": 18,
+   "world": "The Village of the Rumour",
+   "kinds": [
+    "fig",
+    "olive",
+    "read",
+    "rumour",
+    "choice"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 18 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 50,
+   "name": "Qāf",
+   "meaning": "The Letter \"Qaf\"",
+   "ayahs": 45,
+   "world": "The Valley Brought to Life",
+   "kinds": [
+    "palm",
+    "read",
+    "rootbox"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 45 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 51,
+   "name": "Adh-Dhāriyāt",
+   "meaning": "The Winnowing Winds",
+   "ayahs": 60,
+   "world": "The Valley of the Turning Wind",
+   "kinds": [
+    "oak",
+    "blossom",
+    "read",
+    "release"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 60 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "1 of 1 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Reading place only, by design: Ibrahim's honoured guests (51:24-30: Ibrahim and his guests are never shown; the welcome is played in Surah Hud’s world.).",
+    "Played in another surah's world (story atlas), read here: Ibrahim's honoured guests (51:24-30, played in surah 11).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 52,
+   "name": "Aṭ-Ṭūr",
+   "meaning": "The Mount",
+   "ayahs": 49,
+   "world": "The Mountain of Blazes",
+   "kinds": [
+    "pine",
+    "oak",
+    "blazes",
+    "read"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 49 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 53,
+   "name": "An-Najm",
+   "meaning": "The Star",
+   "ayahs": 62,
+   "world": "The Night Hill",
+   "kinds": [
+    "cypress",
+    "olive",
+    "read",
+    "starhop"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 62 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 54,
+   "name": "Al-Qamar",
+   "meaning": "The Moon",
+   "ayahs": 55,
+   "world": "The Path of Remembering",
+   "kinds": [
+    "autumn",
+    "cypress",
+    "read",
+    "recall"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 55 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "3 of 3 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Reading place only, by design: Nuh and the flood (54:9-17: Read at its standing stone with the refrain; the prophets and the punishments are never shown. The story is played in Surah Hud’s world.); 'Ad and the wind (54:18-22: Read at its standing stone with the refrain; the prophets and the punishments are never shown. The story is played in Surah Hud’s world.); Thamud and the she-camel (54:23-32: Read at its standing stone with the refrain; the prophets and the punishments are never shown. The story is played in Surah Hud’s world.).",
+    "Played in another surah's world (story atlas), read here: Nuh and the flood (54:9-17, played in surah 11); 'Ad and the wind (54:18-22, played in surah 11); Thamud and the she-camel (54:23-32, played in surah 11).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 55,
+   "name": "Ar-Raḥmān",
+   "meaning": "The Beneficent",
+   "ayahs": 78,
+   "world": "The Meeting of the Two Seas",
+   "kinds": [
+    "palm",
+    "fig",
+    "olive",
+    "read",
+    "estuary"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 78 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 56,
+   "name": "Al-Wāqi‘ah",
+   "meaning": "The Inevitable",
+   "ayahs": 96,
+   "world": "The Travellers’ Camp",
+   "kinds": [
+    "palm",
+    "olive",
+    "read",
+    "firedrill"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 96 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 57,
+   "name": "Al-Ḥadīd",
+   "meaning": "The Iron",
+   "ayahs": 29,
+   "world": "The Village Forge",
+   "kinds": [
+    "oak",
+    "cypress",
+    "olive",
+    "read",
+    "forge"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 29 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 58,
+   "name": "Al-Mujādilah",
+   "meaning": "The Pleading Woman",
+   "ayahs": 22,
+   "world": "The Courtyard of Listening",
+   "kinds": [
+    "fig",
+    "cypress",
+    "olive",
+    "read",
+    "listen"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 22 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "1 of 1 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Reading place only, by design: The woman's complaint (58:1-4: Read at the sign on the way in; the woman and the Prophet are never shown or voiced. The listening game uses fictional speakers who are never shown.).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 59,
+   "name": "Al-Ḥashr",
+   "meaning": "The Exile",
+   "ayahs": 24,
+   "world": "The Town of Welcome",
+   "kinds": [
+    "palm",
+    "olive",
+    "read",
+    "welcome"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 24 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 60,
+   "name": "Al-Mumtaḥanah",
+   "meaning": "She that is to be examined",
+   "ayahs": 13,
+   "world": "The Bridge Between Neighbours",
+   "kinds": [
+    "blossom",
+    "oak",
+    "cypress",
+    "read",
+    "span"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 13 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 61,
+   "name": "Aṣ-Ṣaff",
+   "meaning": "The Ranks",
+   "ayahs": 14,
+   "world": "The Garden Wall",
+   "kinds": [
+    "olive",
+    "fig",
+    "autumn",
+    "read",
+    "bond"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 14 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 62,
+   "name": "Al-Jumu‘ah",
+   "meaning": "The Congregation, Friday",
+   "ayahs": 11,
+   "world": "The Friday Market",
+   "kinds": [
+    "palm",
+    "read",
+    "friday"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 11 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 63,
+   "name": "Al-Munāfiqūn",
+   "meaning": "The Hypocrites",
+   "ayahs": 11,
+   "world": "The Lanterns of Now",
+   "kinds": [
+    "autumn",
+    "cypress",
+    "read",
+    "chances"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 11 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 64,
+   "name": "At-Taghābun",
+   "meaning": "The Mutual Disillusion",
+   "ayahs": 18,
+   "world": "The Long Walk",
+   "kinds": [
+    "pine",
+    "oak",
+    "olive",
+    "read",
+    "pack"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 18 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 65,
+   "name": "Aṭ-Ṭalāq",
+   "meaning": "The Divorce",
+   "ayahs": 12,
+   "world": "The Move Over the Hill",
+   "kinds": [
+    "oak",
+    "blossom",
+    "read",
+    "loads"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 12 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 66,
+   "name": "At-Taḥrīm",
+   "meaning": "The Prohibition",
+   "ayahs": 12,
+   "world": "The Garden of Footprints",
+   "kinds": [
+    "blossom",
+    "cypress",
+    "amends",
+    "read"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 12 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 67,
+   "name": "Al-Mulk",
+   "meaning": "The Sovereignty",
+   "ayahs": 30,
+   "world": "The Hill of Birds",
+   "kinds": [
+    "oak",
+    "pine",
+    "read",
+    "wings"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 30 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 68,
+   "name": "Al-Qalam",
+   "meaning": "The Pen",
+   "ayahs": 52,
+   "world": "The Orchard Gate",
+   "kinds": [
+    "fig",
+    "cypress",
+    "olive",
+    "read",
+    "glean"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 52 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "1 of 1 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Reading place only, by design: Owners of the garden (68:17-33: Read after the harvest (68:17-27); the play does the opposite of the owners: the gate is opened for those in need first. The owners and the ruin of the garden are never shown.).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 69,
+   "name": "Al-Ḥāqqah",
+   "meaning": "The Reality",
+   "ayahs": 52,
+   "world": "The Cliff Workshop",
+   "kinds": [
+    "pine",
+    "read",
+    "unseen"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 52 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "1 of 1 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Reading place only, by design: 'Ad and the wind (69:6-8: Not shown. What happened to ‘Ad is told and played in Surah Hud’s world; nothing of the wind is shown here.).",
+    "Played in another surah's world (story atlas), read here: 'Ad and the wind (69:6-8, played in surah 11).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 70,
+   "name": "Al-Ma‘ārij",
+   "meaning": "The Ascending Stairways",
+   "ayahs": 44,
+   "world": "The Terraced Storehouse",
+   "kinds": [
+    "olive",
+    "read",
+    "portion"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 44 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 71,
+   "name": "Nūḥ",
+   "meaning": "Noah",
+   "ayahs": 28,
+   "world": "The Courtyard of Light",
+   "kinds": [
+    "oak",
+    "cypress",
+    "read",
+    "reflect"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 28 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "1 of 1 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Reading place only, by design: Nuh calls his people (71:5-20: Read only; no one is shown.).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 72,
+   "name": "Al-Jinn",
+   "meaning": "The Jinn",
+   "ayahs": 28,
+   "world": "The Listening Valley",
+   "kinds": [
+    "palm",
+    "read",
+    "hush"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 28 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 73,
+   "name": "Al-Muzzammil",
+   "meaning": "The Enshrouded One",
+   "ayahs": 20,
+   "world": "The Rooftop Water Clock",
+   "kinds": [
+    "palm",
+    "read",
+    "nightclock"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 20 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 74,
+   "name": "Al-Muddaththir",
+   "meaning": "The Cloaked One",
+   "ayahs": 56,
+   "world": "The Washing Stone",
+   "kinds": [
+    "oak",
+    "read",
+    "wash"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 56 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 75,
+   "name": "Al-Qiyāmah",
+   "meaning": "The Resurrection",
+   "ayahs": 40,
+   "world": "The Potter’s Yard",
+   "kinds": [
+    "fig",
+    "olive",
+    "read",
+    "prints"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 40 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 76,
+   "name": "Al-Insān",
+   "meaning": "The Man",
+   "ayahs": 31,
+   "world": "The Hill Town Doorsteps",
+   "kinds": [
+    "olive",
+    "cypress",
+    "read",
+    "doorstep"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 31 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 77,
+   "name": "Al-Mursalāt",
+   "meaning": "The Emissaries",
+   "ayahs": 50,
+   "world": "The Windy Threshing Floor",
+   "kinds": [
+    "pine",
+    "read",
+    "winnow"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 50 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 78,
+   "name": "An-Naba’",
+   "meaning": "The Tidings",
+   "ayahs": 40,
+   "world": "The Tent on the Plain",
+   "kinds": [
+    "oak",
+    "read",
+    "pegs"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 40 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 79,
+   "name": "An-Nāzi‘āt",
+   "meaning": "Those who drag forth",
+   "ayahs": 46,
+   "world": "The Upland Well",
+   "kinds": [
+    "olive",
+    "read",
+    "dig"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 46 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "1 of 1 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Reading place only, by design: Musa sent to Pharaoh (79:15-26: Read only; no one is shown.).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 80,
+   "name": "‘Abasa",
+   "meaning": "He Frowned",
+   "ayahs": 42,
+   "world": "The Valley Field",
+   "kinds": [
+    "olive",
+    "palm",
+    "read",
+    "furrows"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 42 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 81,
+   "name": "At-Takwīr",
+   "meaning": "The Overthrowing",
+   "ayahs": 29,
+   "world": "The Cairn Hills",
+   "kinds": [
+    "pine",
+    "read",
+    "bearings"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 29 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 82,
+   "name": "Al-Infiṭār",
+   "meaning": "The Cleaving",
+   "ayahs": 19,
+   "world": "The Gorge Logs",
+   "kinds": [
+    "pine",
+    "read",
+    "beam"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 19 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 83,
+   "name": "Al-Muṭaffifīn",
+   "meaning": "The Defrauding",
+   "ayahs": 36,
+   "world": "The Covered Market",
+   "kinds": [
+    "palm",
+    "read",
+    "inspect"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 36 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 84,
+   "name": "Al-Inshiqāq",
+   "meaning": "The Sundering",
+   "ayahs": 25,
+   "world": "The Caravan Road",
+   "kinds": [
+    "palm",
+    "read",
+    "stages"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 25 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 85,
+   "name": "Al-Burūj",
+   "meaning": "The Mansions of the Stars",
+   "ayahs": 22,
+   "world": "The Old Town Library",
+   "kinds": [
+    "cypress",
+    "read",
+    "shelves"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 22 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "1 of 1 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Reading place only, by design: Companions of the trench (85:4-9: Read only; no one is shown.).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 86,
+   "name": "Aṭ-Ṭāriq",
+   "meaning": "The Nightcommer",
+   "ayahs": 17,
+   "world": "The Salt Shore",
+   "kinds": [
+    "palm",
+    "read",
+    "still"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 17 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 87,
+   "name": "Al-A‘lā",
+   "meaning": "The Most High",
+   "ayahs": 19,
+   "world": "The Hillside Garden Shed",
+   "kinds": [
+    "blossom",
+    "fig",
+    "read",
+    "lightbox"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 19 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 88,
+   "name": "Al-Ghāshiyah",
+   "meaning": "The Overwhelming",
+   "ayahs": 26,
+   "world": "The Dune Well",
+   "kinds": [
+    "palm",
+    "read",
+    "camel"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 26 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 89,
+   "name": "Al-Fajr",
+   "meaning": "The Dawn",
+   "ayahs": 30,
+   "world": "The Dawn Palm Grove",
+   "kinds": [
+    "palm",
+    "read",
+    "evenodd"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 30 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "1 of 1 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Reading place only, by design: 'Ad, Thamud and Pharaoh (89:6-14: Read only; no one is shown.).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 90,
+   "name": "Al-Balad",
+   "meaning": "The City",
+   "ayahs": 20,
+   "world": "The Steep Pass",
+   "kinds": [
+    "olive",
+    "read",
+    "ration"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 20 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 91,
+   "name": "Ash-Shams",
+   "meaning": "The Sun",
+   "ayahs": 15,
+   "world": "The Village Hall Lamp",
+   "kinds": [
+    "cypress",
+    "olive",
+    "read",
+    "polish"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 15 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "1 of 1 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Reading place only, by design: Thamud and the she-camel (91:11-15: Read only; no one is shown.).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 92,
+   "name": "Al-Lail",
+   "meaning": "The Night",
+   "ayahs": 21,
+   "world": "The Granary Hoist",
+   "kinds": [
+    "oak",
+    "read",
+    "pulley"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 21 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 93,
+   "name": "Aḍ-Ḍuḥā",
+   "meaning": "The Morning Hours",
+   "ayahs": 11,
+   "world": "The Bakehouse Yard",
+   "kinds": [
+    "fig",
+    "olive",
+    "read",
+    "answer"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 11 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 94,
+   "name": "Ash-Sharḥ",
+   "meaning": "The Relief",
+   "ayahs": 8,
+   "world": "The Evening Harbour",
+   "kinds": [
+    "pine",
+    "read",
+    "knots"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 8 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 95,
+   "name": "At-Tīn",
+   "meaning": "The Fig",
+   "ayahs": 8,
+   "world": "The Olive Terraces",
+   "kinds": [
+    "olive",
+    "fig",
+    "read",
+    "oilpress"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 8 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 96,
+   "name": "Al-‘Alaq",
+   "meaning": "The Clot",
+   "ayahs": 19,
+   "world": "The Reed-Pen School",
+   "kinds": [
+    "fig",
+    "palm",
+    "read",
+    "pen"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 19 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 97,
+   "name": "Al-Qadr",
+   "meaning": "The Power",
+   "ayahs": 5,
+   "world": "The Night Rooftop",
+   "kinds": [
+    "palm",
+    "read",
+    "abacus"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 5 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 98,
+   "name": "Al-Bayyinah",
+   "meaning": "The Clear Proof",
+   "ayahs": 8,
+   "world": "The Straight Row",
+   "kinds": [
+    "blossom",
+    "olive",
+    "read",
+    "sight"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 8 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 99,
+   "name": "Az-Zalzalah",
+   "meaning": "The Earthquake",
+   "ayahs": 8,
+   "world": "The Ordinary Afternoon",
+   "kinds": [
+    "fig",
+    "olive",
+    "read",
+    "speck"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 8 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 100,
+   "name": "Al-‘Ādiyāt",
+   "meaning": "The Courser",
+   "ayahs": 11,
+   "world": "The Dawn Paddock",
+   "kinds": [
+    "oak",
+    "read",
+    "gaits"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 11 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 101,
+   "name": "Al-Qāri‘ah",
+   "meaning": "The Calamity",
+   "ayahs": 11,
+   "world": "The Shepherd’s Porch",
+   "kinds": [
+    "pine",
+    "read",
+    "carding"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 11 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 102,
+   "name": "At-Takāthur",
+   "meaning": "The Rivalry in world increase",
+   "ayahs": 8,
+   "world": "The Market Morning",
+   "kinds": [
+    "palm",
+    "read",
+    "errand"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 8 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 103,
+   "name": "Al-‘Aṣr",
+   "meaning": "The Declining Day",
+   "ayahs": 3,
+   "world": "Before Sunset",
+   "kinds": [
+    "cypress",
+    "read",
+    "hourglass"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 3 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 104,
+   "name": "Al-Humazah",
+   "meaning": "The Traducer",
+   "ayahs": 9,
+   "world": "The Windy Square",
+   "kinds": [
+    "oak",
+    "cypress",
+    "read",
+    "chalk"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 9 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 105,
+   "name": "Al-Fīl",
+   "meaning": "The Elephant",
+   "ayahs": 5,
+   "world": "The Evening Lookout",
+   "kinds": [
+    "palm",
+    "read",
+    "flock"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 5 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "1 of 1 played, 0 read only, 0 missing",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Reading place only, by design: The companions of the elephant (105:1-5: Read only; no one is shown.).",
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 106,
+   "name": "Quraish",
+   "meaning": "Quraysh",
+   "ayahs": 4,
+   "world": "The Caravan Camp",
+   "kinds": [
+    "palm",
+    "read",
+    "campfire"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 4 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 107,
+   "name": "Al-Mā‘ūn",
+   "meaning": "The Small kindnesses",
+   "ayahs": 7,
+   "world": "The Lamplit Terrace",
+   "kinds": [
+    "fig",
+    "cypress",
+    "read",
+    "lend"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 7 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 108,
+   "name": "Al-Kauthar",
+   "meaning": "The Abundance",
+   "ayahs": 3,
+   "world": "The Walled Garden",
+   "kinds": [
+    "olive",
+    "cypress",
+    "read",
+    "prune"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 3 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 109,
+   "name": "Al-Kāfirūn",
+   "meaning": "The Disbelievers",
+   "ayahs": 6,
+   "world": "The Shared Courtyard",
+   "kinds": [
+    "palm",
+    "fig",
+    "read",
+    "courtyard"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 6 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 110,
+   "name": "An-Naṣr",
+   "meaning": "The Divine Support",
+   "ayahs": 3,
+   "world": "The New Gate",
+   "kinds": [
+    "olive",
+    "cypress",
+    "read",
+    "arch"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 3 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 111,
+   "name": "Al-Masad",
+   "meaning": "The Palm Fiber",
+   "ayahs": 5,
+   "world": "The Date Grove Well",
+   "kinds": [
+    "palm",
+    "read",
+    "rope"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 5 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 112,
+   "name": "Al-Ikhlāṣ",
+   "meaning": "The Sincerity",
+   "ayahs": 4,
+   "world": "The Reading Court",
+   "kinds": [
+    "cypress",
+    "read",
+    "compass"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 4 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 113,
+   "name": "Al-Falaq",
+   "meaning": "The Daybreak",
+   "ayahs": 5,
+   "world": "The Wood Before Dawn",
+   "kinds": [
+    "pine",
+    "read",
+    "lanterns"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 5 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  },
+  {
+   "surah": 114,
+   "name": "An-Nās",
+   "meaning": "Mankind",
+   "ayahs": 6,
+   "world": "The Letter to Grandmother",
+   "kinds": [
+    "blossom",
+    "oak",
+    "read",
+    "whisper"
+   ],
+   "status": "Tested",
+   "quran_text_complete": "Yes: 6 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
+   "story_coverage": "No historical narrative listed; themes only",
+   "story_complete": true,
+   "narration": "Written (child-friendly English, draft); device voice only",
+   "unique_world": "Yes",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
+   "content_reviewed": "No: unreviewed by a scholar",
+   "remaining_issues": [
+    "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
+   ]
+  }
+ ]
+}

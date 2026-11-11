@@ -107,32 +107,43 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Balance of Good Actions",
+  "tier": "playable",
+  "visual_theme": "A shepherd’s stone house high on a hill at dusk with a lantern, circling moths, a fleece on the porch bench and a sheepfold below",
   "quran_references": [
-   "101:1–11"
+   "101:1-9"
   ],
   "primary_mechanic": {
    "kind": "scattered-moths-lanterns",
-   "engine": "not built yet",
-   "text": "Gather moths to a lantern at dusk and reflect on lightness and weight of deeds (101:4-9, symbolic, no scales of the Hereafter)."
+   "engine": "carding",
+   "text": "Pick five burrs out of a fleece, then card three rolls of wool in the real order: load a tuft, brush four strokes, pass it across, brush four more, roll it off; any step out of order is refused (over-brushing breaks fibres, rolling early leaves tangles). Moths circle the porch lantern (101:4-5, like scattered moths, like carded wool; the Day is never shown)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "the Striking Calamity (101:1-3, read)",
+   "heavy and light (101:6-9, read)"
+  ],
+  "narrative_structure": "A reading on the hill path, the carding, then a reading by the sheepfold",
+  "world_assets": [
+   "lantern with moths",
+   "fleece heap",
+   "carded rolls",
+   "sheepfold"
+  ],
+  "environment_behaviour": [
+   "each carded roll is laid on the bench"
+  ],
+  "learning_objective": "Know that on that Day what matters is whose scales are heavy with good (101:6-7)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w101.ts",
+  "tested_hash": "1a640d666aed"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

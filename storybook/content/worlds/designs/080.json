@@ -149,33 +149,46 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The School of Respect",
+  "tier": "playable",
+  "visual_theme": "A river valley after heavy rain with a field ready to plough, a hand plough at its edge, and olives and palms along the banks",
   "quran_references": [
-   "80:1–16",
-   "80:24–32"
+   "80:1-4",
+   "80:11-12",
+   "80:24-32"
   ],
   "primary_mechanic": {
    "kind": "food-journey",
-   "engine": "not built yet",
-   "text": "Follow food from rain to grain, grapes, olives and palms (80:24-32); an inclusive school with accessible activities (80:1-10, narration)."
+   "engine": "furrows",
+   "text": "Plough five furrows by walking from the gold-flagged stake to the far stake, each furrow starting where the last ended; if you wander more than a metre off the line the furrow must be started again. When all are ploughed the foods of 80:27-31 come up along them (80:24-26, water poured, the earth split)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "he frowned (80:1-4, read; the Prophet and the blind man are not shown)",
+   "a reminder (80:11-12, read)"
+  ],
+  "narrative_structure": "A reading on the valley path, ploughing the field, then a reading by the fence",
+  "world_assets": [
+   "field with stakes",
+   "hand plough",
+   "olive and palm trees",
+   "river"
+  ],
+  "environment_behaviour": [
+   "ploughed furrows turn dark",
+   "crops come up along the furrows once all are ploughed"
+  ],
+  "learning_objective": "Look at our food and where it comes from (80:24-32)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w080.ts",
+  "tested_hash": "8285d41a9e0d"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

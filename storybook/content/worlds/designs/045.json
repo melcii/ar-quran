@@ -103,33 +103,50 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Gallery of Choices",
+  "tier": "playable",
+  "visual_theme": "A grassy headland between the sea, a line of hills, a palm grove and a small town, with a weather station on top",
   "quran_references": [
-   "45:3–13",
-   "45:28–29"
+   "45:3-5",
+   "45:12-13",
+   "45:28-29"
   ],
   "primary_mechanic": {
    "kind": "wind-and-rain-ledger",
-   "engine": "not built yet",
-   "text": "Keep a field ledger of winds, rain and day length that you measure yourself (45:5)."
+   "engine": "station",
+   "text": "Keep the field ledger through one day: at morning, noon and evening, read the wind vane (it points into the wind, toward one of four landmarks) and the rain gauge yourself and write them down; wrong entries are refused. The light, the wind and the rain change after each reading (45:5)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "signs in the heavens and the earth (45:3-5, read)",
+   "the sea and the ships (45:12-13, read)",
+   "the record (45:28-29, read)"
+  ],
+  "narrative_structure": "A reading by the palms, three ledger readings through the day, then the sea and the record",
+  "world_assets": [
+   "weather station desk and ledger",
+   "wind vane on a mast",
+   "glass rain gauge",
+   "sea with jetty and boat",
+   "hills, palm grove and town as landmarks"
+  ],
+  "environment_behaviour": [
+   "the vane turns to the new wind after each reading",
+   "the gauge fills with the rain that falls",
+   "the sky goes from morning to noon to dusk",
+   "rain falls at noon and evening"
+  ],
+  "learning_objective": "Read the signs of wind, rain and the day yourself (45:5)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w045.ts",
+  "tested_hash": "d9da37c0f893"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

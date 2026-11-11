@@ -29,7 +29,7 @@ export const W017: WorldDef = {
       curve([[30, 22], [30, -20]]),
     ],
     pathWidth: 3.2,
-    flats: [{ x: 0, z: 0, r: 30, paint: '#cbb894' }],
+    flats: [{ x: 4, z: 36, r: 2.5 }, { x: 0, z: 0, r: 30, paint: '#cbb894' }],
   },
   look: NIGHT,
   veg: {
@@ -57,6 +57,16 @@ export const W017: WorldDef = {
   welcome:
     'Welcome to the Town of Good Conduct. It is night, and the street lamps are dark. Surah Al-Isra gives a list of ways to live well: with parents, relatives, neighbours and travellers, with money and measures, and in the way we walk. Read the first tablet.',
   tasks: [
+    {
+      id: 'iblis',
+      kind: 'read',
+      at: [4, 36],
+      marker: 'sign',
+      title: 'Iblis refuses',
+      goal: 'Read at the sign near the way in',
+      adaptation: 'Adam, the angels and Iblis are read only; none is shown.',
+      reading: { title: 'Iblis refuses', refs: [[17, 61], [17, 62], [17, 63], [17, 64], [17, 65]], note: 'When We said to the angels: prostrate to Adam, they prostrated, except Iblis. He said: Shall I prostrate to one You created from clay? Allah said: Indeed, over My servants you have no authority. And sufficient is your Lord as a Guardian.' },
+    },
     {
       id: 'journey',
       kind: 'read',

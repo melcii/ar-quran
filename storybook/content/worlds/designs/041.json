@@ -115,33 +115,49 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Earth and Sky Observatory",
+  "tier": "playable",
+  "visual_theme": "A grassy hilltop with a telescope, open land on every side, firm mountains, a bare slope, the sun and the moon in the sky",
   "quran_references": [
-   "41:9–12",
-   "41:30–39"
+   "41:2-3",
+   "41:10",
+   "41:34-35",
+   "41:37",
+   "41:39",
+   "41:53"
   ],
   "primary_mechanic": {
    "kind": "telescope-horizons",
-   "engine": "not built yet",
-   "text": "Use a telescope to find signs on the horizons and in the land (41:53); green a barren slope after rain (41:39)."
+   "engine": "scope",
+   "text": "Turn a telescope on the hilltop ten degrees at a time until each sign is in the lens (sun and moon 41:37, mountains 41:10, still earth 41:39), note it and read its ayah; the bare slope greens once noted. Then lower the telescope for the signs within ourselves (41:53)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "a Book explained in detail (41:2-3, read)",
+   "answer with what is better (41:34-35, choices)"
+  ],
+  "narrative_structure": "A reading on the path, the telescope on the hilltop, then everyday choices below the hill",
+  "world_assets": [
+   "telescope on a tripod",
+   "sun and moon in the day sky",
+   "firm mountains",
+   "bare slope that greens"
+  ],
+  "environment_behaviour": [
+   "the telescope barrel turns to where it is aimed",
+   "the bare slope turns green and sprouts when noted"
+  ],
+  "learning_objective": "Find the signs on the horizons and within ourselves (41:53), and answer bad with good (41:34)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w041.ts",
+  "tested_hash": "1c08163ca2b6"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

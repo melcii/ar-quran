@@ -121,32 +121,41 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Village of Helping Hands",
+  "tier": "playable",
+  "visual_theme": "A street of terraced houses on a busy evening with lamps at the doors",
   "quran_references": [
-   "107:1–7"
+   "107:1-7"
   ],
   "primary_mechanic": {
    "kind": "small-kindnesses",
-   "engine": "not built yet",
-   "text": "Lend small household things to neighbours who need them (107:7)."
+   "engine": "lend",
+   "text": "Four neighbours each need to borrow a small thing (a blanket, a cooking pot, salt, a bucket); ask at the door, open the cupboard and chests to see what each holds, carry one thing at a time, and give it at the right door; the wrong thing is refused. Each helped door's lamp glows (107:7, small kindnesses)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "the one who denies (107:1-3, read)",
+   "do not withhold (107:7, read)"
+  ],
+  "narrative_structure": "A reading at the end of the street, lending, then a reading by the fig tree",
+  "world_assets": [
+   "your house with a cupboard and two chests",
+   "four neighbours' doors with lamps"
+  ],
+  "environment_behaviour": [
+   "each door lamp glows warm once the neighbour is helped"
+  ],
+  "learning_objective": "Do not withhold small kindnesses (107:7)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w107.ts",
+  "tested_hash": "5926ece160d9"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

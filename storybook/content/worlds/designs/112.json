@@ -121,32 +121,42 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Chamber of Reflection",
+  "tier": "playable",
+  "visual_theme": "A quiet walled reading court with a pale bare floor, cypresses and a bench with compass and straight edge",
   "quran_references": [
-   "112:1–4"
+   "112:1-4"
   ],
   "primary_mechanic": {
    "kind": "geometry-reading-room",
-   "engine": "not built yet",
-   "text": "A quiet geometric room for reading and learning the surah by heart; no shape stands for Allah (112:1-4)."
+   "engine": "compass",
+   "text": "Draw a six-fold floor rosette with compass and straight edge: one circle, then keep the same width and step round the edge (it fits exactly six times; a seventh step and changing width are refused), then join the six points into a hexagon. No shape stands for Allah; the pattern is floor decoration (112:4)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "He is Allah, One (112:1-2, read)",
+   "the whole surah (112:1-4, read)"
+  ],
+  "narrative_structure": "A reading on the path, drawing the floor, then the whole surah read in the court",
+  "world_assets": [
+   "walled court",
+   "floor inlay",
+   "compass bench"
+  ],
+  "environment_behaviour": [
+   "the circle, the points and the hexagon appear in the floor as they are drawn"
+  ],
+  "learning_objective": "Know that Allah is One, the Eternal Refuge, and none is comparable to Him (112:1-4)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w112.ts",
+  "tested_hash": "4df90eedaa65"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

@@ -18,7 +18,9 @@
   {
    "title": "Ibrahim and the idols",
    "reference": "21:51-70",
-   "anchor_phrase": "idols"
+   "anchor_phrase": "idols",
+   "treatment": "reading",
+   "treatment_reason": "the breaking of the idols and the fire are kept to the reading"
   },
   {
    "title": "Dawud and Sulayman",
@@ -215,16 +217,17 @@
   ],
   "learning_objective": "Learn three prayers of the prophets in the Quran and that they were answered (21:83-90)",
   "interaction_tests": {
-   "activate": "pass (2026-11-04, headless Chromium, software WebGL: took a tablet with the on-screen button; the verified verse (21:89) opened)",
-   "responds": "pass (2026-11-04, headless Chromium, software WebGL: the door shows its situation; the wrong door refuses the tablet; the right door opens)",
-   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Doors opened: 1 of 3\", the door swings open and the answer verse (21:90) opens)",
-   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
-   "completion": "pass (2026-11-04, headless Chromium, software WebGL: doors [2,0,1], wrong door tried [0])",
-   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"prayers\",\"ibrahim\",\"water\"])",
-   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": "src/adventure/worlds/w021.ts"
+  "built_in": "src/adventure/worlds/w021.ts",
+  "tested_hash": "7592569ecd76"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

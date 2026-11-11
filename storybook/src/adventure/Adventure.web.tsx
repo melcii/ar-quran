@@ -1574,7 +1574,7 @@ function World({ def }: { def: WorldDef }) {
   }, [def, t]);
   const placed = useMemo(() => {
     // Buildings first, so trees keep clear of them and of every activity spot.
-    for (const s of def.structures) footprint(s, t, (id) => !!id && saveRef.current.done.includes(id));
+    for (const s of def.structures) footprint(s, t, isOn);
     const spot = (p: P2, r: number) => t.keepClear.push({ x: p[0], z: p[1], r });
     for (const task of def.tasks) {
       if (task.kind === 'read' || task.kind === 'quiz') spot(task.at, 3);
@@ -1867,7 +1867,8 @@ function World({ def }: { def: WorldDef }) {
         } else if (c.kind === 'share') {
           setCards((cs) => cs.slice(1));
           c.task.homes.forEach((_, i) => api.current.progress(c.task.id, i));
-        } else if (c.kind === 'weigh') {
+        } else if (c.kind === 'weigh' || c.kind === 'quiz') {
+          // Quiz panels are the engine's shared match/order/sort games, tested on their own.
           setCards((cs) => cs.slice(1));
           finish(c.task.id);
         } else if (c.kind === 'vow') {
@@ -1915,12 +1916,14 @@ function World({ def }: { def: WorldDef }) {
   const phaseLook = skyTask && phaseN > 0 ? skyTask.phases[phaseN - 1].look : undefined;
   const mist = def.mist?.(data.done, data.prog) ?? 0;
   const mechLook = def.tasks.map((x) => mechFor(x)?.look?.(x, data)).find(Boolean);
+  // A world whose time of day moves on with the story (night hills, then a morning festival ground).
+  const storyLook = def.looks?.filter((l) => data.done.includes(l.after)).pop()?.look;
   const look = useMemo(() => {
-    const base = mechLook ?? phaseLook ?? def.look;
+    const base = mechLook ?? phaseLook ?? storyLook ?? def.look;
     if (!mist) return base;
     const fog = new THREE.Color(base.fog).lerp(new THREE.Color('#9ea4ac'), mist);
     return { ...base, fog: `#${fog.getHexString()}`, fogDensity: base.fogDensity + mist * 0.05, sunI: base.sunI * (1 - mist * 0.55), hemiI: base.hemiI * (1 - mist * 0.25), birds: mist < 0.3 && base.birds };
-  }, [mechLook, phaseLook, mist, def.look]);
+  }, [mechLook, phaseLook, storyLook, mist, def.look]);
   const doneN = def.tasks.filter((x) => data.done.includes(x.id)).length;
   const objective = data.finished ? 'You finished every activity. Explore, or read the whole surah.' : current ? current.goal : 'Explore';
   const carriedLoad = carrying ? (def.tasks.find((x) => x.id === carrying.task) as Extract<Task, { kind: 'carry' }> | undefined)?.loads[carrying.idx] : undefined;

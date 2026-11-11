@@ -35,7 +35,19 @@
   {
    "title": "Musa at the mount",
    "reference": "19:51-53",
-   "anchor_phrase": "mount"
+   "anchor_phrase": "mount",
+   "brief": true
+  },
+  {
+   "title": "Ismail, true to his promise",
+   "reference": "19:54-55",
+   "anchor_phrase": "Ishmael"
+  },
+  {
+   "title": "Idris, a man of truth",
+   "reference": "19:56-57",
+   "anchor_phrase": "Idrees",
+   "brief": true
   }
  ],
  "summary_for_children": "Surah Maryam tells of Zakariyya's prayer for a child, of Maryam and the birth of Isa, of Ibrahim speaking gently to his father, and of other prophets.",
@@ -184,7 +196,9 @@
    "text": "A quiet world played by pointing only: each question is answered by pointing at something in the grove, never by choosing words, recalling the vow of silence and the pointing in 19:26-29."
   },
   "secondary_activities": [
-   "reading on peace and affection (19:47, 19:96)"
+   "gentle words to a parent, at a signpost (Ibrahim and his father, 19:42-48)",
+   "keep two promises in the grove before the candles burn down (Ismail, 19:54-55)",
+   "reading places for Musa (19:51-53) and Idris (19:56-58)"
   ],
   "narrative_structure": "Four questions answered by pointing, then the lantern by the bench",
   "world_assets": [
@@ -198,16 +212,17 @@
   ],
   "learning_objective": "Learn the quiet prayers and mercy of Surah Maryam; answer by looking and noticing",
   "interaction_tests": {
-   "activate": "pass (2026-11-04, headless Chromium, software WebGL: pointed with the on-screen button (no word choices anywhere))",
-   "responds": "pass (2026-11-04, headless Chromium, software WebGL: pointing at the palm for the first question is gently refused; the niche is right)",
-   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status shows the next question to answer by pointing)",
-   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
-   "completion": "pass (2026-11-04, headless Chromium, software WebGL: answers [0,1,2,3])",
-   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"quiet\",\"peace\"])",
-   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": "src/adventure/worlds/w019.ts"
+  "built_in": "src/adventure/worlds/w019.ts",
+  "tested_hash": "0abc91435843"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

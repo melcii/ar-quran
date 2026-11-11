@@ -18,7 +18,10 @@
   {
    "title": "Hud warns 'Ad",
    "reference": "46:21-25",
-   "anchor_phrase": "al-Ahqaf"
+   "anchor_phrase": "al-Ahqaf",
+   "treatment": "reading",
+   "treatment_reason": "Hud and ‘Ad are never shown; the punishing wind is read only. Their story is played in Surah Hud’s world.",
+   "played_in": 11
   }
  ],
  "summary_for_children": "Al-Ahqaf means The Wind-Curved Sandhills. It tells of Hud warning 'Ad in the dunes, and teaches kindness to parents. It mentions jinn who listened to the Quran.",
@@ -122,34 +125,50 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Singing Sand Dunes",
+  "tier": "playable",
+  "visual_theme": "Long curving sand dunes with a path winding between them to a palm-shaded well",
   "quran_references": [
    "46:15",
-   "46:21–26",
-   "46:29–32"
+   "46:21-26",
+   "46:29-30"
   ],
   "primary_mechanic": {
    "kind": "dune-shaping",
-   "engine": "not built yet",
-   "text": "Place windbreaks to shape moving dunes and keep a path open (46:21-25 as setting)."
+   "engine": "dunes",
+   "text": "Set up four palm-frond windbreaks at seven posts beside a path through the dunes, then wait out a windy spell at the well; sand piles up on every stretch with no windbreak upwind, and a buried stretch restarts the spell. The wind of 46:24-25 is read only, never played."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "the brother of ‘Ad among the dunes (46:21-23, read)",
+   "not a rain cloud (46:24-26, read)",
+   "good to your parents (46:15, choices)",
+   "the jinn listen quietly (46:29-30, read)"
+  ],
+  "narrative_structure": "The warning among the dunes, the windy spell, the reading of the cloud, then parents and listening",
+  "world_assets": [
+   "curving dunes",
+   "windbreak posts and palm-frond windbreaks",
+   "windsock",
+   "well with palms",
+   "sand mounds on the path"
+  ],
+  "environment_behaviour": [
+   "sand mounds grow on unprotected stretches of path",
+   "windbreaks stand where set up",
+   "the windsock flaps harder in the spell"
+  ],
+  "learning_objective": "Know where the surah’s name comes from (46:21), and be kind to parents (46:15)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w046.ts",
+  "tested_hash": "f725a54183c0"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

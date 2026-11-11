@@ -109,32 +109,42 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Town of Kind Words",
+  "tier": "playable",
+  "visual_theme": "A village square on a windy afternoon ringed by four houses, each with a chalk noticeboard by its door",
   "quran_references": [
-   "104:1–9"
+   "104:1-5"
   ],
   "primary_mechanic": {
    "kind": "kind-words-swap",
-   "engine": "not built yet",
-   "text": "Replace mocking words with kind ones on village signs (104:1)."
+   "engine": "chalk",
+   "text": "At four boards with mocking chalk (the baker, the old shepherd, the new girl, the potter): laughing along or walking past is refused; scrub the board clean, then choose between a kind true line and a flattering untrue one; flattery is refused (kind words must be true; 104:1)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "woe to every mocker (104:1, read)",
+   "no! (104:4-5, read; the fire is never shown)"
+  ],
+  "narrative_structure": "A reading on the lane, the boards, then a reading by the oak",
+  "world_assets": [
+   "four houses",
+   "chalk noticeboards",
+   "well"
+  ],
+  "environment_behaviour": [
+   "each board changes from scrawled to neat writing"
+  ],
+  "learning_objective": "Do not mock or slander anyone (104:1)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w104.ts",
+  "tested_hash": "bdb3eda89352"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

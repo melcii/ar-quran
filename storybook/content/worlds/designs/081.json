@@ -123,32 +123,43 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Changing Cosmos",
+  "tier": "playable",
+  "visual_theme": "Bare high hills before dawn with stone cairns on the tops, each with a compass rose carved on its base stone, and tracks between them",
   "quran_references": [
-   "81:1–29"
+   "81:15-21",
+   "81:26-29"
   ],
   "primary_mechanic": {
    "kind": "horizon-light",
-   "engine": "not built yet",
-   "text": "An abstract space of changing light where you follow the morning as it breathes in (81:18)."
+   "engine": "bearings",
+   "text": "At each cairn you are told a compass direction (computed from the map: north, north-east, north-west, west); read the carved rose (gold point north), take the track that runs that way and reach the next cairn; a wrong track leads to a wrong cairn, which is noted and sends you back (81:26-28, where are you going? a straight way)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "the dawn as it breathes (81:15-18, read)",
+   "a noble messenger (81:19-21, read; the angel is not shown)"
+  ],
+  "narrative_structure": "A reading at the foot of the hills, four stages cairn to cairn, then a reading below the lookout",
+  "world_assets": [
+   "seven cairns with carved compass roses",
+   "tracks between them"
+  ],
+  "environment_behaviour": [
+   "the cairn you are at glows",
+   "cairns you have passed keep a pale light"
+  ],
+  "learning_objective": "Think about where we are going, and the straight way (81:26-28)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w081.ts",
+  "tested_hash": "075540887c9c"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

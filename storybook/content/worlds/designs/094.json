@@ -107,32 +107,42 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Mountain Passage",
+  "tier": "playable",
+  "visual_theme": "A small stone harbour at evening with boats drawn up and a fishing net come up in a tangle",
   "quran_references": [
-   "94:1–8"
+   "94:1-8"
   ],
   "primary_mechanic": {
    "kind": "narrow-to-wide",
-   "engine": "not built yet",
-   "text": "A narrow pass that widens each time you keep going after a hard part (94:5-6)."
+   "engine": "knots",
+   "text": "Untangle seven knots of a net, each only when no knot lies over it (an order of dependencies); pulling a pinned knot is refused with the knot on top named; the net falls open and is spread to dry (94:5-6, with hardship there is ease)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "a burden lifted (94:1-4, read; the Prophet is not shown)",
+   "twice over (94:5-6, read)"
+  ],
+  "narrative_structure": "A reading on the path down, the tangled net, then a reading above the harbour",
+  "world_assets": [
+   "harbour quay and boats",
+   "tangled net with knots"
+  ],
+  "environment_behaviour": [
+   "knots disappear from the heap as they are undone",
+   "the net lies spread flat when free"
+  ],
+  "learning_objective": "Know that with hardship there is ease (94:5-6)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w094.ts",
+  "tested_hash": "d9409db668ba"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

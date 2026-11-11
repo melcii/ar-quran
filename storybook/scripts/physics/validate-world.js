@@ -13,7 +13,7 @@ const DEV = process.env.DEV || 'desktop';
   await p.addInitScript(() => { globalThis.__figProbe = {}; });
   const ark = W === 'ark';
   const H = ark ? '__ark' : '__adv';
-  await p.goto(ark ? 'http://localhost:8090/ark?q=low' : `http://localhost:8090/adventure/${W}?q=low`, { timeout: 180000 });
+  await p.goto(ark ? `http://localhost:${process.env.PORT || 8090}/ark?q=low` : `http://localhost:${process.env.PORT || 8090}/adventure/${W}?q=low`, { timeout: 180000 });
   await p.waitForFunction((h) => !!globalThis[h], H, { timeout: 400000 });
   await p.waitForTimeout(2500);
   // Let the activity props register their colliders (twice a second of game time).

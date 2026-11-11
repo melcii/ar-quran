@@ -24,7 +24,7 @@ export const W004: WorldDef = {
     radius: 62,
     base: rolling({ radius: 62, amp: 3.5, seed: 4, shapes: [{ x: -34, z: -26, r: 16, h: 5 }, { x: 34, z: -30, r: 14, h: 4 }, { x: 30, z: 34, r: 10, h: -6 }] }),
     palette: PAL.meadow,
-    paths: [curve([[0, 56], [4, 40], [0, 26], [0, 12]]), curve([[-12, 0], [-30, 6], [-44, 18]]), curve([[12, 0], [30, -6], [44, -18]])],
+    paths: [curve([[0, 56], [4, 40], [0, 26], [0, 12]]), curve([[-12, 0], [-24, 4], [-27, 17], [-38, 21]]), curve([[12, 0], [30, -6], [44, -18]])],
     water: -3,
     flats: [{ x: 0, z: 0, r: 26, paint: '#e2d0a8' }],
   },

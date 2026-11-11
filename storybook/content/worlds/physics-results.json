@@ -1,0 +1,664 @@
+{
+ "date": "2026-11-06",
+ "how": "scripts/physics/run-all.sh: validate-world.js and walk-paths.js on desktop for every world; phone (Pixel 7 emulation, touch stick) and j60 motion traces for 1, 7, 19, 20, 39 and the Ark. Headless Chromium, software WebGL. Re-run after any collider or world change.",
+ "worlds": {
+  "1": {
+   "desktop": "pass",
+   "phone": "pass",
+   "hash": "61ea58fce511"
+  },
+  "2": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "d3a2ae84384a",
+   "date": "2026-11-11"
+  },
+  "3": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "a938644d8897",
+   "date": "2026-11-11"
+  },
+  "4": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "8e4f6e407dfc",
+   "date": "2026-11-11"
+  },
+  "5": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "afa18a0dbd68",
+   "date": "2026-11-11"
+  },
+  "6": {
+   "desktop": "pass",
+   "note": "Some drawn footpaths cross solids (layout note; the walker goes round).",
+   "hash": "d35c9a90d8e2"
+  },
+  "7": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "e396ac69dc5c",
+   "date": "2026-11-11"
+  },
+  "8": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "0884d04f5f87",
+   "date": "2026-11-11"
+  },
+  "9": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "7a2fdccad090",
+   "date": "2026-11-11"
+  },
+  "10": {
+   "desktop": "pass",
+   "hash": "0ff74fa5fc85"
+  },
+  "11": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "88fa173ef49d",
+   "date": "2026-11-11"
+  },
+  "12": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "02e2e283c9da",
+   "date": "2026-11-11"
+  },
+  "13": {
+   "desktop": "pass",
+   "note": "Some drawn footpaths cross solids (layout note; the walker goes round).",
+   "hash": "f4132ca92c1a"
+  },
+  "14": {
+   "desktop": "pass",
+   "hash": "d49d74bc8c62"
+  },
+  "15": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "157badc1a9ab",
+   "date": "2026-11-11"
+  },
+  "16": {
+   "desktop": "pass",
+   "hash": "e376e8be919b"
+  },
+  "17": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "63341cb707b5",
+   "date": "2026-11-11"
+  },
+  "18": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "301fd087119d",
+   "date": "2026-11-11"
+  },
+  "19": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "0abc91435843",
+   "date": "2026-11-11"
+  },
+  "20": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "ad4af1b30b9a",
+   "date": "2026-11-11"
+  },
+  "21": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "7592569ecd76",
+   "date": "2026-11-11"
+  },
+  "22": {
+   "desktop": "pass",
+   "hash": "b7343d982742"
+  },
+  "23": {
+   "desktop": "pass",
+   "hash": "2dc752924dc1"
+  },
+  "24": {
+   "desktop": "pass",
+   "hash": "db17e1e05670"
+  },
+  "25": {
+   "desktop": "pass",
+   "hash": "f473dfcf139d"
+  },
+  "26": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "c99290492da4",
+   "date": "2026-11-11"
+  },
+  "27": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "664517c19471",
+   "date": "2026-11-11"
+  },
+  "28": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "00a4f52e9b1d",
+   "date": "2026-11-11"
+  },
+  "29": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "6a985824aca2",
+   "date": "2026-11-11"
+  },
+  "30": {
+   "desktop": "pass",
+   "hash": "e9d93d38aeed"
+  },
+  "31": {
+   "desktop": "pass",
+   "hash": "21314093eb00"
+  },
+  "32": {
+   "desktop": "pass",
+   "hash": "34c105633d22"
+  },
+  "33": {
+   "desktop": "pass",
+   "hash": "c77cde30e749"
+  },
+  "34": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "2fe53b1d5b4e",
+   "date": "2026-11-11"
+  },
+  "35": {
+   "desktop": "pass",
+   "hash": "bd5a6facc536"
+  },
+  "36": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "62a0eee8ff80",
+   "date": "2026-11-11"
+  },
+  "37": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "8cfd9e00a7c5",
+   "date": "2026-11-11"
+  },
+  "38": {
+   "desktop": "pass",
+   "hash": "23a013270456"
+  },
+  "39": {
+   "desktop": "pass",
+   "phone": "pass",
+   "hash": "8436a3c4761c"
+  },
+  "40": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "6706b857ba87",
+   "date": "2026-11-11"
+  },
+  "41": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "1c08163ca2b6",
+   "date": "2026-11-11"
+  },
+  "42": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "f50a0539f168",
+   "date": "2026-11-11"
+  },
+  "43": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "5b88d5fa1162",
+   "date": "2026-11-11"
+  },
+  "44": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "693e01b05cc5",
+   "date": "2026-11-11"
+  },
+  "45": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "d9da37c0f893",
+   "date": "2026-11-11"
+  },
+  "46": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "f725a54183c0",
+   "date": "2026-11-11"
+  },
+  "47": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "a604ee142fc3",
+   "date": "2026-11-11"
+  },
+  "48": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "3962c3ed5df1",
+   "date": "2026-11-11"
+  },
+  "49": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "2bdabf5104a1",
+   "date": "2026-11-11"
+  },
+  "50": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "b24e0e29fdb7",
+   "date": "2026-11-11"
+  },
+  "51": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "7db7de0813e7",
+   "date": "2026-11-11"
+  },
+  "52": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "a42940db2c5e",
+   "date": "2026-11-11"
+  },
+  "53": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "01b4ecb5a1af",
+   "date": "2026-11-11"
+  },
+  "54": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "8ff8afcf0bcd",
+   "date": "2026-11-11"
+  },
+  "55": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "ebccc5d02965",
+   "date": "2026-11-11"
+  },
+  "56": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "53b61014598e",
+   "date": "2026-11-11"
+  },
+  "57": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "0669939967fd",
+   "date": "2026-11-11"
+  },
+  "58": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "417ea88c8979",
+   "date": "2026-11-11"
+  },
+  "59": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "c09975e8b27d",
+   "date": "2026-11-11"
+  },
+  "60": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "32bf88023565",
+   "date": "2026-11-11"
+  },
+  "61": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "2a0d1a5d4a5c",
+   "date": "2026-11-11"
+  },
+  "62": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "eb993e2f93fe",
+   "date": "2026-11-11"
+  },
+  "63": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "904a677e3f5c",
+   "date": "2026-11-11"
+  },
+  "64": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "02df34f3e322",
+   "date": "2026-11-11"
+  },
+  "65": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "c950ed7caa32",
+   "date": "2026-11-11"
+  },
+  "66": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "712aea14d9a9",
+   "date": "2026-11-11"
+  },
+  "67": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "d7d9a3a9370f",
+   "date": "2026-11-11"
+  },
+  "68": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "9f7ba70a52f1",
+   "date": "2026-11-11"
+  },
+  "69": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "8a53c4b0ed35",
+   "date": "2026-11-11"
+  },
+  "70": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "b8d999e8e515",
+   "date": "2026-11-11"
+  },
+  "71": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "0788b6613f54",
+   "date": "2026-11-11"
+  },
+  "72": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "c887f0a7c43b",
+   "date": "2026-11-11"
+  },
+  "73": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "0969eeba10c9",
+   "date": "2026-11-11"
+  },
+  "74": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "652bea28b7de",
+   "date": "2026-11-11"
+  },
+  "75": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "4d4c68f6a81d",
+   "date": "2026-11-11"
+  },
+  "76": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "460033b98649",
+   "date": "2026-11-11"
+  },
+  "77": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "5d4093cfd758",
+   "date": "2026-11-11"
+  },
+  "78": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "085f78679dfa",
+   "date": "2026-11-11"
+  },
+  "79": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "a58b7bad2c53",
+   "date": "2026-11-11"
+  },
+  "80": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "8285d41a9e0d",
+   "date": "2026-11-11"
+  },
+  "81": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "075540887c9c",
+   "date": "2026-11-11"
+  },
+  "82": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "75ae087603d2",
+   "date": "2026-11-11"
+  },
+  "83": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "4c677c9f2c68",
+   "date": "2026-11-11"
+  },
+  "84": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "d448a6a4348d",
+   "date": "2026-11-11"
+  },
+  "85": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "502b19e474d0",
+   "date": "2026-11-11"
+  },
+  "86": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "d1d0db0fead7",
+   "date": "2026-11-11"
+  },
+  "87": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "69d1c67daffb",
+   "date": "2026-11-11"
+  },
+  "88": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "282634a0fb43",
+   "date": "2026-11-11"
+  },
+  "89": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "5448dcc846ca",
+   "date": "2026-11-11"
+  },
+  "90": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "8925891df020",
+   "date": "2026-11-11"
+  },
+  "91": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "8423aac26b35",
+   "date": "2026-11-11"
+  },
+  "92": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "76fd91019fa0",
+   "date": "2026-11-11"
+  },
+  "93": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "9e6e1564ed31",
+   "date": "2026-11-11"
+  },
+  "94": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "d9409db668ba",
+   "date": "2026-11-11"
+  },
+  "95": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "95c8964161fb",
+   "date": "2026-11-11"
+  },
+  "96": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "35f6fd53d71b",
+   "date": "2026-11-11"
+  },
+  "97": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "801ae4757c19",
+   "date": "2026-11-11"
+  },
+  "98": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "fcfee5cb2799",
+   "date": "2026-11-11"
+  },
+  "99": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "70908e6f89ee",
+   "date": "2026-11-11"
+  },
+  "100": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "353bca0b7008",
+   "date": "2026-11-11"
+  },
+  "101": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "1a640d666aed",
+   "date": "2026-11-11"
+  },
+  "102": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "6766212d6053",
+   "date": "2026-11-11"
+  },
+  "103": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "6f7a4416fdd8",
+   "date": "2026-11-11"
+  },
+  "104": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "bdb3eda89352",
+   "date": "2026-11-11"
+  },
+  "105": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "e13157075f3a",
+   "date": "2026-11-11"
+  },
+  "106": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "7b703a33b5f2",
+   "date": "2026-11-11"
+  },
+  "107": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "5926ece160d9",
+   "date": "2026-11-11"
+  },
+  "108": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "4e2f6a9578fd",
+   "date": "2026-11-11"
+  },
+  "109": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "d8b731361bed",
+   "date": "2026-11-11"
+  },
+  "110": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "c0eb732e73cf",
+   "date": "2026-11-11"
+  },
+  "111": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "124ac851baf8",
+   "date": "2026-11-11"
+  },
+  "112": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "4df90eedaa65",
+   "date": "2026-11-11"
+  },
+  "113": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "8ee5981fc3c2",
+   "date": "2026-11-11"
+  },
+  "114": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "5dc26f760053",
+   "date": "2026-11-11"
+  },
+  "ark": {
+   "desktop": "pass",
+   "phone": "pass"
+  }
+ }
+}

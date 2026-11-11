@@ -19,12 +19,15 @@
   {
    "title": "Adam and Iblis",
    "reference": "7:11-25",
-   "anchor_phrase": "Iblees"
+   "anchor_phrase": "Iblees",
+   "treatment": "reading",
+   "treatment_reason": "Adam, Iblis and the Garden are of the unseen; never pictured"
   },
   {
    "title": "Nuh",
    "reference": "7:59-64",
-   "anchor_phrase": "Noah"
+   "anchor_phrase": "Noah",
+   "played_in": 11
   },
   {
    "title": "Hud and 'Aad",
@@ -39,7 +42,8 @@
   {
    "title": "Lut",
    "reference": "7:80-84",
-   "anchor_phrase": "Lot"
+   "anchor_phrase": "Lot",
+   "played_in": 11
   },
   {
    "title": "Shu'ayb and Madyan",
@@ -235,15 +239,16 @@
   ],
   "learning_objective": "Honest measure and listening to guidance",
   "interaction_tests": {
-   "activate": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
-   "responds": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
-   "feedback": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
-   "goal": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
-   "completion": "pass (2026-11-04 automated playthrough and real-input check of the core mechanic; headless desktop only)",
-   "saved": "untested (save is written; reload not re-checked in the 7-point run)",
-   "devices": "untested (desktop headless only; not run in phone emulation)"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": "src/adventure/worlds/w007.ts"
+  "built_in": "src/adventure/worlds/w007.ts",
+  "tested_hash": "e396ac69dc5c"
  }
 }

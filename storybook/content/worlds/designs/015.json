@@ -19,12 +19,15 @@
   {
    "title": "Iblis refuses",
    "reference": "15:28-44",
-   "anchor_phrase": "Iblees"
+   "anchor_phrase": "Iblees",
+   "treatment": "reading",
+   "treatment_reason": "Iblis and the angels are of the unseen; never pictured"
   },
   {
    "title": "Ibrahim's guests",
    "reference": "15:51-60",
-   "anchor_phrase": "guests"
+   "anchor_phrase": "guests",
+   "played_in": 11
   },
   {
    "title": "The people of al-Hijr",
@@ -179,16 +182,17 @@
   ],
   "learning_objective": "Look closely at signs left in the land, and remember what truly keeps us safe (15:75-84)",
   "interaction_tests": {
-   "activate": "pass (2026-11-04, headless Chromium, software WebGL: pressed \"Take a rubbing\" at the first carved doorway)",
-   "responds": "pass (2026-11-04, headless Chromium, software WebGL: keeping still fills the rubbing and it is kept)",
-   "feedback": "pass (2026-11-04, headless Chromium, software WebGL: status: \"Rubbings: 1 of 5\")",
-   "goal": "pass (2026-11-04, headless Chromium, software WebGL: objective line visible)",
-   "completion": "pass (2026-11-04, headless Chromium, software WebGL: map done: [0,1,2,3,4]; a wrong place was refused first)",
-   "saved": "pass (2026-11-04, headless Chromium, software WebGL: after reload: [\"measure\",\"map\",\"road\"])",
-   "devices": "pass (2026-11-04: desktop 1100x700 with mouse and Pixel 7 emulation with touch taps; headless Chromium with software WebGL; no real phone or GPU tested)"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": "src/adventure/worlds/w015.ts"
+  "built_in": "src/adventure/worlds/w015.ts",
+  "tested_hash": "157badc1a9ab"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
