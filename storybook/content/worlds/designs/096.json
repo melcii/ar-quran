@@ -124,21 +124,32 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Cave of Learning",
+  "tier": "playable",
+  "visual_theme": "A village school courtyard in the morning with a writing bench under a fig tree, reed beds by a stream and an ink pot",
   "quran_references": [
-   "96:1–19"
+   "96:1-5",
+   "96:19"
   ],
   "primary_mechanic": {
    "kind": "letters-and-pen",
-   "engine": "not built yet",
-   "text": "A workshop of letters: trace and read with a pen (96:1-5); the first revelation is narrated from hadith, labelled."
+   "engine": "pen",
+   "text": "Cut a reed pen (a flat cut is refused; the tip must be cut at a slant and split), then trace four practice stroke shapes dot by dot in stroke order; the reed carries ink for only three dots, so tapping dry is refused and dipping a wet reed is refused. Practice shapes only: no Quran text is drawn."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "recite (96:1-2, read)",
+   "prostrate and draw near (96:19, read)"
+  ],
+  "narrative_structure": "A reading on the path, cutting the pen and practising letters, then a reading by the school wall",
+  "world_assets": [
+   "writing bench",
+   "reed pen",
+   "ink pot",
+   "practice sheets"
+  ],
+  "environment_behaviour": [
+   "each practice sheet turns from blank to written"
+  ],
+  "learning_objective": "Know that Allah taught by the pen what man did not know (96:4-5)",
   "interaction_tests": {
    "activate": "untested",
    "responds": "untested",
@@ -149,7 +160,7 @@
    "devices": "untested"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w096.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

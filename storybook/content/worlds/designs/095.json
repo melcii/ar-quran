@@ -137,21 +137,30 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Orchard of Dignity",
+  "tier": "playable",
+  "visual_theme": "A terraced hillside of olive and fig trees at the end of the harvest with an old stone olive press on the top terrace",
   "quran_references": [
-   "95:1–8"
+   "95:1-8"
   ],
   "primary_mechanic": {
    "kind": "fig-and-olive",
-   "engine": "not built yet",
-   "text": "Tend fig and olive trees and learn their seasons (95:1)."
+   "engine": "oilpress",
+   "text": "Press the olive harvest the traditional way: turn the millstone to crush the olives, spread the paste on woven mats, tighten the press a little at a time (tightening again before the oil has run is refused), then let the jar settle and skim the oil that floats on the watery juice (skimming early or pouring from the bottom is refused). Oil floats on water: real."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "the oath (95:1-3, read)",
+   "the most just of judges (95:7-8, read)"
+  ],
+  "narrative_structure": "A reading among the fig trees, the olive press, then a reading on the top terrace",
+  "world_assets": [
+   "stone crushing basin and millstone",
+   "screw press with mats",
+   "oil jar"
+  ],
+  "environment_behaviour": [
+   "the basin fills with paste, the mats flatten, and the jar turns golden"
+  ],
+  "learning_objective": "Know that man was created in the best of form (95:4)",
   "interaction_tests": {
    "activate": "untested",
    "responds": "untested",
@@ -162,7 +171,7 @@
    "devices": "untested"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w095.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

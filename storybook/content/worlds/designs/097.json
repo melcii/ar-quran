@@ -110,21 +110,30 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Night of Peace",
+  "tier": "playable",
+  "visual_theme": "A flat village rooftop in the last nights of Ramadan with a prayer mat, a string of lamps and an old counting frame",
   "quran_references": [
-   "97:1–5"
+   "97:1-5"
   ],
   "primary_mechanic": {
    "kind": "night-till-dawn",
-   "engine": "not built yet",
-   "text": "A peaceful night that moves toward dawn as you listen to the surah (97:5)."
+   "engine": "abacus",
+   "text": "Count exactly 1000 months on a counting frame with steps of 120, 12 and 1 (going past 1000 is refused): 83 years and 4 months. Then keep the night still on the prayer mat for three watches; stepping off restarts the watch; the sky moves from night to the full moon to the last of the night to dawn (97:3-5)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "the Night of Decree (97:1-2, read)",
+   "peace until dawn (97:5, read)"
+  ],
+  "narrative_structure": "A reading in the lane, the counting and the vigil, then a reading by the stair",
+  "world_assets": [
+   "counting frame",
+   "prayer mat",
+   "festoon of lamps"
+  ],
+  "environment_behaviour": [
+   "the sky turns watch by watch toward dawn"
+  ],
+  "learning_objective": "Know that the Night of Decree is better than a thousand months (97:3)",
   "interaction_tests": {
    "activate": "untested",
    "responds": "untested",
@@ -135,7 +144,7 @@
    "devices": "untested"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w097.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

@@ -577,7 +577,22 @@ export type AnswerTask = TaskBase & { kind: 'answer'; oven: P2; door: P2; caller
 /** Ash-Sharh: untangle a fishing net knot by knot, each only once the knots over it are undone. */
 export type KnotsTask = TaskBase & { kind: 'knots'; at: P2; knots: { name: string; over: number[] }[] };
 
-export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask | StandTask | ReachTask | ObserveTask | SkyTask | SailTask | ChoiceTask | ShareTask | PromiseTask | WeighTask | FlowTask | SiftTask | ReturnTask | GranaryTask | ValleyTask | GrowTask | PollenTask | RubbingTask | StreetsTask | SunPathTask | PointTask | BeaconTask | DoorsTask | OrderTask | HomeTask | MirrorTask | ShadowTask | EchoTask | AntsTask | RiverTask | ShelterTask | RainTask | VoiceTask | PastureTask | PlumbTask | SluiceTask | ShadesTask | MoonTask | VineTask | SpringTask | HarvestTask | MeasureTask | DawnTask | ShimmerTask | RollcallTask | LinksTask | CluesTask | ScopeTask | CouncilTask | AdornTask | SurveyTask | StationTask | DunesTask | ChannelsTask | CalmTask | RumourTask | RootboxTask | ReleaseTask | BlazesTask | StarhopTask | RecallTask | EstuaryTask | FiredrillTask | ForgeTask | ListenTask | WelcomeTask | SpanTask | BondTask | FridayTask | ChancesTask | PackTask | LoadsTask | AmendsTask | WingsTask | GleanTask | UnseenTask | PortionTask | ReflectTask | HushTask | NightclockTask | WashTask | PrintsTask | DoorstepTask | WinnowTask | PegsTask | DigTask | FurrowsTask | BearingsTask | BeamTask | InspectTask | StagesTask | ShelvesTask | StillTask | LightboxTask | CamelTask | EvenOddTask | RationTask | PolishTask | PulleyTask | AnswerTask | KnotsTask;
+/** At-Tin: press olives for oil: mill, mats, press, then let it settle and skim. */
+export type OilpressTask = TaskBase & { kind: 'oilpress'; at: P2; turns: number; mats: number; presses: number; settle: number };
+
+/** Al-'Alaq: cut a reed pen and trace letters stroke by stroke, dipping for ink. */
+export type PenTask = TaskBase & { kind: 'pen'; at: P2; ink: number; letters: { name: string; pts: [number, number][] }[] };
+
+/** Al-Qadr: count a thousand months in years, then keep a quiet watch until dawn. */
+export type AbacusTask = TaskBase & { kind: 'abacus'; at: P2; mat: P2; months: number; secs: number };
+
+/** Al-Bayyinah: plant stakes in a straight line between two far poles, by sighting. */
+export type SightTask = TaskBase & { kind: 'sight'; a: P2; b: P2; stakes: number; tol: number };
+
+/** Az-Zalzalah: find the smallest good things to do around the village, and choose them over small wrongs. */
+export type SpeckTask = TaskBase & { kind: 'speck'; spots: { at: P2; what: string; good: string; bad: string }[] };
+
+export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask | StandTask | ReachTask | ObserveTask | SkyTask | SailTask | ChoiceTask | ShareTask | PromiseTask | WeighTask | FlowTask | SiftTask | ReturnTask | GranaryTask | ValleyTask | GrowTask | PollenTask | RubbingTask | StreetsTask | SunPathTask | PointTask | BeaconTask | DoorsTask | OrderTask | HomeTask | MirrorTask | ShadowTask | EchoTask | AntsTask | RiverTask | ShelterTask | RainTask | VoiceTask | PastureTask | PlumbTask | SluiceTask | ShadesTask | MoonTask | VineTask | SpringTask | HarvestTask | MeasureTask | DawnTask | ShimmerTask | RollcallTask | LinksTask | CluesTask | ScopeTask | CouncilTask | AdornTask | SurveyTask | StationTask | DunesTask | ChannelsTask | CalmTask | RumourTask | RootboxTask | ReleaseTask | BlazesTask | StarhopTask | RecallTask | EstuaryTask | FiredrillTask | ForgeTask | ListenTask | WelcomeTask | SpanTask | BondTask | FridayTask | ChancesTask | PackTask | LoadsTask | AmendsTask | WingsTask | GleanTask | UnseenTask | PortionTask | ReflectTask | HushTask | NightclockTask | WashTask | PrintsTask | DoorstepTask | WinnowTask | PegsTask | DigTask | FurrowsTask | BearingsTask | BeamTask | InspectTask | StagesTask | ShelvesTask | StillTask | LightboxTask | CamelTask | EvenOddTask | RationTask | PolishTask | PulleyTask | AnswerTask | KnotsTask | OilpressTask | PenTask | AbacusTask | SightTask | SpeckTask;
 
 export type Region = { id: string; name: string; at: P2 };
 

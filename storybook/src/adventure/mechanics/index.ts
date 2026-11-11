@@ -46,6 +46,11 @@ import { Polish } from './polish';
 import { Pulley } from './pulley';
 import { Answer } from './answer';
 import { Knots } from './knots';
+import { Oilpress } from './oilpress';
+import { Pen } from './pen';
+import { Abacus } from './abacus';
+import { Sight } from './sight';
+import { Speck } from './speck';
 import { Release } from './release';
 import { Rootbox } from './rootbox';
 import { Starhop } from './starhop';
@@ -180,6 +185,11 @@ export const MECHS: Partial<Record<Task['kind'], Mechanic<never>>> = {
   pulley: Pulley as Mechanic<never>,
   answer: Answer as Mechanic<never>,
   knots: Knots as Mechanic<never>,
+  oilpress: Oilpress as Mechanic<never>,
+  pen: Pen as Mechanic<never>,
+  abacus: Abacus as Mechanic<never>,
+  sight: Sight as Mechanic<never>,
+  speck: Speck as Mechanic<never>,
 };
 
 /** The plug-in for a task, typed loosely so the engine can call it with any task. */
