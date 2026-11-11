@@ -1574,7 +1574,7 @@ function World({ def }: { def: WorldDef }) {
   }, [def, t]);
   const placed = useMemo(() => {
     // Buildings first, so trees keep clear of them and of every activity spot.
-    for (const s of def.structures) footprint(s, t, (id) => !!id && saveRef.current.done.includes(id));
+    for (const s of def.structures) footprint(s, t, isOn);
     const spot = (p: P2, r: number) => t.keepClear.push({ x: p[0], z: p[1], r });
     for (const task of def.tasks) {
       if (task.kind === 'read' || task.kind === 'quiz') spot(task.at, 3);

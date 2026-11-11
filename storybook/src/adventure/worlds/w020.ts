@@ -48,7 +48,7 @@ export const W020: WorldDef = {
       curve([[0, 48], [-3, 32], [-12, 25], [-3, 12], [0, 3], [10, -10], [17, -20]]),
       curve([[8, 40], [22, 30], [34, 16]]),
       // Around the mountain, not over it, and clear of the two hollows: festival ground to the mountain path, and the mountain path to the lagoon.
-      curve([[30, 4], [22, -4], [13.5, -15]]),
+      curve([[30, 4], [24, -2], [19, -8]]),
       curve([[-7.5, 18.5], [-14, 10], [-26, 14], [-38, 20]]),
       curve([[-38, -12], [-30, -24], [-24, 30], [-12, 40], [-3, 44]]),
     ],
