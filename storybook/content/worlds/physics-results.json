@@ -14,7 +14,9 @@
   },
   "3": {
    "desktop": "pass",
-   "hash": "5ce3b6acaf41"
+   "phone": "not run",
+   "hash": "a938644d8897",
+   "date": "2026-11-11"
   },
   "4": {
    "desktop": "pass",
@@ -75,8 +77,9 @@
   },
   "18": {
    "desktop": "pass",
-   "note": "Some drawn footpaths cross solids (layout note; the walker goes round).",
-   "hash": "8c60b64cac7c"
+   "phone": "not run",
+   "hash": "301fd087119d",
+   "date": "2026-11-11"
   },
   "19": {
    "desktop": "pass",
@@ -90,7 +93,9 @@
   },
   "21": {
    "desktop": "pass",
-   "hash": "537e8b4d38ac"
+   "phone": "not run",
+   "hash": "7592569ecd76",
+   "date": "2026-11-11"
   },
   "22": {
    "desktop": "pass",
@@ -165,6 +170,144 @@
    "desktop": "pass",
    "phone": "pass",
    "hash": "8436a3c4761c"
+  },
+  "40": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "6706b857ba87",
+   "date": "2026-11-11"
+  },
+  "41": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "1c08163ca2b6",
+   "date": "2026-11-11"
+  },
+  "42": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "f50a0539f168",
+   "date": "2026-11-11"
+  },
+  "43": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "5b88d5fa1162",
+   "date": "2026-11-11"
+  },
+  "44": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "693e01b05cc5",
+   "date": "2026-11-11"
+  },
+  "45": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "d9da37c0f893",
+   "date": "2026-11-11"
+  },
+  "46": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "f725a54183c0",
+   "date": "2026-11-11"
+  },
+  "47": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "a604ee142fc3",
+   "date": "2026-11-11"
+  },
+  "48": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "3962c3ed5df1",
+   "date": "2026-11-11"
+  },
+  "49": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "2bdabf5104a1",
+   "date": "2026-11-11"
+  },
+  "50": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "b24e0e29fdb7",
+   "date": "2026-11-11"
+  },
+  "51": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "7db7de0813e7",
+   "date": "2026-11-11"
+  },
+  "52": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "a42940db2c5e",
+   "date": "2026-11-11"
+  },
+  "53": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "01b4ecb5a1af",
+   "date": "2026-11-11"
+  },
+  "54": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "8ff8afcf0bcd",
+   "date": "2026-11-11"
+  },
+  "55": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "ebccc5d02965",
+   "date": "2026-11-11"
+  },
+  "56": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "53b61014598e",
+   "date": "2026-11-11"
+  },
+  "57": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "0669939967fd",
+   "date": "2026-11-11"
+  },
+  "58": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "417ea88c8979",
+   "date": "2026-11-11"
+  },
+  "61": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "2a0d1a5d4a5c",
+   "date": "2026-11-11"
+  },
+  "62": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "eb993e2f93fe",
+   "date": "2026-11-11"
+  },
+  "63": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "904a677e3f5c",
+   "date": "2026-11-11"
+  },
+  "64": {
+   "desktop": "pass",
+   "phone": "not run",
+   "hash": "02df34f3e322",
+   "date": "2026-11-11"
   },
   "ark": {
    "desktop": "pass",
