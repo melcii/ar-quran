@@ -87,7 +87,13 @@ const ONLY = process.env.ONLY ? process.env.ONLY.split(',') : null;
       await p.evaluate(([x, z]) => globalThis.__adv.go(x, z), [lx(k) - 3, a + (b > a ? 2 : -2)]);
       await p.waitForTimeout(1500);
       await stand(p, lx(k), a);
-      await p.evaluate(([x, z]) => globalThis.__adv.go(x, z), [lx(k), b + (b > a ? 0.6 : -0.6)]);
+      // Walk the furrow in short legs, steering back onto the line as a player does.
+      const end = b + (b > a ? 0.6 : -0.6);
+      for (let z = a + (b > a ? 3 : -3); b > a ? z < end : z > end; z += b > a ? 3 : -3) {
+        await p.evaluate(([x, z]) => globalThis.__adv.go(x, z), [lx(k), z]);
+        await waitFor(p, ([x, z]) => Math.hypot(globalThis.__adv.player.pos.x - x, globalThis.__adv.player.pos.z - z) < 0.8, [lx(k), z], 15000);
+      }
+      await p.evaluate(([x, z]) => globalThis.__adv.go(x, z), [lx(k), end]);
       r.lanes.push(await waitFor(p, (k) => (globalThis.__adv.save().prog.plough ?? []).includes(k) || globalThis.__adv.save().done.includes('plough'), k, 60000));
     }
     r.done = await isDone(p, 'plough');

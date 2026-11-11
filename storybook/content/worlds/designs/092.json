@@ -122,21 +122,31 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Two Paths",
+  "tier": "playable",
+  "visual_theme": "A tall village granary at nightfall with a hoist beam out from the loft and gifts for the poor waiting below",
   "quran_references": [
-   "92:1–21"
+   "92:1-11",
+   "92:17-21"
   ],
   "primary_mechanic": {
    "kind": "two-paths-day-night",
-   "engine": "not built yet",
-   "text": "One landscape seen by night and by day; choices change which path lights up (92:1-10)."
+   "engine": "pulley",
+   "text": "You can pull 25 kg; rig 1-4 pulleys so each load (20, 45, 70, 95 kg) hangs on enough strands to come within your strength, and no more (too few will not budge; too many pull needless rope and are refused) (92:5-7, easing toward ease; the pulleys are only a picture)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "different efforts (92:1-4, read)",
+   "only for His sake (92:17-21, read)"
+  ],
+  "narrative_structure": "A reading under the oaks, the hoist, then a reading by the granary wall",
+  "world_assets": [
+   "granary with loft door",
+   "hoist beam, pulley and rope",
+   "four gifts"
+  ],
+  "environment_behaviour": [
+   "each lifted gift waits in the loft door"
+  ],
+  "learning_objective": "Know that Allah eases the giver toward ease (92:5-7)",
   "interaction_tests": {
    "activate": "untested",
    "responds": "untested",
@@ -147,7 +157,7 @@
    "devices": "untested"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w092.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

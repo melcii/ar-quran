@@ -41,6 +41,11 @@ import { Still } from './still';
 import { Lightbox } from './lightbox';
 import { Camel } from './camel';
 import { EvenOdd } from './evenodd';
+import { Ration } from './ration';
+import { Polish } from './polish';
+import { Pulley } from './pulley';
+import { Answer } from './answer';
+import { Knots } from './knots';
 import { Release } from './release';
 import { Rootbox } from './rootbox';
 import { Starhop } from './starhop';
@@ -170,6 +175,11 @@ export const MECHS: Partial<Record<Task['kind'], Mechanic<never>>> = {
   lightbox: Lightbox as Mechanic<never>,
   camel: Camel as Mechanic<never>,
   evenodd: EvenOdd as Mechanic<never>,
+  ration: Ration as Mechanic<never>,
+  polish: Polish as Mechanic<never>,
+  pulley: Pulley as Mechanic<never>,
+  answer: Answer as Mechanic<never>,
+  knots: Knots as Mechanic<never>,
 };
 
 /** The plug-in for a task, typed loosely so the engine can call it with any task. */

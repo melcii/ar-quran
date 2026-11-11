@@ -121,21 +121,30 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Morning of Hope",
+  "tier": "playable",
+  "visual_theme": "A walled bakehouse yard in a hill village on a bright morning, with a clay oven, a kneading table and a gate onto the lane",
   "quran_references": [
-   "93:1–11"
+   "93:1-11"
   ],
   "primary_mechanic": {
    "kind": "morning-brightens",
-   "engine": "not built yet",
-   "text": "A sunrise that brightens as you help the orphan and the one who asks (93:9-10)."
+   "engine": "answer",
+   "text": "Knead the dough at the oven; three times a knock comes at the gate (an orphan child, a traveller, a neighbour); kneading on while someone knocks is refused, closing the gate on them is refused (93:10), and you must give what each asked (bread, water, salt); then bake."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "the morning brightness (93:1-5, read; the Prophet is not shown)",
+   "speak of the favour (93:11, read)"
+  ],
+  "narrative_structure": "A reading on the lane, baking and answering the gate, then a reading under the olives",
+  "world_assets": [
+   "clay oven and kneading table",
+   "yard gate"
+  ],
+  "environment_behaviour": [
+   "a light shows at the gate when someone knocks",
+   "the dough rises as you knead and bakes golden"
+  ],
+  "learning_objective": "Do not turn away the one who asks; be kind to the orphan (93:9-10)",
   "interaction_tests": {
    "activate": "untested",
    "responds": "untested",
@@ -146,7 +155,7 @@
    "devices": "untested"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w093.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

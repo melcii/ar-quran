@@ -122,21 +122,31 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Mountain of Compassion",
+  "tier": "playable",
+  "visual_theme": "A mountain village in a hungry year with a storehouse in the valley and three households up a steep zig-zag pass",
   "quran_references": [
-   "90:1–20"
+   "90:1-4",
+   "90:8-18"
   ],
   "primary_mechanic": {
    "kind": "steep-path-help",
-   "engine": "not built yet",
-   "text": "Climb a steep path where each step up is a helping act: freeing, feeding, caring (90:11-16)."
+   "engine": "ration",
+   "text": "Share 18 cups of grain between three households of 3, 1 and 5 people so every person gets the same (2 cups each); a wrong or incomplete share is refused with the per-person count; then carry each share up the steep switchback pass to its door (90:11-16, the steep pass: feeding on a day of hunger)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "the two ways (90:8-11, read)",
+   "created to toil (90:1-4, read)"
+  ],
+  "narrative_structure": "A reading on the valley track, sharing and carrying up the pass, then a reading on the bend",
+  "world_assets": [
+   "storehouse sack",
+   "three houses up a steep hill",
+   "switchback path"
+  ],
+  "environment_behaviour": [
+   "a sack of grain appears at each door it is left at"
+  ],
+  "learning_objective": "Know that feeding the hungry on a day of hunger is the steep pass (90:11-16)",
   "interaction_tests": {
    "activate": "untested",
    "responds": "untested",
@@ -147,7 +157,7 @@
    "devices": "untested"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w090.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

@@ -562,7 +562,22 @@ export type CamelTask = TaskBase & { kind: 'camel'; at: P2; parts: { name: strin
 /** Al-Fajr: pair up the dates in each basket to find whether the count is even or odd. */
 export type EvenOddTask = TaskBase & { kind: 'evenodd'; at: P2; baskets: { what: string; n: number }[] };
 
-export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask | StandTask | ReachTask | ObserveTask | SkyTask | SailTask | ChoiceTask | ShareTask | PromiseTask | WeighTask | FlowTask | SiftTask | ReturnTask | GranaryTask | ValleyTask | GrowTask | PollenTask | RubbingTask | StreetsTask | SunPathTask | PointTask | BeaconTask | DoorsTask | OrderTask | HomeTask | MirrorTask | ShadowTask | EchoTask | AntsTask | RiverTask | ShelterTask | RainTask | VoiceTask | PastureTask | PlumbTask | SluiceTask | ShadesTask | MoonTask | VineTask | SpringTask | HarvestTask | MeasureTask | DawnTask | ShimmerTask | RollcallTask | LinksTask | CluesTask | ScopeTask | CouncilTask | AdornTask | SurveyTask | StationTask | DunesTask | ChannelsTask | CalmTask | RumourTask | RootboxTask | ReleaseTask | BlazesTask | StarhopTask | RecallTask | EstuaryTask | FiredrillTask | ForgeTask | ListenTask | WelcomeTask | SpanTask | BondTask | FridayTask | ChancesTask | PackTask | LoadsTask | AmendsTask | WingsTask | GleanTask | UnseenTask | PortionTask | ReflectTask | HushTask | NightclockTask | WashTask | PrintsTask | DoorstepTask | WinnowTask | PegsTask | DigTask | FurrowsTask | BearingsTask | BeamTask | InspectTask | StagesTask | ShelvesTask | StillTask | LightboxTask | CamelTask | EvenOddTask;
+/** Al-Balad: share food fairly by the number in each house on a day of hunger, then carry it up the steep pass. */
+export type RationTask = TaskBase & { kind: 'ration'; at: P2; cups: number; homes: { at: P2; who: string; people: number }[] };
+
+/** Ash-Shams: rub the tarnish off a brass lamp, spot by spot, until it shines. */
+export type PolishTask = TaskBase & { kind: 'polish'; at: P2; cols: number; rows: number; hard: number[] };
+
+/** Al-Layl: lift heavy loads with as few pulleys as you need. */
+export type PulleyTask = TaskBase & { kind: 'pulley'; at: P2; strength: number; loads: { what: string; kg: number }[] };
+
+/** Ad-Duha: answer every knock at the door while you bake, never turning anyone away. */
+export type AnswerTask = TaskBase & { kind: 'answer'; oven: P2; door: P2; callers: { who: string; wants: number }[]; gifts: string[] };
+
+/** Ash-Sharh: untangle a fishing net knot by knot, each only once the knots over it are undone. */
+export type KnotsTask = TaskBase & { kind: 'knots'; at: P2; knots: { name: string; over: number[] }[] };
+
+export type Task = ReadTask | PointsTask | CarryTask | LeadTask | PickTask | GuideTask | QuizTask | StandTask | ReachTask | ObserveTask | SkyTask | SailTask | ChoiceTask | ShareTask | PromiseTask | WeighTask | FlowTask | SiftTask | ReturnTask | GranaryTask | ValleyTask | GrowTask | PollenTask | RubbingTask | StreetsTask | SunPathTask | PointTask | BeaconTask | DoorsTask | OrderTask | HomeTask | MirrorTask | ShadowTask | EchoTask | AntsTask | RiverTask | ShelterTask | RainTask | VoiceTask | PastureTask | PlumbTask | SluiceTask | ShadesTask | MoonTask | VineTask | SpringTask | HarvestTask | MeasureTask | DawnTask | ShimmerTask | RollcallTask | LinksTask | CluesTask | ScopeTask | CouncilTask | AdornTask | SurveyTask | StationTask | DunesTask | ChannelsTask | CalmTask | RumourTask | RootboxTask | ReleaseTask | BlazesTask | StarhopTask | RecallTask | EstuaryTask | FiredrillTask | ForgeTask | ListenTask | WelcomeTask | SpanTask | BondTask | FridayTask | ChancesTask | PackTask | LoadsTask | AmendsTask | WingsTask | GleanTask | UnseenTask | PortionTask | ReflectTask | HushTask | NightclockTask | WashTask | PrintsTask | DoorstepTask | WinnowTask | PegsTask | DigTask | FurrowsTask | BearingsTask | BeamTask | InspectTask | StagesTask | ShelvesTask | StillTask | LightboxTask | CamelTask | EvenOddTask | RationTask | PolishTask | PulleyTask | AnswerTask | KnotsTask;
 
 export type Region = { id: string; name: string; at: P2 };
 
