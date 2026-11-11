@@ -81,21 +81,34 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Tower of Good Habits",
+  "tier": "playable",
+  "visual_theme": "A hillside farm of stepped terraces climbing to a stone storehouse with a share jar by its door, in golden light",
   "quran_references": [
-   "70:19–35"
+   "70:3-4",
+   "70:19-25",
+   "70:32-35"
   ],
   "primary_mechanic": {
    "kind": "habit-tower",
-   "engine": "not built yet",
-   "text": "Climb a tower where each floor is a habit from 70:22-35, unlocked by practising it."
+   "engine": "portion",
+   "text": "Climb the terraces to the storehouse; four harvests come in (50, 20, 40, 70 baskets); from each count out the known share, one in every ten, into the share jar (70:24-25). Too little is refused, with a reminder in the poor year that the share is known; too much is refused as a miscount."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "created anxious (70:19-23, read)",
+   "the ways of ascent (70:3-4, read; nothing of the Day is shown)"
+  ],
+  "narrative_structure": "Two readings on the way up the terraces, then the harvests at the storehouse",
+  "world_assets": [
+   "stepped terraces",
+   "storehouse",
+   "harvest baskets",
+   "share jar"
+  ],
+  "environment_behaviour": [
+   "baskets wait at the door, more in a big year",
+   "grain rises in the share jar"
+  ],
+  "learning_objective": "Know that the steady keep a known share in their wealth for those who ask and those in need (70:24-25)",
   "interaction_tests": {
    "activate": "untested",
    "responds": "untested",
@@ -106,7 +119,7 @@
    "devices": "untested"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w070.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

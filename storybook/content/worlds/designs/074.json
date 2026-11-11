@@ -93,21 +93,32 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Dawn of Responsibility",
+  "tier": "playable",
+  "visual_theme": "A windy green hillside above a village with a stream, a flat washing stone, a basket of garments and a drying line",
   "quran_references": [
-   "74:1–56"
+   "74:1-7",
+   "74:32-34"
   ],
   "primary_mechanic": {
    "kind": "clean-the-commons",
-   "engine": "not built yet",
-   "text": "Tidy shared spaces from dawn, keeping your clothes clean (74:4-5) and helping without counting it (74:6)."
+   "engine": "wash",
+   "text": "Wash three garments step by step: soak, scrub, rinse until the rinse water runs clear (four rinses; wringing while it is still cloudy is refused), wring and hang on the line (74:4, and your clothing purify). Steps out of order are refused."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "arise (74:1-3, read)",
+   "by the moon and the dawn (74:32-34, read across the stream)"
+  ],
+  "narrative_structure": "A reading under the oaks, the washing stone, then a reading at the lookout over the bridge",
+  "world_assets": [
+   "washing stone and basket",
+   "drying line",
+   "stream and footbridge"
+  ],
+  "environment_behaviour": [
+   "clean garments hang on the line",
+   "the rinse water clears with each rinse"
+  ],
+  "learning_objective": "Know the surah’s first commands, among them purify your clothing (74:1-7)",
   "interaction_tests": {
    "activate": "untested",
    "responds": "untested",
@@ -118,7 +129,7 @@
    "devices": "untested"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w074.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

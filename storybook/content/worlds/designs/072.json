@@ -93,21 +93,31 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Valley of Listening",
+  "tier": "playable",
+  "visual_theme": "A wide desert valley at evening with a rock arch, a stream, goat bells, a creaking well and a palm, each making its noise",
   "quran_references": [
-   "72:1–15"
+   "72:1-2",
+   "72:16-18"
   ],
   "primary_mechanic": {
    "kind": "listening-valley",
-   "engine": "not built yet",
-   "text": "Find the quietest spots in a desert valley to hear the recitation clearly (72:1); nothing unseen is shown."
+   "engine": "hush",
+   "text": "A hush meter shows how loud it is where you stand (each noise fades with distance); find a quiet place and keep still for three seconds to listen. The noises change three times through the evening, so each round needs a new quiet place; the last opens 72:1-2. The jinn are never shown or imagined."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "straight on the way (72:16-17, read)",
+   "the places of prayer (72:18, read)"
+  ],
+  "narrative_structure": "A reading at the valley mouth, three rounds of listening, then a reading by the stones",
+  "world_assets": [
+   "rock arch, stream stones, goat pen, well, palm",
+   "sound rings at each noise"
+  ],
+  "environment_behaviour": [
+   "sound rings pulse at each noise while it is heard",
+   "noises start and stop between rounds"
+  ],
+  "learning_objective": "Know that the jinn listened to the Quran and believed (72:1-2)",
   "interaction_tests": {
    "activate": "untested",
    "responds": "untested",
@@ -118,7 +128,7 @@
    "devices": "untested"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w072.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

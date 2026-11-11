@@ -21,6 +21,11 @@ import { Amends } from './amends';
 import { Wings } from './wings';
 import { Glean } from './glean';
 import { Unseen } from './unseen';
+import { Portion } from './portion';
+import { Reflect } from './reflect';
+import { Hush } from './hush';
+import { Nightclock } from './nightclock';
+import { Wash } from './wash';
 import { Release } from './release';
 import { Rootbox } from './rootbox';
 import { Starhop } from './starhop';
@@ -130,6 +135,11 @@ export const MECHS: Partial<Record<Task['kind'], Mechanic<never>>> = {
   wings: Wings as Mechanic<never>,
   glean: Glean as Mechanic<never>,
   unseen: Unseen as Mechanic<never>,
+  portion: Portion as Mechanic<never>,
+  reflect: Reflect as Mechanic<never>,
+  hush: Hush as Mechanic<never>,
+  nightclock: Nightclock as Mechanic<never>,
+  wash: Wash as Mechanic<never>,
 };
 
 /** The plug-in for a task, typed loosely so the engine can call it with any task. */
