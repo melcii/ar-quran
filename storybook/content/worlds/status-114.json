@@ -782,21 +782,19 @@
     "ants",
     "rollcall"
    ],
-   "status": "Playable",
+   "status": "Tested",
    "quran_text_complete": "Yes: 93 ayahs, Arabic (KFGQPC Hafs) and Saheeh International, in order",
    "story_coverage": "6 of 6 played, 0 read only, 0 missing",
    "story_complete": true,
    "narration": "Written (child-friendly English, draft); device voice only",
    "unique_world": "Yes",
-   "gameplay_functional": "Not fully tested",
-   "movement_collision": "Not run",
-   "mobile": "Phone emulation (interaction tests); no real phone",
+   "gameplay_functional": "Yes (interaction tests pass, headless)",
+   "movement_collision": "Pass (desktop, 2026-11-06)",
+   "mobile": "Phone emulation not run (2026-11-06); no real phone",
    "content_reviewed": "No: unreviewed by a scholar",
    "remaining_issues": [
     "Reading place only, by design: The throne (27:38-42: the throne brought in the blink of an eye; Sulayman, the queen and the one with knowledge are never shown); The glass palace (27:44: Sulayman and the queen are never shown); Salih and the plotters (27:45-53: a plot to kill at night; kept to the reading).",
     "Played in another surah's world (story atlas), read here: Musa and the fire (27:7-14, played in surah 20).",
-    "The world changed since its interaction tests; they must be run again.",
-    "The world changed since its last movement and collision sweep; it must be run again.",
     "Recitation off: no licensed reciter supplied. Narration is text read by the device voice; no licensed recording."
    ]
   },
