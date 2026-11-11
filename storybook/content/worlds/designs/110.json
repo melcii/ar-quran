@@ -119,21 +119,31 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Courtyard of Gratitude",
+  "tier": "playable",
+  "visual_theme": "A hill village finishing a stone arch for its new gate, with shaped stones, a wooden frame and bunting for a celebration",
   "quran_references": [
-   "110:1–3"
+   "110:1-3"
   ],
   "primary_mechanic": {
    "kind": "praise-after-success",
-   "engine": "not built yet",
-   "text": "After finishing a big task, stop to praise and ask forgiveness before celebrating (110:3)."
+   "engine": "arch",
+   "text": "Build a six-stone arch on a wooden frame: stones go left and right in turn (a third on one side leans the frame and is refused), the keystone only once both sides meet, the frame only after the keystone; then, before the celebration, choose to glorify Allah with praise and ask His forgiveness (boasting or feasting first is refused; 110:3)."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "when the help comes (110:1-2, read)",
+   "the whole surah (110:1-3, read)"
+  ],
+  "narrative_structure": "A reading on the lane, the arch and the praise, then a reading at the gate",
+  "world_assets": [
+   "two piers and voussoirs",
+   "keystone",
+   "wooden centring frame",
+   "bunting"
+  ],
+  "environment_behaviour": [
+   "stones rise from both sides; the frame disappears when struck"
+  ],
+  "learning_objective": "When help and success come, glorify Allah with praise and ask His forgiveness (110:3)",
   "interaction_tests": {
    "activate": "untested",
    "responds": "untested",
@@ -144,7 +154,7 @@
    "devices": "untested"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w110.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

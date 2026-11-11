@@ -106,21 +106,29 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Forest at Dawn",
+  "tier": "playable",
+  "visual_theme": "A dark pine wood before dawn with old lanterns on posts along the path home",
   "quran_references": [
-   "113:1–5"
+   "113:1-5"
   ],
   "primary_mechanic": {
    "kind": "forest-dawn-calm",
-   "engine": "not built yet",
-   "text": "A forest growing light at dawn where you recite to feel safe (113:1)."
+   "engine": "lanterns",
+   "text": "Light five lanterns in order along the path, holding still at each for the wick to catch (stepping to a later lantern first is noted); with each lantern the sky lightens from night toward daybreak (113:1, the Lord of daybreak). Nothing frightening is shown."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "the Lord of daybreak (113:1-2, read)",
+   "the whole surah (113:1-5, read)"
+  ],
+  "narrative_structure": "A reading where the path enters the wood, the lanterns, then a reading at the edge of the wood",
+  "world_assets": [
+   "lantern posts",
+   "pine wood"
+  ],
+  "environment_behaviour": [
+   "the sky brightens toward dawn with each lantern lit"
+  ],
+  "learning_objective": "Seek refuge in the Lord of daybreak (113:1)",
   "interaction_tests": {
    "activate": "untested",
    "responds": "untested",
@@ -131,7 +139,7 @@
    "devices": "untested"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w113.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

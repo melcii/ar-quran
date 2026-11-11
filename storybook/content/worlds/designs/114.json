@@ -106,21 +106,30 @@
  },
  "depiction_rules": "No prophet, person or representation of Allah is shown. Unseen realities are never pictured. Interactive activities are labelled as adaptations.",
  "unique_world": {
-  "tier": "conceptual for the new engine (design proposed from the Story Library; older composed scene exists; not built in the new engine)",
-  "visual_theme": "The Sanctuary of Peace",
+  "tier": "playable",
+  "visual_theme": "A village on a clear morning with a winding lane past an orchard, a pond and a market to Grandmother's house",
   "quran_references": [
-   "114:1–6"
+   "114:1-6"
   ],
   "primary_mechanic": {
    "kind": "helpful-or-harmful",
-   "engine": "not built yet",
-   "text": "Sort suggestions into helpful and harmful and choose the good (114:4-5); no whisperer shown."
+   "engine": "whisper",
+   "text": "Carry a sealed letter to Grandmother; at three places a bad thought comes (skip the errand, read the letter, keep the sweets), shown only as a grey mist. Seeking refuge in the Lord of people clears it; listening thickens the mist; obeying is refused; delivering before every mist is cleared is refused (114:1-5). No whisperer or jinn is shown."
   },
-  "secondary_activities": [],
-  "narrative_structure": null,
-  "world_assets": [],
-  "environment_behaviour": [],
-  "learning_objective": null,
+  "secondary_activities": [
+   "the Lord of people (114:1-3, read)",
+   "the last surah (114:1-6, read)"
+  ],
+  "narrative_structure": "A reading at the top of the lane, the errand, then a reading by the market",
+  "world_assets": [
+   "grey mist at three places",
+   "Grandmother's house",
+   "market stall"
+  ],
+  "environment_behaviour": [
+   "the mist grows when listened to and disappears when turned from"
+  ],
+  "learning_objective": "Seek refuge in the Lord of people from the whisperer who withdraws (114:1-4)",
   "interaction_tests": {
    "activate": "untested",
    "responds": "untested",
@@ -131,7 +140,7 @@
    "devices": "untested"
   },
   "scholarly_review": "unreviewed",
-  "built_in": null
+  "built_in": "src/adventure/worlds/w114.ts"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",

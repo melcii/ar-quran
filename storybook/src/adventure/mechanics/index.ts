@@ -61,6 +61,11 @@ import { Campfire } from './campfire';
 import { Lend } from './lend';
 import { Prune } from './prune';
 import { Courtyard } from './courtyard';
+import { Arch } from './arch';
+import { Rope } from './rope';
+import { Compass } from './compass';
+import { Lanterns } from './lanterns';
+import { Whisper } from './whisper';
 import { Release } from './release';
 import { Rootbox } from './rootbox';
 import { Starhop } from './starhop';
@@ -210,6 +215,11 @@ export const MECHS: Partial<Record<Task['kind'], Mechanic<never>>> = {
   lend: Lend as Mechanic<never>,
   prune: Prune as Mechanic<never>,
   courtyard: Courtyard as Mechanic<never>,
+  arch: Arch as Mechanic<never>,
+  rope: Rope as Mechanic<never>,
+  compass: Compass as Mechanic<never>,
+  lanterns: Lanterns as Mechanic<never>,
+  whisper: Whisper as Mechanic<never>,
 };
 
 /** The plug-in for a task, typed loosely so the engine can call it with any task. */

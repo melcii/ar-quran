@@ -21,7 +21,7 @@ export const W082: WorldDef = {
     radius: 42,
     base: rolling({ radius: 42, amp: 1.6, seed: 82, streams: [{ pts: STREAM, w: 3.5, depth: 2 }] }),
     palette: PAL.coast,
-    paths: [curve([[-6, -36], [-10, -22], [-14, -14]]), curve([[-14, -6], [-4, -8], [0, -6]]), curve([[0, 2], [6, 4], [12, 6]]), curve([[16, 14], [18, 24], [14, 32]])],
+    paths: [curve([[-6, -36], [-10, -22], [-14, -16]]), curve([[-14, -6], [-14, -3.5], [-8, 0.5], [-1.6, 4.4]]), curve([[2.7, -7.9], [7, -4], [10, 1], [11.1, 4.2]]), curve([[16, 14], [16.6, 16], [18, 24], [14, 32]])],
     water: -1,
     flats: [{ x: -10, z: -22, r: 3 }, { x: 14, z: 32, r: 3 }],
   },
@@ -62,7 +62,7 @@ export const W082: WorldDef = {
       secs: 6,
       logs: [
         { at: [-14, -16], name: 'the first log', drift: 0.25 },
-        { at: [2.5, -7.5], name: 'the second log', drift: 0.4 },
+        { at: [-1.6, 4.4], name: 'the second log', drift: 0.4 },
         { at: [11, 4.5], name: 'the narrow log', drift: 0.55 },
       ],
       title: 'Keeping your balance',
