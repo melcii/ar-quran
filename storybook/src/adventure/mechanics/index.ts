@@ -56,6 +56,11 @@ import { Carding } from './carding';
 import { Errand } from './errand';
 import { Hourglass } from './hourglass';
 import { Chalk } from './chalk';
+import { Flock } from './flock';
+import { Campfire } from './campfire';
+import { Lend } from './lend';
+import { Prune } from './prune';
+import { Courtyard } from './courtyard';
 import { Release } from './release';
 import { Rootbox } from './rootbox';
 import { Starhop } from './starhop';
@@ -200,6 +205,11 @@ export const MECHS: Partial<Record<Task['kind'], Mechanic<never>>> = {
   errand: Errand as Mechanic<never>,
   hourglass: Hourglass as Mechanic<never>,
   chalk: Chalk as Mechanic<never>,
+  flock: Flock as Mechanic<never>,
+  campfire: Campfire as Mechanic<never>,
+  lend: Lend as Mechanic<never>,
+  prune: Prune as Mechanic<never>,
+  courtyard: Courtyard as Mechanic<never>,
 };
 
 /** The plug-in for a task, typed loosely so the engine can call it with any task. */
