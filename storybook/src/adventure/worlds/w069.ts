@@ -24,7 +24,7 @@ export const W069: WorldDef = {
     paths: [curve([[0, 40], [4, 26], [0, 12], [0, 2]])],
     water: -3,
     shore: '#d8c8a0',
-    flats: [{ x: 0, z: -2, r: 9, paint: '#c8b898' }, { x: 6, z: 30, r: 3 }],
+    flats: [{ x: 4, z: 34, r: 2.5 }, { x: 0, z: -2, r: 9, paint: '#c8b898' }, { x: 6, z: 30, r: 3 }],
   },
   look: { ...LOOKS.dusk, sunI: 2.2 },
   veg: {
@@ -48,6 +48,16 @@ export const W069: WorldDef = {
   welcome:
     'Welcome to the Cliff Workshop. Surah Al-Haqqah swears "by what you see, and what you do not see". In this old workshop, some things are really there that no eye can see. Can you find them?',
   tasks: [
+    {
+      id: 'ad',
+      kind: 'read',
+      at: [4, 34],
+      marker: 'sign',
+      title: '’Ad and the wind',
+      goal: 'Read at the sign near the way in',
+      adaptation: '’Ad and their end are read only; nothing of it is shown.',
+      reading: { title: '’Ad and the wind', refs: [[69, 6], [69, 7], [69, 8]], note: 'As for ’Ad, they were destroyed by a screaming, freezing wind, which He set upon them for seven nights and eight days without pause. Do you see any of them remaining?' },
+    },
     {
       id: 'reality',
       kind: 'read',

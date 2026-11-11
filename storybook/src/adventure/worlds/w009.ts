@@ -32,7 +32,7 @@ export const W009: WorldDef = {
     palette: { ...PAL.autumn, lush: '#98a04a', deep: '#6a7a38', warm: '#d0a048' },
     paths: [PATH],
     water: -3,
-    flats: [{ x: 24, z: 8, r: 14, paint: '#e0cca4' }, { x: 8, z: -42, r: 8, paint: '#e4d4b0' }],
+    flats: [{ x: 4, z: 50, r: 2.5 }, { x: 24, z: 8, r: 14, paint: '#e0cca4' }, { x: 8, z: -42, r: 8, paint: '#e4d4b0' }],
   },
   look: { ...LOOKS.golden, hor: '#ffc89a', sunColor: '#ffc88a', fog: '#e8c4a4' },
   veg: {
@@ -70,6 +70,16 @@ export const W009: WorldDef = {
   welcome:
     'Welcome to the Journey of Return. Surah At-Tawbah, "The Repentance", is the only surah that does not begin with "In the name of Allah". It speaks of people who turned back to Allah after mistakes, and Allah accepted them. On this path, you will meet everyday choices about honesty. Walk on.',
   tasks: [
+    {
+      id: 'cave',
+      kind: 'read',
+      at: [4, 50],
+      marker: 'sign',
+      title: 'The two in the cave',
+      goal: 'Read at the sign near the way in',
+      adaptation: 'The Prophet and his companion are read only; the cave is never shown.',
+      reading: { title: 'The two in the cave', refs: [[9, 40]], note: 'If you do not help him, Allah has already helped him, when he was the second of two in the cave, and he said to his companion: Do not grieve; indeed Allah is with us. And Allah sent down His tranquillity upon him.' },
+    },
     {
       id: 'accepts',
       kind: 'read',

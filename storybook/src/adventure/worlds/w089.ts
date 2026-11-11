@@ -22,7 +22,7 @@ export const W089: WorldDef = {
     base: rolling({ radius: 42, amp: 0.8, seed: 89 }),
     palette: PAL.dry,
     paths: [curve([[0, -36], [-6, -24], [2, -12], [0, -4]])],
-    flats: [{ x: 0, z: 0, r: 7 }, { x: -6, z: -24, r: 3 }, { x: 12, z: 14, r: 3 }],
+    flats: [{ x: 4, z: -30, r: 2.5 }, { x: 0, z: 0, r: 7 }, { x: -6, z: -24, r: 3 }, { x: 12, z: 14, r: 3 }],
   },
   look: { ...LOOKS.blossom, sun: [0.8, 0.12, -0.5], sunI: 2.6 },
   veg: {
@@ -44,6 +44,16 @@ export const W089: WorldDef = {
   welcome:
     'Welcome to the Dawn Palm Grove. Surah Al-Fajr swears by the dawn, by ten nights, and by the even and the odd, and it warns those who do not honour the orphan or urge others to feed the poor. The dates are picked. Share them fairly.',
   tasks: [
+    {
+      id: 'peoples',
+      kind: 'read',
+      at: [4, -30],
+      marker: 'sign',
+      title: '’Ad, Thamud and Pharaoh',
+      goal: 'Read at the sign near the way in',
+      adaptation: '’Ad, Thamud, Pharaoh and their end are read only; none is shown.',
+      reading: { title: '’Ad, Thamud and Pharaoh', refs: [[89, 6], [89, 7], [89, 8], [89, 9], [89, 10], [89, 11], [89, 12], [89, 13], [89, 14]], note: 'Have you not seen how your Lord dealt with ’Ad, Iram of the lofty pillars, and Thamud, who carved the rocks in the valley, and Pharaoh, owner of the stakes, who all transgressed in the lands and spread much corruption in them? So your Lord poured upon them a scourge. Indeed, your Lord is ever watchful.' },
+    },
     {
       id: 'dawn',
       kind: 'read',

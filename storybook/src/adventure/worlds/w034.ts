@@ -19,7 +19,7 @@ export const W034: WorldDef = {
     base: rolling({ radius: 46, amp: 1.2, seed: 34, shapes: [{ x: -18, z: -12, r: 10, h: 7 }, { x: 18, z: -12, r: 10, h: 7 }] }),
     palette: PAL.dry,
     paths: [curve([[0, 30], [0, -2]])],
-    flats: [{ x: 0, z: -14, r: 8 }, { x: 0, z: -8, r: 6 }, { x: -10, z: 6, r: 7 }, { x: 10, z: 6, r: 7 }],
+    flats: [{ x: 4, z: 20, r: 2.5 }, { x: 0, z: -14, r: 8 }, { x: 0, z: -8, r: 6 }, { x: -10, z: 6, r: 7 }, { x: 10, z: 6, r: 7 }],
   },
   look: { ...LOOKS.golden, sunI: 3 },
   veg: {
@@ -38,6 +38,16 @@ export const W034: WorldDef = {
   welcome:
     'Welcome to the Two Gardens. Surah Saba tells of a sign for the people of Saba in their home: two gardens, on the right and on the left. They were told: eat from what your Lord provides and be grateful to Him.',
   tasks: [
+    {
+      id: 'copper',
+      kind: 'read',
+      at: [4, 20],
+      marker: 'sign',
+      title: 'Sulayman and the copper',
+      goal: 'Read at the sign near the way in',
+      adaptation: 'Sulayman and the jinn are read only; none is shown.',
+      reading: { title: 'Sulayman and the copper', refs: [[34, 12], [34, 13], [34, 14]], note: 'And to Sulayman We subjected the wind, and We made a spring of molten copper flow for him, and among the jinn were those who worked for him by his Lord’s permission. When We decreed his death, nothing showed them his death but a creature of the earth eating at his staff.' },
+    },
     {
       id: 'dawud',
       kind: 'read',

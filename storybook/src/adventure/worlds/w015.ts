@@ -24,7 +24,7 @@ export const W015: WorldDef = {
     base: rolling({ radius: 52, amp: 2.4, seed: 15, rim: 2.2, shapes: [{ x: -24, z: -10, r: 5, h: 1 }] }),
     palette: PAL.desert,
     paths: [curve([[0, 46], [0, 30], [-4, 14], [-12, 0], [-24, -6], [-30, -14]]), curve([[-4, 14], [10, 2], [24, -10], [32, -6]]), curve([[10, 2], [4, -16], [-6, -30]]), curve([[4, -16], [18, -26]]), curve([[-12, 0], [-30, 8]])],
-    flats: [{ x: 0, z: 18, r: 4, paint: '#e8d4a8' }],
+    flats: [{ x: 4, z: 38, r: 2.5 }, { x: 0, z: 18, r: 4, paint: '#e8d4a8' }],
   },
   look: { ...LOOKS.desert, hor: '#f8d8a8', sunI: 3.4 },
   veg: {
@@ -50,6 +50,16 @@ export const W015: WorldDef = {
   welcome:
     'Welcome to the Carved Valley. Long ago, people here carved their houses out of the mountains. Surah Al-Hijr tells about them, and about the signs in the earth and sky. Read the first stone, then explore the cliffs.',
   tasks: [
+    {
+      id: 'iblis',
+      kind: 'read',
+      at: [4, 38],
+      marker: 'sign',
+      title: 'Iblis refuses',
+      goal: 'Read at the sign near the way in',
+      adaptation: 'Adam, the angels and Iblis are read only; none is shown.',
+      reading: { title: 'Iblis refuses', refs: [[15, 28], [15, 29], [15, 30], [15, 31], [15, 32], [15, 33], [15, 34], [15, 35], [15, 36], [15, 37], [15, 38], [15, 39], [15, 40], [15, 41], [15, 42], [15, 43], [15, 44]], note: 'Your Lord said to the angels: I will create a human being from clay. When I have shaped him, fall down in prostration to him. The angels prostrated, all of them, except Iblis, who refused. Allah said: Over My servants you will have no authority, except those who follow you.' },
+    },
     {
       id: 'measure',
       kind: 'read',

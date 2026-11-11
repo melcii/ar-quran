@@ -65,7 +65,7 @@ export const W007: WorldDef = {
     paths: [RING],
     water: -3,
     shore: '#ecd8a8',
-    flats: [{ ...pt(at(270, 2, 0)), r: 18, paint: '#e8d4aa' }, { ...pt(at(90, 2, 0)), r: 12 }, { ...pt(at(0, -2, 0)), r: 10 }],
+    flats: [{ x: 4, z: 92, r: 2.5 }, { ...pt(at(270, 2, 0)), r: 18, paint: '#e8d4aa' }, { ...pt(at(90, 2, 0)), r: 12 }, { ...pt(at(0, -2, 0)), r: 10 }],
     tint: (x, z, _y, c) => {
       const k = cliffs(x, z);
       if (k > 0) c.lerp(SAND, k * 0.75);
@@ -139,6 +139,16 @@ export const W007: WorldDef = {
   welcome:
     'Welcome to the Path of Ancient Stories. Surah Al-A\'raf, "The Heights", tells the stories of many messengers and their peoples. Its four lands lie around the high hill: walk them in order, and each gate opens when you have finished the land before it.',
   tasks: [
+    {
+      id: 'adam',
+      kind: 'read',
+      at: [4, 92],
+      marker: 'sign',
+      title: 'Adam and Iblis',
+      goal: 'Read at the sign near the way in',
+      adaptation: 'Adam, his wife, the angels and Iblis are read only; none is shown.',
+      reading: { title: 'Adam and Iblis', refs: [[7, 11], [7, 12], [7, 13], [7, 14], [7, 15], [7, 16], [7, 17], [7, 18], [7, 19], [7, 20], [7, 21], [7, 22], [7, 23], [7, 24], [7, 25]], note: 'We created you, then shaped you, then said to the angels: prostrate to Adam. They prostrated, except Iblis, who refused out of pride. Adam and his wife lived in the garden, but were tempted to the tree. They said: Our Lord, we have wronged ourselves, and if You do not forgive us and have mercy on us, we will be among the losers.' },
+    },
     // Chapter 1. The broken columns: Nuh and Hud.
     {
       id: 'a1',
