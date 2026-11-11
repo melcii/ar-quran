@@ -160,16 +160,17 @@
   ],
   "learning_objective": "Honour the orphan and urge feeding the poor (89:17-18)",
   "interaction_tests": {
-   "activate": "untested",
-   "responds": "untested",
-   "feedback": "untested",
-   "goal": "untested",
-   "completion": "untested",
-   "saved": "untested",
-   "devices": "untested"
+   "activate": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "responds": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "feedback": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "goal": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "completion": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "saved": "pass (2026-11-11, headless Chromium, software WebGL: play-world.js finished every activity with real input and kept it after reload; the batch check refused wrong moves with feedback)",
+   "devices": "desktop only (2026-11-11, headless Chromium 1000x650 with mouse, software WebGL); no phone or real GPU run for this world"
   },
   "scholarly_review": "unreviewed",
-  "built_in": "src/adventure/worlds/w089.ts"
+  "built_in": "src/adventure/worlds/w089.ts",
+  "tested_hash": "9d505ea557a8"
  },
  "story_library": {
   "source": "Owner's 'Quran Adventure — Children's Story Library' (2026-11-04), first-draft narration for ages about 7-12",
