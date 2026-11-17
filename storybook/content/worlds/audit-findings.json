@@ -7,7 +7,7 @@
    "issue": "Rocks between ankle and knee height (0.3 to 0.7 m) were drawn with no collider, so the explorer and animals walked through them. 1 to 14 such rocks in 112 of 114 worlds, and in the Ark meadow.",
    "cause": "Scenery.place() only gave a collider to rocks with size above 0.6, whatever their height; the missing-collider audit only reads parts drawn under the activity props group, not the instanced rock field.",
    "fix": "Every rock whose drawn top is above 0.28 m is now solid (src/adventure/Scenery.tsx rockTop, src/ark/Scenery.tsx). The world validator checks every placed rock against its collider.",
-   "status": "Retested"
+   "status": "Verified (automated)"
   },
   {
    "id": "camera-near",
@@ -15,7 +15,7 @@
    "issue": "With a wall behind and a roof or branch above, the camera could come as close as 0.25 m to the explorer's head. The lens then sat inside the figure, which looked like the explorer disappearing or being cut open.",
    "cause": "clampCamera() keeps the camera 0.25 m short of whatever is in the way, with no lower limit relative to the explorer.",
    "fix": "Below 1.2 m the camera now blends smoothly to a view from just above the head wherever there is headroom (Adventure.web.tsx Director). The closest approach is recorded in game.camNear for tests.",
-   "status": "Fix Implemented"
+   "status": "Verified (automated)"
   },
   {
    "id": "chooser-hud",
@@ -39,7 +39,7 @@
    "issue": "The play-through test teleported to every activity, so places no child could walk to still passed (the Ta-Ha sea crossing, a Ta-Ha cairn hill, the At-Tawbah gorge exit for tap-to-go).",
    "cause": "Test design.",
    "fix": "play-world.js now checks a walking route exists (with the game's own route finder, gates as they are) before every jump, reloads halfway to check story and place are kept, and leaves the world at the end. validate-worlds.mjs floods the walkable ground from the spawn through story doors.",
-   "status": "Fix Implemented"
+   "status": "Retested"
   },
   {
    "id": "debug",
@@ -54,7 +54,7 @@
    "issue": "While walking to the Ark ramp, an animal that was stuck for 3 s stopped colliding and could pass through rocks, rails or the hull to reach its spot. Tested one kind at a time: the elephants stuck for minutes between trees on the way to their pad; the giraffes walked through each other from the pad to the ramp; camels and sheep brushed the sheep pen corner in the hold.",
    "cause": "Pad approach used a straight line to the target with a ghost fallback. The route finder planned every animal as if it were 0.3 m wide, so it sent the elephants through gaps only a sheep fits; boarding skipped collisions from the pad onward; the hold aisle line ran 0.4 m off its middle. The Ark route finder only knew the land map, not the cart and its shafts, so elephants were routed into the cart.",
    "fix": "Animals follow the route finder for their own body size (creatures/mind.ts routeTo radius), walk solid from the pad to the foot of the ramp, and only the ramp-and-hold path skips collisions; the hold aisle is centred. The route finder now also asks the collision space for animals wider than a sheep. The second of each pair waits for a gap, so the pair goes up the ramp and through its stall gate in single file.",
-   "status": "Fix Implemented"
+   "status": "Verified (automated)"
   },
   {
    "id": "multiplayer",
@@ -172,7 +172,7 @@
     "kind": "bug",
     "issue": "The four stories were in one land with no labels, so moving between them was not marked.",
     "fix": "Four regions: Part 1 the young men of the cave, Part 2 the two gardens, Part 3 Musa where two seas meet, Part 4 the barrier. The place name shows as you enter, and the activity list shows the current part only.",
-    "status": "Fix Implemented"
+    "status": "Retested"
    },
    {
     "kind": "content",
@@ -197,11 +197,11 @@
     "issue": "Pointing reached only 40 m. From the start, tapping the prayer niche, the pavilion or the tall palm made the explorer walk across the grove on their own instead of pointing.",
     "cause": "point.tsx use reach 40; act() walks to anything out of reach.",
     "fix": "Pointing now reaches the whole grove.",
-    "status": "Fix Implemented"
+    "status": "Retested"
    },
    {
     "kind": "check",
-    "issue": "Desktop validator and a phone walk of every path and activity spot with real touch input: never inside a solid, feet on the ground, scale constant, camera never inside a solid (before the fixes; re-run after).",
+    "issue": "Desktop validator and a phone walk of every path and activity spot with real touch input: never inside a solid, feet on the ground, scale constant, camera never inside a solid; re-run after the fixes and passed.",
     "status": "Retested"
    },
    {

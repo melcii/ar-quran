@@ -5,6 +5,11 @@
     "date": "2026-11-17",
     "pass": true,
     "fails": []
+   },
+   "validate_phone": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
    }
   },
   "2": {
@@ -19,6 +24,22 @@
     "date": "2026-11-17",
     "pass": true,
     "fails": []
+   },
+   "play": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": [],
+    "secs": 211,
+    "resume": {
+     "doneKept": true,
+     "placeKeptM": 0
+    },
+    "leaveTo": "/"
+   },
+   "validate_phone": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
    }
   },
   "4": {
@@ -28,17 +49,1057 @@
     "fails": []
    }
   },
-  "19": {
+  "5": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "6": {
+   "play": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": [],
+    "secs": 437,
+    "resume": {
+     "doneKept": true,
+     "placeKeptM": 0
+    },
+    "leaveTo": "/"
+   },
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "7": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "8": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "9": {
+   "play": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": [],
+    "secs": 254,
+    "resume": {
+     "doneKept": true,
+     "placeKeptM": 0
+    },
+    "leaveTo": "/"
+   },
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "10": {
    "play": {
     "date": "2026-11-17",
     "pass": false,
     "fails": [
-     "leaving the world failed locator.click: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('Leave this world').first()\u001b[22m\n\u001b[2m "
+     "finished by the test, not by play: voyage",
+     "came back 7.4 m from where they left"
     ],
-    "secs": 212,
+    "secs": 347,
+    "resume": {
+     "doneKept": true,
+     "placeKeptM": 7.4
+    },
+    "leaveTo": "/"
+   },
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "11": {
+   "play": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": [],
+    "secs": 956,
     "resume": {
      "doneKept": true,
      "placeKeptM": 0
+    },
+    "leaveTo": "/"
+   },
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "12": {
+   "play": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": [],
+    "secs": 348,
+    "resume": {
+     "doneKept": true,
+     "placeKeptM": 0
+    },
+    "leaveTo": "/"
+   },
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "13": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "14": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "15": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "16": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "17": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "18": {
+   "play": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": [],
+    "secs": 488,
+    "resume": {
+     "doneKept": true,
+     "placeKeptM": 0
+    },
+    "leaveTo": "/"
+   },
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "19": {
+   "play": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": [],
+    "secs": 199,
+    "resume": {
+     "doneKept": true,
+     "placeKeptM": 0
+    },
+    "leaveTo": "/"
+   },
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   },
+   "validate_phone": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "20": {
+   "play": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": [],
+    "secs": 348,
+    "resume": {
+     "doneKept": true,
+     "placeKeptM": 0
+    },
+    "leaveTo": "/"
+   },
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   },
+   "validate_phone": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "21": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "22": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "23": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "24": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "25": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "26": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "27": {
+   "play": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": [],
+    "secs": 295,
+    "resume": {
+     "doneKept": true,
+     "placeKeptM": 0
+    },
+    "leaveTo": "/"
+   },
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   },
+   "validate_phone": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "28": {
+   "play": {
+    "date": "2026-11-17",
+    "pass": false,
+    "fails": [
+     "finished by the test, not by play: chest"
+    ],
+    "secs": 364,
+    "resume": {
+     "doneKept": true,
+     "placeKeptM": 0
+    },
+    "leaveTo": "/"
+   },
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "29": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "30": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "31": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "32": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "33": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "34": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "35": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "36": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "37": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "38": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "39": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "40": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "41": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "42": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "43": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "44": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "45": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "46": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "47": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "48": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "49": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "50": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "51": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "52": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "53": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "54": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "55": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "56": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "57": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "58": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "59": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "60": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "61": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "62": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "63": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "64": {
+   "play": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": [],
+    "secs": 82,
+    "resume": {
+     "doneKept": true,
+     "placeKeptM": 0
+    },
+    "leaveTo": "/"
+   },
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "65": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "66": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "67": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "68": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "69": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "70": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "71": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "72": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "73": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "74": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "75": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "76": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "77": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "78": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "79": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "80": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "81": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "82": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "83": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "84": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "85": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "86": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "87": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "88": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "89": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "90": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "91": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "92": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "93": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "94": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "95": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "96": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "97": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "98": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "99": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "100": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "101": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "102": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "103": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "104": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "105": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "106": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "107": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "108": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "109": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "110": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "111": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "112": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "113": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "114": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "ark": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   },
+   "ark_checks": {
+    "date": "2026-11-17",
+    "result": {
+     "giraffePathBlocked": [],
+     "giraffesInStall": true,
+     "giraffeTopAtDoor": 5.51,
+     "doorTop": 5.8999999999999995,
+     "giraffeFitsDoor": true,
+     "doorSamples": 270,
+     "railsHold": true,
+     "doorShut": true,
+     "walksUpRampInside": true,
+     "feetOnLiftedFloor": true,
+     "recovered": 0,
+     "errors": []
+    }
+   },
+   "ark_animals": {
+    "date": "2026-11-17",
+    "result": {
+     "kinds": {
+      "giraffe": {
+       "n": 2,
+       "inside": 0,
+       "overlap": 0,
+       "frames": 4354,
+       "scaleDev": 0,
+       "topAtDoor": 5.51,
+       "doorTop": 5.8999999999999995,
+       "maxStuck": 0,
+       "apartMax": 7.345838265630855,
+       "bothInStall": true,
+       "secs": 355,
+       "gameSecs": 60.5,
+       "sameStall": true,
+       "fitsDoor": true,
+       "boarded": [
+        341.2445,
+        355.082
+       ],
+       "ok": true
+      },
+      "elephant": {
+       "n": 2,
+       "inside": 0,
+       "overlap": 0,
+       "frames": 3047,
+       "scaleDev": 0,
+       "topAtDoor": 5.2,
+       "doorTop": 5.8999999999999995,
+       "maxStuck": 2.4414000000022344,
+       "apartMax": 5.023268207934647,
+       "stuckAt": [
+        "pad",
+        -20.4,
+        5.2
+       ],
+       "bothInStall": true,
+       "secs": 246,
+       "gameSecs": 61.6,
+       "sameStall": true,
+       "fitsDoor": true,
+       "boarded": [
+        224.6261000000015,
+        245.51969999999926
+       ],
+       "ok": true
+      },
+      "camel": {
+       "n": 2,
+       "inside": 0,
+       "overlap": 0,
+       "frames": 3232,
+       "scaleDev": 0,
+       "topAtDoor": 4.9,
+       "doorTop": 5.8999999999999995,
+       "maxStuck": 0,
+       "apartMax": 10.15544227670677,
+       "bothInStall": true,
+       "secs": 260,
+       "gameSecs": 64.4,
+       "sameStall": true,
+       "fitsDoor": true,
+       "boarded": [
+        243.70020000000298,
+        260.3396000000015
+       ],
+       "ok": true
+      },
+      "horse": {
+       "n": 2,
+       "inside": 0,
+       "overlap": 0,
+       "frames": 2257,
+       "scaleDev": 0,
+       "topAtDoor": 4.18,
+       "doorTop": 5.8999999999999995,
+       "maxStuck": 0,
+       "apartMax": 9.828956788342927,
+       "bothInStall": true,
+       "secs": 182,
+       "gameSecs": 44.5,
+       "sameStall": true,
+       "fitsDoor": true,
+       "boarded": [
+        170.1921000000015,
+        181.8611000000015
+       ],
+       "ok": true
+      },
+      "sheep": {
+       "n": 2,
+       "inside": 0,
+       "overlap": 0,
+       "frames": 3875,
+       "scaleDev": 0,
+       "topAtDoor": 3.74,
+       "doorTop": 5.8999999999999995,
+       "maxStuck": 0,
+       "apartMax": 4.4678310058236885,
+       "bothInStall": true,
+       "secs": 318,
+       "gameSecs": 73.1,
+       "sameStall": true,
+       "fitsDoor": true,
+       "boarded": [
+        300.55319999999926,
+        318.1816000000015
+       ],
+       "ok": true
+      }
+     },
+     "errors": [],
+     "ok": true
     }
    }
   }

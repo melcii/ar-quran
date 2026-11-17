@@ -16,7 +16,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 20735
+   "ms": 20990
   },
   {
    "surah": 2,
@@ -39,7 +39,7 @@
      "msg": "start 0,88 is within 0.69 m of a solid"
     }
    ],
-   "ms": 58965
+   "ms": 64085
   },
   {
    "surah": 3,
@@ -56,7 +56,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 23547
+   "ms": 24940
   },
   {
    "surah": 4,
@@ -73,7 +73,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 24704
+   "ms": 26419
   },
   {
    "surah": 5,
@@ -90,7 +90,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 25578
+   "ms": 27410
   },
   {
    "surah": 6,
@@ -107,7 +107,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 27527
+   "ms": 28389
   },
   {
    "surah": 7,
@@ -124,7 +124,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 50460
+   "ms": 53974
   },
   {
    "surah": 8,
@@ -141,7 +141,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 16506
+   "ms": 18722
   },
   {
    "surah": 9,
@@ -153,28 +153,12 @@
    "pathsWalked": 240,
    "counts": {
     "error": 0,
-    "warn": 3,
+    "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "warn",
-     "check": "adaptation",
-     "msg": "g2 (reach) has no note on what is adapted"
-    },
-    {
-     "level": "warn",
-     "check": "adaptation",
-     "msg": "g3 (reach) has no note on what is adapted"
-    },
-    {
-     "level": "warn",
-     "check": "adaptation",
-     "msg": "rest (stand) has no note on what is adapted"
-    }
-   ],
-   "ms": 24780
+   "issues": [],
+   "ms": 26218
   },
   {
    "surah": 10,
@@ -187,7 +171,7 @@
    "counts": {
     "error": 0,
     "warn": 0,
-    "review": 2,
+    "review": 0,
     "info": 1
    },
    "issues": [
@@ -195,21 +179,9 @@
      "level": "info",
      "check": "refs",
      "msg": "readings cite other surahs: 21:87, 21:88"
-    },
-    {
-     "level": "review",
-     "check": "text",
-     "msg": "game text reports a prophet's words (\"Yunus asks...\"): check it against the cited ayahs",
-     "at": "finale.body[1]"
-    },
-    {
-     "level": "review",
-     "check": "text",
-     "msg": "game text reports a prophet's words (\"Yunus; this world says...\"): check it against the cited ayahs",
-     "at": "notes[4]"
     }
    ],
-   "ms": 20957
+   "ms": 19408
   },
   {
    "surah": 11,
@@ -222,16 +194,10 @@
    "counts": {
     "error": 0,
     "warn": 0,
-    "review": 5,
+    "review": 3,
     "info": 0
    },
    "issues": [
-    {
-     "level": "review",
-     "check": "text",
-     "msg": "game text reports a prophet's words (\"Hud tells...\"): check it against the cited ayahs",
-     "at": "welcome"
-    },
     {
      "level": "review",
      "check": "text",
@@ -249,15 +215,9 @@
      "check": "text",
      "msg": "game text reports a prophet's words (\"Salih told...\"): check it against the cited ayahs",
      "at": "tasks[5].intro"
-    },
-    {
-     "level": "review",
-     "check": "text",
-     "msg": "game text reports a prophet's words (\"Hud tells...\"): check it against the cited ayahs",
-     "at": "finale.body[1]"
     }
    ],
-   "ms": 40293
+   "ms": 38252
   },
   {
    "surah": 12,
@@ -270,16 +230,10 @@
    "counts": {
     "error": 0,
     "warn": 1,
-    "review": 3,
+    "review": 2,
     "info": 0
    },
    "issues": [
-    {
-     "level": "review",
-     "check": "text",
-     "msg": "game text reports a prophet's words (\"Yusuf tells...\"): check it against the cited ayahs",
-     "at": "welcome"
-    },
     {
      "level": "review",
      "check": "text",
@@ -302,7 +256,7 @@
      ]
     }
    ],
-   "ms": 25278
+   "ms": 25762
   },
   {
    "surah": 13,
@@ -314,18 +268,12 @@
    "pathsWalked": 215,
    "counts": {
     "error": 0,
-    "warn": 1,
+    "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "warn",
-     "check": "adaptation",
-     "msg": "calm (stand) has no note on what is adapted"
-    }
-   ],
-   "ms": 18629
+   "issues": [],
+   "ms": 18690
   },
   {
    "surah": 14,
@@ -342,7 +290,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 17247
+   "ms": 17358
   },
   {
    "surah": 15,
@@ -359,7 +307,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 17837
+   "ms": 17537
   },
   {
    "surah": 16,
@@ -371,18 +319,12 @@
    "pathsWalked": 168,
    "counts": {
     "error": 0,
-    "warn": 1,
+    "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "warn",
-     "check": "adaptation",
-     "msg": "senses (stand) has no note on what is adapted"
-    }
-   ],
-   "ms": 16088
+   "issues": [],
+   "ms": 15952
   },
   {
    "surah": 17,
@@ -399,7 +341,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 17300
+   "ms": 17147
   },
   {
    "surah": 18,
@@ -426,7 +368,7 @@
      ]
     }
    ],
-   "ms": 20478
+   "ms": 21103
   },
   {
    "surah": 19,
@@ -450,7 +392,7 @@
      "at": "tasks[1].scenes[1].options[0].reply"
     }
    ],
-   "ms": 14542
+   "ms": 14844
   },
   {
    "surah": 20,
@@ -461,7 +403,7 @@
    "solids": 37,
    "pathsWalked": 523,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 1,
     "info": 0
@@ -472,18 +414,9 @@
      "check": "text",
      "msg": "game text reports a prophet's words (\"Musa and Harun were told...\"): check it against the cited ayahs",
      "at": "tasks[4].scenes[0].options[0].reply"
-    },
-    {
-     "level": "error",
-     "check": "reach",
-     "msg": "light.piles[2] cannot be walked to from the start",
-     "at": [
-      13,
-      22
-     ]
     }
    ],
-   "ms": 23918
+   "ms": 22705
   },
   {
    "surah": 21,
@@ -500,7 +433,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 14149
+   "ms": 15365
   },
   {
    "surah": 22,
@@ -517,7 +450,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 15711
+   "ms": 15618
   },
   {
    "surah": 23,
@@ -534,7 +467,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 10447
+   "ms": 10686
   },
   {
    "surah": 24,
@@ -551,7 +484,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 15133
+   "ms": 14606
   },
   {
    "surah": 25,
@@ -568,7 +501,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 12755
+   "ms": 12554
   },
   {
    "surah": 26,
@@ -585,7 +518,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 12767
+   "ms": 12768
   },
   {
    "surah": 27,
@@ -615,7 +548,7 @@
      "at": "finale.body[1]"
     }
    ],
-   "ms": 11099
+   "ms": 11729
   },
   {
    "surah": 28,
@@ -624,25 +557,15 @@
    "tasks": 6,
    "spots": 13,
    "solids": 27,
-   "pathsWalked": 91,
+   "pathsWalked": 147,
    "counts": {
     "error": 0,
-    "warn": 1,
+    "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "warn",
-     "check": "space",
-     "msg": "footpath 0 blocked (walker stuck going to 7.979129101976732,15.538218131355272)",
-     "at": [
-      7.32,
-      17.67
-     ]
-    }
-   ],
-   "ms": 15481
+   "issues": [],
+   "ms": 15473
   },
   {
    "surah": 29,
@@ -659,7 +582,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 10895
+   "ms": 10925
   },
   {
    "surah": 30,
@@ -686,7 +609,7 @@
      ]
     }
    ],
-   "ms": 12370
+   "ms": 11843
   },
   {
    "surah": 31,
@@ -703,7 +626,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 12078
+   "ms": 12131
   },
   {
    "surah": 32,
@@ -720,7 +643,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 11111
+   "ms": 11653
   },
   {
    "surah": 33,
@@ -737,7 +660,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 10789
+   "ms": 11507
   },
   {
    "surah": 34,
@@ -761,7 +684,7 @@
      "at": "tasks[2].intro"
     }
    ],
-   "ms": 13693
+   "ms": 13568
   },
   {
    "surah": 35,
@@ -778,7 +701,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 12058
+   "ms": 12537
   },
   {
    "surah": 36,
@@ -795,7 +718,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 10730
+   "ms": 10998
   },
   {
    "surah": 37,
@@ -812,7 +735,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 12893
+   "ms": 13235
   },
   {
    "surah": 38,
@@ -829,7 +752,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 15178
+   "ms": 13412
   },
   {
    "surah": 39,
@@ -846,7 +769,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 9838
+   "ms": 10156
   },
   {
    "surah": 40,
@@ -863,7 +786,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 14315
+   "ms": 14073
   },
   {
    "surah": 41,
@@ -880,7 +803,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 11711
+   "ms": 12286
   },
   {
    "surah": 42,
@@ -897,7 +820,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 16770
+   "ms": 16182
   },
   {
    "surah": 43,
@@ -914,7 +837,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 18124
+   "ms": 15865
   },
   {
    "surah": 44,
@@ -931,7 +854,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 13356
+   "ms": 14299
   },
   {
    "surah": 45,
@@ -948,7 +871,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 15730
+   "ms": 16001
   },
   {
    "surah": 46,
@@ -965,7 +888,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 12952
+   "ms": 12119
   },
   {
    "surah": 47,
@@ -978,18 +901,11 @@
    "counts": {
     "error": 0,
     "warn": 0,
-    "review": 1,
+    "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "review",
-     "check": "text",
-     "msg": "game text reports a prophet's words (\"Muhammad asks...\"): check it against the cited ayahs",
-     "at": "finale.body[1]"
-    }
-   ],
-   "ms": 12806
+   "issues": [],
+   "ms": 12910
   },
   {
    "surah": 48,
@@ -1006,7 +922,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 12780
+   "ms": 12649
   },
   {
    "surah": 49,
@@ -1023,7 +939,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 18592
+   "ms": 16500
   },
   {
    "surah": 50,
@@ -1040,7 +956,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 14366
+   "ms": 13359
   },
   {
    "surah": 51,
@@ -1057,7 +973,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 15723
+   "ms": 14846
   },
   {
    "surah": 52,
@@ -1074,7 +990,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 17331
+   "ms": 15825
   },
   {
    "surah": 53,
@@ -1091,7 +1007,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 12528
+   "ms": 12329
   },
   {
    "surah": 54,
@@ -1108,7 +1024,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 15045
+   "ms": 14418
   },
   {
    "surah": 55,
@@ -1125,7 +1041,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 16234
+   "ms": 16100
   },
   {
    "surah": 56,
@@ -1142,7 +1058,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 15223
+   "ms": 15893
   },
   {
    "surah": 57,
@@ -1159,7 +1075,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 18890
+   "ms": 17971
   },
   {
    "surah": 58,
@@ -1176,7 +1092,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 12540
+   "ms": 12845
   },
   {
    "surah": 59,
@@ -1193,7 +1109,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 14240
+   "ms": 13892
   },
   {
    "surah": 60,
@@ -1210,7 +1126,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 22162
+   "ms": 21335
   },
   {
    "surah": 61,
@@ -1227,7 +1143,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 14470
+   "ms": 14654
   },
   {
    "surah": 62,
@@ -1244,7 +1160,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 15414
+   "ms": 14971
   },
   {
    "surah": 63,
@@ -1261,7 +1177,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 17558
+   "ms": 17123
   },
   {
    "surah": 64,
@@ -1278,7 +1194,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 20786
+   "ms": 21335
   },
   {
    "surah": 65,
@@ -1295,7 +1211,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 15307
+   "ms": 14657
   },
   {
    "surah": 66,
@@ -1312,7 +1228,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 11825
+   "ms": 11651
   },
   {
    "surah": 67,
@@ -1329,7 +1245,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 14979
+   "ms": 14738
   },
   {
    "surah": 68,
@@ -1346,7 +1262,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 11677
+   "ms": 11543
   },
   {
    "surah": 69,
@@ -1363,7 +1279,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 16682
+   "ms": 16985
   },
   {
    "surah": 70,
@@ -1380,7 +1296,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 13856
+   "ms": 13720
   },
   {
    "surah": 71,
@@ -1404,7 +1320,7 @@
      "at": "finale.body[1]"
     }
    ],
-   "ms": 11856
+   "ms": 12173
   },
   {
    "surah": 72,
@@ -1421,7 +1337,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 14907
+   "ms": 14217
   },
   {
    "surah": 73,
@@ -1438,7 +1354,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 12106
+   "ms": 11515
   },
   {
    "surah": 74,
@@ -1455,7 +1371,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 12500
+   "ms": 12417
   },
   {
    "surah": 75,
@@ -1472,7 +1388,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 12154
+   "ms": 12164
   },
   {
    "surah": 76,
@@ -1489,7 +1405,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 13088
+   "ms": 13397
   },
   {
    "surah": 77,
@@ -1506,7 +1422,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 12484
+   "ms": 12459
   },
   {
    "surah": 78,
@@ -1523,7 +1439,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 11159
+   "ms": 11281
   },
   {
    "surah": 79,
@@ -1540,7 +1456,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 16260
+   "ms": 15042
   },
   {
    "surah": 80,
@@ -1557,7 +1473,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 12295
+   "ms": 12170
   },
   {
    "surah": 81,
@@ -1574,7 +1490,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 17283
+   "ms": 17216
   },
   {
    "surah": 82,
@@ -1591,7 +1507,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 16622
+   "ms": 16655
   },
   {
    "surah": 83,
@@ -1608,7 +1524,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 14105
+   "ms": 14363
   },
   {
    "surah": 84,
@@ -1620,18 +1536,12 @@
    "pathsWalked": 171,
    "counts": {
     "error": 0,
-    "warn": 1,
+    "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "warn",
-     "check": "spawn",
-     "msg": "start 6,-38 is within 0.39 m of a solid"
-    }
-   ],
-   "ms": 15207
+   "issues": [],
+   "ms": 14812
   },
   {
    "surah": 85,
@@ -1648,7 +1558,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 10736
+   "ms": 10526
   },
   {
    "surah": 86,
@@ -1665,7 +1575,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 14873
+   "ms": 14177
   },
   {
    "surah": 87,
@@ -1682,7 +1592,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 11632
+   "ms": 11744
   },
   {
    "surah": 88,
@@ -1699,7 +1609,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 10793
+   "ms": 11278
   },
   {
    "surah": 89,
@@ -1716,7 +1626,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 13269
+   "ms": 13286
   },
   {
    "surah": 90,
@@ -1733,7 +1643,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 16881
+   "ms": 17214
   },
   {
    "surah": 91,
@@ -1750,7 +1660,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 11566
+   "ms": 11838
   },
   {
    "surah": 92,
@@ -1767,7 +1677,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 11962
+   "ms": 11773
   },
   {
    "surah": 93,
@@ -1784,7 +1694,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 11604
+   "ms": 11333
   },
   {
    "surah": 94,
@@ -1807,7 +1717,7 @@
      "msg": "start 0,36 is within 0.63 m of a solid"
     }
    ],
-   "ms": 14962
+   "ms": 15522
   },
   {
    "surah": 95,
@@ -1824,7 +1734,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 12580
+   "ms": 14442
   },
   {
    "surah": 96,
@@ -1841,7 +1751,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 11385
+   "ms": 10065
   },
   {
    "surah": 97,
@@ -1858,7 +1768,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 11182
+   "ms": 11063
   },
   {
    "surah": 98,
@@ -1875,7 +1785,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 12551
+   "ms": 12914
   },
   {
    "surah": 99,
@@ -1892,7 +1802,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 11879
+   "ms": 13300
   },
   {
    "surah": 100,
@@ -1909,7 +1819,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 12874
+   "ms": 12245
   },
   {
    "surah": 101,
@@ -1926,7 +1836,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 17208
+   "ms": 16171
   },
   {
    "surah": 102,
@@ -1943,7 +1853,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 11194
+   "ms": 11224
   },
   {
    "surah": 103,
@@ -1960,7 +1870,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 13074
+   "ms": 12629
   },
   {
    "surah": 104,
@@ -1977,7 +1887,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 10998
+   "ms": 11485
   },
   {
    "surah": 105,
@@ -1994,7 +1904,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 12936
+   "ms": 13737
   },
   {
    "surah": 106,
@@ -2011,7 +1921,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 13919
+   "ms": 14223
   },
   {
    "surah": 107,
@@ -2028,7 +1938,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 10144
+   "ms": 11373
   },
   {
    "surah": 108,
@@ -2045,7 +1955,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 10713
+   "ms": 11301
   },
   {
    "surah": 109,
@@ -2062,7 +1972,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 10921
+   "ms": 11454
   },
   {
    "surah": 110,
@@ -2079,7 +1989,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 10674
+   "ms": 12081
   },
   {
    "surah": 111,
@@ -2096,7 +2006,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 10389
+   "ms": 12127
   },
   {
    "surah": 112,
@@ -2113,7 +2023,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 10180
+   "ms": 11208
   },
   {
    "surah": 113,
@@ -2130,7 +2040,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 18024
+   "ms": 18777
   },
   {
    "surah": 114,
@@ -2147,7 +2057,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 12070
+   "ms": 12949
   }
  ]
 }
