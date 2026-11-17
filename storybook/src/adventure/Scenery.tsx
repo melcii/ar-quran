@@ -285,7 +285,7 @@ export function Mountains({ color = '#7d86a6', seed = 91, height = 1 }: { color?
 
 export type PlaceEdits = { rocks: Record<string, { x?: number; z?: number; s?: number; rot?: number; hidden?: boolean }>; trees: Record<string, { x?: number; z?: number; s?: number; rot?: number; hidden?: boolean }>; addRocks: { x: number; z: number; s: number; rot?: number }[] };
 
-export type Placed = { trees: TreeSpec[]; rocks: { x: number; z: number; s: number; sy: number; rot: number; v: number }[] };
+export type Placed = { trees: TreeSpec[]; rocks: { x: number; z: number; s: number; sy: number; rot: number; v: number; key?: string }[] };
 
 /** Choose every tree and rock once, and register trunks and boulders as obstacles. */
 export function place(t: Terrain, veg: Veg, seed: number, edits?: PlaceEdits): Placed {
@@ -332,11 +332,15 @@ export function place(t: Terrain, veg: Veg, seed: number, edits?: PlaceEdits): P
     if (Math.hypot(x, z) > t.radius - 4 || !t.clear(x, z, 0)) continue;
     rocks.push({ x, z, s: 0.25 + r() * 0.45, sy: 0.5 + r() * 0.4, rot: r() * 6.28, v: Math.floor(r() * 4) });
   }
-  // Studio edits: scattered pieces moved, resized or hidden by index, and rocks added.
+  // Every scattered piece is known by where the seed put it, so studio edits
+  // (moved, resized, turned, hidden) find it again on every load.
+  const keyOf = (x: number, z: number) => `${x.toFixed(2)},${z.toFixed(2)}`;
+  for (const k of trees) (k as TreeSpec & { key?: string }).key = keyOf(k.x, k.z);
+  for (const k of rocks) k.key = keyOf(k.x, k.z);
   if (edits) {
-    const fix = <T extends { x: number; z: number }>(list: T[], map: PlaceEdits['rocks'], sKey: 's' | 'size', rKey: 'rot' | null) =>
-      list.flatMap((k, i) => {
-        const e = map[String(i)];
+    const fix = <T extends { x: number; z: number; key?: string }>(list: T[], map: PlaceEdits['rocks'], sKey: 's' | 'size', rKey: 'rot' | null) =>
+      list.flatMap((k) => {
+        const e = map[k.key!];
         if (!e) return [k];
         if (e.hidden) return [];
         const n: any = { ...k };
@@ -346,13 +350,13 @@ export function place(t: Terrain, veg: Veg, seed: number, edits?: PlaceEdits): P
         if (rKey && e.rot != null) n[rKey] = e.rot;
         return [n as T];
       });
-    const tr = fix(trees, edits.trees, 'size', null);
+    const tr = fix(trees as (TreeSpec & { key?: string })[], edits.trees, 'size', null);
     trees.length = 0;
     trees.push(...tr);
     const rk = fix(rocks, edits.rocks, 's', 'rot');
     rocks.length = 0;
     rocks.push(...rk);
-    edits.addRocks.forEach((a, i) => rocks.push({ x: a.x, z: a.z, s: a.s, sy: 0.75, rot: a.rot ?? 0, v: i % 4 }));
+    edits.addRocks.forEach((a, i) => rocks.push({ x: a.x, z: a.z, s: a.s, sy: 0.75, rot: a.rot ?? 0, v: i % 4, key: `add:${i}` }));
   }
   for (const k of trees) {
     if (k.solid) t.obstacles.push({ x: k.x, z: k.z, r: 0.5 * k.size + (k.kind === 'autumn' ? 0.5 : 0.15) });

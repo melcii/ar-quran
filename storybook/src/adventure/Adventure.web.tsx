@@ -32,9 +32,9 @@ import { ChoiceCard, ShareCard, VowCard, WeighCard } from './panels';
 import { CloudLayer, FarLand, Flock, FlowerField, GroundBirds, GrassField, GroundMesh, Lighting, Moon, Motes, Mountains, RockField, Sky, StillWater, Trees, place, type SceneQuality } from './Scenery';
 import { makeTerrain, rng, type P2, type Terrain } from './terrain';
 import type { FlowTask, Reading, Task, WorldDef } from './types';
-import { placedEdits } from '@/studio/overlay';
+import { placeLand } from './land';
 import { playtestKey, studioMode, useResolvedWorld } from '@/studio/live';
-import { StudioBadge } from '@/studio/StudioBadge';
+import { EditWorldButton, StudioBadge } from '@/studio/StudioBadge';
 import { level, LEVELS } from './level';
 import { makeNav, type Nav } from '@/creatures/nav';
 import { mindOf, routeTo, think } from '@/creatures/mind';
@@ -1526,7 +1526,7 @@ export default function Adventure({ n }: { n: number }) {
   return (
     <View style={st.root}>
       <World key={`${n}:${resolved.mode}:${resolved.version ?? 'base'}`} def={def} />
-      {resolved.mode !== 'play' ? <StudioBadge mode={resolved.mode} n={n} version={resolved.version} skipped={resolved.skipped} /> : null}
+      {resolved.mode !== 'play' ? <StudioBadge mode={resolved.mode} n={n} version={resolved.version} skipped={resolved.skipped} /> : <EditWorldButton n={n} />}
     </View>
   );
 }
@@ -1582,21 +1582,7 @@ function World({ def }: { def: WorldDef }) {
     for (const task of def.tasks) if (task.kind === 'read') cand.push([task.at[0] + 3.5, task.at[1] - 3]);
     return cand.filter(([x, z]) => !t.isWater(x, z) && t.clear(x, z, 0.5)).slice(0, 3);
   }, [def, t]);
-  const placed = useMemo(() => {
-    // Buildings first, so trees keep clear of them and of every activity spot.
-    for (const s of def.structures) footprint(s, t, isOn);
-    const spot = (p: P2, r: number) => t.keepClear.push({ x: p[0], z: p[1], r });
-    for (const task of def.tasks) {
-      if (task.kind === 'read' || task.kind === 'quiz') spot(task.at, 3);
-      if (task.kind === 'points') task.points.forEach((p) => spot(p.at, 2.5));
-      if (task.kind === 'carry') task.loads.forEach((L) => (spot(L.from, 2.5), spot(L.to, 1.8)));
-      if (task.kind === 'lead') (spot(task.pen, 5), spot(task.herd.at, task.herd.r * 0.6));
-      if (task.kind === 'pick') task.choices.forEach((c) => spot(c.at, 2.5));
-    }
-    for (const l of def.links ?? []) spot(l.at, 3);
-    spot(def.start, 4);
-    return place(t, def.veg, def.seed, placedEdits(def));
-  }, [def, t]);
+  const placed = useMemo(() => placeLand(def, t, isOn), [def, t]);
 
   const [reduced, setReduced] = useState(app.motionOff);
   motion.reduced = reduced;
@@ -1864,6 +1850,8 @@ function World({ def }: { def: WorldDef }) {
       view: (yaw: number, pitch: number, dist: number) => void Object.assign(game.cam, { yaw, pitch, dist, snap: true }),
       speed: (k: number) => (game.timeScale = k),
       finish,
+      /** Where the rocks are, for checking studio edits (tests only). */
+      rocks: () => placed.rocks.map((k) => ({ key: k.key, x: +k.x.toFixed(2), z: +k.z.toFixed(2), s: +k.s.toFixed(2) })),
       progress: (id: string, i: number) => api.current.progress(id, i),
       cards: () => cards.map((c) => c.kind),
       top: () => cards[0],

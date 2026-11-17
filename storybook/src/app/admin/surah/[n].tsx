@@ -1,6 +1,6 @@
 // One surah's management page: its content record, the no-code story
 // editor, versions with review / publish / rollback, and its test results.
-import { useLocalSearchParams } from 'expo-router';
+import { router, useLocalSearchParams } from 'expo-router';
 import { useEffect, useMemo, useState } from 'react';
 import { Platform, Pressable, Text, TextInput, View } from 'react-native';
 import { WORLDS } from '@/adventure/worlds';
@@ -550,6 +550,7 @@ export default function SurahPage() {
       actions={
         def ? (
           <>
+            <Btn label="Edit world in 3D" kind="primary" onPress={() => router.push(`/admin/world/${n}`)} testID="edit-world" />
             <Btn label="Play test draft" onPress={() => openGame(n, 'draft')} testID="playtest" />
             <Btn label="Published" onPress={() => openGame(n, 'published')} />
             <Btn label="Built-in" onPress={() => openGame(n, 'built-in')} />

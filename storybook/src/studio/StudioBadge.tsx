@@ -33,3 +33,21 @@ const st = StyleSheet.create({
   btn: { backgroundColor: '#f1c27d', borderRadius: 10, paddingHorizontal: 10, paddingVertical: 3 },
   btnText: { color: '#2a1d10', fontSize: 12, fontWeight: '700' },
 });
+
+/**
+ * A small "Edit World" button in ordinary play, only on a device where a
+ * staff member has signed in to the studio. It is just a link: the editor
+ * itself checks the role with the server.
+ */
+export function EditWorldButton({ n }: { n: number }) {
+  let staff = false;
+  try {
+    staff = !!globalThis.localStorage?.getItem('quran-studio.auth');
+  } catch {}
+  if (!staff) return null;
+  return (
+    <Pressable onPress={() => router.push(`/admin/world/${n}`)} style={[st.btn, { position: 'absolute', bottom: 12, right: 12, zIndex: 50 }]} accessibilityRole="link" testID="edit-world-in-game">
+      <Text style={st.btnText}>Edit World</Text>
+    </Pressable>
+  );
+}
