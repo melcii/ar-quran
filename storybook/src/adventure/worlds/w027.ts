@@ -36,11 +36,24 @@ export const W027: WorldDef = {
   startYaw: Math.PI,
   structures: [],
   welcome:
-    'Welcome to the Valley of the Ants. Here you are as small as an ant: the grass is like a forest. Surah An-Naml tells of an ant who called to the others to go home before footsteps came near. Read at the sign first.',
+    'Welcome to the Valley of the Ants. Here you are as small as an ant: the grass is like a forest. Surah An-Naml tells of an ant who called to the others to go home before footsteps came near. Start at the lantern and the sign by the start.',
   tasks: [
+    // The surah's stories in its own order: Musa and the fire (27:7-14) comes
+    // first, then Dawud and Sulayman (27:15-44), then Salih (27:45-53).
+    {
+      id: 'musa',
+      kind: 'read',
+      at: [-4, 15],
+      marker: 'lantern',
+      title: 'Musa and the fire',
+      goal: 'Read at the lantern by the start',
+      reading: { title: 'A fire far off', refs: [[27, 7], [27, 8]], note: 'An-Naml begins its stories with Musa, who saw a fire far off and said to his family that he would bring news from it or a burning brand to warm them. When he came to it, he was called. Musa\'s far light is played in the world of Surah Ta-Ha.' },
+      adaptation: 'Musa is not shown. This is a reading place only.',
+    },
     {
       id: 'gift',
       kind: 'read',
+      requires: ['musa'],
       at: [3, 16],
       marker: 'sign',
       title: 'Knowledge and thanks',
@@ -114,9 +127,9 @@ export const W027: WorldDef = {
       requires: ['palace'],
       at: [4, -14],
       marker: 'lantern',
-      title: 'Musa, and Salih',
+      title: 'Salih',
       goal: 'Read at the lantern beside it',
-      reading: { title: 'Two more stories', refs: [[27, 7], [27, 8], [27, 45], [27, 53]], note: 'An-Naml also tells of Musa, who saw a fire and was called there, and of Salih, sent to Thamud, whose believers Allah saved. Musa\'s far light is played in the world of Surah Ta-Ha, and Salih\'s people in the world of Surah Hud.' },
+      reading: { title: 'Salih and Thamud', refs: [[27, 45], [27, 53]], note: 'After Sulayman, An-Naml tells of Salih, sent to Thamud, whose believers Allah saved. Salih\'s people are played in the world of Surah Hud.' },
     },
   ],
   finale: {

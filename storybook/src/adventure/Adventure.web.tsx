@@ -43,7 +43,7 @@ import { noteAdventure } from '@/home/adventures';
 import { loadPhysics, physicsReady, type Space, type Walker } from '@/physics/space';
 import { makeSpace } from './space';
 import { validateSpace } from '@/physics/validate';
-import { ColliderView, debugColliders } from '@/physics/DebugView';
+import { ColliderView, NavView, PathsView, TriggerView, debugOn } from '@/physics/DebugView';
 import { PropSolids } from '@/physics/PropSolids';
 import { auditScene } from '@/physics/sceneSolids';
 import { useActionHint } from '@/audio/hooks';
@@ -143,6 +143,8 @@ type Game = {
   recovered: number;
   wip: number;
   wipMax: number;
+  /** Closest the drawn camera came to the explorer's head (tests). */
+  camNear: number;
   /** Tap-to-go waypoints toward `target`. */
   route: THREE.Vector3[];
   routeFor: THREE.Vector3 | null;
@@ -315,6 +317,7 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
   const camDist = useRef(game.cam.dist);
   const camPitch = useRef(game.cam.pitch);
   const tmp = useMemo(() => new THREE.Vector3(), []);
+  const tmp2 = useMemo(() => new THREE.Vector3(), []);
 
   useEffect(() => {
     const down = (e: KeyboardEvent) => {
@@ -1177,7 +1180,26 @@ function Director({ def, t, game, move, api }: { def: WorldDef; t: Terrain; game
     cam.pos.lerp(want3, snap ? 1 : damp(dt, (motion.reduced ? 30 : 6)));
     // The eased position may lag into a wall the target already avoids; draw it short of it.
     camera.position.copy(cam.pos);
-    if (!game.boat.on) game.space.clampCamera(cam.look, camera.position);
+    if (!game.boat.on) {
+      game.space.clampCamera(cam.look, camera.position);
+      // Backed into a corner (a wall behind, a roof above the shoulder), the
+      // camera used to come as close as 0.25 m to the explorer's head: the
+      // lens sat inside the figure and the explorer seemed to vanish. Below
+      // 1.2 m, blend smoothly to a view from just above the head instead,
+      // wherever there is headroom.
+      const near = camera.position.distanceTo(cam.look);
+      if (near < 1.2) {
+        const up = game.space.cameraReach(cam.look.x, cam.look.y, cam.look.z, 0, 1, 0, 1.9);
+        const h = Math.min(1.6, up - 0.3);
+        if (h > 0.7) {
+          const k = Math.min(1, (1.2 - near) / 0.6);
+          const kk = k * k * (3 - 2 * k);
+          camera.position.lerp(tmp2.set(cam.look.x + Math.sin(cam.yaw) * 0.3, cam.look.y + h, cam.look.z + Math.cos(cam.yaw) * 0.3), kk);
+          game.space.clampCamera(cam.look, camera.position);
+        }
+      }
+      game.camNear = Math.min(game.camNear, camera.position.distanceTo(cam.look));
+    }
     camera.lookAt(cam.look);
 
     nature.update({ river: t.water != null ? (game.boat.on ? 0 : 30) : 99, storm: weather.storm, rain: weather.rain, inside: false, dt });
@@ -1645,6 +1667,7 @@ function World({ def }: { def: WorldDef }) {
       cmd: 0,
       stuck: 0,
       recovered: 0,
+      camNear: 99,
       wip: 0,
       wipMax: 0,
       prev: { x: p.x, y: p.y, z: p.z },
@@ -1985,7 +2008,10 @@ function World({ def }: { def: WorldDef }) {
         <TapMarker game={game} t={t} />
         {LEVELS[lvl].light && <Wayfinder at={game.next} />}
         <WayTrail game={game} t={t} />
-        {debugColliders() && <ColliderView space={game.space} spawn={game.spawn} />}
+        {debugOn('colliders') && <ColliderView space={game.space} spawn={game.spawn} />}
+        {debugOn('nav') && <NavView me={game.me} floor={t.floorY} step={(ax, az, bx, bz, r) => t.canStep(ax, az, bx, bz, r) && !game.space.blockedAt(bx, bz, r * 0.9)} />}
+        {debugOn('triggers') && <TriggerView floor={t.floorY} uses={() => (game as unknown as { uses?: () => Use[] }).uses?.() ?? []} />}
+        {debugOn('paths') && <PathsView paths={(def.ground.paths ?? []) as [number, number][][]} me={game.me} floor={t.floorY} />}
         <Director def={def} t={t} game={game} move={move} api={api} />
         {Q.post && (
           <EffectComposer multisampling={tier === 'high' ? 4 : 0}>

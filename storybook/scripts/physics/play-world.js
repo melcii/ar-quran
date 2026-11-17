@@ -24,6 +24,8 @@ const SHOTS = process.env.SHOTS; // a folder: a screenshot after each finished t
   const forced = [];
   const same = { id: null, n: -1, k: 0 };
   let stuck = 0;
+  let resumed = false;
+  let midResume = null;
   for (let step = 0; step < 400; step++) {
     const r = await p.evaluate(async () => {
       const A = globalThis.__adv;
@@ -52,6 +54,13 @@ const SHOTS = process.env.SHOTS; // a folder: a screenshot after each finished t
       };
       const go = async (x, z, reach = 2) => {
         const [px, pz] = near(x, z, reach);
+        // Before jumping there, check a child could WALK there from here with
+        // the gates as they are now (the route finder the game itself uses).
+        if (!g.boat?.on && Math.hypot(px - A.player.pos.x, pz - A.player.pos.z) > 3) {
+          const b = A.player.pos.clone().set(px, 0, pz);
+          const route = g.nav.route(A.player.pos, b, { r: 0.35, budget: 30000, near: Math.max(1.2, reach) });
+          if (!route) (globalThis.__unwalk ??= []).push({ task: task.id, from: [+A.player.pos.x.toFixed(1), +A.player.pos.z.toFixed(1)], to: [+px.toFixed(1), +pz.toFixed(1)] });
+        }
         A.teleport(px, pz);
         await waitClk(0.3);
       };
@@ -152,12 +161,26 @@ const SHOTS = process.env.SHOTS; // a folder: a screenshot after each finished t
       if (SHOTS) await p.screenshot({ path: `${SHOTS}/w${W}-${String(s.done.length).padStart(2, '0')}.png` });
     }
     lastDone = s.done.length;
+    // Halfway through: leave and come back, and check the story and the place were kept.
+    if (!resumed && s.done.length >= Math.ceil((await p.evaluate(() => globalThis.__adv.def.tasks.length)) / 2)) {
+      resumed = true;
+      const b4 = await p.evaluate(() => ({ done: globalThis.__adv.save().done, pos: [globalThis.__adv.player.pos.x, globalThis.__adv.player.pos.z] }));
+      await p.waitForTimeout(1200); // the place is saved twice a second
+      const unwalk = await p.evaluate(() => globalThis.__unwalk ?? []);
+      await p.reload();
+      await p.waitForFunction(() => !!globalThis.__adv, null, { timeout: 400000 });
+      await p.waitForTimeout(1500);
+      const af = await p.evaluate(() => ({ done: globalThis.__adv.save().done, pos: [globalThis.__adv.player.pos.x, globalThis.__adv.player.pos.z] }));
+      await p.evaluate((u) => { globalThis.__unwalk = u; }, unwalk);
+      midResume = { doneKept: JSON.stringify(af.done) === JSON.stringify(b4.done), placeKeptM: +Math.hypot(af.pos[0] - b4.pos[0], af.pos[1] - b4.pos[1]).toFixed(1) };
+    }
     if (stuck > 40) {
       log.push({ stuck: true });
       break;
     }
   }
   const before = await p.evaluate(() => globalThis.__adv.save());
+  const unwalkable = await p.evaluate(() => globalThis.__unwalk ?? []);
   await p.reload();
   await p.waitForFunction(() => !!globalThis.__adv, null, { timeout: 400000 });
   const after = await p.evaluate(() => globalThis.__adv.save());
@@ -171,11 +194,24 @@ const SHOTS = process.env.SHOTS; // a folder: a screenshot after each finished t
     allDone: tasks.every((t) => before.done.includes(t)),
     forced,
     savedAfterReload: JSON.stringify(after.done) === JSON.stringify(before.done),
+    midResume,
+    // Places the walker teleported to that the game's route finder could not walk to.
+    unwalkable,
     notes: before.notes ?? null,
     errors: errs,
     log: log.filter((l) => l.did || l.stuck || l.note).map((l) => `${l.task ?? ''} ${l.kind ?? ''} ${l.did ?? l.note ?? 'STUCK'} ${l.uses ? JSON.stringify(l.uses) : ''} → ${l.doneN}`),
   };
+  // Leaving the world goes back (or home when opened directly), never into a loop.
+  try {
+    await p.getByLabel('Leave this world').first().click({ timeout: 20000 });
+    await p.waitForTimeout(3000);
+    out.leaveTo = new URL(p.url()).pathname;
+    out.leaveOk = !out.leaveTo.startsWith(`/adventure/${W}`);
+  } catch (e) {
+    out.leaveOk = false;
+    out.leaveErr = String(e.message).slice(0, 120);
+  }
   console.log(JSON.stringify(out, null, 1));
   await b.close();
-  process.exit(out.allDone && out.savedAfterReload && !errs.length ? 0 : 1);
+  process.exit(out.allDone && out.savedAfterReload && !errs.length && !unwalkable.length && out.leaveOk && (!midResume || midResume.doneKept) ? 0 : 1);
 })();

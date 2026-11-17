@@ -52,7 +52,8 @@
     "worlds:unique": "node scripts/check-unique-worlds.mjs",
     "typecheck": "tsc --noEmit",
     "export:web": "expo export --platform web",
-    "status": "node scripts/status-report.mjs"
+    "status": "node scripts/status-report.mjs",
+    "worlds:validate": "node --no-warnings --import ./scripts/lib/ts-register.mjs scripts/validate-worlds.mjs"
   },
   "private": true
 }

@@ -1335,7 +1335,7 @@ function Slice() {
 
       {/* Top bar. */}
       <View style={st.topBar} pointerEvents="box-none">
-        <Pressable style={st.pill} onPress={() => (router.canGoBack() ? router.back() : router.replace('/'))} accessibilityRole="button" accessibilityLabel="Leave the ark">
+        <Pressable style={st.pill} onPress={() => (router.canGoBack() ? router.back() : router.replace('/adventure/11' as never))} accessibilityRole="button" accessibilityLabel="Leave the ark">
           <Text style={st.pillText}>‹ Leave</Text>
         </Pressable>
         <Pressable style={[st.pill, { position: 'absolute', left: 0, top: 46 }]} onPress={() => router.push('/journal' as never)} accessibilityRole="button" accessibilityLabel="Open my discovery journal">
