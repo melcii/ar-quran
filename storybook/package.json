@@ -53,7 +53,8 @@
     "typecheck": "tsc --noEmit",
     "export:web": "expo export --platform web",
     "status": "node scripts/status-report.mjs",
-    "worlds:validate": "node --no-warnings --import ./scripts/lib/ts-register.mjs scripts/validate-worlds.mjs"
+    "worlds:validate": "node --no-warnings --import ./scripts/lib/ts-register.mjs scripts/validate-worlds.mjs",
+    "worlds:report": "node scripts/world-audit-report.mjs"
   },
   "private": true
 }

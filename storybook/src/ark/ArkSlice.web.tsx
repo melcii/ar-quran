@@ -454,10 +454,14 @@ function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRe
         goal = a.target;
         pace = spec.speed * 2.2;
       } else if (a.state === 'pad') {
-        goal = a.target;
+        // Round trees, rocks and the river on the way to the pad (it used to
+        // walk straight, and after 3 s stuck it went through solids as a ghost).
+        goal = a.target ? routeTo(a, a.target, arkNav) : null;
         pace = spec.speed * 0.8;
         const mates = game.agents.filter((x) => x.kind === a.kind);
-        if (a.mate === 0 && mates.every((m) => m.state === 'pad' && m.target && Math.hypot(m.pos.x - m.target.x, m.pos.z - m.target.z) < 0.4)) {
+        // On the pad: on its own mark, or close and held there by its mate.
+        const settled = (m: Agent) => !!m.target && (Math.hypot(m.pos.x - m.target.x, m.pos.z - m.target.z) < 0.4 || (Math.hypot(m.pos.x - m.target.x, m.pos.z - m.target.z) < 2.5 && (m.stuck ?? 0) > 1.5));
+        if (a.mate === 0 && mates.every((m) => m.state === 'pad' && settled(m))) {
           if (a.timer > 1.4) {
             board(a.kind);
           }
@@ -483,7 +487,7 @@ function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRe
         sp.place(w, o[0], o[1]);
       }
       // Boarding follows a fixed path up the ramp and through the doorway (checked by the tests), so it is not pushed about.
-      const ghost = a.state === 'board' || a.state === 'stall' || (a.state === 'pad' && (a.stuck ?? 0) > 3);
+      const ghost = a.state === 'board' || a.state === 'stall';
       const aFloor = ghost ? (x: number, z: number) => floorY(x, z, weather.lift, true) : undefined;
       if (goal) {
         const gx = goal.x - a.pos.x;

@@ -167,7 +167,7 @@ const SHOTS = process.env.SHOTS; // a folder: a screenshot after each finished t
       const b4 = await p.evaluate(() => ({ done: globalThis.__adv.save().done, pos: [globalThis.__adv.player.pos.x, globalThis.__adv.player.pos.z] }));
       await p.waitForTimeout(1200); // the place is saved twice a second
       const unwalk = await p.evaluate(() => globalThis.__unwalk ?? []);
-      await p.reload();
+      await p.reload({ timeout: 300000 });
       await p.waitForFunction(() => !!globalThis.__adv, null, { timeout: 400000 });
       await p.waitForTimeout(1500);
       const af = await p.evaluate(() => ({ done: globalThis.__adv.save().done, pos: [globalThis.__adv.player.pos.x, globalThis.__adv.player.pos.z] }));
@@ -181,7 +181,7 @@ const SHOTS = process.env.SHOTS; // a folder: a screenshot after each finished t
   }
   const before = await p.evaluate(() => globalThis.__adv.save());
   const unwalkable = await p.evaluate(() => globalThis.__unwalk ?? []);
-  await p.reload();
+  await p.reload({ timeout: 300000 });
   await p.waitForFunction(() => !!globalThis.__adv, null, { timeout: 400000 });
   const after = await p.evaluate(() => globalThis.__adv.save());
   const tasks = await p.evaluate(() => globalThis.__adv.def.tasks.map((t) => t.id));
@@ -203,7 +203,9 @@ const SHOTS = process.env.SHOTS; // a folder: a screenshot after each finished t
   };
   // Leaving the world goes back (or home when opened directly), never into a loop.
   try {
-    await p.getByLabel('Leave this world').first().click({ timeout: 20000 });
+    // Close the finale and any reading first, as a child would.
+    await p.evaluate(async () => { for (let k = 0; k < 8 && globalThis.__adv.cards().length; k++) { globalThis.__adv.close(); await new Promise((r) => setTimeout(r, 200)); } });
+    await p.locator('[aria-label="Leave this world"]').first().click({ timeout: 60000 });
     await p.waitForTimeout(3000);
     out.leaveTo = new URL(p.url()).pathname;
     out.leaveOk = !out.leaveTo.startsWith(`/adventure/${W}`);

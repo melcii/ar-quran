@@ -1,0 +1,108 @@
+{
+ "about": "World audit of 2026-11-17 (brief: complete world logic, gameplay and bug fix update). Findings found by reading the code and by scripts/validate-worlds.mjs, with root cause, fix and status. Status values: Issue Found, Fix Implemented, Retested, Verified, Awaiting Content Review. 'Retested' means the automated check that found it now passes; 'Verified' needs a browser check too. Nothing here is a scholar's review.",
+ "all": [
+  {
+   "id": "rocks",
+   "area": "physics",
+   "issue": "Rocks between ankle and knee height (0.3 to 0.7 m) were drawn with no collider, so the explorer and animals walked through them. 1 to 14 such rocks in 112 of 114 worlds, and in the Ark meadow.",
+   "cause": "Scenery.place() only gave a collider to rocks with size above 0.6, whatever their height; the missing-collider audit only reads parts drawn under the activity props group, not the instanced rock field.",
+   "fix": "Every rock whose drawn top is above 0.28 m is now solid (src/adventure/Scenery.tsx rockTop, src/ark/Scenery.tsx). The world validator checks every placed rock against its collider.",
+   "status": "Retested"
+  },
+  {
+   "id": "camera-near",
+   "area": "camera",
+   "issue": "With a wall behind and a roof or branch above, the camera could come as close as 0.25 m to the explorer's head. The lens then sat inside the figure, which looked like the explorer disappearing or being cut open.",
+   "cause": "clampCamera() keeps the camera 0.25 m short of whatever is in the way, with no lower limit relative to the explorer.",
+   "fix": "Below 1.2 m the camera now blends smoothly to a view from just above the head wherever there is headroom (Adventure.web.tsx Director). The closest approach is recorded in game.camNear for tests.",
+   "status": "Fix Implemented"
+  },
+  {
+   "id": "chooser-hud",
+   "area": "navigation",
+   "issue": "The world list (/adventure, also the fallback when leaving the journal or dressing room) skipped Surah Hud's own world and showed 'Hud: the Ark' as a separate activity in its place.",
+   "cause": "Chooser listed 1-10, then a hand-written Ark card, then 12-114.",
+   "fix": "Hud's world is listed like every other; the Ark appears under it as 'Inside Hud: the story of Nuh: the Ark (11:37-44)', from the shared chapter list.",
+   "status": "Retested"
+  },
+  {
+   "id": "ark-exit",
+   "area": "navigation",
+   "issue": "Leaving the Ark when it was opened directly (a saved link, Continue Adventure after a reload) went to the home screen instead of back to Surah Hud.",
+   "cause": "Fallback route was '/'.",
+   "fix": "The fallback is now Surah Hud's world (/adventure/11).",
+   "status": "Fix Implemented"
+  },
+  {
+   "id": "teleport-blind-spot",
+   "area": "tests",
+   "issue": "The play-through test teleported to every activity, so places no child could walk to still passed (the Ta-Ha sea crossing, a Ta-Ha cairn hill, the At-Tawbah gorge exit for tap-to-go).",
+   "cause": "Test design.",
+   "fix": "play-world.js now checks a walking route exists (with the game's own route finder, gates as they are) before every jump, reloads halfway to check story and place are kept, and leaves the world at the end. validate-worlds.mjs floods the walkable ground from the spawn through story doors.",
+   "status": "Fix Implemented"
+  },
+  {
+   "id": "debug",
+   "area": "tools",
+   "issue": "Only colliders could be shown for debugging.",
+   "fix": "?debug=colliders,nav,triggers,paths (or all): colliders, the route finder's walkable grid round the explorer, every activity spot open now with its use ring, the recipe's footpaths and the explorer's own trail. Development only.",
+   "status": "Fix Implemented"
+  }
+ ],
+ "surahs": {
+  "3": [
+   { "kind": "review", "issue": "The windy climb pushes the explorer back down the path during gusts unless they keep still (3:200, be patient). This is the world's own mechanic, not a movement bug, but a child can read it as one. A warning is shown before every gust.", "status": "Awaiting Content Review" }
+  ],
+  "6": [
+   { "kind": "bug", "issue": "The main footpath crossed the stream bridge on a slant and ran off the deck at both ends; a walker following it caught on the water's edge.", "cause": "Path drawn as a smooth curve from (0, 30) to (6, 12) over a bridge that runs straight along x = 4.", "fix": "Path now runs straight along the bridge.", "status": "Retested" },
+   { "kind": "review", "issue": "The sky dial follows 6:74-79 (star, moon, sun). Whether Ibrahim was reasoning with his people or reflecting himself is discussed by the commentators; the game only shows the sky changing and reads the ayahs.", "status": "Awaiting Content Review" }
+  ],
+  "9": [
+   { "kind": "bug", "issue": "The last climb out of the gorge to the spring garden is a raised ramp on a slant; walking straight up across its banks was refused.", "cause": "Not a fault in the game: the explorer walks it along the path. The first validator only stepped in four directions.", "fix": "Validator now steps in sixteen directions. Retested: reachable.", "status": "Retested" },
+   { "kind": "bug", "issue": "Three activities (deep in the gorge, the end of the gorge, the spring garden) had no note saying what is a game picture.", "fix": "Adaptation notes added.", "status": "Retested" }
+  ],
+  "10": [
+   { "kind": "review", "issue": "Surah Yunus has a doorway to the Nuh's Ark game (10:71-73 tells of Nuh and the ship). The Ark itself stays in Surah Hud.", "status": "Awaiting Content Review" },
+   { "kind": "review", "issue": "The fish account is read from 21:87-88 and labelled as from Al-Anbiya; 10:98 (the people of Yunus) is read on the voyage.", "status": "Awaiting Content Review" }
+  ],
+  "11": [
+   { "kind": "review", "issue": "Game lines paraphrase the messengers' words ('Each said: O my people, worship Allah', 11:50, 61, 84; Salih on the she-camel, 11:64). They match the cited ayahs in meaning; a scholar should confirm the wording.", "status": "Awaiting Content Review" }
+  ],
+  "12": [
+   { "kind": "check", "issue": "Story order checked: dream (12:4-6), well (15-19), house in Egypt (21-33), prison (36-42), king's dream (43-46), storehouse years (47-49), brothers (58-62), forgiveness (90-92), the shirt (93-96). In Quran order.", "status": "Retested" },
+   { "kind": "check", "issue": "The player is never Yusuf: they water the travellers' camels, are a townsperson following the advice of 12:47-49 at the storehouse, help pack the goods (12:62) and carry the shirt as a helper. Every one is labelled as a game idea.", "status": "Awaiting Content Review" },
+   { "kind": "review", "issue": "The storehouse game keeps 'a little for sowing' when the hard years end; 12:48 says 'except a little which you will store', which many explain as seed. Interpretive.", "status": "Awaiting Content Review" },
+   { "kind": "review", "issue": "The house in Egypt (12:21-33) is kept to a short reading for young readers; the summary needs a scholar's check (already flagged in the world).", "status": "Awaiting Content Review" },
+   { "kind": "minor", "issue": "A boulder stands right beside the prison signpost (not on it; the signpost is reachable).", "status": "Issue Found" }
+  ],
+  "13": [ { "kind": "bug", "issue": "The quiet sit under the overhang had no adaptation note.", "fix": "Added.", "status": "Retested" } ],
+  "16": [ { "kind": "bug", "issue": "The listening bench had no adaptation note.", "fix": "Added.", "status": "Retested" } ],
+  "18": [
+   { "kind": "bug", "issue": "The four stories were in one land with no labels, so moving between them was not marked.", "fix": "Four regions: Part 1 the young men of the cave, Part 2 the two gardens, Part 3 Musa where two seas meet, Part 4 the barrier. The place name shows as you enter, and the activity list shows the current part only.", "status": "Fix Implemented" },
+   { "kind": "content", "issue": "The Musa reading also carried 18:109 (if the sea were ink), which belongs to the surah's closing, not to Musa's journey.", "fix": "Removed from that reading; the ayah stays in the full surah reader.", "status": "Awaiting Content Review" },
+   { "kind": "review", "issue": "The player mends the wall (18:77). In the ayah it is al-Khidr who sets it right; the game labels this as an adaptation.", "status": "Awaiting Content Review" },
+   { "kind": "minor", "issue": "A boulder stands beside one of the five places in the mountain gap (the others are clear).", "status": "Issue Found" }
+  ],
+  "19": [
+   { "kind": "bug", "issue": "Pointing reached only 40 m. From the start, tapping the prayer niche, the pavilion or the tall palm made the explorer walk across the grove on their own instead of pointing.", "cause": "point.tsx use reach 40; act() walks to anything out of reach.", "fix": "Pointing now reaches the whole grove.", "status": "Fix Implemented" },
+   { "kind": "check", "issue": "Desktop validator and a phone walk of every path and activity spot with real touch input: never inside a solid, feet on the ground, scale constant, camera never inside a solid (before the fixes; re-run after).", "status": "Retested" },
+   { "kind": "review", "issue": "The reading 'Peace, and affection' joins 19:48 (Ibrahim leaves his people) and 19:96 (affection for believers); two separate passages in one reading.", "status": "Awaiting Content Review" }
+  ],
+  "20": [
+   { "kind": "bug", "issue": "The 'dry path through the sea' (20:77) could not be walked: it was a row of ten round hills whose tops and dips were up to 8 m apart. Only the test's teleport ever reached the three posts.", "cause": "Built from circular hill shapes instead of a level path.", "fix": "A level causeway across the inlet (common.ts causeway()).", "status": "Retested" },
+   { "kind": "bug", "issue": "One of the seven cairn places (on the hill at 13, 22) could not be reached: the hill's sides were steeper than a child can climb.", "fix": "The hill is wider, so its sides can be walked.", "status": "Retested" }
+  ],
+  "27": [
+   { "kind": "content", "issue": "Musa and the fire (27:7-14) was read last, together with Salih (27:45-53), after Sulayman's story: out of the surah's order.", "fix": "Musa is now the first reading by the start; Salih stays after the palace.", "status": "Awaiting Content Review" }
+  ],
+  "28": [
+   { "kind": "bug", "issue": "The explorer started in the river's shallows, under the drawn water line, and the footpath began in the water.", "cause": "Start point (-5, -34) is in the carved river bed (ground below the water level).", "fix": "Start and path moved onto the dry bank.", "status": "Retested" },
+   { "kind": "bug", "issue": "The path to the quiet landing ran along the river bank's edge and a walker caught on it.", "fix": "Path moved a little away from the bank.", "status": "Retested" }
+  ],
+  "30": [ { "kind": "minor", "issue": "A boulder stands right beside the first planting plot (reachable).", "status": "Issue Found" } ],
+  "64": [
+   { "kind": "bug", "issue": "The start point was outside the world's edge; the game pushed the explorer to the nearest open spot at the very rim.", "fix": "Start moved onto the flat where the path begins.", "status": "Retested" }
+  ],
+  "84": [ { "kind": "bug", "issue": "The explorer started 0.4 m from a house wall.", "fix": "Start moved a little away.", "status": "Retested" } ]
+ }
+}

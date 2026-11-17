@@ -1,0 +1,46 @@
+{
+ "worlds": {
+  "1": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "2": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "3": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "4": {
+   "validate_desktop": {
+    "date": "2026-11-17",
+    "pass": true,
+    "fails": []
+   }
+  },
+  "19": {
+   "play": {
+    "date": "2026-11-17",
+    "pass": false,
+    "fails": [
+     "leaving the world failed locator.click: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByLabel('Leave this world').first()\u001b[22m\n\u001b[2m "
+    ],
+    "secs": 212,
+    "resume": {
+     "doneKept": true,
+     "placeKeptM": 0
+    }
+   }
+  }
+ }
+}
