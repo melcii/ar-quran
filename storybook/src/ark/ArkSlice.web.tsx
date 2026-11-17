@@ -21,6 +21,7 @@ import { AyahPlayer } from '@/audio/AyahPlayer';
 import { director } from '@/audio/director';
 import { useActionHint, useCardNarration } from '@/audio/hooks';
 import { ListeningSheet } from '@/audio/ListeningSettings';
+import { ReportSheet } from '@/studio/ReportProblem';
 import { SoftShapes } from '@/three/soft';
 import { fonts } from '@/theme';
 import { QUALITY, guessTier, lowerTier, type QualityTier } from '@/world/quality';
@@ -1065,6 +1066,7 @@ function Slice() {
   const move = useRef<Move>({ x: 0, y: 0, run: false });
   const [near, setNear] = useState<Near | null>(null);
   const [voices, setVoices] = useState(false);
+  const [reporting, setReporting] = useState(false);
   // A short spoken hint the first time each kind of action is in reach.
   useActionHint(near?.label, near?.label.replace(/\b(the|a|an)\b/gi, '').trim());
   const [inside, setInside] = useState(false);
@@ -1359,6 +1361,9 @@ function Slice() {
         <Pressable style={[st.pill, { position: 'absolute', left: 0, top: 138 }]} onPress={toSafeGround} accessibilityRole="button" accessibilityLabel="Return to safe ground">
           <Text style={st.pillText}>Return to safe ground</Text>
         </Pressable>
+        <Pressable style={[st.pill, { position: 'absolute', left: 0, top: 184 }]} onPress={() => setReporting(true)} accessibilityRole="button" accessibilityLabel="Something not working? Tell us" testID="report-open">
+          <Text style={st.pillText}>Something not working?</Text>
+        </Pressable>
         <View style={st.objective} pointerEvents="none">
           <Text style={st.title}>Nuh&apos;s Ark · Surah Hud</Text>
           <Text style={st.goal}>{objective}</Text>
@@ -1442,6 +1447,7 @@ function Slice() {
       )}
 
       {voices && <ListeningSheet onClose={() => setVoices(false)} />}
+      {reporting && <ReportSheet surah={11} onClose={() => setReporting(false)} />}
 
       <Text style={st.footer} pointerEvents="none">
         Draft for scholarly review · animal choices, supplies and the ark&apos;s look are game ideas, not historical claims · no prophet is shown

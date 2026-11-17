@@ -17,7 +17,10 @@ export default function Review() {
     drafts().then(setD);
     versions().then(setV);
   }, []);
-  const go = (scope: string) => scope.startsWith('surah:') && router.push(`/admin/surah/${scope.slice(6)}`);
+  const go = (scope: string) => {
+    const to = scope.startsWith('surah:') ? `/admin/surah/${scope.slice(6)}` : scope === 'ark:slice' ? '/admin/ark' : scope === 'catalog:avatar' ? '/admin/characters' : scope.startsWith('config:') ? '/admin/settings' : null;
+    if (to) router.push(to as any);
+  };
   const waiting = v.filter((x) => ['submitted', 'approved', 'changes_requested'].includes(x.state));
   return (
     <Page title="Review & publish" sub="Draft → preview → checks → review → publish → verify. Nothing is published automatically.">

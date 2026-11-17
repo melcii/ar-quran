@@ -68,6 +68,11 @@ published), publishing, rollback, test results and bug reports.
 - The Ark settings (scope `ark:slice`): positions and numbers are World
   Editor changes, wording is Story Editor changes, with limits checked on the
   server.
+- Bugs (0004): player reports are child-safe (a world, one of six fixed
+  choices, a screen size; no text, no account) and readable only by staff.
+  Staff group them into bugs (`studio_bug_from_problems`); status changes are
+  kept in the bug's history and audited. Automated world health checks file
+  bugs with source `automated` and record `collision` test runs.
 
 ## Checking it locally
 
@@ -85,6 +90,9 @@ Apply every migration in order (0001 to 0004).
 - `npm run studio:e2e-phase3`: activity from a template with the logic
   editor, the Ark giraffe settings end to end, audio upload / review /
   assignment, recitation rules, and the Character Studio.
+- `npm run studio:e2e-phase4`: a player report from a world, grouping and
+  triage in the Bug Control Center, world health checks with an automated
+  bug and the safe start fix, and all 114 worlds checked.
 - `npm run studio:no-ai`: no AI SDK or API host in the studio code.
 
 In this cloud container the realtime image needed an IPv4 patch and images

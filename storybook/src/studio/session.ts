@@ -206,6 +206,10 @@ export async function fileBug(p: Partial<Bug> & { title: string }) {
 export async function updateBug(id: number, p: Partial<Bug>) {
   must(await sb().rpc('studio_update_bug', { p_id: id, p }));
 }
+/** Group player reports into a new bug (bug null) or link them to an existing one. */
+export async function bugFromProblems(ids: number[], bug: number | null, title: string) {
+  return must(await sb().rpc('studio_bug_from_problems', { p_ids: ids, p_bug: bug, p_title: title })) as number;
+}
 export type PlayerProblem = { id: number; surah: number | null; category: string; screen: string | null; created_at: string; bug_id: number | null };
 export async function playerProblems(): Promise<PlayerProblem[]> {
   return must(await sb().from('player_problems').select('*').order('id', { ascending: false }).limit(300)) as PlayerProblem[];
@@ -240,4 +244,43 @@ export async function registerAudio(p: Record<string, unknown>): Promise<string>
 }
 export async function reviewAudio(id: string, decision: 'approve' | 'reject' | 'retire', note: string) {
   must(await sb().rpc('studio_audio_review', { p_id: id, p_decision: decision, p_note: note }));
+}
+
+/* ------------------------------ moderation ------------------------------ */
+
+/** A report as a moderator sees it: no grown-up, no friend code, no saves, not who reported. */
+export type ModReport = {
+  id: number; reason: 'unkind' | 'unsafe' | 'other'; created_at: string; status: 'open' | 'actioned' | 'dismissed'; action: string | null; note: string; handled_at: string | null;
+  room: string | null; room_world: string | null; room_closed: boolean | null; about: string | null; about_nickname: string | null; about_reports: number; about_paused_until: string | null;
+};
+export async function modQueue(): Promise<ModReport[]> {
+  return must(await sb().rpc('studio_mod_queue')) as ModReport[];
+}
+export async function modAct(report: number, action: 'pause_online' | 'reset_nickname' | 'close_room' | 'dismiss', days: number | null, note: string) {
+  must(await sb().rpc('studio_mod_act', { p_report: report, p_action: action, p_days: days, p_note: note }));
+}
+export async function modUnpause(report: number) {
+  must(await sb().rpc('studio_mod_unpause', { p_report: report }));
+}
+
+/* ------------------------------ releases ------------------------------ */
+
+export type Release = {
+  id: number; title: string; notes: string; versions: number[]; state: 'planned' | 'published' | 'undone' | 'cancelled'; effective_at: string | null;
+  previous: Record<string, number | null>; created_by: string | null; created_at: string; published_by: string | null; published_at: string | null; undone_at: string | null;
+};
+export async function releases(): Promise<Release[]> {
+  return must(await sb().from('releases').select('*').order('id', { ascending: false }).limit(100)) as Release[];
+}
+export async function createRelease(title: string, notes: string, versionIds: number[]) {
+  return must(await sb().rpc('studio_release_create', { p_title: title, p_notes: notes, p_versions: versionIds })) as number;
+}
+export async function publishRelease(id: number, at: string | null) {
+  must(await sb().rpc('studio_release_publish', { p_id: id, p_at: at }));
+}
+export async function undoRelease(id: number) {
+  must(await sb().rpc('studio_release_undo', { p_id: id }));
+}
+export async function cancelRelease(id: number) {
+  must(await sb().rpc('studio_release_cancel', { p_id: id }));
 }

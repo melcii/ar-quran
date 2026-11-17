@@ -282,7 +282,7 @@ function Tests({ n }: { n: number }) {
 /* ------------------------------ page ------------------------------ */
 
 export default function SurahPage() {
-  const { n: raw } = useLocalSearchParams<{ n: string }>();
+  const { n: raw, tab: tab0 } = useLocalSearchParams<{ n: string; tab?: string }>();
   const n = Number(raw);
   const sur = getSurah(n);
   const def = WORLDS[n];
@@ -290,7 +290,7 @@ export default function SurahPage() {
   const { who } = useStudio();
   const scope = `surah:${n}`;
   const ed = useDraft(scope);
-  const [tab, setTab] = useState<'record' | 'story' | 'activities' | 'versions' | 'tests'>('story');
+  const [tab, setTab] = useState<'record' | 'story' | 'activities' | 'versions' | 'tests'>(['record', 'activities', 'versions', 'tests'].includes(tab0 ?? '') ? (tab0 as any) : 'story');
   const [note, setNote] = useState('');
   const [msg, setMsg] = useState<{ tone: 'good' | 'bad'; text: string } | null>(null);
   const [vkey, setVkey] = useState(0);

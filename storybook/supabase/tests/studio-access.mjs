@@ -291,5 +291,89 @@ let v2;
   check('staff group player reports into a bug', !ok.error && linked === String(ok.data), ok.error?.message);
 }
 
+// 12. Phase 5: moderation, play settings, releases.
+{
+  for (const sc of ['config:play', 'config:multiplayer']) sql(`delete from public.test_runs where scope = '${sc}'; delete from public.publications where scope = '${sc}'; delete from public.content_drafts where scope = '${sc}'; delete from public.content_versions where scope = '${sc}'`);
+  // Two families whose explorers are approved friends, in a room together; one reports the other.
+  const other = await account('parent2', { mfa: false });
+  sql(`update public.guardians set consent_at = now(), multiplayer = true where id = (select id from auth.users where email = '${player.email}')`);
+  sql(`insert into public.guardians (id, consent_at, multiplayer) select id, now(), true from auth.users where email = '${other.email}'`);
+  const kai = sql(`insert into public.explorers (guardian, nickname) select id, 'Kai' from auth.users where email = '${other.email}' returning id`).split('\n')[0];
+  sql(`insert into public.friendships (a, b, a_ok, b_ok) values (least('${explorer}'::uuid, '${kai}'::uuid), greatest('${explorer}'::uuid, '${kai}'::uuid), true, true)`);
+  const room = await player.c.rpc('open_room', { me: explorer, world: '19' });
+  const inv = await player.c.rpc('invite', { r: room.data, friend: kai });
+  check('(setup) two friends in a room', !room.error && !inv.error, room.error?.message ?? inv.error?.message);
+  const rep = await other.c.from('reports').insert({ by_explorer: kai, about: explorer, reason: 'unkind', room: room.data });
+  const rid = +sql(`select max(id) from public.reports`);
+  check('a family files a report from a room', !rep.error && rid > 0, rep.error?.message);
+
+  const qa = await anon.rpc('studio_mod_queue');
+  const qp = await player.c.rpc('studio_mod_queue');
+  const qw = await world.c.rpc('studio_mod_queue');
+  check('only moderators see player reports (anonymous, family, world editor refused)', !!qa.error && denied(qp) && denied(qw), [qa.error?.message, qp.error?.message, qw.error?.message].join(' | '));
+  const q = await moderator.c.rpc('studio_mod_queue');
+  const row = q.data?.find((x) => x.id === rid);
+  check('a moderator sees the reason, the world and the nickname', !q.error && row?.reason === 'unkind' && row.room_world === '19' && row.about_nickname === 'Sam', JSON.stringify(row ?? q.error));
+  const keys = Object.keys(row ?? {}).join(',');
+  check('a moderator never sees the grown-up, friend code, look, saves or who reported', !/guardian|email|friend_code|look|save|by_explorer/.test(keys), keys);
+  const ex = await moderator.c.from('explorers').select('*');
+  const sv = await moderator.c.from('saves').select('*');
+  check('a moderator cannot read explorers or saves directly', (ex.data ?? []).length === 0 && (sv.data ?? []).length === 0);
+  const bad = await moderator.c.rpc('studio_mod_act', { p_report: rid, p_action: 'pause_online', p_days: 40, p_note: '' });
+  check('pauses are 1 to 30 days', !!bad.error, bad.error?.message);
+  const wp = await world.c.rpc('studio_mod_act', { p_report: rid, p_action: 'dismiss', p_days: null, p_note: '' });
+  check('a world editor cannot act on reports', denied(wp), wp.error?.message);
+  const pa = await moderator.c.rpc('studio_mod_act', { p_report: rid, p_action: 'pause_online', p_days: 3, p_note: 'Unkind words' });
+  const after = await player.c.rpc('open_room', { me: explorer, world: '19' });
+  const left = sql(`select count(*) from public.room_members where explorer = '${explorer}' and room = '${room.data}'`);
+  check('a paused explorer leaves the room and cannot open another', !pa.error && !!after.error && /off/.test(after.error.message) && left === '0', pa.error?.message ?? after.error?.message);
+  check('playing alone is not touched (saves unchanged)', sql(`select count(*) from public.saves where explorer = '${explorer}'`) === '1');
+  const un = await moderator.c.rpc('studio_mod_unpause', { p_report: rid });
+  const again = await player.c.rpc('open_room', { me: explorer, world: '19' });
+  check('a moderator can lift the pause early', !un.error && !again.error, un.error?.message ?? again.error?.message);
+  const audit = sql(`select detail::text from public.audit_log where action = 'moderation.pause_online' order by id desc limit 1`);
+  check('moderation is audited without naming the child', /"report"/.test(audit) && !/Sam/.test(audit), audit);
+
+  // Online play switch: moderators draft it, a Super Admin publishes, the room functions obey.
+  const wd = await world.c.rpc('studio_save_draft', { p_scope: 'config:multiplayer', p_doc: { v: 1, set: { enabled: false } }, p_revision: 0 });
+  check('a world editor cannot change online play settings', denied(wd), wd.error?.message);
+  const md0 = await moderator.c.rpc('studio_save_draft', { p_scope: 'config:multiplayer', p_doc: { v: 1, set: { roomMax: 6 } }, p_revision: 0 });
+  const sb0 = await moderator.c.rpc('studio_submit', { p_scope: 'config:multiplayer', p_note: '' });
+  check('settings out of range are refused at submit', !md0.error && !!sb0.error && /2, 3 or 4/.test(sb0.error.message), sb0.error?.message);
+  const md = await moderator.c.rpc('studio_save_draft', { p_scope: 'config:multiplayer', p_doc: { v: 1, set: { enabled: false } }, p_revision: md0.data });
+  const sb = await moderator.c.rpc('studio_submit', { p_scope: 'config:multiplayer', p_note: 'Pause online play' });
+  check('a moderator submits online play off', !md.error && !sb.error, md.error?.message ?? sb.error?.message);
+  const ap = await owner.c.rpc('studio_review', { p_version: sb.data, p_decision: 'approve', p_note: '' });
+  const h = await owner.c.from('content_versions').select('hash').eq('id', sb.data).single();
+  const tr = await owner.c.rpc('studio_record_test', { p_scope: 'config:multiplayer', p_version: sb.data, p_kind: 'content', p_ok: true, p_summary: 'ok', p_report: {}, p_hash: h.data.hash, p_env: {} });
+  const pb = await owner.c.rpc('studio_publish', { p_version: sb.data, p_effective_at: null, p_note: '' });
+  const off = await player.c.rpc('open_room', { me: explorer, world: '19' });
+  check('when online play is off for everyone, rooms cannot be opened', !ap.error && !tr.error && !pb.error && !!off.error, [ap.error?.message, tr.error?.message, pb.error?.message].join(' | '));
+  await owner.c.rpc('studio_rollback', { p_scope: 'config:multiplayer', p_version: null, p_note: 'back on' });
+  const on = await player.c.rpc('open_room', { me: explorer, world: '19' });
+  check('unpublishing turns online play back on', !on.error, on.error?.message);
+
+  // Releases: approved versions go out together and come back together.
+  const pd = await moderator.c.rpc('studio_save_draft', { p_scope: 'config:play', p_doc: { v: 1, set: { breakMinutes: 20, closedWorlds: [7] } }, p_revision: 0 });
+  const ps = await moderator.c.rpc('studio_submit', { p_scope: 'config:play', p_note: 'Break after 20 minutes' });
+  check('a moderator submits play settings', !pd.error && !ps.error, pd.error?.message ?? ps.error?.message);
+  const early = await owner.c.rpc('studio_release_create', { p_title: 'Too early', p_notes: '', p_versions: [ps.data] });
+  check('a release only takes approved, validated versions', !!early.error && /approved/.test(early.error.message), early.error?.message);
+  await owner.c.rpc('studio_review', { p_version: ps.data, p_decision: 'approve', p_note: '' });
+  const ph = await owner.c.from('content_versions').select('hash').eq('id', ps.data).single();
+  await owner.c.rpc('studio_record_test', { p_scope: 'config:play', p_version: ps.data, p_kind: 'content', p_ok: true, p_summary: 'ok', p_report: {}, p_hash: ph.data.hash, p_env: {} });
+  const sr = await story.c.rpc('studio_release_create', { p_title: 'Not mine', p_notes: '', p_versions: [ps.data] });
+  check('only a Super Admin plans releases', denied(sr), sr.error?.message);
+  const rc = await owner.c.rpc('studio_release_create', { p_title: 'Calmer play', p_notes: 'Break reminder', p_versions: [ps.data] });
+  const rp = await owner.c.rpc('studio_release_publish', { p_id: rc.data, p_at: null });
+  const lv = await anon.from('live_content').select('doc').eq('scope', 'config:play').single();
+  check('a release publishes its versions; players get them', !rc.error && !rp.error && lv.data?.doc?.set?.breakMinutes === 20, rc.error?.message ?? rp.error?.message);
+  const savesMid = sql(`select md5(string_agg(explorer || key || value || updated_at, ',' order by key)) from public.saves`);
+  const ru = await owner.c.rpc('studio_release_undo', { p_id: rc.data });
+  const lv2 = await anon.from('live_content').select('doc, action').eq('scope', 'config:play').single();
+  const savesAfter = sql(`select md5(string_agg(explorer || key || value || updated_at, ',' order by key)) from public.saves`);
+  check('undoing a release goes back to what was live before; saves untouched', !ru.error && lv2.data?.doc == null && lv2.data?.action === 'unpublish' && savesMid === savesAfter, ru.error?.message ?? JSON.stringify(lv2.data));
+}
+
 console.log(`\n${passes} passed, ${failures} failed`);
 process.exit(failures ? 1 : 0);

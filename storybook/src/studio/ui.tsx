@@ -114,7 +114,12 @@ const NAV: { href: string; label: string; match: RegExp }[] = [
   { href: '/admin/audio', label: 'Audio Studio', match: /^\/admin\/audio/ },
   { href: '/admin/characters', label: 'Character Studio', match: /^\/admin\/characters/ },
   { href: '/admin/review', label: 'Review & publish', match: /^\/admin\/review/ },
+  { href: '/admin/bugs', label: 'Bug Control Center', match: /^\/admin\/bugs/ },
+  { href: '/admin/health', label: 'World health checks', match: /^\/admin\/health/ },
   { href: '/admin/tests', label: 'Test results', match: /^\/admin\/tests/ },
+  { href: '/admin/releases', label: 'Releases', match: /^\/admin\/releases/ },
+  { href: '/admin/moderation', label: 'Moderation', match: /^\/admin\/moderation/ },
+  { href: '/admin/settings', label: 'Family & educator controls', match: /^\/admin\/settings/ },
   { href: '/admin/staff', label: 'Staff & roles', match: /^\/admin\/staff/ },
   { href: '/admin/audit', label: 'Audit log', match: /^\/admin\/audit/ },
 ];
