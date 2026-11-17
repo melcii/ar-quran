@@ -60,7 +60,8 @@ const TEXT_KEYS = new Set(['goal', 'intro', 'outro', 'title', 'welcome', 'theme'
 
 const isP2 = (v) => Array.isArray(v) && v.length === 2 && v.every((n) => typeof n === 'number' && Number.isFinite(n));
 // Keys holding lines (routes, channels, rivers) rather than places to stand.
-const LINE_KEYS = new Set(['path', 'pts', 'road', 'channels', 'gust', 'band', 'boats', 'posts']);
+// Also places that are looked at or heard rather than stood at (map landmarks, sound sources).
+const LINE_KEYS = new Set(['path', 'pts', 'road', 'channels', 'gust', 'band', 'boats', 'posts', 'marks', 'landmarks', 'sources']);
 // Kinds whose places are reached by boat or are seen from afar.
 const FAR_KINDS = new Set(['sail', 'guide', 'point', 'sky', 'starhop', 'scope', 'sight', 'moon', 'estuary']);
 
@@ -153,7 +154,7 @@ function checkWorld(n) {
     if ((m = s.match(RX.asProphet))) add('error', 'text', `wording makes the player a prophet: "${m[0]}"`, path);
     if ((m = s.match(RX.depict))) add('error', 'text', `depiction wording: "${m[0]}"`, path);
     if ((m = s.match(RX.depictAllah))) add('error', 'text', `depiction wording about Allah: "${m[0]}"`, path);
-    if ((m = s.match(RX.speech))) add('review', 'text', `game text reports a prophet's words ("${m[0]}..."): check it against the cited ayahs`, path);
+    if ((m = s.replace(/\bSurahs? [A-Z][\w'-]*( [A-Z][\w'-]*)?/g, 'The surah').match(RX.speech))) add('review', 'text', `game text reports a prophet's words ("${m[0]}..."): check it against the cited ayahs`, path);
   }
   for (const t of def.tasks) if (t.kind !== 'read' && !t.adaptation) add('warn', 'adaptation', `${t.id} (${t.kind}) has no note on what is adapted`);
   if (!def.notes?.length) add('warn', 'adaptation', 'no "About this world" notes');

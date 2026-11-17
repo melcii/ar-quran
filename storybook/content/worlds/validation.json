@@ -7,44 +7,16 @@
    "surahName": "Al-Fātiḥah",
    "tasks": 7,
    "spots": 10,
-   "solids": 97,
+   "solids": 111,
    "pathsWalked": 12,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "13 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -12,
-       -39.3,
-       0.42
-      ],
-      [
-       24.6,
-       -61.5,
-       0.3
-      ],
-      [
-       -58.3,
-       -4,
-       0.42
-      ],
-      [
-       55.1,
-       36.9,
-       0.3
-      ]
-     ]
-    }
-   ],
-   "ms": 22102
+   "issues": [],
+   "ms": 20735
   },
   {
    "surah": 2,
@@ -52,10 +24,10 @@
    "surahName": "Al-Baqarah",
    "tasks": 13,
    "spots": 57,
-   "solids": 155,
+   "solids": 172,
    "pathsWalked": 150,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 1,
     "review": 0,
     "info": 0
@@ -65,36 +37,9 @@
      "level": "warn",
      "check": "spawn",
      "msg": "start 0,88 is within 0.69 m of a solid"
-    },
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "12 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -13.1,
-       28.5,
-       0.46
-      ],
-      [
-       31.3,
-       -74.3,
-       0.31
-      ],
-      [
-       31.7,
-       89.7,
-       0.41
-      ],
-      [
-       -93.4,
-       41.4,
-       0.51
-      ]
-     ]
     }
    ],
-   "ms": 55991
+   "ms": 58965
   },
   {
    "surah": 3,
@@ -102,44 +47,16 @@
    "surahName": "Āl-‘Imrān",
    "tasks": 5,
    "spots": 9,
-   "solids": 78,
+   "solids": 88,
    "pathsWalked": 212,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "10 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -29.1,
-       16.9,
-       0.36
-      ],
-      [
-       5.7,
-       37.8,
-       0.37
-      ],
-      [
-       -29.1,
-       20.7,
-       0.31
-      ],
-      [
-       -11.8,
-       -48.6,
-       0.3
-      ]
-     ]
-    }
-   ],
-   "ms": 26338
+   "issues": [],
+   "ms": 23547
   },
   {
    "surah": 4,
@@ -147,44 +64,16 @@
    "surahName": "An-Nisā’",
    "tasks": 5,
    "spots": 18,
-   "solids": 69,
+   "solids": 80,
    "pathsWalked": 233,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "8 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       24.7,
-       -14.1,
-       0.34
-      ],
-      [
-       -15.8,
-       -28.6,
-       0.33
-      ],
-      [
-       -35.7,
-       -32.1,
-       0.34
-      ],
-      [
-       28.1,
-       1.1,
-       0.34
-      ]
-     ]
-    }
-   ],
-   "ms": 19356
+   "issues": [],
+   "ms": 24704
   },
   {
    "surah": 5,
@@ -192,44 +81,16 @@
    "surahName": "Al-Mā’idah",
    "tasks": 5,
    "spots": 11,
-   "solids": 77,
+   "solids": 88,
    "pathsWalked": 299,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "11 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       18.4,
-       33.8,
-       0.41
-      ],
-      [
-       23.1,
-       34.7,
-       0.34
-      ],
-      [
-       20.1,
-       -37.9,
-       0.33
-      ],
-      [
-       7.5,
-       -38.2,
-       0.38
-      ]
-     ]
-    }
-   ],
-   "ms": 20946
+   "issues": [],
+   "ms": 25578
   },
   {
    "surah": 6,
@@ -237,62 +98,16 @@
    "surahName": "Al-An‘ām",
    "tasks": 4,
    "spots": 9,
-   "solids": 52,
-   "pathsWalked": 188,
+   "solids": 64,
+   "pathsWalked": 294,
    "counts": {
-    "error": 1,
-    "warn": 2,
+    "error": 0,
+    "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "warn",
-     "check": "space",
-     "msg": "footpath 0 blocked (walker stuck going to 2.6031872974478327,23.559471078885423)",
-     "at": [
-      2.6,
-      25.47
-     ]
-    },
-    {
-     "level": "warn",
-     "check": "space",
-     "msg": "footpath 0 blocked (walker stuck going to 4.8821416146822525,17.98683629620989)",
-     "at": [
-      5.41,
-      15.67
-     ]
-    },
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "10 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -58.2,
-       -18.4,
-       0.34
-      ],
-      [
-       4.2,
-       -44.7,
-       0.3
-      ],
-      [
-       -9.4,
-       12.5,
-       0.46
-      ],
-      [
-       4.6,
-       -14.6,
-       0.44
-      ]
-     ]
-    }
-   ],
-   "ms": 21479
+   "issues": [],
+   "ms": 27527
   },
   {
    "surah": 7,
@@ -300,44 +115,16 @@
    "surahName": "Al-A‘rāf",
    "tasks": 11,
    "spots": 18,
-   "solids": 105,
+   "solids": 119,
    "pathsWalked": 145,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "13 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -61,
-       77.9,
-       0.33
-      ],
-      [
-       22.1,
-       -76.8,
-       0.35
-      ],
-      [
-       69.5,
-       41.4,
-       0.45
-      ],
-      [
-       25.8,
-       -91.4,
-       0.33
-      ]
-     ]
-    }
-   ],
-   "ms": 41575
+   "issues": [],
+   "ms": 50460
   },
   {
    "surah": 8,
@@ -345,44 +132,16 @@
    "surahName": "Al-Anfāl",
    "tasks": 6,
    "spots": 13,
-   "solids": 46,
+   "solids": 62,
    "pathsWalked": 96,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "14 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -30,
-       -33.6,
-       0.32
-      ],
-      [
-       51.9,
-       -5.3,
-       0.39
-      ],
-      [
-       -34.5,
-       -38.8,
-       0.34
-      ],
-      [
-       -15,
-       32,
-       0.42
-      ]
-     ]
-    }
-   ],
-   "ms": 13309
+   "issues": [],
+   "ms": 16506
   },
   {
    "surah": 9,
@@ -390,10 +149,10 @@
    "surahName": "At-Taubah",
    "tasks": 8,
    "spots": 10,
-   "solids": 46,
+   "solids": 65,
    "pathsWalked": 240,
    "counts": {
-    "error": 3,
+    "error": 0,
     "warn": 3,
     "review": 0,
     "info": 0
@@ -413,54 +172,9 @@
      "level": "warn",
      "check": "adaptation",
      "msg": "rest (stand) has no note on what is adapted"
-    },
-    {
-     "level": "error",
-     "check": "reach",
-     "msg": "g3.at cannot be walked to from the start",
-     "at": [
-      6,
-      -34
-     ]
-    },
-    {
-     "level": "error",
-     "check": "reach",
-     "msg": "rest.at cannot be walked to from the start",
-     "at": [
-      8,
-      -42
-     ]
-    },
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "18 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       36.3,
-       39.5,
-       0.36
-      ],
-      [
-       1.7,
-       6.7,
-       0.44
-      ],
-      [
-       -46.8,
-       19.8,
-       0.33
-      ],
-      [
-       3.8,
-       -5,
-       0.34
-      ]
-     ]
     }
    ],
-   "ms": 17219
+   "ms": 24780
   },
   {
    "surah": 10,
@@ -468,10 +182,10 @@
    "surahName": "Yūnus",
    "tasks": 3,
    "spots": 11,
-   "solids": 54,
+   "solids": 63,
    "pathsWalked": 249,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 2,
     "info": 1
@@ -493,36 +207,9 @@
      "check": "text",
      "msg": "game text reports a prophet's words (\"Yunus; this world says...\"): check it against the cited ayahs",
      "at": "notes[4]"
-    },
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "9 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       15.3,
-       45.8,
-       0.33
-      ],
-      [
-       64.8,
-       6,
-       0.35
-      ],
-      [
-       23.6,
-       -14.1,
-       0.29
-      ],
-      [
-       36.5,
-       32.7,
-       0.42
-      ]
-     ]
     }
    ],
-   "ms": 15452
+   "ms": 20957
   },
   {
    "surah": 11,
@@ -530,10 +217,10 @@
    "surahName": "Hūd",
    "tasks": 15,
    "spots": 41,
-   "solids": 63,
+   "solids": 78,
    "pathsWalked": 655,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 5,
     "info": 0
@@ -568,36 +255,9 @@
      "check": "text",
      "msg": "game text reports a prophet's words (\"Hud tells...\"): check it against the cited ayahs",
      "at": "finale.body[1]"
-    },
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "14 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       45.8,
-       26.1,
-       0.41
-      ],
-      [
-       -28.1,
-       -42.9,
-       0.35
-      ],
-      [
-       -31.3,
-       -68.5,
-       0.3
-      ],
-      [
-       3.8,
-       10.5,
-       0.33
-      ]
-     ]
     }
    ],
-   "ms": 31748
+   "ms": 40293
   },
   {
    "surah": 12,
@@ -605,10 +265,10 @@
    "surahName": "Yūsuf",
    "tasks": 9,
    "spots": 29,
-   "solids": 45,
+   "solids": 55,
    "pathsWalked": 498,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 1,
     "review": 3,
     "info": 0
@@ -640,36 +300,9 @@
       45.6,
       -3.4
      ]
-    },
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "8 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       44.2,
-       -5.1,
-       0.47
-      ],
-      [
-       55.2,
-       1.4,
-       0.29
-      ],
-      [
-       -27.9,
-       -7,
-       0.31
-      ],
-      [
-       -26,
-       -6.2,
-       0.31
-      ]
-     ]
     }
    ],
-   "ms": 20486
+   "ms": 25278
   },
   {
    "surah": 13,
@@ -677,10 +310,10 @@
    "surahName": "Ar-Ra‘d",
    "tasks": 4,
    "spots": 10,
-   "solids": 38,
+   "solids": 52,
    "pathsWalked": 215,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 1,
     "review": 0,
     "info": 0
@@ -690,36 +323,9 @@
      "level": "warn",
      "check": "adaptation",
      "msg": "calm (stand) has no note on what is adapted"
-    },
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "12 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       37.9,
-       -29.3,
-       0.34
-      ],
-      [
-       -22.3,
-       25.9,
-       0.44
-      ],
-      [
-       -7.1,
-       35,
-       0.35
-      ],
-      [
-       15.7,
-       13.6,
-       0.3
-      ]
-     ]
     }
    ],
-   "ms": 14241
+   "ms": 18629
   },
   {
    "surah": 14,
@@ -727,107 +333,33 @@
    "surahName": "Ibrāhīm",
    "tasks": 4,
    "spots": 9,
-   "solids": 43,
+   "solids": 59,
    "pathsWalked": 179,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "15 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -46.1,
-       12.2,
-       0.37
-      ],
-      [
-       17.7,
-       -36.9,
-       0.3
-      ],
-      [
-       -30.5,
-       -21.6,
-       0.32
-      ],
-      [
-       -43.2,
-       -24.7,
-       0.31
-      ]
-     ]
-    }
-   ],
-   "ms": 13869
+   "issues": [],
+   "ms": 17247
   },
   {
    "surah": 15,
    "name": "The Carved Valley",
    "surahName": "Al-Ḥijr",
    "tasks": 5,
-   "spots": 15,
-   "solids": 23,
+   "spots": 10,
+   "solids": 34,
    "pathsWalked": 375,
    "counts": {
-    "error": 3,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "space",
-     "msg": "activity spot map.marks[1].at has no open ground within reach",
-     "at": [
-      8,
-      -14
-     ]
-    },
-    {
-     "level": "error",
-     "check": "space",
-     "msg": "activity spot map.marks[3].at has no open ground within reach",
-     "at": [
-      26,
-      8
-     ]
-    },
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "9 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -6.5,
-       -25,
-       0.46
-      ],
-      [
-       -38.4,
-       -17,
-       0.29
-      ],
-      [
-       -2.2,
-       -31,
-       0.41
-      ],
-      [
-       36.2,
-       29,
-       0.31
-      ]
-     ]
-    }
-   ],
-   "ms": 14349
+   "issues": [],
+   "ms": 17837
   },
   {
    "surah": 16,
@@ -835,10 +367,10 @@
    "surahName": "An-Naḥl",
    "tasks": 5,
    "spots": 17,
-   "solids": 28,
+   "solids": 37,
    "pathsWalked": 168,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 1,
     "review": 0,
     "info": 0
@@ -848,36 +380,9 @@
      "level": "warn",
      "check": "adaptation",
      "msg": "senses (stand) has no note on what is adapted"
-    },
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "9 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -37.7,
-       21.4,
-       0.33
-      ],
-      [
-       -47.1,
-       -16.8,
-       0.29
-      ],
-      [
-       -25.3,
-       11.2,
-       0.35
-      ],
-      [
-       28.2,
-       -12.6,
-       0.3
-      ]
-     ]
     }
    ],
-   "ms": 11802
+   "ms": 16088
   },
   {
    "surah": 17,
@@ -885,7 +390,7 @@
    "surahName": "Al-Isrā’",
    "tasks": 4,
    "spots": 20,
-   "solids": 10,
+   "solids": 11,
    "pathsWalked": 548,
    "counts": {
     "error": 0,
@@ -894,7 +399,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 14295
+   "ms": 17300
   },
   {
    "surah": 18,
@@ -902,10 +407,10 @@
    "surahName": "Al-Kahf",
    "tasks": 8,
    "spots": 30,
-   "solids": 37,
+   "solids": 52,
    "pathsWalked": 318,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 1,
     "review": 0,
     "info": 0
@@ -919,36 +424,9 @@
       28.9,
       -27.8
      ]
-    },
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "13 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       27.6,
-       6.6,
-       0.35
-      ],
-      [
-       -20.6,
-       11.4,
-       0.3
-      ],
-      [
-       33.2,
-       -11.7,
-       0.35
-      ],
-      [
-       -38.1,
-       -38.8,
-       0.48
-      ]
-     ]
     }
    ],
-   "ms": 16203
+   "ms": 20478
   },
   {
    "surah": 19,
@@ -956,10 +434,10 @@
    "surahName": "Maryam",
    "tasks": 6,
    "spots": 12,
-   "solids": 19,
+   "solids": 34,
    "pathsWalked": 193,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 1,
     "info": 0
@@ -970,36 +448,9 @@
      "check": "text",
      "msg": "game text reports a prophet's words (\"Ibrahim answered...\"): check it against the cited ayahs",
      "at": "tasks[1].scenes[1].options[0].reply"
-    },
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "14 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -3.6,
-       -21.1,
-       0.38
-      ],
-      [
-       38.7,
-       14,
-       0.42
-      ],
-      [
-       16,
-       8.3,
-       0.32
-      ],
-      [
-       -29.9,
-       2.7,
-       0.36
-      ]
-     ]
     }
    ],
-   "ms": 11573
+   "ms": 14542
   },
   {
    "surah": 20,
@@ -1007,10 +458,10 @@
    "surahName": "Ṭā-Hā",
    "tasks": 12,
    "spots": 26,
-   "solids": 28,
-   "pathsWalked": 522,
+   "solids": 37,
+   "pathsWalked": 523,
    "counts": {
-    "error": 5,
+    "error": 1,
     "warn": 0,
     "review": 1,
     "info": 0
@@ -1030,63 +481,9 @@
       13,
       22
      ]
-    },
-    {
-     "level": "error",
-     "check": "reach",
-     "msg": "sea.points[0].at cannot be walked to from the start",
-     "at": [
-      -38,
-      15
-     ]
-    },
-    {
-     "level": "error",
-     "check": "reach",
-     "msg": "sea.points[1].at cannot be walked to from the start",
-     "at": [
-      -38,
-      3
-     ]
-    },
-    {
-     "level": "error",
-     "check": "reach",
-     "msg": "sea.points[2].at cannot be walked to from the start",
-     "at": [
-      -38,
-      -9
-     ]
-    },
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "7 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       40.1,
-       -17.8,
-       0.39
-      ],
-      [
-       12,
-       19.2,
-       0.34
-      ],
-      [
-       -20.3,
-       16.9,
-       0.34
-      ],
-      [
-       -19.7,
-       -35.1,
-       0.46
-      ]
-     ]
     }
    ],
-   "ms": 17031
+   "ms": 23918
   },
   {
    "surah": 21,
@@ -1094,44 +491,16 @@
    "surahName": "Al-Anbiyā’",
    "tasks": 4,
    "spots": 10,
-   "solids": 30,
+   "solids": 39,
    "pathsWalked": 129,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "8 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -24.6,
-       9.4,
-       0.38
-      ],
-      [
-       20.5,
-       10.7,
-       0.32
-      ],
-      [
-       31.9,
-       -7.2,
-       0.44
-      ],
-      [
-       -32.9,
-       -8.8,
-       0.4
-      ]
-     ]
-    }
-   ],
-   "ms": 12112
+   "issues": [],
+   "ms": 14149
   },
   {
    "surah": 22,
@@ -1139,44 +508,16 @@
    "surahName": "Al-Ḥajj",
    "tasks": 2,
    "spots": 6,
-   "solids": 19,
+   "solids": 36,
    "pathsWalked": 203,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "15 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       22,
-       -12.9,
-       0.48
-      ],
-      [
-       -3.2,
-       -22.4,
-       0.37
-      ],
-      [
-       33,
-       14.6,
-       0.36
-      ],
-      [
-       5.2,
-       -22.3,
-       0.33
-      ]
-     ]
-    }
-   ],
-   "ms": 11536
+   "issues": [],
+   "ms": 15711
   },
   {
    "surah": 23,
@@ -1184,34 +525,16 @@
    "surahName": "Al-Mu’minūn",
    "tasks": 5,
    "spots": 19,
-   "solids": 5,
+   "solids": 8,
    "pathsWalked": 58,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "2 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -19.1,
-       29.1,
-       0.39
-      ],
-      [
-       19.2,
-       -24,
-       0.32
-      ]
-     ]
-    }
-   ],
-   "ms": 8416
+   "issues": [],
+   "ms": 10447
   },
   {
    "surah": 24,
@@ -1219,39 +542,16 @@
    "surahName": "An-Nūr",
    "tasks": 2,
    "spots": 18,
-   "solids": 23,
+   "solids": 27,
    "pathsWalked": 166,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "3 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       17.4,
-       -19.9,
-       0.39
-      ],
-      [
-       -10.7,
-       -11.4,
-       0.3
-      ],
-      [
-       -34.1,
-       17.3,
-       0.32
-      ]
-     ]
-    }
-   ],
-   "ms": 12192
+   "issues": [],
+   "ms": 15133
   },
   {
    "surah": 25,
@@ -1259,44 +559,16 @@
    "surahName": "Al-Furqān",
    "tasks": 3,
    "spots": 4,
-   "solids": 18,
+   "solids": 27,
    "pathsWalked": 95,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "8 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       14.3,
-       -21.5,
-       0.62
-      ],
-      [
-       25.9,
-       -19.8,
-       0.43
-      ],
-      [
-       11.7,
-       -18.2,
-       0.34
-      ],
-      [
-       28.9,
-       -14.3,
-       0.3
-      ]
-     ]
-    }
-   ],
-   "ms": 9864
+   "issues": [],
+   "ms": 12755
   },
   {
    "surah": 26,
@@ -1304,55 +576,27 @@
    "surahName": "Ash-Shu‘arā’",
    "tasks": 3,
    "spots": 3,
-   "solids": 22,
+   "solids": 32,
    "pathsWalked": 54,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "10 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -29.6,
-       -26.1,
-       0.33
-      ],
-      [
-       -22.5,
-       7.2,
-       0.29
-      ],
-      [
-       -14.3,
-       16.6,
-       0.39
-      ],
-      [
-       6.8,
-       31.1,
-       0.36
-      ]
-     ]
-    }
-   ],
-   "ms": 10050
+   "issues": [],
+   "ms": 12767
   },
   {
    "surah": 27,
    "name": "The Valley of the Ants",
    "surahName": "An-Naml",
-   "tasks": 6,
-   "spots": 17,
-   "solids": 17,
+   "tasks": 7,
+   "spots": 18,
+   "solids": 46,
    "pathsWalked": 0,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 2,
     "info": 0
@@ -1362,43 +606,16 @@
      "level": "review",
      "check": "text",
      "msg": "game text reports a prophet's words (\"Sulayman inspected the birds and said...\"): check it against the cited ayahs",
-     "at": "tasks[2].intro"
+     "at": "tasks[3].intro"
     },
     {
      "level": "review",
      "check": "text",
      "msg": "game text reports a prophet's words (\"Sulayman answered...\"): check it against the cited ayahs",
      "at": "finale.body[1]"
-    },
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "27 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       8.5,
-       31.5,
-       0.36
-      ],
-      [
-       -12.9,
-       20.6,
-       0.46
-      ],
-      [
-       -27.3,
-       15.5,
-       0.36
-      ],
-      [
-       32.4,
-       -9.2,
-       0.36
-      ]
-     ]
     }
    ],
-   "ms": 8813
+   "ms": 11099
   },
   {
    "surah": 28,
@@ -1406,58 +623,26 @@
    "surahName": "Al-Qaṣaṣ",
    "tasks": 6,
    "spots": 13,
-   "solids": 18,
+   "solids": 27,
    "pathsWalked": 91,
    "counts": {
-    "error": 2,
+    "error": 0,
     "warn": 1,
     "review": 0,
     "info": 0
    },
    "issues": [
     {
-     "level": "error",
-     "check": "spawn",
-     "msg": "start -5,-34 is inside a solid or on a slope"
-    },
-    {
      "level": "warn",
      "check": "space",
-     "msg": "footpath 0 blocked (walker stuck going to 7.992421409745881,15.51388837128995)",
+     "msg": "footpath 0 blocked (walker stuck going to 7.979129101976732,15.538218131355272)",
      "at": [
       7.32,
       17.67
      ]
-    },
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "4 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -25.3,
-       -29.3,
-       0.3
-      ],
-      [
-       -39.3,
-       -0.7,
-       0.33
-      ],
-      [
-       -26,
-       -34.2,
-       0.37
-      ],
-      [
-       -34,
-       1.3,
-       0.32
-      ]
-     ]
     }
    ],
-   "ms": 12456
+   "ms": 15481
   },
   {
    "surah": 29,
@@ -1465,39 +650,16 @@
    "surahName": "Al-‘Ankabūt",
    "tasks": 6,
    "spots": 8,
-   "solids": 12,
+   "solids": 16,
    "pathsWalked": 42,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "3 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       6.7,
-       14,
-       0.33
-      ],
-      [
-       24.9,
-       21.6,
-       0.29
-      ],
-      [
-       -32.7,
-       8.2,
-       0.37
-      ]
-     ]
-    }
-   ],
-   "ms": 8902
+   "issues": [],
+   "ms": 10895
   },
   {
    "surah": 30,
@@ -1505,10 +667,10 @@
    "surahName": "Ar-Rūm",
    "tasks": 3,
    "spots": 8,
-   "solids": 17,
+   "solids": 31,
    "pathsWalked": 50,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 1,
     "review": 0,
     "info": 0
@@ -1522,36 +684,9 @@
       1.6,
       -17.2
      ]
-    },
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "9 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       21.6,
-       25,
-       0.39
-      ],
-      [
-       -22.5,
-       7.4,
-       0.48
-      ],
-      [
-       -19.3,
-       16.2,
-       0.33
-      ],
-      [
-       -26,
-       -1,
-       0.36
-      ]
-     ]
     }
    ],
-   "ms": 9498
+   "ms": 12370
   },
   {
    "surah": 31,
@@ -1559,39 +694,16 @@
    "surahName": "Luqmān",
    "tasks": 2,
    "spots": 4,
-   "solids": 16,
+   "solids": 20,
    "pathsWalked": 102,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "3 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       15.6,
-       27.9,
-       0.33
-      ],
-      [
-       -29,
-       -9.6,
-       0.29
-      ],
-      [
-       31,
-       2.5,
-       0.3
-      ]
-     ]
-    }
-   ],
-   "ms": 9880
+   "issues": [],
+   "ms": 12078
   },
   {
    "surah": 32,
@@ -1599,44 +711,16 @@
    "surahName": "As-Sajdah",
    "tasks": 4,
    "spots": 7,
-   "solids": 8,
+   "solids": 13,
    "pathsWalked": 52,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "4 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -28,
-       7.8,
-       0.41
-      ],
-      [
-       11.6,
-       -37.7,
-       0.38
-      ],
-      [
-       2,
-       -36,
-       0.42
-      ],
-      [
-       17.6,
-       -23.5,
-       0.36
-      ]
-     ]
-    }
-   ],
-   "ms": 9104
+   "issues": [],
+   "ms": 11111
   },
   {
    "surah": 33,
@@ -1644,44 +728,16 @@
    "surahName": "Al-Aḥzāb",
    "tasks": 4,
    "spots": 8,
-   "solids": 15,
+   "solids": 20,
    "pathsWalked": 46,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "4 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -24.4,
-       -21.9,
-       0.46
-      ],
-      [
-       -7.1,
-       -18.7,
-       0.31
-      ],
-      [
-       -23.1,
-       15.1,
-       0.34
-      ],
-      [
-       -29.3,
-       -17.3,
-       0.3
-      ]
-     ]
-    }
-   ],
-   "ms": 9184
+   "issues": [],
+   "ms": 10789
   },
   {
    "surah": 34,
@@ -1689,10 +745,10 @@
    "surahName": "Saba’",
    "tasks": 5,
    "spots": 7,
-   "solids": 18,
+   "solids": 26,
    "pathsWalked": 62,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 1,
     "info": 0
@@ -1703,36 +759,9 @@
      "check": "text",
      "msg": "game text reports a prophet's words (\"Dawud was told...\"): check it against the cited ayahs",
      "at": "tasks[2].intro"
-    },
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "8 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -28.6,
-       -13.6,
-       0.31
-      ],
-      [
-       12.1,
-       -8.3,
-       0.4
-      ],
-      [
-       -20,
-       36,
-       0.47
-      ],
-      [
-       23.9,
-       -3.5,
-       0.38
-      ]
-     ]
     }
    ],
-   "ms": 10718
+   "ms": 13693
   },
   {
    "surah": 35,
@@ -1740,39 +769,16 @@
    "surahName": "Fāṭir",
    "tasks": 2,
    "spots": 15,
-   "solids": 19,
+   "solids": 23,
    "pathsWalked": 48,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "3 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       16,
-       22.9,
-       0.32
-      ],
-      [
-       5.1,
-       4.8,
-       0.34
-      ],
-      [
-       7.4,
-       22.4,
-       0.3
-      ]
-     ]
-    }
-   ],
-   "ms": 9897
+   "issues": [],
+   "ms": 12058
   },
   {
    "surah": 36,
@@ -1780,44 +786,16 @@
    "surahName": "Yā-Sīn",
    "tasks": 5,
    "spots": 6,
-   "solids": 10,
+   "solids": 15,
    "pathsWalked": 46,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "5 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -19.8,
-       6,
-       0.31
-      ],
-      [
-       -19.9,
-       12.7,
-       0.35
-      ],
-      [
-       -13.3,
-       9.6,
-       0.31
-      ],
-      [
-       17.9,
-       10.6,
-       0.39
-      ]
-     ]
-    }
-   ],
-   "ms": 8915
+   "issues": [],
+   "ms": 10730
   },
   {
    "surah": 37,
@@ -1825,44 +803,16 @@
    "surahName": "Aṣ-Ṣāffāt",
    "tasks": 4,
    "spots": 6,
-   "solids": 14,
+   "solids": 20,
    "pathsWalked": 38,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "5 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       18.8,
-       1.8,
-       0.58
-      ],
-      [
-       -7.2,
-       20.2,
-       0.37
-      ],
-      [
-       -2.9,
-       20.7,
-       0.38
-      ],
-      [
-       -11.3,
-       24.7,
-       0.38
-      ]
-     ]
-    }
-   ],
-   "ms": 11094
+   "issues": [],
+   "ms": 12893
   },
   {
    "surah": 38,
@@ -1870,44 +820,16 @@
    "surahName": "Ṣād",
    "tasks": 2,
    "spots": 14,
-   "solids": 15,
+   "solids": 32,
    "pathsWalked": 142,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "16 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       17.3,
-       9.5,
-       0.65
-      ],
-      [
-       -26.8,
-       -9.7,
-       0.35
-      ],
-      [
-       -4.1,
-       -29.7,
-       0.36
-      ],
-      [
-       7.7,
-       6.6,
-       0.31
-      ]
-     ]
-    }
-   ],
-   "ms": 10273
+   "issues": [],
+   "ms": 15178
   },
   {
    "surah": 39,
@@ -1915,34 +837,16 @@
    "surahName": "Az-Zumar",
    "tasks": 3,
    "spots": 9,
-   "solids": 6,
+   "solids": 9,
    "pathsWalked": 38,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "2 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -24.9,
-       -28.3,
-       0.3
-      ],
-      [
-       17.9,
-       10.9,
-       0.4
-      ]
-     ]
-    }
-   ],
-   "ms": 8394
+   "issues": [],
+   "ms": 9838
   },
   {
    "surah": 40,
@@ -1950,44 +854,16 @@
    "surahName": "Ghāfir",
    "tasks": 3,
    "spots": 7,
-   "solids": 16,
+   "solids": 22,
    "pathsWalked": 246,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "6 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       14.7,
-       -15,
-       0.43
-      ],
-      [
-       28.6,
-       -22.2,
-       0.37
-      ],
-      [
-       36.6,
-       26.1,
-       0.33
-      ],
-      [
-       13.7,
-       3.5,
-       0.32
-      ]
-     ]
-    }
-   ],
-   "ms": 11443
+   "issues": [],
+   "ms": 14315
   },
   {
    "surah": 41,
@@ -1995,44 +871,16 @@
    "surahName": "Fuṣṣilat",
    "tasks": 3,
    "spots": 8,
-   "solids": 13,
+   "solids": 20,
    "pathsWalked": 123,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "5 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       23.6,
-       -18,
-       0.58
-      ],
-      [
-       -31.8,
-       9.8,
-       0.3
-      ],
-      [
-       -16.4,
-       36.2,
-       0.32
-      ],
-      [
-       23.3,
-       -22.5,
-       0.33
-      ]
-     ]
-    }
-   ],
-   "ms": 9708
+   "issues": [],
+   "ms": 11711
   },
   {
    "surah": 42,
@@ -2040,44 +888,16 @@
    "surahName": "Ash-Shūra",
    "tasks": 4,
    "spots": 8,
-   "solids": 29,
+   "solids": 35,
    "pathsWalked": 234,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "5 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -7.7,
-       -12.5,
-       0.39
-      ],
-      [
-       -16.4,
-       19.7,
-       0.29
-      ],
-      [
-       25,
-       17.6,
-       0.36
-      ],
-      [
-       -7.8,
-       29.6,
-       0.34
-      ]
-     ]
-    }
-   ],
-   "ms": 13180
+   "issues": [],
+   "ms": 16770
   },
   {
    "surah": 43,
@@ -2085,39 +905,16 @@
    "surahName": "Az-Zukhruf",
    "tasks": 4,
    "spots": 15,
-   "solids": 21,
+   "solids": 25,
    "pathsWalked": 307,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "3 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -28.5,
-       -24.5,
-       0.52
-      ],
-      [
-       -3.6,
-       -31.3,
-       0.38
-      ],
-      [
-       40.4,
-       -1.1,
-       0.36
-      ]
-     ]
-    }
-   ],
-   "ms": 12591
+   "issues": [],
+   "ms": 18124
   },
   {
    "surah": 44,
@@ -2125,93 +922,33 @@
    "surahName": "Ad-Dukhān",
    "tasks": 5,
    "spots": 17,
-   "solids": 8,
+   "solids": 13,
    "pathsWalked": 265,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "5 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       33.6,
-       -30.3,
-       0.53
-      ],
-      [
-       33.5,
-       -27.8,
-       0.53
-      ],
-      [
-       -44.8,
-       -0.2,
-       0.3
-      ],
-      [
-       41.4,
-       6.4,
-       0.45
-      ]
-     ]
-    }
-   ],
-   "ms": 10824
+   "issues": [],
+   "ms": 13356
   },
   {
    "surah": 45,
    "name": "The Headland Weather Station",
    "surahName": "Al-Jāthiyah",
    "tasks": 4,
-   "spots": 8,
-   "solids": 18,
+   "spots": 4,
+   "solids": 21,
    "pathsWalked": 191,
    "counts": {
-    "error": 1,
-    "warn": 1,
+    "error": 0,
+    "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "warn",
-     "check": "scenery",
-     "msg": "boulder stands right beside activity spot ledger.landmarks[1].at",
-     "at": [
-      37,
-      -3.5
-     ]
-    },
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "3 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -27.6,
-       14.4,
-       0.42
-      ],
-      [
-       14.4,
-       -37.6,
-       0.3
-      ],
-      [
-       11.5,
-       14.4,
-       0.36
-      ]
-     ]
-    }
-   ],
-   "ms": 12936
+   "issues": [],
+   "ms": 15730
   },
   {
    "surah": 46,
@@ -2219,44 +956,16 @@
    "surahName": "Al-Aḥqāf",
    "tasks": 5,
    "spots": 17,
-   "solids": 5,
+   "solids": 11,
    "pathsWalked": 127,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "6 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -29.8,
-       -30.4,
-       0.47
-      ],
-      [
-       9.6,
-       -27.2,
-       0.32
-      ],
-      [
-       11.5,
-       -18.5,
-       0.46
-      ],
-      [
-       26.8,
-       18,
-       0.39
-      ]
-     ]
-    }
-   ],
-   "ms": 9080
+   "issues": [],
+   "ms": 12952
   },
   {
    "surah": 47,
@@ -2264,10 +973,10 @@
    "surahName": "Muḥammad",
    "tasks": 4,
    "spots": 4,
-   "solids": 11,
+   "solids": 17,
    "pathsWalked": 257,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 1,
     "info": 0
@@ -2278,36 +987,9 @@
      "check": "text",
      "msg": "game text reports a prophet's words (\"Muhammad asks...\"): check it against the cited ayahs",
      "at": "finale.body[1]"
-    },
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "5 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -0.4,
-       -30.1,
-       0.46
-      ],
-      [
-       1.7,
-       -27.4,
-       0.3
-      ],
-      [
-       32.6,
-       -7.4,
-       0.3
-      ],
-      [
-       -6.1,
-       10.7,
-       0.32
-      ]
-     ]
     }
    ],
-   "ms": 9570
+   "ms": 12806
   },
   {
    "surah": 48,
@@ -2315,44 +997,16 @@
    "surahName": "Al-Fatḥ",
    "tasks": 5,
    "spots": 5,
-   "solids": 15,
+   "solids": 24,
    "pathsWalked": 80,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "9 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       23.8,
-       25.4,
-       0.6
-      ],
-      [
-       -26.9,
-       -20.5,
-       0.34
-      ],
-      [
-       -10.8,
-       13.7,
-       0.37
-      ],
-      [
-       -5.1,
-       -33,
-       0.48
-      ]
-     ]
-    }
-   ],
-   "ms": 10083
+   "issues": [],
+   "ms": 12780
   },
   {
    "surah": 49,
@@ -2360,39 +1014,16 @@
    "surahName": "Al-Ḥujurāt",
    "tasks": 5,
    "spots": 10,
-   "solids": 29,
+   "solids": 32,
    "pathsWalked": 229,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "3 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -27.9,
-       -30.8,
-       0.42
-      ],
-      [
-       19.1,
-       34.3,
-       0.42
-      ],
-      [
-       29.6,
-       9.3,
-       0.43
-      ]
-     ]
-    }
-   ],
-   "ms": 12994
+   "issues": [],
+   "ms": 18592
   },
   {
    "surah": 50,
@@ -2400,44 +1031,16 @@
    "surahName": "Qāf",
    "tasks": 4,
    "spots": 4,
-   "solids": 18,
+   "solids": 27,
    "pathsWalked": 125,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "8 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       32,
-       -18.6,
-       0.4
-      ],
-      [
-       -11.2,
-       24.6,
-       0.34
-      ],
-      [
-       -21.9,
-       -33.5,
-       0.38
-      ],
-      [
-       -10.1,
-       23.3,
-       0.29
-      ]
-     ]
-    }
-   ],
-   "ms": 9946
+   "issues": [],
+   "ms": 14366
   },
   {
    "surah": 51,
@@ -2445,44 +1048,16 @@
    "surahName": "Adh-Dhāriyāt",
    "tasks": 4,
    "spots": 3,
-   "solids": 13,
+   "solids": 19,
    "pathsWalked": 262,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "6 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -7.5,
-       -42,
-       0.29
-      ],
-      [
-       -35.7,
-       -3.8,
-       0.34
-      ],
-      [
-       -30.6,
-       -17.1,
-       0.3
-      ],
-      [
-       -23.1,
-       -3.2,
-       0.43
-      ]
-     ]
-    }
-   ],
-   "ms": 12051
+   "issues": [],
+   "ms": 15723
   },
   {
    "surah": 52,
@@ -2490,44 +1065,16 @@
    "surahName": "Aṭ-Ṭūr",
    "tasks": 2,
    "spots": 12,
-   "solids": 22,
+   "solids": 33,
    "pathsWalked": 221,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "11 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       8.4,
-       -18.3,
-       0.53
-      ],
-      [
-       -12,
-       -7.4,
-       0.31
-      ],
-      [
-       -7.9,
-       36.9,
-       0.32
-      ],
-      [
-       25.3,
-       -16.5,
-       0.35
-      ]
-     ]
-    }
-   ],
-   "ms": 11867
+   "issues": [],
+   "ms": 17331
   },
   {
    "surah": 53,
@@ -2535,44 +1082,16 @@
    "surahName": "An-Najm",
    "tasks": 4,
    "spots": 4,
-   "solids": 11,
+   "solids": 15,
    "pathsWalked": 135,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "4 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       10.4,
-       -19.1,
-       0.32
-      ],
-      [
-       3.3,
-       -34.4,
-       0.32
-      ],
-      [
-       35.9,
-       -2.1,
-       0.4
-      ],
-      [
-       22.9,
-       -17.5,
-       0.29
-      ]
-     ]
-    }
-   ],
-   "ms": 9882
+   "issues": [],
+   "ms": 12528
   },
   {
    "surah": 54,
@@ -2580,44 +1099,16 @@
    "surahName": "Al-Qamar",
    "tasks": 3,
    "spots": 6,
-   "solids": 15,
+   "solids": 23,
    "pathsWalked": 179,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "7 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -28.9,
-       -3.4,
-       0.46
-      ],
-      [
-       26.3,
-       -24.2,
-       0.31
-      ],
-      [
-       -22.9,
-       -6.7,
-       0.3
-      ],
-      [
-       34.4,
-       -23.9,
-       0.34
-      ]
-     ]
-    }
-   ],
-   "ms": 10935
+   "issues": [],
+   "ms": 15045
   },
   {
    "surah": 55,
@@ -2625,44 +1116,16 @@
    "surahName": "Ar-Raḥmān",
    "tasks": 5,
    "spots": 9,
-   "solids": 27,
+   "solids": 33,
    "pathsWalked": 101,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "6 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -15.6,
-       14,
-       0.34
-      ],
-      [
-       -36.2,
-       20,
-       0.32
-      ],
-      [
-       21.6,
-       44.7,
-       0.3
-      ],
-      [
-       34.5,
-       4,
-       0.34
-      ]
-     ]
-    }
-   ],
-   "ms": 12544
+   "issues": [],
+   "ms": 16234
   },
   {
    "surah": 56,
@@ -2670,44 +1133,16 @@
    "surahName": "Al-Wāqi‘ah",
    "tasks": 4,
    "spots": 4,
-   "solids": 31,
+   "solids": 46,
    "pathsWalked": 151,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "13 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       31.2,
-       4.6,
-       0.3
-      ],
-      [
-       25.1,
-       33.6,
-       0.31
-      ],
-      [
-       40.7,
-       8.7,
-       0.46
-      ],
-      [
-       0.5,
-       -35,
-       0.38
-      ]
-     ]
-    }
-   ],
-   "ms": 13357
+   "issues": [],
+   "ms": 15223
   },
   {
    "surah": 57,
@@ -2715,44 +1150,16 @@
    "surahName": "Al-Ḥadīd",
    "tasks": 4,
    "spots": 4,
-   "solids": 30,
+   "solids": 39,
    "pathsWalked": 118,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "9 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -31.9,
-       -26.9,
-       0.3
-      ],
-      [
-       14.8,
-       35.3,
-       0.32
-      ],
-      [
-       -25,
-       31.3,
-       0.3
-      ],
-      [
-       -8.3,
-       -4.8,
-       0.47
-      ]
-     ]
-    }
-   ],
-   "ms": 14118
+   "issues": [],
+   "ms": 18890
   },
   {
    "surah": 58,
@@ -2760,44 +1167,16 @@
    "surahName": "Al-Mujādilah",
    "tasks": 4,
    "spots": 4,
-   "solids": 17,
+   "solids": 24,
    "pathsWalked": 71,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "6 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -12.2,
-       3.6,
-       0.35
-      ],
-      [
-       29.4,
-       -3.1,
-       0.29
-      ],
-      [
-       31.7,
-       15,
-       0.36
-      ],
-      [
-       10.5,
-       16.7,
-       0.3
-      ]
-     ]
-    }
-   ],
-   "ms": 10221
+   "issues": [],
+   "ms": 12540
   },
   {
    "surah": 59,
@@ -2805,44 +1184,16 @@
    "surahName": "Al-Ḥashr",
    "tasks": 4,
    "spots": 8,
-   "solids": 21,
+   "solids": 31,
    "pathsWalked": 137,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "9 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       18.6,
-       32.7,
-       0.46
-      ],
-      [
-       -6.5,
-       27.7,
-       0.43
-      ],
-      [
-       -11.5,
-       34.4,
-       0.34
-      ],
-      [
-       -15.8,
-       1.5,
-       0.35
-      ]
-     ]
-    }
-   ],
-   "ms": 11759
+   "issues": [],
+   "ms": 14240
   },
   {
    "surah": 60,
@@ -2850,44 +1201,16 @@
    "surahName": "Al-Mumtaḥanah",
    "tasks": 3,
    "spots": 2,
-   "solids": 21,
+   "solids": 30,
    "pathsWalked": 107,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "8 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       31.7,
-       18.1,
-       0.41
-      ],
-      [
-       27,
-       -25.3,
-       0.31
-      ],
-      [
-       28.2,
-       -14.2,
-       0.3
-      ],
-      [
-       -36.4,
-       8.2,
-       0.31
-      ]
-     ]
-    }
-   ],
-   "ms": 17056
+   "issues": [],
+   "ms": 22162
   },
   {
    "surah": 61,
@@ -2895,39 +1218,16 @@
    "surahName": "Aṣ-Ṣaff",
    "tasks": 4,
    "spots": 4,
-   "solids": 24,
+   "solids": 27,
    "pathsWalked": 125,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "3 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -25.5,
-       19.4,
-       0.59
-      ],
-      [
-       33.3,
-       -9.7,
-       0.49
-      ],
-      [
-       31.3,
-       -1,
-       0.34
-      ]
-     ]
-    }
-   ],
-   "ms": 13048
+   "issues": [],
+   "ms": 14470
   },
   {
    "surah": 62,
@@ -2935,34 +1235,16 @@
    "surahName": "Al-Jumu‘ah",
    "tasks": 3,
    "spots": 4,
-   "solids": 34,
+   "solids": 36,
    "pathsWalked": 106,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "2 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       19.3,
-       -12,
-       0.31
-      ],
-      [
-       -24.7,
-       -2.3,
-       0.35
-      ]
-     ]
-    }
-   ],
-   "ms": 11767
+   "issues": [],
+   "ms": 15414
   },
   {
    "surah": 63,
@@ -2970,44 +1252,16 @@
    "surahName": "Al-Munāfiqūn",
    "tasks": 3,
    "spots": 8,
-   "solids": 36,
+   "solids": 44,
    "pathsWalked": 232,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "8 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       28.2,
-       22.3,
-       0.47
-      ],
-      [
-       25.9,
-       21.1,
-       0.36
-      ],
-      [
-       29.6,
-       20.1,
-       0.33
-      ],
-      [
-       7.2,
-       -20.9,
-       0.37
-      ]
-     ]
-    }
-   ],
-   "ms": 14572
+   "issues": [],
+   "ms": 17558
   },
   {
    "surah": 64,
@@ -3015,54 +1269,16 @@
    "surahName": "At-Taghābun",
    "tasks": 3,
    "spots": 7,
-   "solids": 29,
+   "solids": 41,
    "pathsWalked": 192,
    "counts": {
-    "error": 3,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "spawn",
-     "msg": "start -32,44 is at the edge of the world (radius 54)"
-    },
-    {
-     "level": "error",
-     "check": "spawn",
-     "msg": "start -32,44 is inside a solid or on a slope"
-    },
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "10 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -11.9,
-       44.3,
-       0.33
-      ],
-      [
-       14.9,
-       19.5,
-       0.32
-      ],
-      [
-       -23.8,
-       -0.3,
-       0.41
-      ],
-      [
-       -2,
-       -16.7,
-       0.43
-      ]
-     ]
-    }
-   ],
-   "ms": 14600
+   "issues": [],
+   "ms": 20786
   },
   {
    "surah": 65,
@@ -3070,44 +1286,16 @@
    "surahName": "Aṭ-Ṭalāq",
    "tasks": 2,
    "spots": 3,
-   "solids": 22,
+   "solids": 30,
    "pathsWalked": 165,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "8 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -33.2,
-       11.6,
-       0.42
-      ],
-      [
-       38.1,
-       0,
-       0.4
-      ],
-      [
-       -8.8,
-       21.7,
-       0.44
-      ],
-      [
-       22.3,
-       3.8,
-       0.37
-      ]
-     ]
-    }
-   ],
-   "ms": 11463
+   "issues": [],
+   "ms": 15307
   },
   {
    "surah": 66,
@@ -3115,44 +1303,16 @@
    "surahName": "At-Taḥrīm",
    "tasks": 3,
    "spots": 14,
-   "solids": 17,
+   "solids": 21,
    "pathsWalked": 24,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "4 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       8.6,
-       -2.7,
-       0.35
-      ],
-      [
-       -25.7,
-       8.2,
-       0.47
-      ],
-      [
-       1,
-       -29.6,
-       0.38
-      ],
-      [
-       -15.7,
-       11.1,
-       0.43
-      ]
-     ]
-    }
-   ],
-   "ms": 10722
+   "issues": [],
+   "ms": 11825
   },
   {
    "surah": 67,
@@ -3160,44 +1320,16 @@
    "surahName": "Al-Mulk",
    "tasks": 5,
    "spots": 5,
-   "solids": 22,
+   "solids": 29,
    "pathsWalked": 168,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "4 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       16.4,
-       -10.7,
-       0.52
-      ],
-      [
-       23,
-       -19.4,
-       0.32
-      ],
-      [
-       30.3,
-       -3.3,
-       0.44
-      ],
-      [
-       -18.8,
-       29.3,
-       0.33
-      ]
-     ]
-    }
-   ],
-   "ms": 11425
+   "issues": [],
+   "ms": 14979
   },
   {
    "surah": 68,
@@ -3205,44 +1337,16 @@
    "surahName": "Al-Qalam",
    "tasks": 3,
    "spots": 9,
-   "solids": 13,
+   "solids": 22,
    "pathsWalked": 43,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "8 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       21.3,
-       -15.6,
-       0.41
-      ],
-      [
-       -24.3,
-       -18.2,
-       0.4
-      ],
-      [
-       -17.1,
-       21,
-       0.35
-      ],
-      [
-       -31.3,
-       -3,
-       0.36
-      ]
-     ]
-    }
-   ],
-   "ms": 8707
+   "issues": [],
+   "ms": 11677
   },
   {
    "surah": 69,
@@ -3250,44 +1354,16 @@
    "surahName": "Al-Ḥāqqah",
    "tasks": 4,
    "spots": 7,
-   "solids": 23,
+   "solids": 37,
    "pathsWalked": 76,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "13 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       27.4,
-       -16,
-       0.4
-      ],
-      [
-       -11.5,
-       -3.7,
-       0.37
-      ],
-      [
-       25.3,
-       19.3,
-       0.32
-      ],
-      [
-       -19.8,
-       12.6,
-       0.33
-      ]
-     ]
-    }
-   ],
-   "ms": 13267
+   "issues": [],
+   "ms": 16682
   },
   {
    "surah": 70,
@@ -3295,44 +1371,16 @@
    "surahName": "Al-Ma‘ārij",
    "tasks": 3,
    "spots": 4,
-   "solids": 19,
+   "solids": 26,
    "pathsWalked": 123,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "7 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       19.6,
-       -10.9,
-       0.47
-      ],
-      [
-       30.2,
-       2,
-       0.39
-      ],
-      [
-       16,
-       29.4,
-       0.37
-      ],
-      [
-       -20.3,
-       23.8,
-       0.38
-      ]
-     ]
-    }
-   ],
-   "ms": 10648
+   "issues": [],
+   "ms": 13856
   },
   {
    "surah": 71,
@@ -3340,10 +1388,10 @@
    "surahName": "Nūḥ",
    "tasks": 3,
    "spots": 4,
-   "solids": 19,
+   "solids": 22,
    "pathsWalked": 57,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 1,
     "info": 0
@@ -3354,80 +1402,26 @@
      "check": "text",
      "msg": "game text reports a prophet's words (\"Nuh asked...\"): check it against the cited ayahs",
      "at": "finale.body[1]"
-    },
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "2 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -25.7,
-       -4.8,
-       0.53
-      ],
-      [
-       12.4,
-       -1,
-       0.44
-      ]
-     ]
     }
    ],
-   "ms": 9732
+   "ms": 11856
   },
   {
    "surah": 72,
    "name": "The Listening Valley",
    "surahName": "Al-Jinn",
    "tasks": 3,
-   "spots": 10,
-   "solids": 35,
+   "spots": 2,
+   "solids": 45,
    "pathsWalked": 52,
    "counts": {
-    "error": 2,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "space",
-     "msg": "activity spot listen.sources[3].at has no open ground within reach",
-     "at": [
-      -14,
-      -14
-     ]
-    },
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "9 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -37.1,
-       3.3,
-       0.36
-      ],
-      [
-       9.5,
-       -37.1,
-       0.35
-      ],
-      [
-       26.6,
-       -21.2,
-       0.33
-      ],
-      [
-       -23.8,
-       0.2,
-       0.29
-      ]
-     ]
-    }
-   ],
-   "ms": 10997
+   "issues": [],
+   "ms": 14907
   },
   {
    "surah": 73,
@@ -3435,34 +1429,16 @@
    "surahName": "Al-Muzzammil",
    "tasks": 3,
    "spots": 3,
-   "solids": 8,
+   "solids": 11,
    "pathsWalked": 67,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "2 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -15,
-       31.1,
-       0.43
-      ],
-      [
-       24.5,
-       18.8,
-       0.51
-      ]
-     ]
-    }
-   ],
-   "ms": 8852
+   "issues": [],
+   "ms": 12106
   },
   {
    "surah": 74,
@@ -3470,34 +1446,16 @@
    "surahName": "Al-Muddaththir",
    "tasks": 3,
    "spots": 3,
-   "solids": 9,
+   "solids": 12,
    "pathsWalked": 119,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "2 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       17.7,
-       -17,
-       0.38
-      ],
-      [
-       25.5,
-       13.7,
-       0.34
-      ]
-     ]
-    }
-   ],
-   "ms": 9885
+   "issues": [],
+   "ms": 12500
   },
   {
    "surah": 75,
@@ -3505,44 +1463,16 @@
    "surahName": "Al-Qiyāmah",
    "tasks": 3,
    "spots": 9,
-   "solids": 12,
+   "solids": 16,
    "pathsWalked": 63,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "4 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       20,
-       -17.2,
-       0.41
-      ],
-      [
-       -19,
-       6.4,
-       0.35
-      ],
-      [
-       17.4,
-       -9.7,
-       0.38
-      ],
-      [
-       -29.8,
-       13,
-       0.31
-      ]
-     ]
-    }
-   ],
-   "ms": 9575
+   "issues": [],
+   "ms": 12154
   },
   {
    "surah": 76,
@@ -3550,39 +1480,16 @@
    "surahName": "Al-Insān",
    "tasks": 3,
    "spots": 6,
-   "solids": 12,
+   "solids": 15,
    "pathsWalked": 153,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "3 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       32.2,
-       -11,
-       0.38
-      ],
-      [
-       18,
-       23.7,
-       0.5
-      ],
-      [
-       1,
-       26.9,
-       0.47
-      ]
-     ]
-    }
-   ],
-   "ms": 10372
+   "issues": [],
+   "ms": 13088
   },
   {
    "surah": 77,
@@ -3590,44 +1497,16 @@
    "surahName": "Al-Mursalāt",
    "tasks": 3,
    "spots": 3,
-   "solids": 12,
+   "solids": 20,
    "pathsWalked": 79,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "7 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       30.9,
-       7.2,
-       0.32
-      ],
-      [
-       -17.5,
-       -32.2,
-       0.35
-      ],
-      [
-       30.7,
-       -7.1,
-       0.38
-      ],
-      [
-       -26.2,
-       -10.7,
-       0.3
-      ]
-     ]
-    }
-   ],
-   "ms": 9268
+   "issues": [],
+   "ms": 12484
   },
   {
    "surah": 78,
@@ -3635,44 +1514,16 @@
    "surahName": "An-Naba’",
    "tasks": 3,
    "spots": 3,
-   "solids": 10,
+   "solids": 17,
    "pathsWalked": 68,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "7 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -13.2,
-       28.3,
-       0.3
-      ],
-      [
-       3.5,
-       -12,
-       0.36
-      ],
-      [
-       5,
-       40.9,
-       0.48
-      ],
-      [
-       29.6,
-       -7.7,
-       0.36
-      ]
-     ]
-    }
-   ],
-   "ms": 8973
+   "issues": [],
+   "ms": 11159
   },
   {
    "surah": 79,
@@ -3680,44 +1531,16 @@
    "surahName": "An-Nāzi‘āt",
    "tasks": 3,
    "spots": 3,
-   "solids": 32,
+   "solids": 41,
    "pathsWalked": 132,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "8 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -31.4,
-       -20,
-       0.37
-      ],
-      [
-       6.1,
-       25.4,
-       0.35
-      ],
-      [
-       -13.2,
-       2.4,
-       0.3
-      ],
-      [
-       -6.1,
-       34.2,
-       0.35
-      ]
-     ]
-    }
-   ],
-   "ms": 11508
+   "issues": [],
+   "ms": 16260
   },
   {
    "surah": 80,
@@ -3725,34 +1548,16 @@
    "surahName": "‘Abasa",
    "tasks": 3,
    "spots": 2,
-   "solids": 8,
+   "solids": 10,
    "pathsWalked": 58,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "2 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       32.7,
-       -17.1,
-       0.29
-      ],
-      [
-       19.7,
-       19.8,
-       0.41
-      ]
-     ]
-    }
-   ],
-   "ms": 9331
+   "issues": [],
+   "ms": 12295
   },
   {
    "surah": 81,
@@ -3760,44 +1565,16 @@
    "surahName": "At-Takwīr",
    "tasks": 3,
    "spots": 9,
-   "solids": 23,
+   "solids": 29,
    "pathsWalked": 251,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "6 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       10.9,
-       13.1,
-       0.35
-      ],
-      [
-       -21.2,
-       2.1,
-       0.32
-      ],
-      [
-       -12,
-       21.8,
-       0.39
-      ],
-      [
-       37.2,
-       11.4,
-       0.39
-      ]
-     ]
-    }
-   ],
-   "ms": 12824
+   "issues": [],
+   "ms": 17283
   },
   {
    "surah": 82,
@@ -3805,44 +1582,16 @@
    "surahName": "Al-Infiṭār",
    "tasks": 3,
    "spots": 5,
-   "solids": 25,
+   "solids": 33,
    "pathsWalked": 156,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "8 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -27.9,
-       14.1,
-       0.36
-      ],
-      [
-       -31.6,
-       14.2,
-       0.33
-      ],
-      [
-       -29.5,
-       -19.5,
-       0.44
-      ],
-      [
-       -3.2,
-       14.9,
-       0.42
-      ]
-     ]
-    }
-   ],
-   "ms": 11991
+   "issues": [],
+   "ms": 16622
   },
   {
    "surah": 83,
@@ -3850,34 +1599,16 @@
    "surahName": "Al-Muṭaffifīn",
    "tasks": 3,
    "spots": 7,
-   "solids": 21,
+   "solids": 23,
    "pathsWalked": 102,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "2 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -23.8,
-       4.4,
-       0.38
-      ],
-      [
-       -24.5,
-       -15.8,
-       0.5
-      ]
-     ]
-    }
-   ],
-   "ms": 10748
+   "issues": [],
+   "ms": 14105
   },
   {
    "surah": 84,
@@ -3885,10 +1616,10 @@
    "surahName": "Al-Inshiqāq",
    "tasks": 3,
    "spots": 3,
-   "solids": 23,
+   "solids": 33,
    "pathsWalked": 171,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 1,
     "review": 0,
     "info": 0
@@ -3898,36 +1629,9 @@
      "level": "warn",
      "check": "spawn",
      "msg": "start 6,-38 is within 0.39 m of a solid"
-    },
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "9 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       12.2,
-       -14.5,
-       0.4
-      ],
-      [
-       -24.1,
-       22.7,
-       0.5
-      ],
-      [
-       -5.4,
-       -31.3,
-       0.31
-      ],
-      [
-       22.3,
-       -19.2,
-       0.35
-      ]
-     ]
     }
    ],
-   "ms": 11156
+   "ms": 15207
   },
   {
    "surah": 85,
@@ -3935,39 +1639,16 @@
    "surahName": "Al-Burūj",
    "tasks": 3,
    "spots": 7,
-   "solids": 10,
+   "solids": 13,
    "pathsWalked": 59,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "3 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       22.8,
-       -19.2,
-       0.44
-      ],
-      [
-       -31.3,
-       -5,
-       0.45
-      ],
-      [
-       24.7,
-       -24.4,
-       0.37
-      ]
-     ]
-    }
-   ],
-   "ms": 8461
+   "issues": [],
+   "ms": 10736
   },
   {
    "surah": 86,
@@ -3975,44 +1656,16 @@
    "surahName": "Aṭ-Ṭāriq",
    "tasks": 3,
    "spots": 3,
-   "solids": 20,
+   "solids": 36,
    "pathsWalked": 63,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "16 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -12.2,
-       -16.6,
-       0.37
-      ],
-      [
-       -28.5,
-       -5.8,
-       0.39
-      ],
-      [
-       -12.1,
-       29.7,
-       0.37
-      ],
-      [
-       10.5,
-       26,
-       0.29
-      ]
-     ]
-    }
-   ],
-   "ms": 10791
+   "issues": [],
+   "ms": 14873
   },
   {
    "surah": 87,
@@ -4020,39 +1673,16 @@
    "surahName": "Al-A‘lā",
    "tasks": 3,
    "spots": 3,
-   "solids": 11,
+   "solids": 15,
    "pathsWalked": 71,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "3 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -28.5,
-       -10.9,
-       0.49
-      ],
-      [
-       -26.2,
-       6.7,
-       0.33
-      ],
-      [
-       34.4,
-       -3.3,
-       0.33
-      ]
-     ]
-    }
-   ],
-   "ms": 8621
+   "issues": [],
+   "ms": 11632
   },
   {
    "surah": 88,
@@ -4060,44 +1690,16 @@
    "surahName": "Al-Ghāshiyah",
    "tasks": 3,
    "spots": 4,
-   "solids": 5,
+   "solids": 12,
    "pathsWalked": 74,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "7 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -12.8,
-       35.4,
-       0.36
-      ],
-      [
-       25.6,
-       23.5,
-       0.42
-      ],
-      [
-       -27.9,
-       28.4,
-       0.41
-      ],
-      [
-       32,
-       8.5,
-       0.38
-      ]
-     ]
-    }
-   ],
-   "ms": 8247
+   "issues": [],
+   "ms": 10793
   },
   {
    "surah": 89,
@@ -4105,39 +1707,16 @@
    "surahName": "Al-Fajr",
    "tasks": 4,
    "spots": 4,
-   "solids": 19,
+   "solids": 22,
    "pathsWalked": 71,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "3 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       21.6,
-       28.4,
-       0.44
-      ],
-      [
-       14.7,
-       -27.5,
-       0.49
-      ],
-      [
-       7.7,
-       -27.8,
-       0.37
-      ]
-     ]
-    }
-   ],
-   "ms": 9707
+   "issues": [],
+   "ms": 13269
   },
   {
    "surah": 90,
@@ -4145,44 +1724,16 @@
    "surahName": "Al-Balad",
    "tasks": 3,
    "spots": 6,
-   "solids": 21,
+   "solids": 34,
    "pathsWalked": 207,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "13 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       32.4,
-       1.7,
-       0.39
-      ],
-      [
-       23.5,
-       -20,
-       0.41
-      ],
-      [
-       -9.5,
-       -8.9,
-       0.48
-      ],
-      [
-       -32.7,
-       14,
-       0.37
-      ]
-     ]
-    }
-   ],
-   "ms": 11933
+   "issues": [],
+   "ms": 16881
   },
   {
    "surah": 91,
@@ -4190,44 +1741,16 @@
    "surahName": "Ash-Shams",
    "tasks": 3,
    "spots": 3,
-   "solids": 13,
+   "solids": 17,
    "pathsWalked": 60,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "4 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       0.1,
-       34.1,
-       0.39
-      ],
-      [
-       -7.4,
-       33.1,
-       0.3
-      ],
-      [
-       29.9,
-       -16.8,
-       0.3
-      ],
-      [
-       -7.9,
-       9.9,
-       0.53
-      ]
-     ]
-    }
-   ],
-   "ms": 9184
+   "issues": [],
+   "ms": 11566
   },
   {
    "surah": 92,
@@ -4235,44 +1758,16 @@
    "surahName": "Al-Lail",
    "tasks": 3,
    "spots": 3,
-   "solids": 10,
+   "solids": 15,
    "pathsWalked": 66,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "5 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       28.5,
-       -10.5,
-       0.37
-      ],
-      [
-       -21.7,
-       -26.4,
-       0.31
-      ],
-      [
-       18.4,
-       -12.1,
-       0.44
-      ],
-      [
-       -18.7,
-       18.1,
-       0.36
-      ]
-     ]
-    }
-   ],
-   "ms": 8850
+   "issues": [],
+   "ms": 11962
   },
   {
    "surah": 93,
@@ -4280,29 +1775,16 @@
    "surahName": "Aḍ-Ḍuḥā",
    "tasks": 3,
    "spots": 4,
-   "solids": 12,
+   "solids": 13,
    "pathsWalked": 57,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "1 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       34,
-       11.6,
-       0.31
-      ]
-     ]
-    }
-   ],
-   "ms": 9022
+   "issues": [],
+   "ms": 11604
   },
   {
    "surah": 94,
@@ -4310,10 +1792,10 @@
    "surahName": "Ash-Sharḥ",
    "tasks": 3,
    "spots": 5,
-   "solids": 17,
+   "solids": 22,
    "pathsWalked": 71,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 1,
     "review": 0,
     "info": 0
@@ -4323,36 +1805,9 @@
      "level": "warn",
      "check": "spawn",
      "msg": "start 0,36 is within 0.63 m of a solid"
-    },
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "5 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -29,
-       22.2,
-       0.4
-      ],
-      [
-       34.2,
-       8.1,
-       0.41
-      ],
-      [
-       -6.6,
-       -14.5,
-       0.44
-      ],
-      [
-       -23.3,
-       19.6,
-       0.35
-      ]
-     ]
     }
    ],
-   "ms": 11594
+   "ms": 14962
   },
   {
    "surah": 95,
@@ -4360,44 +1815,16 @@
    "surahName": "At-Tīn",
    "tasks": 3,
    "spots": 3,
-   "solids": 24,
+   "solids": 34,
    "pathsWalked": 92,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "10 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -19.8,
-       18.4,
-       0.56
-      ],
-      [
-       -20.4,
-       19,
-       0.35
-      ],
-      [
-       25.7,
-       -6.1,
-       0.37
-      ],
-      [
-       5.9,
-       18.9,
-       0.31
-      ]
-     ]
-    }
-   ],
-   "ms": 10598
+   "issues": [],
+   "ms": 12580
   },
   {
    "surah": 96,
@@ -4405,44 +1832,16 @@
    "surahName": "Al-‘Alaq",
    "tasks": 3,
    "spots": 3,
-   "solids": 8,
+   "solids": 15,
    "pathsWalked": 60,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "5 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -12.4,
-       2.2,
-       0.41
-      ],
-      [
-       -15.6,
-       3.5,
-       0.37
-      ],
-      [
-       -15.3,
-       3.9,
-       0.47
-      ],
-      [
-       -12.7,
-       2.8,
-       0.51
-      ]
-     ]
-    }
-   ],
-   "ms": 8931
+   "issues": [],
+   "ms": 11385
   },
   {
    "surah": 97,
@@ -4450,44 +1849,16 @@
    "surahName": "Al-Qadr",
    "tasks": 3,
    "spots": 4,
-   "solids": 8,
+   "solids": 13,
    "pathsWalked": 58,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "4 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       4,
-       24.1,
-       0.36
-      ],
-      [
-       -33.7,
-       -5,
-       0.3
-      ],
-      [
-       -14.1,
-       -4.1,
-       0.34
-      ],
-      [
-       15.1,
-       29.8,
-       0.53
-      ]
-     ]
-    }
-   ],
-   "ms": 8579
+   "issues": [],
+   "ms": 11182
   },
   {
    "surah": 98,
@@ -4495,44 +1866,16 @@
    "surahName": "Al-Bayyinah",
    "tasks": 3,
    "spots": 4,
-   "solids": 12,
+   "solids": 16,
    "pathsWalked": 63,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "4 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       20.4,
-       0,
-       0.38
-      ],
-      [
-       32.6,
-       -18.2,
-       0.37
-      ],
-      [
-       -11.1,
-       14.9,
-       0.31
-      ],
-      [
-       -32,
-       4.8,
-       0.37
-      ]
-     ]
-    }
-   ],
-   "ms": 9221
+   "issues": [],
+   "ms": 12551
   },
   {
    "surah": 99,
@@ -4540,44 +1883,16 @@
    "surahName": "Az-Zalzalah",
    "tasks": 3,
    "spots": 7,
-   "solids": 16,
+   "solids": 24,
    "pathsWalked": 110,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "8 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       26,
-       -17.4,
-       0.41
-      ],
-      [
-       29.6,
-       -18.7,
-       0.3
-      ],
-      [
-       -11.4,
-       -23.5,
-       0.34
-      ],
-      [
-       7.2,
-       39.2,
-       0.46
-      ]
-     ]
-    }
-   ],
-   "ms": 9890
+   "issues": [],
+   "ms": 11879
   },
   {
    "surah": 100,
@@ -4585,44 +1900,16 @@
    "surahName": "Al-‘Ādiyāt",
    "tasks": 3,
    "spots": 4,
-   "solids": 20,
+   "solids": 36,
    "pathsWalked": 60,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "14 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       14.9,
-       3.3,
-       0.46
-      ],
-      [
-       16.2,
-       3.8,
-       0.58
-      ],
-      [
-       13.9,
-       -0.3,
-       0.32
-      ],
-      [
-       -17.9,
-       -8.2,
-       0.41
-      ]
-     ]
-    }
-   ],
-   "ms": 9186
+   "issues": [],
+   "ms": 12874
   },
   {
    "surah": 101,
@@ -4630,44 +1917,16 @@
    "surahName": "Al-Qāri‘ah",
    "tasks": 3,
    "spots": 8,
-   "solids": 27,
+   "solids": 37,
    "pathsWalked": 82,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "9 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       13.8,
-       20.6,
-       0.4
-      ],
-      [
-       -20.4,
-       16.4,
-       0.36
-      ],
-      [
-       -32.9,
-       21.7,
-       0.41
-      ],
-      [
-       -28.5,
-       -6.8,
-       0.35
-      ]
-     ]
-    }
-   ],
-   "ms": 12634
+   "issues": [],
+   "ms": 17208
   },
   {
    "surah": 102,
@@ -4675,29 +1934,16 @@
    "surahName": "At-Takāthur",
    "tasks": 3,
    "spots": 6,
-   "solids": 13,
+   "solids": 14,
    "pathsWalked": 65,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "1 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -6.6,
-       -20.5,
-       0.51
-      ]
-     ]
-    }
-   ],
-   "ms": 8728
+   "issues": [],
+   "ms": 11194
   },
   {
    "surah": 103,
@@ -4705,44 +1951,16 @@
    "surahName": "Al-‘Aṣr",
    "tasks": 3,
    "spots": 9,
-   "solids": 13,
+   "solids": 20,
    "pathsWalked": 138,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "7 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       20.4,
-       23.8,
-       0.48
-      ],
-      [
-       19.4,
-       24.1,
-       0.42
-      ],
-      [
-       -19.8,
-       -1.2,
-       0.31
-      ],
-      [
-       24,
-       19.5,
-       0.42
-      ]
-     ]
-    }
-   ],
-   "ms": 9651
+   "issues": [],
+   "ms": 13074
   },
   {
    "surah": 104,
@@ -4750,44 +1968,16 @@
    "surahName": "Al-Humazah",
    "tasks": 3,
    "spots": 6,
-   "solids": 12,
+   "solids": 17,
    "pathsWalked": 64,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "4 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       17,
-       23.4,
-       0.42
-      ],
-      [
-       -31.9,
-       3.7,
-       0.44
-      ],
-      [
-       -0.8,
-       -17.7,
-       0.32
-      ],
-      [
-       -28.6,
-       -17.7,
-       0.32
-      ]
-     ]
-    }
-   ],
-   "ms": 9100
+   "issues": [],
+   "ms": 10998
   },
   {
    "surah": 105,
@@ -4795,44 +1985,16 @@
    "surahName": "Al-Fīl",
    "tasks": 3,
    "spots": 3,
-   "solids": 23,
+   "solids": 29,
    "pathsWalked": 83,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "5 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -11,
-       10.3,
-       0.3
-      ],
-      [
-       6,
-       -38.9,
-       0.36
-      ],
-      [
-       -6.4,
-       -7.4,
-       0.34
-      ],
-      [
-       -14.1,
-       -20,
-       0.39
-      ]
-     ]
-    }
-   ],
-   "ms": 10358
+   "issues": [],
+   "ms": 12936
   },
   {
    "surah": 106,
@@ -4840,44 +2002,16 @@
    "surahName": "Quraish",
    "tasks": 3,
    "spots": 7,
-   "solids": 22,
+   "solids": 30,
    "pathsWalked": 65,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "7 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       23.2,
-       4.7,
-       0.38
-      ],
-      [
-       -19.3,
-       -12.5,
-       0.29
-      ],
-      [
-       -12.3,
-       -25.5,
-       0.45
-      ],
-      [
-       -36.1,
-       -0.1,
-       0.39
-      ]
-     ]
-    }
-   ],
-   "ms": 10833
+   "issues": [],
+   "ms": 13919
   },
   {
    "surah": 107,
@@ -4885,44 +2019,16 @@
    "surahName": "Al-Mā‘ūn",
    "tasks": 3,
    "spots": 9,
-   "solids": 9,
+   "solids": 14,
    "pathsWalked": 69,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "5 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       16.9,
-       -28.4,
-       0.31
-      ],
-      [
-       27,
-       7,
-       0.48
-      ],
-      [
-       -8,
-       -19.4,
-       0.31
-      ],
-      [
-       15.6,
-       -34.5,
-       0.32
-      ]
-     ]
-    }
-   ],
-   "ms": 8812
+   "issues": [],
+   "ms": 10144
   },
   {
    "surah": 108,
@@ -4939,7 +2045,7 @@
     "info": 0
    },
    "issues": [],
-   "ms": 8680
+   "ms": 10713
   },
   {
    "surah": 109,
@@ -4947,39 +2053,16 @@
    "surahName": "Al-Kāfirūn",
    "tasks": 3,
    "spots": 3,
-   "solids": 8,
+   "solids": 11,
    "pathsWalked": 57,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "3 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -32,
-       -11.2,
-       0.31
-      ],
-      [
-       -27.2,
-       17.9,
-       0.32
-      ],
-      [
-       -29.4,
-       -8.6,
-       0.3
-      ]
-     ]
-    }
-   ],
-   "ms": 8387
+   "issues": [],
+   "ms": 10921
   },
   {
    "surah": 110,
@@ -4987,44 +2070,16 @@
    "surahName": "An-Naṣr",
    "tasks": 3,
    "spots": 3,
-   "solids": 11,
+   "solids": 18,
    "pathsWalked": 100,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "7 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       6.5,
-       3.7,
-       0.35
-      ],
-      [
-       5.2,
-       3.1,
-       0.6
-      ],
-      [
-       6.6,
-       4.7,
-       0.41
-      ],
-      [
-       29,
-       -4.7,
-       0.29
-      ]
-     ]
-    }
-   ],
-   "ms": 9027
+   "issues": [],
+   "ms": 10674
   },
   {
    "surah": 111,
@@ -5032,44 +2087,16 @@
    "surahName": "Al-Masad",
    "tasks": 3,
    "spots": 4,
-   "solids": 11,
+   "solids": 17,
    "pathsWalked": 66,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "6 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       9.7,
-       19.6,
-       0.52
-      ],
-      [
-       24.4,
-       9.3,
-       0.32
-      ],
-      [
-       24.4,
-       -4.8,
-       0.29
-      ],
-      [
-       20.6,
-       -13.9,
-       0.49
-      ]
-     ]
-    }
-   ],
-   "ms": 9024
+   "issues": [],
+   "ms": 10389
   },
   {
    "surah": 112,
@@ -5077,29 +2104,16 @@
    "surahName": "Al-Ikhlāṣ",
    "tasks": 3,
    "spots": 3,
-   "solids": 8,
+   "solids": 10,
    "pathsWalked": 53,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "1 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       24.6,
-       -9.8,
-       0.37
-      ]
-     ]
-    }
-   ],
-   "ms": 8198
+   "issues": [],
+   "ms": 10180
   },
   {
    "surah": 113,
@@ -5107,44 +2121,16 @@
    "surahName": "Al-Falaq",
    "tasks": 3,
    "spots": 7,
-   "solids": 48,
+   "solids": 52,
    "pathsWalked": 128,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "4 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -23.4,
-       -2.5,
-       0.36
-      ],
-      [
-       -23.7,
-       13.2,
-       0.29
-      ],
-      [
-       -18.6,
-       1.9,
-       0.3
-      ],
-      [
-       -20.7,
-       11.5,
-       0.42
-      ]
-     ]
-    }
-   ],
-   "ms": 14507
+   "issues": [],
+   "ms": 18024
   },
   {
    "surah": 114,
@@ -5152,44 +2138,16 @@
    "surahName": "An-Nās",
    "tasks": 3,
    "spots": 6,
-   "solids": 8,
+   "solids": 14,
    "pathsWalked": 130,
    "counts": {
-    "error": 1,
+    "error": 0,
     "warn": 0,
     "review": 0,
     "info": 0
    },
-   "issues": [
-    {
-     "level": "error",
-     "check": "rocks",
-     "msg": "4 drawn rock(s) taller than 0.3 m have no collider (the explorer walks through them)",
-     "at": [
-      [
-       -15.1,
-       -30.1,
-       0.41
-      ],
-      [
-       -24.7,
-       -30.9,
-       0.31
-      ],
-      [
-       37.8,
-       9.7,
-       0.32
-      ],
-      [
-       13.8,
-       14.3,
-       0.38
-      ]
-     ]
-    }
-   ],
-   "ms": 9062
+   "issues": [],
+   "ms": 12070
   }
  ]
 }

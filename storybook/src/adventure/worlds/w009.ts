@@ -174,6 +174,7 @@ export const W009: WorldDef = {
       label: 'Deep in the gorge',
       title: 'The earth closed in',
       goal: 'Keep walking, deeper into the misty gorge',
+      adaptation: 'The closing mist is a picture made for this game of 9:118 (the earth closed in on them); nothing of the three is shown.',
       intro: 'The mist is closing in. The surah says that for them the earth, vast as it was, closed in on them, and their own selves felt tight. Keep walking.',
     },
     {
@@ -185,6 +186,7 @@ export const W009: WorldDef = {
       label: 'The end of the gorge',
       title: 'He turned to them',
       goal: 'Walk to the end of the gorge',
+      adaptation: 'The light at the end of the gorge is a picture made for this game; the three are not shown.',
       intro: 'Keep going: there is light at the end of the gorge.',
       reading: {
         title: 'The three who were left behind',
@@ -202,6 +204,7 @@ export const W009: WorldDef = {
       label: 'The spring garden',
       title: 'The spring garden',
       goal: 'Rest in the spring garden at the end of the path',
+      adaptation: 'The spring garden is a quiet place made for this game.',
       intro: 'The mist has gone, and the path opens onto a quiet spring garden. Rest there a moment.',
       reading: {
         title: 'The Accepting of repentance',
