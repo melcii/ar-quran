@@ -36,7 +36,8 @@ export const W064: WorldDef = {
   },
   far: '#7a9a5a',
   mountains: { color: '#8a90a8', height: 1.1 },
-  start: [-32, 44],
+  // Inside the rim, on the flat where the path begins (the old start, -32, 44, was past the world's edge).
+  start: [-28.5, 38.5],
   startYaw: Math.PI * 0.8,
   structures: [
     { type: 'house', x: -36, z: 36, rot: Math.PI / 4, w: 5, d: 4.4, h: 3, accent: '#5a7a4a' },

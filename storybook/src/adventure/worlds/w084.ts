@@ -37,7 +37,7 @@ export const W084: WorldDef = {
   },
   far: '#c8a070',
   mountains: { color: '#b89a80', height: 0.9 },
-  start: [6, -38],
+  start: [5, -39.5], // a little further from the house wall (it stood 0.4 m away)
   startYaw: 0,
   structures: [
     { type: 'tent', x: 8, z: -36, rot: 0.3, color: '#7a5a3a', accent: '#c8643a' },

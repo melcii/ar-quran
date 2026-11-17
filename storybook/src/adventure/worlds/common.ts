@@ -171,3 +171,24 @@ export function homes(c: P2, r: number, n: number, a0: number, accents: string[]
   }
   return { houses, doors };
 }
+
+/**
+ * A level causeway from a to b over lower land or water: the ground along the
+ * line is set to a smooth ramp between the heights at its two ends, `half`
+ * metres either side, with banks easing back to the land over `bank` metres.
+ */
+export function causeway(base: (x: number, z: number) => number, a: P2, b: P2, half = 1.8, bank = 2.5) {
+  const ya = base(a[0], a[1]);
+  const yb = base(b[0], b[1]);
+  const ex = b[0] - a[0];
+  const ez = b[1] - a[1];
+  const l2 = ex * ex + ez * ez || 1;
+  return (x: number, z: number) => {
+    const h = base(x, z);
+    const u = Math.min(1, Math.max(0, ((x - a[0]) * ex + (z - a[1]) * ez) / l2));
+    const d = Math.hypot(x - a[0] - ex * u, z - a[1] - ez * u);
+    if (d > half + bank) return h;
+    const k = d <= half ? 1 : sm(1 - (d - half) / bank);
+    return h * (1 - k) + (ya + (yb - ya) * u) * k;
+  };
+}

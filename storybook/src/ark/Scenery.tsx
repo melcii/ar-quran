@@ -271,7 +271,8 @@ for (const t of TREES) {
   shade.push({ x: t.x, z: t.z, r: (t.kind === 'autumn' ? 7 : 4.5) * t.size, k: 0.32 });
 }
 for (const k of ROCKS) {
-  if (k.s > 0.6 && Math.hypot(k.x, k.z) < WORLD_R + 2) obstacles.push({ x: k.x, z: k.z, r: k.s * 0.85 });
+  // Every rock above ankle height is solid (only boulders were, so smaller rocks could be walked through).
+  if ((k.s > 0.6 || k.s * k.sy * 1.05 > 0.28) && Math.hypot(k.x, k.z) < WORLD_R + 2) obstacles.push({ x: k.x, z: k.z, r: k.s * 0.85 });
   shade.push({ x: k.x, z: k.z, r: k.s * 1.7, k: 0.35 });
 }
 for (const p of PADS) shade.push({ x: p.x, z: p.z, r: 2.2, k: 0.1 });

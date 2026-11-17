@@ -41,7 +41,7 @@ export const W028: WorldDef = {
     radius: 50,
     base: rolling({ radius: 50, amp: 1.2, seed: 28, streams: beds(RIVER), shapes: [{ x: 0, z: -46, r: 12, h: 5 }] }),
     palette: PAL.coast,
-    paths: [curve([[-5, -33.5], [-6.5, -29], [-7.5, -24], [-6, -24], [6, -24], [9.5, -24], [11.5, -20], [13, -12], [13.5, -8], [15, -5], [16.5, -2], [18, 0.5], [17.5, 2.5], [10, 10], [9.5, 11.5], [9.3, 13], [8, 15.5], [6, 19]])],
+    paths: [curve([[-8.5, -33.5], [-8, -29], [-7.6, -25.5], [-7.5, -24], [-6, -24], [6, -24], [9.5, -24], [11.5, -20], [13, -12], [13.5, -8], [15, -5], [16.5, -2], [18, 0.5], [17.5, 2.5], [10, 10], [9.8, 11.5], [9.8, 13], [9, 15.5], [7, 19]])],
     water: -1.8,
     flats: [{ x: 2, z: -40, r: 3 }],
   },
@@ -56,7 +56,8 @@ export const W028: WorldDef = {
   },
   far: '#7a9a5a',
   mountains: { color: '#9a90a8', height: 1 },
-  start: [-5, -34],
+  // On the dry bank: the old start (-5, -34) was in the river's shallows, under the water line.
+  start: [-8.5, -34],
   startYaw: 0,
   structures: [{ type: 'bridge', x: -6, z: -24, to: [8, -24], w: 2.2 }, { type: 'bridge', x: 17.5, z: 2.5, to: [10, 10], w: 2.2 }, { type: 'dock', x: 3, z: 20, rot: 0, w: 2, d: 4 }, { type: 'well', x: -20, z: 14 }],
   herds: [{ animal: 'sheep', at: [-26, 22], r: 3, n: 5 }],

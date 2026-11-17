@@ -285,6 +285,9 @@ export function Mountains({ color = '#7d86a6', seed = 91, height = 1 }: { color?
 
 export type Placed = { trees: TreeSpec[]; rocks: { x: number; z: number; s: number; sy: number; rot: number; v: number }[] };
 
+/** How high a placed rock stands above the ground (its drawn top). */
+export const rockTop = (k: { s: number; sy: number }) => k.s * k.sy * 1.05;
+
 /** Choose every tree and rock once, and register trunks and boulders as obstacles. */
 export function place(t: Terrain, veg: Veg, seed: number): Placed {
   const r = rng(seed);
@@ -335,7 +338,10 @@ export function place(t: Terrain, veg: Veg, seed: number): Placed {
     t.shade.push({ x: k.x, z: k.z, r: (k.kind === 'autumn' ? 7 : k.kind === 'palm' ? 2.5 : 4.5) * k.size, k: 0.3 });
   }
   for (const k of rocks) {
-    if (k.s > 0.6 && Math.hypot(k.x, k.z) < t.radius + 2) t.obstacles.push({ x: k.x, z: k.z, r: k.s * 0.85 });
+    // Every rock that stands above a child's ankle is solid. Only boulders
+    // (s > 0.6) used to be: knee-high rocks and big pebbles had no collider,
+    // so the explorer walked straight through them.
+    if ((k.s > 0.6 || rockTop(k) > 0.28) && Math.hypot(k.x, k.z) < t.radius + 2) t.obstacles.push({ x: k.x, z: k.z, r: k.s * 0.85 });
     t.shade.push({ x: k.x, z: k.z, r: k.s * 1.7, k: 0.35 });
   }
   return { trees, rocks };
