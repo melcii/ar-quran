@@ -1,6 +1,7 @@
 // Where each surah's adventures and story chapters live, how far the explorer
 // got in them, and which one they played last (for Continue Adventure).
 // Everything is kept on this device under the active explorer's keys.
+import { inStudioTest } from '@/studio/mode';
 import { WORLDS } from '@/adventure/worlds';
 import { getSurah } from '@/content/quran';
 
@@ -52,6 +53,8 @@ export type Last = { kind: 'world'; n: number; at: number } | { kind: 'ark'; at:
 const LAST = 'quran-adventure.last-adventure.v1';
 
 export function noteAdventure(l: Omit<Extract<Last, { kind: 'world' }>, 'at'> | { kind: 'ark' }) {
+  // A studio play test is not the player's own "continue" point.
+  if (inStudioTest()) return;
   try {
     globalThis.localStorage?.setItem(LAST, JSON.stringify({ ...l, at: Date.now() }));
   } catch {}

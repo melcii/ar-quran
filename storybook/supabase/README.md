@@ -21,3 +21,88 @@ compliance with any child-privacy law.
 `tests/local-stub.sql` stands in for Supabase's `auth` and `realtime` schemas.
 Run it, then the migration, then `tests/access-checks.sql`; each line says what
 to expect (checked 2026-11-04 on Postgres 16).
+
+# Admin Studio (0002_admin_studio.sql)
+
+Staff roles, the audit log, versioned content (draft, submitted, approved,
+published), publishing, rollback, test results and bug reports.
+
+## Setting it up on the real project
+
+1. Apply the migrations: `npx supabase link --project-ref <ref>` then
+   `npx supabase db push` (or paste each file into the SQL editor, in order).
+   Take a backup first (Database > Backups).
+2. Turn on TOTP multi-factor sign-in (Authentication > Multi-Factor; it is on
+   by default on hosted projects).
+3. Sign up once at `/admin` with the email you want as the first Super Admin
+   (or create the user under Authentication > Users), then in the SQL editor:
+   `select public.studio_bootstrap_super_admin('you@example.org');`
+   This function cannot be called through the API.
+4. Sign in at `/admin`, set up your authenticator, and add other staff from
+   Staff & roles (they sign up first).
+5. Give the app `EXPO_PUBLIC_SUPABASE_URL` and
+   `EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY` (see `.env.local.example`). Never put
+   the secret / service-role key in the app.
+
+## Rules the database enforces
+
+- Every staff permission needs a multi-factor (aal2) session.
+- Tables are read through row-level policies; all writes go through checked
+  functions that test roles and write the audit log. The audit log cannot be
+  updated or deleted, even by the database owner.
+- Story Editors change wording, ayah references and records; World Editors
+  change positions, sizes, colours and scenery; Moderators cannot edit
+  content. Quran-linked changes (references and the readings that explain
+  them) need a Quran Content Reviewer, and nobody approves their own
+  Quran-linked change. Only a Super Admin publishes or rolls back.
+- Arabic script is refused in edited content: the Quran text comes only from
+  the app's verified dataset. Ayah references must exist.
+- Publishing and rollback only move the published pointer; `saves` (player
+  progress) is never touched.
+- Audio (0003): files go to the `studio-audio` bucket, uploaded only by Audio
+  Editors into their own folder. Recitation must be a named human reciter's
+  recording with a confirmed licence and is approved only by a Quran Content
+  Reviewer; synthetic recitation is refused by a check constraint. There is
+  no music category. Nobody approves their own upload. Players can read only
+  approved files (the `live_audio` view).
+- The Ark settings (scope `ark:slice`): positions and numbers are World
+  Editor changes, wording is Story Editor changes, with limits checked on the
+  server.
+- Bugs (0004): player reports are child-safe (a world, one of six fixed
+  choices, a screen size; no text, no account) and readable only by staff.
+  Staff group them into bugs (`studio_bug_from_problems`); status changes are
+  kept in the bug's history and audited. Automated world health checks file
+  bugs with source `automated` and record `collision` test runs.
+- Moderation, settings and releases (0005): Moderators see only a report's
+  reason, time, room world and the reported nickname; they can pause online
+  play (1-30 days), replace a nickname or close a room. `config:play` and
+  `config:multiplayer` are Moderator drafts published by a Super Admin; the
+  room functions obey them. Releases publish several approved versions
+  together and can be undone together.
+
+## Checking it locally
+
+Apply every migration in order (0001 to 0005).
+
+`npx supabase start` (from `storybook/`), then:
+
+- `npm run studio:access`: 83 server-side checks with real accounts and TOTP.
+- `npm run studio:e2e` with the web app running against the local stack
+  (see the header of `scripts/studio/e2e.mjs`): sign-in with MFA, edit,
+  autosave, undo/redo, submit, check, approve, publish, see it in the game,
+  play test without touching saves, roll back, and no AI requests.
+- `node scripts/studio/e2e-world.mjs`: the Maryam rock acceptance run
+  (3D world editor, collision test, publish, re-enter, roll back).
+- `npm run studio:e2e-phase3`: activity from a template with the logic
+  editor, the Ark giraffe settings end to end, audio upload / review /
+  assignment, recitation rules, and the Character Studio.
+- `npm run studio:e2e-phase4`: a player report from a world, grouping and
+  triage in the Bug Control Center, world health checks with an automated
+  bug and the safe start fix, and worlds 1-10 checked.
+- `npm run studio:e2e-phase5`: moderation, the break reminder and a closed
+  world published as a release, and undoing the release.
+- `npm run studio:no-ai`: no AI SDK or API host in the studio code.
+
+In this cloud container the realtime image needed an IPv4 patch and images
+came from Docker Hub (`SUPABASE_INTERNAL_IMAGE_REGISTRY=docker.io`); neither
+is needed on an ordinary machine.

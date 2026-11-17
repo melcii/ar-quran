@@ -17,6 +17,9 @@ import { SoftShapes } from '@/three/soft';
 import { colors, fonts } from '@/theme';
 import { Explorer, type Anim } from './Explorer';
 import * as L from './look';
+import { catalogView } from './catalog';
+import { useResolvedDoc } from '@/studio/live';
+import { inStudioTest } from '@/studio/mode';
 import { MAX_PROFILES, profiles, suggestNick, useProfiles, type Profile } from './store';
 
 function Room() {
@@ -241,6 +244,9 @@ function Explorers({ onClose }: { onClose: () => void }) {
 }
 
 export default function DressingRoom() {
+  // The studio's character catalog (published, or the draft in a play test): which choices are offered.
+  const catDoc = useResolvedDoc('catalog:avatar');
+  const view = useMemo(() => catalogView(catDoc.doc as any), [catDoc.doc]);
   const me = profiles.active();
   const [look, setLook] = useState<L.Look>(me.look);
   const [nick, setNick] = useState(me.nickname);
@@ -263,6 +269,8 @@ export default function DressingRoom() {
   };
   const dirty = JSON.stringify(look) !== JSON.stringify(me.look) || nick !== me.nickname;
   const save = () => {
+    // A studio play test of the catalog never changes a real explorer.
+    if (inStudioTest()) return setSaved('Play test: looks are not saved');
     profiles.update(me.id, { look, nickname: nick });
     const p = profiles.active();
     setNick(p.nickname);
@@ -339,7 +347,7 @@ export default function DressingRoom() {
           <View style={{ gap: 8 }}>
             <Text style={st.small}>Start from a ready-made explorer, then change anything you like.</Text>
             <View style={st.wrap}>
-              {L.PRESETS.map((p) => (
+              {view.presets().map((p) => (
                 <Pressable key={p.name} accessibilityRole="button" onPress={() => set(p.look)} style={st.chip}>
                   <Text style={st.chipText}>{p.name}</Text>
                 </Pressable>
@@ -350,14 +358,14 @@ export default function DressingRoom() {
       case 'body':
         return (
           <View style={{ gap: 10 }}>
-            <Chips opts={L.BUILDS} value={look.build} on={(build) => set({ build })} />
+            <Chips opts={view.opts('build', look.build)} value={look.build} on={(build) => set({ build })} />
             <Swatches label="Skin tone" list={L.SKIN} value={look.skin} on={(skin) => set({ skin })} />
           </View>
         );
       case 'hair':
         return (
           <View style={{ gap: 10 }}>
-            <Chips opts={L.HAIRS} value={look.hair} on={(hair) => set({ hair })} />
+            <Chips opts={view.opts('hair', look.hair)} value={look.hair} on={(hair) => set({ hair })} />
             <Swatches label="Hair colour" list={L.HAIR_COLORS} value={look.hairColor} on={(hairColor) => set({ hairColor })} />
             {look.head === 'hijab' && <Text style={st.small}>The hijab covers the hair.</Text>}
           </View>
@@ -366,12 +374,12 @@ export default function DressingRoom() {
         return (
           <View style={{ gap: 10 }}>
             <Text style={st.small}>Face shape</Text>
-            <Chips opts={L.FACE_SHAPES} value={look.faceShape} on={(faceShape) => set({ faceShape })} />
+            <Chips opts={view.opts('faceShape', look.faceShape)} value={look.faceShape} on={(faceShape) => set({ faceShape })} />
             <Text style={st.small}>Eyes</Text>
-            <Chips opts={L.EYE_SHAPES} value={look.eyeShape} on={(eyeShape) => set({ eyeShape })} />
+            <Chips opts={view.opts('eyeShape', look.eyeShape)} value={look.eyeShape} on={(eyeShape) => set({ eyeShape })} />
             <Swatches label="Eye colour" list={L.EYES} value={look.eyes} on={(eyes) => set({ eyes })} />
             <Text style={st.small}>Eyebrows</Text>
-            <Chips opts={L.BROWS} value={look.brows} on={(brows) => set({ brows })} />
+            <Chips opts={view.opts('brows', look.brows)} value={look.brows} on={(brows) => set({ brows })} />
             <View style={st.wrap}>
               {(
                 [
@@ -389,34 +397,34 @@ export default function DressingRoom() {
       case 'clothes':
         return (
           <View style={{ gap: 10 }}>
-            <Chips opts={L.TOPS} value={look.top} on={(top) => set({ top })} />
+            <Chips opts={view.opts('top', look.top)} value={look.top} on={(top) => set({ top })} />
             <Swatches label="Top colour" list={L.CLOTH} value={look.topColor} on={(topColor) => set({ topColor })} />
-            <Chips opts={L.PATTERNS} value={look.pattern} on={(pattern) => set({ pattern })} />
-            <Chips opts={L.BOTTOMS} value={look.bottom} on={(bottom) => set({ bottom })} />
+            <Chips opts={view.opts('pattern', look.pattern)} value={look.pattern} on={(pattern) => set({ pattern })} />
+            <Chips opts={view.opts('bottom', look.bottom)} value={look.bottom} on={(bottom) => set({ bottom })} />
             <Swatches label="Trousers or skirt colour" list={L.CLOTH} value={look.bottomColor} on={(bottomColor) => set({ bottomColor })} />
             <Text style={st.label}>Outer layer</Text>
-            <Chips opts={L.OUTERS} value={look.outer} on={(outer) => set({ outer })} />
+            <Chips opts={view.opts('outer', look.outer)} value={look.outer} on={(outer) => set({ outer })} />
             {look.outer !== 'none' && <Swatches label="Outer layer colour" list={L.CLOTH} value={look.outerColor} on={(outerColor) => set({ outerColor })} />}
           </View>
         );
       case 'head':
         return (
           <View style={{ gap: 10 }}>
-            <Chips opts={L.HEADS} value={look.head} on={(head) => set({ head })} />
+            <Chips opts={view.opts('head', look.head)} value={look.head} on={(head) => set({ head })} />
             {look.head !== 'none' && <Swatches label="Colour" list={L.CLOTH} value={look.headColor} on={(headColor) => set({ headColor })} />}
           </View>
         );
       case 'feet':
         return (
           <View style={{ gap: 10 }}>
-            <Chips opts={L.SHOES} value={look.shoes} on={(shoes) => set({ shoes })} />
+            <Chips opts={view.opts('shoes', look.shoes)} value={look.shoes} on={(shoes) => set({ shoes })} />
             <Swatches label="Colour" list={L.CLOTH} value={look.shoesColor} on={(shoesColor) => set({ shoesColor })} />
           </View>
         );
       case 'bags':
         return (
           <View style={{ gap: 10 }}>
-            <Chips opts={L.PACKS} value={look.pack} on={(pack) => set({ pack })} />
+            <Chips opts={view.opts('pack', look.pack)} value={look.pack} on={(pack) => set({ pack })} />
             {look.pack !== 'none' && <Swatches label="Bag colour" list={L.CLOTH} value={look.packColor} on={(packColor) => set({ packColor })} />}
             <View style={st.wrap}>
               <Pressable accessibilityRole="switch" accessibilityState={{ checked: look.glasses }} onPress={() => set({ glasses: !look.glasses })} style={[st.chip, look.glasses && st.chipOn]}>
