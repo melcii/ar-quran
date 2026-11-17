@@ -21,3 +21,56 @@ compliance with any child-privacy law.
 `tests/local-stub.sql` stands in for Supabase's `auth` and `realtime` schemas.
 Run it, then the migration, then `tests/access-checks.sql`; each line says what
 to expect (checked 2026-11-04 on Postgres 16).
+
+# Admin Studio (0002_admin_studio.sql)
+
+Staff roles, the audit log, versioned content (draft, submitted, approved,
+published), publishing, rollback, test results and bug reports.
+
+## Setting it up on the real project
+
+1. Apply the migrations: `npx supabase link --project-ref <ref>` then
+   `npx supabase db push` (or paste each file into the SQL editor, in order).
+   Take a backup first (Database > Backups).
+2. Turn on TOTP multi-factor sign-in (Authentication > Multi-Factor; it is on
+   by default on hosted projects).
+3. Sign up once at `/admin` with the email you want as the first Super Admin
+   (or create the user under Authentication > Users), then in the SQL editor:
+   `select public.studio_bootstrap_super_admin('you@example.org');`
+   This function cannot be called through the API.
+4. Sign in at `/admin`, set up your authenticator, and add other staff from
+   Staff & roles (they sign up first).
+5. Give the app `EXPO_PUBLIC_SUPABASE_URL` and
+   `EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY` (see `.env.local.example`). Never put
+   the secret / service-role key in the app.
+
+## Rules the database enforces
+
+- Every staff permission needs a multi-factor (aal2) session.
+- Tables are read through row-level policies; all writes go through checked
+  functions that test roles and write the audit log. The audit log cannot be
+  updated or deleted, even by the database owner.
+- Story Editors change wording, ayah references and records; World Editors
+  change positions, sizes, colours and scenery; Moderators cannot edit
+  content. Quran-linked changes (references and the readings that explain
+  them) need a Quran Content Reviewer, and nobody approves their own
+  Quran-linked change. Only a Super Admin publishes or rolls back.
+- Arabic script is refused in edited content: the Quran text comes only from
+  the app's verified dataset. Ayah references must exist.
+- Publishing and rollback only move the published pointer; `saves` (player
+  progress) is never touched.
+
+## Checking it locally
+
+`npx supabase start` (from `storybook/`), then:
+
+- `npm run studio:access`: 54 server-side checks with real accounts and TOTP.
+- `npm run studio:e2e` with the web app running against the local stack
+  (see the header of `scripts/studio/e2e.mjs`): sign-in with MFA, edit,
+  autosave, undo/redo, submit, check, approve, publish, see it in the game,
+  play test without touching saves, roll back, and no AI requests.
+- `npm run studio:no-ai`: no AI SDK or API host in the studio code.
+
+In this cloud container the realtime image needed an IPv4 patch and images
+came from Docker Hub (`SUPABASE_INTERNAL_IMAGE_REGISTRY=docker.io`); neither
+is needed on an ordinary machine.

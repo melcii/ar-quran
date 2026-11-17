@@ -53,7 +53,11 @@
     "worlds:unique": "node scripts/check-unique-worlds.mjs",
     "typecheck": "tsc --noEmit",
     "export:web": "expo export --platform web",
-    "status": "node scripts/status-report.mjs"
+    "status": "node scripts/status-report.mjs",
+    "studio:records": "node scripts/studio-records.mjs",
+    "studio:no-ai": "node scripts/studio/no-ai-check.mjs",
+    "studio:access": "node supabase/tests/studio-access.mjs",
+    "studio:e2e": "node scripts/studio/e2e.mjs"
   },
   "private": true
 }

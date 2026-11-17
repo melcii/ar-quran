@@ -32,7 +32,9 @@ import { ChoiceCard, ShareCard, VowCard, WeighCard } from './panels';
 import { CloudLayer, FarLand, Flock, FlowerField, GroundBirds, GrassField, GroundMesh, Lighting, Moon, Motes, Mountains, RockField, Sky, StillWater, Trees, place, type SceneQuality } from './Scenery';
 import { makeTerrain, rng, type P2, type Terrain } from './terrain';
 import type { FlowTask, Reading, Task, WorldDef } from './types';
-import { WORLDS } from './worlds';
+import { placedEdits } from '@/studio/overlay';
+import { playtestKey, studioMode, useResolvedWorld } from '@/studio/live';
+import { StudioBadge } from '@/studio/StudioBadge';
 import { level, LEVELS } from './level';
 import { makeNav, type Nav } from '@/creatures/nav';
 import { mindOf, routeTo, think } from '@/creatures/mind';
@@ -53,7 +55,8 @@ import type { MechEnv } from './mechanics/base';
 /* ------------------------------- saving ------------------------------- */
 
 type Save = { done: string[]; prog: Record<string, number[]>; seen: string[]; pos?: [number, number, number]; finished?: boolean };
-const KEY = (n: number) => `quran-adventure.world-${n}.v1`;
+// Play-testing from the studio keeps its own saves, apart from the player's.
+const KEY = (n: number) => (studioMode() === 'play' ? `quran-adventure.world-${n}.v1` : playtestKey(`world-${n}`));
 const fresh = (): Save => ({ done: [], prog: {}, seen: [] });
 const STEP = 1 / 60;
 /** Share of the way to close this frame when easing at rate k: the same over a second at any frame rate. */
@@ -1503,12 +1506,14 @@ function hasWebGL() {
 
 export default function Adventure({ n }: { n: number }) {
   const app = useAppState();
-  const def = WORLDS[n];
+  // The built-in world with any published studio edits (or, for staff, a draft preview).
+  const resolved = useResolvedWorld(n);
+  const def = resolved.def;
   const [phys, setPhys] = useState(!!physicsReady());
   useEffect(() => {
     if (!phys) loadPhysics().then(() => setPhys(true));
   }, [phys]);
-  if (!app.ready || !phys) return <View style={st.root} />;
+  if (!app.ready || !phys || !resolved.ready) return <View style={st.root} />;
   if (!def)
     return (
       <View style={[st.root, st.center]}>
@@ -1518,7 +1523,12 @@ export default function Adventure({ n }: { n: number }) {
         </Pressable>
       </View>
     );
-  return <World key={n} def={def} />;
+  return (
+    <View style={st.root}>
+      <World key={`${n}:${resolved.mode}:${resolved.version ?? 'base'}`} def={def} />
+      {resolved.mode !== 'play' ? <StudioBadge mode={resolved.mode} n={n} version={resolved.version} skipped={resolved.skipped} /> : null}
+    </View>
+  );
 }
 
 /** Build the land once: terrain, building footprints, then trees and rocks around them. */
@@ -1585,7 +1595,7 @@ function World({ def }: { def: WorldDef }) {
     }
     for (const l of def.links ?? []) spot(l.at, 3);
     spot(def.start, 4);
-    return place(t, def.veg, def.seed);
+    return place(t, def.veg, def.seed, placedEdits(def));
   }, [def, t]);
 
   const [reduced, setReduced] = useState(app.motionOff);
