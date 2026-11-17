@@ -73,14 +73,20 @@ published), publishing, rollback, test results and bug reports.
   Staff group them into bugs (`studio_bug_from_problems`); status changes are
   kept in the bug's history and audited. Automated world health checks file
   bugs with source `automated` and record `collision` test runs.
+- Moderation, settings and releases (0005): Moderators see only a report's
+  reason, time, room world and the reported nickname; they can pause online
+  play (1-30 days), replace a nickname or close a room. `config:play` and
+  `config:multiplayer` are Moderator drafts published by a Super Admin; the
+  room functions obey them. Releases publish several approved versions
+  together and can be undone together.
 
 ## Checking it locally
 
-Apply every migration in order (0001 to 0004).
+Apply every migration in order (0001 to 0005).
 
 `npx supabase start` (from `storybook/`), then:
 
-- `npm run studio:access`: 61 server-side checks with real accounts and TOTP.
+- `npm run studio:access`: 83 server-side checks with real accounts and TOTP.
 - `npm run studio:e2e` with the web app running against the local stack
   (see the header of `scripts/studio/e2e.mjs`): sign-in with MFA, edit,
   autosave, undo/redo, submit, check, approve, publish, see it in the game,
@@ -92,7 +98,9 @@ Apply every migration in order (0001 to 0004).
   assignment, recitation rules, and the Character Studio.
 - `npm run studio:e2e-phase4`: a player report from a world, grouping and
   triage in the Bug Control Center, world health checks with an automated
-  bug and the safe start fix, and all 114 worlds checked.
+  bug and the safe start fix, and worlds 1-10 checked.
+- `npm run studio:e2e-phase5`: moderation, the break reminder and a closed
+  world published as a release, and undoing the release.
 - `npm run studio:no-ai`: no AI SDK or API host in the studio code.
 
 In this cloud container the realtime image needed an IPv4 patch and images

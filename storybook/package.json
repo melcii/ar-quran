@@ -59,7 +59,8 @@
     "studio:access": "node supabase/tests/studio-access.mjs",
     "studio:e2e": "node scripts/studio/e2e.mjs",
     "studio:e2e-phase3": "node scripts/studio/e2e-phase3.mjs",
-    "studio:e2e-phase4": "node scripts/studio/e2e-phase4.mjs"
+    "studio:e2e-phase4": "node scripts/studio/e2e-phase4.mjs",
+    "studio:e2e-phase5": "node scripts/studio/e2e-phase5.mjs"
   },
   "private": true
 }
