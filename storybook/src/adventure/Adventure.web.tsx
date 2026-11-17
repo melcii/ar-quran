@@ -32,7 +32,11 @@ import { ChoiceCard, ShareCard, VowCard, WeighCard } from './panels';
 import { CloudLayer, FarLand, Flock, FlowerField, GroundBirds, GrassField, GroundMesh, Lighting, Moon, Motes, Mountains, RockField, Sky, StillWater, Trees, place, type SceneQuality } from './Scenery';
 import { makeTerrain, rng, type P2, type Terrain } from './terrain';
 import type { FlowTask, Reading, Task, WorldDef } from './types';
-import { WORLDS } from './worlds';
+import { placeLand } from './land';
+import { playtestKey, studioMode, useResolvedWorld } from '@/studio/live';
+import { EditWorldButton, StudioBadge } from '@/studio/StudioBadge';
+import { loadWorldAudio } from '@/studio/audioLive';
+import { director } from '@/audio/director';
 import { level, LEVELS } from './level';
 import { makeNav, type Nav } from '@/creatures/nav';
 import { mindOf, routeTo, think } from '@/creatures/mind';
@@ -48,12 +52,15 @@ import { PropSolids } from '@/physics/PropSolids';
 import { auditScene } from '@/physics/sceneSolids';
 import { useActionHint } from '@/audio/hooks';
 import { ListeningSheet } from '@/audio/ListeningSettings';
+import { ReportSheet } from '@/studio/ReportProblem';
+import { usePlaySettings } from '@/studio/settings';
 import type { MechEnv } from './mechanics/base';
 
 /* ------------------------------- saving ------------------------------- */
 
 type Save = { done: string[]; prog: Record<string, number[]>; seen: string[]; pos?: [number, number, number]; finished?: boolean };
-const KEY = (n: number) => `quran-adventure.world-${n}.v1`;
+// Play-testing from the studio keeps its own saves, apart from the player's.
+const KEY = (n: number) => (studioMode() === 'play' ? `quran-adventure.world-${n}.v1` : playtestKey(`world-${n}`));
 const fresh = (): Save => ({ done: [], prog: {}, seen: [] });
 const STEP = 1 / 60;
 /** Share of the way to close this frame when easing at rate k: the same over a second at any frame rate. */
@@ -1503,12 +1510,41 @@ function hasWebGL() {
 
 export default function Adventure({ n }: { n: number }) {
   const app = useAppState();
-  const def = WORLDS[n];
+  // The built-in world with any published studio edits (or, for staff, a draft preview).
+  const resolved = useResolvedWorld(n);
+  const def = resolved.def;
+  // Play settings from the studio: worlds closed for repair, the break reminder.
+  const play = usePlaySettings();
   const [phys, setPhys] = useState(!!physicsReady());
   useEffect(() => {
     if (!phys) loadPhysics().then(() => setPhys(true));
   }, [phys]);
-  if (!app.ready || !phys) return <View style={st.root} />;
+  // Narration recorded in the Audio Studio for this world (approved files only), looked up before
+  // the world opens so its first line can use it. A slow network just means the usual voice.
+  const [audioFor, setAudioFor] = useState<WorldDef | null | undefined>(undefined);
+  useEffect(() => {
+    if (!resolved.ready) return;
+    let gone = false;
+    const done = () => !gone && setAudioFor(def ?? null);
+    const timer = setTimeout(done, 2500);
+    loadWorldAudio(def).finally(() => (clearTimeout(timer), done()));
+    return () => {
+      gone = true;
+      clearTimeout(timer);
+      director.studioClips({});
+    };
+  }, [def, resolved.ready]);
+  if (!app.ready || !phys || !resolved.ready || !play.ready || audioFor !== (def ?? null)) return <View style={st.root} />;
+  if (play.closedWorlds.includes(n))
+    return (
+      <View style={[st.root, st.center]} testID="world-resting">
+        <Text style={st.note}>This world is resting while we fix something. Please come back soon, or explore another world.</Text>
+        <Pressable style={st.pill} onPress={() => router.replace('/')} accessibilityRole="button">
+          <Text style={st.pillText}>Back to the home</Text>
+        </Pressable>
+        {resolved.mode !== 'play' ? <StudioBadge mode={resolved.mode} n={n} version={resolved.version} skipped={resolved.skipped} /> : null}
+      </View>
+    );
   if (!def)
     return (
       <View style={[st.root, st.center]}>
@@ -1518,7 +1554,12 @@ export default function Adventure({ n }: { n: number }) {
         </Pressable>
       </View>
     );
-  return <World key={n} def={def} />;
+  return (
+    <View style={st.root}>
+      <World key={`${n}:${resolved.mode}:${resolved.version ?? 'base'}`} def={def} breakMinutes={play.breakMinutes} />
+      {resolved.mode !== 'play' ? <StudioBadge mode={resolved.mode} n={n} version={resolved.version} skipped={resolved.skipped} /> : <EditWorldButton n={n} />}
+    </View>
+  );
 }
 
 /** Build the land once: terrain, building footprints, then trees and rocks around them. */
@@ -1529,7 +1570,7 @@ function useLand(def: WorldDef) {
   }, [def]);
 }
 
-function World({ def }: { def: WorldDef }) {
+function World({ def, breakMinutes = 0 }: { def: WorldDef; breakMinutes?: number }) {
   const app = useAppState();
   const set = app.settings;
   const rec = useRecitation();
@@ -1572,21 +1613,7 @@ function World({ def }: { def: WorldDef }) {
     for (const task of def.tasks) if (task.kind === 'read') cand.push([task.at[0] + 3.5, task.at[1] - 3]);
     return cand.filter(([x, z]) => !t.isWater(x, z) && t.clear(x, z, 0.5)).slice(0, 3);
   }, [def, t]);
-  const placed = useMemo(() => {
-    // Buildings first, so trees keep clear of them and of every activity spot.
-    for (const s of def.structures) footprint(s, t, isOn);
-    const spot = (p: P2, r: number) => t.keepClear.push({ x: p[0], z: p[1], r });
-    for (const task of def.tasks) {
-      if (task.kind === 'read' || task.kind === 'quiz') spot(task.at, 3);
-      if (task.kind === 'points') task.points.forEach((p) => spot(p.at, 2.5));
-      if (task.kind === 'carry') task.loads.forEach((L) => (spot(L.from, 2.5), spot(L.to, 1.8)));
-      if (task.kind === 'lead') (spot(task.pen, 5), spot(task.herd.at, task.herd.r * 0.6));
-      if (task.kind === 'pick') task.choices.forEach((c) => spot(c.at, 2.5));
-    }
-    for (const l of def.links ?? []) spot(l.at, 3);
-    spot(def.start, 4);
-    return place(t, def.veg, def.seed);
-  }, [def, t]);
+  const placed = useMemo(() => placeLand(def, t, isOn), [def, t]);
 
   const [reduced, setReduced] = useState(app.motionOff);
   motion.reduced = reduced;
@@ -1599,6 +1626,15 @@ function World({ def }: { def: WorldDef }) {
   const move = useRef<Move>({ x: 0, y: 0, run: false });
   const [near, setNear] = useState<{ key: string; label: string } | null>(null);
   const [voices, setVoices] = useState(false);
+  const [reporting, setReporting] = useState(false);
+  // A gentle break reminder after the minutes set in the studio (off when 0).
+  const [rest, setRest] = useState(false);
+  const [restRound, setRestRound] = useState(0);
+  useEffect(() => {
+    if (!breakMinutes) return;
+    const id = setTimeout(() => setRest(true), breakMinutes * 60000);
+    return () => clearTimeout(id);
+  }, [breakMinutes, restRound]);
   // A short spoken hint the first time each kind of action is in reach.
   useActionHint(near?.label);
   const [cards, setCards] = useState<Card[]>([]);
@@ -1854,7 +1890,12 @@ function World({ def }: { def: WorldDef }) {
       view: (yaw: number, pitch: number, dist: number) => void Object.assign(game.cam, { yaw, pitch, dist, snap: true }),
       speed: (k: number) => (game.timeScale = k),
       finish,
+      /** Where the rocks are, for checking studio edits (tests only). */
+      rocks: () => placed.rocks.map((k) => ({ key: k.key, x: +k.x.toFixed(2), z: +k.z.toFixed(2), s: +k.s.toFixed(2) })),
       progress: (id: string, i: number) => api.current.progress(id, i),
+      /** The studio break reminder: its minutes, and showing it now (tests only). */
+      breakMinutes,
+      showBreak: () => setRest(true),
       cards: () => cards.map((c) => c.kind),
       top: () => cards[0],
       /** Answer the open decision panel as a careful child would (tests only). */
@@ -2018,6 +2059,9 @@ function World({ def }: { def: WorldDef }) {
           </Pressable>
           <Pressable style={st.pill} onPress={toSafeGround} accessibilityRole="button" accessibilityLabel="Return to safe ground">
             <Text style={st.pillText}>Return to safe ground</Text>
+          </Pressable>
+          <Pressable style={st.pill} onPress={() => setReporting(true)} accessibilityRole="button" accessibilityLabel="Something not working? Tell us" testID="report-open">
+            <Text style={st.pillText}>Something not working?</Text>
           </Pressable>
         </View>
         <View style={st.objective} pointerEvents="box-none">
@@ -2209,6 +2253,18 @@ function World({ def }: { def: WorldDef }) {
       )}
 
       {voices && <ListeningSheet onClose={() => setVoices(false)} />}
+      {reporting && <ReportSheet surah={def.surah} onClose={() => setReporting(false)} />}
+      {rest && (
+        <View style={st.restWrap} testID="break-reminder">
+          <View style={st.restCard}>
+            <Text style={st.restTitle}>Time for a little break?</Text>
+            <Text style={st.restText}>You have been exploring for {breakMinutes} minutes. Stretch, drink some water, rest your eyes. Your adventure is saved.</Text>
+            <Pressable style={st.pill} onPress={() => (setRest(false), setRestRound((r) => r + 1))} accessibilityRole="button" testID="break-continue">
+              <Text style={st.pillText}>Keep exploring</Text>
+            </Pressable>
+          </View>
+        </View>
+      )}
 
       <Text style={st.footer} pointerEvents="none">
         Draft for scholarly review · places, buildings and activities are game ideas, not historical claims · no prophet, angel or anything of the unseen is shown
@@ -2257,6 +2313,10 @@ const st = StyleSheet.create({
   root: { flex: 1, backgroundColor: '#1a140e', overflow: 'hidden' },
   center: { alignItems: 'center', justifyContent: 'center', padding: 24, gap: 12 },
   note: { fontFamily: fonts.body, fontSize: 16, color: '#efe0c4', textAlign: 'center' },
+  restWrap: { position: 'absolute', inset: 0, alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(0,0,0,0.35)', padding: 12 } as never,
+  restCard: { maxWidth: 440, backgroundColor: 'rgba(255,246,226,0.97)', borderRadius: 18, padding: 18, gap: 10, alignItems: 'center' },
+  restTitle: { fontFamily: fonts.display, fontSize: 22, color: '#3a2a1a' },
+  restText: { fontFamily: fonts.body, fontSize: 15, lineHeight: 21, color: '#3a2a1a', textAlign: 'center' },
   topBar: { position: 'absolute', top: 12, left: 12, right: 12, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start', gap: 8 },
   pill: { ...glass, paddingHorizontal: 14, paddingVertical: 8 },
   pillText: { fontFamily: fonts.bodyBold, fontSize: 13, color: '#fbeed4' },

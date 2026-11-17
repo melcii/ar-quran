@@ -3,6 +3,7 @@
 // source of truth; the journal adds what the saves do not hold: worlds
 // visited, Quran references read, words met, animals and plants watched, and
 // the child's reflections.
+import { testSafeKey } from '@/studio/mode';
 import { wordsIn } from './words';
 
 export type JournalData = {
@@ -18,7 +19,8 @@ export type JournalData = {
   reflections: { world: string; prompt: string; text: string; at: number }[];
 };
 
-const KEY = 'quran-adventure.journal.v1';
+// Studio play tests write to their own journal, never the player's.
+const KEY = testSafeKey('quran-adventure.journal.v1');
 const empty = (): JournalData => ({ v: 1, worlds: {}, refs: {}, words: {}, seen: {}, reflections: [] });
 
 function read(): JournalData {

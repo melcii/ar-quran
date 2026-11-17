@@ -5,6 +5,7 @@
 //  - activity notes: say plainly which parts are game ideas, not the Quran.
 // All of it is a draft that needs qualified scholarly review before release.
 import { getVerse } from '@/content/quran';
+import { testSafeKey } from '@/studio/mode';
 import type { BeastKind } from './land';
 import type { SupplyKind } from './Ark';
 
@@ -71,12 +72,13 @@ export type Save = {
   reflected: boolean;
   pos?: [number, number, number];
 };
-const KEY = 'quran-adventure.ark-slice.v1';
+/** Play tests from the studio keep their own progress, never the player's. */
+const KEY_NOW = () => testSafeKey('quran-adventure.ark-slice.v1');
 export const fresh = (): Save => ({ v: 1, found: [], boarded: [], stored: [], read: [], arrived: false, flood: 0, reflected: false });
 
 export function load(): Save {
   try {
-    const raw = localStorage.getItem(KEY);
+    const raw = localStorage.getItem(KEY_NOW());
     if (!raw) return fresh();
     const s = JSON.parse(raw) as Save;
     return s && s.v === 1 ? { ...fresh(), ...s } : fresh();
@@ -86,14 +88,14 @@ export function load(): Save {
 }
 export function save(s: Save) {
   try {
-    localStorage.setItem(KEY, JSON.stringify(s));
+    localStorage.setItem(KEY_NOW(), JSON.stringify(s));
   } catch {
     /* private window: progress just isn't kept */
   }
 }
 export function clearSave() {
   try {
-    localStorage.removeItem(KEY);
+    localStorage.removeItem(KEY_NOW());
   } catch {
     /* ignore */
   }

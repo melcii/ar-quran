@@ -13,6 +13,7 @@
     "@react-three/drei": "^10.7.9",
     "@react-three/fiber": "^9.8.2",
     "@react-three/postprocessing": "^3.2.2",
+    "@supabase/supabase-js": "^2.119.0",
     "expo": "~58.0.21",
     "expo-audio": "~58.0.10",
     "expo-constants": "~58.0.14",
@@ -52,7 +53,14 @@
     "worlds:unique": "node scripts/check-unique-worlds.mjs",
     "typecheck": "tsc --noEmit",
     "export:web": "expo export --platform web",
-    "status": "node scripts/status-report.mjs"
+    "status": "node scripts/status-report.mjs",
+    "studio:records": "node scripts/studio-records.mjs",
+    "studio:no-ai": "node scripts/studio/no-ai-check.mjs",
+    "studio:access": "node supabase/tests/studio-access.mjs",
+    "studio:e2e": "node scripts/studio/e2e.mjs",
+    "studio:e2e-phase3": "node scripts/studio/e2e-phase3.mjs",
+    "studio:e2e-phase4": "node scripts/studio/e2e-phase4.mjs",
+    "studio:e2e-phase5": "node scripts/studio/e2e-phase5.mjs"
   },
   "private": true
 }
