@@ -43,7 +43,10 @@ import { makeArkSpace } from './space';
 import { mindOf, routeTo, think } from '@/creatures/mind';
 
 /** Ways round the hull, the river, trunks and rocks, for the animals (the ramp counts only while it is down). */
-const arkNav = makeNav((ax, az, bx, bz, r) => canStep(ax, az, bx, bz, r, weather.rampUp < 0.5), { radius: 76, cell: 1.6, y: groundY });
+// The route finder also asks the collision space (the cart and its shafts, drawn
+// props), so a big animal is not sent into something the land map does not know.
+let navSpace: { blockedAt: (x: number, z: number, r: number) => boolean } | null = null;
+const arkNav = makeNav((ax, az, bx, bz, r) => canStep(ax, az, bx, bz, r, weather.rampUp < 0.5) && !(navSpace && r > 0.31 && navSpace.blockedAt(bx, bz, r * 0.9)), { radius: 76, cell: 1.6, y: groundY });
 import { AFTER, NAMES, NARRATION, READINGS, REFLECTION, REFLECT_REF, SUPPLY_NAMES, clearSave, fresh, load, save, verse, type Reading, type Save } from './story';
 
 type Agent = AnyAgent<BeastKind>;
@@ -253,14 +256,17 @@ function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRe
       const off = a.mate ? 1.0 : -1.0;
       a.state = 'board';
       a.timer = a.mate ? -1.6 : 0;
-      const aisle = 0.4;
+      // The middle of the aisle between the stern fence (z -0.7) and the sheep pen (z 0.7):
+      // at 0.4 a camel or sheep brushed the pen corner at x 6.8.
+      const aisle = 0;
       a.path = [
         new THREE.Vector3(RAMP.x + off * 0.5, 0, RAMP.z1 + 1.2),
         new THREE.Vector3(RAMP.x + off * 0.3, 0, RAMP.z0 + 0.4),
         local(off * 0.3, aisle),
-        // Through the middle of the stall's gate, one behind the other, then to its place.
-        local(st.x + off * 0.45, aisle),
-        local(st.x + off * 0.45, st.z < 0 ? -1.5 : 1.6),
+        // Through the middle of the stall's gate, one behind the other (an elephant
+        // fills most of it), then to its place.
+        local(st.x + off * 0.1, aisle),
+        local(st.x + off * 0.1, st.z < 0 ? -1.5 : 1.6),
         local(st.x + off, st.z + (st.z < 0 ? -0.6 : 0.6)),
       ];
     }
@@ -436,7 +442,7 @@ function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRe
         const side = new THREE.Vector3(Math.cos(player.yaw), 0, -Math.sin(player.yaw)).multiplyScalar(a.mate ? 1.2 : -1.2);
         goal = game.drag ? leader.clone().add(side) : leader.clone().add(back).add(side);
         // Round the river bend, trees and the hull instead of walking into them.
-        if (!game.drag) goal = routeTo(a, goal, arkNav);
+        if (!game.drag) goal = routeTo(a, goal, arkNav, game.walkers.get(a)!.r);
         mindOf(a).rest = 0;
         pace = Math.max(spec.speed, player.speed * 1.05);
         const pad = PADS.find((p) => p.kind === a.kind)!;
@@ -456,7 +462,7 @@ function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRe
       } else if (a.state === 'pad') {
         // Round trees, rocks and the river on the way to the pad (it used to
         // walk straight, and after 3 s stuck it went through solids as a ghost).
-        goal = a.target ? routeTo(a, a.target, arkNav) : null;
+        goal = a.target ? routeTo(a, a.target, arkNav, game.walkers.get(a)!.r) : null;
         pace = spec.speed * 0.8;
         const mates = game.agents.filter((x) => x.kind === a.kind);
         // On the pad: on its own mark, or close and held there by its mate.
@@ -467,10 +473,20 @@ function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRe
           }
         }
       } else if (a.state === 'board') {
+        const lead = a.mate ? game.agents.find((x) => x.kind === a.kind && x !== a) : undefined;
         if (a.timer < 0) goal = null;
+        // Single file up the ramp and into the hold: the second waits for a gap.
+        else if (lead && lead.state === 'board' && a.path.length < 6 && lead.path.length >= a.path.length - 1 && Math.hypot(lead.pos.x - a.pos.x, lead.pos.z - a.pos.z) < 2.4 + SPECS[a.kind].len) goal = null;
         else {
           while (a.path.length && Math.hypot(a.pos.x - a.path[0].x, a.pos.z - a.path[0].z) < 0.35) a.path.shift();
           goal = a.path[0] ?? null;
+          // From the pad to the foot of the ramp the pair still walks as solid
+          // bodies round each other and the meadow; the fixed path starts there.
+          if (goal && a.path.length === 6) {
+            // A wide pair can hold each other off the exact mark: close is enough.
+            if ((a.stuck ?? 0) > 1 && Math.hypot(a.pos.x - goal.x, a.pos.z - goal.z) < 2.2) a.path.shift();
+            goal = a.path.length === 6 ? routeTo(a, goal, arkNav, game.walkers.get(a)!.r) : a.path[0];
+          }
           if (!goal) {
             a.state = 'stall';
             a.yaw = STALLS[a.kind].z < 0 ? 0 : Math.PI;
@@ -487,7 +503,7 @@ function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRe
         sp.place(w, o[0], o[1]);
       }
       // Boarding follows a fixed path up the ramp and through the doorway (checked by the tests), so it is not pushed about.
-      const ghost = a.state === 'board' || a.state === 'stall';
+      const ghost = (a.state === 'board' && a.path.length < 6) || a.state === 'stall';
       const aFloor = ghost ? (x: number, z: number) => floorY(x, z, weather.lift, true) : undefined;
       if (goal) {
         const gx = goal.x - a.pos.x;
@@ -1070,6 +1086,7 @@ function Slice() {
     const ready = s.boarded.length === KINDS.length && s.stored.length === SUPPLIES.length;
     if (s.flood === 1) s.flood = 0;
     const space = makeArkSpace(physicsReady()!, CART, (k) => saveRef.current.boarded.includes(k));
+    navSpace = space;
     // A checked place to begin: the saved spot if still open, else the nearest open ground to it.
     const want = ready || s.flood === 2 ? local(4, 1.4) : s.pos ? new THREE.Vector3(...s.pos) : START.clone();
     const o = space.findOpen(want.x, want.z, 0.35) ?? space.findOpen(START.x, START.z, 0.35) ?? [START.x, START.z];
