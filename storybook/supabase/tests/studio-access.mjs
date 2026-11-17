@@ -129,6 +129,8 @@ const savesBefore = sql(`select md5(string_agg(explorer || key || value || updat
 
 // 3. Drafts and permissions by kind of change.
 const S = 'surah:19';
+// Start the scopes used here from nothing so the run is repeatable (the browser tests use them too).
+for (const x of [S, 'surah:1', 'ark:slice']) sql(`delete from public.test_runs where scope = '${x}'; delete from public.publications where scope = '${x}'; delete from public.content_drafts where scope = '${x}'; delete from public.content_versions where scope = '${x}'`);
 let rev = 0;
 {
   const t = await story.c.rpc('studio_save_draft', { p_scope: S, p_doc: doc({ welcome: 'Welcome to the Quiet Grove, edited.' }), p_revision: rev });
@@ -266,6 +268,27 @@ let v2;
   check('a fixed bug gets a resolved date', !u.error && row.data?.status === 'fixed' && !!row.data.resolved_at, u.error?.message);
   const p = await player.c.rpc('studio_file_bug', { p: { title: 'not staff' } });
   check('an ordinary account cannot file staff bugs', denied(p), p.error?.message);
+}
+
+// 11. Phase 3/4: audio, Ark settings, player reports.
+{
+  const a = await anon.rpc('studio_audio_register', { p: { kind: 'narration' } });
+  check('an anonymous caller cannot register audio', !!a.error, a.error?.message);
+  const r = await anon.from('audio_assets').select('id');
+  check('anonymous callers cannot read the audio library', !!r.error || r.data.length === 0);
+  const l = await anon.from('live_audio').select('id').limit(1);
+  check('players can read the approved-audio list', !l.error, l.error?.message);
+  const w = await world.c.rpc('studio_audio_register', { p: { kind: 'narration' } });
+  check('a World Editor cannot register audio', denied(w), w.error?.message);
+  const k = await story.c.rpc('studio_save_draft', { p_scope: 'ark:slice', p_doc: { v: 1, set: { 'giraffe.speed': 3 } }, p_revision: 0 });
+  check('a Story Editor cannot change Ark speeds', denied(k), k.error?.message);
+  const pr = await anon.rpc('report_problem', { p_surah: 19, p_category: 'stuck', p_screen: '390x844' });
+  const id = +sql(`select max(id) from public.player_problems`);
+  const g = await player.c.rpc('studio_bug_from_problems', { p_ids: [id], p_bug: null, p_title: 'x' });
+  check('an ordinary account cannot turn player reports into bugs', !pr.error && denied(g), g.error?.message);
+  const ok = await world.c.rpc('studio_bug_from_problems', { p_ids: [id], p_bug: null, p_title: 'Players stuck in Maryam' });
+  const linked = sql(`select bug_id from public.player_problems where id = ${id}`);
+  check('staff group player reports into a bug', !ok.error && linked === String(ok.data), ok.error?.message);
 }
 
 console.log(`\n${passes} passed, ${failures} failed`);

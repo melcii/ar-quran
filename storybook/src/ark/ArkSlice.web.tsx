@@ -44,18 +44,14 @@ import { mindOf, routeTo, think } from '@/creatures/mind';
 
 /** Ways round the hull, the river, trunks and rocks, for the animals (the ramp counts only while it is down). */
 const arkNav = makeNav((ax, az, bx, bz, r) => canStep(ax, az, bx, bz, r, weather.rampUp < 0.5), { radius: 76, cell: 1.6, y: groundY });
+import { ARK_CFG, applyArk } from './config';
+import { useResolvedDoc } from '@/studio/live';
+import { StudioBadge } from '@/studio/StudioBadge';
 import { AFTER, NAMES, NARRATION, READINGS, REFLECTION, REFLECT_REF, SUPPLY_NAMES, clearSave, fresh, load, save, verse, type Reading, type Save } from './story';
 
 type Agent = AnyAgent<BeastKind>;
 const KINDS: BeastKind[] = ['giraffe', 'elephant', 'camel', 'sheep', 'horse'];
 const SUPPLIES: SupplyKind[] = ['grain', 'hay', 'water'];
-const HOMES: Record<BeastKind, [number, number]> = {
-  giraffe: [37, 17],
-  elephant: [-36, 16],
-  camel: [-27, 42],
-  sheep: [21, 40],
-  horse: [38, -27],
-};
 const CART = new THREE.Vector3(-17, 0, 4);
 CART.y = groundY(CART.x, CART.z);
 const local = (x: number, z: number) => new THREE.Vector3(ARK.x + x, 0, ARK.z + z);
@@ -122,7 +118,7 @@ function makeAgents(s: Save): Agent[] {
   const out: Agent[] = [];
   for (const k of KINDS)
     for (const m of [0, 1] as const) {
-      const [hx, hz] = HOMES[k];
+      const [hx, hz] = ARK_CFG[k].home;
       const p = new THREE.Vector3(hx + (m ? 2.4 : -1.2), 0, hz + (m ? 1.5 : -1));
       const a: Agent = {
         id: `${k}${m}`,
@@ -268,7 +264,7 @@ function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRe
 
   // Expose a few test hooks.
   useEffect(() => {
-    (globalThis as any).__arkGame = { game, sendToPad, board, player, weather, scene };
+    (globalThis as any).__arkGame = { game, sendToPad, board, player, weather, scene, cfg: ARK_CFG, pads: PADS };
   });
 
   // Runs before everything else each frame (priority -1), so the explorer, the
@@ -408,7 +404,7 @@ function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRe
       }
     }
     for (const a of game.agents) {
-      const spec = SPECS[a.kind];
+      const spec = { ...SPECS[a.kind], speed: ARK_CFG[a.kind].speed };
       a.timer += dt;
       let goal: THREE.Vector3 | null = null;
       let pace = spec.speed;
@@ -426,7 +422,7 @@ function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRe
         pace = spec.speed * (want?.pace ?? 0.45);
         // Notice the explorer nearby: found.
         const d = Math.hypot(a.pos.x - player.pos.x, a.pos.z - player.pos.z);
-        if (!a.found && d < 7) {
+        if (!a.found && d < ARK_CFG[a.kind].notice) {
           a.found = true;
           api.current.onFound(a);
         }
@@ -438,11 +434,12 @@ function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRe
         // Round the river bend, trees and the hull instead of walking into them.
         if (!game.drag) goal = routeTo(a, goal, arkNav);
         mindOf(a).rest = 0;
-        pace = Math.max(spec.speed, player.speed * 1.05);
+        const cfg = ARK_CFG[a.kind];
+        pace = Math.min(cfg.followMax, Math.max(cfg.speed, player.speed * 1.05));
         const pad = PADS.find((p) => p.kind === a.kind)!;
         // The pair goes onto its pad when it gets close, or when the child stands on the pad with the pair just behind.
         const onPad = Math.hypot(player.pos.x - pad.x, player.pos.z - pad.z) < 2.5 && Math.hypot(a.pos.x - pad.x, a.pos.z - pad.z) < 7.5;
-        if (a.mate === 0 && (Math.hypot(a.pos.x - pad.x, a.pos.z - pad.z) < 4.2 || onPad)) sendToPad(a.kind);
+        if (a.mate === 0 && (Math.hypot(a.pos.x - pad.x, a.pos.z - pad.z) < cfg.arrive || onPad)) sendToPad(a.kind);
         else if (a.mate === 0 && t - game.lastPadHint > 6) {
           const other = PADS.find((p) => p.kind !== a.kind && Math.hypot(a.pos.x - p.x, a.pos.z - p.z) < 3);
           if (other) {
@@ -596,7 +593,8 @@ function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRe
     for (const a of game.agents) {
       if (a.state === 'stall' || a.state === 'board' || a.state === 'pad') continue;
       const d = Math.hypot(a.pos.x - pp.x, a.pos.z - pp.z) - SPECS[a.kind].len * 0.4;
-      if (d < best) {
+      // Each kind has its own leading distance (studio setting); things other than animals keep 3.2 m.
+      if (d < ARK_CFG[a.kind].reach && (!near || d < best)) {
         best = d;
         const pairFound = game.agents.filter((x) => x.kind === a.kind).every((x) => x.found);
         near = {
@@ -704,7 +702,7 @@ function Director({ game, move, api, saveRef, q }: { game: Game; move: MutableRe
         o.home.copy(o.pos);
       }
       for (const m of mates) if (m.state === 'wander') m.state = 'follow';
-      api.current.onHint(`The ${NAMES[a.kind][1]} follow you. Lead them to the pad with their picture by the ark.`);
+      api.current.onHint(ARK_CFG[a.kind].instruction);
     } else if (n.type === 'supply') {
       const sp = game.supplies[n.kind];
       if (Math.hypot(sp.pos.x - pp.x, sp.pos.z - pp.z) > 3.5) {
@@ -1016,8 +1014,22 @@ export default function ArkSlice() {
   useEffect(() => {
     if (!phys) loadPhysics().then(() => setPhys(true));
   }, [phys]);
-  if (!app.ready || !phys) return <View style={st.root} />;
-  return <Slice />;
+  // The studio's published Ark settings (or the draft in a play test), put in force once before the valley is built.
+  const res = useResolvedDoc('ark:slice');
+  const [applied, setApplied] = useState(0);
+  useEffect(() => {
+    if (res.ready) {
+      applyArk(res.doc as any);
+      setApplied((x) => x + 1);
+    }
+  }, [res.ready, res.doc]);
+  if (!app.ready || !phys || !res.ready || !applied) return <View style={st.root} />;
+  return (
+    <>
+      <Slice key={`${res.mode}:${res.version ?? 'base'}:${applied}`} />
+      {res.mode !== 'play' ? <StudioBadge mode={res.mode} n={11} version={res.version} skipped={0} back="/admin/ark" /> : null}
+    </>
+  );
 }
 
 function Slice() {
@@ -1161,7 +1173,7 @@ function Slice() {
       update((s) => (s.boarded.includes(k) ? s : { ...s, boarded: [...s.boarded, k] }));
       journal.observe(`ark:${k}`, { world: 'ark', label: `a pair of ${NAMES[k][1]}`, note: `You led the ${NAMES[k][1]} two by two up the ramp into their stall.`, animal: k });
       const n = saveRef.current.boarded.length;
-      setHint(n === KINDS.length ? 'All five pairs are aboard.' : `The ${NAMES[k][1]} are in their stall.`);
+      setHint(n === KINDS.length ? 'All five pairs are aboard.' : ARK_CFG[k].done);
       if (n === KINDS.length && saveRef.current.stored.length === SUPPLIES.length) say(NARRATION.ready);
     },
     onNear: setNear,

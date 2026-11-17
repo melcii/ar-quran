@@ -110,6 +110,9 @@ export const Busy = ({ label = 'Loading…' }: { label?: string }) => (
 const NAV: { href: string; label: string; match: RegExp }[] = [
   { href: '/admin', label: 'Dashboard', match: /^\/admin\/?$/ },
   { href: '/admin/surahs', label: '114 Surahs', match: /^\/admin\/(surahs|surah)/ },
+  { href: '/admin/ark', label: "Nuh's Ark animals", match: /^\/admin\/ark/ },
+  { href: '/admin/audio', label: 'Audio Studio', match: /^\/admin\/audio/ },
+  { href: '/admin/characters', label: 'Character Studio', match: /^\/admin\/characters/ },
   { href: '/admin/review', label: 'Review & publish', match: /^\/admin\/review/ },
   { href: '/admin/tests', label: 'Test results', match: /^\/admin\/tests/ },
   { href: '/admin/staff', label: 'Staff & roles', match: /^\/admin\/staff/ },

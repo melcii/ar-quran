@@ -28,6 +28,8 @@ let reciting = false;
 let audio: HTMLAudioElement | null = null;
 let idle: (() => void)[] = [];
 let token = 0;
+/** Narration recorded in the Admin Studio's Audio Studio and published with a world: line id -> file URL. */
+let studioClips = new Map<string, string>();
 const subs = new Set<() => void>();
 const emit = () => subs.forEach((f) => f());
 const log: { at: number; kind: string; text: string }[] = [];
@@ -54,7 +56,8 @@ function pump() {
     return;
   }
   const t = ++token;
-  const clip = clipFor(next.text, cfg.narrator, cfg.language);
+  const studioUrl = cfg.language === 'en' ? studioClips.get(lineId(next.text)) : undefined;
+  const clip = studioUrl ? { file: studioUrl } : clipFor(next.text, cfg.narrator, cfg.language);
   const vol = next.kind === 'instruction' ? cfg.instructionVolume : cfg.narrationVolume;
   now = { id: lineId(next.text), text: next.text, kind: next.kind, source: clip ? 'recorded' : 'device', subtitle: next.subtitle };
   log.push({ at: Date.now(), kind: next.kind, text: next.text });
@@ -85,6 +88,10 @@ function cut() {
 }
 
 export const director = {
+  /** Use these approved studio recordings for their lines (replaces any previous set). */
+  studioClips(map: Record<string, string>) {
+    studioClips = new Map(Object.entries(map));
+  },
   configure(c: Partial<Config>) {
     cfg = { ...cfg, ...c };
     if (now && !allowed(now.kind)) director.stop();

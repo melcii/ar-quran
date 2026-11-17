@@ -11,7 +11,7 @@ const LABEL: Record<StudioMode, string> = {
   'built-in': 'Built-in world (no studio edits)',
 };
 
-export function StudioBadge({ mode, n, version, skipped }: { mode: StudioMode; n: number; version: number | null; skipped: number }) {
+export function StudioBadge({ mode, n, version, skipped, back }: { mode: StudioMode; n: number; version: number | null; skipped: number; back?: string }) {
   return (
     <View style={st.bar} pointerEvents="box-none" testID="studio-badge">
       <Text style={st.text}>
@@ -20,7 +20,7 @@ export function StudioBadge({ mode, n, version, skipped }: { mode: StudioMode; n
         {' · progress here is kept apart from players’ saves'}
         {skipped ? ` · ${skipped} edit(s) no longer fit and were skipped` : ''}
       </Text>
-      <Pressable onPress={() => router.push(`/admin/surah/${n}`)} style={st.btn} accessibilityRole="link">
+      <Pressable onPress={() => router.push((back ?? `/admin/surah/${n}`) as any)} style={st.btn} accessibilityRole="link">
         <Text style={st.btnText}>Back to the studio</Text>
       </Pressable>
     </View>

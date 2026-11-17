@@ -59,16 +59,32 @@ published), publishing, rollback, test results and bug reports.
   the app's verified dataset. Ayah references must exist.
 - Publishing and rollback only move the published pointer; `saves` (player
   progress) is never touched.
+- Audio (0003): files go to the `studio-audio` bucket, uploaded only by Audio
+  Editors into their own folder. Recitation must be a named human reciter's
+  recording with a confirmed licence and is approved only by a Quran Content
+  Reviewer; synthetic recitation is refused by a check constraint. There is
+  no music category. Nobody approves their own upload. Players can read only
+  approved files (the `live_audio` view).
+- The Ark settings (scope `ark:slice`): positions and numbers are World
+  Editor changes, wording is Story Editor changes, with limits checked on the
+  server.
 
 ## Checking it locally
 
+Apply every migration in order (0001 to 0004).
+
 `npx supabase start` (from `storybook/`), then:
 
-- `npm run studio:access`: 54 server-side checks with real accounts and TOTP.
+- `npm run studio:access`: 61 server-side checks with real accounts and TOTP.
 - `npm run studio:e2e` with the web app running against the local stack
   (see the header of `scripts/studio/e2e.mjs`): sign-in with MFA, edit,
   autosave, undo/redo, submit, check, approve, publish, see it in the game,
   play test without touching saves, roll back, and no AI requests.
+- `node scripts/studio/e2e-world.mjs`: the Maryam rock acceptance run
+  (3D world editor, collision test, publish, re-enter, roll back).
+- `npm run studio:e2e-phase3`: activity from a template with the logic
+  editor, the Ark giraffe settings end to end, audio upload / review /
+  assignment, recitation rules, and the Character Studio.
 - `npm run studio:no-ai`: no AI SDK or API host in the studio code.
 
 In this cloud container the realtime image needed an IPv4 patch and images

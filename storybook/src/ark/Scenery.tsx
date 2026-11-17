@@ -274,7 +274,8 @@ for (const k of ROCKS) {
   if (k.s > 0.6 && Math.hypot(k.x, k.z) < WORLD_R + 2) obstacles.push({ x: k.x, z: k.z, r: k.s * 0.85 });
   shade.push({ x: k.x, z: k.z, r: k.s * 1.7, k: 0.35 });
 }
-for (const p of PADS) shade.push({ x: p.x, z: p.z, r: 2.2, k: 0.1 });
+// Read live: the studio's Ark settings may move a pad before the ground is built.
+for (const p of PADS) shade.push({ get x() { return p.x; }, get z() { return p.z; }, r: 2.2, k: 0.1 });
 shade.push({ x: ARK.x, z: ARK.z, r: 17, k: 0.18 });
 
 /* ------------------------------- wind shader ------------------------------- */

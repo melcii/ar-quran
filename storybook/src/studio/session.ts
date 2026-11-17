@@ -210,3 +210,34 @@ export type PlayerProblem = { id: number; surah: number | null; category: string
 export async function playerProblems(): Promise<PlayerProblem[]> {
   return must(await sb().from('player_problems').select('*').order('id', { ascending: false }).limit(300)) as PlayerProblem[];
 }
+
+/* ------------------------------ audio ------------------------------ */
+
+export type AudioAsset = {
+  id: string; kind: 'narration' | 'recitation' | 'effect'; title: string; language: string; path: string; mime: string; bytes: number; duration_s: number | null;
+  voice: string; origin: 'human_recording' | 'licensed_tts' | 'sound_library'; licence: string; licence_confirmed: boolean; source: string;
+  surah: number | null; ayah_from: number | null; ayah_to: number | null; line_text: string | null;
+  status: 'uploaded' | 'approved' | 'rejected' | 'retired'; uploaded_by: string | null; uploaded_at: string;
+  reviewed_by: string | null; reviewer_roles: Role[] | null; reviewed_at: string | null; review_note: string | null;
+};
+export async function audioAssets(): Promise<AudioAsset[]> {
+  return must(await sb().from('audio_assets').select('*').order('uploaded_at', { ascending: false }).limit(500)) as AudioAsset[];
+}
+/** Upload a file into the caller's own folder of the studio-audio bucket; returns its path. */
+export async function uploadAudio(file: Blob & { name?: string; type: string }): Promise<string> {
+  const c = sb();
+  const { data: u } = await c.auth.getUser();
+  if (!u.user) throw new Error('Not signed in.');
+  const ext = (file.name?.split('.').pop() ?? 'mp3').toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 5) || 'mp3';
+  const rand = typeof crypto !== 'undefined' && 'randomUUID' in crypto ? crypto.randomUUID() : `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+  const path = `${u.user.id}/${rand}.${ext}`;
+  const r = await c.storage.from('studio-audio').upload(path, file, { contentType: file.type, upsert: false });
+  if (r.error) throw new Error(r.error.message);
+  return path;
+}
+export async function registerAudio(p: Record<string, unknown>): Promise<string> {
+  return must(await sb().rpc('studio_audio_register', { p })) as string;
+}
+export async function reviewAudio(id: string, decision: 'approve' | 'reject' | 'retire', note: string) {
+  must(await sb().rpc('studio_audio_review', { p_id: id, p_decision: decision, p_note: note }));
+}

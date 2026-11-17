@@ -3,7 +3,7 @@
 // surah's Versions tab, where the changes can be read in full.
 import { router } from 'expo-router';
 import { useEffect, useState } from 'react';
-import { Pressable, Text, View } from 'react-native';
+import { Pressable, Text } from 'react-native';
 import { getSurah } from '@/content/quran';
 import { drafts, versions, type Draft, type Version } from '@/studio/session';
 import { Busy, Card, Page, Pill, s, when } from '@/studio/ui';

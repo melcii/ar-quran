@@ -35,6 +35,8 @@ import type { FlowTask, Reading, Task, WorldDef } from './types';
 import { placeLand } from './land';
 import { playtestKey, studioMode, useResolvedWorld } from '@/studio/live';
 import { EditWorldButton, StudioBadge } from '@/studio/StudioBadge';
+import { loadWorldAudio } from '@/studio/audioLive';
+import { director } from '@/audio/director';
 import { level, LEVELS } from './level';
 import { makeNav, type Nav } from '@/creatures/nav';
 import { mindOf, routeTo, think } from '@/creatures/mind';
@@ -1513,7 +1515,22 @@ export default function Adventure({ n }: { n: number }) {
   useEffect(() => {
     if (!phys) loadPhysics().then(() => setPhys(true));
   }, [phys]);
-  if (!app.ready || !phys || !resolved.ready) return <View style={st.root} />;
+  // Narration recorded in the Audio Studio for this world (approved files only), looked up before
+  // the world opens so its first line can use it. A slow network just means the usual voice.
+  const [audioFor, setAudioFor] = useState<WorldDef | null | undefined>(undefined);
+  useEffect(() => {
+    if (!resolved.ready) return;
+    let gone = false;
+    const done = () => !gone && setAudioFor(def ?? null);
+    const timer = setTimeout(done, 2500);
+    loadWorldAudio(def).finally(() => (clearTimeout(timer), done()));
+    return () => {
+      gone = true;
+      clearTimeout(timer);
+      director.studioClips({});
+    };
+  }, [def, resolved.ready]);
+  if (!app.ready || !phys || !resolved.ready || audioFor !== (def ?? null)) return <View style={st.root} />;
   if (!def)
     return (
       <View style={[st.root, st.center]}>

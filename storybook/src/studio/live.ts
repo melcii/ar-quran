@@ -77,6 +77,42 @@ export function setDraftLoader(f: Loader) {
 }
 
 export type Resolved = { def: WorldDef | undefined; mode: StudioMode; version: number | null; ready: boolean; skipped: number };
+export type ResolvedDoc = { doc: Overlay | null; mode: StudioMode; version: number | null; ready: boolean };
+
+/**
+ * The studio document for a scope as it should be played now (any scope:
+ * the Ark settings, the character catalog). Same rules as worlds: the cached
+ * published copy at once, else the network within a short wait, else
+ * nothing (built-in). Studio modes fetch the draft or the published copy.
+ */
+export function useResolvedDoc(scope: string): ResolvedDoc {
+  const mode = studioMode();
+  const [state, setState] = useState<ResolvedDoc>(() => {
+    if (mode === 'built-in' || !studioConfigured()) return { doc: null, mode, version: null, ready: true };
+    if (mode === 'play') {
+      const c = cached(scope);
+      if (c) return { doc: c.doc, mode, version: c.number, ready: true };
+    }
+    return { doc: null, mode, version: null, ready: false };
+  });
+  useEffect(() => {
+    let gone = false;
+    if (mode === 'draft') {
+      (async () => {
+        const loader = draftLoader ?? (await import('./session')).loadDraftDoc;
+        const doc = await loader(scope).catch(() => null);
+        if (!gone) setState({ doc, mode, version: null, ready: true });
+      })();
+    } else if (mode === 'published' || (mode === 'play' && !state.ready)) {
+      fetchLive(scope).then((live) => !gone && setState({ doc: live?.doc ?? null, mode, version: live?.number ?? null, ready: true }));
+    } else if (mode === 'play') fetchLive(scope);
+    return () => {
+      gone = true;
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [scope, mode]);
+  return state;
+}
 
 /**
  * The world as it should be played now. In ordinary play: the cached

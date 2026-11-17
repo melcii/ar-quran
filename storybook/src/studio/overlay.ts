@@ -26,6 +26,8 @@ export type Overlay = {
   set?: Record<string, Json>;
   /** Chapter (activity) order by task id. */
   order?: string[];
+  /** Which activities each activity waits for (task id -> task ids), replacing the recipe's own `requires`. */
+  links?: Record<string, string[]>;
   /** Edits to scattered rocks and trees, by their index in the placed list. */
   place?: { rocks?: Record<string, PlacedEdit>; trees?: Record<string, PlacedEdit> };
   /** New objects and activities. */
@@ -149,6 +151,18 @@ export function applyOverlay(base: WorldDef, ov: Overlay | null | undefined): Ap
     if (extra.length < ov.add.tasks.length) skipped.push({ key: 'add.tasks', why: 'an added activity reuses an existing id' });
     def = { ...def, tasks: [...def.tasks, ...extra] };
   }
+  if (ov.links && typeof ov.links === 'object') {
+    const ids = new Set(def.tasks.map((t) => t.id));
+    const tasks = def.tasks.map((t) => {
+      const want = ov.links![t.id];
+      if (!Array.isArray(want)) return t;
+      const ok = want.filter((r) => typeof r === 'string' && r !== t.id && ids.has(r));
+      if (ok.length < want.length) skipped.push({ key: `links.${t.id}`, why: 'it names an activity that is not in this world' });
+      return { ...t, requires: ok.length ? ok : undefined } as Task;
+    });
+    for (const id of Object.keys(ov.links)) if (!ids.has(id)) skipped.push({ key: `links.${id}`, why: 'no activity with this id' });
+    def = { ...def, tasks };
+  }
   if (ov.order?.length) {
     const pos = new Map(ov.order.map((id, i) => [id, i]));
     const tasks = def.tasks.map((t, i) => ({ t, i })).sort((a, b) => (pos.get(a.t.id) ?? 1e6 + a.i) - (pos.get(b.t.id) ?? 1e6 + b.i)).map((x) => x.t);
@@ -156,6 +170,7 @@ export function applyOverlay(base: WorldDef, ov: Overlay | null | undefined): Ap
   }
   // Hidden structures stay in the list (so indexes keep their meaning) but are not built.
   if (def.structures.some((s: any) => s.hidden)) def = { ...def, structures: def.structures.filter((s: any) => !s.hidden) };
+  if (ov.audio && typeof ov.audio === 'object' && Object.keys(ov.audio).length) (def as any).__audio = { ...ov.audio };
   if (ov.place && (ov.place.rocks || ov.place.trees || ov.add?.rocks)) (def as any).__placed = { rocks: ov.place.rocks ?? {}, trees: ov.place.trees ?? {}, addRocks: ov.add?.rocks ?? [] };
   else if (ov.add?.rocks?.length) (def as any).__placed = { rocks: {}, trees: {}, addRocks: ov.add.rocks };
   return { def, skipped };
@@ -346,6 +361,22 @@ export function validateOverlay(base: WorldDef, ov: Overlay, q: QuranIndex): Pro
     for (const t of [...base.tasks, ...(ov.add?.tasks ?? [])])
       for (const r of t.requires ?? []) if ((at.get(r) ?? -1) > (at.get(t.id) ?? 1e9)) warn('order', `"${t.title}" comes before "${r}", which it needs first; it will stay locked until then`);
   }
+  if (ov.links) {
+    const all = [...base.tasks, ...(ov.add?.tasks ?? [])];
+    const ids = new Set(all.map((t) => t.id));
+    for (const [id, list] of Object.entries(ov.links)) {
+      if (!ids.has(id)) err(`links.${id}`, `no activity with id ${id}`);
+      if (!Array.isArray(list)) err(`links.${id}`, 'must be a list of activity ids');
+      else for (const r of list) if (r === id) err(`links.${id}`, 'an activity cannot wait for itself');
+        else if (!ids.has(r)) err(`links.${id}`, `waits for an unknown activity ${r}`);
+    }
+    const cyc = linkCycle(all.map((t) => ({ id: t.id, requires: Array.isArray(ov.links![t.id]) ? ov.links![t.id] : t.requires ?? [] })));
+    if (cyc) err('links', `these activities wait for each other, so none could ever open: ${cyc.join(' → ')}`);
+    else {
+      const lock = unreachable(all.map((t) => ({ id: t.id, requires: Array.isArray(ov.links![t.id]) ? ov.links![t.id] : t.requires ?? [] })));
+      if (lock.length) err('links', `these activities can never open: ${lock.join(', ')}`);
+    }
+  }
   for (const [i, t] of (ov.add?.tasks ?? []).entries()) {
     const key = `add.tasks.${i}`;
     if (!t || typeof t.id !== 'string' || !/^x-[a-z0-9-]{2,40}$/.test(t.id)) err(key, 'added activities need an id starting with x-');
@@ -389,13 +420,44 @@ export function validateOverlay(base: WorldDef, ov: Overlay, q: QuranIndex): Pro
   return out;
 }
 
+/** A loop in "waits for" links, if any (as a list of ids), else null. */
+export function linkCycle(nodes: { id: string; requires: string[] }[]): string[] | null {
+  const req = new Map(nodes.map((n) => [n.id, n.requires]));
+  const state = new Map<string, 1 | 2>();
+  const stack: string[] = [];
+  const visit = (id: string): string[] | null => {
+    if (state.get(id) === 2) return null;
+    if (state.get(id) === 1) return [...stack.slice(stack.indexOf(id)), id];
+    state.set(id, 1);
+    stack.push(id);
+    for (const r of req.get(id) ?? []) if (req.has(r)) {
+      const c = visit(r);
+      if (c) return c;
+    }
+    stack.pop();
+    state.set(id, 2);
+    return null;
+  };
+  for (const n of nodes) {
+    const c = visit(n.id);
+    if (c) return c;
+  }
+  return null;
+}
+
+/** Activities that wait for something that does not exist (so they would never open). */
+export function unreachable(nodes: { id: string; requires: string[] }[]): string[] {
+  const ids = new Set(nodes.map((n) => n.id));
+  return nodes.filter((n) => n.requires.some((r) => !ids.has(r))).map((n) => n.id);
+}
+
 /** Field paths that differ between two overlays, for the change list. */
 export function changedKeys(a: Overlay | null, b: Overlay | null): string[] {
   const out = new Set<string>();
   const A = a?.set ?? {};
   const B = b?.set ?? {};
   for (const k of new Set([...Object.keys(A), ...Object.keys(B)])) if (JSON.stringify(A[k]) !== JSON.stringify(B[k])) out.add(k);
-  for (const sec of ['order', 'place', 'add', 'record', 'audio'] as const) if (JSON.stringify(a?.[sec] ?? null) !== JSON.stringify(b?.[sec] ?? null)) out.add(sec);
+  for (const sec of ['order', 'links', 'place', 'add', 'record', 'audio'] as const) if (JSON.stringify(a?.[sec] ?? null) !== JSON.stringify(b?.[sec] ?? null)) out.add(sec);
   return [...out].sort();
 }
 
