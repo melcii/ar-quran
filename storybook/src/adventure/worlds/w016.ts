@@ -133,6 +133,7 @@ export const W016: WorldDef = {
       label: 'Sit on the bench and listen',
       title: 'Hearing, sight and understanding',
       goal: 'Sit on the bench on the hill and listen to the meadow',
+      adaptation: 'Sitting and listening on the bench is a game idea that recalls 16:78-79.',
       style: 'none',
       reading: {
         title: 'Hearing, sight and hearts',

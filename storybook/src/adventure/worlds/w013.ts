@@ -115,6 +115,7 @@ export const W013: WorldDef = {
       label: 'Sit quietly under the overhang',
       title: 'After the storm',
       goal: 'Go back to the overhang and keep still for a moment',
+      adaptation: 'Sitting quietly under the overhang is a game idea that recalls 13:28.',
       style: 'none',
       reading: {
         title: 'Hearts at rest',

@@ -7,6 +7,7 @@ import { getSurah } from '@/content/quran';
 import { colors, fonts } from '@/theme';
 import { WORLDS } from './worlds';
 import { useActiveProfile } from '@/profile/store';
+import { chaptersFor } from '@/home/adventures';
 
 function progress(n: number): string {
   if (Platform.OS !== 'web') return '';
@@ -71,16 +72,18 @@ export default function Chooser() {
         made to help you think about the meanings; they are not pictures of real events. These are drafts waiting for scholarly review.
       </Text>
       {Platform.OS !== 'web' && <Text style={st.warn}>These 3D worlds open in the web version of the app for now.</Text>}
-      {list(1, 10).map((n) => (
+      {list(1, 11).map((n) => (
         <WorldCard key={n} n={n} />
       ))}
-      <Pressable onPress={() => router.push('/ark')} style={st.card}>
-        <Text style={st.num}>11</Text>
-        <View style={{ flex: 1, gap: 2 }}>
-          <Text style={st.name}>Hud · The story of Nuh: the Ark</Text>
-          <Text style={st.small}>Gather the animals and supplies; wait out the flood inside</Text>
-        </View>
-      </Pressable>
+      {/* The Ark is a chapter of Surah Hud (11:37-44), not an activity of its own: it sits under Hud's world. */}
+      {chaptersFor(11).map((c) => (
+        <Pressable key={c.key} onPress={() => router.push(c.href as never)} style={[st.card, st.chapter]} accessibilityRole="button" accessibilityLabel={`Surah Hud, ${c.title}`}>
+          <View style={{ flex: 1, gap: 2 }}>
+            <Text style={st.name}>Inside Hud · {c.title} ({c.ref})</Text>
+            <Text style={st.small}>{c.note}</Text>
+          </View>
+        </Pressable>
+      ))}
       <Text style={st.p}>From the Story Library (surahs 12 to 114): the worlds built so far.</Text>
       {list(12, 114)
         .filter((n) => WORLDS[n])
@@ -95,6 +98,7 @@ const st = StyleSheet.create({
   root: { flex: 1, backgroundColor: colors.paper },
   body: { padding: 20, gap: 10, maxWidth: 720, width: '100%', alignSelf: 'center' },
   back: { alignSelf: 'flex-start', paddingVertical: 6 },
+  chapter: { marginLeft: 28, marginTop: -4 },
   backText: { fontFamily: fonts.bodyBold, color: colors.inkSoft, fontSize: 15 },
   h1: { fontFamily: fonts.display, fontSize: 28, color: colors.ink },
   p: { fontFamily: fonts.body, fontSize: 15, lineHeight: 22, color: colors.inkSoft },

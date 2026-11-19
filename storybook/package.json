@@ -61,7 +61,9 @@
     "studio:e2e": "node scripts/studio/e2e.mjs",
     "studio:e2e-phase3": "node scripts/studio/e2e-phase3.mjs",
     "studio:e2e-phase4": "node scripts/studio/e2e-phase4.mjs",
-    "studio:e2e-phase5": "node scripts/studio/e2e-phase5.mjs"
+    "studio:e2e-phase5": "node scripts/studio/e2e-phase5.mjs",
+    "worlds:validate": "node --no-warnings --import ./scripts/lib/ts-register.mjs scripts/validate-worlds.mjs",
+    "worlds:report": "node scripts/world-audit-report.mjs"
   },
   "private": true
 }

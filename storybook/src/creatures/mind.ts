@@ -181,15 +181,16 @@ export function think(a: Free, c: Ctx): { goal: THREE.Vector3; pace: number } | 
 export const SIZE: Record<Animal, number> = { sheep: 0.6, goat: 0.6, cow: 1.1, camel: 1.1, horse: 1.0, elephant: 1.6, giraffe: 1.2 };
 
 /** For led animals: when the straight way to the leader is blocked, find a way round. */
-export function routeTo(a: Free, goal: THREE.Vector3, nav: Nav | null): THREE.Vector3 {
+/** r: the walker's body radius, so a big animal is not routed through a gap only a small one fits. */
+export function routeTo(a: Free, goal: THREE.Vector3, nav: Nav | null, r = 0.3): THREE.Vector3 {
   const m = mindOf(a);
   if (!nav) return goal;
-  if (nav.clearLine(a.pos.x, a.pos.z, goal.x, goal.z, 0.3)) {
+  if (nav.clearLine(a.pos.x, a.pos.z, goal.x, goal.z, r)) {
     m.route = [];
     return goal;
   }
   const last = m.route[m.route.length - 1];
-  if (!m.route.length || !last || Math.hypot(last.x - goal.x, last.z - goal.z) > 2.5) m.route = nav.route(a.pos, goal, { r: 0.3, budget: 900, near: 2 }) ?? [];
+  if (!m.route.length || !last || Math.hypot(last.x - goal.x, last.z - goal.z) > 2.5) m.route = nav.route(a.pos, goal, { r, budget: 900, near: Math.max(2, r * 2) }) ?? [];
   while (m.route.length > 1 && Math.hypot(a.pos.x - m.route[0].x, a.pos.z - m.route[0].z) < 0.6) m.route.shift();
   return m.route[0] ?? goal;
 }

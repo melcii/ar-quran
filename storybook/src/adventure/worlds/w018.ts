@@ -58,6 +58,14 @@ export const W018: WorldDef = {
   mountains: { color: '#7a84a0', height: 1.3 },
   start: [0, 32],
   startYaw: Math.PI,
+  // The four stories stay four distinct places, each labelled as you enter it,
+  // joined only by the footpaths from the meeting place at the start.
+  regions: [
+    { id: 'cave', name: 'Part 1 · The young men of the cave', at: [-24, -12] },
+    { id: 'gardens', name: 'Part 2 · The two gardens', at: [-17, 16] },
+    { id: 'seas', name: 'Part 3 · Musa, where two seas meet', at: [19, 33] },
+    { id: 'barrier', name: 'Part 4 · The barrier', at: [30, -22] },
+  ],
   structures: [
     { type: 'bed', x: -24, z: 18, w: 8, d: 6, color: '#6a9a3a' },
     { type: 'bed', x: -10, z: 18, w: 7, d: 5, color: '#a89a6a' },
@@ -71,6 +79,7 @@ export const W018: WorldDef = {
     {
       id: 'cave',
       kind: 'read',
+      region: 'cave',
       at: [-22, -10],
       marker: 'lantern',
       title: 'The young men of the cave',
@@ -85,6 +94,7 @@ export const W018: WorldDef = {
     {
       id: 'sun',
       kind: 'sunpath',
+      region: 'cave',
       requires: ['cave'],
       title: 'The sun past the cave',
       goal: 'Turn the day-dial, and mark where the sunlight falls at sunrise and at sunset',
@@ -107,6 +117,7 @@ export const W018: WorldDef = {
     {
       id: 'water',
       kind: 'points',
+      region: 'gardens',
       requires: ['sun'],
       style: 'plant',
       verb: 'Water',
@@ -122,6 +133,7 @@ export const W018: WorldDef = {
     {
       id: 'mashallah',
       kind: 'choice',
+      region: 'gardens',
       requires: ['water'],
       at: [-17, 13],
       back: [-14, 22],
@@ -151,6 +163,7 @@ export const W018: WorldDef = {
     {
       id: 'seas',
       kind: 'read',
+      region: 'seas',
       requires: ['mashallah'],
       at: [18, 34],
       marker: 'lantern',
@@ -158,14 +171,15 @@ export const W018: WorldDef = {
       goal: 'Go to the shore by the old dock',
       reading: {
         title: 'More than the sea could write',
-        refs: [[18, 60], [18, 65], [18, 109]],
-        note: 'Musa travelled to where the two seas meet, and there found a servant of Allah who had been given knowledge. The surah also says: if the sea were ink for the words of my Lord, the sea would run out before His words ran out.',
+        refs: [[18, 60], [18, 65]],
+        note: 'Musa travelled to where the two seas meet, and there found a servant of Allah who had been given knowledge.',
       },
       adaptation: 'Musa and al-Khidr are not shown. The boy in 18:74 and 18:80 is in no scene.',
     },
     {
       id: 'patience',
       kind: 'stand',
+      region: 'seas',
       requires: ['seas'],
       at: [22, 36],
       r: 1.6,
@@ -182,6 +196,7 @@ export const W018: WorldDef = {
     {
       id: 'wall',
       kind: 'carry',
+      region: 'seas',
       requires: ['patience'],
       result: 'stone',
       title: 'The wall about to fall',
@@ -194,6 +209,7 @@ export const W018: WorldDef = {
     {
       id: 'barrier',
       kind: 'carry',
+      region: 'barrier',
       requires: ['wall'],
       result: 'stone',
       title: 'The barrier',

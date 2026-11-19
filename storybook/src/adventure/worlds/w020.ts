@@ -11,7 +11,7 @@
 // shown), and Adam (an ordering game; the Garden is unseen and not pictured).
 import { curve } from '../terrain';
 import type { WorldDef } from '../types';
-import { LOOKS, PAL, rolling } from './common';
+import { LOOKS, PAL, causeway, rolling } from './common';
 
 const NIGHT = { ...LOOKS.dusk, zen: '#10183a', mid: '#25305e', hor: '#4a4a78', sunI: 0.6, sunColor: '#9aa4d8', hemiI: 0.85, hemiSky: '#56649c', stars: 1, fogDensity: 0.006, fog: '#323a5e', birds: false, clouds: 0.3 };
 
@@ -23,24 +23,25 @@ export const W020: WorldDef = {
   seed: 2020,
   ground: {
     radius: 60,
-    base: rolling({
+    base: causeway(rolling({
       radius: 60,
       amp: 2,
       seed: 20,
       shapes: [
         { x: 0, z: -50, r: 12, h: 9 },
         { x: -14, z: 24, r: 10, h: 8 },
-        { x: 13, z: 22, r: 9, h: 7 },
+        { x: 13, z: 22, r: 14, h: 7 }, // wide enough to climb (at r 9 its sides were too steep, and its cairn place could not be reached)
         { x: 0, z: 2, r: 12, h: 11 },
         { x: -18, z: -22, r: 10, h: 9 },
         { x: 18, z: -22, r: 10, h: 9 },
         { x: -4, z: 12, r: 6, h: -2 },
         { x: 8, z: -10, r: 6, h: -2 },
-        // The sea inlet in the west, with a dry path across it (20:77).
+        // The sea inlet in the west (20:77). The dry path across it is the
+        // causeway below: it used to be a row of ten round hills whose crests
+        // and dips (up to 8 m apart) no child could walk.
         { x: -38, z: 4, r: 15, h: -9 },
-        ...[-10, -7, -4, -1, 2, 5, 8, 11, 14, 17].map((z) => ({ x: -38, z, r: 3.4, h: 8 })),
       ],
-    }),
+    }), [-38, -13], [-38, 21]),
     water: -4.5,
     shore: '#d8c8a0',
     palette: PAL.dry,

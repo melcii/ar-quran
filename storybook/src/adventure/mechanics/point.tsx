@@ -19,8 +19,12 @@ export const Point: Mechanic<PointTask> = {
     const k = env.prog.length;
     const ask = task.asks[k];
     if (!ask) return [];
-    // Pointing reaches far: anything in sight can be pointed at.
-    return task.things.map((th, i) => ({ key: `point|${task.id}|${i}`, pos: env.v3(th.at), label: `Point at the ${th.label}`, reach: 40, run: () => {
+    // Pointing reaches anywhere in the grove: anything in sight can be pointed
+    // at from where you stand. (It used to reach 40 m, so tapping the far
+    // niche or pavilion from the start walked the explorer across the world
+    // instead of pointing: movement nobody asked for.)
+    const reach = env.t.radius * 2.2;
+    return task.things.map((th, i) => ({ key: `point|${task.id}|${i}`, pos: env.v3(th.at), label: `Point at the ${th.label}`, reach, run: () => {
       if (i === ask.thing) {
         env.api.progress(task.id, k);
         env.api.say(ask.yes);
