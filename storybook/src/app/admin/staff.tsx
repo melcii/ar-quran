@@ -12,18 +12,33 @@ export default function StaffPage() {
   const [email, setEmail] = useState('');
   const [role, setR] = useState<Role>('story_editor');
   const [msg, setMsg] = useState<{ tone: 'good' | 'bad'; text: string } | null>(null);
+  const [made, setMade] = useState<{ email: string; password: string } | null>(null);
   const load = () => staff().then(setList).catch((e) => setMsg({ tone: 'bad', text: e.message }));
   useEffect(() => {
     load();
   }, []);
   const change = (e: string, r: Role, on: boolean) =>
     setRole(e, r, on)
-      .then(() => (setMsg({ tone: 'good', text: on ? `Gave ${e} the ${r} role.` : `Removed ${r} from ${e}.` }), load()))
+      .then((x) => {
+        setMade(x.created && x.password ? { email: e, password: x.password } : null);
+        setMsg({ tone: 'good', text: on ? `Gave ${e} the ${r} role.` : `Removed ${r} from ${e}.` });
+        load();
+      })
       .catch((x) => setMsg({ tone: 'bad', text: x.message }));
   return (
     <Page title="Staff & roles" sub="Only a Super Admin can change roles. Moderation is kept apart from content editing.">
       {!has(who, 'super_admin') ? <Note tone="warn">Only a Super Admin can see and change staff.</Note> : null}
       {msg ? <Note tone={msg.tone}>{msg.text}</Note> : null}
+      {made ? (
+        <Note tone="warn">
+          <Text style={s.body}>
+            New account for {made.email}. Give them this one-time password privately; it is shown only now. They choose their own password and set up an authenticator at their first sign-in.
+          </Text>
+          <Text selectable style={[s.body, { fontFamily: 'monospace', marginTop: 6 }]} testID="one-time-password">
+            {made.password}
+          </Text>
+        </Note>
+      ) : null}
       <Card title="Roles">
         {ROLES.map((r) => (
           <Text key={r.id} style={s.body}>
@@ -33,7 +48,7 @@ export default function StaffPage() {
       </Card>
       {has(who, 'super_admin') ? (
         <Card title="Give someone a role">
-          <Text style={[s.small, { marginBottom: 8 }]}>The person signs up first (with the same sign-in as the app), then you add their role here. They must set up an authenticator before the role works.</Text>
+          <Text style={[s.small, { marginBottom: 8 }]}>If the email has no account yet, one is made and you get a one-time password to pass on. They must set up an authenticator before the role works.</Text>
           <Field label="Their email" value={email} onChangeText={setEmail} autoCapitalize="none" />
           <View style={[s.row, { marginBottom: 10 }]}>
             {ROLES.map((r) => (

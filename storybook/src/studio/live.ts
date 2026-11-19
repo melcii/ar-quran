@@ -1,9 +1,9 @@
 // How the game picks up content published from the Admin Studio.
 //
-// The game always has its built-in worlds. If a Supabase project is
-// configured (EXPO_PUBLIC_SUPABASE_URL and EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY,
-// both public by design), it also reads the published overlay for a world
-// from the live_content view and keeps a copy on the device. A newly
+// The game always has its built-in worlds. If the studio server is
+// configured (EXPO_PUBLIC_STUDIO_URL, public by design), it also reads the
+// published overlay for a world from the server's /api/live and keeps a copy
+// on the device. A newly
 // published version is used the next time a world is opened, never in the
 // middle of play, and progress is stored apart from content, so publishing
 // or rolling back never changes a child's saves.
@@ -16,9 +16,9 @@ import { WORLDS } from '@/adventure/worlds';
 import type { WorldDef } from '@/adventure/types';
 import { applyOverlay, type Overlay } from './overlay';
 
-export const SUPABASE_URL = (process.env.EXPO_PUBLIC_SUPABASE_URL ?? '').replace(/\/$/, '');
-export const SUPABASE_KEY = process.env.EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY ?? '';
-export const studioConfigured = () => !!(SUPABASE_URL && SUPABASE_KEY);
+// The studio server's address, e.g. https://studio.example.org (storybook/server).
+export const STUDIO_URL = (process.env.EXPO_PUBLIC_STUDIO_URL ?? '').replace(/\/$/, '');
+export const studioConfigured = () => !!STUDIO_URL;
 
 export type Live = { doc: Overlay | null; number: number | null; hash: string | null };
 export type StudioMode = 'play' | 'draft' | 'published' | 'built-in';
@@ -40,13 +40,13 @@ export async function fetchLive(scope: string, timeoutMs = 2500): Promise<Live |
   const ctl = typeof AbortController !== 'undefined' ? new AbortController() : null;
   const timer = setTimeout(() => ctl?.abort(), timeoutMs);
   try {
-    const r = await fetch(`${SUPABASE_URL}/rest/v1/live_content?scope=eq.${encodeURIComponent(scope)}&select=doc,number,hash`, {
-      headers: { apikey: SUPABASE_KEY, Accept: 'application/json' },
+    const r = await fetch(`${STUDIO_URL}/api/live?scope=${encodeURIComponent(scope)}`, {
+      headers: { Accept: 'application/json' },
       signal: ctl?.signal,
     });
     if (!r.ok) return null;
     const rows = (await r.json()) as Live[];
-    const live: Live = rows[0] ?? { doc: null, number: null, hash: null };
+    const live: Live = rows[0] ? { doc: rows[0].doc, number: rows[0].number, hash: rows[0].hash } : { doc: null, number: null, hash: null };
     store()?.setItem(CACHE(scope), JSON.stringify(live));
     return live;
   } catch {

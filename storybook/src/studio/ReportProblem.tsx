@@ -6,7 +6,7 @@
 import { useState } from 'react';
 import { Pressable, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 import { colors, fonts } from '@/theme';
-import { SUPABASE_KEY, SUPABASE_URL, studioConfigured } from './live';
+import { STUDIO_URL, studioConfigured } from './live';
 import { inStudioTest } from './mode';
 
 export const PROBLEM_CHOICES: { id: 'stuck' | 'cannot_finish' | 'sound' | 'looks_wrong' | 'too_hard' | 'other'; icon: string; label: string }[] = [
@@ -21,9 +21,9 @@ export const PROBLEM_CHOICES: { id: 'stuck' | 'cannot_finish' | 'sound' | 'looks
 export async function sendProblem(surah: number, category: string, screen: string): Promise<boolean> {
   if (!studioConfigured() || inStudioTest()) return false;
   try {
-    const r = await fetch(`${SUPABASE_URL}/rest/v1/rpc/report_problem`, {
+    const r = await fetch(`${STUDIO_URL}/api/report-problem`, {
       method: 'POST',
-      headers: { apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}`, 'Content-Type': 'application/json' },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ p_surah: surah, p_category: category, p_screen: screen }),
     });
     return r.ok;

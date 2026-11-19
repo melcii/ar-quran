@@ -1,4 +1,4 @@
-// Phase 3 acceptance run, in Chromium against a real local Supabase (start
+// Phase 3 acceptance run, in Chromium against the studio server (start
 // both as described in e2e.mjs):
 //  - add an activity from a template (guide animals home), place it on the
 //    map, link it in the logic editor, and play-test it in the draft;
@@ -10,7 +10,7 @@
 //  - preview characters and change which options children are offered;
 //  - server refusals for roles that may not do these things; no AI calls.
 import fs from 'node:fs';
-import { APP, AI_HOSTS, SHOTS, account, browser, check, failures, resetScope, sharing, signIn, sql, until } from './lib.mjs';
+import { APP, AI_HOSTS, SHOTS, account, browser, check, db, failures, firstAdmin, resetScope, sharing, signIn, sql, until } from './lib.mjs';
 
 for (const s of ['surah:19', 'ark:slice', 'catalog:avatar']) resetScope(s);
 const owner = await account('p3-owner');
@@ -19,7 +19,7 @@ const story = await account('p3-story');
 const audioA = await account('p3-audio-a');
 const audioB = await account('p3-audio-b');
 const quran = await account('p3-quran');
-sql(`select public.studio_bootstrap_super_admin('${owner.email}')`);
+firstAdmin(owner.email);
 for (const [who, role] of [[world, 'world_editor'], [story, 'story_editor'], [audioA, 'audio_editor'], [audioB, 'audio_editor'], [quran, 'quran_reviewer']])
   await owner.c.rpc('studio_set_role', { p_email: who.email, p_role: role, p_on: true });
 
@@ -53,7 +53,7 @@ await w.getByTestId(`wait-${added}-${firstId}`).last().click();
 await w.getByTestId(`wait-${added}-${firstId}`).last().waitFor();
 const saved1 = await until(w, () => /Draft saved/.test(document.querySelector('[data-testid="save-state"]')?.textContent ?? ''), 20000);
 check('the change autosaves as a draft', !!saved1);
-const draft1 = sql(`select doc::text from public.content_drafts where scope = 'surah:19'`);
+const draft1 = sql(`select doc from content_drafts where scope = 'surah:19'`);
 const d1 = JSON.parse(draft1);
 check('the draft holds the new activity and its new link', d1.add?.tasks?.some((t) => t.id === added && t.kind === 'lead' && t.animal === 'goat') && d1.links?.[added]?.includes(firstId), draft1.slice(0, 200));
 await w.evaluate(() => window.scrollTo(0, 0));
@@ -82,7 +82,7 @@ await w.getByTestId('giraffe.pad-z').last().fill('-6.5');
 await until(w, () => !globalThis.__studioArk.check.problems.some((p) => p.level === 'error'), 5000);
 await w.getByTestId('ark-check').last().click();
 await w.getByText('Guiding check passed').first().waitFor({ timeout: 20000 });
-check('the guiding check passes and is recorded', +sql(`select count(*) from public.test_runs where scope = 'ark:slice' and kind = 'movement' and ok`) >= 1);
+check('the guiding check passes and is recorded', +sql(`select count(*) from test_runs where scope = 'ark:slice' and kind = 'movement' and ok`) >= 1);
 await until(w, () => /Draft saved/.test(document.querySelector('[data-testid="save-state"]')?.textContent ?? ''), 20000);
 await w.screenshot({ path: `${SHOTS}/p3-3-ark-settings.png` });
 // A World Editor cannot change the wording (server refuses: words are a Story Editor's).
@@ -171,8 +171,8 @@ const welcomeLine = await until(a, () => document.querySelector('[data-testid^="
 await a.getByTestId(`au-line-${welcomeLine}`).last().click();
 await a.getByTestId('au-upload').last().click();
 await a.getByText('Uploaded (').first().waitFor({ timeout: 30000 });
-const asset = sql(`select id from public.audio_assets where title = 'Maryam welcome, recorded' order by uploaded_at desc limit 1`);
-check('narration is uploaded with its licence record, waiting for review', !!asset && sql(`select status from public.audio_assets where id = '${asset}'`) === 'uploaded');
+const asset = sql(`select id from audio_assets where title = 'Maryam welcome, recorded' order by uploaded_at desc limit 1`);
+check('narration is uploaded with its licence record, waiting for review', !!asset && sql(`select status from audio_assets where id = '${asset}'`) === 'uploaded');
 const self = await audioA.c.rpc('studio_audio_review', { p_id: asset, p_decision: 'approve', p_note: '' });
 check('the uploader cannot approve their own file (server refuses)', !!self.error, self.error?.message);
 await a.screenshot({ path: `${SHOTS}/p3-5-audio-upload.png`, fullPage: true });
@@ -184,7 +184,7 @@ await bb.getByTestId(`au-approve-${asset}`).last().click();
 await bb.getByText('Approved.').first().waitFor({ timeout: 20000 });
 await bb.getByTestId(`au-assign-${asset}`).last().click();
 await bb.getByText('Assigned in the surah 19 draft').first().waitFor({ timeout: 20000 });
-const d2 = JSON.parse(sql(`select doc::text from public.content_drafts where scope = 'surah:19'`));
+const d2 = JSON.parse(sql(`select doc from content_drafts where scope = 'surah:19'`));
 check('approved narration is assigned to its line in the world draft', d2.audio?.[welcomeLine] === asset && d2.add?.tasks?.length === 1, JSON.stringify(d2.audio));
 await bb.screenshot({ path: `${SHOTS}/p3-6-audio-library.png`, fullPage: true });
 // The play test fetches the recording for the welcome line.
@@ -192,13 +192,13 @@ const before = requests.length;
 const ap2 = await sharing(page, bb);
 await ap2.goto(`${APP}/adventure/19?studio=draft&q=low`);
 const heard = await until(ap2, () => performance.getEntriesByType('resource').some((e) => /studio-audio/.test(e.name)), 90000);
-check('the play test plays the recorded narration file for the welcome line', !!heard || requests.slice(before).some((u) => /storage\/v1\/object\/public\/studio-audio\//.test(u)));
+check('the play test plays the recorded narration file for the welcome line', !!heard || requests.slice(before).some((u) => /\/files\/studio-audio\//.test(u)));
 await ap2.close();
 // Recitation rules.
 const rec = await audioA.c.rpc('studio_audio_register', { p: { kind: 'recitation', title: 'x', path: 'nope/x.mp3', origin: 'licensed_tts', licence: 'abc' } });
 check('recitation cannot be registered without an uploaded file', !!rec.error);
-sql(`insert into storage.objects (bucket_id, name, owner, metadata) select 'studio-audio', id || '/rec-${Date.now()}.mp3', id, '{"size": 1000, "mimetype": "audio/mpeg"}' from auth.users where email = '${audioA.email}'`);
-const recPath = sql(`select name from storage.objects o join auth.users u on u.id = o.owner where u.email = '${audioA.email}' and name like '%/rec-%' limit 1`);
+const recUp = await audioA.c.call('PUT', '/api/upload/studio-audio?ext=mp3', new Uint8Array(1000).fill(7), { 'Content-Type': 'audio/mpeg' });
+const recPath = recUp.data?.path;
 const tts = await audioA.c.rpc('studio_audio_register', { p: { kind: 'recitation', title: 'Maryam 1-3', path: recPath, origin: 'licensed_tts', voice: 'Some voice', licence: 'licensed', surah: 19, ayah_from: 1, ayah_to: 3 } });
 check('synthetic recitation is refused (only a named human reciter)', !!tts.error, tts.error?.message);
 const human = await audioA.c.rpc('studio_audio_register', { p: { kind: 'recitation', title: 'Maryam 1-3', path: recPath, origin: 'human_recording', voice: 'Named Reciter', licence: 'licensed by the reciter', licence_confirmed: true, surah: 19, ayah_from: 1, ayah_to: 3 } });
@@ -209,8 +209,8 @@ const byQuran = await quran.c.rpc('studio_audio_review', { p_id: human.data, p_d
 check('a Quran Content Reviewer approves the recitation', !byQuran.error, byQuran.error?.message);
 const music = await audioA.c.rpc('studio_audio_register', { p: { kind: 'music', title: 'bg', path: recPath, origin: 'sound_library', licence: 'licensed' } });
 check('there is no way to add background music', !!music.error);
-const stolen = await story.c.storage.from('studio-audio').upload(`${(await story.c.auth.getUser()).data.user.id}/x.mp3`, new Blob([new Uint8Array(100)], { type: 'audio/mpeg' }), { contentType: 'audio/mpeg' });
-check('a Story Editor cannot upload audio files (storage refuses)', !!stolen.error, stolen.error?.message);
+const stolen = await story.c.call('PUT', '/api/upload/studio-audio?ext=mp3', new Uint8Array(100), { 'Content-Type': 'audio/mpeg' });
+check('a Story Editor cannot upload audio files (the server refuses)', !!stolen.error, stolen.error?.message);
 
 /* ------------------------------ 4. Character Studio ------------------------------ */
 await w.goto(`${APP}/admin/characters`);
@@ -228,11 +228,11 @@ check('the character preview shows the explorer in 3D', canvasOk);
 await w.getByTestId('show-hair-shaved').last().click();
 await w.getByTestId('label-hair-short').last().fill('Short and neat');
 await until(w, () => /Draft saved/.test(document.querySelector('[data-testid="save-state"]')?.textContent ?? ''), 20000);
-const cat = JSON.parse(sql(`select doc::text from public.content_drafts where scope = 'catalog:avatar'`));
+const cat = JSON.parse(sql(`select doc from content_drafts where scope = 'catalog:avatar'`));
 check('the catalog draft hides an option and renames another', cat.hide?.hair?.includes('shaved') && cat.labels?.['hair.short'] === 'Short and neat', JSON.stringify(cat));
 await w.getByTestId('show-hair-short').last().click({ force: true }).catch(() => {});
 await w.waitForTimeout(3500);
-const cat2 = JSON.parse(sql(`select doc::text from public.content_drafts where scope = 'catalog:avatar'`));
+const cat2 = JSON.parse(sql(`select doc from content_drafts where scope = 'catalog:avatar'`));
 check("the default explorer's options cannot be hidden", !cat2.hide?.hair?.includes('short'), JSON.stringify(cat2.hide));
 const dr = await sharing(page, w);
 await dr.goto(`${APP}/dressing?studio=draft`);
