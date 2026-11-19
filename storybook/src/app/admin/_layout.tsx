@@ -1,11 +1,11 @@
 // The Admin Studio: a separate, protected part of the app at /admin. Nothing
 // in the children's game links here. This screen only decides what to show;
-// every permission is enforced by the database, so a person who reaches a
+// every permission is enforced by the studio server (storybook/server), so a person who reaches a
 // studio page without the right role still cannot read or change anything.
 import { Stack } from 'expo-router';
 import { useState } from 'react';
 import { Image, Platform, Text, View } from 'react-native';
-import { enrolMfa, roleLabel, signIn, signOut, useGate, verifyMfa } from '@/studio/session';
+import { changePassword, enrolMfa, roleLabel, signIn, signOut, useGate, verifyMfa } from '@/studio/session';
 import { Btn, Busy, C, Card, Field, Note, Shell, s } from '@/studio/ui';
 import { StudioContext } from '@/studio/context';
 
@@ -44,6 +44,23 @@ function SignIn({ done }: { done: () => void }) {
       {err ? <Note tone="bad">{err}</Note> : null}
       <Btn label={busy ? 'Signing in…' : 'Sign in'} kind="primary" onPress={go} disabled={busy || !email || !pw} testID="sign-in" />
       <Text style={[s.small, { marginTop: 12 }]}>Staff accounts must also use an authenticator app. Children never sign in here.</Text>
+    </Card>
+  );
+}
+
+function NewPassword({ done }: { done: () => void }) {
+  const [pw, setPw] = useState('');
+  const [pw2, setPw2] = useState('');
+  const [err, setErr] = useState('');
+  const go = () =>
+    pw !== pw2 ? setErr('The two passwords are not the same.') : changePassword(pw).then(done).catch((e) => setErr(e.message));
+  return (
+    <Card title="Choose your password">
+      <Text style={[s.body, { marginBottom: 10 }]}>You signed in with a one-time password. Choose your own now (at least 10 characters).</Text>
+      <Field label="New password" value={pw} onChangeText={setPw} secureTextEntry testID="new-password" />
+      <Field label="The same again" value={pw2} onChangeText={setPw2} secureTextEntry onSubmitEditing={go} testID="new-password-2" />
+      {err ? <Note tone="bad">{err}</Note> : null}
+      <Btn label="Save password" kind="primary" onPress={go} disabled={pw.length < 10 || !pw2} testID="save-password" />
     </Card>
   );
 }
@@ -94,12 +111,13 @@ export default function AdminLayout() {
       <Centre>
         <Note tone="warn">
           <Text style={s.body}>
-            The studio is not connected to a Supabase project yet. Set EXPO_PUBLIC_SUPABASE_URL and EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY (the publishable key, never the secret one), apply the migrations in storybook/supabase/migrations, and make the first Super Admin as described in storybook/supabase/README.md.
+            The studio is not connected to its server yet. Start the server in storybook/server, set EXPO_PUBLIC_STUDIO_URL to its address, and make the first Super Admin as described in storybook/server/README.md.
           </Text>
         </Note>
       </Centre>
     );
   if (g.state === 'signed-out') return <Centre><SignIn done={refresh} /></Centre>;
+  if (g.state === 'needs-password') return <Centre><NewPassword done={refresh} /></Centre>;
   if (g.state === 'needs-mfa-enrol') return <Centre><MfaEnrol done={refresh} /></Centre>;
   if (g.state === 'needs-mfa') return <Centre><MfaCheck done={refresh} /></Centre>;
   if (g.state === 'not-staff')

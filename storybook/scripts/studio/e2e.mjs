@@ -1,7 +1,7 @@
-// Browser test of the Admin Studio against a real local Supabase.
+// Browser test of the Admin Studio against the studio server.
 //
-//   npx supabase start
-//   EXPO_PUBLIC_SUPABASE_URL=http://127.0.0.1:54321 EXPO_PUBLIC_SUPABASE_PUBLISHABLE_KEY=<local key> npx expo start --web --port 8081
+//   (cd server && npm start)                       # the studio server on :8787
+//   EXPO_PUBLIC_STUDIO_URL=http://127.0.0.1:8787 npx expo start --web --port 8081
 //   node scripts/studio/e2e.mjs
 //
 // It makes fresh accounts with real TOTP factors, then in Chromium: an
@@ -11,64 +11,21 @@
 // new narration; rollback brings the old one back; play-test progress stays
 // apart from player saves. Every network request is recorded, and any call
 // to an AI model's API fails the test.
-import { createClient } from '@supabase/supabase-js';
-import { execFileSync } from 'node:child_process';
-import crypto from 'node:crypto';
-import fs from 'node:fs';
-import { createRequire } from 'node:module';
-
-const require = createRequire(import.meta.url);
-const { chromium } = require('playwright');
-const APP = process.env.APP_URL ?? 'http://localhost:8081';
-const URL = process.env.SUPABASE_URL ?? 'http://127.0.0.1:54321';
-const KEY = process.env.SUPABASE_ANON_KEY ?? 'sb_publishable_ACJWlzQHlZjBrEguHvfOxg_3BJgxAaH';
-const DB = process.env.DATABASE_URL ?? 'postgresql://postgres:postgres@127.0.0.1:54322/postgres';
-const SHOTS = process.env.SHOTS ?? '/tmp/studio-shots';
-fs.mkdirSync(SHOTS, { recursive: true });
-const run = Date.now().toString(36);
-const PW = 'correct horse battery staple 9';
+import { APP, PW, SHOTS, account, check as check0, chromium, failures, firstAdmin, freshCode, resetScope, run } from './lib.mjs';
 
 let fails = 0;
 const check = (name, ok, extra = '') => {
   if (!ok) fails++;
-  console.log(`${ok ? 'PASS' : 'FAIL'}  ${name}${!ok && extra ? `  (${extra})` : ''}`);
+  check0(name, ok, extra);
 };
-
-function totp(secret, offset = 0) {
-  const alpha = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ234567';
-  let bits = '';
-  for (const c of secret.replace(/=+$/, '').toUpperCase()) bits += alpha.indexOf(c).toString(2).padStart(5, '0');
-  const key = Buffer.from(bits.match(/.{8}/g).map((b) => parseInt(b, 2)));
-  const ctr = Buffer.alloc(8);
-  ctr.writeBigUInt64BE(BigInt(Math.floor(Date.now() / 30000) + offset));
-  const h = crypto.createHmac('sha1', key).update(ctr).digest();
-  const o = h[h.length - 1] & 15;
-  return String(((h.readUInt32BE(o) & 0x7fffffff) % 1e6)).padStart(6, '0');
-}
-
-async function account(name, mfa = true) {
-  const c = createClient(URL, KEY, { auth: { persistSession: false } });
-  const email = `${name}-${run}@studio.test`;
-  const r = await c.auth.signUp({ email, password: PW });
-  if (r.error) throw r.error;
-  let secret = null;
-  if (mfa) {
-    const en = await c.auth.mfa.enroll({ factorType: 'totp', friendlyName: 'e2e' });
-    secret = en.data.totp.secret;
-    const ch = await c.auth.mfa.challenge({ factorId: en.data.id });
-    await c.auth.mfa.verify({ factorId: en.data.id, challengeId: ch.data.id, code: totp(secret) });
-  }
-  return { email, secret, c };
-}
 
 const owner = await account('e2e-owner');
 const editor = await account('e2e-editor');
-const plain = await account('e2e-parent', false);
-execFileSync('psql', [DB, '-Atc', `select public.studio_bootstrap_super_admin('${owner.email}')`]);
+const plain = await account('e2e-parent', { mfa: false });
+firstAdmin(owner.email);
 await owner.c.rpc('studio_set_role', { p_email: editor.email, p_role: 'story_editor', p_on: true });
 // Start from a clean slate for Maryam so the test is repeatable.
-execFileSync('psql', [DB, '-Atc', `delete from public.content_drafts where scope = 'surah:19'`]);
-await owner.c.rpc('studio_rollback', { p_scope: 'surah:19', p_version: null, p_note: 'e2e reset' });
+resetScope('surah:19');
 
 const browser = await chromium.launch();
 const requests = [];
@@ -86,7 +43,7 @@ async function signIn(p, who) {
   await p.getByTestId('sign-in').click();
   if (who.secret) {
     await p.getByTestId('mfa-code').waitFor({ timeout: 30000 });
-    await p.getByTestId('mfa-code').fill(totp(who.secret));
+    await p.getByTestId('mfa-code').fill(await freshCode(who));
     await p.getByTestId('mfa-verify').click();
   }
 }
@@ -219,4 +176,4 @@ check('no request went to an AI model API', ai.length === 0, ai.slice(0, 3).join
 console.log('  hosts contacted:', hosts.join(', '));
 await browser.close();
 console.log(fails ? `\n${fails} failed` : '\nall passed');
-process.exit(fails ? 1 : 0);
+process.exit(fails || failures() ? 1 : 0);

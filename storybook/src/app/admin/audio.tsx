@@ -2,7 +2,7 @@
 // with their licence records, review them, and assign approved narration to
 // the lines it speaks in a world.
 //
-// Rules enforced by the server (supabase/migrations/0003_studio_phase3.sql):
+// Rules enforced by the server (storybook/server/studio.mjs, audio actions):
 // recitation must be a human recording by a named reciter, with a confirmed
 // licence, approved by a Quran Content Reviewer; there is no music
 // category; nobody approves their own upload; files are never overwritten.

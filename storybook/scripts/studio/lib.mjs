@@ -1,22 +1,43 @@
 // Shared helpers for the studio browser tests: throwaway accounts with real
 // TOTP factors, signing in through the studio's own screens, and waiting.
-import { createClient } from '@supabase/supabase-js';
+// They talk to the studio server (storybook/server) over HTTP and read its
+// SQLite file directly to check what was stored.
 import { execFileSync } from 'node:child_process';
-import crypto from 'node:crypto';
 import fs from 'node:fs';
 import { createRequire } from 'node:module';
+import path from 'node:path';
+import { DatabaseSync } from 'node:sqlite';
+import { createUser } from '../../server/auth.mjs';
+import { totpAt } from '../../server/auth.mjs';
 
 const require = createRequire(import.meta.url);
 export const { chromium } = require('playwright');
 export const APP = process.env.APP_URL ?? 'http://localhost:8081';
-export const URL = process.env.SUPABASE_URL ?? 'http://127.0.0.1:54321';
-export const KEY = process.env.SUPABASE_ANON_KEY ?? 'sb_publishable_ACJWlzQHlZjBrEguHvfOxg_3BJgxAaH';
-export const DB = process.env.DATABASE_URL ?? 'postgresql://postgres:postgres@127.0.0.1:54322/postgres';
+export const STUDIO = (process.env.STUDIO_URL ?? 'http://127.0.0.1:8787').replace(/\/$/, '');
+const root = new URL('../..', import.meta.url).pathname;
+export const DATA = path.resolve(root, process.env.STUDIO_DATA ?? 'server/studio-data');
+export const db = new DatabaseSync(path.join(DATA, 'studio.db'));
+db.exec('pragma busy_timeout = 5000');
 export const SHOTS = process.env.SHOTS ?? '/tmp/studio-shots';
 fs.mkdirSync(SHOTS, { recursive: true });
 export const run = Date.now().toString(36);
 export const PW = 'correct horse battery staple 9';
-export const sql = (q) => execFileSync('psql', [DB, '-Atc', q], { encoding: 'utf8' }).trim();
+/** Like psql -At: the rows' columns joined by | and rows by new lines (SQLite booleans are 1/0). */
+export const sql = (q, ...args) => {
+  if (!args.length && /;\s*\S/.test(q)) {
+    db.exec(q);
+    return '';
+  }
+  const st = db.prepare(q);
+  if (!/^\s*(select|with)\b/i.test(q) && !/returning/i.test(q)) {
+    st.run(...args);
+    return '';
+  }
+  return st
+    .all(...args)
+    .map((r) => Object.values(r).map((v) => (v == null ? '' : String(v))).join('|'))
+    .join('\n');
+};
 
 let fails = 0;
 export const check = (name, ok, extra = '') => {
@@ -25,32 +46,50 @@ export const check = (name, ok, extra = '') => {
 };
 export const failures = () => fails;
 
-export function totp(secret) {
-  const a = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ234567';
-  let bits = '';
-  for (const c of secret) bits += a.indexOf(c).toString(2).padStart(5, '0');
-  const key = Buffer.from(bits.match(/.{8}/g).map((b) => parseInt(b, 2)));
-  const ctr = Buffer.alloc(8);
-  ctr.writeBigUInt64BE(BigInt(Math.floor(Date.now() / 30000)));
-  const h = crypto.createHmac('sha1', key).update(ctr).digest();
-  const o = h[h.length - 1] & 15;
-  return String((h.readUInt32BE(o) & 0x7fffffff) % 1e6).padStart(6, '0');
+export const totp = (secret, offset = 0) => totpAt(secret, Math.floor(Date.now() / 30000) + offset);
+
+async function call(token, method, p, body, headers = {}) {
+  const r = await fetch(STUDIO + p, {
+    method,
+    headers: { ...(token ? { Authorization: `Bearer ${token}` } : {}), ...(body !== undefined && !(body instanceof Uint8Array) ? { 'Content-Type': 'application/json' } : {}), ...headers },
+    body: body === undefined ? undefined : body instanceof Uint8Array ? body : JSON.stringify(body),
+  });
+  const j = await r.json().catch(() => null);
+  return r.ok ? { data: j, error: null } : { data: null, error: j?.error ?? { message: `HTTP ${r.status}` } };
+}
+/** An API client for one signed-in session (token null: anonymous). */
+export const client = (token) => ({
+  token,
+  call: (method, p, body, headers) => call(token, method, p, body, headers),
+  rpc: (name, args = {}) => call(token, 'POST', `/api/rpc/${name}`, args),
+  read: (table, params = {}) => call(token, 'GET', `/api/read/${table}?${new URLSearchParams(params)}`),
+  fam: (name, args = {}) => call(token, 'POST', `/api/family/${name}`, args),
+});
+
+/** A fresh account; with mfa, a verified authenticator and an aal2 session in `c`. */
+export async function account(name, { mfa = true } = {}) {
+  const email = `${name}-${run}@studio.test`;
+  const id = createUser(db, email, PW);
+  const s = await call(null, 'POST', '/api/auth/signin', { email, password: PW });
+  if (s.error) throw new Error(s.error.message);
+  const c = client(s.data.token);
+  let secret = null;
+  if (mfa) {
+    const en = await c.call('POST', '/api/auth/mfa/enroll');
+    secret = en.data.secret;
+    const v = await c.call('POST', '/api/auth/mfa/verify', { factorId: en.data.id, code: totp(secret) });
+    if (v.error) throw new Error(v.error.message);
+  }
+  return { id, email, secret, c };
 }
 
-/** A fresh account with a verified TOTP factor and an aal2 session in `c`. */
-export async function account(name) {
-  const c = createClient(URL, KEY, { auth: { persistSession: false } });
-  const email = `${name}-${run}@studio.test`;
-  await c.auth.signUp({ email, password: PW });
-  const en = await c.auth.mfa.enroll({ factorType: 'totp' });
-  const ch = await c.auth.mfa.challenge({ factorId: en.data.id });
-  await c.auth.mfa.verify({ factorId: en.data.id, challengeId: ch.data.id, code: totp(en.data.totp.secret) });
-  return { email, secret: en.data.totp.secret, c };
-}
+/** Make the first Super Admin the way the person running the server does. */
+export const firstAdmin = (email) =>
+  execFileSync(process.execPath, ['--disable-warning=ExperimentalWarning', path.join(root, 'server/admin.mjs'), 'first-admin', email], { env: { ...process.env, STUDIO_DATA: DATA }, encoding: 'utf8' });
 
 /** Clear a scope's drafts, versions, publications and tests (repeatable runs). */
 export const resetScope = (scope) =>
-  sql(`delete from public.test_runs where scope = '${scope}'; delete from public.publications where scope = '${scope}'; delete from public.content_drafts where scope = '${scope}'; delete from public.content_versions where scope = '${scope}'`);
+  db.exec(`delete from test_runs where scope = '${scope}'; update content_drafts set base_version = null where scope = '${scope}'; delete from publications where scope = '${scope}'; delete from content_drafts where scope = '${scope}'; update releases set state = 'cancelled' where state = 'planned'; delete from content_versions where scope = '${scope}'`);
 
 export async function browser() {
   const b = await chromium.launch();
@@ -71,7 +110,8 @@ export async function signIn(p, who) {
   await p.getByTestId('password').fill(PW);
   await p.getByTestId('sign-in').click();
   await p.getByTestId('mfa-code').waitFor({ timeout: 30000 });
-  await p.getByTestId('mfa-code').fill(totp(who.secret));
+  // A code can be used once: wait for a fresh one if this account just used the current one.
+  await p.getByTestId('mfa-code').fill(await freshCode(who));
   await p.getByTestId('mfa-verify').click();
   await p.getByText('Total surahs').first().waitFor({ timeout: 30000 });
 }
@@ -98,3 +138,15 @@ export async function sharing(page, from) {
 }
 
 export const AI_HOSTS = /anthropic|openai|generativelanguage|mistral|cohere|huggingface|replicate|groq|perplexity|elevenlabs/i;
+
+/** The next authenticator code this account has not used yet (each code works once). */
+export async function freshCode(who) {
+  for (;;) {
+    const step = Math.floor(Date.now() / 30000);
+    const used = Number(sql('select max(last_step) from mfa_factors where user_id = ?', who.id) || 0);
+    // The server accepts the next 30-second code too, so there is rarely a wait.
+    if (step > used) return totp(who.secret);
+    if (step + 1 > used) return totp(who.secret, 1);
+    await new Promise((r) => setTimeout(r, 1000));
+  }
+}

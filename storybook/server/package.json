@@ -1,0 +1,17 @@
+{
+  "name": "quran-studio-server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Admin Studio server: one Node process, one SQLite file. Replaces Supabase.",
+  "engines": { "node": ">=22.13" },
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning index.mjs",
+    "admin": "node --disable-warning=ExperimentalWarning admin.mjs",
+    "test": "node --disable-warning=ExperimentalWarning test/access.mjs"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.4"
+  }
+}
