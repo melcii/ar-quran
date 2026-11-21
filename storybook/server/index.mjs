@@ -1,36 +1,55 @@
-// The Admin Studio server: one Node process, one SQLite file, one folder of
-// uploaded audio. Replaces Supabase. No other services and no AI calls.
+// The Admin Studio server. Replaces Supabase. No AI calls.
 //
-//   node server/index.mjs            (from storybook/; see server/README.md)
+// It runs two ways with the same code:
+//   - as one Node process on your computer or a server: `npm start` here
+//     (data in a SQLite file and a folder of uploaded audio);
+//   - on Vercel, as one serverless function (storybook/api/studio.mjs), with a
+//     hosted Turso database and Vercel Blob for audio. See README.md.
 //
 // Settings (environment variables):
-//   PORT=8787            where to listen
+//   PORT=8787            where to listen (own server only)
 //   STUDIO_DATA=./studio-data   folder for studio.db and uploaded files
+//   TURSO_DATABASE_URL, TURSO_AUTH_TOKEN   use a hosted Turso database instead
+//   BLOB_READ_WRITE_TOKEN                  keep uploaded audio in Vercel Blob
 //   STATIC_DIR=dist      optional: also serve the exported web app from here
 //   OPEN_SIGNUP=1        optional: let anyone create an account (off by default;
 //                        staff accounts are made by a Super Admin)
 //   CORS_ORIGINS=*       which web origins may call the API (comma separated)
+//   STUDIO_SETUP_KEY     optional: lets the owner make the first Super Admin over
+//                        the network, once, with this secret (for Vercel, where
+//                        there is no server to log in to). Remove it afterwards.
 import http from 'node:http';
 import crypto from 'node:crypto';
-import { createReadStream, createWriteStream, existsSync, mkdirSync, statSync } from 'node:fs';
-import { rename, rm } from 'node:fs/promises';
+import { createReadStream, existsSync, statSync } from 'node:fs';
 import { extname, join, resolve, sep } from 'node:path';
-import { openDb, tx } from './db.mjs';
+import { dataDir as defaultDataDir, openStudioDb } from './config.mjs';
+import { tx } from './db.mjs';
 import { E } from './errors.mjs';
 import * as auth from './auth.mjs';
 import { act, live, liveAudio, read, reportProblem, who as roleCheck } from './studio.mjs';
 import { familyAct } from './families.mjs';
+import { AUDIO_TYPES, FILE_PATH, MAX_AUDIO, blobStorage, diskStorage } from './storage.mjs';
+import { firstAdmin } from './admin.mjs';
 
 const MAX_JSON = 2 * 1024 * 1024;
-const MAX_AUDIO = 10 * 1024 * 1024;
-const AUDIO_TYPES = new Set(['audio/mpeg', 'audio/mp4', 'audio/ogg', 'audio/wav', 'audio/x-wav', 'audio/webm', 'audio/aac']);
-const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.png': 'image/png', '.jpg': 'image/jpeg', '.svg': 'image/svg+xml', '.ico': 'image/x-icon', '.ttf': 'font/ttf', '.woff2': 'font/woff2', '.glb': 'model/gltf-binary', '.mp3': 'audio/mpeg', '.wasm': 'application/wasm', '.webp': 'image/webp' };
+const MIME = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.png': 'image/png', '.jpg': 'image/jpeg', '.svg': 'image/svg+xml', '.ico': 'image/x-icon', '.ttf': 'font/ttf', '.woff2': 'font/woff2', '.glb': 'model/gltf-binary', '.mp3': 'audio/mpeg', '.m4a': 'audio/mp4', '.ogg': 'audio/ogg', '.wav': 'audio/wav', '.webm': 'audio/webm', '.aac': 'audio/aac', '.wasm': 'application/wasm', '.webp': 'image/webp' };
 
-export function createServer({ dataDir = process.env.STUDIO_DATA ?? './studio-data', staticDir = process.env.STATIC_DIR, openSignup = process.env.OPEN_SIGNUP === '1', origins = process.env.CORS_ORIGINS ?? '*' } = {}) {
-  const data = resolve(dataDir);
-  const files = join(data, 'files');
-  mkdirSync(files, { recursive: true });
-  const db = openDb(join(data, 'studio.db'));
+/**
+ * The request handler and its database.
+ * dataDir given: a local SQLite file and folder (tests, own server).
+ * dataDir left out: TURSO_DATABASE_URL if set, else STUDIO_DATA.
+ */
+export function createApp({
+  dataDir,
+  staticDir = process.env.STATIC_DIR,
+  openSignup = process.env.OPEN_SIGNUP === '1',
+  origins = process.env.CORS_ORIGINS ?? '*',
+  setupKey = process.env.STUDIO_SETUP_KEY,
+  blobToken = process.env.BLOB_READ_WRITE_TOKEN,
+  storage, // tests only: a stand-in for the file store
+} = {}) {
+  const db = openStudioDb(dataDir);
+  const files = Promise.resolve(storage ?? (blobToken ? blobStorage(blobToken) : diskStorage(join(defaultDataDir(dataDir), 'files'))));
   const allowed = origins.split(',').map((x) => x.trim()).filter(Boolean);
   const deps = { createUser: auth.createUser, tempPassword: auth.tempPassword };
 
@@ -39,6 +58,7 @@ export function createServer({ dataDir = process.env.STUDIO_DATA ?? './studio-da
     res.end(JSON.stringify(body));
   };
   const fail = (res, e) => {
+    if (res.headersSent) return res.end();
     if (e instanceof E) return send(res, e.status, { error: { code: e.code, message: e.message } });
     // SQLite check constraints and the like: the caller sent something not allowed.
     if (e?.code === 'ERR_SQLITE_ERROR') return send(res, 400, { error: { code: 'P0001', message: String(e.message).replace(/^.*?: /, '') } });
@@ -79,7 +99,13 @@ export function createServer({ dataDir = process.env.STUDIO_DATA ?? './studio-da
 
   async function handle(req, res) {
     const url = new URL(req.url, 'http://x');
-    const path = url.pathname;
+    // On Vercel every /api/* and /files/* address is sent to one function with
+    // the original path in __p (see vercel.json).
+    let path = url.pathname;
+    if (url.searchParams.has('__p')) {
+      path = '/' + url.searchParams.get('__p').replace(/^\/+/, '');
+      url.searchParams.delete('__p');
+    }
     const origin = req.headers.origin;
     if (origin && (allowed.includes('*') || allowed.includes(origin))) {
       res.setHeader('Access-Control-Allow-Origin', allowed.includes('*') ? '*' : origin);
@@ -89,47 +115,57 @@ export function createServer({ dataDir = process.env.STUDIO_DATA ?? './studio-da
       res.setHeader('Access-Control-Max-Age', '600');
     }
     if (req.method === 'OPTIONS') return res.writeHead(204).end();
-    const who = auth.caller(db, req);
-    const ip = req.socket.remoteAddress ?? '';
+    if (path === '/api/health') return send(res, 200, { ok: true });
+    const who = await auth.caller(db, req);
+    // Behind Vercel's proxy the caller's address is the first x-forwarded-for entry.
+    const ip = (process.env.VERCEL ? String(req.headers['x-forwarded-for'] ?? '').split(',')[0].trim() : '') || req.socket?.remoteAddress || '';
 
     // ---- for the children's game: published content, approved audio, problem reports
-    if (path === '/api/health') return send(res, 200, { ok: true });
-    if (path === '/api/live' && req.method === 'GET') return send(res, 200, live(db, url.searchParams.get('scope') ?? ''), { 'Cache-Control': 'no-cache' });
-    if (path === '/api/live-audio' && req.method === 'GET') return send(res, 200, liveAudio(db, (url.searchParams.get('ids') ?? '').split(','), url.searchParams.get('kind')));
-    if (path === '/api/report-problem' && req.method === 'POST') return send(res, 200, reportProblem(db, await body(req, 4096)));
+    if (path === '/api/live' && req.method === 'GET') return send(res, 200, await live(db, url.searchParams.get('scope') ?? ''), { 'Cache-Control': 'no-cache' });
+    if (path === '/api/live-audio' && req.method === 'GET') return send(res, 200, await liveAudio(db, (url.searchParams.get('ids') ?? '').split(','), url.searchParams.get('kind')));
+    if (path === '/api/report-problem' && req.method === 'POST') return send(res, 200, await reportProblem(db, await body(req, 4096)));
     if (path.startsWith('/files/studio-audio/') && req.method === 'GET') {
       // Public by random path, like the old public bucket.
       const rel = path.slice('/files/studio-audio/'.length);
-      const full = /^[0-9a-f-]{36}\/[A-Za-z0-9._-]{1,120}$/.test(rel) ? inside(join(files, 'studio-audio'), rel) : null;
-      if (!full || !existsSync(full)) return send(res, 404, { error: { code: 'not_found', message: 'no such file' } });
-      return serveFile(res, full, 'public, max-age=31536000, immutable');
+      const store = await files;
+      if (FILE_PATH.test(rel)) {
+        if (store.kind === 'disk' && store.send(res, rel, MIME[extname(rel).toLowerCase()])) return;
+        if (store.kind === 'blob') {
+          const u = (await db.prepare("select url from storage_urls where bucket = 'studio-audio' and path = ?").get(rel))?.url;
+          if (u) return res.writeHead(302, { Location: u, 'Cache-Control': 'public, max-age=86400' }).end();
+        }
+      }
+      return send(res, 404, { error: { code: 'not_found', message: 'no such file' } });
     }
 
     // ---- sign-in
     if (path === '/api/auth/signin' && req.method === 'POST') {
       const b = await body(req);
-      return send(res, 200, auth.signIn(db, b.email, b.password, ip));
+      return send(res, 200, await auth.signIn(db, b.email, b.password, ip));
     }
     if (path === '/api/auth/signup' && req.method === 'POST') {
       if (!openSignup) throw new E('New accounts are made by a Super Admin from Staff & roles.', '42501');
       const b = await body(req);
-      return send(res, 200, auth.signUp(db, b.email, b.password));
+      return send(res, 200, await auth.signUp(db, b.email, b.password));
     }
-    if (path === '/api/auth/signout' && req.method === 'POST') return send(res, 200, (auth.signOut(db, who), {}));
-    if (path === '/api/auth/me' && req.method === 'GET') return send(res, 200, auth.me(db, who));
-    if (path === '/api/auth/password' && req.method === 'POST') return send(res, 200, (auth.changePassword(db, who, (await body(req)).password), {}));
+    if (path === '/api/auth/signout' && req.method === 'POST') return send(res, 200, (await auth.signOut(db, who), {}));
+    if (path === '/api/auth/me' && req.method === 'GET') return send(res, 200, await auth.me(db, who));
+    if (path === '/api/auth/password' && req.method === 'POST') return send(res, 200, (await auth.changePassword(db, who, (await body(req)).password), {}));
     if (path === '/api/auth/mfa/enroll' && req.method === 'POST') return send(res, 200, await auth.enrol(db, who));
     if (path === '/api/auth/mfa/verify' && req.method === 'POST') {
       const b = await body(req);
-      return send(res, 200, (auth.verify(db, who, b.code, b.factorId), {}));
+      return send(res, 200, (await auth.verify(db, who, b.code, b.factorId), {}));
     }
+    if (path === '/api/setup/first-admin' && req.method === 'POST') return send(res, 200, await setup(await body(req, 4096), ip));
 
     // ---- the studio
     let m;
-    if ((m = /^\/api\/rpc\/([a-z_]+)$/.exec(path)) && req.method === 'POST') return send(res, 200, act(db, who, m[1], await body(req), deps) ?? null);
-    if ((m = /^\/api\/read\/([a-z_]+)$/.exec(path)) && req.method === 'GET') return send(res, 200, read(db, who, m[1], url.searchParams));
-    if ((m = /^\/api\/family\/([a-z_]+)$/.exec(path)) && req.method === 'POST') return send(res, 200, familyAct(db, who, m[1], await body(req)) ?? null);
-    if (path === '/api/upload/studio-audio' && (req.method === 'PUT' || req.method === 'POST')) return upload(req, res, who);
+    if ((m = /^\/api\/rpc\/([a-z_]+)$/.exec(path)) && req.method === 'POST') return send(res, 200, (await act(db, who, m[1], await body(req), deps)) ?? null);
+    if ((m = /^\/api\/read\/([a-z_]+)$/.exec(path)) && req.method === 'GET') return send(res, 200, await read(db, who, m[1], url.searchParams));
+    if ((m = /^\/api\/family\/([a-z_]+)$/.exec(path)) && req.method === 'POST') return send(res, 200, (await familyAct(db, who, m[1], await body(req))) ?? null);
+    if (path === '/api/upload/studio-audio' && (req.method === 'PUT' || req.method === 'POST')) return upload(req, res, who, url);
+    if (path === '/api/upload/studio-audio/start' && req.method === 'POST') return send(res, 200, await uploadStart(who, await body(req, 4096)));
+    if (path === '/api/upload/studio-audio/finish' && req.method === 'POST') return send(res, 200, await uploadFinish(who, await body(req, 4096)));
 
     // ---- the exported web app, if asked to serve it
     if (staticDir && req.method === 'GET' && !path.startsWith('/api/')) {
@@ -145,52 +181,89 @@ export function createServer({ dataDir = process.env.STUDIO_DATA ?? './studio-da
     send(res, 404, { error: { code: 'not_found', message: 'not found' } });
   }
 
+  // The first Super Admin, over the network: only with STUDIO_SETUP_KEY, and
+  // only while there is no Super Admin yet.
+  async function setup({ key, email }, ip) {
+    if (!setupKey) throw new E('Setting up over the network is off. Use npm run admin -- first-admin <email>.', '42501');
+    const miss = await auth.brake(db, `setup:${ip}`);
+    const a = Buffer.from(crypto.createHash('sha256').update(String(key ?? '')).digest());
+    const b = Buffer.from(crypto.createHash('sha256').update(setupKey).digest());
+    if (!crypto.timingSafeEqual(a, b)) {
+      await miss();
+      throw new E('That set-up key is not right.', '42501');
+    }
+    if (await db.prepare("select 1 from staff_roles where role = 'super_admin'").get()) throw new E('There is already a Super Admin. Add other staff from Staff & roles.', '42501');
+    const e = String(email ?? '').trim().toLowerCase();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)) throw new E('That does not look like an email address.');
+    const pw = await firstAdmin(db, e);
+    return { email: e, password: pw, note: pw ? 'Sign in at /admin with this one-time password, then remove STUDIO_SETUP_KEY from the Vercel settings.' : 'That account already existed; it is now a Super Admin.' };
+  }
+
   // Audio files: only Audio Editors (with an authenticator session), only
   // into a folder named after their own account; never overwritten.
-  async function upload(req, res, who) {
-    const w = roleCheck(db, who);
+  async function editor(who) {
+    const w = await roleCheck(db, who);
     if (!w.has('audio_editor')) throw new E('audio editors only', '42501');
+    return w;
+  }
+  const extOf = (x) => String(x ?? 'mp3').toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 5) || 'mp3';
+  const record = (rel, owner, size, mime, fileUrl) =>
+    tx(db, async () => {
+      await db.prepare('insert into storage_objects (bucket, path, owner, size, mime, created_at) values (?, ?, ?, ?, ?, ?)').run('studio-audio', rel, owner, size, mime, new Date().toISOString());
+      if (fileUrl) await db.prepare('insert into storage_urls (bucket, path, url) values (?, ?, ?)').run('studio-audio', rel, fileUrl);
+    });
+
+  // Through the server (own server; small files on Vercel).
+  async function upload(req, res, who, url) {
+    const w = await editor(who);
     const mime = String(req.headers['content-type'] ?? '').split(';')[0].trim();
     if (!AUDIO_TYPES.has(mime)) throw new E('only audio files (mp3, m4a, ogg, wav, webm, aac)');
     const len = Number(req.headers['content-length'] ?? 0);
     if (len > MAX_AUDIO) throw new E('files are at most 10 MB', 'PT413', 413);
-    const ext = (new URL(req.url, 'http://x').searchParams.get('ext') ?? 'mp3').toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 5) || 'mp3';
-    const rel = `${w.uid}/${crypto.randomUUID()}.${ext}`;
-    const dir = join(files, 'studio-audio', w.uid);
-    mkdirSync(dir, { recursive: true });
-    const tmp = join(dir, `.${crypto.randomUUID()}.part`);
-    let size = 0;
-    await new Promise((ok, no) => {
-      const out = createWriteStream(tmp, { flags: 'wx' });
-      req.on('data', (c) => {
-        size += c.length;
-        if (size > MAX_AUDIO) {
-          req.destroy();
-          out.destroy();
-          no(new E('files are at most 10 MB', 'PT413', 413));
-        }
-      });
-      req.pipe(out);
-      out.on('finish', ok);
-      out.on('error', no);
-      req.on('error', no);
-    }).catch(async (e) => {
-      await rm(tmp, { force: true });
-      throw e;
-    });
-    if (!size) {
-      await rm(tmp, { force: true });
-      throw new E('the file is empty');
-    }
-    await rename(tmp, join(files, 'studio-audio', rel));
-    tx(db, () => db.prepare('insert into storage_objects (bucket, path, owner, size, mime, created_at) values (?, ?, ?, ?, ?, ?)').run('studio-audio', rel, w.uid, size, mime, new Date().toISOString()));
+    const rel = `${w.uid}/${crypto.randomUUID()}.${extOf(url.searchParams.get('ext'))}`;
+    const store = await files;
+    const out = await store.save(req, rel, mime);
+    await record(rel, w.uid, out.size, mime, out.url);
     send(res, 200, { path: rel });
   }
 
-  const server = http.createServer((req, res) => {
-    handle(req, res).catch((e) => fail(res, e));
-  });
-  return { server, db };
+  // Straight to Vercel Blob from the browser: start gives a one-file token...
+  async function uploadStart(who, { type, ext }) {
+    const w = await editor(who);
+    const mime = String(type ?? '').split(';')[0].trim();
+    if (!AUDIO_TYPES.has(mime)) throw new E('only audio files (mp3, m4a, ogg, wav, webm, aac)');
+    const store = await files;
+    if (store.kind !== 'blob') return { mode: 'server' };
+    const rel = `${w.uid}/${crypto.randomUUID()}.${extOf(ext)}`;
+    return { mode: 'blob', path: rel, ...(await store.ticket(rel, mime)) };
+  }
+  // ...and finish checks what arrived before it counts as uploaded.
+  async function uploadFinish(who, { path: rel }) {
+    const w = await editor(who);
+    const store = await files;
+    if (store.kind !== 'blob') throw new E('uploads go through the server here');
+    rel = String(rel ?? '');
+    if (!FILE_PATH.test(rel) || rel.split('/')[0] !== w.uid) throw new E('that file was uploaded by someone else', '42501');
+    const had = await db.prepare("select owner from storage_objects where bucket = 'studio-audio' and path = ?").get(rel);
+    if (had) return { path: rel };
+    const got = await store.look(rel);
+    if (!got) throw new E('the file did not arrive; try the upload again');
+    if (!got.size || got.size > MAX_AUDIO || !AUDIO_TYPES.has(got.mime)) {
+      await store.remove(rel);
+      throw new E('only audio files of at most 10 MB');
+    }
+    await record(rel, w.uid, got.size, got.mime, got.url);
+    return { path: rel };
+  }
+
+  const handler = (req, res) => handle(req, res).catch((e) => fail(res, e));
+  return { handler, db };
+}
+
+/** The own-server form: an http.Server around the handler. */
+export function createServer(opts) {
+  const { handler, db } = createApp(opts);
+  return { server: http.createServer(handler), db };
 }
 
 if (import.meta.url === `file://${process.argv[1]}`) {

@@ -17,8 +17,11 @@ import type { WorldDef } from '@/adventure/types';
 import { applyOverlay, type Overlay } from './overlay';
 
 // The studio server's address, e.g. https://studio.example.org (storybook/server).
-export const STUDIO_URL = (process.env.EXPO_PUBLIC_STUDIO_URL ?? '').replace(/\/$/, '');
-export const studioConfigured = () => !!STUDIO_URL;
+// "same-origin" means the web app and the server share one address (Vercel):
+// requests then go to /api/... on whatever site the page was loaded from.
+const RAW_URL = process.env.EXPO_PUBLIC_STUDIO_URL ?? '';
+export const STUDIO_URL = RAW_URL === 'same-origin' ? '' : RAW_URL.replace(/\/$/, '');
+export const studioConfigured = () => !!RAW_URL;
 
 export type Live = { doc: Overlay | null; number: number | null; hash: string | null };
 export type StudioMode = 'play' | 'draft' | 'published' | 'built-in';

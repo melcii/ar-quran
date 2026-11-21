@@ -1,15 +1,19 @@
-// The studio's database: one SQLite file (node:sqlite, built into Node 22+).
+// The studio's database: SQLite, through the libSQL client. On your own
+// computer or server it is one file (studio-data/studio.db); on Vercel it is a
+// hosted Turso database (same SQLite tables, reached over HTTPS), because
+// Vercel functions have no disk that survives between requests.
 // Same tables and rules as the old Supabase migrations 0001-0005, written for
 // SQLite. JSON values are stored as text and decoded by the readers in
 // studio.mjs; times are ISO-8601 UTC strings, which sort correctly as text.
-import { DatabaseSync } from 'node:sqlite';
+import { AsyncLocalStorage } from 'node:async_hooks';
 import { mkdirSync, readFileSync } from 'node:fs';
-import { dirname } from 'node:path';
+import { dirname, resolve } from 'node:path';
+import { pathToFileURL } from 'node:url';
+
+// Only for a database file on this machine (a hosted database sets its own).
+const LOCAL_PRAGMAS = 'pragma journal_mode = wal;';
 
 const SCHEMA = `
-pragma journal_mode = wal;
-pragma foreign_keys = on;
-pragma busy_timeout = 5000;
 
 -- Accounts (replaces Supabase Auth). Passwords are scrypt hashes; sessions are
 -- random tokens stored as SHA-256 hashes; aal2 = signed in with an authenticator code.
@@ -47,6 +51,20 @@ create table if not exists storage_objects (
   created_at text not null,
   primary key (bucket, path)
 );
+-- Where a file lives when it is kept in Vercel Blob instead of on this disk.
+create table if not exists storage_urls (
+  bucket text not null,
+  path text not null,
+  url text not null,
+  primary key (bucket, path)
+);
+-- Wrong passwords and codes, so the brake on guessing holds across server
+-- instances (Vercel runs several).
+create table if not exists auth_misses (
+  key text not null,
+  at integer not null
+);
+create index if not exists auth_misses_key on auth_misses (key, at);
 
 -- -------------------------------------------------------------- families (0001)
 create table if not exists guardians (
@@ -277,27 +295,152 @@ create table if not exists releases (
 );
 `;
 
-export function openDb(file) {
-  if (file !== ':memory:') mkdirSync(dirname(file), { recursive: true });
-  const db = new DatabaseSync(file);
-  db.exec(SCHEMA);
-  if (!db.prepare('select count(*) c from quran_surahs').get().c) {
-    const list = JSON.parse(readFileSync(new URL('./surahs.json', import.meta.url), 'utf8'));
-    const ins = db.prepare('insert into quran_surahs (n, name, ayahs) values (?, ?, ?)');
-    for (const [n, name, ayahs] of list) ins.run(n, name, ayahs);
+/**
+ * Open the studio database.
+ *   openDb('/path/studio.db')                    a file on this machine
+ *   openDb('libsql://name-org.turso.io', token)  a hosted Turso database
+ *   openDb(':memory:')                           a throwaway one
+ * Returns at once; the tables are made (if missing) before the first query runs.
+ */
+export function openDb(target, authToken) {
+  const remote = /^(libsql|https?|wss?):\/\//.test(target);
+  let url = target;
+  if (target === ':memory:') url = ':memory:';
+  else if (!remote) {
+    const file = resolve(target.replace(/^file:/, ''));
+    mkdirSync(dirname(file), { recursive: true });
+    url = pathToFileURL(file).href;
   }
-  return db;
+  // A hosted database needs only HTTPS (the "web" client, no native code); a
+  // file needs the native SQLite engine.
+  const client = (remote ? import('@libsql/client/web') : import('@libsql/client')).then((m) => m.createClient({ url, authToken: authToken || undefined }));
+  return new Db(client, { remote });
+}
+
+// The libSQL client is asynchronous; this keeps the small statement API the
+// studio code was written against (prepare(sql).get / all / run, exec), with
+// awaits. Every statement inside tx(db, fn) runs in that one transaction, found
+// through AsyncLocalStorage, so helpers need no transaction argument.
+class Db {
+  #client; // a promise of the libSQL client
+  #inTx = new AsyncLocalStorage();
+  #tail = Promise.resolve();
+  ready;
+
+  constructor(client, { remote }) {
+    this.#client = client;
+    this.remote = remote;
+    this.ready = this.#setUp().catch((e) => {
+      this.ready = null;
+      throw e;
+    });
+  }
+
+  async #setUp() {
+    const c = await this.#client;
+    if (!this.remote) await c.executeMultiple(LOCAL_PRAGMAS).catch(() => {});
+    await c.executeMultiple(SCHEMA);
+    const n = (await c.execute('select count(*) c from quran_surahs')).rows[0].c;
+    if (!Number(n)) {
+      const list = JSON.parse(readFileSync(new URL('./surahs.json', import.meta.url), 'utf8'));
+      await c.batch(list.map(([s, name, ayahs]) => ({ sql: 'insert or ignore into quran_surahs (n, name, ayahs) values (?, ?, ?)', args: [s, name, ayahs] })), 'write');
+    }
+  }
+
+  // One piece of database work at a time in this process: a transaction holds
+  // its turn until it commits, so other requests' statements wait instead of
+  // failing with "database is locked" (and never land inside it).
+  async #turn(fn) {
+    const before = this.#tail;
+    let done;
+    this.#tail = new Promise((ok) => (done = ok));
+    try {
+      await before;
+      return await fn();
+    } finally {
+      done();
+    }
+  }
+
+  async #run(sql, args) {
+    await (this.ready ?? (this.ready = this.#setUp()));
+    const stmt = { sql, args: args.map((a) => (a === undefined ? null : a)) };
+    const t = this.#inTx.getStore();
+    try {
+      const c = await this.#client;
+      return await (t ? t.execute(stmt) : this.#turn(() => c.execute(stmt)));
+    } catch (e) {
+      throw sqlError(e);
+    }
+  }
+
+  prepare(sql) {
+    return {
+      get: async (...args) => plain(await this.#run(sql, args))[0],
+      all: async (...args) => plain(await this.#run(sql, args)),
+      run: async (...args) => {
+        const r = await this.#run(sql, args);
+        return { changes: r.rowsAffected, lastInsertRowid: r.lastInsertRowid == null ? 0 : Number(r.lastInsertRowid) };
+      },
+    };
+  }
+
+  /** Run one or more statements with no arguments. */
+  async exec(sql) {
+    await (this.ready ?? (this.ready = this.#setUp()));
+    const t = this.#inTx.getStore();
+    try {
+      const c = await this.#client;
+      if (t) await t.executeMultiple(sql);
+      else await this.#turn(() => c.executeMultiple(sql));
+    } catch (e) {
+      throw sqlError(e);
+    }
+  }
+
+  async transaction(fn) {
+    if (this.#inTx.getStore()) return fn(); // already inside one: join it
+    await (this.ready ?? (this.ready = this.#setUp()));
+    return this.#turn(async () => {
+      const t = await (await this.#client).transaction('write');
+      try {
+        const out = await this.#inTx.run(t, fn);
+        await t.commit();
+        return out;
+      } catch (e) {
+        await t.rollback().catch(() => {});
+        throw sqlError(e);
+      } finally {
+        t.close();
+      }
+    });
+  }
+
+  async close() {
+    (await this.#client).close();
+  }
+}
+
+const plain = (rs) => rs.rows.map((r) => Object.fromEntries(rs.columns.map((c, i) => [c, r[i]])));
+
+// SQLite's own complaints (a check constraint, the frozen audit log, ...)
+// become one kind of error the server answers as "not allowed": 400.
+export class SqlError extends Error {
+  constructor(message) {
+    super(message);
+    this.code = 'ERR_SQLITE_ERROR';
+  }
+}
+function sqlError(e) {
+  if (e instanceof SqlError || !(e?.name === 'LibsqlError' || /^SQLITE_/.test(String(e?.code ?? '')))) return e;
+  const msg = String(e.message ?? '')
+    .replace(/^SQLITE_[A-Z_]+: /, '')
+    .replace(/^sqlite3 result code \d+: /, '')
+    .replace(/^SQLite error: /, '');
+  return new SqlError(msg);
 }
 
 /** Run fn inside one write transaction (all or nothing). */
 export function tx(db, fn) {
-  db.exec('begin immediate');
-  try {
-    const out = fn();
-    db.exec('commit');
-    return out;
-  } catch (e) {
-    db.exec('rollback');
-    throw e;
-  }
+  return db.transaction(fn);
 }

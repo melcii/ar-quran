@@ -236,8 +236,21 @@ export async function audioAssets(): Promise<AudioAsset[]> {
   return must(await read<AudioAsset[]>('audio_assets', { limit: 500 }));
 }
 /** Upload a file into the caller's own folder of the studio's audio files; returns its path. */
+// On Vercel the server keeps audio in Vercel Blob and the file goes straight
+// there with a one-file token (Vercel functions refuse bodies over 4.5 MB);
+// on an own server it goes through the server as before.
 export async function uploadAudio(file: Blob & { name?: string; type: string }): Promise<string> {
   const ext = (file.name?.split('.').pop() ?? 'mp3').toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 5) || 'mp3';
+  const start = must(await call<{ mode: 'server' } | { mode: 'blob'; path: string; pathname: string; clientToken: string }>('POST', '/api/upload/studio-audio/start', { type: file.type, ext }));
+  if (start.mode === 'blob') {
+    const { put } = await import('@vercel/blob/client');
+    try {
+      await put(start.pathname, file, { access: 'public', token: start.clientToken, contentType: file.type });
+    } catch (e) {
+      throw new Error(`The upload did not finish: ${e instanceof Error ? e.message : String(e)}`);
+    }
+    return must(await call<{ path: string }>('POST', '/api/upload/studio-audio/finish', { path: start.path })).path;
+  }
   return must(await call<{ path: string }>('PUT', `/api/upload/studio-audio?ext=${ext}`, file, { 'Content-Type': file.type })).path;
 }
 export async function registerAudio(p: Record<string, unknown>): Promise<string> {
