@@ -6,8 +6,9 @@ sign up for. The children's game works without it (it always has its built-in
 worlds) and only reads published content, approved audio and the child-safe
 problem reports through it.
 
-Needs Node 22.13 or newer (it uses the built-in `node:sqlite`). The only
-package it installs is `qrcode`, for the authenticator set-up picture.
+Needs Node 20 or newer. It installs three packages: `@libsql/client` (SQLite,
+as a local file or a hosted Turso database), `@vercel/blob` (audio files when
+hosted on Vercel) and `qrcode` (the authenticator set-up picture).
 
 ## Running it on your computer
 
@@ -45,12 +46,12 @@ npm run admin -- reset-password someone@example.org
 npm run admin -- reset-authenticator someone@example.org   # lost phone
 ```
 
-## Putting it online
+## Putting it online (your own server)
 
 Any host that runs a Node app and keeps files between restarts works (a small
 VPS, Hostinger Node.js hosting, Railway, Fly.io with a volume, ...).
 
-- Start command: `node --disable-warning=ExperimentalWarning index.mjs` in
+- Start command: `node index.mjs` in
   `storybook/server` (after `npm install`).
 - `STUDIO_DATA` is the folder for `studio.db` and the uploaded files. It must
   survive restarts and redeploys. **Back it up**: copying that folder is the
@@ -65,6 +66,69 @@ VPS, Hostinger Node.js hosting, Railway, Fly.io with a volume, ...).
   may call the API (default: any, since sign-in uses tokens, not cookies).
 - Optional: `OPEN_SIGNUP=1` lets anyone create an account (off by default;
   only needed once family accounts come to the game).
+
+## Putting it on Vercel
+
+Vercel runs the web app (game and `/admin`) as static files and this server
+as one serverless function (`storybook/api/studio.mjs`, wired up by
+`storybook/vercel.json`). Vercel functions have no disk that lasts, so on
+Vercel the data lives in two hosted services instead of `studio-data/`:
+
+- **Turso** (hosted libSQL, which is SQLite): the same tables and rules as
+  `studio.db`, nothing translated. The server creates the tables on first use.
+- **Vercel Blob**: uploaded audio. The browser sends a file straight to Blob
+  with a token that allows only that one path, one audio type and 10 MB
+  (Vercel functions refuse request bodies over 4.5 MB); the server then checks
+  what arrived before it counts as uploaded.
+
+Steps (about 15 minutes, all in the browser):
+
+1. **Database.** Make a free database at https://turso.tech (or add "Turso
+   Cloud" from the Vercel Marketplace, which fills in the two variables for
+   you). Pick the region nearest your Vercel functions (Vercel's default is
+   Washington, D.C. `iad1`, so AWS `us-east-1`): each studio action makes
+   several database calls. Copy the database URL (`libsql://...`) and make an
+   auth token.
+2. **Project.** In Vercel: Add New → Project → import `melcii/ar-quran`.
+   Set **Root Directory** to `storybook`. Leave the framework as "Other";
+   `vercel.json` sets the install and build commands and the output folder.
+   The studio code is not on `main` yet: until it is merged, set
+   Settings → Git → **Production Branch** to the branch holding this change,
+   or use the preview deployment Vercel makes for it.
+3. **Environment variables** (Settings → Environment Variables):
+
+   | Name | Value | Needed |
+   | --- | --- | --- |
+   | `TURSO_DATABASE_URL` | `libsql://your-db-your-org.turso.io` | yes |
+   | `TURSO_AUTH_TOKEN` | the token from step 1 | yes |
+   | `BLOB_READ_WRITE_TOKEN` | added for you by step 4 | for audio uploads |
+   | `STUDIO_SETUP_KEY` | a long random phrase you make up | once, for step 5 |
+   | `EXPO_PUBLIC_STUDIO_URL` | leave unset (means "this same site") | no |
+   | `CORS_ORIGINS` | e.g. `https://your-site.vercel.app` | no (default: any) |
+
+4. **Audio storage.** Storage → Create → Blob → connect it to this project.
+   That adds `BLOB_READ_WRITE_TOKEN`. Then Deployments → Redeploy.
+5. **First Super Admin.** With `STUDIO_SETUP_KEY` set and deployed, run once
+   (any terminal; on Windows use PowerShell's `curl.exe`):
+
+   ```bash
+   curl -X POST https://YOUR-SITE.vercel.app/api/setup/first-admin \
+     -H 'Content-Type: application/json' \
+     -d '{"key":"YOUR SETUP KEY","email":"you@example.org"}'
+   ```
+
+   It answers with a one-time password. It only works while there is no Super
+   Admin yet, and wrong keys are slowed down. Then **delete
+   `STUDIO_SETUP_KEY`** from Vercel and redeploy. (Or, from a computer with
+   this repository: put the two `TURSO_` variables in your shell and run
+   `npm run admin -- first-admin you@example.org` in `storybook/server`; the
+   password and authenticator reset commands work the same way.)
+6. Open `https://YOUR-SITE.vercel.app/admin`, sign in, choose a password and
+   set up the authenticator app.
+
+Backups: Turso keeps point-in-time copies on its paid plans; on the free plan,
+`turso db shell your-db .dump > backup.sql` saves everything. Audio files stay
+in the Blob store.
 
 ## What the server enforces
 

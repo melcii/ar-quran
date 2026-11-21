@@ -7,8 +7,8 @@ import fs from 'node:fs';
 import { createRequire } from 'node:module';
 import path from 'node:path';
 import { DatabaseSync } from 'node:sqlite';
-import { createUser } from '../../server/auth.mjs';
-import { totpAt } from '../../server/auth.mjs';
+import crypto from 'node:crypto';
+import { hashPassword, totpAt } from '../../server/auth.mjs';
 
 const require = createRequire(import.meta.url);
 export const { chromium } = require('playwright');
@@ -69,7 +69,8 @@ export const client = (token) => ({
 /** A fresh account; with mfa, a verified authenticator and an aal2 session in `c`. */
 export async function account(name, { mfa = true } = {}) {
   const email = `${name}-${run}@studio.test`;
-  const id = createUser(db, email, PW);
+  const id = crypto.randomUUID();
+  db.prepare('insert into users (id, email, pw, must_change_password, created_at) values (?, ?, ?, 0, ?)').run(id, email, hashPassword(PW), new Date().toISOString());
   const s = await call(null, 'POST', '/api/auth/signin', { email, password: PW });
   if (s.error) throw new Error(s.error.message);
   const c = client(s.data.token);

@@ -3,15 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Admin Studio server: one Node process, one SQLite file. Replaces Supabase.",
-  "engines": { "node": ">=22.13" },
+  "description": "Admin Studio server: one Node process with a SQLite file, or a Vercel function with a Turso database. Replaces Supabase.",
+  "engines": {
+    "node": ">=20"
+  },
   "main": "index.mjs",
   "scripts": {
-    "start": "node --disable-warning=ExperimentalWarning index.mjs",
-    "admin": "node --disable-warning=ExperimentalWarning admin.mjs",
-    "test": "node --disable-warning=ExperimentalWarning test/access.mjs"
+    "start": "node index.mjs",
+    "admin": "node admin.mjs",
+    "test": "node test/access.mjs && node test/vercel.mjs"
   },
   "dependencies": {
+    "@libsql/client": "^0.18.0",
+    "@vercel/blob": "^2.9.0",
     "qrcode": "^1.5.4"
   }
 }

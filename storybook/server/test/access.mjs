@@ -27,7 +27,8 @@ function check(name, ok, extra) {
   console.log(`${ok ? 'PASS' : 'FAIL'}  ${name}${!ok && extra ? `  (${extra})` : ''}`);
 }
 const q = (sql, ...a) => db.prepare(sql).get(...a);
-const savesHash = () => q("select coalesce(group_concat(explorer || key || value || updated_at, ','), '') h from (select * from saves order by key)").h;
+// q() is async now (the database client is): await it and read the field after.
+const savesHash = async () => (await q("select coalesce(group_concat(explorer || key || value || updated_at, ','), '') h from (select * from saves order by key)")).h;
 
 async function call(token, method, path, body, headers = {}) {
   const r = await fetch(BASE + path, {
@@ -168,7 +169,7 @@ for (const [who, role] of [[story, 'story_editor'], [world, 'world_editor'], [re
 // Saves of a player before any publishing, to compare afterwards.
 const explorer = (await player.c.fam('explorer_add', { nickname: 'Sam' })).data;
 await player.c.fam('saves_put', { me: explorer, key: 'quran-adventure.adventure.19', value: '{"done":["quiet"],"prog":{}}' });
-const savesBefore = savesHash();
+const savesBefore = await savesHash();
 
 // 3. Drafts and permissions by kind of change.
 const S = 'surah:19';
@@ -265,7 +266,7 @@ let v2;
   check('Super Admin rolls back to version 1', !rb.error, rb.error?.message);
   const live = await anon.live(S);
   check('players see version 1 again', live.data?.[0]?.number === 1);
-  check('player saves are byte-for-byte unchanged by publishing and rollback', savesBefore === savesHash() && savesBefore.length > 0);
+  check('player saves are byte-for-byte unchanged by publishing and rollback', savesBefore === (await savesHash()) && savesBefore.length > 0);
 }
 
 // 8. Scheduled publication.
@@ -292,13 +293,13 @@ let v2;
   check('only Super Admins read the audit log', !s.error && s.data.length === 0);
   let frozen = false;
   try {
-    db.exec('update audit_log set action = action');
+    await db.exec('update audit_log set action = action');
   } catch {
     frozen = true;
   }
   let frozen2 = false;
   try {
-    db.exec('delete from audit_log');
+    await db.exec('delete from audit_log');
   } catch {
     frozen2 = true;
   }
@@ -358,11 +359,11 @@ for (const x of [audioA, audioB]) await owner.c.rpc('studio_set_role', { p_email
   const ks = await world.c.rpc('studio_submit', { p_scope: 'ark:slice', p_note: '' });
   check('Ark numbers out of range are refused at submit', !kw.error && !!ks.error && /out of the allowed range/.test(ks.error.message), ks.error?.message);
   await call(null, 'POST', '/api/report-problem', { p_surah: 19, p_category: 'stuck', p_screen: '390x844' });
-  const id = q('select max(id) m from player_problems').m;
+  const id = (await q('select max(id) m from player_problems')).m;
   const g = await player.c.rpc('studio_bug_from_problems', { p_ids: [id], p_bug: null, p_title: 'x' });
   check('an ordinary account cannot turn player reports into bugs', denied(g), g.error?.message);
   const ok = await world.c.rpc('studio_bug_from_problems', { p_ids: [id], p_bug: null, p_title: 'Players stuck in Maryam' });
-  check('staff group player reports into a bug', !ok.error && q('select bug_id b from player_problems where id = ?', id).b === ok.data, ok.error?.message);
+  check('staff group player reports into a bug', !ok.error && (await q('select bug_id b from player_problems where id = ?', id)).b === ok.data, ok.error?.message);
 }
 
 // 12. Phase 5: moderation, play settings, releases.
@@ -400,13 +401,13 @@ for (const x of [audioA, audioB]) await owner.c.rpc('studio_set_role', { p_email
   check('a world editor cannot act on reports', denied(wp), wp.error?.message);
   const pa = await moderator.c.rpc('studio_mod_act', { p_report: rid, p_action: 'pause_online', p_days: 3, p_note: 'Unkind words' });
   const after = await player.c.fam('open_room', { me: explorer, world: '19' });
-  const left = q('select count(*) c from room_members where explorer = ? and room = ?', explorer, room.data).c;
+  const left = (await q('select count(*) c from room_members where explorer = ? and room = ?', explorer, room.data)).c;
   check('a paused explorer leaves the room and cannot open another', !pa.error && !!after.error && /off/.test(after.error.message) && left === 0, pa.error?.message ?? after.error?.message);
-  check('playing alone is not touched (saves unchanged)', q('select count(*) c from saves where explorer = ?', explorer).c === 1);
+  check('playing alone is not touched (saves unchanged)', (await q('select count(*) c from saves where explorer = ?', explorer)).c === 1);
   const un = await moderator.c.rpc('studio_mod_unpause', { p_report: rid });
   const again = await player.c.fam('open_room', { me: explorer, world: '19' });
   check('a moderator can lift the pause early', !un.error && !again.error, un.error?.message ?? again.error?.message);
-  const audit = q("select detail from audit_log where action = 'moderation.pause_online' order by id desc limit 1")?.detail ?? '';
+  const audit = (await q("select detail from audit_log where action = 'moderation.pause_online' order by id desc limit 1"))?.detail ?? '';
   check('moderation is audited without naming the child', /"report"/.test(audit) && !/Sam/.test(audit), audit);
 
   // Online play switch: moderators draft it, a Super Admin publishes, the room functions obey.
@@ -443,10 +444,10 @@ for (const x of [audioA, audioB]) await owner.c.rpc('studio_set_role', { p_email
   const rp = await owner.c.rpc('studio_release_publish', { p_id: rc.data, p_at: null });
   const lv = await anon.live('config:play');
   check('a release publishes its versions; players get them', !rc.error && !rp.error && lv.data?.[0]?.doc?.set?.breakMinutes === 20, rc.error?.message ?? rp.error?.message);
-  const savesMid = savesHash();
+  const savesMid = await savesHash();
   const ru = await owner.c.rpc('studio_release_undo', { p_id: rc.data });
   const lv2 = (await anon.live('config:play')).data?.[0];
-  check('undoing a release goes back to what was live before; saves untouched', !ru.error && lv2?.doc == null && lv2?.action === 'unpublish' && savesMid === savesHash(), ru.error?.message ?? JSON.stringify(lv2));
+  check('undoing a release goes back to what was live before; saves untouched', !ru.error && lv2?.doc == null && lv2?.action === 'unpublish' && savesMid === (await savesHash()), ru.error?.message ?? JSON.stringify(lv2));
 }
 
 console.log(`\n${passes} passed, ${failures} failed`);
